@@ -857,7 +857,7 @@
   .search-bar {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -894,6 +894,54 @@
     color: white;
     border-color: var(--green);
   }
+
+  /* ── Traditions picker ────────────────────────── */
+  .traditions-picker { margin-bottom: 2rem; }
+  .traditions-picker-label {
+    font-family: var(--font-code); font-size: 0.62rem; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 0.7rem; display: block;
+  }
+  .traditions-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tradition-chip {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-family: var(--font-code); font-size: 0.62rem; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 0.35rem 0.75rem;
+    border: 1px solid var(--border); background: white; color: var(--muted);
+    cursor: pointer; transition: all 0.15s; border-radius: 2px;
+  }
+  .tradition-chip:hover { opacity: 0.8; }
+  .tradition-chip.active { color: white; border-color: transparent; }
+  .tradition-chip .chip-icon { font-size: 0.85rem; }
+  .tradition-chip .chip-count {
+    background: rgba(255,255,255,0.25); border-radius: 999px;
+    padding: 0 0.35rem; font-size: 0.55rem; min-width: 16px; text-align: center;
+  }
+  .traditions-overview {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem; margin-top: 2rem;
+  }
+  .tradition-card {
+    background: white; border: 1px solid var(--border); padding: 1.2rem 1.4rem;
+    position: relative; overflow: hidden; cursor: pointer; transition: box-shadow 0.2s;
+  }
+  .tradition-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+  .tradition-card-accent { position: absolute; left: 0; top: 0; bottom: 0; width: 4px; }
+  .tradition-card-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+  .tradition-card h4 { font-family: var(--font-display); font-size: 0.85rem; color: var(--ink); margin-bottom: 0.2rem; }
+  .tradition-card .tradition-meta {
+    font-family: var(--font-code); font-size: 0.6rem; letter-spacing: 0.08em;
+    color: var(--muted); text-transform: uppercase; margin-bottom: 0.6rem;
+  }
+  .tradition-card p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+  .tradition-status {
+    display: inline-block; font-family: var(--font-code); font-size: 0.55rem;
+    letter-spacing: 0.08em; text-transform: uppercase; padding: 0.15rem 0.5rem;
+    border-radius: 999px; margin-top: 0.5rem;
+  }
+  .status-translated { background: #E8F5E9; color: #2E7D32; }
+  .status-translating { background: #FFF3E0; color: #E65100; }
+  .status-partially_translated { background: #E3F2FD; color: #1565C0; }
+  .status-partially_documented { background: #F3E5F5; color: #6A1B9A; }
 
   /* ── External link ────────────────────────────── */
   .external-link {
@@ -1105,6 +1153,9 @@
   </button>
   <button class="tab-btn" onclick="showTab('database')" role="tab">
     <span class="tab-indicator" style="background:#4A3728"></span>Plant Database
+  </button>
+  <button class="tab-btn" onclick="showTab('traditions')" role="tab">
+    <span class="tab-indicator" style="background:#C4A882"></span>Traditions
   </button>
   <button class="tab-btn" onclick="showTab('convergence')" role="tab">
     <span class="tab-indicator" style="background:#C4A882"></span>Convergence Analysis
@@ -1575,16 +1626,33 @@
     </div>
 
     <div class="search-bar">
-      <input class="search-input" type="text" id="plant-search" placeholder="Search by plant name, condition, or compound..." oninput="filterPlants()">
-      <button class="filter-btn active" onclick="filterBySource('all', this)">All Sources</button>
-      <button class="filter-btn" onclick="filterBySource('cobo', this)">Cobo</button>
-      <button class="filter-btn" onclick="filterBySource('badianus', this)">Badianus</button>
-      <button class="filter-btn" onclick="filterBySource('florentine', this)">Florentine</button>
+      <input class="search-input" type="text" id="plant-search" placeholder="Search by plant name, condition, compound, or tradition..." oninput="filterPlants()">
+      <button class="filter-btn active" onclick="filterByStatus('all', this)">All Plants</button>
       <button class="filter-btn" onclick="filterByStatus('critical_gap', this)">⚠ Research Gaps</button>
+      <button class="filter-btn" onclick="filterByStatus('breakthrough_validated', this)">★ Breakthroughs</button>
+    </div>
+
+    <div class="traditions-picker" id="tradition-picker">
+      <span class="traditions-picker-label">Filter by tradition — select one or more</span>
+      <div class="traditions-grid" id="tradition-chips">
+        <!-- populated by JS -->
+      </div>
     </div>
 
     <div class="plant-grid" id="plant-grid">
       <!-- Populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- TRADITIONS TAB -->
+  <section class="tab-panel" id="tab-traditions">
+    <div class="section-header">
+      <div class="section-eyebrow">All Traditions in the Archive</div>
+      <h2 class="section-title">World Traditional Medicine Traditions</h2>
+      <p class="section-desc">Eleven traditions spanning five continents and four thousand years — each contributing independent empirical observations that, when examined together, reveal the strongest signals in the history of pharmacology.</p>
+    </div>
+    <div class="traditions-overview" id="traditions-overview-grid">
+      <!-- populated by JS -->
     </div>
   </section>
 
@@ -1714,9 +1782,316 @@ function showTab(id) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   event.currentTarget.classList.add('active');
-  if (id === 'database') renderPlants();
+  if (id === 'database') { renderTraditionChips(); renderPlants(); }
   if (id === 'convergence') renderPriority();
+  if (id === 'traditions') renderTraditionsOverview();
 }
+
+// ── Chapter accordion ───────────────────────────────────
+function toggleChapter(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+}
+
+// ── Data ────────────────────────────────────────────────
+let plantData = [];
+let traditionData = [];
+let activeStatusFilter = null;
+let activeTraditions = new Set();
+
+async function loadData() {
+  try {
+    const [pRes, tRes] = await Promise.all([
+      fetch('/data/plants.json'),
+      fetch('/data/traditions.json')
+    ]);
+    const pData = await pRes.json();
+    const tData = await tRes.json();
+    plantData = pData.plants || [];
+    traditionData = tData.traditions || [];
+  } catch(e) {
+    console.error('Could not load data', e);
+  }
+}
+
+// ── Tradition chips ─────────────────────────────────────
+function renderTraditionChips() {
+  const container = document.getElementById('tradition-chips');
+  if (!container || traditionData.length === 0) return;
+
+  const allChip = document.createElement('button');
+  allChip.className = 'tradition-chip active';
+  allChip.id = 'chip-all';
+  allChip.style.background = activeTraditions.size === 0 ? '#1C1A14' : 'white';
+  allChip.style.color = activeTraditions.size === 0 ? 'white' : '#6B6050';
+  allChip.innerHTML = `<span class="chip-icon">🌍</span> All Traditions`;
+  allChip.onclick = () => { activeTraditions.clear(); renderTraditionChips(); renderPlants(); };
+  container.innerHTML = '';
+  container.appendChild(allChip);
+
+  traditionData.forEach(t => {
+    const count = plantData.filter(p => p.traditions.includes(t.id)).length;
+    const isActive = activeTraditions.has(t.id);
+    const chip = document.createElement('button');
+    chip.className = `tradition-chip${isActive ? ' active' : ''}`;
+    chip.style.background = isActive ? t.color : 'white';
+    chip.style.color = isActive ? 'white' : '#6B6050';
+    chip.style.borderColor = isActive ? t.color : '';
+    chip.innerHTML = `<span class="chip-icon">${t.icon}</span>${t.name.split(' ')[0]} <span class="chip-count">${count}</span>`;
+    chip.onclick = () => {
+      if (activeTraditions.has(t.id)) activeTraditions.delete(t.id);
+      else activeTraditions.add(t.id);
+      renderTraditionChips();
+      renderPlants();
+    };
+    container.appendChild(chip);
+  });
+}
+
+// ── Traditions overview grid ────────────────────────────
+function renderTraditionsOverview() {
+  const grid = document.getElementById('traditions-overview-grid');
+  if (!grid || traditionData.length === 0) return;
+
+  const statusLabel = {
+    translated: 'Fully Translated',
+    translating: 'Translation in Progress',
+    partially_translated: 'Partially Translated',
+    partially_documented: 'Partially Documented'
+  };
+
+  grid.innerHTML = traditionData.map(t => {
+    const plantCount = plantData.filter(p => p.traditions.includes(t.id)).length;
+    return `
+    <div class="tradition-card" onclick="filterToTradition('${t.id}')">
+      <div class="tradition-card-accent" style="background:${t.color}"></div>
+      <span class="tradition-card-icon">${t.icon}</span>
+      <h4>${t.name}</h4>
+      <div class="tradition-meta">${t.geography.slice(0,3).join(' · ')} · ${t.date_range}</div>
+      <p>${t.primary_document}</p>
+      <p style="margin-top:0.4rem; font-style:italic;">${t.author}</p>
+      <div style="margin-top:0.6rem; display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+        <span class="tradition-status status-${t.status}">${statusLabel[t.status] || t.status}</span>
+        <span style="font-family:var(--font-code); font-size:0.6rem; color:var(--muted);">${plantCount} plants in archive · ~${t.approx_plants_documented.toLocaleString()} documented</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function filterToTradition(id) {
+  activeTraditions.clear();
+  activeTraditions.add(id);
+  showTab('database');
+  document.querySelectorAll('.tab-btn').forEach((b, i) => {
+    if (b.getAttribute('onclick')?.includes('database')) b.classList.add('active');
+    else b.classList.remove('active');
+  });
+}
+
+// ── Render plant database ───────────────────────────────
+function renderPlants() {
+  const grid = document.getElementById('plant-grid');
+  if (!grid) return;
+  const query = (document.getElementById('plant-search')?.value || '').toLowerCase();
+
+  const filtered = plantData.filter(p => {
+    const matchTradition = activeTraditions.size === 0 || p.traditions.some(t => activeTraditions.has(t));
+    const matchStatus = !activeStatusFilter || activeStatusFilter === 'all' || p.investigation_status === activeStatusFilter;
+    const matchQuery = !query ||
+      p.common_name.toLowerCase().includes(query) ||
+      (p.modern_botanical || '').toLowerCase().includes(query) ||
+      (p.therapeutic_areas || []).some(t => t.includes(query)) ||
+      (p.modern_research?.key_compound || '').toLowerCase().includes(query) ||
+      p.traditions.some(t => t.includes(query)) ||
+      Object.values(p.tradition_names || {}).some(n => n.toLowerCase().includes(query));
+    return matchTradition && matchStatus && matchQuery;
+  });
+
+  grid.innerHTML = filtered.map(p => {
+    const conv = p.convergence_score;
+    const convClass = conv >= 8 ? 'convergence-high' : conv >= 5 ? 'convergence-med' : 'convergence-low';
+
+    const statusMap = {
+      'validated': ['status-validated', '✓ Validated'],
+      'fully_validated': ['status-validated', '✓ Fully Validated'],
+      'breakthrough_validated': ['status-breakthrough', '★ Breakthrough'],
+      'validated_essential_medicine': ['status-validated', '✓ Essential Medicine'],
+      'validated_renewed_interest': ['status-validated', '✓ Validated · Active Research'],
+      'needs_investigation': ['status-gap', '⚠ Needs Investigation'],
+      'critical_gap': ['status-gap', '⚠ Critical Gap'],
+      'preliminary': ['status-preliminary', '◐ Preliminary'],
+      'moderate_validation': ['status-moderate', '◑ Moderate Evidence'],
+      'significant_findings': ['status-breakthrough', '★ Significant Findings'],
+      'breakthrough_research': ['status-breakthrough', '★ Breakthrough Research'],
+    };
+    const [statusClass, statusLabel] = statusMap[p.investigation_status] || ['status-preliminary', '◐ Unknown'];
+
+    // Tradition chips on card
+    const traditionChips = (p.traditions || []).map(tid => {
+      const trad = traditionData.find(t => t.id === tid);
+      const name = p.tradition_names?.[tid] || tid;
+      return trad
+        ? `<span class="tag" style="border-color:${trad.color}; color:${trad.color};">${trad.icon} ${name}</span>`
+        : `<span class="tag">${name}</span>`;
+    }).join('');
+
+    // Build entry sections from new schema
+    let entrySections = '';
+    for (const [tid, entry] of Object.entries(p.entries || {})) {
+      const trad = traditionData.find(t => t.id === tid);
+      const tradColor = trad?.color || '#1C1A14';
+      const tradName = trad?.name || tid;
+      const tradIcon = trad?.icon || '';
+      const originalLabel = tid === 'ayurveda' ? 'Sanskrit' : tid === 'chinese' ? 'Classical Chinese' : tid === 'greek_roman' ? 'Greek/Latin' : tid === 'arabic' ? 'Arabic' : tid === 'egyptian' ? 'Hieratic Egyptian' : 'Original Text';
+
+      entrySections += `
+      <div class="source-section">
+        <span class="source-label" style="background:${tradColor}">${tradIcon} ${tradName}</span>
+        ${entry.source_text ? `<div style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted); margin-bottom:0.8rem;">${entry.source_text}</div>` : ''}
+        <div class="parallel-text">
+          <div class="text-column">
+            <label>${originalLabel}</label>
+            <p>${entry.original || ''}</p>
+          </div>
+          <div class="text-column">
+            <label>English Translation</label>
+            <p class="translation">${entry.translation || ''}</p>
+          </div>
+        </div>
+        <div class="plant-meta">
+          ${entry.condition ? `<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>` : ''}
+          ${entry.preparation ? `<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>` : ''}
+          ${entry.illustration_url ? `<div class="meta-item"><label>Illustration</label><a class="external-link" href="${entry.illustration_url}" target="_blank">↗ View</a></div>` : ''}
+          ${entry.getty_url ? `<div class="meta-item"><label>Getty Codex</label><a class="external-link" href="${entry.getty_url}" target="_blank">↗ View in Getty</a></div>` : ''}
+        </div>
+        ${entry.notes ? `<div class="notes-block">${entry.notes}</div>` : ''}
+      </div>`;
+    }
+
+    const modernSection = p.modern_research ? `
+      <div class="source-section">
+        <span class="source-label modern">Modern Pharmacology</span>
+        <span class="research-status ${statusClass}">${statusLabel}</span>
+        <div class="plant-meta" style="margin-bottom:0.8rem;">
+          <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
+        </div>
+        <p style="font-size:0.9rem; line-height:1.7; color:var(--ink); max-width:70ch;">${p.modern_research.summary}</p>
+        <div class="notes-block" style="margin-top:0.8rem;">${p.modern_research.significance}</div>
+      </div>` : '';
+
+    return `
+    <div class="plant-card">
+      <div class="plant-card-header" onclick="toggleCard(this)">
+        <div class="plant-name-block">
+          <h3>${p.common_name}</h3>
+          <div class="botanical">${p.modern_botanical || 'Identification pending'}</div>
+          <div class="plant-tags" style="margin-top:0.5rem;">
+            ${traditionChips}
+            ${(p.therapeutic_areas||[]).slice(0,3).map(t => `<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.5rem;">
+          <div class="convergence-badge">
+            <span class="convergence-num ${convClass}">${conv}</span>
+            <span class="convergence-label">Convergence</span>
+          </div>
+          <span class="chevron" style="color:var(--muted);">▾</span>
+        </div>
+      </div>
+      <div class="plant-card-body">
+        ${entrySections}
+        ${modernSection}
+        <div style="padding:1rem 1.5rem; background:var(--vellum); border-top:1px solid var(--border);">
+          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase;">Plant ID: ${p.id} · ${p.traditions.length} tradition${p.traditions.length > 1 ? 's' : ''}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<p style="color:var(--muted); font-style:italic; padding:2rem 0;">No plants match the current filters.</p>';
+  }
+}
+
+function toggleCard(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+}
+
+function filterPlants() { renderPlants(); }
+
+function filterByStatus(status, btn) {
+  activeStatusFilter = status === 'all' ? null : status;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPlants();
+}
+
+// ── Render priority list ────────────────────────────────
+function renderPriority() {
+  const list = document.getElementById('priority-list');
+  if (!list || plantData.length === 0) return;
+
+  const sorted = [...plantData].sort((a, b) => b.priority_score - a.priority_score);
+
+  list.innerHTML = sorted.map(p => {
+    const tradIcons = p.traditions.map(tid => {
+      const t = traditionData.find(x => x.id === tid);
+      return t ? `<span title="${t.name}" style="font-size:0.9rem;">${t.icon}</span>` : '';
+    }).join('');
+
+    const statusLabels = {
+      'validated': '✓ Validated', 'fully_validated': '✓ Fully Validated',
+      'breakthrough_validated': '★ Breakthrough', 'validated_essential_medicine': '✓ WHO Essential Medicine',
+      'validated_renewed_interest': '✓ Validated, Active Research',
+      'needs_investigation': '⚠ Needs Investigation', 'critical_gap': '⚠ Critical Research Gap',
+      'preliminary': '◐ Preliminary', 'moderate_validation': '◑ Moderate Evidence',
+      'significant_findings': '★ Significant Findings', 'breakthrough_research': '★ Breakthrough Research',
+    };
+
+    return `
+    <div class="priority-item">
+      <div class="priority-score-block">
+        <span class="priority-score-num">${p.priority_score}</span>
+        <span class="priority-score-label">Priority</span>
+      </div>
+      <div class="priority-content">
+        <h4>${p.common_name}</h4>
+        <div class="botanical-name">${p.modern_botanical || 'Identification pending'}</div>
+        <div class="source-coverage" style="gap:0.3rem; margin:0.4rem 0;">
+          ${tradIcons}
+          <span style="font-family:var(--font-code); font-size:0.6rem; color:var(--muted); margin-left:0.3rem;">
+            ${p.traditions.length} tradition${p.traditions.length > 1 ? 's' : ''} · Convergence ${p.convergence_score}/10
+          </span>
+        </div>
+        <p>${p.modern_research?.significance || 'No modern research data available.'}</p>
+        <div style="margin-top:0.5rem;">
+          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted);">${statusLabels[p.investigation_status] || p.investigation_status}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Init ────────────────────────────────────────────────
+loadData().then(() => {
+  const hash = window.location.hash.replace('#', '');
+  if (hash && document.getElementById('tab-' + hash)) {
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      if (b.getAttribute('onclick')?.includes(hash)) {
+        b.classList.add('active');
+        b.classList.remove('active');
+      }
+    });
+  }
+});
+</script>
 
 // ── Chapter accordion ───────────────────────────────────
 function toggleChapter(header) {
