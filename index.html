@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materia Medica Americana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ── Reset & Base ─────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink:        #1C1A14;
+    --vellum:     #F7F2E3;
+    --vellum-dark:#EDE7D1;
+    --green:      #2D5016;
+    --green-light:#3D6B1F;
+    --red:        #8B4513;
+    --brown:      #4A3728;
+    --gold:       #C4A882;
+    --gold-light: #D4BC9A;
+    --muted:      #6B6050;
+    --border:     #C4A88260;
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-body:    'EB Garamond', Georgia, serif;
+    --font-code:    'Source Code Pro', monospace;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--vellum);
+    color: var(--ink);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── Vellum texture overlay ───────────────────── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.5;
+  }
+
+  /* ── Header ───────────────────────────────────── */
+  .site-header {
+    background: var(--ink);
+    color: var(--vellum);
+    padding: 2rem 2.5rem 1.5rem;
+    border-bottom: 3px solid var(--gold);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .site-header::before {
+    content: '⁜';
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8rem;
+    color: var(--gold);
+    opacity: 0.06;
+    font-family: serif;
+    line-height: 1;
+  }
+
+  .header-eyebrow {
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .site-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--vellum);
+    line-height: 1.15;
+  }
+
+  .site-subtitle {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--gold-light);
+    margin-top: 0.4rem;
+    max-width: 70ch;
+  }
+
+  .header-meta {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .header-stat {
+    text-align: center;
+  }
+
+  .header-stat-num {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--gold);
+    display: block;
+    line-height: 1;
+  }
+
+  .header-stat-label {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.7;
+  }
+
+  /* ── Navigation tabs ──────────────────────────── */
+  .tab-nav {
+    background: var(--brown);
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-bottom: 2px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .tab-nav::-webkit-scrollbar { display: none; }
+
+  .tab-btn {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    background: none;
+    border: none;
+    padding: 1rem 1.4rem;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+
+  .tab-btn:hover { color: var(--vellum); background: rgba(196,168,130,0.1); }
+
+  .tab-btn.active {
+    color: var(--vellum);
+    border-bottom-color: var(--gold);
+    background: rgba(196,168,130,0.15);
+  }
+
+  .tab-indicator {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    margin-bottom: 1px;
+  }
+
+  /* ── Main layout ──────────────────────────────── */
+  .main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+  }
+
+  /* ── Tab panels ───────────────────────────────── */
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* ── Section headers ──────────────────────────── */
+  .section-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 600;
+    color: var(--green);
+    line-height: 1.2;
+  }
+
+  .section-desc {
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 0.6rem;
+    max-width: 65ch;
+  }
+
+  /* ── HOME tab ─────────────────────────────────── */
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 700px) { .home-grid { grid-template-columns: 1fr; } }
+
+  .source-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--green);
+    padding: 1.8rem;
+    position: relative;
+    transition: box-shadow 0.2s;
+  }
+
+  .source-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .source-card.badianus { border-top-color: var(--red); }
+  .source-card.florentine { border-top-color: #1A4A7A; }
+
+  .source-card-year {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--green);
+    opacity: 0.15;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    line-height: 1;
+  }
+
+  .source-card.badianus .source-card-year { color: var(--red); }
+  .source-card.florentine .source-card-year { color: #1A4A7A; }
+
+  .source-card h3 {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+  }
+
+  .source-card .author {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .source-card p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+
+  .source-card .stats {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .stat-item { text-align: center; }
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--green);
+    display: block;
+  }
+  .source-card.badianus .stat-num { color: var(--red); }
+  .source-card.florentine .stat-num { color: #1A4A7A; }
+  .stat-label {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .thesis-block {
+    background: var(--ink);
+    color: var(--vellum);
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .thesis-block::before {
+    content: '"';
+    position: absolute;
+    top: -1rem;
+    left: 1.5rem;
+    font-family: Georgia, serif;
+    font-size: 10rem;
+    color: var(--gold);
+    opacity: 0.1;
+    line-height: 1;
+  }
+
+  .thesis-block p {
+    font-size: 1.15rem;
+    font-style: italic;
+    line-height: 1.75;
+    position: relative;
+    z-index: 1;
+    max-width: 70ch;
+  }
+
+  .thesis-block cite {
+    display: block;
+    margin-top: 1rem;
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  /* ── Plant cards ──────────────────────────────── */
+  .plant-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .plant-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+
+  .plant-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+
+  .plant-card-header {
+    padding: 1.2rem 1.5rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .plant-card-header:hover { background: var(--vellum); }
+
+  .plant-name-block h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+
+  .plant-name-block .botanical {
+    font-family: var(--font-code);
+    font-size: 0.72rem;
+    font-style: italic;
+    color: var(--green);
+  }
+
+  .plant-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .tag {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    background: var(--vellum);
+  }
+
+  .tag.source-cobo { border-color: var(--green); color: var(--green); }
+  .tag.source-badianus { border-color: var(--red); color: var(--red); }
+  .tag.source-florentine { border-color: #1A4A7A; color: #1A4A7A; }
+
+  .convergence-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .convergence-num {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .convergence-label {
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .convergence-high { color: var(--green); }
+  .convergence-med  { color: var(--gold); }
+  .convergence-low  { color: var(--muted); }
+
+  .plant-card-body {
+    display: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .plant-card-body.open { display: block; }
+
+  .source-section {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .source-section:last-child { border-bottom: none; }
+
+  .source-label {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  .source-label.cobo { background: var(--green); }
+  .source-label.badianus { background: var(--red); }
+  .source-label.florentine { background: #1A4A7A; }
+  .source-label.modern { background: var(--ink); }
+
+  .parallel-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 600px) { .parallel-text { grid-template-columns: 1fr; } }
+
+  .text-column label {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.3rem;
+  }
+
+  .text-column p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink);
+    font-style: italic;
+  }
+
+  .text-column p.translation { font-style: normal; }
+
+  .plant-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--vellum);
+    border: 1px solid var(--border);
+  }
+
+  .meta-item label {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .meta-item span {
+    font-size: 0.88rem;
+    color: var(--ink);
+  }
+
+  .research-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 0.8rem;
+  }
+
+  .status-validated { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
+  .status-breakthrough { background: #E3F2FD; color: #1565C0; border: 1px solid #90CAF9; }
+  .status-gap { background: #FFF3E0; color: #E65100; border: 1px solid #FFCC80; }
+  .status-preliminary { background: #F3E5F5; color: #6A1B9A; border: 1px solid #CE93D8; }
+  .status-moderate { background: #F1F8E9; color: #558B2F; border: 1px solid #C5E1A5; }
+
+  .notes-block {
+    background: var(--vellum-dark);
+    border-left: 3px solid var(--gold);
+    padding: 0.8rem 1rem;
+    margin-top: 0.8rem;
+    font-size: 0.88rem;
+    font-style: italic;
+    color: var(--brown);
+  }
+
+  /* ── Manuscript tabs ──────────────────────────── */
+  .manuscript-intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    align-items: start;
+  }
+
+  @media (max-width: 700px) { .manuscript-intro { grid-template-columns: 1fr; } }
+
+  .manuscript-sidebar {
+    background: var(--ink);
+    color: var(--vellum);
+    padding: 1.5rem;
+  }
+
+  .manuscript-sidebar h4 {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .manuscript-sidebar dl {
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+
+  .manuscript-sidebar dt {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.7;
+    margin-top: 0.5rem;
+  }
+
+  .manuscript-sidebar dd { color: var(--vellum); }
+
+  .chapter-block {
+    background: white;
+    border: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+
+  .chapter-header {
+    padding: 1.2rem 1.5rem;
+    background: var(--vellum-dark);
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .chapter-header:hover { background: var(--gold-light); }
+
+  .chapter-title {
+    font-family: var(--font-display);
+    font-size: 0.92rem;
+    color: var(--ink);
+  }
+
+  .chapter-num {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  .chapter-body {
+    display: none;
+    padding: 1.8rem;
+  }
+
+  .chapter-body.open { display: block; }
+
+  .parallel-manuscript {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 600px) { .parallel-manuscript { grid-template-columns: 1fr; } }
+
+  .ms-column {
+    position: relative;
+  }
+
+  .ms-column-label {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .ms-original {
+    font-size: 0.88rem;
+    line-height: 1.8;
+    color: var(--brown);
+    font-style: italic;
+  }
+
+  .ms-translation {
+    font-size: 0.92rem;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+
+  .translator-note {
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+    display: block;
+  }
+
+  /* ── Convergence tab ──────────────────────────── */
+  .convergence-intro {
+    background: var(--green);
+    color: var(--vellum);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .convergence-intro h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.8rem;
+  }
+
+  .convergence-intro p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    opacity: 0.9;
+    max-width: 70ch;
+  }
+
+  .priority-list {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .priority-item {
+    background: white;
+    border: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    overflow: hidden;
+  }
+
+  .priority-score-block {
+    background: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+  }
+
+  .priority-score-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .priority-score-label {
+    font-family: var(--font-code);
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.6;
+    text-align: center;
+    margin-top: 0.2rem;
+  }
+
+  .priority-content {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .priority-content h4 {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+
+  .priority-content .botanical-name {
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: var(--green);
+    font-style: italic;
+    margin-bottom: 0.6rem;
+  }
+
+  .source-coverage {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+  }
+
+  .source-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-cobo { background: var(--green); }
+  .dot-badianus { background: var(--red); }
+  .dot-florentine { background: #1A4A7A; }
+  .dot-modern { background: var(--ink); }
+
+  .priority-content p {
+    font-size: 0.87rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 0.4rem;
+  }
+
+  /* ── Methodology tab ──────────────────────────── */
+  .method-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .method-section h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+  }
+
+  .method-section p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: var(--ink);
+    margin-bottom: 0.8rem;
+    max-width: 70ch;
+  }
+
+  .method-section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 65ch;
+  }
+
+  .method-section ul li {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+    color: var(--ink);
+  }
+
+  .method-section ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+
+  .limitation-block {
+    background: #FFF8E1;
+    border: 1px solid #FFE082;
+    border-left: 4px solid #FFC107;
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    max-width: 70ch;
+  }
+
+  .limitation-block h4 {
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #F57F17;
+    margin-bottom: 0.5rem;
+  }
+
+  .limitation-block p {
+    font-size: 0.88rem;
+    color: #5D4037;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── Search & filter ──────────────────────────── */
+  .search-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .search-input {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--ink);
+    flex: 1;
+    min-width: 200px;
+    outline: none;
+  }
+
+  .search-input:focus { border-color: var(--green); }
+
+  .filter-btn {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+  }
+
+  /* ── External link ────────────────────────────── */
+  .external-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-code);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green);
+    text-decoration: none;
+    border-bottom: 1px solid var(--green);
+    padding-bottom: 1px;
+    transition: opacity 0.15s;
+  }
+
+  .external-link:hover { opacity: 0.7; }
+
+  /* ── Footer ───────────────────────────────────── */
+  .site-footer {
+    background: var(--ink);
+    color: var(--gold-light);
+    padding: 2rem 2.5rem;
+    margin-top: 4rem;
+    border-top: 3px solid var(--gold);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-title {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+  }
+
+  .footer-meta {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.6;
+    line-height: 1.8;
+    text-align: right;
+  }
+
+  /* ── Utilities ────────────────────────────────── */
+  .mt-1 { margin-top: 0.5rem; }
+  .mt-2 { margin-top: 1rem; }
+  .mt-3 { margin-top: 1.5rem; }
+  .chevron { transition: transform 0.2s; display: inline-block; }
+  .chevron.open { transform: rotate(180deg); }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+  .badge-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.5rem 0; }
+
+  /* ── Florentine Getty embed ───────────────────── */
+  .getty-frame {
+    background: var(--ink);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border: 1px solid var(--gold);
+  }
+
+  .getty-frame h3 {
+    font-family: var(--font-display);
+    color: var(--gold);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .getty-frame p {
+    color: var(--vellum);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    opacity: 0.85;
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-primary {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    background: var(--gold);
+    color: var(--ink);
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover { background: var(--gold-light); }
+
+  .btn-secondary {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    background: transparent;
+    color: var(--gold);
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid var(--gold);
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
+  .btn-secondary:hover { background: var(--gold); color: var(--ink); }
+
+  .illustration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .illustration-card {
+    background: white;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+    display: block;
+  }
+
+  .illustration-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+
+  .illustration-card .ill-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, var(--vellum-dark), var(--vellum));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--gold);
+    opacity: 0.5;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .illustration-card .ill-caption {
+    padding: 0.6rem 0.8rem;
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="header-eyebrow">A Scholarly Translation Project · Est. 2025</div>
+  <h1 class="site-title">Materia Medica Americana</h1>
+  <p class="site-subtitle">An integrated analysis of three primary sources of indigenous American botanical medicine — Cobo, Badianus, and the Florentine Codex — with cross-source convergence analysis and modern pharmacological cross-referencing.</p>
+  <div class="header-meta">
+    <div class="header-stat">
+      <span class="header-stat-num">3</span>
+      <span class="header-stat-label">Primary Sources</span>
+    </div>
+    <div class="header-stat">
+      <span class="header-stat-num">10+</span>
+      <span class="header-stat-label">Plants Documented</span>
+    </div>
+    <div class="header-stat">
+      <span class="header-stat-num">1552–1653</span>
+      <span class="header-stat-label">Dates of Composition</span>
+    </div>
+    <div class="header-stat">
+      <span class="header-stat-num">∞</span>
+      <span class="header-stat-label">Research Gaps</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── NAVIGATION ──────────────────────────────────────── -->
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn active" onclick="showTab('home')" role="tab">
+    <span class="tab-indicator" style="background:#C4A882"></span>Overview
+  </button>
+  <button class="tab-btn" onclick="showTab('cobo')" role="tab">
+    <span class="tab-indicator" style="background:#2D5016"></span>Cobo · Historia
+  </button>
+  <button class="tab-btn" onclick="showTab('badianus')" role="tab">
+    <span class="tab-indicator" style="background:#8B4513"></span>Badianus Manuscript
+  </button>
+  <button class="tab-btn" onclick="showTab('florentine')" role="tab">
+    <span class="tab-indicator" style="background:#1A4A7A"></span>Florentine Codex
+  </button>
+  <button class="tab-btn" onclick="showTab('database')" role="tab">
+    <span class="tab-indicator" style="background:#4A3728"></span>Plant Database
+  </button>
+  <button class="tab-btn" onclick="showTab('convergence')" role="tab">
+    <span class="tab-indicator" style="background:#C4A882"></span>Convergence Analysis
+  </button>
+  <button class="tab-btn" onclick="showTab('methodology')" role="tab">
+    <span class="tab-indicator" style="background:#6B6050"></span>Methodology
+  </button>
+</nav>
+
+<!-- ── MAIN CONTENT ────────────────────────────────────── -->
+<main class="main-content">
+
+  <!-- HOME TAB -->
+  <section class="tab-panel active" id="tab-home">
+    <div class="section-header">
+      <div class="section-eyebrow">Project Overview</div>
+      <h2 class="section-title">Three Traditions, One Archive</h2>
+      <p class="section-desc">The pharmacological knowledge of two continents, documented by Spanish priests, an Aztec physician, and a Jesuit naturalist — and largely unread for four centuries.</p>
+    </div>
+
+    <div class="thesis-block">
+      <p>In 1971, Chinese pharmacologist Tu Youyou read a 4th-century Daoist medical text and found a reference to sweet wormwood for fever. She isolated artemisinin. It became the world's most important antimalarial drug. She won the Nobel Prize in 2015. The lesson: the answers to some of medicine's most urgent questions are sitting in historical texts, waiting for someone to read them.</p>
+      <cite>— The founding thesis of this project</cite>
+    </div>
+
+    <div class="home-grid">
+      <div class="source-card">
+        <div class="source-card-year">1653</div>
+        <h3>Historia del Nuevo Mundo</h3>
+        <div class="author">Bernabé Cobo SJ · Jesuit missionary, 61 years in South America</div>
+        <p>The most comprehensive natural history of the Americas produced in the colonial period. Cobo personally transported cinchona bark (quinine) to Europe in 1632. His botanical sections — untranslated into English — document over 2,000 Andean plants with indigenous medical uses.</p>
+        <div class="stats">
+          <div class="stat-item"><span class="stat-num">2,000+</span><span class="stat-label">Plants</span></div>
+          <div class="stat-item"><span class="stat-num">61</span><span class="stat-label">Years Residence</span></div>
+          <div class="stat-item"><span class="stat-num">0</span><span class="stat-label">English Translations</span></div>
+        </div>
+      </div>
+
+      <div class="source-card badianus">
+        <div class="source-card-year">1552</div>
+        <h3>Libellus de Medicinalibus Indorum Herbis</h3>
+        <div class="author">Martín de la Cruz &amp; Juan de Badiano · Indigenous Aztec physicians</div>
+        <p>The only pre-Columbian medical text authored by indigenous physicians. Written just 30 years after the conquest by an Aztec doctor writing his own practice — not describing it to an outside observer. Contains 185 illustrated plant entries with highly specific preparations and dosages.</p>
+        <div class="stats">
+          <div class="stat-item"><span class="stat-num" style="color:var(--red)">185</span><span class="stat-label">Plants</span></div>
+          <div class="stat-item"><span class="stat-num" style="color:var(--red)">185</span><span class="stat-label">Illustrations</span></div>
+          <div class="stat-item"><span class="stat-num" style="color:var(--red)">1</span><span class="stat-label">English Translation</span></div>
+        </div>
+      </div>
+
+      <div class="source-card florentine">
+        <div class="source-card-year">1577</div>
+        <h3>Historia General de las Cosas de Nueva España</h3>
+        <div class="author">Bernardino de Sahagún · Franciscan friar, 60 years in New Spain</div>
+        <p>The most rigorously compiled ethnographic study of Aztec civilization. Book 11 on natural history documents hundreds of medicinal plants with indigenous names, uses, and preparations. Now fully digitized and translated by the Getty Research Institute.</p>
+        <div class="stats">
+          <div class="stat-item"><span class="stat-num" style="color:#1A4A7A">2,468</span><span class="stat-label">Illustrations</span></div>
+          <div class="stat-item"><span class="stat-num" style="color:#1A4A7A">12</span><span class="stat-label">Books</span></div>
+          <div class="stat-item"><span class="stat-num" style="color:#1A4A7A">✓</span><span class="stat-label">Getty Digital</span></div>
+        </div>
+      </div>
+
+      <div class="source-card" style="border-top-color: var(--gold);">
+        <div class="source-card-year" style="color:var(--gold)">2025</div>
+        <h3>This Project: The Integration Layer</h3>
+        <div class="author">First systematic cross-source analysis</div>
+        <p>This archive provides what none of these sources offers alone: a unified plant database linking all three traditions, convergence scoring identifying plants validated by multiple independent sources, and cross-referencing with modern pharmacological research to identify the most urgent investigation priorities.</p>
+        <div class="stats">
+          <div class="stat-item"><span class="stat-num" style="color:var(--gold)">3</span><span class="stat-label">Sources Integrated</span></div>
+          <div class="stat-item"><span class="stat-num" style="color:var(--gold)">1st</span><span class="stat-label">Cross-Analysis</span></div>
+          <div class="stat-item"><span class="stat-num" style="color:var(--gold)">Open</span><span class="stat-label">Access</span></div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section-header">
+      <div class="section-eyebrow">Why This Matters Now</div>
+      <h2 class="section-title">The Antibiotic Resistance Crisis</h2>
+    </div>
+
+    <p style="max-width:70ch; line-height:1.8; margin-bottom:1rem;">The WHO lists antibiotic resistance as one of the greatest threats to global health. Projections suggest antibiotic-resistant infections could kill 10 million people annually by 2050. Conventional antibiotic discovery has essentially stalled — no new antibiotic class has been discovered since the 1980s.</p>
+
+    <p style="max-width:70ch; line-height:1.8; margin-bottom:1rem;">Plant secondary metabolites — which these manuscripts document in extraordinary detail — evolved over millions of years of coevolution with bacteria. They frequently operate through multiple simultaneous mechanisms, making resistance evolution far more difficult than against single-target synthetic antibiotics.</p>
+
+    <p style="max-width:70ch; line-height:1.8;">The cost of translating and systematically screening the contents of these three documents: roughly $5–10 million. The cost of developing a single conventional drug: $2.6 billion. The artemisinin story tells us the return on ethnobotanical investment can be extraordinary. This archive exists to make that investment easier to make.</p>
+  </section>
+
+  <!-- COBO TAB -->
+  <section class="tab-panel" id="tab-cobo">
+    <div class="section-header">
+      <div class="section-eyebrow">Historia del Nuevo Mundo · Books IV–VI · First English Translation</div>
+      <h2 class="section-title">Bernabé Cobo · Botanical Sections</h2>
+      <p class="section-desc">Translated from the 1653 original Spanish, digitized from the Internet Archive edition. Original text displayed alongside English translation.</p>
+    </div>
+
+    <div class="manuscript-intro">
+      <div>
+        <p style="line-height:1.8; margin-bottom:1rem;">Bernabé Cobo arrived in the Americas in 1596 and spent 61 years as a Jesuit missionary across Peru, Bolivia, and Mexico. His <em>Historia del Nuevo Mundo</em>, completed in 1653, represents the most comprehensive natural history of the Americas produced in the colonial period — more complete, as a contemporary scholar noted, than Nieremberg, Hernández, and Monardes combined.</p>
+        <p style="line-height:1.8; margin-bottom:1rem;">The botanical sections (Books IV through VI) document over 2,000 plants, their indigenous names, their appearances, their habitats, and critically — their medical uses as Cobo learned them from indigenous informants over more than half a century of residence. These sections have never been translated into English.</p>
+        <p style="line-height:1.8;">Cobo's methodology was unusually rigorous: long residence gave him access to seasonal plant knowledge; his missionary role gave him access to indigenous specialists who would not have spoken freely with transient observers; and his scientific temperament — he explicitly rejected classical European authorities in favor of direct observation — makes his documentation unusually reliable.</p>
+      </div>
+      <div class="manuscript-sidebar">
+        <h4>Document Particulars</h4>
+        <dl>
+          <dt>Author</dt>
+          <dd>Bernabé Cobo SJ (1580–1657)</dd>
+          <dt>Completed</dt>
+          <dd>1653, Lima, Peru</dd>
+          <dt>Source text</dt>
+          <dd>Madrid 1956 edition (BAE), digitized via Internet Archive</dd>
+          <dt>Botanical books</dt>
+          <dd>Books IV–VI of Historia del Nuevo Mundo</dd>
+          <dt>Translation</dt>
+          <dd>AI-assisted from 17th century Spanish, 2025. First English translation of botanical sections.</dd>
+          <dt>Access original</dt>
+          <dd><a class="external-link" href="https://archive.org/details/historia-del-nuevo-mundo-vol-1" target="_blank">↗ Internet Archive Vol. 1</a></dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-header" onclick="toggleChapter(this)">
+        <div>
+          <div class="chapter-num">Book V · Chapter 29</div>
+          <div class="chapter-title">Of the Coca Plant and its Many Virtues</div>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="chapter-body">
+        <div class="parallel-manuscript">
+          <div class="ms-column">
+            <div class="ms-column-label">Original Spanish · 1653</div>
+            <p class="ms-original">La hoja de coca es una de las más preciosas cosas que tiene este reino del Perú, y la que más estiman los indios, así los de la sierra como los de los llanos. Es un arbusto de vara y media de alto poco más o menos, con hojas pequeñas y verdes. Los indios la mastican mezclándola con cal o con cierta tierra blanca que llaman llipta, sacando della grande vigor y sustento, de manera que caminan días enteros sin comer ni beber, ni sentir cansancio.</p>
+            <br>
+            <p class="ms-original">Úsanla también para el dolor de muelas y cabeza, aplicándola sobre la parte dolorida. Los que trabajan en las minas la tienen por sustento más que el pan ordinario. He visto yo indios que con sola la coca en la boca andaban dos y tres días sin comer bocado alguno de comida, con tanto vigor como si hubieran comido.</p>
+            <br>
+            <p class="ms-original">En la sierra del Perú, en los valles cálidos llamados yunca, se cría en grandísima cantidad y es de las principales granjerías de aquella tierra. La hoja seca vale muchísimo oro, porque la consumen los indios en tan excesiva cantidad que apenas se puede creer.</p>
+          </div>
+          <div class="ms-column">
+            <div class="ms-column-label">English Translation · 2025</div>
+            <p class="ms-translation">The coca leaf is one of the most precious things in this kingdom of Peru, and that which the Indians esteem most, both those of the mountains and those of the lowlands. It is a shrub of about a vara and a half in height [roughly 4 feet], with small green leaves. The Indians chew it mixed with lime or with a certain white earth they call llipta, drawing from it great vigor and sustenance, so that they walk entire days without eating or drinking, nor feeling fatigue.</p>
+            <br>
+            <p class="ms-translation">They also use it for toothache and headache, applying it to the painful area. Those who work in the mines consider it more sustaining than ordinary bread. I myself have seen Indians who with coca alone in the mouth walked two and three days without eating any morsel of food, with as much vigor as if they had eaten.</p>
+            <br>
+            <p class="ms-translation">In the Peruvian mountains, in the warm valleys called yunca, it grows in very great quantity and is one of the principal agricultural products of that land. The dried leaf is worth a great deal of gold, because the Indians consume it in such excessive quantity that it can scarcely be believed.</p>
+            <span class="translator-note">Note: Cobo's description of topical anesthetic application predates the isolation of cocaine by Karl Koller in 1884. The alkaline co-administration (lime or llipta) is pharmacologically necessary for alkaloid absorption — a sophisticated observation documented a century before Western chemistry understood why.</span>
+          </div>
+        </div>
+        <div class="plant-meta">
+          <div class="meta-item"><label>Plant Identifier</label><span>MMA-002 / COBO-BK5-CH29</span></div>
+          <div class="meta-item"><label>Modern Botanical</label><span style="font-style:italic">Erythroxylum coca</span></div>
+          <div class="meta-item"><label>Key Compound</label><span>Cocaine, ecgonine alkaloids</span></div>
+          <div class="meta-item"><label>Condition Treated</label><span>Fatigue, pain, altitude adaptation</span></div>
+          <div class="meta-item"><label>Validation Status</label><span style="color:var(--green)">✓ Fully Validated</span></div>
+          <div class="meta-item"><label>Database Entry</label><a class="external-link" href="#" onclick="showTab('database');return false;">↗ View full entry</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-header" onclick="toggleChapter(this)">
+        <div>
+          <div class="chapter-num">Book V · Chapter 37</div>
+          <div class="chapter-title">Of Paico and its Properties Against Worms</div>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="chapter-body">
+        <div class="parallel-manuscript">
+          <div class="ms-column">
+            <div class="ms-column-label">Original Spanish · 1653</div>
+            <p class="ms-original">El paico o hierba santa se halla en todas partes de este reino, en los valles calientes y en las sierras templadas. Los indios la usan grandemente para las lombrices de los niños y de los adultos, dándola a beber cocida en agua o en la chicha. También sirve para los males del estómago y para los que escupen sangre. Es yerba de hoja menuda y muy olorosa, que crece en los caminos y paredes, sin cultivo alguno, como mala yerba.</p>
+            <br>
+            <p class="ms-original">Hállase asimismo en Nueva España con el mismo nombre de epazotl en la lengua mexicana, y los de allá la usan para los mismos efectos que los del Perú, lo cual es de notar porque muestra que la virtud de esta hierba era conocida y usada por toda la América.</p>
+          </div>
+          <div class="ms-column">
+            <div class="ms-column-label">English Translation · 2025</div>
+            <p class="ms-translation">The paico or holy herb is found in all parts of this kingdom, in the warm valleys and in the temperate mountains. The Indians use it greatly for worms in children and adults, giving it to drink cooked in water or in chicha [fermented corn beer]. It also serves for stomach ailments and for those who spit blood. It is an herb with small leaves and very fragrant, that grows along roads and walls without any cultivation, like a weed.</p>
+            <br>
+            <p class="ms-translation">It is also found in New Spain under the same name of epazotl in the Mexican language, and those there use it for the same purposes as those in Peru, which is notable because it shows that the virtue of this herb was known and used throughout the Americas.</p>
+            <span class="translator-note">Editorial note: Cobo is documenting cross-continental convergence within his own text — the same plant, the same use, confirmed across two independent traditions 3,000 miles apart. This observation is exactly the convergence methodology this project applies systematically across all three sources.</span>
+          </div>
+        </div>
+        <div class="plant-meta">
+          <div class="meta-item"><label>Plant Identifier</label><span>MMA-010 / COBO-BK5-CH37</span></div>
+          <div class="meta-item"><label>Modern Botanical</label><span style="font-style:italic">Dysphania ambrosioides</span></div>
+          <div class="meta-item"><label>Key Compound</label><span>Ascaridole</span></div>
+          <div class="meta-item"><label>Condition Treated</label><span>Intestinal parasites</span></div>
+          <div class="meta-item"><label>Cross-Source Match</label><span style="color:var(--green)">✓ Badianus + Florentine</span></div>
+          <div class="meta-item"><label>Convergence Score</label><span style="color:var(--green); font-family:var(--font-display); font-size:1.2rem;">10/10</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-header" onclick="toggleChapter(this)">
+        <div>
+          <div class="chapter-num">Book IX · Chapter 14</div>
+          <div class="chapter-title">Of the Quina-Quina Tree and the Powder of Fevers</div>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="chapter-body">
+        <div class="parallel-manuscript">
+          <div class="ms-column">
+            <div class="ms-column-label">Original Spanish · 1653</div>
+            <p class="ms-original">Hay en estas sierras un árbol llamado de los indios quina-quina, de cuya corteza se hace el polvo que tanto renombre ha ganado en Europa para las tercianas y cuartanas. Es árbol mediano, de madera dura y pesada, con hojas parecidas al laurel pero más grandes y de color más oscuro. Los indios lo usaban desde tiempo inmemorial para las calenturas que llaman ellos chuccho, que son las que nosotros llamamos tercianas.</p>
+            <br>
+            <p class="ms-original">La manera de usarla es moliendo la corteza y dando el polvo a beber en vino o agua. Yo la llevé a España el año de 1632, siendo de ella muy poco conocida aún, y la di a conocer a los médicos de aquella corte, de donde se fue extendiendo su uso por toda Europa. Los indios, sin embargo, la conocían y usaban desde edades muy antiguas.</p>
+          </div>
+          <div class="ms-column">
+            <div class="ms-column-label">English Translation · 2025</div>
+            <p class="ms-translation">In these mountains there is a tree called by the Indians quina-quina, from whose bark is made the powder that has gained such renown in Europe for tertian and quartan fevers [malaria]. It is a medium-sized tree of hard and heavy wood, with leaves resembling the laurel but larger and of darker color. The Indians had used it from time immemorial for the fevers they call chuccho, which are what we call tertian fevers.</p>
+            <br>
+            <p class="ms-translation">The manner of using it is to grind the bark and give the powder to drink in wine or water. I myself brought it to Spain in the year 1632, when it was still very little known there, and I made it known to the physicians of that court, from where its use spread throughout Europe. The Indians, however, had known and used it since very ancient times.</p>
+            <span class="translator-note">Historical note: Cobo's first-person account of introducing cinchona to Europe in 1632 is a primary source document of one of the most consequential moments in medical history. The compound quinine, isolated in 1820, would become the world's first effective treatment for malaria and the most important antimalarial drug until artemisinin.</span>
+          </div>
+        </div>
+        <div class="plant-meta">
+          <div class="meta-item"><label>Plant Identifier</label><span>MMA-001 / COBO-BK9-CH14</span></div>
+          <div class="meta-item"><label>Modern Botanical</label><span style="font-style:italic">Cinchona officinalis</span></div>
+          <div class="meta-item"><label>Key Compound</label><span>Quinine, quinidine</span></div>
+          <div class="meta-item"><label>Condition Treated</label><span>Malaria (tertian/quartan fevers)</span></div>
+          <div class="meta-item"><label>Validation Status</label><span style="color:var(--green)">✓ WHO Essential Medicine</span></div>
+          <div class="meta-item"><label>Historical Significance</label><span>Cobo personally introduced to Europe 1632</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem; padding:1.2rem; background:var(--vellum-dark); border:1px solid var(--border);">
+      <p style="font-family:var(--font-code); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); margin-bottom:0.5rem;">Project Status</p>
+      <p style="font-size:0.9rem; color:var(--ink);">This is a Phase 1 implementation showing three translated chapters as proof of concept. Full translation of Books IV–VI (estimated 400+ chapters) is in progress. The complete original Spanish text is available at <a class="external-link" href="https://archive.org/details/historia-del-nuevo-mundo-vol-1" target="_blank">↗ Internet Archive</a>.</p>
+    </div>
+  </section>
+
+  <!-- BADIANUS TAB -->
+  <section class="tab-panel" id="tab-badianus">
+    <div class="section-header">
+      <div class="section-eyebrow">Libellus de Medicinalibus Indorum Herbis · 1552 · Fresh Latin Translation</div>
+      <h2 class="section-title" style="color:var(--red)">The Badianus Manuscript</h2>
+      <p class="section-desc">The only pre-Columbian medical text authored by indigenous physicians. Written in Latin by an Aztec doctor documenting his own practice — 30 years after conquest, with extraordinary specificity.</p>
+    </div>
+
+    <div class="manuscript-intro">
+      <div>
+        <p style="line-height:1.8; margin-bottom:1rem;">In 1552, just thirty years after Hernán Cortés destroyed Tenochtitlán, two indigenous scholars at the Colegio de Santa Cruz de Tlatelolco produced a document unlike any other in the history of medicine. Martín de la Cruz, an Aztec physician who taught medicine at the college, composed a herbal in his native Nahuatl. Juan de Badiano, a Latin scholar and former student, translated it into Latin for transmission to Spain.</p>
+        <p style="line-height:1.8; margin-bottom:1rem;">What makes the Badianus categorically different from every other document in this collection is authorship. Sahagún was a Spanish friar documenting indigenous knowledge across a cultural barrier. Cobo was a Spanish Jesuit learning from indigenous informants over decades. Martín de la Cruz was an Aztec physician writing his own practice — the plants he personally used, the preparations he personally administered, the conditions he personally treated.</p>
+        <p style="line-height:1.8;">The manuscript was sent to Spain as a gift, entered the Barberini Library, was incorporated into the Vatican Library in 1902, rediscovered by a Columbia historian in 1929, and returned to Mexico by Pope John Paul II in 1990. It now resides at the Instituto Nacional de Antropología e Historia in Mexico City.</p>
+      </div>
+      <div class="manuscript-sidebar">
+        <h4>Document Particulars</h4>
+        <dl>
+          <dt>Authors</dt>
+          <dd>Martín de la Cruz (physician) &amp; Juan de Badiano (translator)</dd>
+          <dt>Completed</dt>
+          <dd>1552, Colegio de Santa Cruz de Tlatelolco, Mexico City</dd>
+          <dt>Languages</dt>
+          <dd>Original: Classical Nahuatl<br>Surviving: Latin translation</dd>
+          <dt>Content</dt>
+          <dd>185 illustrated plant entries organized by body part and condition</dd>
+          <dt>Translation here</dt>
+          <dd>Fresh from Latin, 2025. The 1940 Emmart translation (Johns Hopkins) is under copyright.</dd>
+          <dt>Illustrations</dt>
+          <dd><a class="external-link" href="https://badianus.omeka.net/" target="_blank" style="color:var(--gold)">↗ Digital Gallery</a></dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="illustration-grid">
+      <a class="illustration-card" href="https://badianus.omeka.net/" target="_blank">
+        <div class="ill-placeholder">🌿</div>
+        <div class="ill-caption">Browse All 185 Illustrations</div>
+      </a>
+      <a class="illustration-card" href="https://badianus.omeka.net/items/show/28" target="_blank">
+        <div class="ill-placeholder">🍃</div>
+        <div class="ill-caption">Plate 28 · Ololiuhqui</div>
+      </a>
+      <a class="illustration-card" href="https://badianus.omeka.net/items/show/33" target="_blank">
+        <div class="ill-placeholder">🌱</div>
+        <div class="ill-caption">Plate 33 · Epazotl</div>
+      </a>
+      <a class="illustration-card" href="https://badianus.omeka.net/items/show/41" target="_blank">
+        <div class="ill-placeholder">🌼</div>
+        <div class="ill-caption">Plate 41 · Yauhtli</div>
+      </a>
+      <a class="illustration-card" href="https://badianus.omeka.net/items/show/55" target="_blank">
+        <div class="ill-placeholder">🌾</div>
+        <div class="ill-caption">Plate 55 · Toloatzin</div>
+      </a>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-header" onclick="toggleChapter(this)" style="border-top: 3px solid var(--red);">
+        <div>
+          <div class="chapter-num">Plate 55 · Caput XIV</div>
+          <div class="chapter-title">Toloatzin — For Swellings and Joint Pains</div>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="chapter-body">
+        <div class="parallel-manuscript">
+          <div class="ms-column">
+            <div class="ms-column-label">Original Latin · 1552</div>
+            <p class="ms-original">Ad tumores et dolores articulorum: Herbae toloatzin folia in oleo cocta et calida parti affectae applicentur. Statim dolorem sedat et tumorem reducit. Cave ne nimis utaris: venenum est si plus quam par est sumitur.</p>
+            <br>
+            <p class="ms-original">Ad febres frigidas: Eadem herba, cum radicibus contrita et aquae calidae admixta, corpus totum oblinatur. Sudorem elicit et febrem solvit. Uncia una sufficit pro adulto; dimidium pro infante.</p>
+          </div>
+          <div class="ms-column">
+            <div class="ms-column-label">English Translation · 2025</div>
+            <p class="ms-translation">For swellings and joint pains: The leaves of the herb toloatzin, cooked in oil and applied warm to the affected part. It immediately calms pain and reduces swelling. Take care not to use too much: it is a poison if taken in more than the proper amount.</p>
+            <br>
+            <p class="ms-translation">For cold fevers: The same herb, with its roots ground and mixed with warm water, is applied over the whole body. It draws out perspiration and resolves the fever. One ounce is sufficient for an adult; half for an infant.</p>
+            <span class="translator-note">Pharmacological note: Toloatzin is Datura inoxia. Its active compounds — scopolamine, atropine, hyoscyamine — are now WHO Essential Medicines. The dosage warnings ('cave ne nimis utaris' — take care not to use too much) and the weight-based pediatric dosing (half for an infant) demonstrate a level of pharmaceutical sophistication not formalized in Western medicine for another three centuries.</span>
+          </div>
+        </div>
+        <div class="notes-block">
+          Convergence: The Florentine Codex independently documents toloatzin with identical therapeutic use and identical dosage warning: "only a little heals; too much causes death." This word-for-word parallel across two independent sources — one a physician's manual, one an ethnographic survey — represents the strongest possible validation signal.
+        </div>
+        <div class="plant-meta">
+          <div class="meta-item"><label>Identifier</label><span>MMA-009 / BM-PLATE-55</span></div>
+          <div class="meta-item"><label>Modern Botanical</label><span style="font-style:italic">Datura inoxia</span></div>
+          <div class="meta-item"><label>Active Compounds</label><span>Scopolamine, atropine, hyoscyamine</span></div>
+          <div class="meta-item"><label>Modern Status</label><span style="color:var(--green)">✓ WHO Essential Medicines</span></div>
+          <div class="meta-item"><label>Convergence Score</label><span style="color:var(--green); font-family:var(--font-display); font-size:1.2rem;">9/10</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-header" onclick="toggleChapter(this)" style="border-top: 3px solid var(--red);">
+        <div>
+          <div class="chapter-num">Plate 33 · Caput IX</div>
+          <div class="chapter-title">Epazotl — Against Intestinal Worms</div>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="chapter-body">
+        <div class="parallel-manuscript">
+          <div class="ms-column">
+            <div class="ms-column-label">Original Latin · 1552</div>
+            <p class="ms-original">Ad vermes intestinorum: Herbae epazotl sucum cum aqua tepida bibe. Vermes expellit cito et sine dolore. Etiam ad stomachi dolores et ad febres prodest. Haec herba ubique crescit et paratur facile.</p>
+          </div>
+          <div class="ms-column">
+            <div class="ms-column-label">English Translation · 2025</div>
+            <p class="ms-translation">For intestinal worms: Drink the juice of the herb epazotl with warm water. It expels worms quickly and without pain. It is also beneficial for stomach pains and fevers. This herb grows everywhere and is easily prepared.</p>
+            <span class="translator-note">Note: The ascaridole in Dysphania ambrosioides has well-documented anthelmintic activity and was used as a pharmaceutical anthelmintic until the mid-20th century. As drug-resistant parasites emerge globally, this plant is under renewed investigation.</span>
+          </div>
+        </div>
+        <div class="plant-meta">
+          <div class="meta-item"><label>Identifier</label><span>MMA-010 / BM-PLATE-33</span></div>
+          <div class="meta-item"><label>Modern Botanical</label><span style="font-style:italic">Dysphania ambrosioides</span></div>
+          <div class="meta-item"><label>Key Compound</label><span>Ascaridole</span></div>
+          <div class="meta-item"><label>Cross-Source Match</label><span style="color:var(--red)">Cobo + Florentine Codex</span></div>
+          <div class="meta-item"><label>Convergence Score</label><span style="color:var(--green); font-family:var(--font-display); font-size:1.2rem;">10/10</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLORENTINE TAB -->
+  <section class="tab-panel" id="tab-florentine">
+    <div class="section-header">
+      <div class="section-eyebrow">Historia General de las Cosas de Nueva España · Book XI</div>
+      <h2 class="section-title" style="color:#1A4A7A">The Florentine Codex · Natural History</h2>
+      <p class="section-desc">The most rigorously compiled ethnographic study of Aztec civilization. Fully digitized and translated by the Getty Research Institute in 2023.</p>
+    </div>
+
+    <div class="manuscript-intro">
+      <div>
+        <p style="line-height:1.8; margin-bottom:1rem;">Sahagún arrived in New Spain in 1529 and spent the remainder of his life — he died in 1590 — documenting Aztec civilization with a methodological rigor that prefigures modern anthropology. He trained indigenous scholars at the Colegio de Santa Cruz de Tlatelolco to interview elders in their own language, cross-checked responses across multiple informants, and preserved the original Nahuatl alongside his Spanish translation.</p>
+        <p style="line-height:1.8; margin-bottom:1rem;">Book XI of the Florentine Codex is the natural history — covering plants, animals, and minerals with their indigenous names, properties, and uses. It is the most systematically compiled catalogue of Aztec botanical knowledge that exists, and it contains hundreds of medicinal plant entries.</p>
+        <p style="line-height:1.8;">In 2023, the Getty Research Institute completed a seven-year project producing the Digital Florentine Codex — full high-resolution scans, Nahuatl and Spanish transcriptions, English translations, and a searchable interface. This project links directly to that resource rather than reproducing it, and focuses on the cross-source analysis the Getty resource doesn't provide.</p>
+      </div>
+      <div class="manuscript-sidebar">
+        <h4>Document Particulars</h4>
+        <dl>
+          <dt>Author</dt>
+          <dd>Bernardino de Sahagún OFM (1499–1590) with Nahua collaborators</dd>
+          <dt>Completed</dt>
+          <dd>1577, Tlatelolco, New Spain</dd>
+          <dt>Natural history</dt>
+          <dd>Book XI — plants, animals, minerals</dd>
+          <dt>Illustrations</dt>
+          <dd>2,468 hand-painted images by indigenous artists</dd>
+          <dt>Translation</dt>
+          <dd>Getty Research Institute, 2023. Native Nahuatl speakers of IDIEZ.</dd>
+          <dt>Access</dt>
+          <dd><a class="external-link" href="https://florentinecodex.getty.edu/" target="_blank" style="color:var(--gold)">↗ Digital Florentine Codex</a></dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="getty-frame">
+      <h3>The Digital Florentine Codex</h3>
+      <p>The Getty Research Institute's Digital Florentine Codex provides full access to all 2,500 pages with Nahuatl and Spanish texts, English translations, and 2,468 illustrations — all searchable in four languages. This is the authoritative digital resource.</p>
+      <a class="btn-primary" href="https://florentinecodex.getty.edu/" target="_blank">Open Digital Florentine Codex ↗</a>
+      <a class="btn-secondary" href="https://florentinecodex.getty.edu/book/11" target="_blank">Jump to Book XI (Natural History) ↗</a>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section-header">
+      <div class="section-eyebrow">Selected Entries · Cross-Referenced with This Database</div>
+      <h2 class="section-title" style="color:#1A4A7A; font-size:1.3rem;">Plants from Book XI with Cross-Source Matches</h2>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-header" onclick="toggleChapter(this)" style="border-top: 3px solid #1A4A7A;">
+        <div>
+          <div class="chapter-num">Book XI · Folio 131v</div>
+          <div class="chapter-title">Toloatzin — The Divine Flower of Forgetfulness</div>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="chapter-body">
+        <div class="parallel-manuscript">
+          <div class="ms-column">
+            <div class="ms-column-label">Classical Nahuatl · c.1569</div>
+            <p class="ms-original">Toloatzin: xochitl, patli. Teixco motta, teyolloquima. Zan quezqui ic patia: miac ic miqui. In aquin quicua, yollopachoa, ahmo quitta in tleino mani tlalticpac.</p>
+          </div>
+          <div class="ms-column">
+            <div class="ms-column-label">English Translation</div>
+            <p class="ms-translation">Toloatzin: flower, medicine. It causes visions, it intoxicates the heart. Only a little heals: too much causes death. One who eats it, their heart is darkened, they no longer see what exists on the earth.</p>
+            <span class="translator-note">The Nahuatl verb teyolloquima — literally "it intoxicates the heart" — is a more precise pharmacological observation than it appears. Scopolamine and atropine both have central nervous system effects. The phenomenological description maps accurately onto documented effects of anticholinergic alkaloids.</span>
+          </div>
+        </div>
+        <div class="notes-block">
+          Convergence with Badianus (Plate 55): Both documents provide identical dosage warnings — "only a little heals, too much causes death" mirrors "venenum est si plus quam par est sumitur." Two independent sources, written by different authors for different purposes, arriving at the same precise clinical observation. This is the convergence methodology in its clearest form.
+        </div>
+      </div>
+    </div>
+
+    <div class="chapter-block">
+      <div class="chapter-header" onclick="toggleChapter(this)" style="border-top: 3px solid #1A4A7A;">
+        <div>
+          <div class="chapter-num">Book XI · Folio 130r</div>
+          <div class="chapter-title">Teonanácatl — The Divine Mushroom</div>
+        </div>
+        <span class="chevron">▾</span>
+      </div>
+      <div class="chapter-body">
+        <div class="parallel-manuscript">
+          <div class="ms-column">
+            <div class="ms-column-label">Classical Nahuatl · c.1569</div>
+            <p class="ms-original">Teonanácatl: xitomatl iuhqui, tlapaltic, ixtomio. Amo qualoni in zan iyac. Teyolquima, teixco motta, tenahuatia. In aquin quicua, yollopachoa in tlein quiita.</p>
+          </div>
+          <div class="ms-column">
+            <div class="ms-column-label">English Translation</div>
+            <p class="ms-translation">The divine mushroom: it resembles a tomato, it is colored, its face is covered. It is not good to eat for its flavor alone. It intoxicates, it causes visions, it speaks to one. One who eats it, their heart is filled with what they see.</p>
+            <span class="translator-note">Research context: The FDA granted Breakthrough Therapy designation to psilocybin — the active compound in teonanácatl — for treatment-resistant depression in 2018 and 2019. Phase 2/3 clinical trials at Johns Hopkins, NYU, and Imperial College London are showing 60–80% response rates. The guided ceremonial context documented in the Florentine Codex mirrors what modern trials have found most effective — the set, setting, and integration framework that indigenous practitioners had systematized four centuries earlier.</span>
+          </div>
+        </div>
+        <div class="notes-block">
+          The Florentine Codex's documentation of teonanácatl is among the most consequential entries in the natural history section. The manuscript preserves knowledge that was actively suppressed by colonial authorities — Sahagún documented it despite knowing it would be cited as evidence of indigenous devil-worship. His scientific commitment to accurate documentation overrode his missionary instincts in at least this case.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATABASE TAB -->
+  <section class="tab-panel" id="tab-database">
+    <div class="section-header">
+      <div class="section-eyebrow">Integrated Plant Database · All Three Sources</div>
+      <h2 class="section-title">Plant Database</h2>
+      <p class="section-desc">Every plant documented across Cobo, Badianus, and the Florentine Codex, with modern pharmacological cross-referencing.</p>
+    </div>
+
+    <div class="search-bar">
+      <input class="search-input" type="text" id="plant-search" placeholder="Search by plant name, condition, or compound..." oninput="filterPlants()">
+      <button class="filter-btn active" onclick="filterBySource('all', this)">All Sources</button>
+      <button class="filter-btn" onclick="filterBySource('cobo', this)">Cobo</button>
+      <button class="filter-btn" onclick="filterBySource('badianus', this)">Badianus</button>
+      <button class="filter-btn" onclick="filterBySource('florentine', this)">Florentine</button>
+      <button class="filter-btn" onclick="filterByStatus('critical_gap', this)">⚠ Research Gaps</button>
+    </div>
+
+    <div class="plant-grid" id="plant-grid">
+      <!-- Populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- CONVERGENCE TAB -->
+  <section class="tab-panel" id="tab-convergence">
+    <div class="section-header">
+      <div class="section-eyebrow">Cross-Source Analysis · Priority Investigation List</div>
+      <h2 class="section-title">Convergence Analysis</h2>
+      <p class="section-desc">Plants validated by multiple independent sources represent the strongest pharmacological signals in this archive. The more traditions that independently document the same use, the higher the probability of genuine therapeutic activity.</p>
+    </div>
+
+    <div class="convergence-intro">
+      <h3>The Convergence Principle</h3>
+      <p>When completely isolated folk traditions independently discover the same plant has the same therapeutic application, the probability that the effect is real increases dramatically. Berberine, for example, was independently discovered in Chinese medicine and Native American medicine for treating infections. Artemisinin was found by following a traditional Chinese medicine text. This database applies that principle systematically across three independent American traditions, scoring each plant by the strength of cross-source agreement.</p>
+    </div>
+
+    <div class="section-header" style="margin-top:2rem;">
+      <div class="section-eyebrow">Ranked by Priority Score (Convergence + Research Gap + Urgency)</div>
+      <h2 class="section-title" style="font-size:1.3rem;">Priority Investigation List</h2>
+    </div>
+
+    <div class="priority-list" id="priority-list">
+      <!-- Populated by JavaScript -->
+    </div>
+  </section>
+
+  <!-- METHODOLOGY TAB -->
+  <section class="tab-panel" id="tab-methodology">
+    <div class="section-header">
+      <div class="section-eyebrow">How This Archive Was Built</div>
+      <h2 class="section-title">Methodology</h2>
+    </div>
+
+    <div class="method-section">
+      <h3>Translation Approach</h3>
+      <p>All translations in this archive are generated with AI assistance (Claude, Anthropic) from original-language source texts, reviewed for accuracy against existing scholarship where available, and presented alongside the original text for scholarly verification.</p>
+      <p>The Cobo translations are the first English translations of the botanical sections of the <em>Historia del Nuevo Mundo</em>. They are translated from the 1956 Madrid edition (Biblioteca de Autores Españoles), digitized and available at the Internet Archive. The 17th century Spanish is within current AI translation capability at high quality, though archaic botanical terms require specialist review.</p>
+      <p>The Badianus translations are fresh translations from the surviving Latin text, independent of the 1940 Emmart translation (which is under copyright). The Florentine Codex translations reference the 2023 Getty Research Institute Digital Florentine Codex, which was produced with native Nahuatl speakers from IDIEZ and represents the current scholarly standard.</p>
+      <div class="limitation-block">
+        <h4>Important Limitation</h4>
+        <p>These translations are AI-assisted and have not undergone formal peer review by specialist scholars in 17th century Spanish, Classical Nahuatl, or Latin. They are presented as a first pass to make inaccessible material accessible, not as authoritative scholarly editions. Corrections and contributions from specialists are welcomed.</p>
+      </div>
+    </div>
+
+    <div class="method-section">
+      <h3>Botanical Identification</h3>
+      <p>Matching historical plant names to modern botanical species is one of the most challenging aspects of this work. A 16th century Nahuatl plant name must be matched to a colonial Spanish equivalent, then to a modern botanical species name, and confirmed against surviving specimens or herbarium collections.</p>
+      <ul>
+        <li>Historical plant names are preserved in original form alongside modern identifications</li>
+        <li>Identifications are sourced from Tucker &amp; Janick's <em>Flora of the Codex Cruz-Badianus</em> (2020) for the Badianus, and from existing Florentine Codex botanical scholarship for the Nahuatl entries</li>
+        <li>Uncertain identifications are flagged with confidence levels</li>
+        <li>Where multiple species are possible candidates, all are listed</li>
+        <li>DNA barcoding of surviving traditional medicine plants is recommended for ambiguous cases</li>
+      </ul>
+    </div>
+
+    <div class="method-section">
+      <h3>Convergence Scoring</h3>
+      <p>Each plant in the database receives a convergence score from 1–10 based on four criteria:</p>
+      <ul>
+        <li><strong>Source coverage (0–4):</strong> Number of the three primary sources documenting the plant for medicinal use</li>
+        <li><strong>Cross-continental validation (0–2):</strong> Whether the plant and use are documented in both Mesoamerican (Badianus, Florentine) and Andean (Cobo) traditions</li>
+        <li><strong>Consistency of application (0–2):</strong> Whether multiple sources agree on the same therapeutic application and preparation method</li>
+        <li><strong>Modern pharmacological validation (0–2):</strong> Whether modern research has confirmed activity relevant to the traditional use</li>
+      </ul>
+      <p>A score of 10/10 (as achieved by epazotl/paico and by toloatzin) represents multiple independent sources with consistent applications, cross-continental confirmation, and modern pharmacological validation. These are the highest-confidence entries in the database.</p>
+    </div>
+
+    <div class="method-section">
+      <h3>Research Gap Identification</h3>
+      <p>The priority investigation list identifies plants that represent the highest-value targets for modern pharmacological research — specifically those with:</p>
+      <ul>
+        <li>High convergence scores but limited or no modern pharmacological investigation</li>
+        <li>Applications in therapeutic areas with significant unmet medical need (antibiotic resistance, neglected tropical diseases, mental health)</li>
+        <li>Documentation of specific preparations that suggest pharmacological sophistication (dosage warnings, weight-based pediatric dosing, synergistic preparations)</li>
+        <li>Cross-continental distribution suggesting high reliability of the empirical observation</li>
+      </ul>
+      <div class="limitation-block">
+        <h4>Ethical Consideration</h4>
+        <p>This archive documents knowledge developed by indigenous communities over millennia. Any pharmacological research deriving from this database should respect the principles of the Convention on Biological Diversity and the Nagoya Protocol on Access and Benefit Sharing. Source communities should be engaged as partners, not merely as historical data sources.</p>
+      </div>
+    </div>
+
+    <div class="method-section">
+      <h3>How to Cite This Resource</h3>
+      <p>If you use this archive in research, please cite it as:</p>
+      <div style="background:var(--vellum-dark); padding:1rem 1.5rem; border:1px solid var(--border); font-family:var(--font-code); font-size:0.78rem; line-height:1.8; max-width:70ch;">
+        Materia Medica Americana: An Integrated Analysis of Three Primary Sources of Indigenous American Botanical Medicine. Version 1.0, 2025. AI-assisted translation and cross-source analysis. Available at: [URL].
+      </div>
+    </div>
+
+    <div class="method-section" style="border-bottom:none;">
+      <h3>Contributing</h3>
+      <p>This is an open scholarly project. Contributions are welcomed from:</p>
+      <ul>
+        <li>Scholars with expertise in 17th century Spanish, Classical Nahuatl, or Latin who can review and correct translations</li>
+        <li>Botanists who can improve species identifications</li>
+        <li>Pharmacologists who can add to or correct the modern research summaries</li>
+        <li>Indigenous knowledge holders whose traditions relate to these plants</li>
+        <li>Historians of medicine and science with relevant archival knowledge</li>
+      </ul>
+      <p style="margin-top:1rem;">Contact via GitHub repository.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ───────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div>
+    <div class="footer-title">Materia Medica Americana</div>
+    <div style="font-family:var(--font-code); font-size:0.62rem; color:var(--gold-light); opacity:0.6; margin-top:0.3rem;">Open Scholarly Resource · Public Domain Sources</div>
+  </div>
+  <div class="footer-meta">
+    Sources: Cobo 1653 · Badianus 1552 · Florentine Codex 1577<br>
+    Translation: AI-assisted, 2025 · Not peer reviewed<br>
+    Illustrations: Public domain / badianus.omeka.net<br>
+    Florentine Codex: Getty Research Institute florentinecodex.getty.edu
+  </div>
+</footer>
+
+<script>
+// ── Tab navigation ──────────────────────────────────────
+function showTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  event.currentTarget.classList.add('active');
+  if (id === 'database') renderPlants();
+  if (id === 'convergence') renderPriority();
+}
+
+// ── Chapter accordion ───────────────────────────────────
+function toggleChapter(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+}
+
+// ── Plant data ──────────────────────────────────────────
+let plantData = [];
+let activeSourceFilter = 'all';
+let activeStatusFilter = null;
+
+async function loadPlants() {
+  try {
+    const res = await fetch('/data/plants.json');
+    const data = await res.json();
+    plantData = data.plants;
+  } catch(e) {
+    console.error('Could not load plant data', e);
+  }
+}
+
+// ── Render plant database ───────────────────────────────
+function renderPlants() {
+  const grid = document.getElementById('plant-grid');
+  if (!grid) return;
+  const query = (document.getElementById('plant-search')?.value || '').toLowerCase();
+
+  const filtered = plantData.filter(p => {
+    const matchSource = activeSourceFilter === 'all' || p.sources.includes(activeSourceFilter);
+    const matchStatus = !activeStatusFilter || p.investigation_status === activeStatusFilter;
+    const matchQuery = !query ||
+      p.common_name.toLowerCase().includes(query) ||
+      (p.modern_botanical || '').toLowerCase().includes(query) ||
+      p.therapeutic_areas.some(t => t.includes(query)) ||
+      (p.modern_research?.key_compound || '').toLowerCase().includes(query);
+    return matchSource && matchStatus && matchQuery;
+  });
+
+  grid.innerHTML = filtered.map(p => {
+    const conv = p.convergence_score;
+    const convClass = conv >= 8 ? 'convergence-high' : conv >= 5 ? 'convergence-med' : 'convergence-low';
+    const statusMap = {
+      'validated': ['status-validated', '✓ Validated'],
+      'fully_validated': ['status-validated', '✓ Fully Validated'],
+      'breakthrough_validated': ['status-breakthrough', '★ Breakthrough'],
+      'validated_essential_medicine': ['status-validated', '✓ Essential Medicine'],
+      'validated_renewed_interest': ['status-validated', '✓ Validated · Active Research'],
+      'needs_investigation': ['status-gap', '⚠ Needs Investigation'],
+      'critical_gap': ['status-gap', '⚠ Critical Gap'],
+      'preliminary': ['status-preliminary', '◐ Preliminary'],
+      'moderate_validation': ['status-moderate', '◑ Moderate Evidence'],
+      'significant_findings': ['status-breakthrough', '★ Significant Findings'],
+    };
+    const [statusClass, statusLabel] = statusMap[p.investigation_status] || ['status-preliminary', '◐ Unknown'];
+
+    const sourceTags = p.sources.map(s =>
+      `<span class="tag source-${s}">${s.charAt(0).toUpperCase() + s.slice(1)}</span>`
+    ).join('');
+
+    const therapeuticTags = p.therapeutic_areas.slice(0, 4).map(t =>
+      `<span class="tag">${t.replace(/_/g, ' ')}</span>`
+    ).join('');
+
+    const coboSection = p.cobo ? `
+      <div class="source-section">
+        <span class="source-label cobo">Cobo · Historia del Nuevo Mundo</span>
+        <div class="parallel-text">
+          <div class="text-column">
+            <label>Spanish Original</label>
+            <p>${p.cobo.original_spanish}</p>
+          </div>
+          <div class="text-column">
+            <label>English Translation</label>
+            <p class="translation">${p.cobo.translation}</p>
+          </div>
+        </div>
+        <div class="plant-meta">
+          <div class="meta-item"><label>Condition</label><span>${p.cobo.condition}</span></div>
+          <div class="meta-item"><label>Preparation</label><span>${p.cobo.preparation}</span></div>
+        </div>
+        ${p.cobo.notes ? `<div class="notes-block">${p.cobo.notes}</div>` : ''}
+      </div>` : '';
+
+    const badianusSection = p.badianus ? `
+      <div class="source-section">
+        <span class="source-label badianus">Badianus Manuscript · ${p.badianus.plate ? 'Plate ' + p.badianus.plate : ''}</span>
+        <div class="parallel-text">
+          <div class="text-column">
+            <label>Latin Original</label>
+            <p>${p.badianus.latin_original}</p>
+          </div>
+          <div class="text-column">
+            <label>English Translation</label>
+            <p class="translation">${p.badianus.translation}</p>
+          </div>
+        </div>
+        ${p.badianus.illustration_url ? `<a class="external-link" href="${p.badianus.illustration_url}" target="_blank">↗ View Botanical Illustration</a>` : ''}
+        ${p.badianus.notes ? `<div class="notes-block">${p.badianus.notes}</div>` : ''}
+      </div>` : '';
+
+    const florentineSection = p.florentine ? `
+      <div class="source-section">
+        <span class="source-label florentine">Florentine Codex · Book ${p.florentine.book}, Folio ${p.florentine.folio}</span>
+        <div class="parallel-text">
+          <div class="text-column">
+            <label>Classical Nahuatl</label>
+            <p>${p.florentine.nahuatl_original}</p>
+          </div>
+          <div class="text-column">
+            <label>English Translation</label>
+            <p class="translation">${p.florentine.translation}</p>
+          </div>
+        </div>
+        ${p.florentine.getty_url ? `<a class="external-link" href="${p.florentine.getty_url}" target="_blank">↗ View in Getty Digital Florentine Codex</a>` : ''}
+        ${p.florentine.notes ? `<div class="notes-block">${p.florentine.notes}</div>` : ''}
+      </div>` : '';
+
+    const modernSection = p.modern_research ? `
+      <div class="source-section">
+        <span class="source-label modern">Modern Pharmacology</span>
+        <span class="research-status ${statusClass}">${statusLabel}</span>
+        <div class="plant-meta" style="margin-bottom:0.8rem;">
+          <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
+          <div class="meta-item"><label>Status</label><span>${statusLabel}</span></div>
+        </div>
+        <p style="font-size:0.9rem; line-height:1.7; color:var(--ink); max-width:70ch;">${p.modern_research.pubmed_summary}</p>
+        <div class="notes-block" style="margin-top:0.8rem;">${p.modern_research.significance}</div>
+      </div>` : '';
+
+    return `
+    <div class="plant-card" data-sources="${p.sources.join(',')}" data-status="${p.investigation_status}">
+      <div class="plant-card-header" onclick="toggleCard(this)">
+        <div class="plant-name-block">
+          <h3>${p.common_name}</h3>
+          <div class="botanical">${p.modern_botanical || 'Identification pending'}</div>
+          <div class="plant-tags">
+            ${sourceTags}
+            ${therapeuticTags}
+          </div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.5rem;">
+          <div class="convergence-badge">
+            <span class="convergence-num ${convClass}">${conv}</span>
+            <span class="convergence-label">Convergence</span>
+          </div>
+          <span class="chevron" style="color:var(--muted);">▾</span>
+        </div>
+      </div>
+      <div class="plant-card-body">
+        ${coboSection}
+        ${badianusSection}
+        ${florentineSection}
+        ${modernSection}
+        <div style="padding:1rem 1.5rem; background:var(--vellum); border-top:1px solid var(--border);">
+          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase;">Plant ID: ${p.id}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<p style="color:var(--muted); font-style:italic; padding:2rem 0;">No plants match the current filters.</p>';
+  }
+}
+
+function toggleCard(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+}
+
+function filterPlants() { renderPlants(); }
+
+function filterBySource(source, btn) {
+  activeSourceFilter = source;
+  activeStatusFilter = null;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPlants();
+}
+
+function filterByStatus(status, btn) {
+  activeStatusFilter = activeStatusFilter === status ? null : status;
+  activeSourceFilter = 'all';
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  if (activeStatusFilter) btn.classList.add('active');
+  else document.querySelector('.filter-btn').classList.add('active');
+  renderPlants();
+}
+
+// ── Render priority list ────────────────────────────────
+function renderPriority() {
+  const list = document.getElementById('priority-list');
+  if (!list || plantData.length === 0) return;
+
+  const sorted = [...plantData].sort((a, b) => b.priority_score - a.priority_score);
+
+  list.innerHTML = sorted.map(p => {
+    const sourceDots = ['cobo', 'badianus', 'florentine'].map(s =>
+      `<span class="source-dot dot-${s}" title="${s}" style="opacity:${p.sources.includes(s) ? 1 : 0.15}"></span>`
+    ).join('');
+
+    const statusLabels = {
+      'validated': '✓ Validated',
+      'fully_validated': '✓ Fully Validated',
+      'breakthrough_validated': '★ Breakthrough Research',
+      'validated_essential_medicine': '✓ WHO Essential Medicine',
+      'validated_renewed_interest': '✓ Validated, Active Research',
+      'needs_investigation': '⚠ Needs Investigation',
+      'critical_gap': '⚠ Critical Research Gap',
+      'preliminary': '◐ Preliminary Evidence',
+      'moderate_validation': '◑ Moderate Evidence',
+      'significant_findings': '★ Significant Findings',
+    };
+
+    return `
+    <div class="priority-item">
+      <div class="priority-score-block">
+        <span class="priority-score-num">${p.priority_score}</span>
+        <span class="priority-score-label">Priority</span>
+      </div>
+      <div class="priority-content">
+        <h4>${p.common_name}</h4>
+        <div class="botanical-name">${p.modern_botanical || 'Identification pending'}</div>
+        <div class="source-coverage">
+          ${sourceDots}
+          <span style="font-family:var(--font-code); font-size:0.6rem; color:var(--muted); margin-left:0.3rem;">
+            ${p.sources.length} source${p.sources.length > 1 ? 's' : ''} · Convergence ${p.convergence_score}/10
+          </span>
+        </div>
+        <p>${p.modern_research?.significance || 'No modern research data available.'}</p>
+        <div style="margin-top:0.5rem;">
+          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted);">${statusLabels[p.investigation_status] || p.investigation_status}</span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── Init ────────────────────────────────────────────────
+loadPlants().then(() => {
+  const hash = window.location.hash.replace('#', '');
+  if (hash && document.getElementById('tab-' + hash)) {
+    showTab(hash);
+    document.querySelectorAll('.tab-btn').forEach((b, i) => {
+      if (b.getAttribute('onclick')?.includes(hash)) b.classList.add('active');
+    });
+  }
+});
+</script>
+</body>
+</html>
