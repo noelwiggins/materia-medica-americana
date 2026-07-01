@@ -1997,13 +1997,28 @@ async function loadData() {
     conditionData = (await cRes.json()).conditions || [];
     longevityData = (await lRes.json()).traditions || [];
 
-    // Try to load corpus (may not be merged yet)
+    // Load corpus — merge main chapters + recovery chapters into one unified corpus
     try {
-      const coboRes = await fetch('/data/cobo_chapters.json');
+      const [coboRes, recoveryRes] = await Promise.all([
+        fetch('/data/cobo_chapters.json'),
+        fetch('/data/cobo_recovery_chapters.json').catch(() => null)
+      ]);
       const coboData = await coboRes.json();
-      corpusData = (coboData.results || []).filter(r =>
+      const mainResults = (coboData.results || []).filter(r =>
         r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
       );
+      let recoveryResults = [];
+      if (recoveryRes) {
+        const recoveryData = await recoveryRes.json();
+        recoveryResults = (recoveryData.results || []).filter(r =>
+          r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
+        );
+      }
+      // Deduplicate by label — recovery pass may overlap with main
+      const seen = new Set(mainResults.map(r => r._label));
+      const newRecovery = recoveryResults.filter(r => !seen.has(r._label));
+      corpusData = [...mainResults, ...newRecovery];
+      console.log(`Corpus: ${mainResults.length} main + ${newRecovery.length} recovery = ${corpusData.length} total`);
     } catch(e) { corpusData = []; }
   } catch(e) { console.error('Data load error:', e); }
 }
