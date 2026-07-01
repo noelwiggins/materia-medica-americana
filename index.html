@@ -1214,7 +1214,81 @@
   }
   .convergence-result-significance { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-top: 0.6rem; font-style: italic; }
 
-  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+  /* ── Research tab ─────────────────────────────── */
+  .research-query-box {
+    background: #1C2D4A; border: 1px solid #2A4A7A;
+    padding: 1.8rem 2rem; margin-bottom: 2rem;
+  }
+  .research-query-box h3 { font-family: var(--font-display); color: #90CAF9; font-size: 1rem; margin-bottom: 0.5rem; }
+  .research-query-box p { color: #BBDEFB; font-size: 0.88rem; opacity: 0.85; line-height: 1.6; margin-bottom: 1.2rem; }
+  .research-plant-select {
+    font-family: var(--font-code); font-size: 0.72rem; letter-spacing: 0.05em;
+    padding: 0.6rem 1rem; border: 1px solid #2A4A7A; background: rgba(144,202,249,0.1);
+    color: #BBDEFB; cursor: pointer; min-width: 220px; appearance: none;
+  }
+  .research-plant-select option { background: #1C2D4A; color: #BBDEFB; }
+  .research-search-btn {
+    font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.6rem 1.4rem;
+    background: #1565C0; color: white; border: none; cursor: pointer;
+    transition: background 0.2s;
+  }
+  .research-search-btn:hover { background: #1976D2; }
+  .research-search-btn:disabled { background: #555; cursor: default; }
+
+  .score-legend {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    font-family: var(--font-code); font-size: 0.62rem;
+    margin-bottom: 1.5rem;
+  }
+  .score-badge {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.25rem 0.7rem; border-radius: 2px; letter-spacing: 0.06em;
+  }
+  .badge-high { background: #E8F5E9; color: #2E7D32; }
+  .badge-moderate { background: #FFF8E1; color: #F57F17; }
+  .badge-preliminary { background: #FAFAFA; color: #757575; border: 1px solid #eee; }
+
+  .research-paper-card {
+    background: white; border: 1px solid var(--border);
+    border-left: 5px solid #ccc; margin-bottom: 0.8rem; padding: 1.2rem 1.4rem;
+    transition: box-shadow 0.2s;
+  }
+  .research-paper-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .paper-score-row {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 1rem; margin-bottom: 0.6rem;
+  }
+  .paper-title { font-family: var(--font-display); font-size: 0.9rem; color: var(--ink); line-height: 1.4; flex: 1; }
+  .paper-title a { color: var(--ink); text-decoration: none; }
+  .paper-title a:hover { text-decoration: underline; }
+  .paper-score-block { display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; flex-shrink: 0; }
+  .paper-score-num {
+    font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; line-height: 1;
+  }
+  .paper-score-label { font-family: var(--font-code); font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .paper-meta { font-family: var(--font-code); font-size: 0.65rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .paper-meta span { margin-right: 1rem; }
+  .paper-abstract { font-size: 0.88rem; line-height: 1.65; color: var(--muted); max-width: 75ch; display: none; }
+  .paper-abstract.open { display: block; margin-top: 0.6rem; }
+  .paper-toggle { font-family: var(--font-code); font-size: 0.62rem; color: #1565C0; cursor: pointer; background: none; border: none; padding: 0; }
+  .paper-toggle:hover { text-decoration: underline; }
+  .score-breakdown {
+    display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;
+    font-family: var(--font-code); font-size: 0.6rem;
+  }
+  .score-component {
+    background: var(--vellum-dark); padding: 0.15rem 0.5rem;
+    border-radius: 2px; color: var(--muted);
+  }
+  .research-loading { color: var(--muted); font-style: italic; padding: 2rem 0; }
+  .research-error { color: #d96a5a; font-family: var(--font-code); font-size: 0.8rem; padding: 1rem 0; }
+  .only-evidence-warning {
+    background: #FFF8E1; border: 1px solid #FFE082; padding: 0.6rem 1rem;
+    font-size: 0.82rem; color: #F57F17; margin-bottom: 0.5rem; border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
 </style>
 </head>
 
@@ -1273,6 +1347,9 @@
   </button>
   <button class="tab-btn" onclick="showTab('corpus')" role="tab">
     <span class="tab-indicator" style="background:#2D5016"></span>Corpus
+  </button>
+  <button class="tab-btn" onclick="showTab('research')" role="tab">
+    <span class="tab-indicator" style="background:#1565C0"></span>Modern Research
   </button>
   <button class="tab-btn" onclick="showTab('methodology')" role="tab">
     <span class="tab-indicator" style="background:#6B6050"></span>Methodology
@@ -1861,6 +1938,38 @@
     <div class="priority-list" id="priority-list"></div>
   </section>
 
+  <!-- MODERN RESEARCH TAB -->
+  <section class="tab-panel" id="tab-research">
+    <div class="section-header">
+      <div class="section-eyebrow">Live PubMed Queries · Scored for Evidence Quality</div>
+      <h2 class="section-title">Modern Research Cross-Reference</h2>
+      <p class="section-desc">For each plant or compound in the archive, this tab queries PubMed in real time and scores every returned study on four dimensions: study type, citation impact, recency, and journal tier. The goal is to surface the strongest modern evidence for — or against — what traditional medicine documented, without requiring manual curation.</p>
+    </div>
+
+    <div class="score-legend">
+      <span class="score-badge badge-high">✦ 70–100 High confidence</span>
+      <span class="score-badge badge-moderate">◑ 45–69 Moderate evidence</span>
+      <span class="score-badge badge-preliminary">◐ 20–44 Preliminary</span>
+      <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);align-self:center">Under 20: hidden · Not PubMed-indexed: excluded</span>
+    </div>
+
+    <div class="research-query-box">
+      <h3>Query PubMed</h3>
+      <p>Select a plant from the database. Results are fetched live from PubMed and scored automatically. Citation counts load 1–2 seconds after initial results appear.</p>
+      <div class="query-row" style="gap:0.8rem">
+        <select class="research-plant-select" id="research-plant-select">
+          <option value="">— Select a plant —</option>
+        </select>
+        <button class="research-search-btn" id="research-search-btn" onclick="runResearchQuery()">Search PubMed</button>
+        <span id="research-status" style="font-family:var(--font-code);font-size:0.68rem;color:#90CAF9;align-self:center"></span>
+      </div>
+    </div>
+
+    <div id="research-results">
+      <div class="research-loading">Select a plant to query PubMed.</div>
+    </div>
+  </section>
+
   <!-- METHODOLOGY TAB -->
   <section class="tab-panel" id="tab-methodology">
     <div class="section-header">
@@ -1973,6 +2082,7 @@ function showTab(id) {
   if (id === 'traditions') renderTraditionsOverview();
   if (id === 'longevity') renderLongevity();
   if (id === 'corpus') renderCorpus();
+  if (id === 'research') initResearchTab();
 }
 
 function toggleChapter(header) {
@@ -2461,9 +2571,313 @@ function renderPriority() {
   }).join('');
 }
 
+// ── Research tab — PubMed scoring engine ─────────────────
+const PUBMED_BASE = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils';
+const ICITE_BASE  = 'https://icite.od.nih.gov/api/pubs';
+
+// Study type scoring — the most important dimension (0-40)
+const STUDY_TYPE_SCORES = {
+  'systematic review': 40, 'meta-analysis': 40,
+  'randomized controlled trial': 35, 'clinical trial': 30,
+  'journal article': 15, // fallback — will be upgraded by title keywords
+  'review': 15, 'case reports': 5,
+};
+
+// Journal tier — known high-impact journals get full score (0-15)
+const HIGH_IMPACT_JOURNALS = new Set([
+  'nature', 'science', 'cell', 'new england journal of medicine',
+  'lancet', 'jama', 'bmj', 'pnas', 'plos one', 'plos medicine',
+  'frontiers in pharmacology', 'journal of ethnopharmacology',
+  'phytomedicine', 'phytotherapy research', 'natural product reports',
+  'evidence-based complementary and alternative medicine',
+  'journal of natural products', 'molecules', 'nutrients',
+  'cochrane database of systematic reviews',
+]);
+
+function scoreStudyType(pubTypes, title, abstract) {
+  // Check publication type array first
+  for (const pt of (pubTypes || [])) {
+    const lower = pt.toLowerCase();
+    for (const [key, score] of Object.entries(STUDY_TYPE_SCORES)) {
+      if (lower.includes(key)) return { score, label: pt };
+    }
+  }
+  // Fallback: scan title/abstract for study type signals
+  const text = ((title || '') + ' ' + (abstract || '')).toLowerCase();
+  if (text.includes('randomized') && text.includes('placebo')) return { score: 35, label: 'RCT (inferred)' };
+  if (text.includes('systematic review') || text.includes('meta-analysis')) return { score: 40, label: 'Systematic review (inferred)' };
+  if (text.includes('mechanism') || text.includes('receptor') || text.includes('alkaloid') || text.includes('isolated')) return { score: 30, label: 'Mechanistic study (inferred)' };
+  if (text.includes('clinical trial')) return { score: 30, label: 'Clinical trial (inferred)' };
+  if (text.includes('cohort') || text.includes('observational')) return { score: 20, label: 'Observational (inferred)' };
+  return { score: 12, label: 'Journal article' };
+}
+
+function scoreRecency(year) {
+  if (!year) return { score: 5, label: 'Unknown year' };
+  const y = parseInt(year);
+  if (y >= 2022) return { score: 20, label: `${y} — Recent` };
+  if (y >= 2018) return { score: 16, label: `${y} — Recent` };
+  if (y >= 2012) return { score: 12, label: `${y} — Modern` };
+  if (y >= 2005) return { score: 8,  label: `${y} — Established` };
+  return { score: 5, label: `${y} — Historical` };
+}
+
+function scoreCitations(count) {
+  if (count === null || count === undefined) return { score: 2, label: 'Citations loading...' };
+  if (count >= 500) return { score: 25, label: `${count} citations — High impact` };
+  if (count >= 100) return { score: 20, label: `${count} citations` };
+  if (count >= 50)  return { score: 15, label: `${count} citations` };
+  if (count >= 10)  return { score: 10, label: `${count} citations` };
+  if (count >= 1)   return { score: 5,  label: `${count} citations` };
+  return { score: 2, label: '0 citations' };
+}
+
+function scoreJournal(journal) {
+  if (!journal) return { score: 6, label: 'Unknown journal' };
+  const lower = journal.toLowerCase();
+  for (const j of HIGH_IMPACT_JOURNALS) {
+    if (lower.includes(j)) return { score: 15, label: `${journal} — High impact` };
+  }
+  // PubMed-indexed but not in known high-impact list — still a quality signal
+  return { score: 8, label: `${journal} — PubMed indexed` };
+}
+
+function computeScore(article, citationCount) {
+  const studyType  = scoreStudyType(article.pubTypes, article.title, article.abstract);
+  const recency    = scoreRecency(article.year);
+  const citations  = scoreCitations(citationCount);
+  const journal    = scoreJournal(article.journal);
+
+  // Recency-citation adjustment: highly cited old papers get a bonus
+  // (foundational papers should stay relevant)
+  let citationBonus = 0;
+  if (citationCount >= 100 && parseInt(article.year||0) < 2010) citationBonus = 5;
+
+  const total = Math.min(100,
+    studyType.score + recency.score + citations.score + journal.score + citationBonus
+  );
+
+  return {
+    total,
+    components: { studyType, recency, citations, journal, citationBonus },
+    tier: total >= 70 ? 'high' : total >= 45 ? 'moderate' : total >= 20 ? 'preliminary' : 'hide'
+  };
+}
+
+function buildPubMedQuery(plant) {
+  // Build a specific query: botanical name OR key compound + therapeutic areas
+  const parts = [];
+  if (plant.modern_botanical) parts.push(`"${plant.modern_botanical.split(' ').slice(0,2).join(' ')}"`);
+  if (plant.modern_research?.key_compound) {
+    const compound = plant.modern_research.key_compound.split('(')[0].trim().split(',')[0].trim();
+    if (compound && compound !== 'N/A') parts.push(`"${compound}"`);
+  }
+  // Add therapeutic area terms
+  const areas = (plant.therapeutic_areas || []).slice(0, 2).map(a =>
+    a.replace(/_/g, ' ')
+  );
+  const plantQuery = parts.join(' OR ');
+  const areaQuery  = areas.length ? `AND (${areas.join(' OR ')})` : '';
+  return `(${plantQuery}) ${areaQuery}`.trim();
+}
+
+async function fetchPubMed(query, maxResults = 15) {
+  // Step 1: esearch — get PMIDs
+  const searchUrl = `${PUBMED_BASE}/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&retmax=${maxResults}&sort=relevance&retmode=json`;
+  const searchRes = await fetch(searchUrl);
+  const searchData = await searchRes.json();
+  const pmids = searchData.esearchresult?.idlist || [];
+  if (!pmids.length) return [];
+
+  // Step 2: esummary — get article metadata
+  const summaryUrl = `${PUBMED_BASE}/esummary.fcgi?db=pubmed&id=${pmids.join(',')}&retmode=json`;
+  const summaryRes = await fetch(summaryUrl);
+  const summaryData = await summaryRes.json();
+  const result = summaryData.result || {};
+
+  return pmids.map(id => {
+    const doc = result[id] || {};
+    return {
+      pmid: id,
+      title: doc.title || 'Untitled',
+      journal: doc.fulljournalname || doc.source || '',
+      year: doc.pubdate?.split(' ')[0] || '',
+      authors: (doc.authors || []).slice(0, 3).map(a => a.name).join(', '),
+      pubTypes: (doc.pubtype || []),
+      abstract: '', // abstract needs efetch — loaded on demand
+      url: `https://pubmed.ncbi.nlm.nih.gov/${id}/`,
+    };
+  });
+}
+
+async function fetchICiteCitations(pmids) {
+  // iCite returns citation counts for PubMed IDs
+  try {
+    const url = `${ICITE_BASE}?pmids=${pmids.join(',')}&fields=citation_count,relative_citation_ratio`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const counts = {};
+    (data.data || []).forEach(pub => {
+      counts[String(pub.pmid)] = pub.citation_count ?? 0;
+    });
+    return counts;
+  } catch (e) {
+    return {};
+  }
+}
+
+async function fetchAbstract(pmid) {
+  const url = `${PUBMED_BASE}/efetch.fcgi?db=pubmed&id=${pmid}&rettype=abstract&retmode=text`;
+  const res = await fetch(url);
+  const text = await res.text();
+  // Extract abstract section (crude but reliable for PubMed text format)
+  const lines = text.split('\n').filter(l => l.trim());
+  const absStart = lines.findIndex(l => l.includes('AB  -'));
+  if (absStart === -1) return '';
+  return lines.slice(absStart, absStart + 15)
+    .map(l => l.replace(/^AB\s+-\s+/, '').replace(/^\s+/, ''))
+    .join(' ').substring(0, 600);
+}
+
+function initResearchTab() {
+  const select = document.getElementById('research-plant-select');
+  if (!select || select.children.length > 1) return;
+  plantData.forEach(p => {
+    const opt = document.createElement('option');
+    opt.value = p.id;
+    opt.textContent = `${p.common_name} (${p.modern_botanical || 'identification pending'})`;
+    select.appendChild(opt);
+  });
+}
+
+async function runResearchQuery() {
+  const select   = document.getElementById('research-plant-select');
+  const btn      = document.getElementById('research-search-btn');
+  const status   = document.getElementById('research-status');
+  const resultsEl = document.getElementById('research-results');
+  if (!select?.value) return;
+
+  const plant = plantData.find(p => p.id === select.value);
+  if (!plant) return;
+
+  btn.disabled = true;
+  status.textContent = 'Querying PubMed...';
+  resultsEl.innerHTML = '<div class="research-loading">Fetching results from PubMed — this takes 2–4 seconds...</div>';
+
+  try {
+    const query = buildPubMedQuery(plant);
+    const articles = await fetchPubMed(query, 20);
+
+    if (!articles.length) {
+      resultsEl.innerHTML = `<div class="research-loading">No PubMed results for <strong>${plant.common_name}</strong>. Try a broader search or check the plant's modern botanical name.</div>`;
+      status.textContent = '';
+      btn.disabled = false;
+      return;
+    }
+
+    // Initial render with placeholder citation scores (loads immediately)
+    status.textContent = `${articles.length} results — loading citation counts...`;
+    renderResearchResults(plant, articles, {}, query);
+
+    // Fetch citation counts in parallel (non-blocking)
+    const pmids = articles.map(a => a.pmid);
+    const citations = await fetchICiteCitations(pmids);
+    status.textContent = `${articles.length} results · citation counts loaded`;
+
+    // Re-render with real citation scores
+    renderResearchResults(plant, articles, citations, query);
+
+  } catch (e) {
+    resultsEl.innerHTML = `<div class="research-error">PubMed query failed: ${e.message}. PubMed rate-limits unauthenticated requests — try again in a few seconds.</div>`;
+    status.textContent = '';
+  }
+
+  btn.disabled = false;
+}
+
+function renderResearchResults(plant, articles, citations, query) {
+  const resultsEl = document.getElementById('research-results');
+
+  // Score all articles
+  const scored = articles.map(a => {
+    const citCount = citations[a.pmid] ?? null;
+    const score = computeScore(a, citCount);
+    return { ...a, score };
+  }).filter(a => a.score.tier !== 'hide')
+    .sort((a, b) => b.score.total - a.score.total);
+
+  const highCount = scored.filter(a => a.score.tier === 'high').length;
+  const modCount  = scored.filter(a => a.score.tier === 'moderate').length;
+  const preCount  = scored.filter(a => a.score.tier === 'preliminary').length;
+  const onlyWeak  = highCount === 0 && modCount === 0 && preCount > 0;
+
+  const tierColor = { high: '#2E7D32', moderate: '#F57F17', preliminary: '#757575' };
+  const tierLabel = { high: '✦ High confidence', moderate: '◑ Moderate', preliminary: '◐ Preliminary' };
+  const tierBorder = { high: '#4CAF50', moderate: '#FFB300', preliminary: '#BDBDBD' };
+
+  resultsEl.innerHTML = `
+    <div style="margin-bottom:1.5rem">
+      <p style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);margin-bottom:0.5rem">
+        PubMed query: <em style="color:var(--ink)">${query}</em>
+      </p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;font-family:var(--font-code);font-size:0.68rem">
+        ${highCount ? `<span style="color:#2E7D32">✦ ${highCount} high confidence</span>` : ''}
+        ${modCount  ? `<span style="color:#F57F17">◑ ${modCount} moderate</span>` : ''}
+        ${preCount  ? `<span style="color:#757575">◐ ${preCount} preliminary</span>` : ''}
+        <span style="color:var(--muted)">${articles.length - scored.length} below threshold (hidden)</span>
+      </div>
+    </div>
+    ${onlyWeak ? '<div class="only-evidence-warning">⚠ Only weak or preliminary evidence found for this plant in PubMed. This may indicate a genuine research gap — or that different search terms are needed.</div>' : ''}
+    ${scored.map(a => `
+    <div class="research-paper-card" style="border-left-color:${tierBorder[a.score.tier]}">
+      <div class="paper-score-row">
+        <div class="paper-title">
+          <a href="${a.url}" target="_blank" rel="noopener noreferrer">${a.title}</a>
+        </div>
+        <div class="paper-score-block">
+          <span class="paper-score-num" style="color:${tierColor[a.score.tier]}">${a.score.total}</span>
+          <span class="paper-score-label">${tierLabel[a.score.tier]}</span>
+        </div>
+      </div>
+      <div class="paper-meta">
+        <span>${a.journal}</span>
+        <span>${a.score.components.recency.label}</span>
+        <span>${a.authors}${a.authors ? ' et al.' : ''}</span>
+        <span>PMID ${a.pmid}</span>
+      </div>
+      <div class="score-breakdown">
+        <span class="score-component">Study type: ${a.score.components.studyType.score}/40 — ${a.score.components.studyType.label}</span>
+        <span class="score-component">Citations: ${a.score.components.citations.score}/25 — ${a.score.components.citations.label}</span>
+        <span class="score-component">Recency: ${a.score.components.recency.score}/20</span>
+        <span class="score-component">Journal: ${a.score.components.journal.score}/15</span>
+        ${a.score.components.citationBonus ? `<span class="score-component">Foundational bonus: +${a.score.components.citationBonus}</span>` : ''}
+      </div>
+      <div style="margin-top:0.5rem">
+        <button class="paper-toggle" onclick="toggleAbstract('${a.pmid}', this)">▸ Show abstract</button>
+      </div>
+      <div class="paper-abstract" id="abstract-${a.pmid}"></div>
+    </div>`).join('')}
+  `;
+}
+
+async function toggleAbstract(pmid, btn) {
+  const el = document.getElementById(`abstract-${pmid}`);
+  if (el.classList.contains('open')) {
+    el.classList.remove('open');
+    btn.textContent = '▸ Show abstract';
+    return;
+  }
+  if (!el.textContent) {
+    btn.textContent = 'Loading...';
+    el.textContent = await fetchAbstract(pmid);
+  }
+  el.classList.add('open');
+  btn.textContent = '▾ Hide abstract';
+}
+
 // ── Init ────────────────────────────────────────────────
 loadData().then(() => {
-  renderPriority(); // prime priority list
+  renderPriority();
 });
 </script>
 </body>
