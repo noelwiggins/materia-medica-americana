@@ -1,0 +1,1659 @@
+{
+  "job_name": "cobo-parse-error-recovery-61segments",
+  "completed_at": "2026-07-01T20:33:13.337130",
+  "segment_count": 61,
+  "results": [
+    {
+      "title_inferred": "Description of Scotland and the British Isles — principal towns, castles, rivers, bridges, and islands",
+      "original_text": "Item se cuentan en él pueblos principales con sus ferias y mercados, seiscientos y cuarenta y uno; castillos, ciento y ochenta y seis; ríos, quinientos y cincuenta y cuatro, y novecientas y cincuenta y seis puentes. El reino de Escocia tiene dos arzobispados y trece obispados; es de tierra más doblada, fría y menos poblada que el de Inglaterra. En torno desta isla hay otras muchas pequeñas; ciento y cuarenta y cinco de ellas están pobladas, y las demás, son de rocas y peñascos.",
+      "translation": "Likewise, counted within it [England] are six hundred and forty-one principal towns with their fairs and markets; one hundred and eighty-six castles; five hundred and fifty-four rivers; and nine hundred and fifty-six bridges. The kingdom of Scotland has two archbishoprics and thirteen bishoprics; its land is more rugged, cold, and less populated than that of England. Around this island there are many other smaller ones; one hundred and forty-five of them are inhabited, and the rest consist of rocks and crags.",
+      "entities_mentioned": [
+        {
+          "name": "Inglaterra (England)",
+          "modern_identification": "England",
+          "identification_confidence": "high",
+          "notes": "Cobo provides a statistical inventory of English towns, castles, rivers, and bridges, likely drawn from a European geographical compendium of the period."
+        },
+        {
+          "name": "Escocia (Scotland)",
+          "modern_identification": "Scotland",
+          "identification_confidence": "high",
+          "notes": "Described as having two archbishoprics (St Andrews and Glasgow) and thirteen bishoprics; characterized as rugged, cold, and sparsely populated relative to England."
+        },
+        {
+          "name": "Isla de Gran Bretaña (implied)",
+          "modern_identification": "Great Britain / British Isles",
+          "identification_confidence": "high",
+          "notes": "The surrounding smaller islands referenced likely correspond to the Hebrides, Orkney, Shetland, and other peripheral island groups; 145 described as inhabited."
+        }
+      ],
+      "translator_notes": "This segment contains no botanical, pharmaceutical, or medical content; it is a geographical-statistical passage about the British Isles, likely interpolated from a European chorographical source (possibly Ortelius or a similar atlas). OCR errors corrected: 'x)ueblos' → 'pueblos', 'xino' → 'uno', 'ciiuíuenta' → 'cincuenta', 'dtdlas' → 'de ellas', 'xjeñascos' → 'peñascos'. The figure of 641 principal towns and 956 bridges appears to derive from a standard early modern European geographical compendium rather than original Cobo observation.",
+      "_label": "cobo_vol1::cuarto::cap_XV_part2"
+    },
+    {
+      "title_inferred": "On Salt and Its Abundance in the Kingdom of Peru",
+      "original_text": "CAPITULO IV\nDe la sal\n\nAsí como este reino del Perú es el más abundante de metales, mayormente de plata, de cuantos sabemos hoy en el mundo, así también lo es de salinas naturales; que parece proveyó Dios de ellas con tanta abundancia donde tan necesaria es la sal para beneficiar los metales de plata, en que se consume una cantidad increíble de sal; y no hay provincia ni ciudad que padezca falta della; porque de la mucha que se saca en unas tierras, se reparte a otras y ninguna",
+      "translation": "CHAPTER IV\nOn Salt\n\nJust as this kingdom of Peru is the most abundant in metals — above all in silver — of any we know today in the world, so too is it in natural salt works [salinas]; for it seems God provided them in such great abundance where salt is so necessary for the processing [beneficio] of silver ores, in which an incredible quantity of salt is consumed. And there is no province or city that suffers any lack of it, because from the great quantities extracted in some lands, it is distributed to others, and none",
+      "entities_mentioned": [
+        {
+          "name": "sal (salt)",
+          "modern_identification": "Sodium chloride (NaCl)",
+          "identification_confidence": "high",
+          "notes": "Cobo emphasizes the role of salt not primarily as a foodstuff here but as an industrial input for silver ore processing — specifically the patio amalgamation process (beneficio de patio), in which salt was a key reagent alongside mercury."
+        },
+        {
+          "name": "salinas naturales (natural salt works)",
+          "modern_identification": "Salt flats / evaporite deposits of the Peruvian Andes and coastal regions",
+          "identification_confidence": "high",
+          "notes": "Peru and the broader Andean region are indeed rich in natural salt deposits, including the famous Maras salt pans and the Salar de Uyuni (in modern Bolivia, then part of the Viceroyalty of Peru)."
+        },
+        {
+          "name": "reino del Perú (Kingdom of Peru)",
+          "modern_identification": "Viceroyalty of Peru",
+          "identification_confidence": "high",
+          "notes": "Refers to the Spanish Viceroyalty of Peru as it existed in Cobo's time, encompassing much of South America."
+        }
+      ],
+      "translator_notes": "The segment is cut off mid-sentence ('y ninguna'), indicating this is only the first portion of the chapter. The word 'beneficiar' is a period technical term referring specifically to the metallurgical processing of silver ore — rendered here as 'processing' with the Spanish bracketed for scholarly clarity. The OCR artifact '¬' (a hyphenation mark) in 'mayor¬mente' has been silently corrected to 'mayormente'.",
+      "_label": "cobo_vol1::IV::cap_IV_part1"
+    },
+    {
+      "title_inferred": "On Various Clays and Earths Used in Making Pottery",
+      "original_text": "CAPITULO VI\n\nDe algunos barros y greda de que se hace loza\n\nDe la varia mixtura de los elementos e influencias de los cuerpos celestes se forman tan varias tierras y tan diferentes entre sí en colores y cualidades como vemos, de que se hallan tantas diferencias en este Nuevo Mundo, como",
+      "translation": "CHAPTER VI\n\nOn certain clays and potter's earth from which earthenware is made\n\nFrom the varied mixture of the elements and the influences of the celestial bodies, there are formed such varied earths, so different from one another in colors and qualities as we observe, of which so many distinct kinds are found in this New World, as",
+      "entities_mentioned": [
+        {
+          "name": "barro",
+          "modern_identification": "clay (general term for plastic, fine-grained earthen material used in ceramics)",
+          "identification_confidence": "high",
+          "notes": "Common Spanish colonial term for clay or mud used in pottery manufacture."
+        },
+        {
+          "name": "greda",
+          "modern_identification": "fuller's earth or potter's clay (often a calcareous or siliceous clay)",
+          "identification_confidence": "medium",
+          "notes": "'Greda' typically denotes a pale, often whitish or grayish clay distinct from common 'barro'; used specifically in ceramics and sometimes medicinally as an edible earth."
+        },
+        {
+          "name": "loza",
+          "modern_identification": "earthenware / ceramic ware",
+          "identification_confidence": "high",
+          "notes": "Period term for fired clay vessels and tableware."
+        }
+      ],
+      "translator_notes": "The segment is incomplete — the final sentence breaks off mid-clause ('como'), indicating this is only part 1 of the chapter. The phrase 'influencias de los cuerpos celestes' ('influences of the celestial bodies') reflects standard Scholastic/Aristotelian natural philosophy of the period, in which the properties of terrestrial substances were attributed partly to planetary and stellar influences. OCR error 'ele' in source corrected to 'de' ('De la varia mixtura de los elementos'); 'varías' normalized to 'varias'. No medical or pharmacological content is present in this segment.",
+      "_label": "cobo_vol1::IV::cap_VI_part1"
+    },
+    {
+      "title_inferred": "Building Stones",
+      "original_text": "CAPITULO XIV\nDe las piedras para fábricas\n\nToda suerte de piedra franca y berroqueña que es suave de labrar es la que decimos ser a propósito para edificios de cantería, de la cual hay escogidas canteras en todas estas Indias; unas piedras se hallan muy livianas y cavernosas, a modo de un panal o piedra pómez, que no se hunde en el agua, la cual es maravillosa para fábricas, señaladamente para murallas y fortalezas; semejantes a ellas hay otros muchos géneros de piedras.",
+      "translation": "CHAPTER XIV\nOn Building Stones\n\nEvery sort of freestone [piedra franca] and granite [berroqueña] that is easy to work is what we call suitable for masonry construction [edificios de cantería], of which there are choice quarries throughout these Indies. Some stones are found to be very light and porous, in the manner of a honeycomb or pumice stone [piedra pómez], which does not sink in water; this stone is marvelous for construction, most notably for walls and fortifications. Similar to these there are many other kinds of stones.",
+      "entities_mentioned": [
+        {
+          "name": "piedra franca",
+          "modern_identification": "freestone (fine-grained, easily worked sedimentary or calcareous stone)",
+          "identification_confidence": "high",
+          "notes": "Standard Spanish architectural term for a soft, workable building stone, typically limestone or fine sandstone."
+        },
+        {
+          "name": "berroqueña",
+          "modern_identification": "granite",
+          "identification_confidence": "high",
+          "notes": "Spanish term commonly used for granite or hard crystalline stone; contrast with the softer piedra franca."
+        },
+        {
+          "name": "piedra pómez",
+          "modern_identification": "pumice (volcanic stone)",
+          "identification_confidence": "high",
+          "notes": "Cobo explicitly compares the lightweight, porous building stones of the Indies to pumice, noting their characteristic of floating on water. These may refer to local volcanic tuffs or similar lightweight vesicular stones found in the Andes region."
+        }
+      ],
+      "translator_notes": "The word 'señaladamente' was rendered from what appears in the source as '{inaladamente', an obvious OCR error where the initial 'se' was lost. Corrected silently per the rules. This segment contains no medical or botanical content; it is a mineralogical/architectural passage. No plant, drug, or medical practice extraction applies.",
+      "_label": "cobo_vol1::IV::cap_XIV_part1"
+    },
+    {
+      "title_inferred": "On the Bezoar Stone",
+      "original_text": "CAPITULO XXIX\nDe la piedra bezar\n\nLa piedra bezar está compuesta de unas escamas o costras como cáscaras de bellotas, unas sobre otras, de las cuales la primera es muy lisa y lustrosa. Hállanse estas piedras de diferente tamaño, desde tan pequeñas como garbanzos hasta de la grandeza de un huevo de gallina; y algunas (aunque raras) tan grandes como el puño y de una libra y más de peso (20). La figura que tienen es muy varia; porque unas son redondas; otras, ovadas y chatas, y de tan di[versos]...",
+      "translation": "CHAPTER XXIX\nOn the Bezoar Stone\n\nThe bezoar stone is composed of certain scales or crusts resembling acorn shells, layered one upon another, of which the outermost is very smooth and lustrous. These stones are found in various sizes, ranging from as small as chickpeas up to the size of a hen's egg; and some (though rare) are as large as a fist and weigh a pound or more (20). Their shape is highly varied: some are round; others are oval and flat, and of so many di[fferent forms]...",
+      "entities_mentioned": [
+        {
+          "name": "piedra bezar (bezoar stone)",
+          "modern_identification": "Bezoar — a calcified concretion found in the gastrointestinal tract of ruminants (particularly Capra aegagrus and related species in the Old World; various Andean camelids such as vicuña and guanaco in the New World)",
+          "identification_confidence": "high",
+          "notes": "The bezoar stone was one of the most prized medicinal substances of the 16th–17th centuries, used as a universal antidote and alexipharmic. Cobo here describes its physical structure (concentric laminar layers), size range (from chickpea to hen's egg, occasionally fist-sized), and varied morphology. The passage is cut off mid-sentence before medical uses or preparation methods are detailed. No preparation method is recoverable from this segment."
+        }
+      ],
+      "translator_notes": "Several OCR errors silently corrected: 'hezar' → 'bezar', 'esa.' → 'cuales', 'ti.' → 'tamaño', 'rar^' → 'raras', 'um' → 'una', 'mm' → 'unas', 'chalas' → 'chatas'. The footnote marker '(20)' retained as in source. The final phrase 'de tan di' is an incomplete sentence, almost certainly cut off at 'diversas formas' or similar; marked with '[versos]' interpolation in the cleaned original and '[fferent forms]' in translation to signal the lacuna. Segment ends mid-paragraph; continuation expected in part2.",
+      "_label": "cobo_vol1::IV::cap_XXIX_part1"
+    },
+    {
+      "title_inferred": "Formation of Bezoar Stones from an Antidote Herb",
+      "original_text": "contra todo veneno, que él conoce y de la cual suele aprovecharse en sus necesidades, comiendo della; de donde les viene a las piedras bezares que de la tal yerba se cuajan el ser ellas antídotos de los venenos; la cual yerba, comida, acude a lo que lastima el buche del animal, rodeándolo y abrazándolo en sí; y como con el calor del estómago se endurezca, se viene a hacer la escama o capa primera de la piedra bezar; y como el animal va comiendo más y más de aquella yerba...",
+      "translation": "...against all poison, which it [the animal] recognizes and of which it customarily avails itself in its time of need, eating of it; from which comes to the bezoar stones—which congeal from that very herb—their property of being antidotes to poisons. The said herb, when eaten, goes to that which harms the stomach [buche] of the animal, enveloping and embracing it within itself; and as it hardens with the heat of the stomach, the first scale or layer of the bezoar stone is formed; and as the animal goes on eating more and more of that herb...",
+      "entities_mentioned": [
+        {
+          "name": "piedra bezar / piedra hezar",
+          "modern_identification": "Bezoar stone (calculus found in the gastrointestinal tract of ruminants, especially Capra aegagrus or related Andean camelids)",
+          "identification_confidence": "high",
+          "notes": "Cobo is explaining the folk-natural-philosophical theory of bezoar stone formation: that the animal instinctively eats a specific antidote herb, which wraps around a harmful substance in the stomach and progressively hardens into the laminated concretion known as a bezoar. The bezoar's reputed antidotal properties were believed to derive from this herb. The segment is mid-sentence and cuts off ('sa' at line break is likely 'saludable' or continuation of 'aquella yerba sa[ludable]' or similar)."
+        },
+        {
+          "name": "yerba antídoto (unspecified herb)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Cobo does not name the specific herb in this segment. It is described as an herb the animal instinctively seeks out as a remedy against poison. Likely refers to a plant associated in Andean or Spanish colonial natural history with bezoar-bearing animals (e.g., vicuña or guanaco); possibly a species of Perezia or other Andean medicinal plant, but cannot be identified from this passage alone."
+        }
+      ],
+      "translator_notes": "1. 'Piedras hezares' is an OCR rendering of 'piedras bezares' (bezoar stones); silently corrected. 2. 'Buche' literally means crop or stomach pouch; retained in brackets as a period anatomical term. 3. The segment is incomplete—it breaks off mid-sentence ('aquella yerba sa—') suggesting at least one more continuation segment. 4. Cobo's theory of bezoar formation reflects the prevalent Galenic-humoral and scholastic natural philosophy of the period, not modern mineralogy or pathology. 5. 'Escama o capa primera' (first scale or layer) accurately reflects the known laminated structure of true bezoar concretions.",
+      "_label": "cobo_vol1::IV::cap_XXIX_part2"
+    },
+    {
+      "title_inferred": "On Pearls: First Discoveries in the Americas",
+      "original_text": "CAPITULO XXXII\nDe las perlas\n\nLos dos primeros descubridores de los mares y costas de la América fueron los que primero hallaron las perlas que en entrambos mares se crían: el almirante don Cristóbal Colón, en la costa de la mar del Norte, y el capitán Vasco Núñez de Balboa, en la de la mar del Sur. Porque la tercera vez que vino el almirante a Indias, el año de 1498, viniendo costeando la tierra firme que en aquel viaje descubrió, tomó tierra en la isla de Cubagua, ec",
+      "translation": "CHAPTER XXXII\nOn Pearls\n\nThe two first discoverers of the seas and coasts of America were likewise the first to find the pearls that are produced in both oceans: the Admiral Don Cristóbal Colón [Christopher Columbus], on the coast of the North Sea [Caribbean Sea], and Captain Vasco Núñez de Balboa, on that of the South Sea [Pacific Ocean]. For on the third occasion that the Admiral came to the Indies, in the year 1498, sailing along the mainland coast that he discovered on that voyage, he made landfall at the island of Cubagua, ec [text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Cristóbal Colón",
+          "modern_identification": "Christopher Columbus",
+          "identification_confidence": "high",
+          "notes": "Referred to by his Spanish title 'el almirante' (the Admiral); his third voyage to the Americas in 1498 brought him to the Venezuelan coast and the island of Cubagua."
+        },
+        {
+          "name": "Vasco Núñez de Balboa",
+          "modern_identification": "Vasco Núñez de Balboa",
+          "identification_confidence": "high",
+          "notes": "Spanish conquistador and explorer, first European to see the Pacific Ocean from the New World (1513), here credited with the discovery of pearls in the South Sea (Pacific)."
+        },
+        {
+          "name": "isla de Cubagua",
+          "modern_identification": "Cubagua Island, Venezuela",
+          "identification_confidence": "high",
+          "notes": "Small island off the northeastern coast of Venezuela, historically famous for its pearl fisheries; site of Nueva Cádiz, one of the earliest European settlements in South America."
+        },
+        {
+          "name": "mar del Norte",
+          "modern_identification": "Caribbean Sea",
+          "identification_confidence": "high",
+          "notes": "In 17th-century Spanish colonial usage, 'mar del Norte' (North Sea) referred to the Caribbean/Atlantic side of the Americas."
+        },
+        {
+          "name": "mar del Sur",
+          "modern_identification": "Pacific Ocean",
+          "identification_confidence": "high",
+          "notes": "In 17th-century Spanish colonial usage, 'mar del Sur' (South Sea) referred to the Pacific Ocean."
+        }
+      ],
+      "translator_notes": "The segment ends abruptly mid-sentence with 'ec', which is an OCR artifact likely representing a page-break or line-break continuation ('en' or the beginning of the next word). The text is not a medical or botanical passage; no plant, drug, or medical practice extraction is applicable. OCR errors corrected silently: 'per*las' → 'perlas', 'ca&lt;t pitan' → 'capitán', 'descubrió»' → 'descubrió', 'Cuhagua' → 'Cubagua' (standard historical spelling).",
+      "_label": "cobo_vol1::IV::cap_XXXII"
+    },
+    {
+      "title_inferred": "On Various Precious Stones, Their Colors and Virtues Found in the Indies — Part 1: Crystal",
+      "original_text": "CAPITULO XXXIII\n\nDe otras piedras preciosas y de varios colores y virtudes que se hallan en estas Indias\n\nPor piedras preciosas entiendo todas aquellas que son claras y relucientes, aunque muchas de ellas no sean tenidas de los hombres en tanto precio, como son el cristal, el topacio, el granate y otras de este género. Algunos tienen por opinión que el cristal se engendra de sola agua congelada con excesivo frío, sin mixtión de tierra; lo cual, si fuera verdad, se h[allara...]",
+      "translation": "CHAPTER XXXIII\n\nOn Other Precious Stones of Various Colors and Virtues Found in These Indies\n\nBy precious stones I understand all those that are clear and lustrous, even though many of them are not held by men in such high esteem [as the finest gems], such as crystal, topaz, garnet, and others of this kind. Some hold the opinion that crystal is generated from water alone, congealed by excessive cold, without any admixture of earth; which, if it were true, would [be found... — text breaks off here]",
+      "entities_mentioned": [
+        {
+          "name": "cristal",
+          "modern_identification": "Rock crystal / quartz (SiO₂)",
+          "identification_confidence": "high",
+          "notes": "Cobo references the classical theory, derived from ancient Greek and medieval authors (e.g., Pliny, Albertus Magnus), that crystal is water permanently frozen by extreme cold — a view he appears about to refute, given the sentence structure."
+        },
+        {
+          "name": "topacio",
+          "modern_identification": "Topaz (Al₂SiO₄(F,OH)₂) or possibly chrysolite/olivine in colonial usage",
+          "identification_confidence": "medium",
+          "notes": "Colonial Spanish 'topacio' could refer to true topaz or to yellowish stones more broadly; context is insufficient to determine which specific mineral is meant here."
+        },
+        {
+          "name": "granate",
+          "modern_identification": "Garnet (silicate mineral group)",
+          "identification_confidence": "high",
+          "notes": "Standard term for garnet in Spanish; well-attested in colonial lapidary literature."
+        }
+      ],
+      "translator_notes": "The segment ends mid-sentence ('se h[allara...]' or similar), indicating a page break or OCR truncation. No plant, drug, or medical preparation is described in this portion; the passage is lapidary/mineralogical in nature. The theory of crystal formation from frozen water is a topos inherited from classical antiquity (cf. Pliny, NH 37.9) and was standard in European natural philosophy through the 17th century. Cobo's phrasing 'si fuera verdad' ('if it were true') strongly implies he is about to offer a counterargument or correction in the continuation of the chapter.",
+      "_label": "cobo_vol1::IV::cap_XXXIII_part1"
+    },
+    {
+      "title_inferred": "Obsidian and Gold-Purple Stone used by Indigenous Peoples of Peru and New Spain",
+      "original_text": "Otra piedra hay muy parecida a ésta, de color de oro tirante a purpúreo, que también se parte en hojas.\n\nLas navajas, cuchillas, lancetas y todo género de herramientas que nosotros hacemos de hierro, solían hacer los indios, así del Perú como de la Nueva España, de cierta piedra que los mexicanos llaman itzli, y los del Perú, chihllisa; la cual es transparente, como vidrio y se halla de tres colores: blanca, negra y azul. Hay muchas canteras della, así en el Perú como en la",
+      "translation": "There is another stone very similar to this one, of a gold color tending toward purple, which also splits into sheets [leaves/layers].\n\nThe razors, blades, lancets, and all manner of tools that we make from iron, the Indians—both of Peru and of New Spain—used to make from a certain stone which the Mexicans call itzli, and those of Peru call chihllisa; which is transparent, like glass, and is found in three colors: white, black, and blue. There are many quarries of it, both in Peru and in the [text breaks off here].",
+      "entities_mentioned": [
+        {
+          "name": "piedra de color de oro tirante a purpúreo",
+          "modern_identification": "Possibly a gold-purple mica or pyrite-bearing schist; potentially a variety of muscovite or phlogopite mica",
+          "identification_confidence": "low",
+          "notes": "Described as gold-colored tending to purple and splitting into sheets (cleavage), suggesting a micaceous or foliated mineral. Insufficient detail for confident identification."
+        },
+        {
+          "name": "itzli (Nahuatl) / chihllisa (Quechua)",
+          "modern_identification": "Obsidian (volcanic glass, SiO₂-rich rhyolitic glass)",
+          "identification_confidence": "high",
+          "notes": "Itzli is the well-attested Nahuatl term for obsidian. The Quechua term as rendered ('chihllisa') is likely a phonetic approximation; it may correspond to 'itzel' or a regional Andean variant. Obsidian was widely used for cutting tools, blades, lancets, and surgical instruments throughout Mesoamerica and the Andes. Cobo notes it occurs in white, black, and blue varieties and is transparent like glass—consistent with obsidian's known color range. The text is truncated before naming the Peruvian quarry locations."
+        }
+      ],
+      "translator_notes": "The source text is clearly truncated mid-sentence at the end ('así en el Perú como en la'), indicating this is a partial segment. The Quechua term 'chihllisa' is uncertain and may be an OCR or transcription corruption of the original manuscript; the intended word has not been silently corrected as the authentic form is genuinely unclear. The Nahuatl 'itzli' is unambiguous. No medical preparations are described in this segment, though the mention of lancets implies the material's use in bloodletting or surgical contexts.",
+      "_label": "cobo_vol1::IV::cap_XXXIII_part2"
+    },
+    {
+      "title_inferred": "On Types of Ore Deposits: Loose Metals and Fixed Veins",
+      "original_text": "muy poca ley, y a éstos llaman quemazones; y otros (que es lo más común), en los senos della. Pero destas minas de metales sueltos no se hace mucho caso, por la incertidumbre que hay en ellos. Las minas de metales continuados y seguidos están siempre entre dos peñas, que llaman la caja de la mina, entre las cuales corren largo espacio, y se llaman vetas fijas, porque son permanecientes y de dura. Unas son más anchas que otras, y una misma veta por partes se ensancha mucho y",
+      "translation": "of very low grade [ley], and these are called quemazones [literally 'burnings,' referring to oxidized or scorched-looking surface ore]; and others (which is more common) occur in the pockets [senos] of the deposit. But these mines of loose metals are not held in much regard, on account of the uncertainty attending them. The mines of continuous and persistent metals are always found between two walls of rock, which they call the caja [literally 'box' or 'case'] of the mine, between which they run for a great distance, and are called vetas fijas [fixed veins], because they are permanent and enduring. Some are wider than others, and one and the same vein in places widens considerably and",
+      "entities_mentioned": [
+        {
+          "name": "quemazones",
+          "modern_identification": "Oxidized or gossan ore zones; surface-weathered ore deposits",
+          "identification_confidence": "high",
+          "notes": "Colonial mining term for superficial or oxidized metal-bearing material of low grade, literally meaning 'burnings.' Corresponds to modern concept of gossans or outcrops of oxidized ore."
+        },
+        {
+          "name": "vetas fijas",
+          "modern_identification": "Fixed or primary ore veins (lode deposits)",
+          "identification_confidence": "high",
+          "notes": "Colonial Spanish mining terminology for continuous, wall-rock-bounded ore veins, as opposed to loose or disseminated deposits. Equivalent to modern 'lode' or 'vein' deposits in hard-rock mining."
+        },
+        {
+          "name": "caja de la mina",
+          "modern_identification": "Hanging wall and footwall (the enclosing country rock of a vein)",
+          "identification_confidence": "high",
+          "notes": "Standard colonial Ibero-American mining term for the two rock walls enclosing a vein. Still used in Latin American mining terminology today."
+        }
+      ],
+      "translator_notes": "This segment is a continuation of a chapter on mining and ore deposits, not a botanical or medical passage; accordingly, no plant, drug, or medical practice data is applicable. The text breaks off mid-sentence ('widens considerably and'), indicating continuation in a subsequent segment. The double comma after 'caja de la mina,,' in the source appears to be an OCR artifact and has been silently corrected to a single comma. The term 'ley' (grade or assay value of ore) has been preserved in brackets as it is a key technical term in colonial metallurgy.",
+      "_label": "cobo_vol1::IV::cap_XXXVII_part2"
+    },
+    {
+      "title_inferred": "Conditions of Mine Labor: Air Quality and Fatigue",
+      "original_text": "de noche; alúmbranse con velas de sebo, nunca cesan en su labor, remudándose unos y otros, para que los unos reposen mientras trabajan los otros. Pasan increíble trabajo y afán; porque además de no gozar del aire puro y fresco que baña la superficie de la tierra, sino de uno avahado y espeso con el humo de las candelas y diversos vapores que exhalan los minerales (que suelen ser dañosos y pestilenciales, por proceder algunos de piedra azufre y caparrosa), es muy grande la fat[iga]",
+      "translation": "at night; they light themselves with tallow candles, never ceasing in their labor, relieving one another in turns so that some may rest while others work. They endure incredible toil and hardship; for besides being deprived of the pure and fresh air that bathes the surface of the earth, they breathe instead a steaming and thick air laden with the smoke of candles and the various vapors exhaled by the ore deposits (which tend to be harmful and pestilential, as some arise from sulfur stone [piedra azufre] and vitriol [caparrosa]), and the fatigue [is very great—text breaks off here]",
+      "entities_mentioned": [
+        {
+          "name": "velas de sebo",
+          "modern_identification": "tallow candles",
+          "identification_confidence": "high",
+          "notes": "Rendered animal fat candles used for illumination in colonial mines; relevant as a source of combustion byproducts contributing to poor air quality."
+        },
+        {
+          "name": "piedra azufre",
+          "modern_identification": "sulfur / sulfur-bearing mineral rock",
+          "identification_confidence": "high",
+          "notes": "Sulfur-containing ore deposits noted as a source of harmful and pestilential vapors in mine environments; likely refers to pyrite or sulfide ores releasing sulfur dioxide."
+        },
+        {
+          "name": "caparrosa",
+          "modern_identification": "vitriol / iron sulfate (copperas, FeSO₄·7H₂O)",
+          "identification_confidence": "high",
+          "notes": "Spanish 'caparrosa' typically refers to green vitriol (ferrous sulfate) or, more broadly, metallic sulfate compounds. Identified here as a source of toxic vapors in mines. In colonial medical contexts, copperas was also used externally as an astringent."
+        }
+      ],
+      "translator_notes": "The segment is truncated mid-sentence ('es muy grande la fat—'), cutting off what was almost certainly 'fatiga' (fatigue) or a related noun. This is an OCR/pagination break rather than damage to the source. No plant or drug entity is described in this segment; the passage concerns the occupational health hazards faced by colonial mine laborers, specifically toxic air from sulfur and vitriol vapors and candle smoke. The rotating shift system ('remudándose') is explicitly noted as a labor management strategy. The corrected 'alúmbranse' was rendered as 'alúmhranse' in the OCR source.",
+      "_label": "cobo_vol1::IV::cap_XXXVII_part3"
+    },
+    {
+      "title_inferred": "The Mercury Amalgamation Process for Silver Refining",
+      "original_text": "CAPITULO XXXIX\nDel beneficio con azogue\n\nEl beneficio de azogue es de mucha más riqueza que el de fundición, porque es más copioso y general y se saca con él todo la plata de los metales, por bajos y pobres que sean. Cuando el metal acude de dos onzas para arriba por quintal, se puede beneficiar con ganancia, y de aquí para abajo, es con muy poca o ninguna, particularmente en los asientos de minas que no tienen indios de cédula y repartimiento, o de mita, como llaman en el Perú.",
+      "translation": "CHAPTER XXXIX\nOn the Mercury [Amalgamation] Process\n\nThe mercury [amalgamation] process [beneficio de azogue] yields far greater wealth than smelting [fundición], because it is more abundant and universal, and with it all the silver is extracted from the ores [metales], however low-grade and poor they may be. When the ore yields two ounces or more per hundredweight [quintal], it can be processed at a profit; below this amount, the profit is very little or none, particularly in mining settlements [asientos de minas] that do not have Indians assigned by royal warrant and allotment [cédula y repartimiento], or by the mita [forced rotational labor draft], as it is called in Peru.",
+      "entities_mentioned": [
+        {
+          "name": "azogue",
+          "modern_identification": "Mercury (Hg), used in silver amalgamation",
+          "identification_confidence": "high",
+          "notes": "Refers to elemental mercury employed in the patio process (beneficio de patio) for extracting silver from low-grade ores by amalgamation."
+        },
+        {
+          "name": "beneficio de fundición",
+          "modern_identification": "Smelting / pyrometallurgical silver refining",
+          "identification_confidence": "high",
+          "notes": "The older method of silver recovery by smelting, contrasted here with the mercury amalgamation process as being less efficient for low-grade ores."
+        },
+        {
+          "name": "quintal",
+          "modern_identification": "Unit of weight; approximately 100 Castilian pounds (~46 kg)",
+          "identification_confidence": "high",
+          "notes": "Standard Spanish colonial unit of weight used to measure ore yield."
+        },
+        {
+          "name": "mita",
+          "modern_identification": "Andean forced rotational labor draft system under Spanish colonial rule",
+          "identification_confidence": "high",
+          "notes": "Cobo glosses 'mita' as the Peruvian term for the compulsory labor allotment (repartimiento) of indigenous workers to mines; most famously associated with Potosí."
+        },
+        {
+          "name": "cédula y repartimiento",
+          "modern_identification": "Royal warrant authorizing the allocation of indigenous labor",
+          "identification_confidence": "high",
+          "notes": "Legal instrument by which the colonial crown assigned indigenous workers to specific mining operations; closely related to but formally distinct from the mita."
+        }
+      ],
+      "translator_notes": "The source text is truncated mid-sentence ('como llaman en el Pe—'), clearly cut off at 'Perú'; the word has been silently restored as it is unambiguous from context. This segment does not describe a plant or medicinal substance; it is a technical-economic passage on colonial silver metallurgy. No medical extraction is applicable. The OCR error 'iieneficio' (opening line) has been silently corrected to 'beneficio'.",
+      "_label": "cobo_vol1::IV::cap_XXXIX_part1"
+    },
+    {
+      "title_inferred": "On the production of silver ingots and bars: washing, separating amalgam, and pressing the pella",
+      "original_text": "CAPITULO XL\nDe las piños y barras de plata\n\nLavado el metal y apartado el azogue abrazado con la plata, que llaman pella, de la tierra y escoria, lo echan en unos lienzos bastos, y apretando la pella, le sacan a golpes parte del azogue, porque ya no queda otro beneficio que hacerle a la plata más de apartarla de su tan íntimo compañero el azogue.\nExprimida de esta manera la pella queda suelta y blanda y muy semejante en el tacto a la cernada o nieve condensada. Della se hacen",
+      "translation": "CHAPTER XL\nOn the piños [silver cakes] and bars of silver\n\nOnce the ore has been washed and the mercury [azogue] that has bonded with the silver — which they call pella [amalgam mass] — has been separated from the earth and slag, it is placed in coarse linen cloths, and by pressing the pella and striking it, a portion of the mercury is expelled; for there remains no other process to be done to the silver than to separate it from its most intimate companion, the mercury.\nPressed in this manner, the pella becomes loose and soft, and very similar to the touch to lye-ash [cernada] or compacted snow. From it are made [— text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "azogue",
+          "modern_identification": "Mercury (Hg)",
+          "identification_confidence": "high",
+          "notes": "Used in the patio amalgamation process to extract silver from ore. Here being mechanically separated from the amalgam mass by pressing through coarse cloth."
+        },
+        {
+          "name": "pella",
+          "modern_identification": "Silver-mercury amalgam mass",
+          "identification_confidence": "high",
+          "notes": "Technical term in colonial Spanish American silver metallurgy for the amalgam of silver and mercury recovered after the washing stage of the patio process."
+        },
+        {
+          "name": "piños",
+          "modern_identification": "Crude silver cakes / unrefined silver ingots",
+          "identification_confidence": "high",
+          "notes": "Cone- or loaf-shaped masses of impure silver produced after the mercury is driven off the pella, prior to final refining into bars."
+        },
+        {
+          "name": "cernada",
+          "modern_identification": "Lye ash / wood-ash lye residue",
+          "identification_confidence": "medium",
+          "notes": "Used here as a simile for the texture of the pressed pella — soft, crumbly, and powdery. Cernada typically refers to the ash or lye-soaked cloth used in laundry, or the resultant ash mass."
+        },
+        {
+          "name": "lienzos bastos",
+          "modern_identification": "Coarse linen or burlap cloth",
+          "identification_confidence": "high",
+          "notes": "Used to mechanically press and filter mercury out of the pella by wringing and striking."
+        }
+      ],
+      "translator_notes": "The segment ends mid-sentence ('Della se hacen' — 'From it are made'), indicating the text is cut off and continues in a subsequent part. Several OCR errors in the source have been silently corrected: 'piños' for 'piños' (preserved), 'azogue' reconstructed from 'azo¬gue' (line-break hyphenation), 'llaman' for 'llami®', 'pella' for 'pella' throughout, 'apartarla' for 'apartarle', and 'semejante' for 'semejaBle'. The passage describes the mechanical (pre-furnace) mercury-removal stage of the colonial patio amalgamation process.",
+      "_label": "cobo_vol1::IV::cap_XL_part1"
+    },
+    {
+      "title_inferred": "On Copper: Pre-Columbian Mining and Use",
+      "original_text": "CAPITULO XLII\nDel cobre\n\nHállase mayor copia de minas de cobre en este reino y en otras muchas partes de Indias, que de plata ni de otros metales. Sacábanlo antiguamente los indios en mucha cantidad, a cuya causa se ven hoy muchas minas labradas de tiempo antiguo. Porque, como carecían de hierro, forjaban deste metal las armas, herramientas e instrumentos para la agricultura y algunos otros oficios; mas no se aprovechaban del en algún uso de medicina. Al presente labran",
+      "translation": "CHAPTER XLII\nOn Copper\n\nGreater quantities of copper mines are found in this kingdom [Peru] and in many other parts of the Indies than of silver or of other metals. The Indians formerly extracted it in great quantities, as evidenced by the many mines that can still be seen today that were worked in ancient times. For, lacking iron, they forged from this metal their weapons, tools, and instruments for agriculture and various other trades; however, they made no use of it in any application of medicine. At present [the mines] are worked [segment ends here, text continues in subsequent part]",
+      "entities_mentioned": [
+        {
+          "name": "cobre (copper)",
+          "modern_identification": "Copper (Cu, element 29)",
+          "identification_confidence": "high",
+          "notes": "Cobo notes copper was the primary metal used by pre-Columbian Andean peoples for weapons, tools, and agricultural implements in the absence of iron technology. He explicitly states it was not employed medicinally by the indigenous population. The segment is incomplete and presumably continues with a description of contemporary Spanish colonial copper mining operations."
+        }
+      ],
+      "translator_notes": "OCR errors corrected: 'copia' for '^cobre' line-start artifact; 'causa' for 'unsa'; 'labradas' for 'labra¬bas'; 'muchas' for 'muclias'; 'agricultura' for 'agricultlura'; 'otros' for 'iílros'; 'del' for 'bel'. The segment is cut off mid-sentence ('Al presente labran') and is marked as 'part1', indicating continuation in a subsequent segment. No medicinal or botanical content is present in this portion; Cobo explicitly notes the absence of indigenous medicinal use of copper.",
+      "_label": "cobo_vol1::IV::cap_XLII_part1"
+    },
+    {
+      "title_inferred": "Nettles, Dead-Nettles, and Other Herbs Found in the Americas",
+      "original_text": "un verde claro, hojas pequeñas, crespas y casi redondas, cuyo vello es más espinoso. Demás déstas, se hallan las ortigas muertas, que no pican al que las toca. Aprovéchanse los indios de las ortigas para muchas curas.\n\nItem, se hallan apio; siempre-viva de dos o tres maneras; llantén, romaza, salvia; la una especie della, de dos que pone el doctor Laguna sobre Dioscórides, que es la mayor, de hojas anchas y sin aquellas orejillas que tienen las hojas de la otra; escorzo",
+      "translation": "a light green [color], with small, curly and nearly round leaves, whose hairs are more spiny. Beyond these, there are also dead-nettles [ortigas muertas], which do not sting those who touch them. The Indians make use of nettles for many cures.\n\nLikewise, there are found celery [apio]; houseleek or live-forever [siempre-viva] of two or three kinds; plantain [llantén], sorrel [romaza], sage [salvia]; one species of it — of the two that Doctor Laguna describes in his commentary on Dioscorides — which is the larger, with broad leaves and lacking those small ear-like lobes [orejillas] that the leaves of the other species have; scorzoner- [escorzo—]",
+      "entities_mentioned": [
+        {
+          "name": "ortigas (stinging nettles)",
+          "modern_identification": "Urtica dioica or related Urtica spp.",
+          "identification_confidence": "high",
+          "notes": "Cobo notes Indigenous (Indian) medicinal use of nettles for 'many cures'; specific ailments and preparations not detailed in this segment."
+        },
+        {
+          "name": "ortigas muertas (dead-nettles)",
+          "modern_identification": "Lamium spp.",
+          "identification_confidence": "high",
+          "notes": "Distinguished from stinging nettles by the absence of a sting; the name 'dead-nettle' persists in modern English botanical usage."
+        },
+        {
+          "name": "apio",
+          "modern_identification": "Apium graveolens (celery/wild celery) or possibly a related umbelliferous plant",
+          "identification_confidence": "medium",
+          "notes": "The term 'apio' in colonial Spanish sources could refer to celery or to a locally similar plant."
+        },
+        {
+          "name": "siempre-viva",
+          "modern_identification": "Sempervivum spp. (houseleek) or Sedum spp.; possibly a New World Crassulaceae",
+          "identification_confidence": "medium",
+          "notes": "Cobo notes two or three varieties; the name 'siempre-viva' (ever-living) was applied broadly to succulent plants."
+        },
+        {
+          "name": "llantén",
+          "modern_identification": "Plantago major or Plantago lanceolata",
+          "identification_confidence": "high",
+          "notes": "Common plantain; widely recognized in colonial botanical literature."
+        },
+        {
+          "name": "romaza",
+          "modern_identification": "Rumex spp. (dock/sorrel)",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "salvia",
+          "modern_identification": "Salvia officinalis or a related Salvia sp.",
+          "identification_confidence": "medium",
+          "notes": "Cobo specifies one of two species described by Dr. Andrés Laguna in his annotated Spanish translation of Dioscorides' De Materia Medica; identifies this as the larger species with broad leaves lacking the small ear-like lobes ('orejillas') of the other."
+        },
+        {
+          "name": "escorzo",
+          "modern_identification": "Scorzonera hispanica (black salsify) or Scorzonera spp.",
+          "identification_confidence": "medium",
+          "notes": "Text is cut off mid-word ('escorzo'); likely 'escorzonera'. Segment ends abruptly here."
+        }
+      ],
+      "translator_notes": "This segment is a continuation (part 2) of a longer passage; it begins mid-description of a plant (likely a nettle variety) and ends mid-word ('escorzo'), indicating truncation at both ends. The reference to 'el doctor Laguna sobre Dioscórides' is to Andrés Laguna's 1555 Spanish annotated translation of Dioscorides' De Materia Medica, a standard authority cited throughout Cobo's work. The medically relevant extraction for nettles is incomplete in this segment: the name is given and Indigenous use for 'many cures' is stated, but specific ailments and preparation methods are not described here.",
+      "_label": "cobo_vol1::CUARTO::cap_II_part2"
+    },
+    {
+      "title_inferred": "Preparation of Maize: Grinding and Bread-Making Methods in Peru and New Spain",
+      "original_text": ", quebrantándolo solamente en unos morteros grandes de palo, con que le sacan la cáscara o hollejuelo que tiene, y dejándolo algún tiempo en remojo, lo muelen después así mojado en una piedra llana con otra piedra pequeña, y sobre la misma piedra se amasa y hace pan, sin llevar sal, levadura ni más recaudo que una poca de agua fría.\n\nEn la Nueva España lo cuecen con cal y ceniza, para mondarlo, y luego, así mojado como lo acaban de cocer, lo muelen en un metate, que es un",
+      "translation": "...breaking it only in large wooden mortars [morteros grandes de palo], by which they remove the husk or small hull [cáscara o hollejuelo] that it has; and leaving it for some time to soak, they then grind it while still wet on a flat stone [piedra llana] with another small stone, and upon that same stone they knead it and make bread, without salt, leavening, or any other ingredient than a little cold water.\n\nIn New Spain they boil it with lime and ash in order to peel it, and then, still wet as it comes from the boiling, they grind it on a metate [metate], which is a",
+      "entities_mentioned": [
+        {
+          "name": "maíz (maize/corn, implied from context)",
+          "modern_identification": "Zea mays",
+          "identification_confidence": "high",
+          "notes": "The segment describes the processing of maize grain into dough and bread. The grain is husked in wooden mortars, soaked, and ground wet on a flat grinding stone. No salt or leavening is used — consistent with traditional Indigenous maize flatbread preparation."
+        },
+        {
+          "name": "metate",
+          "modern_identification": "Metate — a flat stone grinding tool of Mesoamerican origin",
+          "identification_confidence": "high",
+          "notes": "Cobo uses the Nahuatl loanword 'metate' and begins to gloss it ('que es un...'), but the segment cuts off. The metate is a large flat grinding stone used with a hand-held mano (mano/metlapil) to grind soaked maize into masa."
+        },
+        {
+          "name": "cal y ceniza (lime and ash)",
+          "modern_identification": "Calcium hydroxide (slaked lime) and wood ash — nixtamalization process",
+          "identification_confidence": "high",
+          "notes": "The boiling of maize with lime and ash described here is the process now known as nixtamalization, which removes the hull, improves nutritional availability, and changes the texture of the grain. Cobo contrasts this New Spain (Mexican) technique with a simpler Peruvian soaking-and-grinding method."
+        }
+      ],
+      "translator_notes": "The segment begins mid-sentence, continuing from a prior passage about maize processing (likely describing Peruvian methods before pivoting to New Spain). The text breaks off mid-sentence at 'que es un', where Cobo was about to define the metate. The OCR error 'solameiv / te' has been silently corrected to 'solamente'. 'Hollejuelo' (diminutive of hollejo) is a period term for the thin outer skin or hull of a grain or legume; rendered here as 'small hull' with the original preserved in brackets.",
+      "_label": "cobo_vol1::CUARTO::cap_III_part2"
+    },
+    {
+      "title_inferred": "Chicha: Indigenous Fermented Beverages of the New World",
+      "original_text": "CAPITULO IV\nDe la chicha del maíz\n\nDebajo de este nombre de chicha se comprehenden todas las bebidas que usaban los naturales de este Nuevo Mundo en lugar de vino, y con que frecuentemente se embriagan; al cual vicio son tan inclinados, que ni ha aprovechado haberse convertido a nuestra Santa Fe, ni el trato y comunicación con los españoles, ni los castigos hacen en ellos sus curas y las [diligencias] para que se aparten dél, dado que en algunas provincias se ve alguna enmienda y en general [el texto queda incompleto].",
+      "translation": "CHAPTER IV\nOn the chicha of maize\n\nUnder this name of chicha are comprehended all the beverages that the natives of this New World used in place of wine, and with which they frequently become intoxicated. To this vice they are so inclined that neither their conversion to our Holy Faith has availed, nor their dealings and intercourse with the Spaniards, nor the punishments [administered] have produced their cures and the [measures taken] to draw them away from it—though in some provinces some improvement is observed, and in general [text breaks off incomplete].",
+      "entities_mentioned": [
+        {
+          "name": "chicha",
+          "modern_identification": "chicha (fermented maize beer, Zea mays)",
+          "identification_confidence": "high",
+          "notes": "Cobo uses 'chicha' as a broad term encompassing all indigenous fermented or prepared beverages used as substitutes for wine across the New World. The most common base was maize (Zea mays), as indicated by the chapter title. The passage here focuses on the social and moral context of its consumption rather than its preparation."
+        },
+        {
+          "name": "maíz",
+          "modern_identification": "Zea mays (maize / corn)",
+          "identification_confidence": "high",
+          "notes": "Named explicitly in the chapter title as the primary ingredient for chicha discussed in this chapter."
+        }
+      ],
+      "translator_notes": "The source text is fragmentary and ends mid-sentence, likely due to OCR failure or a damaged page. Several words in the original were corrupted by OCR (e.g., 'Ic^' corrected to 'los'; 'deate' to 'de este'; 'apro*vechado' to 'aprovechado'; 'comunicaíáóu' to 'comunicación'; 'enimen.da' to 'enmienda'). One phrase ('hacen en ellos sus curas y las') is syntactically incomplete and likely missing a noun (possibly 'diligencias' or 'penas'), marked with brackets in the cleaned text. The passage reflects Cobo's moralistic colonial framing of indigenous drinking practices. No medicinal preparation is described in this segment.",
+      "_label": "cobo_vol1::CUARTO::cap_IV"
+    },
+    {
+      "title_inferred": "On Ají (Chili Pepper)",
+      "original_text": "CAPITULO XXV\nDel ají\n\nEntre las legumbres que producen el fruto en sus ramas, tiene el ají, después del maíz, el primer lugar, como la planta más general y de mayor estima entre los indios de cuantas se hallaron en esta tierra; porque entre las especias que dió Dios a los naturales de ella, es tan recibida de todas las naciones deste Nuevo Mundo, que no se ha hallado ninguna que no tuviese el uso della y en mucha estimación; y no sólo",
+      "translation": "CHAPTER XXV\nOn Ají\n\nAmong the leguminous plants [legumbres] that bear fruit on their branches, ají holds the first place after maize, as the most widespread plant and the most highly esteemed among the Indians of all those found in this land; for among the spices that God gave to the native peoples thereof, it is so universally received by all the nations of this New World that none has been found that did not make use of it and hold it in great esteem; and not only",
+      "entities_mentioned": [
+        {
+          "name": "ají",
+          "modern_identification": "Capsicum annuum / Capsicum spp. (chili pepper)",
+          "identification_confidence": "high",
+          "notes": "Cobo describes ají as the second most important plant after maize among the indigenous peoples of the New World. The segment is cut off mid-sentence before further description is provided."
+        },
+        {
+          "name": "maíz",
+          "modern_identification": "Zea mays (maize / corn)",
+          "identification_confidence": "high",
+          "notes": "Referenced only as a comparative benchmark for the importance of ají; ranked first among the plants of the land."
+        }
+      ],
+      "translator_notes": "The word 'legumbres' in 17th-century Spanish usage did not carry its modern narrow sense of 'legumes' (Leguminosae) but broadly referred to garden vegetables or plants bearing edible fruit; the translation renders this as 'leguminous plants' with the original term in brackets to flag the semantic ambiguity. The segment is incomplete, ending mid-sentence ('y no sólo') — the continuation likely describes the extent of ají's use beyond native populations, possibly including Spanish colonists. OCR artifact '¬' (soft hyphen) silently removed throughout.",
+      "_label": "cobo_vol1::CUARTO::cap_XXV"
+    },
+    {
+      "title_inferred": "The Paraguay Gourd / Calabash of Paraguay",
+      "original_text": "CAPITULO XXX\nDe la calabaza del Paraguay\n\nA cierta especie de calabaza propia de esta tierra llaman los españoles en este reino del Perú calabazas del Paraguay, por ser naturales de aquella provincia. La planta es voluble, del género de las que se asen y encaraman sobre árboles, y no teniendo arrimo se extienden sobre la tierra; el vástago es delgado como un dedo, con cinco esquinas a lo largo que lo hacen acanalado; la hoja es redonda, de media tercia de diámetro, con siet[e...]",
+      "translation": "CHAPTER XXX\nOn the Calabash of Paraguay\n\nA certain species of gourd native to this land is called by the Spaniards in this kingdom of Peru the 'calabash of Paraguay,' on account of its being a native of that province. The plant is a twining vine [voluble], of the kind that grasps and climbs over trees, and when lacking a support spreads itself along the ground. The stem is slender as a finger, with five ridges running lengthwise that give it a channeled [fluted] appearance. The leaf is round, half a third of a vara [approximately 14 cm] in diameter, with sev[en... — text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "calabaza del Paraguay",
+          "modern_identification": "Lagenaria siceraria or possibly a Cucurbita species native to the Río de la Plata region; the climbing, five-angled stem and round leaf may suggest a wild Cucurbita or related cucurbit",
+          "identification_confidence": "low",
+          "notes": "The description of a twining vine with five-angled stems and round leaves is consistent with the Cucurbitaceae family broadly. The specific Paraguay attribution and morphological details are insufficient for confident species-level identification without the remainder of the description. Could also be Sechium edule (chayote) or a related genus, but the round-leaf description makes this less likely."
+        }
+      ],
+      "translator_notes": "The segment is truncated mid-sentence at 'con siet[e]' ('with seven'), cutting off what is almost certainly a description of the number of leaf lobes or points — a standard botanical descriptor in Cobo's plant chapters. The OCR error 'cfue' has been silently corrected to 'que'. The word 'voluble' is retained in brackets in the translation as it is a precise botanical term meaning a twining or climbing plant. 'Media tercia' refers to half of one-third of a vara (a Spanish unit of roughly 84 cm), yielding approximately 14 cm, though this unit varied regionally. No medical or pharmacological content appears in this segment — the chapter appears to be botanical description only, at least in the portion recovered.",
+      "_label": "cobo_vol1::CUARTO::cap_XXX"
+    },
+    {
+      "title_inferred": "On the Amancaes flower and the scarcity of fragrant flowers in the Indies",
+      "original_text": "CAPITULO XLII\n\nDe los amancaes\n\nDe innumerables géneros de flores que producen estas Indias se hallan muy pocas que rindan suave olor, y en ésas esperimentamos una cosa bien particular, y es que, en maltratándolas en las manos, pierden su fragancia y se convierte en desabrido olor, con que se verifica no ser a propósito para sacar agua dellas por alquitara, como en efecto no se saca, sino que todas las que se destilan son de nuestras flores",
+      "translation": "CHAPTER XLII\n\nOn the Amancaes\n\nAmong the innumerable kinds of flowers produced by these Indies, very few are found that yield a sweet fragrance, and in those we experience something quite remarkable: namely, that when they are bruised in the hands, they lose their fragrance and it turns into an unpleasant odor. This confirms that they are not suitable for drawing water from them by means of an alembic [alquitara], as indeed no such water is extracted from them; rather, all the waters that are distilled are from our [Old World] flowers.",
+      "entities_mentioned": [
+        {
+          "name": "amancaes",
+          "modern_identification": "Hymenocallis amancaes (formerly Ismene amancaes), a Peruvian amaryllid with yellow flowers, native to the Lima coastal hills",
+          "identification_confidence": "high",
+          "notes": "The amancaes is an iconic flower of the hills near Lima (Los Amancaes). Cobo notes its fragrance degrades upon handling and that it is unsuitable for distillation via alembic to produce floral waters."
+        },
+        {
+          "name": "alquitara",
+          "modern_identification": "alembic / still (distillation apparatus)",
+          "identification_confidence": "high",
+          "notes": "Period technical term for an alembic or pot-still used to distill floral waters and essences. Cobo observes that New World flowers generally cannot be used for this purpose."
+        }
+      ],
+      "translator_notes": "The segment is cut off mid-sentence ('de nuestras flores') due to a page break; the full passage presumably continues on the next page indicating that all distilled floral waters in use were made from Old World (European) flowers. No medical preparation is described in this fragment, though the context is implicitly materia medica in nature. The OCR artifact 'cpie' has been silently corrected to 'que'.",
+      "_label": "cobo_vol1::CUARTO::cap_XLII_part1"
+    },
+    {
+      "title_inferred": "The Maguey of Wine (New Spain Agave)",
+      "original_text": "CAPITULO XXI\nDel maguey del vino\n\nEl maguey del capítulo pasado es el que nace generalmente en este reino del Perú, y el de este capítulo es natural de la Nueva España, y difieren los dos en muchas cosas; y una es que todas las castas de magüeyes de la Nueva España tienen en la punta de las hojas una espina negra muy dura y aguda semejante a una lesna; de las cuales espinas carece el magüey deste reino. El magüey del vino es muy general en la Nueva España, del cual algunos mo[...]",
+      "translation": "CHAPTER XXI\nOn the Maguey of Wine\n\nThe maguey of the previous chapter is the one that grows commonly in this kingdom of Peru, while the one in this chapter is native to New Spain, and the two differ in many respects; one difference being that all varieties [castas] of magueys of New Spain bear at the tip of their leaves a very hard and sharp black spine resembling an awl [lesna], which the maguey of this kingdom [Peru] entirely lacks. The maguey of wine is very widespread in New Spain, from which some mo[...] [text breaks off — segment incomplete]",
+      "entities_mentioned": [
+        {
+          "name": "maguey del capítulo pasado",
+          "modern_identification": "Agave americana or related Andean Agave sp.",
+          "identification_confidence": "medium",
+          "notes": "Described as the maguey native to Peru, lacking terminal spines on its leaves; likely a distinct Andean agave species or variety."
+        },
+        {
+          "name": "maguey del vino",
+          "modern_identification": "Agave salmiana or Agave mapisaga (pulque agave)",
+          "identification_confidence": "medium",
+          "notes": "The 'maguey of wine' from New Spain, characterized by a hard, sharp black terminal spine resembling an awl (lesna). Used to produce fermented sap (pulque). The specific epithet 'del vino' refers to its use in producing alcoholic beverages. Multiple New Spain agave species were used for pulque; Agave salmiana and A. mapisaga are the most historically prominent."
+        }
+      ],
+      "translator_notes": "The segment is incomplete — the final word 'algunos mo[...]' is cut off and the chapter continues beyond this excerpt. The word 'lesna' (an awl or cobbler's needle) is a period-appropriate Spanish term preserved in brackets for technical clarity. 'Castas' is translated as 'varieties' in context, though it literally means 'breeds' or 'races' and reflects the colonial taxonomic vocabulary. The OCR error 'Es£.)aña' has been silently corrected to 'España'; 'casta^s' corrected to 'castas'.",
+      "_label": "cobo_vol1::QUINTO::cap_XXI"
+    },
+    {
+      "title_inferred": "On Coca: Description of the Plant and Its Trade",
+      "original_text": "CAPITULO XXIX\nDe la coca\n\nEn este reino del Perú no hay cosa más conocida que la coca, cuyo trato es de los gruesos y de mayor ganancia que hay en las Indias, y con que no pocos españoles se han hecho ricos. Es la coca una mata no mayor que los manzanos enanos de España, de hasta un estado en alto; su hoja, que es la que tanto precian y estiman los indios, es del tamaño y talle de la del limoncillo, y a veces menor. Da una frutilla colorada, seca y sin jugo, tamaña como pequeños escaramujos.",
+      "translation": "CHAPTER XXIX\nOn Coca\n\nIn this kingdom of Peru there is no commodity [cosa] better known than coca, the trade in which is among the largest and most profitable to be found in the Indies, and by which no few Spaniards have made themselves rich. Coca is a shrub [mata] no larger than the dwarf apple trees of Spain, reaching up to one estado [approximately six feet] in height. Its leaf, which is the part so prized and esteemed by the Indians, is the size and shape of that of the small lemon tree [limoncillo], and sometimes smaller. It produces a small red fruit, dry and without juice, about the size of small rose hips [escaramujos].",
+      "entities_mentioned": [
+        {
+          "name": "coca",
+          "modern_identification": "Erythroxylum coca",
+          "identification_confidence": "high",
+          "notes": "Cobo describes the plant morphology: a shrub roughly six feet tall, with leaves similar in size and shape to those of a small citrus tree, and small dry red fruits resembling rose hips. He emphasizes its enormous commercial importance in colonial Peru."
+        },
+        {
+          "name": "limoncillo",
+          "modern_identification": "A small-leafed citrus species, likely Citrus aurantiifolia (lime) or a related dwarf variety",
+          "identification_confidence": "medium",
+          "notes": "Used here as a morphological reference point for the size and shape of the coca leaf, not as a medicinal or trade entity in its own right."
+        },
+        {
+          "name": "escaramujos",
+          "modern_identification": "Rosa canina (dog rose) hips, or rose hips generally",
+          "identification_confidence": "high",
+          "notes": "Used as a size comparison for the coca fruit; escaramujo is the standard Spanish term for rose hip."
+        }
+      ],
+      "translator_notes": "Several OCR corruptions were silently corrected: 'cm' → 'cosa', 'tra^' → 'trato', 'ganaijcia' → 'ganancia', 'P'' → 'po-' (i.e., 'pocos'), 'h' → 'Es la' (reconstructed from context), 'm' before 'estado' → 'un', 'qie' → 'que', 'm' before 'del tamaño' → 'es', 'tí' → 'cillo' (completing 'limoncillo'), 'lorada' → 'colorada', 'com' → 'como', and the trailing 'q' at segment end is a truncation artifact. The segment ends mid-sentence and continues in a subsequent part. 'Un estado' is a period unit of height roughly equivalent to a man's height (~1.7–1.8 m or ~6 ft). No medical preparation is described in this segment; this portion covers botanical description and commercial context only.",
+      "_label": "cobo_vol1::QUINTO::cap_XXIX_part1"
+    },
+    {
+      "title_inferred": "The Canlla shrub of the cold Peruvian highlands",
+      "original_text": "CAPITULO LXXI\nDe la canglla\n\nEn los páramos y sierras frías del Perú, principalmente en las dilatadas provincias del Collao, donde no nacen árboles para leña, suplió su falta el Criador con algunas especies de matas pequeñas, entre las cuales, la más general es la canglla, la cual nace en gran cantidad y es una mata aparrada en la tierra, que no se levanta della más que de uno a dos pies. Echa muchos ramos llenos de unas espinillas blancas muy delgadas y agudas. La hoja no es mayo",
+      "translation": "CHAPTER LXXI\nOn the canlla\n\nIn the cold moorlands [páramos] and mountain ranges of Peru, principally in the extensive provinces of the Collao, where no trees grow for use as firewood, the Creator supplied this lack with certain species of small shrubs [matas], among which the most common is the canlla, which grows in great abundance. It is a low-spreading shrub [mata aparrada] close to the ground, rising no more than one to two feet above it. It puts forth many branches covered with very fine, sharp, white little thorns. The leaf is no larger— [text continues in next segment]",
+      "entities_mentioned": [
+        {
+          "name": "canglla (canlla)",
+          "modern_identification": "Possibly Tetraglochin cristatum or a related Rosaceae shrub of the Andean puna; alternatively a species of Adesmia (Fabaceae) or Chuquiragua spinosa — all low thorny puna shrubs used as fuel",
+          "identification_confidence": "low",
+          "notes": "The OCR renders the name with a diacritical mark ('canglla^') which likely represents the colonial orthographic convention 'canglla' or 'canlla'. The description of a low, spiny, ground-hugging shrub in the altiplano (Collao/puna zone) used as a firewood substitute fits several taxa; confident identification requires the remainder of the description in subsequent segments."
+        },
+        {
+          "name": "Collao (provinces of the Collao)",
+          "modern_identification": "The altiplano region around Lake Titicaca, encompassing modern southern Peru and northwestern Bolivia",
+          "identification_confidence": "high",
+          "notes": null
+        }
+      ],
+      "translator_notes": "The segment breaks off mid-sentence ('La hoja no es mayo—'), indicating the description of the leaf continues in the next segment. No medical or pharmaceutical use is described in this partial passage; it is primarily botanical and geographic. 'Aparrada' is a period term meaning sprawling or spreading close to the ground, analogous to a prostrate growth habit. OCR artifact 'canglla^' has been silently normalized to 'canglla'; the caret likely represents a now-dropped diacritical or scribal flourish in the original.",
+      "_label": "cobo_vol1::QUINTO::cap_LXXI_part1"
+    },
+    {
+      "title_inferred": "On the Trees of the Indies in General (Chapter 1, Part 1)",
+      "original_text": "CAPITULO PRIMERO\n\nDe los árboles de las Indias en común\n\nSon tantos los géneros y especies de árboles, así frutales como infructíferos y silvestres que se hallan en este Nuevo Mundo, que faltan nombres con que significarlos; porque, demás de muchos que son generales y nacen en todas partes, en cada provincia se hallan nuevas plantas no vistas ni sabidas antes; y lo que pone gran admiración, es ver que siendo tierra ésta de tantos bosques y selvas, sean tan pocas las plantas que te[nemos conocidas]",
+      "translation": "CHAPTER ONE\n\nOn the Trees of the Indies in General\n\nSo numerous are the genera and species of trees — both fruit-bearing and non-fruit-bearing, wild and otherwise — found in this New World, that names are lacking with which to designate them; for, beyond the many that are common and grow everywhere, in each province there are found new plants never before seen or known. And what inspires great wonder is to see that, this land being one of so many forests and jungles, so few of the plants are [known to us — text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "árboles de las Indias (Trees of the Indies)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "This is a general introductory passage referring collectively to the trees of the New World; no specific species are identified in this segment."
+        }
+      ],
+      "translator_notes": "The segment is incomplete — the final sentence breaks off mid-clause ('sean tan pocas las plantas que te—'), likely due to OCR failure at a page break or damaged source. The cleaned original reconstructs 'siendo' from the OCR artifact 'mmdo' (clearly a misread) and 'silvestres' from 'T «Ivestres', both corrections are unambiguous in context. No medicinal plants, preparations, or ailments are described in this segment; it is purely introductory and taxonomic in nature.",
+      "_label": "cobo_vol1::SEXTO::cap_PRIMERO_part1"
+    },
+    {
+      "title_inferred": "Trees of the Same Genera Found in the Indies as in Spain",
+      "original_text": "CAPITULO II\n\nDe los árboles que se hallaron en estas Indias de los mismos géneros que los de España\n\nMuy pocos son los árboles que cuando vinieron a esta tierra los españoles hallaron en ella semejantes en especie a los de España; y ésos los más son infructíferos y silvestres. El árbol más general deste género que se halla en todas las provincias del Perú es el aliso, el cual nace en los valles templados de la Sierra, de cuya madera se gasta gran cantidad en los edificios de la",
+      "translation": "CHAPTER II\n\nOn the trees found in these Indies that belong to the same genera as those of Spain\n\nVery few are the trees that, when the Spaniards came to this land, they found here resembling in species those of Spain; and most of those are unfruitful and wild. The most widespread tree of this kind, found throughout all the provinces of Peru, is the alder [aliso], which grows in the temperate valleys of the Sierra, and whose timber is consumed in great quantities in the buildings of the [segment ends mid-sentence]",
+      "entities_mentioned": [
+        {
+          "name": "aliso",
+          "modern_identification": "Alnus acuminata (Andean alder) or possibly Alnus jorullensis",
+          "identification_confidence": "high",
+          "notes": "The aliso is the Andean alder, a tree native to the temperate mountain valleys of the Andes. Cobo notes its primary utility here as construction timber rather than medicinal or food use. The segment is cut off mid-sentence, likely continuing with further description of its uses in building."
+        }
+      ],
+      "translator_notes": "The segment ends abruptly mid-sentence ('en los edificios de la'), indicating the source text was truncated. No medical or pharmacological content is present in this portion; it is botanical-descriptive and economic in nature. The OCR error 'árLoles' in the original has been silently corrected to 'árboles'.",
+      "_label": "cobo_vol1::SEXTO::cap_II_part1"
+    },
+    {
+      "title_inferred": "The Mamón: Description of the Tree and Fruit",
+      "original_text": "CAPITULO VI\n\nDel mamón\n\nEn la isla Española llaman mamón a otro árbol y fruta parecida a la anona. Es el mamón árbol mediano, del grandor de un durazno, de muy buen parecer; su hoja es semejante a la del aliso, algo mayor y más acanalada y de un verde muy claro, que hermosea mucho el árbol; la fruta tiene el mismo nombre, la cual, cuando está pequeña y verde, parece alcachofa, por la cáscara muy desigual en la superficie, como compuesta de escamas verdes unas sobre otras.",
+      "translation": "CHAPTER VI\n\nOn the Mamón\n\nOn the island of Hispaniola they call mamón another tree and fruit resembling the anona [custard apple]. The mamón is a medium-sized tree, as large as a peach tree [durazno], and of very handsome appearance; its leaf is similar to that of the alder [aliso], somewhat larger and more channeled [acanalada], and of a very light green that greatly beautifies the tree. The fruit bears the same name; when it is small and green, it resembles an artichoke [alcachofa] on account of its very uneven surface, as though composed of green scales layered one upon another.",
+      "entities_mentioned": [
+        {
+          "name": "mamón",
+          "modern_identification": "Annona reticulata (custard apple / bullock's heart) or possibly Annona squamosa (sugar apple); the scaly green surface description favors Annona squamosa",
+          "identification_confidence": "medium",
+          "notes": "Cobo distinguishes this from the 'anona' proper, yet describes it as similar. The scale-like green surface strongly suggests Annona squamosa or a closely related Annonaceae species. The name 'mamón' is also applied to other unrelated fruits in different regions, adding ambiguity."
+        },
+        {
+          "name": "anona",
+          "modern_identification": "Annona spp. (custard apple family)",
+          "identification_confidence": "high",
+          "notes": "Used as a comparative reference point; Cobo treats it as a separate, already-known species."
+        },
+        {
+          "name": "aliso",
+          "modern_identification": "Alnus glutinosa or related alder species",
+          "identification_confidence": "high",
+          "notes": "Used as a leaf-shape reference for European readers familiar with the alder tree."
+        }
+      ],
+      "translator_notes": "The source OCR produced several artefacts: a broken line mid-sentence ('por ;'), a stray caret/circumflex after 'verdes^', and split words ('superfide' for 'superficie'). All have been silently corrected as the intended readings are unambiguous. This segment ends mid-description; it is marked 'part1', indicating continuation. No medical or pharmaceutical content appears in this segment.",
+      "_label": "cobo_vol1::SEXTO::cap_VI_part1"
+    },
+    {
+      "title_inferred": "On the Zapotes (Chapter XII, Part 1)",
+      "original_text": "CAPITULO XII\nDe los zapotes.\n\nLos zapotes son propios de la Nueva España, adonde se hallan cinco diferencias dellos; los mejores son los colorados. El árbol que los lleva es grande y copado como el mamey, con los cogollos muy poblados de hoja; ésta es larga un palmo, lisa, tiesa, de un verde oscuro y más ancha al cabo que en medio. La fruta es del tamaño de un membrillo y aun como una grande cidra, ahusada, con la cáscara delgada y tierna; la carne, muy colorada y bland[a]",
+      "translation": "CHAPTER XII\nOn the Zapotes.\n\nThe zapotes are native to New Spain, where five varieties of them are found; the best are the red ones. The tree that bears them is large and wide-crowned like the mamey, with the young shoots very densely covered in leaves; each leaf is a palm's length [roughly 8 inches] long, smooth, stiff, of a dark green, and wider at the tip than in the middle. The fruit is the size of a quince and even as large as a big citron, spindle-shaped, with a thin and tender skin; the flesh is very red and soft [text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "zapote (colorados / red zapote)",
+          "modern_identification": "Pouteria sapota (mamey sapote) or possibly Diospyros digyna (black sapote) for other varieties; the 'colorados' (red) most likely refers to Pouteria sapota",
+          "identification_confidence": "medium",
+          "notes": "Cobo notes five varieties in New Spain; the red variety is described here. The spindle shape and red flesh are consistent with mamey sapote (Pouteria sapota), though colonial usage of 'zapote' was broad and sometimes inconsistent across sources."
+        },
+        {
+          "name": "mamey",
+          "modern_identification": "Mammea americana or Pouteria sapota",
+          "identification_confidence": "medium",
+          "notes": "Referenced only as a size/shape comparison for the zapote tree, not described independently in this segment."
+        },
+        {
+          "name": "membrillo",
+          "modern_identification": "Cydonia oblonga (quince)",
+          "identification_confidence": "high",
+          "notes": "Used as a size comparison for the zapote fruit."
+        },
+        {
+          "name": "cidra",
+          "modern_identification": "Citrus medica (citron)",
+          "identification_confidence": "high",
+          "notes": "Used as an upper-bound size comparison for larger zapote fruits."
+        }
+      ],
+      "translator_notes": "The final word 'bland' is a truncated OCR artifact; the intended word is almost certainly 'blanda' (soft/tender), which completes the description of the fruit's flesh. No medical or pharmacological information appears in this segment, which ends mid-description; preparation and medicinal use may appear in a subsequent part. The measure 'palmo' (palm) is a period Spanish unit of approximately 20–21 cm (roughly 8 inches).",
+      "_label": "cobo_vol1::SEXTO::cap_XII_part1"
+    },
+    {
+      "title_inferred": "Additional Palms of the First Genus",
+      "original_text": "CAPITULO LXVII\n\nDe las demás palmas de este primer género\n\nEn la sobredicha provincia de Santa Cruz de la Sierra llaman a otra palma muqui; es muy alta y lleva cierta fruta odorífera del tamaño y hechura de un albaricoque, la cual comen los indios.\n\nOtra palma, llamada metaquigi, echa unos racimos grandes de cierta fruta morada del tamaño de aceitunas; casi todo es hueso, y lo que tiene de carne es muy sabroso y oloroso.\n\nOtra, llamada siriha, da la fruta en racimos, la cual se co[me...]",
+      "translation": "CHAPTER LXVII\n\nOn the remaining palms of this first genus\n\nIn the aforementioned province of Santa Cruz de la Sierra, another palm is called muqui; it is very tall and bears a certain fragrant fruit the size and shape of an apricot, which the Indians eat.\n\nAnother palm, called metaquigi, puts forth large clusters of a certain purple fruit the size of olives; it is almost entirely pit [stone], and what flesh it does have is very flavorful and fragrant.\n\nAnother, called siriha, bears its fruit in clusters, which is eaten [text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "muqui (palm)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Described as a very tall palm from the province of Santa Cruz de la Sierra (present-day Bolivia) bearing apricot-sized, fragrant fruit consumed by indigenous peoples. OCR rendered as 'mmuqui'; corrected to 'muqui'."
+        },
+        {
+          "name": "metaquigi (palm)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Bears large clusters of purple, olive-sized fruit with a very large pit and small but flavorful, fragrant flesh. Possibly a species of Bactris or Astrocaryum, but identification is speculative."
+        },
+        {
+          "name": "siriha (palm)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Described as bearing fruit in clusters. Description is incomplete due to truncation of the source text."
+        }
+      ],
+      "translator_notes": "The segment is truncated at the end mid-sentence ('la cual se co—'), likely due to a page break or OCR/digitization failure; the missing continuation probably read 'se come' (is eaten) followed by further description. OCR errors corrected: 'mmuqui' → 'muqui'; 'irnos' → 'unos'; 'iodo' → 'todo'; 'US' → 'un'; 'mmos' → 'racimos'. The name 'siriha' ends with a caret-like character in the original (likely a typographic artifact or OCR of a comma/period), silently normalized. No medicinal preparations are described in this segment; plants are noted solely as food sources.",
+      "_label": "cobo_vol1::SEXTO::cap_LXVII"
+    },
+    {
+      "title_inferred": "Chapters on the Hoque and Canacaspi Trees",
+      "original_text": "CAPITULO CXX\n\nDel Hoque\n\nEl Hoque es un árbol que nace en la [sierra] del Perú, de madera recia y [dura]. Echa sus ramas largas y derechas, de las cuales se hacen bordones, que salen muy pesados, nudosos y recios, y varas para otros usos para que se requiere madera fuerte.\n\nCAPITULO CXXI\n\nDel canacaspi\n\nEl canacaspi nace en tierras yuncas. Es árbol muy grande; produce las ramas y hojas muy semejantes a las del guarango-espino, salvo que no tiene espinas. De este género de árboles hac[e...]",
+      "translation": "CHAPTER CXX\n\nOf the Hoque\n\nThe Hoque is a tree that grows in the [sierra, i.e., highlands] of Peru, of tough and [hard] wood. It puts forth long, straight branches, from which walking staffs [bordones] are made, which turn out very heavy, knotty, and strong, as well as rods for other uses that require sturdy timber.\n\nCHAPTER CXXI\n\nOf the Canacaspi\n\nThe canacaspi grows in the yunca [lowland/coastal valley] lands. It is a very large tree; it produces branches and leaves very similar to those of the guarango-espino [thorny guarango], except that it has no thorns. From this kind of tree [the text continues, cut off...]",
+      "entities_mentioned": [
+        {
+          "name": "Hoque",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Described as a hard-wooded highland Peruvian tree used for making walking staffs (bordones) and structural rods. No medicinal use mentioned in this fragment. Specific botanical identity not determinable from this description alone."
+        },
+        {
+          "name": "canacaspi",
+          "modern_identification": "Possibly a species in the family Fabaceae or related family, given comparison to guarango",
+          "identification_confidence": "low",
+          "notes": "Grows in lowland yunca regions of Peru. Described as closely resembling the guarango-espino (likely Vachellia/Prosopis species) but lacking thorns. The text is cut off before uses are described. 'Canacaspi' is a Quechua-derived name ('cana' + 'caspi' meaning wood/tree)."
+        },
+        {
+          "name": "guarango-espino",
+          "modern_identification": "Vachellia macracantha or Prosopis pallida (thorny guarango/huarango)",
+          "identification_confidence": "medium",
+          "notes": "Used here as a morphological reference point for comparison with the canacaspi. A well-known spiny leguminous tree of coastal and highland Peru."
+        }
+      ],
+      "translator_notes": "The opening of Chapter CXX contains OCR lacunae: the phrase 'que nace en la / del Perú' is missing a word, most likely 'sierra' (highlands) based on context and Cobo's typical regional descriptors. Similarly, 'de madera recia y' appears to be missing a second adjective, plausibly 'dura' (hard). The word 'ctmacaspi' in the source is an OCR error for 'canacaspi,' corrected silently. The asterisk after 'yuncas*' in the source likely denotes a marginal note or editorial mark in the original manuscript; no corresponding note is present in this segment. Chapter CXXI is incomplete, ending mid-sentence. No medical or pharmacological content appears in this fragment.",
+      "_label": "cobo_vol1::SEXTO::cap_CXX_part1"
+    },
+    {
+      "title_inferred": "On the Enduring Memory of the Spanish Nation in the New World",
+      "original_text": "CAPITULO XIX\nProsigue la materia del pasado\n\nTodo esto he traído a propósito de probar que está la memoria de nuestra nación tan arraigada en esta tierra, que cuando ahora la desamparáramos, no era posible borrarse de los ánimos de los naturales della que en los tiempos venideros sucedieren a los que hoy viven, ni que de tanta multitud de vocablos dejase de haber perpetuamente rastros muy notorios; y la memoria de los nombres susodichos tengo por imposible se extinguiese; y qu",
+      "translation": "CHAPTER XIX\nContinuing the subject of the previous chapter\n\nAll of this I have brought forward with the purpose of proving that the memory of our nation is so deeply rooted in this land, that even if we were now to abandon it, it would not be possible to erase it from the minds of the native peoples thereof who in times to come shall succeed those who live today, nor that from so great a multitude of words there should fail to remain perpetually very notable traces; and the memory of the aforementioned names I hold to be impossible to extinguish; and [text breaks off]",
+      "entities_mentioned": [],
+      "translator_notes": "This segment is not a botanical or medical passage. It is a rhetorical/historical argument by Cobo about the permanence of Spanish cultural and linguistic influence on the indigenous peoples of the Americas, even hypothetically in the event of Spanish withdrawal. The segment ends abruptly mid-sentence ('y qu'), indicating an OCR truncation or page-break in the source. No plant, drug, or medical content is present in this segment. No entity extraction is applicable.",
+      "_label": "cobo_vol2::VI::cap_XIX_part1"
+    },
+    {
+      "title_inferred": "Rebuttal of opposing arguments and determination of the location of Ophir",
+      "original_text": "CAPITULO XX\n\nEn que se responde a los argumentos de la opinión contraria y se declara dónde caía Ophir\n\nBien miradas las razones y argumentos en que fundan su opinión los contrarios, juzgo ser de muy poca sustancia para determinar por ellos cosas tan grandes. Porque, al primero que traen del dicho del almirante don Cristóbal Colón, digo que no se debe hacer mucho caso de los nombres con que publican y celebran las nuevas tierras sus descubridores, para sacar dellos el h[allazgo de Ophir —]",
+      "translation": "CHAPTER XX\n\nIn which the arguments of the opposing opinion are answered and it is declared where Ophir was located\n\nHaving carefully examined the reasons and arguments upon which the opponents base their opinion, I judge them to be of very little substance for determining such great matters by them. For, as to the first argument they bring forward—namely, the statement of Admiral Don Christopher Columbus—I say that one ought not to place much weight on the names with which discoverers publicize and celebrate new lands, in order to derive from them the [discovery of Ophir —]",
+      "entities_mentioned": [
+        {
+          "name": "Ophir",
+          "modern_identification": "Disputed biblical location; various theories place it in Arabia, Africa, India, or the Americas",
+          "identification_confidence": "unknown",
+          "notes": "Cobo is engaging in a scholarly debate about whether Ophir, the biblical land of gold mentioned in connection with King Solomon, could be identified with lands in the New World. This chapter promises to refute opposing arguments and offer his own determination."
+        },
+        {
+          "name": "Don Cristóbal Colón",
+          "modern_identification": "Christopher Columbus (1451–1506)",
+          "identification_confidence": "high",
+          "notes": "Referred to by his Spanish title 'el almirante' (the Admiral). Cobo references a statement attributed to Columbus apparently used by opposing scholars to argue for a particular identification of Ophir."
+        }
+      ],
+      "translator_notes": "The segment is cut off mid-sentence at 'el h', almost certainly continuing as 'hallazgo' (discovery) or a similar word. The OCR rendered 'ios argnrnentos' for 'los argumentos' and 'contrarios*' with a spurious asterisk; these have been silently corrected in the cleaned original. No plant, drug, or medical content is present in this segment; it is a geographical-historical disputation. This chapter belongs to Cobo's extended argument about the biblical location of Ophir, a recurring topic in colonial-era Iberian cosmography.",
+      "_label": "cobo_vol2::VI::cap_XX_part1"
+    },
+    {
+      "title_inferred": "On the reliability of sources regarding the Incas",
+      "original_text": "los Incas, pues la autoridad de los que averiguaron el uno y el otro es una misma, y no es justo les demos menos crédito en lo uno que en lo otro. Cuanto más que, cuando nada hubieran escrito de ello, es negocio que está en la memoria de los mismos indios más fresco de lo",
+      "translation": "the Incas, since the authority of those who investigated the one and the other is the same, and it is not right that we give them less credit in the one than in the other. All the more so because, even had they written nothing of it, this is a matter that remains fresher in the memory of the Indians themselves than",
+      "entities_mentioned": [
+        {
+          "name": "Incas",
+          "modern_identification": "Inca civilization, pre-Columbian Andean empire",
+          "identification_confidence": "high",
+          "notes": "Cobo is defending the consistency and credibility of sources used to document Inca history and customs."
+        }
+      ],
+      "translator_notes": "This segment is a fragment mid-sentence, cut off at the end ('más fresco de lo'). The passage forms part of a methodological argument by Cobo defending the reliability of his sources regarding the Incas — asserting that the same authorities who documented one aspect of Inca culture documented others equally, and therefore deserve equal credence. No botanical or medical content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_II_part3"
+    },
+    {
+      "title_inferred": "Inca Creation Myth: Origin of Cuzco and the Island of Titicaca",
+      "original_text": "su habitación en aquel asiento; y que este fué el principio de la ciudad del Cuzco.\n\nOtro desvarío es que cuando el Criador del mundo (que en su lengua llaman de dos maneras, conviene a saber, Ticciviracocha y Pachayachachi) formó todas las cosas en Tiaguanaco, fingen que residía, mandó al sol, luna y estrellas irse a la isla de Titicaca, que está en la laguna deste nombre, y que desde allí se subiesen al cielo; y que al tiempo que se quería partir e...",
+      "translation": "their dwelling in that place; and that this was the origin of the city of Cuzco.\n\nAnother absurdity [desvarío] is that when the Creator of the world (whom in their language they call by two names, namely, Ticciviracocha and Pachayachachi) had formed all things in Tiahuanaco, where they pretend he resided, he commanded the sun, moon, and stars to go to the Island of Titicaca, which lies in the lake of that name, and from there to rise up into the sky; and that at the time he was about to depart [the text breaks off here].",
+      "entities_mentioned": [
+        {
+          "name": "Ticciviracocha",
+          "modern_identification": "Viracocha — principal Andean creator deity",
+          "identification_confidence": "high",
+          "notes": "One of two names given by Cobo for the Inca creator god; also spelled Tici Viracocha or Thunupa-Viracocha in other sources."
+        },
+        {
+          "name": "Pachayachachi",
+          "modern_identification": "Pachayachachi — epithet of Viracocha meaning 'Teacher of the World'",
+          "identification_confidence": "high",
+          "notes": "From Quechua 'pacha' (world/time) and 'yachachi' (teacher/instructor); a well-attested alternative title for the creator deity."
+        },
+        {
+          "name": "Tiaguanaco",
+          "modern_identification": "Tiwanaku — pre-Inca archaeological site, present-day Bolivia",
+          "identification_confidence": "high",
+          "notes": "Cobo's spelling is a common 17th-century variant. Regarded in Inca cosmology as the site of creation."
+        },
+        {
+          "name": "isla de Titicaca",
+          "modern_identification": "Isla del Sol, Lake Titicaca, Bolivia",
+          "identification_confidence": "high",
+          "notes": "The sacred island on Lake Titicaca associated in Inca mythology with the birth of the sun and moon."
+        },
+        {
+          "name": "Cuzco",
+          "modern_identification": "Cusco, Peru — capital of the Inca Empire",
+          "identification_confidence": "high",
+          "notes": null
+        }
+      ],
+      "translator_notes": "This segment contains no botanical, pharmaceutical, or medical content; it is purely mythographic/ethnographic. The OCR rendered 'Pachayachachi' as 'Pachayacha^k' and 'Tiaguanaco' as 'TiaguanSiCO' — both silently corrected as unambiguous. The word 'desvarío' (rendered as 'absurdity' or 'nonsense') reflects Cobo's dismissive Christian framing of indigenous belief. The segment ends mid-sentence ('al tiempo que se quería partir e...'), indicating a page-break truncation in the source OCR; no content has been invented to complete it.",
+      "_label": "cobo_vol2::IV::cap_II_part4"
+    },
+    {
+      "title_inferred": "Chapter IV: Manco Cápac, First King of the Incas",
+      "original_text": "CAPITULO IV\n\nDe Manco-Cápac, primer rey de los Incas\n\nApoderado el Inca Manco-Cápac del mando de aquella corta comunidad y república de hombres bárbaros, se portó con ellos más con humanidad y llaneza de hermano, que con autoridad de superior. Empleaba toda su industria en procurar el bien y acrecentamiento de los suyos.\n\nAnte todas cosas, dividió la nueva población del Cuzco en las dos parcialidades de Hanan-Cuzco y Hurin-Cuzco arriba dichas; ordenó las cosas de la...",
+      "translation": "CHAPTER IV\n\nConcerning Manco Cápac, the first king of the Incas\n\nOnce the Inca Manco Cápac had taken command of that small community and commonwealth [república] of barbarous men, he conducted himself among them more with the humanity and familiarity [llaneza] of a brother than with the authority of a superior. He devoted all his industry [diligence] to securing the welfare and advancement of his people.\n\nFirst of all, he divided the new settlement of Cuzco into the two factions [parcialidades] of Hanan-Cuzco and Hurin-Cuzco, mentioned above; he then ordered the affairs of the...",
+      "entities_mentioned": [
+        {
+          "name": "Manco-Cápac",
+          "modern_identification": "Manco Cápac — legendary founder and first Sapa Inca of the Inca dynasty",
+          "identification_confidence": "high",
+          "notes": "Cobo presents him as a historical figure; modern scholarship treats him as semi-legendary. The segment introduces his style of rule as fraternal rather than coercive."
+        },
+        {
+          "name": "Cuzco",
+          "modern_identification": "Cusco, Peru — capital of the Inca Empire",
+          "identification_confidence": "high",
+          "notes": "Referred to here as a newly established settlement being organized by Manco Cápac."
+        },
+        {
+          "name": "Hanan-Cuzco",
+          "modern_identification": "Upper Cusco — the upper moiety division of the Inca capital",
+          "identification_confidence": "high",
+          "notes": "One of the two traditional social/spatial divisions (parcialidades) of Cuzco."
+        },
+        {
+          "name": "Hurin-Cuzco",
+          "modern_identification": "Lower Cusco — the lower moiety division of the Inca capital",
+          "identification_confidence": "high",
+          "notes": "The second of the two parcialidades; Cobo notes these divisions were described earlier in the text ('arriba dichas')."
+        }
+      ],
+      "translator_notes": "The source text contains several OCR errors: 'Cápao^' corrected to 'Cápac'; 'coraunidaá' to 'comunidad'; 'pm-tó' to 'portó'; 'autoridai' to 'autoridad'; 'indiM-tria' to 'industria'; 'acrece®^ ^tamiento' to 'acrecentamiento'; 'Cuie®' to 'Cuzco'. The segment ends mid-sentence, indicating continuation in a subsequent segment. No medical or botanical content is present; entity extraction focuses on historical and geographical figures. 'Llaneza' (plainness, familiarity, lack of pretension) is preserved in brackets as it carries a specific period connotation of egalitarian conduct.",
+      "_label": "cobo_vol2::IV::cap_IV_part1"
+    },
+    {
+      "title_inferred": "Reign of Lluqui-Yupanqui, Third Inca",
+      "original_text": "CAPITULO VI\n\nDe Lluqui-Yupanqui, tercero Inca\n\nHabiendo el Inca Lluqui-Yupanqui tercero rey del Perú, luego que entró a gobernar, puesto en plática la manera como había de ser señor de todos los pueblos del contorno del Cuzco, y señalado algunos hombres principales para que en esto le ayudasen como capitanes y oficiales de los ejércitos que tuviese, cuentan los indios en sus fábulas, que estando en sus sacrificios y oraciones, como lo acostumbraban los Incas sus padres, se le",
+      "translation": "CHAPTER VI\n\nOn Lluqui-Yupanqui, the Third Inca\n\nThe Inca Lluqui-Yupanqui, third king of Peru, having entered into governance, set about deliberating the manner in which he was to become lord over all the peoples of the surrounding region of Cuzco, and having designated certain principal men to assist him in this as captains and officers of the armies he would raise, the Indians recount in their fables [traditional oral accounts] that while he was engaged in his sacrifices and prayers, as was the custom of the Incas his forebears, there appeared to him [text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Lluqui-Yupanqui",
+          "modern_identification": "Lloque Yupanqui, third Sapa Inca of the Kingdom of Cusco",
+          "identification_confidence": "high",
+          "notes": "Cobo's spelling 'Lluqui-Yupanqui' is a variant of the more standardized 'Lloque Yupanqui.' He is traditionally recognized as the third ruler in the Inca dynastic succession, though the historicity of early Inca rulers is debated."
+        },
+        {
+          "name": "Cuzco",
+          "modern_identification": "Cusco, Peru",
+          "identification_confidence": "high",
+          "notes": "The imperial capital of the Inca empire, located in the southern highlands of modern-day Peru."
+        }
+      ],
+      "translator_notes": "The segment ends mid-sentence ('se le'), indicating the OCR or source transcription cut off the text at this point. No plant, drug, or medical content is present in this segment; it is a historical-dynastic narrative. The OCR error 'Lluqui-Yupanqiih' in line 2 has been silently corrected to 'Lluqui-Yupanqui' throughout, as the intended name is unambiguous. The word 'fábulas' is rendered as 'fables [traditional oral accounts]' to preserve both the period connotation of indigenous oral tradition and Cobo's somewhat dismissive framing of native historical memory.",
+      "_label": "cobo_vol2::IV::cap_VI"
+    },
+    {
+      "title_inferred": "Chapter VII: Mayta Cápac, Fourth King of the Incas",
+      "original_text": "CAPITULO VII\n\nDe Mayta Cápac, cuarto rey de los Incas\n\nCriaron los gobernadores al príncipe con más regalo y libertad que solían criarse los otros hijos de los reyes antes dél; por lo cual salió Mayta Cápac mozo travieso y atrevido, demás de que de su natural era valiente y animoso. Antes que saliese de tutela, estando un día jugando con otros mozos de su edad, no faltó quien le dijese que mirase por sí y se enmendase, porque, si no lo hacía, habían sus travesuras de ser causa",
+      "translation": "CHAPTER VII\n\nConcerning Mayta Cápac, fourth king of the Incas\n\nThe governors raised the prince with more indulgence and freedom than the other sons of kings before him were accustomed to being raised; on account of which Mayta Cápac grew up a mischievous and bold young man, over and above the fact that by his nature he was brave and spirited. Before he had come out of guardianship [tutela], while one day playing with other youths of his age, there was no lack of someone to tell him that he should look to himself and mend his ways, because if he did not do so, his mischievous deeds were bound to be the cause [of—]",
+      "entities_mentioned": [
+        {
+          "name": "Mayta Cápac",
+          "modern_identification": "Mayta Cápac, fourth Sapa Inca of the Kingdom of Cusco (semi-legendary ruler)",
+          "identification_confidence": "high",
+          "notes": "Described here as the fourth Inca king; raised under governors (regents) with unusual liberty, resulting in a bold and mischievous character. This segment ends mid-sentence, suggesting the narrative continues in a subsequent part."
+        }
+      ],
+      "translator_notes": "The segment ends abruptly mid-sentence ('habían sus travesuras de ser causa'), indicating a page break or OCR truncation. The diacritical circumflex in 'Mayta^Cápac' in the source OCR is an artifact; corrected to 'Mayta Cápac'. The word '16' in the source ('si no 16 hacía') is an OCR error for 'lo'; silently corrected. No botanical, medical, or pharmacological content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_VII_part1"
+    },
+    {
+      "title_inferred": "Chapter IX: On the Sixth King of Peru, Called Inca Roca",
+      "original_text": "CAPITULO IX\n\nDel sexto rey del Perú, llamado Inca-Roca\n\nDel sexto rey desta tierra fué Inca-Roca, de quien dicen los indios haber comenzado la parcialidad de Hanan-Cuzco. Mas comoquiera que desde Manco-Cápac fué hecha aquella división de la ciudad del Cuzco en las dos parcialidades referidas de Hanan-Cuzco y Hurin-Cuzco, no pudo tener principio en este Inca la de Hanan-Cuzco. La razón de hacerlo cabeza y origen della, quizá fué por haber sido el primero de los Incas reyes",
+      "translation": "CHAPTER IX\n\nOn the Sixth King of Peru, Called Inca Roca\n\nThe sixth king of this land was Inca Roca, of whom the Indians say he was the founder of the faction [parcialidad] of Hanan-Cuzco. However, given that the division of the city of Cuzco into the two aforementioned factions of Hanan-Cuzco and Hurin-Cuzco had already been established since the time of Manco Cápac, the origin of Hanan-Cuzco cannot properly be attributed to this Inca. The reason for making him its head and founder was perhaps that he was the first of the Inca kings [text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Inca Roca",
+          "modern_identification": "Inca Roca, traditionally regarded as the sixth Sapa Inca of the Kingdom of Cusco",
+          "identification_confidence": "high",
+          "notes": "Cobo situates him as the sixth ruler of Peru and credits him popularly—though with skepticism—as the founder of the Hanan-Cuzco moiety."
+        },
+        {
+          "name": "Manco Cápac",
+          "modern_identification": "Manco Cápac, legendary founder and first Sapa Inca of the Inca dynasty",
+          "identification_confidence": "high",
+          "notes": "Cited here as the original author of the bipartite division of Cuzco into Hanan-Cuzco and Hurin-Cuzco."
+        },
+        {
+          "name": "Hanan-Cuzco",
+          "modern_identification": "The upper moiety (saya) of the city of Cuzco in Inca administrative and social organization",
+          "identification_confidence": "high",
+          "notes": "One of the two principal divisions (parcialidades) of Cuzco; 'Hanan' means 'upper' in Quechua."
+        },
+        {
+          "name": "Hurin-Cuzco",
+          "modern_identification": "The lower moiety (saya) of the city of Cuzco in Inca administrative and social organization",
+          "identification_confidence": "high",
+          "notes": "'Hurin' means 'lower' in Quechua. Paired with Hanan-Cuzco as the two halves of the dual organization of the capital."
+        },
+        {
+          "name": "Cuzco",
+          "modern_identification": "Cusco, Peru — capital city of the Inca Empire",
+          "identification_confidence": "high",
+          "notes": "Referred to as the city divided into the two parcialidades."
+        }
+      ],
+      "translator_notes": "The source text is a partial segment that cuts off mid-sentence ('el primero de los Incas reyes'), indicating the passage continues in the next segment. Several OCR artifacts were corrected: 'Perii^' → 'Perú'; 'habar' → 'haber'; 'J/anfin-Cusco' → 'Hanan-Cuzco'; 'Aí®í-co-Cápac' → 'Manco-Cápac'; 'parda-lidades' → 'parcialidades'. The term 'parcialidad' (rendered as 'faction' or 'moiety') refers to the Andean concept of dual social and territorial divisions; 'moiety' may be the more precise anthropological equivalent in a scholarly context. No medical or botanical content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_IX"
+    },
+    {
+      "title_inferred": "Yahuar-Huacac Inca Yupanqui, Seventh King of the Incas",
+      "original_text": "CAPITULO X\n\nDe Yahuar-Huacac-Inca-Yupanqui, séptimo rey\n\nA Inca-Roca sucedió en el reino su hijo mayor, Yahuar-Huacac-Inca-Yupanqui. Quiere decir Yahuar-Huacac \"el que llora sangre\"; y cuentan haberle sido dado este nombre porque una vez, siendo vencido y preso de sus enemigos, de puro dolor y pena de verse en tan miserable estado, lloró sangre. No tenían sus vasallos mucha opinión dél, por estar en reputación de cobarde, y se confirmaban en su opinión con los pronó[sticos...]",
+      "translation": "CHAPTER X\n\nConcerning Yahuar-Huacac Inca Yupanqui, the Seventh King\n\nInca Roca was succeeded in the kingdom by his eldest son, Yahuar-Huacac Inca Yupanqui. 'Yahuar-Huacac' means 'he who weeps blood'; and it is told that this name was given to him because on one occasion, having been defeated and taken prisoner by his enemies, out of sheer grief and anguish at finding himself in so wretched a condition, he wept blood. His subjects did not hold him in high regard, as he had a reputation for cowardice, and they found confirmation of this opinion in the prono[stics / omens — text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Yahuar-Huacac Inca Yupanqui",
+          "modern_identification": "Inca Yawar Waqaq, traditionally considered the seventh Sapa Inca of the Kingdom of Cusco",
+          "identification_confidence": "high",
+          "notes": "Name glossed by Cobo as 'he who weeps blood' (Quechua: yawar = blood, waqaq = one who weeps). Cobo records the folk etymology that he literally wept blood when captured by enemies. His reign is associated with weakness and internal strife in Inca dynastic tradition."
+        },
+        {
+          "name": "Inca-Roca",
+          "modern_identification": "Inca Roca, traditionally the sixth Sapa Inca of Cusco",
+          "identification_confidence": "high",
+          "notes": "Named here as the father and predecessor of Yahuar-Huacac. Cobo treats him as the sixth king in the standard dynastic sequence."
+        }
+      ],
+      "translator_notes": "This segment contains no medical or botanical content; it is a dynastic-historical passage. OCR errors corrected: 'sxicedió' → 'sucedió', 'sxt' → 'su', 'Yahiiar-Huacac Inca^Yu» panquL' → 'Yahuar-Huacac-Inca-Yupanqui', 'dél' retained as period Spanish contraction for 'de él'. The text breaks off mid-word ('pronó—') at the end of the segment, likely mid-sentence referencing omens or prophecies; marked with a bracketed note.",
+      "_label": "cobo_vol2::IV::cap_X_part1"
+    },
+    {
+      "title_inferred": "Chapter XIV: On Tupac-Yupanqui, the Tenth Inca King",
+      "original_text": "CAPITULO XIV\n\nDe Tupac-Yupanqui, décimo rey\n\nA Pachacútic sucedió su hijo mayor, Tupac-Inca-Yupanqui, el cual comenzó a gobernar en vida de su padre: porque hallándose muy viejo Pachacútic e impedido para administrar tan grande reino, con consentimiento de sus vasallos lo renunció en su hijo Tupac-Inca-Yupanqui, de quien hay memoria tuvo dos hermanos, dichos Amaru-Tupa-Inca y Tupa-Inca, y que fueron señores ricos y estimados. Este rey quebrantó la costumbre",
+      "translation": "CHAPTER XIV\n\nOn Tupac-Yupanqui, the Tenth King\n\nPachacútic was succeeded by his eldest son, Tupac-Inca-Yupanqui, who began to govern during his father's lifetime; for Pachacútic, finding himself very old and unable to administer so great a kingdom, renounced it in favor of his son Tupac-Inca-Yupanqui with the consent of his vassals. It is recorded that this ruler had two brothers, known as Amaru-Tupa-Inca and Tupa-Inca, who were wealthy and esteemed lords. This king broke with the custom [text continues in following segment]",
+      "entities_mentioned": [
+        {
+          "name": "Tupac-Inca-Yupanqui",
+          "modern_identification": "Túpac Inca Yupanqui, tenth Sapa Inca of the Inca Empire, r. c. 1471–1493",
+          "identification_confidence": "high",
+          "notes": "OCR rendered the name inconsistently ('Tupadnca-Yupanqui', '¡)e TupaJnca-Yupaivqui', etc.); all refer to the same historical figure. Cobo identifies him as the tenth Inca ruler."
+        },
+        {
+          "name": "Pachacútic",
+          "modern_identification": "Pachacuti Inca Yupanqui, ninth Sapa Inca, r. c. 1438–1471",
+          "identification_confidence": "high",
+          "notes": "Father of Tupac-Inca-Yupanqui; described here as having abdicated due to old age."
+        },
+        {
+          "name": "Amaru-Tupa-Inca",
+          "modern_identification": "Amaru Tupac Inca, prince and brother of Túpac Inca Yupanqui",
+          "identification_confidence": "medium",
+          "notes": "OCR rendered as 'Amaru-Tupa-hica'; corrected to 'Amaru-Tupa-Inca'. Some sources note Amaru Tupac Inca was an elder brother initially designated heir before Túpac Inca Yupanqui."
+        },
+        {
+          "name": "Tupa-Inca",
+          "modern_identification": "A second brother of Túpac Inca Yupanqui; specific identity uncertain",
+          "identification_confidence": "low",
+          "notes": "Mentioned alongside Amaru-Tupa-Inca as a wealthy and esteemed lord; insufficient detail for confident modern identification."
+        }
+      ],
+      "translator_notes": "The segment is a historical/political passage, not a medical or botanical one; accordingly, the plant/drug/ailment extraction fields specified in the system prompt are not applicable and have been omitted from entities. The OCR is heavily corrupted in the chapter heading and personal names (e.g., '¡)e TupaJnca-Yupaivqui^', 'r^po', 'Tupadnca-Yupanqui', 'Amaru-Tupa-hica'); all have been silently corrected where the intended reading is unambiguous from context and standard Inca historiography. The sentence 'Este rey quebrantó la costumbre' ('This king broke with the custom') is cut off mid-sentence; the continuation is in a subsequent segment.",
+      "_label": "cobo_vol2::IV::cap_XIV_part1"
+    },
+    {
+      "title_inferred": "Inca Campaign Preparations and Journey to Collasuyu",
+      "original_text": "le era al Inca favorable la fortuna. Prendió a los caciques y capitanes de aquella tierra y los mandó llevar con los demás prisioneros, para entrar, como entró, triunfando dellos en el Cuzco.\n\nPasados algunos años que gastó en ordenar las cosas del gobierno, se dispuso a hacer jornada a Collasuyu. Antes de partir hizo sus acostumbrados sacrificios al sol, su padre, y a los demás dioses, prometiéndoles que, si le favorecían, no había de llegar a su corte antes de llegar a l[...]",
+      "translation": "Fortune was favorable to the Inca. He captured the chieftains [caciques] and captains of that land and ordered them to be brought along with the other prisoners, so that he might enter Cuzco in triumph over them, as indeed he did.\n\nAfter spending several years putting the affairs of government in order, he resolved to undertake a campaign to Collasuyu. Before departing, he performed his customary sacrifices to the Sun, his father, and to the other gods, promising them that, if they favored him, he would not return to his court before reaching [ILLEGIBLE: text breaks off mid-sentence, destination name incomplete]",
+      "entities_mentioned": [
+        {
+          "name": "Inca",
+          "modern_identification": "Sapa Inca (ruler of the Inca Empire)",
+          "identification_confidence": "high",
+          "notes": "The specific Inca ruler is not named in this segment; context from surrounding chapters of Cobo's Historia del Nuevo Mundo would be needed to identify him precisely."
+        },
+        {
+          "name": "caciques",
+          "modern_identification": "Indigenous chieftains/local rulers",
+          "identification_confidence": "high",
+          "notes": "Term borrowed from Caribbean Arawakan languages, widely used in colonial Spanish texts to denote local indigenous leaders."
+        },
+        {
+          "name": "Cuzco",
+          "modern_identification": "Cusco, Peru",
+          "identification_confidence": "high",
+          "notes": "Capital city of the Inca Empire."
+        },
+        {
+          "name": "Collasuyu",
+          "modern_identification": "Qullasuyu — the southeastern quarter of Tawantinsuyu, encompassing modern Bolivia, northwestern Argentina, and northern Chile",
+          "identification_confidence": "high",
+          "notes": "One of the four suyus (administrative regions) of the Inca Empire."
+        },
+        {
+          "name": "el sol, su padre",
+          "modern_identification": "Inti, the Inca solar deity",
+          "identification_confidence": "high",
+          "notes": "The Inca ruler was regarded as a direct descendant of the Sun god Inti; sacrifices to Inti before military campaigns were standard ritual practice."
+        }
+      ],
+      "translator_notes": "This segment contains no botanical, pharmaceutical, or medical content; the extraction fields for plant/drug/ailment/preparation are therefore not applicable. The source text is truncated mid-sentence at the end ('antes de llegar a l[...]'), indicating either OCR failure or a physical lacuna in the source document. The phrase 'jornada a Collasuyu' has been rendered as 'campaign to Collasuyu' rather than the more literal 'journey,' as the military context makes 'campaign' the more accurate English equivalent. Minor OCR artifacts (ligature characters, line-break hyphens, diacritics) have been silently corrected in the cleaned original text.",
+      "_label": "cobo_vol2::IV::cap_XIV_part2"
+    },
+    {
+      "title_inferred": "Other Events of Tupa Inca Yupanqui: The Favored Concubine",
+      "original_text": "CAPITULO XV\n\nDe los demás sucesos de Tupa Inca Yupanqui\n\nEntre las mujeres deste Inca había una de nación Guayro, de extremada hermosura, a la cual él amaba y favorecía más que a su legítima mujer, y tenía en ella un hijo igualmente amado que su madre; y no había fiestas y regocijos adonde no llevase consigo a madre y hijo. Viendo, pues, sus vasallos que esta mujer era la que más preciaba y más cabida tenía con el rey, la procuraban todos agradar y servir, por el contento y",
+      "translation": "CHAPTER XV\n\nOf the Other Events of Tupa Inca Yupanqui\n\nAmong the women of this Inca there was one of the Guayro nation, of extraordinary beauty, whom he loved and favored more than his lawful wife, and by whom he had a son equally beloved as his mother; and there was no feast or celebration to which he did not bring mother and son along with him. His vassals, seeing that this woman was the one he most esteemed and who held the greatest influence with the king, all endeavored to please and serve her, on account of the favor and [text continues]",
+      "entities_mentioned": [
+        {
+          "name": "Tupa Inca Yupanqui",
+          "modern_identification": "Túpac Inca Yupanqui, tenth Sapa Inca of the Inca Empire, r. c. 1471–1493",
+          "identification_confidence": "high",
+          "notes": "Also spelled Tupac Yupanqui; major ruler who greatly expanded the Inca Empire."
+        },
+        {
+          "name": "Guayro (nation/ethnic group)",
+          "modern_identification": "Possibly the Huayru or a related Andean ethnic group; precise identification uncertain",
+          "identification_confidence": "low",
+          "notes": "Cobo identifies the favored concubine as being of 'nación Guayro.' This may refer to a regional or ethnic community within the Inca sphere; the name does not correspond to a well-documented major group and may reflect a localized or variant spelling."
+        }
+      ],
+      "translator_notes": "The segment is cut off mid-sentence ('por el contento y…'), indicating this is a partial passage; the schema label confirms it is 'part1.' The OCR rendered 'demás' as 'dentás' and 'Guayro' with a superscript mark likely indicating an abbreviation or accent; these have been silently corrected. No medical, botanical, or pharmacological content appears in this segment.",
+      "_label": "cobo_vol2::IV::cap_XV_part1"
+    },
+    {
+      "title_inferred": "Chapter XVI: Huayna Capac, Last King of the Incas",
+      "original_text": "CAPITULO XVI\n\nDe Guayna-Cápac, último rey de los Incas\n\nA Inca-Yupanqui sucedió su hijo primogénito Guayna-Cápac, nombre que alcanzó ilustres hazañas, el cual significa \"mancebo rico y excelente\", porque desde su mocedad tuvo lo uno y lo otro con más ventaja que ninguno de sus predecesores. Fué muy amado de sus vasallos y tenido por valiente y determinado. Alcanzó muchas e insignes victorias; dilató los límites de su Imperio con muchas provincias que agregó a él. Most[ró...]",
+      "translation": "CHAPTER XVI\n\nConcerning Huayna Capac, last king of the Incas\n\nInca Yupanqui was succeeded by his firstborn son Huayna Capac, a name that he came to honor with illustrious deeds, which signifies \"young man rich and excellent,\" for from his youth he possessed both qualities to a greater degree than any of his predecessors. He was greatly loved by his subjects and held to be brave and resolute. He achieved many signal victories; he extended the limits of his Empire by adding many provinces to it. He showed [text breaks off...]",
+      "entities_mentioned": [
+        {
+          "name": "Guayna-Cápac (Huayna Capac)",
+          "modern_identification": "Huayna Capac, eleventh Sapa Inca of the Inca Empire, reigned c. 1493–1527",
+          "identification_confidence": "high",
+          "notes": "Cobo glosses the name as 'mancebo rico y excelente' (rich and excellent young man). Huayna Capac is historically regarded as the last undisputed ruler before the empire was divided between Huáscar and Atahualpa, precipitating the civil war that preceded the Spanish conquest."
+        },
+        {
+          "name": "Inca-Yupanqui",
+          "modern_identification": "Túpac Inca Yupanqui (Tupac Yupanqui), tenth Sapa Inca, reigned c. 1471–1493",
+          "identification_confidence": "high",
+          "notes": "Named here as the father and predecessor of Huayna Capac. The name 'Inca Yupanqui' was borne by more than one ruler; context makes clear this refers to Túpac Inca Yupanqui."
+        }
+      ],
+      "translator_notes": "The segment is cut off mid-sentence at 'Most[ró...]', indicating the source OCR or transcription ends abruptly; this is flagged as an incomplete passage rather than an illegible one. OCR artifacts ('GuayTui^Cápac', 'Inca^Yupanqui', 'CápfW^', 'hnj&gt;erio') have been silently corrected to 'Guayna-Cápac', 'Inca-Yupanqui', 'Cápac', and 'Imperio' respectively, as the intended readings are unambiguous from context. No medical, botanical, or pharmacological content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_XVI_part1"
+    },
+    {
+      "title_inferred": "Inca Campaign Through Cochabamba and Pocona: Resettlement of Mitimae Colonists",
+      "original_text": "cercanías y cordilleras, que, fiados en la aspereza de la tierra, llevaban mal la servidumbre del Inca. Salió de los Andes por Cochabamba, y viendo cuán fértiles y abundantes de mantenimiento eran los valles de aquella provincia y que la gente que los habitaba era muy poca, mandó que de los pueblos del Collao fuesen algunas familias a avecindarse en ellos; y a esta causa son ahora casi todos sus habitadores mitimaes.\n\nDe Cochabamba pasó a Pocona, a visitar aquella fron[tera]",
+      "translation": "...the surrounding areas and mountain ranges [cordilleras], whose inhabitants, trusting in the ruggedness of the terrain, ill endured subjection to the Inca. He came out of the Andes by way of Cochabamba, and seeing how fertile and abundantly provisioned were the valleys of that province, and that the people who inhabited them were very few, he ordered that some families from the towns of the Collao [Altiplano region around Lake Titicaca] should come to settle there; and for this reason nearly all of its inhabitants are now mitimae [transplanted colonists].\n\nFrom Cochabamba he proceeded to Pocona, to inspect that frontier [text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "los Andes",
+          "modern_identification": "The Andean mountain region, here likely referring specifically to the eastern Andean slopes (yungas) of present-day Bolivia",
+          "identification_confidence": "high",
+          "notes": "Cobo uses 'los Andes' in the more specific 16th–17th century sense of the eastern tropical slopes, not the entire cordillera system."
+        },
+        {
+          "name": "Cochabamba",
+          "modern_identification": "Cochabamba, Bolivia",
+          "identification_confidence": "high",
+          "notes": "An important Inca administrative and agricultural center; historically used for large-scale maize production and resettlement (mitimae) programs."
+        },
+        {
+          "name": "el Collao",
+          "modern_identification": "The Altiplano region surrounding Lake Titicaca, spanning modern southern Peru and western Bolivia",
+          "identification_confidence": "high",
+          "notes": "The Collao (or Collasuyu) was a major Inca administrative quarter; families from its towns were resettled as mitimae in underpopulated fertile valleys."
+        },
+        {
+          "name": "mitimaes",
+          "modern_identification": "Mit'maqkuna — Inca state-organized transplanted colonists",
+          "identification_confidence": "high",
+          "notes": "Standard Inca imperial practice of relocating population groups to consolidate political control, supply labor, and populate strategically important regions."
+        },
+        {
+          "name": "Pocona",
+          "modern_identification": "Pocona, Cochabamba Department, Bolivia",
+          "identification_confidence": "high",
+          "notes": "An Inca frontier garrison town on the eastern edge of the empire, guarding against incursions from lowland peoples (e.g., Chiriguano). Described here as a 'frontera' (frontier)."
+        }
+      ],
+      "translator_notes": "This segment contains no medical or botanical content; it is a historical-geographical passage describing Inca imperial expansion and the mitimae resettlement system in the Cochabamba valleys. The original text is truncated mid-sentence ('aquella fron[tera]'). Several OCR hyphens ('¬') have been silently removed and word breaks restored. 'Colla o' in the source is a line-break artifact for 'Collao'; corrected silently. The unspecified Inca ruler referenced is almost certainly Huayna Capac, based on context typical of Cobo's narrative at this point in the Historia.",
+      "_label": "cobo_vol2::IV::cap_XVI_part2"
+    },
+    {
+      "title_inferred": "Inca Huayna Capac's Campaigns Against the Northern Provinces, Particularly the Cayambes",
+      "original_text": "enviaba el Inca capitanes a diversas jornadas, y a otras iba él mismo, en que pasó muchas dificultades, porque los indios de aquellas provincias eran valientes y guerreros, y muchas veces vencieron y destrozaron los escuadrones del Inca, y no pocas pusieron en huida al mismo Inca; particularmente los Cayambes, por ser hombres de valor y ánimo, dieron en qué entender al Inca Guayna-Capac y a sus capitanes, que les costó mucha sangre y tiempo el conquistarlos. Emprendió el Inca en per[sona...]",
+      "translation": "The Inca sent captains on various campaigns [jornadas], and on others he went himself, in which he encountered many difficulties, because the Indians of those provinces were valiant and warlike, and many times they defeated and routed the Inca's squadrons, and not infrequently put the Inca himself to flight. The Cayambes in particular, being men of courage and spirit, gave the Inca Huayna Capac and his captains much to contend with, and it cost them much blood and time to conquer them. The Inca undertook in per[son...]",
+      "entities_mentioned": [
+        {
+          "name": "Inca",
+          "modern_identification": "Sapa Inca (ruler of Tawantinsuyu)",
+          "identification_confidence": "high",
+          "notes": "Context makes clear this refers primarily to Huayna Capac, though the early part of the passage may reference earlier Inca rulers as well."
+        },
+        {
+          "name": "Guayna-Capac",
+          "modern_identification": "Huayna Capac, eleventh Sapa Inca of the Inca Empire, r. c. 1493–1527",
+          "identification_confidence": "high",
+          "notes": "Named explicitly in the text; renowned for his extensive northern campaigns into modern Ecuador."
+        },
+        {
+          "name": "Cayambes",
+          "modern_identification": "Kayambi people of the northern highlands of present-day Ecuador",
+          "identification_confidence": "high",
+          "notes": "A notable indigenous group centered around the Cayambe region of Ecuador, historically known for fierce resistance to Inca expansion; their prolonged resistance to Huayna Capac is well-documented in multiple colonial sources."
+        }
+      ],
+      "translator_notes": "The source text is fragmentary at both the beginning and end, with OCR artifacts (e.g., 'mba', 'ém', 'sqitellas', 'iferos', 'm', 'itprendió') that have been silently corrected where the intended words are unambiguous from context. The final word 'per' is clearly the beginning of 'persona' (in person) or a related phrase, cut off by the segment break. This segment contains no botanical, pharmaceutical, or medical content; it is a historical-military narrative.",
+      "_label": "cobo_vol2::IV::cap_XVI_part3"
+    },
+    {
+      "title_inferred": "Inca Conquest of Puná Island and Subsequent Revolt",
+      "original_text": "Túmbez, y a la tierra firme, frontera, es la provincia de Guayaquil, y fué muy reñida y porfiada; pero la multitud de los del Inca oprimió a los isleños por entonces, si bien no mucho después les costó bien caro; porque, en volviéndose a Túmbez el Inca, dieron los de la Puná sobre el presidio que les había dejado, y los mataron a todos. Enojado el Inca del caso, volvió con extraña furia a la isla y hizo en ella crueles castigos; mas, considerando que no ganaba nada por aquella pa[rte]...",
+      "translation": "Túmbez, and on the mainland opposite it, lies the province of Guayaquil. The battle [for Puná Island] was fiercely and stubbornly contested; however, the great numbers of the Inca's forces overwhelmed the islanders at that time, though not long afterward the Inca's men paid a heavy price for it. For upon the Inca's return to Túmbez, the people of Puná fell upon the garrison he had left behind and killed them all. Enraged by this turn of events, the Inca returned to the island in a fury and inflicted cruel punishments upon it; but, reflecting that he was gaining nothing by that course of action...",
+      "entities_mentioned": [
+        {
+          "name": "Túmbez",
+          "modern_identification": "Tumbes, northwestern Peru",
+          "identification_confidence": "high",
+          "notes": "Important coastal town and Inca administrative center near the modern Peru-Ecuador border."
+        },
+        {
+          "name": "Guayaquil",
+          "modern_identification": "Province of Guayaquil, Ecuador (modern Guayas region)",
+          "identification_confidence": "high",
+          "notes": "Referred to here as the mainland province facing Puná Island."
+        },
+        {
+          "name": "Puná",
+          "modern_identification": "Puná Island, Gulf of Guayaquil, Ecuador",
+          "identification_confidence": "high",
+          "notes": "Large island at the mouth of the Guayas River estuary; its inhabitants (Punáes) were known for fierce resistance to Inca and later Spanish forces."
+        },
+        {
+          "name": "el Inca",
+          "modern_identification": "Likely Huayna Capac",
+          "identification_confidence": "medium",
+          "notes": "The Inca ruler conducting campaigns in the northern territories; context and chronology suggest Huayna Capac, who is known to have campaigned in this region."
+        }
+      ],
+      "translator_notes": "The segment is incomplete at the end (text breaks off mid-word 'pa[rte]' or similar), indicating a page break or OCR truncation. Several words in the source were corrupted by OCR (e.g., 'mm' for 'muy', 'fe' for 'de', 'per' for 'por', 'bate' for 'había', 'desp*' for 'después', 'volviéa-dose' for 'volviéndose') and have been silently corrected where the intended reading is unambiguous. No botanical or medical content is present in this segment; it is purely historical-narrative in character.",
+      "_label": "cobo_vol2::IV::cap_XVI_part4"
+    },
+    {
+      "title_inferred": "Battle of Ambato: Atahualpa Defeats Huáscar's Forces",
+      "original_text": "vieron a ira y enojo, proponiendo de vengar las injurias hechas a su rey.\n\nJuntó Atau-Hualpa un grueso ejército y salió en busca del enemigo. El capitán Atoc, que regía el de Huáscar, no rehusó la batalla. Embistiéronse los dos ejércitos en Ambato, y quedó roto y deshecho el de Huáscar, con muerte de su capitán general y gran parte de su gente. Partió Atau-Hualpa de los términos de Quito muy acrecentado en fuerzas y reputación, y entrando por las tierras que obedecían",
+      "translation": "they were moved to anger and fury, resolving to avenge the wrongs done to their king.\n\nAtahualpa assembled a large army and set out in search of the enemy. The captain Atoc, who commanded Huáscar's forces, did not refuse battle. The two armies clashed at Ambato, and Huáscar's was broken and destroyed, with the death of his captain-general and a great part of his men. Atahualpa departed from the territory of Quito greatly increased in strength and reputation, and entering into the lands that obeyed [Huáscar—text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Atau-Hualpa (Atahualpa)",
+          "modern_identification": "Atahualpa, last sovereign Sapa Inca of the Inca Empire (c. 1502–1533)",
+          "identification_confidence": "high",
+          "notes": "One of the two rival claimants in the Inca Civil War (1529–1532); here depicted mustering forces against his half-brother Huáscar."
+        },
+        {
+          "name": "Huáscar",
+          "modern_identification": "Huáscar, Sapa Inca and rival claimant to Atahualpa (c. 1503–1532)",
+          "identification_confidence": "high",
+          "notes": "The opposing claimant in the Inca Civil War; his forces are described as routed at Ambato."
+        },
+        {
+          "name": "Atoc",
+          "modern_identification": "Atoc (also spelled Atoco), Inca general serving Huáscar",
+          "identification_confidence": "high",
+          "notes": "Historical sources confirm Atoc was Huáscar's general defeated at Ambato; he was subsequently captured and killed by Atahualpa's forces. Cobo's OCR rendering 'AtocOf' is silently corrected to 'Atoc'."
+        },
+        {
+          "name": "Ambato",
+          "modern_identification": "Ambato, present-day city in Tungurahua Province, Ecuador",
+          "identification_confidence": "high",
+          "notes": "Site of a significant engagement in the Inca Civil War between Atahualpa's and Huáscar's armies."
+        },
+        {
+          "name": "Quito",
+          "modern_identification": "Quito, capital of present-day Ecuador",
+          "identification_confidence": "high",
+          "notes": "Described as the territorial base from which Atahualpa operated; traditionally the northern seat of Inca power associated with his lineage."
+        }
+      ],
+      "translator_notes": "The segment ends mid-sentence ('entering into the lands that obeyed'), indicating the passage continues in a subsequent section. No plant, drug, or medical content is present in this segment. OCR corrections made: 'ira¬/ron' reconstructed as 'vieron'; 'AtaiiJ-Hualpa' standardized to 'Atau-Hualpa'; 'hedías' corrected to 'hechas'; 'relixisó' corrected to 'rehusó'; 'xin' corrected to 'un'; 'AtocOf' corrected to 'Atoc'.",
+      "_label": "cobo_vol2::IV::cap_XVIII_part2"
+    },
+    {
+      "title_inferred": "Raids by rebel forces on roads and towns near Guamanga",
+      "original_text": "fuesen a buscarlo. Con todo eso, no dejaban sus gentes de infestar la tierra, saliendo en cuadrilla a los caminos. Adonde hacían más frecuentes correrías era a Limatambo, a Andaguaylas y a los términos de Guamanga. Llegaron una noche a esta ciudad estando sus moradores descuidados, y habiendo de presto robado lo que pudieron, se volvieron sin recebir daño; salieron los nuestros en su seguimiento y fueron dándoles alcance y picándoles hasta meterlos en sus montañas que",
+      "translation": "to go out and search for him. Even so, his people did not cease to harass the land, going out in bands [cuadrillas] onto the roads. The places where they made their most frequent raids were Limatambo, Andaguaylas, and the territory around Guamanga. One night they reached this city while its inhabitants were off their guard, and having quickly plundered what they could, they withdrew without suffering any harm. Our men set out in pursuit of them and gave chase, harrying them until they drove them back into their mountains, where [the text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Limatambo",
+          "modern_identification": "Limatambo, province of Anta, Cusco region, Peru",
+          "identification_confidence": "high",
+          "notes": "A town and tambo station on the Inca road west of Cusco, frequently referenced in colonial accounts of the region."
+        },
+        {
+          "name": "Andaguaylas",
+          "modern_identification": "Andahuaylas, Apurímac region, Peru",
+          "identification_confidence": "high",
+          "notes": "Modern Andahuaylas; an important colonial town in the highlands between Cusco and the coast."
+        },
+        {
+          "name": "Guamanga",
+          "modern_identification": "Ayacucho (formerly Huamanga), Ayacucho region, Peru",
+          "identification_confidence": "high",
+          "notes": "The city of San Juan de la Frontera de Huamanga, founded 1539, now Ayacucho. The raid described here is a notable episode of indigenous resistance activity in the region."
+        }
+      ],
+      "translator_notes": "This segment contains no botanical or medical content; it is a historical-military narrative describing guerrilla raids by rebel indigenous forces (likely followers of a fugitive leader referenced immediately before the segment begins) against Spanish colonial settlements and road routes. The text is cut off mid-sentence at 'que,' indicating this is a partial segment requiring continuation from cap_XX_part3 or equivalent. OCR error 'pii-dieron' silently corrected to 'pudieron'; 'xnontañas' corrected to 'montañas'; 'recebir' retained as period-standard spelling variant of 'recibir.'",
+      "_label": "cobo_vol2::IV::cap_XX_part2"
+    },
+    {
+      "title_inferred": "Sons of Manco Inca Who Maintained the Title of Kings in Vilcabamba",
+      "original_text": "CAPITULO XXI\n\nDe los hijos de Manco-Inca que en Vilcabamba mantuvieron el título de reyes\n\nQuedó en Vilcabamba con la borla y título de rey Sayri-Tupac-Inca; y como acá fuera se siguieron las guerras civiles de Gonzalo Pizarro, no se atendió ni a reducirlo ni hacer la guerra, hasta que, sosegada la tierra con la victoria que alcanzaron en Jaquijaguana los leales el año de 1548, el presidente Pedro de la Gasca, deseando dejar la tierra...",
+      "translation": "CHAPTER XXI\n\nConcerning the sons of Manco Inca who maintained the title of kings in Vilcabamba\n\nSayri Tupac Inca remained in Vilcabamba bearing the [borla] [the royal fringe or tassel, symbol of Inca sovereignty] and the title of king; and since, in the outside world, the civil wars of Gonzalo Pizarro continued, no effort was made either to reduce him [i.e., bring him into submission] or to wage war against him, until, after the land was pacified by the victory that the loyalists won at Jaquijaguana in the year 1548, President Pedro de la Gasca, desiring to leave the land [at peace]...",
+      "entities_mentioned": [
+        {
+          "name": "Manco Inca",
+          "modern_identification": "Manco Inca Yupanqui, Sapa Inca (r. 1533–1545), founder of the Neo-Inca state at Vilcabamba",
+          "identification_confidence": "high",
+          "notes": "Father of Sayri Tupac and other rulers of the Vilcabamba resistance state."
+        },
+        {
+          "name": "Sayri-Tupac-Inca",
+          "modern_identification": "Sayri Túpac, second ruler of the Neo-Inca state of Vilcabamba (r. c. 1545–1558)",
+          "identification_confidence": "high",
+          "notes": "Son of Manco Inca; held the borla (royal fringe) as symbolic ruler at Vilcabamba following his father's assassination."
+        },
+        {
+          "name": "Vilcabamba",
+          "modern_identification": "Vilcabamba, a remote Andean region (present-day Cusco region, Peru) that served as the refuge of the Neo-Inca state",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Gonzalo Pizarro",
+          "modern_identification": "Gonzalo Pizarro (c. 1510–1548), Spanish conquistador and rebel leader who led a civil war against Crown authority in Peru",
+          "identification_confidence": "high",
+          "notes": "His rebellion distracted colonial authorities from pursuing military action against Vilcabamba."
+        },
+        {
+          "name": "Jaquijaguana",
+          "modern_identification": "Battle of Jaquijaguana (modern Jaquijahuana, near Cusco, Peru), fought on April 9, 1548",
+          "identification_confidence": "high",
+          "notes": "The battle at which loyalist forces under Pedro de la Gasca defeated and captured Gonzalo Pizarro, effectively ending the civil war."
+        },
+        {
+          "name": "Pedro de la Gasca",
+          "modern_identification": "Pedro de la Gasca (c. 1493–1567), President of the Audiencia of Lima and Crown representative sent to suppress the Pizarro rebellion",
+          "identification_confidence": "high",
+          "notes": "Referred to here as 'el presidente'; after pacifying the colony he sought to address the situation at Vilcabamba."
+        },
+        {
+          "name": "Doña María de Esquivel",
+          "modern_identification": "Doña María de Esquivel, Spanish noblewoman who later married Sayri Tupac upon his submission to Spanish authority",
+          "identification_confidence": "medium",
+          "notes": "Appears only as a footnote reference (note 117) in the source text; likely a marginal annotation by the editor or scribe identifying her as a relevant figure."
+        }
+      ],
+      "translator_notes": "The segment is a chapter opening that breaks off mid-sentence ('deseando dejar la tierra'), indicating the passage continues beyond the captured text. The word 'borla' has been retained in brackets as it denotes the specifically Inca royal fringe—a culturally significant object with no single English equivalent. The footnote reference '(117) Doña María de Esquivel' appears to be an editorial annotation added by a later hand or editor rather than Cobo's original text. OCR artifacts (pipe characters '|' and 'I' used as line-initial decorators, malformed ligatures in 'SayrUTupa-Inca', 'Vücabamba') have been silently corrected. No medical or botanical content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_XXI_part1"
+    },
+    {
+      "title_inferred": "Reception of the Inca and Cusi-Huarcay in Lima: Festivities and Homage",
+      "original_text": "y hermosa Cusi-Huarcay, a quien también hizo el virrey mucha honra y asentar en el estrado donde la estaban esperando las señoras de Lima muy aderezadas de sus mayores galas y joyas. Mandó que se les diesen buenos aposentos y los sirviesen criados españoles.\n\nEstuviéronse muchos días en Lima con fiestas y regocijos que se les hicieron. Holgábanse todos los indios de ver su Inca, y venían los caciques de todas partes a hacerle reverencia, y traían muchos presentes; con lo cual...",
+      "translation": "...and the beautiful Cusi-Huarcay, upon whom the viceroy also bestowed great honor, seating her upon the dais [estrado] where the ladies of Lima awaited her, splendidly adorned with their finest finery and jewels. He ordered that they be given good lodgings and that Spanish servants attend upon them.\n\nThey remained many days in Lima amid the festivities and celebrations that were held in their honor. All the Indians rejoiced to see their Inca, and the caciques [chiefs] came from all parts to pay him reverence, bringing many gifts; by which means...",
+      "entities_mentioned": [
+        {
+          "name": "Cusi-Huarcay",
+          "modern_identification": "Cusi Huarcay (also known as Doña María Coya), an Inca noblewoman, wife of Sayri Túpac",
+          "identification_confidence": "high",
+          "notes": "She was the wife of Sayri Túpac, the Inca who came down from Vilcabamba to negotiate with the Spanish colonial authorities. Her reception by the viceroy and the ladies of Lima is documented in multiple colonial sources."
+        },
+        {
+          "name": "el virrey",
+          "modern_identification": "Likely Andrés Hurtado de Mendoza, Marquis of Cañete, Viceroy of Peru c. 1556–1561, under whose tenure Sayri Túpac descended from Vilcabamba",
+          "identification_confidence": "medium",
+          "notes": "The identity of the viceroy is inferred from the historical context of Sayri Túpac's reception in Lima; Cobo does not name him explicitly in this excerpt."
+        },
+        {
+          "name": "señoras de Lima",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Refers collectively to the prominent Spanish and creole ladies of Lima who gathered to receive Cusi-Huarcay at the dais [estrado]."
+        },
+        {
+          "name": "caciques",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Term of Taíno origin widely used in colonial Spanish to denote indigenous chiefs or lords; here referring to local Andean leaders who came to pay homage to the Inca."
+        },
+        {
+          "name": "Lima",
+          "modern_identification": "Lima, capital of the Viceroyalty of Peru, present-day Lima, Peru",
+          "identification_confidence": "high",
+          "notes": null
+        }
+      ],
+      "translator_notes": "The source text is heavily damaged by OCR artifacts (e.g., 'r y herm»', '&gt;i*esentes', 'tolü', 'traínA', 'síf- i'). The cleaned original text has been reconstructed from context with high confidence for most passages. The segment ends mid-sentence ('con lo cual...'), indicating continuation in a subsequent passage. No medical, botanical, or pharmacological content is present in this segment. The word 'estrado' is preserved in brackets as it denotes a specific cultural artifact—a raised platform or dais used ceremonially in Spanish colonial settings.",
+      "_label": "cobo_vol2::IV::cap_XXI_part2"
+    },
+    {
+      "title_inferred": "Capture of the Inca by Martín García de Loyola",
+      "original_text": "batalla llevaban los suyos lo peor, se huyó por lugares ocultos y fragosos. Ofrecióse a ir en su seguimiento el capitán Martín García de Loyola con sólo veinte soldados escogidos, aunque fuese necesario entrarse por las tierras de guerra: y cumpliólo como prometió; porque, sin perder el rastro del Inca, lo fué siguiendo, y a pocas jornadas le dio alcance. Prendiólo y trajolo al Cuzco con otros capitanes que se tomaron. Hízose proceso contra el Inca y los otros culpados po[r...]",
+      "translation": "the battle [going] against his men, he fled through hidden and rugged places. Captain Martín García de Loyola volunteered to go in pursuit of him with only twenty chosen soldiers, even if it were necessary to enter into the lands of war [hostile territory]; and he fulfilled this as he had promised, for, without losing the Inca's trail, he continued to follow him, and within a few days' march he overtook him. He captured him and brought him to Cuzco along with other captains who were also taken. A judicial proceeding [proceso] was instituted against the Inca and the other guilty parties [and the text breaks off here].",
+      "entities_mentioned": [
+        {
+          "name": "Martín García de Loyola",
+          "modern_identification": "Martín García Óñez de Loyola (c. 1549–1598), Spanish captain and later Governor of Chile, nephew of Saint Ignatius of Loyola",
+          "identification_confidence": "high",
+          "notes": "Famous for capturing the last Neo-Inca ruler Túpac Amaru I in 1572 during the campaign ordered by Viceroy Francisco de Toledo."
+        },
+        {
+          "name": "el Inca",
+          "modern_identification": "Túpac Amaru I, last ruler of the Neo-Inca State of Vilcabamba",
+          "identification_confidence": "high",
+          "notes": "Captured in 1572 and subsequently tried and executed in Cuzco on orders of Viceroy Toledo."
+        },
+        {
+          "name": "el Cuzco",
+          "modern_identification": "Cusco, Peru",
+          "identification_confidence": "high",
+          "notes": "Capital of the former Inca Empire and seat of Spanish colonial administration in the region."
+        }
+      ],
+      "translator_notes": "OCR errors corrected: 'Iwiyó' → 'huyó'; 'liigax-es' → 'lugares'; 'prome¬tió' (line-break hyphen) → 'prometió'. The segment ends mid-sentence ('culpados po[r...]'), indicating truncation in the source scan. This passage contains no botanical, pharmacological, or medical content; it is a historical-military narrative describing the capture of Túpac Amaru I. No medical extraction applies.",
+      "_label": "cobo_vol2::IV::cap_XXI_part3"
+    },
+    {
+      "title_inferred": "How the Incas Resettled Conquered Peoples into Towns and the Order They Imposed",
+      "original_text": "CAPITULO XXIV\n\nQue los Incas reducían a pueblos las gentes que sujetaban, y el orden que en ellos ponían\n\nYa queda dicho arriba cómo los indios peruanos, antes de ser gobernados por los reyes Incas, no tenían pueblos concertados con traza y forma de nuestros pueblos, sino que vivían en caseríos de poca vecindad, puestos los más por los cerros y collados, para defenderse de los asaltos que unos a otros se daban. Digo ahora, que en poniendo el Inca debajo de su domin[io]",
+      "translation": "CHAPTER XXIV\n\nOn how the Incas resettled into towns the peoples they subjugated, and the order they established among them\n\nIt has already been stated above how the Peruvian Indians, before being governed by the Inca kings, did not have organized towns laid out in the manner and form of our own towns, but rather lived in small hamlets of sparse population, situated for the most part on hills and ridges, in order to defend themselves from the raids that they launched upon one another. I say now that upon the Inca bringing [a people] under his domin[ion — text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Incas",
+          "modern_identification": "Inca Empire (Tawantinsuyu), pre-Columbian Andean civilization",
+          "identification_confidence": "high",
+          "notes": "Referred to as 'reyes Incas' (Inca kings); the passage discusses their policy of reducción — the forced resettlement of subject peoples into planned towns."
+        },
+        {
+          "name": "indios peruanos",
+          "modern_identification": "Indigenous peoples of Peru and the broader Andean region",
+          "identification_confidence": "high",
+          "notes": "Generic colonial term for the native inhabitants of Peru prior to and during Inca rule."
+        },
+        {
+          "name": "caseríos",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Spanish term for small, scattered hamlets or rural settlements; used here in contrast to formally planned colonial-style towns (pueblos). No modern identification applicable — this is a settlement-type descriptor."
+        }
+      ],
+      "translator_notes": "The segment breaks off mid-sentence at 'su domin-', almost certainly continuing as 'dominio' (dominion/domain) on the following page — a standard page-break OCR truncation. The word 'redncíajt' in the chapter heading is an OCR error for 'reducían' (they resettled/reduced), referring to the Spanish colonial policy of reducción, by which indigenous populations were consolidated into nucleated towns for purposes of taxation, labor extraction, and evangelization. Cobo is here attributing an analogous pre-colonial policy to the Incas. The phrase 'traza y forma de nuestros pueblos' ('the layout and form of our towns') is a culturally loaded comparison to Spanish urban planning norms. No medicinal or botanical content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_XXIV_part1"
+    },
+    {
+      "title_inferred": "Laws and Punishments by Which the Incas Governed Their Kingdom",
+      "original_text": "CAPITULO XXVI\n\nDe las leyes y castigos con que los Incas gobernaban su reino\n\nComo los indios carecían de letras, no tenían leyes escritas, mas conservaban las que habían establecido sus reyes por tradición y con el uso y observancia en que estaban. Las mas principales y de que más memoria había entre ellos pondré aquí.\n\nDonde se hallaba presente el Inca, él solo era el juez ante quien se pedían todos los agravios hechos, y donde no, hacían justicia sus gobernadores y ca[ciques]",
+      "translation": "CHAPTER XXVI\n\nOn the laws and punishments by which the Incas governed their kingdom\n\nAs the Indians lacked letters, they had no written laws; rather, they preserved those which their kings had established through tradition and through the use and observance in which they were maintained. I will set down here the most important ones, those of which the greatest memory existed among them.\n\nWherever the Inca was present, he alone was the judge before whom all grievances were brought; and where he was not present, justice was administered by his governors and ca[ciques]",
+      "entities_mentioned": [
+        {
+          "name": "Inca",
+          "modern_identification": "Sapa Inca — supreme ruler of the Inca Empire (Tawantinsuyu)",
+          "identification_confidence": "high",
+          "notes": "Cobo uses 'Inca' here specifically to denote the sovereign ruler, not the ethnic group broadly. He describes the Inca as the sole judge when personally present."
+        }
+      ],
+      "translator_notes": "The source text ends mid-sentence with 'ca', almost certainly cut off at 'caciques' (local indigenous lords) or possibly 'capitanes' (captains); 'caciques' is the more contextually probable completion given the administrative legal context. No plant, drug, or medical content is present in this segment. The OCR artifact 'ley'es' in the chapter heading has been silently corrected to 'leyes'. The caret symbol after 'Inca' in the source ('Inca,^') appears to be an OCR artifact for a comma or period and has been rendered as a comma.",
+      "_label": "cobo_vol2::IV::cap_XXVI_part1"
+    },
+    {
+      "title_inferred": "Inca Administration of Lands Belonging to the Sun, the Gods, and the Crown",
+      "original_text": "; porque siempre se tenía consideración a que los pueblos quedasen bien proveídos de mantenimientos. Por donde, en algunas tierras, había pueblos enteros que con sus distritos y cuanto se cogía en ellos eran del sol y de los otros dioses, como eran Arápa, y otros; y en otras provincias (esto era lo más ordinario) era muy grande la parte del rey. En estas tierras de la Religión y de la Corona Real tenía el Inca puestos mayordomos y administradores, que, con gran cuidado, las hacían cultivar.",
+      "translation": "...because consideration was always given to ensuring that the towns remained well supplied with provisions. Thus, in some lands there were entire towns whose districts and all that was harvested within them belonged to the Sun and to the other gods — such as Arápa and others — and in other provinces (this being the more common arrangement) the king's share was very great. On these lands belonging to Religion and to the Royal Crown, the Inca had placed stewards [mayordomos] and administrators who, with great care, oversaw their cultivation.",
+      "entities_mentioned": [
+        {
+          "name": "el Sol",
+          "modern_identification": "Inti — the Inca solar deity",
+          "identification_confidence": "high",
+          "notes": "Lands dedicated to the Sun god were a well-documented feature of Inca imperial administration, producing goods for ritual and ceremonial use."
+        },
+        {
+          "name": "Arápa",
+          "modern_identification": "Possibly a town or locality in the Peruvian altiplano (Arapa, Puno region)",
+          "identification_confidence": "medium",
+          "notes": "Cobo names Arápa as an example of a settlement whose entire productive output was dedicated to the Sun and other gods. This likely refers to Arapa in the Lake Titicaca basin, a known Inca administrative center."
+        },
+        {
+          "name": "mayordomos y administradores",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Spanish term for the Inca stewards/overseers placed on Crown and religious lands; likely corresponds to Quechua administrative officials (e.g., tocricoc or llactacamayoc) rephrased in Spanish colonial terminology."
+        },
+        {
+          "name": "Corona Real / el Inca",
+          "modern_identification": "Sapa Inca — ruler of Tawantinsuyu",
+          "identification_confidence": "high",
+          "notes": "The Royal Crown lands (tierras del rey) formed one of the three traditional tripartite divisions of Inca agricultural land alongside lands of the Sun and lands of the people."
+        }
+      ],
+      "translator_notes": "The source text contains significant OCR degradation: 'c»' → 'consideración', 'quedim' → 'quedasen', 'piieldc^' → 'pueblos', 'citaai»' → 'cuanto', '1^' → 'los', 'otxmi' → 'otros', 'hsm' → 'más', 'áá' → 'del', 'ReÜgiÓB f' → 'Religión y', 'pues¬tos' → 'puestos', 'qm,' → 'que,'. The final word 'cultivar' is inferred from context as the sentence is cut off mid-clause ('las hacían cu—'). This segment covers administrative rather than botanical/medical content; no materia medica extraction is applicable.",
+      "_label": "cobo_vol2::IV::cap_XXVI_part4"
+    },
+    {
+      "title_inferred": "Division of Domesticated Livestock Among the Inca, Religion, and Community",
+      "original_text": "CAPITULO XXIX\n\nDel orden cómo se repartía el ganado manso, y la renta que en él y en la ropa de sus lanas tenían el Inca y la religión; y cómo los cazaderos y montes eran realengos\n\nLa misma división tenía hecha el Inca de todo el ganado manso que déllas tierras, aplicando una parte a la religión, a sí otra y a la comunidad otra: y no sólo dividió y separó cada una destas partes, sino también las dehesas y pastos en que se apacentasen, de modo que anduviesen e[...]",
+      "translation": "CHAPTER XXIX\n\nOn the manner in which domesticated livestock was divided, and the income that the Inca and the [Catholic] religion derived from it and from the cloth made of its wool; and how the hunting grounds and forests were crown lands [realengos]\n\nThe Inca had made the same division of all the domesticated livestock of those lands, assigning one portion to religion, another to himself, and another to the community. And not only did he divide and separate each of these portions, but also the pastures [dehesas] and grazing lands in which they were to be kept, so that they might go about [text breaks off]",
+      "entities_mentioned": [
+        {
+          "name": "Inca",
+          "modern_identification": "Sapa Inca — ruler of the Inca Empire (Tawantinsuyu)",
+          "identification_confidence": "high",
+          "notes": "Refers to the sovereign Inca ruler as the authority who organized the tripartite division of state resources."
+        },
+        {
+          "name": "ganado manso",
+          "modern_identification": "Domesticated camelids — llamas (Lama glama) and alpacas (Vicugna pacos)",
+          "identification_confidence": "high",
+          "notes": "The term 'ganado manso' (tame/domesticated livestock) in Andean colonial contexts invariably refers to llamas and alpacas, not Old World cattle. Their wool ('lanas') was used for textile production ('ropa'), a key state resource."
+        },
+        {
+          "name": "religión",
+          "modern_identification": "The Catholic Church / colonial ecclesiastical establishment, or possibly the Inca state religion (sun worship) in the pre-conquest context",
+          "identification_confidence": "medium",
+          "notes": "Cobo likely describes the pre-Hispanic Inca tripartite system (sun/religion, Inca/state, community/ayllu) while framing it in Spanish colonial religious vocabulary. Context suggests the Inca religious cult rather than Catholicism."
+        },
+        {
+          "name": "dehesas",
+          "modern_identification": "Designated pasture lands / grazing commons",
+          "identification_confidence": "high",
+          "notes": "Spanish term for enclosed or designated pasture; used here to translate the Andean concept of assigned grazing territories for each of the three divisions of livestock."
+        },
+        {
+          "name": "cazaderos y montes realengos",
+          "modern_identification": "Crown hunting reserves and royal forests",
+          "identification_confidence": "high",
+          "notes": "The term 'realengos' denotes lands belonging to the crown (here, the Inca). The concept parallels European royal game preserves and is applied by Cobo to Inca-controlled hunting grounds for wild camelids (vicuñas, guanacos)."
+        }
+      ],
+      "translator_notes": "The segment is cut off mid-sentence ('de modo que anduviesen e[...]'), indicating the source OCR or manuscript page ends abruptly here — this is a partial segment and the continuation is in a subsequent portion. Several OCR errors were silently corrected: 'gan^^' → 'ganado', 'k ropa' → 'la ropa', 'k religión' → 'la religión', 'delm tierras' → 'déllas tierras' (i.e., 'de ellas tierras' / 'de estas tierras'), 'xA gión' → 'religión', 'tamlxién' → 'también', 'delre«a«' → 'dehesas'. The tripartite division of Inca state resources (religion / state / community) is a well-documented institution in Andean ethnohistory, discussed extensively by Cobo himself in other chapters.",
+      "_label": "cobo_vol2::IV::cap_XXIX_part1"
+    },
+    {
+      "title_inferred": "The Royal Roads Built by the Incas Across Their Kingdom",
+      "original_text": "CAPITULO XXXI\n\nDe los caminos que hicieron los Incas por todo su reino, y la contribución de gente que para aderezarlos daban las provincias\n\nTenían hechos los Incas dos caminos reales que tomaban todo el largo de su reino desde la provincia de Quito hasta el reino de Chile, que son novecientas leguas, el uno por los Llanos y costa de la mar, y el otro la tierra adentro por las provincias de la Sierra, desviado de la costa por unas partes treinta leguas y por otras cinc[uenta]",
+      "translation": "CHAPTER XXXI\n\nOf the roads that the Incas built throughout their kingdom, and the contribution of labor [lit. people] that the provinces provided for their maintenance\n\nThe Incas had constructed two royal roads [caminos reales] that ran the entire length of their kingdom, from the province of Quito to the kingdom of Chile—a distance of nine hundred leagues—one running along the Lowlands [Llanos] and the seacoast, and the other going inland through the provinces of the Sierra [highland region], set back from the coast in some places by thirty leagues and in others by fif[ty].",
+      "entities_mentioned": [
+        {
+          "name": "Incas",
+          "modern_identification": "Inca Empire (Tawantinsuyu)",
+          "identification_confidence": "high",
+          "notes": "Ruling dynasty and civilization of the pre-Columbian Andean state."
+        },
+        {
+          "name": "Quito",
+          "modern_identification": "Quito, Ecuador",
+          "identification_confidence": "high",
+          "notes": "Northern terminus of the described royal road network."
+        },
+        {
+          "name": "Chile",
+          "modern_identification": "Chile (region/kingdom, roughly modern central Chile)",
+          "identification_confidence": "high",
+          "notes": "Southern terminus of the Inca road system as described by Cobo; the 'kingdom of Chile' here refers broadly to the southern Andean territories."
+        },
+        {
+          "name": "los Llanos",
+          "modern_identification": "Coastal plain of western South America (modern Peru/Ecuador/Chile Pacific coast)",
+          "identification_confidence": "high",
+          "notes": "The flat coastal lowland region along the Pacific; the coastal road (later identified with the Qhapaq Ñan coastal branch) ran through this zone."
+        },
+        {
+          "name": "la Sierra",
+          "modern_identification": "Andean highland region (modern Peru, Ecuador, Bolivia)",
+          "identification_confidence": "high",
+          "notes": "The highland spine of the Andes; the inland royal road corresponds to the highland branch of the Qhapaq Ñan."
+        }
+      ],
+      "translator_notes": "Several OCR errors were silently corrected: 'Inm$' → 'Incas'; 'SIL' → 'su'; 'reino¡' → 'reino,'; 'Id' → 'la'; 'hs' → 'las'; 'j&gt;or' (×3) → 'por'; 'i&gt;or' → 'por'; 'adentru' → 'adentro'; 'm' → 'su'. The text is cut off mid-word at 'cinc', almost certainly continuing as 'cincuenta' (fifty); this has been indicated with bracketed completion in both the cleaned original and translation. The passage describes Inca infrastructure rather than a plant, drug, or medical practice, so no pharmacological extraction is applicable.",
+      "_label": "cobo_vol2::IV::cap_XXXI_part1"
+    },
+    {
+      "title_inferred": "Additional Personal-Service Tribute Owed by Indians to Their King",
+      "original_text": "CAPITULO XXXIII\n\nDel demás tributo que en servicio personal pagaban a su rey los indios\n\nAllende del trabajo que en lugar de pecho o tributo ponían los pueblos en las labranzas y crianzas de las tierras y ganados del Inca y de la religión y en los otros oficios y tareas que habemos contado, era grandísima la contribución que daban de gente y peones para cuantos ministerios y obras se hacían en todo el reino, así para servicio y utilidad del rey, como de la república. A los cuales",
+      "translation": "CHAPTER XXXIII\n\nOn the further tribute that the Indians paid to their king in personal service\n\nBeyond the labor that the towns contributed in lieu of a head-tax [pecho] or tribute — namely the work performed on the farmlands and livestock holdings of the Inca and of the [state] religion, and in the other trades and tasks we have already described — immense was the contribution they rendered in manpower and laborers [peones] for every ministry and public work carried out throughout the entire kingdom, both for the service and benefit of the king and for the commonwealth [república]. To whom [the passage continues]",
+      "entities_mentioned": [
+        {
+          "name": "Inca",
+          "modern_identification": "Sapa Inca / ruler of the Inca Empire (Tawantinsuyu)",
+          "identification_confidence": "high",
+          "notes": "Refers both to the sovereign ruler and, by extension, to crown lands and holdings."
+        },
+        {
+          "name": "pecho",
+          "modern_identification": "Head-tax or capitation tax (Spanish colonial fiscal term)",
+          "identification_confidence": "high",
+          "notes": "A standard Spanish term for a direct personal tax; Cobo uses it to analogize the Andean labor-tribute system to familiar Iberian fiscal categories."
+        },
+        {
+          "name": "peones",
+          "modern_identification": "Unskilled or general laborers (mit'a workers in Andean context)",
+          "identification_confidence": "high",
+          "notes": "Likely corresponds to mit'a laborers obligated to perform state corvée labor under the Inca system."
+        }
+      ],
+      "translator_notes": "The source text is fragmentary — it ends mid-sentence ('A los cuales'), indicating the segment cuts off before the chapter continues. Several OCR artifacts were silently corrected: 'jxígaban' → 'pagaban', 'bs' → 'las', 'i;' → 'y', 'm' → 'en', 'kcíón' → 'contribución', 'pila' → 'para', 'la¬ / ma' → 'hacían', 'habemos' is a period-authentic first-person plural (= 'hemos'). No botanical, pharmaceutical, or medical content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_XXXIII_part1"
+    },
+    {
+      "title_inferred": "Distribution of Labor Tribute (Mita) Among Caciques",
+      "original_text": "Inca y a gobernadores parecía; y la distribución hacían los caciques inferiores a rata por cantidad, como, si habían de sacar mil hombres, contribuía cada cacique con el número que le cabía; de manera que, sabida la gente que había de salir de mito, no podían los pueblos recibir ningún agravio en la distribución ni ser más cargados unos que otros. Y aunque los ganados todos de que daban tributo eran del Inca y de la religión, también hacían de la mi-",
+      "translation": "the Inca and to the governors seemed appropriate; and the distribution was carried out by the lesser caciques on a proportional basis, so that if, for example, one thousand men were to be levied, each cacique contributed the number that fell to his share; in such a way that, once the number of people who were to go out on mita [rotary labor draft] was known, the towns could suffer no injury in the distribution, nor could some be burdened more than others. And although all the livestock that was rendered as tribute belonged to the Inca and to the [state] religion, they also made use of the mi- [text continues]",
+      "entities_mentioned": [
+        {
+          "name": "Inca",
+          "modern_identification": "Sapa Inca — ruler of the Inca Empire (Tawantinsuyu)",
+          "identification_confidence": "high",
+          "notes": "Refers to the sovereign ruler as the supreme authority over tribute allocation."
+        },
+        {
+          "name": "caciques",
+          "modern_identification": "Local indigenous lords / curacas",
+          "identification_confidence": "high",
+          "notes": "Spanish colonial term for indigenous regional and local leaders responsible for administering labor quotas within their communities."
+        },
+        {
+          "name": "mito / mita",
+          "modern_identification": "Mit'a — Andean rotary labor obligation system",
+          "identification_confidence": "high",
+          "notes": "OCR renders 'mito' but the intended word is 'mita' (mit'a), the institutionalized Inca system of compulsory rotary labor tribute. Later adopted and adapted by the Spanish colonial administration."
+        },
+        {
+          "name": "ganados",
+          "modern_identification": "Livestock (likely llamas and alpacas)",
+          "identification_confidence": "high",
+          "notes": "In the Andean context, tribute livestock would overwhelmingly have consisted of camelids (llamas, alpacas) rather than Old World livestock."
+        }
+      ],
+      "translator_notes": "The segment is mid-sentence at both beginning and end, indicating it is a fragment of a larger passage. The word 'mito' in the source is a period Spanish rendering of the Quechua 'mit'a'; rendered as 'mita' with bracketed gloss. The final word 'mi-' is a clear mid-word line break cut off by the segment boundary — likely 'mita' or 'misma' in the continuation. The OCR artifact '&amp;' has been silently corrected to 'y' (i.e., 'pueblos'). No medical or botanical content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_XXXIII_part2"
+    },
+    {
+      "title_inferred": "Inca Reputation and Authority Among the Indians",
+      "original_text": "rcio, como en cosas de su religión y más la propia necesidad de los indios: porque no se tenía en este particular menos cuidado de lo uno que de lo otro.\n\nOtrosí, fue de muy grande importancia a los Incas para sus designios, la reputación y estima notable que dellos concibieron los indios, mediante la cual se vino a fundar en esta gente ruda una opinión en que no solamente los tenían por diferentes de los otros hombres en valor y fuerzas, mas creían que tuviesen gran paren[tesco con lo divino]",
+      "translation": "...as in matters of their religion and, moreover, the very necessities of the Indians themselves: for no less care was taken in this particular regard for the one than for the other.\n\nFurthermore, it was of very great importance to the Incas for their designs [political ambitions], the notable reputation and esteem which the Indians conceived of them, through which there came to be established among these simple [rude/uneducated] people an opinion by which they not only held them to be different from other men in valor and strength, but also believed them to have great kin[ship with the divine]",
+      "entities_mentioned": [
+        {
+          "name": "Incas",
+          "modern_identification": "Inca rulers/nobility of the Andean empire (Tawantinsuyu)",
+          "identification_confidence": "high",
+          "notes": "The passage discusses the political and religious authority of the Inca rulers and how they cultivated a reputation of semi-divine status among subject peoples."
+        },
+        {
+          "name": "indios",
+          "modern_identification": "Indigenous peoples of the Andean region under Inca rule",
+          "identification_confidence": "high",
+          "notes": "Cobo refers to subject peoples of the Inca empire in general terms, characterizing them as 'gente ruda' (simple/uneducated people), reflecting the paternalistic colonial perspective of the author."
+        }
+      ],
+      "translator_notes": "This segment is fragmentary at both the beginning and the end, mid-sentence. The opening word 'rri-cío' (OCR artifact) has been reconstructed as likely 'rcio' forming the end of a word such as 'ejercicio' or 'comercio'; context suggests 'ejercicio' (practice/exercise) is most plausible given the religious subject matter. The final word 'paren-' is cut off mid-word; 'parentesco' (kinship/lineage) is the almost certain completion given context — Cobo's broader argument in this section is that the Incas cultivated belief in their divine descent. No medical, botanical, or pharmacological content is present in this segment.",
+      "_label": "cobo_vol2::IV::cap_XXXV_part2"
+    },
+    {
+      "title_inferred": "On the Reckoning of Time, Quipus, and the Counting Methods of the Peruvian Indians",
+      "original_text": "CAPITULO XXXVII\n\nDel cómputo del tiempo; de los quipos o memoriales y modo de contar que tenían los indios peruanos\n\nSiendo como es el movimiento de los cielos cosa tan admirable, notoria y manifiesta a todas las gentes, no hay ninguna tan bárbara y ruda que, siquiera cuando levanta los ojos...",
+      "translation": "CHAPTER XXXVII\n\nOn the reckoning of time; the quipus or memoranda, and the method of counting used by the Peruvian Indians\n\nThe movement of the heavens being, as it is, a thing so admirable, well-known, and manifest to all peoples, there is no nation so barbarous and rude that, at least when it raises its eyes...",
+      "entities_mentioned": [
+        {
+          "name": "quipos",
+          "modern_identification": "Quipu (khipu) — knotted cord recording devices used by Andean peoples",
+          "identification_confidence": "high",
+          "notes": "Cobo uses the spelling 'quipos'; the term 'memoriales' (memoranda/records) is given as a Spanish gloss. These knotted cords served mnemonic and administrative functions in Inca society. The segment is introductory and cuts off before full description."
+        },
+        {
+          "name": "indios peruanos",
+          "modern_identification": "Indigenous peoples of the Andean region, particularly those under Inca administration",
+          "identification_confidence": "high",
+          "notes": "Cobo uses 'indios peruanos' as a general term for the native inhabitants of the Viceroyalty of Peru."
+        }
+      ],
+      "translator_notes": "The segment is incomplete — it breaks off mid-sentence ('cuando levanta los o[jos]'). The word 'rxida' in the OCR source is an obvious OCR error for 'ruda' (rude/rough/uncultured), silently corrected. Similarly, 'tos indios' in the chapter heading is corrected to 'los indios'. No plant, drug, or medical content is present in this segment; it is an introductory passage on Andean timekeeping and recording methods.",
+      "_label": "cobo_vol2::IV::cap_XXXVII_part1"
+    },
+    {
+      "title_inferred": "Indigenous Methods of Reckoning Time in Peru",
+      "original_text": "s maneras: la una, que señalaban con el dedo la parte del cielo en que andaba el sol cuando comenzaron su obra; como si al caminante le preguntaban a qué hora había salido de la posada, respondía levantando el dedo al cielo y apuntando el paraje donde estaba el sol entonces, por donde sacaban poco más o menos el tiempo que había caminado; y lo mismo hacían en las demás faenas y ejercicios. La otra era muy calificada, desta suerte: casi en todo este reino del Perú cogen los indios cierta",
+      "translation": "...in two ways: the first was that they would point with their finger to the part of the sky where the sun had been when they began their work; just as if one were to ask a traveler at what hour he had set out from his inn, he would respond by raising his finger to the sky and pointing to the place where the sun had been at that moment, from which one could reckon more or less how long he had been traveling; and they did the same with respect to their other tasks and occupations. The second [method] was a more refined one, of this sort: throughout nearly all of this kingdom of Peru, the Indians gather a certain [text continues]",
+      "entities_mentioned": [
+        {
+          "name": "reino del Perú (Kingdom of Peru)",
+          "modern_identification": "Colonial-era Peru, broadly encompassing the Andean region of South America",
+          "identification_confidence": "high",
+          "notes": "Cobo uses 'reino del Perú' to refer to the Spanish viceroyalty of Peru in its broad colonial extent."
+        },
+        {
+          "name": "indios (Indians/indigenous people of Peru)",
+          "modern_identification": "Andean indigenous peoples, likely including Quechua-speaking groups among others",
+          "identification_confidence": "high",
+          "notes": "Generic colonial term for indigenous inhabitants; no single group specified in this passage."
+        }
+      ],
+      "translator_notes": "This segment is clearly a mid-passage fragment — it begins mid-sentence ('s maneras') and ends mid-sentence ('cogen los indios cierta'), indicating truncation at both ends. The first method described is solar positioning as a folk timekeeping practice. The second method is introduced but cut off before the substance is revealed; likely the next segment describes a plant or agricultural product used in timekeeping or calendrical reckoning. No medical/botanical entities are fully described in this fragment, though the closing phrase ('cogen los indios cierta [cosa/planta]') strongly anticipates a plant description in the continuation.",
+      "_label": "cobo_vol2::IV::cap_XXXVII_part2"
+    },
+    {
+      "title_inferred": "Indigenous opinions and myths concerning the origin of the world, the universal flood, and the resulting sacred shrines (guacas)",
+      "original_text": "CAPITULO II\n\nDe las opiniones y fábulas que acerca de su origen, principios del mundo y diluvio universal estaban recebidas desta gente, con las guacas que desto resultaron\n\nComo el total fundamento de toda religión y culto divino sea el conocimiento de la primera causa, ora sea la verdadera, ora falsa y fingida, de quien los hombres creen haber procedido y depender della en la conservación de su ser, y también la noticia del fin y estado que después desta vida esperan tener; por",
+      "translation": "CHAPTER II\n\nConcerning the opinions and fables received among these people regarding their origin, the beginnings of the world, and the universal flood, together with the sacred shrines [guacas] that resulted therefrom\n\nSince the total foundation of all religion and divine worship is the knowledge of the first cause — whether true, or false and invented — from whom men believe themselves to have proceeded and upon whom they depend for the preservation of their being, and likewise the understanding of the end and state they expect to have after this life; for [text continues]",
+      "entities_mentioned": [
+        {
+          "name": "guacas",
+          "modern_identification": "huacas — Andean sacred sites, objects, or shrines",
+          "identification_confidence": "high",
+          "notes": "From Quechua 'wak'a'; refers to sacred places, objects, or beings venerated in Andean religion. Cobo uses this term to denote shrines or cult objects that arose from mythological traditions about creation and the flood."
+        }
+      ],
+      "translator_notes": "The segment ends mid-sentence ('por'), indicating the source text was cut off at a page or section break; this is a partial segment requiring continuation. The word 'recebidas' is a standard 17th-century Spanish form of 'recibidas' (received/accepted) and has been preserved in the cleaned original. The OCR artifact 'dé' (with erroneous accent) in the heading has been silently corrected to 'de'.",
+      "_label": "cobo_vol2::IV::cap_II_part1"
+    }
+  ]
+}
