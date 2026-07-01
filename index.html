@@ -1104,9 +1104,117 @@
     color: var(--muted);
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { transition: none !important; animation: none !important; }
+  /* ── Longevity tab ────────────────────────────── */
+  .longevity-chart-wrap { margin: 2rem 0; }
+  .longevity-bar-row {
+    display: grid; grid-template-columns: 180px 1fr 60px;
+    align-items: center; gap: 1rem; margin-bottom: 0.8rem;
   }
+  .longevity-label { font-family: var(--font-code); font-size: 0.68rem; color: var(--ink); text-align: right; line-height: 1.3; }
+  .longevity-bar-track { background: var(--vellum-dark); height: 28px; position: relative; border: 1px solid var(--border); }
+  .longevity-bar-fill {
+    height: 100%; position: absolute; left: 0; top: 0;
+    display: flex; align-items: center; padding-left: 0.5rem;
+    transition: width 0.8s ease;
+  }
+  .longevity-bar-period {
+    font-family: var(--font-code); font-size: 0.58rem; color: white;
+    letter-spacing: 0.05em; text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    white-space: nowrap; overflow: hidden;
+  }
+  .longevity-bar-modern {
+    border-left: 3px dashed var(--gold);
+    position: absolute; top: 0; bottom: 0;
+  }
+  .longevity-val { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+  .longevity-confidence {
+    font-family: var(--font-code); font-size: 0.55rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.15rem 0.4rem; border-radius: 2px;
+  }
+  .conf-HIGH { background: #E8F5E9; color: #2E7D32; }
+  .conf-MEDIUM { background: #FFF3E0; color: #E65100; }
+  .conf-LOW { background: #FAFAFA; color: #9E9E9E; border: 1px solid #eee; }
+  .longevity-detail-card {
+    background: white; border: 1px solid var(--border); padding: 1.4rem 1.6rem;
+    margin-top: 1rem; display: none;
+  }
+  .longevity-detail-card.open { display: block; }
+  .longevity-examples { margin-top: 0.8rem; }
+  .longevity-example {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 0.3rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem;
+  }
+  .longevity-example:last-child { border-bottom: none; }
+  .example-name { color: var(--ink); }
+  .example-age { font-family: var(--font-display); font-size: 1.1rem; color: var(--green); }
+  .example-note { font-size: 0.75rem; color: var(--muted); font-style: italic; max-width: 50ch; text-align: right; }
+
+  /* ── Corpus browser ───────────────────────────── */
+  .corpus-controls { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; align-items: center; }
+  .corpus-search { font-family: var(--font-body); font-size: 0.95rem; padding: 0.6rem 1rem; border: 1px solid var(--border); background: white; color: var(--ink); flex: 1; min-width: 200px; outline: none; }
+  .corpus-search:focus { border-color: var(--green); }
+  .corpus-count { font-family: var(--font-code); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.08em; }
+  .corpus-segment {
+    background: white; border: 1px solid var(--border); margin-bottom: 0.8rem;
+    border-left: 3px solid var(--border); transition: border-color 0.15s;
+  }
+  .corpus-segment:hover { border-left-color: var(--gold); }
+  .corpus-seg-header {
+    padding: 0.8rem 1.2rem; display: flex; justify-content: space-between;
+    align-items: flex-start; gap: 1rem; cursor: pointer;
+  }
+  .corpus-seg-header:hover { background: var(--vellum); }
+  .corpus-seg-title { font-family: var(--font-display); font-size: 0.88rem; color: var(--ink); margin-bottom: 0.2rem; }
+  .corpus-seg-meta { font-family: var(--font-code); font-size: 0.6rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .corpus-seg-body { display: none; padding: 1.2rem 1.4rem; border-top: 1px solid var(--border); }
+  .corpus-seg-body.open { display: block; }
+  .corpus-entity-tag {
+    display: inline-block; font-family: var(--font-code); font-size: 0.62rem;
+    padding: 0.15rem 0.5rem; border-radius: 2px; margin: 0.15rem;
+    cursor: pointer; transition: opacity 0.15s; border: 1px solid;
+  }
+  .corpus-entity-tag:hover { opacity: 0.7; }
+  .entity-plant { background: #E8F5E9; color: #2E7D32; border-color: #A5D6A7; }
+  .entity-mineral { background: #E3F2FD; color: #1565C0; border-color: #90CAF9; }
+  .entity-animal { background: #FFF3E0; color: #E65100; border-color: #FFCC80; }
+  .corpus-translation { font-size: 0.92rem; line-height: 1.75; color: var(--ink); margin-top: 0.8rem; }
+  .corpus-original { font-size: 0.85rem; line-height: 1.7; color: var(--brown); font-style: italic; margin-top: 0.6rem; }
+
+  /* ── Convergence Engine ───────────────────────── */
+  .convergence-query-box {
+    background: var(--ink); padding: 2rem; margin-bottom: 2rem;
+  }
+  .convergence-query-box h3 { font-family: var(--font-display); color: var(--gold); font-size: 1rem; margin-bottom: 0.6rem; }
+  .convergence-query-box p { color: var(--vellum); font-size: 0.9rem; opacity: 0.85; margin-bottom: 1.2rem; line-height: 1.6; }
+  .query-row { display: flex; gap: 0.8rem; flex-wrap: wrap; align-items: center; }
+  .query-select {
+    font-family: var(--font-code); font-size: 0.7rem; letter-spacing: 0.05em;
+    padding: 0.6rem 1rem; border: 1px solid var(--gold); background: rgba(196,168,130,0.1);
+    color: var(--vellum); cursor: pointer; appearance: none; min-width: 180px;
+  }
+  .query-select option { background: var(--ink); }
+  .query-btn {
+    font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.6rem 1.4rem; background: var(--gold);
+    color: var(--ink); border: none; cursor: pointer; transition: background 0.2s;
+  }
+  .query-btn:hover { background: var(--gold-light); }
+  .query-result-count { font-family: var(--font-code); font-size: 0.68rem; color: var(--gold-light); opacity: 0.7; }
+  .convergence-result-card {
+    background: white; border: 1px solid var(--border);
+    border-left: 5px solid var(--green); margin-bottom: 1rem; padding: 1.4rem 1.6rem;
+  }
+  .convergence-result-name { font-family: var(--font-display); font-size: 1rem; color: var(--ink); margin-bottom: 0.2rem; }
+  .convergence-result-botanical { font-family: var(--font-code); font-size: 0.7rem; color: var(--green); font-style: italic; margin-bottom: 0.8rem; }
+  .convergence-tradition-dots { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.5rem 0; }
+  .conv-trad-badge {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-family: var(--font-code); font-size: 0.62rem; letter-spacing: 0.05em;
+    padding: 0.25rem 0.6rem; border-radius: 2px; color: white;
+  }
+  .convergence-result-significance { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-top: 0.6rem; font-style: italic; }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 </style>
 </head>
 
@@ -1158,7 +1266,13 @@
     <span class="tab-indicator" style="background:#C4A882"></span>Traditions
   </button>
   <button class="tab-btn" onclick="showTab('convergence')" role="tab">
-    <span class="tab-indicator" style="background:#C4A882"></span>Convergence Analysis
+    <span class="tab-indicator" style="background:#C4A882"></span>Convergence
+  </button>
+  <button class="tab-btn" onclick="showTab('longevity')" role="tab">
+    <span class="tab-indicator" style="background:#6B4C9A"></span>Longevity
+  </button>
+  <button class="tab-btn" onclick="showTab('corpus')" role="tab">
+    <span class="tab-indicator" style="background:#2D5016"></span>Corpus
   </button>
   <button class="tab-btn" onclick="showTab('methodology')" role="tab">
     <span class="tab-indicator" style="background:#6B6050"></span>Methodology
@@ -1656,27 +1770,95 @@
     </div>
   </section>
 
-  <!-- CONVERGENCE TAB -->
+  <!-- LONGEVITY TAB -->
+  <section class="tab-panel" id="tab-longevity">
+    <div class="section-header">
+      <div class="section-eyebrow">Efficacy Comparison · Elite Adult Lifespan After Age 20 · Natural Causes Only</div>
+      <h2 class="section-title">Longevity Across Traditions</h2>
+      <p class="section-desc">Elite adult male lifespan as a proxy for medical system efficacy — the most tractable cross-tradition comparison available. Restricted to ruling class and educated elite with access to the tradition's best medicine, excluding documented violent deaths. Click any bar for detail.</p>
+    </div>
+
+    <div style="background:var(--vellum-dark); border:1px solid var(--border); padding:1rem 1.4rem; margin-bottom:2rem; max-width:70ch;">
+      <p style="font-size:0.85rem; color:var(--muted); line-height:1.65;"><strong style="color:var(--ink);">Interpretation caveat:</strong> Direct comparison is complicated by disease burden — a tradition achieving 46 years in a hyperendemic malaria region may represent more medical achievement than one achieving 58 years in a low-burden environment. The Andean tradition operated at extreme altitude creating unique physiological challenges with no parallel elsewhere.</p>
+    </div>
+
+    <div class="longevity-chart-wrap" id="longevity-chart">
+      <!-- populated by JS -->
+    </div>
+
+    <div id="longevity-detail-area"></div>
+
+    <hr class="divider">
+    <div class="section-header" style="margin-top:2rem;">
+      <h2 class="section-title" style="font-size:1.3rem;">Key Pharmaceutical Achievements by Tradition</h2>
+      <p class="section-desc">The discoveries that represent each tradition's most significant contribution to modern medicine.</p>
+    </div>
+    <div id="longevity-achievements-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:1rem; margin-top:1.5rem;">
+      <!-- populated by JS -->
+    </div>
+  </section>
+
+  <!-- CORPUS BROWSER TAB -->
+  <section class="tab-panel" id="tab-corpus">
+    <div class="section-header">
+      <div class="section-eyebrow">Complete Translated Archive · Cobo Historia del Nuevo Mundo · Books IV–VI</div>
+      <h2 class="section-title">Corpus Browser</h2>
+      <p class="section-desc">Every translated segment from Cobo's botanical and natural history sections — searchable, with entities highlighted and linked to the plant and mineral databases. The complete scholarly record, not just the curated highlights.</p>
+    </div>
+
+    <div class="corpus-controls">
+      <input class="corpus-search" type="text" id="corpus-search" placeholder="Search translations, plant names, conditions..." oninput="filterCorpus()">
+      <select id="corpus-tradition-filter" class="query-select" style="background:white; color:var(--ink); border-color:var(--border); min-width:160px;" onchange="filterCorpus()">
+        <option value="all">All Segments</option>
+        <option value="plant">Plants & Herbs</option>
+        <option value="mineral">Minerals & Earths</option>
+        <option value="water">Waters & Springs</option>
+      </select>
+      <span class="corpus-count" id="corpus-count"></span>
+    </div>
+
+    <div id="corpus-list">
+      <div style="color:var(--muted); font-style:italic; padding:2rem 0;">Loading corpus...</div>
+    </div>
+  </section>
+
+  <!-- CONVERGENCE ENGINE TAB -->
   <section class="tab-panel" id="tab-convergence">
     <div class="section-header">
-      <div class="section-eyebrow">Cross-Source Analysis · Priority Investigation List</div>
-      <h2 class="section-title">Convergence Analysis</h2>
-      <p class="section-desc">Plants validated by multiple independent sources represent the strongest pharmacological signals in this archive. The more traditions that independently document the same use, the higher the probability of genuine therapeutic activity.</p>
+      <div class="section-eyebrow">Cross-Tradition Analysis · The Discovery Layer</div>
+      <h2 class="section-title">Convergence Engine</h2>
+      <p class="section-desc">Query across all eleven traditions simultaneously. When independent civilizations separated by thousands of miles and years arrive at the same treatment for the same condition — that convergence is the strongest pharmacological signal in this archive.</p>
     </div>
 
-    <div class="convergence-intro">
-      <h3>The Convergence Principle</h3>
-      <p>When completely isolated folk traditions independently discover the same plant has the same therapeutic application, the probability that the effect is real increases dramatically. Berberine, for example, was independently discovered in Chinese medicine and Native American medicine for treating infections. Artemisinin was found by following a traditional Chinese medicine text. This database applies that principle systematically across three independent American traditions, scoring each plant by the strength of cross-source agreement.</p>
+    <div class="convergence-query-box">
+      <h3>Query the Archive</h3>
+      <p>Select a condition to see every entity documented across all traditions, ranked by cross-tradition convergence score.</p>
+      <div class="query-row">
+        <select class="query-select" id="condition-select" onchange="runConvergenceQuery()">
+          <option value="">— Select a condition —</option>
+        </select>
+        <select class="query-select" id="min-traditions-select" onchange="runConvergenceQuery()">
+          <option value="1">Any tradition</option>
+          <option value="2">2+ traditions</option>
+          <option value="3" selected>3+ traditions</option>
+          <option value="4">4+ traditions</option>
+          <option value="5">5+ traditions</option>
+        </select>
+        <span class="query-result-count" id="query-result-count"></span>
+      </div>
     </div>
+
+    <div id="convergence-results">
+      <div style="color:var(--muted); font-style:italic; padding:1rem 0;">Select a condition above to query the archive.</div>
+    </div>
+
+    <hr class="divider">
 
     <div class="section-header" style="margin-top:2rem;">
-      <div class="section-eyebrow">Ranked by Priority Score (Convergence + Research Gap + Urgency)</div>
+      <div class="section-eyebrow">Ranked by Priority Score · Convergence + Research Gap + Urgency</div>
       <h2 class="section-title" style="font-size:1.3rem;">Priority Investigation List</h2>
     </div>
-
-    <div class="priority-list" id="priority-list">
-      <!-- Populated by JavaScript -->
-    </div>
+    <div class="priority-list" id="priority-list"></div>
   </section>
 
   <!-- METHODOLOGY TAB -->
@@ -1776,6 +1958,10 @@
 </footer>
 
 <script>
+// ── State ────────────────────────────────────────────────
+let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [];
+let activeStatusFilter = null, activeTraditions = new Set();
+
 // ── Tab navigation ──────────────────────────────────────
 function showTab(id) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
@@ -1783,11 +1969,12 @@ function showTab(id) {
   document.getElementById('tab-' + id).classList.add('active');
   event.currentTarget.classList.add('active');
   if (id === 'database') { renderTraditionChips(); renderPlants(); }
-  if (id === 'convergence') renderPriority();
+  if (id === 'convergence') { renderConvergenceEngine(); renderPriority(); }
   if (id === 'traditions') renderTraditionsOverview();
+  if (id === 'longevity') renderLongevity();
+  if (id === 'corpus') renderCorpus();
 }
 
-// ── Chapter accordion ───────────────────────────────────
 function toggleChapter(header) {
   const body = header.nextElementSibling;
   const chevron = header.querySelector('.chevron');
@@ -1796,284 +1983,464 @@ function toggleChapter(header) {
   chevron.classList.toggle('open', !isOpen);
 }
 
-// ── Data ────────────────────────────────────────────────
-let plantData = [];
-let traditionData = [];
-let activeStatusFilter = null;
-let activeTraditions = new Set();
-
+// ── Data loading ────────────────────────────────────────
 async function loadData() {
   try {
-    const [pRes, tRes] = await Promise.all([
+    const [pRes, tRes, cRes, lRes] = await Promise.all([
       fetch('/data/plants.json'),
-      fetch('/data/traditions.json')
+      fetch('/data/traditions.json'),
+      fetch('/data/conditions.json'),
+      fetch('/data/longevity.json'),
     ]);
-    const pData = await pRes.json();
-    const tData = await tRes.json();
-    plantData = pData.plants || [];
-    traditionData = tData.traditions || [];
-  } catch(e) {
-    console.error('Could not load data', e);
-  }
+    plantData = (await pRes.json()).plants || [];
+    traditionData = (await tRes.json()).traditions || [];
+    conditionData = (await cRes.json()).conditions || [];
+    longevityData = (await lRes.json()).traditions || [];
+
+    // Try to load corpus (may not be merged yet)
+    try {
+      const coboRes = await fetch('/data/cobo_chapters.json');
+      const coboData = await coboRes.json();
+      corpusData = (coboData.results || []).filter(r =>
+        r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
+      );
+    } catch(e) { corpusData = []; }
+  } catch(e) { console.error('Data load error:', e); }
 }
 
-// ── Tradition chips ─────────────────────────────────────
-function renderTraditionChips() {
-  const container = document.getElementById('tradition-chips');
-  if (!container || traditionData.length === 0) return;
-
-  const allChip = document.createElement('button');
-  allChip.className = 'tradition-chip active';
-  allChip.id = 'chip-all';
-  allChip.style.background = activeTraditions.size === 0 ? '#1C1A14' : 'white';
-  allChip.style.color = activeTraditions.size === 0 ? 'white' : '#6B6050';
-  allChip.innerHTML = `<span class="chip-icon">🌍</span> All Traditions`;
-  allChip.onclick = () => { activeTraditions.clear(); renderTraditionChips(); renderPlants(); };
-  container.innerHTML = '';
-  container.appendChild(allChip);
-
-  traditionData.forEach(t => {
-    const count = plantData.filter(p => p.traditions.includes(t.id)).length;
-    const isActive = activeTraditions.has(t.id);
-    const chip = document.createElement('button');
-    chip.className = `tradition-chip${isActive ? ' active' : ''}`;
-    chip.style.background = isActive ? t.color : 'white';
-    chip.style.color = isActive ? 'white' : '#6B6050';
-    chip.style.borderColor = isActive ? t.color : '';
-    chip.innerHTML = `<span class="chip-icon">${t.icon}</span>${t.name.split(' ')[0]} <span class="chip-count">${count}</span>`;
-    chip.onclick = () => {
-      if (activeTraditions.has(t.id)) activeTraditions.delete(t.id);
-      else activeTraditions.add(t.id);
-      renderTraditionChips();
-      renderPlants();
-    };
-    container.appendChild(chip);
-  });
-}
-
-// ── Traditions overview grid ────────────────────────────
+// ── Traditions overview ─────────────────────────────────
 function renderTraditionsOverview() {
   const grid = document.getElementById('traditions-overview-grid');
-  if (!grid || traditionData.length === 0) return;
-
-  const statusLabel = {
-    translated: 'Fully Translated',
-    translating: 'Translation in Progress',
-    partially_translated: 'Partially Translated',
-    partially_documented: 'Partially Documented'
-  };
-
+  if (!grid || !traditionData.length) return;
+  const statusLabel = { translated:'Fully Translated', translating:'Translating', partially_translated:'Partially Translated', partially_documented:'Partially Documented' };
   grid.innerHTML = traditionData.map(t => {
     const plantCount = plantData.filter(p => p.traditions.includes(t.id)).length;
-    return `
-    <div class="tradition-card" onclick="filterToTradition('${t.id}')">
+    return `<div class="tradition-card" onclick="filterToTradition('${t.id}')">
       <div class="tradition-card-accent" style="background:${t.color}"></div>
       <span class="tradition-card-icon">${t.icon}</span>
       <h4>${t.name}</h4>
       <div class="tradition-meta">${t.geography.slice(0,3).join(' · ')} · ${t.date_range}</div>
       <p>${t.primary_document}</p>
-      <p style="margin-top:0.4rem; font-style:italic;">${t.author}</p>
-      <div style="margin-top:0.6rem; display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
-        <span class="tradition-status status-${t.status}">${statusLabel[t.status] || t.status}</span>
-        <span style="font-family:var(--font-code); font-size:0.6rem; color:var(--muted);">${plantCount} plants in archive · ~${t.approx_plants_documented.toLocaleString()} documented</span>
+      <p style="margin-top:0.4rem;font-style:italic;">${t.author}</p>
+      <div style="margin-top:0.6rem;display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+        <span class="tradition-status status-${t.status}">${statusLabel[t.status]||t.status}</span>
+        <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);">${plantCount} plants · ~${t.approx_plants_documented.toLocaleString()} documented</span>
       </div>
     </div>`;
   }).join('');
 }
 
 function filterToTradition(id) {
-  activeTraditions.clear();
-  activeTraditions.add(id);
-  showTab('database');
-  document.querySelectorAll('.tab-btn').forEach((b, i) => {
-    if (b.getAttribute('onclick')?.includes('database')) b.classList.add('active');
-    else b.classList.remove('active');
+  activeTraditions.clear(); activeTraditions.add(id);
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('onclick')?.includes("'database'"));
   });
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-database').classList.add('active');
+  renderTraditionChips(); renderPlants();
 }
 
-// ── Render plant database ───────────────────────────────
+// ── Database tab ─────────────────────────────────────────
+function renderTraditionChips() {
+  const container = document.getElementById('tradition-chips');
+  if (!container || !traditionData.length) return;
+  const allChip = `<button class="tradition-chip${activeTraditions.size===0?' active':''}" 
+    style="background:${activeTraditions.size===0?'#1C1A14':'white'};color:${activeTraditions.size===0?'white':'#6B6050'}"
+    onclick="activeTraditions.clear();renderTraditionChips();renderPlants()">
+    <span class="chip-icon">🌍</span>All Traditions
+  </button>`;
+  const chips = traditionData.map(t => {
+    const count = plantData.filter(p => p.traditions.includes(t.id)).length;
+    const active = activeTraditions.has(t.id);
+    return `<button class="tradition-chip${active?' active':''}"
+      style="background:${active?t.color:'white'};color:${active?'white':'#6B6050'};border-color:${active?t.color:''}"
+      onclick="toggleTraditionFilter('${t.id}')">
+      <span class="chip-icon">${t.icon}</span>${t.name.split(' ')[0]}<span class="chip-count">${count}</span>
+    </button>`;
+  }).join('');
+  container.innerHTML = allChip + chips;
+}
+
+function toggleTraditionFilter(id) {
+  if (activeTraditions.has(id)) activeTraditions.delete(id);
+  else activeTraditions.add(id);
+  renderTraditionChips(); renderPlants();
+}
+
 function renderPlants() {
   const grid = document.getElementById('plant-grid');
   if (!grid) return;
-  const query = (document.getElementById('plant-search')?.value || '').toLowerCase();
-
+  const query = (document.getElementById('plant-search')?.value||'').toLowerCase();
   const filtered = plantData.filter(p => {
-    const matchTradition = activeTraditions.size === 0 || p.traditions.some(t => activeTraditions.has(t));
-    const matchStatus = !activeStatusFilter || activeStatusFilter === 'all' || p.investigation_status === activeStatusFilter;
-    const matchQuery = !query ||
+    const matchT = activeTraditions.size===0 || p.traditions.some(t => activeTraditions.has(t));
+    const matchS = !activeStatusFilter || p.investigation_status===activeStatusFilter;
+    const matchQ = !query ||
       p.common_name.toLowerCase().includes(query) ||
-      (p.modern_botanical || '').toLowerCase().includes(query) ||
-      (p.therapeutic_areas || []).some(t => t.includes(query)) ||
-      (p.modern_research?.key_compound || '').toLowerCase().includes(query) ||
-      p.traditions.some(t => t.includes(query)) ||
-      Object.values(p.tradition_names || {}).some(n => n.toLowerCase().includes(query));
-    return matchTradition && matchStatus && matchQuery;
+      (p.modern_botanical||'').toLowerCase().includes(query) ||
+      (p.therapeutic_areas||[]).some(t=>t.includes(query)) ||
+      (p.modern_research?.key_compound||'').toLowerCase().includes(query) ||
+      p.traditions.some(t=>t.includes(query)) ||
+      Object.values(p.tradition_names||{}).some(n=>n.toLowerCase().includes(query));
+    return matchT && matchS && matchQ;
   });
+
+  const statusMap = {
+    'validated':['status-validated','✓ Validated'],'fully_validated':['status-validated','✓ Fully Validated'],
+    'breakthrough_validated':['status-breakthrough','★ Breakthrough'],'validated_essential_medicine':['status-validated','✓ WHO Essential Medicine'],
+    'validated_renewed_interest':['status-validated','✓ Validated · Active Research'],
+    'needs_investigation':['status-gap','⚠ Needs Investigation'],'critical_gap':['status-gap','⚠ Critical Gap'],
+    'preliminary':['status-preliminary','◐ Preliminary'],'moderate_validation':['status-moderate','◑ Moderate Evidence'],
+    'significant_findings':['status-breakthrough','★ Significant Findings'],'breakthrough_research':['status-breakthrough','★ Breakthrough Research'],
+  };
 
   grid.innerHTML = filtered.map(p => {
     const conv = p.convergence_score;
-    const convClass = conv >= 8 ? 'convergence-high' : conv >= 5 ? 'convergence-med' : 'convergence-low';
-
-    const statusMap = {
-      'validated': ['status-validated', '✓ Validated'],
-      'fully_validated': ['status-validated', '✓ Fully Validated'],
-      'breakthrough_validated': ['status-breakthrough', '★ Breakthrough'],
-      'validated_essential_medicine': ['status-validated', '✓ Essential Medicine'],
-      'validated_renewed_interest': ['status-validated', '✓ Validated · Active Research'],
-      'needs_investigation': ['status-gap', '⚠ Needs Investigation'],
-      'critical_gap': ['status-gap', '⚠ Critical Gap'],
-      'preliminary': ['status-preliminary', '◐ Preliminary'],
-      'moderate_validation': ['status-moderate', '◑ Moderate Evidence'],
-      'significant_findings': ['status-breakthrough', '★ Significant Findings'],
-      'breakthrough_research': ['status-breakthrough', '★ Breakthrough Research'],
-    };
-    const [statusClass, statusLabel] = statusMap[p.investigation_status] || ['status-preliminary', '◐ Unknown'];
-
-    // Tradition chips on card
-    const traditionChips = (p.traditions || []).map(tid => {
-      const trad = traditionData.find(t => t.id === tid);
-      const name = p.tradition_names?.[tid] || tid;
-      return trad
-        ? `<span class="tag" style="border-color:${trad.color}; color:${trad.color};">${trad.icon} ${name}</span>`
-        : `<span class="tag">${name}</span>`;
+    const convClass = conv>=8?'convergence-high':conv>=5?'convergence-med':'convergence-low';
+    const [statusClass, statusLabel] = statusMap[p.investigation_status]||['status-preliminary','◐ Unknown'];
+    const tradChips = (p.traditions||[]).map(tid=>{
+      const t=traditionData.find(x=>x.id===tid);
+      const name=p.tradition_names?.[tid]||tid;
+      return t?`<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${name}</span>`:`<span class="tag">${name}</span>`;
     }).join('');
-
-    // Build entry sections from new schema
-    let entrySections = '';
-    for (const [tid, entry] of Object.entries(p.entries || {})) {
-      const trad = traditionData.find(t => t.id === tid);
-      const tradColor = trad?.color || '#1C1A14';
-      const tradName = trad?.name || tid;
-      const tradIcon = trad?.icon || '';
-      const originalLabel = tid === 'ayurveda' ? 'Sanskrit' : tid === 'chinese' ? 'Classical Chinese' : tid === 'greek_roman' ? 'Greek/Latin' : tid === 'arabic' ? 'Arabic' : tid === 'egyptian' ? 'Hieratic Egyptian' : 'Original Text';
-
-      entrySections += `
-      <div class="source-section">
-        <span class="source-label" style="background:${tradColor}">${tradIcon} ${tradName}</span>
-        ${entry.source_text ? `<div style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted); margin-bottom:0.8rem;">${entry.source_text}</div>` : ''}
+    let entries='';
+    for(const [tid,entry] of Object.entries(p.entries||{})){
+      const t=traditionData.find(x=>x.id===tid);
+      entries+=`<div class="source-section">
+        <span class="source-label" style="background:${t?.color||'#1C1A14'}">${t?.icon||''} ${t?.name||tid}</span>
+        ${entry.source_text?`<div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);margin-bottom:0.8rem">${entry.source_text}</div>`:''}
         <div class="parallel-text">
-          <div class="text-column">
-            <label>${originalLabel}</label>
-            <p>${entry.original || ''}</p>
-          </div>
-          <div class="text-column">
-            <label>English Translation</label>
-            <p class="translation">${entry.translation || ''}</p>
-          </div>
+          <div class="text-column"><label>Original Text</label><p>${entry.original||''}</p></div>
+          <div class="text-column"><label>English Translation</label><p class="translation">${entry.translation||''}</p></div>
         </div>
         <div class="plant-meta">
-          ${entry.condition ? `<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>` : ''}
-          ${entry.preparation ? `<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>` : ''}
-          ${entry.illustration_url ? `<div class="meta-item"><label>Illustration</label><a class="external-link" href="${entry.illustration_url}" target="_blank">↗ View</a></div>` : ''}
-          ${entry.getty_url ? `<div class="meta-item"><label>Getty Codex</label><a class="external-link" href="${entry.getty_url}" target="_blank">↗ View in Getty</a></div>` : ''}
+          ${entry.condition?`<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>`:''}
+          ${entry.preparation?`<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>`:''}
+          ${entry.illustration_url?`<div class="meta-item"><label>Illustration</label><a class="external-link" href="${entry.illustration_url}" target="_blank">↗ View</a></div>`:''}
+          ${entry.getty_url?`<div class="meta-item"><label>Getty Codex</label><a class="external-link" href="${entry.getty_url}" target="_blank">↗ View</a></div>`:''}
         </div>
-        ${entry.notes ? `<div class="notes-block">${entry.notes}</div>` : ''}
+        ${entry.notes?`<div class="notes-block">${entry.notes}</div>`:''}
       </div>`;
     }
-
-    const modernSection = p.modern_research ? `
-      <div class="source-section">
-        <span class="source-label modern">Modern Pharmacology</span>
-        <span class="research-status ${statusClass}">${statusLabel}</span>
-        <div class="plant-meta" style="margin-bottom:0.8rem;">
-          <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
-        </div>
-        <p style="font-size:0.9rem; line-height:1.7; color:var(--ink); max-width:70ch;">${p.modern_research.summary}</p>
-        <div class="notes-block" style="margin-top:0.8rem;">${p.modern_research.significance}</div>
-      </div>` : '';
-
-    return `
-    <div class="plant-card">
+    return `<div class="plant-card">
       <div class="plant-card-header" onclick="toggleCard(this)">
         <div class="plant-name-block">
           <h3>${p.common_name}</h3>
-          <div class="botanical">${p.modern_botanical || 'Identification pending'}</div>
-          <div class="plant-tags" style="margin-top:0.5rem;">
-            ${traditionChips}
-            ${(p.therapeutic_areas||[]).slice(0,3).map(t => `<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}
-          </div>
+          <div class="botanical">${p.modern_botanical||'Identification pending'}</div>
+          <div class="plant-tags" style="margin-top:0.5rem">${tradChips}${(p.therapeutic_areas||[]).slice(0,3).map(t=>`<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}</div>
         </div>
-        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.5rem;">
-          <div class="convergence-badge">
-            <span class="convergence-num ${convClass}">${conv}</span>
-            <span class="convergence-label">Convergence</span>
-          </div>
-          <span class="chevron" style="color:var(--muted);">▾</span>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem">
+          <div class="convergence-badge"><span class="convergence-num ${convClass}">${conv}</span><span class="convergence-label">Convergence</span></div>
+          <span class="chevron" style="color:var(--muted)">▾</span>
         </div>
       </div>
       <div class="plant-card-body">
-        ${entrySections}
-        ${modernSection}
-        <div style="padding:1rem 1.5rem; background:var(--vellum); border-top:1px solid var(--border);">
-          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase;">Plant ID: ${p.id} · ${p.traditions.length} tradition${p.traditions.length > 1 ? 's' : ''}</span>
+        ${entries}
+        ${p.modern_research?`<div class="source-section">
+          <span class="source-label modern">Modern Pharmacology</span>
+          <span class="research-status ${statusClass}">${statusLabel}</span>
+          <div class="plant-meta" style="margin-bottom:0.8rem"><div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div></div>
+          <p style="font-size:0.9rem;line-height:1.7;color:var(--ink);max-width:70ch">${p.modern_research.summary}</p>
+          <div class="notes-block" style="margin-top:0.8rem">${p.modern_research.significance}</div>
+        </div>`:''}
+        <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border)">
+          <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''}</span>
         </div>
       </div>
     </div>`;
   }).join('');
+  if (!filtered.length) grid.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">No plants match the current filters.</p>';
+}
 
-  if (filtered.length === 0) {
-    grid.innerHTML = '<p style="color:var(--muted); font-style:italic; padding:2rem 0;">No plants match the current filters.</p>';
+function toggleCard(h) {
+  const b=h.nextElementSibling, c=h.querySelector('.chevron'), o=b.classList.contains('open');
+  b.classList.toggle('open',!o); c.classList.toggle('open',!o);
+}
+function filterPlants() { renderPlants(); }
+function filterByStatus(status, btn) {
+  activeStatusFilter=status==='all'?null:status;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active'); renderPlants();
+}
+
+// ── Longevity tab ────────────────────────────────────────
+function renderLongevity() {
+  const chart = document.getElementById('longevity-chart');
+  const achievGrid = document.getElementById('longevity-achievements-grid');
+  if (!chart || !longevityData.length) return;
+
+  const modern = 85;
+  // Flatten all periods with tradition context
+  const allPeriods = [];
+  longevityData.forEach(t => {
+    (t.periods||[]).forEach(p => {
+      if (p.mean_elite_lifespan && typeof p.mean_elite_lifespan === 'number') {
+        allPeriods.push({ ...p, tradition_id: t.tradition_id, tradition_name: t.tradition_name, color: getTradColor(t.tradition_id) });
+      }
+    });
+  });
+  allPeriods.sort((a,b) => b.mean_elite_lifespan - a.mean_elite_lifespan);
+
+  chart.innerHTML = `
+    <div style="display:flex;justify-content:flex-end;margin-bottom:0.5rem;font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
+      ← ${modern} yrs (modern elite baseline)
+    </div>
+    ${allPeriods.map((p,i) => `
+    <div class="longevity-bar-row" style="cursor:pointer" onclick="toggleLongevityDetail(${i})">
+      <div class="longevity-label">
+        ${p.tradition_name}<br>
+        <span style="font-size:0.58rem;color:var(--muted)">${p.period} · ${p.dates}</span><br>
+        <span class="longevity-confidence conf-${p.confidence}">${p.confidence}</span>
+      </div>
+      <div class="longevity-bar-track">
+        <div class="longevity-bar-fill" style="width:${(p.mean_elite_lifespan/modern*100).toFixed(1)}%;background:${p.color}">
+          <span class="longevity-bar-period">${p.tradition_name} ${p.period}</span>
+        </div>
+        <div class="longevity-bar-modern" style="left:100%"></div>
+      </div>
+      <div class="longevity-val">${p.mean_elite_lifespan}<span style="font-size:0.6rem;color:var(--muted)">yr</span></div>
+    </div>
+    <div id="detail-${i}" class="longevity-detail-card">
+      <strong>${p.period} · ${p.dates}</strong>
+      <p style="font-size:0.85rem;color:var(--muted);margin:0.5rem 0">${p.source_description||p.sample_description||''} · n=${p.sample_size||'?'}</p>
+      ${p.notes?`<p style="font-size:0.85rem;font-style:italic;color:var(--muted);margin-bottom:0.8rem">${p.notes}</p>`:''}
+      ${p.notable_examples?.length?`<div class="longevity-examples">
+        ${p.notable_examples.map(e=>`<div class="longevity-example">
+          <span class="example-name">${e.name}</span>
+          <span class="example-age">${e.age_at_death}</span>
+          <span class="example-note">${e.note}</span>
+        </div>`).join('')}
+      </div>`:''}
+      ${p.sources?.length?`<p style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);margin-top:0.8rem">${p.sources.join(' · ')}</p>`:''}
+    </div>`).join('')}`;
+
+  // Achievements grid
+  achievGrid.innerHTML = longevityData.map(t => {
+    const achievs = t.key_pharmaceutical_achievements||[];
+    if (!achievs.length) return '';
+    return `<div style="background:white;border:1px solid var(--border);border-top:4px solid ${getTradColor(t.tradition_id)};padding:1.2rem 1.4rem">
+      <div style="font-size:1.3rem;margin-bottom:0.4rem">${getTradIcon(t.tradition_id)}</div>
+      <h4 style="font-family:var(--font-display);font-size:0.85rem;color:var(--ink);margin-bottom:0.8rem">${t.tradition_name}</h4>
+      ${achievs.map(a=>`<div style="font-size:0.82rem;color:var(--muted);padding:0.25rem 0;border-bottom:1px solid var(--border)">— ${a}</div>`).join('')}
+    </div>`;
+  }).join('');
+}
+
+function toggleLongevityDetail(i) {
+  const el = document.getElementById(`detail-${i}`);
+  el.classList.toggle('open');
+}
+
+function getTradColor(id) {
+  const t = traditionData.find(x=>x.id===id);
+  return t?.color || '#6B6050';
+}
+function getTradIcon(id) {
+  const t = traditionData.find(x=>x.id===id);
+  return t?.icon || '🌿';
+}
+
+// ── Corpus browser ───────────────────────────────────────
+function renderCorpus() {
+  const list = document.getElementById('corpus-list');
+  const countEl = document.getElementById('corpus-count');
+  if (!list) return;
+
+  if (!corpusData.length) {
+    list.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">Corpus data loading — Forge translation jobs may still be running. Check the Forge portal for status.</p>';
+    return;
+  }
+  filterCorpus();
+}
+
+function filterCorpus() {
+  const list = document.getElementById('corpus-list');
+  const countEl = document.getElementById('corpus-count');
+  if (!list) return;
+
+  const query = (document.getElementById('corpus-search')?.value||'').toLowerCase();
+  const typeFilter = document.getElementById('corpus-tradition-filter')?.value||'all';
+
+  const medicalKw = ['plant','herb','tree','bark','leaf','root','seed','flower','fruit','medicine','remedy','cure','treat','fever','pain'];
+  const mineralKw = ['stone','mineral','earth','clay','salt','metal','copper','silver','alum','sulfur','barro','tierra'];
+  const waterKw = ['water','spring','thermal','fountain','mineral water'];
+
+  let filtered = corpusData.filter(r => {
+    const text = (r.title_inferred + ' ' + r.translation).toLowerCase();
+    if (query && !text.includes(query)) return false;
+    if (typeFilter === 'plant') return medicalKw.some(k=>text.includes(k));
+    if (typeFilter === 'mineral') return mineralKw.some(k=>text.includes(k));
+    if (typeFilter === 'water') return waterKw.some(k=>text.includes(k));
+    return true;
+  });
+
+  if (countEl) countEl.textContent = `${filtered.length} segments`;
+
+  list.innerHTML = filtered.slice(0,100).map((r,i) => {
+    const entities = r.entities_mentioned||[];
+    const entityTags = entities.slice(0,6).map(e => {
+      const type = guessEntityType(e.name||'');
+      return `<span class="corpus-entity-tag entity-${type}" onclick="searchForEntity('${(e.name||'').replace(/'/g,"\\'")}',event)">${e.name||'?'}</span>`;
+    }).join('');
+
+    return `<div class="corpus-segment" style="border-left-color:${i<3?'var(--gold)':''}">
+      <div class="corpus-seg-header" onclick="toggleCorpusSeg(this)">
+        <div>
+          <div class="corpus-seg-title">${r.title_inferred||'Untitled segment'}</div>
+          <div class="corpus-seg-meta">${r._label||''}</div>
+          ${entityTags?`<div style="margin-top:0.4rem">${entityTags}</div>`:''}
+        </div>
+        <span class="chevron" style="color:var(--muted);flex-shrink:0">▾</span>
+      </div>
+      <div class="corpus-seg-body">
+        ${r.translation?`<div class="corpus-translation">${r.translation}</div>`:''}
+        ${r.original_text?`<div class="corpus-original" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">${r.original_text.substring(0,600)}${r.original_text.length>600?'…':''}</div>`:''}
+        ${r.translator_notes?`<div class="notes-block" style="margin-top:0.8rem">${r.translator_notes}</div>`:''}
+      </div>
+    </div>`;
+  }).join('');
+
+  if (filtered.length > 100) {
+    list.innerHTML += `<p style="color:var(--muted);font-style:italic;padding:1rem 0;text-align:center">Showing 100 of ${filtered.length} segments. Refine your search to see more.</p>`;
   }
 }
 
-function toggleCard(header) {
+function toggleCorpusSeg(header) {
   const body = header.nextElementSibling;
   const chevron = header.querySelector('.chevron');
-  const isOpen = body.classList.contains('open');
-  body.classList.toggle('open', !isOpen);
-  chevron.classList.toggle('open', !isOpen);
+  const open = body.classList.contains('open');
+  body.classList.toggle('open',!open);
+  chevron.classList.toggle('open',!open);
 }
 
-function filterPlants() { renderPlants(); }
-
-function filterByStatus(status, btn) {
-  activeStatusFilter = status === 'all' ? null : status;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderPlants();
+function guessEntityType(name) {
+  const mineralWords = ['stone','mineral','clay','salt','metal','copper','silver','gold','earth','alum','sulfur','iron','tin','lead','mercury'];
+  const low = name.toLowerCase();
+  if (mineralWords.some(w=>low.includes(w))) return 'mineral';
+  return 'plant';
 }
 
-// ── Render priority list ────────────────────────────────
+function searchForEntity(name, e) {
+  e.stopPropagation();
+  document.getElementById('corpus-search').value = name;
+  filterCorpus();
+}
+
+// ── Convergence Engine ───────────────────────────────────
+function renderConvergenceEngine() {
+  const select = document.getElementById('condition-select');
+  if (!select || !conditionData.length) return;
+
+  if (select.children.length <= 1) {
+    const grouped = {};
+    conditionData.forEach(c => {
+      if (!grouped[c.category]) grouped[c.category] = [];
+      grouped[c.category].push(c);
+    });
+    Object.entries(grouped).forEach(([cat, conditions]) => {
+      const group = document.createElement('optgroup');
+      group.label = cat.replace(/_/g,' ').toUpperCase();
+      conditions.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.id;
+        opt.textContent = `${c.name} (${c.convergence_traditions?.length||0} traditions)`;
+        group.appendChild(opt);
+      });
+      select.appendChild(group);
+    });
+  }
+  renderPriority();
+}
+
+function runConvergenceQuery() {
+  const condId = document.getElementById('condition-select')?.value;
+  const minT = parseInt(document.getElementById('min-traditions-select')?.value||'1');
+  const resultsEl = document.getElementById('convergence-results');
+  const countEl = document.getElementById('query-result-count');
+  if (!resultsEl) return;
+  if (!condId) { resultsEl.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:1rem 0">Select a condition to query the archive.</p>'; return; }
+
+  const condition = conditionData.find(c=>c.id===condId);
+  if (!condition) return;
+
+  // Find plants tagged to this condition
+  const termSet = new Set();
+  Object.values(condition.tradition_terms||{}).forEach(terms => {
+    (Array.isArray(terms)?terms:[terms]).forEach(t=>termSet.add(t.toLowerCase()));
+  });
+
+  // Match plants by therapeutic_areas or by searching translations
+  const matchingPlants = plantData.filter(p => {
+    const areas = (p.therapeutic_areas||[]).join(' ');
+    const condCategory = condition.category;
+    return areas.includes(condCategory) ||
+      condition.id.split('_').some(word=>areas.includes(word)) ||
+      (condition.key_discoveries||[]).some(d=>
+        (p.modern_research?.key_compound||'').toLowerCase().includes(d.toLowerCase().split('(')[0].trim().toLowerCase())
+      );
+  }).filter(p => p.traditions.length >= minT);
+
+  if (countEl) countEl.textContent = `${matchingPlants.length} result${matchingPlants.length!==1?'s':''}`;
+
+  if (!matchingPlants.length) {
+    resultsEl.innerHTML = `<p style="color:var(--muted);font-style:italic;padding:1rem 0">No plants found matching <strong>${condition.name}</strong> across ${minT}+ traditions. Try reducing the tradition threshold.</p>`;
+    return;
+  }
+
+  const sorted = [...matchingPlants].sort((a,b)=>b.convergence_score-a.convergence_score);
+
+  resultsEl.innerHTML = `
+    <div style="background:var(--vellum-dark);border:1px solid var(--border);padding:1rem 1.4rem;margin-bottom:1.5rem">
+      <strong>${condition.name}</strong> — documented in ${condition.convergence_traditions?.length||0} traditions<br>
+      <div style="margin-top:0.6rem;font-family:var(--font-code);font-size:0.65rem;color:var(--muted)">
+        Known discoveries: ${(condition.key_discoveries||[]).join(' · ')||'None documented'}
+      </div>
+    </div>
+    ${sorted.map(p => {
+      const tradBadges = p.traditions.map(tid=>{
+        const t=traditionData.find(x=>x.id===tid);
+        return t?`<span class="conv-trad-badge" style="background:${t.color}">${t.icon} ${t.name.split(' ')[0]}</span>`:'';
+      }).join('');
+      return `<div class="convergence-result-card" style="border-left-color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">
+        <div class="convergence-result-name">${p.common_name}</div>
+        <div class="convergence-result-botanical">${p.modern_botanical||'Identification pending'}</div>
+        <div class="convergence-tradition-dots">${tradBadges}</div>
+        <div style="display:flex;gap:1rem;align-items:center;margin:0.5rem 0">
+          <span style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">${p.convergence_score}</span>
+          <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);text-transform:uppercase">Convergence Score</span>
+        </div>
+        <div class="convergence-result-significance">${p.modern_research?.significance||''}</div>
+      </div>`;
+    }).join('')}`;
+}
+
+// ── Priority list ────────────────────────────────────────
 function renderPriority() {
   const list = document.getElementById('priority-list');
-  if (!list || plantData.length === 0) return;
-
-  const sorted = [...plantData].sort((a, b) => b.priority_score - a.priority_score);
-
+  if (!list || !plantData.length) return;
+  const sorted = [...plantData].sort((a,b)=>b.priority_score-a.priority_score);
+  const statusLabels = {
+    'validated':'✓ Validated','fully_validated':'✓ Fully Validated','breakthrough_validated':'★ Breakthrough',
+    'validated_essential_medicine':'✓ WHO Essential Medicine','validated_renewed_interest':'✓ Validated, Active Research',
+    'needs_investigation':'⚠ Needs Investigation','critical_gap':'⚠ Critical Research Gap',
+    'preliminary':'◐ Preliminary','moderate_validation':'◑ Moderate Evidence',
+    'significant_findings':'★ Significant Findings','breakthrough_research':'★ Breakthrough Research',
+  };
   list.innerHTML = sorted.map(p => {
-    const tradIcons = p.traditions.map(tid => {
-      const t = traditionData.find(x => x.id === tid);
-      return t ? `<span title="${t.name}" style="font-size:0.9rem;">${t.icon}</span>` : '';
+    const tradIcons = p.traditions.map(tid=>{
+      const t=traditionData.find(x=>x.id===tid);
+      return t?`<span title="${t.name}" style="font-size:0.9rem">${t.icon}</span>`:'';
     }).join('');
-
-    const statusLabels = {
-      'validated': '✓ Validated', 'fully_validated': '✓ Fully Validated',
-      'breakthrough_validated': '★ Breakthrough', 'validated_essential_medicine': '✓ WHO Essential Medicine',
-      'validated_renewed_interest': '✓ Validated, Active Research',
-      'needs_investigation': '⚠ Needs Investigation', 'critical_gap': '⚠ Critical Research Gap',
-      'preliminary': '◐ Preliminary', 'moderate_validation': '◑ Moderate Evidence',
-      'significant_findings': '★ Significant Findings', 'breakthrough_research': '★ Breakthrough Research',
-    };
-
-    return `
-    <div class="priority-item">
-      <div class="priority-score-block">
-        <span class="priority-score-num">${p.priority_score}</span>
-        <span class="priority-score-label">Priority</span>
-      </div>
+    return `<div class="priority-item">
+      <div class="priority-score-block"><span class="priority-score-num">${p.priority_score}</span><span class="priority-score-label">Priority</span></div>
       <div class="priority-content">
         <h4>${p.common_name}</h4>
-        <div class="botanical-name">${p.modern_botanical || 'Identification pending'}</div>
-        <div class="source-coverage" style="gap:0.3rem; margin:0.4rem 0;">
+        <div class="botanical-name">${p.modern_botanical||'Identification pending'}</div>
+        <div class="source-coverage" style="gap:0.3rem;margin:0.4rem 0">
           ${tradIcons}
-          <span style="font-family:var(--font-code); font-size:0.6rem; color:var(--muted); margin-left:0.3rem;">
-            ${p.traditions.length} tradition${p.traditions.length > 1 ? 's' : ''} · Convergence ${p.convergence_score}/10
-          </span>
+          <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);margin-left:0.3rem">${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Convergence ${p.convergence_score}/10</span>
         </div>
-        <p>${p.modern_research?.significance || 'No modern research data available.'}</p>
-        <div style="margin-top:0.5rem;">
-          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted);">${statusLabels[p.investigation_status] || p.investigation_status}</span>
-        </div>
+        <p>${p.modern_research?.significance||'No modern research data available.'}</p>
+        <div style="margin-top:0.5rem"><span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${statusLabels[p.investigation_status]||p.investigation_status}</span></div>
       </div>
     </div>`;
   }).join('');
@@ -2081,271 +2448,7 @@ function renderPriority() {
 
 // ── Init ────────────────────────────────────────────────
 loadData().then(() => {
-  const hash = window.location.hash.replace('#', '');
-  if (hash && document.getElementById('tab-' + hash)) {
-    document.querySelectorAll('.tab-btn').forEach(b => {
-      if (b.getAttribute('onclick')?.includes(hash)) {
-        b.classList.add('active');
-        b.classList.remove('active');
-      }
-    });
-  }
-});
-</script>
-
-// ── Chapter accordion ───────────────────────────────────
-function toggleChapter(header) {
-  const body = header.nextElementSibling;
-  const chevron = header.querySelector('.chevron');
-  const isOpen = body.classList.contains('open');
-  body.classList.toggle('open', !isOpen);
-  chevron.classList.toggle('open', !isOpen);
-}
-
-// ── Plant data ──────────────────────────────────────────
-let plantData = [];
-let activeSourceFilter = 'all';
-let activeStatusFilter = null;
-
-async function loadPlants() {
-  try {
-    const res = await fetch('/data/plants.json');
-    const data = await res.json();
-    plantData = data.plants;
-  } catch(e) {
-    console.error('Could not load plant data', e);
-  }
-}
-
-// ── Render plant database ───────────────────────────────
-function renderPlants() {
-  const grid = document.getElementById('plant-grid');
-  if (!grid) return;
-  const query = (document.getElementById('plant-search')?.value || '').toLowerCase();
-
-  const filtered = plantData.filter(p => {
-    const matchSource = activeSourceFilter === 'all' || p.sources.includes(activeSourceFilter);
-    const matchStatus = !activeStatusFilter || p.investigation_status === activeStatusFilter;
-    const matchQuery = !query ||
-      p.common_name.toLowerCase().includes(query) ||
-      (p.modern_botanical || '').toLowerCase().includes(query) ||
-      p.therapeutic_areas.some(t => t.includes(query)) ||
-      (p.modern_research?.key_compound || '').toLowerCase().includes(query);
-    return matchSource && matchStatus && matchQuery;
-  });
-
-  grid.innerHTML = filtered.map(p => {
-    const conv = p.convergence_score;
-    const convClass = conv >= 8 ? 'convergence-high' : conv >= 5 ? 'convergence-med' : 'convergence-low';
-    const statusMap = {
-      'validated': ['status-validated', '✓ Validated'],
-      'fully_validated': ['status-validated', '✓ Fully Validated'],
-      'breakthrough_validated': ['status-breakthrough', '★ Breakthrough'],
-      'validated_essential_medicine': ['status-validated', '✓ Essential Medicine'],
-      'validated_renewed_interest': ['status-validated', '✓ Validated · Active Research'],
-      'needs_investigation': ['status-gap', '⚠ Needs Investigation'],
-      'critical_gap': ['status-gap', '⚠ Critical Gap'],
-      'preliminary': ['status-preliminary', '◐ Preliminary'],
-      'moderate_validation': ['status-moderate', '◑ Moderate Evidence'],
-      'significant_findings': ['status-breakthrough', '★ Significant Findings'],
-    };
-    const [statusClass, statusLabel] = statusMap[p.investigation_status] || ['status-preliminary', '◐ Unknown'];
-
-    const sourceTags = p.sources.map(s =>
-      `<span class="tag source-${s}">${s.charAt(0).toUpperCase() + s.slice(1)}</span>`
-    ).join('');
-
-    const therapeuticTags = p.therapeutic_areas.slice(0, 4).map(t =>
-      `<span class="tag">${t.replace(/_/g, ' ')}</span>`
-    ).join('');
-
-    const coboSection = p.cobo ? `
-      <div class="source-section">
-        <span class="source-label cobo">Cobo · Historia del Nuevo Mundo</span>
-        <div class="parallel-text">
-          <div class="text-column">
-            <label>Spanish Original</label>
-            <p>${p.cobo.original_spanish}</p>
-          </div>
-          <div class="text-column">
-            <label>English Translation</label>
-            <p class="translation">${p.cobo.translation}</p>
-          </div>
-        </div>
-        <div class="plant-meta">
-          <div class="meta-item"><label>Condition</label><span>${p.cobo.condition}</span></div>
-          <div class="meta-item"><label>Preparation</label><span>${p.cobo.preparation}</span></div>
-        </div>
-        ${p.cobo.notes ? `<div class="notes-block">${p.cobo.notes}</div>` : ''}
-      </div>` : '';
-
-    const badianusSection = p.badianus ? `
-      <div class="source-section">
-        <span class="source-label badianus">Badianus Manuscript · ${p.badianus.plate ? 'Plate ' + p.badianus.plate : ''}</span>
-        <div class="parallel-text">
-          <div class="text-column">
-            <label>Latin Original</label>
-            <p>${p.badianus.latin_original}</p>
-          </div>
-          <div class="text-column">
-            <label>English Translation</label>
-            <p class="translation">${p.badianus.translation}</p>
-          </div>
-        </div>
-        ${p.badianus.illustration_url ? `<a class="external-link" href="${p.badianus.illustration_url}" target="_blank">↗ View Botanical Illustration</a>` : ''}
-        ${p.badianus.notes ? `<div class="notes-block">${p.badianus.notes}</div>` : ''}
-      </div>` : '';
-
-    const florentineSection = p.florentine ? `
-      <div class="source-section">
-        <span class="source-label florentine">Florentine Codex · Book ${p.florentine.book}, Folio ${p.florentine.folio}</span>
-        <div class="parallel-text">
-          <div class="text-column">
-            <label>Classical Nahuatl</label>
-            <p>${p.florentine.nahuatl_original}</p>
-          </div>
-          <div class="text-column">
-            <label>English Translation</label>
-            <p class="translation">${p.florentine.translation}</p>
-          </div>
-        </div>
-        ${p.florentine.getty_url ? `<a class="external-link" href="${p.florentine.getty_url}" target="_blank">↗ View in Getty Digital Florentine Codex</a>` : ''}
-        ${p.florentine.notes ? `<div class="notes-block">${p.florentine.notes}</div>` : ''}
-      </div>` : '';
-
-    const modernSection = p.modern_research ? `
-      <div class="source-section">
-        <span class="source-label modern">Modern Pharmacology</span>
-        <span class="research-status ${statusClass}">${statusLabel}</span>
-        <div class="plant-meta" style="margin-bottom:0.8rem;">
-          <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
-          <div class="meta-item"><label>Status</label><span>${statusLabel}</span></div>
-        </div>
-        <p style="font-size:0.9rem; line-height:1.7; color:var(--ink); max-width:70ch;">${p.modern_research.pubmed_summary}</p>
-        <div class="notes-block" style="margin-top:0.8rem;">${p.modern_research.significance}</div>
-      </div>` : '';
-
-    return `
-    <div class="plant-card" data-sources="${p.sources.join(',')}" data-status="${p.investigation_status}">
-      <div class="plant-card-header" onclick="toggleCard(this)">
-        <div class="plant-name-block">
-          <h3>${p.common_name}</h3>
-          <div class="botanical">${p.modern_botanical || 'Identification pending'}</div>
-          <div class="plant-tags">
-            ${sourceTags}
-            ${therapeuticTags}
-          </div>
-        </div>
-        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.5rem;">
-          <div class="convergence-badge">
-            <span class="convergence-num ${convClass}">${conv}</span>
-            <span class="convergence-label">Convergence</span>
-          </div>
-          <span class="chevron" style="color:var(--muted);">▾</span>
-        </div>
-      </div>
-      <div class="plant-card-body">
-        ${coboSection}
-        ${badianusSection}
-        ${florentineSection}
-        ${modernSection}
-        <div style="padding:1rem 1.5rem; background:var(--vellum); border-top:1px solid var(--border);">
-          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase;">Plant ID: ${p.id}</span>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-
-  if (filtered.length === 0) {
-    grid.innerHTML = '<p style="color:var(--muted); font-style:italic; padding:2rem 0;">No plants match the current filters.</p>';
-  }
-}
-
-function toggleCard(header) {
-  const body = header.nextElementSibling;
-  const chevron = header.querySelector('.chevron');
-  const isOpen = body.classList.contains('open');
-  body.classList.toggle('open', !isOpen);
-  chevron.classList.toggle('open', !isOpen);
-}
-
-function filterPlants() { renderPlants(); }
-
-function filterBySource(source, btn) {
-  activeSourceFilter = source;
-  activeStatusFilter = null;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  renderPlants();
-}
-
-function filterByStatus(status, btn) {
-  activeStatusFilter = activeStatusFilter === status ? null : status;
-  activeSourceFilter = 'all';
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  if (activeStatusFilter) btn.classList.add('active');
-  else document.querySelector('.filter-btn').classList.add('active');
-  renderPlants();
-}
-
-// ── Render priority list ────────────────────────────────
-function renderPriority() {
-  const list = document.getElementById('priority-list');
-  if (!list || plantData.length === 0) return;
-
-  const sorted = [...plantData].sort((a, b) => b.priority_score - a.priority_score);
-
-  list.innerHTML = sorted.map(p => {
-    const sourceDots = ['cobo', 'badianus', 'florentine'].map(s =>
-      `<span class="source-dot dot-${s}" title="${s}" style="opacity:${p.sources.includes(s) ? 1 : 0.15}"></span>`
-    ).join('');
-
-    const statusLabels = {
-      'validated': '✓ Validated',
-      'fully_validated': '✓ Fully Validated',
-      'breakthrough_validated': '★ Breakthrough Research',
-      'validated_essential_medicine': '✓ WHO Essential Medicine',
-      'validated_renewed_interest': '✓ Validated, Active Research',
-      'needs_investigation': '⚠ Needs Investigation',
-      'critical_gap': '⚠ Critical Research Gap',
-      'preliminary': '◐ Preliminary Evidence',
-      'moderate_validation': '◑ Moderate Evidence',
-      'significant_findings': '★ Significant Findings',
-    };
-
-    return `
-    <div class="priority-item">
-      <div class="priority-score-block">
-        <span class="priority-score-num">${p.priority_score}</span>
-        <span class="priority-score-label">Priority</span>
-      </div>
-      <div class="priority-content">
-        <h4>${p.common_name}</h4>
-        <div class="botanical-name">${p.modern_botanical || 'Identification pending'}</div>
-        <div class="source-coverage">
-          ${sourceDots}
-          <span style="font-family:var(--font-code); font-size:0.6rem; color:var(--muted); margin-left:0.3rem;">
-            ${p.sources.length} source${p.sources.length > 1 ? 's' : ''} · Convergence ${p.convergence_score}/10
-          </span>
-        </div>
-        <p>${p.modern_research?.significance || 'No modern research data available.'}</p>
-        <div style="margin-top:0.5rem;">
-          <span style="font-family:var(--font-code); font-size:0.62rem; color:var(--muted);">${statusLabels[p.investigation_status] || p.investigation_status}</span>
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-// ── Init ────────────────────────────────────────────────
-loadPlants().then(() => {
-  const hash = window.location.hash.replace('#', '');
-  if (hash && document.getElementById('tab-' + hash)) {
-    showTab(hash);
-    document.querySelectorAll('.tab-btn').forEach((b, i) => {
-      if (b.getAttribute('onclick')?.includes(hash)) b.classList.add('active');
-    });
-  }
+  renderPriority(); // prime priority list
 });
 </script>
 </body>
