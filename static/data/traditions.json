@@ -4,7 +4,12 @@
       "id": "cobo",
       "name": "Andean Traditional Medicine",
       "culture": "Quechua / Aymara / Colonial Spanish",
-      "geography": ["Peru", "Bolivia", "Ecuador", "Chile"],
+      "geography": [
+        "Peru",
+        "Bolivia",
+        "Ecuador",
+        "Chile"
+      ],
       "region": "South America",
       "date_range": "Pre-Columbian – 1653",
       "primary_document": "Historia del Nuevo Mundo",
@@ -15,7 +20,11 @@
       "color": "#2D5016",
       "icon": "🌿",
       "archive_url": "https://archive.org/details/historia-del-nuevo-mundo-vol-1",
-      "key_compounds_discovered": ["Quinine (cinchona)", "Cocaine (coca)", "Mescaline-adjacent alkaloids"],
+      "key_compounds_discovered": [
+        "Quinine (cinchona)",
+        "Cocaine (coca)",
+        "Mescaline-adjacent alkaloids"
+      ],
       "approx_plants_documented": 2000,
       "notes": "Cobo personally transported cinchona bark to Europe in 1632. Most comprehensive natural history of the Americas from the colonial period."
     },
@@ -23,7 +32,10 @@
       "id": "badianus",
       "name": "Aztec Medicine (Physician's Practice)",
       "culture": "Mexica / Nahua",
-      "geography": ["Mexico", "Central America"],
+      "geography": [
+        "Mexico",
+        "Central America"
+      ],
       "region": "Mesoamerica",
       "date_range": "Pre-Columbian – 1552",
       "primary_document": "Libellus de Medicinalibus Indorum Herbis (Badianus Manuscript)",
@@ -34,7 +46,11 @@
       "color": "#8B4513",
       "icon": "🌺",
       "archive_url": "https://badianus.omeka.net/",
-      "key_compounds_discovered": ["Scopolamine (toloatzin/datura)", "Ergine/LSA (ololiuqui)", "Psilocybin (teonanácatl)"],
+      "key_compounds_discovered": [
+        "Scopolamine (toloatzin/datura)",
+        "Ergine/LSA (ololiuqui)",
+        "Psilocybin (teonanácatl)"
+      ],
       "approx_plants_documented": 185,
       "notes": "Written 30 years after the conquest by an Aztec physician documenting his own active practice — highest reliability source in the corpus."
     },
@@ -42,7 +58,10 @@
       "id": "florentine",
       "name": "Aztec Medicine (Ethnographic)",
       "culture": "Mexica / Nahua",
-      "geography": ["Mexico", "Central America"],
+      "geography": [
+        "Mexico",
+        "Central America"
+      ],
       "region": "Mesoamerica",
       "date_range": "Pre-Columbian – 1577",
       "primary_document": "Historia General de las Cosas de Nueva España (Florentine Codex)",
@@ -53,7 +72,11 @@
       "color": "#1A4A7A",
       "icon": "📜",
       "archive_url": "https://florentinecodex.getty.edu/",
-      "key_compounds_discovered": ["Psilocybin (teonanácatl)", "Ergine (ololiuqui)", "Multiple Datura alkaloids"],
+      "key_compounds_discovered": [
+        "Psilocybin (teonanácatl)",
+        "Ergine (ololiuqui)",
+        "Multiple Datura alkaloids"
+      ],
       "approx_plants_documented": 400,
       "notes": "Most rigorously compiled ethnographic survey of Aztec civilization. Sahagún cross-checked all information across multiple indigenous informants."
     },
@@ -61,7 +84,11 @@
       "id": "ayurveda",
       "name": "Ayurvedic Medicine",
       "culture": "South Asian / Sanskrit",
-      "geography": ["India", "Sri Lanka", "Nepal"],
+      "geography": [
+        "India",
+        "Sri Lanka",
+        "Nepal"
+      ],
       "region": "South Asia",
       "date_range": "c.600 BCE – 700 CE (classical texts)",
       "primary_document": "Charaka Samhita / Sushruta Samhita / Ashtanga Hridayam",
@@ -72,7 +99,12 @@
       "color": "#B5451B",
       "icon": "🪷",
       "archive_url": "https://www.wisdomlib.org/hinduism/book/charaka-samhita",
-      "key_compounds_discovered": ["Reserpine (Rauwolfia — first antihypertensive)", "Curcumin (turmeric)", "Boswellic acids", "Withaferin A (ashwagandha)"],
+      "key_compounds_discovered": [
+        "Reserpine (Rauwolfia — first antihypertensive)",
+        "Curcumin (turmeric)",
+        "Boswellic acids",
+        "Withaferin A (ashwagandha)"
+      ],
       "approx_plants_documented": 700,
       "notes": "Rauwolfia serpentina (sarpagandha) documented for millennia for snakebite and 'insanity' — reserpine isolated 1952, became first antipsychotic and antihypertensive drug."
     },
@@ -80,7 +112,12 @@
       "id": "chinese",
       "name": "Classical Chinese Medicine",
       "culture": "Chinese / Han",
-      "geography": ["China", "Korea", "Japan", "Vietnam"],
+      "geography": [
+        "China",
+        "Korea",
+        "Japan",
+        "Vietnam"
+      ],
       "region": "East Asia",
       "date_range": "c.200 BCE – 1600 CE (classical texts)",
       "primary_document": "Shennong Bencao Jing / Bencao Gangmu / Huangdi Neijing",
@@ -91,7 +128,12 @@
       "color": "#C41E3A",
       "icon": "🏮",
       "archive_url": "https://zh.wikisource.org/wiki/本草綱目",
-      "key_compounds_discovered": ["Artemisinin (Nobel Prize 2015)", "Berberine", "Ephedrine (Ma Huang)", "Camptothecin"],
+      "key_compounds_discovered": [
+        "Artemisinin (Nobel Prize 2015)",
+        "Berberine",
+        "Ephedrine (Ma Huang)",
+        "Camptothecin"
+      ],
       "approx_plants_documented": 1900,
       "notes": "Tu Youyou found the artemisinin reference in Ge Hong's 4th century Daoist text Zhouhou Beiji Fang. Largest single pharmacopeia in world history."
     },
@@ -99,7 +141,13 @@
       "id": "greek_roman",
       "name": "Greek & Roman Medicine",
       "culture": "Greek / Roman",
-      "geography": ["Greece", "Italy", "Turkey", "North Africa", "Middle East"],
+      "geography": [
+        "Greece",
+        "Italy",
+        "Turkey",
+        "North Africa",
+        "Middle East"
+      ],
       "region": "Mediterranean",
       "date_range": "c.400 BCE – 200 CE",
       "primary_document": "De Materia Medica (Dioscorides) / Naturalis Historia (Pliny) / Corpus Hippocraticum",
@@ -110,7 +158,12 @@
       "color": "#6B4C9A",
       "icon": "🏛️",
       "archive_url": "https://archive.org/details/demateriamedicao00dios",
-      "key_compounds_discovered": ["Opium/morphine (poppy)", "Salicylates (willow bark)", "Colchicine (autumn crocus — gout)", "Hyoscine/scopolamine (henbane)"],
+      "key_compounds_discovered": [
+        "Opium/morphine (poppy)",
+        "Salicylates (willow bark)",
+        "Colchicine (autumn crocus — gout)",
+        "Hyoscine/scopolamine (henbane)"
+      ],
       "approx_plants_documented": 600,
       "notes": "Dioscorides served as physician to Roman armies under Nero, collecting plant samples across the Mediterranean. His taxonomy influenced Western medicine through the Renaissance."
     },
@@ -118,7 +171,13 @@
       "id": "unani",
       "name": "Islamic / Unani Medicine",
       "culture": "Arabic / Persian / Islamic",
-      "geography": ["Iraq", "Iran", "Egypt", "Spain", "India"],
+      "geography": [
+        "Iraq",
+        "Iran",
+        "Egypt",
+        "Spain",
+        "India"
+      ],
       "region": "Middle East / Central Asia",
       "date_range": "c.800 – 1400 CE",
       "primary_document": "Al-Qanun fi al-Tibb (Canon of Medicine) / Kitab al-Hawi / Al-Tashreeh",
@@ -129,7 +188,12 @@
       "color": "#1B6B4A",
       "icon": "🌙",
       "archive_url": "https://archive.org/details/CanonOfMedicineAvicenna",
-      "key_compounds_discovered": ["Alcohol distillation for medicines", "Senna (laxative)", "Camphor", "Myrrh antimicrobial applications"],
+      "key_compounds_discovered": [
+        "Alcohol distillation for medicines",
+        "Senna (laxative)",
+        "Camphor",
+        "Myrrh antimicrobial applications"
+      ],
       "approx_plants_documented": 1400,
       "notes": "Ibn Sina synthesized Greek, Persian, and Indian medicine with original clinical observation. The Canon of Medicine was used as a medical textbook in European universities until the 17th century."
     },
@@ -137,7 +201,10 @@
       "id": "egyptian",
       "name": "Ancient Egyptian Medicine",
       "culture": "Ancient Egyptian",
-      "geography": ["Egypt", "Nubia"],
+      "geography": [
+        "Egypt",
+        "Nubia"
+      ],
       "region": "North Africa",
       "date_range": "c.3000 – 400 BCE",
       "primary_document": "Ebers Papyrus / Edwin Smith Papyrus / Hearst Papyrus",
@@ -148,7 +215,13 @@
       "color": "#C4A000",
       "icon": "𓂀",
       "archive_url": "https://archive.org/details/papyrusebersgros00eber",
-      "key_compounds_discovered": ["Honey (antibiotic dressings — validated)", "Willow bark (salicylates)", "Copper (antimicrobial vessels)", "Castor oil", "Garlic"],
+      "key_compounds_discovered": [
+        "Honey (antibiotic dressings — validated)",
+        "Willow bark (salicylates)",
+        "Copper (antimicrobial vessels)",
+        "Castor oil",
+        "Garlic"
+      ],
       "approx_plants_documented": 700,
       "notes": "The Ebers Papyrus prescribes moldy bread for infected wounds — 3,500 years before Fleming's penicillin discovery. Copper vessel water sterilization now validated as oligodynamic effect."
     },
@@ -156,7 +229,14 @@
       "id": "west_african",
       "name": "West African Traditional Medicine",
       "culture": "Yoruba / Akan / Igbo / Mandé and others",
-      "geography": ["Nigeria", "Ghana", "Senegal", "Mali", "Cameroon", "Congo"],
+      "geography": [
+        "Nigeria",
+        "Ghana",
+        "Senegal",
+        "Mali",
+        "Cameroon",
+        "Congo"
+      ],
       "region": "West & Central Africa",
       "date_range": "Pre-colonial – present (primarily oral tradition)",
       "primary_document": "Various colonial-era botanical surveys / Modern ethnobotanical records",
@@ -167,7 +247,12 @@
       "color": "#8B6914",
       "icon": "🌍",
       "archive_url": "https://www.prota4u.org/",
-      "key_compounds_discovered": ["Physostigmine (Calabar bean — first glaucoma treatment)", "Prostratin (HIV research)", "Warburgia salutaris compounds (anti-TB)", "Combretastatin (anti-tumor)"],
+      "key_compounds_discovered": [
+        "Physostigmine (Calabar bean — first glaucoma treatment)",
+        "Prostratin (HIV research)",
+        "Warburgia salutaris compounds (anti-TB)",
+        "Combretastatin (anti-tumor)"
+      ],
       "approx_plants_documented": 5000,
       "notes": "Likely the most pharmacologically rich and least investigated tradition in the world. Africa's extraordinary biodiversity (second only to Amazon) combined with millennia of empirical knowledge represents the largest untapped pharmacological database. Physostigmine from Calabar bean was the first effective glaucoma treatment and laid foundation for understanding acetylcholinesterase inhibition."
     },
@@ -175,7 +260,11 @@
       "id": "north_american_indigenous",
       "name": "Native North American Medicine",
       "culture": "Multi-nation — Cherokee, Ojibwe, Lakota, Haudenosaunee, Navajo, and hundreds of others",
-      "geography": ["United States", "Canada", "Mexico (northern)"],
+      "geography": [
+        "United States",
+        "Canada",
+        "Mexico (northern)"
+      ],
       "region": "North America",
       "date_range": "Pre-colonial – present",
       "primary_document": "Moerman's Native American Ethnobotany Database / Densmore / various ethnographic records",
@@ -186,7 +275,12 @@
       "color": "#7B3F00",
       "icon": "🦅",
       "archive_url": "https://naeb.brit.org/",
-      "key_compounds_discovered": ["Aspirin precursor (willow bark — convergent discovery)", "Echinacea (immune modulation)", "Goldenseal/berberine (antimicrobial)", "Cascara sagrada (laxative — still pharmaceutical)"],
+      "key_compounds_discovered": [
+        "Aspirin precursor (willow bark — convergent discovery)",
+        "Echinacea (immune modulation)",
+        "Goldenseal/berberine (antimicrobial)",
+        "Cascara sagrada (laxative — still pharmaceutical)"
+      ],
       "approx_plants_documented": 2700,
       "notes": "Moerman's database is the most systematic compilation. Convergent discovery of salicylate-containing willows for fever/pain across multiple independent nations validates the clinical signal. Many traditions face urgent documentation pressure as elders pass without successors."
     },
@@ -194,7 +288,14 @@
       "id": "amazonian",
       "name": "Amazonian Indigenous Medicine",
       "culture": "Multi-nation — Yanomami, Shipibo, Asháninka, Kayapó, and hundreds of others",
-      "geography": ["Brazil", "Peru", "Colombia", "Ecuador", "Venezuela", "Bolivia"],
+      "geography": [
+        "Brazil",
+        "Peru",
+        "Colombia",
+        "Ecuador",
+        "Venezuela",
+        "Bolivia"
+      ],
       "region": "South America (Amazon Basin)",
       "date_range": "Pre-colonial – present",
       "primary_document": "Modern ethnobotanical surveys / INPA records / Paul Alan Cox / Wade Davis / Mark Plotkin",
@@ -205,14 +306,357 @@
       "color": "#1A5C2A",
       "icon": "🌳",
       "archive_url": "https://www.amazonianecovillage.org/ethnobotany",
-      "key_compounds_discovered": ["Curare (tubocurarine — surgical muscle relaxants)", "Quinine (via Andean overlap)", "Cocaine (via Andean overlap)", "Ayahuasca (psilocybin-adjacent — DMT + MAOi)", "Vincristine/vinblastine (rosy periwinkle — cancer)"],
+      "key_compounds_discovered": [
+        "Curare (tubocurarine — surgical muscle relaxants)",
+        "Quinine (via Andean overlap)",
+        "Cocaine (via Andean overlap)",
+        "Ayahuasca (psilocybin-adjacent — DMT + MAOi)",
+        "Vincristine/vinblastine (rosy periwinkle — cancer)"
+      ],
       "approx_plants_documented": 10000,
       "notes": "The Amazon contains ~10% of all species on Earth. Curare discovery enabled modern surgery. The pharmacological sophistication of combining a MAO inhibitor with DMT in ayahuasca — discovered empirically — is remarkable. Madagascar's rosy periwinkle (technically outside Amazon but Amazonian-adjacent tradition) produced vincristine and vinblastine. Madagascar received no compensation."
+    },
+    {
+      "id": "kampo",
+      "name": "Kampo / Japanese Traditional Medicine",
+      "culture": "Japanese",
+      "geography": [
+        "Japan"
+      ],
+      "region": "East Asia",
+      "date_range": "c.700 CE – present",
+      "primary_document": "Honzo Wamyo (918 CE) / Ishinho (984 CE) / Koho Kogaku texts (17th–19th c.)",
+      "author": "Fukane no Sukehito (Honzo Wamyo) / Tanba no Yasuyori (Ishinho) / Yoshimasu Todo / Kagawa Shūan",
+      "language_original": "Classical Japanese / Classical Chinese (kanbun)",
+      "status": "stub",
+      "status_note": "Stub — full population in progress. Kampo was formally integrated into Japan's national health system in 1976; unusually strong clinical evidence base by traditional medicine standards. Forging from Classical Japanese/Chinese originals.",
+      "color": "#B71C1C",
+      "icon": "⛩️",
+      "archive_url": "https://www.jstage.jst.go.jp/browse/kampomed",
+      "key_compounds_discovered": [
+        "Ephedrine (ma huang / maōu) — Japan standardized dosing centuries before Western isolation",
+        "Glycyrrhizin (licorice root / kanzō) — anti-inflammatory, antiviral",
+        "Berberine (ōren / coptis) — antimicrobial, blood sugar regulation",
+        "Paeoniflorin (shakuyaku / peony) — muscle relaxant, anti-inflammatory"
+      ],
+      "approx_plants_documented": 600,
+      "notes": "Kampo diverged from Chinese medicine after Japan's Edo period isolation (1603–1868), developing independent clinical refinements. Its integration into Japan's national health insurance system means Kampo formulas have undergone more rigorous modern clinical evaluation than almost any other traditional medicine system — making it an unusually strong candidate for PubMed cross-referencing. The Koho (Ancient Formula) school emphasized direct empirical observation over theoretical frameworks, anticipating evidence-based methodology by centuries.",
+      "source_texts_for_forge": [
+        {
+          "title": "Honzo Wamyo (本草和名)",
+          "date": "918 CE",
+          "language": "Classical Japanese / kanbun",
+          "description": "First Japanese pharmacopeia — 1,025 entries cataloguing plants, animals, minerals with Japanese and Chinese names",
+          "archive_url": "https://dl.ndl.go.jp/info:ndljp/pid/2606548"
+        },
+        {
+          "title": "Ishinho (医心方)",
+          "date": "984 CE",
+          "language": "Classical Chinese (kanbun)",
+          "description": "30-volume synthesis of Chinese medical knowledge adapted for Japan — oldest surviving Japanese medical text",
+          "archive_url": "https://dl.ndl.go.jp/info:ndljp/pid/2536696"
+        },
+        {
+          "title": "Koho Kogaku selected formulas",
+          "date": "17th–19th century",
+          "language": "Classical Japanese",
+          "description": "Empirical clinical refinements by the Ancient Formula school — Yoshimasu Todo's Yakucho plant descriptions",
+          "archive_url": "https://www.jstage.jst.go.jp/browse/kampomed"
+        }
+      ]
+    },
+    {
+      "id": "tibetan",
+      "name": "Tibetan Medicine (Sowa Rigpa)",
+      "culture": "Tibetan / Himalayan",
+      "geography": [
+        "Tibet",
+        "Bhutan",
+        "Nepal",
+        "Northern India (Ladakh, Sikkim)",
+        "Mongolia"
+      ],
+      "region": "Himalayan / Central Asia",
+      "date_range": "c.7th century CE – present",
+      "primary_document": "Gyushi (Four Medical Tantras / rGyud bzhi) c.12th century / Sangye Gyamtso's Blue Beryl commentary (1688)",
+      "author": "Attributed to Yuthok Yontan Gonpo (elder, 8th c.; revised version c.12th c.) / Sangye Gyamtso (Blue Beryl)",
+      "language_original": "Classical Tibetan (Chöke)",
+      "status": "stub",
+      "status_note": "Stub — full population in progress. The Gyushi is unique as the only major medical tradition developed primarily above 3,500m altitude. The Men-Tsee-Khang (Tibetan Medical and Astrological Institute, Dharamsala) has released partial English translations. Forging from Classical Tibetan with Men-Tsee-Khang English as reference.",
+      "color": "#E65100",
+      "icon": "🏔️",
+      "archive_url": "https://www.men-tsee-khang.org/",
+      "key_compounds_discovered": [
+        "Rhodiola (Hong jing tian) — altitude adaptation, stress response (adaptogen)",
+        "Shilajit (mineral pitch) — high-altitude mineral resin with documented bioactivity",
+        "Gentiana (Tibetan gentian) — digestive bitters, antimicrobial",
+        "Meconopsis (Himalayan poppy) — pain, inflammation — altitude-specific species"
+      ],
+      "approx_plants_documented": 2000,
+      "notes": "The Gyushi contains 156 chapters covering anatomy, embryology, diagnosis, pharmacology, and surgery. Its most unique contribution is a pharmacopeia developed in near-total geographic isolation at extreme altitude — producing plant knowledge with minimal overlap with Chinese, Ayurvedic, or any other tradition. The parallel with Andean medicine (also altitude-specific, also largely independent) makes this a natural comparative thread for the convergence engine. The Blue Beryl commentary (1688) includes 79 painted medical thangkas that constitute the most detailed pre-modern visual anatomy in any Asian tradition.",
+      "source_texts_for_forge": [
+        {
+          "title": "Gyushi (rGyud bzhi — Four Medical Tantras)",
+          "date": "c.12th century (revised from 8th century original)",
+          "language": "Classical Tibetan",
+          "description": "The foundational text of Tibetan medicine — 156 chapters on all aspects of medicine",
+          "archive_url": "https://www.men-tsee-khang.org/research/publication/index.htm",
+          "english_reference": "Desi Sangye Gyamtso, Blue Beryl, translated by Gavin Kilty, Library of Tibetan Works and Archives, 2010"
+        }
+      ]
+    },
+    {
+      "id": "maya",
+      "name": "Maya Traditional Medicine",
+      "culture": "Maya (Yucatec, K'iche', Tzeltal, and others)",
+      "geography": [
+        "Mexico (Yucatan, Chiapas, Tabasco)",
+        "Guatemala",
+        "Belize",
+        "Honduras",
+        "El Salvador"
+      ],
+      "region": "Mesoamerica",
+      "date_range": "Pre-Classic period (2000 BCE) – present",
+      "primary_document": "Ritual of the Bacabs (c.17th c.) / Books of Chilam Balam / Relación de las Cosas de Yucatán (Landa, 1566)",
+      "author": "Unknown Maya scribes (Ritual of the Bacabs) / Multiple authors (Books of Chilam Balam) / Diego de Landa (Relación)",
+      "language_original": "Yucatec Maya / K'iche' Maya / Colonial Spanish",
+      "status": "stub",
+      "status_note": "Stub — full population in progress. The Ritual of the Bacabs (Princeton University Library) is the primary Maya medical text — 438 healing incantations with plant preparations. Ralph Roys' 1965 translation is the standard English reference. Forging from Yucatec Maya originals with Roys as reference.",
+      "color": "#1B5E20",
+      "icon": "🌽",
+      "archive_url": "https://findingaids.princeton.edu/catalog/C0744",
+      "key_compounds_discovered": [
+        "Chaya (Cnidoscolus aconitifolius) — extraordinary nutritional density, anti-diabetic properties",
+        "Copal resins (Bursera species) — antimicrobial, wound healing (independent Mesoamerican discovery)",
+        "Balché (Lonchocarpus violaceus) — MAO inhibition (convergent with ayahuasca mechanism)",
+        "Ramón (Brosimum alicastrum) — ancient staple with exceptional amino acid profile"
+      ],
+      "approx_plants_documented": 900,
+      "notes": "The Maya pharmacopeia is largely distinct from Aztec despite geographic adjacency — different climate zones (lowland rainforest vs highland plateau), different plant species, and independent medical development. The Ritual of the Bacabs documents 438 healing ceremonies, most with specific plant preparations, making it one of the most detailed pre-Columbian medical texts after the Badianus Manuscript. The Maya calendar system's integration with medicine (timing treatments to astronomical cycles) parallels Ayurvedic dosha timing and Tibetan astrological medicine — a potential convergence thread the archive can explore.",
+      "source_texts_for_forge": [
+        {
+          "title": "Ritual of the Bacabs",
+          "date": "c.17th century (recording pre-Columbian tradition)",
+          "language": "Yucatec Maya",
+          "description": "438 healing incantations with plant preparations — primary Maya medical text",
+          "archive_url": "https://findingaids.princeton.edu/catalog/C0744",
+          "english_reference": "Roys, Ralph L. (1965). Ritual of the Bacabs. University of Oklahoma Press."
+        },
+        {
+          "title": "Books of Chilam Balam",
+          "date": "c.17th–18th century (recording pre-Columbian knowledge)",
+          "language": "Yucatec Maya",
+          "description": "Multiple books from different towns — contain medical, astronomical, and historical knowledge",
+          "archive_url": "https://archive.org/details/bookofchilambala00brin"
+        }
+      ]
+    },
+    {
+      "id": "philippine",
+      "name": "Philippine Indigenous Medicine",
+      "culture": "Multi-ethnic — Tagalog, Visayan, Ilocano, Lumad, Igorot, and over 100 other ethnolinguistic groups",
+      "geography": [
+        "Philippines (7,641 islands)"
+      ],
+      "region": "Southeast Asia",
+      "date_range": "Pre-colonial – present",
+      "primary_document": "Quisumbing's Medicinal Plants of the Philippines (1951) / BFAD Philippine National Formulary / Modern ethnobotanical surveys",
+      "author": "Eduardo Quisumbing / Bureau of Food and Drugs Philippines / Multiple ethnobotanists",
+      "language_original": "Oral traditions in 100+ languages; documented in Spanish and English",
+      "status": "stub",
+      "status_note": "Stub — full population in progress. Much of the pre-colonial pharmacopeia was destroyed by Spanish colonization. Quisumbing's 1951 survey (1,200+ plants, English) is the primary systematic source. The Philippine DOH has formally approved 10 herbal medicines as official alternatives — unusually rigorous government validation.",
+      "color": "#0277BD",
+      "icon": "🌺",
+      "archive_url": "https://www.herdin.ph/",
+      "key_compounds_discovered": [
+        "Lagundi/Vitex negundo — DOH-approved for cough and asthma; confirmed bronchodilator activity",
+        "Sambong/Blumea balsamifera — DOH-approved diuretic; kidney stone dissolution",
+        "Tsaang gubat/Ehretia microphylla — DOH-approved for diarrhea; antimicrobial validated",
+        "Niyog-niyogan/Quisqualis indica — anthelmintic; validated against roundworm"
+      ],
+      "approx_plants_documented": 1200,
+      "notes": "The Philippines has one of the highest levels of plant biodiversity per unit area in the world (approximately 13,500 plant species, ~3,500 endemic). The deliberate destruction of indigenous knowledge during Spanish colonization (1565–1898) means most pre-colonial pharmacopeia survives only in oral tradition or fragmentary colonial records. However, the Philippine government's formal approval of 10 traditional herbal medicines through DOH-sanctioned clinical trials makes this the tradition with the most rigorous government-backed clinical validation outside Japan's Kampo system. The 'DOH 10' represent high-confidence PubMed cross-reference candidates.",
+      "source_texts_for_forge": [
+        {
+          "title": "Medicinal Plants of the Philippines",
+          "date": "1951 (revised 1978)",
+          "language": "English",
+          "description": "Eduardo Quisumbing's comprehensive survey — 1,200+ plants with uses, preparations, and available pharmacological data",
+          "archive_url": "https://www.worldcat.org/title/medicinal-plants-of-the-philippines"
+        },
+        {
+          "title": "Philippine National Drug Formulary — Herbal Medicines",
+          "date": "Current",
+          "language": "English",
+          "description": "DOH-approved traditional herbal medicines with clinical evidence requirements",
+          "archive_url": "https://www.doh.gov.ph/herbal-medicines"
+        }
+      ]
+    },
+    {
+      "id": "celtic_norse",
+      "name": "Celtic & Norse Folk Medicine",
+      "culture": "Irish / Welsh / Anglo-Saxon / Norse (Scandinavian)",
+      "geography": [
+        "Ireland",
+        "Scotland",
+        "Wales",
+        "England (Anglo-Saxon)",
+        "Norway",
+        "Sweden",
+        "Denmark",
+        "Iceland"
+      ],
+      "region": "Northwestern Europe",
+      "date_range": "c.800 BCE – 1200 CE (primary texts); folk traditions ongoing",
+      "primary_document": "Lacnunga (Anglo-Saxon, c.1000 CE) / Bald's Leechbook (Anglo-Saxon, c.900 CE) / Bretha Dein Chécht (Irish, c.7th–8th c.) / Norse Laeknisbok",
+      "author": "Unknown Anglo-Saxon scribes (Lacnunga, Bald's Leechbook) / Unknown Irish legal-medical scholars (Bretha Dein Chécht)",
+      "language_original": "Old English (Anglo-Saxon) / Old Irish / Old Norse",
+      "status": "stub",
+      "status_note": "Stub — full population in progress. These traditions developed independently of the Greek/Roman system, though some Mediterranean influence entered via Christian monasteries post-600 CE. Forging from Old English and Old Irish originals with standard academic translations as reference. Plants tagged by country of origin (Ireland, Wales, England, Norway, etc.).",
+      "color": "#4A7C59",
+      "icon": "🍀",
+      "archive_url": "https://www.bl.uk/collection-items/bald-leechbook",
+      "key_compounds_discovered": [
+        "Garlic + bile + copper vessel (Bald's Leechbook MRSA remedy — validated 2015 by University of Nottingham)",
+        "Yarrow (Achillea millefolium) — wound healing, hemostasis; active compounds validated",
+        "Elderberry (Sambucus nigra) — antiviral; clinical evidence for influenza duration reduction",
+        "Bog myrtle (Myrica gale) — insect repellent; active compound validated"
+      ],
+      "approx_plants_documented": 500,
+      "notes": "This tradition is notable for one of the most dramatic recent validations in ethnopharmacology: a remedy from Bald's Leechbook (c.900 CE) for eye infections — combining garlic, onion or leek, wine, and ox gall, brewed in a copper vessel — was tested by University of Nottingham researchers in 2015 and found to be effective against MRSA (methicillin-resistant Staphylococcus aureus), killing 90% of bacteria. The copper vessel is critical — the oligodynamic antimicrobial effect of copper ions (the same mechanism the Egyptians used) was independently discovered in Anglo-Saxon England. Plants should be tagged by country: Irish entries (Ireland), Lacnunga/Leechbook entries (England), Norse entries (Norway/Iceland/Denmark/Sweden), Welsh entries (Wales).",
+      "country_tags": [
+        "Ireland",
+        "England",
+        "Wales",
+        "Scotland",
+        "Norway",
+        "Sweden",
+        "Denmark",
+        "Iceland"
+      ],
+      "source_texts_for_forge": [
+        {
+          "title": "Bald's Leechbook (Medicinale Anglicum)",
+          "date": "c.900–950 CE",
+          "language": "Old English (Anglo-Saxon)",
+          "description": "Three-volume Anglo-Saxon medical text — remedies, surgery, internal medicine",
+          "archive_url": "https://www.bl.uk/collection-items/bald-leechbook",
+          "english_reference": "Cockayne, O. (1865). Leechdoms, Wortcunning, and Starcraft of Early England. Rolls Series."
+        },
+        {
+          "title": "Lacnunga",
+          "date": "c.1000 CE",
+          "language": "Old English (Anglo-Saxon) / Latin",
+          "description": "Collection of Anglo-Saxon medical texts, charms, and plant remedies",
+          "archive_url": "https://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Harley_MS_585",
+          "english_reference": "Grattan, J.H.G. & Singer, C. (1952). Anglo-Saxon Magic and Medicine."
+        },
+        {
+          "title": "Bretha Dein Chécht (Judgments of Dian Cécht)",
+          "date": "c.7th–8th century CE",
+          "language": "Old Irish",
+          "description": "Irish legal-medical text setting standards for physicians, wound assessment, and plant treatments",
+          "archive_url": "https://celt.ucc.ie/",
+          "english_reference": "DIL (Dictionary of the Irish Language) / CELT corpus, University College Cork"
+        }
+      ]
+    },
+    {
+      "id": "persian_zoroastrian",
+      "name": "Persian / Zoroastrian Medicine",
+      "culture": "Persian / Iranian / Zoroastrian",
+      "geography": [
+        "Iran",
+        "Iraq",
+        "Central Asia (Uzbekistan, Tajikistan)",
+        "Azerbaijan"
+      ],
+      "region": "Middle East / Central Asia",
+      "date_range": "c.600 BCE – 900 CE (pre-Islamic; post-Islamic absorbed into Unani)",
+      "primary_document": "Bundahishn (Zoroastrian cosmology/natural history, c.9th c.) / Vendidad (Avesta, plant-medicine passages) / Dinkard / Khwaday-Namag",
+      "author": "Multiple Zoroastrian priests and scholars",
+      "language_original": "Avestan / Middle Persian (Pahlavi)",
+      "status": "stub",
+      "status_note": "Stub — full population in progress. Pre-Islamic Persian medicine is distinct from Ibn Sina's Islamic Unani (already in archive) — it predates the synthesis with Greek medicine and draws on Central Asian and Zoroastrian cosmological frameworks. The Avestan texts are the oldest dateable written pharmacological sources from the Iranian plateau. Forging from Pahlavi/Avestan with West's Sacred Books of the East translations as reference.",
+      "color": "#6A1B9A",
+      "icon": "🔥",
+      "archive_url": "https://www.avesta.org/",
+      "key_compounds_discovered": [
+        "Haoma (Ephedra species) — sacred ritual plant; ephedrine precursor, documented psychoactive",
+        "Mastic (Pistacia lentiscus) — H. pylori treatment; validated in modern trials",
+        "Saffron (Crocus sativus) — antidepressant; multiple RCTs showing efficacy comparable to fluoxetine",
+        "Fenugreek (Trigonella foenum-graecum) — blood glucose regulation; validated"
+      ],
+      "approx_plants_documented": 300,
+      "notes": "Pre-Islamic Persian medicine is the most underrepresented major tradition in Western pharmacological history despite producing several important compounds. Haoma (almost certainly Ephedra or a related plant) was the sacred ritual plant of Zoroastrianism, used in ceremonies for millennia — its connection to ephedrine (isolated from Ephedra in 1885 and now a controlled substance for its stimulant effects) represents a direct line from ancient ritual to modern pharmacology. Saffron (Crocus sativus) is perhaps Persian medicine's most striking modern validation: multiple RCTs show efficacy for mild-to-moderate depression comparable to fluoxetine, with a strong signal in the modern literature. This tradition diverges from the archive's existing Islamic/Unani entry by predating the Greek synthesis entirely.",
+      "source_texts_for_forge": [
+        {
+          "title": "Bundahishn (Book of Primal Creation)",
+          "date": "c.9th century CE (recording much older Avestan material)",
+          "language": "Middle Persian (Pahlavi)",
+          "description": "Zoroastrian cosmological text with extensive natural history — plant, mineral, and animal properties",
+          "archive_url": "https://www.avesta.org/pahlavi/bundahis.html",
+          "english_reference": "West, E.W. (1880). Pahlavi Texts Part I. Sacred Books of the East Vol. 5. Oxford."
+        },
+        {
+          "title": "Vendidad (Avesta — Videvdad)",
+          "date": "c.600 BCE – 200 CE (various layers)",
+          "language": "Avestan",
+          "description": "Legal and ritual Avestan text with medical passages — plant purification, disease treatment",
+          "archive_url": "https://www.avesta.org/vendidad/vd1sbe.htm",
+          "english_reference": "Darmesteter, J. (1880). The Zend-Avesta Part I. Sacred Books of the East Vol. 4. Oxford."
+        }
+      ]
+    },
+    {
+      "id": "australian_indigenous",
+      "name": "Australian Indigenous Medicine",
+      "culture": "Aboriginal Australian and Torres Strait Islander peoples — 250+ distinct language groups",
+      "geography": [
+        "Australia"
+      ],
+      "region": "Oceania / Australia",
+      "date_range": "60,000+ BCE – present (oldest continuously practiced medical tradition on Earth)",
+      "primary_document": "CSIRO ethnobotanical records / Lassak & McCarthy 'Australian Medicinal Plants' (1983) / Modern ethnobotanical surveys",
+      "author": "Multiple researchers; primary knowledge holders are Aboriginal community members",
+      "language_original": "Oral — 250+ distinct languages, many with fewer than 100 remaining speakers",
+      "status": "stub",
+      "status_note": "Stub — full population requires community consultation. This tradition has unique ethical constraints: much plant and healing knowledge is considered sacred by specific Aboriginal communities, and documentation without community consent is inappropriate. Content in this archive is restricted to knowledge already documented in published academic literature with community involvement. The archive notes this limitation explicitly and invites collaboration with Aboriginal community organisations. Contact: AIATSIS (Australian Institute of Aboriginal and Torres Strait Islander Studies).",
+      "color": "#8B4513",
+      "icon": "🦘",
+      "archive_url": "https://aiatsis.gov.au/",
+      "key_compounds_discovered": [
+        "Tea tree oil (Melaleuca alternifolia) — antimicrobial; extensively validated, now global pharmaceutical product",
+        "Eucalyptus oil (Eucalyptus species) — antimicrobial, decongestant; validated and globally commercialised",
+        "Kakadu plum (Terminalia ferdinandiana) — highest documented vitamin C content of any food on Earth",
+        "Emu bush (Eremophila longifolia) — antimicrobial compounds active against MRSA and food pathogens"
+      ],
+      "approx_plants_documented": 5000,
+      "notes": "⚠️ CULTURAL SENSITIVITY NOTE: Aboriginal and Torres Strait Islander medical knowledge is among the most sacred intellectual property in the world. Much of it is owned by specific family groups and communities, is gender-restricted, and is not intended for public documentation. This archive includes ONLY knowledge already published in peer-reviewed academic literature with documented community involvement. We actively encourage collaboration with Aboriginal community-controlled health organisations (ACCHOs) and AIATSIS for any expansion of this section. The pharmacological significance is extraordinary — 60,000 years of empirical observation in a continent of extreme biological uniqueness — but accessing it responsibly is more important than accessing it quickly. Tea tree oil and eucalyptus, already globally distributed, represent the small fraction of this knowledge that has entered documented public record. The vast majority has never been pharmacologically investigated.",
+      "ethical_framework": "Content restricted to published literature with documented community involvement. No sacred or restricted knowledge documented. Collaboration with AIATSIS and ACCHOs required for expansion.",
+      "source_texts_for_forge": [
+        {
+          "title": "Australian Medicinal Plants",
+          "date": "1983",
+          "language": "English",
+          "description": "Lassak & McCarthy survey — systematic botanical and pharmacological data for documented Australian medicinal plants",
+          "archive_url": "https://www.worldcat.org/title/australian-medicinal-plants"
+        },
+        {
+          "title": "CSIRO Ethnobotanical Database",
+          "date": "Ongoing",
+          "language": "English",
+          "description": "Published records of Aboriginal plant use from community-involved research",
+          "archive_url": "https://www.csiro.au/"
+        }
+      ]
     }
   ],
   "metadata": {
     "version": "2.0.0",
-    "total_traditions": 11,
+    "total_traditions": 18,
     "total_plants_across_traditions": "~26000 documented, fraction systematically investigated",
     "last_updated": "2026"
   }
