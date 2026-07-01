@@ -942,6 +942,7 @@
   .status-translating { background: #FFF3E0; color: #E65100; }
   .status-partially_translated { background: #E3F2FD; color: #1565C0; }
   .status-partially_documented { background: #F3E5F5; color: #6A1B9A; }
+  .status-stub { background: #F5F5F5; color: #9E9E9E; border: 1px solid #E0E0E0; }
 
   /* ── External link ────────────────────────────── */
   .external-link {
@@ -2137,7 +2138,7 @@ async function loadData() {
 function renderTraditionsOverview() {
   const grid = document.getElementById('traditions-overview-grid');
   if (!grid || !traditionData.length) return;
-  const statusLabel = { translated:'Fully Translated', translating:'Translating', partially_translated:'Partially Translated', partially_documented:'Partially Documented' };
+  const statusLabel = { translated:'Fully Translated', translating:'Translating', partially_translated:'Partially Translated', partially_documented:'Partially Documented', stub:'Coming Soon — Population in Progress' };
   grid.innerHTML = traditionData.map(t => {
     const plantCount = plantData.filter(p => p.traditions.includes(t.id)).length;
     return `<div class="tradition-card" onclick="filterToTradition('${t.id}')">
