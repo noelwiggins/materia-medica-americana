@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.0",
+  "description": "Standardized condition taxonomy bridging medical terminology across all 11 traditions. Each condition maps from tradition-specific terms to modern biomedical categories, enabling cross-tradition convergence queries.",
+  "conditions": [
+
+    {
+      "id": "fever_malarial",
+      "category": "fever",
+      "name": "Malarial / Intermittent Fever",
+      "modern_description": "Fevers with periodic cycling pattern, now understood as malaria (Plasmodium species)",
+      "icd11": "1F40",
+      "tradition_terms": {
+        "cobo": ["chuccho", "tercianas", "cuartanas", "calentura intermitente"],
+        "chinese": ["疟疾 (nüèjí)", "寒热往来 (hán rè wǎng lái)"],
+        "greek_roman": ["τεταρταῖος πυρετός (tetartaios pyretos)", "febris quartana", "febris tertiana"],
+        "ayurveda": ["vishama jwara", "triteeya jwara"],
+        "unani": ["humma-e-nobe", "humma-e-rib"],
+        "egyptian": ["heat of the limbs", "recurring fever"]
+      },
+      "key_discoveries": ["quinine (cinchona)", "artemisinin (qinghao)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian"]
+    },
+
+    {
+      "id": "fever_general",
+      "category": "fever",
+      "name": "General Fever / Pyrexia",
+      "modern_description": "Elevated body temperature from infection or inflammation",
+      "icd11": "MG26",
+      "tradition_terms": {
+        "cobo": ["calentura", "fiebre", "calor"],
+        "chinese": ["发热 (fā rè)", "热病 (rè bìng)"],
+        "greek_roman": ["πυρετός (pyretos)", "febris"],
+        "ayurveda": ["jwara", "santapa"],
+        "unani": ["humma"],
+        "egyptian": ["heat", "sekhmet's fire"],
+        "badianus": ["calenturas frías"],
+        "florentine": ["totomoniliztli"],
+        "north_american_indigenous": ["fever sickness"],
+        "amazonian": ["febre", "calor"]
+      },
+      "key_discoveries": ["willow bark/aspirin", "artemisinin", "quinine"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "florentine", "north_american_indigenous"]
+    },
+
+    {
+      "id": "pain_general",
+      "category": "pain",
+      "name": "Pain / Analgesic",
+      "modern_description": "General pain relief — headache, body pain, dental pain",
+      "icd11": "MG30",
+      "tradition_terms": {
+        "cobo": ["dolor", "dolor de cabeza", "dolor de muelas"],
+        "chinese": ["疼痛 (téng tòng)", "痛 (tòng)"],
+        "greek_roman": ["πόνος (ponos)", "dolor", "odontalgía"],
+        "ayurveda": ["vedana", "shoola"],
+        "unani": ["waja", "alam"],
+        "egyptian": ["pain of the head", "pain of the limbs"],
+        "badianus": ["dolor de cabeza", "dolor"],
+        "florentine": ["cococ", "tzontecomaitl-cococ"],
+        "north_american_indigenous": ["pain", "headache"]
+      },
+      "key_discoveries": ["opium/morphine", "willow bark/aspirin", "coca/cocaine (local anesthesia)", "datura/scopolamine"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "florentine", "north_american_indigenous"]
+    },
+
+    {
+      "id": "pain_joint",
+      "category": "pain",
+      "name": "Joint Pain / Gout / Arthritis",
+      "modern_description": "Inflammatory joint conditions including gout (hyperuricemia) and arthritis",
+      "icd11": "FA20",
+      "tradition_terms": {
+        "cobo": ["dolor de articulaciones", "gota"],
+        "chinese": ["痛风 (tòng fēng)", "关节痛 (guān jié tòng)", "痹症 (bì zhèng)"],
+        "greek_roman": ["ποδάγρα (podagra)", "arthritis", "gutta"],
+        "ayurveda": ["vatarakta", "sandhivata"],
+        "unani": ["niqris", "waja-ul-mafasil"],
+        "badianus": ["dolor de articulaciones", "tumores"],
+        "florentine": ["nacazteteponitl", "joint swelling"]
+      },
+      "key_discoveries": ["colchicine (autumn crocus)", "datura alkaloids (topical)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "badianus", "florentine"]
+    },
+
+    {
+      "id": "infection_wound",
+      "category": "infection",
+      "name": "Wound Infection / Wound Healing",
+      "modern_description": "Topical infection of wounds, ulcers, and skin lesions; promotion of healing",
+      "icd11": "NE81",
+      "tradition_terms": {
+        "cobo": ["llaga", "herida", "llagas antiguas"],
+        "chinese": ["疮 (chuāng)", "痈疽 (yōng jū)"],
+        "greek_roman": ["ἕλκος (helkos)", "ulcus", "vulnus"],
+        "ayurveda": ["vrana", "vranapaka"],
+        "unani": ["qurha", "jaroh"],
+        "egyptian": ["wound", "festering of flesh"],
+        "badianus": ["herida", "llaga"],
+        "florentine": ["xitlalli", "wound"],
+        "north_american_indigenous": ["wound", "sore"],
+        "west_african": ["wound", "cut"]
+      },
+      "key_discoveries": ["honey (antimicrobial)", "turmeric (anti-infective)", "moldy bread (penicillin precursor)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "north_american_indigenous", "west_african"]
+    },
+
+    {
+      "id": "parasites_intestinal",
+      "category": "parasites",
+      "name": "Intestinal Parasites / Worms",
+      "modern_description": "Helminthic infections — roundworm, tapeworm, hookworm and related",
+      "icd11": "1F6Y",
+      "tradition_terms": {
+        "cobo": ["lombrices", "gusanos"],
+        "chinese": ["寄生虫 (jì shēng chóng)", "蛔虫 (huí chóng)"],
+        "greek_roman": ["ἕλμινθες (helminthes)", "vermes"],
+        "ayurveda": ["krimi", "udara krimi"],
+        "unani": ["dud-al-amaa", "kirm"],
+        "egyptian": ["worm in the belly"],
+        "badianus": ["vermes intestinorum", "lombrices"],
+        "florentine": ["coatl", "cueitl"],
+        "north_american_indigenous": ["worms", "belly sickness"],
+        "amazonian": ["lombrigas", "worms"]
+      },
+      "key_discoveries": ["ascaridole (epazote/paico)", "thymol (thyme)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "florentine", "north_american_indigenous", "amazonian"]
+    },
+
+    {
+      "id": "digestive_general",
+      "category": "digestive",
+      "name": "Digestive Disorders / Stomach Complaints",
+      "modern_description": "Nausea, indigestion, bloating, stomach pain, diarrhea (non-dysenteric)",
+      "icd11": "DA90",
+      "tradition_terms": {
+        "cobo": ["males del estómago", "dolor de vientre", "mal de estómago"],
+        "chinese": ["胃痛 (wèi tòng)", "消化不良 (xiāo huà bù liáng)"],
+        "greek_roman": ["κοιλίας στρόφος (koilias strophos)", "stomachi dolor"],
+        "ayurveda": ["ajirna", "agnimandya", "atisara"],
+        "unani": ["waja-ul-meda", "su-e-hazm"],
+        "egyptian": ["belly complaint", "pain of the stomach"],
+        "badianus": ["dolores ventris", "mal de vientre"],
+        "florentine": ["ihtiyac tototl", "ihtetl"]
+      },
+      "key_discoveries": ["ginger", "peppermint", "turmeric", "multiple bitter herbs"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "florentine"]
+    },
+
+    {
+      "id": "dysentery",
+      "category": "digestive",
+      "name": "Dysentery / Bloody Flux",
+      "modern_description": "Bloody diarrhea from intestinal infection (bacterial or amoebic dysentery)",
+      "icd11": "1A40",
+      "tradition_terms": {
+        "cobo": ["cámaras de sangre", "flujo de sangre", "disenterías"],
+        "chinese": ["痢疾 (lì jí)", "赤白痢 (chì bái lì)"],
+        "greek_roman": ["δυσεντερία (dysenteria)", "dysenteria"],
+        "ayurveda": ["raktaatisara", "pravahika"],
+        "unani": ["zahir-ud-dam", "ishaal-e-dami"],
+        "egyptian": ["bloody flux", "looseness with blood"],
+        "badianus": ["cámaras de sangre"],
+        "florentine": ["eztli quiza", "blood flux"]
+      },
+      "key_discoveries": ["berberine (goldenseal)", "achiote/annatto", "copal resins", "astringent barks"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus"]
+    },
+
+    {
+      "id": "mental_health_general",
+      "category": "mental_health",
+      "name": "Mental Illness / Psychosis / Madness",
+      "modern_description": "Psychotic states, mania, agitation, hallucinations — broad category",
+      "icd11": "6A20",
+      "tradition_terms": {
+        "cobo": ["locura", "demencia"],
+        "chinese": ["癫狂 (diān kuáng)", "狂证 (kuáng zhèng)"],
+        "greek_roman": ["μανία (mania)", "furor", "phrenitis"],
+        "ayurveda": ["unmada", "apasmara"],
+        "unani": ["junoon", "sar-e-sauda"],
+        "egyptian": ["confusion of mind", "heart sickness"],
+        "florentine": ["yollotl tlaelil", "heart illness"],
+        "north_american_indigenous": ["craziness", "spirit sickness"],
+        "amazonian": ["soul loss", "spirit intrusion"]
+      },
+      "key_discoveries": ["reserpine (rauwolfia — first antipsychotic)", "psilocybin (teonanácatl)", "ayahuasca (DMT+MAOi)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "florentine", "north_american_indigenous", "amazonian"]
+    },
+
+    {
+      "id": "mental_health_depression",
+      "category": "mental_health",
+      "name": "Depression / Melancholy / Sorrow",
+      "modern_description": "Persistent low mood, hopelessness, inability to function",
+      "icd11": "6A70",
+      "tradition_terms": {
+        "cobo": ["melancolía", "tristeza profunda"],
+        "chinese": ["郁证 (yù zhèng)", "忧郁 (yōu yù)"],
+        "greek_roman": ["μελαγχολία (melancholia)", "tristitia"],
+        "ayurveda": ["vishada", "manodaurbalya"],
+        "unani": ["malia-kholia", "waswas"],
+        "amazonian": ["sorrow that does not end", "soul sickness"]
+      },
+      "key_discoveries": ["ayahuasca (breakthrough psychiatric research)", "psilocybin", "St. John's Wort"],
+      "convergence_traditions": ["chinese", "greek_roman", "ayurveda", "unani", "amazonian"]
+    },
+
+    {
+      "id": "cardiovascular",
+      "category": "cardiovascular",
+      "name": "Cardiovascular / Heart Conditions",
+      "modern_description": "Heart disease, hypertension, palpitations, circulatory disorders",
+      "icd11": "BA80",
+      "tradition_terms": {
+        "cobo": ["mal del corazón", "palpitaciones"],
+        "chinese": ["心病 (xīn bìng)", "心悸 (xīn jì)", "高血压 (gāo xuè yā)"],
+        "greek_roman": ["καρδιαλγία (kardialgia)", "cordis palpitatio"],
+        "ayurveda": ["hridaya roga", "hrid dourbalya"],
+        "unani": ["amraz-e-qalb", "khafqan"],
+        "egyptian": ["weakness of the heart", "trembling of the heart"]
+      },
+      "key_discoveries": ["reserpine (antihypertensive)", "digitalis (foxglove)", "quinidine (cardiac arrhythmia)", "colchicine (pericarditis)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian"]
+    },
+
+    {
+      "id": "altitude_sickness",
+      "category": "respiratory",
+      "name": "Altitude Sickness / Soroche",
+      "modern_description": "Acute mountain sickness, oxygen deprivation at high altitude — Andean-specific condition",
+      "icd11": "NF01",
+      "tradition_terms": {
+        "cobo": ["soroche", "mal de altura", "puna sickness"],
+        "ayurveda": ["altitude is mentioned in Himalayan context but less systematized"]
+      },
+      "key_discoveries": ["coca (altitude adaptation)", "muña/minthostachys (Andean mint)"],
+      "convergence_traditions": ["cobo"],
+      "notes": "Nearly unique to Andean tradition — the only major medical tradition developed at extreme altitude. Cobo's documentation of altitude medicine is potentially the most unique therapeutic tradition in the archive, with minimal cross-tradition comparison possible precisely because no other civilization developed medicine above 3,000 meters at this scale."
+    },
+
+    {
+      "id": "respiratory",
+      "category": "respiratory",
+      "name": "Respiratory / Cough / Lung Conditions",
+      "modern_description": "Cough, asthma, bronchitis, tuberculosis, shortness of breath",
+      "icd11": "CA20",
+      "tradition_terms": {
+        "cobo": ["tos", "mal de pecho", "dificultad de respirar"],
+        "chinese": ["咳嗽 (ké sou)", "哮喘 (xiāo chuǎn)", "肺病 (fèi bìng)"],
+        "greek_roman": ["βήξ (bex)", "tussis", "orthopnoea"],
+        "ayurveda": ["kasa", "shwasa", "rajayakshma (TB)"],
+        "unani": ["khansah", "dam-ul-ariyah", "sill"],
+        "egyptian": ["cough", "difficult breathing"],
+        "badianus": ["espirito difícil", "tos"],
+        "north_american_indigenous": ["lung sickness", "cough"]
+      },
+      "key_discoveries": ["opium/codeine (cough suppressant)", "ephedrine (ma huang)", "honey (soothing)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "north_american_indigenous"]
+    },
+
+    {
+      "id": "snakebite_poison",
+      "category": "poison_antidote",
+      "name": "Snakebite / Venom / Poison Antidote",
+      "modern_description": "Treatment for venomous animal bites and general poisoning",
+      "icd11": "NE61",
+      "tradition_terms": {
+        "cobo": ["mordedura de víbora", "ponzoña", "veneno", "contrayerba"],
+        "chinese": ["蛇毒 (shé dú)", "解毒 (jiě dú)"],
+        "greek_roman": ["θηριακή (theriake)", "theriaca", "antidotum"],
+        "ayurveda": ["sarpavisha", "visha chikitsa"],
+        "unani": ["lahme mara", "tiryaq"],
+        "egyptian": ["bite of the serpent", "venom remedy"],
+        "badianus": ["mordedura de serpiente"],
+        "north_american_indigenous": ["snakebite", "poison remedy"],
+        "amazonian": ["mordida de cobra", "veneno de serpente"],
+        "west_african": ["snake venom", "ordeal poison"]
+      },
+      "key_discoveries": ["physostigmine (calabar bean)", "contrayerba", "theriaca (compound antidote)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "north_american_indigenous", "amazonian", "west_african"]
+    },
+
+    {
+      "id": "skin_disease",
+      "category": "skin",
+      "name": "Skin Disease / Dermatological Conditions",
+      "modern_description": "Rashes, ulcers, infections, inflammatory skin conditions, leprosy",
+      "icd11": "EA90",
+      "tradition_terms": {
+        "cobo": ["mal de la piel", "lepra", "sarna"],
+        "chinese": ["皮肤病 (pí fū bìng)", "疥 (jiè)", "癣 (xuǎn)"],
+        "greek_roman": ["ἐλεφαντίασις (elephantiasis)", "lepra", "impetigo"],
+        "ayurveda": ["kushtha", "visarpa", "dadru"],
+        "unani": ["amraz-e-jild", "baras", "judhaam"],
+        "egyptian": ["skin disease", "festering of flesh"],
+        "badianus": ["enfermedades de la piel"],
+        "west_african": ["skin sickness", "leprosy"]
+      },
+      "key_discoveries": ["chaulmoogra oil (leprosy — Ayurvedic, first effective treatment)", "sulfur compounds", "honey (topical)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "west_african"]
+    },
+
+    {
+      "id": "surgical_anesthesia",
+      "category": "pain",
+      "name": "Surgical Anesthesia / Muscle Relaxation",
+      "modern_description": "Inducing unconsciousness or paralysis for surgical procedures",
+      "icd11": "QC40",
+      "tradition_terms": {
+        "cobo": ["adormecer", "insensibilidad"],
+        "chinese": ["麻醉 (má zuì)", "华佗散 (Hua Tuo powder)"],
+        "greek_roman": ["νάρκωσις (narkosis)", "soporifera"],
+        "ayurveda": ["samjna-sthapana", "sanjivani"],
+        "badianus": ["adormir el dolor"],
+        "florentine": ["teyolloquima", "intoxicates/sedates"],
+        "amazonian": ["curare/ourari — surgical paralysis"]
+      },
+      "key_discoveries": ["curare/tubocurarine (muscle relaxant — Amazonian)", "scopolamine (datura — sedation)", "cocaine (local anesthetic)", "opium/morphine (general sedation)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "badianus", "florentine", "amazonian"]
+    },
+
+    {
+      "id": "eye_disease",
+      "category": "sensory",
+      "name": "Eye Disease / Vision Disorders",
+      "modern_description": "Glaucoma, cataracts, infection, inflammation of the eye",
+      "icd11": "9A00",
+      "tradition_terms": {
+        "cobo": ["mal de ojos", "nublado de la vista"],
+        "chinese": ["眼病 (yǎn bìng)", "目翳 (mù yì — eye film/cataract)"],
+        "greek_roman": ["ὀφθαλμία (ophthalmia)", "glaucoma", "suffusio"],
+        "ayurveda": ["netra roga", "timira (cataract)", "abhishyanda"],
+        "unani": ["amraz-e-chashm", "nazla-e-chashm"],
+        "egyptian": ["darkness of the eye", "disease of the eye"],
+        "west_african": ["clouding of vision — glaucoma (Calabar bean)"]
+      },
+      "key_discoveries": ["physostigmine/eserine (calabar bean — first glaucoma treatment)", "honey (antimicrobial eye wash)", "belladonna (pupil dilation — diagnostic)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "west_african"]
+    },
+
+    {
+      "id": "reproductive_fertility",
+      "category": "reproductive",
+      "name": "Fertility / Reproductive Health",
+      "modern_description": "Infertility, menstrual disorders, childbirth support, contraception",
+      "icd11": "GA10",
+      "tradition_terms": {
+        "cobo": ["esterilidad", "hacer fértiles", "parto"],
+        "chinese": ["不孕 (bù yùn)", "调经 (tiáo jīng)", "安胎 (ān tāi)"],
+        "greek_roman": ["στειρότης (sterotes)", "sterilitas", "menstrua"],
+        "ayurveda": ["vandhyatva", "artava kshaya", "garbhini"],
+        "unani": ["uqr", "ihtibas-e-tams"],
+        "egyptian": ["barrenness", "causing birth to come"],
+        "badianus": ["para la esterilidad", "parto"],
+        "florentine": ["cihuatl patli — woman medicine"]
+      },
+      "key_discoveries": ["maca (fertility — Andean)", "various uterotonic herbs", "wild yam (progesterone precursor)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "florentine"]
+    },
+
+    {
+      "id": "infection_systemic",
+      "category": "infection",
+      "name": "Systemic Infection / Sepsis",
+      "modern_description": "Whole-body infection, blood poisoning, generalized febrile illness",
+      "icd11": "1G40",
+      "tradition_terms": {
+        "cobo": ["fiebre pestilencial", "mal contagioso"],
+        "chinese": ["温病 (wēn bìng)", "疫 (yì — epidemic disease)"],
+        "greek_roman": ["πανώλης (panoles)", "pestilentia", "febris putridа"],
+        "ayurveda": ["janapadodhvansa", "aupasargika roga"],
+        "unani": ["waba", "taaun"],
+        "egyptian": ["pestilence", "wasting of the body"],
+        "west_african": ["epidemic sickness", "wasting disease"]
+      },
+      "key_discoveries": ["quinine (malarial sepsis)", "garlic (antiseptic)", "honey (topical antiseptic)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "west_african"]
+    },
+
+    {
+      "id": "mineral_medicinal",
+      "category": "mineral_medicine",
+      "name": "Medicinal Minerals / Earths / Clays",
+      "modern_description": "Therapeutic use of inorganic materials — clays, salts, metals, minerals",
+      "icd11": "N/A",
+      "tradition_terms": {
+        "cobo": ["tacú", "greda medicinal", "barro", "piedra bezar", "sal medicinal", "alumbre"],
+        "chinese": ["矿物药 (kuàng wù yào)", "朱砂 (zhū shā — cinnabar)", "石膏 (shí gāo — gypsum)"],
+        "greek_roman": ["terra sigillata", "bolus armenicus", "alumen", "misy"],
+        "ayurveda": ["rasa shastra", "shilajit", "gairika (red ochre)", "sphatika (alum)"],
+        "unani": ["adwiya-e-maadaniyya", "tifl (clay)"],
+        "egyptian": ["natron", "malachite", "red ochre", "honey of stone"],
+        "badianus": ["tizatl (white stone)", "piedras medicinales"],
+        "north_american_indigenous": ["healing clay", "red ochre"]
+      },
+      "key_discoveries": ["copper (oligodynamic antimicrobial)", "silver (antimicrobial)", "kaolin clay (gastrointestinal)", "bezoar stone (antidote)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "north_american_indigenous"]
+    },
+
+    {
+      "id": "water_medicine",
+      "category": "mineral_medicine",
+      "name": "Medicinal Waters / Thermal Springs / Hydrotherapy",
+      "modern_description": "Therapeutic use of specific water sources — mineral springs, thermal baths",
+      "icd11": "N/A",
+      "tradition_terms": {
+        "cobo": ["aguas medicinales", "aguas termales", "fuentes de salud"],
+        "chinese": ["温泉 (wēn quán — hot spring)", "矿泉 (kuàng quán — mineral spring)"],
+        "greek_roman": ["aquae medicatae", "thermae", "fons sacer"],
+        "ayurveda": ["ushnodaka", "kshaara jala"],
+        "unani": ["ab-e-chashma", "hammam"],
+        "egyptian": ["waters of Nun", "sacred waters"]
+      },
+      "key_discoveries": ["balneotherapy (validated for arthritis and pain)", "radon therapy (controversial)", "mineral spring chemical benefits"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian"]
+    },
+
+    {
+      "id": "ritual_healing",
+      "category": "ritual_healing",
+      "name": "Ritual Healing / Spiritual Medicine",
+      "modern_description": "Healing through ceremony, spiritual practice, or psychoactive induction — now partially understood as psychosomatic medicine, placebo, and psychedelic therapy",
+      "icd11": "N/A",
+      "tradition_terms": {
+        "cobo": ["curación por rituales", "chamán"],
+        "chinese": ["巫医 (wū yī — shaman-physician)", "祝由 (zhùyóu — ritual healing)"],
+        "greek_roman": ["ἱερὰ νόσος (hiera nosos — sacred disease)", "incubation at Asklepion"],
+        "ayurveda": ["daiva vyapashraya chikitsa", "mantra therapy"],
+        "unani": ["ilaj-bil-tadbir", "ruhani ilaj"],
+        "egyptian": ["spell medicine", "temple incubation"],
+        "badianus": ["rituales curativos", "uso de teonanácatl"],
+        "florentine": ["teyolloquima", "teonanácatl ceremony"],
+        "north_american_indigenous": ["healing ceremony", "sweat lodge", "vision quest"],
+        "amazonian": ["ayahuasca ceremony", "icaro songs", "curanderismo"],
+        "west_african": ["divination healing", "spirit possession", "esère ordeal"]
+      },
+      "key_discoveries": ["psilocybin (teonanácatl — breakthrough depression therapy)", "ayahuasca (DMT+MAOi — psychiatric treatment)", "placebo mechanisms (now understood as genuine neurobiological processes)"],
+      "convergence_traditions": ["cobo", "chinese", "greek_roman", "ayurveda", "unani", "egyptian", "badianus", "florentine", "north_american_indigenous", "amazonian", "west_african"],
+      "notes": "The most universal category — every tradition has ritual healing. The modern understanding of placebo as a genuine neurobiological process, and the breakthrough psychiatric research on psychedelics, suggests that what was dismissed as superstition contains real pharmacological and psychotherapeutic insight."
+    }
+
+  ],
+  "metadata": {
+    "version": "1.0",
+    "total_conditions": 21,
+    "categories": ["fever", "pain", "infection", "parasites", "digestive", "mental_health", "cardiovascular", "respiratory", "poison_antidote", "skin", "sensory", "reproductive", "mineral_medicine", "ritual_healing"],
+    "icd11_mapped": 17,
+    "last_updated": "2026",
+    "notes": "Condition terms are illustrative not exhaustive — each tradition has many more specific terms for each condition. The mapped terms represent the most common/important terminology used in the primary source documents in this archive."
+  }
+}
