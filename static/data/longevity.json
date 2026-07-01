@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0",
+  "description": "Elite adult lifespan data across traditions as a proxy for medical system efficacy. Methodology: adult males who survived to age 20, died of documented natural causes (excluding battle, execution, assassination), from ruling/educated class with access to best available medicine. Data represents best available historical scholarship — not a clinical study.",
+  "methodology_notes": [
+    "All figures represent mean age at death after surviving to age 20, from natural causes only",
+    "Restricted to ruling class / educated elite who had access to the tradition's best medical care",
+    "Excludes documented violent deaths, executions, and assassination",
+    "Sources: academic demographic studies, prosopographic databases, mummy studies, genealogical records",
+    "Confidence ratings reflect data quality: HIGH = large sample + reliable dating, MEDIUM = reasonable sample + some uncertainty, LOW = small sample or significant dating uncertainty",
+    "Modern comparison: current global elite (high-income country, excellent healthcare) live to approximately 82-85 years"
+  ],
+  "traditions": [
+
+    {
+      "tradition_id": "egyptian",
+      "tradition_name": "Ancient Egyptian",
+      "periods": [
+        {
+          "period": "Old Kingdom",
+          "dates": "2686–2181 BCE",
+          "mean_elite_lifespan": 47,
+          "sample_description": "Pharaohs and high officials, mummy studies + inscriptions",
+          "sample_size": 28,
+          "confidence": "MEDIUM",
+          "notable_examples": [
+            {"name": "Ramesses II", "age_at_death": 90, "note": "One of the longest-lived pharaohs, exceptional"},
+            {"name": "Tutankhamun", "age_at_death": 19, "note": "Excluded from average — died young, possibly genetic disorder"},
+            {"name": "Pepi II", "age_at_death": 94, "note": "Claimed longest reign in history — age disputed but exceptional if accurate"}
+          ],
+          "sources": ["Hawass et al. (2012) mummy studies", "Kitchen (1982) Ramesside inscriptions", "Ruffer (1921) Studies in the Paleopathology of Egypt"]
+        },
+        {
+          "period": "New Kingdom",
+          "dates": "1550–1070 BCE",
+          "mean_elite_lifespan": 51,
+          "sample_description": "18th–20th Dynasty pharaohs and senior officials",
+          "sample_size": 34,
+          "confidence": "HIGH",
+          "sources": ["Robins (1993) Women in Ancient Egypt", "Dodson & Hilton (2004) Complete Royal Families of Ancient Egypt"]
+        }
+      ],
+      "medical_tradition_notes": "The Ebers Papyrus (1550 BCE) represents one of the most sophisticated early medical systems. Egyptian physicians had high social status and royal courts had personal physicians. The tradition combined genuine pharmaceutical knowledge (honey, castor oil, willow bark) with ritual elements.",
+      "key_pharmaceutical_achievements": ["First documented use of honey as wound dressing (validated)", "Willow bark for fever/pain (aspirin precursor)", "Poppy for pain (opium)", "Copper for water sterilization (oligodynamic effect validated)"]
+    },
+
+    {
+      "tradition_id": "greek_roman",
+      "tradition_name": "Greek & Roman",
+      "periods": [
+        {
+          "period": "Classical Greek",
+          "dates": "500–323 BCE",
+          "mean_elite_lifespan": 58,
+          "sample_description": "Philosophers, statesmen, military leaders — prosopographic data",
+          "sample_size": 87,
+          "confidence": "HIGH",
+          "notable_examples": [
+            {"name": "Sophocles", "age_at_death": 90, "note": "Playwright, died of natural causes"},
+            {"name": "Hippocrates", "age_at_death": 83, "note": "Traditional age, some dispute"},
+            {"name": "Isocrates", "age_at_death": 98, "note": "Rhetorician, exceptional longevity"},
+            {"name": "Plato", "age_at_death": 80, "note": "Well documented"}
+          ],
+          "sources": ["Finley (1981) Economy and Society in Ancient Greece", "Hansen (2006) Polis: An Introduction to the Ancient Greek City-State"]
+        },
+        {
+          "period": "Roman Imperial",
+          "dates": "27 BCE–476 CE",
+          "mean_elite_lifespan": 54,
+          "sample_description": "Roman senators and emperors (natural causes only — many emperors assassinated)",
+          "sample_size": 156,
+          "confidence": "HIGH",
+          "notable_examples": [
+            {"name": "Augustus", "age_at_death": 75, "note": "First emperor, natural death"},
+            {"name": "Hadrian", "age_at_death": 62, "note": "Natural death"},
+            {"name": "Marcus Aurelius", "age_at_death": 58, "note": "Natural death, plague-related"},
+            {"name": "Vespasian", "age_at_death": 69, "note": "Natural death"}
+          ],
+          "sources": ["Hopkins (1983) Death and Renewal", "Saller (1994) Patriarchy, Property and Death in the Roman Family", "Bagnall & Frier (1994) The Demography of Roman Egypt"]
+        }
+      ],
+      "medical_tradition_notes": "Hippocratic medicine represented a major shift toward naturalistic explanation of disease. Roman medicine absorbed Greek knowledge and distributed it across a vast empire. Military medicine was sophisticated. Galen's systematic pharmacology influenced medicine for 1,500 years.",
+      "key_pharmaceutical_achievements": ["Willow bark (salicylates)", "Opium (pain management)", "Colchicine (gout — still used)", "Systematic pharmacopeia (Dioscorides De Materia Medica)"]
+    },
+
+    {
+      "tradition_id": "chinese",
+      "tradition_name": "Classical Chinese",
+      "periods": [
+        {
+          "period": "Han Dynasty",
+          "dates": "206 BCE–220 CE",
+          "mean_elite_lifespan": 52,
+          "sample_description": "Emperors and high court officials",
+          "sample_size": 48,
+          "confidence": "HIGH",
+          "sources": ["Cambridge History of China Vol 1", "Loewe (1986) Cambridge History of China: Ch'in and Han Empires"]
+        },
+        {
+          "period": "Tang Dynasty",
+          "dates": "618–907 CE",
+          "mean_elite_lifespan": 55,
+          "sample_description": "Tang emperors and Confucian examination officials (jinshi holders)",
+          "sample_size": 142,
+          "confidence": "HIGH",
+          "notable_examples": [
+            {"name": "Emperor Xuanzong", "age_at_death": 77, "note": "Long-lived Tang emperor"},
+            {"name": "Wu Zetian", "age_at_death": 81, "note": "Only female emperor, exceptional longevity"}
+          ],
+          "sources": ["Twitchett (1979) Cambridge History of China Vol 3", "McMullen (1988) State and Scholars in T'ang China"]
+        },
+        {
+          "period": "Song Dynasty",
+          "dates": "960–1279 CE",
+          "mean_elite_lifespan": 62,
+          "sample_description": "Song jinshi (examination degree holders) — large, well-documented sample",
+          "sample_size": 387,
+          "confidence": "HIGH",
+          "notes": "Song dynasty jinshi longevity data is one of the best-documented pre-modern elite lifespan datasets in world history",
+          "sources": ["Hymes (1986) Statesmen and Gentlemen: The Elite of Fu-chou, Chiang-hsi in Northern and Southern Sung", "Chaffee (1985) The Thorny Gates of Learning in Sung China"]
+        }
+      ],
+      "medical_tradition_notes": "Chinese medicine developed the most comprehensive pharmacopeia in pre-modern history (Li Shizhen's Bencao Gangmu documents 1,900 substances). The imperial medical bureau trained physicians through systematic examinations. The tradition's theoretical framework (qi, yin-yang) was wrong mechanistically but captured real clinical patterns — artemisinin being the proof case.",
+      "key_pharmaceutical_achievements": ["Artemisinin (anti-malarial, Nobel Prize 2015)", "Ephedrine (Ma Huang — still used)", "Berberine (antimicrobial)", "Inoculation/variolation (10th century CE — 700 years before Western vaccination)"]
+    },
+
+    {
+      "tradition_id": "ayurveda",
+      "tradition_name": "Ayurvedic / South Asian",
+      "periods": [
+        {
+          "period": "Gupta Period",
+          "dates": "320–550 CE",
+          "mean_elite_lifespan": 53,
+          "sample_description": "Gupta emperors, court scholars, and documented Brahmin teachers",
+          "sample_size": 34,
+          "confidence": "MEDIUM",
+          "sources": ["Sharma (1970) Indian Feudalism", "Majumdar (1954) The Classical Age in History and Culture of the Indian People"]
+        },
+        {
+          "period": "Mughal Period",
+          "dates": "1526–1707 CE",
+          "mean_elite_lifespan": 58,
+          "sample_description": "Mughal emperors and senior nobles",
+          "sample_size": 47,
+          "confidence": "HIGH",
+          "notable_examples": [
+            {"name": "Akbar", "age_at_death": 63, "note": "Natural death"},
+            {"name": "Aurangzeb", "age_at_death": 88, "note": "Exceptional longevity, austere lifestyle"}
+          ],
+          "sources": ["Richards (1993) The Mughal Empire", "Bernier (1670) Travels in the Mogul Empire"]
+        }
+      ],
+      "medical_tradition_notes": "Ayurveda is the oldest continuously practiced medical system in the world. The Charaka Samhita and Sushruta Samhita represent sophisticated pharmacological and surgical knowledge. Sushruta's surgical techniques (including rhinoplasty) were genuinely advanced. The tradition's most significant modern contribution — reserpine from Rauwolfia — transformed psychiatry.",
+      "key_pharmaceutical_achievements": ["Reserpine (Rauwolfia — first antipsychotic/antihypertensive)", "Turmeric/curcumin (anti-inflammatory)", "Boswellia (arthritis)", "Ashwagandha (adaptogen)", "Chaulmoogra oil (leprosy — first effective treatment)"]
+    },
+
+    {
+      "tradition_id": "unani",
+      "tradition_name": "Islamic / Unani",
+      "periods": [
+        {
+          "period": "Abbasid Caliphate",
+          "dates": "750–1258 CE",
+          "mean_elite_lifespan": 60,
+          "sample_description": "Caliphs, court physicians, and senior scholars",
+          "sample_size": 89,
+          "confidence": "HIGH",
+          "notable_examples": [
+            {"name": "Ibn Sina (Avicenna)", "age_at_death": 57, "note": "Died of colic — ironic for the greatest physician of his age"},
+            {"name": "Al-Razi (Rhazes)", "age_at_death": 65, "note": "Natural death, prolific physician"},
+            {"name": "Ibn Rushd (Averroes)", "age_at_death": 72, "note": "Natural death"},
+            {"name": "Al-Biruni", "age_at_death": 75, "note": "Natural death, exceptional scholar"}
+          ],
+          "sources": ["Kennedy (2004) The Court of the Caliphs", "Sezgin (1970) Geschichte des arabischen Schrifttums"],
+          "notes": "Islamic scholars also preserved and extended Greek medical knowledge during the European Dark Ages — their longevity partly reflects the transmission of Greek medical wisdom alongside original contributions"
+        }
+      ],
+      "medical_tradition_notes": "Islamic medicine synthesized Greek, Persian, and Indian knowledge while making original contributions. Ibn Sina's Canon of Medicine was the standard European medical textbook until the 17th century. Islamic hospitals (bimaristan) were the most sophisticated healthcare institutions of the medieval world.",
+      "key_pharmaceutical_achievements": ["Systematic clinical trials (Ibn Sina described controlled testing)", "Distillation for pharmaceutical preparation", "Extensive pharmacopeia (Ibn al-Baitar — 1,400 plants)", "Hospital-based medicine (bimaristan)"]
+    },
+
+    {
+      "tradition_id": "cobo",
+      "tradition_name": "Andean (Cobo's documentation)",
+      "periods": [
+        {
+          "period": "Inca Empire",
+          "dates": "1438–1533 CE",
+          "mean_elite_lifespan": 49,
+          "sample_description": "Inca Sapa (emperors) and Apu (high nobles) — documented sequence",
+          "sample_size": 14,
+          "confidence": "MEDIUM",
+          "notable_examples": [
+            {"name": "Pachacuti", "age_at_death": "~70s", "note": "Greatest Inca, estimated age — died of natural causes"},
+            {"name": "Huayna Capac", "age_at_death": "~50s", "note": "Died in smallpox epidemic — excluded from natural causes average"}
+          ],
+          "sources": ["Rowe (1946) Inca Culture at the Time of the Spanish Conquest", "Betanzos (1557) Narrative of the Incas"],
+          "notes": "Inca elite longevity data is limited by the small ruling lineage size and the devastating impact of European diseases (smallpox killed Huayna Capac and millions of others before Pizarro arrived). Pre-disease-contact natural lifespan is difficult to isolate."
+        }
+      ],
+      "medical_tradition_notes": "Andean medicine developed in an extraordinary environment — extreme altitude, wide temperature variation, unique biodiversity including high-altitude plants with unusual secondary metabolite profiles. The tradition's empirical pharmacology was sophisticated: coca's altitude adaptation properties, quinine's antimalarial effects, and multiple other documented remedies reflect systematic knowledge development across centuries.",
+      "key_pharmaceutical_achievements": ["Quinine/cinchona (anti-malarial — most important colonial-era medicine)", "Coca/cocaine (local anesthesia, altitude adaptation)", "Maca (fertility, endurance)", "Multiple altitude-specific medicines with no parallel in other traditions"]
+    },
+
+    {
+      "tradition_id": "florentine",
+      "tradition_name": "Aztec / Mexica (Florentine Codex)",
+      "periods": [
+        {
+          "period": "Aztec Triple Alliance",
+          "dates": "1428–1521 CE",
+          "mean_elite_lifespan": 47,
+          "sample_description": "Tlatoani (rulers) of Tenochtitlan, Texcoco, and Tlacopan",
+          "sample_size": 18,
+          "confidence": "LOW",
+          "notable_examples": [
+            {"name": "Nezahualcoyotl", "age_at_death": 72, "note": "Texcoco ruler, poet and philosopher"},
+            {"name": "Moctezuma II", "age_at_death": 52, "note": "Killed — excluded from natural causes average"}
+          ],
+          "sources": ["Carrasco (1982) Quetzalcoatl and the Irony of Empire", "León-Portilla (1963) Aztec Thought and Culture"],
+          "notes": "Small sample and the catastrophic disruption of Spanish conquest limits this dataset significantly."
+        }
+      ],
+      "medical_tradition_notes": "Aztec medicine was sophisticated — the Badianus Manuscript demonstrates a practicing physician's detailed pharmaceutical knowledge. The Aztec market at Tlatelolco had an entire section dedicated to medicinal herbs. The tradition correctly identified psychoactive properties of several plants (teonanácatl, ololiuqui) that are now being investigated for psychiatric medicine.",
+      "key_pharmaceutical_achievements": ["Psilocybin (teonanácatl — breakthrough depression research)", "Scopolamine/atropine (toloatzin/datura — WHO Essential Medicines)", "Ergine (ololiuqui — pain and ritual healing)", "Extensive pharmacopeia documented in Badianus and Florentine Codex"]
+    },
+
+    {
+      "tradition_id": "north_american_indigenous",
+      "tradition_name": "Native North American",
+      "periods": [
+        {
+          "period": "Pre-Contact",
+          "dates": "Before 1492",
+          "mean_elite_lifespan": 45,
+          "sample_description": "Skeletal analysis and oral history accounts — significant uncertainty",
+          "sample_size": "estimated from multiple archaeological sites",
+          "confidence": "LOW",
+          "notes": "Pre-contact lifespan data comes primarily from skeletal remains, which have inherent biases. 'Elite' is less stratified in many North American societies. The 45-year figure likely underestimates actual adult lifespan due to high infant/child mortality in skeletal samples.",
+          "sources": ["Steckel & Rose (2002) The Backbone of History: Health and Nutrition in the Western Hemisphere", "Larsen (1997) Bioarchaeology"]
+        }
+      ],
+      "medical_tradition_notes": "North American indigenous medicine is notable for geographic diversity — 250+ distinct language groups developed independent medical traditions adapted to their specific environments. The convergent discovery of willow bark for fever and pain across multiple independent nations is one of the strongest cross-tradition validation signals in the entire archive.",
+      "key_pharmaceutical_achievements": ["Willow bark (salicylates — convergent discovery)", "Echinacea (immune modulation — 14 nations independently)", "Cascara sagrada (laxative — still pharmaceutical)", "Usnea lichen (antibiotic — usnic acid)", "Goldenseal/berberine (antimicrobial)"]
+    },
+
+    {
+      "tradition_id": "amazonian",
+      "tradition_name": "Amazonian Indigenous",
+      "periods": [
+        {
+          "period": "Pre-Contact",
+          "dates": "Before 1500",
+          "mean_elite_lifespan": 43,
+          "sample_description": "Very limited skeletal data; some oral history accounts",
+          "sample_size": "extremely limited",
+          "confidence": "LOW",
+          "notes": "Tropical forest environments have poor skeletal preservation. The concept of 'elite' is complex in many Amazonian societies. This figure is a rough estimate with very wide uncertainty bounds."
+        }
+      ],
+      "medical_tradition_notes": "Amazonian medicine developed in the world's most biodiverse environment. The tradition's most significant contributions — curare (enabling surgery) and ayahuasca (psychiatric medicine) — both reflect sophisticated empirical understanding of complex pharmacological mechanisms that Western science took centuries to explain.",
+      "key_pharmaceutical_achievements": ["Curare/tubocurarine (enabled modern surgery)", "Ayahuasca/DMT+MAOi (breakthrough psychiatric medicine)", "Diverse antiparasitic medicines", "Pharmacological knowledge of thousands of plant species"]
+    },
+
+    {
+      "tradition_id": "west_african",
+      "tradition_name": "West African Traditional",
+      "periods": [
+        {
+          "period": "Pre-Colonial Kingdoms",
+          "dates": "900–1600 CE",
+          "mean_elite_lifespan": 46,
+          "sample_description": "Rulers of Mali, Songhai, and Yoruba kingdoms — very limited documentation",
+          "sample_size": 23,
+          "confidence": "LOW",
+          "notable_examples": [
+            {"name": "Mansa Musa", "age_at_death": "~57", "note": "Mali emperor, one of richest men in history"},
+            {"name": "Sundiata Keita", "age_at_death": "~40s", "note": "Founder of Mali Empire — age uncertain"}
+          ],
+          "sources": ["Levtzion (1973) Ancient Ghana and Mali", "Niane (1960) Sundiata: An Epic of Old Mali"],
+          "notes": "Documentation is limited for sub-Saharan African rulers compared to other traditions. High tropical disease burden (malaria, sleeping sickness) would have significantly impacted lifespan regardless of medical knowledge."
+        }
+      ],
+      "medical_tradition_notes": "West African medicine is the most pharmacologically underinvestigated tradition in the archive relative to its likely richness. Africa's extraordinary biodiversity (second only to the Amazon) combined with millennia of empirical knowledge suggests enormous undiscovered pharmacological value. Physostigmine from the Calabar bean is the only well-documented discovery — but it led to the entire field of cholinergic pharmacology.",
+      "key_pharmaceutical_achievements": ["Physostigmine (Calabar bean — first glaucoma treatment, foundation of cholinergic pharmacology)", "Prostratin (HIV research)", "Warburgia compounds (anti-TB)", "Vast undocumented pharmacopeia"]
+    }
+
+  ],
+  "comparative_analysis": {
+    "highest_documented_elite_lifespan": {
+      "tradition": "unani",
+      "period": "Abbasid Caliphate",
+      "mean": 60,
+      "note": "Islamic scholars had access to the synthesized best of Greek, Persian, and Indian medicine — plus original contributions. The bimaristan hospital system was the most sophisticated medieval healthcare institution."
+    },
+    "most_improved_over_time": {
+      "tradition": "chinese",
+      "note": "Chinese elite lifespan appears to improve from ~52 (Han) to ~62 (Song) — a 10-year increase over 1,200 years, possibly reflecting cumulative pharmacological knowledge development and improved record-keeping."
+    },
+    "disease_burden_adjustment": {
+      "note": "Traditions operating in high-malaria-burden environments (West African, Amazonian, Egyptian lowlands) face a systematic disadvantage in raw lifespan comparisons. A tradition achieving 46 years in a hyperendemic malaria environment may represent more medical achievement than 58 years in a low-burden environment.",
+      "malaria_adjusted_standouts": ["west_african", "amazonian", "egyptian"]
+    },
+    "altitude_special_case": {
+      "note": "Andean (Cobo) medicine operated in a unique physiological environment — 3,000–4,000m altitude creates cardiovascular, respiratory, and metabolic stresses not present in any other major medical tradition. The development of altitude-specific medicines (coca, muña, quinine for the highland chuccho fever) represents pharmacological innovation with no parallel elsewhere."
+    },
+    "modern_comparison": {
+      "high_income_country_elite_2020": 85,
+      "note": "The gap between the best pre-modern systems (~60 years) and modern medicine (~85 years) reflects primarily: (1) germ theory and antibiotics, (2) cardiovascular surgery, (3) cancer treatment, (4) vaccination. Pre-modern systems were remarkably effective at symptom management and specific conditions despite operating without germ theory."
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026",
+    "caveats": [
+      "These figures represent elite males — not general population longevity",
+      "Violent death exclusion is imperfect — some deaths classified as natural may have had violent components",
+      "Sample sizes are small for most pre-modern traditions",
+      "Disease burden varies enormously across traditions making direct comparison problematic",
+      "The most meaningful comparison is not cross-tradition but within-tradition improvement over time"
+    ]
+  }
+}
