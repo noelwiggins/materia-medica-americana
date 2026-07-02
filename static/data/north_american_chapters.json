@@ -1,0 +1,391 @@
+{
+  "job_name": "north-american-moerman-v1",
+  "completed_at": "2026-07-02T10:48:05.478693",
+  "segment_count": 10,
+  "results": [
+    {
+      "title_inferred": "Echinacea Use Across Fourteen Native American Nations: Ethnobotanical Survey and Pharmacological Overview",
+      "original_text": "Echinacea purpurea / E. angustifolia — Purple Coneflower. Moerman's Native American Ethnobotany Database. Documented across 14 independent nations: Lakota (root for toothache, cold, snakebite), Cheyenne (cough), Comanche (wound application), Kiowa (sore throat), Pawnee (skin disease), Omaha (infected wounds, gonorrhoea), Delaware (venereal disease), Fox (snakebite). Internal convergence across 14 nations with no documented inter-group transmission on this plant. Preparation: root chewed raw, decocted, juice applied. Active: alkamides, polysaccharides, caffeic acid derivatives. Cochrane systematic review (2015): modest but real reduction in cold duration and severity. Immune cell activation documented in vitro and in vivo.",
+      "translation": "Echinacea purpurea / E. angustifolia — Purple Coneflower. [Source: Moerman's Native American Ethnobotany Database.] Use of this plant is documented across fourteen independent nations: the Lakota employed the root for toothache, common cold, and snakebite; the Cheyenne for cough; the Comanche for topical wound treatment; the Kiowa for sore throat; the Pawnee for skin disease; the Omaha for infected wounds and gonorrhoea; the Delaware for venereal disease; and the Fox for snakebite. Notably, convergent therapeutic use is observed across all fourteen nations with no documented inter-group transmission regarding this plant, suggesting independent discovery. Preparation methods include: chewing the raw root, preparing a decoction, and applying the expressed juice topically. Pharmacologically active constituents identified include alkamides, polysaccharides, and caffeic acid derivatives. A Cochrane systematic review (2015) found a modest but genuine reduction in both the duration and severity of the common cold. Activation of immune cells has been demonstrated both in vitro and in vivo.",
+      "entities_mentioned": [
+        {
+          "name": "Echinacea purpurea",
+          "modern_identification": "Echinacea purpurea (L.) Moench — Purple Coneflower, family Asteraceae",
+          "identification_confidence": "high",
+          "notes": "One of two species named in the source. Widely cultivated and commercially available as an immunostimulant."
+        },
+        {
+          "name": "Echinacea angustifolia",
+          "modern_identification": "Echinacea angustifolia DC. — Narrow-leaved Coneflower, family Asteraceae",
+          "identification_confidence": "high",
+          "notes": "The second species named; historically the more commonly used species in Great Plains indigenous medicine. Root is the primary medicinal part."
+        }
+      ],
+      "translator_notes": "The source text is a database summary entry rather than a primary historical text; it synthesizes ethnobotanical records from Moerman's database with modern pharmacological commentary. The segment is already in English, so this translation represents a lightly edited and clarified rendering with scholarly framing preserved. The claim of 'no documented inter-group transmission' is Moerman's analytical inference and should be treated as an interpretive note rather than established fact. Conditions treated span: toothache, common cold, snakebite, cough, wounds (topical), sore throat, skin disease, infected wounds, gonorrhoea, and venereal disease broadly. Preparation methods: raw root chewed, root decocted (boiled), juice of root or plant applied externally.",
+      "_label": "moerman::echinacea_14nations"
+    },
+    {
+      "title_inferred": "Willow Bark (Salix spp.) for Pain and Fever: Multi-Nation Indigenous Documentation",
+      "original_text": "Salix species — Willow for Pain and Fever. Moerman's database. Cherokee (S. nigra): bark decocted for fever and pain. Ojibwe: bark for headache and pain. Iroquois: bark for fever. Menominee: bark for pain. Potawatomi: fever. Micmac: fever. Geographic distribution: Cherokee (Southeast), Ojibwe (Great Lakes), Iroquois (Northeast), Menominee (Midwest) — no documented pre-contact inter-group transmission. Combined with Egyptian (1550 BCE), Greek (400 BCE), Chinese, and Islamic convergent documentation, willow bark for pain and fever represents the most globally validated convergence signal in this archive. Densmore (1928): Chippewa preferred inner bark in spring — pharmacologically rational as salicylate content peaks in spring growth. Active: salicin → salicylic acid (aspirin precursor).",
+      "translation": "Salix species — Willow for Pain and Fever. [Source: Moerman's Native American Ethnobotany database.] Cherokee (S. nigra): bark decocted [prepared as a decoction] for fever and pain. Ojibwe: bark used for headache and pain. Iroquois: bark used for fever. Menominee: bark used for pain. Potawatomi: [bark used for] fever. Micmac: [bark used for] fever. Geographic distribution: Cherokee (Southeast), Ojibwe (Great Lakes), Iroquois (Northeast), Menominee (Midwest) — with no documented pre-contact transmission between these groups. When considered alongside Egyptian (1550 BCE), Greek (400 BCE), Chinese, and Islamic sources documenting the same use, willow bark for pain and fever represents the most globally validated independent-convergence signal in this archive. Densmore (1928) notes that the Chippewa preferred the inner bark harvested in spring — a practice that is pharmacologically rational, as salicylate content reaches its peak during spring growth. Active compound: salicin, converted metabolically to salicylic acid (the precursor to aspirin).",
+      "entities_mentioned": [
+        {
+          "name": "Salix species (Willow)",
+          "modern_identification": "Salix spp. (family Salicaceae); specifically Salix nigra (Black Willow) noted for Cherokee use",
+          "identification_confidence": "high",
+          "notes": "Multiple species within the genus Salix were used across nations. Salix nigra is explicitly named for the Cherokee. The active compound salicin is broadly distributed across the genus."
+        },
+        {
+          "name": "Salicin",
+          "modern_identification": "Salicin (C₁₃H₁₈O₇), a phenolic glycoside; metabolized in vivo to salicylic acid",
+          "identification_confidence": "high",
+          "notes": "Salicin is the principal bioactive constituent of willow bark. Its metabolic conversion to salicylic acid accounts for the analgesic and antipyretic effects documented across cultures. Salicylic acid is the direct precursor to acetylsalicylic acid (aspirin)."
+        },
+        {
+          "name": "Cherokee (S. nigra bark decoction)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Ethnobotanical record from Moerman's database; preparation method specified as decoction of bark for fever and pain."
+        },
+        {
+          "name": "Ojibwe / Chippewa bark preparation",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Densmore (1928) documents Chippewa preference for inner bark harvested in spring, which is pharmacologically consistent with peak salicylate accumulation during active spring growth."
+        },
+        {
+          "name": "Iroquois bark preparation",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Bark used for fever; no preparation method specified in source."
+        },
+        {
+          "name": "Menominee bark preparation",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Bark used for pain; no preparation method specified in source."
+        },
+        {
+          "name": "Potawatomi bark preparation",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Used for fever; no preparation method specified in source."
+        },
+        {
+          "name": "Micmac bark preparation",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Used for fever; no preparation method specified in source."
+        }
+      ],
+      "translator_notes": "The source text is in English and required no linguistic translation; this entry represents a cleaned transcription and scholarly structuring of the original. The segment is drawn from Moerman's Native American Ethnobotany database and cites Densmore (1928) — Frances Densmore's 'Uses of Plants by the Chippewa Indians' (Bureau of American Ethnology Annual Report 44). The archival claim of 'most globally validated convergence signal' is an editorial assertion by the database compiler, not a finding of the primary sources themselves, and should be treated as interpretive commentary. The note on spring harvesting aligns with phytochemical literature on seasonal variation in salicylate glycoside concentration in Salix bark. No genuinely illegible passages were identified.",
+      "_label": "moerman::salix_fever_multiplenations"
+    },
+    {
+      "title_inferred": "Hydrastis canadensis (Goldenseal): Ethnobotanical Uses, Active Constituents, and Cross-Cultural Berberine Convergence",
+      "original_text": "Hydrastis canadensis — Goldenseal. Moerman database. Cherokee: root tea for digestive complaints, liver, eye wash. Iroquois: whooping cough, heart trouble, local infections. Ojibwe: eye infections. Creek: general tonic. Lewis and Clark (1804): recorded use and introduced to European awareness. Active: berberine, canadine, hydrastine. Berberine: documented antimicrobial (MRSA-active), antifungal, antiparasitic. Multiple clinical trials: berberine comparable to metformin for Type 2 diabetes blood glucose management. Convergence: berberine in Coptis (Kampo/Chinese), Berberis (Ayurvedic), Hydrastis (North American) — three independent traditions discovered berberine-containing plants for infection.",
+      "translation": "Hydrastis canadensis — Goldenseal. [Source: Moerman ethnobotanical database.] Cherokee use: a tea prepared from the root was employed for digestive complaints, liver ailments, and as an eye wash. Iroquois use: treatments for whooping cough, heart trouble, and localized infections. Ojibwe use: treatment of eye infections. Creek use: employed as a general tonic. Lewis and Clark (1804): documented its use in the field and thereby introduced the plant to European scientific awareness. Active constituents [principal alkaloids]: berberine, canadine [l-tetrahydroberberine], and hydrastine. Berberine has demonstrated antimicrobial activity (including activity against MRSA [methicillin-resistant Staphylococcus aureus]), antifungal properties, and antiparasitic effects. Multiple clinical trials have found berberine to be comparable to metformin in managing blood glucose levels in patients with Type 2 diabetes. Cross-cultural convergence: berberine is present in Coptis [Coptis japonica/chinensis, used in Kampo and Traditional Chinese Medicine], Berberis [various species, used in Ayurvedic medicine], and Hydrastis [North American traditional medicine] — representing three independent ethnomedical traditions that independently identified berberine-containing plants as treatments for infection.",
+      "entities_mentioned": [
+        {
+          "name": "Hydrastis canadensis",
+          "modern_identification": "Goldenseal (Hydrastis canadensis, family Ranunculaceae)",
+          "identification_confidence": "high",
+          "notes": "Native to eastern North America; root is the primary medicinal part; now considered at-risk in the wild due to overharvesting."
+        },
+        {
+          "name": "Berberine",
+          "modern_identification": "Berberine — isoquinoline alkaloid (C20H18NO4+)",
+          "identification_confidence": "high",
+          "notes": "Primary pharmacologically active alkaloid in Hydrastis canadensis; also found in Coptis spp. and Berberis spp.; subject of extensive modern clinical research including trials comparing it to metformin for glycemic control in Type 2 diabetes."
+        },
+        {
+          "name": "Canadine",
+          "modern_identification": "l-Tetrahydroberberine (canadine), an isoquinoline alkaloid",
+          "identification_confidence": "high",
+          "notes": "Secondary alkaloid present in Hydrastis canadensis; also known as l-tetrahydroberberine."
+        },
+        {
+          "name": "Hydrastine",
+          "modern_identification": "Hydrastine — phthalide isoquinoline alkaloid unique to Hydrastis canadensis",
+          "identification_confidence": "high",
+          "notes": "Alkaloid relatively specific to Hydrastis; historically used to arrest uterine hemorrhage; contributes to the plant's pharmacological profile."
+        },
+        {
+          "name": "Coptis",
+          "modern_identification": "Coptis japonica / Coptis chinensis (family Ranunculaceae); known as Huang Lian in Chinese medicine",
+          "identification_confidence": "high",
+          "notes": "Major berberine-containing plant in Kampo (Japanese) and Traditional Chinese Medicine traditions; used for infections, inflammation, and gastrointestinal disorders."
+        },
+        {
+          "name": "Berberis",
+          "modern_identification": "Berberis spp. (family Berberidaceae); e.g., Berberis aristata (Daruharidra) in Ayurveda",
+          "identification_confidence": "high",
+          "notes": "Berberis species are a significant source of berberine in Ayurvedic medicine, used for eye infections, skin conditions, and fever."
+        },
+        {
+          "name": "Metformin",
+          "modern_identification": "Metformin — biguanide class pharmaceutical; first-line oral medication for Type 2 diabetes",
+          "identification_confidence": "high",
+          "notes": "Referenced as a clinical comparator in trials assessing berberine's efficacy for blood glucose management in Type 2 diabetes."
+        }
+      ],
+      "translator_notes": "This segment is a structured database-style summary rather than continuous prose, likely derived from Daniel Moerman's Native American Ethnobotany database supplemented with modern pharmacological annotations. The source text is already in English; translation here involved clarification, expansion of abbreviations, and rendering technical shorthand into complete scholarly sentences. The 'convergence' note at the end represents a significant ethnopharmacological observation: the independent, cross-cultural discovery of berberine-containing plants for infectious disease is frequently cited in the literature as evidence of empirical efficacy guiding traditional medicine. The Lewis and Clark date (1804) refers to the Corps of Discovery expedition; their field notes represent an early Euro-American documentation of indigenous plant use in the American interior.",
+      "_label": "moerman::goldenseal_berberine"
+    },
+    {
+      "title_inferred": "Yarrow (Achillea millefolium) as a Cross-Cultural Medicinal Plant Among 46 Indigenous Nations and European Traditions",
+      "original_text": "Achillea millefolium — Yarrow. Moerman database: documented by 46 different nations — the most widely used medicinal plant among North American indigenous peoples in the database. Cherokee: fever; Cheyenne: headache; Blackfoot: internal bleeding; Ojibwe: wound dressing; Lakota: head colds; Navajo: wound poultice; Zuni: wound hemostasis. European folk medicine: identical applications. Greek/Roman: Achilles reportedly used on battlefield wounds (genus named Achillea). Cross-tradition convergence for wound healing and fever across Native American, European folk, and Greek/Roman traditions. Active: chamazulene, salicylic acid derivatives, flavonoids. Hemostatic mechanism: promotes platelet aggregation and vasoconstriction.",
+      "translation": "Achillea millefolium — Yarrow. According to the Moerman database, this plant has been documented among 46 distinct nations, making it the most widely used medicinal plant among North American indigenous peoples recorded in that database. Uses by nation: Cherokee: treatment of fever; Cheyenne: treatment of headache; Blackfoot: treatment of internal bleeding; Ojibwe: application as a wound dressing; Lakota: treatment of head colds; Navajo: application as a wound poultice; Zuni: wound hemostasis [stopping of bleeding from wounds]. European folk medicine records identical applications. In Greek and Roman tradition, Achilles is reported to have used the plant on battlefield wounds, and the genus name Achillea derives from this association. A convergence of therapeutic use for wound healing and fever is thus observed across Native American, European folk, and Greco-Roman traditions. Active constituents [pharmacologically active compounds] include: chamazulene, salicylic acid derivatives, and flavonoids. Hemostatic mechanism: the plant promotes platelet aggregation [clumping of blood platelets] and vasoconstriction [narrowing of blood vessels], thereby reducing bleeding.",
+      "entities_mentioned": [
+        {
+          "name": "Achillea millefolium",
+          "modern_identification": "Yarrow (Achillea millefolium, family Asteraceae)",
+          "identification_confidence": "high",
+          "notes": "Explicitly named in source with both Latin binomial and common English name. One of the most extensively documented medicinal plants in the ethnobotanical literature of North America and Europe."
+        },
+        {
+          "name": "chamazulene",
+          "modern_identification": "Chamazulene — a sesquiterpene hydrocarbon formed during steam distillation of the essential oil; known for anti-inflammatory properties",
+          "identification_confidence": "high",
+          "notes": "A characteristic constituent of yarrow and chamomile essential oils; contributes to the blue color of distilled oil."
+        },
+        {
+          "name": "salicylic acid derivatives",
+          "modern_identification": "Salicylates — compounds related to salicylic acid, with analgesic and antipyretic [fever-reducing] properties",
+          "identification_confidence": "high",
+          "notes": "Consistent with the documented use of yarrow for fever and headache across multiple traditions."
+        },
+        {
+          "name": "flavonoids",
+          "modern_identification": "Flavonoids — a broad class of polyphenolic secondary metabolites with antioxidant and anti-inflammatory activity",
+          "identification_confidence": "high",
+          "notes": "Yarrow contains several flavonoids including apigenin and luteolin, which may contribute to its anti-inflammatory and hemostatic effects."
+        }
+      ],
+      "translator_notes": "The source text is already in English and functions as a compiled ethnobotanical summary rather than a primary vernacular or historical text. Translation has been rendered as a formal scholarly paraphrase with bracketed clarifications of technical terms. The Moerman database referenced is Daniel Moerman's Native American Ethnobotany database, a well-established scholarly resource. The mythological attribution to Achilles is a classical tradition (cf. Pliny, Dioscorides) and should be understood as legendary rather than historical. The cross-cultural convergence noted for wound healing is well-supported in the pharmacological literature given the established hemostatic and antimicrobial properties of the plant's constituents.",
+      "_label": "moerman::yarrow_46nations"
+    },
+    {
+      "title_inferred": "Cascara Sagrada: Indigenous to Pharmaceutical Transfer",
+      "original_text": "Rhamnus purshiana — Cascara Sagrada. Pacific Northwest nations: Quinault, Squaxin, Cowlitz, Colville, Chetco, Klallam (bark tea as laxative). Spanish missionaries named it 'sacred bark'. J.H. Bundy (1877) introduced to US medicine from indigenous documentation. 1890-1970s: one of the most widely prescribed laxatives in North America. Active: cascarosides A, B, C, D (hydroxyanthracene glycosides) — stimulate colonic motility. FDA (2002): moved to prescription-only status due to inadequate long-term safety data. Represents one of the cleanest indigenous-to-pharmaceutical transfers in North American medicine — documented traditional use led directly to pharmaceutical development with identified active mechanism.",
+      "translation": "Rhamnus purshiana — Cascara Sagrada. Pacific Northwest nations — including the Quinault, Squaxin, Cowlitz, Colville, Chetco, and Klallam peoples — prepared a tea from the bark for use as a laxative [cathartic]. Spanish missionaries gave the plant the name 'sacred bark' [cascara sagrada]. J.H. Bundy (1877) introduced the plant to formal United States medical practice on the basis of indigenous documentation. From approximately 1890 through the 1970s, it ranked among the most widely prescribed laxatives in North America. Its active constituents are cascarosides A, B, C, and D — hydroxyanthracene glycosides [anthraquinone derivatives] — which act by stimulating colonic motility [peristalsis of the large intestine]. In 2002, the U.S. Food and Drug Administration reclassified cascara sagrada preparations as prescription-only, citing insufficient long-term safety data. The case is considered one of the most direct and well-documented transfers from indigenous traditional medicine to formal pharmaceutical development in North American medical history, in which recorded traditional use led unambiguously to pharmaceutical adoption and subsequent identification of the active pharmacological mechanism.",
+      "entities_mentioned": [
+        {
+          "name": "Rhamnus purshiana (Cascara Sagrada)",
+          "modern_identification": "Frangula purshiana (DC.) A.Gray ex J.C.Cooper — Cascara buckthorn; family Rhamnaceae",
+          "identification_confidence": "high",
+          "notes": "Rhamnus purshiana is the older accepted name; the plant has been reclassified as Frangula purshiana in modern botanical nomenclature. Source text uses the historically common pharmaceutical name."
+        },
+        {
+          "name": "cascarosides A, B, C, D",
+          "modern_identification": "Hydroxyanthracene glycosides (anthraquinone-type compounds) specific to Frangula purshiana bark",
+          "identification_confidence": "high",
+          "notes": "These are the pharmacologically active laxative constituents responsible for stimulation of colonic smooth muscle."
+        },
+        {
+          "name": "J.H. Bundy",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Cited as the individual responsible for formally introducing cascara sagrada into U.S. medical use in 1877, reportedly drawing on documented indigenous practice. Identity not further elaborated in the source text."
+        }
+      ],
+      "translator_notes": "The source text is in English and required translation only in the sense of rendering into standardized scholarly English with period/technical vocabulary clarifications. The text is a secondary synthesis (Moerman's database context) rather than a primary historical document, but accurately reflects well-established ethnobotnical and pharmacological scholarship. The FDA 2002 reclassification to prescription-only status is accurately noted; cascara sagrada was previously an over-the-counter (OTC) drug monograph ingredient. The botanical reclassification from Rhamnus to Frangula is flagged in entities but the source name is preserved per translation rules.",
+      "_label": "moerman::cascara_pharmaceutical"
+    },
+    {
+      "title_inferred": "Lobelia inflata: Multi-Nation Traditional Use for Asthma and Respiratory Conditions",
+      "original_text": "Lobelia inflata — Indian Tobacco / Pukeweed. Cherokee: root tea for asthma and whooping cough. Iroquois: root for respiratory complaints. Penobscot: smoked for asthma. Densmore (1928): Chippewa use of Lobelia smoke for chest conditions. Active: lobeline (piperidine alkaloid) — acts on nicotinic acetylcholine receptors, producing bronchodilation and expectorant effects at therapeutic doses, emesis at higher doses. Used as smoking cessation aid in early 20th century before nicotine replacement therapy. Modern research: lobeline and analogs actively studied for ADHD and drug dependence (methamphetamine antagonism via dopaminergic reward pathway). Three independent nations identified same plant for asthma — strong internal convergence.",
+      "translation": "Lobelia inflata — commonly known as Indian Tobacco or Pukeweed. Cherokee usage: a tea prepared from the root was employed for asthma and whooping cough. Iroquois usage: the root was used for respiratory complaints. Penobscot usage: the plant was smoked as a treatment for asthma. Densmore (1928) records Chippewa [Ojibwe] use of Lobelia smoke for chest conditions. The principal active constituent is lobeline, a piperidine alkaloid that acts upon nicotinic acetylcholine receptors, producing bronchodilation [widening of the airways] and expectorant [mucus-clearing] effects at therapeutic doses, and inducing emesis [vomiting] at higher doses. The plant was employed as a smoking cessation aid in the early twentieth century, prior to the development of nicotine replacement therapy. Contemporary research: lobeline and its chemical analogs are under active investigation for attention deficit hyperactivity disorder (ADHD) and drug dependence, particularly for antagonism [blocking] of methamphetamine via the dopaminergic reward pathway. Three independent Indigenous nations independently identified the same plant as a treatment for asthma, constituting strong internal convergence of traditional knowledge.",
+      "entities_mentioned": [
+        {
+          "name": "Lobelia inflata",
+          "modern_identification": "Lobelia inflata L. (Campanulaceae) — Indian Tobacco / Pukeweed",
+          "identification_confidence": "high",
+          "notes": "Explicitly named in source. Native to eastern North America. Contains lobeline, a pharmacologically active piperidine alkaloid with well-documented bronchodilatory and emetic properties."
+        },
+        {
+          "name": "lobeline",
+          "modern_identification": "Lobeline — piperidine alkaloid, CAS 90-69-7",
+          "identification_confidence": "high",
+          "notes": "Primary active alkaloid of Lobelia inflata. Acts as a partial agonist at nicotinic acetylcholine receptors. Historical use as smoking cessation agent; current research focus on ADHD and methamphetamine dependence."
+        },
+        {
+          "name": "Cherokee root tea",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Preparation method: aqueous decoction or infusion of Lobelia inflata root. Conditions treated: asthma and whooping cough."
+        },
+        {
+          "name": "Iroquois root use",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Preparation method not specified beyond root use. Condition treated: respiratory complaints generally."
+        },
+        {
+          "name": "Penobscot smoked Lobelia",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Preparation method: smoking the plant material. Condition treated: asthma. Inhalation route is pharmacologically consistent with bronchodilatory action of lobeline."
+        },
+        {
+          "name": "Chippewa Lobelia smoke",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Recorded by Frances Densmore (1928). Preparation method: smoking. Condition treated: chest conditions. 'Chippewa' is an anglicized variant of Ojibwe/Anishinaabe."
+        }
+      ],
+      "translator_notes": "The source text is written in English and is essentially a compiled ethnobotanical and pharmacological summary rather than a foreign-language primary source; translation here amounts to clarification, expansion of abbreviations, and rendering of technical terms into accessible scholarly English. Bracketed glosses have been added for technical terms (bronchodilation, emesis, expectorant, antagonism). 'Chippewa' is retained as used in the Densmore citation but flagged as equivalent to Ojibwe/Anishinaabe in the notes. The convergence argument (three independent nations, same plant, same condition) is a recognized methodology in ethnobotanical validation studies and is preserved as stated. Densmore (1928) likely refers to: Densmore, Frances. 'Uses of Plants by the Chippewa Indians.' Bureau of American Ethnology Annual Report 44 (1928).",
+      "_label": "moerman::lobelia_asthma"
+    },
+    {
+      "title_inferred": "Usnea Lichen as Antimicrobial Wound Treatment in Pacific Northwest Indigenous Traditions",
+      "original_text": "Usnea species — Old Man's Beard Lichen. Moerman database. Cowlitz, Okanagan-Colville, Nlaka'pamux, Blackfoot: Usnea applied to infected wounds. Consistent documentation across geographically separated Pacific Northwest nations for the same application. Active: usnic acid (dibenzofuran) — broad-spectrum antimicrobial against gram-positive bacteria including Mycobacterium tuberculosis. Currently under investigation for drug-resistant tuberculosis. Also antiprotozoal (Leishmania), anti-inflammatory, antiviral. Indigenous use pharmacologically precise — usnic acid targets gram-positive bacteria, the most common wound pathogens.",
+      "translation": "Usnea species — commonly known as Old Man's Beard Lichen, documented in the Moerman ethnobotanical database. Among the Cowlitz, Okanagan-Colville, Nlaka'pamux, and Blackfoot peoples, Usnea was applied directly to infected wounds. There is consistent documentation of this same application across geographically separated Pacific Northwest nations. The pharmacologically active compound is usnic acid (a dibenzofuran derivative), which exhibits broad-spectrum antimicrobial activity against gram-positive bacteria, including Mycobacterium tuberculosis. Usnic acid is currently under investigation as a potential treatment for drug-resistant tuberculosis. It also demonstrates antiprotozoal activity (against Leishmania), anti-inflammatory properties, and antiviral activity. The indigenous application is pharmacologically precise: usnic acid specifically targets gram-positive bacteria, which are the most common pathogens in wound infections.",
+      "entities_mentioned": [
+        {
+          "name": "Usnea species (Old Man's Beard Lichen)",
+          "modern_identification": "Usnea spp. (family Parmeliaceae, fruticose lichens)",
+          "identification_confidence": "high",
+          "notes": "Multiple species of Usnea are found across the Pacific Northwest; the source does not specify a single species but the ethnobotanical use is attributed broadly to the genus."
+        },
+        {
+          "name": "Usnic acid",
+          "modern_identification": "Usnic acid, a dibenzofuran-class secondary metabolite produced by Usnea and related lichen genera",
+          "identification_confidence": "high",
+          "notes": "Well-characterized compound with documented antimicrobial, antiprotozoal, anti-inflammatory, and antiviral properties; active against gram-positive bacteria including Mycobacterium tuberculosis."
+        },
+        {
+          "name": "Mycobacterium tuberculosis",
+          "modern_identification": "Mycobacterium tuberculosis (causative agent of tuberculosis)",
+          "identification_confidence": "high",
+          "notes": "Gram-positive (technically acid-fast) bacterium; usnic acid is under active investigation for drug-resistant TB strains."
+        },
+        {
+          "name": "Leishmania",
+          "modern_identification": "Leishmania spp. (protozoan parasites causing leishmaniasis)",
+          "identification_confidence": "high",
+          "notes": "Mentioned in the context of usnic acid's antiprotozoal activity; not a condition historically documented in the Pacific Northwest ethnobotanical record cited here."
+        }
+      ],
+      "translator_notes": "The source text is already in English and functions as a scholarly database summary rather than a primary indigenous-language source; translation here consists of clarifying and rendering the compressed notation into full prose. The claim that the Blackfoot are a 'Pacific Northwest nation' is technically imprecise — the Blackfoot Confederacy is primarily a Plains people of the northern Great Plains and Alberta — though some Blackfoot bands have presence near the Rocky Mountain foothills. This geographic characterization in the original may warrant a scholarly flag. The medical extraction follows: Name: Usnea spp.; Condition treated: infected wounds; Preparation method: topical application of the lichen (method not further specified in source); Active constituent: usnic acid.",
+      "_label": "moerman::usnea_antimicrobial"
+    },
+    {
+      "title_inferred": "American Ginseng: Ethnobotanical Uses and Cross-Cultural Pharmacological Convergence",
+      "original_text": "Panax quinquefolius — American Ginseng. Cherokee: tonic, aphrodisiac, headache. Iroquois: fever, digestive, female disorders. Ojibwe: tonic for weak and elderly. Meskwaki: menstrual cramps. Active: ginsenosides (different profile from Asian P. ginseng — higher Rb1 vs Rg1 in Asian). Multiple trials: blood sugar regulation (Type 2 diabetes — positive); cognitive function (modest positive); immune modulation. Convergence: Panax ginseng documented in Chinese and Kampo traditions; Panax quinquefolius documented independently by multiple North American nations — same genus independently identified on opposite sides of the Pacific with similar medicinal properties. One of the clearest examples of convergent pharmacological discovery across civilisations.",
+      "translation": "Panax quinquefolius — American Ginseng. Cherokee uses: general tonic [restorative], aphrodisiac, and treatment of headache. Iroquois uses: fever reduction, digestive complaints, and female [gynecological] disorders. Ojibwe uses: tonic for the weak and elderly. Meskwaki uses: menstrual cramps. Active constituents: ginsenosides [steroidal saponins], with a distinct phytochemical profile compared to Asian P. ginseng — American ginseng exhibits a higher ratio of ginsenoside Rb1 relative to Rg1, which predominates in the Asian species. Multiple clinical trials have demonstrated: positive results for blood sugar regulation in Type 2 diabetes; modest positive results for cognitive function; and immune modulation. Convergence note: Panax ginseng has been independently documented within Chinese and Kampo [Japanese traditional medicine] traditions, while Panax quinquefolius has been independently documented by multiple North American indigenous nations — representing the same genus identified on opposite sides of the Pacific Ocean, with similar medicinal properties attributed to each. This constitutes one of the clearest known examples of convergent pharmacological discovery across distinct civilisations.",
+      "entities_mentioned": [
+        {
+          "name": "Panax quinquefolius",
+          "modern_identification": "American Ginseng (Panax quinquefolius L., family Araliaceae)",
+          "identification_confidence": "high",
+          "notes": "Native to eastern North America. Distinguished from Asian ginseng by a higher Rb1:Rg1 ginsenoside ratio. Used by Cherokee, Iroquois, Ojibwe, and Meskwaki peoples for overlapping but distinct indications."
+        },
+        {
+          "name": "Panax ginseng",
+          "modern_identification": "Asian Ginseng (Panax ginseng C.A.Mey., family Araliaceae)",
+          "identification_confidence": "high",
+          "notes": "Documented in Chinese materia medica and Japanese Kampo tradition. Higher Rg1:Rb1 ratio compared to American ginseng. Used as the comparator species for convergence argument."
+        },
+        {
+          "name": "ginsenosides",
+          "modern_identification": "Steroidal saponins (triterpenoid glycosides) characteristic of the genus Panax",
+          "identification_confidence": "high",
+          "notes": "Rb1 and Rg1 are the principal pharmacologically active ginsenosides referenced. Their differing ratios may underlie some pharmacological differences between species."
+        }
+      ],
+      "translator_notes": "The source text is already in English and functions as a structured scholarly/ethnobotanical annotation rather than a text in a foreign language. Translation has been rendered into fluent, expanded scholarly prose with period/technical vocabulary clarified in brackets. The 'Convergence' section is a comparative ethnopharmacological observation of particular scholarly significance: the independent identification of the same plant genus for similar therapeutic purposes by geographically isolated civilisations is presented as evidence supporting the empirical validity of traditional pharmacological knowledge. 'Kampo' has been glossed as Japanese traditional medicine for archival clarity. Preparation methods are not described in the source segment.",
+      "_label": "moerman::american_ginseng_convergence"
+    },
+    {
+      "title_inferred": "Sweat Lodge Thermal Medicine in North American Indigenous Traditions",
+      "original_text": "Sweat Lodge Medicine — documented across Plains, Southwest, Northwest Coast, Eastern Woodlands, Subarctic traditions. Lakota: inipi. Medical applications: fever management; respiratory conditions (steam with medicinal plants); skin diseases; joint pain; mental health clearing. Plants added to steam (Densmore 1928): cedar (antimicrobial), sweetgrass (anxiolytic aroma), sage/Artemisia (antimicrobial). Modern research: hyperthermia activates heat-shock proteins with immune-modulating effects; sauna therapy validated for cardiovascular health; steam inhalation with plant aromatics documented for respiratory benefit. The sweat lodge as a systematic thermal medical institution documented independently across multiple North American cultural groups represents the most sophisticated pre-Columbian thermal medicine technology in North America.",
+      "translation": "Sweat Lodge Medicine — attested across the Plains, Southwest, Northwest Coast, Eastern Woodlands, and Subarctic cultural traditions. Known in Lakota as inipi. Medical applications include: management of fever; treatment of respiratory conditions by means of steam infused with medicinal plants; skin diseases; joint pain; and mental or emotional restoration. Plants introduced into the steam (per Densmore 1928): cedar [antimicrobial properties], sweetgrass [aromatic, anxiolytic], and sage/Artemisia [antimicrobial]. Contemporary research indicates that hyperthermia activates heat-shock proteins with immune-modulating effects; sauna therapy has been validated for cardiovascular health; and steam inhalation incorporating plant aromatics has been documented to confer respiratory benefit. The sweat lodge, as a systematic institution of thermal medicine independently attested across multiple North American cultural groups, represents the most sophisticated pre-Columbian thermal medical technology in North America.",
+      "entities_mentioned": [
+        {
+          "name": "Inipi (sweat lodge ceremony, Lakota)",
+          "modern_identification": "Ceremonial and therapeutic sweat lodge practice; analogous to controlled hyperthermia/sauna therapy",
+          "identification_confidence": "high",
+          "notes": "Term inipi designates the Lakota sweat lodge ceremony specifically; the broader sweat lodge institution is pan-North American across many distinct cultural traditions."
+        },
+        {
+          "name": "Cedar",
+          "modern_identification": "Thuja occidentalis (Eastern White Cedar) or Juniperus spp. (Rocky Mountain/Western contexts), depending on region",
+          "identification_confidence": "medium",
+          "notes": "Multiple species referred to as 'cedar' in North American ethnobotany; antimicrobial properties documented for both Thuja and Juniperus genera. Regional identification required."
+        },
+        {
+          "name": "Sweetgrass",
+          "modern_identification": "Hierochloe odorata (syn. Anthoxanthum nitens)",
+          "identification_confidence": "high",
+          "notes": "Widely used ceremonially and medicinally across North American traditions; aromatic compounds (coumarins) contribute to noted anxiolytic/calming aromatic effect."
+        },
+        {
+          "name": "Sage / Artemisia",
+          "modern_identification": "Artemisia spp. (likely Artemisia ludoviciana, Plains sage, or A. tridentata, sagebrush, among others)",
+          "identification_confidence": "medium",
+          "notes": "Densmore's reference to 'sage' in Plains contexts most often indicates Artemisia ludoviciana rather than culinary Salvia. Antimicrobial properties well-documented across the genus."
+        }
+      ],
+      "translator_notes": "The source text is written in English and functions as a compiled ethnobotanical/ethnomedical summary rather than a primary-language indigenous source; translation here principally involves formalization and clarification for archival purposes. The Densmore (1928) citation refers to Frances Densmore's 'Uses of Plants by the Chippewa Indians,' Bureau of American Ethnology Annual Report 44, a standard primary ethnobotanical reference. The claim that the sweat lodge represents 'the most sophisticated pre-Columbian thermal medicine technology in North America' is an editorial evaluative judgment by the original compiler, not a direct indigenous statement, and should be treated as interpretive annotation rather than objective fact.",
+      "_label": "moerman::sweat_lodge_thermal"
+    },
+    {
+      "title_inferred": "Medicinal Applications of Tobacco Among Indigenous Peoples of North America",
+      "original_text": "Nicotiana rustica / N. tabacum — Tobacco (medicinal applications distinct from ritual). Iroquois, Cherokee: leaves as wound poultice. Crow: smoke blown into painful ear. Blackfoot: leaves for insect bites and bee stings. Zuni: topical anesthetic before minor procedures (documented by Stevenson, 1909). Pharmacology of medicinal use: nicotine as insecticide (insect bites); topical nicotine blocks pain signaling at acetylcholine receptors (surgical anesthetic mechanism); cotinine (metabolite) anti-inflammatory. The Zuni topical anesthetic application represents a sophisticated empirical pharmacological discovery — nicotine blocks nAChR at neuromuscular junctions, producing localised insensitivity. Indigenous medicine carefully distinguished between medicinal and ritual tobacco use.",
+      "translation": "Nicotiana rustica / N. tabacum — Tobacco (medicinal applications, treated here as distinct from ritual use). Iroquois and Cherokee peoples applied the leaves as a poultice to wounds. The Crow people blew smoke into a painful ear [as a therapeutic intervention]. The Blackfoot applied leaves to insect bites and bee stings. The Zuni used tobacco as a topical anesthetic prior to minor procedures (as documented by Stevenson, 1909). Regarding the pharmacology of these medicinal uses: nicotine functions as an insecticide in the context of insect bites; applied topically, nicotine inhibits pain signaling at acetylcholine [nicotinic acetylcholine] receptors, which accounts for its mechanism as a surgical anesthetic; and cotinine, a metabolite of nicotine, possesses anti-inflammatory properties. The Zuni practice of topical anesthesia represents a sophisticated empirical pharmacological discovery, as nicotine blocks nicotinic acetylcholine receptors [nAChR] at neuromuscular junctions, producing localized insensitivity [anesthesia]. Indigenous medical practice carefully distinguished between the medicinal and the ritual uses of tobacco.",
+      "entities_mentioned": [
+        {
+          "name": "Nicotiana rustica",
+          "modern_identification": "Nicotiana rustica (wild tobacco, Aztec tobacco) — Solanaceae",
+          "identification_confidence": "high",
+          "notes": "Smaller-leafed species historically cultivated and used by many Indigenous North American peoples; higher nicotine content than N. tabacum."
+        },
+        {
+          "name": "Nicotiana tabacum",
+          "modern_identification": "Nicotiana tabacum (common tobacco) — Solanaceae",
+          "identification_confidence": "high",
+          "notes": "The primary commercial tobacco species; also used medicinally across numerous Indigenous traditions."
+        },
+        {
+          "name": "Tobacco (leaves as wound poultice — Iroquois, Cherokee)",
+          "modern_identification": "Nicotiana rustica / N. tabacum",
+          "identification_confidence": "high",
+          "notes": "Condition treated: wounds. Preparation method: fresh or prepared leaves applied directly as a poultice."
+        },
+        {
+          "name": "Tobacco (smoke for painful ear — Crow)",
+          "modern_identification": "Nicotiana rustica / N. tabacum",
+          "identification_confidence": "high",
+          "notes": "Condition treated: earache. Preparation method: smoke from burning tobacco blown into the affected ear."
+        },
+        {
+          "name": "Tobacco (leaves for insect bites/bee stings — Blackfoot)",
+          "modern_identification": "Nicotiana rustica / N. tabacum",
+          "identification_confidence": "high",
+          "notes": "Condition treated: insect bites and bee stings. Preparation method: topical application of leaves. Pharmacological basis may relate to nicotine's insecticidal and analgesic properties."
+        },
+        {
+          "name": "Tobacco (topical anesthetic — Zuni)",
+          "modern_identification": "Nicotiana rustica / N. tabacum",
+          "identification_confidence": "high",
+          "notes": "Condition treated: pain management prior to minor surgical/medical procedures. Preparation method: topical application. Documented by Matilda Coxe Stevenson, 1909. Mechanism attributed to nicotine blocking nAChR at neuromuscular junctions."
+        },
+        {
+          "name": "Nicotine",
+          "modern_identification": "Nicotine (alkaloid, C₁₀H₁₄N₂)",
+          "identification_confidence": "high",
+          "notes": "Active pharmacological compound; functions as insecticide, topical analgesic, and nicotinic acetylcholine receptor antagonist at high doses."
+        },
+        {
+          "name": "Cotinine",
+          "modern_identification": "Cotinine (primary metabolite of nicotine, C₁₀H₁₂N₂O)",
+          "identification_confidence": "high",
+          "notes": "Noted here for anti-inflammatory properties; a metabolic byproduct of nicotine."
+        }
+      ],
+      "translator_notes": "The source text is in English and required no language translation, but has been rendered into formal scholarly register consistent with the Materia Medica Americana archive. Key technical terms — nAChR (nicotinic acetylcholine receptors), neuromuscular junction, cotinine — have been retained and bracketed or glossed for archival clarity. The Stevenson (1909) citation refers to Matilda Coxe Stevenson's ethnographic documentation of Zuni practices, a well-established primary source in this field. The source explicitly distinguishes medicinal from ritual tobacco use, which is a meaningful scholarly distinction and has been preserved. No genuinely illegible passages were encountered.",
+      "_label": "moerman::tobacco_nicotiana_medicine"
+    }
+  ]
+}
