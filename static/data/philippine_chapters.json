@@ -1,0 +1,274 @@
+{
+  "job_name": "philippine-tradition-v1",
+  "completed_at": "2026-07-02T02:13:42.871211",
+  "segment_count": 7,
+  "results": [
+    {
+      "title_inferred": "Lagundi (Vitex negundo): Medicinal Uses, Description, and Pharmacology from Quisumbing's Medicinal Plants of the Philippines",
+      "original_text": "Lagundi (Vitex negundo Linn.) — Family: Verbenaceae/Lamiaceae. From Quisumbing, Medicinal Plants of the Philippines (1951, revised 1978), p.812-816. Filipino names: Lagundi (Tagalog, Bisaya); Dangla (Ilocano); Tugas-tugas (Cebuano). Distribution: Throughout the Philippines, also India, China, tropical Africa. Description: Shrub or small tree 2-8m. Leaves: 5-foliate, opposite, leaflets 5 or 3, lanceolate, tomentose beneath. Flowers: Small, bluish-purple, in panicles. Medicinal uses documented by Quisumbing: Leaves — boiled and used for baths or poultice for skin diseases, rheumatism; decoction taken internally for asthma, cough, fever; fresh leaves applied to forehead for headache. Seeds — used for nervousness. Roots — used for fever and rheumatism. Active compounds identified by Quisumbing era and subsequent research: Essential oil (sabinene, 1,8-cineole, beta-caryophyllene), iridoid glycosides (agnuside, aucubin), flavonoids (casticin, luteolin). DOH registration 1997 as official herbal medicine for cough and asthma. Commercial tablet (Ascof) approved. RCT evidence: multiple Philippine clinical trials.",
+      "translation": "Lagundi (Vitex negundo Linn.) — Family: Verbenaceae/Lamiaceae. Source: Eduardo Quisumbing, Medicinal Plants of the Philippines (1951; revised 1978), pp. 812–816.\n\nFILIPINO VERNACULAR NAMES: Lagundi (Tagalog, Bisaya [Visayan]); Dangla (Ilocano); Tugas-tugas (Cebuano).\n\nDISTRIBUTION: Found throughout the Philippine archipelago; also occurring in India, China, and tropical Africa.\n\nBOTANICAL DESCRIPTION: A shrub or small tree reaching 2–8 metres in height. Leaves are palmately 5-foliate [five-leaflet compound], arranged in opposite pairs; leaflets 5 or occasionally 3, lanceolate in shape, densely hairy [tomentose] on the undersurface. Flowers are small, bluish-purple in colour, borne in panicles [branched flower clusters].\n\nMEDICINAL USES (as documented by Quisumbing):\n— LEAVES: Boiled and employed as a bath or poultice [external application] for skin diseases and rheumatism. A decoction [water extract prepared by prolonged boiling] is taken internally for asthma, cough, and fever. Fresh leaves are laid upon the forehead as a remedy for headache.\n— SEEDS: Used in cases of nervousness.\n— ROOTS: Employed against fever and rheumatism.\n\nACTIVE CONSTITUENTS (identified during and after the Quisumbing era): Essential oil constituents include sabinene, 1,8-cineole [eucalyptol], and beta-caryophyllene. Iridoid glycosides [bitter principles] present include agnuside and aucubin. Flavonoids identified include casticin and luteolin.\n\nREGULATORY AND CLINICAL STATUS: Registered in 1997 by the Philippine Department of Health (DOH) as an official herbal medicine for the treatment of cough and asthma. A commercial tablet formulation (Ascof®) has received regulatory approval. Multiple randomised controlled trials [RCTs] conducted in the Philippines have provided clinical evidence supporting these indications.",
+      "entities_mentioned": [
+        {
+          "name": "Lagundi / Dangla / Tugas-tugas",
+          "modern_identification": "Vitex negundo Linn. (Five-leaved chaste tree), Family Lamiaceae (formerly Verbenaceae)",
+          "identification_confidence": "high",
+          "notes": "Binomial given explicitly in source. Widely accepted Filipino medicinal plant; appears in WHO traditional medicine documentation. Also known in related literature as 'Chinese chaste tree.' The family reassignment from Verbenaceae to Lamiaceae reflects post-Quisumbing taxonomic revision."
+        },
+        {
+          "name": "Sabinene",
+          "modern_identification": "Sabinene — a bicyclic monoterpene, CAS 3387-41-5",
+          "identification_confidence": "high",
+          "notes": "Component of the essential oil fraction of Vitex negundo leaves."
+        },
+        {
+          "name": "1,8-Cineole",
+          "modern_identification": "Eucalyptol — a cyclic ether monoterpene, CAS 470-82-6",
+          "identification_confidence": "high",
+          "notes": "Major volatile compound with bronchodilatory and anti-inflammatory properties; relevant to the plant's documented use for asthma and cough."
+        },
+        {
+          "name": "Beta-caryophyllene",
+          "modern_identification": "Beta-caryophyllene — a bicyclic sesquiterpene, CAS 87-44-5",
+          "identification_confidence": "high",
+          "notes": "Also found in cloves and cannabis; known for anti-inflammatory activity."
+        },
+        {
+          "name": "Agnuside",
+          "modern_identification": "Agnuside — an iridoid glycoside characteristic of Vitex species",
+          "identification_confidence": "high",
+          "notes": "Used as a chemotaxonomic marker for Vitex negundo authentication."
+        },
+        {
+          "name": "Aucubin",
+          "modern_identification": "Aucubin — an iridoid glycoside, CAS 479-98-1",
+          "identification_confidence": "high",
+          "notes": "Widely distributed in Lamiaceae; associated with anti-inflammatory and hepatoprotective effects."
+        },
+        {
+          "name": "Casticin",
+          "modern_identification": "Casticin — a polymethoxylated flavonoid (3,6,4'-trimethoxy-5,7,3'-trihydroxyflavone), CAS 479-91-4",
+          "identification_confidence": "high",
+          "notes": "Found in multiple Vitex species; studied for anti-inflammatory and anti-cancer properties."
+        },
+        {
+          "name": "Luteolin",
+          "modern_identification": "Luteolin — a common flavone, CAS 491-70-3",
+          "identification_confidence": "high",
+          "notes": "Widespread flavonoid with well-documented anti-inflammatory and antioxidant activity."
+        },
+        {
+          "name": "Ascof",
+          "modern_identification": "Ascof® Lagundi tablet/syrup — proprietary Philippine pharmaceutical product",
+          "identification_confidence": "high",
+          "notes": "Manufactured by Pascual Laboratories; standardised extract of Vitex negundo. Represents formal integration of traditional herbal use into the Philippine national formulary."
+        }
+      ],
+      "translator_notes": "1. The source text is already in English (compiled bibliographic and pharmacognostic notes from Quisumbing's Filipino-language and English-language source material); translation here preserves and expands with terminological clarifications in brackets per archival rules.\n2. The family designation 'Verbenaceae/Lamiaceae' reflects an ongoing taxonomic revision: Quisumbing (1951/1978) used Verbenaceae; modern classification places Vitex negundo in Lamiaceae. Both are retained as the source itself acknowledges both.\n3. 'Tomentose' is retained as a period botanical term; meaning (densely hairy) is clarified in brackets.\n4. The DOH 1997 registration information and the Ascof commercial product details post-date Quisumbing's original work and appear to have been added by a later editorial hand to the source compilation; this is flagged for archival purposes.\n5. No genuinely illegible passages were identified. No OCR corrections were required.\n6. EXTRACTION SUMMARY — Name: Lagundi; Modern ID: Vitex negundo Linn.; Conditions treated: skin diseases, rheumatism, asthma, cough, fever, headache, nervousness; Preparations: (a) leaves boiled for bath or poultice (external, for skin disease and rheumatism), (b) leaf decoction taken internally (for asthma, cough, fever), (c) fresh leaves applied to forehead (for headache), (d) seeds administered for nervousness, (e) roots used for fever and rheumatism, (f) standardised tablet (Ascof) approved for cough and asthma.",
+      "_label": "quisumbing::lagundi_vitex"
+    },
+    {
+      "title_inferred": "Sambong (Blumea balsamifera): Philippine Medicinal Uses, Active Compounds, and Clinical Validation",
+      "original_text": "Sambong (Blumea balsamifera (Linn.) DC.) — Family: Compositae/Asteraceae. Quisumbing (1951) p.493-498. Filipino names: Sambong (Tagalog); Subusob (Ilocano); Bukadkad (Bisaya); Gabon (Pampanga). Distribution: Common throughout the Philippines, India to Japan, tropical Africa. Medicinal uses from Quisumbing: Leaves applied as poultice for rheumatism and swellings. Decoction of leaves taken for fever, diarrhea, and intestinal gas. Leaf decoction used as urinary disinfectant. Dried leaves as herbal tea for kidney stones. Post-Quisumbing validation: DOH registered as herbal medicine 1997 for urolithiasis (kidney stones). Active compound: Blumea camphor (l-borneol) — demonstrated diuretic activity, promotes passage of small kidney stones. Multiple Philippine clinical trials confirming urolithic effect. Also: NGFI-B binding activity (nuclear receptor modulation) discovered — possible applications in metabolic disease. Used across Southeast Asia (Thailand, Indonesia, Vietnam) for overlapping conditions — internal convergence within the region.",
+      "translation": "Sambong (Blumea balsamifera (Linn.) DC.) — Family: Compositae/Asteraceae. Source: Quisumbing (1951), pp. 493–498. Filipino vernacular names: Sambong (Tagalog); Subusob (Ilocano); Bukadkad (Bisaya/Visayan); Gabon (Pampanga). Geographical distribution: Widespread throughout the Philippine archipelago; also found from India eastward to Japan, and in tropical Africa. Medicinal uses as recorded by Quisumbing: (1) The leaves are applied externally as a poultice [cataplasm] for the relief of rheumatism and local swellings. (2) A decoction [boiled preparation] of the leaves is taken internally for fever, diarrhea, and intestinal flatulence [gas]. (3) Leaf decoction is employed as a urinary disinfectant [antiseptic for the urinary tract]. (4) Dried leaves prepared as an herbal infusion [tea] are used for kidney stones [urolithiasis]. Post-Quisumbing scientific validation: Sambong was officially registered by the Philippine Department of Health (DOH) in 1997 as a government-approved herbal medicine, specifically indicated for urolithiasis (kidney stones). The principal active constituent is Blumea camphor [l-borneol], which has demonstrated diuretic activity and has been shown to promote the passage of small kidney stones. Multiple Philippine clinical trials have confirmed this anti-urolithic effect. Additionally, NGFI-B [Nerve Growth Factor-Induced clone B] binding activity — a form of nuclear receptor modulation — has been identified in the plant, suggesting possible future applications in the treatment of metabolic disease. Sambong is used across Southeast Asia (Thailand, Indonesia, Vietnam) for largely overlapping indications, indicating a pattern of regional ethnopharmacological convergence.",
+      "entities_mentioned": [
+        {
+          "name": "Sambong",
+          "modern_identification": "Blumea balsamifera (Linn.) DC., family Asteraceae (formerly Compositae)",
+          "identification_confidence": "high",
+          "notes": "Vernacular names documented: Sambong (Tagalog), Subusob (Ilocano), Bukadkad (Bisaya/Visayan), Gabon (Pampanga). Philippine DOH-registered herbal medicine (1997) for urolithiasis. Active compound l-borneol (Blumea camphor) confirmed diuretic. NGFI-B nuclear receptor binding activity also identified."
+        },
+        {
+          "name": "Blumea camphor (l-borneol)",
+          "modern_identification": "l-Borneol; a bicyclic monoterpenoid alcohol; CAS 464-43-1",
+          "identification_confidence": "high",
+          "notes": "Identified as the principal active constituent of Blumea balsamifera responsible for diuretic and anti-urolithic effects."
+        },
+        {
+          "name": "NGFI-B",
+          "modern_identification": "Nerve Growth Factor-Induced clone B (NR4A1); an orphan nuclear receptor",
+          "identification_confidence": "medium",
+          "notes": "Binding activity with constituents of Blumea balsamifera has been reported; relevance to metabolic disease therapy is a subject of ongoing research."
+        }
+      ],
+      "translator_notes": "This segment is a secondary scholarly compilation derived from Quisumbing (1951) with post-publication annotations reflecting subsequent pharmacological and regulatory developments. The source text is in English and required no language-level translation; the translation output here represents a formal scholarly rendering with expanded clarifications of technical terms in brackets. The DOH registration date (1997) and NGFI-B binding activity are post-Quisumbing additions by the compiler, not attributable to the 1951 primary source. The phrase 'internal convergence within the region' refers to ethnopharmacological convergence — independent but overlapping traditional uses across Southeast Asian cultures — which is a recognized phenomenon in comparative ethnobotany. Extracted medicinal data: Name: Sambong / Blumea balsamifera; Conditions treated: rheumatism, swellings (external), fever, diarrhea, flatulence, urinary tract infection, kidney stones (urolithiasis); Preparations: (a) poultice of fresh leaves (external), (b) decoction of leaves (internal/urinary), (c) dried leaf infusion/herbal tea (internal).",
+      "_label": "quisumbing::sambong_blumea"
+    },
+    {
+      "title_inferred": "Tsaang Gubat (Ehretia microphylla / Carmona retusa): Traditional and Pharmacological Overview",
+      "original_text": "Tsaang Gubat (Ehretia microphylla Lam. / Carmona retusa) — Family: Boraginaceae. Quisumbing (1951) p.621-622. Filipino names: Tsaang gubat (Tagalog, meaning 'wild tea'); Marm-ot (Ilocano); Alibubut (Bisaya). Distribution: Lowland forests throughout Philippines. Traditional use documented by Quisumbing: Leaves boiled as a tea substitute; decoction for diarrhea, stomach ache, intestinal spasm, and bathing for skin allergies. DOH registration 1997 for diarrhea. Active research post-Quisumbing: Rutin (flavonol) — antispasmodic mechanism confirmed in animal studies; reduces gut motility. Antibacterial activity against E. coli and Salmonella — validates traditional use for bacterial diarrhea. Multiple Philippine studies confirming antidiarrheal activity in both animal models and limited clinical trials. Used in the Philippines as both daily tea (Carmona retusa leaves) and specific treatment — demonstrating food-medicine continuum typical of traditional pharmacopeia.",
+      "translation": "Tsaang Gubat (Ehretia microphylla Lam. / Carmona retusa) — Family: Boraginaceae. Source: Quisumbing (1951), pp. 621–622. Filipino vernacular names: Tsaang gubat (Tagalog, literally 'wild tea'); Marm-ot (Ilocano); Alibubut (Bisaya). Distribution: Lowland forests throughout the Philippine archipelago. Traditional uses as documented by Quisumbing: The leaves are boiled and consumed as a tea substitute; a decoction [boiled liquid extract] is employed for the treatment of diarrhea, stomach ache, and intestinal spasm; the decoction is also used externally as a bath or wash for skin allergies. The Philippine Department of Health (DOH) formally registered the plant as a herbal medicine for diarrhea in 1997. Research conducted after Quisumbing's compilation has identified rutin (a flavonol glycoside) as a principal active constituent, with antispasmodic [intestinal-cramp-relieving] activity confirmed through animal studies, operating by reducing gut motility [slowing intestinal muscular contractions]. Antibacterial activity against Escherichia coli and Salmonella species has been demonstrated, thereby pharmacologically validating the traditional application against bacterial diarrhea. Multiple Philippine studies have confirmed antidiarrheal activity in animal models as well as in limited clinical trials with human subjects. The plant is employed in the Philippines both as an everyday beverage tea (prepared from Carmona retusa leaves) and as a specific therapeutic remedy, thus exemplifying the food-medicine continuum [the overlap between dietary and medicinal use] that is characteristic of traditional pharmacopeias.",
+      "entities_mentioned": [
+        {
+          "name": "Tsaang gubat",
+          "modern_identification": "Carmona retusa (Vahl) Masam. [syn. Ehretia microphylla Lam.]; family Boraginaceae (formerly sometimes placed in Ehretiaceae)",
+          "identification_confidence": "high",
+          "notes": "The synonymy of Ehretia microphylla Lam. with Carmona retusa (Vahl) Masam. is well established in current botanical literature. The source text uses both names, reflecting the nomenclatural revision that occurred after Quisumbing's 1951 compilation."
+        },
+        {
+          "name": "Rutin",
+          "modern_identification": "Rutin (quercetin-3-O-rutinoside); a flavonol glycoside",
+          "identification_confidence": "high",
+          "notes": "Identified as the principal bioactive compound responsible for the antispasmodic and antidiarrheal pharmacological activity observed in post-Quisumbing studies."
+        },
+        {
+          "name": "Marm-ot",
+          "modern_identification": "Ilocano vernacular name for Carmona retusa",
+          "identification_confidence": "high",
+          "notes": "Regional Filipino name; no separate botanical entity implied."
+        },
+        {
+          "name": "Alibubut",
+          "modern_identification": "Bisaya vernacular name for Carmona retusa",
+          "identification_confidence": "high",
+          "notes": "Regional Filipino name; no separate botanical entity implied."
+        }
+      ],
+      "translator_notes": "The source text is already in English, functioning as a scholarly digest compiled from Quisumbing (1951) and subsequent Philippine pharmacological literature. Translation here serves principally to clarify and standardize terminology for the Materia Medica Americana archive. Technical terms such as 'decoction,' 'antispasmodic,' and 'gut motility' have been bracketed with plain-language glosses for accessibility. The DOH 1997 registration detail is a post-Quisumbing administrative datum and is preserved as contextually significant for establishing the plant's official recognition. The family placement (Boraginaceae vs. Ehretiaceae) reflects ongoing taxonomic debate; the source text's designation of Boraginaceae is retained.",
+      "_label": "quisumbing::tsaang_gubat_ehretia"
+    },
+    {
+      "title_inferred": "Niyog-niyogan (Quisqualis indica): Filipino Traditional Anthelmintic and Febrifuge",
+      "original_text": "Niyog-niyogan (Quisqualis indica Linn.) — Family: Combretaceae. Quisumbing (1951) p.267-269. Filipino names: Niyog-niyogan (Tagalog, meaning 'Chinese lantern'); Tartarau (Ilocano); Kasumpangi (Bisaya). Distribution: Throughout the Philippines, native to tropical Asia. Quisumbing documentation: Seeds roasted and eaten (2-3 for children, 4-5 for adults) for intestinal worms — roundworm (Ascaris), threadworm (Enterobius). Leaves decocted for fever. Flowers for diarrhea. DOH registration 1997 for ascariasis (roundworm infection). Active compounds: Quisqualic acid (in seeds) — confirmed anthelmintic, excitotoxic glutamate agonist that causes roundworm paralysis. Validated mechanism: seeds cause flaccid paralysis of Ascaris — worms expelled passively, without dangerous purgation (advantage over traditional mercury-based anthelmintics). Safety concern: overdose causes hiccups. Traditional dosing protocol (2-3 seeds for children) reflects empirically calibrated therapeutic window. Convergence: multiple anthelmintic plants in this archive (epazote/paico, Quisqualis) demonstrate independent discovery of antiparasitic properties in plants from different plant families.",
+      "translation": "Niyog-niyogan (Quisqualis indica Linn.) — Family: Combretaceae. Source: Quisumbing (1951), pp. 267–269. Filipino vernacular names: Niyog-niyogan (Tagalog; the name translates literally as 'Chinese lantern'); Tartarau (Ilocano); Kasumpangi (Bisaya/Visayan). Distribution: Found throughout the Philippine archipelago; native to tropical Asia more broadly. According to Quisumbing's documentation, the seeds are roasted and eaten as an anthelmintic [worm-expelling agent] — 2 to 3 seeds for children, 4 to 5 seeds for adults — used specifically against roundworm (Ascaris lumbricoides) and threadworm (Enterobius vermicularis). A decoction of the leaves is employed for fever. The flowers are used to treat diarrhea. The Philippine Department of Health registered the plant in 1997 as a treatment for ascariasis [roundworm infection]. The primary active compound is quisqualic acid, found in the seeds; it is a confirmed anthelmintic agent and an excitotoxic glutamate agonist that induces paralysis in roundworms. The validated mechanism of action is flaccid paralysis of Ascaris, with the worms subsequently expelled passively and without the need for dangerous purgation — an advantage over traditional mercury-based anthelmintic treatments. A notable safety concern is that overdose causes hiccups [singultus]. The traditional dosing protocol (2–3 seeds for children) reflects an empirically calibrated therapeutic window, suggesting that indigenous practitioners had effectively determined a safe and efficacious dose through accumulated observation. A cross-archive observation: multiple anthelmintic plants documented in this collection (including epazote/paico [Dysphania ambrosioides] and Quisqualis indica) demonstrate independent, convergent discovery of antiparasitic properties in plants from entirely different botanical families.",
+      "entities_mentioned": [
+        {
+          "name": "Niyog-niyogan / Tartarau / Kasumpangi",
+          "modern_identification": "Quisqualis indica Linn. (syn. Combretum indicum), family Combretaceae",
+          "identification_confidence": "high",
+          "notes": "The plant is explicitly named with its Linnaean binomial. Common English names include Rangoon creeper and Chinese honeysuckle. The 'Chinese lantern' translation given for the Tagalog name is an interpretive gloss; some sources render it differently. DOH (Philippines) officially recognized it in 1997 for treatment of ascariasis."
+        },
+        {
+          "name": "Quisqualic acid",
+          "modern_identification": "Quisqualic acid — a naturally occurring amino acid and excitotoxic glutamate receptor agonist; confirmed anthelmintic active principle in Q. indica seeds",
+          "identification_confidence": "high",
+          "notes": "Pharmacologically validated; mechanism involves flaccid paralysis of Ascaris musculature via glutamate receptor activation."
+        },
+        {
+          "name": "Epazote / Paico",
+          "modern_identification": "Dysphania ambrosioides (formerly Chenopodium ambrosioides), family Amaranthaceae",
+          "identification_confidence": "high",
+          "notes": "Referenced comparatively as another anthelmintic plant documented elsewhere in the same archive, representing independent cross-cultural discovery of antiparasitic plant use."
+        },
+        {
+          "name": "Ascaris",
+          "modern_identification": "Ascaris lumbricoides — large intestinal roundworm",
+          "identification_confidence": "high",
+          "notes": "Primary target parasite for Quisqualis indica seed treatment."
+        },
+        {
+          "name": "Enterobius",
+          "modern_identification": "Enterobius vermicularis — pinworm/threadworm",
+          "identification_confidence": "high",
+          "notes": "Secondary target parasite noted in Quisumbing's documentation."
+        }
+      ],
+      "translator_notes": "This segment is largely in English in the original (a scholarly summary rather than a vernacular-language primary source), so the translation is primarily a clarification and light expansion for archival formatting purposes. Technical terms such as 'anthelmintic,' 'flaccid paralysis,' 'excitotoxic glutamate agonist,' and 'ascariasis' have been retained with bracketed glosses where appropriate. The DOH registration date (1997) situates this as a case of traditional knowledge receiving modern regulatory validation. The convergence note comparing Quisqualis and epazote is a compiler's editorial observation and is preserved as such. The Tagalog name 'Niyog-niyogan' is sometimes translated as 'coconut-like' or glossed otherwise in the literature; the 'Chinese lantern' rendering given in the source is noted but not contested here.",
+      "_label": "quisumbing::niyog_niyogan_quisqualis"
+    },
+    {
+      "title_inferred": "Ampalaya (Bitter Melon, Momordica charantia) — Filipino Traditional and Clinical Anti-Diabetic Use",
+      "original_text": "Ampalaya / Bitter Melon (Momordica charantia Linn.) — Family: Cucurbitaceae. Quisumbing (1951) p.559-562. Filipino names: Ampalaya (Tagalog); Paria (Ilocano, Bisaya); Amplaya (Pampanga). Distribution: Widely cultivated throughout Philippines. Quisumbing: Leaves and fruit for diabetes — 'boiled and eaten for sugar in urine.' Decoction of leaves for fever and as purgative. Juice for intestinal worms. Applied externally for skin conditions. Post-Quisumbing validation: one of the most extensively studied anti-diabetic plants in the world. Multiple Philippine clinical trials: PIMS trial (Philippine Institute of Complementary Medicine) showed significant HbA1c reduction over 3 months. Mechanisms: Charantin (steroidal compound) — insulin secretagogue; p-insulin (peptide) — structural similarity to bovine insulin; vicine — blocks complex I of mitochondrial electron transport affecting glucose metabolism. WHO traditional medicine guidelines cite ampalaya as having 'promising' anti-diabetic evidence. DOH Philippines registers ampalaya preparation for Type 2 diabetes adjunct treatment. One of the best-evidenced anti-diabetic plants globally — almost entirely unknown to mainstream endocrinology outside Asia.",
+      "translation": "Ampalaya / Bitter Melon (Momordica charantia Linn.) — Family Cucurbitaceae. Source: Quisumbing (1951), pages 559–562. Filipino vernacular names: Ampalaya (Tagalog); Paria (Ilocano, Bisaya); Amplaya (Pampanga). Distribution: Widely cultivated throughout the Philippine archipelago. According to Quisumbing, the leaves and fruit are used to treat diabetes [described as 'sugar in the urine'], prepared by boiling and then consumed as food. A decoction [boiled liquid extract] of the leaves is used to reduce fever and as a purgative [laxative agent]. The expressed juice is administered for intestinal worms [anthelmintic use]. The plant material is also applied topically for various skin conditions. Post-Quisumbing scientific validation: Ampalaya is now recognized as one of the most extensively studied anti-diabetic plants in the world. Multiple Philippine clinical trials have been conducted, including the PIMS trial (Philippine Institute of Complementary Medicine), which demonstrated a significant reduction in HbA1c [glycated hemoglobin, a marker of long-term blood glucose control] over a three-month period. Known active mechanisms include: Charantin, a steroidal compound acting as an insulin secretagogue [stimulating insulin release]; p-insulin, a plant peptide with structural similarity to bovine insulin; and vicine, which inhibits Complex I of the mitochondrial electron transport chain, thereby affecting glucose metabolism. The World Health Organization's traditional medicine guidelines characterize ampalaya's anti-diabetic evidence as 'promising.' The Philippine Department of Health has formally registered an ampalaya preparation as an adjunct treatment for Type 2 diabetes mellitus. Ampalaya stands as one of the best-evidenced anti-diabetic medicinal plants worldwide, yet remains almost entirely unknown to mainstream endocrinology outside of Asia.",
+      "entities_mentioned": [
+        {
+          "name": "Ampalaya / Bitter Melon (Momordica charantia Linn.)",
+          "modern_identification": "Momordica charantia L. (Cucurbitaceae) — Bitter melon / bitter gourd",
+          "identification_confidence": "high",
+          "notes": "Explicitly named with full Linnaean binomial and family. Filipino vernacular names recorded: Ampalaya (Tagalog), Paria (Ilocano, Bisaya), Amplaya (Pampanga). Multiple conditions treated: diabetes (glycosuria), fever, intestinal parasites, skin conditions. Preparations include boiling whole plant material for ingestion, leaf decoction, expressed juice, and topical application. Three bioactive compounds identified in source: charantin, p-insulin, and vicine."
+        },
+        {
+          "name": "Charantin",
+          "modern_identification": "Charantin — a mixture of steroidal glycosides (sitosteryl glucoside and stigmasteryl glucoside) isolated from Momordica charantia",
+          "identification_confidence": "high",
+          "notes": "Described in source as a steroidal compound functioning as an insulin secretagogue. Well-characterized in the pharmacological literature."
+        },
+        {
+          "name": "p-insulin (plant insulin)",
+          "modern_identification": "Polypeptide-p (also called plant insulin or p-insulin) — a peptide isolated from Momordica charantia seeds and fruit",
+          "identification_confidence": "high",
+          "notes": "Source notes structural similarity to bovine insulin, consistent with published characterizations of polypeptide-p in the pharmacognosy literature."
+        },
+        {
+          "name": "Vicine",
+          "modern_identification": "Vicine — a pyrimidine nucleoside glycoside found in Momordica charantia and other plants including Vicia faba",
+          "identification_confidence": "high",
+          "notes": "Source attributes glucose metabolism effects via inhibition of mitochondrial Complex I (electron transport chain). Mechanism is consistent with published biochemical studies."
+        }
+      ],
+      "translator_notes": "This segment is primarily in modern English (a compiled secondary source drawing on Quisumbing 1951) and required translation only in the sense of scholarly extraction and standardization rather than cross-language translation. The source conflates traditional ethnobotanical records (Quisumbing 1951) with post-hoc clinical and mechanistic evidence; the archive entry preserves this layering but users should note these represent distinct epistemic categories. 'Sugar in urine' is a period folk diagnostic descriptor consistent with diabetes mellitus (glycosuria). The DOH Philippines registration of ampalaya preparations is historically significant as a rare instance of a traditional remedy achieving formal regulatory status. HbA1c framing in the PIMS trial situates this in contemporary clinical trial methodology rather than traditional use documentation.",
+      "_label": "quisumbing::ampalaya_momordica"
+    },
+    {
+      "title_inferred": "Bayabas / Guava (Psidium guajava): Medicinal Uses in the Philippines",
+      "original_text": "Bayabas / Guava (Psidium guajava Linn.) — Family: Myrtaceae. Quisumbing (1951) p.426-428. Filipino names: Bayabas (Tagalog); Biabas (Ilocano); Guayabas (Spanish-derived). Distribution: Widely cultivated throughout Philippines, pantropical. Quisumbing: Leaves boiled and used for wound washing — 'antibacterial wash' is the specific documented use. Bark for diarrhea. Fruit for constipation (unripe) and diarrhea (ripe). DOH Philippines: registered for wound and skin care antiseptic. Active research: Quercetin — major flavonoid, documented antimicrobial, antiviral (including HIV integrase inhibition in vitro), anti-inflammatory. Guava leaf extract active against Staphylococcus aureus, E. coli, Salmonella. Multiple clinical studies: guava leaf mouthwash — clinical RCT showing comparable efficacy to chlorhexidine for gingivitis. Guava leaf tea for diarrhea — clinical evidence. Convergence: guava used medicinally across pantropical distribution — Philippines, Brazil, India, West Africa — providing strong multi-tradition convergence signal for antimicrobial activity.",
+      "translation": "Bayabas / Guava (Psidium guajava Linn.) — Family: Myrtaceae. Quisumbing (1951), pp. 426–428. Philippine vernacular names: Bayabas (Tagalog); Biabas (Ilocano); Guayabas (Spanish-derived). Distribution: Widely cultivated throughout the Philippines; pantropical in range. According to Quisumbing, the leaves are boiled and the decoction used for washing wounds — the specific documented application is as an 'antibacterial wash' [antiseptic wound rinse]. The bark is used for diarrhea. The fruit is used for constipation when unripe and for diarrhea when ripe. The Philippine Department of Health (DOH) has formally registered guava leaf preparations for use as a wound and skin-care antiseptic. Current research has identified quercetin as the principal flavonoid constituent, with documented antimicrobial, antiviral (including in vitro inhibition of HIV integrase), and anti-inflammatory properties. Guava leaf extract has demonstrated activity against Staphylococcus aureus, Escherichia coli, and Salmonella spp. Multiple clinical studies have evaluated guava leaf mouthwash, with at least one randomized controlled trial [RCT] showing efficacy comparable to chlorhexidine in the treatment of gingivitis. Guava leaf tea for diarrhea has likewise been supported by clinical evidence. Cross-cultural convergence: guava is employed medicinally across its pantropical range — in the Philippines, Brazil, India, and West Africa — providing a strong multi-tradition convergence signal for its antimicrobial activity.",
+      "entities_mentioned": [
+        {
+          "name": "Bayabas / Biabas / Guayabas / Guava",
+          "modern_identification": "Psidium guajava Linn. (Myrtaceae)",
+          "identification_confidence": "high",
+          "notes": "Tagalog: Bayabas; Ilocano: Biabas; Spanish-derived Filipino usage: Guayabas. Pantropically distributed and widely cultivated. Formally registered as a herbal medicine by the Philippine DOH."
+        },
+        {
+          "name": "Quercetin",
+          "modern_identification": "Quercetin (3,3',4',5,7-pentahydroxyflavone); a flavonoid phytochemical",
+          "identification_confidence": "high",
+          "notes": "Identified as the major bioactive flavonoid in guava leaf; associated with antimicrobial, antiviral, and anti-inflammatory activity documented in pharmacological literature."
+        },
+        {
+          "name": "Staphylococcus aureus",
+          "modern_identification": "Staphylococcus aureus (gram-positive bacterium)",
+          "identification_confidence": "high",
+          "notes": "One of the pathogenic organisms against which guava leaf extract has demonstrated in vitro antimicrobial activity."
+        },
+        {
+          "name": "E. coli",
+          "modern_identification": "Escherichia coli (gram-negative bacterium)",
+          "identification_confidence": "high",
+          "notes": "Target organism in antimicrobial activity studies of guava leaf extract."
+        },
+        {
+          "name": "Salmonella",
+          "modern_identification": "Salmonella spp. (gram-negative enterobacteria)",
+          "identification_confidence": "high",
+          "notes": "Target organism in antimicrobial activity studies of guava leaf extract; relevant to the traditional use of guava for gastrointestinal infections."
+        }
+      ],
+      "translator_notes": "Source text is in English and functions as a compiled ethnobotanical/pharmacological summary rather than a primary-language foreign text; translation therefore renders it into standardized scholarly English with bracketed clarifications of technical and institutional terms. The segment references Quisumbing (1951), a major Philippine ethnobotanical compendium (Eduardo Quisumbing, 'Medicinal Plants of the Philippines'), which should be cited as a primary source. The DOH Philippines registration is a significant regulatory datum confirming official recognition of traditional use. The multi-tradition convergence note (Philippines, Brazil, India, West Africa) is analytically significant for cross-cultural validation of antimicrobial claims. Preparation methods extracted: (1) leaves boiled in water as wound-washing decoction [antibacterial wash]; (2) bark decoction for diarrhea; (3) unripe fruit consumed for constipation; (4) ripe fruit consumed for diarrhea; (5) leaf extract as mouthwash for gingivitis; (6) leaf tea for diarrhea.",
+      "_label": "quisumbing::guava_psidium"
+    },
+    {
+      "title_inferred": "Yerba Buena (Mentha cordifolia / M. arvensis) — Philippine Medicinal Uses and Global Convergence",
+      "original_text": "Yerba Buena (Mentha cordifolia Opiz / M. arvensis) — Family: Lamiaceae. Quisumbing (1951) p.774-776. Filipino names: Yerba buena (Tagalog, from Spanish); Poleo (Ilocano); Hierba buena (Bisaya). Distribution: Throughout Philippines at medium to high elevation; cosmopolitan genus. Spanish influence visible in name — but documented uses are indigenous pre-dating Spanish contact in mainland Asia. Quisumbing: Leaves applied as poultice for headache, rheumatism, stomach pain. Juice drunk for stomach cramps, nausea. Menthol vapor inhaled for cough and colds. DOH Philippines: registered as herbal medicine for analgesic (pain relief) and for intestinal gas. Active compounds: Menthol (primary), menthone, pulegone, limonene. Menthol mechanisms: TRPM8 receptor agonist (cold sensation through calcium channel modulation), topical analgesic through counter-irritation. Convergence: Mentha used medicinally in every tradition in this archive that includes temperate plants — Greek/Roman (Dioscorides), Islamic (Ibn Sina), Chinese, Ayurvedic. Maximum global convergence for a single genus. The Philippine tradition's independent documentation of identical uses confirms the consistency of the global signal.",
+      "translation": "Yerba Buena (Mentha cordifolia Opiz / M. arvensis) — Family: Lamiaceae. Source: Quisumbing (1951), pp. 774–776. Filipino vernacular names: Yerba buena (Tagalog, derived from Spanish); Poleo (Ilocano); Hierba buena (Bisaya [Visayan]). Distribution: Found throughout the Philippines at medium to high elevations; the genus Mentha is cosmopolitan. The name reflects Spanish colonial influence, though the documented medicinal uses are indigenous to mainland Asia and predate Spanish contact. According to Quisumbing: leaves are applied as a poultice [external topical application of bruised or crushed plant material] for headache, rheumatism, and stomach pain. The expressed juice is taken orally for stomach cramps and nausea. Menthol vapor is inhaled for coughs and colds. The Philippine Department of Health has registered yerba buena as an official herbal medicine for use as an analgesic [pain-relieving agent] and for relief of intestinal gas [flatulence/carminative use]. Known active compounds include: menthol (primary constituent), menthone, pulegone, and limonene. Pharmacological mechanism of menthol: acts as a TRPM8 receptor agonist, producing a sensation of coolness through modulation of calcium channels; also functions as a topical analgesic via counter-irritation [the stimulation of superficial nerve endings to reduce perception of deeper pain]. Cross-traditional convergence: Mentha has been employed medicinally in every tradition represented in this archive that encompasses temperate-zone plants — including the Greco-Roman tradition (Dioscorides), the Islamic tradition (Ibn Sina [Avicenna]), Chinese medicine, and Ayurvedic medicine. This genus represents the maximum degree of global convergence observed for any single genus in the archive. The Philippine tradition's independent documentation of uses identical to those found in distant traditions further corroborates the consistency and strength of this cross-cultural signal.",
+      "entities_mentioned": [
+        {
+          "name": "Yerba Buena / Poleo / Hierba buena",
+          "modern_identification": "Mentha cordifolia Opiz and/or Mentha arvensis L. (mint; family Lamiaceae)",
+          "identification_confidence": "high",
+          "notes": "Both species are closely related members of the genus Mentha. M. arvensis is the field mint widely distributed across Asia; M. cordifolia is a heart-leaved mint also documented in Southeast Asia. The common name 'yerba buena' (Spanish: 'good herb') was applied by Spanish colonizers but the medicinal tradition predates colonial contact in the broader Asian context. The Philippine DOH officially recognizes this plant as a registered herbal medicine."
+        },
+        {
+          "name": "Menthol",
+          "modern_identification": "Cyclic monoterpene alcohol (C₁₀H₂₀O); primary bioactive constituent of Mentha spp.",
+          "identification_confidence": "high",
+          "notes": "TRPM8 (transient receptor potential melastatin 8) agonist responsible for the characteristic cooling sensation; well-established topical analgesic and counter-irritant. Also exhibits carminative and mild antispasmodic properties consistent with traditional gastrointestinal uses."
+        },
+        {
+          "name": "Dioscorides",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Pedanius Dioscorides (c. 40–90 CE), Greek physician and author of De Materia Medica; cited here as representative of the Greco-Roman botanical medicine tradition."
+        },
+        {
+          "name": "Ibn Sina",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Ibn Sina (Avicenna, 980–1037 CE), Persian polymath and physician, author of the Canon of Medicine (Al-Qanun fi al-Tibb); cited as representative of the Islamic medical tradition."
+        }
+      ],
+      "translator_notes": "The source text is a scholarly compilation entry rather than a primary historical source; it synthesizes Quisumbing's 1951 Philippine ethnobotanical record with modern pharmacological data and cross-archive comparative notes. The segment is already in English, so 'translation' here constitutes a formal rendering with expansion of technical abbreviations and bracketed glosses for period/technical vocabulary, as appropriate for the Materia Medica Americana archive format. The authorial claim of 'maximum global convergence' for Mentha is a qualitative editorial judgment by the compiler, not a quantitative finding; this should be noted for downstream scholarly use. The dual species attribution (M. cordifolia / M. arvensis) is common in Philippine botanical literature and reflects taxonomic ambiguity in field identification of cultivated Mentha populations.",
+      "_label": "quisumbing::yerba_buena_mentha"
+    }
+  ]
+}
