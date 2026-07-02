@@ -1,0 +1,145 @@
+{
+  "job_name": "australian-indigenous-v1",
+  "completed_at": "2026-07-02T02:12:14.242479",
+  "segment_count": 4,
+  "results": [
+    {
+      "title_inferred": "Tea Tree (Melaleuca alternifolia): Bundjalung Traditional Uses and Pharmacological Profile",
+      "original_text": "Melaleuca alternifolia — Tea Tree. Published ethnobotanical record with documented Bundjalung community involvement. From Lassak & McCarthy, Australian Medicinal Plants (1983) and Brophy et al., CSIRO Plant Industry. Bundjalung people, northern New South Wales: Leaves crushed and used as inhalant for coughs, colds, and headaches. Crushed leaves applied as poultice to wounds, cuts, burns, and skin infections. Bathing in streams and pools where Melaleuca grew — recognised as healing waters. Traditional preparation: fresh leaves crushed between hands and inhaled directly; or leaves wrapped around wound. Note: This documentation involves published academic literature with noted community collaboration. The Bundjalung knowledge of tea tree predates European contact by tens of thousands of years. Active compounds: Terpinen-4-ol (major antimicrobial component, >30% by standard), gamma-terpinene, alpha-terpinene, 1,8-cineole. Mechanism: terpinen-4-ol disrupts bacterial cell membrane integrity; active against Staphylococcus aureus (including MRSA), Candida albicans, Propionibacterium acnes. European Pharmacopoeia standard established. Multiple clinical trials: wound healing, acne (comparable to benzoyl peroxide in RCT), oral health.",
+      "translation": "Melaleuca alternifolia — Tea Tree. This is a published ethnobotanical record with documented involvement of the Bundjalung community. Sources: Lassak & McCarthy, Australian Medicinal Plants (1983), and Brophy et al., CSIRO Plant Industry. The Bundjalung people of northern New South Wales crushed the leaves and used them as an inhalant [inhalant therapy] for coughs, colds, and headaches. Crushed leaves were also applied as a poultice [topical compress] to wounds, cuts, burns, and skin infections. Bathing in streams and pools where Melaleuca trees grew was recognised as therapeutic — these were understood to be healing waters. Traditional preparation methods: fresh leaves crushed between the hands and inhaled directly; alternatively, leaves were wrapped around the wound site. Note: This documentation is drawn from published academic literature with acknowledged community collaboration. Bundjalung knowledge of the tea tree predates European contact by tens of thousands of years. Active chemical compounds identified include: terpinen-4-ol (the primary antimicrobial constituent, comprising more than 30% by established standard), gamma-terpinene, alpha-terpinene, and 1,8-cineole. Mechanism of action: terpinen-4-ol disrupts bacterial cell membrane integrity; the oil is active against Staphylococcus aureus (including methicillin-resistant strains, MRSA), Candida albicans, and Propionibacterium acnes. A quality standard has been established in the European Pharmacopoeia. Multiple clinical trials have investigated its efficacy in wound healing, acne treatment (shown to be comparable to benzoyl peroxide in a randomised controlled trial), and oral health applications.",
+      "entities_mentioned": [
+        {
+          "name": "Melaleuca alternifolia (Tea Tree)",
+          "modern_identification": "Melaleuca alternifolia (Maiden & Betche) Cheel, family Myrtaceae; source of tea tree essential oil",
+          "identification_confidence": "high",
+          "notes": "Binomial and common name explicitly stated in source. Commercially significant medicinal plant; subject of European Pharmacopoeia monograph. Indigenous use by Bundjalung people of northern New South Wales is well-documented in peer-reviewed ethnobotanical literature."
+        },
+        {
+          "name": "Terpinen-4-ol",
+          "modern_identification": "4-terpineol; monoterpenol, CAS 562-74-3; principal bioactive component of Melaleuca alternifolia essential oil",
+          "identification_confidence": "high",
+          "notes": "Identified as the major antimicrobial constituent (>30% by European Pharmacopoeia standard). Mechanism involves disruption of bacterial cell membrane integrity."
+        },
+        {
+          "name": "1,8-cineole",
+          "modern_identification": "Eucalyptol; bicyclic monoterpenoid ether, CAS 470-82-6",
+          "identification_confidence": "high",
+          "notes": "Minor constituent of tea tree oil; European Pharmacopoeia standard sets an upper limit on 1,8-cineole content due to potential skin sensitisation at higher concentrations."
+        },
+        {
+          "name": "Staphylococcus aureus (including MRSA)",
+          "modern_identification": "Staphylococcus aureus; methicillin-resistant Staphylococcus aureus (MRSA)",
+          "identification_confidence": "high",
+          "notes": "Pathogen against which tea tree oil has demonstrated in vitro and clinical antimicrobial activity."
+        },
+        {
+          "name": "Candida albicans",
+          "modern_identification": "Candida albicans; opportunistic fungal pathogen",
+          "identification_confidence": "high",
+          "notes": "Antifungal activity of tea tree oil terpinen-4-ol documented against this species."
+        },
+        {
+          "name": "Propionibacterium acnes",
+          "modern_identification": "Now reclassified as Cutibacterium acnes; gram-positive anaerobic bacterium implicated in acne vulgaris",
+          "identification_confidence": "high",
+          "notes": "Source uses the older taxonomic designation Propionibacterium acnes; current accepted name is Cutibacterium acnes (Lambert & Moss, 2014)."
+        }
+      ],
+      "translator_notes": "Source text is in English and required cleaning and structured extraction rather than language translation. The segment is drawn from published academic and pharmacological literature (Lassak & McCarthy, 1983; Brophy et al., CSIRO) with explicit acknowledgement of Bundjalung community collaboration — this provenance should be preserved in any archival record. Extractable materia medica data: Plant name — Melaleuca alternifolia (Tea Tree); Conditions treated — coughs, colds, headaches (inhalant), wounds, cuts, burns, skin infections (topical poultice), general wellness (bathing); Preparation methods — (1) fresh leaves crushed between hands and inhaled directly; (2) crushed leaves applied as poultice; (3) immersion in streams and pools in proximity to Melaleuca trees. The note regarding Propionibacterium acnes nomenclature (now Cutibacterium acnes) has been flagged in entity notes as the source uses the outdated designation.",
+      "_label": "lassak_mccarthy::tea_tree_melaleuca"
+    },
+    {
+      "title_inferred": "Medicinal Uses of Eucalyptus Species Among Australian Aboriginal Groups",
+      "original_text": "Eucalyptus species (multiple) — Gum Trees. Published records from multiple Australian Aboriginal groups (Lassak & McCarthy 1983; Clarke 2008, Aboriginal Plant Use in South-Eastern Australia). Aboriginal uses documented with community involvement: Leaves heated and vapour inhaled for respiratory conditions (cough, cold, congestion, fever). Warm leaf infusion as chest rub. Bark used for wound wrapping. Resin (kino) for sore throats and as antiseptic. The diversity of eucalyptus-using practices across geographically separated Aboriginal groups — despite absence of documented contact — represents internal Australian convergence. Over 700 eucalyptus species in Australia; Aboriginal communities developed pharmacological knowledge of the species in their specific territory. Active compounds: 1,8-Cineole (eucalyptol) — major compound in most species; expectorant, bronchodilator, antimicrobial. Multiple clinical trials: eucalyptus oil for COPD (positive), sinusitis (positive), dental antimicrobial. Eucalyptus global spread: now cultivated on every inhabited continent — one of the most successful plant transplants in history, with medicinal use following its spread. ⚠️ Content from published literature with documented community involvement only.",
+      "translation": "Eucalyptus species (multiple) — Gum Trees. Records drawn from published sources documenting the practices of multiple Australian Aboriginal groups (Lassak & McCarthy 1983; Clarke 2008, Aboriginal Plant Use in South-Eastern Australia), all compiled with documented community involvement. Recorded Aboriginal medicinal applications include: heating leaves and inhaling the vapour for respiratory ailments (cough, cold, nasal congestion, fever); applying a warm leaf infusion [i.e., a liquid preparation made by steeping leaves in hot water] as a chest rub; using bark strips to wrap wounds; and employing the resin [kino] to treat sore throats and as a general antiseptic. The wide distribution of eucalyptus-based medicinal practices across geographically separated Aboriginal groups — in the apparent absence of documented inter-group contact — has been interpreted as representing independent, convergent development within Australia. With over 700 eucalyptus species native to Australia, individual Aboriginal communities developed detailed pharmacological knowledge specific to the species present within their own territories. Principal active compound: 1,8-Cineole (eucalyptol), the dominant constituent of most eucalyptus species, which exhibits expectorant, bronchodilator, and antimicrobial properties. Multiple clinical trials have reported positive outcomes for eucalyptus oil in the treatment of chronic obstructive pulmonary disease (COPD), sinusitis, and dental antimicrobial applications. Eucalyptus has now been transplanted and is cultivated on every inhabited continent, making it one of the most globally successful botanical transplants in history; its medicinal use has spread in parallel with its cultivation. ⚠️ Note: Content drawn exclusively from published literature compiled with documented Aboriginal community involvement.",
+      "entities_mentioned": [
+        {
+          "name": "Eucalyptus species (multiple)",
+          "modern_identification": "Eucalyptus spp. (family Myrtaceae)",
+          "identification_confidence": "high",
+          "notes": "Over 700 species native to Australia; specific species used varied by Aboriginal group and territory. Primary active compound is 1,8-Cineole (eucalyptol)."
+        },
+        {
+          "name": "Kino (resin)",
+          "modern_identification": "Eucalyptus kino — the astringent red gum resin exuded by various Eucalyptus species",
+          "identification_confidence": "high",
+          "notes": "Kino is a traditional term for the dried resinous exudate of certain Eucalyptus species; used here as a throat remedy and topical antiseptic. Contains tannins and polyphenols with documented antimicrobial activity."
+        },
+        {
+          "name": "1,8-Cineole (eucalyptol)",
+          "modern_identification": "1,8-Cineole; CAS 470-82-6",
+          "identification_confidence": "high",
+          "notes": "Dominant volatile compound in most Eucalyptus species; well-documented expectorant, bronchodilator, and antimicrobial agent in modern pharmacology."
+        }
+      ],
+      "translator_notes": "The source text is already in English; this entry represents a translation/rendering task in the sense of standardising and clarifying the scholarly content for archival purposes. Key technical terms — 'infusion,' 'kino,' 'expectorant,' 'bronchodilator' — have been preserved and clarified in brackets or parenthetical notes where appropriate. The source explicitly flags that all content derives from published literature compiled with Aboriginal community involvement, an ethical provenance note that has been preserved prominently in the translation. The observation regarding 'convergent development' across separated Aboriginal groups is an interpretive claim made by the cited authors, not an established fact, and is rendered as such. No OCR errors detected; the source text appears clean.",
+      "_label": "lassak_mccarthy::eucalyptus_medicinal"
+    },
+    {
+      "title_inferred": "Kakadu Plum (Terminalia ferdinandiana): Aboriginal Medicinal Food and Cross-Traditional Convergence of Terminalia Species",
+      "original_text": "Kakadu Plum (Terminalia ferdinandiana) — Gubinge / Murunga. Published scientific literature (Netzel et al. 2007, Journal of Food Composition and Analysis; Gong et al. 2018, multiple papers). Aboriginal groups of the Northern Territory and Western Australia: Small sour fruit eaten fresh and dried. Used for its fortifying and disease-preventing properties — described as 'medicine food' rather than separating food and medicine functions (consistent with traditional pharmacopeias globally). Modern nutritional analysis: vitamin C content 2,000–5,300mg per 100g fresh fruit — highest documented vitamin C content of any food on Earth, approximately 100x the vitamin C of oranges. Also contains ellagic acid, gallic acid — same compounds as in the Tibetan/Ayurvedic Terminalia chebula (arura). Cross-tradition convergence: Terminalia species are the most medicinally important genus in Tibetan medicine (Three Fruits formula), in Ayurveda (Triphala), and in Australian Indigenous medicine — three completely independent traditions independently identifying Terminalia species as having exceptional medicinal/nutritional properties. Now commercially available; growing market. ⚠️ Published literature only — no sacred or restricted knowledge.",
+      "translation": "Kakadu Plum (Terminalia ferdinandiana) — also known by the Aboriginal names Gubinge and Murunga. Source: published scientific literature (Netzel et al. 2007, Journal of Food Composition and Analysis; Gong et al. 2018, multiple papers). Among Aboriginal groups of the Northern Territory and Western Australia, this small, sour fruit is consumed both fresh and dried. It is employed for its fortifying [tonic] and disease-preventing properties, and is characterised as a 'medicine food' [medicinal foodstuff], reflecting a tradition that does not draw a sharp boundary between food and medicine — a paradigm consistent with traditional pharmacopeias worldwide. Modern nutritional analysis has established a vitamin C content of 2,000–5,300 mg per 100 g of fresh fruit, the highest documented vitamin C concentration of any food on Earth, approximately one hundred times that of oranges. The fruit also contains ellagic acid and gallic acid — the same bioactive compounds found in Terminalia chebula (known as arura in Tibetan medicine) used in Tibetan and Ayurvedic traditions. A notable cross-traditional convergence is observed: Terminalia species constitute the most medicinally significant genus in Tibetan medicine (as part of the 'Three Fruits' formula [Tibetan: a-ru-ra, ba-ru-ra, skyu-ru-ra]), in Ayurveda (as part of the Triphala compound), and in Australian Indigenous medicine — three wholly independent traditions that have, independently of one another, identified Terminalia species as possessing exceptional medicinal and nutritional properties. The fruit is now commercially available and represents a growing market. ⚠️ Note: this entry is based exclusively on published scientific literature; no sacred or culturally restricted knowledge is included.",
+      "entities_mentioned": [
+        {
+          "name": "Kakadu Plum / Gubinge / Murunga",
+          "modern_identification": "Terminalia ferdinandiana Exell (Combretaceae)",
+          "identification_confidence": "high",
+          "notes": "Native to northern Australia; holds the record for highest documented vitamin C content of any food. 'Gubinge' is a common name used in Western Australia; 'Murunga' used in other regions of Aboriginal Australia."
+        },
+        {
+          "name": "Terminalia chebula (arura)",
+          "modern_identification": "Terminalia chebula Retz. (Combretaceae)",
+          "identification_confidence": "high",
+          "notes": "Central ingredient in both Tibetan medicine's 'Three Fruits' formula and Ayurveda's Triphala compound. Contains ellagic acid and gallic acid, shared with T. ferdinandiana."
+        },
+        {
+          "name": "Three Fruits formula (Tibetan medicine)",
+          "modern_identification": "Compound formulation of Terminalia chebula (a-ru-ra), Terminalia bellirica (ba-ru-ra), and Phyllanthus emblica (skyu-ru-ra)",
+          "identification_confidence": "high",
+          "notes": "One of the foundational formulas of Tibetan pharmacopeia; Terminalia chebula is considered the most important of the three."
+        },
+        {
+          "name": "Triphala (Ayurveda)",
+          "modern_identification": "Compound formulation of Terminalia chebula, Terminalia bellirica, and Phyllanthus emblica",
+          "identification_confidence": "high",
+          "notes": "Canonical Ayurvedic polyherbal preparation; closely parallels the Tibetan Three Fruits formula in composition."
+        },
+        {
+          "name": "Ellagic acid",
+          "modern_identification": "Ellagic acid (polyphenol, C14H6O8)",
+          "identification_confidence": "high",
+          "notes": "Bioactive polyphenol present in both T. ferdinandiana and T. chebula; subject of modern pharmacological research."
+        },
+        {
+          "name": "Gallic acid",
+          "modern_identification": "Gallic acid (phenolic acid, C7H6O5)",
+          "identification_confidence": "high",
+          "notes": "Bioactive phenolic acid shared across multiple Terminalia species; associated with antioxidant and antimicrobial properties."
+        }
+      ],
+      "translator_notes": "The source text is in English and required no linguistic translation; the rendered translation clarifies and expands technical, ethnobotanical, and cross-traditional references for a scholarly Materia Medica context. Tibetan-language names for the Three Fruits formula ingredients have been added in brackets for scholarly precision. The 'medicine food' [medicinal foodstuff] concept is an emic category noted in the source and preserved with a bracketed gloss. The cross-traditional convergence observation — that three independent traditions identified the same genus as medicinally exceptional — is a substantive scholarly claim worth flagging; it is well-supported in the cited literature but warrants citation scrutiny in any formal archive entry. No sacred or restricted Aboriginal knowledge is present per the source's own declaration.",
+      "_label": "lassak_mccarthy::kakadu_plum_terminalia"
+    },
+    {
+      "title_inferred": "Emu Bush (Eremophila spp.) — Aboriginal Australian Traditional Uses and Antimicrobial Research",
+      "original_text": "Emu Bush (Eremophila longifolia / E. alternifolia) — Weena (Arrernte) / Berrigan (widespread name). Published: Palombo & Semple (2001), Journal of Applied Microbiology; Cock & Mohanty (2011). Aboriginal groups of central and southern Australia: Leaves boiled in water, solution used to bathe wounds, sores, and skin infections. Steam inhaled for respiratory conditions. Hot leaf poultice applied to aching joints. Leaves waved in fire smoke and used for cleansing. Modern analysis (Palombo & Semple 2001): Eremophila longifolia leaf extract demonstrated strong antimicrobial activity against Staphylococcus aureus, Streptococcus, and Helicobacter pylori. Subsequent studies: activity against MRSA confirmed. Active compounds identified: serrulatane diterpenes (unique chemical class not found in plants from any other continent) — completely novel antimicrobial compounds. Research status: pre-clinical; no clinical trials yet. Potential significance: novel chemical class with no known antibiotic resistance, representing exactly the kind of untapped pharmacological territory the project aims to identify. Published literature only.",
+      "translation": "Emu Bush (Eremophila longifolia / E. alternifolia) — known as 'Weena' in Arrernte and 'Berrigan' more widely. Sources: Palombo & Semple (2001), Journal of Applied Microbiology; Cock & Mohanty (2011). Aboriginal peoples of central and southern Australia employed the following preparations: leaves were boiled in water, and the resulting solution was used to bathe wounds, sores, and skin infections; steam from the boiling liquid was inhaled to treat respiratory conditions; hot leaf poultices [compresses of heated leaves] were applied to aching joints; and leaves waved through fire smoke were used in ritual and physical cleansing practices. Modern laboratory analysis (Palombo & Semple 2001) demonstrated that leaf extracts of Eremophila longifolia possess strong antimicrobial activity against Staphylococcus aureus, Streptococcus species, and Helicobacter pylori. Subsequent studies have confirmed activity against methicillin-resistant Staphylococcus aureus (MRSA). The active compounds have been identified as serrulatane diterpenes [a structurally distinctive class of diterpenoid], a chemical class unique to Eremophila and not found in plants from any other continent, making them entirely novel antimicrobial agents. Current research status is pre-clinical; no human clinical trials have been conducted to date. The potential significance lies in the fact that this novel chemical class has no known associated antibiotic resistance mechanisms, representing precisely the kind of previously unexplored pharmacological territory this project seeks to document. Note: entry is based on published literature only.",
+      "entities_mentioned": [
+        {
+          "name": "Emu Bush / Weena / Berrigan",
+          "modern_identification": "Eremophila longifolia and/or Eremophila alternifolia (Scrophulariaceae / Orobanchaceae, depending on classification)",
+          "identification_confidence": "high",
+          "notes": "Both species named explicitly in source. 'Weena' is the Arrernte-language name; 'Berrigan' is a widespread common name used across multiple Aboriginal language groups and in settler Australian English. These two species are among the most medicinally documented within the large Eremophila genus (~220 species, all endemic to Australia)."
+        },
+        {
+          "name": "Serrulatane diterpenes",
+          "modern_identification": "Serrulatane-type diterpenoids (e.g., 8-hydroxyserrulat-14-en-19-oic acid and related compounds)",
+          "identification_confidence": "high",
+          "notes": "Documented as the primary antimicrobially active constituents in Eremophila longifolia. Structurally unique to the genus and continent; of particular interest in MRSA research."
+        }
+      ],
+      "translator_notes": "The source text is already in English; this entry therefore represents a structured extraction and rendering rather than a language translation per se. The warning emoji and 'Published literature only' notation in the original have been preserved in plain text in the cleaned original and reflected in the translation. The medical practices described (wound bathing, steam inhalation, poultice, smoke cleansing) map onto four distinct preparation types, which may warrant separate extraction entries for database granularity. No OCR errors detected. Identification of species is unambiguous given explicit Latin binomials in the source.",
+      "_label": "lassak_mccarthy::emu_bush_eremophila"
+    }
+  ]
+}
