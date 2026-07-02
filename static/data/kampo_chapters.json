@@ -1,0 +1,721 @@
+{
+  "job_name": "kampo-tradition-v1",
+  "completed_at": "2026-07-02T02:18:51.219494",
+  "segment_count": 20,
+  "results": [
+    {
+      "title_inferred": "Rhubarb (Daio / Da Huang) — Honzō Wamyō Entry",
+      "original_text": "大黄 (Daio / Da Huang) — Rheum palmatum / R. officinale. Honzo Wamyo entry: 大黄、和名 加波良久佐。性寒、味苦。主下瘀血、血閉、寒熱、破癥瘕積聚、留飲宿食、蕩滌腸胃、推陳致新、通利水穀、調中化食、安和五臓。Daio, Japanese name Kawarakusa. Nature: cold. Taste: bitter. Primary uses: dispels static blood, opens blocked blood, treats alternating cold and heat, breaks up accumulations and masses, dissolves retained fluids and old food, flushes and purges the intestines and stomach, eliminates the old and generates the new, facilitates passage of water and grain, regulates the middle and transforms food, calms and harmonises the five viscera. Preparation: root decocted 3-12g; reduce cooking time to preserve cathartic effect. Kampo use: Daio-kanzoto formula (rhubarb + licorice) for constipation. Contraindicated in pregnancy and weakness.",
+      "translation": "Rhubarb [大黄, Daio / Da Huang] — Japanese vernacular name: Kawarakusa [加波良久佐]. Thermal nature: cold. Flavour: bitter. Primary therapeutic actions: dispels static [stagnant] blood [瘀血, oketsu], opens blockage of blood, treats patterns of alternating cold and heat [寒熱, kannetsu], breaks up accumulations and masses [癥瘕積聚, chōka-shakkyo], dissolves retained fluids and old undigested food [留飲宿食], flushes and purges [蕩滌, tōteki] the intestines and stomach, eliminates the old and generates the new [推陳致新], facilitates the passage of water and grain [water metabolism and digestion], regulates the middle [burner] and transforms food, and calms and harmonises the five viscera [五臓, gozō]. Preparation: the root is decocted in doses of 3–12 g; cooking time should be kept short in order to preserve the cathartic [purgative] effect. Use in Kampo [Japanese classical medicine]: the formula Daio-kanzoto [大黄甘草湯, rhubarb combined with licorice root] is employed for constipation. Contraindicated during pregnancy and in patients presenting with deficiency [weakness].",
+      "entities_mentioned": [
+        {
+          "name": "大黄 / Daio / Da Huang (Kawarakusa)",
+          "modern_identification": "Rheum palmatum L. and/or Rheum officinale Baill. (Chinese / Turkish rhubarb)",
+          "identification_confidence": "high",
+          "notes": "The source text explicitly supplies the binomial identifications Rheum palmatum and R. officinale. The Japanese vernacular Kawarakusa (加波良久佐) appears in the Honzō Wamyō, a 10th-century Japanese materia medica compiled by Minamoto no Shitagō. The root (rhizome) is the medicinal part used."
+        },
+        {
+          "name": "Daio-kanzoto (大黄甘草湯)",
+          "modern_identification": "Kampo formula: Rheum palmatum root + Glycyrrhiza uralensis (licorice) root",
+          "identification_confidence": "high",
+          "notes": "A classical Kampo compound formula prescribed primarily for constipation. Corresponds to the Chinese classical formula Da Huang Gan Cao Tang from the Jinkui Yaolue."
+        },
+        {
+          "name": "Licorice (甘草, Kanzo)",
+          "modern_identification": "Glycyrrhiza uralensis Fisch. or G. glabra L.",
+          "identification_confidence": "high",
+          "notes": "Named only as a component of the Daio-kanzoto formula; not treated as a standalone entry in this segment."
+        }
+      ],
+      "translator_notes": "The source text is a hybrid document: it interleaves classical Chinese (kanbun) materia medica text drawn from the Honzō Wamyō with modern editorial annotations (binomial identification, dosage guidance, Kampo formula, contraindications). These layers have been rendered together in the translation but are distinguishable: the kanbun portion ends with 安和五臓, after which the remaining content is modern editorial commentary. The term 推陳致新 (eliminate the old, generate the new) is a classical pharmacological formula phrase describing rhubarb's cathartic-regenerative action and has been retained in brackets. Dosage range of 3–12 g reflects standard modern Kampo/TCM practice. The contraindication in pregnancy is well-attested in both historical and contemporary sources.",
+      "_label": "honzo_wamyo::daio_rhubarb"
+    },
+    {
+      "title_inferred": "Kanzo (Licorice Root) — Glycyrrhiza uralensis in Honzō Wamyō",
+      "original_text": "甘草 (Kanzo / Gan Cao) — Glycyrrhiza uralensis. 甘草、和名 阿末加都良。甘、平。主五臓六腑寒熱邪気、堅筋骨、長肌肉、倍力、金創腫、解毒。久服輕身延年。",
+      "translation": "Kanzo [甘草, 'sweet herb'], Japanese name Amakatsura [阿末加都良]. Flavour: sweet; temperament [qi]: neutral [平]. Indicated for cold and heat pathogenic factors [寒熱邪気] in the five viscera [五臓] and six bowels [六腑]; strengthens sinews and bones [筋骨]; builds flesh and muscle [肌肉]; multiplies strength [倍力]; treats swelling from metal wounds [金創腫, i.e. lacerations from bladed implements]; antidotes poisons [解毒]. Long-term use lightens the body [輕身] and extends the years of life [延年]. Kanzo is the most frequently employed herb across all of Kampo [Japanese classical medicine], appearing in approximately 70% of compound formulae in the role of harmoniser [調和] and moderator of the actions of other constituent herbs.",
+      "entities_mentioned": [
+        {
+          "name": "甘草 / Kanzo / Gan Cao / Amakatsura",
+          "modern_identification": "Glycyrrhiza uralensis Fisch. (Chinese licorice root; family Fabaceae)",
+          "identification_confidence": "high",
+          "notes": "The identification with Glycyrrhiza uralensis is explicit in the source label and is consistent with standard Kampo and Chinese materia medica scholarship. The Japanese vernacular name Amakatsura (阿末加都良) is an archaic phonetic rendering recorded in the Honzō Wamyō (本草和名, c. 918 CE). The active constituents include glycyrrhizin and liquiritin, which underpin the documented anti-inflammatory, antitoxic, and harmonising effects referenced in the classical indications."
+        }
+      ],
+      "translator_notes": "The term 金創腫 (lit. 'metal-wound swelling') refers to injuries caused by metal implements such as swords or knives — a standard classical category; rendered here as 'swelling from metal wounds' to preserve the period specificity. The phrase 輕身延年 ('lightens the body and extends life') is a conventional Daoist-inflected longevity formula appearing across many entries in the Shennong Bencao Jing tradition and should not be read as a literal pharmacological claim. The statistic that Kanzo appears in ~70% of Kampo compound formulae is an editorial note in the source segment, not a direct translation of classical text; it has been retained in the translation but is flagged here as a modern editorial interpolation rather than a primary-source statement.",
+      "_label": "honzo_wamyo::kanzo_licorice"
+    },
+    {
+      "title_inferred": "Keishi (Cinnamon Twig): Uses in Classical Japanese and Kampo Medicine",
+      "original_text": "桂枝 (Keishi / Gui Zhi) — Cinnamomum cassia (young twigs). Honzo Wamyo: 桂枝、和名 加爾。辛、温。主上気咳逆、結気喉痺吐吸、利関節、補中益気。Keishi, Japanese name Kani. Pungent, warm. Primary uses: descends rebellious qi, stops coughing, opens constricted qi in throat, facilitates movement in the joints, tonifies the middle and benefits qi. Yoshimasu Todo (18th c. Koho school): Keishi is the primary herb for dispelling cold from the surface and warming the channels. Keishi-bukuryo-gan formula (cinnamon + hoelen fungus): documented Kampo treatment for pelvic inflammatory conditions and menstrual disorders with multiple modern clinical trials.",
+      "translation": "Keishi [桂枝, also romanized from Chinese as Gui Zhi] — the young twigs of Cinnamomum cassia. According to the Honzō Wamyō [本草和名, a classical Japanese materia medica]: 'Keishi; Japanese name, Kani. [Flavor:] pungent; [nature:] warm. Principal indications: counterflow ascent of qi [上気] with coughing and rebellious breath; constricted qi [結気] causing throat obstruction [喉痺] with difficult respiration; promotes free movement in the joints; tonifies the middle burner and augments qi.' Yoshimasu Tōdō (18th century, Kohō school of Kampo): Keishi is the foremost herb for expelling cold from the body's exterior and warming the channels and vessels. The formula Keishi-bukuryō-gan [桂枝茯苓丸] — combining cinnamon twig with Poria (hoelen fungus) — is a documented Kampo compound preparation used for pelvic inflammatory conditions and menstrual disorders, and has been the subject of multiple modern clinical trials.",
+      "entities_mentioned": [
+        {
+          "name": "Keishi / 桂枝 (Gui Zhi)",
+          "modern_identification": "Cinnamomum cassia (Nees) T.Nees ex Blume — young twigs (syn. Cinnamomum aromaticum); family Lauraceae",
+          "identification_confidence": "high",
+          "notes": "Keishi specifically denotes the young twigs, distinguishing it from Keihi [桂皮], which denotes the bark. The Japanese name 'Kani' (加爾) is an archaic reading recorded in the Honzō Wamyō."
+        },
+        {
+          "name": "Honzō Wamyō (本草和名)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Classical Japanese pharmaceutical/botanical dictionary, compiled by Fukane no Sukehito, ca. 918 CE. One of the earliest Japanese materia medica texts, drawing heavily on Chinese sources."
+        },
+        {
+          "name": "Yoshimasu Tōdō (吉益東洞)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Influential Japanese physician (1702–1773), founder of the Kohō (古方) school of Kampo, which advocated return to Han-dynasty Chinese classical formulas."
+        },
+        {
+          "name": "Keishi-bukuryō-gan (桂枝茯苓丸)",
+          "modern_identification": "Classical Kampo compound formula; ingredients include Cinnamomum cassia twig, Poria cocos (hoelen), Paeonia lactiflora, Prunus persica (peach kernel), and Paeonia suffruticosa (moutan bark)",
+          "identification_confidence": "high",
+          "notes": "Originating in the Jinkui Yaolue [金匱要略] (Zhang Zhongjing, Han dynasty). Used in modern Kampo practice for gynecological blood-stasis conditions. Subject of clinical research in Japan regarding uterine fibroids and dysmenorrhea."
+        },
+        {
+          "name": "Poria / Hoelen (Bukuryo / 茯苓)",
+          "modern_identification": "Poria cocos (Schw.) Wolf; family Polyporaceae — sclerotium of a parasitic fungus",
+          "identification_confidence": "high",
+          "notes": "Referred to as 'hoelen fungus' in the source text. Standard Kampo ingredient with diuretic and calming properties according to traditional theory."
+        }
+      ],
+      "translator_notes": "The source text is a mixed-language scholarly note combining classical Chinese/Japanese characters with modern English editorial commentary; the classical Japanese passage from the Honzō Wamyō has been translated faithfully according to standard Kampo terminology. The term '吐吸' (lit. 'exhaling and inhaling') in context of '喉痺吐吸' indicates labored or obstructed respiration associated with throat bi-obstruction syndrome, rendered here as 'difficult respiration.' The segment label identifies this as part of the Materia Medica Americana project, though keishi is an East Asian drug with no indigenous American provenance; this may reflect comparative or transplant pharmacognosy scope within the archive.",
+      "_label": "honzo_wamyo::keishi_cinnamon"
+    },
+    {
+      "title_inferred": "Ma Huang (Ephedra) — Honzo Wamyo Entry with Kampo Clinical Notes",
+      "original_text": "麻黄 (Mao / Ma Huang) — Ephedra sinica. Honzo Wamyo: 麻黄、和名 宇末乃久佐。苦、温。主中風傷寒頭痛、温瘧、發表出汗、去邪熱気、止咳逆上気、除寒熱、破癥堅積聚。Mao (Ephedra), Japanese name Umanokusa. Bitter, warm. Indicated for wind-cold with headache, warm malaria, promotes sweating to dispel exterior pathogens, clears fever-heat, stops coughing and rebellious qi, dispels alternating cold and heat, breaks up hard accumulations. Kampo clinical refinement: Yoshimasu Todo noted that Japanese patients required lower doses than Chinese classical texts specified — the dosing was refined empirically over centuries. Ephedrine isolated from ma huang by Nagai Nagayoshi 1885.",
+      "translation": "Ma Huang [麻黄] — Japanese name: Umanokusa [宇末乃久佐]. Flavor: bitter; Temperament: warm. Principal indications: wind-cold [中風傷寒] with headache; warm malaria [温瘧]; promotion of sweating to expel exterior pathogens [發表出汗]; clearing of febrile heat [邪熱気]; arrest of coughing and rebellious rising qi [咳逆上気]; dispelling of alternating cold and heat [寒熱]; and breaking up of hard masses and accumulations [癥堅積聚]. Kampo clinical refinement: The physician Yoshimasu Todo observed that Japanese patients required lower doses than those prescribed in Chinese classical medical texts, and dosing was adjusted empirically over many generations of practice. The alkaloid ephedrine was first isolated from ma huang by the Japanese chemist Nagai Nagayoshi in 1885.",
+      "entities_mentioned": [
+        {
+          "name": "麻黄 / Ma Huang / Mao / Umanokusa",
+          "modern_identification": "Ephedra sinica Stapf (family Ephedraceae); source of the alkaloid ephedrine",
+          "identification_confidence": "high",
+          "notes": "The Japanese vernacular name Umanokusa (宇末乃久佐, literally 'horse grass') appears in the Honzo Wamyo, a 10th-century Japanese pharmacopoeia. The plant is used as a diaphoretic, antipyretic, antitussive, and for breaking up internal accumulations."
+        },
+        {
+          "name": "Yoshimasu Todo",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Prominent 18th-century Japanese Kampo physician (1702–1773) known for empirical revision of classical Chinese dosing protocols to suit Japanese clinical practice."
+        },
+        {
+          "name": "Nagai Nagayoshi",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Japanese chemist (1844–1929) credited with the first isolation of ephedrine from Ephedra sinica in 1885, a landmark in pharmacognosy."
+        },
+        {
+          "name": "Ephedrine",
+          "modern_identification": "Ephedrine; sympathomimetic alkaloid (C₁₀H₁₅NO)",
+          "identification_confidence": "high",
+          "notes": "Active constituent of ma huang responsible for bronchodilatory, vasopressor, and diaphoretic effects; isolation in 1885 by Nagai Nagayoshi provided a chemical basis for the plant's classical indications."
+        }
+      ],
+      "translator_notes": "The source text is a hybrid document combining: (1) the original Classical Chinese pharmacopoeial entry from the Honzo Wamyo (本草和名, ca. 918 CE) with its Japanese reading gloss; (2) an embedded English paraphrase of those classical indications; and (3) editorial annotations on Kampo dosing history and modern phytochemistry. These layers have been preserved and clearly separated in the translation. The term 'rebellious qi' [逆上気] is standard Sino-Japanese medical terminology denoting pathological upward counter-flow of breath or vital force, typically manifesting as coughing or panting. 'Hard accumulations' [癥堅積聚] refers to palpable abdominal masses recognized in classical East Asian medicine. The segment label 'honzo_wamyo::mao_ephedra' accurately identifies the primary source.",
+      "_label": "honzo_wamyo::mao_ephedra"
+    },
+    {
+      "title_inferred": "Oren (Coptis) — Properties, Uses, and Preparations",
+      "original_text": "黄連 (Oren / Huang Lian) — Coptis japonica / C. chinensis. Honzo Wamyo: 黄連、和名 加加美久佐。苦、寒。主熱気目痛、眥傷泣出、明目、腸澼腹痛下痢、婦人陰中腫痛。Oren, Japanese name Kakamikusa. Bitter, cold. Primary: heat conditions with eye pain and lacrimation, brightens vision, intestinal flux with abdominal pain and diarrhea, women's internal swelling and pain. Active compound: berberine (ベルベリン) — antimicrobial, anti-inflammatory, blood glucose regulation. Oren-gedoku-to formula: widely used in Japanese medicine for inflammatory conditions. Modern research: berberine shows clinical evidence comparable to metformin for blood glucose management in Type 2 diabetes.",
+      "translation": "Oren [黄連; Chinese: Huang Lian] — Japanese name: Kakamikusa [加加美久佐]. Taste: bitter. Thermal quality: cold. Primary indications: heat conditions accompanied by eye pain and damage to the canthi [眥傷] with lacrimation; brightens the eyes [明目]; intestinal flux [腸澼] with abdominal pain and diarrhea; internal genital swelling and pain in women [婦人陰中腫痛]. The active compound, berberine, has demonstrated antimicrobial, anti-inflammatory, and blood glucose-regulating properties. The compound formula Oren-gedoku-to [黄連解毒湯; 'Coptis Detoxifying Decoction'] is widely employed in Japanese traditional medicine for inflammatory conditions. Modern clinical research indicates that berberine exhibits efficacy comparable to metformin in the management of blood glucose in Type 2 diabetes.",
+      "entities_mentioned": [
+        {
+          "name": "黄連 (Oren / Huang Lian)",
+          "modern_identification": "Coptis japonica and/or Coptis chinensis (family Ranunculaceae)",
+          "identification_confidence": "high",
+          "notes": "Source text explicitly provides binomial identification. Japanese vernacular name given as Kakamikusa (加加美久佐). Rhizome is the medicinally used part. Rich in the isoquinoline alkaloid berberine."
+        },
+        {
+          "name": "Berberine (ベルベリン)",
+          "modern_identification": "Berberine; isoquinoline alkaloid, CAS 2086-83-1",
+          "identification_confidence": "high",
+          "notes": "Identified in source text as the principal active compound. Modern pharmacological evidence supports antimicrobial, anti-inflammatory, and antidiabetic (insulin-sensitizing) activity."
+        },
+        {
+          "name": "Oren-gedoku-to (黄連解毒湯)",
+          "modern_identification": "Classical Japanese/Chinese compound formula: Coptis Decoction to Relieve Toxicity",
+          "identification_confidence": "high",
+          "notes": "Standard Kampo formula composed of Coptis rhizome, Phellodendron bark, Gardenia fruit, and Scutellaria root. Used for inflammatory and febrile conditions. Preparation method: decoction."
+        }
+      ],
+      "translator_notes": "The source segment is a composite entry blending classical Honzo Wamyo [本草和名] text with modern pharmacological annotation. The classical section provides the original Chinese materia medica indications in kanbun; the modern section adds phytochemical and clinical research commentary. These layers are distinct in register and period and have been rendered accordingly in the translation. The term 腸澼 (chōheki / cháng pì) is translated as 'intestinal flux,' following standard historical materia medica convention for dysenteric/diarrheal conditions with mucus or blood. The term 眥傷 refers specifically to injury or irritation of the canthus (corner of the eye). No genuinely illegible passages were encountered.",
+      "_label": "honzo_wamyo::oren_coptis"
+    },
+    {
+      "title_inferred": "Bofu (Siler Root / Saposhnikovia divaricata) — Honzō Wamyō Entry",
+      "original_text": "防風 (Bofu / Fang Feng) — Saposhnikovia divaricata. Honzo Wamyo entry documenting this as a major Kampo herb for wind-type conditions. 防風、和名 加是久佐。甘、温。主大風頭眩痛、悪風風邪、目盲無所見、風行周身骨節疼痺煩満。",
+      "translation": "Bōfū [防風; Chinese: Fáng Fēng], Japanese vernacular name: Kazekusa [加是久佐, lit. 'wind-grass']. Flavour: sweet. Thermal quality: warm. Principally indicated for: major wind disease [大風] with dizziness and pain of the head; aversion to wind and wind-type pathogenic factors [悪風風邪]; blindness and inability to see [目盲無所見]; wind permeating the entire body causing pain, obstruction [痺], and fullness [煩満] of the bone joints. A prominent compound formula employing this herb is Bōfū-tsūshō-san, which remains among the most widely prescribed Kampo formulas in contemporary Japan, used clinically for obesity, metabolic syndrome, and constipation, and which has been the subject of multiple randomised controlled trials.",
+      "entities_mentioned": [
+        {
+          "name": "防風 (Bōfū / Fáng Fēng)",
+          "modern_identification": "Saposhnikovia divaricata (Trucz.) Schischk. (family Apiaceae); root used medicinally",
+          "identification_confidence": "high",
+          "notes": "Known in older Western herbalism as 'Siler'; the Japanese vernacular name Kazekusa (風草, 'wind-grass') reflects its classical association with wind-type [風] conditions in East Asian medicine."
+        },
+        {
+          "name": "Bōfū-tsūshō-san (防風通聖散)",
+          "modern_identification": "A compound Kampo formula containing Saposhnikovia divaricata root as a principal ingredient, along with approximately seventeen additional herbs",
+          "identification_confidence": "high",
+          "notes": "Not part of the Honzō Wamyō source text itself; added as contextual annotation in the source document. Modern clinical use for obesity and metabolic syndrome is supported by RCT evidence. Translators should note this is editorial supplementation, not primary-source content."
+        }
+      ],
+      "translator_notes": "The segment conflates two distinct layers: (1) the primary-source Honzō Wamyō [本草和名] entry in classical Chinese/Sino-Japanese, and (2) modern editorial annotation regarding Bōfū-tsūshō-san and clinical research. These layers have been preserved in the translation but distinguished in context. The classical indications (dizziness, joint pain, wind-obstruction, blindness) follow the standard Shennong Bencao Jing / Bencao tradition and are reproduced faithfully. The term 痺 [hi/bi] is rendered 'obstruction' following its standard Kampo gloss of impaired circulation or sensation in the limbs. 煩満 is rendered 'fullness with oppression/unease' condensed to 'fullness' for readability.",
+      "_label": "honzo_wamyo::bofu_siler"
+    },
+    {
+      "title_inferred": "Shakuyaku (Peony Root) — Paeonia lactiflora in Honzō Wamyō",
+      "original_text": "芍薬 (Shakuyaku / Shao Yao) — Paeonia lactiflora. Honzo Wamyo: 芍薬、和名 恵比須久佐。苦、平。主邪気腹痛、除血痺、破堅積、寒熱疝瘕、止痛、利小便、益気。Shakuyaku, Japanese name Ebisukusa. Bitter, neutral. Main uses: pathogenic factor causing abdominal pain, dispels blood obstruction, breaks up hard accumulations, alternating cold and heat with shan conglomeration, stops pain, promotes urination, benefits qi. Active compound: paeoniflorin — muscle relaxant, anti-spasmodic, anti-inflammatory. Shakuyaku-kanzo-to (peony + licorice): remarkable anti-spasmodic formula, RCT evidence for muscle cramps and dysmenorrhea. One of most frequently prescribed Kampo formulas.",
+      "translation": "Shakuyaku [芍薬], Japanese vernacular name Ebisukusa [恵比須久佐]. Taste: bitter; temperament [qi nature]: neutral [平, ping]. Principal indications: pathogenic qi [邪気] causing abdominal pain; dispels blood obstruction [血痺, blood impediment/stasis]; breaks up hard accumulations [堅積]; alternating cold and heat associated with shan [疝] conglomeration [瘕, mobile or fixed abdominal masses]; stops pain; promotes urination; augments qi [益気]. — The active constituent paeoniflorin acts as a muscle relaxant, anti-spasmodic, and anti-inflammatory agent. The compound Kampo formula Shakuyaku-kanzō-tō (peony root combined with licorice root) is a well-regarded anti-spasmodic preparation, supported by randomized controlled trial [RCT] evidence for the treatment of muscle cramps and dysmenorrhea, and is among the most frequently prescribed formulas in contemporary Kampo [classical Japanese herbal] medicine.",
+      "entities_mentioned": [
+        {
+          "name": "芍薬 / Shakuyaku / Shao Yao",
+          "modern_identification": "Paeonia lactiflora Pall. (Chinese peony; root used medicinally)",
+          "identification_confidence": "high",
+          "notes": "Japanese vernacular name given as Ebisukusa [恵比須久佐]. Standard medicinal peony of East Asian pharmacopoeias. Root is the officinal part."
+        },
+        {
+          "name": "Paeoniflorin",
+          "modern_identification": "Paeoniflorin (monoterpene glycoside, CAS 23180-57-6), principal bioactive constituent of Paeonia lactiflora root",
+          "identification_confidence": "high",
+          "notes": "Documented muscle relaxant, anti-spasmodic, and anti-inflammatory properties in modern pharmacological literature."
+        },
+        {
+          "name": "Shakuyaku-kanzō-tō",
+          "modern_identification": "Kampo formula composed of Paeonia lactiflora root (shakuyaku) and Glycyrrhiza uralensis / G. glabra root (kanzō, licorice)",
+          "identification_confidence": "high",
+          "notes": "Classical anti-spasmodic formula. RCT-level evidence cited for efficacy in muscle cramps and dysmenorrhea. One of the most commonly prescribed Kampo formulas in Japan."
+        },
+        {
+          "name": "Kanzō (licorice)",
+          "modern_identification": "Glycyrrhiza uralensis Fisch. or Glycyrrhiza glabra L.",
+          "identification_confidence": "high",
+          "notes": "Mentioned only as the paired ingredient in Shakuyaku-kanzō-tō; not the primary subject of this segment."
+        }
+      ],
+      "translator_notes": "The source segment is a hybrid text combining a classical Chinese/Japanese pharmacopoeia entry (Honzō Wamyō, 本草和名, c. 918 CE, compiled by Fukane no Sukehito) with modern pharmacological annotations added by a later editor or compiler. The classical portion (苦、平。主邪気腹痛…) follows the standard format of early East Asian materia medica entries and closely parallels the Shennong Bencao Jing tradition. The term 疝瘕 (shan-jia) refers to a classical diagnostic category encompassing mobile or fixed lower abdominal masses/conglomerations, often associated with hernial or gynecological pathology; translated here as 'shan conglomeration' to preserve technical precision. The annotations on paeoniflorin and RCT evidence are clearly modern interpolations and are not part of the original Honzō Wamyō text.",
+      "_label": "honzo_wamyo::shakunyaku_peony"
+    },
+    {
+      "title_inferred": "Poria (Bukuryo / Fu Ling): Medicinal Fungal Sclerotium from Pine Roots",
+      "original_text": "茯苓 (Bukuryo / Fu Ling) — Poria cocos (sclerotium of fungus growing on pine roots). Honzo Wamyo: 茯苓、和名 末都保止。甘、平。主胸脇逆気、憂恚驚邪恐悸、心下結痛、寒熱煩満咳逆、口焦舌乾、利小便。Bukuryo, Japanese name Matsuhoji (pine-holding). Sweet, neutral. Indicated for rebellious qi in the chest and ribs, worry, anger, fright, pathogenic factors, fearfulness and palpitations, painful binding below the heart, alternating cold and heat with irritability and fullness, cough with rebellious qi, dry mouth and tongue, promotes urination. Widely used Kampo sedative-calming agent. Active: pachymic acid, beta-glucans — immune modulating, anxiolytic. Keishi-bukuryo-gan: one of most clinically studied Kampo formulas, evidence for uterine fibroids, endometriosis.",
+      "translation": "Poria [茯苓, Japanese: Bukuryo; Chinese: Fu Ling] — the sclerotium of a fungus (Poria cocos) growing on pine roots. From the Honzō Wamyō [本草和名, a Japanese materia medica]: 'Bukuryo, Japanese name Matsuhoji [末都保止, meaning \"pine-holding\"]. Flavor: sweet; nature: neutral [balanced, neither warming nor cooling]. Principal indications: rebellious qi [counterflow of vital energy] in the chest and ribcage; worry, anger, fright, invasion by pathogenic factors, fearfulness, and palpitations; painful binding sensation below the heart; alternating cold and heat with irritability and fullness; cough with rebellious qi [upward counterflow]; dry mouth and parched tongue; promotes urination [diuretic action].' It is widely employed in Kampo [Japanese traditional medicine] as a sedative and calming agent. Known active constituents include pachymic acid and beta-glucans, which demonstrate immunomodulating and anxiolytic properties. The compound formula Keishi-bukuryo-gan [Cinnamon Twig and Poria Pill] is among the most extensively studied Kampo preparations, with clinical evidence supporting its use in uterine fibroids and endometriosis.",
+      "entities_mentioned": [
+        {
+          "name": "茯苓 (Bukuryo / Fu Ling)",
+          "modern_identification": "Poria cocos (Schw.) Wolf — dried sclerotium; family Polyporaceae",
+          "identification_confidence": "high",
+          "notes": "The sclerotium forms on the roots of Pinus species. Long-established identity in both Chinese and Japanese materia medica traditions. Active constituents pachymic acid and beta-glucans are pharmacologically documented."
+        },
+        {
+          "name": "Keishi-bukuryo-gan",
+          "modern_identification": "Gui Zhi Fu Ling Wan — Cinnamon Twig and Poria Pill (compound Kampo/TCM formula)",
+          "identification_confidence": "high",
+          "notes": "A classical compound formula containing Poria among other ingredients. Cited here in the context of modern clinical evidence for gynecological conditions (uterine fibroids, endometriosis)."
+        },
+        {
+          "name": "Pachymic acid",
+          "modern_identification": "A lanostane-type triterpenoid isolated from Poria cocos",
+          "identification_confidence": "high",
+          "notes": "Identified as one of the principal bioactive constituents; noted for anxiolytic and immunomodulating activity."
+        },
+        {
+          "name": "Beta-glucans",
+          "modern_identification": "Polysaccharide constituents (β-1,3/1,6-glucans) from Poria cocos",
+          "identification_confidence": "high",
+          "notes": "Well-documented immunomodulating compounds found in fungal cell walls; noted here specifically in the context of Poria cocos."
+        }
+      ],
+      "translator_notes": "The source text is a hybrid document blending classical Chinese and Japanese primary source material (the Honzō Wamyō, a 10th-century Japanese pharmaceutical glossary drawing on Chinese sources) with modern pharmacological commentary. The Chinese classical terms have been rendered with standard English equivalents used in scholarly TCM/Kampo translation (e.g., 'rebellious qi' for 逆気, 'pathogenic factors' for 邪). The Japanese name Matsuhoji [末都保止] is a phonetic rendering in man'yōgana of an archaic Japanese term for Poria, interpreted as 'pine-holding,' referencing its growth on pine roots. No genuinely illegible passages were identified. The preparation method is not explicitly described in this segment beyond the identification of the raw material (dried sclerotium) and its use in the compound formula Keishi-bukuryo-gan.",
+      "_label": "honzo_wamyo::bukuryo_poria"
+    },
+    {
+      "title_inferred": "Saikou (Bupleurum): Properties, Indications, and Uses in Honzo Wamyo",
+      "original_text": "柴胡、和名 美之末。苦、平。主心腹腸胃中結気、飲食積聚、寒熱邪気、推陳致新。久服輕身明目益精。",
+      "translation": "Saikou [柴胡, Chai Hu], Japanese name Mishima [美之末]. Flavor: bitter; nature: neutral [平, balanced/temperate]. Primary indications: constricted qi [結気] in the region of the heart, abdomen, intestines, and stomach; accumulation and stagnation of food and drink [飲食積聚]; alternating cold and heat due to pathogenic qi [寒熱邪気]; eliminates the stale and promotes the new [推陳致新]. Prolonged use lightens the body, brightens the eyes, and replenishes essential vitality [益精].",
+      "entities_mentioned": [
+        {
+          "name": "柴胡 (Saikou / Chai Hu)",
+          "modern_identification": "Bupleurum falcatum (sickle-leaf hare's ear) or related Bupleurum spp., family Apiaceae",
+          "identification_confidence": "high",
+          "notes": "Standard identification in Sino-Japanese botanical medicine. The Japanese vernacular name given is Mishima [美之末], likely referring to a regional or trade name. Saikosaponins are the principal bioactive constituents and have been the subject of modern pharmacological research for hepatoprotective and immunomodulatory effects."
+        },
+        {
+          "name": "Sho-saiko-to (小柴胡湯, Minor Bupleurum Decoction)",
+          "modern_identification": "Classical compound formula containing Bupleurum root as chief herb, combined with Scutellaria, Pinellia, Ginger, Jujube, Ginseng, and Licorice",
+          "identification_confidence": "high",
+          "notes": "This formula and its modern clinical study data appear to be editorial annotations added to the classical Honzo Wamyo source text, not part of the original historical document. They should be treated as secondary commentary rather than primary historical material."
+        }
+      ],
+      "translator_notes": "The source segment conflates two distinct layers of text: (1) the authentic classical passage from the Honzo Wamyo [本草和名], a 9th–10th century Japanese pharmacopoeia, and (2) modern editorial commentary regarding Sho-saiko-to clinical trials and saikosaponin mechanisms. The JSON translation above preserves only the classical text as the 'original_text' field. The modern commentary, while accurate in substance, is not part of the primary source and should not be attributed to the Honzo Wamyo. The condition treated corresponds to what classical Chinese medicine terms Shaoyang-pattern disorders (alternating chills and fever, digestive stagnation). Preparation method is not specified in this excerpt beyond the implied decoction (煎) standard for root medicines of this class.",
+      "_label": "honzo_wamyo::saikou_bupleurum"
+    },
+    {
+      "title_inferred": "Huang Qi / Ougi (Astragalus membranaceus) — Properties, Indications, and Modern Research",
+      "original_text": "黄耆 (Ougi / Huang Qi) — Astragalus membranaceus. Honzo Wamyo: 黄耆、和名 木乃美奈。甘、微温。主癰疽久敗瘡、排膿止痛、大風癩疾、五痔鼠瘻、補虚小児百病。",
+      "translation": "Huang Qi (Ougi), Japanese vernacular name: Konomi-na [木乃美奈]. Flavor: sweet; thermal quality: mildly warm. Primary indications: carbuncles [癰] and deep abscesses [疽] with chronically festering sores [久敗瘡]; promotes drainage of pus and alleviates pain; serious wind disease [大風] and leprous conditions [癩疾]; the five types of hemorrhoids [五痔]; mouse-track fistulas [鼠瘻, i.e., scrofulous sinus tracts]; supplements vacuity [補虛]; and the full range of children's diseases [小児百病]. In modern Kampo practice, this herb is regarded as a principal immune-tonifying agent. Bioactive constituents include astragalosides and polysaccharides. Active research areas encompass immune modulation, adjunct therapy in oncology, anti-aging effects (notably telomere-related mechanisms), and cardiac protection following myocardial infarction, the last primarily attributed to astragaloside IV.",
+      "entities_mentioned": [
+        {
+          "name": "黄耆 / Ougi / Huang Qi",
+          "modern_identification": "Astragalus membranaceus (Fisch.) Bunge (family Fabaceae)",
+          "identification_confidence": "high",
+          "notes": "One of the most extensively documented tonic herbs in East Asian medicine. The Japanese vernacular name Konomi-na [木乃美奈] appears in the Honzō Wamyō (本草和名, c. 918 CE). Modern pharmacological research focuses on astragaloside IV, cycloastragenol, and immunomodulatory polysaccharides."
+        },
+        {
+          "name": "鼠瘻 (mouse-track sores / rat-hole fistulas)",
+          "modern_identification": "Scrofulous or tuberculous cervical lymphadenitis with sinus tract formation",
+          "identification_confidence": "medium",
+          "notes": "Classical Chinese medical term for sinuous subcutaneous fistulas, traditionally associated with pathological Qi stagnation and toxic accumulation; often corresponds in modern terms to scrofula or chronic lymph node fistulas."
+        },
+        {
+          "name": "五痔 (five types of hemorrhoids)",
+          "modern_identification": "Various anorectal conditions classified in classical Chinese medicine",
+          "identification_confidence": "medium",
+          "notes": "The classical typology of five hemorrhoidal conditions (牡痔, 牝痔, 脈痔, 腸痔, 血痔) encompasses what modern medicine would categorize as internal and external hemorrhoids and related anorectal pathologies."
+        },
+        {
+          "name": "大風癩疾 (serious wind disease / leprosy)",
+          "modern_identification": "Leprosy (Mycobacterium leprae infection) or severe chronic dermatological disease",
+          "identification_confidence": "medium",
+          "notes": "大風 in classical texts frequently refers to Hansen's disease (leprosy); 癩疾 reinforces this reading, though the term was also applied broadly to severe, disfiguring skin conditions."
+        }
+      ],
+      "translator_notes": "The source segment is a composite entry blending a classical Chinese primary source passage (from the Honzō Wamyō, a 10th-century Japanese pharmacopoeia) with modern pharmacological commentary. These two strata have been preserved in the translation but are clearly delineated. The classical indications follow the standard Shennong Bencao Jing / early medieval pharmacopoeia formula for drug monographs. The Japanese vernacular reading 'Konomi-na' is a transcription of the man'yōgana spelling 木乃美奈 and is rendered phonetically; its precise botanical referent is confirmed by context. No genuinely illegible passages were encountered.",
+      "_label": "honzo_wamyo::ougi_astragalus"
+    },
+    {
+      "title_inferred": "Shimotsu-to (Four Substance Decoction): Formula, Components, and Clinical Commentary",
+      "original_text": "四物湯 (Shimotsu-to / Si Wu Tang) — Four Substance Decoction. One of the foundational blood-tonifying formulas in Kampo. Components: 当帰 (Toki/Dang Gui, Angelica sinensis) 12g + 芍薬 (Shakuyaku/Shao Yao, Paeonia lactiflora) 12g + 川芎 (Senkyu/Chuan Xiong, Ligusticum chuanxiong) 8g + 地黄 (Jio/Di Huang, Rehmannia glutinosa) 16g. Yoshimasu Todo on Shimotsu-to: This formula addresses blood deficiency patterns manifesting as pale complexion, dizziness, palpitations, menstrual irregularity, and dry skin. It was refined in Japan to use different proportions than the original Chinese formula based on clinical observation. The Koho school's emphasis on direct clinical observation and formula modification is documented in Yoshimasu Todo's Yakucho and Ruijuho. Modern research on individual components: Angelica sinensis (ferulic acid) — anti-platelet, blood-moving; Rehmannia — blood sugar regulation; Ligusticum — vasodilatory effects studied.",
+      "translation": "Four Substance Decoction [四物湯, Japanese: Shimotsu-to; Chinese: Si Wu Tang] — One of the foundational formulas for tonifying the blood [補血] in the Kampo [Japanese traditional medicine] tradition. Formula components: Toki [当帰, Dang Gui; Angelica sinensis] 12g + Shakuyaku [芍薬, Shao Yao; Paeonia lactiflora] 12g + Senkyu [川芎, Chuan Xiong; Ligusticum chuanxiong] 8g + Jio [地黄, Di Huang; Rehmannia glutinosa] 16g. Commentary of Yoshimasu Todo on Shimotsu-to: This formula is indicated for patterns of blood deficiency [血虚], presenting clinically as pallor of the complexion, dizziness, palpitations, menstrual irregularity, and dryness of the skin. In Japan, the formula was refined with proportions differing from the original Chinese prescription, on the basis of direct clinical observation. The emphasis of the Koho [古方, 'Ancient Formula'] school upon immediate clinical observation and the modification of classical formulas is documented in Yoshimasu Todo's works Yakucho [薬徴] and Ruijuho [類聚方]. Modern pharmacological research on the individual components: Angelica sinensis (active constituent: ferulic acid) — anti-platelet aggregation activity, blood-moving properties; Rehmannia glutinosa — studied for blood sugar regulation; Ligusticum chuanxiong — vasodilatory effects under investigation.",
+      "entities_mentioned": [
+        {
+          "name": "四物湯 / Shimotsu-to / Si Wu Tang (Four Substance Decoction)",
+          "modern_identification": "Compound herbal formula; no single botanical equivalent",
+          "identification_confidence": "high",
+          "notes": "A classical composite blood-tonifying formula originating in Chinese medicine and adapted in Japanese Kampo practice. Indicated for blood deficiency [血虚] patterns: pallor, dizziness, palpitations, menstrual irregularity, dry skin. Proportions vary between Chinese and Japanese traditions."
+        },
+        {
+          "name": "当帰 / Toki / Dang Gui",
+          "modern_identification": "Angelica sinensis",
+          "identification_confidence": "high",
+          "notes": "Root used as blood tonic and emmenagogue. Active constituent ferulic acid associated with anti-platelet and vasodilatory activity. Dose in this formula: 12g. Preparation: decocted."
+        },
+        {
+          "name": "芍薬 / Shakuyaku / Shao Yao",
+          "modern_identification": "Paeonia lactiflora",
+          "identification_confidence": "high",
+          "notes": "Root used to nourish blood and moderate spasm. Dose in this formula: 12g. Preparation: decocted."
+        },
+        {
+          "name": "川芎 / Senkyu / Chuan Xiong",
+          "modern_identification": "Ligusticum chuanxiong",
+          "identification_confidence": "high",
+          "notes": "Rhizome; used to invigorate blood and promote circulation. Modern research documents vasodilatory effects. Dose in this formula: 8g. Preparation: decocted."
+        },
+        {
+          "name": "地黄 / Jio / Di Huang",
+          "modern_identification": "Rehmannia glutinosa",
+          "identification_confidence": "high",
+          "notes": "Root used to nourish yin and blood. Modern research suggests effects on blood sugar regulation. Dose in this formula: 16g (heaviest component). Preparation: decocted; may be used raw or prepared [熟地黄] depending on clinical intent."
+        },
+        {
+          "name": "Yoshimasu Todo",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Prominent physician of the Japanese Koho (Ancient Formula) school [古方派]; author of Yakucho [薬徴] and Ruijuho [類聚方], foundational texts documenting clinical observation-based formula use and modification."
+        }
+      ],
+      "translator_notes": "The source text is a scholarly/editorial composite rather than a single period primary source; it blends classical formula description, historical attribution to Yoshimasu Todo, and modern pharmacological annotations. The Koho school reference and the works Yakucho and Ruijuho are historically documented; these are 18th-century Japanese texts. The modern pharmacological notes (ferulic acid, blood sugar, vasodilation) are 20th–21st century research glosses appended to the classical entry and should not be attributed to the historical primary source. Dose proportions (12:12:8:16) reflect a commonly cited Japanese Kampo variant; Chinese classical proportions differ. The condition/ailment treated is blood deficiency [血虚] with symptoms: pale complexion, dizziness, palpitations, menstrual irregularity, dry skin. Preparation method: aqueous decoction [湯, -to/-tang].",
+      "_label": "honzo_wamyo::shimotsu_to_formula"
+    },
+    {
+      "title_inferred": "Hachimi-jio-gan (Eight-Ingredient Rehmannia Pill): Kampo Kidney-Tonifying Formula",
+      "original_text": "八味地黄丸 (Hachimi-jio-gan) — Eight-Ingredient Rehmannia Pill. Foundational Kampo kidney-tonifying formula. Components: 地黄 (Rehmannia) 6g + 山薬 (Dioscoria) 3g + 山茱萸 (Cornus fruit) 3g + 茯苓 (Poria) 3g + 沢瀉 (Alisma) 3g + 牡丹皮 (Moutan bark) 3g + 桂枝 (Cinnamon twig) 1g + 附子 (Aconite, processed) 1g. Documented in Ishinho (984 CE) as adaptation of Chinese classical formula. Modern Kampo use: frequent urination, lower back weakness, cold extremities, age-related decline in men. Clinical trials for: overactive bladder (positive RCT evidence), age-related cognitive decline, diabetic neuropathy. One of the most frequently prescribed Kampo formulas in Japan's national health insurance system. Annual prescriptions in Japan: millions of defined daily doses.",
+      "translation": "Eight-Ingredient Rehmannia Pill [八味地黄丸, Hachimi-jio-gan] — A foundational Kampo [traditional Japanese medicine] formula for tonifying the kidneys [補腎]. Composition: Rehmannia [地黄, jio] 6g + Chinese Yam [山薬, Dioscorea] 3g + Cornelian Cherry fruit [山茱萸, Cornus officinalis] 3g + Poria fungus [茯苓] 3g + Water Plantain rhizome [沢瀉, Alisma] 3g + Tree Peony root bark [牡丹皮, Moutan] 3g + Cinnamon twig [桂枝] 1g + Processed Aconite root [附子, Aconitum] 1g. This formula is documented in the Ishinhō [医心方] (compiled 984 CE) as a Japanese adaptation of a classical Chinese formula. In contemporary Kampo clinical practice it is prescribed for: frequent urination, lumbar weakness [lower back debility], cold extremities, and age-related physical decline, particularly in men. It has been the subject of clinical trials addressing: overactive bladder (for which positive randomized controlled trial evidence exists), age-related cognitive decline, and diabetic neuropathy. It ranks among the most commonly prescribed Kampo formulas within Japan's national health insurance reimbursement system, with annual prescriptions numbering in the millions of defined daily doses.",
+      "entities_mentioned": [
+        {
+          "name": "地黄 (Jio / Rehmannia)",
+          "modern_identification": "Rehmannia glutinosa (Gaertn.) DC. — root, typically prepared [processed as sheng di huang or shu di huang]",
+          "identification_confidence": "high",
+          "notes": "The principal ingredient; 6g dose is the largest in the formula, consistent with its role as the chief [君薬] herb. Context does not specify raw vs. prepared form, though prepared Rehmannia is standard in this formula."
+        },
+        {
+          "name": "山薬 (Sanyaku / Dioscorea)",
+          "modern_identification": "Dioscorea japonica Thunb. or Dioscorea opposita Thunb. — rhizome",
+          "identification_confidence": "high",
+          "notes": "Source text spells 'Dioscoria'; corrected silently to 'Dioscorea'. Chinese yam, used as a spleen and kidney tonic."
+        },
+        {
+          "name": "山茱萸 (Sanshuyu / Cornus fruit)",
+          "modern_identification": "Cornus officinalis Siebold & Zucc. — dried fruit",
+          "identification_confidence": "high",
+          "notes": "Cornelian cherry; astringent kidney and liver tonic."
+        },
+        {
+          "name": "茯苓 (Bukuryo / Poria)",
+          "modern_identification": "Wolfiporia extensa (Peck) Ginns (syn. Poria cocos F.A.Wolf) — sclerotium",
+          "identification_confidence": "high",
+          "notes": "A wood-decay fungus used as a calming and diuretic agent in classical formulas."
+        },
+        {
+          "name": "沢瀉 (Takusha / Alisma)",
+          "modern_identification": "Alisma orientale (Sam.) Juz. — rhizome",
+          "identification_confidence": "high",
+          "notes": "Water plantain; diuretic component of the formula."
+        },
+        {
+          "name": "牡丹皮 (Botanpi / Moutan bark)",
+          "modern_identification": "Paeonia × suffruticosa Andrews — root bark",
+          "identification_confidence": "high",
+          "notes": "Tree peony root cortex; used for clearing heat and promoting blood circulation."
+        },
+        {
+          "name": "桂枝 (Keishi / Cinnamon twig)",
+          "modern_identification": "Cinnamomum cassia (L.) J.Presl — young branch/twig",
+          "identification_confidence": "high",
+          "notes": "Used here at low dose (1g) as a yang-warming agent; distinguishes this formula from the six-ingredient Liuwei Dihuang Wan, which lacks cinnamon and aconite."
+        },
+        {
+          "name": "附子 (Bushi / Aconite, processed)",
+          "modern_identification": "Aconitum carmichaelii Debeaux — lateral root, processed [炮附子]",
+          "identification_confidence": "high",
+          "notes": "Highly toxic in raw form; processing (炮製, hōsei) is essential to reduce aconitine content to safe levels. The low dose (1g) is standard in classical formulation. Use should be flagged in any modern pharmacovigilance context."
+        },
+        {
+          "name": "八味地黄丸 (Hachimi-jio-gan)",
+          "modern_identification": "Compound Kampo formula — no single botanical equivalent",
+          "identification_confidence": "high",
+          "notes": "Derived from the Chinese formula Jinkui Shenqi Wan [金匱腎気丸] of Zhang Zhongjing (Han dynasty). The Japanese adaptation documented in the Ishinhō (984 CE) by Tanba no Yasuyori is one of the earliest textual records of this formula in Japan."
+        }
+      ],
+      "translator_notes": "1. The source text is already largely in English with embedded classical Chinese/Japanese characters; translation has expanded and clarified all technical terms, corrected 'Dioscoria' to 'Dioscorea', and added bracketed original-language terms throughout. 2. The Ishinhō [医心方] (984 CE) is the oldest extant Japanese medical encyclopedia and its citation lends strong historical authority to this formula's provenance. 3. The processed Aconite (附子) ingredient carries significant toxicological relevance; any reproduction of this entry in a materia medica context should include a caution regarding preparation requirements and regulatory status, which varies by jurisdiction. 4. The formula's inclusion in Japan's national health insurance system (保険適用) since 1976 reflects high-level institutional validation and distinguishes it from many traditional preparations lacking regulatory standing.",
+      "_label": "honzo_wamyo::hachimi_jio_gan"
+    },
+    {
+      "title_inferred": "Toki (Dang Gui / Japanese Angelica): Uses, Properties, and Botanical Identity",
+      "original_text": "当帰 (Toki / Dang Gui) — Angelica acutiloba (Japanese species distinct from Chinese A. sinensis). Honzo Wamyo: 当帰、和名 也末止己呂。甘辛、温。主咳逆上気、温瘧寒熱洒洒在皮膚中、婦人漏下絶子、諸悪瘡瘍、金創。",
+      "translation": "Toki [当帰, also known by the Chinese name Dang Gui]. Japanese name: Yamatorokoro [也末止己呂]. Flavor: sweet-pungent; thermal quality: warm. Principal indications: cough with rebellious qi [counterflow ascent of breath]; warm malaria [温瘧] with alternating cold and heat pervading the skin; women's uterine spotting [漏下, lit. 'dripping downward'] accompanied by infertility; all malign sores and ulcers [諸悪瘡瘍]; and wounds from metal implements [金創, i.e., cuts or punctures from bladed or metal weapons/tools]. Note: Japanese Kampo [traditional Japanese medicine] employs Angelica acutiloba rather than the Chinese Angelica sinensis — a deliberate botanical distinction developed during Japan's Edo period of relative isolation — reflecting Japanese clinical observation that the local species possessed distinct properties. Active compounds include ferulic acid, Z-ligustilide, and phthalides. The herb remains a major gynecological remedy in contemporary Kampo practice.",
+      "entities_mentioned": [
+        {
+          "name": "当帰 / Toki / Dang Gui",
+          "modern_identification": "Angelica acutiloba (Japanese Kampo usage); cf. Angelica sinensis (Chinese usage)",
+          "identification_confidence": "high",
+          "notes": "The Honzo Wamyo records the Japanese vernacular name as Yamatorokoro [也末止己呂]. The deliberate substitution of A. acutiloba for A. sinensis is a documented feature of Edo-period Japanese botanical scholarship. Active compounds include ferulic acid, Z-ligustilide, and phthalides."
+        },
+        {
+          "name": "温瘧 (warm malaria)",
+          "modern_identification": "Likely corresponds to a febrile, intermittent illness with chills and heat effusion; possibly malaria (Plasmodium spp.) or other periodic febrile syndrome",
+          "identification_confidence": "medium",
+          "notes": "Classical Chinese medicine category; 'alternating cold and heat in the skin' suggests an intermittent or remittent fever pattern."
+        },
+        {
+          "name": "婦人漏下絶子 (women's uterine spotting with infertility)",
+          "modern_identification": "Uterine bleeding disorders (e.g., metrorrhagia, abnormal uterine bleeding) associated with infertility",
+          "identification_confidence": "medium",
+          "notes": "漏下 [lou xia] refers to chronic, dripping uterine bleeding below the normal menstrual cycle; 絶子 indicates failure to conceive or bear children."
+        },
+        {
+          "name": "金創 (metal wounds)",
+          "modern_identification": "Lacerations, cuts, or puncture wounds caused by metal implements (blades, weapons, tools)",
+          "identification_confidence": "high",
+          "notes": "A standard category in classical East Asian materia medica for traumatic wounds; Toki's use here likely relates to its blood-moving and wound-healing properties."
+        }
+      ],
+      "translator_notes": "The source text is a composite entry combining: (1) a transcription of the classical Honzo Wamyo [本草和名] passage in Literary Chinese/kanbun, (2) an inline English paraphrase, and (3) modern pharmacological and historical commentary. The classical Chinese portion has been translated directly; the appended English commentary has been incorporated into the translation. The Japanese phonetic gloss 也末止己呂 (Yamatorokoro) is rendered in man'yōgana [phonetic kanji] and has been transcribed accordingly. It should be noted that Yamatorokoro is the Honzo Wamyo's vernacular gloss and may differ from later Edo-period or modern Japanese names for this plant. The source's claim that A. acutiloba was a 'deliberate' Edo-period substitution is plausible but should be verified against specialist Kampo historiography.",
+      "_label": "honzo_wamyo::toki_angelica"
+    },
+    {
+      "title_inferred": "Boi-ogi-to (Stephania and Astragalus Decoction): Formula Composition, Indications, and Clinical Evidence",
+      "original_text": "防已黄耆湯 (Boi-ogi-to) — Stephania and Astragalus Decoction. Documented in Ishinho (984 CE) and standard Kampo formulary. Components: 防已 (Boii/Stephania tetrandra) 5g + 黄耆 (Ougi/Astragalus) 5g + 白术 (Byakujutsu/Atractylodes) 3g + 甘草 (Kanzo/Glycyrrhiza) 1.5g + 生姜 (Shokyo/Zingiber) 1g + 大棗 (Taiso/Jujube) 3g. Traditional indications: sweating, heaviness, joint swelling particularly in the knees, knee osteoarthritis. Modern clinical evidence: multiple Japanese RCTs for knee osteoarthritis showing significant symptom reduction. One of the best-studied Kampo formulas for musculoskeletal conditions. Mechanism: stephania tetrandrine (anti-inflammatory alkaloid) + astragalus immune modulation + atractylodes diuretic effect for joint fluid accumulation.",
+      "translation": "Boi-ogi-to [防已黄耆湯, 'Stephania and Astragalus Decoction']: A compound decoction [tō] recorded in the Ishinhō [医心方, compiled 984 CE] and included in the standard Kampo [Japanese classical herbal medicine] formulary. Composition: Bōi [防已, Stephania tetrandra root] 5 g; Ōgi [黄耆, Astragalus membranaceus root] 5 g; Byakujutsu [白术, Atractylodes macrocephala or A. japonica rhizome] 3 g; Kanzō [甘草, Glycyrrhiza uralensis root, liquorice] 1.5 g; Shōkyō [生姜, Zingiber officinale, fresh ginger] 1 g; Taisō [大棗, Ziziphus jujuba fruit, jujube] 3 g. Traditional indications: spontaneous sweating [jishukan], sensation of bodily heaviness, articular swelling with particular involvement of the knees, and knee osteoarthritis. Contemporary clinical evidence: several Japanese randomised controlled trials for knee osteoarthritis have demonstrated significant reduction of symptoms. This formula is among the most thoroughly investigated Kampo prescriptions for musculoskeletal disorders. Proposed mechanism of action: tetrandrine from Stephania (an anti-inflammatory alkaloid); immunomodulatory action of Astragalus; diuretic action of Atractylodes reducing intra-articular fluid accumulation.",
+      "entities_mentioned": [
+        {
+          "name": "防已 (Bōi / Boii)",
+          "modern_identification": "Stephania tetrandra S. Moore (family Menispermaceae); root",
+          "identification_confidence": "high",
+          "notes": "Active constituent tetrandrine is a bisbenzylisoquinoline alkaloid with documented anti-inflammatory properties. Note: 防已 may occasionally refer to Sinomenium acutum in some regional traditions; context here specifies S. tetrandra."
+        },
+        {
+          "name": "黄耆 (Ōgi / Ougi)",
+          "modern_identification": "Astragalus membranaceus (Fisch.) Bunge or A. membranaceus var. mongholicus (family Fabaceae); root",
+          "identification_confidence": "high",
+          "notes": "Classic tonic herb attributed with immunomodulatory and adaptogenic effects."
+        },
+        {
+          "name": "白术 (Byakujutsu)",
+          "modern_identification": "Atractylodes macrocephala Koidz. or Atractylodes japonica Koidz. ex Kitam. (family Asteraceae); rhizome",
+          "identification_confidence": "high",
+          "notes": "Used for its diuretic and stomachic properties; helps reduce excess fluid [dampness] in Kampo theory."
+        },
+        {
+          "name": "甘草 (Kanzō / Kanzo)",
+          "modern_identification": "Glycyrrhiza uralensis Fisch. or G. glabra L. (family Fabaceae); root and stolon [liquorice]",
+          "identification_confidence": "high",
+          "notes": "Harmonising herb in Kampo formulae; anti-inflammatory and spasmolytic properties also documented."
+        },
+        {
+          "name": "生姜 (Shōkyō / Shokyo)",
+          "modern_identification": "Zingiber officinale Roscoe (family Zingiberaceae); fresh rhizome [ginger]",
+          "identification_confidence": "high",
+          "notes": "Adjuvant ingredient; aids absorption, reduces gastrointestinal adverse effects of the formula."
+        },
+        {
+          "name": "大棗 (Taiso)",
+          "modern_identification": "Ziziphus jujuba Mill. (family Rhamnaceae); mature fruit [jujube / Chinese date]",
+          "identification_confidence": "high",
+          "notes": "Standard harmonising and tonifying adjuvant in classical Chinese and Kampo formulae."
+        },
+        {
+          "name": "防已黄耆湯 (Boi-ogi-to)",
+          "modern_identification": "Compound Kampo decoction; no single-plant identification applicable",
+          "identification_confidence": "high",
+          "notes": "Formula name romanised variously as Boiogito, Bōi-ōgi-tō, or Fang Ji Huang Qi Tang (Chinese). Documented clinical use for knee osteoarthritis with RCT support in Japan."
+        }
+      ],
+      "translator_notes": "The source text is already predominantly in English with embedded Japanese/Chinese terms; translation has formalised the phrasing, expanded abbreviations, and added botanical family designations for scholarly precision. The romanisation 'Boi-ogi-to' reflects a simplified Hepburn transcription; standard modern Hepburn would render this Bōi-ōgi-tō. 'RCT' (randomised controlled trial) is retained as standard medical terminology. The claim regarding multiple Japanese RCTs is a factual assertion in the source and has not been independently verified here; downstream editors should confirm citations. Atractylodes species identification (macrocephala vs. japonica) varies by Japanese pharmacopoeial edition; both are acceptable referents for Byakujutsu depending on source period.",
+      "_label": "honzo_wamyo::boiogito_formula"
+    },
+    {
+      "title_inferred": "Ginseng (Ninjin / Ren Shen) — Honzo Wamyo Entry with Kampo and Pharmacological Notes",
+      "original_text": "人参 (Ninjin / Ren Shen) — Panax ginseng. 人参、和名 久留万久佐。甘、微寒。主補五臓、安精神、定魂魄、止驚悸、除邪気、明目開心益智。久服軽身延年。",
+      "translation": "Ginseng [人参, Ninjin / Ren Shen] — Japanese name: Kurumakusa [久留万久佐]. Flavour: sweet; nature: mildly cold. Primary indications: tonifies the five viscera [五臓, i.e., heart, liver, spleen, lung, kidney], calms the spirit [精神], stabilises the corporeal soul [魄, pò] and the ethereal soul [魂, hún], arrests fright and palpitations [驚悸], eliminates pathogenic [evil] qi [邪気], brightens the eyes, opens the heart, and augments wisdom and intelligence. Prolonged use lightens the body and prolongs life. Kampo [Japanese classical medicine] applications: regarded as the principal herb for supplementing qi; administered at a reduced dose compared to Chinese tradition, and combined with warming herbs in order to temper its cold nature. Active constituents: ginsenosides Rb1, Rg1, and Re — possessing adaptogenic, neuroprotective, and anti-fatigue properties. More than 3,000 modern research papers exist on this substance. Clinical evidence supports its use for fatigue, immune modulation, and cognitive function in elderly patients.",
+      "entities_mentioned": [
+        {
+          "name": "人参 / Ninjin / Ren Shen (Kurumakusa)",
+          "modern_identification": "Panax ginseng C.A.Mey. (Araliaceae)",
+          "identification_confidence": "high",
+          "notes": "The Japanese vernacular name Kurumakusa [久留万久佐] is recorded in the Honzo Wamyo (本草和名, ca. 918 CE), one of Japan's earliest materia medica texts. The Kampo tradition typically uses smaller doses than the Chinese and pairs ginseng with warming agents such as dried ginger or aconite to counterbalance its mildly cold nature. The ginsenosides Rb1, Rg1, and Re are the primary pharmacologically active saponins identified in modern research."
+        }
+      ],
+      "translator_notes": "The source text is a composite entry: the classical Chinese-character passage derives from or is closely modelled on the Honzo Wamyo and ultimately on the Shennong Bencao Jing [神農本草経] tradition, while the final two sentences are modern editorial annotations summarising Kampo practice and contemporary pharmacological research. These sections have been translated accordingly but should be understood as distinct strata of the document. The terms 魂 (hún, ethereal soul) and 魄 (pò, corporeal soul) are preserved with brackets as they carry specific cosmological meanings in classical Chinese medicine that have no exact English equivalents. 'Lightens the body' [軽身] is a conventional formula in Chinese materia medica indicating enhanced vitality and agility rather than literal weight loss.",
+      "_label": "honzo_wamyo::ninjin_ginseng"
+    },
+    {
+      "title_inferred": "Shakuyaku-kanzo-to (Peony and Licorice Decoction): Formula, Historical Basis, and Clinical Evidence",
+      "original_text": "芍薬甘草湯 (Shakuyaku-kanzo-to) — Peony and Licorice Decoction. One of the most prescribed Kampo formulas in modern Japan. Components: 芍薬 (Shakuyaku/Paeonia) 20g + 甘草 (Kanzo/Glycyrrhiza) 20g. Documented in Jinkikyo (Jin Gui Yao Lue, classical Chinese), adapted in Japanese Kampo with higher doses than Chinese tradition. Traditional indications: muscle spasms, cramping, abdominal pain, leg cramps. Modern clinical applications with RCT evidence: (1) muscle cramps in hemodialysis patients — multiple Japanese RCTs showing significant reduction in cramp frequency; (2) dysmenorrhea — multiple RCTs showing comparable efficacy to NSAIDs; (3) PCOS-related androgen excess — several trials showing reduction in testosterone levels through paeoniflorin's anti-androgen mechanism; (4) chemotherapy-induced peripheral neuropathy — used in Japanese oncology. One of the most evidence-rich Kampo formulas.",
+      "translation": "Shakuyaku-kanzo-to [芍薬甘草湯], known in English as 'Peony and Licorice Decoction,' is among the most frequently prescribed Kampo [traditional Japanese herbal medicine] formulas in contemporary Japan. It is a two-ingredient preparation composed of Shakuyaku [芍薬; Paeonia lactiflora, white peony root] at 20g and Kanzo [甘草; Glycyrrhiza uralensis or G. glabra, licorice root] at 20g. The formula is documented in the Jinkikyo [仁機経; the Japanese reading of the classical Chinese text Jin Gui Yao Lue, 'Essential Prescriptions of the Golden Cabinet'], and has been adapted within the Japanese Kampo tradition at notably higher dosages than those employed in Chinese herbal practice. Traditional therapeutic indications include muscle spasms, cramping pains, abdominal pain, and leg cramps. In modern clinical usage, the formula has been evaluated in randomized controlled trials (RCTs) for the following applications: (1) muscle cramps in patients undergoing hemodialysis, with multiple Japanese RCTs demonstrating significant reduction in cramp frequency; (2) dysmenorrhea [painful menstruation], with multiple RCTs indicating efficacy comparable to non-steroidal anti-inflammatory drugs (NSAIDs); (3) androgen excess associated with polycystic ovary syndrome (PCOS), with several trials demonstrating reduction in serum testosterone levels, attributed to the anti-androgenic mechanism of paeoniflorin, an active constituent of Paeonia; and (4) chemotherapy-induced peripheral neuropathy, for which the formula is employed in Japanese oncological practice. Shakuyaku-kanzo-to is regarded as one of the Kampo formulas with the strongest evidentiary base in modern clinical medicine.",
+      "entities_mentioned": [
+        {
+          "name": "芍薬 (Shakuyaku)",
+          "modern_identification": "Paeonia lactiflora Pall. (white peony root; Paeoniae Radix Alba)",
+          "identification_confidence": "high",
+          "notes": "Active constituent paeoniflorin is highlighted for anti-androgenic properties. Standard component of Kampo and TCM formularies."
+        },
+        {
+          "name": "甘草 (Kanzo)",
+          "modern_identification": "Glycyrrhiza uralensis Fisch. or Glycyrrhiza glabra L. (licorice root; Glycyrrhizae Radix)",
+          "identification_confidence": "high",
+          "notes": "Used as a harmonizing agent in many Kampo and TCM formulas; contains glycyrrhizin and glycyrrhetinic acid. Higher doses as used in Kampo carry a risk of pseudohyperaldosteronism with prolonged use."
+        },
+        {
+          "name": "Jinkikyo (Jin Gui Yao Lue)",
+          "modern_identification": "Jin Gui Yao Lue [金匱要略], classical Chinese medical text attributed to Zhang Zhongjing (c. 3rd century CE)",
+          "identification_confidence": "high",
+          "notes": "'Jinkikyo' is the Japanese on'yomi reading of 金匱要略. The formula Shakuyaku-kanzo-to derives directly from this foundational classical source."
+        },
+        {
+          "name": "Paeoniflorin",
+          "modern_identification": "Paeoniflorin (C₂₃H₂₈O₁₁); a monoterpene glycoside and principal bioactive constituent of Paeonia lactiflora",
+          "identification_confidence": "high",
+          "notes": "Cited as the mechanism underlying the anti-androgenic effects observed in PCOS trials. Well-characterized pharmacologically."
+        }
+      ],
+      "translator_notes": "The source text is already substantially in English with Japanese terms integrated; translation has formalized and expanded the clinical and historical context. The romanization 'Jinkikyo' for 金匱要略 is an unusual Japanese reading; the standard Japanese title is Kinki Yōryaku (金匱要略), though 'Jinkikyo' may reflect an older or variant reading. This should be flagged for editorial review. Dosage discrepancy between Japanese Kampo and Chinese TCM practice (higher doses in Kampo) is noted and preserved as clinically significant. Risk of adverse effects from high-dose Kanzo (pseudohyperaldosteronism) is not mentioned in the source but may be worth noting in a pharmacological annotation.",
+      "_label": "honzo_wamyo::shoyakukanzo_formula"
+    },
+    {
+      "title_inferred": "Sho-saiko-to (Minor Bupleurum Decoction): Classical Kampo Formula — Composition, Indications, and Pharmacovigilance",
+      "original_text": "小柴胡湯 (Sho-saiko-to) — Minor Bupleurum Decoction. Classical Kampo formula documented from earliest Japanese adaptation of Chinese medicine. Components: 柴胡 (Saikou/Bupleurum) 7g + 半夏 (Hange/Pinellia) 5g + 生姜 (Shokyo/Ginger) 4g + 黄芩 (Ogon/Scutellaria) 3g + 人参 (Ninjin/Ginseng) 3g + 甘草 (Kanzo/Licorice) 2g + 大棗 (Taiso/Jujube) 3g. Traditional indications: alternating fever and chills, bitter taste in mouth, dry throat, nausea, chest and hypochondriac fullness. Modern applications: extensively studied in Japan for chronic hepatitis B and C — multiple large RCTs showing hepatoprotective effects, reduction of hepatitis B surface antigen levels, and reduction in liver cancer risk in cirrhotic patients. Mechanism: saikosaponins modulate NF-kB inflammatory pathway, Scutellaria baicalensis (baicalin) — antiviral and anti-inflammatory. Contraindication discovered 1994: should not be combined with interferon — severe interstitial pneumonia risk. This contraindication discovery from post-marketing surveillance in Japan is a model for traditional medicine pharmacovigilance.",
+      "translation": "Sho-saiko-to [Small Bupleurum Decoction; Chinese: Xiao Chai Hu Tang] — Minor Bupleurum Decoction. This is a classical Kampo [Japanese traditional medicine] compound formula, documented from the earliest period of Japanese adaptation of Chinese medical tradition. Constituent ingredients and standard dosages: Saikou [柴胡, Bupleurum root] 7 g; Hange [半夏, Pinellia rhizome] 5 g; Shokyo [生姜, fresh Ginger rhizome] 4 g; Ogon [黄芩, Scutellaria root] 3 g; Ninjin [人参, Ginseng root] 3 g; Kanzo [甘草, Licorice root] 2 g; Taiso [大棗, Jujube fruit] 3 g. Traditional indications [as recognised in classical Kampo nosology]: alternating fever and chills [a 'Shao-yang stage' [少陽病] presentation], bitter taste in the mouth, dry throat, nausea, and a sensation of fullness in the chest and hypochondriac [subcostal] regions. Modern clinical applications: the formula has been extensively investigated in Japan for the treatment of chronic hepatitis B and C. Multiple large randomised controlled trials have demonstrated hepatoprotective effects, reduction in hepatitis B surface antigen [HBsAg] levels, and a measurable reduction in the risk of hepatocellular carcinoma [liver cancer] in cirrhotic patients. Proposed pharmacological mechanisms: saikosaponins [the principal active constituents of Bupleurum] modulate the NF-κB inflammatory signalling pathway; baicalin, derived from Scutellaria baicalensis [Chinese skullcap], exerts antiviral and anti-inflammatory actions. Important contraindication identified in 1994: co-administration with interferon [α-interferon, used in antiviral therapy] is contraindicated owing to the risk of severe interstitial pneumonia. The identification of this contraindication through post-marketing surveillance [pharmacovigilance] in Japan has been cited as a paradigmatic example of safety monitoring for traditional medicine products.",
+      "entities_mentioned": [
+        {
+          "name": "柴胡 / Saikou / Bupleurum (Sho-saiko-to formula as a whole)",
+          "modern_identification": "Sho-saiko-to = Xiao Chai Hu Tang; multi-herb Kampo/TCM decoction formula",
+          "identification_confidence": "high",
+          "notes": "The formula originates in the Shang Han Lun (c. 200 CE) and is among the most extensively studied Kampo formulas in modern Japanese clinical research."
+        },
+        {
+          "name": "柴胡 / Saikou / Bupleurum root",
+          "modern_identification": "Bupleurum falcatum L. (Apiaceae); also B. chinense DC.",
+          "identification_confidence": "high",
+          "notes": "Principal herb of the formula; saikosaponins are its major bioactive constituents and are held responsible for immunomodulatory and hepatoprotective effects."
+        },
+        {
+          "name": "半夏 / Hange / Pinellia rhizome",
+          "modern_identification": "Pinellia ternata (Thunb.) Makino (Araceae)",
+          "identification_confidence": "high",
+          "notes": "Used in processed (processed with ginger or alum) form in Kampo to reduce toxicity; anti-emetic and expectorant properties."
+        },
+        {
+          "name": "生姜 / Shokyo / Fresh Ginger",
+          "modern_identification": "Zingiber officinale Roscoe (Zingiberaceae)",
+          "identification_confidence": "high",
+          "notes": "Used fresh (生姜) in this formula; serves as an adjuvant to moderate Pinellia's toxicity and to harmonise the stomach."
+        },
+        {
+          "name": "黄芩 / Ogon / Scutellaria root",
+          "modern_identification": "Scutellaria baicalensis Georgi (Lamiaceae)",
+          "identification_confidence": "high",
+          "notes": "Source of baicalin and baicalein; documented antiviral (including anti-hepatitis B), anti-inflammatory, and antioxidant properties."
+        },
+        {
+          "name": "人参 / Ninjin / Ginseng root",
+          "modern_identification": "Panax ginseng C.A.Mey. (Araliaceae)",
+          "identification_confidence": "high",
+          "notes": "Tonic and adaptogenic herb; in this formula functions to support 'Zheng Qi' [vital energy/immune defence] and tonify the spleen and stomach."
+        },
+        {
+          "name": "甘草 / Kanzo / Licorice root",
+          "modern_identification": "Glycyrrhiza uralensis Fisch. ex DC. or G. glabra L. (Fabaceae)",
+          "identification_confidence": "high",
+          "notes": "Harmonising herb in the formula; glycyrrhizin is independently recognised for hepatoprotective and anti-inflammatory activity."
+        },
+        {
+          "name": "大棗 / Taiso / Jujube fruit",
+          "modern_identification": "Ziziphus jujuba Mill. (Rhamnaceae)",
+          "identification_confidence": "high",
+          "notes": "Nutritive tonic; used to moderate the formula's properties and protect the gastrointestinal tract."
+        }
+      ],
+      "translator_notes": "The source text is already substantially in English with embedded Japanese/Chinese terminology; translation effort here consists principally of expanding, clarifying, and contextualising the technical and historical content for a scholarly Materia Medica audience. The 1994 interferon–Sho-saiko-to interaction is a well-documented pharmacovigilance event in Japan; the resulting regulatory action (contraindication labelling by the Japanese Ministry of Health and Welfare) is historically significant for evidence-based integration of traditional medicines. The condition description 'alternating fever and chills, bitter taste in mouth, dry throat, nausea, chest and hypochondriac fullness' corresponds precisely to the classical Shang Han Lun description of the Shao-yang [少陽] disease stage, which is the primary indication for this formula in classical sources. 'Hypochondriac fullness' here refers to subcostal / lateral costal fullness [胸脇苦満, kyokyo-kuman in Kampo], a key diagnostic sign. NF-κB has been rendered NF-κB (retaining the standard biochemical symbol) rather than 'NF-kB' as in the source.",
+      "_label": "honzo_wamyo::shosaikoto_formula"
+    },
+    {
+      "title_inferred": "Kakkonto (Kudzu Combination Decoction): Formula Composition, Traditional Indications, and Modern Applications",
+      "original_text": "葛根湯 (Kakkon-to) — Kudzu Combination Decoction. Most widely recognised Kampo formula in Japan. Components: 葛根 (Kakkon/Pueraria lobata root) 8g + 麻黄 (Mao/Ephedra) 4g + 桂枝 (Keishi/Cinnamon) 3g + 芍薬 (Shakuyaku/Peony) 3g + 大棗 (Taiso/Jujube) 4g + 生姜 (Shokyo/Ginger) 4g + 甘草 (Kanzo/Licorice) 2g. Traditional indications: early stage cold or flu with stiffness of the back of the neck and upper back, fever without sweating, aversion to cold. Documented in Ishinho (984 CE) and standard Kampo practice throughout Japanese history. Modern applications: most frequently prescribed Kampo formula for common cold. Over-the-counter availability in Japan. Active in early viral infection stage. Puerarin (from kudzu root): vasodilatory, anti-platelet effects studied for cardiovascular applications. Used in Japanese emergency medicine for early-stage fever. Multiple observational studies showing shorter duration of common cold symptoms.",
+      "translation": "Kakkonto [葛根湯, 'Kudzu Combination Decoction']: The most widely recognised formula [処方, shohō] in the Japanese Kampo [漢方] tradition. Composition: Kakkon [葛根, Pueraria lobata root] 8g; Mao [麻黄, Ephedra herb] 4g; Keishi [桂枝, Cinnamomum cassia twig] 3g; Shakuyaku [芍薬, Paeonia lactiflora root] 3g; Taiso [大棗, Ziziphus jujuba fruit] 4g; Shokyo [生姜, fresh Zingiber officinale rhizome] 4g; Kanzo [甘草, Glycyrrhiza uralensis root] 2g. Traditional indications [適応症]: early-stage cold or influenza presenting with rigidity of the nape of the neck and upper back, fever without perspiration, and aversion to cold [悪寒, okan]. First documented in the Ishinhō [医心方] (compiled 984 CE) and employed continuously in standard Kampo clinical practice throughout Japanese medical history. Contemporary applications: the most frequently prescribed Kampo formula for the common cold; available without prescription [over-the-counter] in Japan. Indicated during the early stage of viral infection. The constituent compound puerarin [プエラリン], derived from kudzu root [葛根], has been investigated for vasodilatory and anti-platelet properties with potential cardiovascular applications. The formula is also employed in Japanese emergency medicine settings for early-stage febrile illness. Multiple observational studies report a reduction in the duration of common cold symptoms following its administration.",
+      "entities_mentioned": [
+        {
+          "name": "葛根 (Kakkon) / Pueraria lobata root",
+          "modern_identification": "Pueraria montana var. lobata (Willd.) Sanjappa & Pradeep — kudzu root",
+          "identification_confidence": "high",
+          "notes": "Principal herb of the formula; contains the isoflavone puerarin, studied for vasodilatory and anti-platelet cardiovascular effects."
+        },
+        {
+          "name": "麻黄 (Mao) / Ephedra",
+          "modern_identification": "Ephedra sinica Stapf (or related Ephedra spp.) — ma-huang herb",
+          "identification_confidence": "high",
+          "notes": "Source of ephedrine alkaloids; diaphoretic and bronchodilatory properties relevant to the anti-febrile action of the formula."
+        },
+        {
+          "name": "桂枝 (Keishi) / Cinnamon twig",
+          "modern_identification": "Cinnamomum cassia (L.) J.Presl — cassia cinnamon twig",
+          "identification_confidence": "high",
+          "notes": "Warming, circulatory-stimulating herb; used in Kampo as twig [枝, shi] rather than bark to differentiate from the stronger Keihi [桂皮]."
+        },
+        {
+          "name": "芍薬 (Shakuyaku) / Peony root",
+          "modern_identification": "Paeonia lactiflora Pall. — white peony root",
+          "identification_confidence": "high",
+          "notes": "Antispasmodic; used here to relieve muscular tension and neck stiffness."
+        },
+        {
+          "name": "大棗 (Taiso) / Jujube fruit",
+          "modern_identification": "Ziziphus jujuba Mill. — common jujube",
+          "identification_confidence": "high",
+          "notes": "Harmonising herb in traditional Kampo formulae; also provides mild tonic and nutritive support."
+        },
+        {
+          "name": "生姜 (Shokyo) / Fresh ginger",
+          "modern_identification": "Zingiber officinale Roscoe — ginger rhizome (fresh form)",
+          "identification_confidence": "high",
+          "notes": "Diaphoretic and anti-nausea herb; the fresh form [生姜, shokyo] is distinguished from dried ginger [乾姜, kankyo] in Kampo dosing."
+        },
+        {
+          "name": "甘草 (Kanzo) / Licorice root",
+          "modern_identification": "Glycyrrhiza uralensis Fisch. ex DC. — Chinese licorice root",
+          "identification_confidence": "high",
+          "notes": "Universal harmonising herb in Kampo; anti-inflammatory and demulcent; moderates the harshness of other formula components."
+        },
+        {
+          "name": "Kakkonto [葛根湯] — compound formula",
+          "modern_identification": "Standardised Kampo polypharmaceutical preparation (TJ-1 in Tsumura numbering)",
+          "identification_confidence": "high",
+          "notes": "Formula-level entry. First recorded in the Ishinhō (984 CE); ultimately traceable to the Chinese Shanghanlun [傷寒論] classical tradition. Available OTC in Japan; subject to multiple modern clinical observational studies for common cold."
+        }
+      ],
+      "translator_notes": "The source text is already substantially in English with Japanese terms and romanisations embedded; translation work here primarily involves rendering the Japanese-language terms into properly contextualised scholarly English, clarifying Kampo-specific technical vocabulary, and organising the botanical identifications. 'Ishinhō' [医心方], compiled by Tamba no Yasuyori in 984 CE, is Japan's oldest extant medical encyclopaedia and the earliest Japanese documentary source cited. The distinction between Keishi [桂枝, cinnamon twig] and Keihi [桂皮, cinnamon bark] is clinically significant in Kampo and has been preserved in the translation notes. Puerarin's cardiovascular applications are noted as 'studied' — the translation preserves this appropriately cautious framing from the source.",
+      "_label": "honzo_wamyo::kakkonto_formula"
+    },
+    {
+      "title_inferred": "Gardenia Fruit (Sanshishi / Zhi Zi) in Honzo Wamyo: Properties, Indications, and Active Compounds",
+      "original_text": "山梔子 (Sanshishi / Zhi Zi) — Gardenia jasminoides fruit. Honzo Wamyo: 山梔子、和名 久知奈之。苦、寒。主五内邪気、胃中熱気、面赤酒皰皶鼻、白癩赤癩瘡瘍。",
+      "translation": "Sanshishi [Mountain Gardenia Fruit; Chin. Zhi Zi], Japanese vernacular name: Kuchinashi [久知奈之]. Flavor: bitter. Thermal nature: cold. Indicated for: pathogenic qi [邪気, evil qi] in the five viscera [五内, i.e., the five organ systems]; heat qi [熱気] in the stomach; redness of the face and rosacea [酒皰皶鼻, lit. 'wine-blotch red nose,' i.e., acne rosacea]; white leprosy and red leprosy [白癩・赤癩, likely referring to distinct forms of leprous or depigmenting skin disease]; sores and ulcers [瘡瘍]. Principal use in Kampo medicine: a heat-clearing [清熱] herb for inflammatory conditions. Active constituent of pharmacological note: genipin, studied for neuroprotective effects (anti-inflammatory activity in the central nervous system), hepatoprotection, antidepressant activity (in animal models), and antidiabetic activity. Cross-traditional note: gardenia fruit is employed with essentially identical indications in both Chinese medicine and the Japanese Kampo tradition, constituting a within-East-Asian convergence signal for this drug's therapeutic profile.",
+      "entities_mentioned": [
+        {
+          "name": "山梔子 (Sanshishi / Zhi Zi; Japanese vernacular: Kuchinashi)",
+          "modern_identification": "Gardenia jasminoides Ellis, fruit (family Rubiaceae)",
+          "identification_confidence": "high",
+          "notes": "Explicitly identified in source as Gardenia jasminoides fruit. The vernacular name Kuchinashi (久知奈之) is the standard Japanese name for this plant, consistent with Honzo Wamyo orthography."
+        },
+        {
+          "name": "Genipin",
+          "modern_identification": "Genipin (CAS 6902-77-8), an iridoid aglycone derived from geniposide found in Gardenia jasminoides fruit",
+          "identification_confidence": "high",
+          "notes": "Active compound cited in the source annotation. Well-documented in modern pharmacological literature for hepatoprotective, neuroprotective, antidepressant (animal models), and antidiabetic properties."
+        },
+        {
+          "name": "五内邪気 (pathogenic qi in the five viscera)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Classical Chinese medical concept; no direct modern biomedical equivalent. Refers to pathological states affecting the five organ systems (heart, liver, spleen, lung, kidney)."
+        },
+        {
+          "name": "酒皰皶鼻 (wine-blotch red nose / rosacea)",
+          "modern_identification": "Acne rosacea or rhinophyma",
+          "identification_confidence": "medium",
+          "notes": "Classical term for facial redness and nasal pustular eruption associated with alcohol; modern correlate is most likely rosacea."
+        },
+        {
+          "name": "白癩・赤癩 (white leprosy / red leprosy)",
+          "modern_identification": "Possibly leprosy (Mycobacterium leprae) or other chronic depigmenting/erythematous skin diseases",
+          "identification_confidence": "low",
+          "notes": "These classical categories do not map cleanly onto modern dermatological nosology. 白癩 may correspond to depigmenting conditions (possibly vitiligo or tuberculoid leprosy); 赤癩 to erythematous forms. Identification remains uncertain."
+        }
+      ],
+      "translator_notes": "The source segment is a hybrid scholarly annotation combining: (1) a classical Chinese-language materia medica entry from the Honzo Wamyo [本草和名, c. 918 CE, compiled by Fukane no Sukehito], (2) modern pharmacological commentary, and (3) a methodological 'convergence signal' note. The translation separates these layers for clarity. The Japanese vernacular transcription 久知奈之 uses Man'yogana phonetic rendering of 'Kuchinashi,' the standard Japanese name still in use today. The thermal/flavor classification (苦・寒, bitter-cold) is a standard Chinese medicine drug property designation and has been preserved with bracketed explanation.",
+      "_label": "honzo_wamyo::sanshishi_gardenia"
+    },
+    {
+      "title_inferred": "Byakujutsu (White Atractylodes): Honzo Wamyo Entry and Kampo Clinical Notes",
+      "original_text": "白术 (Byakujutsu / Bai Zhu) — Atractylodes japonica (Japanese species) / A. macrocephala (Chinese species). Kampo uses Japanese species — distinct from Chinese use, representing independent clinical development. Honzo Wamyo: 白术、和名 於介良。苦、温。主風寒湿痺死肌、痙疸、止汗除熱、消食。Byakujutsu, Japanese name Okera. Bitter, warm. Main: wind-cold-damp obstruction with insensate flesh, spasms and jaundice, stops sweating, eliminates heat, promotes food digestion. The Japanese Kampo preference for A. japonica over A. macrocephala developed during the Edo period of isolation and is documented by Koho school physicians as reflecting genuinely different clinical properties. Active: atractylodin, beta-eudesmol — anti-inflammatory, gastroprotective, immune-modulating. Major digestive herb in Kampo formulas.",
+      "translation": "Byakujutsu [白术; Japanese: Byakujutsu; Chinese: Bai Zhu] — species: Atractylodes japonica (Japanese) or A. macrocephala (Chinese). Kampo medicine employs the Japanese species, representing an independent clinical tradition distinct from Chinese practice.\n\nFrom the Honzo Wamyo [本草和名, 'Japanese Names for Materia Medica']: Byakujutsu; Japanese vernacular name: Okera [於介良]. Flavor: bitter. Thermal nature: warm. Primary indications: obstruction [bi 痺] due to wind, cold, and dampness with insensate or necrotic flesh [死肌]; convulsions/spasms [痙]; jaundice [疸]; arrests spontaneous sweating; eliminates [pathogenic] heat; promotes digestion and dispels food stagnation.\n\nThe Japanese Kampo preference for A. japonica over A. macrocephala emerged during the Edo period of national isolation and is attested by physicians of the Koho [古方, 'Ancient Formula'] school, who regarded the two species as possessing genuinely distinct clinical properties. Known active constituents include atractylodin and beta-eudesmol, with documented anti-inflammatory, gastroprotective, and immune-modulating activity. Byakujutsu functions as a principal digestive herb in numerous Kampo compound formulas.",
+      "entities_mentioned": [
+        {
+          "name": "Byakujutsu / Bai Zhu (白术)",
+          "modern_identification": "Atractylodes japonica Koidz. (Japanese Kampo usage) / Atractylodes macrocephala Koidz. (Chinese usage); family Asteraceae",
+          "identification_confidence": "high",
+          "notes": "The Honzo Wamyo gives the Japanese vernacular name as Okera (於介良), which in modern Japanese botanical usage refers specifically to A. japonica. The distinction between the Japanese and Chinese species is clinically significant in Kampo tradition and is explicitly acknowledged in Edo-period Koho school texts."
+        },
+        {
+          "name": "Okera (於介良)",
+          "modern_identification": "Atractylodes japonica Koidz.",
+          "identification_confidence": "high",
+          "notes": "Traditional Japanese vernacular name recorded in the Honzo Wamyo; still in use in modern Japanese botanical nomenclature."
+        },
+        {
+          "name": "Atractylodin",
+          "modern_identification": "Polyacetylene compound isolated from Atractylodes spp.",
+          "identification_confidence": "high",
+          "notes": "A principal bioactive constituent; documented anti-inflammatory and gastroprotective properties."
+        },
+        {
+          "name": "Beta-eudesmol",
+          "modern_identification": "Sesquiterpene alcohol found in Atractylodes spp.",
+          "identification_confidence": "high",
+          "notes": "Immune-modulating and neurological activity documented in modern pharmacological literature."
+        },
+        {
+          "name": "Koho school (古方派)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Influential Edo-period Japanese medical school advocating return to classical Chinese formula texts (Zhang Zhongjing tradition); relevant here as the tradition that documented the clinical differentiation of A. japonica from A. macrocephala."
+        }
+      ],
+      "translator_notes": "The source text is a composite editorial entry blending (1) the classical Chinese/Japanese Honzo Wamyo citation in Literary Chinese, (2) a romanized Japanese reading, and (3) modern pharmacological and historiographical commentary. These layers have been preserved and distinguished in the translation. The term 死肌 (shi ji), rendered here as 'insensate or necrotic flesh,' literally means 'dead muscle/flesh' and refers in classical Chinese medicine to areas of numbness or sensory loss associated with bi [obstruction] syndrome; this rendering follows standard Kampo and TCM translation conventions. The Honzo Wamyo (918 CE, compiled by Minamoto no Shitagō) is the earliest extant Japanese materia medica glossary and is a primary source of significant scholarly value.",
+      "_label": "honzo_wamyo::byakujutsu_atractylodes"
+    }
+  ]
+}
