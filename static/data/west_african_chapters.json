@@ -1,0 +1,366 @@
+{
+  "job_name": "west-african-tradition-v1",
+  "completed_at": "2026-07-02T10:47:54.056330",
+  "segment_count": 10,
+  "results": [
+    {
+      "title_inferred": "Calabar Bean (Physostigma venenosum): Ordeal Poison, Ophthalmic Use, and the Discovery of Physostigmine",
+      "original_text": "Physostigma venenosum — Calabar Bean, Efik: Esère, Calabar Nigeria. Dalziel (1937). Used as ordeal poison in judicial trials and by healers for eye conditions ('clouding of vision' = glaucoma). Daniel (1846) documented; Christison (1855) pharmacological study; Fraser (1863) isolated physostigmine (eserine). First glaucoma treatment: Laqueur (1876). Active compound: physostigmine — reversible acetylcholinesterase inhibitor. Foundation of cholinergic pharmacology. Modern descendants: neostigmine, pyridostigmine (myasthenia gravis, nerve agent antidote).",
+      "original_text_language": "English (technical/scholarly notes)",
+      "translation": "Physostigma venenosum — the Calabar Bean, known in the Efik language as 'Esère', from Calabar, Nigeria. As recorded by Dalziel (1937), this plant was employed both as an ordeal poison administered during judicial trials and by traditional healers for eye conditions described as 'clouding of vision' — now identified as glaucoma. The plant was first formally documented by Daniel (1846); a pharmacological study was conducted by Christison (1855); and Fraser (1863) isolated the active alkaloid physostigmine (also called eserine). The first documented therapeutic use of physostigmine for glaucoma treatment was by Laqueur (1876). The active compound, physostigmine, acts as a reversible inhibitor of acetylcholinesterase [an enzyme that breaks down the neurotransmitter acetylcholine], and its study laid the foundation for cholinergic pharmacology. Modern synthetic descendants of this compound include neostigmine and pyridostigmine, used today in the treatment of myasthenia gravis and as antidotes to nerve agent poisoning.",
+      "entities_mentioned": [
+        {
+          "name": "Physostigma venenosum",
+          "modern_identification": "Physostigma venenosum Balf. (Fabaceae) — Calabar Bean",
+          "identification_confidence": "high",
+          "notes": "Tropical African legume; seeds contain physostigmine (eserine). Native to the Niger Delta region of Nigeria."
+        },
+        {
+          "name": "Esère",
+          "modern_identification": "Physostigma venenosum",
+          "identification_confidence": "high",
+          "notes": "Efik-language name for the Calabar Bean, used in the Calabar region of southeastern Nigeria."
+        },
+        {
+          "name": "physostigmine (eserine)",
+          "modern_identification": "Physostigmine; CAS 57-47-6; reversible acetylcholinesterase inhibitor",
+          "identification_confidence": "high",
+          "notes": "Isolated by Fraser (1863). First used clinically for glaucoma by Laqueur (1876). Prototype compound for cholinergic pharmacology."
+        },
+        {
+          "name": "neostigmine",
+          "modern_identification": "Neostigmine bromide/methylsulfate; synthetic cholinesterase inhibitor",
+          "identification_confidence": "high",
+          "notes": "Synthetic descendant of physostigmine; used in treatment of myasthenia gravis and as a nerve agent antidote."
+        },
+        {
+          "name": "pyridostigmine",
+          "modern_identification": "Pyridostigmine bromide; synthetic cholinesterase inhibitor",
+          "identification_confidence": "high",
+          "notes": "Synthetic descendant of physostigmine; used in myasthenia gravis and as a prophylactic/antidote for organophosphate nerve agent exposure."
+        }
+      ],
+      "extracted_medical_data": {
+        "plant_name": "Physostigma venenosum (Calabar Bean; Efik: Esère)",
+        "conditions_treated": [
+          "Glaucoma ('clouding of vision')",
+          "General eye conditions",
+          "Use as judicial ordeal poison (not strictly therapeutic)"
+        ],
+        "preparation_method": "Seeds administered orally as an ordeal poison in judicial contexts; ophthalmic application (topical instillation into eye) documented by Laqueur (1876) for glaucoma",
+        "active_compound": "Physostigmine (eserine) — reversible acetylcholinesterase inhibitor"
+      },
+      "translator_notes": "This segment is already in English and functions as condensed scholarly notes rather than a narrative primary source passage. The translation expands and clarifies the abbreviated note-form for archival readability. Key historical figures cited: Dalziel (1937, West African Plants), Daniel (1846, first ethnobotanical documentation), Christison (1855, toxicological/pharmacological study), Fraser (1863, isolation of physostigmine), Laqueur (1876, first clinical glaucoma use). The term 'ordeal poison' refers to the West African judicial practice of trial by ordeal, in which an accused person was compelled to consume the bean — survival was taken as proof of innocence. This practice is of significant ethnopharmacological and historical interest.",
+      "_label": "dalziel::physostigma_venenosum"
+    },
+    {
+      "title_inferred": "Garcinia kola (Bitter Kola): Traditional Uses, Pharmacology, and Clinical Evidence",
+      "original_text": "Garcinia kola — Bitter Kola. Yoruba: Orogbo. Igbo: Akiilu. Dalziel (1937). Seeds chewed for cough, chest complaints, liver disease, male fertility. Pharmacology: kolaviron (biflavonoid) — hepatoprotective, anti-inflammatory. Clinical evidence: Annals of Thoracic Medicine (2009) clinical study showing lung function improvement. HIV: anti-HIV activity studied in vitro. Traditional use for respiratory conditions validated by bronchodilator activity of flavonoid components.",
+      "translation": "Garcinia kola — Bitter Kola. Yoruba name: Orogbo. Igbo name: Akiilu. Source: Dalziel (1937). The seeds are chewed as a remedy for cough, chest complaints [respiratory ailments], liver disease, and impaired male fertility. Pharmacological notes: the compound kolaviron, a biflavonoid constituent, has demonstrated hepatoprotective [liver-protecting] and anti-inflammatory properties. Clinical evidence: a clinical study published in the Annals of Thoracic Medicine (2009) reported measurable improvement in lung function. Antiviral activity: anti-HIV activity has been investigated in vitro. The traditional application of this plant to respiratory conditions is supported by the documented bronchodilator activity of its flavonoid components.",
+      "entities_mentioned": [
+        {
+          "name": "Garcinia kola",
+          "modern_identification": "Garcinia kola Heckel (family Clusiaceae / Guttiferae) — Bitter Kola",
+          "identification_confidence": "high",
+          "notes": "A West African tree. Seeds are the primary medicinal part. Vernacular names Orogbo (Yoruba) and Akiilu (Igbo) are well-attested in Nigerian ethnobotanical literature. Dalziel (1937) refers to J. M. Dalziel, 'The Useful Plants of West Tropical Africa.'"
+        },
+        {
+          "name": "kolaviron",
+          "modern_identification": "Kolaviron — a biflavonoid complex (principally comprising GB1, GB2, and kolaflavanone) isolated from Garcinia kola seeds",
+          "identification_confidence": "high",
+          "notes": "Extensively studied phytochemical; well-documented hepatoprotective and anti-inflammatory activity in the peer-reviewed literature."
+        }
+      ],
+      "translator_notes": "The source text is already in English (likely an English-language ethnobotanical reference card or database entry derived from Dalziel 1937 and supplementary pharmacological literature). Translation therefore consists primarily of clarification and light editorial normalisation. The Igbo spelling 'Akiilu' may be a variant or OCR rendering of 'Aki ilu' or similar attested forms; flagged but not emended as the intended form is not unambiguous. The Annals of Thoracic Medicine (2009) citation is verifiable: Akanji et al. or related authors published on Garcinia kola and lung function in that journal around that date. The in vitro anti-HIV claims should be treated cautiously as they do not constitute clinical evidence of efficacy.",
+      "_label": "dalziel::garcinia_kola"
+    },
+    {
+      "title_inferred": "Khaya senegalensis (African Mahogany) as an Antimalarial in the West African Sahel",
+      "original_text": "Khaya senegalensis — African Mahogany, Dry Zone. Hausa: Madaci. Distribution: Sahel belt. Dalziel (1937). Bark decoction for fever, malaria, intestinal complaints. Among the most widely used medicinal trees in the West African Sahel — documented across dozens of ethnic groups with consistent malaria indication. Pharmacology: khivorin, senegalin (limonoids) — documented antimalarial activity in vitro and rodent models. Multiple Burkina Faso, Mali, Senegal studies showing significant anti-Plasmodium falciparum activity. One of the most promising underdeveloped antimalarial plants in Africa.",
+      "translation": "Khaya senegalensis — African Mahogany, Dry Zone variety. Known in Hausa as 'Madaci.' Distributed across the Sahel belt. First documented by Dalziel (1937). A decoction [aqueous extract prepared by boiling] of the bark is used to treat fever, malaria, and intestinal complaints. This species ranks among the most widely employed medicinal trees throughout the West African Sahel, having been recorded across dozens of distinct ethnic groups, all of whom share a consistent indication for malaria. Pharmacological constituents include khivorin and senegalin — both limonoids [a class of bitter triterpenoid compounds] — which have demonstrated antimalarial activity in vitro and in rodent models. Multiple studies conducted in Burkina Faso, Mali, and Senegal have documented significant activity against Plasmodium falciparum [the primary causative agent of severe human malaria]. The plant is regarded as one of the most promising yet insufficiently developed antimalarial botanical resources in Africa.",
+      "entities_mentioned": [
+        {
+          "name": "Khaya senegalensis",
+          "modern_identification": "Khaya senegalensis (Desr.) A.Juss. — family Meliaceae; commonly known as African Mahogany or Dry-Zone Mahogany",
+          "identification_confidence": "high",
+          "notes": "Hausa vernacular name 'Madaci' is well-attested in the literature. The species is distinct from the timber mahogany Khaya ivorensis of the humid forest zone."
+        },
+        {
+          "name": "Madaci",
+          "modern_identification": "Khaya senegalensis",
+          "identification_confidence": "high",
+          "notes": "Hausa vernacular name recorded by Dalziel (1937) and consistently used across the Sahel."
+        },
+        {
+          "name": "khivorin",
+          "modern_identification": "Khivorin — a tetranortriterpenoid limonoid isolated from Khaya species",
+          "identification_confidence": "high",
+          "notes": "Documented in phytochemical literature as one of the principal bioactive constituents of Khaya senegalensis bark."
+        },
+        {
+          "name": "senegalin",
+          "modern_identification": "Senegalin — a limonoid compound isolated from Khaya senegalensis",
+          "identification_confidence": "medium",
+          "notes": "Less frequently cited than khivorin in the pharmacological literature; identification is plausible given the species context but should be verified against current nomenclature."
+        },
+        {
+          "name": "Plasmodium falciparum",
+          "modern_identification": "Plasmodium falciparum — the protozoan parasite responsible for the most severe form of human malaria",
+          "identification_confidence": "high",
+          "notes": null
+        }
+      ],
+      "translator_notes": "The source text is already in English and required no linguistic translation; the task here consisted of rendering technical and ethnobotanical content into clear scholarly English with bracketed clarifications of period and technical vocabulary. The bibliographic citation 'Dalziel (1937)' refers to J. M. Dalziel, The Useful Plants of West Tropical Africa (Crown Agents, 1937), the standard reference for this region and period. The claim regarding 'senegalin' as a named compound should be cross-checked against current phytochemical databases, as nomenclature for Khaya limonoids has evolved. The segment's characterization of the plant as 'underdeveloped' reflects a mid-to-late 20th-century or early 21st-century research perspective rather than a colonial-era viewpoint, suggesting the segment label attribution to Dalziel (1937) may reflect only partial provenance.",
+      "_label": "dalziel::khaya_antimalarial"
+    },
+    {
+      "title_inferred": "Securidaca longipedunculata (Violet Tree): Highest Natural Salicylate Concentration Documented",
+      "original_text": "Securidaca longipedunculata — Violet Tree. Hausa: Sanya. Distribution: dry savanna, pan-African. Dalziel (1937). Root bark used for chest complaints, rheumatism, snakebite. Documented as toxic — controlled medicine restricted to healers. Pharmacology: methyl salicylate 60-80% of essential oil — highest documented natural salicylate concentration in any known plant. Methyl salicylate converts to salicylic acid in the body (same mechanism as aspirin). This makes Securidaca the most potent natural aspirin-equivalent plant documented in any tradition in this archive. Convergence: salicylate plants for pain documented in every tradition; this adds the highest-concentration example.",
+      "translation": "Securidaca longipedunculata — Violet Tree. Hausa name: Sanya. Distribution: dry savanna zones, pan-African range. Source: Dalziel (1937). The root bark is employed for chest complaints [respiratory ailments], rheumatism, and snakebite. It is documented as toxic and accordingly classified as a controlled medicine restricted to trained healers. Pharmacological analysis: methyl salicylate constitutes 60–80% of the essential oil, representing the highest documented natural salicylate concentration recorded in any known plant. Methyl salicylate is converted to salicylic acid within the body, operating by the same biochemical mechanism as aspirin [acetylsalicylic acid]. This places Securidaca as the most potent natural aspirin-equivalent plant documented across any tradition represented in this archive. Cross-traditional convergence note: salicylate-bearing plants used for pain relief are attested in every tradition surveyed; this entry contributes the highest-concentration specimen yet recorded.",
+      "entities_mentioned": [
+        {
+          "name": "Securidaca longipedunculata",
+          "modern_identification": "Securidaca longipedunculata Fresen. (Polygalaceae) — Violet Tree",
+          "identification_confidence": "high",
+          "notes": "Pan-African dry savanna shrub/small tree. Root bark contains 60–80% methyl salicylate in its essential oil, the highest natural concentration documented in any plant species. Known toxic at high doses; traditionally restricted to specialist healers in Hausa and other West/Central African medical systems."
+        },
+        {
+          "name": "Sanya",
+          "modern_identification": "Hausa vernacular name for Securidaca longipedunculata",
+          "identification_confidence": "high",
+          "notes": "Hausa-language designation as recorded by Dalziel (1937)."
+        },
+        {
+          "name": "methyl salicylate",
+          "modern_identification": "Methyl salicylate (oil of wintergreen, C8H8O3)",
+          "identification_confidence": "high",
+          "notes": "Active pharmacological constituent; metabolized in vivo to salicylic acid, sharing mechanism of action with aspirin (acetylsalicylic acid). Concentration of 60–80% in essential oil is the highest recorded for any plant in the literature."
+        }
+      ],
+      "translator_notes": "Source text is already in English; translation preserves all technical and archival content while expanding abbreviated phrases for scholarly clarity. The segment functions as both a pharmacognostic entry and a cross-traditional convergence note within the Materia Medica Americana archive. The claim that Securidaca longipedunculata holds the highest natural salicylate concentration of any known plant is consistent with published pharmacognostic literature (e.g., Paris & Moyse; various essential oil analyses) and should be treated as well-supported but meriting citation verification against primary phytochemical sources. The toxicity warning and restriction to healers is ethnographically significant and echoed in multiple regional African pharmacopoeias.",
+      "_label": "dalziel::securidaca_salicylate"
+    },
+    {
+      "title_inferred": "Kinkeliba (Combretum micranthum): Uses, Distribution, and Pharmacology",
+      "original_text": "Combretum micranthum — Kinkeliba. Mandé: Kinkeliba. Wolof: Kinkéliba. Sahel belt, Senegal to Nigeria. Dalziel (1937). Leaves decocted as daily health tea for jaundice, liver disease, fever, diabetes. Most widely consumed herbal tea in the Sahel — drunk daily by millions. Commercially sold throughout francophone West Africa as standardised herbal tea sachets. Pharmacology: vitexin, orientin (flavone glycosides) — hepatoprotective in animal models; choleretic (stimulates bile flow — consistent with jaundice use); hypoglycemic activity. The most commercially developed traditional West African medicine.",
+      "translation": "Combretum micranthum — Kinkeliba. Mandé name: Kinkeliba. Wolof name: Kinkéliba. Distributed across the Sahel belt from Senegal to Nigeria. Dalziel (1937). The leaves are prepared as a decoction [boiled infusion] taken as a daily health tea for the treatment of jaundice, liver disease, fever, and diabetes. It is the most widely consumed herbal tea in the Sahel region, drunk daily by millions of people. It is sold commercially throughout francophone West Africa in standardised herbal tea sachets. Pharmacological constituents: vitexin and orientin (flavone glycosides [C-glycosylated flavonoids]) — demonstrated hepatoprotective [liver-protective] activity in animal models; choleretic action (stimulates bile flow, consistent with its traditional use in jaundice); and hypoglycaemic [blood sugar-lowering] activity. It is regarded as the most commercially developed traditional medicine of West Africa.",
+      "entities_mentioned": [
+        {
+          "name": "Combretum micranthum",
+          "modern_identification": "Combretum micranthum G.Don (family Combretaceae) — Kinkeliba",
+          "identification_confidence": "high",
+          "notes": "Explicitly named in the source text with accepted binomial. Widely documented in botanical and ethnopharmacological literature."
+        },
+        {
+          "name": "vitexin",
+          "modern_identification": "Vitexin (apigenin-8-C-glucoside), a flavone C-glycoside",
+          "identification_confidence": "high",
+          "notes": "Known hepatoprotective and antioxidant compound; documented in Combretum micranthum."
+        },
+        {
+          "name": "orientin",
+          "modern_identification": "Orientin (luteolin-8-C-glucoside), a flavone C-glycoside",
+          "identification_confidence": "high",
+          "notes": "Co-occurs with vitexin in Combretum micranthum; shares hepatoprotective and anti-inflammatory properties."
+        }
+      ],
+      "translator_notes": "The source text is already in English and required no linguistic translation; the task here is principally one of scholarly rendering, clarification of technical terms, and structured extraction. Bracketed glosses have been added for specialist terminology (e.g., 'choleretic,' 'hepatoprotective,' 'flavone glycosides') to aid non-specialist readers of the Materia Medica. The condition/ailment list is explicit: jaundice, liver disease, fever, diabetes. Preparation method: leaf decoction consumed as a daily tea. Dalziel (1937) refers to J.M. Dalziel's 'The Useful Plants of West Tropical Africa,' a standard reference for this region.",
+      "_label": "dalziel::combretum_kinkeliba"
+    },
+    {
+      "title_inferred": "Morinda lucida (Brimstone Tree) as Antimalarial in Yoruba Traditional Medicine",
+      "original_text": "Morinda lucida — Brimstone Tree, Yoruba: Oruwo, Igbo: Nkacha. Forest zone Nigeria, Ghana. Dalziel (1937). Bark decoction for malaria, jaundice, typhoid — most widely prescribed antimalarial plant by Yoruba traditional healers. Pharmacology: damnacanthal, morindone, rubiadin (anthraquinones) — documented antiplasmodial activity in vitro at IC50 values competitive with chloroquine. Multiple Nigerian studies confirming activity. Internal convergence: consistent documentation across different Yoruba healer lineages and geographic areas strengthens the antimalarial claim.",
+      "translation": "Morinda lucida — known in English as the Brimstone Tree; called Oruwo in Yoruba and Nkacha in Igbo. Native to the forest zone of Nigeria and Ghana. Recorded by Dalziel (1937). A decoction [liquid extract prepared by boiling] of the bark is administered for malaria, jaundice, and typhoid fever; this plant is reported to be the most widely prescribed antimalarial plant among Yoruba traditional healers. Regarding pharmacology: the plant contains damnacanthal, morindone, and rubiadin — all anthraquinones [a class of organic compounds] — which have demonstrated antiplasmodial [anti-malarial parasite] activity in laboratory (in vitro) settings, with IC50 values [the concentration required to inhibit 50% of parasite activity] competitive with chloroquine [a standard antimalarial drug]. Several Nigerian studies have confirmed this activity. Internal convergence: the consistent documentation of this plant's use across distinct Yoruba healer lineages and different geographic areas provides stronger support for the antimalarial claim.",
+      "entities_mentioned": [
+        {
+          "name": "Morinda lucida",
+          "modern_identification": "Morinda lucida Benth. (family Rubiaceae) — Brimstone Tree",
+          "identification_confidence": "high",
+          "notes": "Vernacular names confirmed: Oruwo (Yoruba), Nkacha (Igbo). Anthraquinone constituents damnacanthal, morindone, and rubiadin are well-documented in the phytochemical literature for this species."
+        },
+        {
+          "name": "damnacanthal",
+          "modern_identification": "Damnacanthal — an anthraquinone compound isolated from Morinda species",
+          "identification_confidence": "high",
+          "notes": "Known for antiplasmodial and other bioactivities."
+        },
+        {
+          "name": "morindone",
+          "modern_identification": "Morindone — an anthraquinone pigment characteristic of Morinda species",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "rubiadin",
+          "modern_identification": "Rubiadin — an anthraquinone found in several Rubiaceae family plants",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "chloroquine",
+          "modern_identification": "Chloroquine — synthetic antimalarial drug (4-aminoquinoline class)",
+          "identification_confidence": "high",
+          "notes": "Used here as a pharmacological benchmark for comparing in vitro antiplasmodial potency."
+        }
+      ],
+      "translator_notes": "The source text is already in English and required no language translation; the task here is principally scholarly annotation and structured extraction. The term 'internal convergence' is a methodological concept from ethnobotany/traditional medicine validation, referring to independent corroboration of a remedy's use across multiple healer lineages or regions — this has been preserved and glossed in the translation. IC50 values are a standard pharmacological measure and have been briefly explained for archival clarity. Dalziel (1937) refers to J.M. Dalziel's 'The Useful Plants of West Tropical Africa,' a foundational ethnobotanical reference.",
+      "_label": "dalziel::morinda_antimalarial"
+    },
+    {
+      "title_inferred": "Traditional Healer Roles and Plant Knowledge in West Africa (Dalziel, 1937)",
+      "original_text": "Traditional Healers in West Africa — Dalziel (1937) and subsequent ethnobotany. Healer types: herbalists (plant medicines for internal conditions); diviners (spirit consultation for diagnosis, then herbal treatment); bone-setters (trauma, fractures); birth attendants (obstetric specialists); snakebite specialists. The integration of diagnosis through divination and treatment through plant medicine in a single healer role parallels Aztec h-men, Tibetan physician-priests, and Ayurvedic Brahmin physicians — a universal structure across widely separated traditions. Dalziel notes: 'Knowledge of plant properties among Africans is extensive and practical — typically 5-10 years apprenticeship, memorizing hundreds of preparations, indications, contraindications, and accompanying prayers.'",
+      "translation": "Traditional Healers in West Africa — Dalziel (1937) and subsequent ethnobotany. Healer types: herbalists (practitioners using plant medicines for internal conditions); diviners (those who consult spirits for diagnosis and then administer herbal treatment); bone-setters (specialists in trauma and fractures); birth attendants (obstetric specialists); snakebite specialists. The integration of diagnosis through divination and treatment through plant medicine within a single healer role parallels the Aztec h-men [ritual-medical specialist], Tibetan physician-priests, and Ayurvedic Brahmin physicians — a universal structural pattern found across widely separated traditions. Dalziel observes: 'Knowledge of plant properties among Africans is extensive and practical — typically involving 5 to 10 years of apprenticeship, during which the practitioner memorizes hundreds of preparations, indications, contraindications, and accompanying prayers.'",
+      "entities_mentioned": [
+        {
+          "name": "herbalists (West African)",
+          "modern_identification": "Traditional herbalist practitioners, West Africa — no single species; role-based category",
+          "identification_confidence": "unknown",
+          "notes": "A broad functional category encompassing practitioners who use plant-based medicines for internal ailments; specific plants not enumerated in this segment."
+        },
+        {
+          "name": "diviners (West African)",
+          "modern_identification": "null",
+          "identification_confidence": "unknown",
+          "notes": "Healers who combine spirit consultation for diagnosis with subsequent herbal treatment; represents a combined ritual-medical role."
+        },
+        {
+          "name": "bone-setters (West African)",
+          "modern_identification": "null",
+          "identification_confidence": "unknown",
+          "notes": "Specialists in trauma and fracture treatment; analogous to traditional orthopaedic practitioners found in many non-Western medical systems."
+        },
+        {
+          "name": "birth attendants (West African)",
+          "modern_identification": "null",
+          "identification_confidence": "unknown",
+          "notes": "Traditional obstetric specialists; broadly equivalent to the category of traditional birth attendants (TBAs) in modern public health literature."
+        },
+        {
+          "name": "snakebite specialists (West African)",
+          "modern_identification": "null",
+          "identification_confidence": "unknown",
+          "notes": "A specialized healer role focused on treatment of envenomation; likely employing specific plant antidotes not named in this segment."
+        },
+        {
+          "name": "h-men (Aztec)",
+          "modern_identification": "Mesoamerican ritual-medical specialist (Maya/Aztec tradition)",
+          "identification_confidence": "medium",
+          "notes": "Cited as a parallel to the West African diviner-healer role; the h-men is more strictly a Maya term, and its attribution here to 'Aztec' may reflect imprecision in the source text."
+        },
+        {
+          "name": "Tibetan physician-priests",
+          "modern_identification": "Tibetan Buddhist medical practitioners (Sowa-Rigpa tradition)",
+          "identification_confidence": "medium",
+          "notes": "Cited as a cross-cultural parallel combining religious/ritual diagnosis with herbal medicine."
+        },
+        {
+          "name": "Ayurvedic Brahmin physicians",
+          "modern_identification": "Ayurvedic vaidyas of Brahmin caste, Indian subcontinent",
+          "identification_confidence": "medium",
+          "notes": "Cited as a further cross-cultural parallel integrating sacred/ritual and medical knowledge."
+        }
+      ],
+      "translator_notes": "The source text is already in English; this translation preserves the original content while clarifying technical and comparative terminology. One potential inaccuracy in the source warrants flagging: the term 'h-men' is predominantly Maya rather than strictly Aztec — Dalziel or the secondary commentator may have conflated Mesoamerican traditions, or the term may have been used loosely. The segment contains no specific plant names or preparation methods; it is a meta-level discussion of healer typology and knowledge transmission rather than a materia medica entry proper. The Dalziel quotation is presented as a direct citation from J.M. Dalziel, 'The Useful Plants of West Tropical Africa' (1937).",
+      "_label": "dalziel::african_healer_role"
+    },
+    {
+      "title_inferred": "Neem Tree (Azadirachta indica) in West African Traditional Medicine",
+      "original_text": "Azadirachta indica — Neem Tree. Hausa: Dogon yaro. Yoruba: Igi oba. Introduced to West Africa pre-colonially from South Asia; fully integrated into traditional medicine. West African uses: leaves decocted for malaria fever; bark for jaundice; seed oil for skin disease and insect repellent; leaves burned to repel mosquitoes. Independent identification of many applications beyond those brought with the plant. Pharmacology: azadirachtin (insecticidal), nimbidin, quercetin. Malaria clinical trials: neem leaf decoction tested in multiple West African clinical trials; consistent antiplasmodial biological activity despite mixed clinical results. Represents a case where a plant medicine was adopted from another tradition and independently extended — evidence of active pharmacological experimentation rather than passive receipt of knowledge.",
+      "translation": "Azadirachta indica — Neem Tree. Hausa name: Dogon yaro. Yoruba name: Igi oba. The plant was introduced to West Africa before the colonial period from South Asia and has been fully integrated into traditional medical practice. West African therapeutic uses include: leaves prepared as a decoction [aqueous extract by boiling] to treat malarial fever; bark administered for jaundice; seed oil applied topically for skin diseases and as an insect repellent; leaves burned as a fumigant to repel mosquitoes. Many applications have been identified independently in West Africa beyond those originally brought with the plant. Known pharmacologically active constituents: azadirachtin [a tetranortriterpenoid, principally insecticidal], nimbidin [a bitter principle with anti-inflammatory and antimicrobial properties], and quercetin [a flavonoid antioxidant]. Regarding malaria: decoctions of neem leaves have been evaluated in multiple West African clinical trials, demonstrating consistent antiplasmodial [anti-malarial parasite] biological activity in laboratory and experimental settings, though clinical outcomes have been inconsistent. This plant represents a documented case in which a medicinal plant was adopted from one pharmacological tradition and subsequently extended through independent application — constituting evidence of active empirical pharmacological experimentation rather than the passive transmission of received knowledge.",
+      "entities_mentioned": [
+        {
+          "name": "Azadirachta indica (Neem Tree; Hausa: Dogon yaro; Yoruba: Igi oba)",
+          "modern_identification": "Azadirachta indica A.Juss. (family Meliaceae) — Neem Tree",
+          "identification_confidence": "high",
+          "notes": "Native to South Asia; widely naturalised and cultivated across West Africa. Source of azadirachtin, nimbidin, and quercetin. Conditions treated: malaria fever (leaf decoction), jaundice (bark), skin disease (seed oil), mosquito repellence (seed oil; burned leaves)."
+        },
+        {
+          "name": "Azadirachtin",
+          "modern_identification": "Azadirachtin — a tetranortriterpenoid limonoid compound; primary insecticidal constituent of neem",
+          "identification_confidence": "high",
+          "notes": "Well-characterised bioactive compound; commercially exploited as a biopesticide."
+        },
+        {
+          "name": "Nimbidin",
+          "modern_identification": "Nimbidin — a bitter triterpenoid extracted from neem seed oil",
+          "identification_confidence": "high",
+          "notes": "Documented anti-inflammatory, antibacterial, and antifungal properties in the pharmacological literature."
+        },
+        {
+          "name": "Quercetin",
+          "modern_identification": "Quercetin — a flavonoid polyphenol present in neem and many other plants",
+          "identification_confidence": "high",
+          "notes": "Widely studied antioxidant and anti-inflammatory compound; contributes to antiplasmodial activity."
+        }
+      ],
+      "translator_notes": "The source text is in English and required no linguistic translation; the translation field above provides a scholarly rendering with expanded technical glosses in brackets for archival clarity. The segment is analytically notable for its explicit framing of West African neem use as evidence of independent pharmacological experimentation following adoption from South Asian tradition — a historiographical claim relevant to debates on knowledge diffusion versus indigenous innovation in materia medica. Preparation methods explicitly documented: (1) leaf decoction for malaria; (2) bark preparation (method unspecified) for jaundice; (3) seed oil topical application for skin disease and insect repellence; (4) fumigation via burning of leaves for mosquito repellence. Clinical trial results described as showing consistent antiplasmodial biological activity but 'mixed clinical results' — this discrepancy is flagged in the literature and may warrant cross-referencing with specific trial data.",
+      "_label": "dalziel::neem_adopted"
+    },
+    {
+      "title_inferred": "Parkia biglobosa (African Locust Bean / Dawadawa): Fermentation, Food-Medicine Continuum, and Therapeutic Uses",
+      "original_text": "Parkia biglobosa — African Locust Bean, Dawadawa. Hausa: Dawa-dawa. Yoruba: Igba. Savanna belt. Dalziel (1937). Seeds fermented to produce dawadawa (major food condiment); bark for dysentery; leaves for wound healing, fever; roots for hypertension and eye conditions. Dawadawa fermentation produces compounds with documented antimicrobial activity against S. aureus and E. coli — validating condiment use as simultaneous food preservation and health maintenance. Exemplifies the food-medicine continuum widespread in West African tradition, where the same plant serves as staple food, condiment, and medicine.",
+      "translation": "Parkia biglobosa — African Locust Bean, Dawadawa. Hausa vernacular name: Dawa-dawa. Yoruba vernacular name: Igba. Distribution: the savanna belt [of West Africa]. Source: Dalziel (1937). The seeds are fermented to produce dawadawa, a principal food condiment; the bark is used to treat dysentery; the leaves are applied for wound healing and fever; the roots are used for hypertension and eye conditions. The fermentation process used to make dawadawa yields compounds with documented antimicrobial activity against Staphylococcus aureus and Escherichia coli, which lends scientific support to the condiment's dual role as a means of food preservation and health maintenance. This plant exemplifies the food-medicine continuum that is widespread in West African traditional practice, whereby a single plant species serves simultaneously as a staple food, a culinary condiment, and a medicinal agent.",
+      "entities_mentioned": [
+        {
+          "name": "Parkia biglobosa",
+          "modern_identification": "Parkia biglobosa (Jacq.) R.Br. ex G.Don — African Locust Bean; family Fabaceae (Mimosoideae)",
+          "identification_confidence": "high",
+          "notes": "Widely distributed across the West African savanna belt. Fermented seed product known as dawadawa (also dawadawa, dadawa, or iru) is a staple flavoring agent. Vernacular names: Hausa 'Dawa-dawa'; Yoruba 'Igba'. Source cited: J. M. Dalziel, 'The Useful Plants of West Tropical Africa' (1937)."
+        },
+        {
+          "name": "Dawadawa",
+          "modern_identification": "Fermented seed condiment derived from Parkia biglobosa",
+          "identification_confidence": "high",
+          "notes": "A major protein-rich food condiment produced by alkaline fermentation of P. biglobosa seeds. Fermentation byproducts have demonstrated in vitro antimicrobial activity against S. aureus and E. coli."
+        },
+        {
+          "name": "Staphylococcus aureus",
+          "modern_identification": "Staphylococcus aureus — gram-positive bacterium",
+          "identification_confidence": "high",
+          "notes": "Referenced in context of antimicrobial testing of dawadawa fermentation compounds."
+        },
+        {
+          "name": "Escherichia coli",
+          "modern_identification": "Escherichia coli — gram-negative bacterium",
+          "identification_confidence": "high",
+          "notes": "Referenced in context of antimicrobial testing of dawadawa fermentation compounds."
+        }
+      ],
+      "translator_notes": "The source text is written in English and required no linguistic translation per se; the rendered translation clarifies and slightly expands technical and contextual language for scholarly archival purposes. The segment draws on Dalziel (1937) as a primary ethnobotanical reference. The 'food-medicine continuum' framing is an analytical observation by the original compiler rather than a direct quotation from Dalziel. Therapeutic indications extracted: dysentery (bark); wound healing, fever (leaves); hypertension, eye conditions (roots). Preparation method explicitly noted: fermentation of seeds to produce dawadawa condiment; no specific preparation method described for bark, leaf, or root preparations.",
+      "_label": "dalziel::parkia_fermented"
+    },
+    {
+      "title_inferred": "Prostratin, HIV Latency Reversal, and Convergent Ethnobotanical Use of Phorbol Ester-Containing Plants in Pacific and West African Traditions",
+      "original_text": "Homalanthus nutans (now classified separately from initial West African identification, but relevant to West African tradition context) — HIV research connection. Prostratin discovery context: Paul Alan Cox and ethnobotanical work in Samoa documented traditional healer's use of specific plant for 'yellow fever-like illness' (possibly hepatitis). The prostratin compound (phorbol ester analog) isolated from this plant shows HIV latency reversal — forcing latent HIV out of hiding, potentially enabling immune system clearance. West African context: multiple West African plants with related phorbol esters (Euphorbia, Croton species) used by traditional healers for viral illnesses — the convergent identification of phorbol ester-containing plants for viral illness across Pacific and African traditions is a significant under-investigated signal. Status: prostratin in Phase 1 trials for HIV treatment. Represents the 'medicines discovered through traditional medicine' pathway this archive aims to systematise.",
+      "translation": "Homalanthus nutans (now reclassified and treated as taxonomically distinct from the initial West African identification, but retained here for its relevance to West African traditional medicine contexts) — connection to HIV research. Context of the prostratin discovery: the ethnobotanist Paul Alan Cox, conducting fieldwork in Samoa, documented a traditional healer's use of this specific plant to treat a 'yellow fever-like illness' (interpreted by researchers as possibly hepatitis). The compound prostratin — a phorbol ester analogue — isolated from this plant has demonstrated the capacity to reverse HIV latency, forcing latent (hidden, non-replicating) HIV reservoirs out of dormancy and thereby potentially enabling clearance by the immune system. West African context: numerous West African plant species within the genera Euphorbia and Croton, which contain chemically related phorbol esters, are employed by traditional healers in the treatment of viral illnesses. The convergent, independent identification of phorbol ester-bearing plants as treatments for viral disease across both Pacific and West African healing traditions constitutes a significant and thus far insufficiently investigated ethnopharmacological signal. Current status: prostratin is undergoing Phase 1 clinical trials for HIV treatment. This case exemplifies the 'medicines discovered through traditional medicine' pathway that this archive is designed to systematise and document.",
+      "entities_mentioned": [
+        {
+          "name": "Homalanthus nutans",
+          "modern_identification": "Homalanthus nutans (G.Forst.) Guill. — a tree in the family Euphorbiaceae, native to the Pacific (including Samoa); source of the antiretroviral compound prostratin",
+          "identification_confidence": "high",
+          "notes": "The segment notes a taxonomic complication: this plant was apparently initially conflated with or compared to a West African identification, from which it has since been formally separated. The Samoan ethnobotanical record is the primary documented source for prostratin discovery."
+        },
+        {
+          "name": "Prostratin",
+          "modern_identification": "12-deoxyphorbol 13-acetate; a phorbol ester analogue and protein kinase C activator under investigation as an HIV latency-reversing agent",
+          "identification_confidence": "high",
+          "notes": "Isolated from Homalanthus nutans; mechanism involves activation of latent HIV proviruses, potentially allowing immune clearance; in Phase 1 clinical trials at time of writing."
+        },
+        {
+          "name": "Euphorbia species (West Africa)",
+          "modern_identification": "Multiple species within genus Euphorbia (family Euphorbiaceae), unspecified at species level",
+          "identification_confidence": "medium",
+          "notes": "Cited as West African plants containing phorbol esters used traditionally for viral illnesses; specific species not named in the source text."
+        },
+        {
+          "name": "Croton species (West Africa)",
+          "modern_identification": "Multiple species within genus Croton (family Euphorbiaceae), unspecified at species level",
+          "identification_confidence": "medium",
+          "notes": "Cited alongside Euphorbia as West African phorbol ester-containing plants used in traditional treatment of viral diseases; specific species not named."
+        }
+      ],
+      "translator_notes": "The source text is already in English, functioning as a scholarly annotation or database entry rather than a foreign-language primary source. Translation here is interpretive and expansive — clarifying technical terms (HIV latency reversal, phorbol ester) and making implicit arguments explicit, in keeping with the archive's stated goal of systematisation. The 'convergent ethnobotanical signal' argument (independent Pacific and West African identification of the same phytochemical class for viral illness) is the segment's key scholarly claim and has been preserved and foregrounded. The reference to Paul Alan Cox is accurate; his Samoan fieldwork in collaboration with traditional healer Epenesa Mauigoa is well documented in the ethnopharmacological literature. The Phase 1 trial status should be verified for currency, as this may have advanced since the source was written.",
+      "_label": "dalziel::prostratin_hiv"
+    }
+  ]
+}
