@@ -1,0 +1,328 @@
+{
+  "job_name": "amazonian-schultes-v1",
+  "completed_at": "2026-07-02T10:47:42.166274",
+  "segment_count": 7,
+  "results": [
+    {
+      "title_inferred": "Ayahuasca: Pharmacological Synergy of Banisteriopsis caapi and Psychotria viridis in Amazonian Traditional Medicine",
+      "original_text": "Ayahuasca — Banisteriopsis caapi + Psychotria viridis. Schultes (1967, 1979); Davis (1996); Plotkin (1993). Multiple Amazonian nations: Shipibo, Shuar, Siona-Secoya, Tukano. The combination: caapi vine (MAO-inhibiting beta-carbolines: harmaline, harmine) + chacruna leaves (DMT). Schultes: 'The probability of this specific combination being discovered by chance approaches zero — it implies systematic pharmacological experimentation over generations.' DMT is orally inactive due to MAO destruction in gut; beta-carbolines inhibit MAO, allowing oral DMT activity. Most sophisticated phytopharmacological discovery in any pre-industrial tradition. Current research: Phase 2 trials at Imperial College London, Johns Hopkins, NYU — multiple showing remarkable efficacy for treatment-resistant depression and PTSD. FDA Breakthrough Therapy designation for psilocybin (related compound); ayahuasca trials ongoing.",
+      "translation": "Ayahuasca — Banisteriopsis caapi combined with Psychotria viridis. References: Schultes (1967, 1979); Davis (1996); Plotkin (1993). Documented among multiple Amazonian peoples: the Shipibo, Shuar, Siona-Secoya, and Tukano nations. The preparation combines: the caapi vine, which contains monoamine oxidase [MAO]-inhibiting beta-carboline alkaloids (harmaline and harmine), with the leaves of chacruna [Psychotria viridis], which contain dimethyltryptamine [DMT]. Schultes observed: 'The probability of this specific combination being discovered by chance approaches zero — it implies systematic pharmacological experimentation conducted across generations.' DMT is ordinarily inactive when taken orally because it is destroyed by monoamine oxidase in the gastrointestinal tract; the beta-carbolines inhibit MAO, thereby enabling oral bioavailability of DMT. This preparation represents the most sophisticated phytopharmacological discovery recorded in any pre-industrial tradition. Contemporary research: Phase 2 clinical trials are underway at Imperial College London, Johns Hopkins University, and New York University, with multiple studies demonstrating remarkable efficacy for treatment-resistant depression and post-traumatic stress disorder [PTSD]. The related compound psilocybin has received FDA Breakthrough Therapy designation; ayahuasca clinical trials are ongoing.",
+      "entities_mentioned": [
+        {
+          "name": "Ayahuasca",
+          "modern_identification": "Decoction prepared from Banisteriopsis caapi (vine) and Psychotria viridis (leaves)",
+          "identification_confidence": "high",
+          "notes": "A ritually and medicinally significant psychoactive brew used across numerous Amazonian indigenous traditions. The name derives from Quechua: 'aya' (spirit/ancestor) + 'waska' (vine/rope)."
+        },
+        {
+          "name": "Banisteriopsis caapi",
+          "modern_identification": "Banisteriopsis caapi (Spruce ex Griseb.) C.V. Morton — family Malpighiaceae",
+          "identification_confidence": "high",
+          "notes": "The 'caapi vine' or 'yagé vine.' Primary source of beta-carboline alkaloids harmine and harmaline, which act as reversible MAO inhibitors [RIMAs], enabling oral activity of DMT."
+        },
+        {
+          "name": "Psychotria viridis",
+          "modern_identification": "Psychotria viridis Ruiz & Pav. — family Rubiaceae",
+          "identification_confidence": "high",
+          "notes": "Known as 'chacruna.' Primary botanical source of N,N-dimethyltryptamine [DMT] in the ayahuasca preparation. Leaves are typically added to the decoction."
+        },
+        {
+          "name": "Harmaline",
+          "modern_identification": "3,4-dihydro-7-methoxy-1-methyl-9H-pyrido[3,4-b]indole; a beta-carboline alkaloid",
+          "identification_confidence": "high",
+          "notes": "Reversible inhibitor of monoamine oxidase A [RIMA]; enables oral bioavailability of DMT by preventing its gut-level enzymatic degradation."
+        },
+        {
+          "name": "Harmine",
+          "modern_identification": "7-methoxy-1-methyl-9H-pyrido[3,4-b]indole; a beta-carboline alkaloid",
+          "identification_confidence": "high",
+          "notes": "Co-occurring MAO-inhibiting beta-carboline in Banisteriopsis caapi alongside harmaline. Also known historically as 'telepathine.'"
+        },
+        {
+          "name": "DMT (dimethyltryptamine)",
+          "modern_identification": "N,N-Dimethyltryptamine; a naturally occurring indole alkaloid",
+          "identification_confidence": "high",
+          "notes": "The primary psychoactive constituent contributed by Psychotria viridis. Orally inactive without MAO inhibition; rendered bioavailable by beta-carbolines in the ayahuasca combination."
+        },
+        {
+          "name": "Shipibo",
+          "modern_identification": "Shipibo-Konibo people, Ucayali region, Peru",
+          "identification_confidence": "high",
+          "notes": "One of several Amazonian nations documented as traditional users of ayahuasca in ceremonial and healing contexts."
+        },
+        {
+          "name": "Shuar",
+          "modern_identification": "Shuar people, Ecuadorian and Peruvian Amazon",
+          "identification_confidence": "high",
+          "notes": "Amazonian nation; traditionally employ ayahuasca (locally termed 'natem') in ritual and healing practice."
+        },
+        {
+          "name": "Siona-Secoya",
+          "modern_identification": "Siona and Secoya peoples, Colombian-Ecuadorian Amazon border region",
+          "identification_confidence": "high",
+          "notes": "Two closely related Amazonian groups documented among traditional ayahuasca users by Schultes and others."
+        },
+        {
+          "name": "Tukano",
+          "modern_identification": "Tukano (Tucano) people, Colombian-Brazilian Amazon (Vaupés region)",
+          "identification_confidence": "high",
+          "notes": "Amazonian nation extensively studied by Schultes; traditional users of ayahuasca referred to locally as 'yagé.'"
+        },
+        {
+          "name": "Psilocybin",
+          "modern_identification": "4-phosphoryloxy-N,N-dimethyltryptamine; indole alkaloid from Psilocybe spp. fungi",
+          "identification_confidence": "high",
+          "notes": "Mentioned as a pharmacologically related compound. Received FDA Breakthrough Therapy designation for treatment-resistant depression; cited here comparatively to contextualize ongoing ayahuasca research."
+        }
+      ],
+      "translator_notes": "This segment is primarily a scholarly synthesis in English (not a foreign-language source requiring translation per se), but has been processed according to schema requirements with full extraction and annotation. The source text is a research note or annotated bibliography entry, attributing key arguments to ethnobotanist Richard Evans Schultes. The Schultes quotation regarding near-zero probability of chance discovery is a frequently cited observation in the ethnopharmacology literature and is rendered verbatim. The pharmacological mechanism described (MAO inhibition enabling oral DMT activity) is well-established and accurately summarized in the source. Clinical trial references (Imperial College London, Johns Hopkins, NYU) are consistent with the published literature as of the mid-2020s. The characterization of ayahuasca as 'the most sophisticated phytopharmacological discovery in any pre-industrial tradition' reflects Schultes's influential scholarly position and should be understood as an argued claim rather than established consensus.",
+      "_label": "schultes::ayahuasca_maoi_dmt"
+    },
+    {
+      "title_inferred": "Curare: Amazonian Arrow Poison and Its Introduction to Modern Surgery",
+      "original_text": "Curare — Strychnos toxifera / Chondrodendron tomentosum. Schultes (1941-1953 Amazon expeditions). Yanomami, Makushi, Wapishana, Waorani. Preparation documented: specialist knowledge of which vines, which parts, boiling duration, potency testing (timing paralysis of test animals) — 3-5 day process. Amazonian hunters empirically identified the remarkable selectivity: skeletal muscle paralysed, cardiac and smooth muscle unaffected at therapeutic doses. This selectivity — tubocurarine's specific action at peripheral nicotinic receptors vs cardiac muscarinic receptors — required decades of 20th century research to explain. Harold Griffith introduced to surgery (1942). All subsequent neuromuscular blockers (vecuronium, rocuronium, atracurium) are synthetic descendants. Without curare-derived compounds, modern surgical procedures as currently practiced would be impossible.",
+      "translation": "Curare — derived from Strychnos toxifera and/or Chondrodendron tomentosum. Documented by Richard Evans Schultes during his Amazon expeditions (1941–1953). Recorded among the Yanomami, Makushi, Wapishana, and Waorani peoples. Preparation requires specialist knowledge: selection of appropriate vine species, identification of the parts to be used, control of boiling duration, and potency testing by timing the onset of paralysis in test animals — a process taking three to five days in total. Amazonian hunters had through long empirical practice identified the compound's remarkable physiological selectivity: skeletal [voluntary] muscle is paralysed, while cardiac and smooth muscle remain unaffected at effective doses. This selectivity — now understood as tubocurarine's specific action at peripheral nicotinic acetylcholine receptors rather than at cardiac muscarinic receptors — required decades of twentieth-century pharmacological research to explain mechanistically. Harold Griffith introduced curare to surgical anaesthesia in 1942. All subsequently developed neuromuscular blocking agents (vecuronium, rocuronium, atracurium) are synthetic descendants of this original compound. Without curare-derived agents, modern surgical procedures as currently practised would not be possible.",
+      "entities_mentioned": [
+        {
+          "name": "Curare",
+          "modern_identification": "Arrow poison preparation derived principally from Strychnos toxifera (Loganiaceae) and/or Chondrodendron tomentosum (Menispermaceae); active alkaloid tubocurarine",
+          "identification_confidence": "high",
+          "notes": "A generic term covering several distinct Amazonian arrow-poison preparations; the source plant and alkaloid profile vary by regional tradition and preparation method."
+        },
+        {
+          "name": "Strychnos toxifera",
+          "modern_identification": "Strychnos toxifera Schomb. ex Benth. (Loganiaceae) — primary source of calabash curare in many Guianan and Venezuelan traditions",
+          "identification_confidence": "high",
+          "notes": "Yields strychnine-related alkaloids including toxiferine; principal source in 'calabash curare' preparations distinct from the 'pot curare' derived from Chondrodendron."
+        },
+        {
+          "name": "Chondrodendron tomentosum",
+          "modern_identification": "Chondrodendron tomentosum Ruiz & Pav. (Menispermaceae) — primary source of tubocurarine (d-tubocurarine)",
+          "identification_confidence": "high",
+          "notes": "The species from which tubocurarine was first isolated; basis of 'pot curare' or 'tube curare' preparations used especially in western Amazonia."
+        },
+        {
+          "name": "Tubocurarine",
+          "modern_identification": "d-Tubocurarine; competitive antagonist at peripheral nicotinic acetylcholine receptors; first clinically used non-depolarising neuromuscular blocking agent",
+          "identification_confidence": "high",
+          "notes": "Isolated from Chondrodendron tomentosum; selectivity for nicotinic vs. muscarinic receptors accounts for the paralysis of skeletal but not cardiac muscle."
+        },
+        {
+          "name": "Vecuronium",
+          "modern_identification": "Vecuronium bromide; synthetic steroidal non-depolarising neuromuscular blocker",
+          "identification_confidence": "high",
+          "notes": "Developed as a synthetic descendant with improved pharmacokinetic profile relative to tubocurarine."
+        },
+        {
+          "name": "Rocuronium",
+          "modern_identification": "Rocuronium bromide; synthetic steroidal non-depolarising neuromuscular blocker with rapid onset",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Atracurium",
+          "modern_identification": "Atracurium besylate; synthetic benzylisoquinolinium non-depolarising neuromuscular blocker",
+          "identification_confidence": "high",
+          "notes": "Notable for Hofmann elimination, making it independent of hepatic/renal metabolism."
+        },
+        {
+          "name": "Richard Evans Schultes",
+          "modern_identification": "Richard Evans Schultes (1915–2001); Harvard ethnobotanist; conducted extensive fieldwork in Amazonia 1941–1953",
+          "identification_confidence": "high",
+          "notes": "Regarded as a founding figure of modern ethnobotany; documented curare preparation in detail among multiple Amazonian indigenous groups."
+        },
+        {
+          "name": "Harold Griffith",
+          "modern_identification": "Harold Randall Griffith (1894–1985); Canadian anaesthesiologist; first to administer curare (Intocostrin) in surgical anaesthesia, Montreal, 1942",
+          "identification_confidence": "high",
+          "notes": "His 1942 paper with Enid Johnson is a landmark in the history of anaesthesia and surgery."
+        }
+      ],
+      "translator_notes": "The source text is in English and reads as a scholarly summary note rather than a primary historical document; it is translated here without substantive alteration but with minor syntactic regularisation for archival clarity. The pharmacological explanation (nicotinic vs. muscarinic receptor selectivity) is an etic [modern scientific] gloss on the indigenous empirical observation, not itself derived from indigenous sources. The claim that modern surgery would be impossible without curare-derived compounds is standard in the anaesthesia history literature but is an editorial judgement rather than a primary observation. Schultes's expedition dates (1941–1953) are widely cited but his Amazonian fieldwork was intermittent across that period rather than continuous.",
+      "_label": "schultes::curare_surgical"
+    },
+    {
+      "title_inferred": "Amazonian Plant Hallucinogens: Schultes & Hofmann's Survey of 97 Species",
+      "original_text": "Amazonian Plant Hallucinogens — Schultes & Hofmann, Plants of the Gods (1979). Schultes documented 97 plant species used as hallucinogens by indigenous Amazonian peoples — vs only 15 known from the Old World. Key plants: (1) Virola calophylla bark resin (5-MeO-DMT) — 14 Amazonian nations; (2) Brugmansia (tree datura) — used across South America for surgical anesthesia, vision, warrior preparation — same genus as Aztec Toloache, convergent discovery across the Americas; (3) Yopo/Anadenanthera peregrina (bufotenin snuff) — Caribbean to Brazil. Schultes: 'The cultures of the Amazon appear to have systematically sought and catalogued psychoactive plants with thoroughness found nowhere else. The healer's primary role is to navigate between worlds using plants as vehicles.' These 97 documented psychoactive plants represent the largest pharmacological dataset of altered-consciousness medicine in world history.",
+      "translation": "Amazonian Plant Hallucinogens — Schultes and Hofmann, Plants of the Gods (1979). Richard Evans Schultes documented 97 plant species employed as hallucinogens [psychoactive agents] by indigenous Amazonian peoples, compared to only 15 known from the Old World. Key plants include: (1) Virola calophylla bark resin, containing 5-methoxy-N,N-dimethyltryptamine [5-MeO-DMT], used by 14 Amazonian nations; (2) Brugmansia (tree datura), employed across South America for surgical anesthesia [narcotic sedation], visionary [divinatory] purposes, and warrior preparation — belonging to the same genus as the Aztec Toloache, representing a convergent discovery across the Americas; (3) Yopo, or Anadenanthera peregrina, a bufotenin-containing snuff used from the Caribbean to Brazil. Schultes is quoted as stating: 'The cultures of the Amazon appear to have systematically sought and catalogued psychoactive plants with a thoroughness found nowhere else. The healer's primary role is to navigate between worlds using plants as vehicles.' These 97 documented psychoactive plant species collectively represent the largest pharmacological dataset of altered-consciousness medicine in recorded world history.",
+      "entities_mentioned": [
+        {
+          "name": "Virola calophylla",
+          "modern_identification": "Virola calophylla (Spruce) Warb. — family Myristicaceae; bark resin used as snuff or applied topically; contains tryptamines including 5-MeO-DMT and DMT",
+          "identification_confidence": "high",
+          "notes": "Bark resin preparation involves scraping or boiling the inner bark. Active constituent noted here is 5-MeO-DMT, though multiple tryptamines are present. Used by at least 14 Amazonian indigenous nations as documented by Schultes."
+        },
+        {
+          "name": "Brugmansia (tree datura)",
+          "modern_identification": "Brugmansia spp. (formerly Datura spp. in part) — family Solanaceae; multiple species including B. suaveolens, B. arborea, B. aurea",
+          "identification_confidence": "high",
+          "notes": "Active constituents are tropane alkaloids (scopolamine, hyoscyamine, atropine). Preparation varied by nation: decoctions, topical applications, and inhalation are all attested. Used for surgical anesthesia, divination, and warrior-initiation rites. The note regarding 'Aztec Toloache' likely refers to Datura stramonium or Datura inoxia, which are closely related but distinct species; the text's claim of 'same genus' reflects older taxonomy before Brugmansia was fully separated from Datura."
+        },
+        {
+          "name": "Yopo / Anadenanthera peregrina",
+          "modern_identification": "Anadenanthera peregrina (L.) Speg. — family Fabaceae (Leguminosae); seeds ground into snuff",
+          "identification_confidence": "high",
+          "notes": "Seeds are roasted, ground, and mixed with alkaline additives (e.g., calcined shells or plant ash) to produce an insufflated [snuffed] powder. Principal active constituent noted as bufotenin (5-hydroxy-DMT), though DMT and 5-MeO-DMT also present. Distributed from Caribbean basin southward through Brazil and into the Gran Chaco."
+        },
+        {
+          "name": "Toloache",
+          "modern_identification": "Datura inoxia Mill. or Datura stramonium L. — family Solanaceae; used in Aztec and Mesoamerican ritual contexts",
+          "identification_confidence": "medium",
+          "notes": "The term 'Toloache' most commonly refers to Datura inoxia in Mexican/Mesoamerican ethnobotany, though usage varies. The text invokes it to illustrate convergent discovery of tropane-alkaloid-containing plants across the Americas."
+        }
+      ],
+      "translator_notes": "The source text is already in English and required no language translation; the task here is scholarly editorial cleaning and structured extraction. One taxonomic note warrants flagging: the claim that Brugmansia is 'the same genus as Aztec Toloache' is imprecise. Brugmansia was separated from Datura as a distinct genus (Lockwood, 1973); while they are closely related sister genera within Solanaceae, they are not the same genus. The phrase 'convergent discovery' is the more defensible framing retained in the translation. The attribution of 5-MeO-DMT as the sole active constituent of Virola calophylla resin is a simplification; the resin contains a complex mixture of tryptamines. Bufotenin's hallucinogenic status was disputed at the time of publication (1979) and remains pharmacologically nuanced. The figure of 97 species vs. 15 Old World species is taken directly from Schultes and Hofmann's published account and should be cited accordingly in any derivative scholarly work.",
+      "_label": "schultes::plant_hallucinogens_97species"
+    },
+    {
+      "title_inferred": "The Poison-Medicine Spectrum in Amazonian Ethnobotany",
+      "original_text": "The Poison-Medicine Spectrum in Amazonian Ethnobotany. Schultes field analysis. A consistent finding: no sharp boundary between medicine and poison — same plant used as weapon, medicine, and vision-inducer depending entirely on dose and preparation. Documented examples: (1) Curare — arrow poison at high dose, surgical muscle relaxant at low dose; (2) Brugmansia — fatal at high dose, anaesthetic at intermediate, visionary at low; (3) Caapi — emetic at high dose, vision-inducing at medium, sedative at low; (4) Strychnos — cardiac poison at high dose, heart tonic at low (precursor to cardiac glycoside pharmacology). The Amazonian healer's mastery of this dose-response spectrum, achieved through empirical experimentation across generations, represents applied pharmacology that Western medicine only systematised after receptor theory development in the 20th century.",
+      "translation": "The Poison-Medicine Spectrum in Amazonian Ethnobotany. Field analysis by Schultes. A consistent finding: there exists no sharp boundary between medicine and poison — the same plant serves as weapon, medicine, and vision-inducer, the distinction depending entirely on dose and method of preparation. Documented examples: (1) Curare — an arrow poison at high dose, a surgical muscle relaxant at low dose; (2) Brugmansia — lethal at high dose, anaesthetic at intermediate dose, visionary [producing hallucinogenic visions] at low dose; (3) Caapi — an emetic at high dose, vision-inducing at medium dose, sedative at low dose; (4) Strychnos — a cardiac poison at high dose, a heart tonic [cardiotonic] at low dose (a precursor to the pharmacology of cardiac glycosides). The Amazonian healer's mastery of this dose-response spectrum, achieved through empirical experimentation across generations, constitutes applied pharmacology that Western medicine only systematised following the development of receptor theory in the 20th century.",
+      "entities_mentioned": [
+        {
+          "name": "Curare",
+          "modern_identification": "Preparation derived chiefly from Strychnos toxifera, Chondrodendron tomentosum, and related species; active alkaloid tubocurarine",
+          "identification_confidence": "high",
+          "notes": "Used as arrow/blowgun poison; active constituents are neuromuscular blocking agents. Medically employed as surgical muscle relaxant from mid-20th century onward."
+        },
+        {
+          "name": "Brugmansia",
+          "modern_identification": "Brugmansia spp. (formerly Datura spp.; family Solanaceae); active compounds tropane alkaloids (scopolamine, hyoscyamine, atropine)",
+          "identification_confidence": "high",
+          "notes": "Tree daturas of the Andes and upper Amazon; all species now considered extinct in the wild, surviving only in cultivation. Used across dose spectrum as described: lethal, anaesthetic, and hallucinogenic."
+        },
+        {
+          "name": "Caapi",
+          "modern_identification": "Banisteriopsis caapi (Spruce ex Griseb.) C.V.Morton (family Malpighiaceae); active compounds beta-carboline alkaloids (harmine, harmaline, tetrahydroharmine)",
+          "identification_confidence": "high",
+          "notes": "Primary vine component of the ayahuasca preparation. Beta-carbolines act as monoamine oxidase inhibitors (MAOIs), potentiating DMT from admixture plants. Emetic properties well documented at higher doses."
+        },
+        {
+          "name": "Strychnos",
+          "modern_identification": "Strychnos spp. (family Loganiaceae); multiple species contribute to curare; Strychnos nux-vomica is the classical source of strychnine and brucine",
+          "identification_confidence": "medium",
+          "notes": "Schultes's reference to cardiac effects at low dose and the link to cardiac glycoside pharmacology is notable; classical strychnine is a CNS stimulant/convulsant rather than a cardiac glycoside per se, suggesting Schultes may be referencing broader Strychnos alkaloid pharmacology or a specific Amazonian species with distinct cardiac activity. Identification confidence reduced accordingly."
+        }
+      ],
+      "translator_notes": "The source text is already in English, composed as Schultes's field analysis notes; translation here functions as a lightly clarified and formalized rendering suitable for archival use. One potential pharmacological imprecision flagged: Strychnos alkaloids (strychnine, brucine) are primarily CNS agents, not cardiac glycosides; Schultes's framing as 'precursor to cardiac glycoside pharmacology' may reflect a broader or metaphorical use of the term, or reference to specific Amazonian Strychnos species with distinct chemistry. This warrants attention from subject-matter reviewers. The segment label 'schultes::poison_medicine_spectrum' confirms attribution to Richard Evans Schultes, pioneering Harvard ethnobotanist.",
+      "_label": "schultes::poison_medicine_spectrum"
+    },
+    {
+      "title_inferred": "Amazonian Healer Roles, Training, and Plant Medicine Traditions",
+      "original_text": "Amazonian Healer Role — Plotkin, Tales of a Shaman's Apprentice (1993); Schultes field notes. Healer terms: pajé, curandero, vegetalista. Role documentation: (1) 5-10 year apprenticeship — plant preparation, ceremony, song (icaros), spiritual diagnosis simultaneously; (2) Dietary restriction during training — specific foods and sexual abstinence to establish 'plant spirit' relationship; (3) Diagnostic framework — illness as intrusion (foreign spirit), soul loss, or sorcery — each requiring different treatment; (4) Treatment integration — plant medicine given alongside icaro songs considered essential to direct the medicine. Plotkin documented among Tirio of Suriname: 79 separate plant preparations for 65 disease categories. Yanomami: over 200 plant species with documented medical use. The convergent integration of spiritual diagnosis, ceremony, and plant medicine across all Amazonian traditions parallels exactly the priest-physician integration documented by Cobo for the Inca, Badianus for the Aztecs, and Tibetan physician-priests — a universal pre-industrial medical principle.",
+      "translation": "Role of the Amazonian Healer — Based on Mark J. Plotkin, Tales of a Shaman's Apprentice (1993), and the field notes of Richard Evans Schultes. Terms for the healer: pajé [Tupian/Amazonian term for shaman], curandero [Spanish: healer/curer], vegetalista [Spanish: plant specialist]. Documentation of the healer's role: (1) Apprenticeship lasting 5 to 10 years, encompassing simultaneously the preparation of plant medicines, ceremonial practice, the learning of icaro songs [ritual healing chants], and the development of spiritual diagnostic ability; (2) Dietary restriction during training, involving abstention from specific foods and sexual continence, understood as necessary to establish a working relationship with the 'spirits of the plants' [plant spirit teachers]; (3) Diagnostic framework in which illness is categorized as: spirit intrusion [the lodging of a foreign spiritual entity within the patient], soul loss, or sorcery — each category requiring a distinct therapeutic response; (4) Integration of treatment — plant medicines are administered in conjunction with icaro songs, the songs being considered essential for directing the efficacy of the medicine to its proper purpose. Plotkin documented among the Tirio people of Suriname: 79 distinct plant preparations corresponding to 65 disease categories. Among the Yanomami: more than 200 plant species with recorded medical applications. The convergent integration of spiritual diagnosis, ceremony, and plant medicine found across all Amazonian traditions parallels precisely the priest-physician integration documented by Bernabé Cobo for Inca medicine, in the Badianus Manuscript [Libellus de Medicinalibus Indorum Herbis, 1552] for Aztec medicine, and among Tibetan physician-priests — constituting a universal principle of pre-industrial medical systems.",
+      "entities_mentioned": [
+        {
+          "name": "pajé",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Tupian-derived term for a shaman or ritual healer in Amazonian traditions, particularly among Brazilian and Surinamese indigenous groups."
+        },
+        {
+          "name": "curandero",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Spanish term for a traditional healer or curer; widely used across Latin American indigenous and mestizo healing traditions."
+        },
+        {
+          "name": "vegetalista",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Spanish term for a healer who specializes in plant-based medicine, particularly in the Peruvian and broader Amazonian context; documented extensively by Luis Eduardo Luna."
+        },
+        {
+          "name": "icaros",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Ritual healing songs or chants used by Amazonian healers, considered integral to directing plant medicine and spiritual forces during treatment."
+        },
+        {
+          "name": "Tirio (Tiriyó)",
+          "modern_identification": "Tiriyó people, Suriname and northern Brazil",
+          "identification_confidence": "high",
+          "notes": "Indigenous Amazonian group among whom Plotkin documented 79 plant preparations for 65 disease categories."
+        },
+        {
+          "name": "Yanomami",
+          "modern_identification": "Yanomami people, Venezuela and northern Brazil",
+          "identification_confidence": "high",
+          "notes": "Indigenous Amazonian group with over 200 plant species documented for medical use."
+        },
+        {
+          "name": "Plotkin, Tales of a Shaman's Apprentice (1993)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Ethnobotanical narrative by Mark J. Plotkin; primary source for healer role documentation cited in this segment."
+        },
+        {
+          "name": "Schultes field notes",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Refers to the extensive Amazonian botanical and ethnobotanical field notes of Richard Evans Schultes (Harvard Botanical Museum), a foundational source for Amazonian ethnobotany."
+        },
+        {
+          "name": "Cobo (for the Inca)",
+          "modern_identification": "Bernabé Cobo, Historia del Nuevo Mundo (1653)",
+          "identification_confidence": "high",
+          "notes": "Jesuit priest and chronicler who documented Inca medicine and natural history in colonial Peru."
+        },
+        {
+          "name": "Badianus (for the Aztecs)",
+          "modern_identification": "Badianus Manuscript / Libellus de Medicinalibus Indorum Herbis (1552)",
+          "identification_confidence": "high",
+          "notes": "Earliest known Aztec herbal, written in Nahuatl by Martín de la Cruz and translated into Latin by Juan Badiano; documents Aztec medicinal plant use."
+        }
+      ],
+      "translator_notes": "This segment is in English and functions as a compiled scholarly annotation rather than a primary source text in a foreign language; translation has been rendered as a clarified, annotated English version with bracketed explanations of technical and indigenous terms. Extraction of plant-specific preparation and condition data is limited here because the segment describes healer roles and statistical summaries rather than individual plant remedies. The comparative claim linking Amazonian, Inca, Aztec, and Tibetan medical traditions as sharing a 'universal pre-industrial principle' is the author's interpretive synthesis, not a primary source claim, and should be flagged as such in archival use.",
+      "_label": "plotkin::traditional_healers_amazonian"
+    },
+    {
+      "title_inferred": "Amazonian Uses of Erythroxylum coca as Documented by Schultes",
+      "original_text": "Erythroxylum coca — Coca (Amazonian uses distinct from Andean). Schultes documented coca use by 36 distinct Amazonian peoples. Amazonian documentation distinct from Andean (Cobo): primarily used for energy, hunger suppression, and ceremony rather than altitude-specific applications. Interesting pharmacological observation: Amazonian coca preparations typically less alkaloid-potent than Andean — different species, different soil, different preparation. This parallels variation in therapeutic potency documented in Kampo (Japanese vs Chinese Atractylodes) and represents evidence of traditional pharmacognosy — distinguishing quality variations within a species. The 36-nation documentation demonstrates that coca knowledge spread across the Amazon basin from the Andean origin zone through empirical adoption, with each group adapting it to their specific needs.",
+      "translation": "Erythroxylum coca — Coca (Amazonian uses, distinct from Andean). Richard Evans Schultes documented the use of coca among 36 distinct Amazonian peoples. This Amazonian documentation differs from Andean accounts (such as that of Bernabé Cobo): in the Amazon, coca was used primarily for energy, suppression of hunger, and ceremonial purposes, rather than for the altitude-specific applications characteristic of Andean use. A notable pharmacological observation is that Amazonian coca preparations are typically less potent in alkaloid content than their Andean counterparts — a difference attributable to distinct species, varying soil conditions, and differing methods of preparation. This parallels the variation in therapeutic potency noted in Kampo [Japanese traditional medicine] between Japanese and Chinese varieties of Atractylodes [Atractylodes japonica vs. A. macrocephala], and constitutes evidence of traditional pharmacognosy [the empirical recognition of quality variation within a species]. The documentation of coca use across 36 peoples demonstrates that knowledge of coca spread throughout the Amazon basin from its Andean point of origin through empirical adoption, with each group adapting its use to their specific cultural and physiological needs.",
+      "entities_mentioned": [
+        {
+          "name": "Erythroxylum coca",
+          "modern_identification": "Erythroxylum coca Lam. (Erythroxylaceae); Amazonian varieties may include E. coca var. ipadu",
+          "identification_confidence": "high",
+          "notes": "Source notes that Amazonian species/varieties differ from Andean ones, likely referencing E. coca var. ipadu (lowland Amazonian variety) vs. E. coca var. coca or E. novogranatense (Andean varieties). The distinction is pharmacognostically significant due to differing cocaine alkaloid concentrations."
+        },
+        {
+          "name": "Atractylodes (Japanese vs. Chinese)",
+          "modern_identification": "Atractylodes japonica Koidz. ex Kitam. and/or Atractylodes macrocephala Koidz. (Asteraceae)",
+          "identification_confidence": "medium",
+          "notes": "Referenced as a comparative example of intra-species or inter-species therapeutic potency variation within Kampo tradition. The specific pairing of Japanese vs. Chinese Atractylodes suggests comparison between A. japonica and A. macrocephala or A. lancea."
+        }
+      ],
+      "translator_notes": "The source text is in English and required no linguistic translation, but has been rendered as a formal scholarly translation with clarifications. 'Cobo' refers to Bernabé Cobo (1580–1657), the Jesuit naturalist whose Historia del Nuevo Mundo is a primary Andean ethnobotanical source. 'Schultes' refers to Richard Evans Schultes (1915–2001), Harvard ethnobotanist renowned for Amazonian fieldwork. The 'Kampo' comparison is an editorial analogy inserted by the documenter (likely Schultes or a later annotator) and is not itself a primary source claim. The segment reads as a synthesis or annotated field note rather than a direct primary source passage; archivists should treat it as secondary commentary on primary fieldwork data.",
+      "_label": "schultes::coca_amazonian"
+    },
+    {
+      "title_inferred": "Hevea brasiliensis (Rubber Tree): Traditional Amazonian Wound Medicine and Latex Applications",
+      "original_text": "Hevea brasiliensis — Rubber Tree, Seringa. Schultes Amazon expeditions 1941-1953. Traditional uses documented: fresh latex applied to wounds as antiseptic barrier and wound closure; bark decoction for fever; roots for edema. Mechanism of latex wound dressing: forms flexible, breathable, antimicrobial seal; latex proteins have antimicrobial activity; physical barrier prevents contamination. Schultes: 'Indigenous use of rubber latex as wound dressing predates the commercial rubber industry by millennia.' This represents pre-industrial biomedical engineering — using a natural polymer for medical wound management. Economic significance: Hevea brasiliensis became the basis of the global rubber industry. Like curare and ayahuasca, this represents unique Amazonian chemical knowledge becoming the basis of global commercial applications with no compensation to source communities.",
+      "translation": "Hevea brasiliensis — Rubber Tree, Seringa [Portuguese regional name]. Documented during Schultes's Amazon expeditions, 1941–1953. Traditional uses recorded include: fresh latex applied topically to wounds as an antiseptic barrier and for wound closure; a decoction of the bark used to treat fever; and the roots employed for edema [dropsy]. The mechanism of the latex wound dressing operates as follows: upon application, the latex forms a flexible, breathable, antimicrobial seal over the wound; latex proteins exhibit intrinsic antimicrobial activity; and the resulting physical barrier prevents external contamination. Schultes observed: 'Indigenous use of rubber latex as a wound dressing predates the commercial rubber industry by millennia.' This practice represents a form of pre-industrial biomedical engineering — namely, the deliberate application of a natural polymer to wound management. Regarding economic significance: Hevea brasiliensis subsequently became the foundational species of the global rubber industry. In common with curare and ayahuasca, this case exemplifies unique Amazonian ethnochemical knowledge that has become the basis of large-scale global commercial applications, without compensation to the source communities.",
+      "entities_mentioned": [
+        {
+          "name": "Hevea brasiliensis",
+          "modern_identification": "Hevea brasiliensis (Willd. ex A.Juss.) Müll.Arg. — Para rubber tree, family Euphorbiaceae",
+          "identification_confidence": "high",
+          "notes": "The primary commercial rubber-producing tree, native to the Amazon basin. Fresh latex used as wound dressing; bark decoction for fever; roots for edema. Also known regionally as 'Seringa' in Portuguese-speaking Amazonia."
+        },
+        {
+          "name": "curare",
+          "modern_identification": "Arrow poison derived from various Amazonian plant genera, principally Strychnos and Chondrodendron species",
+          "identification_confidence": "high",
+          "notes": "Referenced only comparatively as another example of Amazonian ethnochemical knowledge commercialized globally without benefit-sharing with indigenous source communities."
+        },
+        {
+          "name": "ayahuasca",
+          "modern_identification": "Psychoactive brew typically prepared from Banisteriopsis caapi and Psychotria viridis",
+          "identification_confidence": "high",
+          "notes": "Referenced only comparatively, as above. Not a subject of the primary entry."
+        }
+      ],
+      "translator_notes": "The source text is already in English and appears to be a scholarly field-note or archival summary rather than a non-English primary source; translation therefore constitutes a critical clean transcription with light editorial clarification of technical terms. Key extraction follows: (1) Plant: Hevea brasiliensis; (2) Conditions treated: wounds (antiseptic/closure), fever, edema; (3) Preparation methods: fresh latex applied topically, bark decoction (for fever), roots in unspecified preparation (for edema); (4) Mechanism noted: antimicrobial latex proteins and physical barrier function. The passage also raises an ethnoecological justice point (lack of compensation to indigenous communities) which is editorial commentary by Schultes or the archiving scholar, not strictly a materia medica observation — worth flagging for archival context.",
+      "_label": "schultes::rubber_wound_medicine"
+    }
+  ]
+}
