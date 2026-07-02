@@ -1039,12 +1039,357 @@
       },
       "priority_score": 7,
       "investigation_status": "validated"
+    },
+    {
+      "id": "MMA-030",
+      "common_name": "Japanese Rhubarb / Daio",
+      "traditions": [
+        "kampo",
+        "chinese"
+      ],
+      "tradition_names": {
+        "kampo": "Daio (大黄)",
+        "chinese": "Dà huáng (大黄)"
+      },
+      "modern_botanical": "Rheum palmatum / R. officinale",
+      "family": "Polygonaceae",
+      "convergence_score": 7,
+      "therapeutic_areas": [
+        "digestive",
+        "infection",
+        "inflammation"
+      ],
+      "entries": {
+        "kampo": {
+          "source_text": "Honzo Wamyo (本草和名, 918 CE); Daio-kanzoto formula in Ishinho (984 CE)",
+          "original": "大黄、和名 加波良久佐。性寒、味苦。主下瘀血、血閉、蕩滌腸胃、推陳致新。",
+          "translation": "Daio (rhubarb), Japanese name Kawarakusa. Nature: cold. Taste: bitter. Primary uses: dispels static blood, opens blocked blood, flushes and purges the intestines and stomach, eliminates the old and generates the new. Kampo preparation: shorter cooking time than Chinese tradition preserves cathartic anthraquinones; longer cooking destroys them, producing only astringent/anti-inflammatory effect. This cooking-time distinction was documented empirically in Kampo centuries before the active compounds were identified.",
+          "preparation": "Root decocted 3–12g; cooking time determines effect — short = laxative, long = anti-inflammatory",
+          "condition": "Constipation, intestinal inflammation, blood stasis conditions",
+          "notes": "Kampo's empirical discovery that cooking time changes rhubarb's clinical effect (short cooking = cathartic, long cooking = astringent) is a precise pharmacological observation: anthraquinone glycosides (cathartic) are heat-labile; tannins (astringent) are heat-stable. This distinction was not understood chemically until the 19th century."
+        }
+      },
+      "modern_research": {
+        "status": "fully_validated",
+        "key_compound": "Anthraquinone glycosides (sennoside A, B), tannins, stilbenes (rhapontigenin)",
+        "summary": "Rhubarb root is official in multiple modern pharmacopeias. Sennosides A and B are active cathartic compounds also found in senna — both now pharmaceutical. Rhubarb compounds show hepatoprotective, antibacterial, and anti-inflammatory activity in research. Used in Japanese intensive care for preventing bacterial translocation in ICU patients.",
+        "significance": "Kampo's cooking-time-dependent effect distinction — cathartic if undercooked, astringent if fully cooked — is one of the most precise empirical pharmacological observations in traditional medicine, predating understanding of anthraquinone heat lability by centuries."
+      },
+      "priority_score": 7,
+      "investigation_status": "validated"
+    },
+    {
+      "id": "MMA-031",
+      "common_name": "Bupleurum / Saiko",
+      "traditions": [
+        "kampo",
+        "chinese"
+      ],
+      "tradition_names": {
+        "kampo": "Saikou (柴胡)",
+        "chinese": "Chái hú (柴胡)"
+      },
+      "modern_botanical": "Bupleurum falcatum",
+      "family": "Apiaceae",
+      "convergence_score": 7,
+      "therapeutic_areas": [
+        "liver",
+        "inflammation",
+        "mental_health_depression",
+        "infection"
+      ],
+      "entries": {
+        "kampo": {
+          "source_text": "Honzo Wamyo (918 CE); Sho-saiko-to formula, Ishinho (984 CE)",
+          "original": "柴胡、和名 美之末。苦、平。主心腹腸胃中結気、寒熱邪気、推陳致新。",
+          "translation": "Saikou (Bupleurum), Japanese name Mishima. Bitter, neutral. Main: constricted qi in heart/abdomen/intestines, alternating cold and heat from pathogens, eliminates old and generates new. Sho-saiko-to (Minor Bupleurum Decoction): the most extensively studied Kampo formula for hepatitis. Multiple large Japanese RCTs demonstrated reduction in liver inflammation markers, HBsAg levels, and liver cancer risk in cirrhotic patients. Contraindication discovered 1994: combined with interferon causes severe interstitial pneumonia — a post-marketing pharmacovigilance discovery that became a model for herb-drug interaction monitoring.",
+          "preparation": "Root decocted 5–8g; Sho-saiko-to combines with 6 other herbs",
+          "condition": "Chronic hepatitis, liver inflammation, alternating fever/chills, depression",
+          "notes": "The 1994 Sho-saiko-to / interferon interaction discovery is the most important herb-drug interaction case in Kampo pharmacovigilance history — it led to mandatory warning labels and a model for monitoring traditional medicine drug interactions in Japan's national health system."
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Saikosaponins (a, b1, b2, c, d), bupleurumol",
+        "summary": "Saikosaponins have documented anti-inflammatory activity via glucocorticoid receptor modulation, hepatoprotective effects, and antiviral activity against HBV. Sho-saiko-to: multiple Japanese RCTs for chronic hepatitis B/C showing significant reduction in liver fibrosis markers. Also emerging research for depression via HPA axis modulation.",
+        "significance": "Represents the most rigorously studied Kampo formula with both positive clinical evidence (hepatoprotection) and a critical safety signal (interferon interaction) — making it a model for how traditional medicine evidence should be evaluated: both efficacy and safety, with pharmacovigilance taken seriously."
+      },
+      "priority_score": 8,
+      "investigation_status": "significant_findings"
+    },
+    {
+      "id": "MMA-032",
+      "common_name": "Arura / Chebulic Myrobalan",
+      "traditions": [
+        "tibetan",
+        "ayurveda"
+      ],
+      "tradition_names": {
+        "tibetan": "Arura (ཨ་རུ་ར)",
+        "ayurveda": "Haritaki (हरीतकी)"
+      },
+      "modern_botanical": "Terminalia chebula",
+      "family": "Combretaceae",
+      "convergence_score": 8,
+      "therapeutic_areas": [
+        "digestive",
+        "infection",
+        "infection_wound",
+        "respiratory"
+      ],
+      "entries": {
+        "tibetan": {
+          "source_text": "Gyushi (rGyud bzhi), Chapter on mountain medicines; Men-Tsee-Khang formulary",
+          "original": "ཨ་རུ་ར་སྨན་གྱི་རྒྱལ་པོ། ནད་ཀུན་ལ་ཕན་ཐོགས། ལྷ་བདུད་ཀྱི་སྨན།",
+          "translation": "Arura — the king of medicines. Beneficial for all diseases. Called the medicine of gods and demons. Possesses all five tastes (sour, sweet, bitter, pungent, astringent — only salt absent). Therefore can treat all three humors. Long-term use extends life and sharpens the mind. The Three Fruits formula (Arura + Baru + Kyuru) is the foundation of Tibetan pharmacology.",
+          "preparation": "Fruit dried and powdered; taken with different vehicles depending on condition — warm water, honey, molasses, or butter",
+          "condition": "All diseases (general tonic); specifically digestive disorders, respiratory conditions, wound healing"
+        },
+        "ayurveda": {
+          "source_text": "Charaka Samhita / Ashtanga Hridayam",
+          "original": "हरीतकी सर्वरोगघ्नी — haritaki sarvarogaghni",
+          "translation": "Haritaki — destroyer of all diseases. One of the most important herbs in Ayurveda; used in Triphala formula (same Three Fruits concept as Tibetan medicine). Specifically valuable for eye diseases, digestive disorders, and as a rejuvenating rasayana.",
+          "preparation": "Fruit powdered; taken as Triphala with warm water before bed",
+          "condition": "Digestive disorders, eye disease, constipation, aging"
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Chebulagic acid, chebulinic acid, corilagin, gallic acid, ellagic acid",
+        "summary": "Chebulagic acid and chebulinic acid show documented antiviral activity against HSV-1, HSV-2, and HIV integrase inhibition in vitro. Antimicrobial against MRSA. Strong antioxidant. Triphala (three myrobalans) has clinical evidence for constipation, weight loss, and dental health (mouthwash trials).",
+        "significance": "CONVERGENCE: Tibetan and Ayurvedic traditions independently developed the same Three Fruits formula (Triphala / Arura-Baru-Kyuru) using the same primary ingredient — Terminalia chebula — for overlapping indications. This convergence between two neighboring high-altitude civilizations is strong, and connects further to Australian Indigenous use of Terminalia ferdinandiana — three independent traditions identifying the Terminalia genus as uniquely medicinally important."
+      },
+      "priority_score": 8,
+      "investigation_status": "significant_findings"
+    },
+    {
+      "id": "MMA-033",
+      "common_name": "Copal (Maya) / Pom",
+      "traditions": [
+        "maya",
+        "badianus",
+        "florentine",
+        "cobo"
+      ],
+      "tradition_names": {
+        "maya": "Pom (Yucatec Maya)",
+        "badianus": "Copal (Nahuatl/Latin)",
+        "florentine": "Copalli",
+        "cobo": "Copal / Incienso"
+      },
+      "modern_botanical": "Bursera copallifera / B. bipinnata / B. simaruba (multiple species)",
+      "family": "Burseraceae",
+      "convergence_score": 9,
+      "therapeutic_areas": [
+        "infection_wound",
+        "respiratory",
+        "pain",
+        "ritual_healing"
+      ],
+      "entries": {
+        "maya": {
+          "source_text": "Ritual of the Bacabs (Roys 1965); documented Maya ethnobotany",
+          "original": "Ix-pom — ku ts'o'okol u yik'nal nabal naab. Ku yilaj ti' máak ku k'iinikil.",
+          "translation": "Ix-pom (copal) — it extinguishes the burning of the skin [infected wound]. It is used to treat sick persons. Burned as incense in healing ceremonies and applied directly as resin to infected wounds and sores. The Maya specifically distinguished between copal burned as incense (ritual/respiratory use) and copal applied as resin (wound use) — recognising different preparations for different applications.",
+          "preparation": "Resin applied directly to wounds; burned as incense for respiratory and ritual use",
+          "condition": "Wound infection, respiratory conditions, ritual healing"
+        },
+        "cobo": {
+          "source_text": "Historia del Nuevo Mundo, Book VI, cap. CVI — translated in this archive",
+          "original": "De las demás especies de copal — eight species of copal-producing trees documented",
+          "translation": "Eight distinct copal-producing tree species documented by Cobo across New Spain, each with antimicrobial and medicinal resin. Multiple species independently noted for treating dysentery when dissolved in water and cacao.",
+          "preparation": "Resin dissolved in water and cacao (internal); burned as incense (inhalation)",
+          "condition": "Dysentery, wound infection, general medicinal"
+        }
+      },
+      "modern_research": {
+        "status": "moderate_evidence",
+        "key_compound": "Boswellic acids (Boswellia — related Burseraceae), alpha-pinene, limonene, incensole acetate",
+        "summary": "Burseraceae resins broadly show antimicrobial, anti-inflammatory activity. Incensole acetate (from frankincense/Boswellia) shows neuroprotective and anxiolytic effects in animal models — may explain ritual calming effects. Boswellic acids (related species) have clinical evidence for osteoarthritis and inflammatory bowel disease.",
+        "significance": "MAXIMUM MESOAMERICAN CONVERGENCE: Maya, Aztec (Badianus + Florentine), and Andean (Cobo) traditions all independently documented Burseraceae resins for wound infection and respiratory use. This represents the strongest within-Americas convergence signal in the archive. The connection to Greek/Roman frankincense (Boswellia, same family) extends the signal globally."
+      },
+      "priority_score": 9,
+      "investigation_status": "moderate_validation"
+    },
+    {
+      "id": "MMA-034",
+      "common_name": "Betony / Bishopwort",
+      "traditions": [
+        "celtic_norse",
+        "greek_roman"
+      ],
+      "tradition_names": {
+        "celtic_norse": "Betonica (Old English — England)",
+        "greek_roman": "Betonica / Vettonica"
+      },
+      "modern_botanical": "Betonica officinalis / Stachys betonica",
+      "family": "Lamiaceae",
+      "convergence_score": 6,
+      "therapeutic_areas": [
+        "pain",
+        "digestive",
+        "respiratory",
+        "mental_health_general"
+      ],
+      "entries": {
+        "celtic_norse": {
+          "source_text": "Bald's Leechbook I (Cockayne vol.1, c.900 CE); Lacnunga",
+          "original": "Wið untrumnesse, genim þeos wyrt ðe man betonicam nemneþ, gebræd on buteran, smire mid.",
+          "translation": "For sickness, take this plant called betonica, cooked in butter, smear with it. For monstrous nocturnal visitors and frightful sights and dreams — betonica applied. For sore of eyes, for sore of ears, for dimness of eyes, for strong blood-running from the nose, for toothache, for sore of side, for sore of belly — betonica used throughout. The Leechbook devotes its entire first chapter to betonica, listing 29 specific medical indications — the most uses attributed to any single plant in the Anglo-Saxon medical tradition.",
+          "preparation": "Leaves cooked in butter and applied topically; decocted in ale or water for internal use; dried and powdered",
+          "condition": "Head pain, digestive disorders, respiratory, anxiety/nightmares, wound healing (29 documented indications)",
+          "notes": "Betony's 29 documented indications in Bald's Leechbook make it the most multi-purpose plant in Anglo-Saxon medicine. The inclusion of anxiety and nightmares among its indications ('monstrous nocturnal visitors') is noteworthy — betony has mild sedative activity that may account for its traditional use for sleep disturbance and anxiety."
+        },
+        "greek_roman": {
+          "source_text": "Pliny, Naturalis Historia XXVII; Dioscorides De Materia Medica IV",
+          "original": "Betonica — herba salutaris, omnibus morbis medetur.",
+          "translation": "Betonica — a health-bringing herb, it cures all diseases. Roman soldiers used it as a general tonic and head medicine. Applied for headache, for bites of venomous animals, for fever.",
+          "preparation": "Dried and powdered in wine; applied as poultice",
+          "condition": "Headache, fever, snakebite, general tonic"
+        }
+      },
+      "modern_research": {
+        "status": "preliminary",
+        "key_compound": "Betaine, stachydrine, tannins, rosmarinic acid",
+        "summary": "Limited modern research. Rosmarinic acid (anti-inflammatory, antioxidant) is shared with rosemary, sage, and other Lamiaceae — likely responsible for some traditional effects. Stachydrine shows cardioprotective activity in animal models. Traditional use for anxiety and sleep disturbance not well studied despite historical prominence.",
+        "significance": "The convergence between Anglo-Saxon and Roman documentation of betony as a multi-purpose medicine — independently identified by two traditions for overlapping conditions — warrants more systematic investigation than it has received. The gap between its historical prominence and modern research attention makes it a priority research candidate."
+      },
+      "priority_score": 6,
+      "investigation_status": "preliminary"
+    },
+    {
+      "id": "MMA-035",
+      "common_name": "Plantain / Waybread",
+      "traditions": [
+        "celtic_norse",
+        "greek_roman",
+        "north_american_indigenous"
+      ],
+      "tradition_names": {
+        "celtic_norse": "Wegebrade / Waybread (Old English — England)",
+        "greek_roman": "Arnoglosson (ἀρνόγλωσσον) / Plantago",
+        "north_american_indigenous": "White man's footprint (multiple nations — arrived with Europeans)"
+      },
+      "modern_botanical": "Plantago major / P. lanceolata",
+      "family": "Plantaginaceae",
+      "convergence_score": 9,
+      "therapeutic_areas": [
+        "infection_wound",
+        "respiratory",
+        "digestive"
+      ],
+      "entries": {
+        "celtic_norse": {
+          "source_text": "Bald's Leechbook (Cockayne vol.1, c.900 CE); Nine Herbs Charm (Lacnunga)",
+          "original": "Ond þu, wegbrade, wyrta modor, eastan openige, innan mihtigu; ofer ðe crætu curran, ofer ðe cwene reodan.",
+          "translation": "And you, waybread (plantain), mother of plants, open from the east, mighty within; over you carts have rolled, over you queens have ridden. [Nine Herbs Charm, Lacnunga]. Wound applications: leaves applied directly to wounds to stop bleeding and prevent infection. Leaf poultice for insect stings, burns. Leaf decoction drunk for cough and diarrhea. The Nine Herbs Charm positions waybread as one of the nine most important medicinal plants — alongside mugwort, stinging nettle, and cress.",
+          "preparation": "Fresh leaf applied directly to wounds; decocted for cough; chewed for mouth sores",
+          "condition": "Wound infection and bleeding, cough, diarrhea, insect stings"
+        },
+        "greek_roman": {
+          "source_text": "De Materia Medica, Dioscorides, Book II",
+          "original": "Ἀρνόγλωσσον — ἕλκη καθαίρει καὶ κολλᾷ",
+          "translation": "Plantain — cleanses and closes wounds. Leaves applied to old ulcers and wounds hasten healing. Juice drunk for bloody flux and for kidney disease.",
+          "preparation": "Fresh leaves applied topically; juice extracted",
+          "condition": "Wound healing, dysentery, kidney conditions"
+        }
+      },
+      "modern_research": {
+        "status": "moderate_evidence",
+        "key_compound": "Aucubin (iridoid), acteoside, allantoin, mucilage",
+        "summary": "Aucubin shows anti-inflammatory activity. Allantoin promotes wound healing (also found in comfrey). Mucilage soothes mucous membranes — validates respiratory use. Multiple studies showing plantain leaf extract reduces wound healing time. Antimicrobial activity against common pathogens.",
+        "significance": "GLOBAL CONVERGENCE: Plantago major spread worldwide with European colonization — Native American peoples called it 'white man's footprint' because it appeared wherever Europeans settled, and then adopted it into their own medicine for identical uses (wound healing, cough). This makes Plantago a unique case: cross-tradition convergence happened in real time and was historically documented, creating a natural experiment confirming the wound-healing effect across independent observers."
+      },
+      "priority_score": 8,
+      "investigation_status": "moderate_validation"
+    },
+    {
+      "id": "MMA-036",
+      "common_name": "Haoma / Sacred Ephedra",
+      "traditions": [
+        "persian_zoroastrian"
+      ],
+      "tradition_names": {
+        "persian_zoroastrian": "Haoma (هوم) — Avestan / Zoroastrian"
+      },
+      "modern_botanical": "Ephedra species (most likely E. intermedia or E. sinica)",
+      "family": "Ephedraceae",
+      "convergence_score": 5,
+      "therapeutic_areas": [
+        "stimulant",
+        "respiratory",
+        "ritual_healing"
+      ],
+      "entries": {
+        "persian_zoroastrian": {
+          "source_text": "Avesta, Yasna hymns 9-11 (Hom Yasht); Vendidad; Bundahishn",
+          "original": "Haoma — yō zaothrābyo paiti.vīsaiti | yō ashāum haomō fravaōiti. (Yasna 9.1) Haoma gave strength, Haoma gave victory, Haoma gave children.",
+          "translation": "Haoma — you who come to the libations, you who are sacred haoma. Haoma, pressed by the mortar, mixed with milk and water, drunk in the sacred ritual. Haoma drives away death, gives strength to warriors, gives children to women, gives wisdom to the priest. The Hom Yasht (Yasna 9-11) dedicates three full hymns to haoma — more ritual attention than any other plant in the Avestan corpus. Bundahishn natural history: haoma grows on the mountain Alburz, the cosmic mountain. Its pressing and preparation require specific ritual conditions. Effects documented: increased mental clarity, reduced fatigue, heightened spiritual awareness, physical endurance.",
+          "preparation": "Stems pressed by mortar, juice extracted, mixed with milk and water, consumed ritually",
+          "condition": "Fatigue, weakness, spiritual purification, fertility, battle preparation",
+          "notes": "The identification of haoma as Ephedra is not universal — alternative candidates include Peganum harmala (Syrian rue, containing harmaline — an MAO inhibitor), Sarcostemma species, or Cannabis. The debate mirrors the Vedic Soma controversy (same plant, different linguistic tradition). If haoma = Ephedra, the active compound is ephedrine — a stimulant consistent with the documented effects (energy, endurance, mental clarity). If haoma = Peganum harmala, the MAO-inhibiting beta-carbolines would explain the visionary/spiritual effects. The most pharmacologically satisfying interpretation may be a mixture: Ephedra providing stimulant effects, with MAO-inhibiting additions for the visionary component — a sophisticated empirical discovery paralleling ayahuasca's MAOi combination."
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Ephedrine, pseudoephedrine (if Ephedra); harmaline, harmine (if Peganum harmala)",
+        "summary": "If Ephedra: ephedrine is pharmacologically confirmed as a CNS stimulant and bronchodilator — consistent with documented haoma effects of endurance and clarity. If Peganum harmala: MAO inhibition confirmed, with documented psychoactive effects. Both interpretations are pharmacologically consistent with ancient texts. Modern Ephedra still used in Kampo (maōu) and Chinese medicine.",
+        "significance": "Haoma represents the oldest documented ritual pharmacological plant in the world — the Avestan hymns date to at least 1200 BCE, potentially much older. The pharmacological sophistication implied by haoma's documented effects (regardless of exact species identification) represents knowledge accumulated over millennia of empirical observation at the dawn of recorded civilization."
+      },
+      "priority_score": 8,
+      "investigation_status": "significant_findings"
+    },
+    {
+      "id": "MMA-037",
+      "common_name": "Bitter Melon / Ampalaya",
+      "traditions": [
+        "philippine",
+        "chinese",
+        "ayurveda"
+      ],
+      "tradition_names": {
+        "philippine": "Ampalaya (Tagalog)",
+        "chinese": "Kǔ guā (苦瓜)",
+        "ayurveda": "Karela (करेला)"
+      },
+      "modern_botanical": "Momordica charantia",
+      "family": "Cucurbitaceae",
+      "convergence_score": 9,
+      "therapeutic_areas": [
+        "diabetes",
+        "parasites",
+        "infection"
+      ],
+      "entries": {
+        "philippine": {
+          "source_text": "Quisumbing, Medicinal Plants of the Philippines (1951); Philippine DOH registration",
+          "original": "Ampalaya — iniluluto ang dahon at bunga para sa diabetes. Ginagamit din para sa mga bulate at lagnat.",
+          "translation": "Ampalaya — leaves and fruit cooked and eaten for diabetes ('sugar in the urine'). Also used for intestinal worms and fever. The Philippine tradition distinguishes between the leaves (stronger bitterness, used medicinally as tea) and the fruit (eaten as vegetable, milder medicinal effect). DOH-registered for Type 2 diabetes adjunct treatment.",
+          "preparation": "Leaves decocted as tea; fruit eaten raw or cooked; standardised extract tablets",
+          "condition": "Type 2 diabetes, intestinal parasites, fever"
+        },
+        "chinese": {
+          "source_text": "Bencao Gangmu (Li Shizhen, 1578)",
+          "original": "苦瓜 — 清熱解毒、明目、益気。治煩渇。",
+          "translation": "Kugua — clears heat and toxins, brightens the eyes, benefits qi. Treats thirst and irritability. Chinese traditional medicine uses for the same blood-sugar modulating indication predate Philippine documentation.",
+          "preparation": "Fruit eaten or decocted; seeds also used",
+          "condition": "Heat conditions, thirst, blood sugar dysregulation"
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Charantin, polypeptide-p (plant insulin), vicine, momordicin",
+        "summary": "Multiple clinical trials including Philippine PIMS trial showing HbA1c reduction. Polypeptide-p has structural similarity to insulin. Charantin shown to stimulate insulin secretion. WHO traditional medicine guidelines cite ampalaya as having promising anti-diabetic evidence. Multiple meta-analyses: consistent blood glucose lowering effect, though large RCTs needed.",
+        "significance": "CONVERGENCE: Philippine, Chinese, and Ayurvedic traditions independently documented bitter melon for blood sugar regulation — a triple convergence supporting a genuine pharmacological effect. The Philippine DOH formal registration for Type 2 diabetes represents one of the world's first government-backed traditional medicine approvals for a metabolic disease."
+      },
+      "priority_score": 9,
+      "investigation_status": "significant_findings"
     }
   ],
   "metadata": {
     "schema_version": "2.0",
     "last_updated": "2026",
-    "total_plants": 24,
+    "total_plants": 32,
     "traditions_represented": [
       "cobo",
       "badianus",
