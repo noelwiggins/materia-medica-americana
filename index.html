@@ -1887,10 +1887,26 @@
     <div class="corpus-controls">
       <input class="corpus-search" type="text" id="corpus-search" placeholder="Search translations, plant names, conditions..." oninput="filterCorpus()">
       <select id="corpus-tradition-filter" class="query-select" style="background:white; color:var(--ink); border-color:var(--border); min-width:160px;" onchange="filterCorpus()">
-        <option value="all">All Segments</option>
-        <option value="plant">Plants & Herbs</option>
-        <option value="mineral">Minerals & Earths</option>
-        <option value="water">Waters & Springs</option>
+        <option value="all">All Traditions</option>
+        <optgroup label="Americas">
+          <option value="andean">Andean (Cobo)</option>
+          <option value="maya">Maya</option>
+        </optgroup>
+        <optgroup label="Asia">
+          <option value="kampo">Kampo / Japanese</option>
+          <option value="tibetan">Tibetan</option>
+          <option value="philippine">Philippine</option>
+          <option value="persian">Persian / Zoroastrian</option>
+        </optgroup>
+        <optgroup label="Europe & Oceania">
+          <option value="celtic">Celtic & Norse</option>
+          <option value="australian">Australian Indigenous</option>
+        </optgroup>
+        <optgroup label="Content Type">
+          <option value="plant">Plants & Herbs</option>
+          <option value="mineral">Minerals & Earths</option>
+          <option value="water">Waters & Springs</option>
+        </optgroup>
       </select>
       <span class="corpus-count" id="corpus-count"></span>
     </div>
@@ -2108,28 +2124,46 @@ async function loadData() {
     conditionData = (await cRes.json()).conditions || [];
     longevityData = (await lRes.json()).traditions || [];
 
-    // Load corpus — merge main chapters + recovery chapters into one unified corpus
+    // Load corpus — merge all tradition translation files into one unified corpus
     try {
-      const [coboRes, recoveryRes] = await Promise.all([
-        fetch('/data/cobo_chapters.json'),
-        fetch('/data/cobo_recovery_chapters.json').catch(() => null)
-      ]);
-      const coboData = await coboRes.json();
-      const mainResults = (coboData.results || []).filter(r =>
-        r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
-      );
-      let recoveryResults = [];
-      if (recoveryRes) {
-        const recoveryData = await recoveryRes.json();
-        recoveryResults = (recoveryData.results || []).filter(r =>
-          r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
-        );
-      }
-      // Deduplicate by label — recovery pass may overlap with main
-      const seen = new Set(mainResults.map(r => r._label));
-      const newRecovery = recoveryResults.filter(r => !seen.has(r._label));
-      corpusData = [...mainResults, ...newRecovery];
-      console.log(`Corpus: ${mainResults.length} main + ${newRecovery.length} recovery = ${corpusData.length} total`);
+      const traditionFiles = [
+        { url: '/data/cobo_chapters.json',           tradition: 'cobo',               label: 'Andean (Cobo)' },
+        { url: '/data/cobo_recovery_chapters.json',  tradition: 'cobo',               label: 'Andean (Cobo — Recovery)' },
+        { url: '/data/cobo_mineral_air_chapters.json',tradition: 'cobo',              label: 'Andean (Cobo — Minerals)' },
+        { url: '/data/cobo_missing_chapters.json',   tradition: 'cobo',               label: 'Andean (Cobo — Final)' },
+        { url: '/data/cobo_nontarget_chapters.json', tradition: 'cobo',               label: 'Andean (Cobo — Healer/Elite)' },
+        { url: '/data/kampo_chapters.json',          tradition: 'kampo',              label: 'Kampo' },
+        { url: '/data/tibetan_chapters.json',        tradition: 'tibetan',            label: 'Tibetan' },
+        { url: '/data/maya_chapters.json',           tradition: 'maya',               label: 'Maya' },
+        { url: '/data/philippine_chapters.json',     tradition: 'philippine',         label: 'Philippine' },
+        { url: '/data/australian_chapters.json',     tradition: 'australian_indigenous', label: 'Australian Indigenous' },
+        { url: '/data/celtic_norse_chapters.json',   tradition: 'celtic_norse',       label: 'Celtic & Norse' },
+        { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
+      ];
+
+      const allResults = [];
+      const seen = new Set();
+
+      await Promise.all(traditionFiles.map(async ({ url, tradition, label }) => {
+        try {
+          const res = await fetch(url);
+          if (!res.ok) return;
+          const data = await res.json();
+          const results = (data.results || []).filter(r =>
+            r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
+          );
+          results.forEach(r => {
+            const key = r._label || r.title_inferred;
+            if (!seen.has(key)) {
+              seen.add(key);
+              allResults.push({ ...r, _tradition: tradition, _tradition_label: label });
+            }
+          });
+        } catch(e) { /* file may not exist yet — skip silently */ }
+      }));
+
+      corpusData = allResults;
+      console.log(`Corpus: ${corpusData.length} total segments across ${traditionFiles.length} files`);
     } catch(e) { corpusData = []; }
   } catch(e) { console.error('Data load error:', e); }
 }
@@ -2392,10 +2426,19 @@ function filterCorpus() {
 
   let filtered = corpusData.filter(r => {
     const text = (r.title_inferred + ' ' + r.translation).toLowerCase();
-    if (query && !text.includes(query)) return false;
+    const tradLabel = (r._tradition_label||r._tradition||'').toLowerCase();
+    if (query && !text.includes(query) && !tradLabel.includes(query)) return false;
     if (typeFilter === 'plant') return medicalKw.some(k=>text.includes(k));
     if (typeFilter === 'mineral') return mineralKw.some(k=>text.includes(k));
     if (typeFilter === 'water') return waterKw.some(k=>text.includes(k));
+    // Tradition filters map to _tradition field
+    const tradMap = {
+      'kampo':'kampo','tibetan':'tibetan','maya':'maya',
+      'philippine':'philippine','australian':'australian',
+      'celtic':'celtic_norse','persian':'persian',
+      'andean':'cobo'
+    };
+    if (tradMap[typeFilter]) return (r._tradition||'').includes(tradMap[typeFilter]);
     return true;
   });
 
@@ -2408,11 +2451,13 @@ function filterCorpus() {
       return `<span class="corpus-entity-tag entity-${type}" onclick="searchForEntity('${(e.name||'').replace(/'/g,"\\'")}',event)">${e.name||'?'}</span>`;
     }).join('');
 
-    return `<div class="corpus-segment" style="border-left-color:${i<3?'var(--gold)':''}">
+    return `<div class="corpus-segment" style="border-left-color:${i<3?'var(--gold)':getTradColor(r._tradition||'')}">
       <div class="corpus-seg-header" onclick="toggleCorpusSeg(this)">
         <div>
           <div class="corpus-seg-title">${r.title_inferred||'Untitled segment'}</div>
-          <div class="corpus-seg-meta">${r._label||''}</div>
+          <div class="corpus-seg-meta">
+            ${r._tradition_label ? `<span style="color:${getTradColor(r._tradition||'')}; font-weight:600">${getTradIcon(r._tradition||'')} ${r._tradition_label}</span> · ` : ''}${r._label||''}
+          </div>
           ${entityTags?`<div style="margin-top:0.4rem">${entityTags}</div>`:''}
         </div>
         <span class="chevron" style="color:var(--muted);flex-shrink:0">▾</span>
