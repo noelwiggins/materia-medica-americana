@@ -1890,6 +1890,8 @@
         <option value="all">All Traditions</option>
         <optgroup label="Americas">
           <option value="andean">Andean (Cobo)</option>
+          <option value="greek_roman">Greek &amp; Roman</option>
+          <option value="egyptian">Egyptian</option>
           <option value="maya">Maya</option>
         </optgroup>
         <optgroup label="Asia">
@@ -2139,6 +2141,14 @@ async function loadData() {
         { url: '/data/australian_chapters.json',     tradition: 'australian_indigenous', label: 'Australian Indigenous' },
         { url: '/data/celtic_norse_chapters.json',   tradition: 'celtic_norse',       label: 'Celtic & Norse' },
         { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
+        { url: '/data/greek_roman_chapters.json',    tradition: 'greek_roman',         label: 'Greek & Roman (Pliny)' },
+        { url: '/data/dioscorides_chapters.json',    tradition: 'greek_roman',         label: 'Greek & Roman (Dioscorides)' },
+        { url: '/data/egyptian_chapters.json',       tradition: 'egyptian',            label: 'Egyptian (Ebers Papyrus)' },
+        { url: '/data/west_african_chapters.json',   tradition: 'west_african',        label: 'West African' },
+        { url: '/data/north_american_chapters.json', tradition: 'north_american_indigenous', label: 'Native North American' },
+        { url: '/data/amazonian_chapters.json',      tradition: 'amazonian',           label: 'Amazonian' },
+        { url: '/data/cobo_nontarget_remaining_a.json', tradition: 'cobo',            label: 'Andean (Cobo — Extended A)' },
+        { url: '/data/cobo_nontarget_remaining_b.json', tradition: 'cobo',            label: 'Andean (Cobo — Extended B)' },
       ];
 
       const allResults = [];
