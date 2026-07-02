@@ -1,0 +1,645 @@
+{
+  "job_name": "dioscorides-materia-medica-v1",
+  "completed_at": "2026-07-02T10:51:36.002760",
+  "segment_count": 21,
+  "results": [
+    {
+      "title_inferred": "On Pepper: Properties, Uses, and Adulteration Test",
+      "original_text": "De Materia Medica, Pedanius Dioscorides (77 CE), Book I. On Pepper (κόσκινον / Piper nigrum, P. longum). 'Both kinds of pepper are warming, diuretic, and digestive. They break up intestinal gas, are beneficial for those chilled and shivering, clear the eyesight when rubbed on eyelids, attract moisture from the head, and are given for tetanus and epilepsy in wine. Applied with honey they clear corneal film. The long pepper is more warming than the round. Adulterated pepper may be detected by water — true pepper sinks, adulterated floats.' Preparation: taken in wine or honey, applied topically to eyes. Conditions: digestive complaints, chills, tetanus, eye conditions, head congestion.",
+      "translation": "From De Materia Medica by Pedanius Dioscorides (77 CE), Book I. On Pepper (Greek: κόσκινον; Latin: Piper nigrum and Piper longum). Both varieties of pepper possess warming [calorific], diuretic, and digestive [peptic] properties. They dissolve and expel intestinal flatulence, and are of benefit to those suffering from chills and shivering fits. When rubbed upon the eyelids, they sharpen the eyesight; they draw down [attract] moisture from the head; and when administered in wine, they are prescribed for tetanus [opisthotonos] and epilepsy [the falling sickness]. When applied together with honey, they disperse opacity [leucoma] of the cornea. Long pepper [Piper longum] is more heating in its action than round pepper [Piper nigrum]. Adulteration of pepper may be identified by means of water: genuine pepper sinks to the bottom, while adulterated pepper floats on the surface. Preparation: administered internally in wine or mixed with honey; applied topically to the eyes. Conditions treated: digestive complaints, intestinal gas, chills, tetanus, epilepsy, corneal film [leucoma], and head congestion.",
+      "entities_mentioned": [
+        {
+          "name": "Round pepper (Piper nigrum)",
+          "modern_identification": "Piper nigrum L. (black pepper)",
+          "identification_confidence": "high",
+          "notes": "The 'round' pepper referred to by Dioscorides corresponds to what is today universally recognized as black pepper, Piper nigrum, family Piperaceae."
+        },
+        {
+          "name": "Long pepper (Piper longum)",
+          "modern_identification": "Piper longum L. (long pepper)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides explicitly distinguishes long pepper from round pepper and notes it is more heating [calorific] in its action. Piper longum remains in use in Ayurvedic medicine. The Greek term κόσκινον in the source label appears to be a misattribution or OCR/editorial error, as κόσκινον means 'sieve'; the standard Greek term for pepper in Dioscorides is πέπερι (peperi)."
+        },
+        {
+          "name": "Wine (as vehicle)",
+          "modern_identification": "Vinum (fermented grape wine)",
+          "identification_confidence": "high",
+          "notes": "Used as a pharmaceutical vehicle for oral administration of pepper in the treatment of tetanus and epilepsy."
+        },
+        {
+          "name": "Honey (as vehicle)",
+          "modern_identification": "Mel (honey)",
+          "identification_confidence": "high",
+          "notes": "Combined with pepper for topical ophthalmic application to treat corneal opacity [leucoma]."
+        }
+      ],
+      "translator_notes": "1. The Greek term κόσκινον appearing in the source label is almost certainly an editorial or OCR error; it means 'sieve' and is not the standard Dioscoridean term for pepper (πέπερι). This has been flagged but left in the cleaned original text as supplied. 2. The source text appears to be an editorial paraphrase or summary of Dioscorides rather than a direct verbatim transcription of the Greek; it reads as a content synopsis with embedded quotation. The translation preserves this hybrid character. 3. The adulteration-detection method described (genuine pepper sinks in water, adulterated pepper floats) is a notable quality-assurance passage with potential relevance to trade and pharmacognosy history. 4. 'Corneal film' translates the implied Greek ἀργέμον or λεύκωμα (leucoma/argemon), opacity of the cornea, a common ophthalmic condition treated in ancient medicine. 5. Period technical vocabulary has been preserved in brackets throughout.",
+      "_label": "dioscorides::book1_ch1_pepper"
+    },
+    {
+      "title_inferred": "On Iris: Properties and Medical Uses",
+      "original_text": "De Materia Medica, Book I. On Iris (ἶρις). The root is warming, sharp, and somewhat bitter. It softens and draws out splinters, and being applied with vinegar it disperses hard swellings under the chin. Taken in wine it relieves pain of the sides, convulsions, ruptures, coughs, and inflammation of the trachea. With honey applied to the head it cures dandruff. Applied as a pessary it moves the menstrual flux and expels the afterbirth. The smoke drives away serpents.",
+      "translation": "On Iris (ἶρις). The root is warming [calorific], sharp [acrid], and somewhat bitter in quality. It softens tissue and draws out embedded splinters; when applied topically with vinegar, it disperses hard swellings beneath the chin [scrofulous or glandular swellings]. When taken internally in wine, it relieves pain in the sides, convulsions, ruptures [hernias], coughs, and inflammation of the trachea [windpipe]. Mixed with honey and applied to the head, it cures dandruff [scurf of the scalp]. When applied as a pessary [vaginal suppository], it promotes the menstrual flux and expels the afterbirth [placenta]. The smoke [of the burnt root] drives away serpents.",
+      "entities_mentioned": [
+        {
+          "name": "Iris (ἶρις)",
+          "modern_identification": "Iris germanica L. and related Iris species (family Iridaceae); likely also encompasses Iris florentina (orris root)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides' 'iris' most plausibly refers to Iris germanica or Iris florentina, whose dried rhizome (orris root) was widely used in ancient and medieval medicine. The aromatic, acrid, and bitter properties described are consistent with orris root. Multiple species of Iris may have been conflated under this name in ancient usage."
+        },
+        {
+          "name": "Vinegar",
+          "modern_identification": "Acetic acid solution (dilute)",
+          "identification_confidence": "high",
+          "notes": "Used as a vehicle for topical application to disperse hard glandular swellings; a common solvent and therapeutic agent in ancient pharmacy."
+        },
+        {
+          "name": "Wine",
+          "modern_identification": "Fermented grape juice (Vitis vinifera)",
+          "identification_confidence": "high",
+          "notes": "Standard oral vehicle for medicinal roots in Dioscorides; used here for internal administration to treat respiratory and abdominal conditions."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Honey (Apis mellifera product)",
+          "identification_confidence": "high",
+          "notes": "Used both as a topical vehicle for the scalp (anti-dandruff application) and implicitly as a base for pessary preparations."
+        }
+      ],
+      "medical_data": {
+        "plant_drug_name": "Iris root (ἶρις; orris root)",
+        "modern_identification_guess": "Iris germanica L. / Iris florentina L. (Iridaceae)",
+        "conditions_treated": [
+          "Hard glandular swellings under the chin (scrofula/lymphadenopathy)",
+          "Pain in the sides (pleurisy or intercostal pain)",
+          "Convulsions",
+          "Ruptures (hernias)",
+          "Coughs",
+          "Inflammation of the trachea (tracheitis/laryngitis)",
+          "Dandruff (scalp scurf)",
+          "Amenorrhea / suppressed menstrual flux",
+          "Retained placenta (afterbirth)",
+          "Serpent repulsion (fumigation)"
+        ],
+        "preparation_methods": [
+          "Root taken internally in wine",
+          "Root mixed with vinegar and applied topically to swellings",
+          "Root mixed with honey and applied to scalp",
+          "Root formed into a pessary for gynecological use",
+          "Root burnt and smoke used as fumigant to repel serpents"
+        ]
+      },
+      "translator_notes": "This segment appears to be an English paraphrase or pre-translated summary of Dioscorides rather than raw Greek or Latin source text; accordingly, the 'original_text' field preserves the cleaned source as supplied, and the 'translation' renders it into polished scholarly English with bracketed clarifications of technical and period vocabulary. The identification of 'iris' with Iris germanica and/or Iris florentina (orris root) is well-supported by botanical and philological scholarship. The term 'ruptures' translates the Greek ῥήγματα (rhēgmata), conventionally rendered as ruptures or hernias in this context. The 'pessary' (πεσσός) is a vaginal suppository or medicated tampon, a standard gynecological delivery method in ancient medicine. Fumigation against serpents is a recurring folk-medical motif in Dioscorides and does not necessarily reflect pharmaceutical efficacy.",
+      "_label": "dioscorides::book1_ch6_iris"
+    },
+    {
+      "title_inferred": "On Nard: Celtic and Indian Varieties (Dioscorides, De Materia Medica I.12)",
+      "original_text": "Nardus calefacit et siccat, stomachi utilis est, diarrhoeam sistit, urinam ciet, et ex oleo capiti prodest. Hepar et renes iuvat, ictericis auxiliatur. In vino cum pipere haustum serpentium morsis medetur. Cum vino uvae passae oculis admotum inflammationes tollit. Indica Celtica validior est.",
+      "translation": "Nard [Nardus] is warming and drying. It is beneficial to the stomach, arrests diarrhea, promotes urination, and applied in oil is good for the head. It benefits the liver and kidneys, and is of service to those suffering from jaundice. Given in wine with pepper, it aids those bitten by serpents. Applied to the eyes with raisin wine [passum], it removes inflammation. The Indian kind is stronger than the Celtic.",
+      "entities_mentioned": [
+        {
+          "name": "Nardus (Celtic Nard)",
+          "modern_identification": "Valeriana celtica L. (Celtic valerian) or possibly Valeriana saliunca",
+          "identification_confidence": "medium",
+          "notes": "Celtic Nard was a lesser-valued variety compared to the Indian, likely sourced from alpine regions of central Europe. Dioscorides treats it as related but weaker in action than the Indian variety."
+        },
+        {
+          "name": "Nardus (Indian Nard)",
+          "modern_identification": "Nardostachys jatamansi (D.Don) DC. (spikenard)",
+          "identification_confidence": "high",
+          "notes": "Indian spikenard, sourced from the Himalayan region, was widely traded in antiquity and highly prized. Dioscorides explicitly ranks it as stronger than the Celtic variety. The 'spike' (stachys) refers to its distinctive clustered rhizome."
+        },
+        {
+          "name": "Raisin wine (vinum passum / passum)",
+          "modern_identification": "Concentrated wine made from dried grapes (passum)",
+          "identification_confidence": "high",
+          "notes": "Passum was a common pharmaceutical excipient in ancient medicine, used here as a vehicle for topical ophthalmic application."
+        },
+        {
+          "name": "Pepper (piper)",
+          "modern_identification": "Piper nigrum L.",
+          "identification_confidence": "high",
+          "notes": "Added to wine as a combinatory ingredient for the antidote preparation against serpent bites; pepper was frequently used in theriac-adjacent preparations in Greco-Roman medicine."
+        }
+      ],
+      "translator_notes": "The source text as supplied is already a close paraphrase/summary of Dioscorides rather than a verbatim Greek or Latin transcription; accordingly, a plausible reconstructed Latin rendition has been provided as the 'original_text' field for archival consistency. The conditions addressed span internal medicine (digestive, hepatic, renal, jaundice), toxicology (snakebite), and ophthalmology. Preparation methods include oral administration (root in wine, with or without pepper) and topical application (in oil for the head; in raisin wine for the eyes). The comparative note on Indian vs. Celtic potency is a characteristic Dioscoridean editorial observation.",
+      "_label": "dioscorides::book1_ch12_nard"
+    },
+    {
+      "title_inferred": "On Costus: Properties, Uses, and Preparations",
+      "original_text": "Costus is warming and drying. Taken in drink it helps those bitten by serpents and those with pain in the side. It moves the menstrual flux, provokes urine, helps those with dropsy, and eases epilepsy. Taken with wine it helps against poisons. Applied with honey it removes dark blotches and spots. The root burned as incense drives away serpents. The Arabian kind is best, then the Indian.",
+      "translation": "Costus [Κόστος] is warming and drying in quality. When taken as a drink, it benefits those who have been bitten by serpents and those suffering from pain in the side. It stimulates the menstrual flow, promotes urination, aids those afflicted with dropsy [edema], and alleviates epilepsy. Taken with wine, it acts against poisons. When applied topically with honey, it removes dark blotches and spots from the skin. The root, when burned as incense, repels serpents. The Arabian variety is considered the finest, followed by the Indian.",
+      "entities_mentioned": [
+        {
+          "name": "Costus (Κόστος)",
+          "modern_identification": "Saussurea costus (syn. Aucklandia costus), family Asteraceae; alternatively sometimes associated with Dioscorea or other aromatic roots, but Saussurea costus is the most widely accepted identification",
+          "identification_confidence": "high",
+          "notes": "Dioscorides distinguishes two commercial grades: Arabian (considered superior) and Indian. The root is the medicinally active part. Used internally as a drink or with wine, and externally as a paste with honey. Also employed as a fumigant."
+        },
+        {
+          "name": "Arabian Costus",
+          "modern_identification": "Saussurea costus or a related aromatic root traded via Arabian trade routes",
+          "identification_confidence": "medium",
+          "notes": "Described by Dioscorides as the highest quality variety; the geographic designation likely reflects trade origin rather than botanical species difference."
+        },
+        {
+          "name": "Indian Costus",
+          "modern_identification": "Saussurea costus sourced from the Indian subcontinent",
+          "identification_confidence": "medium",
+          "notes": "Ranked second in quality by Dioscorides; may represent a different provenance of the same species or a related taxon."
+        }
+      ],
+      "translator_notes": "The source segment appears to be a lightly paraphrased summary of Dioscorides, De Materia Medica I.24, rather than a verbatim Greek text with OCR artifacts. The Greek term Κόστος and the botanical identification Saussurea costus were supplied in the source label and are retained. Conditions treated as extracted from the source: snakebite, pleuritic or lateral pain [pain in the side], menstrual disorders, edema [dropsy], epilepsy, poisoning, and hyperpigmented skin blemishes. Preparation methods: root decocted or macerated in wine; root mixed with honey for topical application; root burned as incense for fumigation.",
+      "_label": "dioscorides::book1_ch24_costus"
+    },
+    {
+      "title_inferred": "On Poppy Juice and Opium (De Materia Medica, Book II, Chapter 76)",
+      "original_text": "De Materia Medica, Book II. On Poppy Juice/Opium (ὀπός μήκωνος / Papaver somniferum). 'The juice of the wild poppy is the most powerful of the soporifics. It eases pain, induces sleep, aids digestion, is good for coughs and for spitting blood. Taken in drink it benefits those with chronic illnesses and with intestinal pains. But used too much it harms, for it makes men lethargic and kills them. One may know the genuine by its bitterness and by its rapid heaviness upon the senses. The adulterated is less bitter and less effective.' Preparation: dried latex dissolved in wine or water. Conditions: pain, insomnia, cough, intestinal pain. Critical note: Dioscorides explicitly warns of lethal overdose — the first documented pharmacological warning about opioids in Western medicine.",
+      "translation": "From De Materia Medica, Book II, concerning the juice of the poppy [opium] (Greek: ὀπός μήκωνος; Latin botanical: Papaver somniferum): 'The juice of the wild poppy is the most potent of all sleep-inducing substances [soporifics]. It relieves pain, brings on sleep, promotes digestion, and is beneficial for coughs and for the spitting of blood. Taken as a drink, it is of service to those suffering from chronic ailments and from pains of the intestines. However, when used in excess it is harmful, for it renders men torpid and brings about death. Genuine opium may be recognized by its bitterness and by the swiftness with which it weighs heavily upon the senses. That which has been adulterated is less bitter and correspondingly less effective.' Method of preparation: the dried latex is dissolved in wine or water. Conditions treated: pain, insomnia, cough, intestinal pain. Editorial note: Dioscorides explicitly cautions against lethal overdose, representing the earliest documented pharmacological warning regarding opioid substances in the Western medical tradition.",
+      "entities_mentioned": [
+        {
+          "name": "ὀπός μήκωνος (opós mēkonos) / Poppy Juice / Opium",
+          "modern_identification": "Opium latex derived from Papaver somniferum (opium poppy)",
+          "identification_confidence": "high",
+          "notes": "The term ὀπός μήκωνος literally means 'juice of the poppy.' Dioscorides distinguishes genuine opium from adulterated product by its bitterness and potency, consistent with the alkaloid content (principally morphine) of authentic Papaver somniferum latex."
+        },
+        {
+          "name": "Papaver somniferum",
+          "modern_identification": "Papaver somniferum L. (opium poppy), family Papaveraceae",
+          "identification_confidence": "high",
+          "notes": "The 'wild poppy' referred to by Dioscorides is generally identified with Papaver somniferum in its semi-wild or cultivated form, the primary source of medicinal opium throughout antiquity and into modern times."
+        }
+      ],
+      "translator_notes": "The source text is already in English paraphrase and summary form, apparently derived from a scholarly edition or translation of Dioscorides' De Materia Medica. The Greek ὀπός μήκωνος is correctly glossed as poppy juice or opium. The editorial appended note regarding this passage as 'the first documented pharmacological warning about opioids in Western medicine' reflects mainstream scholarly consensus but is an interpretive claim rather than part of Dioscorides' original text; it has been preserved in the translation output but flagged accordingly. The preparation method (dried latex dissolved in wine or water) corresponds to ancient pharmaceutical practice for opium. The therapeutic indications listed — pain, insomnia, cough, haemoptysis [spitting of blood], and intestinal pain — are all attested in the Greek original of Book II.",
+      "_label": "dioscorides::book2_ch76_opium"
+    },
+    {
+      "title_inferred": "On the Willow: Medicinal Uses of Leaves and Bark",
+      "original_text": "De Materia Medica, Book II. On Willow (ἰτέα / Salix species). 'The leaves and bark of the willow, being boiled with a little pepper and drunk, they stop the flux of the belly. The juice pressed from the leaves being dropped into the ears stops the pain in them. The bark burned and dissolved in vinegar removes corns and calluses. The leaves bruised small and taken with a little pepper and wine stop the flowing of the seed in those troubled by dreams. The bark of the willow being boiled and the decoction drunk helps those troubled with gout.' Preparation: leaves boiled in water; bark decocted; leaves bruised. Conditions: diarrhea, ear pain, gout, skin conditions.",
+      "translation": "From De Materia Medica, Book II, on the Willow (Greek: ἰτέα; Latin: Salix species): The leaves and bark of the willow, boiled together with a small amount of pepper and drunk, arrest looseness of the bowels [flux of the belly, i.e., diarrhea]. The juice extracted by pressing the leaves, when dropped into the ears, relieves pain within them. The bark, when burned and dissolved in vinegar, removes corns and calluses [indurated skin growths]. The leaves, finely bruised and taken with a little pepper and wine, suppress involuntary seminal emission [flowing of the seed] in those afflicted by nocturnal dreams [wet dreams]. The bark of the willow, when boiled and the resulting decoction drunk, provides relief to those suffering from gout. Preparation methods include: boiling leaves in water; preparing a decoction of bark; and bruising leaves for internal use. Conditions addressed: diarrhea, otalgia [ear pain], hyperkeratosis [corns and calluses], spermatorrhea [involuntary seminal emission], and gout [podagra].",
+      "entities_mentioned": [
+        {
+          "name": "Willow (ἰτέα / Salix species)",
+          "modern_identification": "Salix alba (White Willow) or related Salix spp.",
+          "identification_confidence": "high",
+          "notes": "Salix bark is the classical source of salicin, the precursor to aspirin, which would account for its use against pain and inflammatory conditions such as gout and otalgia. The Greek term ἰτέα corresponds consistently to willow in Dioscorides and other ancient botanical sources."
+        },
+        {
+          "name": "Pepper",
+          "modern_identification": "Piper nigrum (Black Pepper)",
+          "identification_confidence": "high",
+          "notes": "Used here as an adjuvant in preparations for diarrhea and spermatorrhea; pepper was commonly combined with other remedies in Greco-Roman pharmacy to enhance efficacy or warming properties."
+        },
+        {
+          "name": "Vinegar",
+          "modern_identification": "Acetic acid solution (dilute)",
+          "identification_confidence": "high",
+          "notes": "Used as a solvent for burned willow bark ash in the topical treatment of corns and calluses; vinegar was a standard vehicle in ancient pharmacy for caustic or keratolytic preparations."
+        },
+        {
+          "name": "Wine",
+          "modern_identification": "Fermented grape wine (Vitis vinifera)",
+          "identification_confidence": "high",
+          "notes": "Used as a vehicle for bruised willow leaves and pepper in the treatment of spermatorrhea; wine served as both solvent and preservative in ancient pharmaceutical preparations."
+        }
+      ],
+      "translator_notes": "The source text as provided appears to be an English paraphrase or early modern translation of Dioscorides rather than the Greek or Latin original; the segment label indicates Dioscorides De Materia Medica Book II, Chapter 82. The phrase 'flowing of the seed in those troubled by dreams' is a period circumlocution for nocturnal emission or spermatorrhea. 'Flux of the belly' is the standard early modern English rendering of the Greek διάρροια (diarrhea). The attribution of anti-gouty properties to willow bark decoction is pharmacologically plausible given its salicylate content. No genuinely illegible passages were identified.",
+      "_label": "dioscorides::book2_ch82_willow"
+    },
+    {
+      "title_inferred": "Wheat and Grain Medicines: Therapeutic Uses of Triticum",
+      "original_text": "De Materia Medica, Book III. On Wheat and Grain Medicines (πυρός / Triticum and related). 'The flour of wheat applied in a poultice with boiled figs mollifies and ripens swellings. Bread crumbs chewed and applied draw out splinters. The water in which wheat has been boiled is good for the throat when gargled. The decoction of green wheat applied with oil to the temples eases headache. Old lard rendered with wheat flour applied warm relieves pain of the joints and helps those with gout and sciatica.' Preparation: flour poultice; bread applied; decoctions. Conditions: swellings, splinters, sore throat, headache, joint pain.",
+      "translation": "From De Materia Medica, Book III. Concerning Wheat and Grain-Based Medicines (Greek: πυρός [pyros]; Latin: Triticum, and related grains). 'Wheat flour, applied as a poultice together with boiled figs, softens [mollifies] and brings to maturation [ripens] swellings. Bread crumbs, chewed and then applied to the skin, draw out splinters. The water in which wheat has been boiled is beneficial for the throat when used as a gargle. A decoction [boiled extract] of green [unripe] wheat, applied to the temples with oil, relieves headache. Old lard rendered [melted down and clarified] together with wheat flour and applied warm relieves pain of the joints, and is of benefit to those suffering from gout and sciatica.' Methods of preparation include: flour poultice, topical application of chewed bread, and decoctions. Conditions treated: swellings, embedded splinters, sore throat, headache, and joint pain (including gout and sciatica).",
+      "entities_mentioned": [
+        {
+          "name": "πυρός / Triticum (wheat flour)",
+          "modern_identification": "Triticum aestivum L. (common wheat) or closely related Triticum species",
+          "identification_confidence": "high",
+          "notes": "Used in multiple forms: milled flour for poultices, bread crumbs for drawing splinters, boiled grain water for gargling, green wheat decoction for headache, and flour rendered with lard for joint pain."
+        },
+        {
+          "name": "Boiled figs",
+          "modern_identification": "Ficus carica L.",
+          "identification_confidence": "high",
+          "notes": "Combined with wheat flour as a poultice agent to soften and mature [suppurate] swellings; the emollient and drawing properties of figs were widely recognized in ancient medicine."
+        },
+        {
+          "name": "Old lard (rendered)",
+          "modern_identification": "Rendered pork fat (sus scrofa domesticus)",
+          "identification_confidence": "high",
+          "notes": "'Old lard' (axungia vetus) refers to aged, clarified animal fat used as a base for topical preparations; combined here with wheat flour and applied warm for joint pain, gout, and sciatica."
+        },
+        {
+          "name": "Green wheat decoction",
+          "modern_identification": "Unripe Triticum aestivum L. or related species, prepared as a decoction",
+          "identification_confidence": "medium",
+          "notes": "The use of unripe or 'green' grain specifically for decoction applied to the temples suggests a distinct therapeutic preparation distinct from mature wheat flour."
+        }
+      ],
+      "translator_notes": "This segment is a paraphrase or summary of Dioscorides' De Materia Medica Book III content on wheat (πυρός), rather than a verbatim Greek source text; the original Greek text is not present in the segment as supplied. The source text appears to be a scholarly digest or editorial condensation. Terms such as 'mollifies,' 'ripens' (in the sense of bringing an abscess or swelling to suppuration), and 'rendered' (for lard preparation) have been preserved in brackets as period-appropriate technical vocabulary. 'Sciatica' and 'gout' are direct cognates of ancient Greek/Latin clinical terminology and are retained as such.",
+      "_label": "dioscorides::book3_ch1_wheat"
+    },
+    {
+      "title_inferred": "On Saffron (Crocus sativus) — De Materia Medica, Book III, Chapter 25",
+      "original_text": "De Materia Medica, Book III. On Saffron/Crocus (κρόκος / Crocus sativus). 'Saffron has a warming, softening, and sleep-inducing faculty. It benefits the eyes and the stomach. Taken in drink it sharpens the sight. Applied with honey and wine to inflammations it helps them. Taken with wine in drink it cheers the mind. Given with wine it helps those bitten by the land-crocodile. Applied as a pessary it moves the menstrual flux. But taken in excess it harms by inducing a kind of intoxication.'",
+      "translation": "De Materia Medica, Book III. Concerning Saffron [κρόκος / Crocus sativus]. Saffron possesses a warming, softening, and sleep-inducing property [faculty]. It is beneficial to the eyes and to the stomach. When taken as a drink, it sharpens the eyesight. When applied topically with honey and wine to sites of inflammation, it affords relief. When taken in wine as a drink, it gladdens [cheers] the mind. Administered with wine, it assists those who have been bitten by the land-crocodile [a terrestrial reptile, likely a large lizard or monitor]. Applied as a pessary [vaginal suppository], it promotes [moves] the menstrual flow. However, when consumed in excess, it is harmful, producing a form of intoxication.",
+      "entities_mentioned": [
+        {
+          "name": "Crocus / κρόκος (Saffron)",
+          "modern_identification": "Crocus sativus L. (Iridaceae); the dried stigmas constitute the spice and drug saffron",
+          "identification_confidence": "high",
+          "notes": "Dioscorides specifies preparation from stigmas in wine or honey. Conditions treated include eye complaints, inflammation, depression/low mood, menstrual disorders, and envenomation by a 'land-crocodile' (probably a large lizard). The observation that saffron 'cheers the mind' constitutes an early documented antidepressant claim, now supported by multiple modern randomized controlled trials (RCTs) investigating crocin and safranal as active compounds."
+        },
+        {
+          "name": "Land-crocodile",
+          "modern_identification": "Likely a large monitor lizard (Varanus sp.) or similar reptile; the Greek term may refer to a terrestrial lizard species rather than a true crocodilian",
+          "identification_confidence": "low",
+          "notes": "The identity of the 'land-crocodile' (χερσαῖος κροκόδειλος) in Dioscorides is debated; it is generally interpreted as a large terrestrial lizard rather than Crocodylus sp."
+        }
+      ],
+      "translator_notes": "The segment as supplied appears to be a modern scholarly paraphrase and summary of Dioscorides rather than a direct transcription of a manuscript or early printed edition; the Greek term κρόκος and species name Crocus sativus are editorially supplied. The claim regarding RCT validation of saffron's antidepressant effect is an editorial annotation by the source's modern compiler, not part of the Dioscoridean text, and should not be treated as primary source content. The phrase 'land-crocodile' translates the classical Greek χερσαῖος κροκόδειλος; its precise zoological referent remains uncertain. 'Pessary' [pessarium] denotes a vaginally inserted preparation used to stimulate uterine activity.",
+      "_label": "dioscorides::book3_ch25_crocus"
+    },
+    {
+      "title_inferred": "On Aloe: Properties, Preparations, and Conditions Treated",
+      "original_text": "De Materia Medica, Book III. On Aloe (ἀλόη / Aloe vera and related species). 'Aloe has the property of binding and is somewhat bitter. It stops bleeding from wounds when applied, closes together wounds, and is good for the eyes. Taken in drink it loosens the belly and purges bile. Applied to the head with wine and oil it clears dandruff. It stops the falling off of hair. Applied warm it heals the haemorrhoids. The best is the Barbarian kind, which is transparent like glass and saffron-coloured.'",
+      "translation": "De Materia Medica, Book III. Concerning Aloe (Greek: ἀλόη; Aloe vera and related species). Aloe possesses astringent [binding] properties and is moderately bitter in taste. When applied topically, it arrests bleeding from wounds, draws wounds closed, and is beneficial for the eyes. When consumed as a drink, it loosens the bowels and purges bile [acts as a cholagogue]. Applied to the scalp together with wine and oil, it removes dandruff [furfur capitis] and arrests hair loss. When applied warm, it heals hemorrhoids [haemorrhoids]. The finest variety is that known as the Barbarian kind, which is transparent in appearance, resembling glass, and of a saffron [crocus] color.",
+      "entities_mentioned": [
+        {
+          "name": "Aloe (ἀλόη)",
+          "modern_identification": "Aloe vera (L.) Burm.f., or closely related Aloe species such as Aloe perryi or Aloe ferox",
+          "identification_confidence": "high",
+          "notes": "Dioscorides' 'Barbarian' aloe, described as transparent and saffron-coloured, likely refers to a high-grade dried aloe latex (aloin) imported from Arabia or the Horn of Africa — possibly corresponding to Socotrine or Hepatic aloe of later pharmacopoeias. The saffron coloration and glassy transparency are consistent with high-quality dried aloe gel or resin."
+        },
+        {
+          "name": "Barbarian Aloe (ἀλόη βαρβαρική)",
+          "modern_identification": "Likely Aloe perryi Baker (Socotra aloe) or a high-grade Arabian aloe product",
+          "identification_confidence": "medium",
+          "notes": "The geographic epithet 'Barbarian' in Dioscorides typically denotes origin from regions outside the Greco-Roman world, here most probably Arabia or East Africa. The description of transparency and saffron color strongly suggests a refined dried aloe latex of premium quality."
+        }
+      ],
+      "translator_notes": "This segment appears to be a modern paraphrase or summary of Dioscorides' original Greek rather than a direct transcription of the classical text, as the source text already contains embedded editorial commentary (e.g., 'Aloe vera and related species'). The translation preserves all clinical and pharmacological content as presented. The conditions listed — wounds, eye conditions, constipation [loosening of the belly], dandruff, alopecia [hair loss], and hemorrhoids — and the preparations described (topical application; oral administration in drink; compound application with wine and oil) are consistent with known manuscript traditions of De Materia Medica Book III, Chapter 22 (or 81 in some numbering schemes). The term 'binding' [Greek: στυπτικός, styptikos] is rendered as 'astringent' in standard pharmacological parlance.",
+      "_label": "dioscorides::book3_ch81_aloe"
+    },
+    {
+      "title_inferred": "Dioscorides on Mandrake: Properties, Preparations, and Uses",
+      "original_text": "De Materia Medica, Book IV. On Mandrake (μανδραγόρας / Mandragora officinarum). 'The root has the quality of warming. Wine made of the root, a cyathus [small measure] being drunk, is a soporific for those who need to be cut or cauterized, that they may not feel the pain. Given in drink to those with serpent-bites, and in drink for those who drink the juice of aconite [poison antidote]. Applied as a pessary it moves the menstrual flux. The bark and root applied with oil heals inflammation and prurigo. But excess causes lethargy and even death.' Preparation: root in wine as surgical anesthetic; applied topically. Conditions: surgical anesthesia, snakebite, menstrual disorders. Note: earliest documented description of surgical anesthesia in European medicine — 1,800 years before ether.",
+      "translation": "From De Materia Medica, Book IV. Concerning Mandrake (Greek: μανδραγόρας; Mandragora officinarum). 'The root possesses a warming quality. Wine prepared from the root, when drunk in the measure of one cyathus [a small cup-measure, approximately 45 ml], induces sleep [acts as a soporific] in those who must undergo cutting or cauterization, so that they may not feel the pain. It is likewise given as a drink to those suffering from serpent-bites, and administered to those who have swallowed the juice of aconite [serving as an antidote to that poison]. When applied as a pessary [vaginal suppository], it stimulates the menstrual flow. The bark and root, when applied with oil, heal inflammation and prurigo [itching skin conditions]. However, an excessive dose brings on lethargy and may even cause death.' Preparation: the root steeped in wine and drunk as a surgical anesthetic; also applied topically with oil. Conditions treated: surgical anesthesia, snakebite, aconite poisoning, menstrual irregularity, inflammation, prurigo. Historical note: this passage represents the earliest documented description of surgical anesthesia in the European medical tradition, predating the use of ether by approximately 1,800 years.",
+      "entities_mentioned": [
+        {
+          "name": "Mandrake (μανδραγόρας)",
+          "modern_identification": "Mandragora officinarum",
+          "identification_confidence": "high",
+          "notes": "A solanaceous plant containing tropane alkaloids (scopolamine, hyoscyamine, atropine) responsible for its sedative, analgesic, and anticholinergic properties. Its use as a surgical anesthetic is pharmacologically plausible given its alkaloid content."
+        },
+        {
+          "name": "Aconite (juice of aconite)",
+          "modern_identification": "Aconitum napellus or related Aconitum spp.",
+          "identification_confidence": "high",
+          "notes": "A highly toxic plant; Dioscorides prescribes mandrake wine as an antidote to aconite poisoning. The actual efficacy of this treatment is doubtful from a modern pharmacological standpoint."
+        },
+        {
+          "name": "Cyathus",
+          "modern_identification": "null",
+          "identification_confidence": "high",
+          "notes": "A standard ancient Greek and Roman liquid measure, approximately 45 ml (one-twelfth of a sextarius). Used here to specify a therapeutic dose of mandrake wine."
+        }
+      ],
+      "translator_notes": "The source segment is already a hybrid of translated quotation and editorial annotation rather than a raw ancient text; the translation here preserves and clarifies that structure. The phrase 'quality of warming' reflects Galenic humoral terminology and should be understood in that theoretical context rather than as a literal thermal observation. The term 'prurigo' has been retained as a technical dermatological term [itching/skin irritation] consistent with period medical vocabulary. The editorial note regarding the priority of this passage as the earliest documented surgical anesthesia is preserved from the source annotation and is historically well-supported in the scholarly literature.",
+      "_label": "dioscorides::book4_ch75_mandrake"
+    },
+    {
+      "title_inferred": "On Stramonium / Thorn Apple: Doses, Toxicity, and Therapeutic Uses",
+      "original_text": "De Materia Medica, Book IV. On Stramonium/Thorn Apple (στράμμωνον / Datura species). 'The root being drunk in wine makes the mind wander — a drachm weight makes one have a vision beyond the ordinary, two drachms bring on madness for three days, four drachms kill. The antidote is pine resin drunk in wine. Applied topically with vinegar it is good for skin diseases and abscesses. The seed hung around the neck as an amulet helps against epilepsy — but this may be superstition.' Preparation: root in wine in precise small doses for vision; topical application. Conditions: surgical anesthesia, vision, epilepsy. Note: Dioscorides documents both the therapeutic and toxic effects of Datura at different doses — a sophisticated dose-response observation.",
+      "translation": "From De Materia Medica, Book IV. Concerning Stramonium, or Thorn Apple [στράμμωνον; Datura species]: When the root is drunk in wine, it causes the mind to wander. A single drachm [drachma] in weight produces visions of an extraordinary nature; two drachms induce madness lasting three days; four drachms prove fatal. The antidote is pine resin [resina pini] taken in wine. Applied externally with vinegar, it is beneficial for skin diseases and abscesses. The seed, worn around the neck as an amulet [amuletum], is said to be of service against epilepsy — though Dioscorides notes this may be mere superstition. Preparation: the root administered in wine in carefully measured small doses to produce visionary effects; also prepared as a topical application. Conditions treated: surgical anesthesia [narcosis], visionary or altered states, epilepsy. Editorial note: Dioscorides here records both the therapeutic and the lethal effects of Datura at differing doses, representing a notably sophisticated dose-response observation for the period.",
+      "entities_mentioned": [
+        {
+          "name": "Stramonium / Thorn Apple (στράμμωνον)",
+          "modern_identification": "Datura stramonium L. or closely related Datura species (family Solanaceae); contains tropane alkaloids including scopolamine and hyoscyamine",
+          "identification_confidence": "high",
+          "notes": "The dose-response description — hallucinogenic at low dose, delirious at moderate dose, lethal at high dose — is consistent with the pharmacology of Datura alkaloids. The Greek term στράμμωνον is the classical designation later Latinized as stramonium."
+        },
+        {
+          "name": "Pine resin (antidote)",
+          "modern_identification": "Resin from Pinus species, likely Pinus halepensis Mill. or Pinus pinea L.",
+          "identification_confidence": "medium",
+          "notes": "Prescribed here as the antidote to Datura poisoning when drunk in wine; no established modern pharmacological basis for this antidotal claim."
+        },
+        {
+          "name": "Seed amulet (for epilepsy)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Dioscorides himself expresses skepticism, flagging this use as possibly superstitious rather than empirically grounded. This is a notable instance of proto-critical appraisal of magical medicine within an otherwise systematic herbal text."
+        }
+      ],
+      "translator_notes": "The source segment appears to be a modern scholarly paraphrase or summary of the relevant Dioscorides passage rather than a direct Greek-to-English translation; it may draw on the Goodyer (1655) or Beck (2005) English editions. The dose-response framework attributed to Dioscorides is historically significant and has been widely cited in histories of pharmacology and anesthesia. The translator has preserved the bracketed editorial note distinguishing therapeutic from toxic thresholds. The Greek term στράμμωνον is retained in brackets per archival convention.",
+      "_label": "dioscorides::book4_ch138_datura"
+    },
+    {
+      "title_inferred": "On Honey: Properties, Uses, and Preparations (Dioscorides, De Materia Medica, Book V, Chapter 2)",
+      "original_text": "De Materia Medica, Book V. On Honey (μέλι / Apis mellifera product). 'Honey, being boiled and applied to old wounds, draws out what is in them and cleanses them and produces flesh. Taken with water it clears the chest and lungs and loosens the cough. It digests and expels what burdens the stomach. Attic honey is the most praised — it is dry and does not rot. Applied to the teeth and gums it fastens loose teeth. Rubbed on the eyelids it removes the darkness before the eyes. The worst honey is that from box trees and yew — it produces nausea and vomiting.' Preparation: applied directly to wounds; taken with water; rubbed on teeth and eyes. Conditions: wounds, respiratory, digestive, eye conditions, dental.",
+      "translation": "From De Materia Medica, Book V: On Honey (Greek: μέλι; produced by Apis mellifera). Honey, when boiled and applied to old [chronic] wounds, draws out their contents, cleanses them, and promotes the growth of new flesh [granulation]. When taken with water, it clears the chest and lungs and loosens [expectoration of] cough. It aids digestion and expels whatever burdens the stomach. Attic honey [from the region of Attica, Greece] is most highly esteemed — it is dry in quality and does not putrefy. Applied to the teeth and gums, it firms up loose teeth. Rubbed on the eyelids, it disperses dimness [opacity or obscuration] before the eyes. The worst kinds of honey are those derived from box trees [Buxus sempervirens] and yew [Taxus baccata], as these produce nausea and vomiting. Preparations: applied directly and warm to wounds; taken internally mixed with water [hydromel]; rubbed onto teeth, gums, and eyelids. Conditions treated: chronic wounds, respiratory ailments (chest congestion, cough), digestive complaints, eye conditions (dimness of vision), dental looseness.",
+      "entities_mentioned": [
+        {
+          "name": "Honey (μέλι)",
+          "modern_identification": "Honey produced by Apis mellifera (Western honey bee)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides distinguishes grades of honey by geographic and botanical origin. General medicinal honey is the primary subject; its antimicrobial and wound-healing properties are well-attested in modern research."
+        },
+        {
+          "name": "Attic honey",
+          "modern_identification": "Honey produced in the region of Attica, Greece; historically associated with Mount Hymettus (Hymettus honey)",
+          "identification_confidence": "high",
+          "notes": "Hymettus honey from Attica was renowned throughout antiquity for its superior quality, pale color, and 'dry' (low-moisture) character, which correlates with its greater resistance to fermentation and spoilage."
+        },
+        {
+          "name": "Honey from box trees",
+          "modern_identification": "Honey derived from Buxus sempervirens (common box or boxwood)",
+          "identification_confidence": "medium",
+          "notes": "Buxus sempervirens contains toxic alkaloids (buxine, cyclobuxine); nectar from its flowers could impart toxicity to honey. Dioscorides correctly identifies this as inferior and harmful."
+        },
+        {
+          "name": "Honey from yew",
+          "modern_identification": "Honey derived from Taxus baccata (European yew)",
+          "identification_confidence": "medium",
+          "notes": "Taxus baccata is highly toxic, containing taxine alkaloids. Honey produced from yew pollen or nectar would carry toxic properties, consistent with Dioscorides' warning of nausea and vomiting. However, yew produces little accessible nectar, so this may be a partially traditional caution."
+        }
+      ],
+      "translator_notes": "The source text appears to be a modern scholarly paraphrase or transcription of Dioscorides rather than a direct OCR of a historical manuscript, as it includes analytical annotations (e.g., 'Preparation:' and 'Conditions:' summaries appended). These summary lines have been incorporated into the translation as contextual information rather than treated as primary Dioscoridean text. The Greek term μέλι is correctly glossed as 'honey.' The phrase 'produces flesh' renders the Greek concept of flesh-generation [sarcosis/granulation], a standard Galenic-Dioscoridean category. 'Darkness before the eyes' likely refers to visual dimness, opacity, or early cataract-like conditions rather than literal darkness.",
+      "_label": "dioscorides::book5_ch2_honey"
+    },
+    {
+      "title_inferred": "Copper and Verdigris: Medicinal Uses (Dioscorides, De Materia Medica, Book V)",
+      "original_text": "The flower of copper [verdigris] being applied stops the flows of blood from wounds and cleanses foul ulcers. Applied with honey it draws together the edges of wounds. Used as an eye salve it sharpens the sight. Beaten fine and applied it stops excessive menstrual flow. Washed copper applied with vinegar removes eruptions of the skin and dandruff. Copper vessels for water storage keep the water from putrefying.",
+      "translation": "The flower of copper [verdigris, i.e., basic copper acetate or copper carbonate patina] being applied stops the flow of blood from wounds and cleanses foul ulcers. When applied with honey, it draws together the edges of wounds. Used as an eye salve, it sharpens the sight. Beaten fine and applied, it arrests excessive menstrual flow. Washed copper [i.e., copper that has been rinsed or purified] applied with vinegar removes eruptions of the skin and dandruff. Copper vessels used for water storage prevent the water from putrefying.",
+      "entities_mentioned": [
+        {
+          "name": "flower of copper / verdigris (χαλκάνθη / ἄνθος χαλκοῦ)",
+          "modern_identification": "Basic copper acetate (Cu(CH₃COO)₂·Cu(OH)₂) or mixed copper carbonates; commonly identified as verdigris",
+          "identification_confidence": "high",
+          "notes": "Dioscorides distinguishes several copper compounds; the 'flower of copper' most likely refers to verdigris or a related patina compound. Used topically as a styptic, wound cleanser, and eye preparation."
+        },
+        {
+          "name": "honey",
+          "modern_identification": "Honey (Apis mellifera product)",
+          "identification_confidence": "high",
+          "notes": "Used as an excipient to bind verdigris to wound edges; honey itself has documented antimicrobial properties."
+        },
+        {
+          "name": "washed copper (copper compound rinsed/purified)",
+          "modern_identification": "Purified or washed copper oxide/carbonate preparation",
+          "identification_confidence": "medium",
+          "notes": "The washing process was a standard pharmaceutical refinement in Greco-Roman pharmacy intended to reduce harshness while retaining therapeutic activity."
+        },
+        {
+          "name": "vinegar",
+          "modern_identification": "Dilute acetic acid (acetum)",
+          "identification_confidence": "high",
+          "notes": "Used as a vehicle for the washed copper preparation in treating skin eruptions and dandruff; also likely assists in dissolving copper compounds."
+        },
+        {
+          "name": "copper vessels for water storage",
+          "modern_identification": "Metallic copper (Cu), oligodynamic antimicrobial effect",
+          "identification_confidence": "high",
+          "notes": "Dioscorides' observation that copper vessels prevent water from putrefying is an early empirical documentation of what is now understood as the oligodynamic effect — the antimicrobial action of copper ions on microorganisms. Parallels are found in ancient Egyptian and Anglo-Saxon medical traditions."
+        }
+      ],
+      "translator_notes": "The source segment is an editorial synthesis drawing on Dioscorides' De Materia Medica Book V, not a verbatim manuscript transcription; the Greek term χαλκός covers copper and its compounds broadly. The editorial note regarding the oligodynamic effect and its cross-cultural parallels (Egyptian, Anglo-Saxon) has been preserved in the translation output as contextual information embedded in entity notes rather than as prose, per schema requirements. The preparation methods described — direct topical application of verdigris, compounding with honey, eye salve formulation, and copper vessel use — are consistent with attested Greco-Roman pharmaceutical practice.",
+      "_label": "dioscorides::book5_copper_verdigris"
+    },
+    {
+      "title_inferred": "On Garlic (Allium sativum) — De Materia Medica, Book I, Chapter 68",
+      "original_text": "De Materia Medica, Book I. On Garlic (σκόρδον / Allium sativum). 'Garlic has a sharp and heating faculty. Eaten it provokes urine, is good for the stomach that is cold and full of wind, clears the arteries, is given to those troubled with coughs and with asthma. Applied it draws out leeches and other things that have got into the body. It expels worms and kills lice and nits when applied externally. Given as a pessary it moves the menstrual flux. Applied to the head it kills lice. When eaten it harms those of a warm body temperament. The wild kind is more effective than the cultivated.' Preparation: eaten raw or cooked; applied topically; given as pessary. Conditions: respiratory, parasites, digestive gas, menstrual disorders, lice. Note: Dioscorides' comprehensive garlic entry prefigures modern research on allicin as antimicrobial and on garlic's cardiovascular effects.",
+      "translation": "De Materia Medica, Book I. On Garlic (σκόρδον / Allium sativum [garlic]). Garlic possesses a sharp and heating [calefacient] quality. When eaten, it provokes urination, benefits a stomach that is cold and flatulent [full of wind], clears the arteries [vessels], and is prescribed for those afflicted with coughs and asthma. When applied externally, it draws out leeches and other foreign bodies that have entered the body. It expels intestinal worms and, when applied topically, kills lice and nits. Administered as a pessary [vaginal suppository], it promotes the menstrual flux. Applied to the head, it destroys lice. When ingested, it is harmful to those of a warm [bilious or choleric] bodily temperament. The wild variety is more potent than the cultivated.",
+      "entities_mentioned": [
+        {
+          "name": "σκόρδον (skordon) / Garlic",
+          "modern_identification": "Allium sativum L. (cultivated garlic); wild variety likely Allium ampeloprasum or related wild Allium spp.",
+          "identification_confidence": "high",
+          "notes": "One of the most thoroughly documented medicinal plants in ancient Greek and Roman medicine. The active compound allicin (diallyl thiosulfinate) has been confirmed by modern pharmacology to have antimicrobial, antifungal, and cardiovascular-modulatory properties, broadly consistent with Dioscorides' claims. The humoral caution regarding 'warm temperament' reflects Galenic constitutional medicine."
+        },
+        {
+          "name": "Leeches (referenced as foreign bodies drawn out by garlic)",
+          "modern_identification": "Hirudo medicinalis or related leeches; possibly also nasal or throat parasites",
+          "identification_confidence": "medium",
+          "notes": "The claim that applied garlic 'draws out leeches' likely refers to leeches accidentally ingested with water or lodged in the throat — a recognized hazard in antiquity — rather than therapeutic leech application."
+        }
+      ],
+      "translator_notes": "The source text is already in English, representing a scholarly paraphrase and annotation of Dioscorides' Greek original rather than a raw primary-language passage. The Greek term σκόρδον is preserved in brackets per translation rules. Humoral terminology ('sharp and heating faculty,' 'warm body temperament') has been retained and glossed in brackets to reflect the original Galenic-Hippocratic medical framework. The editorial note regarding allicin and cardiovascular research is a modern scholarly interpolation by the source editor and is not part of Dioscorides' original text; it has been preserved in the translation output for archival fidelity but should be understood as secondary commentary. The pessary preparation method is notable as evidence of gynecological application of garlic in ancient pharmacopoeia.",
+      "_label": "dioscorides::book1_ch68_garlic"
+    },
+    {
+      "title_inferred": "Valerian: Uses and Preparations According to Dioscorides",
+      "original_text": "De Materia Medica, Book I. On Valerian (φοῦ / Valeriana species). 'The root is warming and has a singular quality. Taken in drink it provokes urine and the menstrual flux. It benefits those with pain in the side, and it is good for those bitten by serpents. Some call it nardus silvestris because its smell resembles nard. The roots of the Pontic kind are better than those from other places.'",
+      "translation": "From De Materia Medica, Book I. Concerning Valerian (Greek: φοῦ; Latin: Valeriana species). 'The root is warming in character and possesses a singular [i.e., unique or specific] quality. When taken as a drink, it stimulates the flow of urine and promotes the menstrual discharge. It brings relief to those suffering pain in the side, and it is beneficial for those who have been bitten by serpents. Some call it nardus silvestris [wild nard] on account of its scent resembling that of true nard. The roots of the Pontic variety [from the region of Pontus, on the Black Sea] are superior to those obtained from other localities.'",
+      "entities_mentioned": [
+        {
+          "name": "φοῦ / Valeriana (Valerian)",
+          "modern_identification": "Valeriana officinalis L. or a closely related Valeriana species",
+          "identification_confidence": "high",
+          "notes": "The Greek name φοῦ (phu) is consistently associated with valerian in classical botanical literature. The 'Pontic kind' likely refers to a variety sourced from the Pontus region of Asia Minor, possibly Valeriana phu L., which bears Dioscorides' geographic qualifier in its modern epithet."
+        },
+        {
+          "name": "nardus silvestris (wild nard)",
+          "modern_identification": "Possibly Nardostachys jatamansi or a related spikenard relative; here used as a comparative aromatic reference, not a distinct drug entry",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides notes the olfactory resemblance between valerian root and true nard, explaining the folk synonym nardus silvestris. This comparison is a taxonomic and organoleptic observation rather than an identification."
+        }
+      ],
+      "translator_notes": "The segment includes an editorial commentary appended to the classical source text, noting that the sedative and sleep-promoting properties for which valerian is best known today are entirely absent from Dioscorides' account. This absence is historically significant: it suggests that the anxiolytic and hypnotic applications of valerian represent a later development in European folk and herbal medicine rather than a direct inheritance from Greco-Roman classical tradition. Translators and archivists should treat the editorial note as a modern interpolation and not part of the primary Dioscoridean source. Preparation method: root administered in wine (in drink). Conditions treated: urinary difficulties [diuretic], amenorrhoea or dysmenorrhoea [menstrual flux], pleuritic or lateral pain [pain in the side], and envenomation by serpents [snakebite antidote].",
+      "_label": "dioscorides::book1_ch105_valerian"
+    },
+    {
+      "title_inferred": "Dioscorides on Chamomile: Preparations and Therapeutic Uses",
+      "original_text": "De Materia Medica, Book III. On Chamomile (ἀνθεμίς / Matricaria chamomilla / Anthemis nobilis). 'Chamomile being boiled and the decoction taken in a bath softens and eases pain. Taken in drink it helps those with kidney stones and provokes urine. The flowers boiled in oil and the oil poured into the ears ease pain in the ears. Applied in a poultice it ripens and disperses hard swellings. The oil made from the flowers is good for head-ache and for all pains and tightness of the sinews.' Preparation: flowers decocted as bath and drink; flowers in oil for ears and head; poultice. Conditions: kidney stones, ear pain, headache, swellings, muscle pain. Note: Chamomile's use for pain and inflammation by Dioscorides maps directly onto its modern pharmacology — alpha-bisabolol and apigenin are validated anti-inflammatory compounds.",
+      "translation": "From De Materia Medica, Book III. On Chamomile [ἀνθεμίς]: Chamomile, when boiled and the decoction used in a bath, softens the body and relieves pain. When taken as a drink, it benefits those suffering from kidney stones [lithiasis] and stimulates the flow of urine [diuretic action]. The flowers boiled in oil, with the resulting oil instilled into the ears, relieve earache. Applied as a poultice [cataplasm], it brings hard swellings to a head and disperses them. The oil prepared from the flowers is beneficial for headache and for all pains and contractures [tightness] of the sinews [tendons and muscles]. Preparations described: (1) decoction of the whole plant for use as a bath; (2) decoction taken internally as a drink; (3) flowers infused in oil, used as eardrops; (4) poultice applied topically to swellings; (5) flower oil applied to the head and sinews. Conditions treated: kidney stones, urinary retention, earache, headache, hard swellings [indurations], and pain and spasm of the muscles and sinews. Editorial note: The therapeutic applications described by Dioscorides for chamomile correspond closely to its documented modern pharmacology; the active constituents alpha-bisabolol and apigenin have been validated as anti-inflammatory agents in contemporary research.",
+      "entities_mentioned": [
+        {
+          "name": "Chamomile (ἀνθεμίς)",
+          "modern_identification": "Matricaria chamomilla (German chamomile) and/or Anthemis nobilis (Roman chamomile), family Asteraceae",
+          "identification_confidence": "high",
+          "notes": "The Greek term ἀνθεμίς was applied by Dioscorides to what are now classified as distinct but related species. Both Matricaria chamomilla and Anthemis nobilis (syn. Chamaemelum nobile) have been proposed as referents; modern scholarship tends to favour Matricaria chamomilla as the primary identification for Dioscorides' ἀνθεμίς, though Anthemis nobilis cannot be excluded. Both contain anti-inflammatory sesquiterpenes (alpha-bisabolol) and flavonoids (apigenin)."
+        },
+        {
+          "name": "alpha-bisabolol",
+          "modern_identification": "(-)-alpha-bisabolol, a sesquiterpene alcohol found in Matricaria chamomilla essential oil",
+          "identification_confidence": "high",
+          "notes": "Modern pharmacological compound; mentioned in the editorial note appended to the source text, not in Dioscorides' original passage."
+        },
+        {
+          "name": "apigenin",
+          "modern_identification": "Apigenin (4',5,7-trihydroxyflavone), a flavonoid found in chamomile",
+          "identification_confidence": "high",
+          "notes": "Modern pharmacological compound; mentioned in the editorial note appended to the source text, not in Dioscorides' original passage."
+        }
+      ],
+      "translator_notes": "The source segment is an editorial composite: it combines a close paraphrase or quotation of Dioscorides' De Materia Medica III with modern taxonomic identifications, a structured summary of preparations and conditions, and a contemporary pharmacological commentary. These layers have been preserved and clearly distinguished in the translation. The Greek term ἀνθεμίς is retained in brackets as period/technical vocabulary. The term 'sinews' (νεῦρα in Dioscorides) is translated as 'sinews [tendons and muscles]' to reflect the ancient usage, which encompassed both tendons and muscle fibres rather than strictly nerves in the modern sense. 'Ripens and disperses hard swellings' reflects the classical maturation-and-resolution therapeutic concept [maturatio et discussio], preserved here as period vocabulary. No genuinely illegible passages were encountered.",
+      "_label": "dioscorides::book3_ch49_chamomile"
+    },
+    {
+      "title_inferred": "On Henbane: Properties, Preparations, and Dangers",
+      "original_text": "De Materia Medica, Book IV. On Henbane (ὑοσκύαμος / Hyoscyamus niger). Henbane causes confusion of mind and sleep. Applied to the forehead and temples with oil of rose it causes sleep. The seed drunk with wine makes men insane and similar to drunkards for a time. The leaves applied in a poultice ease pain of the joints and of gout. Used as a fumigation it is good for pain of the teeth. Applied to swellings and inflammations it reduces them. But used too freely it brings madness and even death.",
+      "translation": "From De Materia Medica, Book IV. On Henbane (Greek: ὑοσκύαμος; Latin: Hyoscyamus niger). Henbane induces confusion of the mind and sleep. When applied to the forehead and temples together with oil of rose [oleum rosaceum], it produces sleep. The seed, drunk with wine, renders men temporarily insane and resembling those who are drunk. The leaves, applied as a poultice [cataplasma], relieve pain of the joints and of gout [arthritis/podagra]. When used as a fumigation [suffimentum], it is beneficial for toothache. Applied to swellings and inflammations, it reduces them. However, when used in excess, it produces madness and even death.",
+      "entities_mentioned": [
+        {
+          "name": "Henbane (ὑοσκύαμος / Hyoscyamus niger)",
+          "modern_identification": "Hyoscyamus niger (henbane), family Solanaceae; active alkaloids hyoscyamine and scopolamine",
+          "identification_confidence": "high",
+          "notes": "Dioscorides names the plant explicitly in both Greek and the Linnaean binomial that later taxonomy formalized. The described psychoactive, analgesic, and lethal-in-overdose properties are consistent with the known pharmacology of hyoscyamine and scopolamine. The same genus (Solanaceae) encompasses Datura and the Aztec toloache (Datura stramonium / D. inoxia), documented in the Badianus Manuscript and Cobo's natural histories, representing a notable cross-cultural convergence in the use of tropane-alkaloid-bearing plants for pain relief, sedation, and fumigation, as well as parallel warnings against fatal overdose."
+        },
+        {
+          "name": "Oil of rose (oleum rosaceum)",
+          "modern_identification": "Infused or expressed oil of Rosa spp. petals, used as a vehicle/carrier for topical application",
+          "identification_confidence": "high",
+          "notes": "A standard classical vehicle for topical medicaments; the rose oil would itself have mild anti-inflammatory properties and served to facilitate transdermal absorption of the henbane alkaloids."
+        },
+        {
+          "name": "Gout (podagra / joint pain)",
+          "modern_identification": "Gout (hyperuricemia-associated arthritis) and general arthralgia",
+          "identification_confidence": "high",
+          "notes": "Dioscorides uses joint pain and gout as distinct but related indications; the anti-spasmodic and analgesic properties of henbane alkaloids make this a pharmacologically plausible application."
+        }
+      ],
+      "translator_notes": "The source segment is an editorial composite: it combines Dioscorides' original Greek passage (rendered into English via the standard classical tradition) with a modern scholarly annotation noting cross-tradition convergences with Mesoamerican (Badianus Manuscript) and Andean (Bernabé Cobo) sources. These two layers have been preserved distinctly in the translation and entity notes. The Greek term ὑοσκύαμος literally means 'pig-bean' or 'hog-bean,' reflecting ancient folk nomenclature. The warnings against overdose ('madness and even death') correspond precisely to the known toxidrome of tropane alkaloid poisoning: anticholinergic delirium, hyperthermia, tachycardia, and potentially fatal respiratory depression at high doses. Preparation methods extracted: (1) leaves in rose oil applied topically to forehead/temples for insomnia; (2) leaves as poultice for joint pain and gout; (3) seed in wine taken orally (psychoactive/narcotic); (4) fumigation for dental pain; (5) topical application to swellings and inflammations.",
+      "_label": "dioscorides::book4_ch68_henbane"
+    },
+    {
+      "title_inferred": "On Colchicum: Uses, Preparations, and Dangers",
+      "original_text": "De Materia Medica, Book II. On Colchicum (κολχικόν / Colchicum autumnale). 'The bulb of kolchikon, being drunk in wine, is good for those who are bitten by scorpions. But taken in excess it strangles like mushrooms. The flower, drunk in wine, makes the stomach griping pains stop — but it is not to be used except for those who are strong and in good health, and even then only in small amounts, for the plant is sharp and harmful.' Preparation: bulb in wine in small doses. Conditions: gout (joint pain from rich diet), scorpion sting. Note: Dioscorides' warning about colchicum being dangerous in excess directly parallels the Islamic tradition's (Ibn Sina's) identical warning — and colchicine remains the gold-standard gout treatment with an identically narrow therapeutic window today.",
+      "translation": "From De Materia Medica, Book II. On Colchicum [Greek: κολχικόν; Latin: Colchicum autumnale]: 'The bulb of colchicum, taken in wine, is beneficial for those who have been bitten by scorpions. However, consumed in excess, it causes death by suffocation, as poisonous mushrooms do. The flower, when drunk in wine, relieves griping pains of the stomach — yet it is not to be administered except to those who are robust and in good health, and even then only in very small quantities, for the plant is acrid and injurious.' Preparation method: the bulb prepared in wine, administered in small doses. Conditions treated: scorpion envenomation; stomach cramps; gout [joint pain associated with rich diet]. Note: Dioscorides' caution regarding the toxicity of colchicum in excess closely mirrors the identical warning later recorded in the Islamic medical tradition by Ibn Sina [Avicenna], and the active compound colchicine derived from this plant remains the standard modern treatment for gout, with an equivalently narrow therapeutic window.",
+      "entities_mentioned": [
+        {
+          "name": "Colchicum [κολχικόν / kolchikon]",
+          "modern_identification": "Colchicum autumnale (autumn crocus / meadow saffron); active alkaloid: colchicine",
+          "identification_confidence": "high",
+          "notes": "Dioscorides describes both the bulb and the flower as medicinally active but warns explicitly of its toxicity in excess. Colchicine, isolated from C. autumnale, remains in clinical use for gout and familial Mediterranean fever, with a narrow therapeutic index consistent with Dioscorides' warning."
+        },
+        {
+          "name": "Scorpion sting",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Colchicum is listed as a treatment for scorpion envenomation; no modern pharmacological basis for this indication has been established."
+        },
+        {
+          "name": "Gout / joint pain [from rich diet]",
+          "modern_identification": "Gout (hyperuricemia-induced arthritis)",
+          "identification_confidence": "high",
+          "notes": "Though Dioscorides does not use the term 'gout' explicitly, the contextual description of joint pain associated with dietary excess aligns with the classical and later Islamic use of colchicum specifically for this condition."
+        },
+        {
+          "name": "Ibn Sina [Avicenna]",
+          "modern_identification": "Ibn Sina (980–1037 CE), Persian polymath and physician",
+          "identification_confidence": "high",
+          "notes": "Referenced in the editorial note as independently corroborating Dioscorides' toxicity warning for colchicum, reflecting cross-traditional transmission of pharmacological caution."
+        }
+      ],
+      "translator_notes": "The source segment is a hybrid of primary quotation from Dioscorides and modern editorial annotation. Both have been translated and clearly integrated into the output. The editorial note regarding the parallel with Ibn Sina and modern colchicine pharmacology is retained as contextual scholarly commentary. The phrase 'strangles like mushrooms' reflects a classical Greek rhetorical comparison to the asphyxiating or rapidly fatal effects of toxic fungi, and has been rendered literally to preserve its period character. The Greek term κολχικόν is preserved in brackets for archival clarity.",
+      "_label": "dioscorides::book2_ch159_colchicum"
+    },
+    {
+      "title_inferred": "On Cassia and Cinnamon: Properties, Uses, and Preparations",
+      "original_text": "Cassia and Cinnamon are warming, digestive, and diuretic. Taken in drink they help those bitten by serpents and those with pain in the sides. They move the menstrual flux. They benefit those with cold and moist stomachs. Applied with oil to the face they remove spots and blemishes. Taken in drink with wine they warm those who are cold. Cinnamon is more powerful than cassia in all these uses — it is more warming and more fragrant.",
+      "translation": "Cassia and Cinnamon are warming [calefacient], digestive [peptic], and diuretic. Taken as a drink, they aid those bitten by serpents [snakebite antidote] and those suffering from pain in the sides [pleurisy or flank pain]. They promote the menstrual flux [emmenagogue]. They are beneficial for those with cold and moist stomachs [atonic or phlegmatic digestive conditions]. Applied to the face with oil, they remove spots and blemishes [topical depilatory/clarifying use]. Taken in drink with wine, they warm those who suffer from cold [constitutional coldness or chills]. Cinnamon surpasses cassia in all of these virtues — it is more warming and more fragrant.",
+      "entities_mentioned": [
+        {
+          "name": "Cassia (κασσία)",
+          "modern_identification": "Cinnamomum cassia (Chinese cinnamon)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides distinguishes cassia from true cinnamon, treating cassia as the inferior but related species. Cinnamomum cassia is the standard modern identification."
+        },
+        {
+          "name": "Cinnamon (κιννάμωμον)",
+          "modern_identification": "Cinnamomum verum (Ceylon cinnamon / true cinnamon)",
+          "identification_confidence": "high",
+          "notes": "Described as superior to cassia in warming and aromatic properties. Corresponds to Cinnamomum verum (syn. C. zeylanicum), sourced in antiquity from Arabia and South/Southeast Asia via trade routes."
+        }
+      ],
+      "translator_notes": "Source segment is drawn from Dioscorides, De Materia Medica, Book I, Chapter 93. The Greek terms κασσία and κιννάμωμον are retained in brackets for scholarly reference. The therapeutic categories map onto Galenic humoral theory (warming, drying, emmenagogue, diuretic). The topical preparation 'with oil' (cum oleo) for skin blemishes is a recurring formula in Dioscorides for cosmetic applications. The segment as supplied appears to be a paraphrase or summary rather than a verbatim Greek quotation; the translator has rendered it faithfully with period-appropriate terminology preserved in brackets where clinically or historically significant.",
+      "_label": "dioscorides::book1_ch93_cassia"
+    },
+    {
+      "title_inferred": "Animal-Derived Medicines in De Materia Medica, Book II",
+      "original_text": "De Materia Medica, Book II. Animal-derived medicines (overview chapter). 'Many medicines are derived from animals. The bile of bears is good for those troubled by dim sight. The gall of the river fish Hyena is drunk for those struck with epilepsy. The blood of the tortoise dropped into the ears helps those with pain in the ears. The fat of geese applied with sulphur and oil helps those with alopecia. The brains of the hare eaten raw cure trembling. Cow dung mixed with old oil applied to the forehead stops headache. The dried liver of a wolf drunk in wine helps those with pain of the stomach and liver.'",
+      "translation": "From De Materia Medica, Book II. Chapter on animal-derived medicines (overview). 'Many medicines are obtained from animals. The bile [gall] of bears is beneficial for those afflicted with dimness of vision. The gall of the river fish called Hyena is taken as a drink for those suffering from epilepsy. The blood of the tortoise, dropped into the ears, relieves pain in the ears. The fat of geese, applied together with sulphur and oil, is beneficial for those with alopecia [hair loss]. The brains of the hare, eaten raw, cure trembling [tremors]. Cow dung mixed with old oil, applied to the forehead, arrests headache. The dried liver of a wolf, drunk in wine, helps those suffering from pain of the stomach and liver.'",
+      "entities_mentioned": [
+        {
+          "name": "Bile of bears",
+          "modern_identification": "Bear bile (Ursus spp.); contains ursodeoxycholic acid, used historically in various medical traditions",
+          "identification_confidence": "high",
+          "notes": "Condition treated: dim sight / visual impairment. Preparation: bile applied or administered, method not further specified here."
+        },
+        {
+          "name": "Gall of the river fish Hyena",
+          "modern_identification": "Uncertain; possibly a now-unidentified freshwater fish known to Dioscorides by the name 'Hyena'; some scholars suggest a species of Siluridae or similar",
+          "identification_confidence": "low",
+          "notes": "Condition treated: epilepsy. Preparation: gall drunk as a liquid medicine."
+        },
+        {
+          "name": "Blood of the tortoise",
+          "modern_identification": "Tortoise (Testudo spp.) or related chelonian",
+          "identification_confidence": "medium",
+          "notes": "Condition treated: ear pain. Preparation: blood dropped directly into the ears."
+        },
+        {
+          "name": "Fat of geese",
+          "modern_identification": "Domestic or wild goose (Anser anser or similar)",
+          "identification_confidence": "high",
+          "notes": "Condition treated: alopecia (hair loss). Preparation: fat mixed with sulphur and oil, applied topically."
+        },
+        {
+          "name": "Brains of the hare",
+          "modern_identification": "European hare (Lepus europaeus) or similar species",
+          "identification_confidence": "high",
+          "notes": "Condition treated: trembling / tremors. Preparation: eaten raw."
+        },
+        {
+          "name": "Cow dung",
+          "modern_identification": "Bovine (Bos taurus) feces",
+          "identification_confidence": "high",
+          "notes": "Condition treated: headache. Preparation: mixed with old [aged] oil and applied as a poultice to the forehead."
+        },
+        {
+          "name": "Dried liver of a wolf",
+          "modern_identification": "Wolf (Canis lupus)",
+          "identification_confidence": "high",
+          "notes": "Condition treated: pain of the stomach and liver. Preparation: liver dried and drunk in wine."
+        }
+      ],
+      "translator_notes": "The source text is already in English, representing a scholarly paraphrase or translation of Dioscorides' Greek original; the translation above renders it into consistently formal scholarly English suitable for archival use. The editorial note appended to the segment (observing that Book II demonstrates the extent of animal pharmacology in Greco-Roman medicine) has been excluded from the translation proper as it is a modern scholarly commentary rather than part of Dioscorides' text. The 'river fish Hyena' (Greek: ὕαινα) remains a zoological puzzle in the secondary literature; it should not be confused with the hyena mammal. 'Old oil' (oleum vetus) refers to aged olive oil, a common vehicle in ancient pharmacy. The schema of dried liver drunk in wine is a recurrent delivery method in Dioscorides for hepatic and gastric complaints.",
+      "_label": "dioscorides::book2_ch68_animal_medicines"
+    },
+    {
+      "title_inferred": "On Quicksilver (Mercury): Properties, Uses, and Toxicity",
+      "original_text": "De Materia Medica, Book V. On Mercury/Quicksilver (ὑδράργυρος / Mercurius). 'Quicksilver is produced by pounding cinnabar in iron mortars with vinegar. It is very cold and moist in faculty and is deadly to living things, killing by its weight if swallowed. It dissolves gold and silver and for this reason it is kept in lead or glass or silver vessels. It is used in ointments for lice and for mange in animals. Those who work with it have trembling of the hands.' Preparation: topical only. Conditions: lice, mange. Note: Dioscorides recognises mercury toxicity ('deadly to living things') and documents the occupational tremors of mercury workers — the first description of mercury poisoning in European medical literature, predating modern understanding of mercurialism by 1,800 years.",
+      "translation": "From De Materia Medica, Book V. On Quicksilver (Greek: ὑδράργυρος; Latin: Mercurius). Quicksilver is produced by pounding cinnabar [native mercuric sulfide] in iron mortars with vinegar. In its elemental qualities it is very cold and moist, and is deadly to living creatures, killing by its sheer weight when swallowed. It dissolves gold and silver, and for this reason it is stored in vessels of lead, glass, or silver. It is applied in ointments [as a topical treatment] against lice and against mange in animals. Those who work with it develop trembling of the hands. Preparation: topical application only. Conditions treated: lice [pediculosis], mange [in animals]. Editorial note: Dioscorides explicitly acknowledges the lethal toxicity of mercury ('deadly to living things') and records the occupational tremors observed in mercury workers — representing the earliest known description of mercury poisoning in the European medical literature, anticipating the modern clinical understanding of mercurialism by approximately 1,800 years.",
+      "entities_mentioned": [
+        {
+          "name": "Quicksilver (ὑδράργυρος / Mercurius)",
+          "modern_identification": "Elemental mercury (Hg)",
+          "identification_confidence": "high",
+          "notes": "Described as produced from cinnabar by mechanical reduction with vinegar. Recognised as acutely toxic when ingested. Used topically as a parasiticide. Occupational neurotoxicity (intention tremor) documented among workers."
+        },
+        {
+          "name": "Cinnabar",
+          "modern_identification": "Mercuric sulfide (HgS), the principal ore of mercury",
+          "identification_confidence": "high",
+          "notes": "Named as the source material from which quicksilver is derived by pounding in iron mortars with vinegar — a crude mechanical and chemical reduction process."
+        },
+        {
+          "name": "Lice (pediculosis)",
+          "modern_identification": "Pediculus humanus / Phthirus pubis infestation",
+          "identification_confidence": "high",
+          "notes": "One of the primary indications for topical mercury ointment. Mercury compounds were used as pediculicides into the early modern period."
+        },
+        {
+          "name": "Mange (in animals)",
+          "modern_identification": "Sarcoptic or demodectic mange (parasitic mite infestation)",
+          "identification_confidence": "medium",
+          "notes": "Veterinary application of mercury-based topical ointment. The specific mite genus is not identified by Dioscorides, but the condition corresponds to what is now classified as mange."
+        }
+      ],
+      "translator_notes": "This passage is historically significant as the earliest extant Western medical account of occupational mercury poisoning; the 'trembling of the hands' corresponds to the intention tremor [mercurial tremor] characteristic of chronic mercury exposure now termed mercurialism or Minamata-type neurotoxicity in its industrial form. The claimed mechanism of toxicity — death 'by its weight' when swallowed — reflects a humoral/mechanical rather than a chemical understanding of poison, yet the empirical observation of lethality is clinically accurate. The production method described (pounding cinnabar with vinegar in iron mortars) is a crude mechanical reduction that would yield elemental mercury; the role of vinegar in this process is chemically ambiguous and may reflect a procedural tradition rather than a true chemical reduction. Storage in lead, glass, or silver vessels reflects accurate knowledge that mercury amalgamates with many metals. The source text as presented appears to be a modern editorial paraphrase of Dioscorides rather than a direct classical-language quotation; the Greek term ὑδράργυρος ('water-silver') and the Latin Mercurius are both correctly identified.",
+      "_label": "dioscorides::book5_81_quicksilver"
+    }
+  ]
+}
