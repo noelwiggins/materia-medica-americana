@@ -1,0 +1,256 @@
+{
+  "job_name": "maya-tradition-v1",
+  "completed_at": "2026-07-02T02:13:22.684224",
+  "segment_count": 7,
+  "results": [
+    {
+      "title_inferred": "Chay (Cnidoscolus aconitifolius): Maya Medical and Nutritional Uses",
+      "original_text": "Chay (Cnidoscolus aconitifolius) — Tree Spinach / Chaya. From Yucatec Maya oral tradition documented by Roys and subsequent ethnobotanists. Maya healer's description: U ti'al u yilaj ti' máak ku k'iinikil le che'o' — 'In order to see to a sick person, this tree.' Chay is prepared by boiling leaves for five or more minutes before consumption — the Maya knowledge that raw leaves are harmful (toxic compounds activated by cooking) represents precise pharmacological understanding without knowledge of chemistry. Used for: blood building (ku yantal k'iik'), fever reduction (ku jaats' k'aak'), digestive complaints, and as a general strengthening food for the weakened. The Maya medical tradition distinguishes between chay prepared as medicine (concentrated decoction, more leaves, longer boiling) and chay prepared as food (standard boiling of leaves, eaten as vegetable). Active research: extraordinary nutritional density — 3x vitamin C of orange, 25x iron of banana, 7g protein per 100g cooked leaves. Anti-diabetic activity in preliminary studies.",
+      "translation": "Chay (Cnidoscolus aconitifolius) — Tree Spinach / Chaya. Drawn from Yucatec Maya oral tradition as documented by Roys [Ralph L. Roys, ethnobotanist and Maya scholar] and subsequent ethnobotanists. A Maya healer's description reads: U ti'al u yilaj ti' máak ku k'iinikil le che'o' — 'In order to attend to a sick person, [use] this tree.' Chay is prepared by boiling the leaves for a minimum of five minutes before consumption. The Maya understanding that raw leaves are harmful — owing to toxic compounds [hydrocyanic glycosides] that are neutralized by cooking — represents a precise pharmacological knowledge arrived at without formal chemical science. Recorded indications include: blood building [ku yantal k'iik', lit. 'that the blood may increase'], fever reduction [ku jaats' k'aak', lit. 'that the fever may be broken'], digestive complaints, and general restorative use for debilitated patients. The Maya medical tradition draws a clear distinction between chay prepared as a medicine (a concentrated decoction using a greater quantity of leaves and extended boiling time) and chay prepared as a foodstuff (standard boiling of leaves, consumed as a cooked vegetable). Current research confirms extraordinary nutritional density: approximately three times the vitamin C content of orange, twenty-five times the iron content of banana, and 7 g of protein per 100 g of cooked leaves. Preliminary studies have also indicated anti-diabetic activity.",
+      "entities_mentioned": [
+        {
+          "name": "Chay",
+          "modern_identification": "Cnidoscolus aconitifolius (Mill.) I.M.Johnst. — Tree Spinach / Chaya; family Euphorbiaceae",
+          "identification_confidence": "high",
+          "notes": "Explicitly identified in the source text with binomial. Raw leaves contain hydrocyanic glycosides and possibly oxalic acid; boiling for 5+ minutes is the standard detoxification method confirmed by modern phytochemistry. Anti-diabetic activity under active investigation. The dual-use distinction (medicine vs. food preparation) is notable for archival purposes."
+        }
+      ],
+      "translator_notes": "The source text is primarily in English with embedded Yucatec Maya phrases; translation work here focused on rendering the Maya phrases accurately and contextualizing technical and cultural content. The Maya phrase 'ku jaats' k'aak'' literally means something closer to 'that the fever/fire be struck/broken,' preserving the metaphor of fever as fire [k'aak'], which is medically and culturally significant in the Maya humoral tradition. 'Ku yantal k'iik'' more literally means 'that there may be blood' or 'that blood may exist/increase,' implying a haematopoietic use consistent with the plant's high iron content. The segment label 'ritual_bacabs' may indicate this plant's use was also embedded in ritual healing contexts involving the Bacab spirits of Maya cosmology, though the source text does not elaborate on this; archivists may wish to flag this for cross-reference with ritual healing segments.",
+      "_label": "ritual_bacabs::chay_cnidoscolus"
+    },
+    {
+      "title_inferred": "Maya Copal Resin (Pom): Ritual and Medicinal Uses of Bursera Species",
+      "original_text": "Pom (Bursera copallifera / B. bipinnata) — Maya Copal Resin. Ritual of the Bacabs (Roys trans.): 'Ix-pom, ix-cacao, ix-ya-che — copal, cacao tree, sapodilla tree — these are the medicines of the great healers.' Copal (pom) was both ritual and medicinal in Maya culture — a distinction the tradition did not draw as sharply as Western medicine. Medicinal uses documented: antimicrobial wound treatment (resin applied to infected wounds), pain relief (smoke inhalation for headache), respiratory conditions (burning in enclosed space, inhaled). Maya copal is a genuinely independent discovery parallel to Cobo's documentation of copal in the Andean tradition and to Greek/Roman use of Boswellia (frankincense, same plant family — Burseraceae). Cross-tradition convergence: THREE independent traditions (Maya, Andean/Cobo, Greek/Roman) independently documented antimicrobial and wound-healing properties of Burseraceae family resins. Modern: Bursera species contain compounds with documented antimicrobial and anti-inflammatory activity.",
+      "translation": "Pom (Bursera copallifera / B. bipinnata) — Maya Copal Resin. From the Ritual of the Bacabs (translated by Roys): 'Ix-pom, ix-cacao, ix-ya-che — copal, cacao tree, sapodilla tree — these are the medicines of the great healers.' In Maya culture, copal (pom) served simultaneously as a ritual substance and a medicinal one — a distinction the tradition did not draw as sharply as Western medicine does. Documented medicinal uses include: antimicrobial wound treatment (resin applied directly to infected wounds); pain relief (smoke inhaled for headache); and treatment of respiratory conditions (resin burned in an enclosed space and the smoke inhaled). The Maya use of copal represents an independently achieved discovery, parallel to Bernabé Cobo's documentation of copal use in the Andean tradition and to the Greek and Roman use of Boswellia [frankincense], which belongs to the same plant family, Burseraceae. Cross-traditional convergence: three entirely independent traditions — Maya, Andean (via Cobo), and Greco-Roman — each independently recorded the antimicrobial and wound-healing properties of resins from the Burseraceae family. Modern pharmacological research confirms that Bursera species contain compounds with documented antimicrobial and anti-inflammatory activity.",
+      "entities_mentioned": [
+        {
+          "name": "Pom / Copal",
+          "modern_identification": "Bursera copallifera and/or Bursera bipinnata (family Burseraceae)",
+          "identification_confidence": "high",
+          "notes": "Resin-producing trees native to Mesoamerica. 'Pom' is the Maya term; 'copal' is the broader Mesoamerican term used across multiple linguistic traditions. The source explicitly names both species."
+        },
+        {
+          "name": "Ix-pom",
+          "modern_identification": "Bursera copallifera / B. bipinnata",
+          "identification_confidence": "high",
+          "notes": "Maya ritual name for copal as cited in the Ritual of the Bacabs (Roys translation). The 'ix-' prefix is a Maya feminine/honorific marker."
+        },
+        {
+          "name": "Ix-cacao",
+          "modern_identification": "Theobroma cacao (Malvaceae)",
+          "identification_confidence": "high",
+          "notes": "Cacao tree, named in the same triad of 'medicines of the great healers' in the Ritual of the Bacabs."
+        },
+        {
+          "name": "Ix-ya-che",
+          "modern_identification": "Manilkara zapota (Sapotaceae) — sapodilla",
+          "identification_confidence": "medium",
+          "notes": "Identified in source text as 'sapodilla tree.' Ya-che is a known Maya term for the sapodilla; confidence is medium as multiple Sapotaceae species are called ya in Maya texts."
+        },
+        {
+          "name": "Boswellia / Frankincense",
+          "modern_identification": "Boswellia sacra and related species (Burseraceae)",
+          "identification_confidence": "high",
+          "notes": "Greek and Roman medicinal resin cited for cross-traditional comparison. Belongs to the same family (Burseraceae) as Bursera, supporting the convergence argument."
+        }
+      ],
+      "translator_notes": "The source text is already in English; this entry functions as a scholarly extraction and annotation rather than a translation from another language. The Ritual of the Bacabs is a colonial-era Maya manuscript; Ralph L. Roys produced the standard translation (1965). The cross-traditional convergence argument — that Maya, Andean, and Greco-Roman traditions independently documented medicinal properties of Burseraceae resins — is an editorial/analytical claim by the source's compiler, not a statement from the primary Maya text itself. This distinction should be preserved in any archival use. Condition-preparation extractions: (1) infected wounds — preparation: resin applied topically; (2) headache — preparation: smoke inhalation; (3) respiratory conditions — preparation: resin burned in enclosed space, smoke inhaled.",
+      "_label": "ritual_bacabs::copal_pom_bursera"
+    },
+    {
+      "title_inferred": "Balché: Sacred Maya Ritual Fermented Drink and Its Pharmacological Significance",
+      "original_text": "Balché (Lonchocarpus violaceus / L. longistylus) — Sacred Maya Ritual Drink. Ritual of the Bacabs, Healing incantation text: U ts'o'ok u bin balché ti' noj nah... ka xoc-lah u k'ab u yich balché. 'The balché went to the great house... the hands and face of the balché were counted.' Balché is a ritual fermented drink made from the bark of Lonchocarpus soaked in honey water and fermented. Used in Maya healing ceremonies by the h-men (healer-priest) for purification, vision, and diagnosis of disease cause. Pharmacological significance: Lonchocarpus species contain rotenone and related flavonoids with documented MAO-inhibiting (monoamine oxidase inhibiting) activity. This creates a remarkable parallel with the Amazonian ayahuasca combination — both traditions independently discovered that combining a MAO-inhibiting plant with a fermented preparation produces altered states useful for healing. The convergent discovery of MAO inhibition in healing contexts, independently in Mesoamerica and the Amazon, is one of the strongest signals in the convergence database.",
+      "translation": "Balché (Lonchocarpus violaceus / L. longistylus) — Sacred Maya Ritual Drink. From the Ritual of the Bacabs [a colonial-era Yucatec Maya manuscript of healing incantations], the text reads: 'U ts'o'ok u bin balché ti' noj nah... ka xoc-lah u k'ab u yich balché' — rendered as: 'The balché went to the great house... the hands and face of the balché were counted.' Balché is a ritual fermented beverage prepared from the bark of the Lonchocarpus tree, steeped in honey-water and allowed to ferment. It was employed in Maya healing ceremonies by the h-men [healer-priest] for purposes of purification, visionary experience, and the diagnosis of the cause of illness. Of pharmacological note: species of Lonchocarpus contain rotenone and related flavonoid compounds for which monoamine oxidase (MAO) inhibiting activity has been documented. This constitutes a remarkable parallel with the Amazonian ayahuasca preparation — both healing traditions independently arrived at the discovery that combining a MAO-inhibiting plant with a fermented preparation produces altered states of consciousness of therapeutic utility. The convergent, independent discovery of MAO inhibition in healing contexts, in both Mesoamerica and the Amazon basin, is identified as one of the most compelling signals in the cross-cultural convergence database.",
+      "entities_mentioned": [
+        {
+          "name": "Balché",
+          "modern_identification": "Lonchocarpus violaceus and/or Lonchocarpus longistylus (Fabaceae)",
+          "identification_confidence": "high",
+          "notes": "Fermented ritual drink prepared from the bark of Lonchocarpus spp. soaked in honey-water. Central to Maya ceremonial and healing practice. The source text proposes both L. violaceus and L. longistylus as candidate species; botanical attribution varies in the literature."
+        },
+        {
+          "name": "Lonchocarpus violaceus",
+          "modern_identification": "Lonchocarpus violaceus (Jacq.) DC. (Fabaceae)",
+          "identification_confidence": "medium",
+          "notes": "One of the species proposed for the balché tree. Contains rotenone and flavonoids. MAO-inhibiting activity attributed to the genus."
+        },
+        {
+          "name": "Lonchocarpus longistylus",
+          "modern_identification": "Lonchocarpus longistylus Pittier (Fabaceae)",
+          "identification_confidence": "medium",
+          "notes": "Second candidate species for balché bark. As with L. violaceus, contains rotenone-type compounds."
+        },
+        {
+          "name": "Rotenone",
+          "modern_identification": "Rotenone (isoflavonoid compound, C23H22O6)",
+          "identification_confidence": "high",
+          "notes": "Principal bioactive compound of Lonchocarpus spp.; well-documented insecticidal and piscicidal agent, and implicated in MAO inhibition relevant to the psychoactive properties of balché."
+        },
+        {
+          "name": "h-men",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Yucatec Maya term for healer-priest or ritual specialist; not a plant or drug entity, but noted as the practitioner administering balché in healing ceremonies."
+        },
+        {
+          "name": "Ayahuasca",
+          "modern_identification": "Banisteriopsis caapi (Spruce ex Griseb.) Morton combined with Psychotria viridis Ruiz & Pav. or related admixture plants (Amazonian preparation)",
+          "identification_confidence": "high",
+          "notes": "Cited here as a comparative Amazonian parallel: an independent tradition combining a MAO-inhibiting plant (B. caapi, containing harmine/harmaline) with a DMT-containing admixture. The source text draws a cross-cultural convergence between this and the balché preparation."
+        }
+      ],
+      "translator_notes": "The source text is largely in English with an embedded Yucatec Maya incantation quotation drawn from the Ritual of the Bacabs. The Maya passage is rendered diplomatically and the provided translation is accepted as given, as it aligns with known scholarly translations of that manuscript. The pharmacological convergence argument (Mesoamerican MAO inhibition parallel to Amazonian ayahuasca) is an interpretive scholarly claim by the source author, not a direct translation from a historical text, and should be treated as editorial commentary rather than primary source data. Confidence in species identification for balché bark is medium rather than high because the precise botanical attribution remains debated in the ethnobotanical literature.",
+      "_label": "ritual_bacabs::balche_lonchocarpus"
+    },
+    {
+      "title_inferred": "Maya Healing Plants (Xiu) and the Ritual of the Bacabs: General Overview",
+      "original_text": "Xiu (Plants in general) — Maya concept of plant medicine. Roys (1965), Ritual of the Bacabs introduction: 'The Maya h-men (healer-priest) was simultaneously a botanist, pharmacologist, priest, and diviner. The separation of these roles is a European imposition on a system that understood them as unified.' Maya disease classification: diseases sent by supernatural forces (u kinil ik — diseases from the winds/spirits) vs. diseases from natural causes (u kinil tan — diseases from the body itself). Plant medicines used for both categories, but ritual and incantation accompany treatment of supernatural diseases. Key healing plants in the Ritual of the Bacabs beyond those catalogued separately: sakam (white flower tree, possibly Plumeria), tancás (identified as Brassavola nodosa orchid, used for fever), kanlol (yellow flower, multiple species), xikin-che (ear tree, Enterolobium cyclocarpum, for ear conditions). The Yucatan Peninsula's botanical diversity — at the junction of Mexican highland and Caribbean lowland flora — produced a pharmacopeia substantially different from Aztec medicine despite proximity.",
+      "translation": "Xiu (Plants in general) — The Maya concept of plant medicine. According to Roys (1965), in his introduction to the Ritual of the Bacabs: 'The Maya h-men [healer-priest] was simultaneously a botanist, pharmacologist, priest, and diviner. The separation of these roles is a European imposition upon a system that understood them as unified.' Maya disease classification distinguished between diseases sent by supernatural forces (u kinil ik — diseases from the winds or spirits) and diseases arising from natural causes (u kinil tan — diseases from the body itself). Plant medicines were employed for both categories; however, ritual observance and spoken incantation accompanied the treatment of supernaturally caused diseases. Key healing plants documented in the Ritual of the Bacabs, beyond those catalogued individually elsewhere, include: sakam (the white flower tree, possibly Plumeria spp.), tancás (identified as the orchid Brassavola nodosa, used in the treatment of fever), kanlol (yellow flower, encompassing multiple species), and xikin-che (the ear tree, Enterolobium cyclocarpum, employed for conditions of the ear). The botanical diversity of the Yucatan Peninsula — situated at the convergence of Mexican highland and Caribbean lowland flora — gave rise to a pharmacopeia substantially distinct from that of Aztec medicine, despite their geographical proximity.",
+      "entities_mentioned": [
+        {
+          "name": "Xiu",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "General Maya term for plants; not a single species but a conceptual category encompassing plant medicine as a unified botanical-pharmacological-spiritual system."
+        },
+        {
+          "name": "sakam",
+          "modern_identification": "Plumeria spp. (frangipani / white flower tree)",
+          "identification_confidence": "low",
+          "notes": "Described as 'white flower tree'; Roys tentatively associates it with Plumeria, though this identification is uncertain. Condition treated and preparation method not specified in this segment."
+        },
+        {
+          "name": "tancás",
+          "modern_identification": "Brassavola nodosa (Lady-of-the-Night orchid)",
+          "identification_confidence": "medium",
+          "notes": "Identified by Roys as Brassavola nodosa, an epiphytic orchid native to Mesoamerica and the Caribbean. Used for fever. Preparation method not specified in this segment."
+        },
+        {
+          "name": "kanlol",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Maya term meaning 'yellow flower'; encompasses multiple species. No single modern identification possible without further textual context. Condition treated and preparation method not specified."
+        },
+        {
+          "name": "xikin-che",
+          "modern_identification": "Enterolobium cyclocarpum (guanacaste / ear-pod tree)",
+          "identification_confidence": "medium",
+          "notes": "Maya name meaning 'ear tree,' consistent with the ear-shaped seed pods of Enterolobium cyclocarpum. Used for conditions of the ear, suggesting possible doctrine-of-signatures reasoning in its application. Preparation method not specified in this segment."
+        },
+        {
+          "name": "h-men",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Maya term for the healer-priest figure who combined the roles of botanist, pharmacologist, priest, and diviner; a person, not a plant or drug."
+        }
+      ],
+      "translator_notes": "This segment is primarily a secondary scholarly synthesis drawing on Roys (1965) rather than a primary Maya-language source. The source text is in English and required minimal translation; the principal task was cleaning, structuring, and extracting entities. The quoted passage from Roys is preserved verbatim. Maya disease categories (u kinil ik, u kinil tan) are transliterated from Yucatec Maya; translations provided in the source are retained and bracketed per convention. Identification confidence for tancás and xikin-che is rated 'medium' rather than 'high' because these identifications originate with Roys and have not been universally accepted in subsequent ethnobotanical literature. No preparation methods are described for any plant in this general overview segment.",
+      "_label": "ritual_bacabs::xiu_healing_plants_general"
+    },
+    {
+      "title_inferred": "Nicté (Plumeria) in Maya Ritual and Medicine: Uses, Symbolism, and Modern Pharmacology",
+      "original_text": "Nicté (Plumeria rubra / P. obtusa) — Frangipani / White Flower. Ritual of the Bacabs and related documents: Nicté is the flower of the Maya underworld deity Ix Tab (goddess of suicide and hanging). Despite or because of this association, its sap and leaves were used medicinally by Maya healers. Uses documented: latex for toothache (applied directly to tooth cavity), bark infusion for skin diseases, flower infusion for fever. The plant's dual nature — beautiful flower, bitter poisonous latex — exemplifies the Maya understanding that the most powerful medicines are often also the most dangerous. Convergence: Plumeria species are used medicinally across Mesoamerica (Maya, Aztec), South Asia (Ayurveda — champa), and Southeast Asia (Philippines). Multiple independent traditions independently identified medicinal properties. Modern: plumericin (iridoid) from Plumeria — documented antiprotozoal activity against Leishmania and Trypanosoma in laboratory studies.",
+      "translation": "Nicté (Plumeria rubra / P. obtusa) — Frangipani / White Flower. As recorded in the Ritual of the Bacabs [Rituel de los Bacabes] and related documents: Nicté is the flower sacred to the Maya underworld deity Ix Tab (goddess of suicide and hanging). Notwithstanding — or perhaps by reason of — this association with death, its sap and leaves were employed medicinally by Maya healers. Documented uses include: the latex [milky sap] applied directly to the tooth cavity for toothache; an infusion of the bark for skin diseases; and an infusion of the flowers for fever. The plant's dual nature — an outwardly beautiful flower bearing a bitter and poisonous latex — exemplifies the Maya conception that the most potent medicines are frequently also the most dangerous substances. Cross-cultural convergence: species of Plumeria are used medicinally across Mesoamerica (among both Maya and Aztec peoples), in South Asia (Ayurveda, where the plant is known as champa), and in Southeast Asia (notably the Philippines). Multiple independent traditions thus arrived independently at recognition of its medicinal properties. Modern pharmacological note: plumericin, an iridoid compound isolated from Plumeria, has documented antiprotozoal activity against Leishmania and Trypanosoma in laboratory studies.",
+      "entities_mentioned": [
+        {
+          "name": "Nicté",
+          "modern_identification": "Plumeria rubra / Plumeria obtusa (Frangipani; family Apocynaceae)",
+          "identification_confidence": "high",
+          "notes": "Maya name for frangipani; the source text explicitly equates it with Plumeria rubra and P. obtusa. Both species produce toxic milky latex (plumericin, fulvoplumierin) alongside medicinally active compounds."
+        },
+        {
+          "name": "Ix Tab",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Maya deity, goddess of suicide and hanging, associated with the underworld. The association of Nicté with Ix Tab is attested in iconographic and documentary sources. Not a plant or drug entity; included for ritual context."
+        },
+        {
+          "name": "Plumericin",
+          "modern_identification": "Plumericin — iridoid lactone isolated from Plumeria species",
+          "identification_confidence": "high",
+          "notes": "Active constituent cited for antiprotozoal activity (against Leishmania spp. and Trypanosoma spp.) in modern laboratory studies. Supports ethnopharmacological use against febrile and infectious conditions."
+        },
+        {
+          "name": "Champa",
+          "modern_identification": "Plumeria spp. as known in South Asian (Ayurvedic) tradition",
+          "identification_confidence": "high",
+          "notes": "South Asian vernacular name for Plumeria; used in Ayurveda, cited here to illustrate cross-cultural convergence in medicinal identification of the plant."
+        }
+      ],
+      "translator_notes": "The source text is already in English and functions as a scholarly extraction note rather than a document in a foreign language; translation here consists primarily of rendering the compressed note-form prose into fluent scholarly English and clarifying technical terms. Key extracted data: (1) Plant name: Nicté; (2) Modern ID: Plumeria rubra / P. obtusa; (3) Conditions treated: toothache, skin diseases, fever; (4) Preparation methods: latex applied directly to tooth cavity, bark infusion (skin diseases), flower infusion (fever). The Ritual of the Bacabs [Rituel de los Bacabes] is a colonial-period Yucatec Maya manuscript (MS held at Princeton); it is a primary source for Maya ethnomedical and ritual practices. The phrase 'Convergence' in the source appears to be a category label used by the original extractor to flag cross-cultural parallels, not a term from the primary source itself.",
+      "_label": "ritual_bacabs::xtabay_plumeria"
+    },
+    {
+      "title_inferred": "The H-Men: Maya Healer-Physician Role, Training, and Historical Context",
+      "original_text": "H-men — The Maya Healer-Physician. Roys (1965) and Landa (1566, Relación de las Cosas de Yucatán): The h-men (from h, male, and men, maker/one who does) was the male Maya healer — female counterparts existed as ix-men. The h-men's role: diagnosis by pulse reading (distinct method from Chinese or Tibetan pulse reading — Maya pulse reading used different sites on the body), blood-letting (small cuts, not venesection), plant medicine prescription, and ritual incantation. Training: apprenticeship under an established h-men, often hereditary in families. Payment: traditional exchange in goods, not money. Coexistence: Spanish colonial records document the coexistence of Maya h-men with colonial Spanish and indigenous-Mexican physician-surgeons in Yucatán — the same competition of medical systems that Cobo documents in Peru. The h-men tradition continues today in Yucatán, Chiapas, and Guatemala, making Maya medicine one of the living traditions in this archive alongside Kampo, Ayurveda, and Tibetan medicine.",
+      "translation": "The H-Men: The Maya Healer-Physician. According to Roys (1965) and Landa (1566, Relación de las Cosas de Yucatán): The term h-men (derived from h, meaning male, and men, meaning maker or one who does) designated the male Maya healer. Female counterparts bore the title ix-men. The h-men's professional functions encompassed: diagnosis through pulse reading — a method distinct from Chinese or Tibetan pulse-reading traditions, employing different sites on the body — blood-letting by means of small incisions (as opposed to full venesection [phlebotomy]), prescription of plant-based medicines, and the performance of ritual incantations. Training was conducted through apprenticeship under an established h-men, and the vocation was frequently hereditary within families. Remuneration took the form of traditional exchange in goods rather than monetary payment. Spanish colonial records attest to the coexistence of Maya h-men alongside colonial Spanish and indigenous-Mexican physician-surgeons [cirujanos] in Yucatán — a competition among medical systems analogous to that documented by Cobo in Peru. The h-men tradition persists to the present day in Yucatán, Chiapas, and Guatemala, making Maya medicine one of the living [continuously practiced] traditions represented in this archive, alongside Kampo, Ayurveda, and Tibetan medicine.",
+      "entities_mentioned": [
+        {
+          "name": "H-men",
+          "modern_identification": "Traditional Maya healer-diviner (ritual specialist and herbalist); still practicing in Yucatán, Chiapas, and Guatemala",
+          "identification_confidence": "high",
+          "notes": "Male designation; female counterpart is ix-men. Role encompasses diagnosis, bloodletting, herbal prescription, and ritual incantation. Training was hereditary and by apprenticeship."
+        },
+        {
+          "name": "Ix-men",
+          "modern_identification": "Female Maya healer-diviner, counterpart to the h-men",
+          "identification_confidence": "high",
+          "notes": "Prefix ix- is a feminine marker in Yucatec Maya."
+        },
+        {
+          "name": "Ralph L. Roys (1965)",
+          "modern_identification": "Scholarly source: Roys, Ralph L., likely referring to his work on Maya medicine and manuscripts (e.g., 'Ritual of the Bacabs' or related ethnohistorical studies)",
+          "identification_confidence": "medium",
+          "notes": "Specific 1965 publication not identified with certainty; Roys produced multiple relevant works on Maya medicine and manuscripts."
+        },
+        {
+          "name": "Diego de Landa (1566, Relación de las Cosas de Yucatán)",
+          "modern_identification": "Bishop Diego de Landa's ethnographic account of Maya culture, written c. 1566; a foundational primary source for Maya studies",
+          "identification_confidence": "high",
+          "notes": "Original manuscript lost; known through an abridged copy. Key source for Maya religious, social, and medical practices at the time of Spanish contact."
+        },
+        {
+          "name": "Bernabé Cobo",
+          "modern_identification": "Jesuit priest and naturalist (1582–1657), author of 'Historia del Nuevo Mundo'; documented medical and natural history of Peru and the Americas",
+          "identification_confidence": "high",
+          "notes": "Referenced here by surname only; comparison made to his documentation of competing medical systems in Peru."
+        },
+        {
+          "name": "Pulse reading (Maya method)",
+          "modern_identification": "Sphygmomantic diagnosis; Maya variant using body sites distinct from Chinese cun-guan-chi or Tibetan pulse positions",
+          "identification_confidence": "medium",
+          "notes": "The specific body sites used in Maya pulse diagnosis are not enumerated in this passage; cross-cultural comparison with Chinese and Tibetan traditions is noted."
+        },
+        {
+          "name": "Blood-letting (small cuts)",
+          "modern_identification": "Minor incision-based bloodletting, distinct from venesection; likely using obsidian blades or stingray spines in traditional Maya context",
+          "identification_confidence": "medium",
+          "notes": "The passage explicitly distinguishes this practice from venesection [full phlebotomy]. Instruments not specified here."
+        }
+      ],
+      "translator_notes": "The source text is already in English and functions as a scholarly summary rather than a primary-language document, so the 'translation' here represents a lightly formalized and clarified rendering with added scholarly bracketing of technical terms. The segment label 'ritual_bacabs::hmen_physician_role' suggests this excerpt is filed under the Ritual of the Bacabs corpus, though the content is more broadly ethnographic. The 1965 Roys citation likely refers to 'Ritual of the Bacabs' (University of Oklahoma Press, 1965), which is the most prominent Roys work from that year relevant to Maya medicine. This should be verified against the full bibliography. No plant-specific drug entries are present in this segment; it describes practitioner roles rather than materia medica proper.",
+      "_label": "ritual_bacabs::hmen_physician_role"
+    },
+    {
+      "title_inferred": "Ramon (Breadnut Tree, Brosimum alicastrum): Maya Staple Food and Medicinal Uses",
+      "original_text": "Ramon (Brosimum alicastrum) — Breadnut Tree / Maya Nut. Landa (1566) and archaeological evidence: Ramon seeds were a major caloric staple in Classic Maya civilization (250–900 CE) — some Maya sites show ramon seed stores larger than maize stores. Maya name: ox (in some regional dialects). Medicinal uses: leaves for cattle fodder and traditional human medicine (leaves as astringent poultice); bark decoction for asthma; seeds as anti-galactagogue (reduces milk flow). Nutritional profile now fully characterised: extraordinary amino acid profile (all essential amino acids), calcium higher than milk, magnesium higher than oats, tryptophan content higher than most foods. The tryptophan content is pharmacologically significant — it is the serotonin precursor, and traditional Maya uses of ramon (calming, anti-anxiety) may reflect genuine serotonergic activity through nutritional tryptophan loading. Now commercially available as a 'superfood' — another case of traditional food knowledge validated by modern nutritional science.",
+      "translation": "Ramon (Brosimum alicastrum) — Breadnut Tree / Maya Nut. According to Landa (1566) and archaeological evidence, ramon seeds constituted a major caloric staple of Classic Maya civilization (250–900 CE); indeed, some Maya sites preserve ramon seed caches larger than those of maize. The Maya name for this plant is 'ox' in certain regional dialects. Medicinal uses recorded include: the leaves, employed both as cattle fodder and in traditional human medicine as an astringent [styptic/drying] poultice; a decoction [boiled extract] of the bark administered for asthma; and the seeds used as an anti-galactagogue [a substance that reduces or suppresses milk flow in lactating women]. Modern nutritional analysis has now fully characterized its profile: the seeds possess an extraordinary amino acid composition, supplying all essential amino acids, with calcium content exceeding that of milk, magnesium content exceeding that of oats, and tryptophan content surpassing most known foods. The tryptophan content carries pharmacological significance, as tryptophan is the biochemical precursor to serotonin; traditional Maya applications of ramon for calming and anti-anxiety purposes may therefore reflect genuine serotonergic [serotonin-pathway] activity mediated by dietary tryptophan loading. The seed is now commercially marketed as a 'superfood,' representing yet another instance in which traditional food knowledge has been validated by modern nutritional science.",
+      "entities_mentioned": [
+        {
+          "name": "Ramon / Maya Nut / Breadnut Tree",
+          "modern_identification": "Brosimum alicastrum (Moraceae)",
+          "identification_confidence": "high",
+          "notes": "Maya vernacular name recorded as 'ox' in some dialects. Major archaeological and ethnohistorical staple crop of the Classic Maya. Landa's 1566 account (Relación de las Cosas de Yucatán) is cited as a primary historical source."
+        },
+        {
+          "name": "ox",
+          "modern_identification": "Brosimum alicastrum",
+          "identification_confidence": "medium",
+          "notes": "Regional Maya dialect name for ramon; orthography and precise dialect provenance not specified in source text."
+        }
+      ],
+      "translator_notes": "The source text is in English and required no linguistic translation; the task here was scholarly rendering with terminological clarification. Key technical terms glossed in brackets: 'astringent poultice,' 'decoction,' 'anti-galactagogue,' and 'serotonergic.' The claim that ramon seed stores at some Maya sites exceeded maize stores is a point of ongoing archaeological debate; the source text presents it as established fact without citation beyond a general reference to Landa (1566) and 'archaeological evidence.' The pharmacological inference linking traditional calming uses to tryptophan-serotonin pathways is plausible but speculative as presented; no clinical citation is given. The anti-galactagogue use of the seeds is notable and potentially contradicts the nutritional/caloric emphasis on ramon as a beneficial food — this tension is not resolved in the source text.",
+      "_label": "ritual_bacabs::ramon_brosimum"
+    }
+  ]
+}
