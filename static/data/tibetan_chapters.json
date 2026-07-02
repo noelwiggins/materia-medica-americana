@@ -1,0 +1,559 @@
+{
+  "job_name": "tibetan-tradition-v1",
+  "completed_at": "2026-07-02T02:15:50.691852",
+  "segment_count": 10,
+  "results": [
+    {
+      "title_inferred": "Somaraja (Rhodiola) in the Gyushi: Properties, Indications, and Preparation",
+      "original_text": "སོ་མ་རཱ་ཛ། (Somaraja) — Rhodiola rosea / R. sachalinensis. From Gyushi (rGyud bzhi), Chapter on mountain medicines. Classical Tibetan: སྤང་རྒྱན་ སོ་མ་རཱ་ཛ་ཞེས་པ། རི་བོ་ཆེན་པོའི་གངས་ཀྱི་འདབས་སུ་སྐྱེས་པའི་སྨན། ལུས་ཀྱི་ཤུགས་དང་བཟོད་སྟོབས་འཕེལ་བར་བྱེད། སེམས་གསལ་ཞིང་དྲན་པ་བཀོལ་བར་བྱེད། ལྟེ་བར་སྐྱུར་ཚ་ཡོད་ན་སྨན་བཟང་ངོ་།",
+      "translation": "Somaraja [lit. 'king of meadow ornaments' or 'moon-king herb']: a plant born at the foot of the great glaciers on high mountains. It increases physical strength [lus kyi shugs] and the body's endurance [bzod stobs]. It clarifies the mind [sems gsal] and enhances memory [dran pa bkol]. It is an excellent medicine [sman bzang] when there is acidic heat [skyur tsha] in the navel region [lte ba]. Used by Tibetan physicians for those suffering from altitude-related fatigue, weakness at high elevation, and cloudiness of mind. The Gyushi specifies collection above 4,000 m elevation for maximum potency. Men-Tsee-Khang preparation: root dried at altitude, decocted or taken as powder. Standard formula: combined with shilajit [brag zhun] and other mountain medicines for altitude adaptation.",
+      "entities_mentioned": [
+        {
+          "name": "Somaraja (སོ་མ་རཱ་ཛ)",
+          "modern_identification": "Rhodiola rosea or Rhodiola sachalinensis (family Crassulaceae)",
+          "identification_confidence": "high",
+          "notes": "A well-attested adaptogenic root used in Tibetan, Ayurvedic, and Mongolian medicine. Identified with Rhodiola spp. in contemporary pharmacobotanical literature. The Sanskrit-derived name 'Somaraja' (king of soma/moon) is used in both Tibetan and some Ayurvedic contexts, though the Ayurvedic 'Somaraja' may refer to different species (e.g., Psoralea corylifolia); context here firmly places it with high-altitude Rhodiola."
+        },
+        {
+          "name": "Shilajit (brag zhun)",
+          "modern_identification": "Shilajit / mumijo — a mineral pitch exudate from high-altitude rock formations",
+          "identification_confidence": "high",
+          "notes": "Mentioned as a companion ingredient in the standard Men-Tsee-Khang altitude-adaptation formula. brag zhun is the standard Tibetan term for shilajit."
+        },
+        {
+          "name": "Gyushi (rGyud bzhi)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The rGyud bzhi ('Four Tantras') is the foundational canonical text of Tibetan medicine, attributed to Yuthok Yonten Gonkyi. Not a plant or drug; included here as the named source text."
+        },
+        {
+          "name": "Men-Tsee-Khang",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The Tibetan Medical and Astrological Institute (Dharamsala, India); cited here as the institutional source of the preparation method described. Not a historical classical source but a modern authoritative institution."
+        }
+      ],
+      "translator_notes": "The Classical Tibetan passage is a genuine excerpt consistent with rGyud bzhi stylistic conventions, though the surrounding source text appears to be a modern scholarly compilation that interweaves the classical citation with editorial commentary and Men-Tsee-Khang institutional practice. The phrase 'skyur tsha at the navel' (ལྟེ་བར་སྐྱུར་ཚ་ཡོད་ན) likely refers to a condition of gastric acid imbalance or epigastric heat in Tibetan humoral pathology, not strictly an anatomical navel complaint. The elevation specification (above 4,000 m) and the Men-Tsee-Khang preparation details are editorial additions to the classical text, not part of the rGyud bzhi canon itself. Translators should be aware that 'Somaraja' as a plant name is polysemous across South and Central Asian medical traditions.",
+      "_label": "gyushi::rhodiola_somaraja"
+    },
+    {
+      "title_inferred": "Bragzhun (Shilajit): Himalayan Mineral Medicine in Tibetan and Ayurvedic Traditions",
+      "original_text": "བྲག་ཞུན། (Bragzhun / Shilajit) — mineral exudate from Himalayan rocks. Gyushi classification: mineral medicine of the first rank. Classical text: བྲག་ལས་ཞུར་བའི་རྫས་སྨན་ཆེན་པོ། ལྟེ་བ་དང་གློ་བ་སོགས་ཀྱི་ནད་ལ་ཕན། མི་རབས་མང་པོར་ལོ་ཆ་མང་ཙམ་གནས་སྐབས་སུ་གྲུབ་པ། Translation: Bragzhun — the great mineral medicine that exudes from rocks. Beneficial for diseases of the navel region, lungs, and related organs. It is formed over many generations across many years. Used in Tibetan medicine for debility, chronic disease, urinary conditions, and as a rejuvenating rasayana. Men-Tsee-Khang: purified shilajit given with milk or honey. Active research: fulvic acid, dibenzo-alpha-pyrones — mitochondrial energy production, anti-aging, testosterone support. Multiple Indian clinical trials. Represents a convergence with Ayurvedic shilajit use — the same substance independently documented by two high-altitude traditions.",
+      "translation": "Bragzhun (Shilajit) is a mineral exudate seeping from Himalayan rocks. Within the Gyushi [rGyud bzhi, the foundational Tibetan medical canon] classification system, it is ranked as a mineral medicine of the first order. The classical Tibetan text states: 'Bragzhun — the great mineral medicine that exudes from rocks. It is beneficial for diseases of the navel region, the lungs, and related organs. It is formed over the course of many generations and across many years.' In Tibetan medicine, it is employed in cases of general debility, chronic illness, urinary disorders, and as a rejuvenating tonic [rasayana]. The Men-Tsee-Khang [the principal Tibetan medical institute, based in Dharamsala] prescribes purified shilajit administered with milk or honey. Current pharmacological research has identified active constituents including fulvic acid and dibenzo-alpha-pyrones, with proposed mechanisms involving mitochondrial energy production, anti-aging effects, and support of testosterone levels; these findings are supported by multiple Indian clinical trials. The convergent use of this substance in both Tibetan and Ayurvedic traditions — two distinct high-altitude medical systems — suggests independent documentation of the same therapeutically significant material.",
+      "entities_mentioned": [
+        {
+          "name": "བྲག་ཞུན། (Bragzhun / Shilajit)",
+          "modern_identification": "Shilajit — a humic, resinous mineral exudate found in Himalayan, Hindukush, and Altai mountain rocks; chemically characterized by fulvic acid and dibenzo-alpha-pyrone derivatives",
+          "identification_confidence": "high",
+          "notes": "Cognate with Ayurvedic 'Shilajatu' or 'Shilajit'; the Tibetan and Indian traditions appear to document the same substance independently. Purification before use is standard in both systems."
+        },
+        {
+          "name": "Gyushi (rGyud bzhi)",
+          "modern_identification": "The Four Tantras — the canonical foundational text of Tibetan medicine, compiled circa 12th century CE",
+          "identification_confidence": "high",
+          "notes": "The classification 'mineral medicine of the first rank' situates shilajit at the apex of the Gyushi's mineral pharmacopoeia."
+        },
+        {
+          "name": "Men-Tsee-Khang",
+          "modern_identification": "Tibetan Medical and Astrological Institute, Dharamsala, India — the primary institutional authority for classical Tibetan medicine in exile",
+          "identification_confidence": "high",
+          "notes": "Cited here as the source for the standard clinical preparation: purified shilajit with milk or honey."
+        },
+        {
+          "name": "Fulvic acid",
+          "modern_identification": "A low-molecular-weight humic substance; one of the primary bioactive components isolated from shilajit",
+          "identification_confidence": "high",
+          "notes": "Proposed as a key active constituent in modern pharmacological investigations."
+        },
+        {
+          "name": "Dibenzo-alpha-pyrones",
+          "modern_identification": "A class of oxygen-containing heterocyclic compounds found in shilajit, implicated in mitochondrial electron transport chain support",
+          "identification_confidence": "high",
+          "notes": "Associated with the putative anti-aging and energy-enhancing properties of shilajit in current research literature."
+        }
+      ],
+      "translator_notes": "The embedded Tibetan classical quotation has been translated directly from the Tibetan script. The segment conflates primary source material (the classical Tibetan text), institutional practice (Men-Tsee-Khang), and modern pharmacological commentary; these layers have been preserved and distinguished in the translation. The term 'rasayana' is a Sanskrit loanword used in the source text to describe the rejuvenating tonic function — it has been retained in brackets as it carries specific technical meaning in both Ayurvedic and Tibetan medical contexts. The ailment categories 'navel region' (ལྟེ་བ, lte ba) and 'lungs' (གློ་བ, glo ba) reflect classical Tibetan anatomical and pathological categories that do not map precisely onto modern biomedical anatomy and have been rendered literally.",
+      "_label": "gyushi::shilajit_mineral_medicine"
+    },
+    {
+      "title_inferred": "Medicinal Trees and Plants: Regional Materia Medica and the Three Fruits (Gyushi, Second Tantra, Ch. 20)",
+      "original_text": "སྨན་ལྗོང་ (Smanljong / Medicinal Trees and Plants) — Chapter 20 of Gyushi, Second Tantra. Men-Tsee-Khang translation excerpt: The physician should know these trees and plants that grow in the three regions — the hot lowlands, the temperate middle lands, and the cold high mountains. Each region produces medicines suited to its own diseases. The mountain medicines are strongest for conditions of cold and deficiency; the lowland medicines are strongest for conditions of heat and excess. Pomegranate (sewa) is the king of digestive medicines. Chebulic myrobalan (arura) is the king of all medicines — it may be used for all diseases without exception, increasing the three humors when needed and decreasing them when they are excessive. Himalayan rhubarb (chugang) purges without weakening. Gentian (tikta) eliminates excess heat. Terminal (baru) and Belleric (kyuru) myrobalans complete the Three Fruits combination (arura-baru-kyuru) which is the foundation of Tibetan pharmacology.",
+      "translation": "Smanljong [Medicinal Trees and Plants] — Chapter 20 of the Gyushi [Four Tantras], Second Tantra [Explanatory Tantra]. Excerpt from the Men-Tsee-Khang translation: The physician must be acquainted with the trees and plants growing in the three regions — the hot lowlands, the temperate middle lands, and the cold high mountains. Each region yields medicines appropriate to its own characteristic diseases. Medicines from the high mountains are most potent for conditions of cold and deficiency [rlung and cold disorders]; medicines from the lowlands are most potent for conditions of heat and excess [mkhris pa and fever disorders]. Pomegranate [sewa; Punica granatum] is the sovereign among digestive medicines. Chebulic myrobalan [arura; Terminalia chebula] is the sovereign among all medicines — it may be employed for every disease without exception, augmenting the three humors [rlung, mkhris pa, bad kan] when they are deficient and diminishing them when they are in excess. Himalayan rhubarb [chugang; Rheum species] purges [the bowels] without causing debility. Gentian [tikta; Gentiana species] dispels excess heat. Terminalia bellirica [baru] and Phyllanthus emblica or Terminalia bellirica var. [kyuru; Emblica officinalis / Phyllanthus emblica] complete the Three Fruits combination [Tibetan: 'Bras bu gsum; Sanskrit: Triphala] — arura, baru, and kyuru — which constitutes the foundational compound of Tibetan pharmacology.",
+      "entities_mentioned": [
+        {
+          "name": "Pomegranate (sewa)",
+          "modern_identification": "Punica granatum L.",
+          "identification_confidence": "high",
+          "notes": "Named 'king of digestive medicines' in Tibetan medical tradition; used for digestive disorders, nausea, and cold stomach conditions. Preparation methods not specified in this excerpt."
+        },
+        {
+          "name": "Chebulic myrobalan (arura)",
+          "modern_identification": "Terminalia chebula Retz.",
+          "identification_confidence": "high",
+          "notes": "Described as the universal medicine ('king of all medicines'), applicable to all diseases and capable of both augmenting and reducing the three humors. Corresponds to Sanskrit 'haritaki'. Central to the Triphala compound. No specific preparation noted here."
+        },
+        {
+          "name": "Himalayan rhubarb (chugang)",
+          "modern_identification": "Rheum palmatum L. or Rheum officinale Baill. (or related Rheum spp.)",
+          "identification_confidence": "medium",
+          "notes": "Used as a purgative that does not cause weakness or debility — a notable therapeutic distinction. Several Rheum species are used interchangeably in Tibetan medicine; precise species identification requires further sourcing."
+        },
+        {
+          "name": "Gentian (tikta)",
+          "modern_identification": "Gentiana species (possibly Gentiana tibetica or Gentiana kurroo)",
+          "identification_confidence": "medium",
+          "notes": "Indicated for excess heat conditions [mkhris pa disorders, fever]. 'Tikta' (bitter) is a broad functional category in Tibetan and Ayurvedic medicine; the specific Gentiana species intended may vary by regional formulary."
+        },
+        {
+          "name": "Belleric myrobalan (baru)",
+          "modern_identification": "Terminalia bellirica (Gaertn.) Roxb.",
+          "identification_confidence": "high",
+          "notes": "Second component of the Three Fruits (Triphala) combination. Corresponds to Sanskrit 'bibhitaka'."
+        },
+        {
+          "name": "Emblic myrobalan (kyuru)",
+          "modern_identification": "Phyllanthus emblica L. (syn. Emblica officinalis Gaertn.)",
+          "identification_confidence": "high",
+          "notes": "Third component of the Three Fruits (Triphala) combination. Corresponds to Sanskrit 'amalaki'. Occasionally confused or conflated with Terminalia species in some Tibetan sources; identification here is standard."
+        },
+        {
+          "name": "Three Fruits (arura-baru-kyuru)",
+          "modern_identification": "Triphala (Sanskrit); compound of Terminalia chebula, Terminalia bellirica, Phyllanthus emblica",
+          "identification_confidence": "high",
+          "notes": "Described as the foundational compound of Tibetan pharmacology. Equivalent to the pan-South Asian Triphala formulation. Used across a broad range of conditions; specific preparation method not described in this excerpt."
+        }
+      ],
+      "translator_notes": "This segment is an English-language Men-Tsee-Khang translation excerpt embedded within a Tibetan-script chapter heading; the source text is therefore already partially translated and the task here is to render it into polished scholarly English with appropriate terminological annotation. Tibetan humoral terms (rlung, mkhris pa, bad kan) have been inserted in brackets to preserve technical precision absent from the excerpt's own rendering. The identification of 'kyuru' as Phyllanthus emblica rather than a Terminalia species follows standard Tibetan pharmacological consensus but should be verified against the specific Men-Tsee-Khang formulary edition consulted. Preparation methods are not described in this excerpt; the chapter likely contains them elsewhere.",
+      "_label": "gyushi::sman_ljong_materia_medica"
+    },
+    {
+      "title_inferred": "Arura (Terminalia chebula): The King of Medicines in Tibetan Medical Tradition",
+      "original_text": "ཨ་རུ་ར། (Arura) — Terminalia chebula (Chebulic myrobalan). Considered the king of all medicines in Tibetan medical tradition. Gyushi: ཨ་རུ་ར་སྨན་གྱི་རྒྱལ་པོ། ནད་ཀུན་ལ་ཕན་ཐོགས། ལྷ་བདུད་ཀྱི་སྨན་ཞེས་འབོད། Translation: Arura — the king of medicines. Beneficial for all diseases. Called the medicine of gods and demons. Properties: all five tastes present (sour, sweet, bitter, pungent, astringent — only salt absent). Therefore can be used to treat all three humors. Men-Tsee-Khang preparation: fruit dried, powdered, taken with different vehicles (warm water, honey, molasses, butter) depending on the condition being treated. Modern research: chebulagic acid, chebulinic acid, ellagic acid — demonstrated antiviral activity against HSV and HIV in vitro; antimicrobial against MRSA; hepatoprotective; strong antioxidant. Triphala (three fruits: arura + baru + kyuru) — one of the most extensively studied Ayurvedic-Tibetan formulas, with clinical evidence for constipation, weight loss, dental health.",
+      "translation": "Arura (ཨ་རུ་ར།) — Terminalia chebula (Chebulic myrobalan). Regarded as the king of all medicines within the Tibetan medical tradition. From the Gyushi [rGyud bzhi, the Four Tantras, the foundational Tibetan medical canon]: 'Arura is the king of medicines. It is beneficial for all diseases. It is called the medicine of gods and demons [lha bdud kyi sman].' Properties: all five tastes [ro lnga] are present — sour [skyur], sweet [mngar], bitter [kha ba], pungent [tsha ba], and astringent [bska ba] — with only salt [lan tshwa] absent. On account of possessing these five tastes, arura may be employed in the treatment of all three humors [nyes pa gsum]: Wind [rlung], Bile [mkhris pa], and Phlegm [bad kan]. Men-Tsee-Khang [the Tibetan Medical and Astrological Institute] preparation method: the fruit is dried and reduced to powder, then administered with varying vehicles [rten, i.e., carriers or adjuvants] — warm water, honey, molasses [lcags srin bu], or butter — selected according to the specific condition being treated. Modern phytochemical and pharmacological research has identified the active constituents chebulagic acid, chebulinic acid, and ellagic acid, with demonstrated antiviral activity against Herpes Simplex Virus (HSV) and HIV in vitro; antimicrobial activity against methicillin-resistant Staphylococcus aureus (MRSA); hepatoprotective effects; and potent antioxidant properties. Triphala [Tibetan: 'bras bu gsum] — the compound formula of three fruits comprising arura, baru (Terminalia bellirica), and kyuru (Phyllanthus emblica, syn. Emblica officinalis) — is among the most extensively studied Ayurvedic-Tibetan compound preparations, with clinical evidence supporting its use for constipation, weight management, and dental health.",
+      "entities_mentioned": [
+        {
+          "name": "Arura (ཨ་རུ་ར།)",
+          "modern_identification": "Terminalia chebula (Combretaceae); common name: Chebulic myrobalan",
+          "identification_confidence": "high",
+          "notes": "Active constituents include chebulagic acid, chebulinic acid, and ellagic acid. Source text identifies it as possessing all five tastes except salt, making it therapeutically applicable across all three Tibetan humors (rlung, mkhris pa, bad kan). In vitro antiviral (HSV, HIV), antimicrobial (MRSA), hepatoprotective, and antioxidant activity reported."
+        },
+        {
+          "name": "Baru",
+          "modern_identification": "Terminalia bellirica (Combretaceae); common name: Belleric myrobalan",
+          "identification_confidence": "high",
+          "notes": "One of the three fruits constituting Triphala. Tibetan name baru (བ་རུ་)."
+        },
+        {
+          "name": "Kyuru",
+          "modern_identification": "Phyllanthus emblica (syn. Emblica officinalis, Euphorbiaceae); common name: Indian gooseberry (Amla)",
+          "identification_confidence": "high",
+          "notes": "One of the three fruits constituting Triphala. Tibetan name kyuru (སྐྱུ་རུ་)."
+        },
+        {
+          "name": "Triphala",
+          "modern_identification": "Compound polyherbal formula: Terminalia chebula + Terminalia bellirica + Phyllanthus emblica",
+          "identification_confidence": "high",
+          "notes": "Sanskrit-origin term (tri = three, phala = fruits) used in both Ayurvedic and Tibetan traditions. Clinical evidence cited for constipation, weight loss, and dental health."
+        },
+        {
+          "name": "Gyushi (rGyud bzhi)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The Four Tantras (rGyud bzhi), the foundational canonical text of Tibetan medicine. The Tibetan verse quoted is from this corpus. Not a plant or drug entity, but a textual authority."
+        }
+      ],
+      "translator_notes": "The Tibetan verse cited from the Gyushi (rGyud bzhi) is rendered in the source with an inline English gloss; the translation here preserves and expands upon that gloss with bracketed Tibetan terminology for scholarly precision. The term 'vehicle' [rten] is a standard Tibetan pharmacological concept referring to the adjuvant substance used to deliver a powdered medicament, analogous to the Ayurvedic concept of anupana; this has been flagged for archival clarity. The compound 'Triphala' is a Sanskrit-derived term widely used in both Ayurvedic and Tibetan contexts; in Tibetan it corresponds to 'bras bu gsum ('the three fruits'). In vitro data cited in the source should be noted as preliminary and not equivalent to clinical efficacy evidence.",
+      "_label": "gyushi::arura_terminalia"
+    },
+    {
+      "title_inferred": "Kyuru and Baru: Tibetan Belleric Myrobalan and Amla (Two of the Three Fruits)",
+      "original_text": "སྐྱུ་རུ་ར། (Kyuru / Baru) — Terminalia bellirica / T. belerica (Belleric myrobalan) and Phyllanthus emblica (Amla / Amalaki). Two of the Three Fruits combination. Gyushi on Baru: འབྲས་བུ་སྐྱུ་རུ་ར། མིག་ཀྱི་ནད་ལ་བཀལ་རྒྱུ། Translation: The Baru fruit — applied for eye diseases. Also for wind disorders, as a general tonic. Phlegm-clearing properties. Kyuru (Amla): རྒྱུ་བ་འཆི་བའི་ཆུང་མ་ཡིན་ཅེས། — 'the wife of impermanence' because it extends life. Highest vitamin C content of any traditional medicine fruit. Men-Tsee-Khang uses: Amla primary ingredient in Tibetan rejuvenation formulas. Modern: Terminalia bellirica — antibacterial, anti-inflammatory; Phyllanthus emblica — vitamin C preservation (Tibetan processing preserves more than cooking), anti-diabetic, hepatoprotective. Triphala formula (all three fruits) clinical trials show: improved bowel function, weight management effects, anti-cariogenic dental effects.",
+      "translation": "Kyuru-ra [སྐྱུ་རུ་ར།] (Kyuru / Baru): Refers collectively to two of the Three Fruits [Tibetan: 'Drupa Gsum']: Terminalia bellirica (Belleric myrobalan; Tibetan: Baru) and Phyllanthus emblica (Amla / Amalaki; Tibetan: Kyuru).\n\nThe Four Tantras [Gyushi] on Baru states: 'འབྲས་བུ་སྐྱུ་རུ་ར། མིག་ཀྱི་ནད་ལ་བཀལ་རྒྱུ།' — 'The Baru fruit is applied [prescribed] for diseases of the eye.' It is additionally indicated for wind [rlung] disorders and serves as a general tonic. It possesses phlegm-clearing [bad-kan] properties.\n\nRegarding Kyuru (Amla): The classical phrase 'རྒྱུ་བ་འཆི་བའི་ཆུང་མ་ཡིན་ཅེས།' — rendered as 'the wife of impermanence' — reflects the doctrine that Amla extends life and thus stands in close relationship with death, mediating against it. Among all fruits used in traditional medicine, Amla is noted for possessing the highest vitamin C content. The Men-Tsee-Khang [Tibetan Medical and Astrological Institute] employs Amla as a primary ingredient in Tibetan rejuvenation [bCud-len] formulas.\n\nFrom a modern pharmacological perspective: Terminalia bellirica has demonstrated antibacterial and anti-inflammatory activity. Phyllanthus emblica is notable for the preservation of vitamin C content during traditional Tibetan processing methods (which preserve more than conventional cooking), and has shown anti-diabetic and hepatoprotective effects. Clinical trials of the Triphala formula [Sanskrit: Three Fruits; incorporating all three myrobalans] have demonstrated improved bowel function, weight management effects, and anti-cariogenic [cavity-preventing] dental effects.",
+      "entities_mentioned": [
+        {
+          "name": "Kyuru-ra / Kyuru (སྐྱུ་རུ་ར།)",
+          "modern_identification": "Phyllanthus emblica (Amla / Amalaki / Indian gooseberry)",
+          "identification_confidence": "high",
+          "notes": "One of the Three Fruits (Drupa Gsum / Triphala). Used in rejuvenation formulas; classical epithet 'wife of impermanence' reflects its life-extending reputation. Exceptionally high vitamin C content noted."
+        },
+        {
+          "name": "Baru",
+          "modern_identification": "Terminalia bellirica (Belleric myrobalan)",
+          "identification_confidence": "high",
+          "notes": "One of the Three Fruits. Gyushi prescribes it specifically for eye diseases, wind (rlung) disorders, and as a tonic with phlegm-clearing properties. Modern research supports antibacterial and anti-inflammatory activity."
+        },
+        {
+          "name": "Triphala / Three Fruits (Drupa Gsum)",
+          "modern_identification": "Compound formula: Terminalia bellirica + Phyllanthus emblica + Terminalia chebula",
+          "identification_confidence": "high",
+          "notes": "Classical three-fruit combination shared across Tibetan and Ayurvedic traditions. Clinical trials referenced for bowel function, weight management, and dental (anti-cariogenic) effects. The third fruit (Chebulic myrobalan / Aru) is mentioned only implicitly here."
+        },
+        {
+          "name": "Men-Tsee-Khang",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The Tibetan Medical and Astrological Institute (Dharamsala, India); cited as a contemporary institutional user of Amla in rejuvenation preparations."
+        },
+        {
+          "name": "Gyushi (rGyud bzhi / Four Tantras)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "The foundational Tibetan medical canonical text, cited here as the classical source for the indication of Baru fruit in eye diseases."
+        }
+      ],
+      "translator_notes": "The segment is a mixed scholarly note combining Tibetan-language classical citations, transliteration, and modern pharmacological commentary — not a single coherent primary source passage. The Tibetan phrase རྒྱུ་བ་འཆི་བའི་ཆུང་མ་ཡིན་ཅེས། is a poetic classical tag; 'wife of impermanence' is an established rendering but carries nuance: it may also imply Amla is a companion or counterpart to death/impermanence, i.e., it prolongs life in the face of mortality. The source conflates Kyuru (Amla, Phyllanthus emblica) and Baru (Terminalia bellirica) under the single headword སྐྱུ་རུ་ར།, which strictly refers to Amla alone; Baru is a distinct term. This conflation should be noted for archival accuracy. The third fruit of Triphala, Terminalia chebula (Aru / Haritaki), is implicitly referenced but not directly treated in this segment.",
+      "_label": "gyushi::kyuru_terminalia"
+    },
+    {
+      "title_inferred": "Tikta (Gentiana): Cold-Natured Bitter Medicine in the Gyushi System",
+      "original_text": "ཏིཀྟ། (Tikta) — Gentiana species (Tibetan gentian). Gyushi classification: cold-natured bitter medicine, king of heat-clearing medicines. ཏིཀྟ་ཚ་བ་གསུམ་ཀྱི་གཙོ་བོ། དམར་མཚལ་ཆུ་གཤིན་ལ་ཕན། Translation: Tikta — the primary [medicine] for the three [types of] heat. Beneficial for bile, blood, and infection. Excellent for fever from infection, liver heat, and blood heat. Men-Tsee-Khang preparation: root dried, decocted in water. Standard Tibetan formula for fever: tikta + pomegranate + camphor. Modern research: gentiopicroside (the primary bitter compound) — anti-inflammatory, hepatoprotective, anti-parasitic. Species unique to Himalayan altitude (Gentiana urnula, G. tibetica) not available in any other medical tradition — genuinely unique Tibetan pharmacological territory. Anti-malarial activity documented for Himalayan gentians in in vitro studies.",
+      "translation": "Tikta (Tibetan: ཏིཀྟ།) — Gentiana species (Tibetan gentian). Classification within the Gyushi [Four Tantras, the foundational Tibetan medical canon]: a cold-natured, bitter medicine; regarded as the chief [king] among heat-clearing medicines. Tibetan: ཏིཀྟ་ཚ་བ་གསུམ་ཀྱི་གཙོ་བོ། དམར་མཚལ་ཆུ་གཤིན་ལ་ཕན། — Translation: 'Tikta is the foremost [remedy] for the three [categories of] heat [disorders]. It is beneficial for bile, blood, and infectious [conditions].' It is especially indicated for fever arising from infection, heat of the liver, and heat disorders of the blood. Preparation method according to Men-Tsee-Khang [the Tibetan Medical and Astrological Institute]: the root is dried and then decocted in water. A standard Tibetan fever formula combines tikta with pomegranate and camphor. Modern phytochemical research identifies gentiopicroside as the principal bitter compound, with documented anti-inflammatory, hepatoprotective, and anti-parasitic activities. Himalayan high-altitude species — notably Gentiana urnula and Gentiana tibetica — are not found in other medical traditions and represent pharmacological territory unique to Tibetan medicine. Anti-malarial activity has been documented for Himalayan gentians in in vitro studies.",
+      "entities_mentioned": [
+        {
+          "name": "Tikta (ཏིཀྟ།)",
+          "modern_identification": "Gentiana spp., specifically Himalayan species including Gentiana urnula and Gentiana tibetica",
+          "identification_confidence": "high",
+          "notes": "Root used medicinally. Active compound gentiopicroside is well-characterized. Tikta is a Sanskrit loanword meaning 'bitter,' used in Tibetan medical literature to denote this genus."
+        },
+        {
+          "name": "Gentiana urnula",
+          "modern_identification": "Gentiana urnula H.Sm. — Himalayan gentian",
+          "identification_confidence": "high",
+          "notes": "High-altitude Himalayan endemic; not used in other regional medical traditions according to the source."
+        },
+        {
+          "name": "Gentiana tibetica",
+          "modern_identification": "Gentiana tibetica King ex Hook.f. — Tibetan gentian",
+          "identification_confidence": "high",
+          "notes": "Another Himalayan endemic gentian cited for unique pharmacological status in Tibetan medicine."
+        },
+        {
+          "name": "Gentiopicroside",
+          "modern_identification": "Secoiridoid glycoside; principal bitter compound of Gentiana spp.",
+          "identification_confidence": "high",
+          "notes": "Documented anti-inflammatory, hepatoprotective, and anti-parasitic properties; anti-malarial activity noted in in vitro studies of Himalayan gentians."
+        },
+        {
+          "name": "Pomegranate",
+          "modern_identification": "Punica granatum L.",
+          "identification_confidence": "high",
+          "notes": "Cited as a component of the standard Tibetan fever formula alongside tikta and camphor."
+        },
+        {
+          "name": "Camphor",
+          "modern_identification": "Cinnamomum camphora (L.) J.Presl, or camphor derived from Dryobalanops aromatica",
+          "identification_confidence": "medium",
+          "notes": "Used in combination with tikta and pomegranate in the standard Tibetan fever formula. Exact botanical source of camphor in Tibetan formulation not specified in this segment."
+        },
+        {
+          "name": "Gyushi (rGyud bzhi)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The Four Tantras — the foundational canonical text of Tibetan medicine. Not a plant or drug; cited here as the classificatory authority for tikta."
+        },
+        {
+          "name": "Men-Tsee-Khang",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The Tibetan Medical and Astrological Institute, Dharamsala; cited as the authority for the preparation method described."
+        }
+      ],
+      "translator_notes": "The Tibetan phrase ཏིཀྟ་ཚ་བ་གསུམ་ཀྱི་གཙོ་བོ། དམར་མཚལ་ཆུ་གཤིན་ལ་ཕན། was already partially translated in the source text; the translation here closely follows the source's own gloss with minor clarifications in brackets. 'The three [types of] heat' (ཚ་བ་གསུམ) is a technical Tibetan medical category requiring specialist verification for precise scope — it may refer to heat of bile, blood, and phlegm-heat combined, or to another tripartite classification system in the Gyushi. The segment mixes primary source Tibetan text, institutional preparation notes, and modern pharmacological commentary; these layers have been preserved but are worth distinguishing in any archival use. 'King of heat-clearing medicines' is a conventional honorific title (གཙོ་བོ།, 'chief/foremost') in Tibetan medical literature and should not be read as hyperbolic.",
+      "_label": "gyushi::gentian_tikta"
+    },
+    {
+      "title_inferred": "Precious Pills (Rinchen Rilbu): Complex Multi-Ingredient Formulas in Tibetan Medicine",
+      "original_text": "རིན་ཆེན་རིལ་བུ། (Rinchen rilbu) — Precious Pills. The most complex and celebrated formulas in Tibetan medicine. Gyushi: རིན་ཆེན་རིལ་བུ་གསུམ། Ratna Sampel (25 ingredients), Rinchen Drangjor (25 ingredients), Bedu Kar 25 (25 ingredients). These formulas combine plant, mineral, and animal medicines. Ratna Sampel includes: gold, silver, copper, iron (all detoxified through extensive processing), ruby, pearl, turquoise, lapis lazuli, Terminalia chebula, saffron, cloves, nutmeg, cardamom, and other ingredients processed over weeks. Men-Tsee-Khang production: each Precious Pill batch requires specific astrological timing, elaborate purification ceremonies, and weeks of preparation. Used for: stroke, paralysis, poisoning, serious chronic disease. Modern analysis: metal content verified as non-toxic after traditional processing. Pharmacological mechanism unknown — active research by Men-Tsee-Khang. Represents the most complex multi-ingredient traditional pharmaceutical preparation in any tradition in this archive.",
+      "translation": "Rinchen Rilbu — 'Precious Pills' [Tibetan: རིན་ཆེན་རིལ་བུ།]: The most complex and celebrated formulas in Tibetan medicine. The Gyushi [Four Tantras, the foundational Tibetan medical canon] references a group of three Precious Pills [རིན་ཆེན་རིལ་བུ་གསུམ་]: Ratna Sampel (25 ingredients), Rinchen Drangjor (25 ingredients), and Bedu Kar 25 (25 ingredients). These formulas combine plant, mineral, and animal-derived medicines. Ratna Sampel includes: gold, silver, copper, and iron — all detoxified through extensive traditional processing — along with ruby, pearl, turquoise, lapis lazuli, Terminalia chebula [myrobalan fruit], saffron, cloves, nutmeg, cardamom, and numerous other ingredients subjected to weeks of preparation. According to Men-Tsee-Khang [the Tibetan Medical and Astrological Institute] production standards, each batch of Precious Pills requires preparation at astrologically prescribed times, elaborate ritual purification ceremonies, and a multi-week manufacturing process. Indicated for: stroke, paralysis, poisoning, and serious chronic illness. Modern analytical studies have confirmed that the metal constituents, following traditional processing methods, are present at non-toxic levels. The pharmacological mechanisms of action remain unknown and are the subject of active research by Men-Tsee-Khang. These preparations represent the most compositionally complex multi-ingredient traditional pharmaceutical formulas documented in this archive.",
+      "entities_mentioned": [
+        {
+          "name": "Rinchen Rilbu (རིན་ཆེན་རིལ་བུ།)",
+          "modern_identification": "Class of complex Tibetan polyherbo-mineral-animal compound pills; no single modern equivalent",
+          "identification_confidence": "high",
+          "notes": "Generic term for the category of 'Precious Pills' in Tibetan medicine; multiple named formulas fall under this designation."
+        },
+        {
+          "name": "Ratna Sampel",
+          "modern_identification": "Tibetan compound formula: Rin chen rab 'byor nor bu'i phreng ba — 25-ingredient Precious Pill",
+          "identification_confidence": "high",
+          "notes": "One of the primary Precious Pill formulas; contains detoxified heavy metals, gemstones, and botanical ingredients. Also transliterated as 'Rinchen Ratna Sampel'."
+        },
+        {
+          "name": "Rinchen Drangjor",
+          "modern_identification": "Tibetan compound formula: Rin chen grags ldan — 25-ingredient Precious Pill",
+          "identification_confidence": "high",
+          "notes": "Second of the three principal Precious Pills referenced in the Gyushi."
+        },
+        {
+          "name": "Bedu Kar 25",
+          "modern_identification": "Tibetan compound formula: Be du karpo 25 — 25-ingredient Precious Pill",
+          "identification_confidence": "medium",
+          "notes": "Third of the three principal Precious Pills; 'Bedu Kar' likely refers to a white-camphor-based preparation. Transliteration uncertain."
+        },
+        {
+          "name": "Gyushi (རྒྱུད་བཞི།)",
+          "modern_identification": "The Four Tantras — foundational canonical text of Tibetan medicine",
+          "identification_confidence": "high",
+          "notes": "The authoritative Tibetan medical canon upon which classical formulas are based."
+        },
+        {
+          "name": "Terminalia chebula",
+          "modern_identification": "Terminalia chebula Retz. (Combretaceae) — Black Myrobalan / Chebulic Myrobalan",
+          "identification_confidence": "high",
+          "notes": "Known in Tibetan as a-ru-ra; considered a panacea in Tibetan medicine and nearly universal in compound formulas."
+        },
+        {
+          "name": "Saffron",
+          "modern_identification": "Crocus sativus L. (Iridaceae)",
+          "identification_confidence": "high",
+          "notes": "Stigmas used medicinally; common ingredient in Tibetan precious pill formulas."
+        },
+        {
+          "name": "Cloves",
+          "modern_identification": "Syzygium aromaticum (L.) Merr. & L.M. Perry (Myrtaceae)",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Nutmeg",
+          "modern_identification": "Myristica fragrans Houtt. (Myristicaceae)",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Cardamom",
+          "modern_identification": "Elettaria cardamomum (L.) Maton (Zingiberaceae) or Amomum subulatum Roxb. (large cardamom); both used in Tibetan medicine",
+          "identification_confidence": "medium",
+          "notes": "Tibetan texts use both small and large cardamom; species not specified in source."
+        },
+        {
+          "name": "Gold (detoxified)",
+          "modern_identification": "Aurum (Au); processed via traditional Tibetan bhasma-analogous calcination methods",
+          "identification_confidence": "high",
+          "notes": "Modern analysis cited in source as confirming non-toxic levels after processing."
+        },
+        {
+          "name": "Silver (detoxified)",
+          "modern_identification": "Argentum (Ag); processed via traditional detoxification",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Copper (detoxified)",
+          "modern_identification": "Cuprum (Cu); processed via traditional detoxification",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Iron (detoxified)",
+          "modern_identification": "Ferrum (Fe); processed via traditional detoxification",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Ruby",
+          "modern_identification": "Corundum (Al₂O₃) var. ruby; used in powdered/calcined form",
+          "identification_confidence": "medium",
+          "notes": "Gemstone ingredients in Tibetan medicine are typically powdered and purified before inclusion."
+        },
+        {
+          "name": "Pearl",
+          "modern_identification": "Calcium carbonate (CaCO₃) concretion from Pinctada spp. or freshwater bivalves",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Turquoise",
+          "modern_identification": "Hydrated copper aluminium phosphate mineral; CuAl₆(PO₄)₄(OH)₈·4H₂O",
+          "identification_confidence": "high",
+          "notes": "Used in powdered form after purification."
+        },
+        {
+          "name": "Lapis lazuli",
+          "modern_identification": "Lazurite-bearing rock (sodium calcium aluminosilicate with sulfur); used in powdered form",
+          "identification_confidence": "high",
+          "notes": null
+        },
+        {
+          "name": "Men-Tsee-Khang",
+          "modern_identification": "Men-Tsee-Khang — Tibetan Medical and Astrological Institute, Dharamsala, India (est. 1961)",
+          "identification_confidence": "high",
+          "notes": "Primary institutional producer of Precious Pills for the Tibetan diaspora community; conducts pharmacological research on traditional formulas."
+        }
+      ],
+      "translator_notes": "The source text is already largely in English with embedded Tibetan script and technical terminology; translation effort here primarily involved clarifying, contextualizing, and rendering Tibetan terms precisely. The Tibetan script for 'Gyushi' in the source contains a minor spacing artifact (ར ིན་ vs. རིན་) silently corrected in the cleaned original. 'Bedu Kar' is a plausible transliteration but the standard Wylie rendering and exact formula identity should be verified against Men-Tsee-Khang official documentation, as multiple variant spellings exist. The claim that metal content is 'non-toxic after traditional processing' reflects published Men-Tsee-Khang and third-party analytical studies; this remains an active area of pharmacological debate in the literature and should be flagged for editorial review. The source's statement that these represent 'the most complex multi-ingredient traditional pharmaceutical preparation in any tradition in this archive' is an editorial assertion, not a verifiable pharmacological claim.",
+      "_label": "gyushi::sman_rtsi_precious_pills"
+    },
+    {
+      "title_inferred": "Foundations of Tibetan Medicine: Humoral Theory, Diagnosis, and the Gyushi Tradition",
+      "original_text": "བོད་ཀྱི་གསོ་བ་རིག་པ། (Bod kyi gso ba rig pa) — The Science of Tibetan Medicine. From the Blue Beryl commentary (Vaidurya Ngonpo, 1688) by Desi Sangye Gyamtso on the Gyushi. Translation (Gavin Kilty, Library of Tibetan Works and Archives): 'The body is made of seven constituents: nutritional essence, blood, flesh, fat, bone, marrow, and reproductive essence. These are maintained by a balanced diet and behavior, and disrupted by imbalance of the three humors: wind (rlung), bile (mkhris pa), and phlegm (bad kan). All 404 diseases arise from imbalances of these three.' The Tibetan system of pulse diagnosis: eighteen pulse types distinguished at three positions on each wrist, with different pressure levels accessing different organ systems. The 79 thangka paintings commissioned by Desi Sangye Gyamtso constitute the most detailed visual anatomy in any pre-modern Asian tradition. Unique diagnostic innovation: urinalysis — color, steam, sediment, and surface film of morning urine used to diagnose all major diseases. Men-Tsee-Khang continues to teach and practice this system in its medical college in Dharamsala.",
+      "translation": "Bod kyi gso ba rig pa — The Science of Tibetan Medicine. Drawn from the Blue Beryl commentary [Vaidurya Ngonpo, composed 1688] by Desi Sangye Gyamtso on the Gyushi [Four Tantras, the foundational Tibetan medical canon]. In the translation of Gavin Kilty for the Library of Tibetan Works and Archives: 'The body is composed of seven bodily constituents [lus zungs bdun]: nutritional essence [dwangs ma], blood [khrag], flesh [sha], fat [tshil], bone [rus], marrow [rkang], and reproductive essence [khu ba]. These are sustained by a balanced diet and conduct, and are disturbed by imbalance among the three humors [nyes pa gsum]: wind [rlung], bile [mkhris pa], and phlegm [bad kan]. All 404 diseases arise from imbalances among these three.' The Tibetan system of pulse diagnosis [rtsa) distinguishes eighteen pulse types assessed at three positions on each wrist, with varying degrees of pressure used to access different organ systems. The 79 thangka paintings commissioned by Desi Sangye Gyamtso represent the most comprehensive visual anatomical record in any pre-modern Asian medical tradition. A distinctive diagnostic method is urinalysis [chu ltas]: the color, steam, sediment, and surface film of morning urine are examined to diagnose all major diseases. The Men-Tsee-Khang [Tibetan Medical and Astrological Institute] continues to teach and practice this system at its medical college in Dharamsala, India.",
+      "entities_mentioned": [
+        {
+          "name": "Gyushi (rGyud bzhi)",
+          "modern_identification": "The Four Tantras — the canonical root text of Tibetan medicine, attributed to the Buddha of Medicine and compiled approximately 12th century CE",
+          "identification_confidence": "high",
+          "notes": "The foundational textual corpus of Sowa Rigpa (Tibetan medicine). Authorship and dating remain subjects of scholarly debate."
+        },
+        {
+          "name": "Vaidurya Ngonpo (Blue Beryl)",
+          "modern_identification": "Commentary on the Gyushi by Desi Sangye Gyamtso, composed 1688 CE",
+          "identification_confidence": "high",
+          "notes": "One of the most authoritative commentaries on the Gyushi; accompanied by the famous set of 79 medical thangka paintings."
+        },
+        {
+          "name": "Desi Sangye Gyamtso",
+          "modern_identification": "Regent of Tibet (1653–1705), physician and scholar",
+          "identification_confidence": "high",
+          "notes": "Commissioned both the Blue Beryl commentary and the associated medical thangka series, now preserved at the Men-Tsee-Khang and in museum collections."
+        },
+        {
+          "name": "rlung (wind humor)",
+          "modern_identification": "One of the three Tibetan humors; broadly correlates with neurological and circulatory regulatory functions, though the correspondence to Western physiology is imprecise",
+          "identification_confidence": "medium",
+          "notes": "No exact modern biomedical equivalent; governs movement, breathing, nervous system activity in Tibetan theory."
+        },
+        {
+          "name": "mkhris pa (bile humor)",
+          "modern_identification": "One of the three Tibetan humors; loosely associated with hepatic, metabolic, and thermogenic functions",
+          "identification_confidence": "medium",
+          "notes": "Conceptually related to but not identical with bile in Western medicine."
+        },
+        {
+          "name": "bad kan (phlegm humor)",
+          "modern_identification": "One of the three Tibetan humors; associated with structural stability, moisture, and cold qualities; loosely analogous to phlegmatic or lymphatic functions",
+          "identification_confidence": "medium",
+          "notes": "Corresponds partly to kapha in Ayurvedic medicine."
+        },
+        {
+          "name": "Seven bodily constituents (lus zungs bdun)",
+          "modern_identification": "A hierarchical model of bodily tissues in Tibetan medicine: nutritional essence, blood, flesh, fat, bone, marrow, reproductive essence",
+          "identification_confidence": "high",
+          "notes": "Parallels the sapta dhatu system of Ayurveda. Each constituent is said to be refined from the previous."
+        },
+        {
+          "name": "Pulse diagnosis (rtsa)",
+          "modern_identification": "Traditional Tibetan sphygmological system; distinct from Chinese pulse diagnosis though sharing some structural similarities",
+          "identification_confidence": "high",
+          "notes": "Eighteen pulse types identified at three wrist positions bilaterally; pressure depth correlates to different organ systems."
+        },
+        {
+          "name": "Urinalysis (chu ltas)",
+          "modern_identification": "Traditional diagnostic examination of morning urine; assessment of color, steam, odor, sediment, and surface film",
+          "identification_confidence": "high",
+          "notes": "A distinctive feature of Tibetan diagnostics with no direct parallel in Galenic or Chinese medicine. Detailed protocols appear in the third tantra of the Gyushi."
+        },
+        {
+          "name": "Men-Tsee-Khang",
+          "modern_identification": "The Tibetan Medical and Astrological Institute, established in Dharamsala, India, 1961",
+          "identification_confidence": "high",
+          "notes": "Official institution of the Central Tibetan Administration for preserving and teaching Sowa Rigpa."
+        },
+        {
+          "name": "Thangka paintings (medical series)",
+          "modern_identification": "Set of 79 illustrated scrolls depicting Tibetan medical anatomy, diagnosis, and pharmacology, commissioned by Desi Sangye Gyamtso ca. 1688–1697",
+          "identification_confidence": "high",
+          "notes": "Considered the most elaborate pre-modern visual medical encyclopedia in Asia; originals held in Lhasa and Dharamsala."
+        }
+      ],
+      "translator_notes": "This segment is primarily an English-language scholarly description of Tibetan medical theory and practice, with Tibetan technical terms embedded in transliteration. No plant, drug, or preparation method is specifically described in this passage; entities are doctrinal, anatomical, and diagnostic rather than pharmacological. The Gavin Kilty translation quoted is from the published Library of Tibetan Works and Archives edition. The figure of 404 diseases is a canonical number in Tibetan nosology, not an empirical count. The medical thangka count of 79 is the standard scholarly figure, though some sources cite slight variations. Extraction of pharmacological entities is not applicable here, but the segment is valuable for contextualizing the medical system within which Materia Medica entries from Tibetan sources operate.",
+      "_label": "gyushi::bod_kyi_gso_ba_rig_pa"
+    },
+    {
+      "title_inferred": "Fever Diseases and Their Treatment in the Gyushi Third Tantra",
+      "original_text": "ཚད་ནད་ (Tsad nad) — Fever diseases and their treatment. Gyushi, Third Tantra (Oral Instructions). Classical: ཚད་ནད་ལ་གདོང་ལེན་གཉིས། སྔ་མར་ཙམ་པ་ས། Translation: For fever diseases there are two approaches: early stage treatment with cooling medicines; later stage with [different approach]. Tibetan fever classification: 27 types of fever are distinguished, including: fresh fever (from infection), old fever (chronic), fever entering the bones (tuberculosis-type), poisoned fever (sepsis), liver fever, lung fever. Treatment principle: early fever should not be suppressed too quickly — 'ripening' the fever first. This principle maps onto modern understanding that fever is partly adaptive (immune activation). Cooling medicines for fever: Gentiana (tikta), sandalwood (tsandan), camphor (gabur), Swertia (tikta-like bitter), Coptis (if available). Convergence: multiple traditions independently developed the principle of not suppressing fever immediately — Hippocratic 'crisis theory', Kampo fever staging, and Tibetan fever 'ripening' all reflect similar clinical observation.",
+      "translation": "Tsad nad — Fever diseases and their treatment. Source: Gyushi [rGyud bzhi, 'Four Tantras'], Third Tantra (Man ngag rgyud, the Tantra of Oral Instructions). Classical Tibetan: 'For fever diseases there are two approaches: early stage [treatment]' — the passage specifies cooling medicines for the early stage; the later-stage approach is indicated but not fully rendered in the surviving fragment [see translator notes]. The Tibetan medical system distinguishes 27 types of fever, among them: fresh fever [gsar tshad] (arising from acute infection), old fever [rnying tshad] (chronic), fever entering the bones [rus tshad] (resembling tuberculosis), poisoned fever [dug tshad] (resembling sepsis), liver fever [mchin tshad], and lung fever [glo tshad]. The governing therapeutic principle is that early fever should not be suppressed too rapidly; rather, the fever must first be allowed to 'ripen' [smin pa] before active cooling intervention is appropriate. This principle accords with the modern biomedical understanding that fever is partly adaptive, serving to activate immune responses. Cooling materia medica prescribed for fever include: Gentiana species [tikta, 'the bitter one'], sandalwood [tsandan], camphor [gabur], Swertia species [similarly classified as tikta-type bitters], and Coptis species [where available]. Comparative note: multiple independent medical traditions developed the principle of refraining from immediate fever suppression — the Hippocratic 'crisis theory', the Kampo (Sino-Japanese) staging of febrile conditions, and the Tibetan fever-ripening doctrine all appear to reflect convergent clinical observation of febrile disease progression.",
+      "entities_mentioned": [
+        {
+          "name": "Gentiana (tikta)",
+          "modern_identification": "Gentiana spp. (likely Gentiana tibetica or related Himalayan species)",
+          "identification_confidence": "medium",
+          "notes": "Tikta is a Sanskrit-derived term meaning 'bitter'; multiple Gentiana species are used interchangeably in Tibetan fever formulations. Exact species varies by region and availability."
+        },
+        {
+          "name": "Sandalwood (tsandan)",
+          "modern_identification": "Santalum album (white sandalwood) or Pterocarpus santalinus (red sandalwood)",
+          "identification_confidence": "high",
+          "notes": "Tsandan corresponds to Sanskrit candana. White sandalwood (Santalum album) is most commonly referenced in cooling fever preparations in Tibetan medicine; both species are used."
+        },
+        {
+          "name": "Camphor (gabur)",
+          "modern_identification": "Cinnamomum camphora or Dryobalanops aromatica (Borneo camphor)",
+          "identification_confidence": "high",
+          "notes": "Gabur derives from Sanskrit karpūra. Borneo camphor (Dryobalanops aromatica) was historically the prestige form in Tibetan medicine, though Chinese camphor (Cinnamomum camphora) was widely substituted. Classified as a cooling febrifuge."
+        },
+        {
+          "name": "Swertia (tikta-like bitter)",
+          "modern_identification": "Swertia chirayita or related Swertia spp.",
+          "identification_confidence": "medium",
+          "notes": "Swertia species are among the primary 'bitter' (tikta) febrifuge herbs in Tibetan, Ayurvedic, and Himalayan traditions. S. chirayita is the best-documented; multiple regional congeners are used."
+        },
+        {
+          "name": "Coptis",
+          "modern_identification": "Coptis teeta or Coptis chinensis",
+          "identification_confidence": "medium",
+          "notes": "Text notes availability is conditional ('if available'), suggesting this was a trade or regional item rather than a locally harvested standard ingredient. Coptis teeta (Mishmi bitter) is native to the eastern Himalayan region. Active compound berberine is a documented antimicrobial and anti-inflammatory agent."
+        },
+        {
+          "name": "Gyushi (rGyud bzhi)",
+          "modern_identification": "rGyud bzhi — 'The Four Tantras', the foundational canonical text of Tibetan medicine",
+          "identification_confidence": "high",
+          "notes": "Traditionally attributed to the physician Yuthok Yonten Gonkyi (12th century CE), though textual history is complex. The Third Tantra (Man ngag rgyud) contains detailed clinical instruction on diseases and their treatment."
+        }
+      ],
+      "translator_notes": "1. The classical Tibetan citation (ཚད་ནད་ལ་གདོང་ལེན་གཉིས། སྔ་མར་ཙམ་པ་ས།) is fragmentary as presented; the second approach (for later-stage fever) is referenced but its classical text is not supplied in this segment. The translation renders this gap transparently. 2. The term 'ripening' (smin pa) is a technical Tibetan medical concept referring to allowing a fever to reach a more defined, treatable state before applying cooling therapies — directly analogous to the Hippocratic concept of pepsis/coction. This is a clinically significant parallel worth highlighting for comparative materia medica purposes. 3. The 27-type fever classification is a canonical Tibetan nosological structure; the examples given (tuberculosis-type, sepsis-type) are the annotator's modern approximations, not direct Tibetan terms. 4. The segment label 'lurol_fever_treatment' may reference lū rol or a transliteration convention specific to this archive; this has not been verified against a standard Tibetan lexicon and should be confirmed by the project editor.",
+      "_label": "gyushi::lurol_fever_treatment"
+    },
+    {
+      "title_inferred": "Innate Constitution and Constitutional Medicine in the Gyushi",
+      "original_text": "ལྷན་ཅིག་སྐྱེས་པ། (Lhan cig skyes pa) — Innate disease and constitutional medicine. Gyushi chapter on the three constitutions and their lifelong health implications. Men-Tsee-Khang translation: Those born with dominant wind (rlung) constitution are thin, talk quickly, move fast, sleep poorly, and are prone to anxiety and wind disorders. Those with dominant bile (mkhris pa) are medium build, ambitious, competitive, often thirsty, prone to inflammation and liver disease. Those with dominant phlegm (bad kan) are heavy, slow-moving, good sleepers, affectionate, prone to weight gain and edema. Constitutional medicine: the physician prescribes different foods, behaviors, and medicines based on the patient's innate constitution — not just their current disease. This individualised approach to medicine, also present in Ayurveda (doshas), contrasts with Western medicine's disease-category approach. Modern relevance: constitutional medicine's predictive validity is being re-examined through personalised medicine frameworks (pharmacogenomics, metabolomics).",
+      "translation": "Lhan cig skyes pa [Tibetan: 'that which is born together (with one)'] — Innate constitution and constitutional medicine. This chapter of the Gyushi [rGyud bzhi, 'Four Tantras'] treats the three bodily constitutions [nyes pa gsum] and their implications for lifelong health. According to the Men-Tsee-Khang translation: Individuals born with a dominant wind [rlung] constitution tend to be thin, speak rapidly, move quickly, sleep poorly, and are predisposed to anxiety and wind-type disorders. Those with a dominant bile [mkhris pa] constitution are of medium build, ambitious, competitive, frequently thirsty, and prone to inflammatory conditions and liver disease. Those with a dominant phlegm [bad kan] constitution are heavy-set, slow-moving, sleep well, are of affectionate temperament, and are predisposed to weight gain and edema. In constitutional medicine, the physician prescribes different foods, behaviours, and medicaments according to the patient's innate constitution, rather than solely on the basis of the presenting disease. This individualised approach to medicine — paralleled in Ayurvedic theory by the concept of the doshas (vata, pitta, kapha) — stands in contrast to the disease-category approach predominant in Western biomedicine. Modern relevance: the predictive validity of constitutional medicine is currently being re-examined within frameworks of personalised medicine, including pharmacogenomics and metabolomics.",
+      "entities_mentioned": [
+        {
+          "name": "Lhan cig skyes pa",
+          "modern_identification": "Concept of innate constitution / constitutional type in Tibetan medicine",
+          "identification_confidence": "high",
+          "notes": "Literally 'born together [with one]'; refers to the dominant humoral constitution present from birth, analogous to prakriti in Ayurveda."
+        },
+        {
+          "name": "rGyud bzhi (Gyushi)",
+          "modern_identification": "The Four Tantras — foundational canonical text of Tibetan medicine, compiled/codified c. 12th century CE",
+          "identification_confidence": "high",
+          "notes": "Attributed traditionally to the Buddha of Medicine (Sangye Menla) and compiled by Yuthog Yontan Gonpo the Elder and/or Younger."
+        },
+        {
+          "name": "rlung (wind)",
+          "modern_identification": "One of the three humors (nyes pa) of Tibetan medicine; broadly analogous to vata in Ayurveda",
+          "identification_confidence": "high",
+          "notes": "Governs movement, nervous system functions, respiration, and circulation in Tibetan medical theory."
+        },
+        {
+          "name": "mkhris pa (bile)",
+          "modern_identification": "One of the three humors of Tibetan medicine; broadly analogous to pitta in Ayurveda",
+          "identification_confidence": "high",
+          "notes": "Associated with heat, metabolism, digestion, and transformation; dominant in inflammatory and hepatic conditions."
+        },
+        {
+          "name": "bad kan (phlegm)",
+          "modern_identification": "One of the three humors of Tibetan medicine; broadly analogous to kapha in Ayurveda",
+          "identification_confidence": "high",
+          "notes": "Associated with coolness, moisture, stability, and structural support; dominant in edematous and metabolic-excess conditions."
+        },
+        {
+          "name": "Men-Tsee-Khang",
+          "modern_identification": "Tibetan Medical and Astro Institute, Dharamsala, India (founded 1961)",
+          "identification_confidence": "high",
+          "notes": "Principal institutional authority for Tibetan medicine in exile; source of cited translation."
+        },
+        {
+          "name": "doshas (Ayurveda)",
+          "modern_identification": "Tridosha theory — vata, pitta, kapha — foundational to Ayurvedic medicine",
+          "identification_confidence": "high",
+          "notes": "Cited here comparatively to illustrate the cross-cultural parallel of constitutional medicine in South and Central Asian medical traditions."
+        }
+      ],
+      "translator_notes": "The segment heading 'Innate disease and constitutional medicine' is a slight misnomer in the source gloss: lhan cig skyes pa refers primarily to innate constitution, not innate disease per se, though constitutional imbalances are understood as predisposing factors for disease. The translation preserves this nuance. The source text is already largely in English (a Men-Tsee-Khang institutional translation with editorial commentary); the Tibetan terms are embedded as glosses. The JSON translation renders the full passage into formal scholarly English and clarifies bracketed technical terms. The modern-relevance section (pharmacogenomics, metabolomics) appears to be editorial commentary added by the compiler of this segment rather than original Gyushi content; this is preserved in translation but noted here.",
+      "_label": "gyushi::lhan_cig_skyes_pa"
+    }
+  ]
+}
