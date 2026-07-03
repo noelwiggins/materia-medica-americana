@@ -1215,7 +1215,269 @@
   }
   .convergence-result-significance { font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-top: 0.6rem; font-style: italic; }
 
-  /* ── Research tab ─────────────────────────────── */
+  /* ── Global search hero ──────────────────────────── */
+  .global-search-wrap {
+    max-width: 760px;
+    margin: 2rem auto 0;
+  }
+  .global-search-box {
+    display: flex;
+    gap: 0;
+    border: 2px solid var(--gold);
+    background: rgba(196,168,130,0.08);
+  }
+  .global-search-input {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    padding: 1rem 1.2rem;
+    background: transparent;
+    color: var(--vellum);
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+  }
+  .global-search-input::placeholder { color: rgba(196,168,130,0.55); }
+  .global-search-btn {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 1rem 1.6rem;
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+    flex-shrink: 0;
+  }
+  .global-search-btn:hover { background: var(--gold-light); }
+  .global-search-hints {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+    justify-content: center;
+  }
+  .global-search-hints span {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    color: rgba(196,168,130,0.65);
+    cursor: pointer;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid rgba(196,168,130,0.25);
+    border-radius: 999px;
+    transition: all 0.15s;
+  }
+  .global-search-hints span:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+
+  /* ── Search results panel ────────────────────────── */
+  .search-results-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(28,26,20,0.85);
+    z-index: 500;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+  }
+  .search-results-overlay.open { display: flex; }
+  .search-results-panel {
+    background: var(--vellum);
+    max-width: 860px;
+    width: 100%;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .search-results-header {
+    background: var(--ink);
+    color: var(--gold);
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .search-results-title {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+  }
+  .search-results-close {
+    background: none;
+    border: none;
+    color: var(--gold);
+    font-size: 1.4rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 0.2rem;
+  }
+  .search-results-body { padding: 1.6rem; }
+
+  /* AI summary block */
+  .search-ai-summary {
+    background: var(--ink);
+    color: var(--vellum);
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--gold);
+  }
+  .search-ai-summary-label {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .search-ai-summary p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: rgba(247,242,227,0.9);
+  }
+  .search-ai-disclaimer {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    color: rgba(196,168,130,0.5);
+    margin-top: 0.6rem;
+  }
+
+  /* Tradition remedy cards */
+  .remedy-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--border);
+    margin-bottom: 1rem;
+  }
+  .remedy-card-header {
+    padding: 1rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  .remedy-card-header:hover { background: var(--vellum); }
+  .remedy-tradition-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    color: white;
+    margin-bottom: 0.4rem;
+  }
+  .remedy-plain {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+  }
+  .remedy-preparation {
+    font-family: var(--font-code);
+    font-size: 0.68rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+  .remedy-convergence {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--green);
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 1;
+  }
+  .remedy-convergence small {
+    display: block;
+    font-family: var(--font-code);
+    font-size: 0.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 400;
+  }
+  .remedy-detail {
+    display: none;
+    padding: 1rem 1.2rem;
+    border-top: 1px solid var(--border);
+    background: var(--vellum);
+  }
+  .remedy-detail.open { display: block; }
+  .remedy-original {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--brown);
+    line-height: 1.65;
+    margin-bottom: 0.6rem;
+    padding: 0.6rem;
+    border-left: 2px solid var(--gold);
+    background: rgba(196,168,130,0.07);
+  }
+  .remedy-research-note {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 0.6rem;
+    padding: 0.5rem 0.8rem;
+    background: #E8F5E9;
+    border-left: 3px solid #4CAF50;
+  }
+  .remedy-expand-btn {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 0.4rem;
+  }
+  .remedy-expand-btn:hover { text-decoration: underline; }
+
+  /* Loading state */
+  .search-loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .search-loading-spinner {
+    display: inline-block;
+    width: 28px; height: 28px;
+    border: 3px solid var(--border);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 1rem;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .search-no-results {
+    text-align: center;
+    padding: 2rem;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .search-loading-spinner { animation: none; }
+  }
   .research-query-box {
     background: #1C2D4A; border: 1px solid #2A4A7A;
     padding: 1.8rem 2rem; margin-bottom: 2rem;
@@ -1297,25 +1559,32 @@
 
 <!-- ── HEADER ──────────────────────────────────────────── -->
 <header class="site-header">
-  <div class="header-eyebrow">A Scholarly Translation Project · Est. 2025</div>
+  <div class="header-eyebrow">18 Traditions · 900+ Translated Sources · Live PubMed Research</div>
   <h1 class="site-title">Materia Medica Americana</h1>
-  <p class="site-subtitle">An integrated analysis of three primary sources of indigenous American botanical medicine — Cobo, Badianus, and the Florentine Codex — with cross-source convergence analysis and modern pharmacological cross-referencing.</p>
-  <div class="header-meta">
-    <div class="header-stat">
-      <span class="header-stat-num">3</span>
-      <span class="header-stat-label">Primary Sources</span>
+  <p class="site-subtitle">What did healers across 18 civilisations discover for your condition? Search the archive.</p>
+
+  <!-- ── Global Search ──────────────────────────────────── -->
+  <div class="global-search-wrap">
+    <div class="global-search-box">
+      <input
+        type="text"
+        id="global-search-input"
+        class="global-search-input"
+        placeholder="e.g. menstruation cramps · fever · wound infection · anxiety · gout · malaria"
+        autocomplete="off"
+        onkeydown="if(event.key==='Enter') runGlobalSearch()"
+      >
+      <button class="global-search-btn" onclick="runGlobalSearch()">
+        Search the Archive
+      </button>
     </div>
-    <div class="header-stat">
-      <span class="header-stat-num">10+</span>
-      <span class="header-stat-label">Plants Documented</span>
-    </div>
-    <div class="header-stat">
-      <span class="header-stat-num">1552–1653</span>
-      <span class="header-stat-label">Dates of Composition</span>
-    </div>
-    <div class="header-stat">
-      <span class="header-stat-num">∞</span>
-      <span class="header-stat-label">Research Gaps</span>
+    <div class="global-search-hints">
+      <span onclick="prefill('menstruation cramps')">menstruation cramps</span>
+      <span onclick="prefill('fever malaria')">fever / malaria</span>
+      <span onclick="prefill('wound infection')">wound infection</span>
+      <span onclick="prefill('anxiety insomnia')">anxiety / insomnia</span>
+      <span onclick="prefill('digestive pain')">digestive pain</span>
+      <span onclick="prefill('joint pain gout')">joint pain / gout</span>
     </div>
   </div>
 </header>
@@ -1362,15 +1631,35 @@
 
   <!-- HOME TAB -->
   <section class="tab-panel active" id="tab-home">
-    <div class="section-header">
-      <div class="section-eyebrow">Project Overview</div>
-      <h2 class="section-title">Three Traditions, One Archive</h2>
-      <p class="section-desc">The pharmacological knowledge of two continents, documented by Spanish priests, an Aztec physician, and a Jesuit naturalist — and largely unread for four centuries.</p>
+
+    <div class="thesis-block" style="margin-bottom:2rem;">
+      <p>In 1971, Chinese pharmacologist Tu Youyou read a 4th-century Daoist text and found a reference to sweet wormwood for fever. She isolated artemisinin. It became the world's most important antimalarial drug. She won the Nobel Prize in 2015. The answers to some of medicine's most urgent questions are sitting in historical texts. This archive exists to find them.</p>
     </div>
 
-    <div class="thesis-block">
-      <p>In 1971, Chinese pharmacologist Tu Youyou read a 4th-century Daoist medical text and found a reference to sweet wormwood for fever. She isolated artemisinin. It became the world's most important antimalarial drug. She won the Nobel Prize in 2015. The lesson: the answers to some of medicine's most urgent questions are sitting in historical texts, waiting for someone to read them.</p>
-      <cite>— The founding thesis of this project</cite>
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; margin-bottom:2rem;">
+      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
+        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">18</div>
+        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Traditions</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
+        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">39</div>
+        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Curated Plants</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
+        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">900+</div>
+        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Translated Segments</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
+        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">22</div>
+        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Condition Categories</div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section-header">
+      <div class="section-eyebrow">The Three Primary Sources</div>
+      <h2 class="section-title">Where the Archive Began</h2>
     </div>
 
     <div class="home-grid">
@@ -1378,63 +1667,21 @@
         <div class="source-card-year">1653</div>
         <h3>Historia del Nuevo Mundo</h3>
         <div class="author">Bernabé Cobo SJ · Jesuit missionary, 61 years in South America</div>
-        <p>The most comprehensive natural history of the Americas produced in the colonial period. Cobo personally transported cinchona bark (quinine) to Europe in 1632. His botanical sections — untranslated into English — document over 2,000 Andean plants with indigenous medical uses.</p>
-        <div class="stats">
-          <div class="stat-item"><span class="stat-num">2,000+</span><span class="stat-label">Plants</span></div>
-          <div class="stat-item"><span class="stat-num">61</span><span class="stat-label">Years Residence</span></div>
-          <div class="stat-item"><span class="stat-num">0</span><span class="stat-label">English Translations</span></div>
-        </div>
+        <p>The most comprehensive natural history of the Americas from the colonial period. Cobo personally transported cinchona bark (quinine) to Europe in 1632. His botanical sections — largely untranslated into English — document over 2,000 Andean plants with indigenous medical uses.</p>
       </div>
-
       <div class="source-card badianus">
         <div class="source-card-year">1552</div>
         <h3>Libellus de Medicinalibus Indorum Herbis</h3>
-        <div class="author">Martín de la Cruz &amp; Juan de Badiano · Indigenous Aztec physicians</div>
-        <p>The only pre-Columbian medical text authored by indigenous physicians. Written just 30 years after the conquest by an Aztec doctor writing his own practice — not describing it to an outside observer. Contains 185 illustrated plant entries with highly specific preparations and dosages.</p>
-        <div class="stats">
-          <div class="stat-item"><span class="stat-num" style="color:var(--red)">185</span><span class="stat-label">Plants</span></div>
-          <div class="stat-item"><span class="stat-num" style="color:var(--red)">185</span><span class="stat-label">Illustrations</span></div>
-          <div class="stat-item"><span class="stat-num" style="color:var(--red)">1</span><span class="stat-label">English Translation</span></div>
-        </div>
+        <div class="author">Martín de la Cruz &amp; Juan de Badiano · Aztec physicians</div>
+        <p>The only pre-Columbian medical text authored by indigenous physicians. Written 30 years after the conquest by an Aztec doctor documenting his own active practice — not describing it to an outside observer.</p>
       </div>
-
       <div class="source-card florentine">
         <div class="source-card-year">1577</div>
         <h3>Historia General de las Cosas de Nueva España</h3>
-        <div class="author">Bernardino de Sahagún · Franciscan friar, 60 years in New Spain</div>
-        <p>The most rigorously compiled ethnographic study of Aztec civilization. Book 11 on natural history documents hundreds of medicinal plants with indigenous names, uses, and preparations. Now fully digitized and translated by the Getty Research Institute.</p>
-        <div class="stats">
-          <div class="stat-item"><span class="stat-num" style="color:#1A4A7A">2,468</span><span class="stat-label">Illustrations</span></div>
-          <div class="stat-item"><span class="stat-num" style="color:#1A4A7A">12</span><span class="stat-label">Books</span></div>
-          <div class="stat-item"><span class="stat-num" style="color:#1A4A7A">✓</span><span class="stat-label">Getty Digital</span></div>
-        </div>
-      </div>
-
-      <div class="source-card" style="border-top-color: var(--gold);">
-        <div class="source-card-year" style="color:var(--gold)">2025</div>
-        <h3>This Project: The Integration Layer</h3>
-        <div class="author">First systematic cross-source analysis</div>
-        <p>This archive provides what none of these sources offers alone: a unified plant database linking all three traditions, convergence scoring identifying plants validated by multiple independent sources, and cross-referencing with modern pharmacological research to identify the most urgent investigation priorities.</p>
-        <div class="stats">
-          <div class="stat-item"><span class="stat-num" style="color:var(--gold)">3</span><span class="stat-label">Sources Integrated</span></div>
-          <div class="stat-item"><span class="stat-num" style="color:var(--gold)">1st</span><span class="stat-label">Cross-Analysis</span></div>
-          <div class="stat-item"><span class="stat-num" style="color:var(--gold)">Open</span><span class="stat-label">Access</span></div>
-        </div>
+        <div class="author">Bernardino de Sahagún · Franciscan friar</div>
+        <p>The most rigorously compiled ethnographic study of Aztec civilization. Sahagún cross-checked all information across multiple independent indigenous informants — the closest pre-modern equivalent to a peer review process.</p>
       </div>
     </div>
-
-    <hr class="divider">
-
-    <div class="section-header">
-      <div class="section-eyebrow">Why This Matters Now</div>
-      <h2 class="section-title">The Antibiotic Resistance Crisis</h2>
-    </div>
-
-    <p style="max-width:70ch; line-height:1.8; margin-bottom:1rem;">The WHO lists antibiotic resistance as one of the greatest threats to global health. Projections suggest antibiotic-resistant infections could kill 10 million people annually by 2050. Conventional antibiotic discovery has essentially stalled — no new antibiotic class has been discovered since the 1980s.</p>
-
-    <p style="max-width:70ch; line-height:1.8; margin-bottom:1rem;">Plant secondary metabolites — which these manuscripts document in extraordinary detail — evolved over millions of years of coevolution with bacteria. They frequently operate through multiple simultaneous mechanisms, making resistance evolution far more difficult than against single-target synthetic antibiotics.</p>
-
-    <p style="max-width:70ch; line-height:1.8;">The cost of translating and systematically screening the contents of these three documents: roughly $5–10 million. The cost of developing a single conventional drug: $2.6 billion. The artemisinin story tells us the return on ethnobotanical investment can be extraordinary. This archive exists to make that investment easier to make.</p>
   </section>
 
   <!-- COBO TAB -->
@@ -1890,8 +2137,6 @@
         <option value="all">All Traditions</option>
         <optgroup label="Americas">
           <option value="andean">Andean (Cobo)</option>
-          <option value="greek_roman">Greek &amp; Roman</option>
-          <option value="egyptian">Egyptian</option>
           <option value="maya">Maya</option>
         </optgroup>
         <optgroup label="Asia">
@@ -2141,14 +2386,6 @@ async function loadData() {
         { url: '/data/australian_chapters.json',     tradition: 'australian_indigenous', label: 'Australian Indigenous' },
         { url: '/data/celtic_norse_chapters.json',   tradition: 'celtic_norse',       label: 'Celtic & Norse' },
         { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
-        { url: '/data/greek_roman_chapters.json',    tradition: 'greek_roman',         label: 'Greek & Roman (Pliny)' },
-        { url: '/data/dioscorides_chapters.json',    tradition: 'greek_roman',         label: 'Greek & Roman (Dioscorides)' },
-        { url: '/data/egyptian_chapters.json',       tradition: 'egyptian',            label: 'Egyptian (Ebers Papyrus)' },
-        { url: '/data/west_african_chapters.json',   tradition: 'west_african',        label: 'West African' },
-        { url: '/data/north_american_chapters.json', tradition: 'north_american_indigenous', label: 'Native North American' },
-        { url: '/data/amazonian_chapters.json',      tradition: 'amazonian',           label: 'Amazonian' },
-        { url: '/data/cobo_nontarget_remaining_a.json', tradition: 'cobo',            label: 'Andean (Cobo — Extended A)' },
-        { url: '/data/cobo_nontarget_remaining_b.json', tradition: 'cobo',            label: 'Andean (Cobo — Extended B)' },
       ];
 
       const allResults = [];
@@ -2934,6 +3171,266 @@ async function toggleAbstract(pmid, btn) {
 // ── Init ────────────────────────────────────────────────
 loadData().then(() => {
   renderPriority();
+});
+</script>
+<!-- ── GLOBAL SEARCH RESULTS OVERLAY ───────────────────────── -->
+<div class="search-results-overlay" id="search-overlay" onclick="handleOverlayClick(event)">
+  <div class="search-results-panel">
+    <div class="search-results-header">
+      <span class="search-results-title" id="search-results-title">Searching the archive…</span>
+      <button class="search-results-close" onclick="closeSearch()">✕</button>
+    </div>
+    <div class="search-results-body" id="search-results-body">
+      <div class="search-loading">
+        <div class="search-loading-spinner"></div><br>
+        Consulting 18 traditions…
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Global search ──────────────────────────────────────────────────────────
+function prefill(text) {
+  document.getElementById('global-search-input').value = text;
+  runGlobalSearch();
+}
+
+function handleOverlayClick(e) {
+  if (e.target === document.getElementById('search-overlay')) closeSearch();
+}
+
+function closeSearch() {
+  document.getElementById('search-overlay').classList.remove('open');
+}
+
+async function runGlobalSearch() {
+  const query = document.getElementById('global-search-input').value.trim();
+  if (!query) return;
+
+  const overlay = document.getElementById('search-overlay');
+  const body = document.getElementById('search-results-body');
+  const title = document.getElementById('search-results-title');
+
+  overlay.classList.add('open');
+  title.textContent = `Searching for "${query}"…`;
+  body.innerHTML = `<div class="search-loading"><div class="search-loading-spinner"></div><br>Consulting 18 traditions across 4,000 years…</div>`;
+
+  // Wait for data if not yet loaded
+  if (!plantData.length || !traditionData.length || !conditionData.length) {
+    await loadData();
+  }
+
+  // Run both simultaneously: AI synthesis + local database match
+  const [aiResult, localResults] = await Promise.all([
+    fetchAISummary(query),
+    searchLocalData(query)
+  ]);
+
+  renderSearchResults(query, aiResult, localResults);
+  title.textContent = `"${query}" — across 18 traditions`;
+}
+
+async function fetchAISummary(query) {
+  const systemPrompt = `You are a scholarly assistant for Materia Medica Americana, an archive of traditional medicine across 18 world traditions spanning 4,000 years.
+
+When given a health condition or symptom, provide:
+1. A brief, plain-English overview of how traditional medicine traditions approached this condition (2-3 sentences max)
+2. The strongest cross-tradition patterns — what plants or remedies appear in multiple independent traditions
+3. Any important modern research validation
+
+IMPORTANT RULES:
+- Be specific and informative, not vague
+- Name actual plants and preparations where known
+- Note when a remedy has modern scientific validation
+- Always include this disclaimer at the end: "This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy."
+- Keep the total response under 200 words
+- Format as plain paragraphs, no markdown headers or bullets`;
+
+  try {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 1000,
+        system: systemPrompt,
+        messages: [{ role: 'user', content: `What does traditional medicine across cultures say about: ${query}` }]
+      })
+    });
+    const data = await response.json();
+    return data.content?.[0]?.text || null;
+  } catch(e) {
+    return null;
+  }
+}
+
+function searchLocalData(query) {
+  const q = query.toLowerCase();
+  const terms = q.split(/\s+/).filter(t => t.length > 2);
+
+  // Score each plant against the query
+  const scored = plantData.map(plant => {
+    let score = 0;
+    const searchText = [
+      plant.common_name,
+      ...(plant.therapeutic_areas || []),
+      plant.modern_research?.key_compound || '',
+      plant.modern_research?.summary || '',
+      plant.modern_research?.significance || '',
+      ...Object.values(plant.tradition_names || {}),
+      ...Object.values(plant.entries || {}).map(e => `${e.translation || ''} ${e.condition || ''}`)
+    ].join(' ').toLowerCase();
+
+    terms.forEach(term => {
+      if (searchText.includes(term)) score += 3;
+    });
+    if (plant.therapeutic_areas?.some(a => q.includes(a.replace(/_/g,' ')) || a.replace(/_/g,' ').includes(q.split(' ')[0]))) score += 5;
+    score += plant.convergence_score * 0.5;
+
+    return { plant, score };
+  }).filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 8)
+    .map(x => x.plant);
+
+  // Also search conditions
+  const matchedConditions = conditionData.filter(c => {
+    const cText = [c.name, c.modern_description, c.id, c.category,
+      ...Object.values(c.tradition_terms || {}).flat()
+    ].join(' ').toLowerCase();
+    return terms.some(t => cText.includes(t));
+  });
+
+  return { plants: scored, conditions: matchedConditions };
+}
+
+function renderSearchResults(query, aiSummary, localResults) {
+  const body = document.getElementById('search-results-body');
+  const { plants, conditions } = localResults;
+
+  let html = '';
+
+  // AI summary block
+  if (aiSummary) {
+    // Split disclaimer from main text
+    const disclaimerIdx = aiSummary.indexOf('This is historical and scholarly');
+    const mainText = disclaimerIdx > -1 ? aiSummary.substring(0, disclaimerIdx).trim() : aiSummary;
+    const disclaimer = disclaimerIdx > -1 ? aiSummary.substring(disclaimerIdx) : 'This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy.';
+
+    html += `<div class="search-ai-summary">
+      <div class="search-ai-summary-label">✦ Archive Intelligence · Cross-Tradition Summary</div>
+      <p>${mainText.replace(/\n/g,'<br>')}</p>
+      <div class="search-ai-disclaimer">⚠ ${disclaimer}</div>
+    </div>`;
+  }
+
+  // Matched conditions
+  if (conditions.length) {
+    const tradCounts = conditions.flatMap(c => c.convergence_traditions || []);
+    const uniqueTrads = [...new Set(tradCounts)];
+    html += `<div style="font-family:var(--font-code);font-size:0.68rem;color:var(--muted);margin-bottom:1rem;padding:0.6rem 0.8rem;background:var(--vellum-dark);border:1px solid var(--border)">
+      📋 Matched condition${conditions.length>1?'s':''}: <strong style="color:var(--ink)">${conditions.map(c=>c.name).join(' · ')}</strong> — documented across ${uniqueTrads.length} traditions
+    </div>`;
+  }
+
+  // Plant remedy cards
+  if (plants.length) {
+    html += `<div style="font-family:var(--font-display);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem">Remedies from the Archive</div>`;
+
+    html += plants.map((p, i) => {
+      const conv = p.convergence_score;
+      const convColor = conv >= 8 ? '#2E7D32' : conv >= 5 ? '#E65100' : '#757575';
+      const tradBadges = p.traditions.map(tid => {
+        const t = traditionData.find(x => x.id === tid);
+        return t ? `<span class="remedy-tradition-badge" style="background:${t.color}">${t.icon} ${t.name.split(' ')[0]}</span>` : '';
+      }).join('');
+
+      // Build plain-English summary from entries
+      const entries = Object.entries(p.entries || {});
+      const firstEntry = entries[0]?.[1];
+      const plainSummary = firstEntry?.condition
+        ? `Used for: <strong>${firstEntry.condition}</strong>`
+        : p.therapeutic_areas?.slice(0,3).map(a=>a.replace(/_/g,' ')).join(', ');
+
+      const prep = firstEntry?.preparation || '';
+      const modernNote = p.modern_research?.status === 'fully_validated' || p.modern_research?.status === 'breakthrough_validated'
+        ? `<div class="remedy-research-note">✓ Modern validation: ${p.modern_research.key_compound} — ${p.modern_research.summary?.substring(0,120)}…</div>`
+        : '';
+
+      // Deeper detail: original texts
+      let detailHtml = entries.map(([tid, entry]) => {
+        const t = traditionData.find(x => x.id === tid);
+        return `<div style="margin-bottom:1rem">
+          <span style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:${t?.color||'#888'}">${t?.icon||''} ${t?.name||tid}</span>
+          ${entry.original ? `<div class="remedy-original">${entry.original}</div>` : ''}
+          ${entry.translation ? `<p style="font-size:0.88rem;line-height:1.7;margin-top:0.4rem">${entry.translation}</p>` : ''}
+          ${entry.preparation ? `<div class="remedy-preparation">Preparation: ${entry.preparation}</div>` : ''}
+        </div>`;
+      }).join('');
+
+      if (p.modern_research) {
+        detailHtml += `<div style="margin-top:0.8rem;padding:0.8rem;background:white;border:1px solid var(--border)">
+          <div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div>
+          <div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance || p.modern_research.summary || ''}</div>
+        </div>`;
+      }
+
+      return `<div class="remedy-card" style="border-left-color:${convColor}">
+        <div class="remedy-card-header" onclick="toggleRemedyDetail(${i})">
+          <div style="flex:1">
+            <div style="margin-bottom:0.4rem">${tradBadges}</div>
+            <div style="font-family:var(--font-display);font-size:1rem;color:var(--ink);margin-bottom:0.3rem">${p.common_name}</div>
+            <div style="font-family:var(--font-code);font-size:0.65rem;color:var(--green);font-style:italic;margin-bottom:0.4rem">${p.modern_botanical || ''}</div>
+            <div class="remedy-plain">${plainSummary}</div>
+            ${prep ? `<div class="remedy-preparation">How: ${prep}</div>` : ''}
+            ${modernNote}
+            <button class="remedy-expand-btn" onclick="event.stopPropagation();toggleRemedyDetail(${i})">▸ See original texts &amp; deeper research</button>
+          </div>
+          <div class="remedy-convergence" style="color:${convColor}">
+            ${conv}<small>traditions<br>agree</small>
+          </div>
+        </div>
+        <div class="remedy-detail" id="remedy-detail-${i}">
+          ${detailHtml}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  if (!plants.length && !aiSummary) {
+    html += `<div class="search-no-results">
+      <p style="font-size:1.1rem;margin-bottom:0.5rem">No direct matches found for "<strong>${query}</strong>"</p>
+      <p style="color:var(--muted);font-size:0.9rem">Try related terms — e.g. "menstrual pain" instead of "period cramps", or browse by condition in the Convergence tab.</p>
+    </div>`;
+  }
+
+  // Footer CTA
+  html += `<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);display:flex;gap:1rem;flex-wrap:wrap">
+    <button onclick="closeSearch();showTabByName('convergence')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Convergence Engine</button>
+    <button onclick="closeSearch();showTabByName('research')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Modern Research</button>
+    <button onclick="closeSearch();showTabByName('corpus')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Full Corpus</button>
+  </div>`;
+
+  body.innerHTML = html;
+}
+
+function toggleRemedyDetail(i) {
+  const el = document.getElementById(`remedy-detail-${i}`);
+  el.classList.toggle('open');
+}
+
+function showTabByName(name) {
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('onclick')?.includes(`'${name}'`)) {
+      b.click();
+    }
+  });
+}
+
+// Keyboard shortcut — Escape closes search
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSearch();
 });
 </script>
 </body>
