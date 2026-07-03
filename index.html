@@ -2680,7 +2680,7 @@ function renderPlants() {
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem">
           <div class="convergence-badge"><span class="convergence-num ${convClass}">${conv}</span><span class="convergence-label">Convergence</span></div>
-          <button class="share-btn" onclick="sharePlant(${JSON.stringify(p.id)}, event)">
+          <button class="share-btn" onclick="sharePlant('${p.id}', event)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.7 15.8 6.5M8.2 13.3l7.6 4.2"/></svg>
           </button>
           <span class="chevron" style="color:var(--muted)">▾</span>
@@ -3351,7 +3351,7 @@ loadData().then(() => {
 
       <div class="share-link-row">
         <input class="share-link-input" id="share-link-input" readonly />
-        <button class="share-copy-btn" onclick="copyShareLink()">Copy</button>
+        <button class="share-copy-btn" onclick="copyShareLink(event)">Copy</button>
       </div>
 
       <button class="share-download-btn" onclick="downloadShareImage()">⬇ Download card image (for Instagram Story / DM)</button>
@@ -3492,10 +3492,14 @@ function renderSearchResults(query, aiSummary, localResults) {
 
     const topPlantName = plants[0]?.common_name || '';
     const uniqueTradIds = new Set(plants.flatMap(p => p.traditions || []));
+    // Stored on window rather than embedded in the onclick attribute — AI summary
+    // text routinely contains apostrophes/quotes that would break out of an
+    // inline HTML attribute no matter which quote style wraps it.
+    window.__currentSearchShare = { query, mainText, topPlantName, tradCount: uniqueTradIds.size };
     html += `<div class="search-ai-summary">
       <div class="search-ai-summary-label" style="display:flex;justify-content:space-between;align-items:center;gap:0.8rem">
         <span>✦ Archive Intelligence · Cross-Tradition Summary</span>
-        <button class="share-btn" onclick='shareSearchSummary(${JSON.stringify(query)}, ${JSON.stringify(mainText)}, ${JSON.stringify(topPlantName)}, ${uniqueTradIds.size}, event)'>
+        <button class="share-btn" onclick="shareCurrentSearchSummary(event)">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.7 15.8 6.5M8.2 13.3l7.6 4.2"/></svg>
           Share
         </button>
@@ -3571,7 +3575,7 @@ function renderSearchResults(query, aiSummary, localResults) {
             <div class="remedy-convergence" style="color:${convColor}">
               ${conv}<small>traditions<br>agree</small>
             </div>
-            <button class="share-btn" onclick="sharePlant(${JSON.stringify(p.id)}, event)">
+            <button class="share-btn" onclick="sharePlant('${p.id}', event)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.7 15.8 6.5M8.2 13.3l7.6 4.2"/></svg>
             </button>
           </div>
@@ -3655,6 +3659,13 @@ function shareSearchSummary(query, aiSummary, topPlant, traditionCount, e) {
   openShareModal({ type: 'search', title, text, url, imageUrl, filename: `${query.replace(/[^\w]+/g,'-')}-search.png` });
 }
 
+function shareCurrentSearchSummary(e) {
+  if (e) e.stopPropagation();
+  const s = window.__currentSearchShare;
+  if (!s) return;
+  shareSearchSummary(s.query, s.mainText, s.topPlantName, s.tradCount, e);
+}
+
 function openShareModal(share) {
   currentShare = share;
   document.getElementById('share-modal-title').textContent = share.type === 'plant' ? 'Share this remedy' : 'Share this search';
@@ -3716,11 +3727,11 @@ function buildPlatformButtons(share) {
   return platforms.map(p => `<a class="share-platform-btn" href="${p.href}" target="_blank" rel="noopener">${p.icon}${p.name}</a>`).join('');
 }
 
-function copyShareLink() {
+function copyShareLink(e) {
   const input = document.getElementById('share-link-input');
   input.select();
   navigator.clipboard?.writeText(input.value).then(() => {
-    const btn = event.target;
+    const btn = e ? e.target : document.querySelector('.share-copy-btn');
     const orig = btn.textContent;
     btn.textContent = 'Copied ✓';
     setTimeout(() => btn.textContent = orig, 1500);
