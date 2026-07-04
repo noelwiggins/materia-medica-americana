@@ -2512,7 +2512,7 @@ function renderTraditionChips() {
     return `<button class="tradition-chip${active?' active':''}"
       style="background:${active?t.color:'white'};color:${active?'white':'#6B6050'};border-color:${active?t.color:''}"
       onclick="toggleTraditionFilter('${t.id}')">
-      <span class="chip-icon">${t.icon}</span>${t.name.split(' ')[0]}<span class="chip-count">${count}</span>
+      <span class="chip-icon">${t.icon}</span>${t.name}<span class="chip-count">${count}</span>
     </button>`;
   }).join('');
   container.innerHTML = allChip + chips;
@@ -2866,7 +2866,7 @@ function runConvergenceQuery() {
     ${sorted.map(p => {
       const tradBadges = p.traditions.map(tid=>{
         const t=traditionData.find(x=>x.id===tid);
-        return t?`<span class="conv-trad-badge" style="background:${t.color}">${t.icon} ${t.name.split(' ')[0]}</span>`:'';
+        return t?`<span class="conv-trad-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
       }).join('');
       return `<div class="convergence-result-card" style="border-left-color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">
         <div class="convergence-result-name">${p.common_name}</div>
@@ -3292,9 +3292,15 @@ function buildShareBar(q, r, plantName) {
   const contextNote = plantName
     ? `Sharing: ${plantName} (search: "${q}") — this link opens directly to this remedy`
     : `Sharing search results for "${q}" — recipient sees the same results`;
+  const shareId = 'share-' + Math.random().toString(36).slice(2,8);
   const native = (navigator.share && plantName)
-    ? `<button class="share-btn share-native" onclick="navigator.share({title:${JSON.stringify(subject)},text:${JSON.stringify(shortText)},url:${JSON.stringify(url)}}).catch(()=>{})">📤 Share</button>`
+    ? `<button class="share-btn share-native" id="${shareId}" onclick="doNativeShare('${shareId}')">📤 Share</button>`
     : '';
+  // Store share data for native share
+  if (plantName) {
+    window._shareData = window._shareData || {};
+    window._shareData[shareId] = { title: subject, text: shortText, url };
+  }
   return `<div class="share-bar">
     <span class="share-bar-label">↗ Share this</span>
     ${native}
@@ -3338,6 +3344,11 @@ function quickShare(url, title) {
   } else {
     copyToClipboard(url);
   }
+}
+function doNativeShare(id) {
+  const d = (window._shareData||{})[id];
+  if (!d) return;
+  navigator.share(d).catch(()=> copyToClipboard(d.url));
 }
 async function runGlobalSearch(autoOpenRemedy) {
   const query = document.getElementById('global-search-input').value.trim();
@@ -3412,7 +3423,7 @@ function renderSearchResults(query, aiSummary, localResults, autoOpenRemedy) {
       const url = buildShareURL(query, rid);
       const badges = p.traditions.map(tid=>{
         const t=traditionData.find(x=>x.id===tid);
-        return t?`<span class="remedy-tradition-badge" style="background:${t.color}">${t.icon} ${t.name.split(' ')[0]}</span>`:'';
+        return t?`<span class="remedy-tradition-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
       }).join('');
       const fe = Object.values(p.entries||{})[0];
       const plain = fe?.condition ? `Used for: <strong>${fe.condition}</strong>` : (p.therapeutic_areas||[]).slice(0,3).map(a=>a.replace(/_/g,' ')).join(', ');
