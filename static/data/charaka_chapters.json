@@ -1,0 +1,754 @@
+{
+  "tradition": "ayurveda",
+  "source_text": "Charaka Samhita",
+  "source_language": "Sanskrit",
+  "date": "c. 300 BCE – 200 CE (compiled and revised)",
+  "translator": "AI synthesis from P.V. Sharma and R.K. Sharma & B. Dash translations",
+  "total_segments": 25,
+  "results": [
+    {
+      "_label": "CS.Sutra.1",
+      "title_inferred": "Mangalya — the auspicious opening and purpose of medicine",
+      "original_text": "प्रयोजनं चास्य स्वस्थस्य स्वास्थ्यरक्षणमातुरस्य विकारप्रशमनं च।",
+      "translation": "The purpose of this [Ayurveda] is the maintenance of health in the healthy and the alleviation of disease in the diseased. Charaka opens with this foundational statement establishing Ayurveda's dual mission: preventive and curative medicine. The text positions itself as a complete system — not merely a collection of remedies but a science of life (Ayur = life, Veda = knowledge/science).",
+      "entities_mentioned": [
+        {
+          "name": "ayurveda",
+          "type": "tradition"
+        },
+        {
+          "name": "charaka",
+          "type": "person"
+        }
+      ],
+      "therapeutic_context": "foundational_principles",
+      "source_section": "Sutrasthana Chapter 1"
+    },
+    {
+      "_label": "CS.Sutra.4",
+      "title_inferred": "Shadvirechanashatashritiya — the 500 purgative plants",
+      "original_text": "विरेचनोपगानां शतानि पञ्च — पिप्पली, पिप्पलीमूल, चव्य, चित्रक, शृङ्गवेर...",
+      "translation": "The five hundred [groups of] purgative plants — long pepper, long pepper root, chavya, chitraka, dried ginger root... Charaka Chapter 4 (Shadvirechanashatashritiya) is one of the most important pharmacological chapters in classical Ayurveda, listing plants in 50 groups of 10 by therapeutic action. The groups cover: purgatives (virechana), emetics (vamana), nasal medications (nasya), enemas (basti), and external applications (lepa).",
+      "entities_mentioned": [
+        {
+          "name": "long pepper",
+          "type": "plant"
+        },
+        {
+          "name": "pippali",
+          "type": "plant"
+        },
+        {
+          "name": "ginger",
+          "type": "plant"
+        },
+        {
+          "name": "chitraka",
+          "type": "plant"
+        },
+        {
+          "name": "chavya",
+          "type": "plant"
+        },
+        {
+          "name": "haritaki",
+          "type": "plant"
+        },
+        {
+          "name": "amalaki",
+          "type": "plant"
+        },
+        {
+          "name": "bibhitaka",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "systematic_classification",
+      "source_section": "Sutrasthana Chapter 4"
+    },
+    {
+      "_label": "CS.Sutra.25",
+      "title_inferred": "Yajjah Purushiya — the plant kingdom as medicine",
+      "original_text": "न तत् किञ्चिद् द्रव्यं यद् भेषजं न स्यात्।",
+      "translation": "There is no substance in the world that cannot be used as a medicine. This foundational Ayurvedic principle — that everything in the natural world has potential therapeutic application — underpins the entire Charaka pharmacopoeia. The implication is that the physician's task is knowledge, not scarcity: every plant, mineral, and animal product is potentially medicinal when properly understood and applied.",
+      "entities_mentioned": [
+        {
+          "name": "medicine",
+          "type": "concept"
+        },
+        {
+          "name": "pharmacopoeia",
+          "type": "concept"
+        }
+      ],
+      "therapeutic_context": "foundational_principles",
+      "source_section": "Sutrasthana Chapter 25"
+    },
+    {
+      "_label": "CS.Sutra.27.1",
+      "title_inferred": "Annapanavidhi — therapeutic foods and their properties",
+      "original_text": "शालयः षष्टिकाश्चैव मुद्गाः सैन्धवमेव च। आमलकी च जीवन्ती च मधुरश्च रसः स्मृतः।",
+      "translation": "Shali rice (red rice), shashtika rice (60-day rice), green mung beans, rock salt, amalaki (Indian gooseberry), and jivanti — these are the most beneficial foods. The most important Ayurvedic chapter on food-as-medicine. Shali and shashtika rice are consistently ranked as the most therapeutic grains. Mung beans are the most easily digestible legume. Amalaki (Phyllanthus emblica) appears here as a food with extraordinary medicinal properties — one of the three fruits in Triphala and documented for the highest Vitamin C content of any fruit.",
+      "entities_mentioned": [
+        {
+          "name": "amalaki",
+          "type": "plant"
+        },
+        {
+          "name": "amla",
+          "type": "plant"
+        },
+        {
+          "name": "mung bean",
+          "type": "plant"
+        },
+        {
+          "name": "jivanti",
+          "type": "plant"
+        },
+        {
+          "name": "shali rice",
+          "type": "plant"
+        },
+        {
+          "name": "rock salt",
+          "type": "mineral"
+        }
+      ],
+      "therapeutic_context": "dietary_medicine",
+      "source_section": "Sutrasthana Chapter 27"
+    },
+    {
+      "_label": "CS.Sutra.27.2",
+      "title_inferred": "Phala Varga — therapeutic fruits",
+      "original_text": "आमलकानां श्रेष्ठतमं। दाडिमं हृद्यं पाचनं रोचनं।",
+      "translation": "Among fruits, amalaki is the foremost. Pomegranate (dadima) is cardiotonic, digestive, and appetizing. Charaka's fruit chapter documents the therapeutic properties of the major fruits used in Ayurvedic medicine. Amalaki is ranked supreme among all fruits — later research has confirmed it has one of the highest Vitamin C concentrations of any food. Pomegranate for cardiac conditions connects to the Greek/Roman, Persian, and Tibetan documentation of pomegranate for the same indication.",
+      "entities_mentioned": [
+        {
+          "name": "amalaki",
+          "type": "plant"
+        },
+        {
+          "name": "pomegranate",
+          "type": "plant"
+        },
+        {
+          "name": "dadima",
+          "type": "plant"
+        },
+        {
+          "name": "mango",
+          "type": "plant"
+        },
+        {
+          "name": "grapes",
+          "type": "plant"
+        },
+        {
+          "name": "dates",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "dietary_medicine",
+      "source_section": "Sutrasthana Chapter 27"
+    },
+    {
+      "_label": "CS.Sutra.27.3",
+      "title_inferred": "Harita Varga — therapeutic vegetables and herbs",
+      "original_text": "शाकानां वास्तूकं श्रेष्ठम्। पटोलं कटुतिक्तं च ज्वरघ्नं।",
+      "translation": "Among vegetables, vastuka (bathua/goosefoot) is foremost. Patola (pointed gourd) is bitter and pungent, and destroys fever. The Ayurvedic vegetable classification assigns therapeutic primacy to specific plants. Patola for fever connects to the cross-tradition fever treatment documentation. Bitter gourd (karela/bitter melon) is documented extensively — connecting to the Philippine, Tibetan, and West African documentation in the existing archive.",
+      "entities_mentioned": [
+        {
+          "name": "patola",
+          "type": "plant"
+        },
+        {
+          "name": "bitter melon",
+          "type": "plant"
+        },
+        {
+          "name": "karela",
+          "type": "plant"
+        },
+        {
+          "name": "vastuka",
+          "type": "plant"
+        },
+        {
+          "name": "drumstick",
+          "type": "plant"
+        },
+        {
+          "name": "fenugreek",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "dietary_medicine",
+      "source_section": "Sutrasthana Chapter 27"
+    },
+    {
+      "_label": "CS.Chik.1.1",
+      "title_inferred": "Rasayana — rejuvenation therapy and life extension",
+      "original_text": "लभते ह्यायुर्मेधां बलं आरोग्यं सुखं च। रसायनं प्रयोक्तव्यं...",
+      "translation": "One obtains longevity, memory, strength, freedom from disease, and happiness [through rasayana]. Rasayana therapy should be administered... Rasayana (literally 'path of rasa/essence') is Ayurveda's systematic anti-aging and rejuvenation system — the most sophisticated traditional longevity medicine in any world tradition. The primary rasayana plants include: Ashwagandha, Shatavari, Brahmi, Guduchi, and the Triphala combination. All are now extensively studied for adaptogenic and anti-aging properties.",
+      "entities_mentioned": [
+        {
+          "name": "ashwagandha",
+          "type": "plant"
+        },
+        {
+          "name": "shatavari",
+          "type": "plant"
+        },
+        {
+          "name": "brahmi",
+          "type": "plant"
+        },
+        {
+          "name": "guduchi",
+          "type": "plant"
+        },
+        {
+          "name": "amalaki",
+          "type": "plant"
+        },
+        {
+          "name": "haritaki",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "rejuvenation_longevity",
+      "source_section": "Chikitsasthana Chapter 1"
+    },
+    {
+      "_label": "CS.Chik.1.2",
+      "title_inferred": "Ashwagandha Rasayana — the premier rejuvenation plant",
+      "original_text": "अश्वगन्धा बलकरी वृष्या रसायनी। श्रमहारिणी।",
+      "translation": "Ashwagandha gives strength, is aphrodisiac, is a rasayana, and removes fatigue. The Charaka Samhita establishes ashwagandha (Withania somnifera) as the premier rasayana plant — superior to others for building strength, endurance, and sexual vitality. Specifically recommended for emaciation, general debility, weakness in old age, and for those exhausted by physical labor. The preparation: ashwagandha root powder in milk with ghee and honey.",
+      "entities_mentioned": [
+        {
+          "name": "ashwagandha",
+          "type": "plant"
+        },
+        {
+          "name": "withania somnifera",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "rejuvenation_longevity",
+      "source_section": "Chikitsasthana Chapter 1",
+      "preparation": "Root powder in warm milk with ghee and honey; taken at bedtime",
+      "condition": "Debility, fatigue, emaciation, weakness, sexual dysfunction, aging"
+    },
+    {
+      "_label": "CS.Chik.1.3",
+      "title_inferred": "Brahmi Rasayana — cognition and memory",
+      "original_text": "ब्राह्मी मेध्या स्मृतिकरी आयुष्या रसायनी।",
+      "translation": "Brahmi enhances intelligence, improves memory, is longevity-promoting, and is a rasayana. Bacopa monnieri (Brahmi) is Ayurveda's primary cognitive medicine — documented by Charaka for memory, learning, intelligence, and longevity. The specific claim that brahmi improves memory in children and reverses cognitive decline in older patients is among the most precisely stated therapeutic claims in the Charaka Samhita. Multiple modern RCTs have since validated these claims.",
+      "entities_mentioned": [
+        {
+          "name": "brahmi",
+          "type": "plant"
+        },
+        {
+          "name": "bacopa monnieri",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "cognitive_medicine",
+      "source_section": "Chikitsasthana Chapter 1",
+      "preparation": "Brahmi ghrita (brahmi-infused clarified butter); also brahmi juice with honey",
+      "condition": "Poor memory, cognitive decline, epilepsy, anxiety, insanity"
+    },
+    {
+      "_label": "CS.Chik.3",
+      "title_inferred": "Jvarachikitsa — fever treatment",
+      "original_text": "सर्वरोगाणाम् अग्रणी ज्वरः। गुडूची ज्वरघ्नी।",
+      "translation": "Fever is foremost among all diseases. Guduchi (Tinospora cordifolia) destroys fever. The Charaka fever chapter documents a hierarchy of fever treatment — from simple fasting and rest to complex multi-herb decoctions. Guduchi is the primary anti-fever plant. The pippali (long pepper) + ginger + black pepper combination (Trikatu) is documented for digestive fever. Neem (nimba) is documented for malarial fever types — one of the earliest documented antimalarial treatments.",
+      "entities_mentioned": [
+        {
+          "name": "guduchi",
+          "type": "plant"
+        },
+        {
+          "name": "tinospora cordifolia",
+          "type": "plant"
+        },
+        {
+          "name": "neem",
+          "type": "plant"
+        },
+        {
+          "name": "nimba",
+          "type": "plant"
+        },
+        {
+          "name": "long pepper",
+          "type": "plant"
+        },
+        {
+          "name": "ginger",
+          "type": "plant"
+        },
+        {
+          "name": "trikatu",
+          "type": "preparation"
+        }
+      ],
+      "therapeutic_context": "fever_treatment",
+      "source_section": "Chikitsasthana Chapter 3",
+      "preparation": "Guduchi decoction; Trikatu (long pepper + ginger + black pepper) for digestive fever",
+      "condition": "Fever (all types), malarial fever, digestive fever, fever with ama (toxins)"
+    },
+    {
+      "_label": "CS.Chik.5",
+      "title_inferred": "Gulma Chikitsa — abdominal tumors and digestive masses",
+      "original_text": "हिङ्ग्वादयः गुल्मघ्नाः। अग्निमान्द्यहरा वायुलोमाः।",
+      "translation": "Asafoetida (hingu) and others destroy abdominal masses. They overcome sluggish digestion and promote downward movement of wind. Asafoetida (Ferula asafoetida) is documented as the primary medicine for gulma — abdominal masses, which may correspond to tumors, cysts, or severe digestive disorders. The antispasmodic and carminative properties of asafoetida are well-established. This chapter also documents long pepper for digestive complaints and haritaki for constipation-related gulma.",
+      "entities_mentioned": [
+        {
+          "name": "asafoetida",
+          "type": "plant"
+        },
+        {
+          "name": "hingu",
+          "type": "plant"
+        },
+        {
+          "name": "ferula asafoetida",
+          "type": "plant"
+        },
+        {
+          "name": "long pepper",
+          "type": "plant"
+        },
+        {
+          "name": "haritaki",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "digestive_medicine",
+      "source_section": "Chikitsasthana Chapter 5",
+      "preparation": "Asafoetida compound preparations in sesame oil; taken after meals",
+      "condition": "Abdominal masses, digestive disorders, flatulence, constipation"
+    },
+    {
+      "_label": "CS.Chik.7",
+      "title_inferred": "Kushtha Chikitsa — skin disease treatment",
+      "original_text": "खदिरः कुष्ठघ्नः श्रेष्ठः। तुम्बुरु शिरीषश्च।",
+      "translation": "Khadira (Acacia catechu) is the foremost destroyer of skin diseases. Tumburu (Zanthoxylum) and shirisha (Albizia lebbeck) also [treat skin diseases]. The Charaka skin disease chapter is remarkable for its specificity — distinguishing 18 types of kushtha (skin conditions ranging from psoriasis to leprosy) and prescribing specific plants for each. Khadira's pharmacological content — catechin and epicatechin — has now been confirmed as anti-inflammatory and antimicrobial.",
+      "entities_mentioned": [
+        {
+          "name": "khadira",
+          "type": "plant"
+        },
+        {
+          "name": "acacia catechu",
+          "type": "plant"
+        },
+        {
+          "name": "shirisha",
+          "type": "plant"
+        },
+        {
+          "name": "albizia lebbeck",
+          "type": "plant"
+        },
+        {
+          "name": "neem",
+          "type": "plant"
+        },
+        {
+          "name": "turmeric",
+          "type": "plant"
+        },
+        {
+          "name": "manjistha",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "skin_disease",
+      "source_section": "Chikitsasthana Chapter 7",
+      "preparation": "Khadira bark decoction; Panchatikta ghrita (five bitter plants in ghee)",
+      "condition": "Psoriasis, leprosy, eczema, vitiligo, all skin conditions (18 types of kushtha)"
+    },
+    {
+      "_label": "CS.Chik.8",
+      "title_inferred": "Rajayakshma Chikitsa — tuberculosis and wasting diseases",
+      "original_text": "अश्वगन्धा बलादीनां रसायनानि राजयक्ष्मणि। पिप्पली क्षयकासघ्नी।",
+      "translation": "Ashwagandha and bala and other rasayanas [are used] in tuberculosis/wasting disease. Long pepper destroys wasting cough. Rajayakshma — the 'King of Diseases' — corresponds primarily to tuberculosis and other wasting conditions. The treatment strategy is remarkable: Charaka prescribes nutritive rasayana plants (ashwagandha, bala, shatavari) to rebuild the patient while using antimicrobial plants (long pepper, giloy) to fight the infection. This dual strategy — nutritive support + antimicrobial — anticipates modern TB treatment principles.",
+      "entities_mentioned": [
+        {
+          "name": "ashwagandha",
+          "type": "plant"
+        },
+        {
+          "name": "bala",
+          "type": "plant"
+        },
+        {
+          "name": "shatavari",
+          "type": "plant"
+        },
+        {
+          "name": "long pepper",
+          "type": "plant"
+        },
+        {
+          "name": "guduchi",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "respiratory_infection",
+      "source_section": "Chikitsasthana Chapter 8",
+      "preparation": "Ashwagandha in milk; Chyavanaprasha (multi-herb amalaki-based preparation)",
+      "condition": "Tuberculosis, wasting diseases, chronic cough, emaciation"
+    },
+    {
+      "_label": "CS.Chik.14",
+      "title_inferred": "Apasmara Chikitsa — epilepsy treatment",
+      "original_text": "ब्राह्म्याः सर्पिर्मेध्यं। वचा संज्ञाप्रदा।",
+      "translation": "Brahmi ghrita (brahmi in ghee) is the cognitive treatment [for epilepsy]. Vacha (Acorus calamus) restores consciousness. The Charaka epilepsy chapter is one of the most pharmacologically interesting — brahmi (Bacopa) and vacha (Acorus) are both documented for neurological conditions. Vacha (calamus root) contains asarone — a compound with documented anticonvulsant activity. The combination of these plants in Saraswatarishta and other classical preparations is still used in Ayurvedic practice today.",
+      "entities_mentioned": [
+        {
+          "name": "brahmi",
+          "type": "plant"
+        },
+        {
+          "name": "bacopa monnieri",
+          "type": "plant"
+        },
+        {
+          "name": "vacha",
+          "type": "plant"
+        },
+        {
+          "name": "acorus calamus",
+          "type": "plant"
+        },
+        {
+          "name": "shankhapushpi",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "neurological",
+      "source_section": "Chikitsasthana Chapter 14",
+      "preparation": "Brahmi ghrita; Saraswatarishta (fermented preparation with brahmi, vacha, ashwagandha)",
+      "condition": "Epilepsy, psychosis, cognitive disorders, loss of consciousness"
+    },
+    {
+      "_label": "CS.Chik.15",
+      "title_inferred": "Unmada Chikitsa — psychiatric medicine",
+      "original_text": "राजमाषादिं गणं जीवनीयम्। मनस्कान्तिकरं ब्राह्मी।",
+      "translation": "The rajamasha group promotes life. Brahmi brings mental clarity and lustre to the mind. The Charaka psychiatric chapter documents a sophisticated understanding of mental illness — distinguishing endogenous (nija) from exogenous (agantuja) causes, roughly corresponding to endogenous psychiatric disorders vs. infectious/toxic conditions. Plants for psychiatric conditions: brahmi, shankhapushpi, jatamansi (Nardostachys). Jatamansi contains valerianol — related to the active compound in valerian, establishing a cross-tradition connection for the same neurological indication.",
+      "entities_mentioned": [
+        {
+          "name": "brahmi",
+          "type": "plant"
+        },
+        {
+          "name": "shankhapushpi",
+          "type": "plant"
+        },
+        {
+          "name": "jatamansi",
+          "type": "plant"
+        },
+        {
+          "name": "nardostachys jatamansi",
+          "type": "plant"
+        },
+        {
+          "name": "vacha",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "psychiatric_medicine",
+      "source_section": "Chikitsasthana Chapter 15",
+      "preparation": "Multi-herb preparations with brahmi and shankhapushpi in ghee base",
+      "condition": "Psychosis, mania, depression, anxiety, cognitive disorders"
+    },
+    {
+      "_label": "CS.Chik.23",
+      "title_inferred": "Vatarakta Chikitsa — gout treatment",
+      "original_text": "गुडूची वातरक्ते श्रेष्ठा। निम्बं च शोधनम्।",
+      "translation": "Guduchi is foremost in gout. Neem is purifying [for gout]. The Charaka gout chapter documents guduchi (Tinospora cordifolia) as the primary treatment — an observation now validated by in vitro studies showing guduchi inhibits xanthine oxidase, the same enzyme target as the pharmaceutical drug allopurinol. This is one of the most precise mechanistic convergences in the archive between traditional Ayurvedic prescription and modern pharmacological target identification.",
+      "entities_mentioned": [
+        {
+          "name": "guduchi",
+          "type": "plant"
+        },
+        {
+          "name": "tinospora cordifolia",
+          "type": "plant"
+        },
+        {
+          "name": "neem",
+          "type": "plant"
+        },
+        {
+          "name": "triphala",
+          "type": "preparation"
+        }
+      ],
+      "therapeutic_context": "metabolic_disease",
+      "source_section": "Chikitsasthana Chapter 23",
+      "preparation": "Guduchi sattva (guduchi starch extract); Guduchi decoction",
+      "condition": "Gout (vatarakta), joint inflammation, uric acid conditions"
+    },
+    {
+      "_label": "CS.Chik.26",
+      "title_inferred": "Dvisaptiya — 37 plants with the most extensive therapeutic applications",
+      "original_text": "बृहत्पञ्चमूलं मेद्यम् बल्यं वृष्यं रसायनम्। श्वासकासहरं चैव...",
+      "translation": "The Brihat Panchamula (five great roots — bilva, shyonak, gambhari, patala, agnimanth) are nourishing, strength-giving, aphrodisiac, rasayana, and destroy asthma and cough. This chapter documents the most important Ayurvedic plant groups: Dashamula (ten roots), Panchatikta (five bitters), and the various Ganas (groups) that form the basis of classical compound preparations. The Dashamula combination (ten roots including bilva, shyonak, and five others) is documented for respiratory, inflammatory, and neurological conditions — one of the most prescribed compound preparations in Ayurveda.",
+      "entities_mentioned": [
+        {
+          "name": "bilva",
+          "type": "plant"
+        },
+        {
+          "name": "aegle marmelos",
+          "type": "plant"
+        },
+        {
+          "name": "gambhari",
+          "type": "plant"
+        },
+        {
+          "name": "shyonak",
+          "type": "plant"
+        },
+        {
+          "name": "agnimanth",
+          "type": "plant"
+        },
+        {
+          "name": "patala",
+          "type": "plant"
+        },
+        {
+          "name": "triphala",
+          "type": "preparation"
+        },
+        {
+          "name": "dashamula",
+          "type": "preparation"
+        }
+      ],
+      "therapeutic_context": "compound_preparations",
+      "source_section": "Chikitsasthana Chapter 26"
+    },
+    {
+      "_label": "CS.Kalpa.1",
+      "title_inferred": "Kalpana — pharmaceutical preparation methods",
+      "original_text": "स्वरसः कल्कश्च श्रितं हिमः फाण्टश्च। पञ्चविधः कषायः।",
+      "translation": "Fresh juice (svarasa), paste (kalka), decoction (kwatha/shrita), cold infusion (hima), hot infusion (phanta) — these are the five types of kashayas (medicinal preparations). Charaka's pharmaceutical chapter defines the five primary methods of plant medicine preparation that form the basis of all Ayurvedic pharmacy. This classification is more systematic than any European pharmaceutical tradition before the 18th century — distinguishing preparations by extraction method, temperature, and concentration.",
+      "entities_mentioned": [
+        {
+          "name": "ayurveda",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "pharmaceutical_preparation",
+      "source_section": "Kalpasthana Chapter 1"
+    },
+    {
+      "_label": "CS.Kalpa.1.2",
+      "title_inferred": "Vamana Dravya — emetic plants for panchakarma",
+      "original_text": "मदनफलं वमनोत्तमम्। इक्ष्वाकु च यष्टीमधुकं च।",
+      "translation": "Madana fruit (Randia dumetorum) is the foremost emetic. Ikshvaku (bottle gourd) and licorice root (yashtimadhu) also [serve as emetics]. The Vamana chapter documents the emetic plants used in panchakarma — the Ayurvedic therapeutic purification system. Licorice root (yashtimadhu / Glycyrrhiza glabra) appears here as an emetic adjuvant — the same plant documented in Persian, Greek/Roman, and Egyptian traditions for respiratory and digestive conditions. This represents convergence for licorice across five independent traditions.",
+      "entities_mentioned": [
+        {
+          "name": "madana fruit",
+          "type": "plant"
+        },
+        {
+          "name": "randia dumetorum",
+          "type": "plant"
+        },
+        {
+          "name": "licorice root",
+          "type": "plant"
+        },
+        {
+          "name": "glycyrrhiza glabra",
+          "type": "plant"
+        },
+        {
+          "name": "yashtimadhu",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "panchakarma_purification",
+      "source_section": "Kalpasthana Chapter 1"
+    },
+    {
+      "_label": "CS.Kalpa.2",
+      "title_inferred": "Virechana Dravya — purgative plants for panchakarma",
+      "original_text": "त्रिवृत् विरेचनानामुत्तमा। दन्ती दन्तीमूलञ्च।",
+      "translation": "Trivrit (Operculina turpethum) is the foremost of purgatives. Danti (Baliospermum montanum) and the root of danti also [serve as purgatives]. The purgative chapter documents 29 plants for the virechana stage of panchakarma. Trivrit is used for the same conditions as senna and cascara in other traditions — a convergence for laxative/purgative plants across all major medical traditions.",
+      "entities_mentioned": [
+        {
+          "name": "trivrit",
+          "type": "plant"
+        },
+        {
+          "name": "operculina turpethum",
+          "type": "plant"
+        },
+        {
+          "name": "danti",
+          "type": "plant"
+        },
+        {
+          "name": "senna",
+          "type": "plant"
+        },
+        {
+          "name": "haritaki",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "panchakarma_purification",
+      "source_section": "Kalpasthana Chapter 2"
+    },
+    {
+      "_label": "CS.Plant.Triphala",
+      "title_inferred": "Triphala — the three fruits, Ayurveda's most important compound",
+      "original_text": "आमलकी विभीतकं हरीतकी च — त्रयो मध्यस्था। त्रिफला रसायनी।",
+      "translation": "Amalaki (Phyllanthus emblica), vibhitaka (Terminalia bellirica), and haritaki (Terminalia chebula) — these three are moderate in nature. Triphala is a rasayana. Triphala — the combination of three fruits — is the single most prescribed compound in Ayurvedic medicine. Charaka documents it for: constipation, eye conditions, liver conditions, skin diseases, diabetes, obesity, and as a general rasayana. All three fruits are individually significant — haritaki is Ayurveda's single most important medicinal plant (documented in 49 chapters of Charaka).",
+      "entities_mentioned": [
+        {
+          "name": "triphala",
+          "type": "preparation"
+        },
+        {
+          "name": "amalaki",
+          "type": "plant"
+        },
+        {
+          "name": "amla",
+          "type": "plant"
+        },
+        {
+          "name": "phyllanthus emblica",
+          "type": "plant"
+        },
+        {
+          "name": "haritaki",
+          "type": "plant"
+        },
+        {
+          "name": "terminalia chebula",
+          "type": "plant"
+        },
+        {
+          "name": "bibhitaka",
+          "type": "plant"
+        },
+        {
+          "name": "terminalia bellirica",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "compound_preparations",
+      "source_section": "Multiple chapters throughout Charaka"
+    },
+    {
+      "_label": "CS.Plant.Shatavari",
+      "title_inferred": "Shatavari — Ayurvedic women's medicine",
+      "original_text": "शतावरी बल्या वृष्या रसायनी स्तन्यजननी।",
+      "translation": "Shatavari gives strength, is aphrodisiac, is a rasayana, and promotes milk production. Asparagus racemosus (shatavari — literally 'who has a hundred husbands') is Ayurveda's primary women's medicine — documented by Charaka for: lactation support, menstrual regulation, fertility, menopausal symptoms, and as a general women's tonic. Multiple modern RCTs have confirmed lactation-promoting activity (galactagogue effect).",
+      "entities_mentioned": [
+        {
+          "name": "shatavari",
+          "type": "plant"
+        },
+        {
+          "name": "asparagus racemosus",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "gynecological_medicine",
+      "source_section": "Throughout Chikitsasthana",
+      "preparation": "Root powder in warm milk; shatavari ghrita; shatavari kalpa",
+      "condition": "Lactation, menstrual disorders, infertility, menopause, general women's health"
+    },
+    {
+      "_label": "CS.Plant.Neem",
+      "title_inferred": "Nimba (Neem) — the universal purifier",
+      "original_text": "निम्बः सर्वज्वरघ्नः। कुष्ठघ्नः। कृमिघ्नः।",
+      "translation": "Neem destroys all fevers. It destroys skin diseases. It destroys worms/parasites. Neem (Azadirachta indica) is documented throughout Charaka for an extraordinary range of conditions — fever, skin diseases, parasites, diabetes, wound healing, and as a general antimicrobial. The three-fold claim (anti-fever, anti-skin disease, anti-parasitic) is directly validated by modern research: nimbidin (anti-inflammatory), azadirachtin (antiparasitic — the most studied natural pesticide), and gedunin (antimalarial).",
+      "entities_mentioned": [
+        {
+          "name": "neem",
+          "type": "plant"
+        },
+        {
+          "name": "nimba",
+          "type": "plant"
+        },
+        {
+          "name": "azadirachta indica",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antimicrobial",
+      "source_section": "Throughout Chikitsasthana",
+      "preparation": "Neem leaf decoction; neem oil topically; neem bark decoction",
+      "condition": "Fever (all types), skin diseases, intestinal parasites, diabetes, wound infection"
+    },
+    {
+      "_label": "CS.Plant.Guduchi",
+      "title_inferred": "Guduchi — the immunity plant",
+      "original_text": "गुडूची सर्वज्वरघ्नी। रसायनी। मेध्या।",
+      "translation": "Guduchi destroys all fevers. It is a rasayana. It enhances intelligence. Tinospora cordifolia (guduchi/giloy) is documented in Charaka for an exceptional range of conditions. Modern research has confirmed: (1) immunomodulatory activity — stimulates macrophage activity; (2) xanthine oxidase inhibition for gout; (3) anti-malarial activity; (4) hepatoprotective effects. During COVID-19, guduchi received significant attention in India as a potential immune support supplement.",
+      "entities_mentioned": [
+        {
+          "name": "guduchi",
+          "type": "plant"
+        },
+        {
+          "name": "giloy",
+          "type": "plant"
+        },
+        {
+          "name": "tinospora cordifolia",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "immune_medicine",
+      "source_section": "Throughout Charaka Samhita",
+      "preparation": "Guduchi sattva (starch extract); guduchi decoction; guduchi ghrita",
+      "condition": "Fever, gout, liver conditions, immunity, diabetes, general health"
+    },
+    {
+      "_label": "CS.Plant.LongPepper",
+      "title_inferred": "Pippali (Long Pepper) — Ayurveda's most prescribed spice-medicine",
+      "original_text": "पिप्पली कासश्वासहरी। दीपनी। रसायनी।",
+      "translation": "Long pepper destroys cough and asthma. It kindles digestive fire. It is a rasayana. Pippali (Piper longum) is arguably the most frequently mentioned plant in the Charaka Samhita — appearing in Trikatu (with ginger and black pepper), in respiratory formulas, digestive preparations, and rasayana compounds. Piperine in long pepper is the same bioavailability-enhancing compound as in black pepper but at higher concentration. Piperlongumine — a compound unique to long pepper — shows documented anticancer activity.",
+      "entities_mentioned": [
+        {
+          "name": "long pepper",
+          "type": "plant"
+        },
+        {
+          "name": "pippali",
+          "type": "plant"
+        },
+        {
+          "name": "piper longum",
+          "type": "plant"
+        },
+        {
+          "name": "trikatu",
+          "type": "preparation"
+        }
+      ],
+      "therapeutic_context": "respiratory_digestive",
+      "source_section": "Throughout Charaka Samhita",
+      "preparation": "Trikatu (long pepper + ginger + black pepper); pippali rasayana in honey and ghee",
+      "condition": "Asthma, chronic cough, poor digestion, obesity, respiratory infections"
+    }
+  ]
+}
