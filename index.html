@@ -3214,11 +3214,22 @@ function computeScore(article, citationCount) {
 function buildPubMedQuery(plant) {
   // Build a specific query: botanical name OR key compound + therapeutic areas
   const parts = [];
-  if (plant.modern_botanical) parts.push(`"${plant.modern_botanical.split(' ').slice(0,2).join(' ')}"`);
+  if (plant.modern_botanical && plant.modern_botanical !== 'Identification pending') {
+    parts.push(`"${plant.modern_botanical.split(' ').slice(0,2).join(' ')}"`);
+  }
   if (plant.modern_research?.key_compound) {
     const compound = plant.modern_research.key_compound.split('(')[0].trim().split(',')[0].trim();
     if (compound && compound !== 'N/A') parts.push(`"${compound}"`);
   }
+  // Fallback: most entries in this database have no botanical ID or isolated
+  // compound yet — without this, those entries send PubMed an empty "()"
+  // query and always return zero results. Search by common name instead.
+  if (!parts.length && plant.common_name) {
+    const cleanName = plant.common_name.split('/')[0].split('(')[0].trim();
+    if (cleanName) parts.push(`"${cleanName}"`);
+  }
+  if (!parts.length) return null; // truly nothing to search on
+
   // Add therapeutic area terms
   const areas = (plant.therapeutic_areas || []).slice(0, 2).map(a =>
     a.replace(/_/g, ' ')
@@ -3313,6 +3324,12 @@ async function runResearchQuery() {
 
   try {
     const query = buildPubMedQuery(plant);
+    if (!query) {
+      resultsEl.innerHTML = `<div class="research-loading">Not enough data on <strong>${plant.common_name}</strong> to build a PubMed query yet (no botanical name, compound, or name to search on).</div>`;
+      status.textContent = '';
+      btn.disabled = false;
+      return;
+    }
     const articles = await fetchPubMed(query, 20);
 
     if (!articles.length) {
