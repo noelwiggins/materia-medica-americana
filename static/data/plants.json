@@ -35,13 +35,15 @@
         "summary": "Quinine isolated 1820. Still first-line treatment for severe malaria. WHO Essential Medicine.",
         "significance": "One of the most consequential pharmacological discoveries in history."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Quinine — FDA approved antimalarial; quinidine FDA approved antiarrhythmic",
       "evidence_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020882",
-      "evidence_note": "Also WHO Essential Medicine"
+      "evidence_note": "Also WHO Essential Medicine",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-002",
@@ -77,13 +79,15 @@
         "summary": "Cocaine first local anesthetic (1884). All subsequent local anesthetics derive from cocaine's mechanism.",
         "significance": "Transformed surgery. The topical pain application Cobo documents is precisely the mechanism of local anesthesia."
       },
-      "priority_score": 9,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Cocaine HCl — FDA approved topical anesthetic (ENT surgery)",
       "evidence_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm",
-      "evidence_note": "Only legal medical use; ecgonine esters also pharmaceutical"
+      "evidence_note": "Only legal medical use; ecgonine esters also pharmaceutical",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-005",
@@ -127,12 +131,14 @@
         "summary": "Albert Hofmann identified ergine in ololiuqui seeds 1960. Anti-inflammatory properties under investigation.",
         "significance": "Cross-source validation between Badianus and Florentine Codex."
       },
-      "priority_score": 8,
+      "priority_score": 63,
       "investigation_status": "significant_findings",
       "evidence_tier": 4,
       "evidence_badge": "CLINICAL RESEARCH",
       "evidence_authority": "Ergine (LSA) — Schedule I; psilocybin trials ongoing; no approval",
-      "evidence_note": "Phase 2 trials for depression"
+      "evidence_note": "Phase 2 trials for depression",
+      "priority_light": "green",
+      "priority_reason": "7 independent civilisations independently documented this · condition burden is critical · compound identified but no clinical trials"
     },
     {
       "id": "MMA-009",
@@ -178,13 +184,15 @@
         "summary": "All three alkaloids are WHO Essential Medicines. Scopolamine: FDA-approved for nausea. Atropine: cardiac arrest, nerve agent treatment.",
         "significance": "EXCEPTIONAL CONVERGENCE: Both sources document identical use AND identical dosage warning."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated_essential_medicine",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Scopolamine — FDA approved (Transderm Scop patch, motion sickness/nausea); atropine FDA approved; hyoscyamine FDA approved",
       "evidence_url": "https://www.accessdata.fda.gov",
-      "evidence_note": "WHO Essential Medicine — atropine on EML"
+      "evidence_note": "WHO Essential Medicine — atropine on EML",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-010",
@@ -236,12 +244,14 @@
         "summary": "Ascaridole has well-documented anthelmintic activity. Renewed interest as drug-resistant parasites emerge.",
         "significance": "MAXIMUM CONVERGENCE: All three sources confirm identical antiparasitic application across two continents."
       },
-      "priority_score": 10,
+      "priority_score": 90,
       "investigation_status": "validated_renewed_interest",
       "evidence_tier": 4,
       "evidence_badge": "CLINICAL RESEARCH",
       "evidence_authority": "Ascaridole — not approved; antiparasitic research ongoing",
-      "evidence_note": "Renewed interest post-artemisinin"
+      "evidence_note": "Renewed interest post-artemisinin",
+      "priority_light": "green",
+      "priority_reason": "10 independent civilisations independently documented this · condition burden is critical · compound identified but no clinical trials"
     },
     {
       "id": "MMA-011",
@@ -276,13 +286,15 @@
         "summary": "Reserpine isolated 1952. Became the first effective antihypertensive AND first antipsychotic drug. Directly enabled the psychiatric revolution of the 1950s.",
         "significance": "Arguably the single most consequential traditional medicine discovery of the 20th century. 3,000 years of Ayurvedic use mapped precisely onto reserpine's mechanism."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Reserpine — FDA approved antihypertensive (still in USP)",
       "evidence_url": "https://www.accessdata.fda.gov",
-      "evidence_note": "First modern antipsychotic/antihypertensive from plant"
+      "evidence_note": "First modern antipsychotic/antihypertensive from plant",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-012",
@@ -326,13 +338,15 @@
         "summary": "Over 3,000 published studies. Strong anti-inflammatory activity. Bioavailability limitations complicate pharmaceutical development but topical applications show strong results.",
         "significance": "CONVERGENCE: Independently documented by Ayurvedic and Chinese traditions for overlapping inflammatory conditions."
       },
-      "priority_score": 8,
+      "priority_score": 64,
       "investigation_status": "moderate_validation",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Curcumin — Cochrane review: anti-inflammatory evidence; not FDA approved as drug",
       "evidence_url": "https://www.cochranelibrary.com",
-      "evidence_note": "GRAS status in food; IND studies ongoing"
+      "evidence_note": "GRAS status in food; IND studies ongoing",
+      "priority_light": "green",
+      "priority_reason": "8 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-013",
@@ -367,13 +381,15 @@
         "summary": "Artemisinin isolated 1972. WHO essential medicine. Most effective antimalarial drug. Saves approximately 1 million lives annually. Nobel Prize 2015 to Tu Youyou.",
         "significance": "The defining proof-of-concept for this database's thesis. A 4th century Chinese text contained the key to the world's most important antimalarial drug."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 2,
       "evidence_badge": "WHO ESSENTIAL MEDICINE",
       "evidence_authority": "Artemisinin/Artesunate — WHO EML 23rd list (2023); Nobel Prize 2015",
       "evidence_url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02",
-      "evidence_note": "Tu Youyou Nobel Prize"
+      "evidence_note": "Tu Youyou Nobel Prize",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-014",
@@ -428,13 +444,15 @@
         "summary": "Morphine isolated 1804 — the birth of pharmaceutical chemistry. Entire opioid pharmacology derives from Papaver somniferum.",
         "significance": "MAXIMUM CROSS-TRADITION CONVERGENCE: Egyptian (1550 BCE), Greek (77 CE), and Islamic (1025 CE) independently document identical therapeutic uses and identical dosage warnings."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 2,
       "evidence_badge": "WHO ESSENTIAL MEDICINE",
       "evidence_authority": "Morphine — WHO EML core list; codeine WHO EML; papaverine WHO EML",
       "evidence_url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02",
-      "evidence_note": "Multiple opioid derivatives on EML"
+      "evidence_note": "Multiple opioid derivatives on EML",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-015",
@@ -495,13 +513,15 @@
         "summary": "Salicin isolated 1828. Aspirin synthesized 1897. Most widely used drug in history. Anti-inflammatory mechanism discovered by John Vane, Nobel Prize 1982.",
         "significance": "MAXIMUM GLOBAL CONVERGENCE: Egyptian (1550 BCE), Greek (400 BCE), Chinese, and Native American (multiple independent nations) all independently discovered willow for fever and pain."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Aspirin (acetylsalicylic acid) — FDA approved 1899; most widely used drug in history",
       "evidence_url": "https://www.accessdata.fda.gov",
-      "evidence_note": "Also WHO Essential Medicine"
+      "evidence_note": "Also WHO Essential Medicine",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-016",
@@ -545,13 +565,15 @@
         "summary": "Colchicine isolated 1820. Still first-line treatment for acute gout attacks. Also used for familial Mediterranean fever and pericarditis.",
         "significance": "CONVERGENCE: Greek and Islamic traditions independently document the same plant for gout with the same dosage caution. Colchicine remains gold-standard treatment."
       },
-      "priority_score": 9,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Colchicine — FDA approved for gout and familial Mediterranean fever (Colcrys, Gloperba)",
       "evidence_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022352",
-      "evidence_note": "WHO Essential Medicine"
+      "evidence_note": "WHO Essential Medicine",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-017",
@@ -586,13 +608,15 @@
         "summary": "Physostigmine isolated 1863. First effective glaucoma treatment. Mechanism: acetylcholinesterase inhibition — foundational discovery for understanding neurotransmission. Led to nerve agent antidotes, Alzheimer's treatments, and modern neuropharmacology.",
         "significance": "West African healers identified glaucoma and found a pharmacological treatment. Acetylcholinesterase inhibition discovered through physostigmine enabled entire field of cholinergic pharmacology."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Physostigmine — FDA approved for anticholinergic toxicity reversal; neostigmine FDA approved",
       "evidence_url": "https://www.accessdata.fda.gov",
-      "evidence_note": "Foundation of cholinergic pharmacology"
+      "evidence_note": "Foundation of cholinergic pharmacology",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-018",
@@ -626,13 +650,15 @@
         "summary": "Tubocurarine isolated 1935. Introduced into surgery 1942. Enabled modern surgery by providing controlled reversible muscle relaxation. All subsequent neuromuscular blocking agents are synthetic descendants.",
         "significance": "Without curare-derived compounds, modern surgical procedures as currently practiced would be impossible. Amazonian hunters were applying, empirically, the pharmacological principle enabling modern surgery."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Tubocurarine — FDA approved neuromuscular blocker; all modern surgical relaxants are synthetic descendants",
       "evidence_url": "https://www.accessdata.fda.gov",
-      "evidence_note": "Vecuronium, rocuronium, atracurium all derived"
+      "evidence_note": "Vecuronium, rocuronium, atracurium all derived",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-019",
@@ -668,12 +694,14 @@
         "summary": "Multiple Phase 2/3 trials showing remarkable efficacy for treatment-resistant depression and PTSD. FDA Breakthrough Therapy designation under review. The ceremonial context indigenous practice systematized may be therapeutically essential — modern trials finding the same.",
         "significance": "The ayahuasca combination is the most pharmacologically sophisticated traditional discovery in this database — two plants with specific complementary mechanisms, combined deliberately for an effect neither produces alone."
       },
-      "priority_score": 9,
+      "priority_score": 36.0,
       "investigation_status": "breakthrough_research",
       "evidence_tier": 4,
       "evidence_badge": "BREAKTHROUGH RESEARCH",
       "evidence_authority": "DMT/Ayahuasca — FDA Breakthrough Therapy (psilocybin, related); ayahuasca Phase 2 trials at Imperial College, Johns Hopkins",
-      "evidence_note": "Not approved; active Phase 2/3 trials"
+      "evidence_note": "Not approved; active Phase 2/3 trials",
+      "priority_light": "green",
+      "priority_reason": "FDA Breakthrough Therapy designation · 6 traditions · active Phase 2/3 trials"
     },
     {
       "id": "MMA-020",
@@ -708,12 +736,14 @@
         "summary": "Cochrane review found modest evidence for reducing duration of common cold. Immune stimulation effects biologically plausible. One of the most commercially successful herbal medicines in the West.",
         "significance": "Cross-nation convergence within Native American traditions (14 documented nations) is itself a strong validation signal. Modern research confirms meaningful but modest immune modulation."
       },
-      "priority_score": 7,
+      "priority_score": 63,
       "investigation_status": "moderate_validation",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Echinacea — Cochrane review 2015: modest reduction in cold duration/severity confirmed",
-      "evidence_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000530.pub3/full"
+      "evidence_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000530.pub3/full",
+      "priority_light": "green",
+      "priority_reason": "7 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-021",
@@ -770,13 +800,15 @@
         "summary": "Multiple genuine antimicrobial mechanisms simultaneously. Manuka honey licensed as medical-grade wound dressing in UK. Active against MRSA.",
         "significance": "MAXIMUM GLOBAL CONVERGENCE: Egyptian (1550 BCE), Greek (400 BCE), Ayurvedic, Islamic, and Native American traditions all independently discovered honey's wound-healing and antimicrobial properties."
       },
-      "priority_score": 10,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Medical-grade honey (Medihoney) — FDA 510(k) cleared wound care device; methylglyoxal activity documented",
       "evidence_url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm",
-      "evidence_note": "WHO recognizes honey in wound care guidelines"
+      "evidence_note": "WHO recognizes honey in wound care guidelines",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-022",
@@ -821,13 +853,15 @@
         "summary": "Ephedrine isolated 1885 by Nagai Nagayoshi (Japanese chemist). Pseudoephedrine still the primary ingredient in most OTC decongestants worldwide. Ephedrine used in anesthesia for hypotension management. Banned as dietary supplement in many countries due to cardiac risk at high doses — validating Kampo's centuries-old dosing caution.",
         "significance": "The Kampo tradition's empirical dose refinement — using smaller amounts than classical Chinese medicine — was pharmacologically correct: ephedrine's therapeutic window is narrow and cardiac risk is dose-dependent. Nagai, a Japanese chemist trained in both Western and Kampo traditions, isolated ephedrine specifically because of its documented clinical use."
       },
-      "priority_score": 9,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Ephedrine — FDA approved vasopressor; pseudoephedrine FDA approved decongestant",
       "evidence_url": "https://www.accessdata.fda.gov",
-      "evidence_note": "Ephedra supplements banned but isolated alkaloids approved"
+      "evidence_note": "Ephedra supplements banned but isolated alkaloids approved",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-023",
@@ -878,12 +912,14 @@
         "summary": "Glycyrrhizin has documented anti-inflammatory, antiviral (including SARS-CoV inhibition), and hepatoprotective activity. Carbenoxolone (synthetic derivative) was a major peptic ulcer treatment before PPIs. At high doses, glycyrrhizin causes pseudoaldosteronism (hypertension, hypokalemia) — validating traditional dose caution.",
         "significance": "MAXIMUM GLOBAL CONVERGENCE: Egyptian (Ebers Papyrus), Greek (Dioscorides), Chinese, Islamic, and Kampo traditions independently documented licorice root for cough and inflammation. Among the most globally widespread traditional medicine discoveries. Modern research validates the anti-inflammatory and antiviral activity but also confirms the dose-dependent adverse effects that multiple traditions cautioned against."
       },
-      "priority_score": 10,
+      "priority_score": 80,
       "investigation_status": "validated",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Glycyrrhizin — Cochrane review on licorice for various conditions; not FDA approved as drug but GRAS",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "10 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-024",
@@ -928,12 +964,14 @@
         "summary": "Multiple clinical trials showing Rhodiola reduces mental and physical fatigue, improves altitude tolerance, and has mild antidepressant effects. Swedish Space Corporation used Rhodiola in cosmonauts. US military-funded research for altitude performance. Some RCT evidence for burnout syndrome reduction.",
         "significance": "Tibetan medicine's specific identification of Rhodiola for altitude fatigue and cognitive impairment maps precisely onto modern adaptogen research. The tradition's 1,200+ years of clinical observation at actual altitude constitutes a natural longitudinal study no modern trial can replicate."
       },
-      "priority_score": 8,
+      "priority_score": 70,
       "investigation_status": "significant_findings",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Salidroside/Rosavin — Cochrane review on adaptogens; not FDA approved as drug",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "7 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-025",
@@ -969,11 +1007,13 @@
         "summary": "Chaya has exceptional nutritional density — higher protein, vitamin C, calcium, and iron than most commonly consumed vegetables. Studies show hypoglycemic effects in diabetic animal models and some human pilot studies. The raw toxicity / cooked safety distinction is fully validated: raw leaves contain linamarin which releases HCN; cooking for 5+ minutes deactivates it.",
         "significance": "The Maya preparation protocol for chaya — cook to neutralise toxins — is precise ethnopharmacological knowledge that modern chemistry confirms completely. The anti-diabetic potential is particularly noteworthy given that modern Mexican and Central American populations have very high diabetes rates and chaya remains a staple traditional food."
       },
-      "priority_score": 7,
+      "priority_score": 30,
       "investigation_status": "significant_findings",
       "evidence_tier": 4,
       "evidence_badge": "CLINICAL RESEARCH",
-      "evidence_authority": "Isothiocyanates — research stage; no specific Cochrane or FDA approval for Chaya"
+      "evidence_authority": "Isothiocyanates — research stage; no specific Cochrane or FDA approval for Chaya",
+      "priority_light": "amber",
+      "priority_reason": "3 traditions agree · moderate disease burden · active compounds identified but uninvestigated clinically"
     },
     {
       "id": "MMA-026",
@@ -1009,13 +1049,15 @@
         "summary": "DOH-approved for cough and asthma. Multiple Philippine clinical trials showing bronchodilator and antitussive activity. Casticin confirmed as anti-inflammatory compound. Anti-histamine activity demonstrated in in vitro studies. Now commercially available as standardised tablet formulation (Ascof) in Philippine pharmacies.",
         "significance": "One of the most completely validated traditional-to-pharmaceutical transitions in Southeast Asian medicine — government-mandated clinical trials, standardised formulation, commercial availability, and continued use by practitioners at all levels of the Philippine healthcare system simultaneously."
       },
-      "priority_score": 8,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Lagundi — FDA IND studies; Philippine FDA approved; WHO included in traditional medicine guidelines",
       "evidence_url": "https://www.fda.gov.ph",
-      "evidence_note": "Philippine DOH approved OTC"
+      "evidence_note": "Philippine DOH approved OTC",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-027",
@@ -1049,12 +1091,14 @@
         "summary": "Harrison et al. (2015, Scientific Reports) demonstrated 90% MRSA kill rate. Each ingredient tested separately showed minimal activity; the full combination in copper vessel was required. Active against Staphylococcus aureus biofilms — particularly relevant as biofilm-associated MRSA is resistant to most modern antibiotics. Mechanism: copper ions + allicin disrupt bacterial membrane; bile acids increase membrane permeability; combined action penetrates biofilm.",
         "significance": "One of the most dramatic ethnopharmacological validations of the 21st century: a 1,100-year-old Anglo-Saxon recipe for eye infections was tested against MRSA — a 21st century superbug that didn't exist in 900 CE — and outperformed many modern antibiotics. The copper vessel detail (often dismissed by earlier scholars as ritual/symbolic) proved pharmacologically essential, validating Bald's Leechbook as a genuine empirical medical text rather than superstition. The same copper oligodynamic mechanism was independently discovered by Egyptian medicine ~2,500 years earlier."
       },
-      "priority_score": 10,
+      "priority_score": 48,
       "investigation_status": "breakthrough_validated",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Allicin — Cochrane review on garlic for cardiovascular; Bald's eye remedy validated UCL 2015",
-      "evidence_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD006087.pub4"
+      "evidence_url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD006087.pub4",
+      "priority_light": "green",
+      "priority_reason": "6 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-028",
@@ -1103,12 +1147,14 @@
         "summary": "Multiple RCTs (including a 2013 meta-analysis in Human Psychopharmacology) showing saffron extract comparable to fluoxetine (Prozac) and imipramine for mild-to-moderate depression. Mechanism: serotonin reuptake inhibition and monoamine activity. Also shows promise for Alzheimer's (improving cognitive scores in trials). Growing body of evidence for cardiovascular protection via crocin's antioxidant activity.",
         "significance": "CONVERGENCE: Persian Zoroastrian, Islamic, Ayurvedic, and Greek/Roman traditions all independently document saffron for depression/low spirits. Modern RCTs validate the antidepressant effect with a mechanism (serotonin reuptake) that makes the convergent folk observation pharmacologically comprehensible. With multiple RCTs now published, saffron represents one of the best-evidenced traditional antidepressants in the world — almost entirely unknown to mainstream psychiatry."
       },
-      "priority_score": 9,
+      "priority_score": 90,
       "investigation_status": "breakthrough_validated",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Crocin/Safranal — Cochrane review on saffron for depression 2019; multiple RCTs",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "9 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-029",
@@ -1142,12 +1188,14 @@
         "summary": "Tea tree oil is extensively validated as a topical antimicrobial — effective against S. aureus (including some MRSA strains), Candida, herpes simplex, and numerous other pathogens. European Pharmacopoeia standard exists. Used in licensed wound care products, acne preparations, and nail fungal treatments globally.",
         "significance": "Represents both the extraordinary pharmacological richness of Aboriginal plant knowledge and the complex ethics of indigenous intellectual property: a traditional remedy now constituting a global industry worth hundreds of millions of dollars annually, with essentially no benefit flowing to the Bundjalung community who identified and used the plant for millennia."
       },
-      "priority_score": 7,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Terpinen-4-ol — FDA approved in OTC antiseptic products; TGA (Australia) approved",
-      "evidence_url": "https://www.accessdata.fda.gov"
+      "evidence_url": "https://www.accessdata.fda.gov",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-030",
@@ -1184,12 +1232,14 @@
         "summary": "Rhubarb root is official in multiple modern pharmacopeias. Sennosides A and B are active cathartic compounds also found in senna — both now pharmaceutical. Rhubarb compounds show hepatoprotective, antibacterial, and anti-inflammatory activity in research. Used in Japanese intensive care for preventing bacterial translocation in ICU patients.",
         "significance": "Kampo's cooking-time-dependent effect distinction — cathartic if undercooked, astringent if fully cooked — is one of the most precise empirical pharmacological observations in traditional medicine, predating understanding of anthraquinone heat lability by centuries."
       },
-      "priority_score": 7,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Sennosides — FDA approved OTC laxative (senna/rhubarb); in USP",
-      "evidence_url": "https://www.accessdata.fda.gov"
+      "evidence_url": "https://www.accessdata.fda.gov",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-031",
@@ -1227,12 +1277,14 @@
         "summary": "Saikosaponins have documented anti-inflammatory activity via glucocorticoid receptor modulation, hepatoprotective effects, and antiviral activity against HBV. Sho-saiko-to: multiple Japanese RCTs for chronic hepatitis B/C showing significant reduction in liver fibrosis markers. Also emerging research for depression via HPA axis modulation.",
         "significance": "Represents the most rigorously studied Kampo formula with both positive clinical evidence (hepatoprotection) and a critical safety signal (interferon interaction) — making it a model for how traditional medicine evidence should be evaluated: both efficacy and safety, with pharmacovigilance taken seriously."
       },
-      "priority_score": 8,
+      "priority_score": 63,
       "investigation_status": "significant_findings",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Saikosaponins — Cochrane/systematic reviews on Sho-saiko-to for hepatitis",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "7 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-032",
@@ -1276,12 +1328,14 @@
         "summary": "Chebulagic acid and chebulinic acid show documented antiviral activity against HSV-1, HSV-2, and HIV integrase inhibition in vitro. Antimicrobial against MRSA. Strong antioxidant. Triphala (three myrobalans) has clinical evidence for constipation, weight loss, and dental health (mouthwash trials).",
         "significance": "CONVERGENCE: Tibetan and Ayurvedic traditions independently developed the same Three Fruits formula (Triphala / Arura-Baru-Kyuru) using the same primary ingredient — Terminalia chebula — for overlapping indications. This convergence between two neighboring high-altitude civilizations is strong, and connects further to Australian Indigenous use of Terminalia ferdinandiana — three independent traditions identifying the Terminalia genus as uniquely medicinally important."
       },
-      "priority_score": 8,
+      "priority_score": 72,
       "investigation_status": "significant_findings",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Chebulagic acid — Cochrane on Triphala for constipation; dental health RCTs",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "8 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-033",
@@ -1329,11 +1383,13 @@
         "summary": "Burseraceae resins broadly show antimicrobial, anti-inflammatory activity. Incensole acetate (from frankincense/Boswellia) shows neuroprotective and anxiolytic effects in animal models — may explain ritual calming effects. Boswellic acids (related species) have clinical evidence for osteoarthritis and inflammatory bowel disease.",
         "significance": "MAXIMUM MESOAMERICAN CONVERGENCE: Maya, Aztec (Badianus + Florentine), and Andean (Cobo) traditions all independently documented Burseraceae resins for wound infection and respiratory use. This represents the strongest within-Americas convergence signal in the archive. The connection to Greek/Roman frankincense (Boswellia, same family) extends the signal globally."
       },
-      "priority_score": 9,
+      "priority_score": 81,
       "investigation_status": "moderate_validation",
       "evidence_tier": 4,
       "evidence_badge": "CLINICAL RESEARCH",
-      "evidence_authority": "Boswellic acids — systematic reviews; Boswellia approved in EU as orphan drug for brain tumors"
+      "evidence_authority": "Boswellic acids — systematic reviews; Boswellia approved in EU as orphan drug for brain tumors",
+      "priority_light": "green",
+      "priority_reason": "9 independent civilisations independently documented this · condition burden is critical · compound identified but no clinical trials"
     },
     {
       "id": "MMA-034",
@@ -1378,11 +1434,13 @@
         "summary": "Limited modern research. Rosmarinic acid (anti-inflammatory, antioxidant) is shared with rosemary, sage, and other Lamiaceae — likely responsible for some traditional effects. Stachydrine shows cardioprotective activity in animal models. Traditional use for anxiety and sleep disturbance not well studied despite historical prominence.",
         "significance": "The convergence between Anglo-Saxon and Roman documentation of betony as a multi-purpose medicine — independently identified by two traditions for overlapping conditions — warrants more systematic investigation than it has received. The gap between its historical prominence and modern research attention makes it a priority research candidate."
       },
-      "priority_score": 6,
+      "priority_score": 54,
       "investigation_status": "preliminary",
       "evidence_tier": 4,
       "evidence_badge": "CLINICAL RESEARCH",
-      "evidence_authority": "Stachydrine — research stage; limited clinical data"
+      "evidence_authority": "Stachydrine — research stage; limited clinical data",
+      "priority_light": "green",
+      "priority_reason": "6 independent civilisations independently documented this · condition burden is critical · compound identified but no clinical trials"
     },
     {
       "id": "MMA-035",
@@ -1427,12 +1485,14 @@
         "summary": "Aucubin shows anti-inflammatory activity. Allantoin promotes wound healing (also found in comfrey). Mucilage soothes mucous membranes — validates respiratory use. Multiple studies showing plantain leaf extract reduces wound healing time. Antimicrobial activity against common pathogens.",
         "significance": "GLOBAL CONVERGENCE: Plantago major spread worldwide with European colonization — Native American peoples called it 'white man's footprint' because it appeared wherever Europeans settled, and then adopted it into their own medicine for identical uses (wound healing, cough). This makes Plantago a unique case: cross-tradition convergence happened in real time and was historically documented, creating a natural experiment confirming the wound-healing effect across independent observers."
       },
-      "priority_score": 8,
+      "priority_score": 72,
       "investigation_status": "moderate_validation",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Aucubin/Allantoin — Cochrane on Plantago for respiratory; wound healing RCTs",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "9 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-036",
@@ -1467,12 +1527,14 @@
         "summary": "If Ephedra: ephedrine is pharmacologically confirmed as a CNS stimulant and bronchodilator — consistent with documented haoma effects of endurance and clarity. If Peganum harmala: MAO inhibition confirmed, with documented psychoactive effects. Both interpretations are pharmacologically consistent with ancient texts. Modern Ephedra still used in Kampo (maōu) and Chinese medicine.",
         "significance": "Haoma represents the oldest documented ritual pharmacological plant in the world — the Avestan hymns date to at least 1200 BCE, potentially much older. The pharmacological sophistication implied by haoma's documented effects (regardless of exact species identification) represents knowledge accumulated over millennia of empirical observation at the dawn of recorded civilization."
       },
-      "priority_score": 8,
+      "priority_score": 0,
       "investigation_status": "significant_findings",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Ephedrine — FDA approved (same compound as MMA-022)",
-      "evidence_url": "https://www.accessdata.fda.gov"
+      "evidence_url": "https://www.accessdata.fda.gov",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-037",
@@ -1517,13 +1579,15 @@
         "summary": "Multiple clinical trials including Philippine PIMS trial showing HbA1c reduction. Polypeptide-p has structural similarity to insulin. Charantin shown to stimulate insulin secretion. WHO traditional medicine guidelines cite ampalaya as having promising anti-diabetic evidence. Multiple meta-analyses: consistent blood glucose lowering effect, though large RCTs needed.",
         "significance": "CONVERGENCE: Philippine, Chinese, and Ayurvedic traditions independently documented bitter melon for blood sugar regulation — a triple convergence supporting a genuine pharmacological effect. The Philippine DOH formal registration for Type 2 diabetes represents one of the world's first government-backed traditional medicine approvals for a metabolic disease."
       },
-      "priority_score": 9,
+      "priority_score": 90,
       "investigation_status": "significant_findings",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Charantin/Polypeptide-p — multiple RCTs; systematic review on bitter melon for T2DM",
       "evidence_url": "https://www.cochranelibrary.com",
-      "evidence_note": "WHO traditional medicine strategy cites"
+      "evidence_note": "WHO traditional medicine strategy cites",
+      "priority_light": "green",
+      "priority_reason": "9 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-038",
@@ -1562,12 +1626,14 @@
         "summary": "Same alkaloids as Datura (toloache) — WHO Essential Medicines. The ancient surgical anesthetic application is pharmacologically valid: scopolamine causes amnesia and sedation; hyoscyamine causes analgesia.",
         "significance": "CONVERGENCE: Greek/Roman, Islamic, and Anglo-Saxon traditions all document mandrake for surgical anesthesia and pain — same plant, same alkaloids as the Aztec toloache documented in the Badianus Manuscript. Maximum cross-tradition convergence for the surgical anesthesia indication."
       },
-      "priority_score": 9,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Scopolamine — FDA approved (same as MMA-009); atropine WHO Essential Medicine",
-      "evidence_url": "https://www.accessdata.fda.gov"
+      "evidence_url": "https://www.accessdata.fda.gov",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-039",
@@ -1608,12 +1674,14 @@
         "summary": "Multiple RCTs for anxiety (apigenin — GABA-A receptor modulation), infant colic, and inflammatory conditions. Alpha-bisabolol: wound healing and anti-inflammatory. Chamomile tea: most widely consumed herbal tea globally.",
         "significance": "CONVERGENCE: Greek/Roman, Egyptian, Islamic, and Anglo-Saxon traditions all document chamomile for digestive pain and inflammation — one of the most globally convergent plants for these indications after willow bark and honey."
       },
-      "priority_score": 8,
+      "priority_score": 81,
       "investigation_status": "significant_findings",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Apigenin — Cochrane on chamomile for anxiety, colic, GI; multiple RCTs",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "9 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-040",
@@ -1653,13 +1721,15 @@
         "summary": "Castor oil is still in modern pharmacopeias as an official laxative. Ricinoleic acid: prostaglandin-like activity stimulating intestinal motility. Topical use validated for wound healing and skin conditions. Ricin (separate from the oil) — highly toxic, subject of bioterrorism concerns; never present in properly extracted oil.",
         "significance": "CONVERGENCE: Egyptian, Greek/Roman, and Ayurvedic traditions all independently document castor for constipation. 3,500 years of documented laxative use — one of the longest unbroken therapeutic traditions in the archive."
       },
-      "priority_score": 8,
+      "priority_score": 0,
       "investigation_status": "validated",
       "evidence_tier": 1,
       "evidence_badge": "FDA APPROVED",
       "evidence_authority": "Ricinoleic acid / Castor oil — FDA approved OTC laxative; in USP since 1820",
       "evidence_url": "https://www.accessdata.fda.gov",
-      "evidence_note": "3,500 years continuous documented use"
+      "evidence_note": "3,500 years continuous documented use",
+      "priority_light": null,
+      "priority_reason": null
     },
     {
       "id": "MMA-041",
@@ -1693,11 +1763,13 @@
         "summary": "Kolaviron: documented hepatoprotective activity; anti-inflammatory; antioxidant. Clinical study (Annals of Thoracic Medicine, 2009): Garcinia kola extract improved lung function in respiratory patients. HIV: components studied for anti-HIV activity in vitro. One of the most pharmacologically promising underdeveloped West African plants.",
         "significance": "Traditional use for respiratory and liver conditions validated by documented mechanisms. The hepatoprotective and bronchodilator activities offer pathways to formal clinical development for conditions with significant global disease burden."
       },
-      "priority_score": 8,
+      "priority_score": 27,
       "investigation_status": "significant_findings",
       "evidence_tier": 4,
       "evidence_badge": "CLINICAL RESEARCH",
-      "evidence_authority": "Kolaviron — Phase 1/2 research; not yet approved"
+      "evidence_authority": "Kolaviron — Phase 1/2 research; not yet approved",
+      "priority_light": "amber",
+      "priority_reason": "3 traditions agree · moderate disease burden · active compounds identified but uninvestigated clinically"
     },
     {
       "id": "MMA-042",
@@ -1736,12 +1808,14 @@
         "summary": "Multiple trials for blood sugar regulation in Type 2 diabetes — positive results. Cognitive function in healthy adults — modest positive results. Immune modulation documented. American ginseng higher in Rb1 (sedating, anti-stress) vs Asian ginseng higher in Rg1 (stimulating).",
         "significance": "CONVERGENCE: Panax ginseng documented in Chinese and Kampo; Panax quinquefolius independently documented by multiple North American nations — same genus independently identified on opposite sides of the Pacific with similar medicinal properties. One of the clearest examples of convergent pharmacological discovery across civilisations."
       },
-      "priority_score": 8,
+      "priority_score": 80,
       "investigation_status": "significant_findings",
       "evidence_tier": 3,
       "evidence_badge": "COCHRANE REVIEWED",
       "evidence_authority": "Ginsenosides — Cochrane on ginseng for T2DM, cognition; multiple RCTs",
-      "evidence_url": "https://www.cochranelibrary.com"
+      "evidence_url": "https://www.cochranelibrary.com",
+      "priority_light": "green",
+      "priority_reason": "8 independent traditions agree · Cochrane reviewed but no drug approval · condition affects hundreds of millions"
     },
     {
       "id": "MMA-043",
@@ -1775,11 +1849,13 @@
         "summary": "5-MeO-DMT is among the most potent known serotonin 5-HT2A agonists. Active clinical research for treatment-resistant depression and PTSD (related to psilocybin and ayahuasca trials). Mechanism: profound short-duration serotonin agonism. Unlike ayahuasca, active without MAO inhibitor via insufflation route.",
         "significance": "The 14-nation independent documentation of Virola across geographically separated Amazonian peoples represents strong internal convergence. The same plant, same preparation method, same application (healing trance) — discovered independently across the Amazon basin. The 5-HT2A agonist activity now being investigated for psychiatric medicine follows the same pattern as psilocybin and ayahuasca."
       },
-      "priority_score": 7,
+      "priority_score": 36,
       "investigation_status": "preliminary",
       "evidence_tier": 4,
       "evidence_badge": "BREAKTHROUGH RESEARCH",
-      "evidence_authority": "5-MeO-DMT — Phase 1 trials; not approved"
+      "evidence_authority": "5-MeO-DMT — Phase 1 trials; not approved",
+      "priority_light": "amber",
+      "priority_reason": "4 traditions agree · moderate disease burden · active compounds identified but uninvestigated clinically"
     },
     {
       "id": "MMA-044",
@@ -1815,11 +1891,13 @@
         "summary": "Pupunha/peach palm has the highest carotenoid content of any commercially significant fruit — documented higher than carrot. Complete amino acid profile. Documented nutritional intervention in vitamin A deficiency programs in Brazil and Colombia. Food-medicine continuum: the Andean and Amazonian classification of chonta as simultaneously a staple food and medicine for weakness reflects the nutritional reality of its exceptional macro and micronutrient profile.",
         "significance": "Represents the food-medicine continuum documented across multiple traditions — the chonta's documented use for weakness and convalescence is nutritionally validated by its exceptional carotenoid and protein content."
       },
-      "priority_score": 5,
+      "priority_score": 35,
       "investigation_status": "moderate_validation",
       "evidence_tier": 4,
       "evidence_badge": "CLINICAL RESEARCH",
-      "evidence_authority": "Carotenoids — nutritional intervention evidence; no specific drug approval"
+      "evidence_authority": "Carotenoids — nutritional intervention evidence; no specific drug approval",
+      "priority_light": "amber",
+      "priority_reason": "5 traditions agree · moderate disease burden · active compounds identified but uninvestigated clinically"
     }
   ],
   "metadata": {
