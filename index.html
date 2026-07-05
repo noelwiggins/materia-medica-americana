@@ -2180,28 +2180,65 @@
   <!-- DATABASE TAB -->
   <section class="tab-panel" id="tab-database">
     <div class="section-header">
-      <div class="section-eyebrow">Integrated Plant Database · All Three Sources</div>
+      <div class="section-eyebrow">589 Plants · 18 Traditions · 4,000 Years</div>
       <h2 class="section-title">Plant Database</h2>
-      <p class="section-desc">Every plant documented across Cobo, Badianus, and the Florentine Codex, with modern pharmacological cross-referencing.</p>
+      <p class="section-desc">Every plant documented across 18 world traditions — from fully curated entries with cross-tradition analysis and modern research, to corpus stubs awaiting investigation. The most comprehensive traditional medicine plant database ever assembled.</p>
     </div>
 
-    <div class="search-bar">
-      <input class="search-input" type="text" id="plant-search" placeholder="Search by plant name, condition, compound, or tradition..." oninput="filterPlants()">
-      <button class="filter-btn active" onclick="filterByStatus('all', this)">All Plants</button>
-      <button class="filter-btn" onclick="filterByStatus('critical_gap', this)">⚠ Research Gaps</button>
-      <button class="filter-btn" onclick="filterByStatus('breakthrough_validated', this)">★ Breakthroughs</button>
-    </div>
-
-    <div class="traditions-picker" id="tradition-picker">
-      <span class="traditions-picker-label">Filter by tradition — select one or more</span>
-      <div class="traditions-grid" id="tradition-chips">
-        <!-- populated by JS -->
+    <!-- Stats bar -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.6rem;margin-bottom:1.5rem;">
+      <div style="background:var(--ink);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('all',this);document.getElementById('db-view-toggle').value='all';renderPlants()">
+        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--gold)">589</div>
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(196,168,130,0.6)">Total Plants</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('curated',this);document.getElementById('db-view-toggle').value='curated';renderPlants()">
+        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--green)">39</div>
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Fully Curated</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('multi',this);document.getElementById('db-view-toggle').value='multi';renderPlants()">
+        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--brown)">35</div>
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Multi-Tradition Stubs</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('stub',this);document.getElementById('db-view-toggle').value='stub';renderPlants()">
+        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--muted)">515</div>
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Corpus Stubs</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('fda',this);document.getElementById('db-view-toggle').value='fda';renderPlants()">
+        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#1B5E20">16</div>
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">FDA Approved</div>
+      </div>
+      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('priority',this);document.getElementById('db-view-toggle').value='priority';renderPlants()">
+        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#2E7D32;display:flex;align-items:center;justify-content:center;gap:0.4rem"><span class="priority-light green" style="width:10px;height:10px"></span>17</div>
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Priority Research</div>
       </div>
     </div>
 
-    <div class="plant-grid" id="plant-grid">
-      <!-- Populated by JavaScript -->
+    <!-- Search and filters -->
+    <div class="search-bar">
+      <input class="search-input" type="text" id="plant-search"
+        placeholder="Search plant name, condition, compound, tradition, botanical name..."
+        oninput="renderPlants()">
+      <select id="db-view-toggle" class="query-select" style="background:white;color:var(--ink);border-color:var(--border)" onchange="renderPlants()">
+        <option value="all">All Plants</option>
+        <option value="curated">✓ Curated 39</option>
+        <option value="multi">Multi-Tradition Stubs</option>
+        <option value="stub">All Stubs</option>
+        <option value="fda">FDA Approved</option>
+        <option value="who">WHO Essential</option>
+        <option value="priority">● Priority Research</option>
+        <option value="cochrane">Cochrane Reviewed</option>
+      </select>
     </div>
+
+    <div class="traditions-picker" id="tradition-picker">
+      <span class="traditions-picker-label">Filter by tradition</span>
+      <div class="traditions-grid" id="tradition-chips"></div>
+    </div>
+
+    <!-- Results count -->
+    <div style="font-family:var(--font-code);font-size:0.65rem;color:var(--muted);margin-bottom:1rem" id="db-count"></div>
+
+    <div class="plant-grid" id="plant-grid"></div>
   </section>
 
   <!-- TRADITIONS TAB -->
@@ -2597,43 +2634,158 @@ function toggleTraditionFilter(id) {
 
 function renderPlants() {
   const grid = document.getElementById('plant-grid');
+  const countEl = document.getElementById('db-count');
   if (!grid) return;
   const query = (document.getElementById('plant-search')?.value||'').toLowerCase();
+  const view = document.getElementById('db-view-toggle')?.value || 'all';
+
   const filtered = plantData.filter(p => {
-    const matchT = activeTraditions.size===0 || p.traditions.some(t => activeTraditions.has(t));
-    const matchS = !activeStatusFilter || p.investigation_status===activeStatusFilter;
-    const matchQ = !query ||
-      p.common_name.toLowerCase().includes(query) ||
-      (p.modern_botanical||'').toLowerCase().includes(query) ||
-      (p.therapeutic_areas||[]).some(t=>t.includes(query)) ||
-      (p.modern_research?.key_compound||'').toLowerCase().includes(query) ||
-      p.traditions.some(t=>t.includes(query)) ||
-      Object.values(p.tradition_names||{}).some(n=>n.toLowerCase().includes(query));
-    return matchT && matchS && matchQ;
+    // Tradition filter
+    if (activeTraditions.size > 0 && !p.traditions.some(t => activeTraditions.has(t))) return false;
+    // View filter
+    if (view === 'curated' && p.stub) return false;
+    if (view === 'stub' && !p.stub) return false;
+    if (view === 'multi' && (!p.stub || (p.traditions||[]).length < 2)) return false;
+    if (view === 'fda' && p.evidence_tier !== 1) return false;
+    if (view === 'who' && p.evidence_tier !== 2) return false;
+    if (view === 'cochrane' && p.evidence_tier !== 3) return false;
+    if (view === 'priority' && p.priority_light !== 'green') return false;
+    // Search
+    if (query) {
+      const searchable = [
+        p.common_name,
+        p.modern_botanical||'',
+        ...(p.therapeutic_areas||[]),
+        p.modern_research?.key_compound||'',
+        p.modern_research?.summary||'',
+        ...p.traditions,
+        ...Object.values(p.tradition_names||{}),
+        ...Object.values(p.entries||{}).map(e=>`${e.condition||''} ${e.translation||''}`),
+        p.stub_note||'',
+      ].join(' ').toLowerCase();
+      if (!searchable.includes(query)) return false;
+    }
+    return true;
+  });
+
+  if (countEl) {
+    const stubCount = filtered.filter(p=>p.stub).length;
+    const curatedCount = filtered.filter(p=>!p.stub).length;
+    countEl.textContent = `${filtered.length} plants — ${curatedCount} curated · ${stubCount} stubs`;
+  }
+
+  if (!filtered.length) {
+    grid.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">No plants match the current filters.</p>';
+    return;
+  }
+
+  // Sort: curated first (by convergence), then stubs (by tradition count then mentions)
+  const sorted = [...filtered].sort((a,b) => {
+    if (!a.stub && b.stub) return -1;
+    if (a.stub && !b.stub) return 1;
+    if (!a.stub && !b.stub) return b.convergence_score - a.convergence_score;
+    const aTrad = (a.traditions||[]).length, bTrad = (b.traditions||[]).length;
+    if (aTrad !== bTrad) return bTrad - aTrad;
+    return (b.mentions_in_corpus||0) - (a.mentions_in_corpus||0);
   });
 
   const statusMap = {
-    'validated':['status-validated','✓ Validated'],'fully_validated':['status-validated','✓ Fully Validated'],
-    'breakthrough_validated':['status-breakthrough','★ Breakthrough'],'validated_essential_medicine':['status-validated','✓ WHO Essential Medicine'],
+    'validated':['status-validated','✓ Validated'],
+    'fully_validated':['status-validated','✓ Fully Validated'],
+    'breakthrough_validated':['status-breakthrough','★ Breakthrough'],
+    'validated_essential_medicine':['status-validated','✓ WHO Essential Medicine'],
     'validated_renewed_interest':['status-validated','✓ Validated · Active Research'],
-    'needs_investigation':['status-gap','⚠ Needs Investigation'],'critical_gap':['status-gap','⚠ Critical Gap'],
-    'preliminary':['status-preliminary','◐ Preliminary'],'moderate_validation':['status-moderate','◑ Moderate Evidence'],
-    'significant_findings':['status-breakthrough','★ Significant Findings'],'breakthrough_research':['status-breakthrough','★ Breakthrough Research'],
+    'needs_investigation':['status-gap','⚠ Needs Investigation'],
+    'critical_gap':['status-gap','⚠ Critical Gap'],
+    'preliminary':['status-preliminary','◐ Preliminary'],
+    'moderate_validation':['status-moderate','◑ Moderate Evidence'],
+    'significant_findings':['status-breakthrough','★ Significant Findings'],
+    'breakthrough_research':['status-breakthrough','★ Breakthrough Research'],
+    'corpus_mention':['status-preliminary','◌ Corpus Mention'],
   };
 
-  grid.innerHTML = filtered.map(p => {
+  grid.innerHTML = sorted.map(p => {
     const conv = p.convergence_score;
     const convClass = conv>=8?'convergence-high':conv>=5?'convergence-med':'convergence-low';
     const [statusClass, statusLabel] = statusMap[p.investigation_status]||['status-preliminary','◐ Unknown'];
-    const tradChips = (p.traditions||[]).map(tid=>{
-      const t=traditionData.find(x=>x.id===tid);
-      const name=p.tradition_names?.[tid]||tid;
-      return t?`<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${name}</span>`:`<span class="tag">${name}</span>`;
+    const completion = p.completion || (p.stub ? 15 : 100);
+    const isStub = !!p.stub;
+
+    // Tradition chips
+    const tradChips = (p.traditions||[]).map(tid => {
+      const t = traditionData.find(x=>x.id===tid);
+      return t ? `<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${t.name}</span>`
+               : `<span class="tag">${tid}</span>`;
     }).join('');
-    let entries='';
-    for(const [tid,entry] of Object.entries(p.entries||{})){
-      const t=traditionData.find(x=>x.id===tid);
-      entries+=`<div class="source-section">
+
+    // Completion bar
+    const barColor = completion === 100 ? 'var(--gold)' : completion > 50 ? 'var(--brown)' : '#ccc';
+    const completionBar = `<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.3rem">
+      <div style="flex:1;height:3px;background:#eee;border-radius:2px">
+        <div style="width:${completion}%;height:100%;background:${barColor};border-radius:2px"></div>
+      </div>
+      <span style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);white-space:nowrap">
+        ${completion===100?'Fully curated':completion>50?'Partially curated':'Corpus stub'}
+      </span>
+    </div>`;
+
+    // Priority + evidence badges
+    const priorityBadge = buildPriorityBadge(p);
+    const evidenceBadge = buildEvidenceBadge(p);
+
+    if (isStub) {
+      // Stub card — compact, honest about what's missing
+      const mentions = p.mentions_in_corpus || 0;
+      const segs = (p.corpus_segments || []).slice(0,2);
+      const segLinks = segs.map(s =>
+        `<div style="font-size:0.78rem;color:var(--muted);line-height:1.5;margin-top:0.3rem">
+          <span style="color:${getTradColor(s.tradition)}">${getTradIcon(s.tradition)}</span>
+          ${s.title || s.label}
+        </div>`
+      ).join('');
+
+      return `<div class="plant-card" style="opacity:0.88">
+        <div class="plant-card-header" onclick="toggleCard(this)">
+          <div class="plant-name-block">
+            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.2rem">
+              <span style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);background:#f5f5f5;padding:0.1rem 0.4rem">STUB · ${p.id}</span>
+              ${priorityBadge}
+            </div>
+            <h3 style="font-size:0.95rem">${p.common_name}</h3>
+            <div class="botanical">${p.modern_botanical || 'Botanical identification pending'}</div>
+            <div class="plant-tags" style="margin-top:0.4rem">${tradChips}</div>
+            ${completionBar}
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem">
+            <div style="text-align:center">
+              <div style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:${conv>=3?'var(--brown)':'var(--muted)'}">${conv}</div>
+              <div style="font-family:var(--font-code);font-size:0.5rem;text-transform:uppercase;color:var(--muted)">Traditions</div>
+            </div>
+            <span class="chevron" style="color:var(--muted)">▾</span>
+          </div>
+        </div>
+        <div class="plant-card-body">
+          <div style="padding:1rem 1.5rem;background:#fafafa;border-bottom:1px solid var(--border)">
+            <div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem">
+              Mentioned ${mentions}x in corpus · ${(p.traditions||[]).length} tradition(s) · Awaiting full curation
+            </div>
+            ${segLinks}
+            <div style="margin-top:0.8rem;font-size:0.82rem;color:var(--muted);font-style:italic">${p.stub_note||''}</div>
+          </div>
+          <div style="padding:0.8rem 1.5rem;background:var(--vellum)">
+            <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
+              ${p.id} · AI-extracted from corpus · not peer reviewed
+            </span>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    // Full curated card
+    let entries = '';
+    for (const [tid, entry] of Object.entries(p.entries||{})) {
+      const t = traditionData.find(x=>x.id===tid);
+      entries += `<div class="source-section">
         <span class="source-label" style="background:${t?.color||'#1C1A14'}">${t?.icon||''} ${t?.name||tid}</span>
         ${entry.source_text?`<div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);margin-bottom:0.8rem">${entry.source_text}</div>`:''}
         <div class="parallel-text">
@@ -2643,21 +2795,30 @@ function renderPlants() {
         <div class="plant-meta">
           ${entry.condition?`<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>`:''}
           ${entry.preparation?`<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>`:''}
-          ${entry.illustration_url?`<div class="meta-item"><label>Illustration</label><a class="external-link" href="${entry.illustration_url}" target="_blank">↗ View</a></div>`:''}
-          ${entry.getty_url?`<div class="meta-item"><label>Getty Codex</label><a class="external-link" href="${entry.getty_url}" target="_blank">↗ View</a></div>`:''}
         </div>
         ${entry.notes?`<div class="notes-block">${entry.notes}</div>`:''}
       </div>`;
     }
+
     return `<div class="plant-card">
       <div class="plant-card-header" onclick="toggleCard(this)">
         <div class="plant-name-block">
+          <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.3rem">
+            ${evidenceBadge}${priorityBadge}
+          </div>
           <h3>${p.common_name}</h3>
           <div class="botanical">${p.modern_botanical||'Identification pending'}</div>
-          <div class="plant-tags" style="margin-top:0.5rem">${tradChips}${(p.therapeutic_areas||[]).slice(0,3).map(t=>`<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}</div>
+          <div class="plant-tags" style="margin-top:0.5rem">
+            ${tradChips}
+            ${(p.therapeutic_areas||[]).slice(0,3).map(t=>`<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}
+          </div>
+          ${completionBar}
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem">
-          <div class="convergence-badge"><span class="convergence-num ${convClass}">${conv}</span><span class="convergence-label">Convergence</span></div>
+          <div class="convergence-badge">
+            <span class="convergence-num ${convClass}">${conv}</span>
+            <span class="convergence-label">Convergence</span>
+          </div>
           <span class="chevron" style="color:var(--muted)">▾</span>
         </div>
       </div>
@@ -2666,17 +2827,18 @@ function renderPlants() {
         ${p.modern_research?`<div class="source-section">
           <span class="source-label modern">Modern Pharmacology</span>
           <span class="research-status ${statusClass}">${statusLabel}</span>
-          <div class="plant-meta" style="margin-bottom:0.8rem"><div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div></div>
+          <div class="plant-meta" style="margin-bottom:0.8rem">
+            <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
+          </div>
           <p style="font-size:0.9rem;line-height:1.7;color:var(--ink);max-width:70ch">${p.modern_research.summary}</p>
           <div class="notes-block" style="margin-top:0.8rem">${p.modern_research.significance}</div>
         </div>`:''}
-        <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border)">
-          <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''}</span>
+        <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
+          <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Fully curated</span>
         </div>
       </div>
     </div>`;
   }).join('');
-  if (!filtered.length) grid.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">No plants match the current filters.</p>';
 }
 
 function toggleCard(h) {
@@ -2685,9 +2847,8 @@ function toggleCard(h) {
 }
 function filterPlants() { renderPlants(); }
 function filterByStatus(status, btn) {
-  activeStatusFilter=status==='all'?null:status;
-  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active'); renderPlants();
+  activeStatusFilter = status==='all' ? null : status;
+  renderPlants();
 }
 
 // ── Longevity tab ────────────────────────────────────────
