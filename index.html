@@ -1451,6 +1451,149 @@
   }
   .remedy-expand-btn:hover { text-decoration: underline; }
 
+  /* ── Share button + modal ─────────────────────── */
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: white;
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .share-btn:hover { color: var(--green); border-color: var(--green); }
+  .share-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+  .share-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(28,26,20,0.55);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+  }
+  .share-modal-overlay.open { display: flex; }
+  .share-modal {
+    background: var(--vellum);
+    border: 1px solid var(--gold);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    max-width: 460px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .share-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .share-modal-title {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    color: var(--ink);
+  }
+  .share-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--muted);
+    cursor: pointer;
+    line-height: 1;
+  }
+  .share-modal-body { padding: 1.2rem; }
+  .share-preview-img {
+    width: 100%;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    background: var(--vellum-dark);
+    margin-bottom: 1rem;
+  }
+  .share-native-btn {
+    width: 100%;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    background: var(--ink);
+    color: var(--vellum);
+    border: none;
+    padding: 0.8rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  .share-native-btn:hover { background: var(--green); }
+  .share-platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .share-platform-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    background: white;
+    border: 1px solid var(--border);
+    padding: 0.7rem 0.4rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--ink);
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .share-platform-btn:hover { border-color: var(--green); background: var(--vellum); }
+  .share-platform-btn svg { width: 20px; height: 20px; }
+  .share-link-row {
+    display: flex;
+    gap: 0.4rem;
+  }
+  .share-link-input {
+    flex: 1;
+    font-family: var(--font-code);
+    font-size: 0.68rem;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--muted);
+  }
+  .share-copy-btn, .share-download-btn {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border);
+    background: white;
+    color: var(--ink);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .share-copy-btn:hover, .share-download-btn:hover { border-color: var(--green); color: var(--green); }
+  .share-download-btn { width: 100%; margin-top: 0.6rem; }
+  .share-note {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border);
+  }
+
   /* Loading state */
   .search-loading {
     text-align: center;
@@ -1478,127 +1621,6 @@
   @media (prefers-reduced-motion: reduce) {
     .search-loading-spinner { animation: none; }
   }
-  /* ── Share buttons ──────────────────────────────── */
-  .share-bar {
-    display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;
-    padding: 0.9rem 1.2rem; background: var(--ink); border-top: 1px solid rgba(196,168,130,0.2);
-  }
-  .share-bar-label {
-    font-family: var(--font-code); font-size: 0.58rem; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--gold); margin-right: 0.2rem; flex-shrink: 0;
-  }
-  .share-btn {
-    display: inline-flex; align-items: center; gap: 0.35rem;
-    font-family: var(--font-code); font-size: 0.6rem; letter-spacing: 0.06em;
-    text-transform: uppercase; padding: 0.4rem 0.85rem;
-    border: 1px solid rgba(196,168,130,0.3); background: transparent; color: rgba(196,168,130,0.7);
-    cursor: pointer; text-decoration: none; transition: all 0.15s; border-radius: 2px; white-space: nowrap;
-  }
-  .share-btn:hover { border-color: var(--gold); color: var(--gold); }
-  .share-btn.share-whatsapp:hover { background: #25D366; border-color: #25D366; color: white; }
-  .share-btn.share-messages:hover { background: #34AADC; border-color: #34AADC; color: white; }
-  .share-btn.share-email:hover { background: #EA4335; border-color: #EA4335; color: white; }
-  .share-btn.share-x:hover { background: #fff; border-color: #fff; color: #000; }
-  .share-btn.share-copy.copied { background: var(--green); border-color: var(--green); color: white; }
-  .share-btn.share-native { background: var(--gold); color: var(--ink); border-color: var(--gold); font-weight: 600; }
-  .share-btn.share-native:hover { background: var(--gold-light); }
-  /* Mini share button on collapsed card header */
-  .share-mini {
-    display: inline-flex; align-items: center; gap: 0.25rem;
-    font-family: var(--font-code); font-size: 0.58rem; letter-spacing: 0.06em;
-    text-transform: uppercase; padding: 0.25rem 0.6rem;
-    border: 1px solid var(--border); background: white; color: var(--muted);
-    cursor: pointer; border-radius: 2px; transition: all 0.15s;
-    flex-shrink: 0; margin-left: 0.5rem;
-  }
-  .share-mini:hover { background: var(--ink); color: var(--gold); border-color: var(--ink); }
-  .share-context {
-    font-family: var(--font-code); font-size: 0.58rem; letter-spacing: 0.05em;
-    color: rgba(196,168,130,0.45); padding: 0 1.2rem 0.6rem; background: var(--ink);
-    font-style: italic; line-height: 1.4;
-  }
-  .deeplink-toast {
-    position: fixed; bottom: 2rem; left: 50%;
-    transform: translateX(-50%) translateY(4rem);
-    background: var(--ink); color: var(--gold);
-    font-family: var(--font-code); font-size: 0.72rem; letter-spacing: 0.08em;
-    padding: 0.7rem 1.4rem; border: 1px solid var(--gold);
-    z-index: 9999; transition: transform 0.3s ease; pointer-events: none; white-space: nowrap;
-  }
-  .deeplink-toast.show { transform: translateX(-50%) translateY(0); }
-
-  /* ── Evidence tier badges ───────────────────────── */
-  .evidence-badge {
-    display: inline-flex; align-items: center; gap: 0.3rem;
-    font-family: var(--font-code); font-size: 0.58rem; letter-spacing: 0.1em;
-    text-transform: uppercase; padding: 0.22rem 0.6rem;
-    border-radius: 2px; font-weight: 700; white-space: nowrap;
-    margin-bottom: 0.4rem; cursor: default;
-    border: 1.5px solid transparent;
-  }
-  .evidence-t1 {
-    background: #E8F5E9; color: #1B5E20; border-color: #2E7D32;
-  }
-  .evidence-t2 {
-    background: #E3F2FD; color: #0D47A1; border-color: #1565C0;
-  }
-  .evidence-t3 {
-    background: #FFF8E1; color: #E65100; border-color: #F57C00;
-  }
-  .evidence-t4 {
-    background: #F3E5F5; color: #4A148C; border-color: #6A1B9A;
-  }
-  .evidence-badge-link {
-    text-decoration: none; color: inherit;
-  }
-  .evidence-badge-link:hover .evidence-badge {
-    filter: brightness(0.92);
-  }
-
-  /* ── Priority investigation lights ─────────────── */
-  @keyframes pulse-green {
-    0%, 100% { opacity: 1; box-shadow: 0 0 4px 1px rgba(46,125,50,0.6); }
-    50%       { opacity: 0.45; box-shadow: 0 0 2px 0px rgba(46,125,50,0.2); }
-  }
-  @keyframes pulse-amber {
-    0%, 100% { opacity: 1; box-shadow: 0 0 5px 2px rgba(230,81,0,0.7); }
-    50%       { opacity: 0.4; box-shadow: 0 0 2px 0px rgba(230,81,0,0.2); }
-  }
-  @keyframes pulse-red {
-    0%, 100% { opacity: 1; box-shadow: 0 0 6px 2px rgba(183,28,28,0.8); }
-    50%       { opacity: 0.35; box-shadow: 0 0 2px 0px rgba(183,28,28,0.2); }
-  }
-  .priority-light {
-    display: inline-block;
-    width: 9px; height: 9px; border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .priority-light.green { background:#2E7D32; animation:pulse-green 2.8s ease-in-out infinite; }
-  .priority-light.amber { background:#E65100; animation:pulse-amber 1.8s ease-in-out infinite; }
-  .priority-light.red   { background:#B71C1C; animation:pulse-red   1.1s ease-in-out infinite; }
-  .priority-badge {
-    display: inline-flex; align-items: center; gap: 0.35rem;
-    font-family: var(--font-code); font-size: 0.58rem; letter-spacing: 0.1em;
-    text-transform: uppercase; padding: 0.22rem 0.6rem 0.22rem 0.45rem;
-    border-radius: 2px; margin-bottom: 0.35rem; cursor: help;
-    border: 1px solid transparent;
-  }
-  .priority-badge.green { background:#F1F8E9; color:#2E7D32; border-color:#558B2F; }
-  .priority-badge.amber { background:#FFF3E0; color:#E65100; border-color:#EF6C00; }
-  .priority-badge.red   { background:#FFEBEE; color:#B71C1C; border-color:#C62828; }
-  .priority-callout {
-    background: var(--ink); border: 1px solid rgba(196,168,130,0.25);
-    border-left: 4px solid #2E7D32; padding: 1rem 1.2rem; margin-bottom: 1.2rem;
-  }
-  .priority-callout-label {
-    font-family: var(--font-code); font-size: 0.58rem; letter-spacing: 0.14em;
-    text-transform: uppercase; color: #81C784; margin-bottom: 0.4rem;
-    display: flex; align-items: center; gap: 0.5rem;
-  }
-  .priority-callout p {
-    font-size: 0.88rem; line-height: 1.65; color: rgba(247,242,227,0.85); margin: 0;
-  }
-  .priority-callout strong { color: var(--gold); }
   .research-query-box {
     background: #1C2D4A; border: 1px solid #2A4A7A;
     padding: 1.8rem 2rem; margin-bottom: 2rem;
@@ -2180,65 +2202,29 @@
   <!-- DATABASE TAB -->
   <section class="tab-panel" id="tab-database">
     <div class="section-header">
-      <div class="section-eyebrow">589 Plants · 18 Traditions · 4,000 Years</div>
+      <div class="section-eyebrow">Integrated Plant Database · All Three Sources</div>
       <h2 class="section-title">Plant Database</h2>
-      <p class="section-desc">Every plant documented across 18 world traditions — from fully curated entries with cross-tradition analysis and modern research, to corpus stubs awaiting investigation. The most comprehensive traditional medicine plant database ever assembled.</p>
+      <p class="section-desc">Every plant documented across Cobo, Badianus, and the Florentine Codex, with modern pharmacological cross-referencing.</p>
     </div>
 
-    <!-- Stats bar -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.6rem;margin-bottom:1.5rem;">
-      <div style="background:var(--ink);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('all',this);document.getElementById('db-view-toggle').value='all';renderPlants()">
-        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--gold)">589</div>
-        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(196,168,130,0.6)">Total Plants</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('curated',this);document.getElementById('db-view-toggle').value='curated';renderPlants()">
-        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--green)">39</div>
-        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Fully Curated</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('multi',this);document.getElementById('db-view-toggle').value='multi';renderPlants()">
-        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--brown)">35</div>
-        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Multi-Tradition Stubs</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('stub',this);document.getElementById('db-view-toggle').value='stub';renderPlants()">
-        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--muted)">515</div>
-        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Corpus Stubs</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('fda',this);document.getElementById('db-view-toggle').value='fda';renderPlants()">
-        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#1B5E20">16</div>
-        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">FDA Approved</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('priority',this);document.getElementById('db-view-toggle').value='priority';renderPlants()">
-        <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#2E7D32;display:flex;align-items:center;justify-content:center;gap:0.4rem"><span class="priority-light green" style="width:10px;height:10px"></span>17</div>
-        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Priority Research</div>
-      </div>
-    </div>
-
-    <!-- Search and filters -->
     <div class="search-bar">
-      <input class="search-input" type="text" id="plant-search"
-        placeholder="Search plant name, condition, compound, tradition, botanical name..."
-        oninput="renderPlants()">
-      <select id="db-view-toggle" class="query-select" style="background:white;color:var(--ink);border-color:var(--border)" onchange="renderPlants()">
-        <option value="all">All Plants</option>
-        <option value="curated">✓ Curated 39</option>
-        <option value="multi">Multi-Tradition Stubs</option>
-        <option value="stub">All Stubs</option>
-        <option value="fda">FDA Approved</option>
-        <option value="who">WHO Essential</option>
-        <option value="priority">● Priority Research</option>
-        <option value="cochrane">Cochrane Reviewed</option>
-      </select>
+      <input class="search-input" type="text" id="plant-search" placeholder="Search by plant name, condition, compound, or tradition..." oninput="filterPlants()">
+      <button class="filter-btn active" onclick="filterByStatus('all', this)">All Plants</button>
+      <button class="filter-btn" onclick="filterByStatus('critical_gap', this)">⚠ Research Gaps</button>
+      <button class="filter-btn" onclick="filterByStatus('breakthrough_validated', this)">★ Breakthroughs</button>
+      <button class="filter-btn" id="compound-filter-btn" onclick="toggleCompoundFilter(this)">⚗ Compound Formulas</button>
     </div>
 
     <div class="traditions-picker" id="tradition-picker">
-      <span class="traditions-picker-label">Filter by tradition</span>
-      <div class="traditions-grid" id="tradition-chips"></div>
+      <span class="traditions-picker-label">Filter by tradition — select one or more</span>
+      <div class="traditions-grid" id="tradition-chips">
+        <!-- populated by JS -->
+      </div>
     </div>
 
-    <!-- Results count -->
-    <div style="font-family:var(--font-code);font-size:0.65rem;color:var(--muted);margin-bottom:1rem" id="db-count"></div>
-
-    <div class="plant-grid" id="plant-grid"></div>
+    <div class="plant-grid" id="plant-grid">
+      <!-- Populated by JavaScript -->
+    </div>
   </section>
 
   <!-- TRADITIONS TAB -->
@@ -2491,7 +2477,8 @@
 <script>
 // ── State ────────────────────────────────────────────────
 let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [];
-let activeStatusFilter = null, activeTraditions = new Set();
+let compoundFormulaData = [];
+let activeStatusFilter = null, activeTraditions = new Set(), activeCompoundFilter = false;
 
 // ── Tab navigation ──────────────────────────────────────
 function showTab(id) {
@@ -2544,6 +2531,14 @@ async function loadData() {
         { url: '/data/australian_chapters.json',     tradition: 'australian_indigenous', label: 'Australian Indigenous' },
         { url: '/data/celtic_norse_chapters.json',   tradition: 'celtic_norse',       label: 'Celtic & Norse' },
         { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
+        // Previously digitized server-side but never wired into the client corpus —
+        // added here so both global search and compound-formula detection actually see them.
+        { url: '/data/egyptian_chapters.json',       tradition: 'egyptian',           label: 'Ancient Egyptian (Ebers Papyrus)' },
+        { url: '/data/greek_roman_chapters.json',    tradition: 'greek_roman',        label: 'Greek & Roman' },
+        { url: '/data/dioscorides_chapters.json',    tradition: 'greek_roman',        label: 'Greek & Roman (Dioscorides)' },
+        { url: '/data/amazonian_chapters.json',      tradition: 'amazonian',          label: 'Amazonian Indigenous' },
+        { url: '/data/north_american_chapters.json', tradition: 'north_american_indigenous', label: 'Native North American' },
+        { url: '/data/west_african_chapters.json',   tradition: 'west_african',       label: 'West African' },
       ];
 
       const allResults = [];
@@ -2569,8 +2564,86 @@ async function loadData() {
 
       corpusData = allResults;
       console.log(`Corpus: ${corpusData.length} total segments across ${traditionFiles.length} files`);
+      detectCompoundFormulas();
     } catch(e) { corpusData = []; }
   } catch(e) { console.error('Data load error:', e); }
+}
+
+// ── Compound formula detection ──────────────────────────────────────────
+// Runs automatically against the raw chapter corpus every time it loads, so
+// it stays current as new tradition files get added — no manually maintained
+// dataset. Deliberately strict (precision over recall): a segment only
+// counts as a compound formula if, within a local window around a
+// combination verb, there's ALSO an application/dosing instruction AND a
+// medical-context word. The medical-context check specifically exists
+// because chapter-level segments often mix topics (e.g. Pliny covers
+// cultivation and medicine in the same chapter) — without it, "mixed" +
+// "applied" showing up anywhere in a long segment produced false positives
+// on things like cultivation and metalworking chapters that have nothing
+// to do with remedies. Ambiguous cases are left untagged rather than guessed at.
+const FORMULA_COMBINE_RE = /\b(combine[sd]?|combining|mix(?:ed|ing)?|mingled|pound(?:ed)?\s+together|boil(?:ed)?\s+together|blend(?:ed|ing)?|compound(?:ed)?|knead(?:ed)?\s+together|grind(?:ed|ing)?\s+together|steep(?:ed)?\s+together|ground\s+together)\b/gi;
+const FORMULA_APPLICATION_RE = /\b(appl(?:y|ied|ication)|taken?\b|drink|drunk|administ(?:er|ered|ration)|anoint(?:ed)?|dress(?:ing)?|bind|bound|dosage|swallow(?:ed)?|inject(?:ed)?|inhal(?:e|ed)|poultice)\b/i;
+const FORMULA_MEDICAL_CONTEXT_RE = /\b(remed(?:y|ies)|cure[sd]?|diseas(?:e|es)|pain|wound[s]?|fever|ailment|medicin\w*|treat(?:ment|s)?|heal(?:s|ing)?|afflict\w*|poison(?:ed|ing)?|bite[s]?|sting[s]?|headache|ulcer[s]?|itch(?:ing)?|swelling|bruise[s]?|cough(?:s|ing)?|blood(?:y)?|tumou?r[s]?|abscess(?:es)?|infect\w*|inflam\w*|scurf|dysentery|constipation|diarrh?o?ea|worms?\b)\b/i;
+const FORMULA_WINDOW = 180; // chars scanned on each side of the combine verb
+
+function detectCompoundFormulas() {
+  const results = [];
+  corpusData.forEach((seg, idx) => {
+    const text = (seg.translation || '').trim();
+    const title = seg.title_inferred || 'Untitled Formula';
+    if (!text) return;
+
+    FORMULA_COMBINE_RE.lastIndex = 0;
+    let m, found = null;
+    while ((m = FORMULA_COMBINE_RE.exec(text)) !== null) {
+      const start = Math.max(0, m.index - FORMULA_WINDOW);
+      const end = Math.min(text.length, m.index + m[0].length + FORMULA_WINDOW);
+      const window = text.slice(start, end);
+      if (!FORMULA_APPLICATION_RE.test(window)) continue;
+      if (!FORMULA_MEDICAL_CONTEXT_RE.test(window) && !FORMULA_MEDICAL_CONTEXT_RE.test(title)) continue;
+
+      const preWindow = text.slice(start, m.index);
+      const ingredientCandidates = preWindow
+        .split(/[,;]|\band\b/i)
+        .map(s => s.trim().replace(/^[.\s]+/, ''))
+        .filter(s => s.length > 1 && s.length < 45 && /[A-Za-z]/.test(s))
+        .slice(-6);
+      const uniqueIngredients = [...new Set(ingredientCandidates.map(s => s.toLowerCase()))];
+      if (uniqueIngredients.length < 2) continue;
+
+      found = { window, ingredients: ingredientCandidates };
+      break; // one hit is enough to flag the segment
+    }
+    if (!found) return;
+
+    results.push({
+      id: `formula-${idx}`,
+      tradition: seg._tradition,
+      tradition_label: seg._tradition_label,
+      title,
+      ingredients: found.ingredients,
+      snippet: found.window,
+    });
+  });
+  compoundFormulaData = results;
+  linkFormulasToPlants();
+  console.log(`Compound formulas detected: ${compoundFormulaData.length} (strict auto-classification, unreviewed)`);
+}
+
+function linkFormulasToPlants() {
+  plantData.forEach(p => { p.linkedFormulas = []; });
+  compoundFormulaData.forEach(f => {
+    const hay = (f.ingredients.join(' ') + ' ' + f.snippet).toLowerCase();
+    plantData.forEach(p => {
+      const nameTokens = [p.common_name, ...( (p.common_name||'').split(/[\/,]/) )]
+        .filter(Boolean)
+        .map(n => n.trim().toLowerCase())
+        .filter(n => n.length > 3);
+      if (nameTokens.some(n => hay.includes(n))) {
+        p.linkedFormulas.push(f);
+      }
+    });
+  });
 }
 
 // ── Traditions overview ─────────────────────────────────
@@ -2620,7 +2693,7 @@ function renderTraditionChips() {
     return `<button class="tradition-chip${active?' active':''}"
       style="background:${active?t.color:'white'};color:${active?'white':'#6B6050'};border-color:${active?t.color:''}"
       onclick="toggleTraditionFilter('${t.id}')">
-      <span class="chip-icon">${t.icon}</span>${t.name}<span class="chip-count">${count}</span>
+      <span class="chip-icon">${t.icon}</span>${t.name.split(' ')[0]}<span class="chip-count">${count}</span>
     </button>`;
   }).join('');
   container.innerHTML = allChip + chips;
@@ -2634,158 +2707,45 @@ function toggleTraditionFilter(id) {
 
 function renderPlants() {
   const grid = document.getElementById('plant-grid');
-  const countEl = document.getElementById('db-count');
   if (!grid) return;
   const query = (document.getElementById('plant-search')?.value||'').toLowerCase();
-  const view = document.getElementById('db-view-toggle')?.value || 'all';
-
   const filtered = plantData.filter(p => {
-    // Tradition filter
-    if (activeTraditions.size > 0 && !p.traditions.some(t => activeTraditions.has(t))) return false;
-    // View filter
-    if (view === 'curated' && p.stub) return false;
-    if (view === 'stub' && !p.stub) return false;
-    if (view === 'multi' && (!p.stub || (p.traditions||[]).length < 2)) return false;
-    if (view === 'fda' && p.evidence_tier !== 1) return false;
-    if (view === 'who' && p.evidence_tier !== 2) return false;
-    if (view === 'cochrane' && p.evidence_tier !== 3) return false;
-    if (view === 'priority' && p.priority_light !== 'green') return false;
-    // Search
-    if (query) {
-      const searchable = [
-        p.common_name,
-        p.modern_botanical||'',
-        ...(p.therapeutic_areas||[]),
-        p.modern_research?.key_compound||'',
-        p.modern_research?.summary||'',
-        ...p.traditions,
-        ...Object.values(p.tradition_names||{}),
-        ...Object.values(p.entries||{}).map(e=>`${e.condition||''} ${e.translation||''}`),
-        p.stub_note||'',
-      ].join(' ').toLowerCase();
-      if (!searchable.includes(query)) return false;
-    }
-    return true;
-  });
-
-  if (countEl) {
-    const stubCount = filtered.filter(p=>p.stub).length;
-    const curatedCount = filtered.filter(p=>!p.stub).length;
-    countEl.textContent = `${filtered.length} plants — ${curatedCount} curated · ${stubCount} stubs`;
-  }
-
-  if (!filtered.length) {
-    grid.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">No plants match the current filters.</p>';
-    return;
-  }
-
-  // Sort: curated first (by convergence), then stubs (by tradition count then mentions)
-  const sorted = [...filtered].sort((a,b) => {
-    if (!a.stub && b.stub) return -1;
-    if (a.stub && !b.stub) return 1;
-    if (!a.stub && !b.stub) return b.convergence_score - a.convergence_score;
-    const aTrad = (a.traditions||[]).length, bTrad = (b.traditions||[]).length;
-    if (aTrad !== bTrad) return bTrad - aTrad;
-    return (b.mentions_in_corpus||0) - (a.mentions_in_corpus||0);
+    const matchT = activeTraditions.size===0 || p.traditions.some(t => activeTraditions.has(t));
+    const matchS = !activeStatusFilter || p.investigation_status===activeStatusFilter;
+    const matchC = !activeCompoundFilter || (p.linkedFormulas && p.linkedFormulas.length > 0);
+    const matchQ = !query ||
+      p.common_name.toLowerCase().includes(query) ||
+      (p.modern_botanical||'').toLowerCase().includes(query) ||
+      (p.therapeutic_areas||[]).some(t=>t.includes(query)) ||
+      (p.modern_research?.key_compound||'').toLowerCase().includes(query) ||
+      p.traditions.some(t=>t.includes(query)) ||
+      Object.values(p.tradition_names||{}).some(n=>n.toLowerCase().includes(query)) ||
+      (p.linkedFormulas||[]).some(f=>f.title.toLowerCase().includes(query) || f.snippet.toLowerCase().includes(query));
+    return matchT && matchS && matchC && matchQ;
   });
 
   const statusMap = {
-    'validated':['status-validated','✓ Validated'],
-    'fully_validated':['status-validated','✓ Fully Validated'],
-    'breakthrough_validated':['status-breakthrough','★ Breakthrough'],
-    'validated_essential_medicine':['status-validated','✓ WHO Essential Medicine'],
+    'validated':['status-validated','✓ Validated'],'fully_validated':['status-validated','✓ Fully Validated'],
+    'breakthrough_validated':['status-breakthrough','★ Breakthrough'],'validated_essential_medicine':['status-validated','✓ WHO Essential Medicine'],
     'validated_renewed_interest':['status-validated','✓ Validated · Active Research'],
-    'needs_investigation':['status-gap','⚠ Needs Investigation'],
-    'critical_gap':['status-gap','⚠ Critical Gap'],
-    'preliminary':['status-preliminary','◐ Preliminary'],
-    'moderate_validation':['status-moderate','◑ Moderate Evidence'],
-    'significant_findings':['status-breakthrough','★ Significant Findings'],
-    'breakthrough_research':['status-breakthrough','★ Breakthrough Research'],
-    'corpus_mention':['status-preliminary','◌ Corpus Mention'],
+    'needs_investigation':['status-gap','⚠ Needs Investigation'],'critical_gap':['status-gap','⚠ Critical Gap'],
+    'preliminary':['status-preliminary','◐ Preliminary'],'moderate_validation':['status-moderate','◑ Moderate Evidence'],
+    'significant_findings':['status-breakthrough','★ Significant Findings'],'breakthrough_research':['status-breakthrough','★ Breakthrough Research'],
   };
 
-  grid.innerHTML = sorted.map(p => {
+  grid.innerHTML = filtered.map(p => {
     const conv = p.convergence_score;
     const convClass = conv>=8?'convergence-high':conv>=5?'convergence-med':'convergence-low';
     const [statusClass, statusLabel] = statusMap[p.investigation_status]||['status-preliminary','◐ Unknown'];
-    const completion = p.completion || (p.stub ? 15 : 100);
-    const isStub = !!p.stub;
-
-    // Tradition chips
-    const tradChips = (p.traditions||[]).map(tid => {
-      const t = traditionData.find(x=>x.id===tid);
-      return t ? `<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${t.name}</span>`
-               : `<span class="tag">${tid}</span>`;
+    const tradChips = (p.traditions||[]).map(tid=>{
+      const t=traditionData.find(x=>x.id===tid);
+      const name=p.tradition_names?.[tid]||tid;
+      return t?`<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${name}</span>`:`<span class="tag">${name}</span>`;
     }).join('');
-
-    // Completion bar
-    const barColor = completion === 100 ? 'var(--gold)' : completion > 50 ? 'var(--brown)' : '#ccc';
-    const completionBar = `<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.3rem">
-      <div style="flex:1;height:3px;background:#eee;border-radius:2px">
-        <div style="width:${completion}%;height:100%;background:${barColor};border-radius:2px"></div>
-      </div>
-      <span style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);white-space:nowrap">
-        ${completion===100?'Fully curated':completion>50?'Partially curated':'Corpus stub'}
-      </span>
-    </div>`;
-
-    // Priority + evidence badges
-    const priorityBadge = buildPriorityBadge(p);
-    const evidenceBadge = buildEvidenceBadge(p);
-
-    if (isStub) {
-      // Stub card — compact, honest about what's missing
-      const mentions = p.mentions_in_corpus || 0;
-      const segs = (p.corpus_segments || []).slice(0,2);
-      const segLinks = segs.map(s =>
-        `<div style="font-size:0.78rem;color:var(--muted);line-height:1.5;margin-top:0.3rem">
-          <span style="color:${getTradColor(s.tradition)}">${getTradIcon(s.tradition)}</span>
-          ${s.title || s.label}
-        </div>`
-      ).join('');
-
-      return `<div class="plant-card" style="opacity:0.88">
-        <div class="plant-card-header" onclick="toggleCard(this)">
-          <div class="plant-name-block">
-            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.2rem">
-              <span style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);background:#f5f5f5;padding:0.1rem 0.4rem">STUB · ${p.id}</span>
-              ${priorityBadge}
-            </div>
-            <h3 style="font-size:0.95rem">${p.common_name}</h3>
-            <div class="botanical">${p.modern_botanical || 'Botanical identification pending'}</div>
-            <div class="plant-tags" style="margin-top:0.4rem">${tradChips}</div>
-            ${completionBar}
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem">
-            <div style="text-align:center">
-              <div style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:${conv>=3?'var(--brown)':'var(--muted)'}">${conv}</div>
-              <div style="font-family:var(--font-code);font-size:0.5rem;text-transform:uppercase;color:var(--muted)">Traditions</div>
-            </div>
-            <span class="chevron" style="color:var(--muted)">▾</span>
-          </div>
-        </div>
-        <div class="plant-card-body">
-          <div style="padding:1rem 1.5rem;background:#fafafa;border-bottom:1px solid var(--border)">
-            <div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem">
-              Mentioned ${mentions}x in corpus · ${(p.traditions||[]).length} tradition(s) · Awaiting full curation
-            </div>
-            ${segLinks}
-            <div style="margin-top:0.8rem;font-size:0.82rem;color:var(--muted);font-style:italic">${p.stub_note||''}</div>
-          </div>
-          <div style="padding:0.8rem 1.5rem;background:var(--vellum)">
-            <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
-              ${p.id} · AI-extracted from corpus · not peer reviewed
-            </span>
-          </div>
-        </div>
-      </div>`;
-    }
-
-    // Full curated card
-    let entries = '';
-    for (const [tid, entry] of Object.entries(p.entries||{})) {
-      const t = traditionData.find(x=>x.id===tid);
-      entries += `<div class="source-section">
+    let entries='';
+    for(const [tid,entry] of Object.entries(p.entries||{})){
+      const t=traditionData.find(x=>x.id===tid);
+      entries+=`<div class="source-section">
         <span class="source-label" style="background:${t?.color||'#1C1A14'}">${t?.icon||''} ${t?.name||tid}</span>
         ${entry.source_text?`<div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);margin-bottom:0.8rem">${entry.source_text}</div>`:''}
         <div class="parallel-text">
@@ -2795,30 +2755,26 @@ function renderPlants() {
         <div class="plant-meta">
           ${entry.condition?`<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>`:''}
           ${entry.preparation?`<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>`:''}
+          ${entry.illustration_url?`<div class="meta-item"><label>Illustration</label><a class="external-link" href="${entry.illustration_url}" target="_blank">↗ View</a></div>`:''}
+          ${entry.getty_url?`<div class="meta-item"><label>Getty Codex</label><a class="external-link" href="${entry.getty_url}" target="_blank">↗ View</a></div>`:''}
         </div>
         ${entry.notes?`<div class="notes-block">${entry.notes}</div>`:''}
       </div>`;
     }
-
+    const formulaBadge = (p.linkedFormulas && p.linkedFormulas.length)
+      ? `<span class="tag" style="border-color:#8B5A2B;color:#8B5A2B;font-weight:600">⚗ Compound Formula</span>` : '';
     return `<div class="plant-card">
       <div class="plant-card-header" onclick="toggleCard(this)">
         <div class="plant-name-block">
-          <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.3rem">
-            ${evidenceBadge}${priorityBadge}
-          </div>
           <h3>${p.common_name}</h3>
           <div class="botanical">${p.modern_botanical||'Identification pending'}</div>
-          <div class="plant-tags" style="margin-top:0.5rem">
-            ${tradChips}
-            ${(p.therapeutic_areas||[]).slice(0,3).map(t=>`<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}
-          </div>
-          ${completionBar}
+          <div class="plant-tags" style="margin-top:0.5rem">${formulaBadge}${tradChips}${(p.therapeutic_areas||[]).slice(0,3).map(t=>`<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}</div>
         </div>
         <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem">
-          <div class="convergence-badge">
-            <span class="convergence-num ${convClass}">${conv}</span>
-            <span class="convergence-label">Convergence</span>
-          </div>
+          <div class="convergence-badge"><span class="convergence-num ${convClass}">${conv}</span><span class="convergence-label">Convergence</span></div>
+          <button class="share-btn" onclick="sharePlant('${p.id}', event)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.7 15.8 6.5M8.2 13.3l7.6 4.2"/></svg>
+          </button>
           <span class="chevron" style="color:var(--muted)">▾</span>
         </div>
       </div>
@@ -2827,18 +2783,27 @@ function renderPlants() {
         ${p.modern_research?`<div class="source-section">
           <span class="source-label modern">Modern Pharmacology</span>
           <span class="research-status ${statusClass}">${statusLabel}</span>
-          <div class="plant-meta" style="margin-bottom:0.8rem">
-            <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
-          </div>
+          <div class="plant-meta" style="margin-bottom:0.8rem"><div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div></div>
           <p style="font-size:0.9rem;line-height:1.7;color:var(--ink);max-width:70ch">${p.modern_research.summary}</p>
           <div class="notes-block" style="margin-top:0.8rem">${p.modern_research.significance}</div>
         </div>`:''}
-        <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
-          <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Fully curated</span>
+        ${(p.linkedFormulas && p.linkedFormulas.length) ? `<div class="source-section">
+          <span class="source-label" style="background:#8B5A2B">⚗ Compound Formula${p.linkedFormulas.length>1?'s':''} (auto-detected, unreviewed)</span>
+          ${p.linkedFormulas.map(f => `
+            <div style="margin-top:0.8rem;padding:0.9rem 1rem;background:var(--vellum-dark);border:1px solid var(--border)">
+              <div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:0.4rem">${f.tradition_label} · ${f.title}</div>
+              <div style="font-size:0.85rem;color:var(--ink);line-height:1.65">${f.snippet}</div>
+              ${f.ingredients?.length ? `<div style="margin-top:0.5rem;font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">Detected ingredients: ${f.ingredients.join(' · ')}</div>` : ''}
+            </div>`).join('')}
+          <div style="margin-top:0.6rem;font-family:var(--font-code);font-size:0.58rem;color:var(--muted)">Flagged automatically from raw source text (2+ ingredients + combination instruction + application instruction) — not manually verified.</div>
+        </div>` : ''}
+        <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border)">
+          <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''}</span>
         </div>
       </div>
     </div>`;
   }).join('');
+  if (!filtered.length) grid.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">No plants match the current filters.</p>';
 }
 
 function toggleCard(h) {
@@ -2847,7 +2812,14 @@ function toggleCard(h) {
 }
 function filterPlants() { renderPlants(); }
 function filterByStatus(status, btn) {
-  activeStatusFilter = status==='all' ? null : status;
+  activeStatusFilter=status==='all'?null:status;
+  document.querySelectorAll('.filter-btn').forEach(b=>{ if(b.id!=='compound-filter-btn') b.classList.remove('active'); });
+  btn.classList.add('active'); renderPlants();
+}
+
+function toggleCompoundFilter(btn) {
+  activeCompoundFilter = !activeCompoundFilter;
+  btn.classList.toggle('active', activeCompoundFilter);
   renderPlants();
 }
 
@@ -3098,7 +3070,7 @@ function runConvergenceQuery() {
     ${sorted.map(p => {
       const tradBadges = p.traditions.map(tid=>{
         const t=traditionData.find(x=>x.id===tid);
-        return t?`<span class="conv-trad-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
+        return t?`<span class="conv-trad-badge" style="background:${t.color}">${t.icon} ${t.name.split(' ')[0]}</span>`:'';
       }).join('');
       return `<div class="convergence-result-card" style="border-left-color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">
         <div class="convergence-result-name">${p.common_name}</div>
@@ -3470,317 +3442,468 @@ loadData().then(() => {
     </div>
   </div>
 </div>
-<div class="deeplink-toast" id="deeplink-toast">✓ Link copied to clipboard</div>
-<script>
-let currentSearchQuery = '';
 
-function getURLParams() {
-  const p = new URLSearchParams(window.location.search);
-  return { q: p.get('q') || '', r: p.get('r') || '' };
-}
-function setURLParams(q, r) {
-  const p = new URLSearchParams();
-  if (q) p.set('q', q);
-  if (r) p.set('r', r);
-  window.history.replaceState({}, '', window.location.pathname + (p.toString() ? '?' + p.toString() : ''));
-}
-function buildShareURL(q, r) {
-  const p = new URLSearchParams();
-  if (q) p.set('q', q);
-  if (r) p.set('r', r);
-  return window.location.origin + window.location.pathname + '?' + p.toString();
-}
-function showToast(msg) {
-  const t = document.getElementById('deeplink-toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2800);
-}
-function copyToClipboard(url) {
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(url).then(() => showToast('✓ Link copied to clipboard'));
-  } else {
-    const ta = document.createElement('textarea');
-    ta.value = url; ta.style.position='fixed'; ta.style.opacity='0';
-    document.body.appendChild(ta); ta.select(); document.execCommand('copy');
-    document.body.removeChild(ta); showToast('✓ Link copied to clipboard');
-  }
-}
-function buildShareBar(q, r, plantName) {
-  const url = buildShareURL(q, r);
-  const subject = plantName
-    ? `${plantName} — traditional remedy for ${q}`
-    : `Traditional remedies for ${q} across 18 civilisations`;
-  const bodyText = plantName
-    ? `Found this in the Materia Medica Americana archive — ${plantName} as a remedy for ${q}, documented across multiple world traditions:\n\n${url}`
-    : `What 18 world traditions discovered for "${q}" — from the Materia Medica Americana archive:\n\n${url}`;
-  const shortText = plantName
-    ? `${plantName} for ${q} — documented across world traditions`
-    : `Traditional remedies for "${q}" across 18 civilisations`;
-  const eu = encodeURIComponent(url);
-  const et = encodeURIComponent(shortText + ': ');
-  const eSubject = encodeURIComponent(subject);
-  const eBody = encodeURIComponent(bodyText);
-  const contextNote = plantName
-    ? `Sharing: ${plantName} (search: "${q}") — this link opens directly to this remedy`
-    : `Sharing search results for "${q}" — recipient sees the same results`;
-  const shareId = 'share-' + Math.random().toString(36).slice(2,8);
-  const native = (navigator.share && plantName)
-    ? `<button class="share-btn share-native" id="${shareId}" onclick="doNativeShare('${shareId}')">📤 Share</button>`
-    : '';
-  // Store share data for native share
-  if (plantName) {
-    window._shareData = window._shareData || {};
-    window._shareData[shareId] = { title: subject, text: shortText, url };
-  }
-  return `<div class="share-bar">
-    <span class="share-bar-label">↗ Share this</span>
-    ${native}
-    <a class="share-btn share-whatsapp" href="https://wa.me/?text=${et}${eu}" target="_blank" rel="noopener">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.529 5.852L0 24l6.335-1.506C8.03 23.459 9.975 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.898 0-3.665-.507-5.186-1.392l-.371-.22-3.762.895.946-3.665-.243-.384C2.522 15.446 2.182 13.77 2.182 12 2.182 6.562 6.562 2.182 12 2.182S21.818 6.562 21.818 12 17.438 21.818 12 21.818z"/></svg>
-      WhatsApp
-    </a>
-    <a class="share-btn share-messages" href="sms:?&body=${et}${eu}">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
-      Message
-    </a>
-    <a class="share-btn share-email" href="mailto:?subject=${eSubject}&body=${eBody}">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      Email
-    </a>
-    <a class="share-btn share-x" href="https://twitter.com/intent/tweet?text=${et}&url=${eu}" target="_blank" rel="noopener">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      X
-    </a>
-    <button class="share-btn share-copy" onclick="copyToClipboard('${url.replace(/'/g,"\\'")}');this.classList.add('copied');this.textContent='✓ Copied';setTimeout(()=>{this.classList.remove('copied');this.innerHTML='Copy link'},2000)">Copy link</button>
+<!-- ── SHARE MODAL ──────────────────────────────────────────── -->
+<div class="share-modal-overlay" id="share-modal-overlay" onclick="handleShareOverlayClick(event)">
+  <div class="share-modal">
+    <div class="share-modal-header">
+      <span class="share-modal-title" id="share-modal-title">Share this remedy</span>
+      <button class="share-modal-close" onclick="closeShareModal()">✕</button>
+    </div>
+    <div class="share-modal-body">
+      <img class="share-preview-img" id="share-preview-img" alt="Share preview" />
+
+      <button class="share-native-btn" id="share-native-btn" onclick="doNativeShare()">⤴ Share…</button>
+
+      <div class="share-platform-grid" id="share-platform-grid"></div>
+
+      <div class="share-link-row">
+        <input class="share-link-input" id="share-link-input" readonly />
+        <button class="share-copy-btn" onclick="copyShareLink(event)">Copy</button>
+      </div>
+
+      <button class="share-download-btn" onclick="downloadShareImage()">⬇ Download card image (for Instagram Story / DM)</button>
+
+      <div class="share-note">Instagram doesn't accept pre-filled links from outside apps — use "Share…" above on a phone to send directly, or download the card image and attach it in the app.</div>
+    </div>
   </div>
-  <div class="share-context">${contextNote}</div>`;
-}
+</div>
+
+<script>
+// ── Global search ──────────────────────────────────────────────────────────
 function prefill(text) {
   document.getElementById('global-search-input').value = text;
   runGlobalSearch();
 }
+
 function handleOverlayClick(e) {
   if (e.target === document.getElementById('search-overlay')) closeSearch();
 }
+
 function closeSearch() {
   document.getElementById('search-overlay').classList.remove('open');
-  window.history.replaceState({}, '', window.location.pathname);
 }
-function buildPriorityBadge(p) {
-  const light = p.priority_light;
-  if (!light) return '';
-  const labels = {
-    green: 'Priority Investigation',
-    amber: 'Research Candidate',
-    red:   'On the Radar'
-  };
-  const reason = p.priority_reason || '';
-  return `<span class="priority-badge ${light}" title="${reason.replace(/'/g,"'")}">
-    <span class="priority-light ${light}"></span>${labels[light]}
-  </span>`;
-}
-function buildEvidenceBadge(p) {
-  const tier = p.evidence_tier;
-  if (!tier) return '';
-  const icons = { 1:'✓', 2:'🌐', 3:'📋', 4:'🔬' };
-  const classes = { 1:'evidence-t1', 2:'evidence-t2', 3:'evidence-t3', 4:'evidence-t4' };
-  const labels = {
-    1: 'FDA Approved',
-    2: 'WHO Essential Medicine',
-    3: 'Cochrane Reviewed',
-    4: p.evidence_badge === 'BREAKTHROUGH RESEARCH' ? 'Breakthrough Research' : 'Clinical Research'
-  };
-  const badge = `<span class="evidence-badge ${classes[tier]}" title="${p.evidence_authority||''}">${icons[tier]} ${labels[tier]}</span>`;
-  return p.evidence_url
-    ? `<a class="evidence-badge-link" href="${p.evidence_url}" target="_blank" rel="noopener">${badge}</a>`
-    : badge;
-}
-function makeRemedyId(p) {
-  return p.id.toLowerCase() + '-' + p.common_name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+$/,'');
-}
-function quickShare(url, title) {
-  if (navigator.share) {
-    navigator.share({ title, url }).catch(()=> copyToClipboard(url));
-  } else {
-    copyToClipboard(url);
-  }
-}
-function doNativeShare(id) {
-  const d = (window._shareData||{})[id];
-  if (!d) return;
-  navigator.share(d).catch(()=> copyToClipboard(d.url));
-}
-async function runGlobalSearch(autoOpenRemedy) {
+
+async function runGlobalSearch() {
   const query = document.getElementById('global-search-input').value.trim();
   if (!query) return;
-  currentSearchQuery = query;
-  setURLParams(query);
+
   const overlay = document.getElementById('search-overlay');
   const body = document.getElementById('search-results-body');
   const title = document.getElementById('search-results-title');
+
   overlay.classList.add('open');
   title.textContent = `Searching for "${query}"…`;
-  body.innerHTML = '<div class="search-loading"><div class="search-loading-spinner"></div><br>Consulting 18 traditions across 4,000 years…</div>';
-  if (!plantData.length || !traditionData.length || !conditionData.length) await loadData();
-  const [aiResult, localResults] = await Promise.all([fetchAISummary(query), searchLocalData(query)]);
-  renderSearchResults(query, aiResult, localResults, autoOpenRemedy);
+  body.innerHTML = `<div class="search-loading"><div class="search-loading-spinner"></div><br>Consulting 18 traditions across 4,000 years…</div>`;
+
+  // Wait for data if not yet loaded
+  if (!plantData.length || !traditionData.length || !conditionData.length) {
+    await loadData();
+  }
+
+  // Run both simultaneously: AI synthesis + local database match
+  const [aiResult, localResults] = await Promise.all([
+    fetchAISummary(query),
+    searchLocalData(query)
+  ]);
+
+  renderSearchResults(query, aiResult, localResults);
   title.textContent = `"${query}" — across 18 traditions`;
 }
+
 async function fetchAISummary(query) {
+  const systemPrompt = `You are a scholarly assistant for Materia Medica Americana, an archive of traditional medicine across 18 world traditions spanning 4,000 years.
+
+When given a health condition or symptom, provide:
+1. A brief, plain-English overview of how traditional medicine traditions approached this condition (2-3 sentences max)
+2. The strongest cross-tradition patterns — what plants or remedies appear in multiple independent traditions
+3. Any important modern research validation
+
+IMPORTANT RULES:
+- Be specific and informative, not vague
+- Name actual plants and preparations where known
+- Note when a remedy has modern scientific validation
+- Always include this disclaimer at the end: "This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy."
+- Keep the total response under 200 words
+- Format as plain paragraphs, no markdown headers or bullets`;
+
   try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method:'POST', headers:{'Content-Type':'application/json'},
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model:'claude-sonnet-4-6', max_tokens:1000,
-        system:`You are a scholarly assistant for Materia Medica Americana, an archive of traditional medicine across 18 world traditions spanning 4,000 years. When given a health condition or symptom: (1) Give a brief plain-English overview of how traditions approached it (2-3 sentences). (2) Name the strongest cross-tradition patterns — specific plants and preparations. (3) Note modern validation where it exists. Rules: be specific, name actual plants, keep under 200 words, no markdown headers or bullets. End with exactly: "This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy."`,
-        messages:[{role:'user', content:`Traditional medicine across cultures for: ${query}`}]
+        model: 'claude-sonnet-4-6',
+        max_tokens: 1000,
+        system: systemPrompt,
+        messages: [{ role: 'user', content: `What does traditional medicine across cultures say about: ${query}` }]
       })
     });
-    const d = await r.json();
-    return d.content?.[0]?.text || null;
-  } catch(e) { return null; }
+    const data = await response.json();
+    return data.content?.[0]?.text || null;
+  } catch(e) {
+    return null;
+  }
 }
+
 function searchLocalData(query) {
   const q = query.toLowerCase();
   const terms = q.split(/\s+/).filter(t => t.length > 2);
-  const scored = plantData.map(p => {
+
+  // Score each plant against the query
+  const scored = plantData.map(plant => {
     let score = 0;
-    const txt = [p.common_name,...(p.therapeutic_areas||[]),p.modern_research?.key_compound||'',
-      p.modern_research?.summary||'',p.modern_research?.significance||'',
-      ...Object.values(p.tradition_names||{}),...Object.values(p.entries||{}).map(e=>`${e.translation||''} ${e.condition||''}`)
+    const searchText = [
+      plant.common_name,
+      ...(plant.therapeutic_areas || []),
+      plant.modern_research?.key_compound || '',
+      plant.modern_research?.summary || '',
+      plant.modern_research?.significance || '',
+      ...Object.values(plant.tradition_names || {}),
+      ...Object.values(plant.entries || {}).map(e => `${e.translation || ''} ${e.condition || ''}`)
     ].join(' ').toLowerCase();
-    terms.forEach(t => { if (txt.includes(t)) score += 3; });
-    if (p.therapeutic_areas?.some(a => q.includes(a.replace(/_/g,' ')) || a.replace(/_/g,' ').includes(q.split(' ')[0]))) score += 5;
-    score += p.convergence_score * 0.5;
-    return {p, score};
-  }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,8).map(x=>x.p);
-  const conds = conditionData.filter(c => {
-    const ct = [c.name,c.modern_description,c.id,c.category,...Object.values(c.tradition_terms||{}).flat()].join(' ').toLowerCase();
-    return terms.some(t=>ct.includes(t));
+
+    terms.forEach(term => {
+      if (searchText.includes(term)) score += 3;
+    });
+    if (plant.therapeutic_areas?.some(a => q.includes(a.replace(/_/g,' ')) || a.replace(/_/g,' ').includes(q.split(' ')[0]))) score += 5;
+    score += plant.convergence_score * 0.5;
+
+    return { plant, score };
+  }).filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 8)
+    .map(x => x.plant);
+
+  // Also search conditions
+  const matchedConditions = conditionData.filter(c => {
+    const cText = [c.name, c.modern_description, c.id, c.category,
+      ...Object.values(c.tradition_terms || {}).flat()
+    ].join(' ').toLowerCase();
+    return terms.some(t => cText.includes(t));
   });
-  return {plants:scored, conditions:conds};
+
+  return { plants: scored, conditions: matchedConditions };
 }
-function renderSearchResults(query, aiSummary, localResults, autoOpenRemedy) {
+
+function renderSearchResults(query, aiSummary, localResults) {
   const body = document.getElementById('search-results-body');
-  const {plants, conditions} = localResults;
-  let html = buildShareBar(query, null, null);
+  const { plants, conditions } = localResults;
+
+  let html = '';
+
+  // AI summary block
   if (aiSummary) {
-    const di = aiSummary.indexOf('This is historical and scholarly');
-    const main = di>-1 ? aiSummary.substring(0,di).trim() : aiSummary;
-    const disc = di>-1 ? aiSummary.substring(di) : 'This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy.';
-    html += `<div class="search-ai-summary"><div class="search-ai-summary-label">✦ Archive Intelligence · Cross-Tradition Summary</div><p>${main.replace(/\n/g,'<br>')}</p><div class="search-ai-disclaimer">⚠ ${disc}</div></div>`;
+    // Split disclaimer from main text
+    const disclaimerIdx = aiSummary.indexOf('This is historical and scholarly');
+    const mainText = disclaimerIdx > -1 ? aiSummary.substring(0, disclaimerIdx).trim() : aiSummary;
+    const disclaimer = disclaimerIdx > -1 ? aiSummary.substring(disclaimerIdx) : 'This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy.';
+
+    const topPlantName = plants[0]?.common_name || '';
+    const uniqueTradIds = new Set(plants.flatMap(p => p.traditions || []));
+    // Stored on window rather than embedded in the onclick attribute — AI summary
+    // text routinely contains apostrophes/quotes that would break out of an
+    // inline HTML attribute no matter which quote style wraps it.
+    window.__currentSearchShare = { query, mainText, topPlantName, tradCount: uniqueTradIds.size };
+    html += `<div class="search-ai-summary">
+      <div class="search-ai-summary-label" style="display:flex;justify-content:space-between;align-items:center;gap:0.8rem">
+        <span>✦ Archive Intelligence · Cross-Tradition Summary</span>
+        <button class="share-btn" onclick="shareCurrentSearchSummary(event)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.7 15.8 6.5M8.2 13.3l7.6 4.2"/></svg>
+          Share
+        </button>
+      </div>
+      <p>${mainText.replace(/\n/g,'<br>')}</p>
+      <div class="search-ai-disclaimer">⚠ ${disclaimer}</div>
+    </div>`;
   }
+
+  // Matched conditions
   if (conditions.length) {
-    const ut = [...new Set(conditions.flatMap(c=>c.convergence_traditions||[]))];
-    html += `<div style="font-family:var(--font-code);font-size:0.68rem;color:var(--muted);margin-bottom:1rem;padding:0.6rem 0.8rem;background:var(--vellum-dark);border:1px solid var(--border)">📋 ${conditions.map(c=>c.name).join(' · ')} — documented across ${ut.length} traditions</div>`;
+    const tradCounts = conditions.flatMap(c => c.convergence_traditions || []);
+    const uniqueTrads = [...new Set(tradCounts)];
+    html += `<div style="font-family:var(--font-code);font-size:0.68rem;color:var(--muted);margin-bottom:1rem;padding:0.6rem 0.8rem;background:var(--vellum-dark);border:1px solid var(--border)">
+      📋 Matched condition${conditions.length>1?'s':''}: <strong style="color:var(--ink)">${conditions.map(c=>c.name).join(' · ')}</strong> — documented across ${uniqueTrads.length} traditions
+    </div>`;
   }
+
+  // Plant remedy cards
   if (plants.length) {
-    // Priority callout — show if any green lights in results
-    const greenPlants = plants.filter(p => p.priority_light === 'green');
-    if (greenPlants.length) {
-      const names = greenPlants.slice(0,2).map(p => `<strong>${p.common_name}</strong>`).join(' and ');
-      html += `<div class="priority-callout">
-        <div class="priority-callout-label">
-          <span class="priority-light green" style="flex-shrink:0"></span>
-          Priority Investigation — Gap Between Traditional Knowledge and Modern Science
-        </div>
-        <p>${names} ${greenPlants.length > 2 ? `and ${greenPlants.length - 2} other${greenPlants.length - 2 > 1 ? 's' : ''}` : ''} in these results ${greenPlants.length === 1 ? 'has' : 'have'} strong cross-tradition convergence but no FDA approval or WHO Essential Medicine status. ${greenPlants.length === 1 ? 'This plant is' : 'These plants are'} the archive's highest-priority research candidates — documented by independent civilisations across millennia, active compounds identified, clinical development not yet pursued.</p>
-      </div>`;
-    }
     html += `<div style="font-family:var(--font-display);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem">Remedies from the Archive</div>`;
-    html += plants.map((p,i) => {
+
+    html += plants.map((p, i) => {
       const conv = p.convergence_score;
-      const cc = conv>=8?'#2E7D32':conv>=5?'#E65100':'#757575';
-      const rid = makeRemedyId(p);
-      const url = buildShareURL(query, rid);
-      const badges = p.traditions.map(tid=>{
-        const t=traditionData.find(x=>x.id===tid);
-        return t?`<span class="remedy-tradition-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
+      const convColor = conv >= 8 ? '#2E7D32' : conv >= 5 ? '#E65100' : '#757575';
+      const tradBadges = p.traditions.map(tid => {
+        const t = traditionData.find(x => x.id === tid);
+        return t ? `<span class="remedy-tradition-badge" style="background:${t.color}">${t.icon} ${t.name.split(' ')[0]}</span>` : '';
       }).join('');
-      const fe = Object.values(p.entries||{})[0];
-      const plain = fe?.condition ? `Used for: <strong>${fe.condition}</strong>` : (p.therapeutic_areas||[]).slice(0,3).map(a=>a.replace(/_/g,' ')).join(', ');
-      const prep = fe?.preparation||'';
-      const mr = (p.modern_research?.status==='fully_validated'||p.modern_research?.status==='breakthrough_validated')
-        ? `<div class="remedy-research-note">✓ ${p.modern_research.key_compound} — ${(p.modern_research.summary||'').substring(0,120)}…</div>` : '';
-      let detail = Object.entries(p.entries||{}).map(([tid,e])=>{
-        const t=traditionData.find(x=>x.id===tid);
-        return `<div style="margin-bottom:1rem"><span style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:${t?.color||'#888'}">${t?.icon||''} ${t?.name||tid}</span>${e.original?`<div class="remedy-original">${e.original}</div>`:''}<p style="font-size:0.88rem;line-height:1.7;margin-top:0.4rem">${e.translation||''}</p>${e.preparation?`<div class="remedy-preparation">Preparation: ${e.preparation}</div>`:''}</div>`;
+
+      // Build plain-English summary from entries
+      const entries = Object.entries(p.entries || {});
+      const firstEntry = entries[0]?.[1];
+      const plainSummary = firstEntry?.condition
+        ? `Used for: <strong>${firstEntry.condition}</strong>`
+        : p.therapeutic_areas?.slice(0,3).map(a=>a.replace(/_/g,' ')).join(', ');
+
+      const prep = firstEntry?.preparation || '';
+      const modernNote = p.modern_research?.status === 'fully_validated' || p.modern_research?.status === 'breakthrough_validated'
+        ? `<div class="remedy-research-note">✓ Modern validation: ${p.modern_research.key_compound} — ${p.modern_research.summary?.substring(0,120)}…</div>`
+        : '';
+
+      // Deeper detail: original texts
+      let detailHtml = entries.map(([tid, entry]) => {
+        const t = traditionData.find(x => x.id === tid);
+        return `<div style="margin-bottom:1rem">
+          <span style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:${t?.color||'#888'}">${t?.icon||''} ${t?.name||tid}</span>
+          ${entry.original ? `<div class="remedy-original">${entry.original}</div>` : ''}
+          ${entry.translation ? `<p style="font-size:0.88rem;line-height:1.7;margin-top:0.4rem">${entry.translation}</p>` : ''}
+          ${entry.preparation ? `<div class="remedy-preparation">Preparation: ${entry.preparation}</div>` : ''}
+        </div>`;
       }).join('');
-      if (p.modern_research) detail += `<div style="margin-top:0.8rem;padding:0.8rem;background:white;border:1px solid var(--border)"><div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div><div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance||p.modern_research.summary||''}</div></div>`;
-      if (p.priority_light) {
-        const lightLabels = {green:'Priority Investigation',amber:'Research Candidate',red:'On the Radar'};
-        const lightColors = {green:'#2E7D32',amber:'#E65100',red:'#B71C1C'};
-        const lc = lightColors[p.priority_light];
-        detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${lc};background:white;display:flex;gap:0.7rem;align-items:flex-start">
-          <span class="priority-light ${p.priority_light}" style="margin-top:0.3rem;flex-shrink:0"></span>
-          <div>
-            <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${lc};margin-bottom:0.25rem">${lightLabels[p.priority_light]} · Research Gap</div>
-            <div style="font-size:0.85rem;line-height:1.6;color:var(--ink)">${p.priority_reason||''}</div>
-          </div>
+
+      if (p.modern_research) {
+        detailHtml += `<div style="margin-top:0.8rem;padding:0.8rem;background:white;border:1px solid var(--border)">
+          <div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div>
+          <div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance || p.modern_research.summary || ''}</div>
         </div>`;
       }
-      if (p.evidence_tier) {
-        const tierLabels = {1:'FDA Approved Drug',2:'WHO Essential Medicine',3:'Cochrane Systematic Review',4:'Active Clinical Research'};
-        const tierColors = {1:'#1B5E20',2:'#0D47A1',3:'#E65100',4:'#4A148C'};
-        detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${tierColors[p.evidence_tier]};background:white">
-          <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tierColors[p.evidence_tier]};margin-bottom:0.3rem">
-            Modern Validation · ${tierLabels[p.evidence_tier]}
-          </div>
-          <div style="font-size:0.85rem;line-height:1.6;color:var(--ink)">${p.evidence_authority||''}</div>
-          ${p.evidence_note ? `<div style="font-size:0.78rem;color:var(--muted);margin-top:0.3rem">${p.evidence_note}</div>` : ''}
-          ${p.evidence_url ? `<a href="${p.evidence_url}" target="_blank" rel="noopener" style="font-family:var(--font-code);font-size:0.6rem;color:${tierColors[p.evidence_tier]};text-decoration:none;letter-spacing:0.06em;margin-top:0.4rem;display:inline-block">→ View official record</a>` : ''}
+
+      if (p.linkedFormulas && p.linkedFormulas.length) {
+        detailHtml += `<div style="margin-top:0.8rem;padding:0.8rem;background:var(--vellum-dark);border:1px solid var(--border)">
+          <div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:#8B5A2B;margin-bottom:0.4rem">⚗ Compound Formula${p.linkedFormulas.length>1?'s':''} (auto-detected, unreviewed)</div>
+          ${p.linkedFormulas.map(f => `
+            <div style="margin-top:0.5rem">
+              <div style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">${f.tradition_label} · ${f.title}</div>
+              <div style="font-size:0.85rem;line-height:1.6;margin-top:0.2rem">${f.snippet}</div>
+            </div>`).join('')}
+          <div style="margin-top:0.5rem;font-family:var(--font-code);font-size:0.56rem;color:var(--muted)">Flagged automatically — not manually verified.</div>
         </div>`;
       }
-      detail += buildShareBar(query, rid, p.common_name);
-      const auto = autoOpenRemedy && autoOpenRemedy===rid;
-      return `<div class="remedy-card" id="remedy-${rid}" style="border-left-color:${cc}">
-        <div class="remedy-card-header" onclick="toggleRemedyDetail('${rid}','${query.replace(/'/g,"\'")}')">
+
+      const formulaBadge = (p.linkedFormulas && p.linkedFormulas.length)
+        ? `<span class="remedy-tradition-badge" style="background:#8B5A2B">⚗ Compound Formula</span>` : '';
+
+      return `<div class="remedy-card" style="border-left-color:${convColor}">
+        <div class="remedy-card-header" onclick="toggleRemedyDetail(${i})">
           <div style="flex:1">
-            <div style="margin-bottom:0.4rem">${badges}</div>
-            <div style="display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center;margin-bottom:0.15rem">
-              ${buildEvidenceBadge(p)}${buildPriorityBadge(p)}
-            </div>
+            <div style="margin-bottom:0.4rem">${formulaBadge}${tradBadges}</div>
             <div style="font-family:var(--font-display);font-size:1rem;color:var(--ink);margin-bottom:0.3rem">${p.common_name}</div>
-            <div style="font-family:var(--font-code);font-size:0.65rem;color:var(--green);font-style:italic;margin-bottom:0.4rem">${p.modern_botanical||''}</div>
-            <div class="remedy-plain">${plain}</div>
-            ${prep?`<div class="remedy-preparation">How: ${prep}</div>`:''}
-            ${mr}
-            <button class="remedy-expand-btn" onclick="event.stopPropagation();toggleRemedyDetail('${rid}','${query.replace(/'/g,"\'")}')">▸ See original texts &amp; deeper research</button>
+            <div style="font-family:var(--font-code);font-size:0.65rem;color:var(--green);font-style:italic;margin-bottom:0.4rem">${p.modern_botanical || ''}</div>
+            <div class="remedy-plain">${plainSummary}</div>
+            ${prep ? `<div class="remedy-preparation">How: ${prep}</div>` : ''}
+            ${modernNote}
+            <button class="remedy-expand-btn" onclick="event.stopPropagation();toggleRemedyDetail(${i})">▸ See original texts &amp; deeper research</button>
           </div>
-          <div class="remedy-convergence" style="color:${cc}">${conv}<small>traditions<br>agree</small></div>
-          <button class="share-mini" onclick="event.stopPropagation();quickShare('${url.replace(/'/g,"\\'")}','${(p.common_name+' for '+query).replace(/'/g,"\\'")}')">↗ Share</button>
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.6rem">
+            <div class="remedy-convergence" style="color:${convColor}">
+              ${conv}<small>traditions<br>agree</small>
+            </div>
+            <button class="share-btn" onclick="sharePlant('${p.id}', event)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.7 15.8 6.5M8.2 13.3l7.6 4.2"/></svg>
+            </button>
+          </div>
         </div>
-        <div class="remedy-detail ${auto?'open':''}" id="remedy-detail-${rid}">${detail}</div>
+        <div class="remedy-detail" id="remedy-detail-${i}">
+          ${detailHtml}
+        </div>
       </div>`;
     }).join('');
   }
+
   if (!plants.length && !aiSummary) {
-    html += `<div class="search-no-results"><p style="font-size:1.1rem;margin-bottom:0.5rem">No direct matches for "<strong>${query}</strong>"</p><p style="color:var(--muted);font-size:0.9rem">Try related terms — or browse the Convergence tab.</p></div>`;
+    html += `<div class="search-no-results">
+      <p style="font-size:1.1rem;margin-bottom:0.5rem">No direct matches found for "<strong>${query}</strong>"</p>
+      <p style="color:var(--muted);font-size:0.9rem">Try related terms — e.g. "menstrual pain" instead of "period cramps", or browse by condition in the Convergence tab.</p>
+    </div>`;
   }
+
+  // Footer CTA
   html += `<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);display:flex;gap:1rem;flex-wrap:wrap">
     <button onclick="closeSearch();showTabByName('convergence')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Convergence Engine</button>
     <button onclick="closeSearch();showTabByName('research')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Modern Research</button>
     <button onclick="closeSearch();showTabByName('corpus')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Full Corpus</button>
   </div>`;
+
   body.innerHTML = html;
-  if (autoOpenRemedy) setTimeout(()=>{ const el=document.getElementById(`remedy-${autoOpenRemedy}`); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }, 300);
 }
-function toggleRemedyDetail(rid, query) {
-  const el = document.getElementById(`remedy-detail-${rid}`);
-  const open = el.classList.toggle('open');
-  setURLParams(query||currentSearchQuery, open?rid:null);
+
+function toggleRemedyDetail(i) {
+  const el = document.getElementById(`remedy-detail-${i}`);
+  el.classList.toggle('open');
 }
+
 function showTabByName(name) {
-  document.querySelectorAll('.tab-btn').forEach(b => { if (b.getAttribute('onclick')?.includes(`'${name}'`)) b.click(); });
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('onclick')?.includes(`'${name}'`)) {
+      b.click();
+    }
+  });
 }
-document.addEventListener('keydown', e => { if (e.key==='Escape') closeSearch(); });
-window.addEventListener('load', async () => {
-  const {q,r} = getURLParams();
-  if (q) {
-    document.getElementById('global-search-input').value = q;
-    await loadData();
-    await runGlobalSearch(r||null);
+
+// Keyboard shortcut — Escape closes search
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSearch();
+});
+
+// ── Share ─────────────────────────────────────────────────────────────────
+let currentShare = null; // { type, title, text, url, imageUrl, plantId, query }
+
+function b64urlEncode(str) {
+  return btoa(unescape(encodeURIComponent(str))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+}
+
+function sharePlant(plantId, e) {
+  if (e) e.stopPropagation();
+  const plant = plantData.find(p => p.id === plantId);
+  if (!plant) return;
+  const entries = Object.values(plant.entries || {});
+  const condition = entries[0]?.condition || '';
+  const title = `${plant.common_name} — Materia Medica Americana`;
+  const text = condition
+    ? `Traditionally used for ${condition}, documented across ${plant.traditions.length} tradition(s) in the Materia Medica Americana archive.`
+    : `From the Materia Medica Americana archive — documented across ${plant.traditions.length} tradition(s).`;
+  const url = `${location.origin}/share/p/${plantId}`;
+  const imageUrl = `${location.origin}/api/og/plant/${plantId}.png`;
+
+  openShareModal({ type: 'plant', title, text, url, imageUrl, filename: `${plant.common_name.replace(/[^\w]+/g,'-')}.png` });
+}
+
+function shareSearchSummary(query, aiSummary, topPlant, traditionCount, e) {
+  if (e) e.stopPropagation();
+  const snippet = (aiSummary || '').replace(/This is historical and scholarly[\s\S]*/,'').trim().slice(0, 220);
+  const payload = { q: query.slice(0, 80), s: snippet, c: traditionCount || 0, n: topPlant || undefined };
+  const encoded = b64urlEncode(JSON.stringify(payload));
+
+  const title = `"${query}" — Materia Medica Americana`;
+  const text = snippet || `Cross-tradition findings on ${query} from an archive of 18 world medical traditions spanning 4,000 years.`;
+  const url = `${location.origin}/share/s/${encoded}`;
+  const imageUrl = `${location.origin}/api/og/search/${encoded}.png`;
+
+  openShareModal({ type: 'search', title, text, url, imageUrl, filename: `${query.replace(/[^\w]+/g,'-')}-search.png` });
+}
+
+function shareCurrentSearchSummary(e) {
+  if (e) e.stopPropagation();
+  const s = window.__currentSearchShare;
+  if (!s) return;
+  shareSearchSummary(s.query, s.mainText, s.topPlantName, s.tradCount, e);
+}
+
+function openShareModal(share) {
+  currentShare = share;
+  document.getElementById('share-modal-title').textContent = share.type === 'plant' ? 'Share this remedy' : 'Share this search';
+  document.getElementById('share-preview-img').src = share.imageUrl;
+  document.getElementById('share-link-input').value = share.url;
+
+  const canNative = !!navigator.share;
+  document.getElementById('share-native-btn').style.display = canNative ? 'block' : 'none';
+
+  document.getElementById('share-platform-grid').innerHTML = buildPlatformButtons(share);
+  document.getElementById('share-modal-overlay').classList.add('open');
+}
+
+function closeShareModal() {
+  document.getElementById('share-modal-overlay').classList.remove('open');
+  currentShare = null;
+}
+
+function handleShareOverlayClick(e) {
+  if (e.target === document.getElementById('share-modal-overlay')) closeShareModal();
+}
+
+async function doNativeShare() {
+  if (!currentShare || !navigator.share) return;
+  const { title, text, url, imageUrl, filename } = currentShare;
+  try {
+    // Try to include the card image itself — this is what lets the OS share
+    // sheet offer "send as photo" into Instagram DM / Stories, iMessage, etc.
+    if (navigator.canShare) {
+      try {
+        const resp = await fetch(imageUrl);
+        const blob = await resp.blob();
+        const file = new File([blob], filename || 'remedy-card.png', { type: 'image/png' });
+        if (navigator.canShare({ files: [file] })) {
+          await navigator.share({ title, text, url, files: [file] });
+          return;
+        }
+      } catch (imgErr) { /* fall through to link-only share */ }
+    }
+    await navigator.share({ title, text, url });
+  } catch (err) {
+    if (err.name !== 'AbortError') console.error('Share failed', err);
+  }
+}
+
+function buildPlatformButtons(share) {
+  const encodedUrl = encodeURIComponent(share.url);
+  const encodedText = encodeURIComponent(share.text);
+  const platforms = [
+    { name: 'WhatsApp', href: `https://wa.me/?text=${encodedText}%20${encodedUrl}`,
+      icon: '<svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10 9 9.5 7.8 9.3 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.9 14.1c-.3.7-1.4 1.4-2.5 1.6-.7.1-1.5.2-4.8-1-3.9-1.6-6.4-5.5-6.6-5.8-.2-.3-1.5-2-1.5-3.8 0-1.8.9-2.7 1.3-3.1.3-.3.7-.4 1-.4h.7c.2 0 .5 0 .7.6.3.7.9 2.3 1 2.5.1.2.2.4 0 .6-.1.2-.2.4-.3.5-.2.2-.3.3-.5.5-.2.2-.4.4-.2.7.2.3 1 1.7 2.2 2.7 1.5 1.3 2.7 1.7 3.1 1.9.3.1.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.9.9 2.2 1 .3.2.5.2.6.4.1.2.1.9-.2 1.6z"/></svg>' },
+    { name: 'X', href: `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`,
+      icon: '<svg viewBox="0 0 24 24" fill="var(--ink)"><path d="M18.9 2H22l-7.6 8.7L23.3 22H16.7l-5.2-6.8L5.6 22H2.4l8.1-9.3L1.8 2h6.8l4.7 6.2L18.9 2zm-1.2 18h1.7L6.4 3.9H4.6L17.7 20z"/></svg>' },
+    { name: 'Facebook', href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      icon: '<svg viewBox="0 0 24 24" fill="#1877F2"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>' },
+    { name: 'Email', href: `mailto:?subject=${encodeURIComponent(share.title)}&body=${encodedText}%0A%0A${encodedUrl}`,
+      icon: '<svg viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>' },
+  ];
+  return platforms.map(p => `<a class="share-platform-btn" href="${p.href}" target="_blank" rel="noopener">${p.icon}${p.name}</a>`).join('');
+}
+
+function copyShareLink(e) {
+  const input = document.getElementById('share-link-input');
+  input.select();
+  navigator.clipboard?.writeText(input.value).then(() => {
+    const btn = e ? e.target : document.querySelector('.share-copy-btn');
+    const orig = btn.textContent;
+    btn.textContent = 'Copied ✓';
+    setTimeout(() => btn.textContent = orig, 1500);
+  }).catch(() => document.execCommand('copy'));
+}
+
+async function downloadShareImage() {
+  if (!currentShare) return;
+  try {
+    const resp = await fetch(currentShare.imageUrl);
+    const blob = await resp.blob();
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = currentShare.filename || 'materia-medica-share.png';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  } catch (err) {
+    window.open(currentShare.imageUrl, '_blank');
+  }
+}
+
+// ── Deep-link handling: /share/p/<id> and /share/s/<payload> redirect here
+// with ?plant=<id> or ?q=<base64(query)> so a shared link actually opens
+// the relevant content instead of just the homepage.
+document.addEventListener('DOMContentLoaded', async () => {
+  const params = new URLSearchParams(location.search);
+  const plantId = params.get('plant');
+  const qParam = params.get('q');
+
+  if (plantId) {
+    if (!plantData.length) await loadData();
+    showTabByName('plants');
+    setTimeout(() => {
+      const input = document.getElementById('plant-search');
+      const plant = plantData.find(p => p.id === plantId);
+      if (input && plant) { input.value = plant.common_name; filterPlants(); }
+      const card = [...document.querySelectorAll('.plant-card')].find(c => c.textContent.includes(plant?.common_name || '\u0000'));
+      if (card) {
+        card.querySelector('.plant-card-header')?.click();
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 400);
+  } else if (qParam) {
+    try {
+      const query = decodeURIComponent(escape(atob(qParam.replace(/-/g,'+').replace(/_/g,'/'))));
+      document.getElementById('global-search-input').value = query;
+      runGlobalSearch();
+    } catch (e) { /* malformed param, ignore */ }
   }
 });
 </script>
