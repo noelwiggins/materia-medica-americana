@@ -269,6 +269,21 @@
     color: var(--muted);
   }
 
+  .plant-thumb {
+    width: 84px; height: 84px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+    background: var(--vellum-dark);
+  }
+  .plant-thumb-attribution {
+    font-family: var(--font-code);
+    font-size: 0.56rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+  }
+  .plant-thumb-attribution a { color: var(--muted); }
+
   .source-card {
     background: white;
     border: 1px solid var(--border);
@@ -2590,6 +2605,15 @@ async function loadData() {
     conditionData = (await cRes.json()).conditions || [];
     longevityData = (await lRes.json()).traditions || [];
 
+    // Attach representative images where available (auto-matched from
+    // Wikimedia Commons, licensed public domain / CC — see plant_images.json
+    // for attribution). Not every plant has one.
+    try {
+      const imgRes = await fetch('/data/plant_images.json');
+      const images = await imgRes.json();
+      plantData.forEach(p => { if (images[p.id]) p.image = images[p.id]; });
+    } catch (e) { /* image data optional — app works fine without it */ }
+
     // Load corpus — merge all tradition translation files into one unified corpus
     try {
       const traditionFiles = [
@@ -2856,8 +2880,10 @@ function renderPlants() {
     }
     const formulaBadge = (p.linkedFormulas && p.linkedFormulas.length)
       ? `<span class="tag" style="border-color:#8B5A2B;color:#8B5A2B;font-weight:600">⚗ Compound Formula</span>` : '';
+    const thumb = p.image ? `<img class="plant-thumb" src="/static/images/plants/${p.image.filename}" alt="${p.common_name}" loading="lazy">` : '';
     return `<div class="plant-card">
       <div class="plant-card-header" onclick="toggleCard(this)">
+        ${thumb}
         <div class="plant-name-block">
           <h3>${p.common_name}</h3>
           <div class="botanical">${p.modern_botanical||'Identification pending'}</div>
@@ -2892,6 +2918,7 @@ function renderPlants() {
         </div>` : ''}
         <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border)">
           <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''}</span>
+          ${p.image ? `<div class="plant-thumb-attribution">Image: <a href="${p.image.description_url}" target="_blank" rel="noopener">${p.image.source_title.replace(/^File:/,'')}</a>${p.image.artist?` · ${p.image.artist}`:''} · ${p.image.license} (via Wikimedia Commons, auto-matched)</div>` : ''}
         </div>
       </div>
     </div>`;
@@ -3874,9 +3901,11 @@ function renderSearchResults(query, aiSummary, localResults) {
 
       const formulaBadge = (p.linkedFormulas && p.linkedFormulas.length)
         ? `<span class="remedy-tradition-badge" style="background:#8B5A2B">⚗ Compound Formula</span>` : '';
+      const remedyThumb = p.image ? `<img class="plant-thumb" src="/static/images/plants/${p.image.filename}" alt="${p.common_name}" loading="lazy">` : '';
 
       return `<div class="remedy-card" style="border-left-color:${convColor}">
         <div class="remedy-card-header" onclick="toggleRemedyDetail(${i})">
+          ${remedyThumb}
           <div style="flex:1">
             <div style="margin-bottom:0.4rem">${formulaBadge}${tradBadges}</div>
             <div style="font-family:var(--font-display);font-size:1rem;color:var(--ink);margin-bottom:0.3rem">${p.common_name}</div>
