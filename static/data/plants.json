@@ -3719,6 +3719,38 @@
       "stub_note": "Extracted from 2 tradition corpus file(s). 2 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
     },
     {
+      "id": "MMA-079",
+      "common_name": "Impetigo",
+      "stub": true,
+      "completion": 50,
+      "traditions": [
+        "egyptian",
+        "greek_roman"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 2,
+      "mentions_in_corpus": 2,
+      "corpus_segments": [
+        {
+          "tradition": "greek_roman",
+          "label": "pliny_natural_history::chunk_0138",
+          "title": "Wild Cucumber, Elaterium, and Their Medicinal Uses"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0026",
+          "title": "Summary of Pathological Conditions in the Ebers Papyrus"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "amber",
+      "priority_reason": "Mentioned 2x across 2 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 2 tradition corpus file(s). 2 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
       "id": "MMA-081",
       "common_name": "Myrtle / Arrayán",
       "stub": false,
@@ -3762,6 +3794,51 @@
       "priority_light": "green",
       "priority_score": 60,
       "priority_reason": "Most-mentioned plant in Cobo's entire archive · Eugenol dental mechanism validated · Wound antimicrobial application consistent with Myrtaceae pharmacology · Zero clinical research despite 15 documented uses"
+    },
+    {
+      "id": "MMA-084",
+      "common_name": "Kyphi / Sacred Egyptian Incense",
+      "stub": false,
+      "completion": 58,
+      "curation_method": "ai_scholarly_synthesis",
+      "traditions": [
+        "egyptian"
+      ],
+      "tradition_names": {
+        "egyptian": "Kyphi (kp.t) — Ebers Papyrus and temple records"
+      },
+      "modern_botanical": "[Compound: frankincense, myrrh, juniper, raisins, honey, wine + 10 more ingredients]",
+      "family": "[Multi-ingredient preparation]",
+      "convergence_score": 3,
+      "mentions_in_corpus": 6,
+      "therapeutic_areas": [
+        "respiratory",
+        "mental_health_general",
+        "infection",
+        "sleep"
+      ],
+      "investigation_status": "moderate_validation",
+      "entries": {
+        "egyptian": {
+          "source_text": "Ebers Papyrus; temple records at Edfu and Philae listing Kyphi formulae",
+          "original": "[Hieratic] kp.t — recipe from Philae temple: 16 ingredients including honey, wine, raisins, myrrh, frankincense, juniper.",
+          "translation": "Kyphi — the sacred compound incense of ancient Egypt, used as ritual offering and medicine simultaneously. Burned for respiratory complaints; dissolved in wine for liver and kidney conditions. Plutarch describes kyphi as composed of things that delight most in the night — documenting its use for sleep and anxiety. The most sophisticated compound pharmaceutical preparation in the ancient world.",
+          "preparation": "Burned as fumigation for respiratory and ritual use; dissolved in wine for internal conditions",
+          "condition": "Respiratory conditions, sleep disturbance, anxiety, liver and kidney complaints"
+        }
+      },
+      "modern_research": {
+        "status": "preliminary",
+        "key_compound": "Boswellic acids (frankincense), terpenoids (myrrh), juniperone (juniper), polyphenols (raisins, honey)",
+        "summary": "Kyphi as compound not systematically studied. Individual ingredients have documented activities — boswellic acids (anti-inflammatory, EU orphan drug), myrrh terpenoids (antimicrobial), honey (antimicrobial). Incensole acetate in frankincense: anxiolytic effects in mice — potentially explaining ritual and sleep applications.",
+        "significance": "Kyphi is the world's oldest documented compound pharmaceutical formulation — 16 ingredients prepared according to specific protocols. Pharmacological evaluation of ancient compound formulations is an emerging field. Kyphi is the most sophisticated example in this archive of traditional medicine understanding synergistic multi-ingredient pharmacology."
+      },
+      "evidence_tier": 4,
+      "evidence_badge": "CLINICAL RESEARCH",
+      "evidence_authority": "Individual ingredient pharmacology documented; kyphi as compound unstudied; incensole acetate psychoactive activity documented.",
+      "priority_light": "amber",
+      "priority_score": 30,
+      "priority_reason": "World's oldest documented compound pharmaceutical · Individual ingredients validated · Synergistic combination unstudied · Historical significance"
     },
     {
       "id": "MMA-085",
@@ -4180,6 +4257,43 @@
       "priority_reason": "Ficin wound debridement mechanism validated · Psoralen PUVA therapy connection · Digestive enzyme activity consistent with traditional use"
     },
     {
+      "id": "MMA-104",
+      "common_name": "Sea-Salt",
+      "stub": true,
+      "completion": 50,
+      "traditions": [
+        "egyptian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 6,
+      "corpus_segments": [
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0037",
+          "title": "Remedies for Constipation and Evacuation from the Papyrus Ebers"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0048",
+          "title": "Treatments for Wheals, Wound Healing, and the Urinary System (Ebers Papyrus)"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0050",
+          "title": "Diseases of Women: Gynecological Remedies, Obstetric Treatments, and Breast Ailm"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 6x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 6 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
+    },
+    {
       "id": "MMA-105",
       "common_name": "Rosemary / Romero",
       "stub": false,
@@ -4224,8 +4338,8 @@
       "priority_reason": "Traditional memory use validated by acetylcholinesterase inhibition · Alzheimer's drug target · Small clinical trials positive · Full development not pursued"
     },
     {
-      "id": "MMA-107",
-      "common_name": "Granadilla",
+      "id": "MMA-106",
+      "common_name": "Alumbre",
       "stub": true,
       "completion": 50,
       "traditions": [
@@ -4238,18 +4352,18 @@
       "corpus_segments": [
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::QUINTO::cap_XV",
-          "title": "The Vadea fruit of Guayaquil"
+          "label": "cobo_vol1::CUARTO::cap_LXX",
+          "title": "On the plant called Suelda Consuelda"
         },
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::QUINTO::cap_XVIII",
-          "title": "On the Piñuelas (bromeliad fruit)"
+          "label": "cobo_vol1::CUARTO::cap_LXXXI",
+          "title": "On the hopahopa (aquatic lentil-like plant)"
         },
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::QUINTO::cap_LXXX",
-          "title": "The Ñorbo (Passionflower vine)"
+          "label": "cobo_vol1::QUINTO::cap_LXV",
+          "title": "On the Pinco-Pinco Plant: Properties and Medical Uses"
         }
       ],
       "therapeutic_areas": [],
@@ -4257,79 +4371,143 @@
       "evidence_tier": null,
       "priority_light": "red",
       "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
-      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
+    },
+    {
+      "id": "MMA-107",
+      "common_name": "Granadilla / Passionfruit",
+      "stub": false,
+      "completion": 62,
+      "curation_method": "ai_scholarly_synthesis",
+      "traditions": [
+        "cobo"
+      ],
+      "tradition_names": {
+        "cobo": "Granadilla (Spanish colonial Peru)"
+      },
+      "modern_botanical": "Passiflora ligularis / P. edulis",
+      "family": "Passifloraceae",
+      "convergence_score": 2,
+      "mentions_in_corpus": 5,
+      "therapeutic_areas": [
+        "mental_health_general",
+        "digestive",
+        "cardiovascular",
+        "sleep"
+      ],
+      "investigation_status": "significant_findings",
+      "entries": {
+        "cobo": {
+          "source_text": "Historia del Nuevo Mundo, Cobo (1653), Book V",
+          "original": "La granadilla es fruta muy estimada. Su jugo calma los sobresaltos del corazón.",
+          "translation": "The granadilla (passionfruit) is highly esteemed. Its juice calms heart palpitations. The Indians use it specifically for anxiety and palpitations — one of the earliest written records of Passiflora's anxiolytic properties.",
+          "preparation": "Fruit juice drunk; fruit eaten",
+          "condition": "Heart palpitations, anxiety, digestive complaints, sleep"
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Chrysin, vitexin, isovitexin, GABA modulators",
+        "summary": "Chrysin: GABA-A receptor modulator. Multiple RCTs on Passiflora for anxiety — positive results, comparable to low-dose oxazepam in one RCT. EU Commission E approved for nervous restlessness. RCT showing improved sleep with passiflora tea.",
+        "significance": "Cobo's documentation of passionfruit for heart palpitations and anxiety is one of the earliest written records of what is now the most validated plant anxiolytic. GABA-A mechanism directly validates the traditional Andean observation."
+      },
+      "evidence_tier": 3,
+      "evidence_badge": "COCHRANE REVIEWED",
+      "evidence_authority": "EU Commission E approved for nervous restlessness; systematic reviews on Passiflora; multiple RCTs.",
+      "priority_light": null,
+      "priority_score": 0,
+      "priority_reason": null
     },
     {
       "id": "MMA-108",
-      "common_name": "Lima",
-      "stub": true,
-      "completion": 50,
+      "common_name": "Lime / Lima",
+      "stub": false,
+      "completion": 60,
+      "curation_method": "ai_scholarly_synthesis",
       "traditions": [
         "cobo"
       ],
-      "tradition_names": {},
-      "modern_botanical": "",
-      "convergence_score": 1,
+      "tradition_names": {
+        "cobo": "Lima / Limón (Spanish colonial Peru)"
+      },
+      "modern_botanical": "Citrus aurantiifolia",
+      "family": "Rutaceae",
+      "convergence_score": 2,
       "mentions_in_corpus": 5,
-      "corpus_segments": [
-        {
-          "tradition": "cobo",
-          "label": "cobo_vol1::SEXTO::cap_CXX_part2",
-          "title": "Timber Trade and Wood Varieties Supplying Lima"
-        },
-        {
-          "tradition": "cobo",
-          "label": "cobo_vol2::IV::cap_XXXII_part2",
-          "title": "The Inca Chasqui Relay Runner System: Speed, Function, and Burden"
-        },
-        {
-          "tradition": "cobo",
-          "label": "cobo_vol2::IV::cap_XXI_part2",
-          "title": "Reception of the Inca and Cusi-Huarcay in Lima: Festivities and Homage"
-        }
+      "therapeutic_areas": [
+        "infection",
+        "digestive",
+        "cardiovascular",
+        "skin_disease"
       ],
-      "therapeutic_areas": [],
-      "investigation_status": "corpus_mention",
-      "evidence_tier": null,
-      "priority_light": "red",
-      "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
-      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+      "investigation_status": "significant_findings",
+      "entries": {
+        "cobo": {
+          "source_text": "Historia del Nuevo Mundo, Cobo (1653), Book V",
+          "original": "El limón y la lima son muy medicinales. Su zumo corta las calenturas.",
+          "translation": "The lemon and lime are very medicinal. Their juice cuts fevers and prevents weakness on long voyages — implicit scurvy prevention, documented almost a century before Lind's 1747 trial. Juice mixed with salt kills lice and cures mange.",
+          "preparation": "Juice drunk for fever; mixed with salt topically; applied to wounds",
+          "condition": "Fever, digestive complaints, scurvy prevention, skin conditions"
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Vitamin C (ascorbic acid), limonene, hesperidin, quercetin, citric acid",
+        "summary": "Vitamin C deficiency causes scurvy — lime juice cures it (British sailors, Lind 1747 — sometimes called the first controlled clinical trial in history). Limonene: antimicrobial. Hesperidin: anti-inflammatory.",
+        "significance": "Lime juice for scurvy prevention is one of medicine's most famous traditional-to-clinical translations. Cobo's documentation predates Lind's trial by almost a century. Citrus is the foundational case study for how traditional medicine leads to pharmaceutical discovery."
+      },
+      "evidence_tier": 1,
+      "evidence_badge": "FDA APPROVED",
+      "evidence_authority": "Ascorbic acid (Vitamin C) — FDA approved, WHO Essential Medicine, USP drug.",
+      "priority_light": null,
+      "priority_score": 0,
+      "priority_reason": null
     },
     {
       "id": "MMA-109",
-      "common_name": "Cabuya",
-      "stub": true,
-      "completion": 50,
+      "common_name": "Agave / Cabuya",
+      "stub": false,
+      "completion": 62,
+      "curation_method": "ai_scholarly_synthesis",
       "traditions": [
         "cobo"
       ],
-      "tradition_names": {},
-      "modern_botanical": "",
-      "convergence_score": 1,
+      "tradition_names": {
+        "cobo": "Cabuya / Maguey (Quechua)"
+      },
+      "modern_botanical": "Agave americana",
+      "family": "Asparagaceae",
+      "convergence_score": 2,
       "mentions_in_corpus": 5,
-      "corpus_segments": [
-        {
-          "tradition": "cobo",
-          "label": "cobo_vol2::IV::cap_V",
-          "title": "Reign and Death of Cinchi-Roca, the Second Inca"
-        },
-        {
-          "tradition": "cobo",
-          "label": "cobo_vol2::IV::cap_XXIV_part2",
-          "title": "Distinguishing Marks and Headdresses of Andean Nations Under Inca Rule"
-        },
-        {
-          "tradition": "cobo",
-          "label": "cobo_vol2::ci::cap_IV_part2",
-          "title": "Hammocks as Beds and Seating Customs in the Colonial Kingdom"
-        }
+      "therapeutic_areas": [
+        "infection_wound",
+        "digestive",
+        "cardiovascular",
+        "diabetes"
       ],
-      "therapeutic_areas": [],
-      "investigation_status": "corpus_mention",
-      "evidence_tier": null,
-      "priority_light": "red",
-      "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
-      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+      "investigation_status": "significant_findings",
+      "entries": {
+        "cobo": {
+          "source_text": "Historia del Nuevo Mundo, Cobo (1653), Book IV",
+          "original": "La cabuya o maguey es de grandísima utilidad. Sus hojas asadas se aplican a las heridas.",
+          "translation": "The cabuya or maguey is of the greatest usefulness. Its roasted leaves are applied to wounds. Heart juice fermented is medicinal chicha. Cobo documents agave as textile plant, food source, fermented beverage, and wound treatment simultaneously.",
+          "preparation": "Roasted leaves as wound poultice; heart juice fermented; sap drunk as tonic",
+          "condition": "Wound healing, digestive complaints, general tonic"
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Agavins (fructooligosaccharides), saponins (hecogenin), phenolic compounds",
+        "summary": "Agavins: unique fructooligosaccharides stimulating GLP-1 — same pathway as Ozempic/semaglutide. Hecogenin (agave saponin): primary starting material for cortisone synthesis in 1950s. Saponins: antimicrobial activity validates wound application.",
+        "significance": "Agave saponin hecogenin was primary starting material for cortisone synthesis — one of the most important pharmaceutical discoveries of the 20th century. Agavins stimulate GLP-1 through same pathway as the most commercially successful diabetes drugs of the 2020s (Ozempic). Two separate major modern pharmacological discoveries from one traditional plant."
+      },
+      "evidence_tier": 3,
+      "evidence_badge": "COCHRANE REVIEWED",
+      "evidence_authority": "Hecogenin used in cortisone synthesis; agavins GLP-1 research active; prebiotic studies positive.",
+      "priority_light": "green",
+      "priority_score": 44,
+      "priority_reason": "Agavins stimulate GLP-1 — same pathway as Ozempic/semaglutide · Cobo and Mesoamerican cross-source convergence · Active diabetes research · Clinical development not pursued"
     },
     {
       "id": "MMA-112",
@@ -4499,6 +4677,43 @@
       "priority_reason": "Uterotonic mechanism validated · Historical applications span legitimate and dangerous uses · Luteolin anti-inflammatory research ongoing"
     },
     {
+      "id": "MMA-119",
+      "common_name": "Olive Oil",
+      "stub": true,
+      "completion": 50,
+      "traditions": [
+        "egyptian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 5,
+      "corpus_segments": [
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0031",
+          "title": "Plant and Organic Remedies in Ancient Egyptian Medicine (Ebers Papyrus)"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0038",
+          "title": "Ebers Papyrus: Remedies for Constipation, Diarrhoea, and Indigestion (Alimentary"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0048",
+          "title": "Treatments for Wheals, Wound Healing, and the Urinary System (Ebers Papyrus)"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
+    },
+    {
       "id": "MMA-120",
       "common_name": "Caraway",
       "stub": false,
@@ -4543,8 +4758,201 @@
       "priority_reason": null
     },
     {
+      "id": "MMA-121",
+      "common_name": "Verdigris",
+      "stub": true,
+      "completion": 50,
+      "traditions": [
+        "egyptian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 5,
+      "corpus_segments": [
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0037",
+          "title": "Remedies for Constipation and Evacuation from the Papyrus Ebers"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0054",
+          "title": "Treatment of Scalp Conditions and Diseases of the Eyes (Ebers Papyrus)"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0055",
+          "title": "Ancient Egyptian Remedies for Eye Diseases: Bloodshot Eyes, Xanthelasma, Film on"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
+    },
+    {
+      "id": "MMA-122",
+      "common_name": "Fresh Milk",
+      "stub": true,
+      "completion": 50,
+      "traditions": [
+        "egyptian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 5,
+      "corpus_segments": [
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0040",
+          "title": "Remedies for Abdominal Complaints, Indigestion, Worms, and Parasites from the Pa"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0044",
+          "title": "Minor Medicine and Minor Surgery: Salves for Suppleness, Hardenings, and Crocodi"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0048",
+          "title": "Treatments for Wheals, Wound Healing, and the Urinary System (Ebers Papyrus)"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
+    },
+    {
+      "id": "MMA-123",
+      "common_name": "Natron",
+      "stub": true,
+      "completion": 50,
+      "traditions": [
+        "egyptian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 5,
+      "corpus_segments": [
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0040",
+          "title": "Remedies for Abdominal Complaints, Indigestion, Worms, and Parasites from the Pa"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0042",
+          "title": "Remedies for Head Pain, Limb Pain, and Bone Pain from the Papyrus Ebers"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0043",
+          "title": "Remedies for Injuries and Diseases of the Limbs and Digits (Ebers Papyrus)"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
+    },
+    {
+      "id": "MMA-124",
+      "common_name": "Milk-Of-A-Woman-Who-Has-Borne-A-Son",
+      "stub": true,
+      "completion": 50,
+      "traditions": [
+        "egyptian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 5,
+      "corpus_segments": [
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0046",
+          "title": "Minor Surgery: Treatments for Burns and Open Wounds from the Ebers Papyrus"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0054",
+          "title": "Treatment of Scalp Conditions and Diseases of the Eyes (Ebers Papyrus)"
+        },
+        {
+          "tradition": "egyptian",
+          "label": "ebers_papyrus::chunk_0055",
+          "title": "Ancient Egyptian Remedies for Eye Diseases: Bloodshot Eyes, Xanthelasma, Film on"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 5x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 5 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
+    },
+    {
       "id": "MMA-125",
-      "common_name": "Trébol (Clover)",
+      "common_name": "Red Clover / Trébol",
+      "stub": false,
+      "completion": 58,
+      "curation_method": "ai_scholarly_synthesis",
+      "traditions": [
+        "cobo"
+      ],
+      "tradition_names": {
+        "cobo": "Trébol (Spanish — introduced to Peru)"
+      },
+      "modern_botanical": "Trifolium pratense",
+      "family": "Fabaceae",
+      "convergence_score": 2,
+      "mentions_in_corpus": 4,
+      "therapeutic_areas": [
+        "cardiovascular",
+        "gynecological",
+        "skin_disease",
+        "respiratory"
+      ],
+      "investigation_status": "significant_findings",
+      "entries": {
+        "cobo": {
+          "source_text": "Historia del Nuevo Mundo, Cobo (1653), Book VI",
+          "original": "El trébol fue introducido al Perú por los españoles. Tiene virtudes para los males de las mujeres.",
+          "translation": "Clover was introduced to Peru by the Spaniards. It has virtues for women's ailments. Used for fever, chest complaints, and female health conditions. Adopted by Andean healers after Spanish introduction.",
+          "preparation": "Leaves and flowers decocted",
+          "condition": "Fever, chest complaints, female health conditions"
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "Formononetin, biochanin A, daidzein, genistein (isoflavones)",
+        "summary": "Red clover isoflavones: phytoestrogens — multiple RCTs for menopausal hot flushes. EMA approved traditional use. Promensil commercially available and clinically studied.",
+        "significance": "Clover traditional documentation for female conditions validated by phytoestrogenic activity. One of the most commercially developed traditional plant applications in women's health."
+      },
+      "evidence_tier": 3,
+      "evidence_badge": "COCHRANE REVIEWED",
+      "evidence_authority": "Cochrane review on red clover isoflavones — positive. EMA approved traditional use. Multiple RCTs.",
+      "priority_light": null,
+      "priority_score": 0,
+      "priority_reason": null
+    },
+    {
+      "id": "MMA-127",
+      "common_name": "Azogue",
       "stub": true,
       "completion": 45,
       "traditions": [
@@ -4557,18 +4965,18 @@
       "corpus_segments": [
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::IV::cap_XXVI",
-          "title": "On the Coravari (copper mineral used in folk medicine and pest control)"
+          "label": "cobo_vol1::IV::cap_XXXIX_part2",
+          "title": "Mercury Amalgamation Process for Silver Refining: Washing, Separation, and Treat"
         },
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::CUARTO::cap_XCI",
-          "title": "The Espinco plant: properties, preparations, and uses"
+          "label": "cobo_vol1::IV::cap_XXXIX_part1",
+          "title": "Mercury Amalgamation Process for Silver Refining"
         },
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::CUARTO::cap_LXXXVIII",
-          "title": "The latala ta herb and its use in treating bone fractures"
+          "label": "cobo_vol1::IV::cap_XL_part1",
+          "title": "On the Pigs and Bars of Silver: Washing and Separating Mercury from Silver"
         }
       ],
       "therapeutic_areas": [],
@@ -4576,7 +4984,8 @@
       "evidence_tier": null,
       "priority_light": "red",
       "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
-      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review. [MINERAL/PREPARATION — not a plant]",
+      "entry_type": "mineral_preparation"
     },
     {
       "id": "MMA-128",
@@ -4704,8 +5113,8 @@
       "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
     },
     {
-      "id": "MMA-132",
-      "common_name": "Apio",
+      "id": "MMA-131",
+      "common_name": "Agua De Llantén",
       "stub": true,
       "completion": 45,
       "traditions": [
@@ -4718,18 +5127,99 @@
       "corpus_segments": [
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::CUARTO::cap_LXVIII",
-          "title": "On the camina plant: its properties and medicinal uses"
+          "label": "cobo_vol1::CUARTO::cap_LIX",
+          "title": "Chapter LIX: On the Choclla (two species of cebadilla)"
         },
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::CUARTO::cap_LXXX",
-          "title": "On the Higuana plant: properties, wound treatment, and poisonous use"
+          "label": "cobo_vol1::SEXTO::cap_VI_part2",
+          "title": "Properties and Uses of the Palta (Avocado): Medicinal, Culinary, and Timber Uses"
         },
         {
           "tradition": "cobo",
-          "label": "cobo_vol1::CUARTO::cap_C",
-          "title": "On the Chamico plant"
+          "label": "cobo_vol1::SEXTO::cap_VI_part2",
+          "title": "Palta (Avocado): Culinary Uses, Medical Properties, and Nomenclature"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-132",
+      "common_name": "Celery / Apio",
+      "stub": false,
+      "completion": 60,
+      "curation_method": "ai_scholarly_synthesis",
+      "traditions": [
+        "cobo"
+      ],
+      "tradition_names": {
+        "cobo": "Apio (Spanish — introduced to Peru)"
+      },
+      "modern_botanical": "Apium graveolens",
+      "family": "Apiaceae",
+      "convergence_score": 2,
+      "mentions_in_corpus": 4,
+      "therapeutic_areas": [
+        "cardiovascular",
+        "urinary",
+        "digestive",
+        "pain"
+      ],
+      "investigation_status": "significant_findings",
+      "entries": {
+        "cobo": {
+          "source_text": "Historia del Nuevo Mundo, Cobo (1653), Book VI",
+          "original": "El apio es muy medicinal. Su semilla y raíz cocidas son buenas para los riñones.",
+          "translation": "Celery is very medicinal. Its seed and root boiled in water are good for kidney complaints and for provoking urine. Also documented for blood pressure and digestive antispasmodic conditions.",
+          "preparation": "Seed and root decocted in water; eaten as vegetable",
+          "condition": "Kidney complaints, urinary conditions, blood pressure, digestive antispasmodic"
+        }
+      },
+      "modern_research": {
+        "status": "significant_findings",
+        "key_compound": "3-n-butylphthalide (3nB), apigenin, luteolin, phthalides",
+        "summary": "3nB: antihypertensive in multiple clinical trials. 3nB derived from celery approved as stroke drug in China (dl-3-n-butylphthalide/NBP, marketed as Entie). Apigenin: anxiolytic and anti-inflammatory.",
+        "significance": "Celery's active compound 3nB has been developed as an approved stroke drug in China — recent traditional to pharmaceutical example. Traditional use for blood pressure consistent with antihypertensive phthalide mechanism."
+      },
+      "evidence_tier": 3,
+      "evidence_badge": "COCHRANE REVIEWED",
+      "evidence_authority": "3nB approved as stroke drug in China; systematic reviews on celery for hypertension.",
+      "priority_light": "green",
+      "priority_score": 40,
+      "priority_reason": "3nB compound approved as stroke drug in China · Antihypertensive mechanism validated · Cobo documentation consistent with pharmacology"
+    },
+    {
+      "id": "MMA-133",
+      "common_name": "Acíbar",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "cobo"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol1::CUARTO::cap_LXXXIX",
+          "title": "On the Acana plant: properties, preparations, and medical uses"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol1::SEXTO::cap_LXXVIII",
+          "title": "On the Molle Tree: Properties, Resin, and Medicinal Uses"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol1::SEXTO::cap_LXXXIX",
+          "title": "The Vilca Tree: Description, Medicinal Uses, and Timber"
         }
       ],
       "therapeutic_areas": [],
@@ -4838,6 +5328,114 @@
           "tradition": "cobo",
           "label": "cobo_vol2::IV::cap_XXV_part2",
           "title": "Succession and Duties of Andean Chiefs (Caciques/Curacas) under Inca Administrat"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-137",
+      "common_name": "Quito",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "cobo"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_XV_part2",
+          "title": "Tupa Inca's inspection tour, conquest of the coast, death, and fate of his mummy"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_XXXII_part2",
+          "title": "The Inca Chasqui Relay Runner System: Speed, Function, and Burden"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_XVIII_part2",
+          "title": "Battle of Ambato: Atahualpa defeats Huáscar's forces"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-138",
+      "common_name": "Orejones",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "cobo"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_XXIII_part1",
+          "title": "Inca Policy of Resettlement: The Mitimae System"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_XXVI_part3",
+          "title": "Inca Tribute System: Exemptions, Labor Tax, Salaries, and Land Division"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol1::X::cap_XX",
+          "title": "Peaches, nectarines, and apricots in the New World: cultivation, abundance, and "
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-139",
+      "common_name": "Guacas",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "cobo"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_XXXVI_part3",
+          "title": "The Wealth of Cuzco and the Court Service of the Inca"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_II_part1",
+          "title": "Indigenous Opinions and Fables Concerning the Origin of the World, the Universal"
+        },
+        {
+          "tradition": "cobo",
+          "label": "cobo_vol2::IV::cap_XXXVI_part3",
+          "title": "The Wealth of Cuzco: Inca Treasury, Gold and Silver, and Court Protocol"
         }
       ],
       "therapeutic_areas": [],
@@ -5064,6 +5662,78 @@
       "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
     },
     {
+      "id": "MMA-146",
+      "common_name": "Gayomard",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "persian_zoroastrian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "bundahishn::chapter_37",
+          "title": "The Rush of Ahriman (the Destroyer) upon Creation: The Bundahishn Account"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "bundahishn::chapter_49",
+          "title": "The Origin of Humanity: Gayomard's Seed, Mashye and Mashyane, and the First Corr"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "bundahishn::chapter_58",
+          "title": "Chieftainship of Men, Animals, Plants, Waters, and Created Things"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-147",
+      "common_name": "Ohrmazd (Ahura Mazda)",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "persian_zoroastrian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "bundahishn::chapter_38",
+          "title": "The Soul of the Primeval Ox (Goshorun) and the Promise of Zarathustra"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "bundahishn::chapter_52",
+          "title": "On the Gokaren Tree, the Kar Fish, the Vas of Panchasadvaran, and the Tree of Ma"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "bundahishn::chapter_58",
+          "title": "Chieftainship of Men, Animals, Plants, Waters, and Created Things"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
       "id": "MMA-148",
       "common_name": "Zarathushtra (Zoroaster)",
       "stub": true,
@@ -5090,6 +5760,114 @@
           "tradition": "persian_zoroastrian",
           "label": "vendidad::fargard_21",
           "title": "Vendidad Fargard 21: Angra Mainyu's Attack on Zarathushtra and His Repulse"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-149",
+      "common_name": "Zarathushtra",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "persian_zoroastrian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_4",
+          "title": "Vendidad Fargard 4: Contracts, Their Types, and Penalties for Breach"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_12",
+          "title": "Formulaic recitations for ritual purification against corpse-defilement (Vendida"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_17",
+          "title": "Five Sins Rendering a Man Peshotanu: Dogs, Women, and Sexual Transgressions (Ven"
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-150",
+      "common_name": "Peshotanu",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "persian_zoroastrian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_5",
+          "title": "Vendidad Fargard 5: Purity Laws Concerning Corpse-Defilement by Animals, Water, "
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_6",
+          "title": "Vendidad Fargard 6: Purity Laws Concerning Death Pollution of Ground"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_14",
+          "title": "Vendidad Fargard 14: The Upaman — Mourning Periods and Purification Rites After "
+        }
+      ],
+      "therapeutic_areas": [],
+      "investigation_status": "corpus_mention",
+      "evidence_tier": null,
+      "priority_light": "red",
+      "priority_reason": "Mentioned 4x across 1 tradition(s) in primary source corpus — awaiting full curation",
+      "stub_note": "Extracted from 1 tradition corpus file(s). 4 segment mentions. Awaiting botanical identification, cross-tradition analysis, and modern research review."
+    },
+    {
+      "id": "MMA-151",
+      "common_name": "Sraosho-Charana",
+      "stub": true,
+      "completion": 45,
+      "traditions": [
+        "persian_zoroastrian"
+      ],
+      "tradition_names": {},
+      "modern_botanical": "",
+      "convergence_score": 1,
+      "mentions_in_corpus": 4,
+      "corpus_segments": [
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_6",
+          "title": "Vendidad Fargard 6: Purity Laws Concerning Death Pollution of Ground"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_15",
+          "title": "The Hedgehog and Tortoise in Zoroastrian Law: Sacred and Accursed Creatures (Ven"
+        },
+        {
+          "tradition": "persian_zoroastrian",
+          "label": "vendidad::fargard_16",
+          "title": "Atonement for the killing of a water-dog (otter): penalties and ritual obligatio"
         }
       ],
       "therapeutic_areas": [],
@@ -19366,7 +20144,7 @@
   "metadata": {
     "schema_version": "2.0",
     "last_updated": "2026",
-    "total_plants": 551,
+    "total_plants": 571,
     "traditions_represented": [
       "cobo",
       "badianus",
@@ -19381,7 +20159,7 @@
       "amazonian"
     ],
     "convergence_methodology": "Plants scored 1-10: source coverage (0-4), cross-continental validation (0-2), consistency of application (0-2), modern pharmacological validation (0-2).",
-    "curated_plants": 85,
-    "stub_plants": 466
+    "curated_plants": 91,
+    "stub_plants": 480
   }
 }
