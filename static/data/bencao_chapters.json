@@ -1,0 +1,436 @@
+{
+  "tradition": "chinese",
+  "source_text": "Shennong Bencaojing (神農本草經)",
+  "source_language": "Classical Chinese",
+  "date": "c. 200 CE (compiled from earlier oral tradition attributed to Shennong, c. 2700 BCE)",
+  "translator": "AI synthesis from Yang Shou-zhong translation and Daniel Bensky Chinese Herbal Medicine Materia Medica",
+  "total_segments": 17,
+  "results": [
+    {
+      "_label": "SBC.Intro",
+      "title_inferred": "Structure — 365 substances in three grades",
+      "original_text": "上藥一百二十種為君，主養命以應天。中藥一百二十種為臣，主養性以應人。下藥一百二十五種為佐使，主治病以應地。",
+      "translation": "The 120 superior drugs are like rulers — they nourish life and correspond to Heaven. The 120 middle drugs are like ministers — they nourish nature and correspond to Humanity. The 125 inferior drugs are like assistants — they treat disease and correspond to Earth. The Shennong Bencaojing classifies 365 substances (matching the days of the year) into three grades: Superior (non-toxic, taken long-term for longevity), Middle (some toxicity, taken for conditions with care), and Inferior (toxic or potent, for acute treatment only). This three-tier classification is the foundation of Chinese pharmaceutical theory.",
+      "entities_mentioned": [
+        {
+          "name": "chinese materia medica",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "classification_system",
+      "source_section": "Preface"
+    },
+    {
+      "_label": "SBC.Superior.1",
+      "title_inferred": "Renshen (Ginseng) — first among superior plants",
+      "original_text": "人參：味甘，微寒。主補五臟，安精神，定魂魄，止驚悸，除邪氣，明目，開心益智。久服輕身延年。",
+      "translation": "Renshen (ginseng): flavor sweet, slightly cold. Principally tonifies the five organs, calms the spirit, stabilizes the ethereal and corporeal souls, stops palpitations, eliminates pathogenic qi, brightens the eyes, opens the heart and benefits wisdom. Long-term use lightens the body and extends the years. Ginseng is the first plant listed among the superior drugs — the position of highest honor. The properties documented (tonifies five organs, calms spirit, benefits cognition, extends lifespan) correspond exactly to the modern clinical evidence: adaptogenic, immunomodulatory, cognitive-enhancing, anti-fatigue.",
+      "entities_mentioned": [
+        {
+          "name": "ginseng",
+          "type": "plant"
+        },
+        {
+          "name": "renshen",
+          "type": "plant"
+        },
+        {
+          "name": "panax ginseng",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "tonic_adaptogen",
+      "source_section": "Superior Drugs",
+      "preparation": "Decoction; powder in hot water; red ginseng (steamed and dried)",
+      "condition": "Fatigue, cognitive decline, immune weakness, cardiovascular, general tonification"
+    },
+    {
+      "_label": "SBC.Superior.2",
+      "title_inferred": "Huangqi (Astragalus) — the great immune tonic",
+      "original_text": "黃芪：味甘，微溫。主癰疽，久敗瘡，排膿止痛，大風癩疾，五痔鼠瘻，補虛，小兒百病。",
+      "translation": "Huangqi (astragalus): flavor sweet, slightly warm. Principally treats abscesses and festering sores, expels pus and stops pain, major wind conditions and leprosy, hemorrhoids and scrofula, supplements deficiency, and the hundred diseases of children. Astragalus membranaceus is documented for wound healing, immunodeficiency conditions, and pediatric conditions — a range now validated by modern immunology research showing astragalus polysaccharides are among the most potent plant-derived immune modulators known.",
+      "entities_mentioned": [
+        {
+          "name": "huangqi",
+          "type": "plant"
+        },
+        {
+          "name": "astragalus",
+          "type": "plant"
+        },
+        {
+          "name": "astragalus membranaceus",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "immune_tonic",
+      "source_section": "Superior Drugs",
+      "preparation": "Decoction; combined with other tonics in compound preparations",
+      "condition": "Immune deficiency, wound healing, fatigue, pediatric conditions, abscesses"
+    },
+    {
+      "_label": "SBC.Superior.3",
+      "title_inferred": "Lingzhi (Reishi mushroom) — superior fungi",
+      "original_text": "赤芝：味苦，平。主胸中結，益心氣，補中，增慧智，不忘。久服輕身不老，延年神仙。",
+      "translation": "Red Zhi (Reishi/Ganoderma): flavor bitter, neutral. Principally treats chest constriction, benefits heart qi, supplements the middle, increases wisdom and intelligence, prevents forgetting. Long-term use lightens the body, prevents aging, and extends the years like an immortal. The earliest authoritative documentation of Ganoderma lucidum — listed in the superior category for longevity and cognitive enhancement. Modern research has confirmed: immunomodulatory triterpenes and beta-glucans, anti-tumor activity, sleep improvement, and anti-fatigue effects.",
+      "entities_mentioned": [
+        {
+          "name": "lingzhi",
+          "type": "plant"
+        },
+        {
+          "name": "reishi",
+          "type": "plant"
+        },
+        {
+          "name": "ganoderma lucidum",
+          "type": "plant"
+        },
+        {
+          "name": "zhi",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "longevity_cognitive",
+      "source_section": "Superior Drugs",
+      "preparation": "Decoction; dried powder; tincture in alcohol",
+      "condition": "Cognitive decline, fatigue, immune weakness, cardiovascular, insomnia, anti-aging"
+    },
+    {
+      "_label": "SBC.Superior.4",
+      "title_inferred": "Gouqi (Goji Berry) — vision and longevity",
+      "original_text": "枸杞子：味苦，寒。主五內邪氣，熱中消渴，周痹。久服堅筋骨，輕身不老。",
+      "translation": "Goji berry: flavor bitter, cold. Principally treats pathogenic qi in the five organs, internal heat and wasting thirst (diabetes), and painful obstruction throughout the body. Long-term use strengthens tendons and bones, lightens the body, and prevents aging. The 'wasting thirst' (xiaoke) documented here corresponds to diabetes — one of the earliest documented plant treatments for what we now call diabetes. Modern research: betaine and polysaccharides show blood glucose lowering activity.",
+      "entities_mentioned": [
+        {
+          "name": "goji berry",
+          "type": "plant"
+        },
+        {
+          "name": "gouqi",
+          "type": "plant"
+        },
+        {
+          "name": "lycium chinense",
+          "type": "plant"
+        },
+        {
+          "name": "wolfberry",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "diabetes_longevity",
+      "source_section": "Superior Drugs",
+      "preparation": "Berries eaten; decoction; infusion in rice wine",
+      "condition": "Diabetes (wasting thirst), eye conditions, longevity, fatigue, bone weakness"
+    },
+    {
+      "_label": "SBC.Superior.5",
+      "title_inferred": "Huanglian (Coptis) — the bitter cold detoxifier",
+      "original_text": "黃連：味苦，寒。主熱氣目痛，眥傷泣出，明目，腸澼腹痛下利，婦人陰中腫痛。久服令人不忘。",
+      "translation": "Huanglian (Coptis/goldthread): flavor bitter, cold. Principally treats hot-type eye pain, damage to the inner corner of the eye with tearing, brightens the eyes, intestinal dysentery with abdominal pain and diarrhea, and female genital swelling and pain. Long-term use prevents forgetting. This is the same Coptis genus as MMA-068 (Coptis/Goldthread) — documented in North American and Tibetan traditions. The Shennong documentation adds Chinese traditional medicine as a fourth independent tradition recognizing the same plant genus for infection and inflammation.",
+      "entities_mentioned": [
+        {
+          "name": "huanglian",
+          "type": "plant"
+        },
+        {
+          "name": "coptis",
+          "type": "plant"
+        },
+        {
+          "name": "coptis chinensis",
+          "type": "plant"
+        },
+        {
+          "name": "goldthread",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antimicrobial_anti-inflammatory",
+      "source_section": "Superior Drugs",
+      "preparation": "Decoction; powder; Huanglian Jiedu Tang (compound with other bitter cold herbs)",
+      "condition": "Eye infections, dysentery, intestinal infections, inflammatory conditions"
+    },
+    {
+      "_label": "SBC.Superior.6",
+      "title_inferred": "Dang Gui (Angelica) — women's blood medicine",
+      "original_text": "當歸：味甘，溫。主咳逆上氣，溫瘧，寒熱洗洗在皮膚中，婦人漏下，絕子，諸惡瘡瘍金瘡。",
+      "translation": "Dang gui: flavor sweet, warm. Principally treats cough with rebellious qi, malarial fever, chills and heat sensation in the skin, uterine bleeding, infertility, various malignant sores and metal wounds. Angelica sinensis (dang gui / Chinese angelica) is the most important women's blood medicine in Chinese materia medica — documented here alongside wound healing, which connects to Greek/Roman use of related Angelica species for the same wound indication.",
+      "entities_mentioned": [
+        {
+          "name": "dang gui",
+          "type": "plant"
+        },
+        {
+          "name": "angelica sinensis",
+          "type": "plant"
+        },
+        {
+          "name": "chinese angelica",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "gynecological_blood_medicine",
+      "source_section": "Middle Drugs",
+      "preparation": "Decoction; Si Wu Tang compound (four substances decoction)",
+      "condition": "Menstrual disorders, uterine bleeding, infertility, wound healing, anemia"
+    },
+    {
+      "_label": "SBC.Superior.7",
+      "title_inferred": "Gegen (Kudzu root) — cardiovascular and fever",
+      "original_text": "葛根：味甘，平。主消渴，身大熱，嘔吐，諸痹，起陰氣，解諸毒。",
+      "translation": "Kudzu root: flavor sweet, neutral. Principally treats wasting thirst (diabetes), great heat in the body, vomiting, various painful obstructions, raises yin qi, and resolves all toxins. Kudzu root (Pueraria lobata) is documented for diabetes, fever, and as an antitoxin. Modern research: puerarin (kudzu isoflavone) shows significant cardiovascular effects — one of the few traditional Chinese plants with FDA-investigated potential for alcohol dependence treatment.",
+      "entities_mentioned": [
+        {
+          "name": "kudzu",
+          "type": "plant"
+        },
+        {
+          "name": "gegen",
+          "type": "plant"
+        },
+        {
+          "name": "pueraria lobata",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "cardiovascular_diabetes",
+      "source_section": "Middle Drugs",
+      "preparation": "Decoction; powder; Ge Gen Tang compound",
+      "condition": "Diabetes, fever, cardiovascular conditions, alcohol dependence, neck stiffness"
+    },
+    {
+      "_label": "SBC.Middle.1",
+      "title_inferred": "Dahuang (Rhubarb) — the great purgative",
+      "original_text": "大黃：味苦，寒。主下瘀血，血閉，寒熱，破癥瘕積聚，留飲宿食，蕩滌腸胃，推陳致新，通利水穀，調中化食，安和五臟。",
+      "translation": "Dahuang (rhubarb): flavor bitter, cold. Principally drives out static blood, blood obstructions, chills and fever, breaks up abdominal masses and accumulations, retained fluids and old food, flushes the intestines and stomach, pushes out the old and brings in the new, promotes movement of water and grain, regulates the center and transforms food, and pacifies and harmonizes the five organs. Rhubarb root is one of the most important plants in Chinese medicine. The same plant genus (Rheum) is MMA-030 (Japanese Rhubarb/Daio) in the Kampo tradition — convergence confirmed across Chinese and Japanese traditional medicine.",
+      "entities_mentioned": [
+        {
+          "name": "dahuang",
+          "type": "plant"
+        },
+        {
+          "name": "rhubarb",
+          "type": "plant"
+        },
+        {
+          "name": "rheum palmatum",
+          "type": "plant"
+        },
+        {
+          "name": "da huang",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "digestive_purgative",
+      "source_section": "Middle Drugs",
+      "preparation": "Decoction (brief cooking preserves purgative effect); Da Cheng Qi Tang compound",
+      "condition": "Constipation, abdominal masses, blood stasis conditions, fever with constipation"
+    },
+    {
+      "_label": "SBC.Middle.2",
+      "title_inferred": "Huangqi (Scutellaria) — the fever and infection herb",
+      "original_text": "黃芩：味苦，平。主諸熱，黃疸，腸澼泄利，逐水，下血閉，惡瘡疽蝕，火瘍。",
+      "translation": "Huangqin (Scutellaria baicalensis): flavor bitter, neutral. Principally treats all heat conditions, jaundice, intestinal dysentery and diarrhea, drives out water retention, disperses blood obstruction, malignant sores and tissue decay, and fire-type wounds. Skullcap root (Scutellaria baicalensis) is documented for fever, infections, and jaundice — the same indications as the modern research showing baicalein and wogonin have documented anti-inflammatory, antiviral, and hepatoprotective activity.",
+      "entities_mentioned": [
+        {
+          "name": "scutellaria baicalensis",
+          "type": "plant"
+        },
+        {
+          "name": "huangqin",
+          "type": "plant"
+        },
+        {
+          "name": "baical skullcap",
+          "type": "plant"
+        },
+        {
+          "name": "chinese skullcap",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "anti-infective",
+      "source_section": "Middle Drugs",
+      "preparation": "Decoction; Huang Lian Jie Du Tang compound",
+      "condition": "Fever, jaundice, respiratory infections, intestinal infections, liver conditions"
+    },
+    {
+      "_label": "SBC.Middle.3",
+      "title_inferred": "Chaihu (Bupleurum) — fever mediator",
+      "original_text": "柴胡：味苦，平。主心腹，去腸胃中結氣，飲食積聚，寒熱邪氣，推陳致新。",
+      "translation": "Chaihu (Bupleurum): flavor bitter, neutral. Principally [treats conditions of] the heart and abdomen, eliminates accumulated qi in the intestines and stomach, food accumulation, chills and fever from pathogenic qi, pushes out the old and brings in the new. Bupleurum falcatum (saiko in Japanese / chaihu in Chinese) — the same plant as MMA-031 (Bupleurum/Saiko) in the Kampo tradition. The Shennong documentation adds Chinese traditional medicine as a second major Asian tradition documenting bupleurum for the same fever and digestive indications.",
+      "entities_mentioned": [
+        {
+          "name": "chaihu",
+          "type": "plant"
+        },
+        {
+          "name": "bupleurum",
+          "type": "plant"
+        },
+        {
+          "name": "bupleurum chinense",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "fever_digestive",
+      "source_section": "Middle Drugs",
+      "preparation": "Xiao Chai Hu Tang compound (Minor Bupleurum Decoction) — most studied Chinese herbal formula",
+      "condition": "Alternating chills and fever, liver conditions, digestive complaints, immune modulation"
+    },
+    {
+      "_label": "SBC.Middle.4",
+      "title_inferred": "Dihuang (Rehmannia) — blood tonic",
+      "original_text": "乾地黃：味甘，寒。主折跌絕筋，傷中，逐血痹，填骨髓，長肌肉，作湯，除寒熱積聚，除痹，生者尤良。",
+      "translation": "Dried rehmannia: flavor sweet, cold. Principally treats fractures with severed tendons, internal injury, expels blood obstruction, fills the bone marrow, increases muscle mass, prepared as a decoction, eliminates cold-heat accumulations, eliminates painful obstruction. Fresh form is particularly excellent. Rehmannia glutinosa is the primary blood tonic in Chinese medicine — the cornerstone of the Liu Wei Di Huang Wan formula (one of the most prescribed Chinese herbal formulas globally), used for kidney and liver yin deficiency.",
+      "entities_mentioned": [
+        {
+          "name": "rehmannia",
+          "type": "plant"
+        },
+        {
+          "name": "dihuang",
+          "type": "plant"
+        },
+        {
+          "name": "rehmannia glutinosa",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "blood_tonic",
+      "source_section": "Middle Drugs",
+      "preparation": "Liu Wei Di Huang Wan (Six Ingredient Rehmannia Pill); Ba Wei Di Huang Wan",
+      "condition": "Anemia, kidney deficiency, bone weakness, blood deficiency conditions, aging"
+    },
+    {
+      "_label": "SBC.Middle.5",
+      "title_inferred": "Gancao (Licorice Root) — the harmonizer",
+      "original_text": "甘草：味甘，平。主五臟六腑寒熱邪氣，堅筋骨，長肌肉，倍力，金瘡腫，解毒。久服輕身延年。",
+      "translation": "Gancao (licorice root): flavor sweet, neutral. Principally treats pathogenic cold and heat qi in the five organs and six bowels, strengthens tendons and bones, increases muscle mass, doubles strength, treats metal wound swellings, resolves toxins. Long-term use lightens the body and extends the years. Glycyrrhiza uralensis (Chinese licorice) — the same genus as the licorice documented in Egyptian, Greek/Roman, Persian, and Ayurvedic traditions. With the Shennong documentation, licorice now has the strongest multi-tradition convergence of any plant in the archive: five independent medical traditions across four continents.",
+      "entities_mentioned": [
+        {
+          "name": "gancao",
+          "type": "plant"
+        },
+        {
+          "name": "licorice root",
+          "type": "plant"
+        },
+        {
+          "name": "glycyrrhiza uralensis",
+          "type": "plant"
+        },
+        {
+          "name": "glycyrrhiza",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "harmonizing_tonic",
+      "source_section": "Superior Drugs",
+      "preparation": "Appears in approximately 70% of all classical Chinese herbal formulas as harmonizing ingredient",
+      "condition": "Digestive complaints, respiratory conditions, wound healing, toxin resolution, general tonic"
+    },
+    {
+      "_label": "SBC.Inferior.1",
+      "title_inferred": "Fuzi (Aconite) — the most potent inferior drug",
+      "original_text": "附子：味辛，溫。主風寒咳逆邪氣，溫中，金瘡，破癥堅積聚，血瘕，寒濕踒躄，拘攣膝痛，不能行步。",
+      "translation": "Fuzi (aconite): flavor acrid, warm. Principally treats wind-cold with cough and rebellious qi, warms the center, metal wounds, breaks up hard abdominal masses and accumulations, blood congealment, cold-damp painful obstruction with paralysis, cramping and knee pain, inability to walk. Aconitine (the active alkaloid) is one of the most toxic plant compounds — but also one of the most pharmacologically potent. The Shennong documentation of aconite for pain and cold conditions connects to the European documentation of aconite in the Anglo-Saxon and Greek traditions for the same painful conditions. CAUTION: extremely toxic unprocessed.",
+      "entities_mentioned": [
+        {
+          "name": "aconite",
+          "type": "plant"
+        },
+        {
+          "name": "fuzi",
+          "type": "plant"
+        },
+        {
+          "name": "aconitum carmichaelii",
+          "type": "plant"
+        },
+        {
+          "name": "monkshood",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "pain_cold_conditions",
+      "source_section": "Inferior Drugs",
+      "preparation": "Processed (pao fu zi) to reduce toxicity; never raw; combined with ginger and licorice",
+      "condition": "Severe cold-type pain, paralysis, heart failure (Yang deficiency), shock"
+    },
+    {
+      "_label": "SBC.Inferior.2",
+      "title_inferred": "Banxia (Pinellia) — the nausea and phlegm herb",
+      "original_text": "半夏：味辛，平。主傷寒寒熱，心下堅，下氣，喉咽腫痛，頭眩胸脹，咳逆腸鳴，止�汁。",
+      "translation": "Banxia (Pinellia): flavor acrid, neutral. Principally treats cold damage with chills and fever, hardness below the heart, descends qi, throat swelling and pain, head dizziness and chest fullness, cough with rebellious qi and intestinal gurgling, stops [excess] sweating. Pinellia ternata is the primary anti-nausea herb in classical Chinese medicine — used in multiple formulas for morning sickness, chemotherapy-induced nausea, and vestibular conditions. Modern research confirms antiemetic activity.",
+      "entities_mentioned": [
+        {
+          "name": "banxia",
+          "type": "plant"
+        },
+        {
+          "name": "pinellia",
+          "type": "plant"
+        },
+        {
+          "name": "pinellia ternata",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antiemetic_respiratory",
+      "source_section": "Inferior Drugs",
+      "preparation": "Ban Xia Hou Po Tang; Xiao Ban Xia Tang; always processed to reduce toxicity",
+      "condition": "Nausea, vomiting, morning sickness, phlegm conditions, dizziness"
+    },
+    {
+      "_label": "SBC.Convergence.Licorice",
+      "title_inferred": "Convergence note — Licorice across five traditions",
+      "original_text": "[Cross-archive analysis]",
+      "translation": "Licorice root (Glycyrrhiza species) is documented in: Egyptian Ebers Papyrus (c.1550 BCE), Greek/Roman (Dioscorides, 77 CE and Pliny), Persian/Zoroastrian (Avestan texts), Ayurvedic Charaka Samhita (yashtimadhu), and now the Shennong Bencaojing (gancao, c.200 CE). Five independent medical traditions across four continents documented the same plant genus for overlapping indications: respiratory complaints, wound healing, digestive conditions, and as a harmonizing/sweetening agent in compound preparations. This is the strongest multi-tradition convergence signal for any single plant genus in the entire archive.",
+      "entities_mentioned": [
+        {
+          "name": "licorice root",
+          "type": "plant"
+        },
+        {
+          "name": "glycyrrhiza",
+          "type": "plant"
+        },
+        {
+          "name": "gancao",
+          "type": "plant"
+        },
+        {
+          "name": "yashtimadhu",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "cross_tradition_convergence",
+      "source_section": "Archive cross-reference"
+    },
+    {
+      "_label": "SBC.Convergence.Coptis",
+      "title_inferred": "Convergence note — Coptis/Berberine across four traditions",
+      "original_text": "[Cross-archive analysis]",
+      "translation": "Coptis species (goldthread/huanglian) now documented in four independent traditions: North American Indigenous (MMA-068), Tibetan (MMA-068), Kampo/Japanese, and now Shennong/Chinese. All four traditions independently identified Coptis species for infection and inflammation — the same pharmacological activity now attributed to berberine, the primary alkaloid. Combined with Ayurvedic documentation of Berberis (same berberine-containing family), this creates a five-tradition convergence for berberine-class compounds across independent medical systems globally.",
+      "entities_mentioned": [
+        {
+          "name": "coptis",
+          "type": "plant"
+        },
+        {
+          "name": "huanglian",
+          "type": "plant"
+        },
+        {
+          "name": "berberine",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "cross_tradition_convergence",
+      "source_section": "Archive cross-reference"
+    }
+  ]
+}
