@@ -229,6 +229,46 @@
 
   @media (max-width: 700px) { .home-grid { grid-template-columns: 1fr; } }
 
+  .home-grid-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  .source-summary-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--green);
+    padding: 1.1rem 1.3rem;
+  }
+  .source-summary-card .ss-tradition {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+  .source-summary-card h3 {
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+  .source-summary-card .ss-author {
+    font-style: italic;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  .source-summary-card .ss-date {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    color: var(--muted);
+  }
+
   .source-card {
     background: white;
     border: 1px solid var(--border);
@@ -1844,29 +1884,13 @@
     <hr class="divider">
 
     <div class="section-header">
-      <div class="section-eyebrow">The Three Primary Sources</div>
-      <h2 class="section-title">Where the Archive Began</h2>
+      <div class="section-eyebrow">18 Traditions · Primary Source Documents</div>
+      <h2 class="section-title">Where the Archive Draws From</h2>
+      <p class="section-desc">The project began with three primary sources on colonial-era Andean and Aztec medicine. It has since grown into a comparative archive spanning 18 medical traditions across five continents and roughly 4,000 years — each entry below is the original document a tradition's remedies are translated from.</p>
     </div>
 
-    <div class="home-grid">
-      <div class="source-card">
-        <div class="source-card-year">1653</div>
-        <h3>Historia del Nuevo Mundo</h3>
-        <div class="author">Bernabé Cobo SJ · Jesuit missionary, 61 years in South America</div>
-        <p>The most comprehensive natural history of the Americas from the colonial period. Cobo personally transported cinchona bark (quinine) to Europe in 1632. His botanical sections — largely untranslated into English — document over 2,000 Andean plants with indigenous medical uses.</p>
-      </div>
-      <div class="source-card badianus">
-        <div class="source-card-year">1552</div>
-        <h3>Libellus de Medicinalibus Indorum Herbis</h3>
-        <div class="author">Martín de la Cruz &amp; Juan de Badiano · Aztec physicians</div>
-        <p>The only pre-Columbian medical text authored by indigenous physicians. Written 30 years after the conquest by an Aztec doctor documenting his own active practice — not describing it to an outside observer.</p>
-      </div>
-      <div class="source-card florentine">
-        <div class="source-card-year">1577</div>
-        <h3>Historia General de las Cosas de Nueva España</h3>
-        <div class="author">Bernardino de Sahagún · Franciscan friar</div>
-        <p>The most rigorously compiled ethnographic study of Aztec civilization. Sahagún cross-checked all information across multiple independent indigenous informants — the closest pre-modern equivalent to a peer review process.</p>
-      </div>
+    <div class="home-grid-full" id="overview-sources-grid">
+      <!-- populated by renderOverviewSources() -->
     </div>
   </section>
 
@@ -2562,6 +2586,7 @@ async function loadData() {
     ]);
     plantData = (await pRes.json()).plants || [];
     traditionData = (await tRes.json()).traditions || [];
+    renderOverviewSources();
     conditionData = (await cRes.json()).conditions || [];
     longevityData = (await lRes.json()).traditions || [];
 
@@ -2696,6 +2721,25 @@ function linkFormulasToPlants() {
 }
 
 // ── Traditions overview ─────────────────────────────────
+function renderOverviewSources() {
+  const grid = document.getElementById('overview-sources-grid');
+  if (!grid || !traditionData.length) return;
+  // Founding three first (Cobo, Badianus, Florentine), then the rest in the
+  // order traditions.json lists them
+  const foundingIds = ['cobo', 'badianus', 'florentine'];
+  const sorted = [
+    ...foundingIds.map(id => traditionData.find(t => t.id === id)).filter(Boolean),
+    ...traditionData.filter(t => !foundingIds.includes(t.id)),
+  ];
+  grid.innerHTML = sorted.map(t => `
+    <div class="source-summary-card" style="border-top-color:${t.color}">
+      <div class="ss-tradition">${t.icon} ${t.name}</div>
+      <h3>${t.primary_document}</h3>
+      <div class="ss-author">${t.author}</div>
+      <div class="ss-date">${t.date_range}</div>
+    </div>`).join('');
+}
+
 function renderTraditionsOverview() {
   const grid = document.getElementById('traditions-overview-grid');
   if (!grid || !traditionData.length) return;
