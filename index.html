@@ -1627,12 +1627,55 @@
   }
   .research-query-box h3 { font-family: var(--font-display); color: #90CAF9; font-size: 1rem; margin-bottom: 0.5rem; }
   .research-query-box p { color: #BBDEFB; font-size: 0.88rem; opacity: 0.85; line-height: 1.6; margin-bottom: 1.2rem; }
-  .research-plant-select {
-    font-family: var(--font-code); font-size: 0.72rem; letter-spacing: 0.05em;
-    padding: 0.6rem 1rem; border: 1px solid #2A4A7A; background: rgba(144,202,249,0.1);
-    color: #BBDEFB; cursor: pointer; min-width: 220px; appearance: none;
+  .research-autocomplete-wrap {
+    position: relative;
+    flex: 1;
+    min-width: 260px;
   }
-  .research-plant-select option { background: #1C2D4A; color: #BBDEFB; }
+  .research-plant-input {
+    width: 100%;
+    font-family: var(--font-code); font-size: 0.72rem; letter-spacing: 0.05em;
+    padding: 0.65rem 1rem; border: 1px solid #2A4A7A; background: rgba(144,202,249,0.1);
+    color: #E3F2FD; box-sizing: border-box;
+  }
+  .research-plant-input::placeholder { color: #6B8AAE; }
+  .research-plant-input:focus { outline: none; border-color: #64B5F6; }
+  .research-suggestions {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0; right: 0;
+    max-height: 280px;
+    overflow-y: auto;
+    background: #142238;
+    border: 1px solid #2A4A7A;
+    z-index: 50;
+  }
+  .research-suggestions.open { display: block; }
+  .research-suggestion-item {
+    padding: 0.6rem 1rem;
+    font-family: var(--font-code);
+    font-size: 0.7rem;
+    color: #BBDEFB;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(144,202,249,0.1);
+  }
+  .research-suggestion-item:last-child { border-bottom: none; }
+  .research-suggestion-item:hover, .research-suggestion-item.active {
+    background: rgba(100,181,246,0.18);
+  }
+  .research-suggestion-item .sug-botanical {
+    color: #6B8AAE;
+    font-style: italic;
+    margin-left: 0.4rem;
+  }
+  .research-suggestions-empty {
+    padding: 0.7rem 1rem;
+    font-family: var(--font-code);
+    font-size: 0.68rem;
+    color: #6B8AAE;
+    font-style: italic;
+  }
   .research-search-btn {
     font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.1em;
     text-transform: uppercase; padding: 0.6rem 1.4rem;
@@ -2363,12 +2406,18 @@
 
     <div class="research-query-box">
       <h3>Query PubMed</h3>
-      <p>Select a plant from the database. Results are fetched live from PubMed and scored automatically. Citation counts load 1–2 seconds after initial results appear.</p>
+      <p>Type a plant name to search — results are fetched live from PubMed and scored automatically. Citation counts load 1–2 seconds after initial results appear.</p>
       <div class="query-row" style="gap:0.8rem">
-        <select class="research-plant-select" id="research-plant-select">
-          <option value="">— Select a plant —</option>
-        </select>
-        <button class="research-search-btn" id="research-search-btn" onclick="runResearchQuery()">Search PubMed</button>
+        <div class="research-autocomplete-wrap" id="research-autocomplete-wrap">
+          <input type="text" class="research-plant-input" id="research-plant-input"
+                 placeholder="Type a plant name… e.g. cinchona, willow, turmeric"
+                 autocomplete="off"
+                 oninput="onResearchQueryInput()"
+                 onfocus="onResearchQueryInput()"
+                 onkeydown="onResearchInputKeydown(event)">
+          <div class="research-suggestions" id="research-suggestions"></div>
+        </div>
+        <button class="research-search-btn" id="research-search-btn" onclick="runResearchQuery()" disabled>Search PubMed</button>
         <span id="research-status" style="font-family:var(--font-code);font-size:0.68rem;color:#90CAF9;align-self:center"></span>
       </div>
     </div>
@@ -3297,25 +3346,107 @@ async function fetchAbstract(pmid) {
     .join(' ').substring(0, 600);
 }
 
+let selectedResearchPlantId = null;
+let researchActiveSuggestionIdx = -1;
+
 function initResearchTab() {
-  const select = document.getElementById('research-plant-select');
-  if (!select || select.children.length > 1) return;
-  plantData.forEach(p => {
-    const opt = document.createElement('option');
-    opt.value = p.id;
-    opt.textContent = `${p.common_name} (${p.modern_botanical || 'identification pending'})`;
-    select.appendChild(opt);
+  // No longer pre-populates a dropdown — the autocomplete filters plantData
+  // live, which matters now that the database has grown past 500 entries.
+  document.addEventListener('click', (e) => {
+    const wrap = document.getElementById('research-autocomplete-wrap');
+    if (wrap && !wrap.contains(e.target)) closeResearchSuggestions();
   });
 }
 
+function onResearchQueryInput() {
+  const input = document.getElementById('research-plant-input');
+  const query = input.value.trim().toLowerCase();
+  const btn = document.getElementById('research-search-btn');
+
+  // Typing invalidates whatever was previously selected until they pick again
+  selectedResearchPlantId = null;
+  btn.disabled = true;
+
+  if (!query) { closeResearchSuggestions(); return; }
+
+  const matches = plantData.filter(p =>
+    p.common_name.toLowerCase().includes(query) ||
+    (p.modern_botanical || '').toLowerCase().includes(query)
+  ).slice(0, 12);
+
+  renderResearchSuggestions(matches, query);
+}
+
+function renderResearchSuggestions(matches, query) {
+  const box = document.getElementById('research-suggestions');
+  researchActiveSuggestionIdx = -1;
+
+  if (!matches.length) {
+    box.innerHTML = `<div class="research-suggestions-empty">No plants match "${query}"</div>`;
+    box.classList.add('open');
+    return;
+  }
+
+  box.innerHTML = matches.map((p, i) => `
+    <div class="research-suggestion-item" data-plant-id="${p.id}" data-idx="${i}"
+         onclick="selectResearchPlant('${p.id}')">
+      ${p.common_name}${p.modern_botanical ? `<span class="sug-botanical">${p.modern_botanical}</span>` : ''}
+    </div>`).join('');
+  box.classList.add('open');
+}
+
+function closeResearchSuggestions() {
+  const box = document.getElementById('research-suggestions');
+  box.classList.remove('open');
+  researchActiveSuggestionIdx = -1;
+}
+
+function selectResearchPlant(plantId) {
+  const plant = plantData.find(p => p.id === plantId);
+  if (!plant) return;
+  selectedResearchPlantId = plantId;
+  document.getElementById('research-plant-input').value = plant.common_name;
+  document.getElementById('research-search-btn').disabled = false;
+  closeResearchSuggestions();
+  runResearchQuery();
+}
+
+function onResearchInputKeydown(e) {
+  const box = document.getElementById('research-suggestions');
+  const items = box.querySelectorAll('.research-suggestion-item');
+  if (!items.length && e.key !== 'Escape') return;
+
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    researchActiveSuggestionIdx = Math.min(researchActiveSuggestionIdx + 1, items.length - 1);
+    updateResearchActiveSuggestion(items);
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    researchActiveSuggestionIdx = Math.max(researchActiveSuggestionIdx - 1, 0);
+    updateResearchActiveSuggestion(items);
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    const idx = researchActiveSuggestionIdx >= 0 ? researchActiveSuggestionIdx : 0;
+    const target = items[idx];
+    if (target) selectResearchPlant(target.dataset.plantId);
+  } else if (e.key === 'Escape') {
+    closeResearchSuggestions();
+  }
+}
+
+function updateResearchActiveSuggestion(items) {
+  items.forEach((el, i) => el.classList.toggle('active', i === researchActiveSuggestionIdx));
+  const active = items[researchActiveSuggestionIdx];
+  if (active) active.scrollIntoView({ block: 'nearest' });
+}
+
 async function runResearchQuery() {
-  const select   = document.getElementById('research-plant-select');
   const btn      = document.getElementById('research-search-btn');
   const status   = document.getElementById('research-status');
   const resultsEl = document.getElementById('research-results');
-  if (!select?.value) return;
+  if (!selectedResearchPlantId) return;
 
-  const plant = plantData.find(p => p.id === select.value);
+  const plant = plantData.find(p => p.id === selectedResearchPlantId);
   if (!plant) return;
 
   btn.disabled = true;
