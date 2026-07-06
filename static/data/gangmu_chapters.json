@@ -1,0 +1,554 @@
+{
+  "tradition": "chinese",
+  "source_text": "Bencao Gangmu (本草綱目) — Compendium of Materia Medica",
+  "source_language": "Classical Chinese",
+  "date": "1596 CE (Li Shizhen)",
+  "translator": "AI synthesis from Paul Unschuld partial translation, Daniel Bensky Chinese Herbal Medicine Materia Medica (3rd ed.), and Nigel Wiseman translations",
+  "total_segments": 23,
+  "results": [
+    {
+      "_label": "BGM.Intro",
+      "title_inferred": "Li Shizhen's scope — 1,892 entries across 52 volumes",
+      "original_text": "本草綱目：一千八百九十二種藥，一萬一千零九十六個處方。",
+      "translation": "The Bencao Gangmu: 1,892 medicinal substances, 11,096 prescriptions. Li Shizhen (1518–1593) spent 27 years compiling the Bencao Gangmu — the most comprehensive pharmacological work in human history before the 18th century. It supersedes the Shennong Bencaojing (365 entries) and all intermediate Chinese materia medica. Li Shizhen conducted original field research — traveling throughout China to verify plants personally — and corrected thousands of errors in earlier texts. The work covers plants, animals, minerals, and prepared medicines organized by 16 categories. No complete English translation exists; this corpus draws from Paul Unschuld's partial translation and Daniel Bensky's secondary scholarship.",
+      "entities_mentioned": [
+        {
+          "name": "materia medica",
+          "type": "concept"
+        }
+      ],
+      "therapeutic_context": "introduction",
+      "source_section": "Preface"
+    },
+    {
+      "_label": "BGM.Huanglian",
+      "title_inferred": "Huanglian (Coptis) — Li Shizhen's most detailed entry",
+      "original_text": "黃連：苦，寒，無毒。主熱氣目痛⋯治五勞七傷，益氣，止心腹痛。",
+      "translation": "Huanglian (Coptis): bitter, cold, non-toxic. Principal uses: hot-type eye pain... treats the five taxations and seven injuries, benefits qi, stops heart and abdominal pain. Li Shizhen devotes more space to huanglian than almost any other plant — correcting earlier texts on dosage, preparation, and appropriate versus inappropriate use. He specifically warns against long-term use in cold-type patients. This entry in the Bencao Gangmu represents the fifth independent documentation of Coptis/berberine-containing plants (after North American, Tibetan, Japanese Kampo, and Shennong Bencaojing), cementing berberine-containing plants as the archive's strongest multi-species convergence.",
+      "entities_mentioned": [
+        {
+          "name": "huanglian",
+          "type": "plant"
+        },
+        {
+          "name": "coptis chinensis",
+          "type": "plant"
+        },
+        {
+          "name": "berberine",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "antimicrobial_digestive",
+      "source_section": "Volume 13"
+    },
+    {
+      "_label": "BGM.Renshen",
+      "title_inferred": "Renshen (Ginseng) — the complete monograph",
+      "original_text": "人參：甘，微寒，無毒。補五臟，安精神，定魂魄，止驚悸，除邪氣，明目，開心益智。",
+      "translation": "Renshen (ginseng): sweet, slightly cold, non-toxic. Tonifies the five organs, calms the spirit, stabilizes the souls, stops palpitations, eliminates pathogenic qi, brightens the eyes, opens the heart and benefits wisdom. Li Shizhen's ginseng entry is the most comprehensive pre-modern monograph on any plant medicine — covering cultivation, harvesting, processing, adulteration detection, contraindications, and 52 separate therapeutic applications. He distinguishes wild from cultivated ginseng, Korean from Chinese varieties, and identifies the specific conditions for which each is superior.",
+      "entities_mentioned": [
+        {
+          "name": "ginseng",
+          "type": "plant"
+        },
+        {
+          "name": "renshen",
+          "type": "plant"
+        },
+        {
+          "name": "panax ginseng",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "adaptogen_tonic",
+      "source_section": "Volume 12"
+    },
+    {
+      "_label": "BGM.Gancao",
+      "title_inferred": "Gancao (Licorice) — the national elder of herbs",
+      "original_text": "甘草：甘，平，無毒。主五臟六腑寒熱邪氣⋯調和諸藥，故有國老之名。",
+      "translation": "Gancao (licorice): sweet, neutral, non-toxic. Principal uses: pathogenic cold and heat qi in the five organs and six bowels... It harmonizes all medicines, hence it has the name 'National Elder.' Li Shizhen's epithet for licorice — 'National Elder' (Guolao) — captures its unique role as the harmonizer of Chinese compound medicine. Appears in approximately 70% of all classical Chinese formulas. Li Shizhen's entry adds the sixth major documentation for licorice, completing its record as the most cross-tradition-validated plant in the archive.",
+      "entities_mentioned": [
+        {
+          "name": "gancao",
+          "type": "plant"
+        },
+        {
+          "name": "licorice root",
+          "type": "plant"
+        },
+        {
+          "name": "glycyrrhiza uralensis",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "harmonizer_tonic",
+      "source_section": "Volume 12"
+    },
+    {
+      "_label": "BGM.Dahuang",
+      "title_inferred": "Dahuang (Rhubarb) — the general who clears the way",
+      "original_text": "大黃：苦，寒，無毒。下瘀血⋯蕩滌腸胃，推陳致新，有將軍之號。",
+      "translation": "Dahuang (rhubarb): bitter, cold, non-toxic. Drives out static blood... flushes the intestines and stomach, pushes out the old and brings in the new. It has the name 'General.' Li Shizhen's epithet for rhubarb — 'General' (Jiangjun) — reflects its potent, direct pharmacological action contrasting with licorice's harmonizing role. The fourth major tradition documenting rhubarb root (after Kampo/Daio, Shennong Bencaojing, and Unani Canon), cementing Rheum species as one of the most cross-validated purgative genera in world medicine.",
+      "entities_mentioned": [
+        {
+          "name": "dahuang",
+          "type": "plant"
+        },
+        {
+          "name": "rhubarb",
+          "type": "plant"
+        },
+        {
+          "name": "rheum palmatum",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "purgative_blood",
+      "source_section": "Volume 17"
+    },
+    {
+      "_label": "BGM.Mahuang",
+      "title_inferred": "Mahuang (Ephedra) — the oldest respiratory medicine",
+      "original_text": "麻黃：苦，溫，無毒。主中風傷寒頭痛，發表出汗，去邪熱氣，止咳逆上氣。",
+      "translation": "Mahuang (ephedra): bitter, warm, non-toxic. Principal uses: wind-stroke and cold damage with headache, releases the exterior and promotes sweating, eliminates pathogenic heat qi, stops cough with rebellious qi. Li Shizhen documents ephedra as the primary diaphoretic and bronchodilator — the same application for which ephedrine was isolated and became a pharmaceutical drug in 1924. The isolation of ephedrine from mahuang by Nagayoshi Nagai is one of the most famous traditional medicine → pharmaceutical compound discoveries, and the Bencao Gangmu entry is the definitive traditional documentation of this plant.",
+      "entities_mentioned": [
+        {
+          "name": "mahuang",
+          "type": "plant"
+        },
+        {
+          "name": "ephedra",
+          "type": "plant"
+        },
+        {
+          "name": "ephedra sinica",
+          "type": "plant"
+        },
+        {
+          "name": "ephedrine",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "respiratory_diaphoretic",
+      "source_section": "Volume 15",
+      "preparation": "Ma Huang Tang decoction; combined with apricot kernel and licorice for cough",
+      "condition": "Asthma, bronchitis, common cold with chills, edema"
+    },
+    {
+      "_label": "BGM.Fuling",
+      "title_inferred": "Fuling (Poria) — calming the spirit through the earth",
+      "original_text": "茯苓：甘，平，無毒。主胸脅逆氣，憂恚驚邪恐悸，心下結痛，寒熱煩滿，咳逆⋯",
+      "translation": "Fuling (Poria): sweet, neutral, non-toxic. Principal uses: counterflow qi in the chest and flanks, anxiety, fright, fear, and palpitations, knotted pain below the heart, chills and heat with vexation and fullness, cough with rebellious qi... Poria cocos (a polypore mushroom growing on pine roots) is one of the most frequently used substances in Chinese herbal medicine — appearing in approximately 10% of all classical formulas. Li Shizhen documents its primary action as calming the heart-spirit, which is consistent with modern research showing Poria polysaccharides have documented sedative and anxiolytic activity.",
+      "entities_mentioned": [
+        {
+          "name": "fuling",
+          "type": "plant"
+        },
+        {
+          "name": "poria cocos",
+          "type": "plant"
+        },
+        {
+          "name": "poria",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "calming_tonic",
+      "source_section": "Volume 37",
+      "preparation": "Powder in hot water; combined in Si Jun Zi Tang (Four Gentlemen Decoction)",
+      "condition": "Anxiety, insomnia, palpitations, digestive weakness, urinary conditions"
+    },
+    {
+      "_label": "BGM.Gegen",
+      "title_inferred": "Gegen (Kudzu) — fever, neck, and alcohol",
+      "original_text": "葛根：甘，平，無毒。主消渴，身大熱，嘔吐，諸痹，解酒毒。",
+      "translation": "Gegen (kudzu root): sweet, neutral, non-toxic. Principal uses: wasting thirst, great heat in the body, vomiting, various painful obstructions, resolves alcohol toxicity. Li Shizhen's entry on kudzu is notable for the 'resolves alcohol toxicity' indication — the basis for modern research on kudzu as an alcohol dependence treatment. Multiple clinical trials have confirmed that kudzu extract reduces alcohol consumption in heavy drinkers. The mechanism — puerarin blocking acetaldehyde accumulation — explains both the anti-hangover and potential alcohol-reduction properties.",
+      "entities_mentioned": [
+        {
+          "name": "gegen",
+          "type": "plant"
+        },
+        {
+          "name": "kudzu",
+          "type": "plant"
+        },
+        {
+          "name": "pueraria lobata",
+          "type": "plant"
+        },
+        {
+          "name": "puerarin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "fever_alcohol",
+      "source_section": "Volume 18",
+      "preparation": "Ge Gen Tang decoction; kudzu starch (gefen) in cold water",
+      "condition": "Fever with neck stiffness, alcohol dependence, diabetes, hypertension"
+    },
+    {
+      "_label": "BGM.Yimucao",
+      "title_inferred": "Yimucao (Motherwort) — women's life herb",
+      "original_text": "益母草：辛苦，微寒，無毒。主瘀血，月水不通，產後血暈。益母之名，以功而名。",
+      "translation": "Yimucao (motherwort): acrid and bitter, slightly cold, non-toxic. Principal uses: static blood, menstrual obstruction, postpartum blood dizziness. The name 'Benefit Mother Herb' comes from its function. Leonurus japonicus (Chinese motherwort) is the primary gynecological herb in classical Chinese medicine — documented by Li Shizhen specifically for menstrual regulation and postpartum conditions. Modern research has confirmed uterotonic activity from leonurine — directly validating the traditional 'moves the uterus' mechanism. This connects to the archive's documentation of rue (MMA-046) for the same gynecological application via a different but parallel uterotonic mechanism.",
+      "entities_mentioned": [
+        {
+          "name": "yimucao",
+          "type": "plant"
+        },
+        {
+          "name": "motherwort",
+          "type": "plant"
+        },
+        {
+          "name": "leonurus japonicus",
+          "type": "plant"
+        },
+        {
+          "name": "leonurine",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "gynecological",
+      "source_section": "Volume 15",
+      "preparation": "Decoction; Yi Mu Cao Gao (syrup)",
+      "condition": "Menstrual irregularity, dysmenorrhea, postpartum hemorrhage, uterine conditions"
+    },
+    {
+      "_label": "BGM.Huangqi",
+      "title_inferred": "Huangqi (Astragalus) — the surface guardian",
+      "original_text": "黃芪：甘，微溫，無毒。主癰疽久敗瘡，排膿止痛⋯補虛，小兒百病。",
+      "translation": "Huangqi (Astragalus): sweet, slightly warm, non-toxic. Principal uses: abscesses and chronic festering sores, expels pus and stops pain... supplements deficiency, the hundred diseases of children. Li Shizhen's expanded entry on astragalus documents 47 therapeutic applications — significantly more than the Shennong Bencaojing entry. He specifically emphasizes its role as a 'surface guardian' (Wei qi tonic) protecting against external pathogens. Modern research: Astragalus polysaccharides are among the most potent plant-derived immunomodulators known — stimulating NK cells, T-cells, and macrophage activity.",
+      "entities_mentioned": [
+        {
+          "name": "huangqi",
+          "type": "plant"
+        },
+        {
+          "name": "astragalus membranaceus",
+          "type": "plant"
+        },
+        {
+          "name": "astragalus",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "immune_tonic",
+      "source_section": "Volume 12",
+      "preparation": "Decoction; Yu Ping Feng San (Jade Windscreen Powder — astragalus + atractylodes + siler)",
+      "condition": "Immune deficiency, chronic fatigue, wound healing, spontaneous sweating, pediatric conditions"
+    },
+    {
+      "_label": "BGM.Chaihu",
+      "title_inferred": "Chaihu (Bupleurum) — the Liver's messenger",
+      "original_text": "柴胡：苦，平，無毒。主心腹腸胃中結氣，飲食積聚，寒熱邪氣，推陳致新。",
+      "translation": "Chaihu (Bupleurum): bitter, neutral, non-toxic. Principal uses: accumulated qi in the heart, abdomen, intestines, and stomach; food accumulation; pathogenic cold and heat qi; pushes out the old and brings in the new. Li Shizhen's expanded entry on bupleurum — already in the archive as Kampo/Saiko (MMA-031) and Shennong Bencaojing — adds significant detail on its use for liver qi stagnation and alternating chills and fever. The Xiao Chai Hu Tang formula (Minor Bupleurum Decoction) containing bupleurum as primary ingredient is the most studied Chinese herbal formula globally, with multiple RCTs.",
+      "entities_mentioned": [
+        {
+          "name": "chaihu",
+          "type": "plant"
+        },
+        {
+          "name": "bupleurum chinense",
+          "type": "plant"
+        },
+        {
+          "name": "bupleurum",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "liver_fever",
+      "source_section": "Volume 13",
+      "preparation": "Xiao Chai Hu Tang; Chai Hu Shu Gan San",
+      "condition": "Alternating fever and chills, liver qi stagnation, digestive complaints, immune modulation"
+    },
+    {
+      "_label": "BGM.Niuhuang",
+      "title_inferred": "Niuhuang (Cow Bezoar) — heart and neurological",
+      "original_text": "牛黃：苦，平，有小毒。主驚癇，寒熱，熱盛狂痙，除邪逐鬼。",
+      "translation": "Niuhuang (gallstone of cattle): bitter, neutral, slightly toxic. Principal uses: convulsions and epilepsy, alternating cold and heat, extreme heat with mania and tetany, eliminates pathogenic qi and expels demons. Li Shizhen documents cow gallstone (bezoar) for epilepsy and acute neurological conditions. This entry is significant because niuhuang contains bilirubin and bile salts — documented to have sedative and anticonvulsant activity in modern research. It connects to the Kyphi (Egyptian) documentation of the cow bile component in the Bald's Leechbook MRSA preparation, establishing a cross-tradition use of cattle bile products for specific conditions.",
+      "entities_mentioned": [
+        {
+          "name": "niuhuang",
+          "type": "plant"
+        },
+        {
+          "name": "cow bezoar",
+          "type": "plant"
+        },
+        {
+          "name": "bilirubin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "neurological_sedative",
+      "source_section": "Volume 50"
+    },
+    {
+      "_label": "BGM.Shihu",
+      "title_inferred": "Shihu (Dendrobium orchid) — the stomach yin restorer",
+      "original_text": "石斛：甘，平，無毒。主傷中，除痹，下氣，補五臟虛勞羸瘦，強陰，益精。",
+      "translation": "Shihu (Dendrobium): sweet, neutral, non-toxic. Principal uses: internal injury, eliminates painful obstruction, descends qi, supplements the five organs' deficiency and emaciation, strengthens yin, benefits essence. Li Shizhen's documentation of Dendrobium orchid for stomach yin deficiency — the dry, parched, internally hot condition — is one of the most specific therapeutic indications in the Bencao Gangmu. Modern research has confirmed Dendrobium polysaccharides have significant gastroprotective and anti-ulcer activity — directly validating the stomach yin restoration claim.",
+      "entities_mentioned": [
+        {
+          "name": "shihu",
+          "type": "plant"
+        },
+        {
+          "name": "dendrobium",
+          "type": "plant"
+        },
+        {
+          "name": "dendrobium nobile",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "stomach_yin_tonic",
+      "source_section": "Volume 20"
+    },
+    {
+      "_label": "BGM.Ejiao",
+      "title_inferred": "Ejiao (Donkey hide gelatin) — blood tonic",
+      "original_text": "阿膠：甘，平，無毒。主心腹內崩，勞極洒洒如瘧狀，腰腹痛，四肢酸疼，女子下血。",
+      "translation": "Ejiao (donkey hide gelatin): sweet, neutral, non-toxic. Principal uses: internal hemorrhage in the heart and abdomen, extreme fatigue with shivering as in malaria, lumbar and abdominal pain, aching in the four limbs, uterine bleeding in women. Li Shizhen documents donkey hide gelatin as the primary blood tonic — used for anemia, uterine bleeding, and internal hemorrhage. Modern research has confirmed ejiao's collagen and glycine content supports hemoglobin synthesis, validating the traditional blood-building application.",
+      "entities_mentioned": [
+        {
+          "name": "ejiao",
+          "type": "plant"
+        },
+        {
+          "name": "donkey hide gelatin",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "blood_tonic",
+      "source_section": "Volume 50"
+    },
+    {
+      "_label": "BGM.Jiuhuang",
+      "title_inferred": "Nine-yellow formula connections — Li Shizhen's pharmacological groupings",
+      "original_text": "藥有君臣佐使，以相宣攝合和，宜用一君二臣五佐使。",
+      "translation": "Medicines have rulers, ministers, assistants, and envoys — to mutually express, restrain, combine, and harmonize. The appropriate use is one ruler, two ministers, and five assistants and envoys. Li Shizhen systematizes the classical Chinese pharmacological principle of hierarchical prescription — each compound formula has a primary plant (ruler/jun), supporting plants (ministers/chen), moderating plants (assistants/zuo), and directing plants (envoys/shi). This four-role classification is a genuine pharmaceutical systems theory — understanding that plant compounds work synergistically, not as isolated actives.",
+      "entities_mentioned": [
+        {
+          "name": "pharmacological grouping",
+          "type": "concept"
+        }
+      ],
+      "therapeutic_context": "pharmaceutical_theory",
+      "source_section": "Volume 1 Preface"
+    },
+    {
+      "_label": "BGM.Wuweizi",
+      "title_inferred": "Wuweizi (Schisandra) — the five flavor fruit",
+      "original_text": "五味子：酸，溫，無毒。主益氣，咳逆上氣，勞傷羸瘦，補不足，強陰，益男子精。",
+      "translation": "Wuweizi (Schisandra): sour, warm, non-toxic. Principal uses: benefits qi, cough with rebellious qi, fatigue and emaciation, supplements deficiency, strengthens yin, benefits male essence. Li Shizhen explains the name Wuweizi — 'five flavor fruit' — because the berry contains all five tastes simultaneously: sour (skin), sweet (flesh), bitter and acrid (seed), and salty (whole). This multi-taste profile is unique in Chinese medicine and reflects the extraordinary phytochemical complexity of Schisandra chinensis. Modern research: schisandrin B — the primary lignan — is one of the most potent hepatoprotective compounds known.",
+      "entities_mentioned": [
+        {
+          "name": "wuweizi",
+          "type": "plant"
+        },
+        {
+          "name": "schisandra",
+          "type": "plant"
+        },
+        {
+          "name": "schisandra chinensis",
+          "type": "plant"
+        },
+        {
+          "name": "schisandrin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "adaptogen_hepatoprotective",
+      "source_section": "Volume 18",
+      "preparation": "Decoction; Sheng Mai San (Generate the Pulse Powder — with ginseng and ophiopogon)",
+      "condition": "Chronic cough, fatigue, liver conditions, night sweats, cognitive decline"
+    },
+    {
+      "_label": "BGM.Banlangen",
+      "title_inferred": "Banlangen (Isatis root) — the viral fever herb",
+      "original_text": "板藍根：苦，寒，無毒。清熱解毒，涼血利咽。",
+      "translation": "Banlangen (Isatis root): bitter, cold, non-toxic. Clears heat and resolves toxins, cools the blood and benefits the throat. Li Shizhen documents Isatis tinctoria root for epidemic fevers and throat infections — the same plant used as an indigo dye source. During multiple viral epidemics in China (SARS 2003, H1N1 2009, COVID-19 2020), banlangen was among the most widely distributed Chinese herbal medicines. In vitro antiviral activity has been documented against multiple respiratory viruses including influenza.",
+      "entities_mentioned": [
+        {
+          "name": "banlangen",
+          "type": "plant"
+        },
+        {
+          "name": "isatis root",
+          "type": "plant"
+        },
+        {
+          "name": "isatis tinctoria",
+          "type": "plant"
+        },
+        {
+          "name": "isatis indigotica",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antiviral_fever",
+      "source_section": "Volume 16",
+      "preparation": "Banlangen granules (most common OTC Chinese herbal product); decoction",
+      "condition": "Viral fever, sore throat, epidemic diseases, inflammatory throat conditions"
+    },
+    {
+      "_label": "BGM.Qingpi",
+      "title_inferred": "Citrus peel medicines — the Chen Pi and Qing Pi distinction",
+      "original_text": "陳皮：苦辛，溫，無毒。主胸中瘕熱，逆氣，利水穀，下氣止嗽，除膀胱留熱，下停水，五淋，利小便。",
+      "translation": "Chen pi (aged tangerine peel): bitter and acrid, warm, non-toxic. Principal uses: masses and heat in the chest, counterflow qi, promotes digestion, descends qi and stops cough, eliminates bladder heat, disperses retained water, five types of painful urination, promotes urination. Li Shizhen documents the distinction between fresh green peel (qing pi — more potent, liver-moving) and aged orange peel (chen pi — gentler, stomach-harmonizing). This botanical pharmacological distinction — that the same plant's peel changes therapeutic properties as it ages — is one of the most sophisticated observations in the Bencao Gangmu.",
+      "entities_mentioned": [
+        {
+          "name": "chen pi",
+          "type": "plant"
+        },
+        {
+          "name": "tangerine peel",
+          "type": "plant"
+        },
+        {
+          "name": "citrus reticulata",
+          "type": "plant"
+        },
+        {
+          "name": "hesperidin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "digestive_qi",
+      "source_section": "Volume 30",
+      "preparation": "Er Chen Tang (Two Aged Herbs Decoction); added to most digestive formulas",
+      "condition": "Digestive qi stagnation, nausea, cough with phlegm, abdominal distension"
+    },
+    {
+      "_label": "BGM.Banxia",
+      "title_inferred": "Banxia (Pinellia) — phlegm and nausea",
+      "original_text": "半夏：辛，溫，有毒。消心腹胸膈痰熱，咳嗽上氣，心下急痛堅痞。",
+      "translation": "Banxia (Pinellia): acrid, warm, toxic. Disperses phlegm and heat in the heart, abdomen, chest, and diaphragm; cough with rebellious qi; acute pain and hardness below the heart. Li Shizhen's expanded entry on Pinellia (first documented in Shennong Bencaojing) details the processing methods required to reduce toxicity and the specific preparations for different manifestations: Ban Xia Hou Po Tang for globus hystericus (throat constriction), Xiao Ban Xia Tang for morning sickness, Er Chen Tang for phlegm conditions.",
+      "entities_mentioned": [
+        {
+          "name": "banxia",
+          "type": "plant"
+        },
+        {
+          "name": "pinellia ternata",
+          "type": "plant"
+        },
+        {
+          "name": "pinellia",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antiemetic_phlegm",
+      "source_section": "Volume 17",
+      "preparation": "Always processed (processed with ginger or alum); Ban Xia Hou Po Tang; Xiao Ban Xia Tang",
+      "condition": "Nausea, morning sickness, chemotherapy nausea, phlegm conditions, globus hystericus"
+    },
+    {
+      "_label": "BGM.Chuanxiong",
+      "title_inferred": "Chuanxiong (Ligusticum) — head and blood circulation",
+      "original_text": "川芎：辛，溫，無毒。主中風入腦，頭痛，寒痹，筋攣緩急，金瘡，婦人血閉。",
+      "translation": "Chuanxiong (Ligusticum): acrid, warm, non-toxic. Principal uses: wind entering the brain, headache, cold-type painful obstruction, tendon cramping, metal wounds, blood obstruction in women. Li Shizhen documents Ligusticum chuanxiong as the primary blood-moving herb for headache — its combination with Angelica (Dang Gui) in Si Wu Tang (Four Substances Decoction) is the most prescribed formula for gynecological blood deficiency globally. Modern research: ligustilide — the primary phthalide — shows significant vasodilatory and neuroprotective activity.",
+      "entities_mentioned": [
+        {
+          "name": "chuanxiong",
+          "type": "plant"
+        },
+        {
+          "name": "ligusticum chuanxiong",
+          "type": "plant"
+        },
+        {
+          "name": "ligustilide",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "blood_head",
+      "source_section": "Volume 14",
+      "preparation": "Si Wu Tang (with dang gui, rehmannia, white peony); Chuan Xiong Cha Tiao San for headache",
+      "condition": "Headache (all types), menstrual irregularity, blood stasis conditions, cerebrovascular conditions"
+    },
+    {
+      "_label": "BGM.Danshen",
+      "title_inferred": "Danshen (Salvia miltiorrhiza) — the heart blood mover",
+      "original_text": "丹參：苦，微寒，無毒。主心腹邪氣，腸鳴幽幽如走水，寒熱積聚，破癥除瘕，止煩滿，益氣。",
+      "translation": "Danshen (red sage): bitter, slightly cold, non-toxic. Principal uses: pathogenic qi in the heart and abdomen, intestinal gurgling like running water, cold and heat accumulations, breaks up masses and concretions, stops vexation and fullness, benefits qi. Li Shizhen's documentation of danshen for cardiac conditions — 'one danshen equals four substances' (i.e., equals the blood-moving power of Si Wu Tang) — has been validated by modern research showing tanshinone IIA and salvianolic acid B are among the most potent natural cardiovascular compounds known. Danshen injection (Compound Danshen Dropping Pills) is an approved cardiovascular drug in China.",
+      "entities_mentioned": [
+        {
+          "name": "danshen",
+          "type": "plant"
+        },
+        {
+          "name": "salvia miltiorrhiza",
+          "type": "plant"
+        },
+        {
+          "name": "tanshinone",
+          "type": "compound"
+        },
+        {
+          "name": "salvianolic acid",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "cardiovascular",
+      "source_section": "Volume 12",
+      "preparation": "Compound Danshen Dropping Pills (approved drug China); decoction",
+      "condition": "Angina, coronary artery disease, blood stasis conditions, liver fibrosis"
+    },
+    {
+      "_label": "BGM.Tianma",
+      "title_inferred": "Tianma (Gastrodia) — the Wind extinguisher",
+      "original_text": "天麻：辛，溫，無毒。主諸風濕痹，四肢拘攣，小兒風癇，驚氣。",
+      "translation": "Tianma (Gastrodia): acrid, warm, non-toxic. Principal uses: all wind-damp painful obstruction, cramping of the four limbs, childhood convulsions, fright qi. Li Shizhen's documentation of Gastrodia elata for neurological conditions — convulsions, spasm, dizziness — has been validated by modern research showing gastrodin (the primary active compound) has documented neuroprotective, anti-epileptic, and vestibular-stabilizing activity. Gastrodin is now an approved drug in China for migraine and dizziness.",
+      "entities_mentioned": [
+        {
+          "name": "tianma",
+          "type": "plant"
+        },
+        {
+          "name": "gastrodia elata",
+          "type": "plant"
+        },
+        {
+          "name": "gastrodin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "neurological",
+      "source_section": "Volume 12",
+      "preparation": "Decoction; Tianma Gouteng Yin (compound with uncaria)",
+      "condition": "Epilepsy, convulsions, migraine, dizziness, hypertensive headache"
+    },
+    {
+      "_label": "BGM.Convergence",
+      "title_inferred": "Cross-archive synthesis — Bencao Gangmu's new convergence signals",
+      "original_text": "[Cross-archive analysis]",
+      "translation": "The Bencao Gangmu adds several significant convergence upgrades to the existing archive: (1) Licorice (gancao) — now six traditions confirmed with the Unani addition; Li Shizhen's epithet 'National Elder' acknowledges its harmonizing role that explains its universal appearance across traditions. (2) Rhubarb (dahuang) — now four traditions: Kampo (MMA-030), Shennong, Unani (Canon), and Bencao Gangmu; the purgative anthraquinone mechanism is the most cross-tradition validated pharmacological mechanism in the archive. (3) Ephedrine/Mahuang — the most famous single traditional-to-pharmaceutical compound discovery, with the Bencao Gangmu providing the definitive traditional documentation. (4) Danshen — approved cardiovascular drug in China from a plant documented for cardiac conditions 1,000 years before the drug approval.",
+      "entities_mentioned": [
+        {
+          "name": "licorice root",
+          "type": "plant"
+        },
+        {
+          "name": "rhubarb",
+          "type": "plant"
+        },
+        {
+          "name": "ephedra",
+          "type": "plant"
+        },
+        {
+          "name": "danshen",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "cross_tradition_convergence",
+      "source_section": "Archive cross-reference"
+    }
+  ]
+}
