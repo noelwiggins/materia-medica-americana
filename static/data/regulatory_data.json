@@ -1,0 +1,690 @@
+{
+  "description": "Regulatory recognition data for plants in the archive. Three-tier system: WHO Monograph (evidence-based pharmacological documentation), EMA Traditional Use (European regulatory approval for traditional herbal medicines), FDA Approved (US drug approval or GRAS status). Sources: WHO Monographs Vols 1-4, EMA HMPC monographs, FDA Orange Book and GRAS database.",
+  "last_updated": "2026",
+  "tiers": {
+    "WHO": "WHO Monograph on Selected Medicinal Plants — evidence-based pharmacological documentation with quality, safety, and efficacy assessment",
+    "EMA": "European Medicines Agency HMPC approval — traditional use registration or well-established use authorisation for herbal medicines",
+    "FDA": "US Food and Drug Administration — approved drug, GRAS (Generally Recognized As Safe), or qualified health claim",
+    "Cochrane": "Cochrane Collaboration systematic review — independent evidence synthesis of clinical trials"
+  },
+  "plants": [
+    {
+      "common_name": "Garlic",
+      "botanical": "Allium sativum",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "cardiovascular risk reduction",
+          "antimicrobial",
+          "atherosclerosis prevention"
+        ],
+        "preparation": "Dried powder 0.4–1.2g/day; fresh clove 2–5g/day"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "symptomatic relief of cold symptoms",
+          "adjunctive hypertension treatment"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Qualified health claim for cardiovascular risk"
+      },
+      "cochrane": {
+        "reviews": [
+          "Garlic for hypertension (2012) — modest but significant reduction",
+          "Garlic for common cold prevention (2014) — significantly fewer colds"
+        ]
+      },
+      "archive_id": "MMA-047"
+    },
+    {
+      "common_name": "Ginkgo",
+      "botanical": "Ginkgo biloba",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "cognitive decline",
+          "peripheral arterial occlusion",
+          "tinnitus",
+          "vertigo"
+        ],
+        "preparation": "Standardised extract EGb761: 120–240mg/day"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "cognitive decline",
+          "peripheral circulation disorders"
+        ]
+      },
+      "fda": {
+        "status": "Dietary supplement DSHEA",
+        "notes": "Not approved as drug; extensively studied"
+      },
+      "cochrane": {
+        "reviews": [
+          "Ginkgo for cognitive decline (2009) — inconsistent results",
+          "Ginkgo for tinnitus (2013) — no significant benefit beyond placebo"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not currently in archive plant database — add as new entry"
+    },
+    {
+      "common_name": "Echinacea",
+      "botanical": "Echinacea purpurea / E. angustifolia",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "prophylaxis and treatment of upper respiratory tract infections",
+          "immunostimulation"
+        ],
+        "preparation": "Pressed juice 6–9ml/day; root tincture 900mg/day"
+      },
+      "ema": {
+        "status": "Traditional use registration",
+        "indications": [
+          "symptomatic treatment of common cold",
+          "adjunctive immune support"
+        ]
+      },
+      "fda": {
+        "status": "Dietary supplement DSHEA",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Echinacea for preventing and treating the common cold (2015) — some preparations reduce incidence; effect size modest"
+        ]
+      },
+      "archive_id": "MMA-025"
+    },
+    {
+      "common_name": "Valerian",
+      "botanical": "Valeriana officinalis",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "mild sedative",
+          "sleep disorders",
+          "anxiety",
+          "restlessness"
+        ],
+        "preparation": "Extract 400–900mg 30 min before sleep"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "mild sedative and sleep-promoting agent",
+          "relief of mild symptoms of mental stress"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Valerian for sleep quality (2006) — inconsistent results; majority of trials show positive trend"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not currently in archive — Jatamansi (related Nardostachys) is; add Valerian"
+    },
+    {
+      "common_name": "St John's Wort",
+      "botanical": "Hypericum perforatum",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 2,
+        "year": 2002,
+        "indications": [
+          "mild to moderate depression",
+          "anxiety",
+          "wound healing topically"
+        ],
+        "preparation": "Standardised extract 0.3% hypericin: 300mg 3x/day"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "mild to moderate depressive episodes",
+          "mild anxiety"
+        ]
+      },
+      "fda": {
+        "status": "Dietary supplement DSHEA",
+        "notes": "Multiple drug interactions documented — induces CYP3A4"
+      },
+      "cochrane": {
+        "reviews": [
+          "St John's Wort for depression (2008) — significantly more effective than placebo, comparable to standard antidepressants for mild-moderate depression; fewer side effects"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not in archive — add; strong evidence"
+    },
+    {
+      "common_name": "Ginseng (Asian)",
+      "botanical": "Panax ginseng",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "fatigue",
+          "convalescence",
+          "cognitive performance",
+          "adaptogen"
+        ],
+        "preparation": "Root extract 200–600mg/day; standardised to 4% ginsenosides"
+      },
+      "ema": {
+        "status": "Traditional use registration",
+        "indications": [
+          "relief of symptoms of asthenia",
+          "restorative for fatigue and debility"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Ginseng for cognitive function (2010) — some positive effects on cognition and behaviour",
+          "Ginseng for type 2 diabetes (2016) — modest benefit for glycemic control"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Chinese ginseng (Panax) not in archive as separate entry; American ginseng (MMA-027) is present"
+    },
+    {
+      "common_name": "Chamomile",
+      "botanical": "Matricaria chamomilla",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "anti-inflammatory",
+          "antispasmodic",
+          "mild sedative",
+          "wound healing"
+        ],
+        "preparation": "Infusion 3g dried flowers in 150ml water; 3x/day"
+      },
+      "ema": {
+        "status": "Well-established use (oral and topical)",
+        "indications": [
+          "symptomatic treatment of GI spasm",
+          "mild anxiety and restlessness",
+          "wound healing"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Chamomile extract approved as natural flavoring"
+      },
+      "cochrane": {
+        "reviews": [
+          "Chamomile for GI conditions — positive evidence for infantile colic; limited RCT evidence for other conditions"
+        ]
+      },
+      "archive_id": "MMA-006"
+    },
+    {
+      "common_name": "Peppermint",
+      "botanical": "Mentha x piperita",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 2,
+        "year": 2002,
+        "indications": [
+          "IBS",
+          "flatulence",
+          "nausea",
+          "upper respiratory catarrh topically"
+        ],
+        "preparation": "Enteric-coated oil capsules 0.2–0.4ml 3x/day for IBS"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "symptomatic relief of GI disorders including IBS",
+          "nasal congestion"
+        ]
+      },
+      "fda": {
+        "status": "OTC approved",
+        "notes": "Menthol approved as OTC external analgesic, oral anesthetic, and nasal decongestant; peppermint oil approved as digestive aid"
+      },
+      "cochrane": {
+        "reviews": [
+          "Peppermint oil for IBS (2014) — significantly more effective than placebo for abdominal symptoms"
+        ]
+      },
+      "archive_id": "MMA-055"
+    },
+    {
+      "common_name": "Turmeric",
+      "botanical": "Curcuma longa",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "dyspepsia",
+          "liver conditions",
+          "anti-inflammatory"
+        ],
+        "preparation": "Dried rhizome 1.5–3g/day; extract standardised to 95% curcuminoids"
+      },
+      "ema": {
+        "status": "Traditional use registration",
+        "indications": [
+          "symptomatic relief of minor digestive problems",
+          "relief of joint discomfort"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Curcumin approved as food colorant (FD&C status); not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Curcumin for osteoarthritis (2021) — significant reduction in pain and functional limitation comparable to ibuprofen",
+          "Curcumin for IBS — insufficient evidence"
+        ]
+      },
+      "archive_id": "MMA-012"
+    },
+    {
+      "common_name": "Senna",
+      "botanical": "Cassia senna / Senna alexandrina",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "short-term treatment of constipation"
+        ],
+        "preparation": "Standardised to sennosides 20–30mg/day"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "short-term treatment of occasional constipation"
+        ]
+      },
+      "fda": {
+        "status": "OTC approved",
+        "notes": "Sennosides approved as OTC stimulant laxative; in USP"
+      },
+      "cochrane": {
+        "reviews": [
+          "Stimulant laxatives for constipation — positive evidence; sennosides specifically studied in multiple trials"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not in archive as separate entry — Ibn Sina documents senna; add"
+    },
+    {
+      "common_name": "Psyllium",
+      "botanical": "Plantago ovata",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "constipation",
+          "IBS",
+          "hypercholesterolaemia"
+        ],
+        "preparation": "Husk 10–30g/day in adequate fluid"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "symptomatic relief of constipation",
+          "adjunctive management of hypercholesterolaemia"
+        ]
+      },
+      "fda": {
+        "status": "OTC approved + qualified health claim",
+        "notes": "Approved OTC bulk laxative; FDA qualified health claim for soluble fibre and cardiovascular disease"
+      },
+      "cochrane": {
+        "reviews": [
+          "Psyllium for hypercholesterolaemia — significant LDL reduction confirmed"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Plantago ovata distinct from P. major (MMA-035) — add as separate entry"
+    },
+    {
+      "common_name": "Saw Palmetto",
+      "botanical": "Serenoa repens",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 2,
+        "year": 2002,
+        "indications": [
+          "benign prostatic hyperplasia (BPH) Stage I-II"
+        ],
+        "preparation": "Lipophilic extract 320mg/day"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "lower urinary tract symptoms associated with BPH"
+        ]
+      },
+      "fda": {
+        "status": "Dietary supplement DSHEA",
+        "notes": "Not approved as drug; extensively studied"
+      },
+      "cochrane": {
+        "reviews": [
+          "Saw palmetto for BPH (2012, updated) — no significant difference from placebo in most outcomes in high-quality trials; earlier positive trials likely had methodological issues"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not in archive; North American plant with significant EMA recognition — add"
+    },
+    {
+      "common_name": "Milk Thistle",
+      "botanical": "Silybum marianum",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 2,
+        "year": 2002,
+        "indications": [
+          "liver conditions",
+          "hepatoprotection",
+          "toxic liver damage"
+        ],
+        "preparation": "Standardised extract (silymarin) 200–400mg/day"
+      },
+      "ema": {
+        "status": "Traditional use registration",
+        "indications": [
+          "symptomatic relief of liver and biliary complaints",
+          "hepatoprotection"
+        ]
+      },
+      "fda": {
+        "status": "Dietary supplement DSHEA",
+        "notes": "Not approved as drug; extensive clinical research"
+      },
+      "cochrane": {
+        "reviews": [
+          "Milk thistle for alcoholic and/or hepatitis B or C liver disease (2005) — significant reduction in liver-related mortality; methodological concerns in some trials"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not in archive; North African/European plant with strong evidence base — add"
+    },
+    {
+      "common_name": "Feverfew",
+      "botanical": "Tanacetum parthenium",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "migraine prophylaxis",
+          "fever",
+          "arthritis"
+        ],
+        "preparation": "Dried leaf 125mg/day standardised to 0.2% parthenolide"
+      },
+      "ema": {
+        "status": "Traditional use registration",
+        "indications": [
+          "prophylaxis of migraine headache"
+        ]
+      },
+      "fda": {
+        "status": "Dietary supplement DSHEA",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Feverfew for migraine prevention (2004) — inconsistent results; possible modest effect for prophylaxis"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not in archive; Celtic/Norse plant with EMA recognition — add"
+    },
+    {
+      "common_name": "Horse Chestnut",
+      "botanical": "Aesculus hippocastanum",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 2,
+        "year": 2002,
+        "indications": [
+          "chronic venous insufficiency",
+          "leg oedema"
+        ],
+        "preparation": "Extract standardised to 100–150mg aescin/day"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "symptomatic treatment of chronic venous insufficiency"
+        ]
+      },
+      "fda": {
+        "status": "Not approved",
+        "notes": "Raw seeds toxic; standardised extract studied but not FDA approved"
+      },
+      "cochrane": {
+        "reviews": [
+          "Horse chestnut seed extract for chronic venous insufficiency (2012) — significantly improves leg pain and oedema; comparable to compression stockings in some trials"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not in archive; strong evidence base — add"
+    },
+    {
+      "common_name": "Ginger",
+      "botanical": "Zingiber officinale",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "nausea",
+          "vomiting",
+          "motion sickness",
+          "morning sickness"
+        ],
+        "preparation": "Dried rhizome 250–1000mg/day; 1g fresh root in water"
+      },
+      "ema": {
+        "status": "Traditional use registration",
+        "indications": [
+          "prophylaxis of nausea and vomiting in motion sickness",
+          "symptomatic relief of nausea in pregnancy"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Ginger for nausea and vomiting in early pregnancy (2014) — significantly reduces nausea severity; appears safe"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Ginger not currently as a standalone archive entry — add; one of most broadly validated traditional plants"
+    },
+    {
+      "common_name": "Ashwagandha",
+      "botanical": "Withania somnifera",
+      "who": {
+        "status": "Monograph in preparation",
+        "vol": "pending",
+        "indications": [
+          "adaptogen",
+          "anti-stress",
+          "cognitive enhancement"
+        ]
+      },
+      "ema": {
+        "status": "Assessment report completed 2017",
+        "indications": [
+          "stress relief",
+          "adaptogenic use — traditional use not established under EU framework"
+        ]
+      },
+      "fda": {
+        "status": "GRAS self-affirmation",
+        "notes": "Not approved as drug; multiple clinical trials"
+      },
+      "cochrane": {
+        "reviews": [
+          "No Cochrane review; multiple systematic reviews positive for stress, anxiety, testosterone, and athletic performance"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Charaka Samhita documents it; not in plant database yet — add as high priority"
+    },
+    {
+      "common_name": "Elderberry",
+      "botanical": "Sambucus nigra",
+      "who": {
+        "status": "No formal monograph",
+        "indications": [
+          "respiratory infections — strong evidence base without formal WHO classification"
+        ]
+      },
+      "ema": {
+        "status": "Traditional use registration — flowers",
+        "indications": [
+          "elderflower for cold symptoms and fever"
+        ]
+      },
+      "fda": {
+        "status": "GRAS (berry)",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Elderberry for prevention and treatment of viral respiratory illnesses (2021) — significant reduction in duration and severity of colds and flu"
+        ]
+      },
+      "archive_id": "MMA-090"
+    },
+    {
+      "common_name": "Hawthorn",
+      "botanical": "Crataegus monogyna / C. laevigata",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 2,
+        "year": 2002,
+        "indications": [
+          "mild heart failure (NYHA Class II)",
+          "cardiac arrhythmia prevention"
+        ],
+        "preparation": "Extract WS 1442 or LI 132: 160–900mg/day"
+      },
+      "ema": {
+        "status": "Well-established use",
+        "indications": [
+          "treatment of mild symptoms of cardiac conditions — palpitations, dyspnoea"
+        ]
+      },
+      "fda": {
+        "status": "Dietary supplement DSHEA",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Hawthorn extract for chronic heart failure (2008) — significant improvement in exercise tolerance and reduction in symptoms"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Not in archive; Celtic/European plant with strongest cardiac evidence of any herbal medicine — add"
+    },
+    {
+      "common_name": "Licorice Root",
+      "botanical": "Glycyrrhiza glabra / G. uralensis",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 1,
+        "year": 1999,
+        "indications": [
+          "peptic ulcer",
+          "gastritis",
+          "upper respiratory inflammation",
+          "adrenocortical insufficiency adjunct"
+        ],
+        "preparation": "Deglycyrrhizinated licorice (DGL) 380–1140mg 3x/day for ulcers"
+      },
+      "ema": {
+        "status": "Well-established use (oral and topical)",
+        "indications": [
+          "symptomatic relief of upper GI discomfort",
+          "cough",
+          "upper respiratory tract mucositis"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Glycyrrhizin approved as flavoring; SNMC (Stronger Neominophagen C — glycyrrhizin injection) approved in Japan as anti-hepatitis drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "No single Cochrane review; multiple systematic reviews positive for peptic ulcer and gastritis"
+        ]
+      },
+      "archive_id": null,
+      "notes": "Licorice is the most cross-tradition plant in archive (6 traditions) but not yet a standalone plant database entry — critical to add"
+    },
+    {
+      "common_name": "Passionflower",
+      "botanical": "Passiflora incarnata",
+      "who": {
+        "status": "Full Monograph",
+        "vol": 3,
+        "year": 2007,
+        "indications": [
+          "mild anxiety",
+          "restlessness",
+          "insomnia"
+        ],
+        "preparation": "Dried herb infusion 4–8g/day; extract 45 drops/day"
+      },
+      "ema": {
+        "status": "Traditional use registration",
+        "indications": [
+          "relief of mild symptoms of mental stress and aid of sleep"
+        ]
+      },
+      "fda": {
+        "status": "GRAS",
+        "notes": "Not approved as drug"
+      },
+      "cochrane": {
+        "reviews": [
+          "Passiflora for anxiety disorders (2017) — comparable to low-dose oxazepam in one RCT; insufficient evidence for formal recommendation"
+        ]
+      },
+      "archive_id": "MMA-107"
+    }
+  ]
+}
