@@ -2299,7 +2299,9 @@
         </optgroup>
         <optgroup label="Asia">
           <option value="ayurveda">Ayurveda (Charaka Samhita)</option>
+          <option value="unani">Unani (Ibn Sina — Canon)</option>
           <option value="chinese">Chinese (Shennong Bencaojing)</option>
+          <option value="unani">Unani / Islamic Medicine</option>
           <option value="kampo">Kampo / Japanese</option>
           <option value="tibetan">Tibetan</option>
           <option value="philippine">Philippine</option>
@@ -2492,7 +2494,7 @@
 
 <script>
 // ── State ────────────────────────────────────────────────
-let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [];
+let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [];
 let activeStatusFilter = null, activeTraditions = new Set();
 
 // ── Tab navigation ──────────────────────────────────────
@@ -2520,14 +2522,16 @@ function toggleChapter(header) {
 // ── Data loading ────────────────────────────────────────
 async function loadData() {
   try {
-    const [pRes, tRes, cRes, lRes] = await Promise.all([
+    const [pRes, tRes, rRes, cRes, lRes] = await Promise.all([
       fetch('/data/plants.json'),
       fetch('/data/traditions.json'),
+      fetch('/data/regulatory_data.json').catch(()=>null),
       fetch('/data/conditions.json'),
       fetch('/data/longevity.json'),
     ]);
     plantData = (await pRes.json()).plants || [];
     traditionData = (await tRes.json()).traditions || [];
+    if (rRes && rRes.ok) regulatoryData = (await rRes.json()).plants || [];
     conditionData = (await cRes.json()).conditions || [];
     longevityData = (await lRes.json()).traditions || [];
 
@@ -2548,6 +2552,8 @@ async function loadData() {
         { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
         { url: '/data/charaka_chapters.json',        tradition: 'ayurveda',            label: 'Ayurveda (Charaka Samhita)' },
         { url: '/data/bencao_chapters.json',         tradition: 'chinese',             label: 'Chinese (Shennong Bencaojing)' },
+        { url: '/data/gangmu_chapters.json',         tradition: 'chinese',             label: 'Chinese (Bencao Gangmu — Li Shizhen)' },
+        { url: '/data/ibn_sina_chapters.json',       tradition: 'unani',               label: 'Unani (Ibn Sina — Canon of Medicine)' },
       ];
 
       const allResults = [];
@@ -3571,6 +3577,27 @@ function closeSearch() {
   document.getElementById('search-overlay').classList.remove('open');
   window.history.replaceState({}, '', window.location.pathname);
 }
+function buildRegulatoryBadge(p) {
+  const reg = regulatoryData.find(r => 
+    r.archive_id === p.id || 
+    r.common_name.toLowerCase() === p.common_name.toLowerCase()
+  );
+  if (!reg) return '';
+  const badges = [];
+  if (reg.who?.status?.includes('Monograph')) {
+    badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:#E3F2FD;color:#1565C0;border:1px solid #1565C0;border-radius:2px">🌐 WHO Monograph</span>`);
+  }
+  if (reg.ema?.status) {
+    const isWE = reg.ema.status.includes('Well-established');
+    badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:${isWE?'#E8F5E9':'#F3E5F5'};color:${isWE?'#2E7D32':'#6A1B9A'};border:1px solid ${isWE?'#388E3C':'#7B1FA2'};border-radius:2px">🇪🇺 EMA ${isWE?'Well-established':'Traditional Use'}</span>`);
+  }
+  if (reg.fda?.status && (reg.fda.status.includes('approved') || reg.fda.status.includes('GRAS'))) {
+    const isApproved = reg.fda.status.toLowerCase().includes('approved');
+    badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:${isApproved?'#E8F5E9':'#FFF8E1'};color:${isApproved?'#1B5E20':'#E65100'};border:1px solid ${isApproved?'#2E7D32':'#EF6C00'};border-radius:2px">🇺🇸 FDA ${isApproved?'Approved':'GRAS'}</span>`);
+  }
+  if (!badges.length) return '';
+  return `<div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.5rem">${badges.join('')}</div>`;
+}
 function buildPriorityBadge(p) {
   const light = p.priority_light;
   if (!light) return '';
@@ -3722,6 +3749,17 @@ function renderSearchResults(query, aiSummary, localResults, autoOpenRemedy) {
             <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${lc};margin-bottom:0.25rem">${lightLabels[p.priority_light]} · Research Gap</div>
             <div style="font-size:0.85rem;line-height:1.6;color:var(--ink)">${p.priority_reason||''}</div>
           </div>
+        </div>`;
+      }
+      const regBadges = buildRegulatoryBadge(p);
+      if (regBadges) {
+        const reg = regulatoryData.find(r => r.archive_id === p.id || r.common_name.toLowerCase() === p.common_name.toLowerCase());
+        detail += `<div style="margin-top:0.6rem;padding:0.8rem 1rem;border:1px solid #e0e0e0;background:#fafafa">
+          <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Regulatory Recognition</div>
+          ${regBadges}
+          ${reg?.who?.indications ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem"><strong>WHO indications:</strong> ${reg.who.indications.join('; ')}</div>` : ''}
+          ${reg?.ema?.indications ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.2rem"><strong>EMA indications:</strong> ${reg.ema.indications.join('; ')}</div>` : ''}
+          ${reg?.cochrane?.reviews?.length ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem"><strong>Cochrane:</strong> ${reg.cochrane.reviews[0]}</div>` : ''}
         </div>`;
       }
       if (p.evidence_tier) {
