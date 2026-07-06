@@ -2299,6 +2299,8 @@
         </optgroup>
         <optgroup label="Asia">
           <option value="ayurveda">Ayurveda (Charaka Samhita)</option>
+          <option value="korean">Korean (Dongui Bogam)</option>
+          <option value="japanese_honzo">Japanese (Yamato Honzō)</option>
           <option value="unani">Unani (Ibn Sina — Canon)</option>
           <option value="chinese">Chinese (Shennong Bencaojing)</option>
           <option value="unani">Unani / Islamic Medicine</option>
@@ -2553,6 +2555,13 @@ async function loadData() {
         { url: '/data/charaka_chapters.json',        tradition: 'ayurveda',            label: 'Ayurveda (Charaka Samhita)' },
         { url: '/data/bencao_chapters.json',         tradition: 'chinese',             label: 'Chinese (Shennong Bencaojing)' },
         { url: '/data/gangmu_chapters.json',         tradition: 'chinese',             label: 'Chinese (Bencao Gangmu — Li Shizhen)' },
+        { url: '/data/korean_chapters.json',         tradition: 'korean',              label: 'Korean (Dongui Bogam)' },
+        { url: '/data/honzo_chapters.json',          tradition: 'japanese_honzo',      label: 'Japanese (Yamato Honzō)' },
+        { url: '/data/east_african_chapters.json',   tradition: 'east_african',        label: 'East African (Ethiopian)' },
+        { url: '/data/southern_african_chapters.json',tradition:'southern_african',    label: 'Southern African (Zulu/San/Khoikhoi)' },
+        { url: '/data/north_american_expanded_chapters.json',tradition:'north_american_indigenous',label:'North American (Moerman Database)' },
+        { url: '/data/ibn_baitar_chapters.json',     tradition: 'unani',               label: 'Unani (Ibn al-Baitar)' },
+        { url: '/data/dioscorides_complete_chapters.json',tradition:'greek_roman',     label: 'Greek/Roman (Dioscorides Books I, V)' },
         { url: '/data/ibn_sina_chapters.json',       tradition: 'unani',               label: 'Unani (Ibn Sina — Canon of Medicine)' },
       ];
 
