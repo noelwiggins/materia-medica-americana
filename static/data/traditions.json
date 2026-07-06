@@ -652,6 +652,58 @@
           "archive_url": "https://www.csiro.au/"
         }
       ]
+    },
+    {
+      "id": "east_african",
+      "name": "East African Medicine",
+      "full_name": "Ethiopian & East African Traditional Medicine",
+      "icon": "🌿",
+      "color": "#4CAF50",
+      "region": "East Africa",
+      "period": "Ancient (written records from 15th century CE)",
+      "primary_source": "Ethiopian Zara Yaqob manuscripts; Dagne et al. documentation",
+      "language": "Ge'ez / Amharic / Swahili",
+      "description": "Ethiopian traditional medicine, documented through the debtera scholar-healer tradition and the Zara Yaqob court manuscripts. Ethiopia's extraordinary biodiversity — 6,500+ plant species, 12% endemic — makes it one of the world's richest unexplored pharmacological territories.",
+      "plant_count_approximate": 800
+    },
+    {
+      "id": "southern_african",
+      "name": "Southern African Medicine",
+      "full_name": "Southern African Traditional Medicine (Zulu, Xhosa, San, Khoikhoi)",
+      "icon": "🌍",
+      "color": "#FF7043",
+      "region": "Southern Africa",
+      "period": "Ancient oral tradition; documented from 1650s CE",
+      "primary_source": "Watt & Breyer-Brandwijk (1962), Hutchings et al. (1996)",
+      "language": "Zulu / Xhosa / Sesotho / !Kung San (oral)",
+      "description": "Southern African traditional medicine from multiple nations, most notably the San (Bushmen) — who maintain the world's oldest continuous healing tradition (40,000+ years) — and the Zulu and Khoikhoi peoples. Contains some of the archive's most pharmacologically validated plants: devil's claw (EMA approved), umckaloabo (Cochrane reviewed), buchu (British Pharmacopoeia).",
+      "plant_count_approximate": 600
+    },
+    {
+      "id": "korean",
+      "name": "Korean Medicine",
+      "full_name": "Korean Traditional Medicine (Dongui Bogam)",
+      "icon": "🏮",
+      "color": "#C62828",
+      "region": "East Asia",
+      "period": "1613 CE compilation; oral tradition ancient",
+      "primary_source": "Dongui Bogam by Heo Jun (1613) — UNESCO Memory of the World",
+      "language": "Classical Chinese / Korean",
+      "description": "The Dongui Bogam (Treasured Mirror of Eastern Medicine) by Heo Jun is the definitive encyclopedia of Korean traditional medicine — 25 volumes, 1,400+ medicinal substances. UNESCO recognized it as Memory of the World in 2009. Uniquely documents Korean-endemic plants not in the Chinese materia medica.",
+      "plant_count_approximate": 1400
+    },
+    {
+      "id": "japanese_honzo",
+      "name": "Japanese Honzō",
+      "full_name": "Japanese Materia Medica (Yamato Honzō / Honzō Kōmoku)",
+      "icon": "⛩️",
+      "color": "#E53935",
+      "region": "East Asia",
+      "period": "1709 CE",
+      "primary_source": "Yamato Honzō by Kaibara Ekken (1709)",
+      "language": "Classical Japanese / Classical Chinese",
+      "description": "Kaibara Ekken's Yamato Honzō (1709) systematically compared Japanese plants with the Chinese Bencao Gangmu through field research — identifying Japanese-endemic plants and verifying Chinese documentation against Japanese specimens. Established the foundation for modern Japanese pharmacognosy.",
+      "plant_count_approximate": 1362
     }
   ],
   "metadata": {
