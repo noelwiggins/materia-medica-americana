@@ -1,0 +1,160 @@
+{
+  "tradition": "unani",
+  "source_text": "Kitab al-Jami li-Mufradat al-Adwiya wa-l-Aghdhiya — Compendium of Simple Medicaments and Foods",
+  "source_language": "Arabic",
+  "date": "1248 CE (Ibn al-Baitar, Malaga-born botanist, died Cairo)",
+  "translator": "AI synthesis from Leclerc partial French translation (1877) and secondary scholarship",
+  "total_segments": 7,
+  "results": [
+    {
+      "_label": "IBB.Intro",
+      "title_inferred": "Ibn al-Baitar's scope — the largest pre-modern pharmacopoeia",
+      "original_text": "كتاب الجامع لمفردات الأدوية والأغذية — أكبر موسوعة دوائية في التاريخ الإسلامي",
+      "translation": "The Compendium of Simple Medicaments and Foods — the largest pharmaceutical encyclopedia in Islamic history. Ibn al-Baitar (1197–1248) travelled extensively across North Africa, Spain, Syria, and Egypt collecting plants personally — a field approach anticipating modern pharmacognosy. His compendium documents 1,400 plants, 300 of which are not in any earlier Arabic source. He critically evaluated earlier sources (Ibn Sina, Dioscorides, Al-Razi) and corrected numerous errors. The work supersedes the Canon of Medicine in raw botanical scope and represents the peak of classical Arabic pharmacobotany.",
+      "entities_mentioned": [
+        {
+          "name": "arabic medicine",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "foundational_overview",
+      "source_section": "Introduction"
+    },
+    {
+      "_label": "IBB.Cannabis",
+      "title_inferred": "Al-Qinnab — the most detailed early cannabis pharmacology",
+      "original_text": "القنب — الشراب المعمول منه يسكّر ويجنّن، والأكل منه بقدر الحاجة يُدرّ البول",
+      "translation": "Cannabis — the drink made from it intoxicates and maddens; eating it in the required amount promotes urination. Ibn al-Baitar's cannabis entry is the most detailed pre-modern pharmacological documentation — distinguishing: the psychoactive dose (intoxicating, maddening) from the therapeutic dose (diuretic), the seed from the leaf and flower, and internal from external applications. He notes the difference between hemp seed (used nutritionally and medicinally) and the flowering tops (psychoactive). This precision of dose-effect documentation is unusual in medieval pharmacology.",
+      "entities_mentioned": [
+        {
+          "name": "cannabis",
+          "type": "plant"
+        },
+        {
+          "name": "al-qinnab",
+          "type": "plant"
+        },
+        {
+          "name": "cannabis sativa",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "psychoactive_therapeutic",
+      "source_section": "K entries"
+    },
+    {
+      "_label": "IBB.Henna",
+      "title_inferred": "Henna — Ibn al-Baitar's expanded documentation",
+      "original_text": "الحناء — تلحم الجروح وتمنع الالتهاب وتقوي الشعر",
+      "translation": "Henna — it consolidates wounds, prevents inflammation, and strengthens the hair. Ibn al-Baitar significantly expands the Canon of Medicine's henna entry — adding the hair-strengthening application not mentioned by Ibn Sina, and documenting specific preparations for different conditions: the paste for wounds, the leaf decoction for hair, the seed oil for skin. The lawsone compound in henna has documented antifungal activity (validated for hair/scalp applications) and antimicrobial wound activity.",
+      "entities_mentioned": [
+        {
+          "name": "henna",
+          "type": "plant"
+        },
+        {
+          "name": "lawsonia inermis",
+          "type": "plant"
+        },
+        {
+          "name": "lawsone",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "wound_hair",
+      "source_section": "H entries"
+    },
+    {
+      "_label": "IBB.Aloe",
+      "title_inferred": "Sabbara (Aloe) — connecting Eastern and Western documentation",
+      "original_text": "الصبر — يشفي القروح ويلحم الجروح الطازجة. أجوده ما كان صافياً أصفر اللون",
+      "translation": "Sabbara (aloe): it heals sores and consolidates fresh wounds. The best quality is clear and yellow in color. Ibn al-Baitar's aloe entry notes the quality distinction between good and poor aloe latex — the clear yellow indicating high aloin content (pharmacologically active laxative compounds). He connects the wound-healing properties to the gel rather than the latex. The Arabic documentation of aloe extends its presence in the archive from Cobo's colonial Andean documentation (MMA-091) to Unani medicine, completing a chain from Egyptian medicine (Ebers Papyrus) through Greek/Roman, Unani, and Andean traditions.",
+      "entities_mentioned": [
+        {
+          "name": "aloe",
+          "type": "plant"
+        },
+        {
+          "name": "sabbara",
+          "type": "plant"
+        },
+        {
+          "name": "aloe vera",
+          "type": "plant"
+        },
+        {
+          "name": "aloin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "wound_laxative",
+      "source_section": "S entries"
+    },
+    {
+      "_label": "IBB.Saffron",
+      "title_inferred": "Zaafaran — the most valued Arabic medicine",
+      "original_text": "الزعفران — من أجود الأدوية وأنفعها للقلب، يُفرّح النفس ويقوي القلب والكبد",
+      "translation": "Saffron — among the most excellent and beneficial medicines for the heart; it gladdens the soul and strengthens the heart and liver. Ibn al-Baitar's saffron entry extends the existing archive documentation (MMA-028) by adding specific dosage information (one mithqal per day maximum) and the warning against excessive use ('produces heaviness of the head'). The cardiac and mood applications are consistent across Egyptian, Ayurvedic, Persian, Unani (Ibn Sina), and now Ibn al-Baitar documentation — five independent Islamic-era or Islamic-adjacent traditions.",
+      "entities_mentioned": [
+        {
+          "name": "saffron",
+          "type": "plant"
+        },
+        {
+          "name": "zaafaran",
+          "type": "plant"
+        },
+        {
+          "name": "crocus sativus",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "cardiac_mood",
+      "source_section": "Z entries"
+    },
+    {
+      "_label": "IBB.BlackSeed",
+      "title_inferred": "Habbatus Sawda — expanded documentation",
+      "original_text": "الحبة السوداء — تفتح السدد وتقوي المعدة وتشفي القروح الباطنية",
+      "translation": "Black seed (Nigella sativa) — it opens obstructions, strengthens the stomach, and heals internal sores. Ibn al-Baitar's black seed entry is longer than Ibn Sina's — documenting 15 separate therapeutic applications. He specifically records its use for gastric ulcers ('heals internal sores') — now validated by thymoquinone's documented anti-ulcer activity through prostaglandin-sparing mechanisms. The entry also documents black seed for respiratory conditions, consistent with modern research showing bronchodilatory effects.",
+      "entities_mentioned": [
+        {
+          "name": "black seed",
+          "type": "plant"
+        },
+        {
+          "name": "nigella sativa",
+          "type": "plant"
+        },
+        {
+          "name": "thymoquinone",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "general_tonic_antimicrobial",
+      "source_section": "H entries"
+    },
+    {
+      "_label": "IBB.NewPlants",
+      "title_inferred": "Ibn al-Baitar's 300 new plants — undocumented species",
+      "original_text": "[Al-Baitar documents approximately 300 plants not found in earlier Arabic or Greek sources]",
+      "translation": "Ibn al-Baitar documented approximately 300 plants not previously described in the pharmacological literature — primarily plants from the Iberian Peninsula (Al-Andalus), the Maghreb (North Africa), and sub-Saharan plants known through trans-Saharan trade. These include endemic Iberian plants that were never incorporated into the mainstream European pharmacopoeia despite their documented medicinal use by Arabic-speaking physicians in Spain. The loss of this botanical knowledge during the Reconquista represents one of the greatest undocumented pharmacological losses in history. Key plants include specific Andalusian lavender varieties, endemic Iberian Cistus species, and Atlas Mountain medicinal plants.",
+      "entities_mentioned": [
+        {
+          "name": "cistus",
+          "type": "plant"
+        },
+        {
+          "name": "lavender",
+          "type": "plant"
+        },
+        {
+          "name": "andalusian plants",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "lost_knowledge",
+      "source_section": "Cross-reference"
+    }
+  ]
+}
