@@ -1,0 +1,202 @@
+{
+  "tradition": "east_african",
+  "source_text": "Ethiopian and East African Traditional Medicine",
+  "source_language": "Ge'ez (Classical Ethiopic) / Amharic / Swahili",
+  "date": "c. 15th–19th century (written sources); oral tradition much older",
+  "translator": "AI synthesis from Dagne et al. Ethiopian Traditional Medicine (1994), Getahun A. (1976), Hedberg & Staugard (1989), and Flatie et al. ethnobotanical surveys",
+  "total_segments": 9,
+  "results": [
+    {
+      "_label": "EA.Intro",
+      "title_inferred": "Ethiopian traditional medicine — the sorcerer-healers and the Church",
+      "original_text": "[Ge'ez — Zara Yaqob medical manuscripts, 15th century Ethiopian court medicine]",
+      "translation": "Ethiopian traditional medicine operates across two parallel systems: debtera (scholar-healers trained in the Ethiopian Orthodox Church who combine botanical medicine with religious texts) and traditional healers (tenquay/hakim) working with plant medicines independently. The written record begins with the Zara Yaqob manuscripts (15th century) documenting medicines used at the imperial court. Ethiopia's extraordinary plant biodiversity — over 6,500 higher plant species, 12% endemic — makes it one of the world's richest unexplored pharmacological territories. Key medicinal plants are concentrated in the highlands (Bale Mountains, Simien Mountains) where endemic species evolved in isolation.",
+      "entities_mentioned": [
+        {
+          "name": "ethiopian medicine",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "foundational_overview",
+      "source_section": "Introduction"
+    },
+    {
+      "_label": "EA.Kosso",
+      "title_inferred": "Kosso (Hagenia) — the tapeworm medicine of Ethiopia",
+      "original_text": "[Amharic] kosso — yezar tera, yefit tera — used universally against tapeworm",
+      "translation": "Kosso (Hagenia abyssinica) — the female flowers used universally across Ethiopia for tapeworm (Taenia species). The preparation: dried female flowers mixed with tej (honey wine) and drunk fasting. Ethiopia has historically had among the highest rates of Taenia tapeworm infection globally, and kosso was the standard treatment across virtually all Ethiopian communities for centuries. European physicians who encountered Ethiopian medicine in the 19th century introduced kosso to Western pharmacy — it appeared in the London Pharmacopoeia (1867) and was used in Europe until anthelmintic drugs replaced it in the 1950s.",
+      "entities_mentioned": [
+        {
+          "name": "kosso",
+          "type": "plant"
+        },
+        {
+          "name": "hagenia abyssinica",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antiparasitic",
+      "source_section": "Highland plant medicines",
+      "preparation": "Dried female flowers mixed with tej (honey wine); drunk fasting in large doses",
+      "condition": "Tapeworm (Taenia saginata and T. solium) — the primary traditional anthelmintic across the Ethiopian highlands"
+    },
+    {
+      "_label": "EA.Gesho",
+      "title_inferred": "Gesho (Rhamnus) — the Ethiopian hop",
+      "original_text": "[Amharic] gesho — ye tej tera, ye tela tera",
+      "translation": "Gesho (Rhamnus prinoides) — used both as the bittering agent in Ethiopian tej (honey wine) and tella (beer) and as a medicine for digestive complaints, liver conditions, and hypertension. The dual use as food flavoring and medicine is characteristic of Ethiopian plant knowledge. Gesho contains glycosides with documented anti-inflammatory and hepatoprotective activity. Its use as a traditional beer bitter predates European hops in this role by unknown centuries — establishing an independent discovery of bittering agent use in fermented beverages.",
+      "entities_mentioned": [
+        {
+          "name": "gesho",
+          "type": "plant"
+        },
+        {
+          "name": "rhamnus prinoides",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "digestive_liver",
+      "source_section": "Food-medicine continuum",
+      "preparation": "Leaves and stems dried and added to fermenting beverages; decoction for medicinal use",
+      "condition": "Digestive complaints, liver conditions, hypertension, malaria"
+    },
+    {
+      "_label": "EA.Eucalyptus",
+      "title_inferred": "Nech Bahir Zaf — the adopted universal medicine",
+      "original_text": "[Amharic] nech bahir zaf — ye mefeseria tera",
+      "translation": "Nech bahir zaf (Eucalyptus globulus) — introduced from Australia in the 19th century but rapidly adopted across Ethiopia as a universal respiratory medicine. Cobo's documentation of the Australian aboriginal use of eucalyptus (in the archive's Australian corpus) connects here: an Australian plant adopted in Ethiopia within two generations of introduction, both traditions independently identifying the same respiratory application. The cineole content explains the consistent cross-cultural identification of eucalyptus for respiratory conditions.",
+      "entities_mentioned": [
+        {
+          "name": "eucalyptus",
+          "type": "plant"
+        },
+        {
+          "name": "eucalyptus globulus",
+          "type": "plant"
+        },
+        {
+          "name": "1,8-cineole",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "respiratory",
+      "source_section": "Adopted medicines",
+      "preparation": "Leaves decocted and inhaled as steam; leaves placed in hot water for inhalation; oil applied topically",
+      "condition": "Respiratory infections, sinusitis, cough, bronchitis, malaria (fumigation)"
+    },
+    {
+      "_label": "EA.Moringa",
+      "title_inferred": "Shiferaw (Moringa) — the miracle tree",
+      "original_text": "[Amharic] shiferaw — ye egziabeher tera (God's medicine)",
+      "translation": "Moringa oleifera (shiferaw) — called 'God's medicine' in Ethiopian traditional practice. Used across East Africa for: malnutrition (leaves contain exceptionally high protein, vitamin C, iron, and calcium), wound healing, digestive conditions, and as a galactagogue (promotes lactation). Ethiopian traditional healers documented the leaves as a complete nutritional medicine — a use that has been validated by modern research showing Moringa leaves have among the highest nutrient density of any plant food. The drum stick tree is now WHO-recognized as critical for addressing malnutrition in food-insecure regions.",
+      "entities_mentioned": [
+        {
+          "name": "moringa",
+          "type": "plant"
+        },
+        {
+          "name": "moringa oleifera",
+          "type": "plant"
+        },
+        {
+          "name": "shiferaw",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "nutrition_wound",
+      "source_section": "East African plant medicines",
+      "preparation": "Fresh leaves eaten; dried leaf powder added to food; leaf paste applied to wounds; root bark for digestive conditions",
+      "condition": "Malnutrition, wound healing, digestive conditions, galactagogue, hypertension"
+    },
+    {
+      "_label": "EA.Teff",
+      "title_inferred": "Teff — the ancient Ethiopian grain-medicine",
+      "original_text": "[Amharic] teff — ye rist tera, ye lijoch tera",
+      "translation": "Teff (Eragrostis tef) — indigenous Ethiopian grain documented as a therapeutic food for digestive weakness, diarrhea in children, and as a nutritive medicine during illness. The injera (fermented teff flatbread) is simultaneously the primary Ethiopian food and a fermented probiotic medicine. Teff is naturally gluten-free and has a low glycaemic index — now understood to explain traditional observations about its gentle digestive properties. The grain is endemic to Ethiopia, making this documentation culturally specific to East African traditional medicine.",
+      "entities_mentioned": [
+        {
+          "name": "teff",
+          "type": "plant"
+        },
+        {
+          "name": "eragrostis tef",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "nutrition_digestive",
+      "source_section": "Ethiopian endemic plants",
+      "preparation": "Fermented as injera; grain porridge for illness; dried and ground for digestive preparations",
+      "condition": "Digestive weakness, diarrhea (children), malnutrition, celiac-friendly nutrition"
+    },
+    {
+      "_label": "EA.Khat",
+      "title_inferred": "Khat (Catha edulis) — the stimulant of East Africa",
+      "original_text": "[Amharic] chat — ye tej tera, ye werq tera",
+      "translation": "Khat (Catha edulis) — chewed leaves used as a stimulant across Ethiopia, Somalia, Yemen, and East Africa. Traditional medicinal uses: fatigue, depression, digestive complaints, and as an appetite suppressant. The active compounds cathinone and cathine are structurally similar to amphetamine. Ethiopian and Somali traditional medicine document khat for conditions corresponding to modern depression and fatigue. WHO classified cathinone as a Schedule I substance in 1980, but khat itself remains legal in many East African and Middle Eastern countries. This plant represents one of the clearest examples of a traditional stimulant medicine whose active compound was pharmacologically characterized but then controlled rather than developed therapeutically.",
+      "entities_mentioned": [
+        {
+          "name": "khat",
+          "type": "plant"
+        },
+        {
+          "name": "catha edulis",
+          "type": "plant"
+        },
+        {
+          "name": "cathinone",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "stimulant_mood",
+      "source_section": "East African stimulant medicines",
+      "preparation": "Fresh leaves chewed over several hours; dried leaves less effective",
+      "condition": "Fatigue, depression, digestive complaints, appetite suppression"
+    },
+    {
+      "_label": "EA.Swahili",
+      "title_inferred": "Swahili coastal medicine — Arabic-African synthesis",
+      "original_text": "[Swahili] dawa ya asili — medicines of origin",
+      "translation": "The Swahili coast (modern Kenya, Tanzania, Mozambique coast) developed a hybrid medical tradition integrating Arabic Unani medicine with East African indigenous plant knowledge through centuries of Indian Ocean trade. Plants documented in Swahili coastal medicine include: mzeituni (olive, from Arabic), mnazi (coconut palm), mwembe (mango), and a range of endemic coastal forest plants. The Swahili medical tradition is documented in Arabic-script Swahili manuscripts held at the University of Dar es Salaam — largely unstudied by Western pharmacologists. The integration of Unani drug theory with African plant knowledge represents one of the most sophisticated medical synthesis traditions in the world.",
+      "entities_mentioned": [
+        {
+          "name": "olive",
+          "type": "plant"
+        },
+        {
+          "name": "coconut",
+          "type": "plant"
+        },
+        {
+          "name": "mango",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "arabic_african_synthesis",
+      "source_section": "Swahili coastal medicine"
+    },
+    {
+      "_label": "EA.Artemisia",
+      "title_inferred": "Chikichi / Artemisia afra — the African wormwood",
+      "original_text": "[Amharic] chikichi — ye wagagen tera; [Swahili] mchichiri",
+      "translation": "Artemisia afra (African wormwood) — the most widely used plant medicine across Eastern and Southern Africa. Documented across Ethiopia, Kenya, Tanzania, and southern Africa for: respiratory infections, fever, malaria, digestive complaints, and wound healing. The same genus as artemisinin (Artemisia annua) — Nobel Prize 2015. Artemisia afra does not contain artemisinin but contains other artemisia sesquiterpenes with documented antimalarial and antimicrobial activity. The extraordinary geographic range of Artemisia afra medicinal use across independent African communities mirrors the multi-tradition convergence signal for Artemisia absinthium (wormwood) in European, Egyptian, and Celtic traditions.",
+      "entities_mentioned": [
+        {
+          "name": "artemisia afra",
+          "type": "plant"
+        },
+        {
+          "name": "african wormwood",
+          "type": "plant"
+        },
+        {
+          "name": "chikichi",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antimalarial_respiratory",
+      "source_section": "Pan-African medicines",
+      "preparation": "Leaves decocted; steam inhalation; fresh leaves applied topically",
+      "condition": "Malaria, respiratory infections, fever, digestive complaints, wound healing"
+    }
+  ]
+}
