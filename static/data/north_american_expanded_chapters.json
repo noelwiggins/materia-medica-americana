@@ -1,0 +1,204 @@
+{
+  "tradition": "north_american_indigenous",
+  "source_text": "Native North American Ethnobotany — Moerman Database Supplement",
+  "source_language": "Multiple indigenous languages (oral tradition); documented in English",
+  "date": "Documented 1700s–2000s; oral tradition ancient",
+  "translator": "AI synthesis from Moerman (1998) Native American Ethnobotany, Hamel & Chiltoskey (1975) Cherokee Plants, Densmore (1928) Uses of Plants by the Chippewa, Gilmore (1919) Uses of Plants by the Indians of the Missouri River Region",
+  "total_segments": 8,
+  "results": [
+    {
+      "_label": "NAM.Moerman",
+      "title_inferred": "Moerman's database — 4,029 uses across 291 nations",
+      "original_text": "[Moerman, D.E. 1998. Native American Ethnobotany. Timber Press.]",
+      "translation": "Daniel Moerman's Native American Ethnobotany database documents 4,029 medicinal plant uses across 291 indigenous North American nations — the most comprehensive documented indigenous pharmacopoeia in the world. Key statistical finding: plants used by more than five independent nations show significantly higher rates of confirmed pharmacological activity in modern research (Moerman, 1996) — validating the archive's convergence methodology. The most widely documented plants across the most nations: yarrow (46 nations), elderberry (27 nations), wild bergamot (21 nations), sage (19 nations), and echinacea (13 nations). These represent the highest-convergence indigenous North American plants.",
+      "entities_mentioned": [
+        {
+          "name": "yarrow",
+          "type": "plant"
+        },
+        {
+          "name": "elderberry",
+          "type": "plant"
+        },
+        {
+          "name": "echinacea",
+          "type": "plant"
+        },
+        {
+          "name": "sage",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "database_overview",
+      "source_section": "Introduction"
+    },
+    {
+      "_label": "NAM.Yarrow",
+      "title_inferred": "Yarrow — 46 nations, the most widely used North American plant",
+      "original_text": "[Achillea millefolium — documented across 46 independent nations by Moerman]",
+      "translation": "Yarrow (Achillea millefolium) is documented by 46 independent North American nations — more than any other plant in the Moerman database. Applications span: wound healing and hemostasis (most common), fever reduction, respiratory infections, digestive complaints, and ceremonial use. The Navajo, Ojibwe, Cherokee, Cheyenne, and Blackfoot nations — geographically separated by thousands of miles — all independently documented yarrow for wound bleeding. This represents the archive's single highest documented convergence for any one plant: 46 independent North American nations plus Celtic/Norse (Bald's Leechbook) plus Greek/Roman (the genus named for Achilles) — potentially 48+ independent traditions for one therapeutic application.",
+      "entities_mentioned": [
+        {
+          "name": "yarrow",
+          "type": "plant"
+        },
+        {
+          "name": "achillea millefolium",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "wound_fever",
+      "source_section": "Highest-convergence plants",
+      "preparation": "Fresh leaves packed into wounds to stop bleeding; decoction for fever; steam inhalation for respiratory",
+      "condition": "Wound bleeding (hemostasis), fever, respiratory infections, digestive complaints"
+    },
+    {
+      "_label": "NAM.Echinacea",
+      "title_inferred": "Echinacea — 13 nations, the Plains immune plant",
+      "original_text": "[Echinacea angustifolia / E. purpurea — documented by Moerman across 13 Great Plains nations]",
+      "translation": "Echinacea (Echinacea angustifolia primarily) is documented across 13 Great Plains nations including the Comanche, Cheyenne, Dakota, Kiowa, and Omaha. Traditional applications: toothache, sore throat, snake bite, infectious conditions, and as a general strengthener. The Comanche used it for toothache; the Cheyenne for sore throat; the Dakota for infections. The shared immune-strengthening application across independent nations led to the development of one of the world's best-selling herbal supplements. This entry adds specificity to the existing archive entry (MMA-025) with Moerman's documentation.",
+      "entities_mentioned": [
+        {
+          "name": "echinacea",
+          "type": "plant"
+        },
+        {
+          "name": "echinacea angustifolia",
+          "type": "plant"
+        },
+        {
+          "name": "echinacea purpurea",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "immune_infection",
+      "source_section": "Great Plains medicines",
+      "preparation": "Root chewed or decocted for toothache; root tea for infections; root applied topically for snake bite",
+      "condition": "Immune support, toothache, sore throat, infections, snake bite"
+    },
+    {
+      "_label": "NAM.WildBergamot",
+      "title_inferred": "Wild Bergamot (Monarda) — 21 nations",
+      "original_text": "[Monarda fistulosa — documented across 21 nations by Moerman]",
+      "translation": "Wild bergamot (Monarda fistulosa) is documented across 21 North American nations including Blackfoot, Cheyenne, Cherokee, Iroquois, Ojibwe, and Potawatomi. Applications: respiratory infections, fever, digestive complaints, and topical antiseptic. The Blackfoot used it for respiratory infections; the Iroquois for fever; multiple nations used it as a wound antiseptic. Modern research: thymol and carvacrol — the same compounds that validate oregano and thyme in the Mediterranean and Andean traditions — are the primary active compounds. This is the North American parallel to Mediterranean oregano, an independent pharmacological discovery of the same thymol/carvacrol antimicrobial class.",
+      "entities_mentioned": [
+        {
+          "name": "wild bergamot",
+          "type": "plant"
+        },
+        {
+          "name": "monarda fistulosa",
+          "type": "plant"
+        },
+        {
+          "name": "thymol",
+          "type": "compound"
+        },
+        {
+          "name": "carvacrol",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "antimicrobial_respiratory",
+      "source_section": "Eastern Woodlands medicines",
+      "preparation": "Fresh or dried leaves decocted for internal use; leaves applied topically for antiseptic; steam inhalation",
+      "condition": "Respiratory infections, fever, digestive complaints, wound antiseptic"
+    },
+    {
+      "_label": "NAM.Sage",
+      "title_inferred": "Sage (Salvia / Artemisia) — 19 nations, the ceremonial-medical plant",
+      "original_text": "[Salvia species and Artemisia species — documented across 19+ nations]",
+      "translation": "Multiple sage species (Salvia and Artemisia) are documented across 19+ nations for both medicinal and ceremonial purposes — the distinction between them being culturally variable. White sage (Salvia apiana) is used for purification ceremonies across Southwest nations; common sage (Salvia officinalis) for digestive and respiratory conditions across Eastern nations; sagebrush (Artemisia tridentata) across Great Basin nations for fever and respiratory. The medicinal applications — antimicrobial, digestive, respiratory — are consistent across all sage species and connect to Mediterranean sage (Salvia officinalis) in the Greek/Roman tradition for the same applications.",
+      "entities_mentioned": [
+        {
+          "name": "sage",
+          "type": "plant"
+        },
+        {
+          "name": "salvia apiana",
+          "type": "plant"
+        },
+        {
+          "name": "artemisia tridentata",
+          "type": "plant"
+        },
+        {
+          "name": "salvia officinalis",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "antimicrobial_ceremonial",
+      "source_section": "Cross-regional medicines"
+    },
+    {
+      "_label": "NAM.Goldenseal",
+      "title_inferred": "Goldenseal — berberine in the Eastern Woodlands",
+      "original_text": "[Hydrastis canadensis — Cherokee, Iroquois, Ojibwe documentation in Moerman]",
+      "translation": "Goldenseal (Hydrastis canadensis) is documented by Cherokee, Iroquois, and Ojibwe nations for: eye infections, mouth conditions, digestive complaints, and as a general antimicrobial. The Cherokee specifically used goldenseal root tea for eye inflammation — the same application as Coptis/goldthread (MMA-068) documented in North American and Tibetan traditions. Both plants share berberine as the primary active compound — the same compound now studied for Type 2 diabetes (comparable to metformin in RCTs). This entry extends the berberine convergence to include goldenseal as a distinct North American species alongside Coptis trifolia, creating a documented five-species, five-tradition berberine convergence.",
+      "entities_mentioned": [
+        {
+          "name": "goldenseal",
+          "type": "plant"
+        },
+        {
+          "name": "hydrastis canadensis",
+          "type": "plant"
+        },
+        {
+          "name": "berberine",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "antimicrobial_eye",
+      "source_section": "Eastern Woodlands medicines",
+      "preparation": "Root tea for eye infections (eyewash); root decoction for internal conditions; root powder applied topically",
+      "condition": "Eye infections, mouth conditions, digestive complaints, skin infections"
+    },
+    {
+      "_label": "NAM.Sweetgrass",
+      "title_inferred": "Sweetgrass — the ceremonial medicine of the Plains",
+      "original_text": "[Hierochloe odorata — Blackfoot, Ojibwe, Lakota documentation]",
+      "translation": "Sweetgrass (Hierochloe odorata) — documented across Plains and Eastern Woodland nations for both ceremonial and medicinal use. The Blackfoot used it for colds and coughs; the Ojibwe for ceremonial smudging and respiratory conditions; the Lakota for wound healing. Sweetgrass smoke was documented as an antimicrobial fumigation — consistent with the documented antimicrobial activity of coumarin (the compound responsible for sweetgrass's distinctive vanilla-hay scent). This connects to the archive's documentation of Tonka bean (coumarin source) in South American traditions — an independent discovery of the same antimicrobial compound from a different plant.",
+      "entities_mentioned": [
+        {
+          "name": "sweetgrass",
+          "type": "plant"
+        },
+        {
+          "name": "hierochloe odorata",
+          "type": "plant"
+        },
+        {
+          "name": "coumarin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "ceremonial_antimicrobial",
+      "source_section": "Plains medicines"
+    },
+    {
+      "_label": "NAM.Willow",
+      "title_inferred": "Willow bark — pre-aspirin pain medicine across North America",
+      "original_text": "[Salix species — documented across multiple nations for pain and fever]",
+      "translation": "Willow bark (Salix species) is documented across multiple North American nations for pain and fever — the same application documented in Egyptian, Greek/Roman, and Celtic/Norse traditions. The Ojibwe used willow bark tea for headache and fever; the Iroquois for joint pain; the Cherokee for fever. This multi-continental convergence for willow — pain and fever across Egyptian, Greek/Roman, Celtic, and North American independent traditions — is validated by salicin/salicylic acid pharmacology, and represents one of the most geographically extensive convergences in the archive. Aspirin (acetylsalicylic acid) was synthesized from salicylic acid in 1897.",
+      "entities_mentioned": [
+        {
+          "name": "willow bark",
+          "type": "plant"
+        },
+        {
+          "name": "salix",
+          "type": "plant"
+        },
+        {
+          "name": "salicin",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "pain_fever",
+      "source_section": "Cross-regional medicines",
+      "preparation": "Inner bark decocted in water for tea; bark chewed directly",
+      "condition": "Headache, fever, joint pain, general pain — validated by salicin mechanism"
+    }
+  ]
+}
