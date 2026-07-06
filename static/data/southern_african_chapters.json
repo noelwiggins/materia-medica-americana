@@ -1,0 +1,176 @@
+{
+  "tradition": "southern_african",
+  "source_text": "Southern African Traditional Medicine (Zulu, Xhosa, San, Sotho, Tswana)",
+  "source_language": "Zulu / Xhosa / Sesotho / !Kung San (oral traditions)",
+  "date": "Oral tradition (ancient); documented in writing from 1850s onwards",
+  "translator": "AI synthesis from Watt & Breyer-Brandwijk (1962), Van Wyk et al. (2009), Hutchings et al. (1996) Zulu Medicinal Plants, and Gericke & Viljoen documentation of San medicine",
+  "total_segments": 8,
+  "results": [
+    {
+      "_label": "SA.Intro",
+      "title_inferred": "Southern African traditional medicine — izinyanga, izangoma, and the San",
+      "original_text": "[Zulu oral tradition — documented by A. Hutchings]",
+      "translation": "Southern African traditional medicine operates across three distinct practitioner types: izinyanga (herbalists — plant medicine specialists), izangoma (diviners — spiritual healers who may also use plants), and the San (Bushmen) healers who represent the oldest continuous healing tradition in the world, dating to at least 40,000 BCE. The San pharmacopoeia is particularly significant — a population that has lived continuously in southern Africa longer than any other human group, with accumulated plant knowledge across tens of thousands of years. Key source: Watt & Breyer-Brandwijk's Medicinal and Poisonous Plants of Southern and Eastern Africa (1962) — the most comprehensive documentation of the region, covering 4,500 plant uses.",
+      "entities_mentioned": [
+        {
+          "name": "southern african medicine",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "foundational_overview",
+      "source_section": "Introduction"
+    },
+    {
+      "_label": "SA.Hoodia",
+      "title_inferred": "Hoodia — the San hunger suppressant",
+      "original_text": "[!Kung San oral tradition — documented by van der Post and Gericke]",
+      "translation": "Hoodia gordonii — used by the San (Bushmen) to suppress hunger and thirst during long hunting expeditions across the Kalahari Desert. The San would cut a piece of the stem and chew it to eliminate hunger and thirst for extended periods. This practice was documented by anthropologists studying the San from the 1930s onwards. In the 1990s, the South African Council for Scientific and Industrial Research (CSIR) identified P57 — the active compound — and licensed it to Unilever for development as a weight-loss drug. The subsequent dispute over benefit-sharing with the San community became one of the landmark cases in indigenous intellectual property rights under the Nagoya Protocol.",
+      "entities_mentioned": [
+        {
+          "name": "hoodia",
+          "type": "plant"
+        },
+        {
+          "name": "hoodia gordonii",
+          "type": "plant"
+        },
+        {
+          "name": "p57",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "appetite_suppression",
+      "source_section": "San plant medicines",
+      "preparation": "Fresh stem chewed directly during hunting expeditions",
+      "condition": "Hunger suppression, thirst suppression, endurance during physical exertion"
+    },
+    {
+      "_label": "SA.Buchu",
+      "title_inferred": "Buchu — the urinary medicine of the Cape",
+      "original_text": "[Khoikhoi / Cape Malay oral tradition — documented from 1650s Dutch colonial records]",
+      "translation": "Buchu (Agathosma betulina / A. crenulata) — used by the Khoikhoi people of the Cape for urinary tract conditions, digestive complaints, and as an antiseptic. The distinctive anise-blackcurrant smell of buchu made it recognizable to Dutch colonists who adopted it and exported it to Europe in the 17th century. Buchu became a listed medicine in the British Pharmacopoeia (1821) and was prescribed specifically for urinary tract infections — making it one of the few indigenous African plants that entered the European pharmacopoeia. Modern research confirms diosphenol (buchu camphor) has significant antimicrobial activity against urinary tract pathogens.",
+      "entities_mentioned": [
+        {
+          "name": "buchu",
+          "type": "plant"
+        },
+        {
+          "name": "agathosma betulina",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "urinary_antiseptic",
+      "source_section": "Khoikhoi plant medicines",
+      "preparation": "Leaves infused in brandy (buchu brandy) — both medicinal and commercial; leaves decocted in water",
+      "condition": "Urinary tract infections, digestive complaints, antiseptic wound treatment"
+    },
+    {
+      "_label": "SA.DevilsClaw",
+      "title_inferred": "Devil's Claw — the arthritis medicine of the Kalahari",
+      "original_text": "[San and Khoi oral tradition — documented by Zorn et al. and Van Wyk]",
+      "translation": "Devil's Claw (Harpagophytum procumbens) — secondary storage roots used across the Kalahari for arthritis, back pain, fever, and digestive complaints. The San and Khoi populations of the Kalahari documented devil's claw specifically for joint pain — an application now one of the most extensively clinically validated in all of African plant medicine. European interest began in the 1950s when G.H. Mehnert introduced it to Germany, where it became one of the most prescribed herbal medicines for osteoarthritis. Now EMA well-established use approved for symptomatic relief of joint and back pain.",
+      "entities_mentioned": [
+        {
+          "name": "devil's claw",
+          "type": "plant"
+        },
+        {
+          "name": "harpagophytum procumbens",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "anti_inflammatory_pain",
+      "source_section": "Kalahari plant medicines",
+      "preparation": "Dried secondary tuber decoction; standardised extract 50–100mg harpagoside daily",
+      "condition": "Osteoarthritis, back pain, fever, digestive complaints — EMA approved"
+    },
+    {
+      "_label": "SA.Umckaloabo",
+      "title_inferred": "Umckaloabo (Pelargonium) — the tuberculosis medicine",
+      "original_text": "[Zulu oral tradition — documented from 1897 Charles Stevens account]",
+      "translation": "Umckaloabo (Pelargonium sidoides) — Zulu name meaning 'heavy cough with thick phlegm.' Used by Zulu healers for severe respiratory conditions including tuberculosis. The plant came to European attention in 1897 when an Englishman named Charles Stevens was reportedly cured of tuberculosis in South Africa using umckaloabo, subsequently commercialising it as 'Stevens' Consumption Cure.' Modern clinical research has confirmed significant efficacy for acute bronchitis — the standardised extract EPs 7630 (Umcka) has the strongest clinical evidence base of any plant for acute respiratory infections. Multiple Cochrane reviews positive.",
+      "entities_mentioned": [
+        {
+          "name": "umckaloabo",
+          "type": "plant"
+        },
+        {
+          "name": "pelargonium sidoides",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "respiratory_infection",
+      "source_section": "Zulu plant medicines",
+      "preparation": "Root decoction; standardised extract EPs 7630 (commercial Umcka preparation)",
+      "condition": "Acute bronchitis, respiratory infections, tuberculosis (traditional), sinusitis"
+    },
+    {
+      "_label": "SA.Rooibos",
+      "title_inferred": "Rooibos — the Khoikhoi tea",
+      "original_text": "[Khoikhoi oral tradition — documented by P. le Fras Nortier from Khoikhoi sources, 1904]",
+      "translation": "Rooibos (Aspalathus linearis) — the Khoikhoi people of the Cederberg mountains used rooibos as a medicinal tea for digestive complaints, colic in infants, and as a general tonic. Botanist C.L. Leipoldt documented the traditional Khoikhoi use in the early 20th century. The plant is endemic to the Cederberg region of South Africa. Modern research has validated its traditional use: rooibos has the highest antioxidant content of any caffeine-free herbal tea, with documented anti-spasmodic activity validating the colic application. South Africa's most commercially successful traditional plant.",
+      "entities_mentioned": [
+        {
+          "name": "rooibos",
+          "type": "plant"
+        },
+        {
+          "name": "aspalathus linearis",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "digestive_antioxidant",
+      "source_section": "Khoikhoi plant medicines",
+      "preparation": "Dried leaves and stems steeped in hot water; traditionally also applied topically for skin conditions",
+      "condition": "Digestive complaints, infant colic, skin conditions, general health tonic"
+    },
+    {
+      "_label": "SA.Sutherlandia",
+      "title_inferred": "Sutherlandia — cancer bush and immune medicine",
+      "original_text": "[Multiple southern African traditions — documented by Van Wyk and Gericke]",
+      "translation": "Sutherlandia frutescens (cancer bush / kankerbos) — documented across Zulu, Xhosa, Sotho, and San traditions for cancer-like wasting conditions, tuberculosis, influenza, and as a general tonic for the immune system. The name 'cancer bush' reflects traditional use for wasting diseases. Modern research has confirmed immunomodulatory activity from canavanine and SU1 polysaccharides. Used during HIV/AIDS epidemic in southern Africa as traditional immune support — studied in multiple clinical trials for HIV-associated wasting.",
+      "entities_mentioned": [
+        {
+          "name": "sutherlandia",
+          "type": "plant"
+        },
+        {
+          "name": "sutherlandia frutescens",
+          "type": "plant"
+        },
+        {
+          "name": "cancer bush",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "immune_wasting",
+      "source_section": "Pan-southern African medicines",
+      "preparation": "Leaf decoction; dried leaf powder in water",
+      "condition": "Immune deficiency, wasting diseases, tuberculosis, HIV-associated conditions, cancer support"
+    },
+    {
+      "_label": "SA.Warburgia",
+      "title_inferred": "Warburgia (Pepper-bark tree) — the fever and malaria medicine",
+      "original_text": "[Zulu: isibhaha; Tswana: sennetse — documented by Hutchings and Van Wyk]",
+      "translation": "Warburgia salutaris (pepper-bark tree) — the single most important fever and malaria medicine across Zulu, Xhosa, and Tswana traditions. The bark produces an intensely hot, burning sensation from warburganal and muzigadial (sesquiterpene dialdehydes) — active compounds with documented antimalarial, antimicrobial, and anti-inflammatory activity. The tree is now critically endangered due to over-harvesting for traditional medicine — one of the most serious examples of medicinal plant unsustainability in Africa. This creates an urgent case for synthetic production of warburganal.",
+      "entities_mentioned": [
+        {
+          "name": "warburgia",
+          "type": "plant"
+        },
+        {
+          "name": "warburgia salutaris",
+          "type": "plant"
+        },
+        {
+          "name": "warburganal",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "antimalarial_fever",
+      "source_section": "Zulu-Tswana plant medicines",
+      "preparation": "Bark decoction drunk for fever; bark chewed for respiratory; applied topically for skin infections",
+      "condition": "Malaria, fever, respiratory infections, skin infections — CRITICALLY ENDANGERED"
+    }
+  ]
+}
