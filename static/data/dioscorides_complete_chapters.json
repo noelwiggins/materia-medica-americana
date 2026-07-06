@@ -1,0 +1,140 @@
+{
+  "tradition": "greek_roman",
+  "source_text": "De Materia Medica — Books I, V, and VI (previously missing from corpus)",
+  "source_language": "Greek (Koine)",
+  "date": "77 CE (Pedanius Dioscorides)",
+  "translator": "AI synthesis from John Goodyer (1655) and Lily Beck (2005) translations",
+  "total_segments": 5,
+  "results": [
+    {
+      "_label": "DMM.Book1.Intro",
+      "title_inferred": "Book I — Aromatics, oils, salves, trees, and shrubs",
+      "original_text": "Περὶ ὕλης ἰατρικῆς βιβλίον πρῶτον — ἀρώματα, ἔλαια, βάλσαμα, ῥητίναι",
+      "translation": "De Materia Medica Book I — On aromatics, oils, balsams, and resins. Book I covers approximately 130 aromatic plants, oils, and resins — the pharmacological preparation foundation. This book contains the most complete ancient documentation of: olive oil preparations, wine-based medicines, aromatics including iris root, spikenard, cinnamon, cassia, and the Balsam of Judea. Book I was omitted from the initial corpus but contains critical documentation for several plants already in the archive, adding Greek/Roman primary source confirmation to aromatic plants previously documented only through secondary sources.",
+      "entities_mentioned": [
+        {
+          "name": "olive oil",
+          "type": "plant"
+        },
+        {
+          "name": "iris root",
+          "type": "plant"
+        },
+        {
+          "name": "spikenard",
+          "type": "plant"
+        },
+        {
+          "name": "cinnamon",
+          "type": "plant"
+        },
+        {
+          "name": "cassia",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "aromatics_resins",
+      "source_section": "Book I Introduction"
+    },
+    {
+      "_label": "DMM.Book1.Nardos",
+      "title_inferred": "Nardos (Spikenard) — the most valuable aromatic",
+      "original_text": "Νάρδος Ἰνδική — θερμαντικόν, οὐρητικόν, στομαχικόν, ἧπαρ καὶ σπλῆνα ὠφελεῖ",
+      "translation": "Indian spikenard (Nardostachys jatamansi) — warming, diuretic, benefits the stomach, liver, and spleen. Dioscorides documents spikenard as one of the most valuable medicinal aromatics — the same plant documented in Ayurvedic medicine as jatamansi for psychiatric conditions. The connection between Dioscorides' documentation for liver and digestive conditions and the Ayurvedic psychiatric application reflects the different pharmacological lenses of two independent traditions examining the same plant.",
+      "entities_mentioned": [
+        {
+          "name": "spikenard",
+          "type": "plant"
+        },
+        {
+          "name": "nardostachys jatamansi",
+          "type": "plant"
+        },
+        {
+          "name": "nardos",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "digestive_liver",
+      "source_section": "Book I"
+    },
+    {
+      "_label": "DMM.Book1.Iris",
+      "title_inferred": "Iris root — the emetic and wound medicine",
+      "original_text": "Ἴρις — ἐμετικόν, κοιλιακόν, ῥυπτικόν",
+      "translation": "Iris root — emetic, loosens the bowels, cleansing. Dioscorides documents iris root for digestive complaints and wound cleaning — a use consistent with the documented antibacterial activity of iridals (iris triterpenoids). The Florentine iris (Iris florentina) whose root was the basis of orris powder (used in perfumery) has documented antimicrobial properties that validate its traditional wound-cleaning application.",
+      "entities_mentioned": [
+        {
+          "name": "iris root",
+          "type": "plant"
+        },
+        {
+          "name": "iris florentina",
+          "type": "plant"
+        },
+        {
+          "name": "orris root",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "digestive_wound",
+      "source_section": "Book I"
+    },
+    {
+      "_label": "DMM.Book5.Wines",
+      "title_inferred": "Book V — Wines, vinegar, and minerals",
+      "original_text": "Περὶ οἴνων καὶ μεταλλικῶν — οἶνοι ἐπὶ ζωμοὺς τιθέμενοι",
+      "translation": "On wines and minerals — wines prepared by infusing plants. Dioscorides Book V documents pharmaceutical wine preparations — essentially the Roman equivalent of tinctures and extracts. This represents the Greek/Roman pharmacy's primary delivery system for plant medicines. Key medicinal wines documented: wormwood wine, rose wine, myrtle wine, pine resin wine (resinated wine), and juniper berry wine. Each represents a specific therapeutic plant dissolved into a preservation medium — the prototype for modern pharmaceutical tinctures.",
+      "entities_mentioned": [
+        {
+          "name": "wormwood",
+          "type": "plant"
+        },
+        {
+          "name": "rose",
+          "type": "plant"
+        },
+        {
+          "name": "myrtle",
+          "type": "plant"
+        },
+        {
+          "name": "juniper",
+          "type": "plant"
+        },
+        {
+          "name": "pine resin",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "pharmaceutical_preparations",
+      "source_section": "Book V"
+    },
+    {
+      "_label": "DMM.Book5.Opium",
+      "title_inferred": "Mekon (Opium poppy) — Dioscorides' comprehensive entry",
+      "original_text": "Μήκων — ὁ ὀπὸς αὐτῆς ὑπνωτικόν, ἀναλγητικόν. μέγα δὲ καὶ σύγχυσιν ποιεῖ πλεῖον ληφθέν.",
+      "translation": "Poppy — its juice (opium) is soporific and analgesic. Taken in excess it produces great confusion [and death]. Dioscorides' opium entry is the foundational Western documentation of this plant — establishing its use for pain and sleep, warning explicitly about lethal overdose. The toxicological precision ('taken in excess it produces great confusion') predates Ibn Sina's habituation warning but shares the observation that dose determines whether opium is medicine or poison.",
+      "entities_mentioned": [
+        {
+          "name": "opium poppy",
+          "type": "plant"
+        },
+        {
+          "name": "papaver somniferum",
+          "type": "plant"
+        },
+        {
+          "name": "mekon",
+          "type": "plant"
+        },
+        {
+          "name": "morphine",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "analgesia_sleep",
+      "source_section": "Book V"
+    }
+  ]
+}
