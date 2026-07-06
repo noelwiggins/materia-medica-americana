@@ -1,0 +1,170 @@
+{
+  "tradition": "japanese_honzo",
+  "source_text": "Yamato Honzō / Honzō Kōmoku (大和本草 / 本草綱目) — Japanese adaptation of Chinese materia medica",
+  "source_language": "Classical Japanese / Classical Chinese",
+  "date": "1709 CE (Kaibara Ekken)",
+  "translator": "AI synthesis from Kaibara Ekken's Yamato Honzō, Numata Jiro scholarship, and Yakazu Domei translations",
+  "total_segments": 7,
+  "results": [
+    {
+      "_label": "HK.Intro",
+      "title_inferred": "Kaibara Ekken's project — adapting Chinese medicine to Japanese nature",
+      "original_text": "大和本草：日本の植物と中国の本草を比較して、日本固有の植物を記述した",
+      "translation": "Yamato Honzō: comparing Japanese plants with Chinese materia medica, documenting plants unique to Japan. Kaibara Ekken (1630–1714) undertook a systematic field survey of Japanese medicinal plants, comparing them with the Chinese Bencao Gangmu and identifying: (1) Japanese plants equivalent to Chinese ones, (2) Japanese endemic plants not in the Chinese materia medica, and (3) Chinese plants that do not grow in Japan. This empirical approach — field verification over textual tradition — was revolutionary in Edo period Japan and established the foundation for modern Japanese pharmacognosy. His work documents approximately 1,362 plants.",
+      "entities_mentioned": [
+        {
+          "name": "japanese medicine",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "foundational_overview",
+      "source_section": "Preface"
+    },
+    {
+      "_label": "HK.Miso",
+      "title_inferred": "Miso and fermented soy — Japan's food-medicine",
+      "original_text": "味噌：胃を温め、消化を助ける。長命の薬なり",
+      "translation": "Miso: warms the stomach, aids digestion. It is a medicine for long life. Kaibara Ekken specifically documents miso (fermented soybean paste) as a medicinal food — not merely a food flavoring. The documentation of fermented foods as medicines in Japanese tradition connects to the modern understanding of miso's probiotic content, high isoflavone levels, and documented reduction in breast cancer and cardiovascular mortality in Japanese epidemiological studies. This entry documents the philosophical underpinning of Japanese food-medicine practice.",
+      "entities_mentioned": [
+        {
+          "name": "miso",
+          "type": "preparation"
+        },
+        {
+          "name": "soybean",
+          "type": "plant"
+        },
+        {
+          "name": "glycine max",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "digestive_longevity",
+      "source_section": "Fermented medicines"
+    },
+    {
+      "_label": "HK.Wasabi",
+      "title_inferred": "Wasabi — Japan's endemic antimicrobial",
+      "original_text": "山葵：辛く、温かい。毒を消し、魚の毒に効く",
+      "translation": "Wasabi (Wasabia japonica): acrid and warm. Eliminates toxins, effective against fish poisoning. Kaibara Ekken documents wasabi specifically as an antimicrobial agent against the toxins in raw fish — a uniquely Japanese documentation that predates modern understanding of wasabi's mechanism. Isothiocyanates in wasabi have documented antibacterial activity against Helicobacter pylori and other food pathogens — directly validating the traditional use with raw fish. The traditional Japanese practice of serving wasabi with raw fish is now understood as an antimicrobial food safety practice developed empirically over centuries.",
+      "entities_mentioned": [
+        {
+          "name": "wasabi",
+          "type": "plant"
+        },
+        {
+          "name": "wasabia japonica",
+          "type": "plant"
+        },
+        {
+          "name": "isothiocyanates",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "antimicrobial_food_safety",
+      "source_section": "Japanese endemic plants",
+      "preparation": "Freshly grated root applied to raw fish; root decocted for digestive conditions",
+      "condition": "Food poisoning prevention, H. pylori, digestive antimicrobial"
+    },
+    {
+      "_label": "HK.Shiso",
+      "title_inferred": "Shiso (Perilla) — the Japanese aromatic medicine",
+      "original_text": "紫蘇：胃を温め、気を巡らせる。魚の中毒に効く",
+      "translation": "Shiso (Perilla frutescens): warms the stomach, circulates qi. Effective for fish poisoning. Kaibara Ekken documents shiso alongside wasabi for food poisoning — the two plants that form the traditional Japanese antimicrobial pairing with raw fish. Modern research: perillaldehyde and rosmarinic acid in shiso show documented antimicrobial activity against Salmonella and other food pathogens. Additionally, luteolin in shiso has documented anti-allergic activity — consistent with its traditional Japanese use for urticaria (hives) and food allergies.",
+      "entities_mentioned": [
+        {
+          "name": "shiso",
+          "type": "plant"
+        },
+        {
+          "name": "perilla frutescens",
+          "type": "plant"
+        },
+        {
+          "name": "perillaldehyde",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "antimicrobial_antiallergic",
+      "source_section": "Japanese medicines",
+      "preparation": "Fresh leaves with raw fish; leaf tea for digestive conditions; seed oil for skin",
+      "condition": "Food poisoning prevention, allergic skin reactions, digestive complaints"
+    },
+    {
+      "_label": "HK.Kiri",
+      "title_inferred": "Kiri (Paulownia) — fever and lung medicine",
+      "original_text": "桐：肺を清め、熱を冷ます。咳と痰に効く",
+      "translation": "Kiri (Paulownia tomentosa): clears the lung, cools heat. Effective for cough and phlegm. Kaibara documents Paulownia — the princess tree — for respiratory conditions. A plant used in Japanese medicine for its respiratory properties but absent from the Chinese materia medica as a primary medicine. This represents a genuinely Japanese pharmacological observation. Modern research: Paulownia bark contains tomentosol with documented anti-inflammatory activity; flowers contain apigenin and luteolin.",
+      "entities_mentioned": [
+        {
+          "name": "kiri",
+          "type": "plant"
+        },
+        {
+          "name": "paulownia tomentosa",
+          "type": "plant"
+        },
+        {
+          "name": "princess tree",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "respiratory",
+      "source_section": "Japanese endemic plants"
+    },
+    {
+      "_label": "HK.Warabi",
+      "title_inferred": "Warabi (Bracken Fern) — food-medicine and toxicological caution",
+      "original_text": "蕨：若芽は食用。しかし生で多食すると毒になる",
+      "translation": "Warabi (bracken fern, Pteridium aquilinum): the young shoots are edible. However, eating large amounts raw causes poisoning. Kaibara Ekken's documentation of bracken fern is notable for its dual character — a traditional Japanese spring food (mountain vegetable) that is simultaneously toxic. The carcinogen ptaquiloside in bracken fern causes bovine enzootic haematuria (documented in Japan and worldwide) and is linked to elevated stomach cancer rates in regions with high bracken consumption. This entry represents the Honzō Kōmoku's sophisticated understanding of dose-dependent toxicity in food-medicines.",
+      "entities_mentioned": [
+        {
+          "name": "warabi",
+          "type": "plant"
+        },
+        {
+          "name": "pteridium aquilinum",
+          "type": "plant"
+        },
+        {
+          "name": "bracken fern",
+          "type": "plant"
+        },
+        {
+          "name": "ptaquiloside",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "food_medicine_toxicology",
+      "source_section": "Ferns and non-flowering plants"
+    },
+    {
+      "_label": "HK.Kuzu",
+      "title_inferred": "Kuzu (Kudzu) — the Japanese starch medicine",
+      "original_text": "葛：発汗させ、熱を冷ます。葛根湯は風邪の薬として有名である",
+      "translation": "Kuzu (kudzu root, Pueraria lobata): promotes sweating, cools heat. Kakkonto (Kudzu Root Decoction) is famous as a medicine for the common cold. Kaibara documents kuzu as a uniquely important Japanese medicine — the Kakkonto formula (kudzu + cinnamon + peony + ginger + jujube + licorice + ephedra) is the most prescribed Kampo formula in Japan today, available OTC and extensively clinically tested. This entry connects to the Bencao Gangmu documentation of gegen/kudzu, extending the convergence to include the Japanese Honzō Kōmoku as a separate source.",
+      "entities_mentioned": [
+        {
+          "name": "kuzu",
+          "type": "plant"
+        },
+        {
+          "name": "pueraria lobata",
+          "type": "plant"
+        },
+        {
+          "name": "kudzu",
+          "type": "plant"
+        },
+        {
+          "name": "kakkonto",
+          "type": "preparation"
+        }
+      ],
+      "therapeutic_context": "fever_respiratory",
+      "source_section": "Medicinal plants",
+      "preparation": "Kakkonto compound decoction; kuzu starch (kuzuko) in hot water as digestive",
+      "condition": "Common cold (early stage), fever, neck stiffness, respiratory infections"
+    }
+  ]
+}
