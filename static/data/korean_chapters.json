@@ -1,0 +1,182 @@
+{
+  "tradition": "korean",
+  "source_text": "Dongui Bogam (동의보감, 東醫寶鑑) — Treasured Mirror of Eastern Medicine",
+  "source_language": "Classical Chinese / Korean (idu script)",
+  "date": "1613 CE (Heo Jun, commissioned by King Seonjo)",
+  "translator": "AI synthesis from Unschuld partial translation, Kim J. et al. (2013), and Zhu Bing secondary scholarship",
+  "total_segments": 7,
+  "results": [
+    {
+      "_label": "DUB.Intro",
+      "title_inferred": "Heo Jun's synthesis — Korean medicine at its peak",
+      "original_text": "동의보감: 우리나라 약재를 중국 약재와 함께 수록하여 백성들이 쉽게 구할 수 있도록 하였다",
+      "translation": "Dongui Bogam: We have included Korean medicinal materials alongside Chinese medicinal materials so that the common people can easily obtain them. Heo Jun's Dongui Bogam (1613) is the definitive encyclopedia of Korean traditional medicine — 25 volumes, 6,000+ medical conditions, 1,400+ medicinal substances. Critically, Heo Jun deliberately included Korean-specific plants not in the Chinese materia medica, listing their Korean vernacular names alongside Chinese equivalents. This makes the Dongui Bogam the primary source for plants endemic to or specifically used on the Korean peninsula. UNESCO recognized it as Memory of the World in 2009.",
+      "entities_mentioned": [
+        {
+          "name": "korean medicine",
+          "type": "tradition"
+        }
+      ],
+      "therapeutic_context": "foundational_overview",
+      "source_section": "Preface"
+    },
+    {
+      "_label": "DUB.Ssukssuk",
+      "title_inferred": "Ssuk (Korean Mugwort) — moxibustion and medicine",
+      "original_text": "쑥 — 따뜻하고 쓰다. 뜸을 뜨는 데 쓰고, 부인병에 좋다",
+      "translation": "Ssuk (Korean mugwort, Artemisia princeps): warm and bitter. Used for moxibustion, and good for women's conditions. Korean mugwort is the primary plant in moxibustion — the traditional burning of dried mugwort over acupuncture points. Heo Jun documents ssuk for: menstrual regulation, digestive warming, and as the standard moxibustion material. The Artemisia genus convergence now extends to Korean medicine as the fourth Asian documentation alongside Chinese, Japanese Kampo, and Ayurvedic documentation of Artemisia species for the same warming and menstrual applications.",
+      "entities_mentioned": [
+        {
+          "name": "ssuk",
+          "type": "plant"
+        },
+        {
+          "name": "artemisia princeps",
+          "type": "plant"
+        },
+        {
+          "name": "korean mugwort",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "gynecological_warming",
+      "source_section": "Inner Landscape (Naegyeong)",
+      "preparation": "Dried leaves burned as moxa cone over acupuncture points; decoction for internal use",
+      "condition": "Menstrual irregularity, digestive coldness, moxibustion, uterine conditions"
+    },
+    {
+      "_label": "DUB.Omija",
+      "title_inferred": "Omija (Schisandra) — the Korean five-flavor berry",
+      "original_text": "오미자 — 신맛, 쓴맛, 단맛, 매운맛, 짠맛이 다 있다. 폐와 신장을 보한다",
+      "translation": "Omija (five-flavor berry, Schisandra chinensis): contains all five tastes — sour, bitter, sweet, acrid, and salty. Tonifies the lung and kidney. Heo Jun documents Schisandra in virtually identical terms to the Bencao Gangmu's entry — confirming the Chinese materia medica tradition was transmitted to Korea with verification. But Heo Jun adds Korean-specific preparation methods and Korean ecological observations about where omija grows best on the peninsula. The convergence between Chinese and Korean documentation of Schisandra for the same lung-kidney tonic indication strengthens the clinical signal.",
+      "entities_mentioned": [
+        {
+          "name": "omija",
+          "type": "plant"
+        },
+        {
+          "name": "schisandra chinensis",
+          "type": "plant"
+        },
+        {
+          "name": "five-flavor berry",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "lung_kidney_tonic",
+      "source_section": "Medicinal Plants",
+      "preparation": "Berries decocted; dried berries in water; Saengmaeksan formula (with ginseng and ophiopogon)",
+      "condition": "Chronic cough, fatigue, night sweats, kidney deficiency, liver conditions"
+    },
+    {
+      "_label": "DUB.Doraji",
+      "title_inferred": "Doraji (Balloon Flower Root) — the Korean respiratory plant",
+      "original_text": "도라지 — 폐를 깨끗이 하고, 담을 삭이며, 기침을 멎게 한다",
+      "translation": "Doraji (balloon flower root, Platycodon grandiflorum): clears the lung, disperses phlegm, stops cough. Heo Jun gives detailed documentation of doraji as the primary Korean respiratory medicine — a plant endemic to and characteristic of East Asian medicine with no parallel in Western traditions. The root is simultaneously a food (kimchi ingredient, banchan side dish) and a medicine — one of the clearest examples of the Korean food-medicine continuum. Modern research: platycodin D (the primary saponin) shows documented expectorant and anti-inflammatory activity in multiple studies.",
+      "entities_mentioned": [
+        {
+          "name": "doraji",
+          "type": "plant"
+        },
+        {
+          "name": "platycodon grandiflorum",
+          "type": "plant"
+        },
+        {
+          "name": "balloon flower",
+          "type": "plant"
+        },
+        {
+          "name": "platycodin d",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "respiratory",
+      "source_section": "Medicinal Plants",
+      "preparation": "Root decoction; root fermented in kimchi preparations",
+      "condition": "Cough with phlegm, respiratory infections, sore throat, tonsillitis"
+    },
+    {
+      "_label": "DUB.Insamginseng",
+      "title_inferred": "Korean Insam (Ginseng) — Heo Jun's detailed monograph",
+      "original_text": "인삼 — 원기를 보하고, 오장을 안정시키며, 정신을 맑게 한다",
+      "translation": "Insam (Korean ginseng, Panax ginseng): supplements original qi, stabilizes the five organs, and clears the spirit. Heo Jun provides the most detailed pre-modern monograph on Korean ginseng — distinguishing wild mountain ginseng (sansam), cultivated ginseng (gaesam), and Chinese ginseng. He specifically notes that Korean-grown ginseng from specific mountain regions (Gaesong, Geumsan) is superior in effect to Chinese-grown — an observation validated by modern phytochemical analysis showing higher ginsenoside content in Korean varieties.",
+      "entities_mentioned": [
+        {
+          "name": "insam",
+          "type": "plant"
+        },
+        {
+          "name": "panax ginseng",
+          "type": "plant"
+        },
+        {
+          "name": "korean ginseng",
+          "type": "plant"
+        },
+        {
+          "name": "ginsenosides",
+          "type": "compound"
+        }
+      ],
+      "therapeutic_context": "adaptogen_tonic",
+      "source_section": "Medicinal Plants",
+      "preparation": "Root decoction; red ginseng (steamed and dried); white ginseng (dried); hwanggi-sam formula",
+      "condition": "Fatigue, immune deficiency, cognitive decline, cardiovascular, general tonic"
+    },
+    {
+      "_label": "DUB.Hwanggi",
+      "title_inferred": "Hwanggi (Astragalus) — the Korean surface guardian",
+      "original_text": "황기 — 피부를 단단하게 하고, 땀을 조절하며, 허약한 것을 보한다",
+      "translation": "Hwanggi (Astragalus membranaceus): strengthens the skin surface, regulates sweating, and tonifies deficiency. Heo Jun's entry parallels the Bencao Gangmu and Shennong Bencaojing documentation of astragalus — confirming the same plant for the same indications across Chinese and Korean traditions. The Korean documentation adds clinical detail about the pattern of use: hwanggi is specifically for patients who sweat spontaneously (a deficiency pattern), distinguishing it from other tonics. This diagnostic specificity is a hallmark of the Dongui Bogam's clinical sophistication.",
+      "entities_mentioned": [
+        {
+          "name": "hwanggi",
+          "type": "plant"
+        },
+        {
+          "name": "astragalus membranaceus",
+          "type": "plant"
+        },
+        {
+          "name": "astragalus",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "immune_surface_tonic",
+      "source_section": "Medicinal Plants",
+      "preparation": "Decoction; Okhyeong-tang formula; Ssanghwa-tang formula",
+      "condition": "Immune deficiency, spontaneous sweating, fatigue, wound healing, frequent colds"
+    },
+    {
+      "_label": "DUB.Ssanghwa",
+      "title_inferred": "Ssanghwa-tang — Korea's most famous medicinal beverage",
+      "original_text": "쌍화탕 — 기력 회복, 피로 해소에 효과가 있다",
+      "translation": "Ssanghwa-tang (Double Harmony Decoction) — Korea's most famous medicinal compound preparation, documented by Heo Jun and still sold in Korean convenience stores today as a commercial health drink. Ingredients include: rehmannia, white peony, cnidium, angelica, astragalus, licorice, ginger, jujube, and cinnamon. Prescribed for: fatigue recovery, sexual exhaustion, and general weakness after illness. The commercial product (sold alongside energy drinks) represents a unique case of a 17th-century medical formula achieving mass-market consumer product status in the 21st century.",
+      "entities_mentioned": [
+        {
+          "name": "ssanghwa-tang",
+          "type": "preparation"
+        },
+        {
+          "name": "rehmannia",
+          "type": "plant"
+        },
+        {
+          "name": "white peony",
+          "type": "plant"
+        },
+        {
+          "name": "astragalus",
+          "type": "plant"
+        },
+        {
+          "name": "licorice",
+          "type": "plant"
+        }
+      ],
+      "therapeutic_context": "fatigue_compound",
+      "source_section": "Compound preparations"
+    }
+  ]
+}
