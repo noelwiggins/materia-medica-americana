@@ -2784,13 +2784,33 @@ function renderPlants() {
           </div>
         </div>
         <div class="plant-card-body">
-          <div style="padding:1rem 1.5rem;background:#fafafa;border-bottom:1px solid var(--border)">
+          <div style="padding:1rem 1.5rem;background:var(--vellum);border-bottom:1px solid var(--border)">
             <div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem">
               Mentioned ${mentions}x in corpus · ${(p.traditions||[]).length} tradition(s) · Awaiting full curation
             </div>
             ${segLinks}
             <div style="margin-top:0.8rem;font-size:0.82rem;color:var(--muted);font-style:italic">${p.stub_note||''}</div>
           </div>
+          ${(()=>{
+            const links=(p.corpus_links||[]).filter(s=>s.translation&&s.translation.length>40);
+            if(!links.length) return '';
+            const byT={};
+            links.forEach(s=>{ if(!byT[s.tradition]) byT[s.tradition]=[]; if(byT[s.tradition].length<3) byT[s.tradition].push(s); });
+            return `<div style="padding:0.8rem 1.5rem;border-bottom:1px solid var(--border)">
+              <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.4rem">
+                <span style="color:var(--gold)">◈</span> Source Passages — ${links.length} found
+              </div>
+              ${Object.entries(byT).map(([tid,segs])=>{
+                const t=traditionData.find(x=>x.id===tid);
+                const tc=t?.color||'#888';
+                return segs.map(s=>`<div style="background:#fafafa;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.6rem 0.8rem;margin-bottom:0.4rem">
+                  <div style="font-family:var(--font-code);font-size:0.55rem;color:${tc};text-transform:uppercase;margin-bottom:0.25rem">${t?.icon||''} ${t?.name||tid}${s.source_section?' · '+s.source_section:''}</div>
+                  ${s.original?`<div style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);font-style:italic;margin-bottom:0.3rem">${s.original.slice(0,200)}…</div>`:''}
+                  <p style="font-size:0.83rem;line-height:1.65;color:var(--ink);margin:0">${s.translation.slice(0,400)}${s.translation.length>400?'…':''}</p>
+                </div>`).join('');
+              }).join('')}
+            </div>`;
+          })()}
           <div style="padding:0.8rem 1.5rem;background:var(--vellum)">
             <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
               ${p.id} · AI-extracted from corpus · not peer reviewed
@@ -2852,6 +2872,32 @@ function renderPlants() {
           <p style="font-size:0.9rem;line-height:1.7;color:var(--ink);max-width:70ch">${p.modern_research.summary}</p>
           <div class="notes-block" style="margin-top:0.8rem">${p.modern_research.significance}</div>
         </div>`:''}
+        ${(()=>{
+          const links = (p.corpus_links||[]).filter(s=>s.translation&&s.translation.length>40);
+          if (!links.length) return '';
+          const byT = {};
+          links.forEach(s=>{ if(!byT[s.tradition]) byT[s.tradition]=[]; if(byT[s.tradition].length<4) byT[s.tradition].push(s); });
+          const tCount = Object.keys(byT).length;
+          return `<div class="source-section" style="border-top:2px solid var(--gold)">
+            <div style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem">
+              <span style="color:var(--gold)">◈</span> Primary Sources — ${links.length} passage${links.length!==1?'s':''} from ${tCount} tradition${tCount!==1?'s':''}
+            </div>
+            ${Object.entries(byT).map(([tid,segs])=>{
+              const t=traditionData.find(x=>x.id===tid);
+              const tc=t?.color||'#888'; const ti=t?.icon||''; const tn=t?.name||tid;
+              return `<div style="margin-bottom:0.9rem">
+                <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.35rem">${ti} ${tn}</div>
+                ${segs.map((s,i)=>`<div style="background:var(--vellum);border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.4rem;${i>0?'display:none':''}" data-dbgroup="${p.id}-${tid}" class="db-passage">
+                  ${s.source_section?`<div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;margin-bottom:0.3rem">${s.source_section}</div>`:''}
+                  ${s.original?`<div style="font-family:var(--font-code);font-size:0.73rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.4rem;padding-bottom:0.4rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,250)}${s.original.length>250?'…':''}</div>`:''}
+                  <p style="font-size:0.85rem;line-height:1.7;color:var(--ink);margin:0">${s.translation.slice(0,500)}${s.translation.length>500?'…':''}</p>
+                  ${s.preparation?`<div style="margin-top:0.35rem;font-family:var(--font-code);font-size:0.6rem;color:var(--brown)">Preparation: ${s.preparation}</div>`:''}
+                </div>`).join('')}
+                ${segs.length>1?`<button onclick="(function(b){const all=document.querySelectorAll('[data-dbgroup=&quot;${p.id}-${tid}&quot;]');const anyHidden=[...all].some(e=>e.style.display==='none');all.forEach((e,i)=>e.style.display=anyHidden||i===0?'block':'none');b.textContent=anyHidden?'▴ Fewer passages':'▾ All ${segs.length} passages';})(this)" style="font-family:var(--font-code);font-size:0.58rem;color:var(--muted);background:none;border:none;cursor:pointer;padding:0.2rem 0;letter-spacing:0.06em;text-transform:uppercase">▾ All ${segs.length} passages</button>`:''}
+              </div>`;
+            }).join('')}
+          </div>`;
+        })()}
         <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
           <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Fully curated</span>
         </div>
@@ -3747,6 +3793,44 @@ function renderSearchResults(query, aiSummary, localResults, autoOpenRemedy) {
         const t=traditionData.find(x=>x.id===tid);
         return `<div style="margin-bottom:1rem"><span style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:${t?.color||'#888'}">${t?.icon||''} ${t?.name||tid}</span>${e.original?`<div class="remedy-original">${e.original}</div>`:''}<p style="font-size:0.88rem;line-height:1.7;margin-top:0.4rem">${e.translation||''}</p>${e.preparation?`<div class="remedy-preparation">Preparation: ${e.preparation}</div>`:''}</div>`;
       }).join('');
+
+      // ── Primary Sources from corpus ────────────────────────────────
+      const corpusLinks = (p.corpus_links||[]).filter(s=>s.translation && s.translation.length > 40);
+      if (corpusLinks.length) {
+        // Group by tradition
+        const byTrad = {};
+        corpusLinks.forEach(s => {
+          if (!byTrad[s.tradition]) byTrad[s.tradition] = [];
+          if (byTrad[s.tradition].length < 4) byTrad[s.tradition].push(s);
+        });
+        const tradCount = Object.keys(byTrad).length;
+        const segCount = corpusLinks.length;
+        detail += `<div style="margin-top:1rem;border-top:2px solid var(--gold);padding-top:0.8rem">
+          <div style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.6rem">
+            <span style="color:var(--gold)">◈</span> Primary Sources — ${segCount} segment${segCount!==1?'s':''} across ${tradCount} tradition${tradCount!==1?'s':''}
+          </div>
+          ${Object.entries(byTrad).map(([tid, segs])=>{
+            const t = traditionData.find(x=>x.id===tid);
+            const tc = t?.color||'#888';
+            const ti = t?.icon||'';
+            const tn = t?.name||tid;
+            return `<div style="margin-bottom:0.8rem">
+              <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem">
+                ${ti} ${tn} · ${segs.length} passage${segs.length!==1?'s':''}
+              </div>
+              ${segs.map((s,i)=>`
+                <div style="background:white;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.5rem;${i>0?'display:none':''}${segs.length>1&&i===0?' position:relative':''}" class="corpus-passage-${p.id}-${tid}-${i}" data-corpus-group="${p.id}-${tid}">
+                  <div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.35rem">${s.source_section||s.label||''}</div>
+                  ${s.original?`<div style="font-family:var(--font-code);font-size:0.75rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.5rem;padding-bottom:0.5rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,300)}${s.original.length>300?'…':''}</div>`:''}
+                  <div style="font-size:0.85rem;line-height:1.7;color:var(--ink)">${s.translation.slice(0,600)}${s.translation.length>600?'…':''}</div>
+                  ${s.preparation?`<div style="margin-top:0.4rem;font-family:var(--font-code);font-size:0.62rem;color:var(--brown)">Preparation: ${s.preparation}</div>`:''}
+                  ${s.condition?`<div style="margin-top:0.2rem;font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">Condition: ${s.condition}</div>`:''}
+                </div>`).join('')}
+              ${segs.length>1?`<button onclick="(function(btn){const els=document.querySelectorAll('[data-corpus-group=&quot;${p.id}-${tid}&quot;]');const hidden=document.querySelector('[data-corpus-group=&quot;${p.id}-${tid}&quot;][style*=none]');if(hidden){els.forEach(e=>e.style.display='block');btn.textContent='▴ Show less';}else{els.forEach((e,i)=>{if(i>0)e.style.display='none';});btn.textContent='▾ Show all ${segs.length} passages';};})(this)" style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);background:none;border:none;cursor:pointer;padding:0;letter-spacing:0.06em;text-transform:uppercase">▾ Show all ${segs.length} passages</button>`:''}
+            </div>`;
+          }).join('')}
+        </div>`;
+      }
       if (p.modern_research) detail += `<div style="margin-top:0.8rem;padding:0.8rem;background:white;border:1px solid var(--border)"><div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div><div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance||p.modern_research.summary||''}</div></div>`;
       if (p.priority_light) {
         const lightLabels = {green:'Priority Investigation',amber:'Research Candidate',red:'On the Radar'};
