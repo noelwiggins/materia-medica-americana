@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Whole Plant Catalog — World Traditional Medicine Archive</title>
+<title>Whole Plant Catalog — Access to Plant Knowledge</title>
 <meta name="description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
 <link rel="canonical" href="https://wholeplantcatalog.com">
 <meta property="og:url" content="https://wholeplantcatalog.com">
@@ -33,6 +33,172 @@
     --font-body:    'EB Garamond', Georgia, serif;
     --font-code:    'Source Code Pro', monospace;
   }
+
+  
+  /* ══ WHOLE EARTH CATALOG MASTHEAD ═══════════════════════════ */
+  .site-header {
+    background: #0D0D0B;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .wec-masthead {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 0;
+    min-height: 340px;
+    padding: 2.5rem 2rem 1.5rem;
+    background: #0D0D0B;
+    position: relative;
+    border-bottom: 3px solid #2A2A20;
+  }
+
+  @media (max-width: 680px) {
+    .wec-masthead {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      text-align: center;
+      min-height: auto;
+      padding: 2rem 1.2rem 1.2rem;
+      gap: 1rem;
+    }
+    .wec-edition-block { display: none; }
+  }
+
+  .wec-title-block {
+    padding-right: 1.5rem;
+  }
+
+  .wec-title {
+    font-family: 'Playfair Display', 'EB Garamond', Georgia, serif;
+    font-weight: 900;
+    font-size: clamp(2.8rem, 7vw, 5.2rem);
+    line-height: 0.95;
+    color: #F0EAD6;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    margin: 0 0 0.6rem 0;
+  }
+
+  .wec-access {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: clamp(0.85rem, 2vw, 1.05rem);
+    color: #A09070;
+    letter-spacing: 0.04em;
+    margin: 0;
+  }
+
+  .wec-globe-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .wec-globe {
+    width: clamp(160px, 25vw, 240px);
+    height: clamp(160px, 25vw, 240px);
+    filter: drop-shadow(0 0 40px rgba(100,160,210,0.15));
+  }
+
+  .wec-globe svg { width: 100%; height: 100%; }
+
+  .wec-caption {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5A5040;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .wec-edition-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .wec-edition {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    color: #F0EAD6;
+    margin: 0;
+    line-height: 1.2;
+    text-align: right;
+  }
+
+  /* Search bar on dark background */
+  .global-search-wrap {
+    background: #0D0D0B;
+    padding: 1.5rem 2rem 1.8rem;
+    max-width: none;
+    margin: 0;
+  }
+
+  .global-search-wrap .global-search-box {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    border: 1.5px solid #3A3628;
+  }
+
+  .global-search-input {
+    background: #1A1810 !important;
+    color: #E8DFC8 !important;
+    border: none !important;
+  }
+
+  .global-search-input::placeholder { color: #5A5040 !important; }
+
+  .global-search-btn {
+    background: #C4A882 !important;
+    color: #0D0D0B !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.12em !important;
+    border: none !important;
+  }
+
+  .global-search-btn:hover { background: #D4BC9A !important; }
+
+  .global-search-hints {
+    max-width: 760px;
+    margin: 0.7rem auto 0;
+  }
+
+  .global-search-hints span {
+    color: #6A5E48 !important;
+    border-color: #3A3628 !important;
+  }
+
+  .global-search-hints span:hover {
+    background: #1A1810 !important;
+    color: #C4A882 !important;
+    border-color: #C4A882 !important;
+  }
+
+  /* Tab nav sits on dark */
+  .tab-nav {
+    background: #141410;
+    border-bottom: 2px solid #2A2A20;
+  }
+
+  .tab-btn {
+    color: #6A5E48;
+  }
+
+  .tab-btn:hover, .tab-btn.active {
+    color: #E8DFC8;
+    background: #1A1810;
+  }
+  /* ══ END WEC MASTHEAD ═══════════════════════════════════════ */
 
   html { font-size: 18px; scroll-behavior: smooth; }
 
@@ -1686,11 +1852,61 @@
 
 <!-- ── HEADER ──────────────────────────────────────────── -->
 <header class="site-header">
-  <div class="header-eyebrow">18 Traditions · 900+ Translated Sources · Live PubMed Research</div>
-  <h1 class="site-title">Materia Medica Americana</h1>
-  <p class="site-subtitle">What did healers across 18 civilisations discover for your condition? Search the archive.</p>
 
-  <!-- ── Global Search ──────────────────────────────────── -->
+  <!-- ── WEC-style masthead ─────────────────────────────── -->
+  <div class="wec-masthead">
+    <div class="wec-title-block">
+      <h1 class="wec-title">Whole Plant<br>Catalog</h1>
+      <p class="wec-access">access to plant knowledge</p>
+    </div>
+    <div class="wec-globe-wrap">
+      <div class="wec-globe">
+        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="globeGrad" cx="38%" cy="35%" r="60%">
+              <stop offset="0%"   stop-color="#D8E8F0"/>
+              <stop offset="30%"  stop-color="#A8C4D8"/>
+              <stop offset="60%"  stop-color="#7090A8"/>
+              <stop offset="100%" stop-color="#1C2830"/>
+            </radialGradient>
+            <radialGradient id="globeShine" cx="35%" cy="30%" r="50%">
+              <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="circClip">
+              <circle cx="160" cy="160" r="148"/>
+            </clipPath>
+          </defs>
+          <!-- base sphere -->
+          <circle cx="160" cy="160" r="148" fill="url(#globeGrad)"/>
+          <!-- land masses — stylised like the NASA photo -->
+          <g clip-path="url(#circClip)" opacity="0.55">
+            <!-- North America -->
+            <path d="M60,80 Q90,60 130,75 Q150,90 140,120 Q120,145 90,140 Q65,130 55,110 Z" fill="#E8DCC8" opacity="0.7"/>
+            <!-- South America -->
+            <path d="M100,155 Q125,148 140,170 Q148,200 135,235 Q118,255 100,245 Q82,230 80,205 Q78,178 100,155 Z" fill="#D4C8A0" opacity="0.65"/>
+            <!-- Europe/Africa -->
+            <path d="M175,65 Q200,58 215,75 Q222,95 210,110 Q195,120 178,112 Q165,98 168,80 Z" fill="#DDD0B0" opacity="0.6"/>
+            <path d="M180,118 Q205,112 218,135 Q228,165 220,200 Q208,225 190,230 Q170,228 162,205 Q155,178 162,150 Q168,128 180,118 Z" fill="#C8BC94" opacity="0.55"/>
+            <!-- cloud wisps -->
+            <path d="M50,120 Q90,108 130,118 Q160,125 180,115 Q210,105 240,115 Q260,122 270,135" stroke="white" stroke-width="18" fill="none" opacity="0.35" stroke-linecap="round"/>
+            <path d="M80,165 Q120,155 155,162 Q180,168 200,160" stroke="white" stroke-width="12" fill="none" opacity="0.25" stroke-linecap="round"/>
+            <path d="M140,200 Q170,192 200,198 Q225,204 245,195" stroke="white" stroke-width="8" fill="none" opacity="0.2" stroke-linecap="round"/>
+          </g>
+          <!-- atmospheric glow rim -->
+          <circle cx="160" cy="160" r="148" fill="none" stroke="#7AB0CC" stroke-width="3" opacity="0.4"/>
+          <!-- specular highlight -->
+          <circle cx="160" cy="160" r="148" fill="url(#globeShine)"/>
+        </svg>
+      </div>
+      <p class="wec-caption">THE PLANT KINGDOM<br>from the earliest records<br>to the present day</p>
+    </div>
+    <div class="wec-edition-block">
+      <p class="wec-edition">Est. 2025</p>
+    </div>
+  </div>
+
+  <!-- ── Search bar ─────────────────────────────────────── -->
   <div class="global-search-wrap">
     <div class="global-search-box">
       <input
