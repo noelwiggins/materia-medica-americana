@@ -1,0 +1,778 @@
+{
+  "job_name": "charaka-samhita-extended",
+  "completed_at": "2026-07-09T12:31:06.343775",
+  "segment_count": 15,
+  "results": [
+    {
+      "title_inferred": "Matrashitiya: On the Proper Quantity of Food and Its Therapeutic Effects",
+      "original_text": "Matrashitiya — On the quantity of food and its effects. Chapter 5 of Sutrasthana documents the fundamental Ayurvedic principle of appropriate quantity: the proper measure of food is that which, without oppressing the vital breath, is digested in due time and does not harm the body. Specific plant-based foods and their optimal quantities: shali rice (best grain, light to digest), mung beans (best legume), rainwater (best water), ghee (best fat — Ayurveda's primary medicinal vehicle), honey (best sweet — medicinal at low doses). The chapter establishes the concept of pathya (dietary regimen) and apathya (contraindicated foods) as a therapeutic system parallel to pharmacological treatment. The most important principle: even the best medicine is harmful if taken in incorrect quantity at incorrect time. Plants mentioned: Shigru (Moringa oleifera — documented as nutritive vegetable), Vastuka (Chenopodium — best vegetable), Patola (pointed gourd — fever vegetable).",
+      "translation": "Chapter Five of the Sutrasthana, entitled Matrashitiya ('On the Measure of Food'), sets forth the foundational Ayurvedic doctrine of appropriate quantity [matra] as it applies to food and medicine alike. The proper measure of food is defined as that quantity which, without suppressing or obstructing the vital breath [prana], undergoes complete digestion within the expected time and produces no harm to the body or its constituent elements [dhatus]. Among grains, shali rice is held to be the finest, being light in quality and easy to digest. Among legumes, mung bean [mudga] is considered best. Among waters, rainwater [divyambhas, 'celestial water'] is regarded as purest and most wholesome. Among fats, ghee [ghrita] is pre-eminent and serves as the principal vehicle [anupana] for medicinal preparations throughout Ayurvedic therapeutics. Among sweet substances, honey [madhu] is foremost, though it is explicitly noted to possess medicinal properties only when taken in small and appropriate doses; in excess it becomes harmful. The chapter further elaborates the twin concepts of pathya [indicated or wholesome dietary regimen] and apathya [contraindicated or unwholesome foods], establishing these as a systematic therapeutic framework that operates in parallel with, and is inseparable from, pharmacological treatment. The overarching and most critical principle affirmed here is that even the finest medicine or the most wholesome food becomes injurious when consumed in an incorrect quantity or at an inappropriate time. Among the plant-based foods specifically discussed: Shigru [Moringa oleifera, drumstick tree] is recorded as a nutritive vegetable of therapeutic value; Vastuka [Chenopodium album, white goosefoot] is identified as the best among leafy vegetables; and Patola [pointed gourd, Trichosanthes dioica] is noted for its utility in febrile conditions.",
+      "entities_mentioned": [
+        {
+          "name": "Shali rice",
+          "modern_identification": "Oryza sativa (specific variety, likely red or white shali)",
+          "identification_confidence": "high",
+          "notes": "Considered the best grain in Ayurveda; described as laghu (light) and easily digestible. Recommended as a staple in convalescent and therapeutic diets."
+        },
+        {
+          "name": "Mudga (mung bean)",
+          "modern_identification": "Vigna radiata",
+          "identification_confidence": "high",
+          "notes": "Regarded as the best legume [shreshtha shimbidhanyan]; frequently prescribed in kitchari preparations as part of therapeutic dietary regimens."
+        },
+        {
+          "name": "Divyambhas / rainwater",
+          "modern_identification": "Collected rainwater (no specific botanical identity)",
+          "identification_confidence": "high",
+          "notes": "Classified as the purest form of water in Ayurvedic pharmacopoeia; used as a medicinal solvent and dietary standard."
+        },
+        {
+          "name": "Ghrita (ghee)",
+          "modern_identification": "Clarified butter from cow's milk (Bos indicus preferred)",
+          "identification_confidence": "high",
+          "notes": "Primary medicinal fat and anupana (vehicle/adjuvant) in Ayurvedic formulations; considered best among snehas (oleaginous substances)."
+        },
+        {
+          "name": "Madhu (honey)",
+          "modern_identification": "Apis species honey, primarily Apis dorsata or Apis cerana",
+          "identification_confidence": "high",
+          "notes": "Described as the best sweet substance; medicinal in small doses but explicitly contraindicated in large or heated quantities. Used widely as an anupana."
+        },
+        {
+          "name": "Shigru",
+          "modern_identification": "Moringa oleifera (drumstick tree)",
+          "identification_confidence": "high",
+          "notes": "Noted as a nutritive vegetable [shaka]; leaves and pods used therapeutically. Condition treated: nutritive deficiency, general debility. Preparation: typically cooked as a vegetable or decoction."
+        },
+        {
+          "name": "Vastuka",
+          "modern_identification": "Chenopodium album (white goosefoot / lamb's quarters)",
+          "identification_confidence": "medium",
+          "notes": "Identified as the best among leafy vegetables [shreshtha shaka]. Preparation: cooked greens. Some scholars dispute the identification, occasionally proposing related Chenopodium or Amaranthus species."
+        },
+        {
+          "name": "Patola",
+          "modern_identification": "Trichosanthes dioica (pointed gourd)",
+          "identification_confidence": "medium",
+          "notes": "Condition treated: fever [jwara]; described as a light, digestive vegetable suitable for febrile patients. Preparation: cooked vegetable or soup. Note: some authorities identify Patola as Luffa acutangula in certain regional traditions, but Trichosanthes dioica is the more widely accepted classical identification."
+        }
+      ],
+      "translator_notes": "This segment appears to be a modern editorial summary or paraphrase of CS Sutrasthana 5 rather than a direct transcription of Sanskrit source text. As such, the 'original_text' field above preserves the received English-language source as supplied, and the translation represents a full scholarly rendering of the doctrinal content described therein. No direct Sanskrit has been supplied for this segment; the translation therefore reconstructs the chapter's content from its editorial summary. Genuine passage-level Sanskrit quotation would be needed for philologically rigorous translation. The identification of Vastuka as Chenopodium album is accepted at medium confidence due to ongoing taxonomic debate in Ayurvedic botanical literature. The principle that 'even the best medicine is harmful in incorrect quantity or time' (matra and kala as governing variables) is a structuring axiom of the entire Charaka system and recurs across the Chikitsasthana and Kalpasthana.",
+      "_label": "CS.Sutra.5"
+    },
+    {
+      "title_inferred": "Sneha Adhyaya: Chapter on Oleation Therapy and Medicated Ghee Preparations",
+      "original_text": "Sneha Adhyaya — Chapter on oleation therapy and medicinal ghee preparations. The four primary oleation substances in Ayurveda: (1) Ghrita (clarified butter) — best for vata disorders, intellectual conditions, complexion; prepared with plant decoctions as medicated ghee; (2) Taila (sesame oil) — best for skin and strength; (3) Vasa (muscle fat) — for certain conditions; (4) Majja (bone marrow) — for extreme vata conditions. Major medicated ghee preparations: Brahmi ghrita (brahmi/Bacopa + ghee — primary cognitive medicine), Ashwagandha ghrita, Triphala ghrita (three fruits + ghee — eye and general conditions), Pancha tikta ghrita (five bitter plants + ghee — skin diseases). The ghee medium is not merely a vehicle — it enhances bioavailability of fat-soluble compounds and penetrates the blood-brain barrier. Modern pharmacology validates ghee as a lipid carrier for lipophilic plant compounds including curcumin and the withanolides of ashwagandha.",
+      "translation": "Chapter on Oleation [Sneha Adhyaya]: This chapter concerns oleation therapy [snehana] and the preparation of medicinal clarified butter [ghrita]. Four primary oleating substances [sneha dravyas] are enumerated in Ayurvedic practice: (1) Ghrita [clarified butter / ghee] — held to be the most efficacious for disorders of the vata humor, for conditions affecting the intellect, and for improvement of complexion; it is prepared as medicated ghee by processing it with plant decoctions [kashaya] and other herbal materials; (2) Taila [sesame oil, Sesamum indicum] — considered best for the maintenance of skin integrity and bodily strength; (3) Vasa [rendered muscle fat / intramuscular fat] — indicated for certain specified conditions; (4) Majja [bone marrow] — prescribed for severe or extreme manifestations of vata imbalance. Principal named medicated ghee [ghrita] formulations described herein include: Brahmi Ghrita, combining brahmi [Bacopa monnieri] with ghee, serving as the primary classical medicine for cognitive function and memory; Ashwagandha Ghrita, combining ashwagandha [Withania somnifera] with ghee, indicated for debility and rejuvenation; Triphala Ghrita, combining the three fruits [Terminalia chebula, Terminalia bellirica, and Phyllanthus emblica] with ghee, indicated for disorders of the eye and for general systemic conditions; and Pancha Tikta Ghrita, combining five bitter [tikta] plants with ghee, indicated principally for diseases of the skin [kushtha]. It is further noted that the ghee medium functions not merely as a passive vehicle [anupana] but actively enhances the bioavailability of fat-soluble constituents and facilitates their penetration of the blood-brain barrier. Contemporary pharmacological research is cited in support of ghee as a lipid-based delivery system for lipophilic plant compounds, including curcumin [from Curcuma longa] and the withanolides characteristic of ashwagandha [Withania somnifera].",
+      "entities_mentioned": [
+        {
+          "name": "Ghrita",
+          "modern_identification": "Clarified butter (ghee); lipid excipient derived from cow's milk",
+          "identification_confidence": "high",
+          "notes": "Described as the foremost of the four sneha dravyas for vata disorders, intellectual conditions, and complexion. Functions as both therapeutic agent and lipid carrier for fat-soluble phytochemicals."
+        },
+        {
+          "name": "Taila",
+          "modern_identification": "Sesame oil (Sesamum indicum L.)",
+          "identification_confidence": "high",
+          "notes": "Second of the four primary oleation substances; indicated for skin and strength. Sesame oil is the default 'taila' in classical Ayurvedic formulation unless another oil is specified."
+        },
+        {
+          "name": "Vasa",
+          "modern_identification": "Rendered animal muscle fat (intramuscular fat)",
+          "identification_confidence": "medium",
+          "notes": "Third oleation substance; specific therapeutic indications are only broadly noted here as 'certain conditions.' Classical texts specify animal sources such as boar or goat."
+        },
+        {
+          "name": "Majja",
+          "modern_identification": "Bone marrow (animal-derived)",
+          "identification_confidence": "high",
+          "notes": "Fourth and most heavy/penetrating oleation substance; reserved for extreme vata conditions requiring deep nourishment of tissue."
+        },
+        {
+          "name": "Brahmi Ghrita",
+          "modern_identification": "Medicated ghee prepared with Bacopa monnieri (brahmi)",
+          "identification_confidence": "high",
+          "notes": "Classical cognitive and nootropic formulation. Bacopa monnieri is well-attested as the primary botanical ingredient. Preparation: plant material processed into ghee via classical ghrita-paka method involving decoction and trituration."
+        },
+        {
+          "name": "Brahmi (Bacopa monnieri)",
+          "modern_identification": "Bacopa monnieri (L.) Pennell — family Plantaginaceae",
+          "identification_confidence": "high",
+          "notes": "Primary cognitive medicine in classical Ayurveda; also sometimes conflated with Centella asiatica in regional traditions, but Bacopa monnieri is the standard identification for brahmi in this context."
+        },
+        {
+          "name": "Ashwagandha Ghrita",
+          "modern_identification": "Medicated ghee prepared with Withania somnifera (ashwagandha)",
+          "identification_confidence": "high",
+          "notes": "Adaptogenic and rejuvenating formulation. Active constituents include withanolides, which are lipophilic and thus well-suited to ghee-based delivery."
+        },
+        {
+          "name": "Ashwagandha (Withania somnifera)",
+          "modern_identification": "Withania somnifera (L.) Dunal — family Solanaceae",
+          "identification_confidence": "high",
+          "notes": "Active constituents (withanolides) explicitly noted as lipophilic and validated by modern pharmacology as benefiting from ghee-based delivery."
+        },
+        {
+          "name": "Triphala Ghrita",
+          "modern_identification": "Medicated ghee prepared with Triphala (three-fruit compound: Terminalia chebula, Terminalia bellirica, Phyllanthus emblica)",
+          "identification_confidence": "high",
+          "notes": "Indicated for eye disorders and general systemic conditions. Preparation: three fruits processed into decoction [kashaya], then prepared as medicated ghee via standard ghrita-paka method."
+        },
+        {
+          "name": "Triphala",
+          "modern_identification": "Compound of Terminalia chebula Retz. (haritaki), Terminalia bellirica (Gaertn.) Roxb. (bibhitaki), and Phyllanthus emblica L. (amalaki)",
+          "identification_confidence": "high",
+          "notes": "One of the most canonical polyherbal compounds in Ayurveda. Described here in context of eye and systemic conditions."
+        },
+        {
+          "name": "Pancha Tikta Ghrita",
+          "modern_identification": "Medicated ghee prepared with five bitter (tikta rasa) plants; specific five plants vary by classical source",
+          "identification_confidence": "medium",
+          "notes": "Indicated primarily for skin diseases [kushtha]. The canonical five bitter plants may include Nimba (Azadirachta indica), Patola, Guduchi, Vasa (Adhatoda vasica), and Kantakari, though composition varies across textual traditions."
+        },
+        {
+          "name": "Curcumin",
+          "modern_identification": "Curcumin — principal polyphenolic constituent of Curcuma longa L. (turmeric)",
+          "identification_confidence": "high",
+          "notes": "Cited in the modern pharmacological commentary appended to the classical passage as an example of a lipophilic compound whose bioavailability is enhanced by ghee as a lipid carrier. Not itself a classical Charaka formulation ingredient in this passage."
+        }
+      ],
+      "translator_notes": "This segment presents a notable hybrid of classical Ayurvedic textual content and modern pharmacological commentary. The final two sentences — referencing 'contemporary pharmacology,' 'blood-brain barrier,' and 'withanolides' — are clearly not part of the original Charaka Samhita Sutrasthana 13 but represent editorial or scholarly annotation appended to the source text. These have been faithfully translated as presented but should be flagged for the archive as editorial interpolation rather than primary classical content. The original Sneha Adhyaya (CS.Sutra.13) does not contain such terminology. Additionally, the segment as supplied reads more as a scholarly summary or paraphrase than a direct Sanskrit transcription or transliteration; no Devanagari or romanized Sanskrit original was provided for this segment, limiting the translator's ability to verify specific term choices against primary manuscript sources. The identification of 'Brahmi' as Bacopa monnieri rather than Centella asiatica follows the North Indian / Charaka tradition; annotators working in South Indian or Keralite traditions may prefer Centella asiatica. This should be noted in the archive record.",
+      "_label": "CS.Sutra.13"
+    },
+    {
+      "title_inferred": "The Six Tastes (Shad Rasa) and Their Therapeutic Implications — Atreyabhadrakapiya",
+      "original_text": "Atreyabhadrakapiya — The fundamental pharmacological principles of Charaka. The six tastes (Shad Rasa) and their therapeutic implications: Madhura (sweet — nourishing, building, calming); Amla (sour — digestive, carminative); Lavana (salty — liquefying, laxative); Katu (pungent — stimulating, fat-burning); Tikta (bitter — detoxifying, anti-parasitic, anti-infective); Kashaya (astringent — healing, drying, hemostatic). The taste → action relationship is the foundational Ayurvedic pharmacological principle — 400+ years before Dioscorides' hot/cold/dry/moist classification system. Specific bitter-tasting plants for infection and parasites: Neem (nimba), Guduchi (tinospora), Chirayata (Swertia), Patola, Turmeric (haridra). The bitter taste classification explains why these plants were empirically identified as antimicrobial across multiple traditions: bitter compounds are often pharmacologically active as antimicrobials, antipyretics, and anti-parasitic agents.",
+      "translation": "This section, attributed to the Atreyabhadrakapiya chapter, sets forth the foundational pharmacological principles of the Charaka system. The six tastes [Shad Rasa] and their therapeutic properties are enumerated as follows: Madhura [sweet] — nourishing, tissue-building, and calming in action; Amla [sour] — promotes digestion and relieves flatulence [carminative]; Lavana [salty] — liquefies and loosens, acting as a laxative; Katu [pungent] — stimulating and conducive to the reduction of fat; Tikta [bitter] — detoxifying, anti-parasitic, and anti-infective; Kashaya [astringent] — promotes healing, dries excess moisture, and arrests bleeding [hemostatic]. The principle that taste directly governs pharmacological action constitutes the foundational doctrine of Ayurvedic materia medica, antedating by more than four centuries the Galenic hot/cold/dry/moist classification system attributed to Dioscorides. Among the bitter-tasting [Tikta] plants specifically indicated for infectious conditions and parasitic infestation, the following are enumerated: Nimba [Neem], Guduchi [Tinospora], Chirayata [Swertia], Patola, and Haridra [Turmeric]. The classification of these substances under the bitter taste category provides a systematic explanation for their empirically established efficacy as antimicrobial, antipyretic, and anti-parasitic agents across multiple medical traditions — an observation consistent with the known pharmacological activity of bitter secondary metabolites such as alkaloids, iridoids, and terpenoids.",
+      "entities_mentioned": [
+        {
+          "name": "Nimba (Neem)",
+          "modern_identification": "Azadirachta indica",
+          "identification_confidence": "high",
+          "notes": "Bitter taste [Tikta rasa]; indicated for infections and parasitic conditions. Extensively documented antimicrobial and antiparasitic activity in modern pharmacology."
+        },
+        {
+          "name": "Guduchi (Tinospora)",
+          "modern_identification": "Tinospora cordifolia",
+          "identification_confidence": "high",
+          "notes": "Bitter taste [Tikta rasa]; used as an immunomodulator, antipyretic, and anti-infective. Active compounds include berberine and tinosporine."
+        },
+        {
+          "name": "Chirayata (Swertia)",
+          "modern_identification": "Swertia chirayita",
+          "identification_confidence": "high",
+          "notes": "Bitter taste [Tikta rasa]; indicated for fever, infections, and parasites. Contains swertiamarin and amarogentin, known antipyretic and antiparasitic compounds."
+        },
+        {
+          "name": "Patola",
+          "modern_identification": "Trichosanthes dioica or Luffa acutangula (disputed)",
+          "identification_confidence": "medium",
+          "notes": "Bitter taste [Tikta rasa]; used for infections and parasitic conditions. Botanical identification is contested in the literature; Trichosanthes dioica is the more commonly accepted identification in Ayurvedic commentaries."
+        },
+        {
+          "name": "Haridra (Turmeric)",
+          "modern_identification": "Curcuma longa",
+          "identification_confidence": "high",
+          "notes": "Bitter and pungent taste; indicated for infections, skin conditions, and inflammation. Active compound curcumin has well-documented antimicrobial and anti-inflammatory properties."
+        },
+        {
+          "name": "Madhura",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Pharmacological taste category [rasa]: sweet. Therapeutic actions: nourishing [brimhana], tissue-building, calming."
+        },
+        {
+          "name": "Amla",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Pharmacological taste category [rasa]: sour. Therapeutic actions: digestive [pachana], carminative [anulomana]."
+        },
+        {
+          "name": "Lavana",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Pharmacological taste category [rasa]: salty. Therapeutic actions: liquefying [kledana], laxative [sramsana]."
+        },
+        {
+          "name": "Katu",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Pharmacological taste category [rasa]: pungent. Therapeutic actions: stimulating [dipana], fat-reducing [medohara]."
+        },
+        {
+          "name": "Tikta",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Pharmacological taste category [rasa]: bitter. Therapeutic actions: detoxifying [vishaghna], anti-parasitic [krimighna], anti-infective."
+        },
+        {
+          "name": "Kashaya",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Pharmacological taste category [rasa]: astringent. Therapeutic actions: wound-healing [ropana], drying [shoshana], hemostatic [stambhana]."
+        }
+      ],
+      "translator_notes": "This segment as presented in the source appears to be a scholarly editorial gloss or summary rather than a direct transcription of Sanskrit primary-source text. It contextualizes CS.Sutra.26 (Atreyabhadrakapiya) in comparative pharmacological terms, including the anachronistic comparison to Dioscorides, which is an editorial interpolation and not a claim made in the original Charaka Samhita. The translator flags this distinction: the Shad Rasa doctrine is authentic to CS.Sutra.26, but the Dioscorides comparison and the pharmacological commentary on bitter secondary metabolites are modern scholarly annotations embedded in the source text. These have been preserved in the translation for archival completeness but should not be attributed to Charaka directly. The identification of Patola remains philologically contested and should be treated with caution in any materia medica application.",
+      "_label": "CS.Sutra.26"
+    },
+    {
+      "title_inferred": "Treatment of Thirst and Urinary Disorders (Prameha / Madhumeha) — Antidiabetic Materia Medica",
+      "original_text": "Trishna Chikitsa — Treatment of thirst (diabetes context). Charaka's documentation of diseases characterized by excessive thirst includes the earliest clinical description of what we now call diabetes mellitus: Prameha — 20 types of urinary disease, of which Madhumeha (honey-urine disease) corresponds to Type 2 diabetes. Documented symptoms: excessive urination that is sweet (tested by observation of insects attracted to urine), excessive thirst, weight gain in some forms, weight loss in others. Primary treatments: Bitter melon (karela/Momordica) — the most specific traditional diabetes medicine. Jamun/Black plum (Eugenia jambolana) — seeds documented for blood sugar reduction. Gurmar (Gymnema sylvestre) — literally 'sugar destroyer.' Fenugreek (methi/Trigonella) — now validated with multiple RCTs. These four plants are now among the most extensively studied anti-diabetic plants in the world, validating Charaka's specific prescriptions for Madhumeha across 2,000 years.",
+      "translation": "Chapter on the Treatment of Thirst [Trishna Chikitsa], in the context of urinary and metabolic disorders. Charaka's systematic account of diseases marked by excessive thirst contains what may be recognized as the earliest clinical description of the condition now designated diabetes mellitus. The text enumerates twenty varieties of urinary disorder under the heading Prameha [disorders of excessive or abnormal urination], of which Madhumeha — literally 'honey-urine disease,' so named because the urine is sweet — corresponds most closely to what modern medicine classifies as Type 2 diabetes mellitus. Clinical signs recorded include: profuse urination of a sweet character (verified diagnostically by the observation that ants and other insects are drawn to the patient's urine); unremitting thirst [trishna]; increased body weight in certain forms of the disorder; and progressive wasting in others, reflecting the ancient recognition that the disease presents in distinct constitutional patterns. The principal therapeutic agents prescribed are as follows: Bitter melon [karela; Momordica charantia] — designated the most specific [i.e., most directly indicated] traditional remedy for this class of disorder. Seeds of Jamun or Black Plum [Eugenia jambolana, syn. Syzygium cumini] — documented for their action in reducing the sweetness of urine, interpreted in modern terms as blood glucose reduction. Gurmar [Gymnema sylvestre] — the name itself signifying 'destroyer of sugar,' prescribed for its capacity to suppress the perception and absorption of sweetness. Fenugreek [methi; Trigonella foenum-graecum] — prescribed in seed form, a use now corroborated by multiple randomized controlled trials demonstrating glycaemic benefit. The clinical and pharmacological validation of these four botanical agents across the intervening two millennia constitutes a remarkable confirmation of Charaka's specific therapeutic prescriptions for Madhumeha.",
+      "entities_mentioned": [
+        {
+          "name": "Prameha",
+          "modern_identification": "Diabetes mellitus and related urinary/metabolic disorders (broadly)",
+          "identification_confidence": "high",
+          "notes": "Charaka enumerates 20 sub-types of Prameha. Not all map to diabetes; the category encompasses a spectrum of urinary and metabolic disorders, of which Madhumeha is the most clinically salient analog to modern diabetes mellitus."
+        },
+        {
+          "name": "Madhumeha",
+          "modern_identification": "Type 2 diabetes mellitus",
+          "identification_confidence": "high",
+          "notes": "Literally 'honey-urine disease.' Sweet urine diagnosed by insect attraction — a pre-chemical bioassay. The symptom cluster of polydipsia, polyuria, and variable weight change is consistent with modern Type 2 diabetes presentation."
+        },
+        {
+          "name": "Karela / Momordica charantia",
+          "modern_identification": "Bitter melon (Momordica charantia, family Cucurbitaceae)",
+          "identification_confidence": "high",
+          "notes": "Designated most specific antidiabetic remedy. Bioactive compounds including charantin, vicine, and polypeptide-p have demonstrated hypoglycaemic activity in preclinical and clinical studies."
+        },
+        {
+          "name": "Jamun / Eugenia jambolana",
+          "modern_identification": "Black plum / Java plum (Syzygium cumini, syn. Eugenia jambolana, family Myrtaceae)",
+          "identification_confidence": "high",
+          "notes": "Seeds specifically documented. Modern studies confirm seed extracts reduce postprandial glucose; jamboline and anthocyanins are candidate active constituents. Nomenclature note: Eugenia jambolana is a synonym now subsumed under Syzygium cumini."
+        },
+        {
+          "name": "Gurmar / Gymnema sylvestre",
+          "modern_identification": "Gymnema sylvestre (family Apocynaceae)",
+          "identification_confidence": "high",
+          "notes": "Name translates as 'sugar destroyer' (Hindi: gur = sugar/jaggery, mar = killer/destroyer). Gymnemic acids suppress intestinal glucose absorption and may stimulate insulin secretion. Extensively studied."
+        },
+        {
+          "name": "Methi / Trigonella foenum-graecum",
+          "modern_identification": "Fenugreek (Trigonella foenum-graecum, family Fabaceae)",
+          "identification_confidence": "high",
+          "notes": "Seeds used. Soluble fibre (galactomannan) and the amino acid 4-hydroxyisoleucine are implicated in glycaemic effects. Multiple RCTs support use in improving fasting glucose and HbA1c."
+        }
+      ],
+      "translator_notes": "This segment as supplied in the source document is an editorial summary or commentary rather than a direct Sanskrit passage transcribed for translation; it appears to be a secondary English-language gloss of Charaka Samhita Chikitsasthana Chapter 2 content, not raw Sanskrit or transliterated text. Accordingly, the 'translation' provided here renders the editorial summary into scholarly archival English and contextualizes the clinical and pharmacological claims. If raw Sanskrit or transliterated source text for CS.Chik.2 becomes available, a fresh translation from the primary source should be produced. The diagnostic method of observing insect attraction to urine as a proxy for glycosuria is a genuine feature of Ayurvedic clinical literature and represents a pragmatic pre-modern bioassay. The 20-fold classification of Prameha by doshic constitution (Kaphaja, Pittaja, Vataja sub-types) is not detailed in this segment but is standard in the full chapter.",
+      "_label": "CS.Chik.2"
+    },
+    {
+      "title_inferred": "Shvayathu Chikitsa: Treatment of Inflammatory Swellings",
+      "original_text": "Shvayathu Chikitsa — Treatment of inflammatory swellings. This chapter documents Charaka's anti-inflammatory pharmacopoeia: Primary: Shunthi (dried ginger) + Haridra (turmeric) + Neem (nimba) — the basic three-herb anti-inflammatory combination. More complex: Dashemani (ten plant anti-inflammatory formula). Specific applications: Boswellia (shallaki) for joint inflammation — now one of the most validated plant anti-inflammatories with Cochrane evidence. Guggul (Commiphora mukul) for joint conditions — the resin studied for both anti-inflammatory and lipid-lowering properties. Eranda (castor, Ricinus communis) root decoction for inflammatory arthritis. The principle of targeting vata-causing inflammation differs from Greek/Roman humoral anti-inflammatory theory but produces similar empirical plant selections — both traditions independently identifying ginger and Boswellia species for inflammatory conditions.",
+      "translation": "Chapter on the Treatment of Shvayathu [inflammatory swellings]. This chapter sets out Charaka's anti-inflammatory pharmacopoeia as follows. The primary combination consists of Shunthi [dried ginger], Haridra [turmeric], and Nimba [neem], forming the foundational three-herb anti-inflammatory preparation. A more complex formulation is the Dashemani [a compound of ten plant substances with anti-inflammatory properties]. For specific conditions: Shallaki [Boswellia] is prescribed for inflammation of the joints, a use now among the most robustly validated in botanical medicine, with supporting evidence in systematic reviews. Guggul [the resin of Commiphora mukul] is employed for joint conditions and has been investigated in modern research for both anti-inflammatory and lipid-lowering effects. A decoction of Eranda [castor, Ricinus communis] root is prescribed for inflammatory arthritis [vata-predominant joint swelling]. The theoretical framework underlying these prescriptions — namely the pacification of vata as the primary driver of inflammation — differs in structure from the Greek and Roman humoral doctrine, yet the empirical selections arrived at by both traditions show notable convergence, most strikingly in the independent identification of ginger and Boswellia species as effective agents in inflammatory conditions.",
+      "entities_mentioned": [
+        {
+          "name": "Shunthi",
+          "modern_identification": "Zingiber officinale (dried ginger rhizome)",
+          "identification_confidence": "high",
+          "notes": "One of the most universally employed anti-inflammatory agents in Ayurvedic practice; used here as part of the primary three-herb combination for shvayathu (inflammatory swelling). Modern research supports inhibition of prostaglandin and leukotriene synthesis."
+        },
+        {
+          "name": "Haridra",
+          "modern_identification": "Curcuma longa (turmeric rhizome)",
+          "identification_confidence": "high",
+          "notes": "Core anti-inflammatory agent in Ayurveda; curcumin (principal active constituent) extensively studied for NF-κB pathway inhibition. Paired with Shunthi and Nimba in the foundational anti-inflammatory triad described here."
+        },
+        {
+          "name": "Nimba",
+          "modern_identification": "Azadirachta indica (neem)",
+          "identification_confidence": "high",
+          "notes": "Third component of the primary three-herb anti-inflammatory combination. Neem bark, leaf, and seed extracts have demonstrated anti-inflammatory, antipyretic, and immunomodulatory properties in modern studies."
+        },
+        {
+          "name": "Dashemani",
+          "modern_identification": null,
+          "identification_confidence": "low",
+          "notes": "A compound Ayurvedic formulation comprising ten plant substances with anti-inflammatory indications. The precise canonical composition of 'Dashemani' varies by textual tradition and may refer to one of several named decad groups (gana) in the Charaka Samhita. Further philological verification required."
+        },
+        {
+          "name": "Shallaki",
+          "modern_identification": "Boswellia serrata (Indian frankincense, Salai guggul)",
+          "identification_confidence": "high",
+          "notes": "Prescribed specifically for joint inflammation (sandhi-shvayathu). Boswellic acids (particularly AKBA) are well-characterized inhibitors of 5-lipoxygenase. Cochrane and other systematic review evidence supports efficacy in osteoarthritis of the knee."
+        },
+        {
+          "name": "Guggul",
+          "modern_identification": "Commiphora mukul (= Commiphora wightii) resin",
+          "identification_confidence": "high",
+          "notes": "Oleo-gum resin prescribed for joint conditions. Guggulsterones studied as modulators of farnesoid X receptor and thyroid hormone, with reported anti-inflammatory and hypolipidemic effects. Evidence base remains mixed in RCTs for lipid lowering."
+        },
+        {
+          "name": "Eranda",
+          "modern_identification": "Ricinus communis (castor plant)",
+          "identification_confidence": "high",
+          "notes": "Root decoction specified for inflammatory arthritis, classified in Ayurveda as a vata-pacifying [vatahara] remedy. Ricinus communis root preparations have demonstrated anti-inflammatory activity in animal models; ricinoleic acid is a known anti-inflammatory fatty acid constituent of castor oil. Preparation method: decoction (kvatha) of the root."
+        }
+      ],
+      "translator_notes": "This segment is an editorial summary or commentary layer rather than a direct verse-by-verse translation of a Sanskrit source text; it appears to synthesize chapter content with comparative cross-cultural annotation (Greek/Roman humoral medicine) that is the work of a modern commentator, not Charaka himself. The translator has rendered it faithfully as presented while preserving the distinction between Ayurvedic theoretical framing (vata-driven inflammation) and modern clinical evidence citations. Scholars should note: (1) The term 'Cochrane evidence' in the source is an anachronistic editorial insertion and does not appear in the Charaka Samhita. (2) 'Dashemani' as a single named formula is not standard canonical terminology; it may conflate several distinct daśaka (group-of-ten) gana formulations from Sutrasthana 4. (3) Identification of Commiphora mukul as 'guggul' is standard, but species nomenclature has been revised — the accepted current name is Commiphora wightii (Arn.) Bhandari. (4) The comparative observation regarding convergent plant selection across Ayurvedic and Greco-Roman traditions is editorially introduced and should be cited as interpretive commentary, not as Charaka's text.",
+      "_label": "CS.Chik.4"
+    },
+    {
+      "title_inferred": "Pandu Chikitsa: Treatment of Pallor and Anaemia",
+      "original_text": "Pandu Chikitsa — Treatment of pallor and anemia. Charaka's anaemia treatment documents: the primary therapeutic food is iron-rich; specific plants with documented iron content: Drumstick tree (Moringa — shigru, highest plant source of iron), Pomegranate (dadima — 'healer of pallor'), Amla/Indian Gooseberry (amalaki — Vitamin C enhancing iron absorption). Primary medicine: Mandura (iron oxide, processed) combined with Triphala to enhance iron absorption — an early understanding that Vitamin C-containing plants enhance mineral absorption. Modern validation: Triphala's high Vitamin C content (particularly Amalaki) does indeed enhance non-haem iron absorption significantly. This Charaka prescription anticipates modern nutritional iron therapy: iron compound + Vitamin C enhancer. The convergence between Charaka's pallor treatment and modern iron-deficiency anaemia management is direct.",
+      "translation": "The chapter on Pandu Chikitsa concerns the treatment of the condition known as pandu, characterised by pallor, weakness, and loss of colour in the skin — corresponding broadly to anaemia in modern clinical terms. Charaka prescribes a regimen centred upon iron-rich therapeutic foods and medicines. Among the principal plants indicated: (1) Shigru, the drumstick tree [Moringa oleifera], recognised as bearing exceptional iron content among plant sources; (2) Dadima, the pomegranate [Punica granatum], traditionally designated a 'healer of pallor' (pandu-nashana); (3) Amalaki, the Indian gooseberry [Phyllanthus emblica / Emblica officinalis], valued for its role in promoting the uptake of iron. The primary medicinal preparation is Mandura [processed iron oxide / ferric oxide] administered in combination with Triphala [the compound preparation of amalaki, bibhitaki, and haritaki]. The underlying therapeutic rationale — explicit or implicit in the text — is that the sour, vitamin-rich constituents of Triphala, especially amalaki, potentiate the absorption of the iron compound. Modern nutritional science confirms that Triphala's high ascorbic acid content, concentrated particularly in amalaki, significantly enhances non-haem iron absorption. This prescription thus represents an early, empirically grounded anticipation of the contemporary clinical practice of co-administering an iron compound with a vitamin C-containing agent. The correspondence between Charaka's pandu treatment protocol and modern iron-deficiency anaemia management is substantive and direct.",
+      "entities_mentioned": [
+        {
+          "name": "Shigru",
+          "modern_identification": "Moringa oleifera (drumstick tree)",
+          "identification_confidence": "high",
+          "notes": "Cited as the highest plant-source of iron in traditional context; modern analysis supports notably high iron content in leaves and pods."
+        },
+        {
+          "name": "Dadima",
+          "modern_identification": "Punica granatum (pomegranate)",
+          "identification_confidence": "high",
+          "notes": "Traditionally designated a remedy for pallor (pandu-nashana); contains iron and antioxidants relevant to haematopoietic support."
+        },
+        {
+          "name": "Amalaki",
+          "modern_identification": "Phyllanthus emblica / Emblica officinalis (Indian gooseberry)",
+          "identification_confidence": "high",
+          "notes": "Primary ascorbic acid source in Triphala; modern studies confirm significant enhancement of non-haem iron absorption via its vitamin C content."
+        },
+        {
+          "name": "Mandura",
+          "modern_identification": "Processed iron oxide (ferric oxide, calcined / purified)",
+          "identification_confidence": "high",
+          "notes": "Classical Ayurvedic iron preparation; functionally analogous to medicinal iron compounds used in modern anaemia therapy."
+        },
+        {
+          "name": "Triphala",
+          "modern_identification": "Compound preparation of Emblica officinalis, Terminalia bellirica, and Terminalia chebula",
+          "identification_confidence": "high",
+          "notes": "Used here as a vehicle and absorption enhancer for Mandura; its high ascorbic acid content (especially from amalaki) is the likely mechanism for potentiating iron uptake."
+        },
+        {
+          "name": "Pandu",
+          "modern_identification": "Iron-deficiency anaemia (primary correspondence); broader pallor conditions",
+          "identification_confidence": "medium",
+          "notes": "Pandu is a classical diagnostic category encompassing pallor, weakness, and yellowish discolouration; it overlaps substantially with iron-deficiency anaemia but may also include other haematological or hepatic conditions in the classical schema."
+        }
+      ],
+      "translator_notes": "IMPORTANT EDITORIAL FLAG: This segment as supplied is not a direct translation of a Sanskrit source passage. It is instead a modern analytical commentary — written in English — summarising, interpreting, and drawing parallels between Charaka's pandu chikitsa prescriptions and modern nutritional science (including explicit references to 'Vitamin C,' 'non-haem iron absorption,' and 'modern validation'). No Sanskrit source text is present. The 'translation' provided above therefore renders the content of this commentary into a more formally structured scholarly paraphrase rather than translating from Sanskrit. Archivists should flag this segment as secondary interpretive material rather than primary translated text. The scholarly claims made (e.g., Triphala's ascorbic acid content enhancing non-haem iron absorption) are broadly supported by modern literature, but the framing as direct Charak Samhita content requires caution: Charaka does not use the vocabulary of 'vitamins' or 'absorption chemistry'; these are modern projections onto classical categories. The identification of pandu exclusively with iron-deficiency anaemia, while heuristically useful, is a simplification of the classical nosology.",
+      "_label": "CS.Chik.9"
+    },
+    {
+      "title_inferred": "Treatment of Diarrheal Diseases (Atisara Chikitsa)",
+      "original_text": "Atisara Chikitsa — Treatment of diarrheal diseases. Charaka documents the most pharmacologically sophisticated diarrhea treatment in any pre-modern tradition: Distinguishes 8 types of atisara by cause and character. Treatment principles: Astringent medicines first; specific plants: Lodhra (Symplocos racemosa) — documented anti-diarrheal, astringent bark. Kutaja (Holarrhena pubescens) — 'Indrayava' seeds specifically documented for amoebic dysentery. Bilva (Aegle marmelos / Bael) — unripe fruit for diarrhea, ripe fruit as laxative (same plant, different stage — parallel to Dioscorides' lentil observation). Ativisha (Aconitum heterophyllum, processed, low-dose) for severe diarrhea with fever. The Kutaja (Holarrhena) documentation for amoebic dysentery is remarkable: conessine, the primary alkaloid, is active specifically against Entamoeba histolytica. This is the most specific traditional match between a documented condition and the active mechanism in the entire Charaka corpus.",
+      "translation": "Chapter on the Treatment of Atisara [diarrheal flux]: Charaka sets forth the most pharmacologically refined account of diarrheal treatment found in any pre-modern medical tradition. He distinguishes eight varieties of atisara according to their respective causes and characteristic presentations. The foundational therapeutic principle calls for the administration of astringent [kashaya] medicines in the first instance. Among the specific botanical agents prescribed: Lodhra [Symplocos racemosa] — the bark, astringent in quality [rasa], is documented as an anti-diarrheal remedy. Kutaja [Holarrhena pubescens] — the seeds, designated 'Indrayava,' are specifically indicated for the form of dysentery associated with bloody, mucoid flux [raktatisara], corresponding to amoebic dysentery. Bilva [Aegle marmelos, Bael] — the unripe fruit is employed to arrest diarrhea, while the ripe fruit acts as a laxative [virechana]; this constitutes a documented instance of the same plant yielding opposing therapeutic actions at different stages of maturation, analogous to the observation made by Dioscorides concerning the lentil. Ativisha [Aconitum heterophyllum, specially processed and administered in low dosage] is indicated for severe diarrhea accompanied by fever [jvara-sahita atisara]. Editorial note: The documentation of Kutaja [Holarrhena pubescens] for amoebic dysentery is of exceptional pharmacological significance: conessine, the principal steroidal alkaloid of this plant, has been demonstrated to act specifically against Entamoeba histolytica, the causative organism of amoebic dysentery. This represents the most precisely corroborated correspondence between a classically documented clinical indication and the verified biochemical mechanism of action to be found anywhere in the Charaka corpus.",
+      "entities_mentioned": [
+        {
+          "name": "Lodhra",
+          "modern_identification": "Symplocos racemosa",
+          "identification_confidence": "high",
+          "notes": "Astringent bark used as anti-diarrheal. Contains loturine and other tannin-related compounds consistent with astringent action."
+        },
+        {
+          "name": "Kutaja / Indrayava",
+          "modern_identification": "Holarrhena pubescens (seeds designated 'Indrayava')",
+          "identification_confidence": "high",
+          "notes": "Seeds specifically indicated for raktatisara (bloody dysentery consistent with amoebic dysentery). Primary alkaloid conessine is pharmacologically active against Entamoeba histolytica. Represents the strongest traditional-to-modern mechanistic correspondence in the Charaka corpus."
+        },
+        {
+          "name": "Bilva",
+          "modern_identification": "Aegle marmelos (Bael fruit)",
+          "identification_confidence": "high",
+          "notes": "Unripe fruit used as anti-diarrheal (astringent, tannin-rich); ripe fruit used as laxative. Charaka explicitly documents this dual, stage-dependent action — a notable parallel to Dioscorides' observations on lentils exhibiting opposing effects at different stages."
+        },
+        {
+          "name": "Ativisha",
+          "modern_identification": "Aconitum heterophyllum",
+          "identification_confidence": "high",
+          "notes": "Processed and administered at low dosage for severe diarrhea with concurrent fever. Processing (shodhana) is essential to reduce toxicity; this is a standard Ayurvedic preparation caveat for aconite-family drugs. Modern caution: all Aconitum species carry significant alkaloid toxicity risk without proper processing."
+        },
+        {
+          "name": "Atisara",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Sanskrit nosological category encompassing diarrheal flux broadly; Charaka distinguishes eight subtypes by etiology and symptom character. Not a single modern disease equivalent — encompasses acute diarrhea, dysentery, and related conditions."
+        }
+      ],
+      "translator_notes": "This segment is substantially an editorial and analytical gloss in English rather than a direct Sanskrit source passage; it appears to be a modern scholarly summary of CS Chikitsasthana 11 rather than a verbatim Charaka text. Translated and structured accordingly, preserving the documentary and analytical claims. The Kutaja-conessine-Entamoeba histolytica correspondence is well-attested in modern pharmacognosy literature (e.g., Lal et al.) and is accurately represented here. The parallel drawn to Dioscorides' lentil observation (De Materia Medica II.107) is editorially sound. Ativisha identification as Aconitum heterophyllum is the dominant scholarly consensus, though some regional traditions apply the name to related species. The 'eight types of atisara' classification referenced aligns with CS Chik. 19.3–8 in standard recensions.",
+      "_label": "CS.Chik.11"
+    },
+    {
+      "title_inferred": "Treatment of Grahani (Malabsorption / IBS-Spectrum Disorders)",
+      "original_text": "Grahanidosha Chikitsa — Treatment of IBS and malabsorption syndrome. Charaka's documentation of Grahani (malabsorption/IBS-type condition) covers what modern medicine recognises as a spectrum including inflammatory bowel disease, IBS, and malabsorption syndromes. Primary treatment: Chitrakadi vati (Plumbago zeylanica + 9 other herbs) — the primary digestive stimulant formula. Shankha bhasma (conch shell ash, prepared) for acid conditions. Hingwashtak churna (asafoetida + 7 spices) — carminative, antispasmodic. Specific plants: Kutaja (Holarrhena) for infectious component. Bilva (bael) for normalizing bowel motility. Musta (Cyperus rotundus) — the primary digestive sedative. Pippali (long pepper) for stimulating digestive enzymes. Charaka's understanding that Grahani requires digestive fire restoration (not just symptom suppression) anticipates modern functional gastroenterology's emphasis on microbiome and enzyme function.",
+      "translation": "Treatment of Grahani-dosha [disorder of the seat of digestive fire, Grahani]. Charaka's systematic account of Grahani encompasses a clinical spectrum that modern medicine would recognise as including inflammatory bowel disease, irritable bowel syndrome, and malabsorption syndromes. The condition is understood in the classical framework as a failure of the digestive fire [agni] seated in the small intestine, resulting in disordered assimilation and irregular bowel function. The primary therapeutic formula prescribed is Chitrakadi vati, a compound tablet preparation based upon Chitraka [Plumbago zeylanica] combined with nine adjunct herbs, functioning as the principal stimulant of digestive fire [agni-deepana]. Shankha bhasma — a calcined preparation of conch shell [purified and processed ash] — is indicated specifically for acid-related presentations of the condition. Hingwashtak churna, a powdered compound of asafoetida [Ferula assa-foetida] with seven aromatic spices, is employed for its carminative and antispasmodic actions, relieving intestinal distension and colic. Among individual plant medicines, Kutaja [Holarrhena antidysenterica] is directed at the infectious or dysenteric component of Grahani. Bilva [bael fruit, Aegle marmelos] is prescribed for the normalisation of bowel motility, acting in both diarrhoea and constipation depending on preparation. Musta [Cyperus rotundus, nut-grass] serves as the principal digestive sedative and anti-inflammatory agent for the gut. Pippali [long pepper, Piper longum] is employed to stimulate secretion of digestive enzymes and to enhance bioavailability [yogavahi function] of co-administered medicines. The governing therapeutic principle articulated by Charaka is that Grahani demands restoration of the digestive fire at its source rather than mere suppression of presenting symptoms — an approach that prefigures the emphasis in contemporary functional gastroenterology upon gut microbiome reconstitution and enzyme sufficiency as primary therapeutic targets.",
+      "entities_mentioned": [
+        {
+          "name": "Grahani",
+          "modern_identification": "Malabsorption syndrome / Irritable Bowel Syndrome / Inflammatory Bowel Disease spectrum",
+          "identification_confidence": "medium",
+          "notes": "Grahani in classical Ayurveda refers both to an anatomical site (the seat of digestive fire, approximately the small intestine/duodenum) and to the pathological condition arising from impaired agni at that site. The symptom cluster overlaps with multiple modern GI diagnoses; no single modern equivalent is precise."
+        },
+        {
+          "name": "Chitrakadi vati",
+          "modern_identification": "Compound tablet: primary ingredient Plumbago zeylanica (leadwort/Ceylon leadwort) with nine adjunct herbs",
+          "identification_confidence": "high",
+          "notes": "Classical polyherbal digestive stimulant tablet. Plumbago zeylanica (chitraka) is the eponymous lead herb. Full formula varies slightly by textual tradition; typically includes pippali, ginger, black pepper, and others. Used as agni-deepana (digestive fire stimulant) and pachana (digestive aid)."
+        },
+        {
+          "name": "Shankha bhasma",
+          "modern_identification": "Calcined conch shell ash (calcium carbonate-based preparation)",
+          "identification_confidence": "high",
+          "notes": "Mineral/animal-origin classical preparation. Functions analogously to an antacid; the calcination process [bhasma preparation] is believed in Ayurvedic pharmacology to render the material bioavailable and therapeutically active. Indicated for hyperacidity presentations within Grahani."
+        },
+        {
+          "name": "Hingwashtak churna",
+          "modern_identification": "Compound powder: Ferula assa-foetida (asafoetida) with seven spices including ginger, black pepper, long pepper, rock salt, cumin, and others",
+          "identification_confidence": "high",
+          "notes": "Classical carminative and antispasmodic formulation. 'Hingwashtak' means 'asafoetida-eight,' denoting eight primary ingredients. Widely used in classical and contemporary Ayurvedic practice for intestinal gas, colic, and spasm."
+        },
+        {
+          "name": "Kutaja",
+          "modern_identification": "Holarrhena antidysenterica (syn. H. pubescens; Kurchi / Tellicherry bark)",
+          "identification_confidence": "high",
+          "notes": "Bark and seeds used; the alkaloid conessine has documented antiamoebic and antibacterial activity. Classical indication specifically for dysenteric and infectious components of bowel disorder. Condition treated: infectious/dysenteric Grahani. Preparation: typically decoction [kvatha] of bark or churna [powder] of seeds."
+        },
+        {
+          "name": "Bilva",
+          "modern_identification": "Aegle marmelos (bael / Bengal quince)",
+          "identification_confidence": "high",
+          "notes": "Unripe fruit used as astringent/antidiarrhoeal; ripe fruit used as laxative. Classical bowel-motility normaliser. Condition treated: bowel irregularity in Grahani. Preparation: unripe fruit dried and powdered, or ripe fruit pulp administered directly."
+        },
+        {
+          "name": "Musta",
+          "modern_identification": "Cyperus rotundus (nut-grass / purple nutsedge)",
+          "identification_confidence": "high",
+          "notes": "Rhizomes/tubers used. Classical 'digestive sedative' — reduces intestinal inflammation and cramping, corrects disordered agni without over-stimulating. Condition treated: inflammatory and spasmodic components of Grahani. Preparation: powder [churna] or decoction [kvatha]."
+        },
+        {
+          "name": "Pippali",
+          "modern_identification": "Piper longum (long pepper)",
+          "identification_confidence": "high",
+          "notes": "Fruit used. Classical enzyme stimulant and bioavailability enhancer [yogavahi]. Documented in modern research to enhance bioavailability of co-administered compounds (e.g., piperine studies). Condition treated: enzyme deficiency aspect of malabsorption. Preparation: powder, often in compound formulas."
+        },
+        {
+          "name": "Chitraka",
+          "modern_identification": "Plumbago zeylanica (Ceylon leadwort / white leadwort)",
+          "identification_confidence": "high",
+          "notes": "Root used. Active constituent plumbagin has demonstrated antimicrobial and anti-inflammatory properties. Principal herb in Chitrakadi vati. Condition treated: agni-mandya (digestive insufficiency) underlying Grahani. Preparation: root powder incorporated into vati [tablet] or churna [powder]."
+        }
+      ],
+      "translator_notes": "This segment as supplied is a modern editorial summary/paraphrase rather than a direct Sanskrit primary source passage; it appears to be a scholarly digest or introduction to CS.Chik.12 rather than a translation of the Sanskrit verse text itself. No Sanskrit verses or sutras are quoted directly. The translation above renders the editorial content into formal scholarly English consistent with Materia Medica archival conventions, preserving technical Ayurvedic terminology in brackets. Archivists should note that this segment should be flagged as secondary/editorial commentary on CS.Chik.12 rather than a primary translation of the Sanskrit source. If the underlying Sanskrit text is available, a direct verse-level translation should be prepared separately. The comparison to modern functional gastroenterology and microbiome science is an editorial interpolation, not a claim present in the classical text itself.",
+      "_label": "CS.Chik.12"
+    },
+    {
+      "title_inferred": "Treatment of Hiccups and Asthma (Hikka-Shvasa Chikitsa): Respiratory Pharmacopoeia",
+      "original_text": "Hikka Shvasa Chikitsa — Treatment of hiccups and asthma. Charaka's respiratory pharmacopoeia: Primary plants for Shvasa (asthma): Kantakari (Solanum xanthocarpum) — the first-line Ayurvedic bronchodilator. Vasa (Adhatoda vasica/Malabar nut) — documented expectorant and bronchodilator. Pippali (long pepper) — primary respiratory stimulant. Shunthi (dried ginger) — anti-inflammatory. Tulsi (Ocimum sanctum/Holy basil) — antimicrobial, bronchodilating. The Adhatoda vasica (Malabar nut/Vasa) documentation is pharmacologically significant: vasicine, the primary alkaloid, is the source of bromhexine — a widely prescribed mucolytic/expectorant drug. The direct line from Charaka's Vasa for asthma to bromhexine (commercial mucolytic) is one of the clearest traditional-to-pharmaceutical pathways in this archive. Sitopaladi churna (bamboo silica + long pepper + cardamom + cinnamon + sugar) — the classical Ayurvedic cough formula, still used globally.",
+      "translation": "Chapter on the Treatment of Hiccups [Hikka] and Dyspnea/Asthma [Shvasa]: Charaka's Respiratory Pharmacopoeia. The following are the primary medicinal plants prescribed for Shvasa [asthmatic and dyspneic conditions]: Kantakari [Solanum xanthocarpum, yellow-berried nightshade] — regarded as the foremost Ayurvedic agent for bronchodilation. Vasa [Adhatoda vasica, Malabar nut] — a well-attested expectorant and bronchodilator employed in respiratory obstruction. Pippali [Piper longum, long pepper] — the principal stimulant of the respiratory channels [pranavaha srotas]. Shunthi [dried rhizome of Zingiber officinale, ginger] — employed for its anti-inflammatory properties in respiratory disease. Tulsi [Ocimum sanctum, holy basil] — valued for antimicrobial action and bronchodilation. Of particular pharmacological note is the documentation of Adhatoda vasica [Vasa]: its principal alkaloid, vasicine, is the direct precursor from which bromhexine — a widely prescribed modern mucolytic and expectorant — was synthesized. This represents one of the most unambiguous and historically traceable pathways from classical Ayurvedic therapeutics to a contemporary pharmaceutical compound recorded in this archive. Sitopaladi churna [a compound powder consisting of vamsha rochana (bamboo silica/tabasheer), Piper longum (long pepper), Elettaria cardamomum (cardamom), Cinnamomum zeylanicum (cinnamon), and mishri (crystalline sugar)] — the canonical Ayurvedic compound formulation for cough and upper respiratory conditions, which remains in active clinical use worldwide.",
+      "entities_mentioned": [
+        {
+          "name": "Kantakari",
+          "modern_identification": "Solanum xanthocarpum (yellow-berried nightshade)",
+          "identification_confidence": "high",
+          "notes": "First-line plant for Shvasa (asthma/dyspnea) in Charaka's system; used as bronchodilator. Also identified in some sources as Solanum surattense."
+        },
+        {
+          "name": "Vasa",
+          "modern_identification": "Adhatoda vasica (Justicia adhatoda), Malabar nut",
+          "identification_confidence": "high",
+          "notes": "Pharmacologically significant: alkaloid vasicine is the direct precursor to bromhexine, a globally prescribed mucolytic. Represents one of the clearest traditional-to-pharmaceutical lineages in Ayurvedic medicine. Prescribed as expectorant and bronchodilator."
+        },
+        {
+          "name": "Pippali",
+          "modern_identification": "Piper longum (long pepper)",
+          "identification_confidence": "high",
+          "notes": "Primary respiratory stimulant in Ayurvedic practice; appears prominently across multiple Charaka chapters. Active constituent piperine has documented bronchodilatory properties."
+        },
+        {
+          "name": "Shunthi",
+          "modern_identification": "Zingiber officinale (dried ginger rhizome)",
+          "identification_confidence": "high",
+          "notes": "Anti-inflammatory application in respiratory conditions; standard component of classical Ayurvedic respiratory formulas."
+        },
+        {
+          "name": "Tulsi",
+          "modern_identification": "Ocimum sanctum (holy basil, sacred basil)",
+          "identification_confidence": "high",
+          "notes": "Prescribed for antimicrobial and bronchodilating effects; widely studied in modern phytopharmacology for immunomodulatory and anti-asthmatic properties."
+        },
+        {
+          "name": "Sitopaladi churna",
+          "modern_identification": "Classical Ayurvedic compound powder formula (no single species equivalent)",
+          "identification_confidence": "high",
+          "notes": "Compound formulation: vamsha rochana (Bambusa arundinacea silica/tabasheer) + Piper longum + Elettaria cardamomum + Cinnamomum zeylanicum + mishri (rock candy/crystalline sugar). Canonical formula for cough and respiratory conditions; still in active use globally in Ayurvedic practice."
+        },
+        {
+          "name": "Vamsha rochana (bamboo silica / tabasheer)",
+          "modern_identification": "Bambusa arundinacea (siliceous concretion from bamboo internodes)",
+          "identification_confidence": "medium",
+          "notes": "Component of Sitopaladi churna. Tabasheer is the white siliceous secretion found within bamboo joints; used as expectorant and cooling agent in Ayurvedic and Unani systems."
+        }
+      ],
+      "translator_notes": "This segment is a compiled editorial summary rather than a direct verse-level translation from Sanskrit source text; it synthesizes content from CS.Chik.17 with pharmacological commentary. The bromhexine-vasicine pathway noted here is well-established in the ethnopharmacological literature (see Doshi & Bhatt; Claeson et al.) and merits cross-referencing with the Kalpasthana entries on Vasa preparations. Sitopaladi churna, while canonical, is codified more formally in later texts (Sharangadhara Samhita) than in Charaka alone — archivists should note this as a possible editorial interpolation into the Charaka corpus commentary. The segment does not appear to contain direct OCR-derived errors; language is already in English editorial form.",
+      "_label": "CS.Chik.17"
+    },
+    {
+      "title_inferred": "Treatment of Haemorrhoids (Arshas Chikitsa)",
+      "original_text": "Arshas Chikitsa — Treatment of haemorrhoids. Charaka documents five types of haemorrhoids with specific plant treatments: Kshara karma (application of alkaline substances) for protruding haemorrhoids — a chemical cauterisation technique using ash preparations. Agni karma (heat cauterisation) as an alternative. Medicinal: Nagkesar (Mesua ferrea) — documented haemostatic and anti-inflammatory. Haritaki (Terminalia chebula) — regulates bowel function without straining. Danti (Baliospermum) for large haemorrhoids — purgative to reduce straining. Nagkesar + ghee for bleeding haemorrhoids. The Charaka haemorrhoid treatment demonstrates surgical-pharmacological integration: the kshara (alkaline) chemical cautery was a precursor to modern banding and cautery techniques for haemorrhoids. The alkaline preparations derived from plant ash have documented protein-denaturing (cauterising) properties.",
+      "translation": "Treatment of Haemorrhoids (Arshas Chikitsa): Charaka enumerates five varieties of haemorrhoids [arshas], each assigned specific therapeutic interventions. For protruding haemorrhoids, the procedure known as Kshara karma — the application of alkaline [caustic] preparations derived from plant ash — is prescribed as a method of chemical cauterisation. Where Kshara karma is not suitable, Agni karma, the technique of heat cauterisation, is offered as an alternative. Among medicinal treatments: Nagkesar [Mesua ferrea] is indicated for its haemostatic [blood-staunching] and anti-inflammatory properties. Haritaki [Terminalia chebula] is employed to regulate bowel movement and ensure passage without excessive straining. Danti [Baliospermum montanum] is recommended in cases of large haemorrhoids, acting as a purgative to relieve constipation and reduce the straining that aggravates the condition. For bleeding haemorrhoids specifically, a compound preparation of Nagkesar combined with ghee [clarified butter] is prescribed. The haemorrhoid treatment system recorded in Charaka reflects an integrated surgical and pharmacological approach. The Kshara [alkaline] chemical cautery technique, which achieves tissue destruction through protein denaturation, may be regarded as a classical antecedent to modern procedural interventions such as rubber-band ligation and electrocautery. The efficacy of plant-ash alkaline preparations in denaturing and cauterising tissue is consistent with their chemical properties as documented in later analyses.",
+      "entities_mentioned": [
+        {
+          "name": "Nagkesar",
+          "modern_identification": "Mesua ferrea (Ceylon ironwood / Cobra's saffron)",
+          "identification_confidence": "high",
+          "notes": "Used as haemostatic and anti-inflammatory agent; also prescribed compounded with ghee specifically for bleeding haemorrhoids. Flowers and stamens are the parts most commonly employed in classical formulations."
+        },
+        {
+          "name": "Haritaki",
+          "modern_identification": "Terminalia chebula (Chebulic myrobalan)",
+          "identification_confidence": "high",
+          "notes": "Prescribed to regulate bowel function and promote gentle defecation, thereby reducing mechanical aggravation of haemorrhoidal tissue. One of the three fruits comprising Triphala."
+        },
+        {
+          "name": "Danti",
+          "modern_identification": "Baliospermum montanum (Wild castor / Danti)",
+          "identification_confidence": "medium",
+          "notes": "Employed as a purgative in cases of large haemorrhoids to relieve straining. Some classical sources identify Danti alternatively as Croton tiglium; Baliospermum montanum is the more widely accepted identification in the Charaka context."
+        },
+        {
+          "name": "Kshara karma",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A classical procedural technique, not a plant entity. Refers to the application of alkaline preparations (typically plant-ash-derived lyes) to cauterise tissue chemically. Functionally analogous to modern chemical cautery; protein-denaturing mechanism is chemically plausible."
+        },
+        {
+          "name": "Agni karma",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Heat cauterisation technique used as an alternative to Kshara karma. Represents one of the classical para-surgical [anushastra] procedures described in Ayurvedic surgical literature."
+        },
+        {
+          "name": "Ghee",
+          "modern_identification": "Clarified butter (Bos taurus or similar bovine source)",
+          "identification_confidence": "high",
+          "notes": "Used as a pharmaceutical vehicle [anupana] in the compound preparation with Nagkesar for bleeding haemorrhoids. Ghee is a standard lipid excipient throughout Charaka Samhita formulations."
+        }
+      ],
+      "translator_notes": "This segment as supplied appears to be a scholarly paraphrase or summary annotation rather than a direct Sanskrit-to-English translation of a primary Charaka passage; no Sanskrit source text is present. The translation rendered here is therefore a formalised scholarly rendering of the paraphrased content into the register and structure appropriate for a Materia Medica archive entry. Genuine primary-text passages from CS Chikitsasthana 14 (the canonical arshas chapter) should be consulted to verify exact verse attributions. The identification of Danti as Baliospermum montanum versus Croton tiglium remains a point of botanical dispute in Ayurvedic pharmacognosy literature and should be flagged for editorial review.",
+      "_label": "CS.Chik.19"
+    },
+    {
+      "title_inferred": "Treatment of Kidney Stones and Urinary Disorders (Ashmarya-Mutrakrichra Chikitsa)",
+      "original_text": "Ashmarya Mutrakrichra Chikitsa — Treatment of kidney stones and urinary conditions. Charaka's lithiasis treatment: Gokshura (Tribulus terrestris) — primary diuretic and lithotriptic; now extensively studied for urinary conditions and testosterone enhancement. Varuna (Crataeva nurvala) — specifically for kidney stones; lupeol in bark documented as anti-urolithic in multiple studies. Punarnava (Boerhavia diffusa) — 'renewer' plant for kidney conditions; documented anti-inflammatory and diuretic. Shilajit — mineral resin for kidney toning. Pashanbheda (Bergenia ligulata, 'stone-breaker') — specific for kidney stones. These five plants represent Charaka's core lithotriptic pharmacopoeia. Modern validation: Tribulus, Varuna (Crataeva), and Bergenia have documented anti-urolithic mechanisms — reducing crystal aggregation and promoting urine flow. Varuna (lupeol) reduces the size of calcium oxalate stones in animal models. The specific documentation for each plant for renal conditions across 2,000 years of Ayurvedic practice reflects the kind of empirical clinical observation that modern pharmacology is only beginning to validate.",
+      "translation": "Chapter on the Treatment of Urinary Calculi and Dysuria [Ashmarya-Mutrakrichra Chikitsa]. The following represents Charaka's therapeutic regimen for lithiasis [stone disease]: Gokshura [Tribulus terrestris] serves as the principal diuretic and lithotriptic [stone-dissolving] agent; it has been the subject of extensive contemporary investigation for urinary disorders and androgenic effects. Varuna [Crataeva nurvala] is prescribed specifically for kidney stones; the triterpenoid lupeol present in its bark has been documented as anti-urolithic [inhibiting stone formation] in multiple pharmacological studies. Punarnava [Boerhavia diffusa], whose name signifies 'that which renews,' is employed for renal conditions and possesses documented anti-inflammatory and diuretic properties. Shilajit, a mineral-organic resin exudate, is administered for the strengthening and toning of the kidneys. Pashanbheda [Bergenia ligulata], whose name translates as 'stone-breaker,' is indicated specifically for urinary calculi. These five substances constitute Charaka's core lithotriptic pharmacopoeia [formulary for stone treatment]. With respect to modern validation: Tribulus, Varuna [Crataeva], and Bergenia have demonstrated documented anti-urolithic mechanisms, including inhibition of crystal aggregation and promotion of urinary flow. Varuna, through its constituent lupeol, has been shown to reduce the dimensions of calcium oxalate stones in animal experimental models. The consistent and detailed documentation of each of these substances for renal conditions across approximately two thousand years of Ayurvedic clinical practice represents precisely the kind of sustained empirical observation that contemporary pharmacology is only now beginning to systematically confirm.",
+      "entities_mentioned": [
+        {
+          "name": "Gokshura",
+          "modern_identification": "Tribulus terrestris (family Zygophyllaceae)",
+          "identification_confidence": "high",
+          "notes": "Primary diuretic and lithotriptic in Charaka's urinary formulary. Modern studies document anti-urolithic activity and androgenic/testosterone-modulating effects. Preparation not specified in this segment; typically decocted or administered as powder (churna)."
+        },
+        {
+          "name": "Varuna",
+          "modern_identification": "Crataeva nurvala (family Capparaceae)",
+          "identification_confidence": "high",
+          "notes": "Specifically indicated for kidney stones [ashmarya]. Bark contains lupeol, a pentacyclic triterpene with documented anti-urolithic activity in reducing calcium oxalate crystal size in animal models. Preparation not specified here; bark decoction is classical usage."
+        },
+        {
+          "name": "Punarnava",
+          "modern_identification": "Boerhavia diffusa (family Nyctaginaceae)",
+          "identification_confidence": "high",
+          "notes": "Name means 'renewer' or 'that which is renewed.' Indicated for renal conditions. Documented anti-inflammatory and diuretic properties in modern literature. Whole plant used; typically decocted."
+        },
+        {
+          "name": "Shilajit",
+          "modern_identification": "Mineral-organic resin exudate (fulvic acid-rich bituminous substance; source varies by region)",
+          "identification_confidence": "medium",
+          "notes": "Not a plant; a mineral resin of geological origin used for kidney toning and as a rasayana [rejuvenative]. Precise composition varies by geographic source. Not subject to the same botanical identification standards as plant drugs."
+        },
+        {
+          "name": "Pashanbheda",
+          "modern_identification": "Bergenia ligulata (family Saxifragaceae); also sometimes identified as Bergenia ciliata",
+          "identification_confidence": "medium",
+          "notes": "Name means 'stone-breaker' [pashan = stone, bheda = that which breaks/pierces], directly reflecting its principal indication: urinary calculi. Some taxonomic ambiguity between Bergenia ligulata and B. ciliata in classical vs. regional usage. Rhizome is the part used medicinally."
+        }
+      ],
+      "translator_notes": "This segment is a hybrid source: it combines paraphrase of classical Charaka Samhita content (Chikitsasthana 20) with modern pharmacological commentary that is clearly not part of the original Sanskrit text. The two layers have not been editorially separated in the source document, which presents a significant scholarly problem. The 'translation' here renders the combined text faithfully, but archivists should note that statements regarding lupeol, calcium oxalate models, and testosterone enhancement are modern interpolations, not Charaka's own text. For strict Materia Medica archival purposes, the original Sanskrit of CS.Chik.20 should be consulted to isolate Charaka's authentic formulations and preparation methods, which this source text does not fully provide. No preparation methods [kalpana] are specified in this segment beyond implicit decoction use, which is atypical for a Chikitsasthana passage and further suggests heavy editorial condensation of the original.",
+      "_label": "CS.Chik.20"
+    },
+    {
+      "title_inferred": "Treatment of Traumatic Wasting (Kshatakshina Chikitsa)",
+      "original_text": "Kshatakshina Chikitsa — Treatment of wasting conditions from trauma. This chapter covers traumatic injury leading to internal wasting (kshata = chest wound; kshina = wasted/consumptive). Primary rebuilding plants: Shatavari (Asparagus racemosus) — primary tonic for internal injury and tissue rebuilding. Ashwagandha (Withania) — building mass and strength. Bala (Sida cordifolia) — muscle rebuilding. Vidari (Pueraria tuberosa) — nourishing tuberous root. The treatment principle: tissue rebuilding after trauma requires nutritive, anabolic plants that increase ojas (vital essence). The specific plants for muscle and tissue rebuilding in Charaka — particularly Shatavari and Ashwagandha — are now the most commercially successful Ayurvedic supplements globally, marketed for athletic recovery and muscle building. The traditional trauma-recovery indication for these plants aligns precisely with their modern commercial use.",
+      "translation": "Chapter on the Treatment of Kshatakshina — Wasting Resulting from Traumatic Injury. This chapter addresses the condition arising when traumatic injury [kshata: wound, particularly to the chest] leads to progressive internal wasting and consumptive decline [kshina: depleted, wasted]. The principal restorative plants prescribed are as follows: Shatavari [Asparagus racemosus] — regarded as the foremost tonic for internal injury and the rebuilding of bodily tissues [dhatu]. Ashwagandha [Withania somnifera] — indicated for the restoration of bodily mass and physical strength. Bala [Sida cordifolia] — prescribed specifically for the rebuilding of muscle tissue [mamsa dhatu]. Vidari [Pueraria tuberosa] — a nourishing tuberous root preparation used to restore depleted tissues. The governing therapeutic principle holds that the rebuilding of tissues following trauma demands nutritive and anabolic [brimhana] plant medicines capable of augmenting ojas [vital essence; the refined product of all seven tissue layers]. It is notable that the plants identified by Charaka for muscular and tissue restoration — Shatavari and Ashwagandha in particular — have become the most commercially successful Ayurvedic preparations in the global market, widely promoted for athletic recovery and muscle development. The alignment between their classical trauma-recovery indication and their contemporary commercial application is precise and well-founded.",
+      "entities_mentioned": [
+        {
+          "name": "Shatavari",
+          "modern_identification": "Asparagus racemosus",
+          "identification_confidence": "high",
+          "notes": "Named as the primary tonic [rasayana] for internal injury and tissue rebuilding [dhatu-poshana]. Widely used in Ayurvedic rasayana therapy; now globally marketed as an adaptogen and anabolic supplement."
+        },
+        {
+          "name": "Ashwagandha",
+          "modern_identification": "Withania somnifera",
+          "identification_confidence": "high",
+          "notes": "Indicated for restoration of mass [brimhana] and strength [bala]; one of the most studied Ayurvedic plants in modern clinical literature, with documented effects on muscle strength and cortisol modulation."
+        },
+        {
+          "name": "Bala",
+          "modern_identification": "Sida cordifolia",
+          "identification_confidence": "high",
+          "notes": "Prescribed for rebuilding muscle tissue [mamsa dhatu]; the root is the primary part used. Contains ephedrine alkaloids, which may partly account for its traditional reputation as a strengthening agent."
+        },
+        {
+          "name": "Vidari",
+          "modern_identification": "Pueraria tuberosa",
+          "identification_confidence": "high",
+          "notes": "Tuberous root used as a nourishing [brimhana] and tissue-replenishing agent; occasionally confused in some texts with Ipomoea digitata (Vidari-kanda), but Pueraria tuberosa is the standard Charaka Samhita identification."
+        },
+        {
+          "name": "Ojas",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Classical Ayurvedic concept: the refined essence [sara] produced as the culminating product of all seven tissue transformations [sapta dhatu]; broadly equated with vitality, immunity, and anabolic reserve. No direct biomedical equivalent, though some scholars correlate it loosely with immune competence or anabolic hormonal status."
+        },
+        {
+          "name": "Kshatakshina",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Compound term: kshata (wound, especially chest wound) + kshina (wasted, depleted). The condition described overlaps clinically with post-traumatic cachexia or traumatic phthisis as understood in 19th-century Western medicine; also has parallels with pulmonary tuberculosis secondary to chest injury in classical descriptions."
+        }
+      ],
+      "translator_notes": "This segment as supplied appears to be a modern editorial summary or gloss rather than a direct translation of the Sanskrit source text of Chikitsasthana 21. It does not exhibit the verse structure (shlokas) or technical formulaic language characteristic of the Charaka Samhita original. The translation above renders the content faithfully as presented, but archival users should be aware that this segment likely represents a paraphrase or scholarly digest of the chapter rather than the primary Sanskrit source. Direct consultation of the Sanskrit edition (e.g., Yadavji Trikamji's critical edition) is recommended for citation purposes. The editorial observation regarding modern commercial use of Shatavari and Ashwagandha is a contemporary interpolation with no basis in the classical text and has been translated as such for completeness, but should not be treated as part of the Charaka Samhita proper.",
+      "_label": "CS.Chik.21"
+    },
+    {
+      "title_inferred": "Visha Chikitsa: Toxicology and Treatment of Poisoning",
+      "original_text": "Visha Chikitsa — Treatment of poisoning. Charaka's toxicology chapter documents: Classification of poisons into sthavara (plant/mineral), jangama (animal), and kritima (prepared/compound) categories. Primary antidotes: Shirisha (Albizia lebbeck) — the most powerful Ayurvedic anti-toxic plant; bark decoction for all types of poisoning. Haridra (turmeric) applied topically for snake bite. Nimba (neem) for insect bites. Gunja (Abrus precatorius) seeds as antidote — paradoxically, the seeds contain abrin (one of the most toxic plant compounds known) but processed seeds are used as antidote. This apparent paradox reflects Ayurvedic understanding of dose-dependent effects (same as Dioscorides' observation about many toxic plants). The Shirisha (Albizia lebbeck) anti-toxic documentation has been partially validated: Albizia bark contains lectins and saponins with documented anti-inflammatory and immune-modulating properties.",
+      "translation": "Treatment of Poisoning [Visha Chikitsa]: This chapter of the Charaka Samhita addresses toxicology in systematic detail. Poisons are classified into three categories: sthavara (those derived from plants and minerals), jangama (those derived from animals), and kritima (those that are artificially prepared or compounded). Among the primary antidotes enumerated, Shirisha [Albizia lebbeck] is identified as the most potent anti-toxic agent in the Ayurvedic pharmacopoeia; a decoction prepared from its bark is prescribed for all categories of poisoning. Haridra [turmeric, Curcuma longa] is directed for topical application in cases of snake bite. Nimba [neem, Azadirachta indica] is indicated for the treatment of insect bites. The seeds of Gunja [Abrus precatorius] are likewise enumerated as an antidote — a notable paradox, given that these seeds contain abrin, among the most potent toxic compounds of plant origin; however, in Ayurvedic practice, seeds subjected to processing [shodhana] are employed therapeutically. This apparent contradiction is consistent with the classical Ayurvedic principle of dose- and preparation-dependent action, analogous to observations recorded by Dioscorides regarding numerous toxic plants used medicinally in the Western tradition. The anti-toxic properties ascribed to Shirisha [Albizia lebbeck] have received partial modern validation: the bark of Albizia has been shown to contain lectins and saponins possessing documented anti-inflammatory and immunomodulatory activity.",
+      "entities_mentioned": [
+        {
+          "name": "Shirisha",
+          "modern_identification": "Albizia lebbeck (Fabaceae)",
+          "identification_confidence": "high",
+          "notes": "Described as the foremost anti-toxic [vishagna] plant in Ayurveda. Bark decoction prescribed for all three classes of poisoning. Modern phytochemical studies confirm presence of lectins and saponins with anti-inflammatory and immunomodulatory properties, lending partial pharmacological support to traditional use."
+        },
+        {
+          "name": "Haridra",
+          "modern_identification": "Curcuma longa (Zingiberaceae) — turmeric",
+          "identification_confidence": "high",
+          "notes": "Directed for topical application at the site of snake bite. Active constituent curcumin has well-documented anti-inflammatory properties; efficacy specifically for envenomation remains an area of ongoing research."
+        },
+        {
+          "name": "Nimba",
+          "modern_identification": "Azadirachta indica (Meliaceae) — neem",
+          "identification_confidence": "high",
+          "notes": "Indicated for insect bites. Neem is widely used in Ayurvedic practice for its anti-inflammatory, antimicrobial, and antihistaminic properties."
+        },
+        {
+          "name": "Gunja",
+          "modern_identification": "Abrus precatorius (Fabaceae) — rosary pea / jequirity bean",
+          "identification_confidence": "high",
+          "notes": "Seeds contain abrin, a ribosome-inactivating protein of extreme toxicity. Classical use as an antidote depends on careful processing [shodhana] to detoxify. This reflects the Ayurvedic pharmacological principle that toxicity is dose- and preparation-dependent (visha eva vishaghnam — poison itself counters poison). Modern use is strongly contraindicated without validated processing protocols."
+        }
+      ],
+      "translator_notes": "This segment is not a raw Sanskrit passage but rather a scholarly editorial summary of CS.Chik.28 content, already partially translated and annotated, likely compiled from secondary Ayurvedic sources or a modern critical edition. Accordingly, the 'translation' rendered here represents a formal scholarly rendering of the summary into precise archival English rather than a fresh translation from Devanagari. The poison classification schema (sthavara / jangama / kritima) is well-attested in multiple Charaka and Sushruta passages and is reproduced accurately. The editorial comparison to Dioscorides, while intellectually apt, is an interpolation by a modern commentator and should not be attributed to the original Charaka text. The Gunja paradox (toxic seed used as antidote) is a genuine feature of classical Ayurvedic toxicology and warrants flagging for researchers: raw Abrus precatorius seeds are acutely lethal and no modern clinical use is recommended without rigorous processing validation.",
+      "_label": "CS.Chik.28"
+    },
+    {
+      "title_inferred": "Vamana Kalpa: Catalogue of 25 Primary Emetic Plants with Preparations and Contraindications",
+      "original_text": "Vamana Kalpa — Extended emetic plant catalogue (Panchakarma). Building on the initial emetic plant documentation, this section covers the 25 primary vamana (emetic) plants with preparation methods: Madana (Randia dumetorum) — primary emetic; the fruit's saponin content causes reliable gastric purging. Ikshvaku (Lagenaria siceraria, bottle gourd) — secondary emetic for less severe cases. Dhamargava (Luffa operculata) — the vomiting cucumber; saponins cause strong emesis. Yashtimadhu (licorice) — used as an adjuvant to reduce the irritation of more powerful emetics. Nimba (neem) — moderate emetic. The preparation principle: emetics are given in the morning, after the patient has fasted, in specific graded doses. The contraindications section documents who should NOT receive vamana: the very old, the very young, pregnant women, and those with specific heart conditions — showing empirical clinical safety awareness.",
+      "translation": "This section of the Vamana Kalpa [chapter on emetic formulations, within the Panchakarma therapeutic system] presents an extended catalogue of the twenty-five principal plants used for vamana [therapeutic emesis], together with their methods of preparation.\n\nMadana [Randia dumetorum] is designated the foremost emetic drug; the fruit contains saponins that produce reliable and thorough gastric purging [shodhana of the upper channels].\n\nIkshvaku [Lagenaria siceraria, the bottle gourd] is employed as a secondary emetic, suited to cases of lesser severity or to patients of more delicate constitution.\n\nDhamargava [Luffa operculata], known as the 'vomiting cucumber,' contains potent saponins and induces vigorous emesis; it is accordingly reserved for cases requiring stronger action.\n\nYashtimadhu [licorice, Glycyrrhiza glabra] is prescribed not as a primary emetic but as an adjuvant [anupana], its demulcent and soothing properties serving to mitigate the harshness and irritation produced by more powerful emetic agents.\n\nNimba [neem, Azadirachta indica] functions as a moderate emetic and is used where a middle degree of evacuative force is appropriate.\n\nGeneral principle of preparation and administration: all emetic agents are to be administered in the morning hours, following a period of fasting by the patient, and are given in carefully graded and graduated doses calibrated to the patient's strength, constitution [prakriti], and the nature of the disease.\n\nThe contraindications section specifies those persons who must not receive vamana therapy under any circumstances: the very aged, infants and young children, pregnant women, and individuals suffering from specific disorders of the heart [hridaya]. The careful enumeration of these contraindications reflects a mature and empirically grounded awareness of clinical safety.",
+      "entities_mentioned": [
+        {
+          "name": "Madana",
+          "modern_identification": "Randia dumetorum (Rubiaceae)",
+          "identification_confidence": "high",
+          "notes": "Primary emetic in Ayurvedic Panchakarma; fruit contains triterpenoid saponins responsible for emetic action. Well-attested in classical literature and pharmacognostic studies."
+        },
+        {
+          "name": "Ikshvaku",
+          "modern_identification": "Lagenaria siceraria (bottle gourd; Cucurbitaceae)",
+          "identification_confidence": "high",
+          "notes": "The bitter variety of bottle gourd is the medicinal emetic form; the edible variety is non-toxic. Used as a milder secondary emetic."
+        },
+        {
+          "name": "Dhamargava",
+          "modern_identification": "Luffa operculata (wild luffa / vomiting cucumber; Cucurbitaceae)",
+          "identification_confidence": "medium",
+          "notes": "Some classical sources associate Dhamargava with Luffa echinata or related cucurbit species; identification as Luffa operculata is plausible but debated. Strong saponin content confirmed."
+        },
+        {
+          "name": "Yashtimadhu",
+          "modern_identification": "Glycyrrhiza glabra (licorice; Fabaceae)",
+          "identification_confidence": "high",
+          "notes": "Used here as adjuvant/anupana rather than primary emetic; its glycyrrhizin content accounts for demulcent and anti-inflammatory properties that moderate irritation from stronger emetics."
+        },
+        {
+          "name": "Nimba",
+          "modern_identification": "Azadirachta indica (neem; Meliaceae)",
+          "identification_confidence": "high",
+          "notes": "Classified as a moderate emetic in this context; more commonly noted in classical sources for its bitter, antipyretic, and antiparasitic properties. Emetic use is secondary."
+        },
+        {
+          "name": "Vamana",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Therapeutic procedure rather than a plant: one of the five principal Panchakarma treatments, consisting of controlled medically induced emesis for the evacuation of excess kapha dosha from the upper body."
+        },
+        {
+          "name": "Panchakarma",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The five-fold Ayurvedic purificatory treatment system; vamana (emesis) is the first of the five procedures."
+        }
+      ],
+      "translator_notes": "1. The source text as supplied appears to be a modern scholarly summary or paraphrase of the Kalpasthana chapter rather than a direct Sanskrit passage; it does not present raw Sanskrit verses. The translation has accordingly rendered its content into formal scholarly English consistent with period Materia Medica style, while preserving all technical terms in brackets. If the original Sanskrit verses become available, a verse-by-verse translation should be substituted.\n\n2. The identification of Dhamargava as Luffa operculata should be treated with caution; classical commentators (Chakrapanidatta, Dalhana) offer variant identifications, and Luffa echinata is also a strong candidate.\n\n3. The contraindications enumerated (elderly, infants, pregnant women, cardiac patients) closely parallel those found in Charaka Samhita Kalpasthana and in the Ashtanga Hridayam, lending the segment credibility as reflecting authentic classical doctrine.\n\n4. The segment label CS.Kalpa.3 is consistent with Kalpasthana Chapter 3 of the Charaka Samhita, which is indeed devoted to vamana dravyas (emetic substances).",
+      "_label": "CS.Kalpa.3"
+    },
+    {
+      "title_inferred": "The Seven Prakriti (Constitutional Types) and Differential Drug Response",
+      "original_text": "Sharir Sthana — Human constitution and pharmacogenomics precursor. This chapter in the body science section documents the seven Prakriti (constitutions) based on the three doshas and their combinations. Most significant for modern medicine: documentation that different constitution types respond differently to the same medicines. Vata-dominant individuals: respond well to warm, oily, sweet medicines; respond badly to dry, cold, bitter ones. Pitta-dominant: respond well to cool, sweet, bitter; poorly to hot, pungent. Kapha-dominant: respond well to pungent, bitter, astringent; poorly to sweet, cold, heavy. This Charaka pharmacogenomic principle — that the same medicine has different effects on different individuals based on constitutional type — is now being re-examined through the lens of pharmacogenomics and metabolomics. The dosha constitutions may correspond to metabolic phenotypes with documented differential responses to specific drugs and foods.",
+      "translation": "Sharirasthana [Body Science Section] — On Human Constitution as a Precursor to Pharmacogenomics. This chapter of the section treating the sciences of the body sets forth the seven Prakriti [constitutional types], derived from the three doshas [fundamental bio-humors] and their various combinations. Of greatest significance for contemporary medicine is the systematic documentation that different constitutional types respond differently to the same medicinal substances. Individuals of Vata-dominant constitution respond favorably to medicines that are warm [ushna], unctuous [snigdha], and sweet [madhura] in quality, and respond adversely to those that are dry [ruksha], cold [shita], and bitter [tikta]. Those of Pitta-dominant constitution respond favorably to medicines that are cool [shita], sweet [madhura], and bitter [tikta], and respond adversely to those that are hot [ushna] and pungent [katu]. Those of Kapha-dominant constitution respond favorably to medicines that are pungent [katu], bitter [tikta], and astringent [kashaya] in quality, and respond adversely to those that are sweet [madhura], cold [shita], and heavy [guru]. This foundational Charaka principle — that one and the same medicine produces differing effects upon different individuals according to their constitutional type — is now being revisited through the investigative frameworks of pharmacogenomics and metabolomics. It is proposed that the dosha-based constitutions may correspond to distinct metabolic phenotypes exhibiting documented differential responses to specific drugs and foodstuffs.",
+      "entities_mentioned": [
+        {
+          "name": "Prakriti",
+          "modern_identification": "Constitutional phenotype / metabolic phenotype",
+          "identification_confidence": "medium",
+          "notes": "The seven Prakriti types are derived from the three doshas singly and in combination (Vata, Pitta, Kapha, Vata-Pitta, Vata-Kapha, Pitta-Kapha, and Sama/balanced). Contemporary research explores correlations with genetic, metabolomic, and microbiome profiles."
+        },
+        {
+          "name": "Vata",
+          "modern_identification": "Proposed catabolic / neurogenic metabolic phenotype",
+          "identification_confidence": "low",
+          "notes": "One of the three fundamental doshas; governs movement, dryness, and nervous system functions. Favorable medicines are warm, oily, and sweet; unfavorable are dry, cold, and bitter."
+        },
+        {
+          "name": "Pitta",
+          "modern_identification": "Proposed thermogenic / inflammatory metabolic phenotype",
+          "identification_confidence": "low",
+          "notes": "One of the three fundamental doshas; governs transformation, heat, and digestion. Favorable medicines are cool, sweet, and bitter; unfavorable are hot and pungent."
+        },
+        {
+          "name": "Kapha",
+          "modern_identification": "Proposed anabolic / phlegmatic metabolic phenotype",
+          "identification_confidence": "low",
+          "notes": "One of the three fundamental doshas; governs structure, cohesion, and lubrication. Favorable medicines are pungent, bitter, and astringent; unfavorable are sweet, cold, and heavy."
+        },
+        {
+          "name": "Ushna (warm/hot quality)",
+          "modern_identification": "Thermogenic / vasodilatory pharmacological property",
+          "identification_confidence": "low",
+          "notes": "One of the twenty gunas [qualities] used in Ayurvedic pharmacology to classify drug action."
+        },
+        {
+          "name": "Snigdha (unctuous/oily quality)",
+          "modern_identification": "Lipophilic pharmacological property",
+          "identification_confidence": "low",
+          "notes": "Refers to the oily, smooth quality of a substance; promotes lubrication and nourishment in Ayurvedic pharmacology."
+        },
+        {
+          "name": "Rasas (tastes: madhura, tikta, katu, kashaya, etc.)",
+          "modern_identification": "Phytochemical class proxies (e.g., bitter alkaloids, pungent terpenoids, astringent tannins)",
+          "identification_confidence": "medium",
+          "notes": "The six tastes [shadrasa] in Ayurveda — sweet (madhura), sour (amla), salty (lavana), pungent (katu), bitter (tikta), astringent (kashaya) — are used to predict pharmacological action and constitutional compatibility."
+        }
+      ],
+      "translator_notes": "The source text as provided appears to be a modern editorial summary or gloss of Sharirasthana Chapter 6 rather than a direct Sanskrit passage or close literal translation thereof. It does not reproduce primary Sanskrit verses (shlokas). Accordingly, the 'translation' rendered here is a faithful, formalized English rendering of the editorial content, with Ayurvedic technical terms restored in brackets and normalized to standard transliteration conventions. Scholars requiring translation from primary Sanskrit should consult the original Sharirasthana 6 shlokas directly. The framing of Prakriti theory as a 'pharmacogenomics precursor' is a modern interpretive gloss, not a claim found in the original Charaka text; this characterization has been preserved in translation but flagged here for scholarly caution. No OCR errors requiring correction were detected in this segment.",
+      "_label": "CS.Sharir.6"
+    }
+  ]
+}
