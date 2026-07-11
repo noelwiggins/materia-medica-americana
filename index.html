@@ -1579,16 +1579,13 @@ let activeStatusFilter = null, activeTraditions = new Set();
     // Original text
     const origEl = document.getElementById('book-original');
     origEl.innerHTML = seg.original_text
-      ? `<p>${seg.original_text.replace(/
-/g,'</p><p>')}</p>`
+      ? `<p>${seg.original_text.replace(/\n/g,'</p><p>')}</p>`
       : '<p style="color:var(--muted);font-style:normal;font-size:0.8rem">[Original language text not yet digitized for this passage]</p>';
 
     // Translation + preparation/condition
     const transEl = document.getElementById('book-translation');
-    let transHTML = `<p>${(seg.translation||'').replace(/
-
-/g,'</p><p>').replace(/
-/g,' ')}</p>`;
+    let transHTML = `<p>${(seg.translation||'').replace(/\n
+/g,'</p><p>').replace(/\n/g,' ')}</p>`;
     if (seg.preparation || seg.condition) {
       transHTML += '<div class="book-prep">';
       if (seg.preparation) transHTML += `<strong>Preparation</strong>${seg.preparation}`;
