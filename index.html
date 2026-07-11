@@ -554,9 +554,10 @@
   }
 
   /* Tab nav */
-  .tab-nav { background: #141410; border-bottom: 2px solid #2A2A20; }
-  .tab-btn { color: #6A5E48; }
-  .tab-btn:hover, .tab-btn.active { color: #E8DFC8; background: #1A1810; }
+  .tab-nav { background:#141410; border-bottom:2px solid #2A2A20; display:flex; flex-direction:row; overflow-x:auto; overflow-y:hidden; white-space:nowrap; scrollbar-width:none; -ms-overflow-style:none; }
+  .tab-nav::-webkit-scrollbar { display:none; }
+  .tab-btn { color:#6A5E48; flex-shrink:0; white-space:nowrap; }
+  .tab-btn:hover, .tab-btn.active { color:#E8DFC8; background:#1A1810; }
 
   /* Mobile */
   @media (max-width: 660px) {
@@ -640,29 +641,29 @@
 
 <!-- ── NAVIGATION ──────────────────────────────────────── -->
 <nav class="tab-nav" role="tablist">
-  <button class="tab-btn active" onclick="showTab('home')" role="tab">
+  <button class="tab-btn active" onclick=\"showTab('home', this)\" role="tab">
     <span class="tab-indicator" style="background:#C4A882"></span>Overview
   </button>
 
-  <button class="tab-btn" onclick="showTab('database')" role="tab">
+  <button class="tab-btn" onclick=\"showTab('database', this)\" role="tab">
     <span class="tab-indicator" style="background:#4A3728"></span>Plant Database
   </button>
-  <button class="tab-btn" onclick="showTab('traditions')" role="tab">
+  <button class="tab-btn" onclick=\"showTab('traditions', this)\" role="tab">
     <span class="tab-indicator" style="background:#C4A882"></span>Traditions
   </button>
-  <button class="tab-btn" onclick="showTab('convergence')" role="tab">
+  <button class="tab-btn" onclick=\"showTab('convergence', this)\" role="tab">
     <span class="tab-indicator" style="background:#C4A882"></span>Convergence
   </button>
-  <button class="tab-btn" onclick="showTab('longevity')" role="tab">
+  <button class="tab-btn" onclick=\"showTab('longevity', this)\" role="tab">
     <span class="tab-indicator" style="background:#6B4C9A"></span>Longevity
   </button>
-  <button class="tab-btn" onclick="showTab('corpus')" role="tab">
+  <button class="tab-btn" onclick=\"showTab('corpus', this)\" role="tab">
     <span class="tab-indicator" style="background:#2D5016"></span>Corpus
   </button>
-  <button class="tab-btn" onclick="showTab('research')" role="tab">
+  <button class="tab-btn" onclick=\"showTab('research', this)\" role="tab">
     <span class="tab-indicator" style="background:#1565C0"></span>Modern Research
   </button>
-  <button class="tab-btn" onclick="showTab('methodology')" role="tab">
+  <button class="tab-btn" onclick=\"showTab('methodology', this)\" role="tab">
     <span class="tab-indicator" style="background:#6B6050"></span>Methodology
   </button>
 </nav>
@@ -1682,17 +1683,16 @@ let activeStatusFilter = null, activeTraditions = new Set();
       img.style.objectPosition = item.pos || 'center 20%';
       if (lbl) lbl.textContent = item.label;
       img.onload = () => img.classList.remove('fading');
-      setTimeout(() => img.classList.remove('fading'), 600);
-    }, 400);
+      setTimeout(() => img.classList.remove('fading'), 700);
+    }, 5000);
   }
-  // Auto-cycle every 8 seconds
-  setInterval(() => cycleCodex(1), 8000);
+  document.addEventListener('DOMContentLoaded', () => { setInterval(() => cycleCodex(1), 8000); });
 
-function showTab(id) {
+function showTab(id, btn) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
-  event.currentTarget.classList.add('active');
+  if (btn) btn.classList.add('active'); else if (typeof event !== 'undefined' && event.currentTarget) event.currentTarget.classList.add('active');
   if (id === 'database') { renderTraditionChips(); renderPlants(); }
   if (id === 'home') renderTraditionCards();
   if (id === 'convergence') { renderConvergenceEngine(); renderPriority(); }
