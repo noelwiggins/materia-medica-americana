@@ -1549,11 +1549,9 @@ let activeStatusFilter = null, activeTraditions = new Set();
     const seg = bookSegments[bookIdx];
     if (!seg) return;
 
-    // Page label
     document.getElementById('book-page-label').textContent =
-      `${bookIdx + 1} / ${bookSegments.length}`;
+      (bookIdx + 1) + ' / ' + bookSegments.length;
 
-    // Language label
     const langMap = {
       cobo: 'Spanish (17th c.)', maya: 'Nahuatl / Latin',
       tibetan: 'Classical Tibetan', kampo: 'Classical Japanese',
@@ -1569,106 +1567,36 @@ let activeStatusFilter = null, activeTraditions = new Set();
       philippine: 'Spanish (colonial)',
     };
     document.getElementById('book-lang-label').textContent =
-      langMap[bookTradition?.id] || 'Original Language';
+      langMap[bookTradition && bookTradition.id] || 'Original Language';
 
-    // Section ref
     const ref = seg.source_section || seg._label || '';
     document.getElementById('book-section-label').textContent = ref;
     document.getElementById('book-title-label').textContent = seg.title_inferred || '';
 
-    // Original text
     const origEl = document.getElementById('book-original');
-    origEl.innerHTML = seg.original_text
-      ? `<p>${seg.original_text.replace(/\n/g,'</p><p>')}</p>`
-      : '<p style="color:var(--muted);font-style:normal;font-size:0.8rem">[Original language text not yet digitized for this passage]</p>';
+    if (seg.original_text) {
+      origEl.innerHTML = '<p>' + seg.original_text.replace(/\n/g, '</p><p>') + '</p>';
+    } else {
+      origEl.innerHTML = '<p style="color:var(--muted);font-style:normal;font-size:0.8rem">[Original language text not yet digitized for this passage]</p>';
+    }
 
-    // Translation + preparation/condition
     const transEl = document.getElementById('book-translation');
-    let transHTML = `<p>${(seg.translation||'').replace(/
-
-/g,'</p><p>').replace(/\n/g,' ')}</p>`;
+    var transHTML = '<p>' + (seg.translation || '').replace(/\n\n/g, '</p><p>').replace(/\n/g, ' ') + '</p>';
     if (seg.preparation || seg.condition) {
       transHTML += '<div class="book-prep">';
-      if (seg.preparation) transHTML += `<strong>Preparation</strong>${seg.preparation}`;
-      if (seg.condition)   transHTML += `<strong style="margin-top:0.5rem">Condition</strong>${seg.condition}`;
+      if (seg.preparation) transHTML += '<strong>Preparation</strong>' + seg.preparation;
+      if (seg.condition)   transHTML += '<strong style="margin-top:0.5rem">Condition</strong>' + seg.condition;
       transHTML += '</div>';
     }
     transEl.innerHTML = transHTML;
 
-    // Footer
     document.getElementById('book-footer').textContent =
-      bookTradition?.primary_document || bookTradition?.primary_source || '';
+      (bookTradition && (bookTradition.primary_document || bookTradition.primary_source)) || '';
 
-    // Nav buttons
-    document.getElementById('book-prev').disabled = bookIdx === 0;
-    document.getElementById('book-next').disabled = bookIdx === bookSegments.length - 1;
+    document.getElementById('book-prev').disabled = (bookIdx === 0);
+    document.getElementById('book-next').disabled = (bookIdx === bookSegments.length - 1);
   }
 
-  // Keyboard navigation
-  document.addEventListener('keydown', e => {
-    if (document.getElementById('book-modal')?.style.display !== 'none') {
-      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') bookPage(1);
-      if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   bookPage(-1);
-      if (e.key === 'Escape') { document.getElementById('book-modal').style.display='none'; document.body.style.overflow=''; }
-    }
-  });
-
-  // ══ END TRADITION CARDS & BOOK READER ══════════════════════
-
-  // ── Codex illustration cycler ─────────────────────────────
-  const CODEX_IMAGES = [
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Ming_herbal_%28painting%29%3B_Chinese_herbaceous_peony_Wellcome_L0039426.jpg',
-      label: 'Ming Herbal — Chinese Peony, c.1640 CE',
-      pos: 'center 30%'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Ming_herbal_%28painting%29%3B_%28Black%29_pepper_Wellcome_L0039436.jpg',
-      label: 'Ming Herbal — Black Pepper, c.1640 CE',
-      pos: 'center 20%'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Badianus_Codex%2C_%28facsimile%29%2C_16th_century%3B_species_of_Datura_Wellcome_L0021252.jpg',
-      label: 'Badianus Manuscript — Datura, 1552 CE',
-      pos: 'center 15%'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Tacuinum_Sanitatis_%28Ibn_Butl%C4%81n%29.jpg',
-      label: 'Tacuinum Sanitatis — Ibn Butlan, c.1390 CE',
-      pos: 'center center'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Fruto_de_la_mandr%C3%A1gora_%28Tacuinum_Sanitatis%29.jpg',
-      label: 'Tacuinum Sanitatis — Mandrake, c.1390 CE',
-      pos: 'center center'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Plants_and_herbs_from_Culpeper%27s_%27The_Complete_Herbal...%27_Wellcome_L0034813.jpg',
-      label: "Culpeper's Complete Herbal, 1653 CE",
-      pos: 'center 25%'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Ming_herbal_%28painting%29%3B_Paulownia_Wellcome_L0039435.jpg',
-      label: 'Ming Herbal — Paulownia, c.1640 CE',
-      pos: 'center 20%'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/8/88/Famine_Relief_Herbal_%281593%29%3B_Lotus_root_Wellcome_L0039408.jpg',
-      label: 'Famine Relief Herbal — Lotus, 1593 CE',
-      pos: 'center 25%'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dioscorides_Vienna_%28detail%29.jpg',
-      label: 'Vienna Dioscorides, c.512 CE',
-      pos: 'center 20%'
-    },
-    {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg',
-      label: 'Ming Herbal — Lindera, c.1640 CE',
-      pos: 'center 25%'
-    },
-  ];
-  let codexIdx = 0;
   function cycleCodex(dir) {
     codexIdx = (codexIdx + dir + CODEX_IMAGES.length) % CODEX_IMAGES.length;
     const img = document.getElementById('wec-codex-img');
