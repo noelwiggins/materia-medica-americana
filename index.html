@@ -97,13 +97,59 @@
     gap: 0.6rem;
   }
 
-  .wec-globe {
-    width: clamp(160px, 25vw, 240px);
-    height: clamp(160px, 25vw, 240px);
-    filter: drop-shadow(0 0 40px rgba(100,160,210,0.15));
+  .wec-codex-frame {
+    width: clamp(180px, 22vw, 260px);
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    border: 2px solid #3A3020;
+    box-shadow:
+      0 0 0 1px #1A1610,
+      4px 4px 20px rgba(0,0,0,0.6),
+      inset 0 0 30px rgba(0,0,0,0.15);
+    position: relative;
+    background: #1A1610;
   }
 
-  .wec-globe svg { width: 100%; height: 100%; }
+  .wec-codex-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    transition: opacity 0.4s ease;
+    filter: sepia(8%) contrast(1.05) brightness(0.95);
+  }
+
+  .wec-codex-img.fading { opacity: 0; }
+
+  .wec-codex-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+  }
+
+  .wec-codex-nav button {
+    background: none;
+    border: 1px solid #3A3020;
+    color: #6A5E48;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.1rem 0.4rem;
+    cursor: pointer;
+    font-family: Georgia, serif;
+  }
+
+  .wec-codex-nav button:hover { color: #C4A882; border-color: #C4A882; }
+
+  #wec-codex-label {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5A5040;
+    white-space: nowrap;
+  }
 
   .wec-caption {
     font-family: 'Source Code Pro', monospace;
@@ -1860,46 +1906,21 @@
       <p class="wec-access">access to plant knowledge</p>
     </div>
     <div class="wec-globe-wrap">
-      <div class="wec-globe">
-        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="globeGrad" cx="38%" cy="35%" r="60%">
-              <stop offset="0%"   stop-color="#D8E8F0"/>
-              <stop offset="30%"  stop-color="#A8C4D8"/>
-              <stop offset="60%"  stop-color="#7090A8"/>
-              <stop offset="100%" stop-color="#1C2830"/>
-            </radialGradient>
-            <radialGradient id="globeShine" cx="35%" cy="30%" r="50%">
-              <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.18"/>
-              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-            </radialGradient>
-            <clipPath id="circClip">
-              <circle cx="160" cy="160" r="148"/>
-            </clipPath>
-          </defs>
-          <!-- base sphere -->
-          <circle cx="160" cy="160" r="148" fill="url(#globeGrad)"/>
-          <!-- land masses — stylised like the NASA photo -->
-          <g clip-path="url(#circClip)" opacity="0.55">
-            <!-- North America -->
-            <path d="M60,80 Q90,60 130,75 Q150,90 140,120 Q120,145 90,140 Q65,130 55,110 Z" fill="#E8DCC8" opacity="0.7"/>
-            <!-- South America -->
-            <path d="M100,155 Q125,148 140,170 Q148,200 135,235 Q118,255 100,245 Q82,230 80,205 Q78,178 100,155 Z" fill="#D4C8A0" opacity="0.65"/>
-            <!-- Europe/Africa -->
-            <path d="M175,65 Q200,58 215,75 Q222,95 210,110 Q195,120 178,112 Q165,98 168,80 Z" fill="#DDD0B0" opacity="0.6"/>
-            <path d="M180,118 Q205,112 218,135 Q228,165 220,200 Q208,225 190,230 Q170,228 162,205 Q155,178 162,150 Q168,128 180,118 Z" fill="#C8BC94" opacity="0.55"/>
-            <!-- cloud wisps -->
-            <path d="M50,120 Q90,108 130,118 Q160,125 180,115 Q210,105 240,115 Q260,122 270,135" stroke="white" stroke-width="18" fill="none" opacity="0.35" stroke-linecap="round"/>
-            <path d="M80,165 Q120,155 155,162 Q180,168 200,160" stroke="white" stroke-width="12" fill="none" opacity="0.25" stroke-linecap="round"/>
-            <path d="M140,200 Q170,192 200,198 Q225,204 245,195" stroke="white" stroke-width="8" fill="none" opacity="0.2" stroke-linecap="round"/>
-          </g>
-          <!-- atmospheric glow rim -->
-          <circle cx="160" cy="160" r="148" fill="none" stroke="#7AB0CC" stroke-width="3" opacity="0.4"/>
-          <!-- specular highlight -->
-          <circle cx="160" cy="160" r="148" fill="url(#globeShine)"/>
-        </svg>
+      <div class="wec-codex-frame">
+        <img
+          id="wec-codex-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg"
+          alt="Badianus Manuscript — Libellus de Medicinalibus Indorum Herbis, f.56v (1552)"
+          class="wec-codex-img"
+          loading="eager"
+        >
       </div>
       <p class="wec-caption">MEDICINAL PLANTS<br>from the earliest records<br>to the present day</p>
+      <div class="wec-codex-nav">
+        <button onclick="cycleCodex(-1)" aria-label="Previous illustration">‹</button>
+        <span id="wec-codex-label">Badianus Manuscript, 1552</span>
+        <button onclick="cycleCodex(1)" aria-label="Next illustration">›</button>
+      </div>
     </div>
     <div class="wec-edition-block">
       <p class="wec-edition">Est. 2025</p>
@@ -2722,6 +2743,52 @@ let plantData = [], traditionData = [], conditionData = [], longevityData = [], 
 let activeStatusFilter = null, activeTraditions = new Set();
 
 // ── Tab navigation ──────────────────────────────────────
+
+  // ── Codex illustration cycler ─────────────────────────────
+  const CODEX_IMAGES = [
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg',
+      label: 'Badianus Manuscript, 1552'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg',
+      label: 'Badianus Manuscript, f.13v'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg',
+      label: 'Badianus Manuscript, f.49v'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/ViennaDioscoridesPlant.jpg',
+      label: 'Vienna Dioscorides, c.512 CE'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg',
+      label: 'Dioscorides & the Mandrake, c.512 CE'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg',
+      label: 'Wellcome Medicinal Plants, c.17th C'
+    },
+  ];
+  let codexIdx = 0;
+  function cycleCodex(dir) {
+    codexIdx = (codexIdx + dir + CODEX_IMAGES.length) % CODEX_IMAGES.length;
+    const img = document.getElementById('wec-codex-img');
+    const lbl = document.getElementById('wec-codex-label');
+    if (!img) return;
+    img.classList.add('fading');
+    setTimeout(() => {
+      img.src = CODEX_IMAGES[codexIdx].src;
+      if (lbl) lbl.textContent = CODEX_IMAGES[codexIdx].label;
+      img.onload = () => img.classList.remove('fading');
+      // fallback in case image already cached
+      setTimeout(() => img.classList.remove('fading'), 600);
+    }, 400);
+  }
+  // Auto-cycle every 8 seconds
+  setInterval(() => cycleCodex(1), 8000);
+
 function showTab(id) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
