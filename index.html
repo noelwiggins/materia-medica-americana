@@ -556,10 +556,66 @@
   }
 
   /* Tab nav */
-  .tab-nav { background:#141410; border-bottom:2px solid #2A2A20; display:flex; flex-direction:row; overflow-x:auto; overflow-y:hidden; white-space:nowrap; scrollbar-width:none; -ms-overflow-style:none; }
-  .tab-nav::-webkit-scrollbar { display:none; }
-  .tab-btn { color:#6A5E48; flex-shrink:0; white-space:nowrap; }
-  .tab-btn:hover, .tab-btn.active { color:#E8DFC8; background:#1A1810; }
+  .tab-nav {
+    background: #111009;
+    border-bottom: 3px solid #2A2A1A;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 0.55rem 1rem;
+    gap: 0.35rem;
+  }
+  .tab-nav::-webkit-scrollbar { display: none; }
+
+  .tab-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+    color: #8A7A58;
+    background: #1C1A12;
+    border: 1px solid #3A3420;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.38rem 0.85rem;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.12s, color 0.12s, border-color 0.12s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    line-height: 1;
+  }
+
+  .tab-btn:hover {
+    color: #E0D4B0;
+    background: #2A2618;
+    border-color: #6A5E38;
+  }
+
+  .tab-btn.active {
+    color: #0D0D0B;
+    background: #C4A860;
+    border-color: #C4A860;
+    font-weight: 600;
+  }
+
+  .tab-btn .tab-indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0.8;
+  }
+
+  .tab-btn.active .tab-indicator {
+    background: #0D0D0B !important;
+  }
 
   /* Mobile */
   @media (max-width: 660px) {
