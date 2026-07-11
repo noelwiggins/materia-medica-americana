@@ -1584,7 +1584,8 @@ let activeStatusFilter = null, activeTraditions = new Set();
 
     // Translation + preparation/condition
     const transEl = document.getElementById('book-translation');
-    let transHTML = `<p>${(seg.translation||'').replace(/\n
+    let transHTML = `<p>${(seg.translation||'').replace(/
+
 /g,'</p><p>').replace(/\n/g,' ')}</p>`;
     if (seg.preparation || seg.condition) {
       transHTML += '<div class="book-prep">';
