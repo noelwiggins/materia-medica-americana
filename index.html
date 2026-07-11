@@ -1450,6 +1450,20 @@
 </footer>
 
 <script>
+// ── DEBUG CATCHER ──────────────────────────────────────────
+window.__errors = [];
+window.onerror = function(msg, src, line, col, err) {
+  window.__errors.push({msg, line, col});
+  var bar = document.getElementById('__debug_bar');
+  if (bar) bar.innerHTML += '<div style="color:red;font-size:12px;padding:2px 8px">JS ERROR line '+line+': '+msg+'</div>';
+  return false;
+};
+window.addEventListener('unhandledrejection', function(e) {
+  var bar = document.getElementById('__debug_bar');
+  if (bar) bar.innerHTML += '<div style="color:orange;font-size:12px;padding:2px 8px">PROMISE REJECT: '+e.reason+'</div>';
+});
+</script>
+<script>
 // ── State ────────────────────────────────────────────────
 let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [];
 let activeStatusFilter = null, activeTraditions = new Set();
@@ -3038,5 +3052,8 @@ window.addEventListener('load', async () => {
 </script>
 
 <footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #E2DED6;margin-top:2rem;background:var(--vellum,#F7F5F0)">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
+<div id="__debug_bar" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#0f0;font-family:monospace;z-index:9999;max-height:120px;overflow-y:auto;border-top:2px solid red">
+<div style="padding:2px 8px;color:#888;font-size:11px">DEBUG BAR — errors will appear here. No errors = JS loaded OK.</div>
+</div>
 </body>
 </html>
