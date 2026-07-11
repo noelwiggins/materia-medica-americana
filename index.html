@@ -35,6 +35,270 @@
   }
 
   
+  /* ══ TRADITION CARDS & BOOK READER ═════════════════════════ */
+
+  .tradition-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .tradition-card {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 1.1rem 1rem 1rem;
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s, transform 0.1s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tradition-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
+  }
+
+  .tradition-card-accent {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+
+  .tradition-card-icon {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .tradition-card-name {
+    font-family: var(--font-display);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+    line-height: 1.3;
+  }
+
+  .tradition-card-date {
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .tradition-card-source {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .tradition-card-count {
+    margin-top: 0.6rem;
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* ── Book Modal ── */
+  .book-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,8,5,0.85);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    backdrop-filter: blur(3px);
+  }
+
+  .book-modal {
+    background: var(--vellum);
+    width: min(98vw, 1100px);
+    max-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 80px rgba(0,0,0,0.6);
+    border: 1px solid var(--border);
+  }
+
+  .book-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 1.4rem 0.9rem;
+    border-bottom: 2px solid var(--ink);
+    background: var(--ink);
+    color: var(--vellum);
+    flex-shrink: 0;
+  }
+
+  .book-modal-eyebrow {
+    font-family: var(--font-code);
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.2rem;
+  }
+
+  .book-modal-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--vellum);
+    margin: 0;
+  }
+
+  .book-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .book-nav button {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(196,168,130,0.3);
+    color: var(--gold);
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .book-nav button:hover { background: rgba(196,168,130,0.15); }
+  .book-nav button:disabled { opacity: 0.3; cursor: default; }
+
+  .book-close-btn {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--vellum);
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .book-close-btn:hover { background: rgba(255,255,255,0.08); }
+
+  /* ── Two-column spread ── */
+  .book-spread {
+    display: grid;
+    grid-template-columns: 1fr 6px 1fr;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .book-page {
+    overflow-y: auto;
+    padding: 1.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .book-page-left  { background: #FDFAF3; }
+  .book-page-right { background: #FFFFFF; }
+
+  .book-spine {
+    background: linear-gradient(to right, #C8B89080, #E8D8C040, #C8B89080);
+    border-left:  1px solid #C8B890;
+    border-right: 1px solid #C8B890;
+    flex-shrink: 0;
+  }
+
+  .book-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .book-page-lang {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .book-page-ref {
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+  }
+
+  .book-page-content {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    line-height: 1.85;
+    color: var(--ink);
+    flex: 1;
+  }
+
+  /* Original language gets italic, slightly smaller */
+  .book-page-left .book-page-content {
+    font-style: italic;
+    color: #3A3020;
+    font-size: 0.88rem;
+    line-height: 1.9;
+  }
+
+  .book-page-footer {
+    margin-top: 1.5rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+  }
+
+  /* Preparation / condition pills */
+  .book-prep {
+    margin-top: 1.2rem;
+    padding: 0.7rem 0.9rem;
+    background: var(--vellum);
+    border-left: 3px solid var(--gold);
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .book-prep strong {
+    font-family: var(--font-code);
+    font-size: 0.58rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  /* Mobile: stack pages */
+  @media (max-width: 680px) {
+    .book-spread { grid-template-columns: 1fr; grid-template-rows: auto 4px auto; }
+    .book-spine { width: 100%; height: 4px; background: linear-gradient(to bottom, #C8B89080, #E8D8C040); }
+    .book-page { padding: 1.2rem; }
+    .book-modal-header { flex-direction: column; gap: 0.8rem; }
+  }
+
+  /* ══ END TRADITION CARDS ════════════════════════════════════ */
+
   /* ══ WHOLE PLANT CATALOG — FULL BLEED HERO ════════════════ */
 
   .site-header {
@@ -2008,29 +2272,63 @@
 
     <hr class="divider">
 
-    <div class="section-header">
-      <div class="section-eyebrow">The Three Primary Sources</div>
-      <h2 class="section-title">Where the Archive Began</h2>
+    <!-- ── Tradition Cards ──────────────────────────────────── -->
+    <div class="section-header" style="margin-bottom:1.2rem">
+      <div class="section-eyebrow">22 Traditions · 5,000 Years</div>
+      <h2 class="section-title">The Archive by Tradition</h2>
+      <p style="font-size:0.9rem;color:var(--muted);margin-top:0.4rem;max-width:60ch">Each tradition is a primary source. Click any card to open the original texts alongside their translations.</p>
     </div>
 
-    <div class="home-grid">
-      <div class="source-card">
-        <div class="source-card-year">1653</div>
-        <h3>Historia del Nuevo Mundo</h3>
-        <div class="author">Bernabé Cobo SJ · Jesuit missionary, 61 years in South America</div>
-        <p>The most comprehensive natural history of the Americas from the colonial period. Cobo personally transported cinchona bark (quinine) to Europe in 1632. His botanical sections — largely untranslated into English — document over 2,000 Andean plants with indigenous medical uses.</p>
-      </div>
-      <div class="source-card badianus">
-        <div class="source-card-year">1552</div>
-        <h3>Libellus de Medicinalibus Indorum Herbis</h3>
-        <div class="author">Martín de la Cruz &amp; Juan de Badiano · Aztec physicians</div>
-        <p>The only pre-Columbian medical text authored by indigenous physicians. Written 30 years after the conquest by an Aztec doctor documenting his own active practice — not describing it to an outside observer.</p>
-      </div>
-      <div class="source-card florentine">
-        <div class="source-card-year">1577</div>
-        <h3>Historia General de las Cosas de Nueva España</h3>
-        <div class="author">Bernardino de Sahagún · Franciscan friar</div>
-        <p>The most rigorously compiled ethnographic study of Aztec civilization. Sahagún cross-checked all information across multiple independent indigenous informants — the closest pre-modern equivalent to a peer review process.</p>
+    <div class="tradition-cards-grid" id="tradition-cards-grid">
+      <!-- Populated by renderTraditionCards() -->
+      <div style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);padding:2rem">Loading traditions…</div>
+    </div>
+
+    <!-- ── Book Reader Modal ─────────────────────────────────── -->
+    <div class="book-modal-overlay" id="book-modal" onclick="closeBookModal(event)" style="display:none">
+      <div class="book-modal" onclick="event.stopPropagation()">
+
+        <!-- Modal header -->
+        <div class="book-modal-header">
+          <div>
+            <div class="book-modal-eyebrow" id="book-modal-eyebrow">Tradition</div>
+            <h2 class="book-modal-title" id="book-modal-title">Source Title</h2>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.8rem">
+            <div class="book-nav">
+              <button onclick="bookPage(-1)" id="book-prev">‹ Prev</button>
+              <span id="book-page-label" style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);white-space:nowrap">1 / 1</span>
+              <button onclick="bookPage(1)" id="book-next">Next ›</button>
+            </div>
+            <button class="book-close-btn" onclick="closeBookModal()">✕</button>
+          </div>
+        </div>
+
+        <!-- Two-column book spread -->
+        <div class="book-spread">
+          <!-- Left page: original language -->
+          <div class="book-page book-page-left">
+            <div class="book-page-header">
+              <span class="book-page-lang" id="book-lang-label">Original</span>
+              <span class="book-page-ref" id="book-section-label"></span>
+            </div>
+            <div class="book-page-content" id="book-original"></div>
+          </div>
+
+          <!-- Spine -->
+          <div class="book-spine"></div>
+
+          <!-- Right page: translation -->
+          <div class="book-page book-page-right">
+            <div class="book-page-header">
+              <span class="book-page-lang">Translation</span>
+              <span class="book-page-ref" id="book-title-label"></span>
+            </div>
+            <div class="book-page-content" id="book-translation"></div>
+            <div class="book-page-footer" id="book-footer"></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -2731,6 +3029,167 @@ let activeStatusFilter = null, activeTraditions = new Set();
 
 // ── Tab navigation ──────────────────────────────────────
 
+
+  // ══ TRADITION CARDS & BOOK READER ══════════════════════════
+
+  // Map tradition id → corpus file keys
+  const TRADITION_CORPUS_MAP = {
+    cobo:                  ['cobo','cobo_recovery','cobo_mineral_air','cobo_missing','cobo_nontarget'],
+    maya:                  ['maya'],
+    philippine:            ['philippine'],
+    tibetan:               ['tibetan'],
+    kampo:                 ['kampo'],
+    ayurveda:              ['charaka','charaka_extended'],
+    chinese:               ['bencao','gangmu'],
+    unani:                 ['ibn_sina','ibn_baitar'],
+    greek_roman:           ['dioscorides','greek_roman','dioscorides_complete','dioscorides_books5_6'],
+    egyptian:              ['egyptian'],
+    west_african:          ['west_african'],
+    north_american_indigenous: ['north_american','north_american_expanded'],
+    amazonian:             ['amazonian'],
+    celtic_norse:          ['celtic_norse'],
+    persian_zoroastrian:   ['persian'],
+    australian_indigenous: ['australian'],
+    east_african:          ['east_african'],
+    southern_african:      ['southern_african'],
+    korean:                ['korean'],
+    japanese_honzo:        ['honzo'],
+  };
+
+  function renderTraditionCards() {
+    const grid = document.getElementById('tradition-cards-grid');
+    if (!grid || !traditionData.length) return;
+    grid.innerHTML = '';
+    traditionData.forEach(t => {
+      // Count corpus segments for this tradition
+      const segments = corpusData.filter(s => s.tradition === t.id && s.translation);
+      const count = segments.length;
+      if (count === 0) return; // skip traditions with no corpus yet
+
+      const card = document.createElement('div');
+      card.className = 'tradition-card';
+      card.onclick = () => openBookModal(t);
+      card.innerHTML = `
+        <div class="tradition-card-accent" style="background:${t.color||'#C4A882'}"></div>
+        <span class="tradition-card-icon">${t.icon||'🌿'}</span>
+        <div class="tradition-card-name">${t.name}</div>
+        <div class="tradition-card-date">${t.date_range||t.period||''}</div>
+        <div class="tradition-card-source">${(t.primary_document||t.primary_source||'').split(';')[0].split('—')[0].trim().slice(0,60)}</div>
+        <div class="tradition-card-count">${count} passages</div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // Book reader state
+  let bookSegments = [];
+  let bookIdx = 0;
+  let bookTradition = null;
+
+  function openBookModal(t) {
+    bookTradition = t;
+    // Gather all corpus segments for this tradition
+    bookSegments = corpusData.filter(s =>
+      s.tradition === t.id &&
+      s.translation &&
+      s.title_inferred &&
+      !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)
+    );
+    if (!bookSegments.length) return;
+    bookIdx = 0;
+
+    // Set header
+    document.getElementById('book-modal-eyebrow').textContent = t.name + (t.date_range ? ' · ' + t.date_range : '');
+    document.getElementById('book-modal-title').textContent = t.primary_document || t.primary_source || t.full_name || t.name;
+
+    renderBookPage();
+    document.getElementById('book-modal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeBookModal(e) {
+    if (e && e.target !== document.getElementById('book-modal')) return;
+    document.getElementById('book-modal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function bookPage(dir) {
+    bookIdx = Math.max(0, Math.min(bookSegments.length - 1, bookIdx + dir));
+    renderBookPage();
+  }
+
+  function renderBookPage() {
+    const seg = bookSegments[bookIdx];
+    if (!seg) return;
+
+    // Page label
+    document.getElementById('book-page-label').textContent =
+      `${bookIdx + 1} / ${bookSegments.length}`;
+
+    // Language label
+    const langMap = {
+      cobo: 'Spanish (17th c.)', maya: 'Nahuatl / Latin',
+      tibetan: 'Classical Tibetan', kampo: 'Classical Japanese',
+      ayurveda: 'Sanskrit', chinese: 'Classical Chinese',
+      unani: 'Arabic', greek_roman: 'Greek (Koine)',
+      egyptian: 'Hieratic Egyptian', west_african: 'Oral tradition',
+      north_american_indigenous: 'Oral tradition',
+      amazonian: 'Spanish (colonial)', celtic_norse: 'Old English / Norse',
+      persian_zoroastrian: 'Middle Persian / Avestan',
+      australian_indigenous: 'Oral tradition',
+      east_african: 'Ge'ez / Amharic', southern_african: 'Oral tradition',
+      korean: 'Classical Chinese / Korean', japanese_honzo: 'Classical Japanese',
+      philippine: 'Spanish (colonial)',
+    };
+    document.getElementById('book-lang-label').textContent =
+      langMap[bookTradition?.id] || 'Original Language';
+
+    // Section ref
+    const ref = seg.source_section || seg._label || '';
+    document.getElementById('book-section-label').textContent = ref;
+    document.getElementById('book-title-label').textContent = seg.title_inferred || '';
+
+    // Original text
+    const origEl = document.getElementById('book-original');
+    origEl.innerHTML = seg.original_text
+      ? `<p>${seg.original_text.replace(/
+/g,'</p><p>')}</p>`
+      : '<p style="color:var(--muted);font-style:normal;font-size:0.8rem">[Original language text not yet digitized for this passage]</p>';
+
+    // Translation + preparation/condition
+    const transEl = document.getElementById('book-translation');
+    let transHTML = `<p>${(seg.translation||'').replace(/
+
+/g,'</p><p>').replace(/
+/g,' ')}</p>`;
+    if (seg.preparation || seg.condition) {
+      transHTML += '<div class="book-prep">';
+      if (seg.preparation) transHTML += `<strong>Preparation</strong>${seg.preparation}`;
+      if (seg.condition)   transHTML += `<strong style="margin-top:0.5rem">Condition</strong>${seg.condition}`;
+      transHTML += '</div>';
+    }
+    transEl.innerHTML = transHTML;
+
+    // Footer
+    document.getElementById('book-footer').textContent =
+      bookTradition?.primary_document || bookTradition?.primary_source || '';
+
+    // Nav buttons
+    document.getElementById('book-prev').disabled = bookIdx === 0;
+    document.getElementById('book-next').disabled = bookIdx === bookSegments.length - 1;
+  }
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (document.getElementById('book-modal')?.style.display !== 'none') {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') bookPage(1);
+      if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   bookPage(-1);
+      if (e.key === 'Escape') { document.getElementById('book-modal').style.display='none'; document.body.style.overflow=''; }
+    }
+  });
+
+  // ══ END TRADITION CARDS & BOOK READER ══════════════════════
+
   // ── Codex illustration cycler ─────────────────────────────
   const CODEX_IMAGES = [
     {
@@ -2809,6 +3268,7 @@ function showTab(id) {
   document.getElementById('tab-' + id).classList.add('active');
   event.currentTarget.classList.add('active');
   if (id === 'database') { renderTraditionChips(); renderPlants(); }
+  if (id === 'home') renderTraditionCards();
   if (id === 'convergence') { renderConvergenceEngine(); renderPriority(); }
   if (id === 'traditions') renderTraditionsOverview();
   if (id === 'longevity') renderLongevity();
