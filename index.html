@@ -46,7 +46,7 @@
   }
 
   .tradition-card {
-    background: white;
+    background: var(--vellum, #F5F2EA);
     border: 1px solid var(--border);
     padding: 1.1rem 1rem 1rem;
     cursor: pointer;
@@ -209,7 +209,7 @@
   }
 
   .book-page-left  { background: #FDFAF3; }
-  .book-page-right { background: #FFFFFF; }
+  .book-page-right { background: #F5F2EA; }
 
   .book-spine {
     background: linear-gradient(to right, #C8B89080, #E8D8C040, #C8B89080);
@@ -639,6 +639,51 @@
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
 
+
+  /* ── Stat tiles ── */
+  .stat-tile {
+    background: var(--vellum, #F7F5F0);
+    border: 1px solid var(--border, #E2DED6);
+    padding: 1.2rem 1rem 0.9rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.12s, box-shadow 0.12s, transform 0.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  .stat-tile:hover {
+    border-color: var(--gold, #C4A860);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    transform: translateY(-1px);
+  }
+  .stat-tile-num {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--green, #2A6B3C);
+    line-height: 1;
+  }
+  .stat-tile-label {
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted, #8C8880);
+  }
+  .stat-tile-arrow {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.6rem;
+    font-size: 0.65rem;
+    color: var(--gold, #C4A860);
+    opacity: 0;
+    transition: opacity 0.12s;
+  }
+  .stat-tile:hover .stat-tile-arrow { opacity: 1; }
+
 </style>
 </head>
 
@@ -741,23 +786,27 @@
       <p>In 1971, Chinese pharmacologist Tu Youyou read a 4th-century Daoist text and found a reference to sweet wormwood for fever. She isolated artemisinin. It became the world's most important antimalarial drug. She won the Nobel Prize in 2015. The answers to some of medicine's most urgent questions are sitting in historical texts. This archive exists to find them.</p>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; margin-bottom:2rem;">
-      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
-        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">22</div>
-        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Traditions</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
-        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">116</div>
-        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Curated Plants</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
-        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">823</div>
-        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Source Passages</div>
-      </div>
-      <div style="background:white;border:1px solid var(--border);padding:1.2rem;text-align:center;">
-        <div style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--green)">584</div>
-        <div style="font-family:var(--font-code);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Plants Documented</div>
-      </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;">
+      <button class="stat-tile" onclick="showTab('traditions', document.querySelector('[onclick*=traditions]'))" title="Browse all 22 traditions">
+        <div class="stat-tile-num">22</div>
+        <div class="stat-tile-label">Traditions</div>
+        <div class="stat-tile-arrow">↗</div>
+      </button>
+      <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]')); setTimeout(()=>{ const s=document.getElementById('db-view-select'); if(s){s.value='curated'; renderPlants();} },200)" title="Browse 116 curated plants">
+        <div class="stat-tile-num">116</div>
+        <div class="stat-tile-label">Curated Plants</div>
+        <div class="stat-tile-arrow">↗</div>
+      </button>
+      <button class="stat-tile" onclick="showTab('corpus', document.querySelector('[onclick*=corpus]'))" title="Browse 823 source passages">
+        <div class="stat-tile-num">823</div>
+        <div class="stat-tile-label">Source Passages</div>
+        <div class="stat-tile-arrow">↗</div>
+      </button>
+      <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="Browse all 584 plants">
+        <div class="stat-tile-num">584</div>
+        <div class="stat-tile-label">Plants Documented</div>
+        <div class="stat-tile-arrow">↗</div>
+      </button>
     </div>
 
     <hr class="divider">
@@ -1209,23 +1258,23 @@
         <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--gold)">584</div>
         <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(196,168,130,0.6)">Total Plants</div>
       </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('curated',this);document.getElementById('db-view-toggle').value='curated';renderPlants()">
+      <div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('curated',this);document.getElementById('db-view-toggle').value='curated';renderPlants()">
         <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--green)">116</div>
         <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Fully Curated</div>
       </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('multi',this);document.getElementById('db-view-toggle').value='multi';renderPlants()">
+      <div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('multi',this);document.getElementById('db-view-toggle').value='multi';renderPlants()">
         <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--brown)">35</div>
         <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Multi-Tradition Stubs</div>
       </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('stub',this);document.getElementById('db-view-toggle').value='stub';renderPlants()">
+      <div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('stub',this);document.getElementById('db-view-toggle').value='stub';renderPlants()">
         <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--muted)">468</div>
         <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Corpus Stubs</div>
       </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('fda',this);document.getElementById('db-view-toggle').value='fda';renderPlants()">
+      <div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('fda',this);document.getElementById('db-view-toggle').value='fda';renderPlants()">
         <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#1B5E20">16</div>
         <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">FDA Approved</div>
       </div>
-      <div style="background:white;border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('priority',this);document.getElementById('db-view-toggle').value='priority';renderPlants()">
+      <div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);padding:0.8rem 1rem;text-align:center;cursor:pointer" onclick="filterByStatus('priority',this);document.getElementById('db-view-toggle').value='priority';renderPlants()">
         <div style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:#2E7D32;display:flex;align-items:center;justify-content:center;gap:0.4rem"><span class="priority-light green" style="width:10px;height:10px"></span>17</div>
         <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)">Priority Research</div>
       </div>
@@ -1236,7 +1285,7 @@
       <input class="search-input" type="text" id="plant-search"
         placeholder="Search plant name, condition, compound, tradition, botanical name..."
         oninput="renderPlants()">
-      <select id="db-view-toggle" class="query-select" style="background:white;color:var(--ink);border-color:var(--border)" onchange="renderPlants()">
+      <select id="db-view-toggle" class="query-select" style="background:var(--vellum,#F5F2EA);color:var(--ink);border-color:var(--border)" onchange="renderPlants()">
         <option value="all">All Plants</option>
         <option value="curated">✓ Curated 39</option>
         <option value="multi">Multi-Tradition Stubs</option>
@@ -1309,7 +1358,7 @@
 
     <div class="corpus-controls">
       <input class="corpus-search" type="text" id="corpus-search" placeholder="Search translations, plant names, conditions..." oninput="filterCorpus()">
-      <select id="corpus-tradition-filter" class="query-select" style="background:white; color:var(--ink); border-color:var(--border); min-width:160px;" onchange="filterCorpus()">
+      <select id="corpus-tradition-filter" class="query-select" style="background:var(--vellum,#F5F2EA); color:var(--ink); border-color:var(--border); min-width:160px;" onchange="filterCorpus()">
         <option value="all">All Traditions</option>
         <optgroup label="Americas">
           <option value="andean">Andean (Cobo)</option>
@@ -2163,7 +2212,7 @@ chart.innerHTML = `
 achievGrid.innerHTML = longevityData.map(t => {
   const achievs = t.key_pharmaceutical_achievements||[];
   if (!achievs.length) return '';
-  return `<div style="background:white;border:1px solid var(--border);border-top:4px solid ${getTradColor(t.tradition_id)};padding:1.2rem 1.4rem">
+  return `<div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);border-top:4px solid ${getTradColor(t.tradition_id)};padding:1.2rem 1.4rem">
     <div style="font-size:1.3rem;margin-bottom:0.4rem">${getTradIcon(t.tradition_id)}</div>
     <h4 style="font-family:var(--font-display);font-size:0.85rem;color:var(--ink);margin-bottom:0.8rem">${t.tradition_name}</h4>
     ${achievs.map(a=>`<div style="font-size:0.82rem;color:var(--muted);padding:0.25rem 0;border-bottom:1px solid var(--border)">— ${a}</div>`).join('')}
@@ -3011,7 +3060,7 @@ if (plants.length) {
               ${ti} ${tn} · ${segs.length} passage${segs.length!==1?'s':''}
             </div>
             ${segs.map((s,i)=>`
-              <div style="background:white;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.5rem;${i>0?'display:none':''}${segs.length>1&&i===0?' position:relative':''}" class="corpus-passage-${p.id}-${tid}-${i}" data-corpus-group="${p.id}-${tid}">
+              <div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.5rem;${i>0?'display:none':''}${segs.length>1&&i===0?' position:relative':''}" class="corpus-passage-${p.id}-${tid}-${i}" data-corpus-group="${p.id}-${tid}">
                 <div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.35rem">${s.source_section||s.label||''}</div>
                 ${s.original?`<div style="font-family:var(--font-code);font-size:0.75rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.5rem;padding-bottom:0.5rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,300)}${s.original.length>300?'…':''}</div>`:''}
                 <div style="font-size:0.85rem;line-height:1.7;color:var(--ink)">${s.translation.slice(0,600)}${s.translation.length>600?'…':''}</div>
@@ -3023,12 +3072,12 @@ if (plants.length) {
         }).join('')}
       </div>`;
     }
-    if (p.modern_research) detail += `<div style="margin-top:0.8rem;padding:0.8rem;background:white;border:1px solid var(--border)"><div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div><div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance||p.modern_research.summary||''}</div></div>`;
+    if (p.modern_research) detail += `<div style="margin-top:0.8rem;padding:0.8rem;background:var(--vellum,#F5F2EA);border:1px solid var(--border)"><div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div><div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance||p.modern_research.summary||''}</div></div>`;
     if (p.priority_light) {
       const lightLabels = {green:'Priority Investigation',amber:'Research Candidate',red:'On the Radar'};
       const lightColors = {green:'#2E7D32',amber:'#E65100',red:'#B71C1C'};
       const lc = lightColors[p.priority_light];
-      detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${lc};background:white;display:flex;gap:0.7rem;align-items:flex-start">
+      detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${lc};background:var(--vellum,#F5F2EA);display:flex;gap:0.7rem;align-items:flex-start">
         <span class="priority-light ${p.priority_light}" style="margin-top:0.3rem;flex-shrink:0"></span>
         <div>
           <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${lc};margin-bottom:0.25rem">${lightLabels[p.priority_light]} · Research Gap</div>
@@ -3086,9 +3135,9 @@ if (!plants.length && !aiSummary) {
   html += `<div class="search-no-results"><p style="font-size:1.1rem;margin-bottom:0.5rem">No direct matches for "<strong>${query}</strong>"</p><p style="color:var(--muted);font-size:0.9rem">Try related terms — or browse the Convergence tab.</p></div>`;
 }
 html += `<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);display:flex;gap:1rem;flex-wrap:wrap">
-  <button onclick="closeSearch();showTabByName('convergence')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Convergence Engine</button>
-  <button onclick="closeSearch();showTabByName('research')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Modern Research</button>
-  <button onclick="closeSearch();showTabByName('corpus')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Full Corpus</button>
+  <button onclick="closeSearch();showTabByName('convergence')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:var(--vellum,#F5F2EA);cursor:pointer;color:var(--muted)">→ Convergence Engine</button>
+  <button onclick="closeSearch();showTabByName('research')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:var(--vellum,#F5F2EA);cursor:pointer;color:var(--muted)">→ Modern Research</button>
+  <button onclick="closeSearch();showTabByName('corpus')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:var(--vellum,#F5F2EA);cursor:pointer;color:var(--muted)">→ Full Corpus</button>
 </div>`;
 body.innerHTML = html;
 if (autoOpenRemedy) setTimeout(()=>{ const el=document.getElementById(`remedy-${autoOpenRemedy}`); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }, 300);
@@ -3113,8 +3162,7 @@ if (q) {
 </script>
 
 <footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #E2DED6;margin-top:2rem;background:var(--vellum,#F7F5F0)">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
-<div id="__debug_bar" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#0f0;font-family:monospace;z-index:9999;max-height:120px;overflow-y:auto;border-top:2px solid red">
-<div style="padding:2px 8px;color:#888;font-size:11px">DEBUG BAR — errors will appear here. No errors = JS loaded OK.</div>
+
 </div>
 </body>
 </html>
