@@ -1456,20 +1456,7 @@
   </div>
 </footer>
 
-<script>
-// ── DEBUG CATCHER ──────────────────────────────────────────
-window.__errors = [];
-window.onerror = function(msg, src, line, col, err) {
-  window.__errors.push({msg, line, col});
-  var bar = document.getElementById('__debug_bar');
-  if (bar) bar.innerHTML += '<div style="color:red;font-size:12px;padding:2px 8px">JS ERROR line '+line+': '+msg+'</div>';
-  return false;
-};
-window.addEventListener('unhandledrejection', function(e) {
-  var bar = document.getElementById('__debug_bar');
-  if (bar) bar.innerHTML += '<div style="color:orange;font-size:12px;padding:2px 8px">PROMISE REJECT: '+e.reason+'</div>';
-});
-</script>
+
 <script>
 // ── State ────────────────────────────────────────────────
 let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [];
@@ -1616,6 +1603,18 @@ function renderBookPage() {
   document.getElementById('book-prev').disabled = (bookIdx === 0);
   document.getElementById('book-next').disabled = (bookIdx === bookSegments.length - 1);
 }
+
+// ── Codex illustration cycler ─────────────────────────────
+const CODEX_IMAGES = [
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg', label: 'Badianus Manuscript, 1552', pos: 'center 15%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg', label: 'Badianus Manuscript, f.13v', pos: 'center 20%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg', label: 'Badianus Manuscript, f.49v', pos: 'center 20%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/ViennaDioscoridesPlant.jpg', label: 'Vienna Dioscorides, c.512 CE', pos: 'center 30%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg', label: 'Dioscorides & the Mandrake, c.512 CE', pos: 'center 25%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg', label: 'Wellcome Medicinal Plants, 17th C', pos: 'center 20%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg', label: 'Ming Herbal — Lindera, c.1640 CE', pos: 'center 25%' },
+];
+let codexIdx = 0;
 
 function cycleCodex(dir) {
   codexIdx = (codexIdx + dir + CODEX_IMAGES.length) % CODEX_IMAGES.length;
