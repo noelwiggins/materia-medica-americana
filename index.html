@@ -1470,876 +1470,875 @@ let activeStatusFilter = null, activeTraditions = new Set();
 
 // ── Tab navigation ──────────────────────────────────────
 
+// ══ TRADITION CARDS & BOOK READER ══════════════════════════
 
-  // ══ TRADITION CARDS & BOOK READER ══════════════════════════
+// Map tradition id → corpus file keys
+const TRADITION_CORPUS_MAP = {
+  cobo:                  ['cobo','cobo_recovery','cobo_mineral_air','cobo_missing','cobo_nontarget'],
+  maya:                  ['maya'],
+  philippine:            ['philippine'],
+  tibetan:               ['tibetan'],
+  kampo:                 ['kampo'],
+  ayurveda:              ['charaka','charaka_extended'],
+  chinese:               ['bencao','gangmu'],
+  unani:                 ['ibn_sina','ibn_baitar'],
+  greek_roman:           ['dioscorides','greek_roman','dioscorides_complete','dioscorides_books5_6'],
+  egyptian:              ['egyptian'],
+  west_african:          ['west_african'],
+  north_american_indigenous: ['north_american','north_american_expanded'],
+  amazonian:             ['amazonian'],
+  celtic_norse:          ['celtic_norse'],
+  persian_zoroastrian:   ['persian'],
+  australian_indigenous: ['australian'],
+  east_african:          ['east_african'],
+  southern_african:      ['southern_african'],
+  korean:                ['korean'],
+  japanese_honzo:        ['honzo'],
+};
 
-  // Map tradition id → corpus file keys
-  const TRADITION_CORPUS_MAP = {
-    cobo:                  ['cobo','cobo_recovery','cobo_mineral_air','cobo_missing','cobo_nontarget'],
-    maya:                  ['maya'],
-    philippine:            ['philippine'],
-    tibetan:               ['tibetan'],
-    kampo:                 ['kampo'],
-    ayurveda:              ['charaka','charaka_extended'],
-    chinese:               ['bencao','gangmu'],
-    unani:                 ['ibn_sina','ibn_baitar'],
-    greek_roman:           ['dioscorides','greek_roman','dioscorides_complete','dioscorides_books5_6'],
-    egyptian:              ['egyptian'],
-    west_african:          ['west_african'],
-    north_american_indigenous: ['north_american','north_american_expanded'],
-    amazonian:             ['amazonian'],
-    celtic_norse:          ['celtic_norse'],
-    persian_zoroastrian:   ['persian'],
-    australian_indigenous: ['australian'],
-    east_african:          ['east_african'],
-    southern_african:      ['southern_african'],
-    korean:                ['korean'],
-    japanese_honzo:        ['honzo'],
+function renderTraditionCards() {
+  const grid = document.getElementById('tradition-cards-grid');
+  if (!grid || !traditionData.length) return;
+  grid.innerHTML = '';
+  traditionData.forEach(t => {
+    // Count corpus segments for this tradition
+    const segments = corpusData.filter(s => s.tradition === t.id && s.translation);
+    const count = segments.length;
+    if (count === 0) return; // skip traditions with no corpus yet
+
+    const card = document.createElement('div');
+    card.className = 'tradition-card';
+    card.onclick = () => openBookModal(t);
+    card.innerHTML = `
+      <div class="tradition-card-accent" style="background:${t.color||'#C4A882'}"></div>
+      <span class="tradition-card-icon">${t.icon||'🌿'}</span>
+      <div class="tradition-card-name">${t.name}</div>
+      <div class="tradition-card-date">${t.date_range||t.period||''}</div>
+      <div class="tradition-card-source">${(t.primary_document||t.primary_source||'').split(';')[0].split('—')[0].trim().slice(0,60)}</div>
+      <div class="tradition-card-count">${count} passages</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+// Book reader state
+let bookSegments = [];
+let bookIdx = 0;
+let bookTradition = null;
+
+function openBookModal(t) {
+  bookTradition = t;
+  // Gather all corpus segments for this tradition
+  bookSegments = corpusData.filter(s =>
+    s.tradition === t.id &&
+    s.translation &&
+    s.title_inferred &&
+    !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)
+  );
+  if (!bookSegments.length) return;
+  bookIdx = 0;
+
+  // Set header
+  document.getElementById('book-modal-eyebrow').textContent = t.name + (t.date_range ? ' · ' + t.date_range : '');
+  document.getElementById('book-modal-title').textContent = t.primary_document || t.primary_source || t.full_name || t.name;
+
+  renderBookPage();
+  document.getElementById('book-modal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeBookModal(e) {
+  if (e && e.target !== document.getElementById('book-modal')) return;
+  document.getElementById('book-modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function bookPage(dir) {
+  bookIdx = Math.max(0, Math.min(bookSegments.length - 1, bookIdx + dir));
+  renderBookPage();
+}
+
+function renderBookPage() {
+  const seg = bookSegments[bookIdx];
+  if (!seg) return;
+
+  document.getElementById('book-page-label').textContent =
+    (bookIdx + 1) + ' / ' + bookSegments.length;
+
+  const langMap = {
+    cobo: 'Spanish (17th c.)', maya: 'Nahuatl / Latin',
+    tibetan: 'Classical Tibetan', kampo: 'Classical Japanese',
+    ayurveda: 'Sanskrit', chinese: 'Classical Chinese',
+    unani: 'Arabic', greek_roman: 'Greek (Koine)',
+    egyptian: 'Hieratic Egyptian', west_african: 'Oral tradition',
+    north_american_indigenous: 'Oral tradition',
+    amazonian: 'Spanish (colonial)', celtic_norse: 'Old English / Norse',
+    persian_zoroastrian: 'Middle Persian / Avestan',
+    australian_indigenous: 'Oral tradition',
+    east_african: "Ge'ez / Amharic", southern_african: 'Oral tradition',
+    korean: 'Classical Chinese / Korean', japanese_honzo: 'Classical Japanese',
+    philippine: 'Spanish (colonial)',
   };
+  document.getElementById('book-lang-label').textContent =
+    langMap[bookTradition && bookTradition.id] || 'Original Language';
 
-  function renderTraditionCards() {
-    const grid = document.getElementById('tradition-cards-grid');
-    if (!grid || !traditionData.length) return;
-    grid.innerHTML = '';
-    traditionData.forEach(t => {
-      // Count corpus segments for this tradition
-      const segments = corpusData.filter(s => s.tradition === t.id && s.translation);
-      const count = segments.length;
-      if (count === 0) return; // skip traditions with no corpus yet
+  const ref = seg.source_section || seg._label || '';
+  document.getElementById('book-section-label').textContent = ref;
+  document.getElementById('book-title-label').textContent = seg.title_inferred || '';
 
-      const card = document.createElement('div');
-      card.className = 'tradition-card';
-      card.onclick = () => openBookModal(t);
-      card.innerHTML = `
-        <div class="tradition-card-accent" style="background:${t.color||'#C4A882'}"></div>
-        <span class="tradition-card-icon">${t.icon||'🌿'}</span>
-        <div class="tradition-card-name">${t.name}</div>
-        <div class="tradition-card-date">${t.date_range||t.period||''}</div>
-        <div class="tradition-card-source">${(t.primary_document||t.primary_source||'').split(';')[0].split('—')[0].trim().slice(0,60)}</div>
-        <div class="tradition-card-count">${count} passages</div>
-      `;
-      grid.appendChild(card);
-    });
+  const origEl = document.getElementById('book-original');
+  if (seg.original_text) {
+    origEl.innerHTML = '<p>' + seg.original_text.replace(/\n/g, '</p><p>') + '</p>';
+  } else {
+    origEl.innerHTML = '<p style="color:var(--muted);font-style:normal;font-size:0.8rem">[Original language text not yet digitized for this passage]</p>';
   }
 
-  // Book reader state
-  let bookSegments = [];
-  let bookIdx = 0;
-  let bookTradition = null;
-
-  function openBookModal(t) {
-    bookTradition = t;
-    // Gather all corpus segments for this tradition
-    bookSegments = corpusData.filter(s =>
-      s.tradition === t.id &&
-      s.translation &&
-      s.title_inferred &&
-      !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)
-    );
-    if (!bookSegments.length) return;
-    bookIdx = 0;
-
-    // Set header
-    document.getElementById('book-modal-eyebrow').textContent = t.name + (t.date_range ? ' · ' + t.date_range : '');
-    document.getElementById('book-modal-title').textContent = t.primary_document || t.primary_source || t.full_name || t.name;
-
-    renderBookPage();
-    document.getElementById('book-modal').style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+  const transEl = document.getElementById('book-translation');
+  var transHTML = '<p>' + (seg.translation || '').replace(/\n\n/g, '</p><p>').replace(/\n/g, ' ') + '</p>';
+  if (seg.preparation || seg.condition) {
+    transHTML += '<div class="book-prep">';
+    if (seg.preparation) transHTML += '<strong>Preparation</strong>' + seg.preparation;
+    if (seg.condition)   transHTML += '<strong style="margin-top:0.5rem">Condition</strong>' + seg.condition;
+    transHTML += '</div>';
   }
+  transEl.innerHTML = transHTML;
 
-  function closeBookModal(e) {
-    if (e && e.target !== document.getElementById('book-modal')) return;
-    document.getElementById('book-modal').style.display = 'none';
-    document.body.style.overflow = '';
-  }
+  document.getElementById('book-footer').textContent =
+    (bookTradition && (bookTradition.primary_document || bookTradition.primary_source)) || '';
 
-  function bookPage(dir) {
-    bookIdx = Math.max(0, Math.min(bookSegments.length - 1, bookIdx + dir));
-    renderBookPage();
-  }
+  document.getElementById('book-prev').disabled = (bookIdx === 0);
+  document.getElementById('book-next').disabled = (bookIdx === bookSegments.length - 1);
+}
 
-  function renderBookPage() {
-    const seg = bookSegments[bookIdx];
-    if (!seg) return;
-
-    document.getElementById('book-page-label').textContent =
-      (bookIdx + 1) + ' / ' + bookSegments.length;
-
-    const langMap = {
-      cobo: 'Spanish (17th c.)', maya: 'Nahuatl / Latin',
-      tibetan: 'Classical Tibetan', kampo: 'Classical Japanese',
-      ayurveda: 'Sanskrit', chinese: 'Classical Chinese',
-      unani: 'Arabic', greek_roman: 'Greek (Koine)',
-      egyptian: 'Hieratic Egyptian', west_african: 'Oral tradition',
-      north_american_indigenous: 'Oral tradition',
-      amazonian: 'Spanish (colonial)', celtic_norse: 'Old English / Norse',
-      persian_zoroastrian: 'Middle Persian / Avestan',
-      australian_indigenous: 'Oral tradition',
-      east_african: "Ge'ez / Amharic", southern_african: 'Oral tradition',
-      korean: 'Classical Chinese / Korean', japanese_honzo: 'Classical Japanese',
-      philippine: 'Spanish (colonial)',
-    };
-    document.getElementById('book-lang-label').textContent =
-      langMap[bookTradition && bookTradition.id] || 'Original Language';
-
-    const ref = seg.source_section || seg._label || '';
-    document.getElementById('book-section-label').textContent = ref;
-    document.getElementById('book-title-label').textContent = seg.title_inferred || '';
-
-    const origEl = document.getElementById('book-original');
-    if (seg.original_text) {
-      origEl.innerHTML = '<p>' + seg.original_text.replace(/\n/g, '</p><p>') + '</p>';
-    } else {
-      origEl.innerHTML = '<p style="color:var(--muted);font-style:normal;font-size:0.8rem">[Original language text not yet digitized for this passage]</p>';
-    }
-
-    const transEl = document.getElementById('book-translation');
-    var transHTML = '<p>' + (seg.translation || '').replace(/\n\n/g, '</p><p>').replace(/\n/g, ' ') + '</p>';
-    if (seg.preparation || seg.condition) {
-      transHTML += '<div class="book-prep">';
-      if (seg.preparation) transHTML += '<strong>Preparation</strong>' + seg.preparation;
-      if (seg.condition)   transHTML += '<strong style="margin-top:0.5rem">Condition</strong>' + seg.condition;
-      transHTML += '</div>';
-    }
-    transEl.innerHTML = transHTML;
-
-    document.getElementById('book-footer').textContent =
-      (bookTradition && (bookTradition.primary_document || bookTradition.primary_source)) || '';
-
-    document.getElementById('book-prev').disabled = (bookIdx === 0);
-    document.getElementById('book-next').disabled = (bookIdx === bookSegments.length - 1);
-  }
-
-  function cycleCodex(dir) {
-    codexIdx = (codexIdx + dir + CODEX_IMAGES.length) % CODEX_IMAGES.length;
-    const img = document.getElementById('wec-codex-img');
-    const lbl = document.getElementById('wec-codex-label');
-    if (!img) return;
-    img.classList.add('fading');
-    setTimeout(() => {
-      const item = CODEX_IMAGES[codexIdx];
-      img.src = item.src;
-      img.style.objectPosition = item.pos || 'center 20%';
-      if (lbl) lbl.textContent = item.label;
-      img.onload = () => img.classList.remove('fading');
-      setTimeout(() => img.classList.remove('fading'), 700);
-    }, 5000);
-  }
-  document.addEventListener('DOMContentLoaded', () => { setInterval(() => cycleCodex(1), 8000); });
+function cycleCodex(dir) {
+  codexIdx = (codexIdx + dir + CODEX_IMAGES.length) % CODEX_IMAGES.length;
+  const img = document.getElementById('wec-codex-img');
+  const lbl = document.getElementById('wec-codex-label');
+  if (!img) return;
+  img.classList.add('fading');
+  setTimeout(() => {
+    const item = CODEX_IMAGES[codexIdx];
+    img.src = item.src;
+    img.style.objectPosition = item.pos || 'center 20%';
+    if (lbl) lbl.textContent = item.label;
+    img.onload = () => img.classList.remove('fading');
+    setTimeout(() => img.classList.remove('fading'), 700);
+  }, 5000);
+}
+document.addEventListener('DOMContentLoaded', () => { setInterval(() => cycleCodex(1), 8000); });
 
 function showTab(id, btn) {
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('tab-' + id).classList.add('active');
-  if (btn) btn.classList.add('active'); else if (typeof event !== 'undefined' && event.currentTarget) event.currentTarget.classList.add('active');
-  if (id === 'database') { renderTraditionChips(); renderPlants(); }
-  if (id === 'home') renderTraditionCards();
-  if (id === 'convergence') { renderConvergenceEngine(); renderPriority(); }
-  if (id === 'traditions') renderTraditionsOverview();
-  if (id === 'longevity') renderLongevity();
-  if (id === 'corpus') renderCorpus();
-  if (id === 'research') initResearchTab();
+document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+document.getElementById('tab-' + id).classList.add('active');
+if (btn) btn.classList.add('active'); else if (typeof event !== 'undefined' && event.currentTarget) event.currentTarget.classList.add('active');
+if (id === 'database') { renderTraditionChips(); renderPlants(); }
+if (id === 'home') renderTraditionCards();
+if (id === 'convergence') { renderConvergenceEngine(); renderPriority(); }
+if (id === 'traditions') renderTraditionsOverview();
+if (id === 'longevity') renderLongevity();
+if (id === 'corpus') renderCorpus();
+if (id === 'research') initResearchTab();
 }
 
 function toggleChapter(header) {
-  const body = header.nextElementSibling;
-  const chevron = header.querySelector('.chevron');
-  const isOpen = body.classList.contains('open');
-  body.classList.toggle('open', !isOpen);
-  chevron.classList.toggle('open', !isOpen);
+const body = header.nextElementSibling;
+const chevron = header.querySelector('.chevron');
+const isOpen = body.classList.contains('open');
+body.classList.toggle('open', !isOpen);
+chevron.classList.toggle('open', !isOpen);
 }
 
 // ── Data loading ────────────────────────────────────────
 async function loadData() {
+try {
+  const [pRes, tRes, rRes, cRes, lRes] = await Promise.all([
+    fetch('/data/plants.json'),
+    fetch('/data/traditions.json'),
+    fetch('/data/regulatory_data.json').catch(()=>null),
+    fetch('/data/conditions.json'),
+    fetch('/data/longevity.json'),
+  ]);
+  plantData = (await pRes.json()).plants || [];
+  traditionData = (await tRes.json()).traditions || [];
+  if (rRes && rRes.ok) regulatoryData = (await rRes.json()).plants || [];
+  conditionData = (await cRes.json()).conditions || [];
+  longevityData = (await lRes.json()).traditions || [];
+
+  // Load corpus — merge all tradition translation files into one unified corpus
   try {
-    const [pRes, tRes, rRes, cRes, lRes] = await Promise.all([
-      fetch('/data/plants.json'),
-      fetch('/data/traditions.json'),
-      fetch('/data/regulatory_data.json').catch(()=>null),
-      fetch('/data/conditions.json'),
-      fetch('/data/longevity.json'),
-    ]);
-    plantData = (await pRes.json()).plants || [];
-    traditionData = (await tRes.json()).traditions || [];
-    if (rRes && rRes.ok) regulatoryData = (await rRes.json()).plants || [];
-    conditionData = (await cRes.json()).conditions || [];
-    longevityData = (await lRes.json()).traditions || [];
+    const traditionFiles = [
+      { url: '/data/cobo_chapters.json',           tradition: 'cobo',               label: 'Andean (Cobo)' },
+      { url: '/data/cobo_recovery_chapters.json',  tradition: 'cobo',               label: 'Andean (Cobo — Recovery)' },
+      { url: '/data/cobo_mineral_air_chapters.json',tradition: 'cobo',              label: 'Andean (Cobo — Minerals)' },
+      { url: '/data/cobo_missing_chapters.json',   tradition: 'cobo',               label: 'Andean (Cobo — Final)' },
+      { url: '/data/cobo_nontarget_chapters.json', tradition: 'cobo',               label: 'Andean (Cobo — Healer/Elite)' },
+      { url: '/data/kampo_chapters.json',          tradition: 'kampo',              label: 'Kampo' },
+      { url: '/data/tibetan_chapters.json',        tradition: 'tibetan',            label: 'Tibetan' },
+      { url: '/data/maya_chapters.json',           tradition: 'maya',               label: 'Maya' },
+      { url: '/data/philippine_chapters.json',     tradition: 'philippine',         label: 'Philippine' },
+      { url: '/data/australian_chapters.json',     tradition: 'australian_indigenous', label: 'Australian Indigenous' },
+      { url: '/data/celtic_norse_chapters.json',   tradition: 'celtic_norse',       label: 'Celtic & Norse' },
+      { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
+      { url: '/data/charaka_chapters.json',        tradition: 'ayurveda',            label: 'Ayurveda (Charaka Samhita)' },
+      { url: '/data/bencao_chapters.json',         tradition: 'chinese',             label: 'Chinese (Shennong Bencaojing)' },
+      { url: '/data/gangmu_chapters.json',         tradition: 'chinese',             label: 'Chinese (Bencao Gangmu — Li Shizhen)' },
+      { url: '/data/korean_chapters.json',         tradition: 'korean',              label: 'Korean (Dongui Bogam)' },
+      { url: '/data/honzo_chapters.json',          tradition: 'japanese_honzo',      label: 'Japanese (Yamato Honzō)' },
+      { url: '/data/east_african_chapters.json',   tradition: 'east_african',        label: 'East African (Ethiopian)' },
+      { url: '/data/southern_african_chapters.json',tradition:'southern_african',    label: 'Southern African (Zulu/San/Khoikhoi)' },
+      { url: '/data/north_american_expanded_chapters.json',tradition:'north_american_indigenous',label:'North American (Moerman Database)' },
+      { url: '/data/ibn_baitar_chapters.json',     tradition: 'unani',               label: 'Unani (Ibn al-Baitar)' },
+      { url: '/data/dioscorides_complete_chapters.json',tradition:'greek_roman',     label: 'Greek/Roman (Dioscorides Books I, V)' },
+      { url: '/data/dioscorides_books5_6_chapters.json',tradition:'greek_roman',    label: 'Greek/Roman (Dioscorides Books V-VI — Forge translated)' },
+      { url: '/data/charaka_extended_chapters.json',   tradition: 'ayurveda',       label: 'Ayurveda (Charaka Samhita — Extended Corpus)' },
+      { url: '/data/ibn_sina_chapters.json',       tradition: 'unani',               label: 'Unani (Ibn Sina — Canon of Medicine)' },
+    ];
 
-    // Load corpus — merge all tradition translation files into one unified corpus
-    try {
-      const traditionFiles = [
-        { url: '/data/cobo_chapters.json',           tradition: 'cobo',               label: 'Andean (Cobo)' },
-        { url: '/data/cobo_recovery_chapters.json',  tradition: 'cobo',               label: 'Andean (Cobo — Recovery)' },
-        { url: '/data/cobo_mineral_air_chapters.json',tradition: 'cobo',              label: 'Andean (Cobo — Minerals)' },
-        { url: '/data/cobo_missing_chapters.json',   tradition: 'cobo',               label: 'Andean (Cobo — Final)' },
-        { url: '/data/cobo_nontarget_chapters.json', tradition: 'cobo',               label: 'Andean (Cobo — Healer/Elite)' },
-        { url: '/data/kampo_chapters.json',          tradition: 'kampo',              label: 'Kampo' },
-        { url: '/data/tibetan_chapters.json',        tradition: 'tibetan',            label: 'Tibetan' },
-        { url: '/data/maya_chapters.json',           tradition: 'maya',               label: 'Maya' },
-        { url: '/data/philippine_chapters.json',     tradition: 'philippine',         label: 'Philippine' },
-        { url: '/data/australian_chapters.json',     tradition: 'australian_indigenous', label: 'Australian Indigenous' },
-        { url: '/data/celtic_norse_chapters.json',   tradition: 'celtic_norse',       label: 'Celtic & Norse' },
-        { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
-        { url: '/data/charaka_chapters.json',        tradition: 'ayurveda',            label: 'Ayurveda (Charaka Samhita)' },
-        { url: '/data/bencao_chapters.json',         tradition: 'chinese',             label: 'Chinese (Shennong Bencaojing)' },
-        { url: '/data/gangmu_chapters.json',         tradition: 'chinese',             label: 'Chinese (Bencao Gangmu — Li Shizhen)' },
-        { url: '/data/korean_chapters.json',         tradition: 'korean',              label: 'Korean (Dongui Bogam)' },
-        { url: '/data/honzo_chapters.json',          tradition: 'japanese_honzo',      label: 'Japanese (Yamato Honzō)' },
-        { url: '/data/east_african_chapters.json',   tradition: 'east_african',        label: 'East African (Ethiopian)' },
-        { url: '/data/southern_african_chapters.json',tradition:'southern_african',    label: 'Southern African (Zulu/San/Khoikhoi)' },
-        { url: '/data/north_american_expanded_chapters.json',tradition:'north_american_indigenous',label:'North American (Moerman Database)' },
-        { url: '/data/ibn_baitar_chapters.json',     tradition: 'unani',               label: 'Unani (Ibn al-Baitar)' },
-        { url: '/data/dioscorides_complete_chapters.json',tradition:'greek_roman',     label: 'Greek/Roman (Dioscorides Books I, V)' },
-        { url: '/data/dioscorides_books5_6_chapters.json',tradition:'greek_roman',    label: 'Greek/Roman (Dioscorides Books V-VI — Forge translated)' },
-        { url: '/data/charaka_extended_chapters.json',   tradition: 'ayurveda',       label: 'Ayurveda (Charaka Samhita — Extended Corpus)' },
-        { url: '/data/ibn_sina_chapters.json',       tradition: 'unani',               label: 'Unani (Ibn Sina — Canon of Medicine)' },
-      ];
+    const allResults = [];
+    const seen = new Set();
 
-      const allResults = [];
-      const seen = new Set();
+    await Promise.all(traditionFiles.map(async ({ url, tradition, label }) => {
+      try {
+        const res = await fetch(url);
+        if (!res.ok) return;
+        const data = await res.json();
+        const results = (data.results || []).filter(r =>
+          r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
+        );
+        results.forEach(r => {
+          const key = r._label || r.title_inferred;
+          if (!seen.has(key)) {
+            seen.add(key);
+            allResults.push({ ...r, _tradition: tradition, _tradition_label: label });
+          }
+        });
+      } catch(e) { /* file may not exist yet — skip silently */ }
+    }));
 
-      await Promise.all(traditionFiles.map(async ({ url, tradition, label }) => {
-        try {
-          const res = await fetch(url);
-          if (!res.ok) return;
-          const data = await res.json();
-          const results = (data.results || []).filter(r =>
-            r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
-          );
-          results.forEach(r => {
-            const key = r._label || r.title_inferred;
-            if (!seen.has(key)) {
-              seen.add(key);
-              allResults.push({ ...r, _tradition: tradition, _tradition_label: label });
-            }
-          });
-        } catch(e) { /* file may not exist yet — skip silently */ }
-      }));
-
-      corpusData = allResults;
-      console.log(`Corpus: ${corpusData.length} total segments across ${traditionFiles.length} files`);
-    } catch(e) { corpusData = []; }
-  } catch(e) { console.error('Data load error:', e); }
+    corpusData = allResults;
+    console.log(`Corpus: ${corpusData.length} total segments across ${traditionFiles.length} files`);
+  } catch(e) { corpusData = []; }
+} catch(e) { console.error('Data load error:', e); }
 }
 
 // ── Traditions overview ─────────────────────────────────
 function renderTraditionsOverview() {
-  const grid = document.getElementById('traditions-overview-grid');
-  if (!grid || !traditionData.length) return;
-  const statusLabel = { translated:'Fully Translated', translating:'Translating', partially_translated:'Partially Translated', partially_documented:'Partially Documented', stub:'Coming Soon — Population in Progress' };
-  grid.innerHTML = traditionData.map(t => {
-    const plantCount = plantData.filter(p => p.traditions.includes(t.id)).length;
-    return `<div class="tradition-card" onclick="filterToTradition('${t.id}')">
-      <div class="tradition-card-accent" style="background:${t.color}"></div>
-      <span class="tradition-card-icon">${t.icon}</span>
-      <h4>${t.name}</h4>
-      <div class="tradition-meta">${t.geography.slice(0,3).join(' · ')} · ${t.date_range}</div>
-      <p>${t.primary_document}</p>
-      <p style="margin-top:0.4rem;font-style:italic;">${t.author}</p>
-      <div style="margin-top:0.6rem;display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
-        <span class="tradition-status status-${t.status}">${statusLabel[t.status]||t.status}</span>
-        <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);">${plantCount} plants · ~${t.approx_plants_documented.toLocaleString()} documented</span>
-      </div>
-    </div>`;
-  }).join('');
+const grid = document.getElementById('traditions-overview-grid');
+if (!grid || !traditionData.length) return;
+const statusLabel = { translated:'Fully Translated', translating:'Translating', partially_translated:'Partially Translated', partially_documented:'Partially Documented', stub:'Coming Soon — Population in Progress' };
+grid.innerHTML = traditionData.map(t => {
+  const plantCount = plantData.filter(p => p.traditions.includes(t.id)).length;
+  return `<div class="tradition-card" onclick="filterToTradition('${t.id}')">
+    <div class="tradition-card-accent" style="background:${t.color}"></div>
+    <span class="tradition-card-icon">${t.icon}</span>
+    <h4>${t.name}</h4>
+    <div class="tradition-meta">${t.geography.slice(0,3).join(' · ')} · ${t.date_range}</div>
+    <p>${t.primary_document}</p>
+    <p style="margin-top:0.4rem;font-style:italic;">${t.author}</p>
+    <div style="margin-top:0.6rem;display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+      <span class="tradition-status status-${t.status}">${statusLabel[t.status]||t.status}</span>
+      <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);">${plantCount} plants · ~${t.approx_plants_documented.toLocaleString()} documented</span>
+    </div>
+  </div>`;
+}).join('');
 }
 
 function filterToTradition(id) {
-  activeTraditions.clear(); activeTraditions.add(id);
-  document.querySelectorAll('.tab-btn').forEach(b => {
-    b.classList.toggle('active', b.getAttribute('onclick')?.includes("'database'"));
-  });
-  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.getElementById('tab-database').classList.add('active');
-  renderTraditionChips(); renderPlants();
+activeTraditions.clear(); activeTraditions.add(id);
+document.querySelectorAll('.tab-btn').forEach(b => {
+  b.classList.toggle('active', b.getAttribute('onclick')?.includes("'database'"));
+});
+document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+document.getElementById('tab-database').classList.add('active');
+renderTraditionChips(); renderPlants();
 }
 
 // ── Database tab ─────────────────────────────────────────
 function renderTraditionChips() {
-  const container = document.getElementById('tradition-chips');
-  if (!container || !traditionData.length) return;
-  const allChip = `<button class="tradition-chip${activeTraditions.size===0?' active':''}" 
-    style="background:${activeTraditions.size===0?'#1C1A14':'white'};color:${activeTraditions.size===0?'white':'#6B6050'}"
-    onclick="activeTraditions.clear();renderTraditionChips();renderPlants()">
-    <span class="chip-icon">🌍</span>All Traditions
+const container = document.getElementById('tradition-chips');
+if (!container || !traditionData.length) return;
+const allChip = `<button class="tradition-chip${activeTraditions.size===0?' active':''}" 
+  style="background:${activeTraditions.size===0?'#1C1A14':'white'};color:${activeTraditions.size===0?'white':'#6B6050'}"
+  onclick="activeTraditions.clear();renderTraditionChips();renderPlants()">
+  <span class="chip-icon">🌍</span>All Traditions
+</button>`;
+const chips = traditionData.map(t => {
+  const count = plantData.filter(p => p.traditions.includes(t.id)).length;
+  const active = activeTraditions.has(t.id);
+  return `<button class="tradition-chip${active?' active':''}"
+    style="background:${active?t.color:'white'};color:${active?'white':'#6B6050'};border-color:${active?t.color:''}"
+    onclick="toggleTraditionFilter('${t.id}')">
+    <span class="chip-icon">${t.icon}</span>${t.name}<span class="chip-count">${count}</span>
   </button>`;
-  const chips = traditionData.map(t => {
-    const count = plantData.filter(p => p.traditions.includes(t.id)).length;
-    const active = activeTraditions.has(t.id);
-    return `<button class="tradition-chip${active?' active':''}"
-      style="background:${active?t.color:'white'};color:${active?'white':'#6B6050'};border-color:${active?t.color:''}"
-      onclick="toggleTraditionFilter('${t.id}')">
-      <span class="chip-icon">${t.icon}</span>${t.name}<span class="chip-count">${count}</span>
-    </button>`;
-  }).join('');
-  container.innerHTML = allChip + chips;
+}).join('');
+container.innerHTML = allChip + chips;
 }
 
 function toggleTraditionFilter(id) {
-  if (activeTraditions.has(id)) activeTraditions.delete(id);
-  else activeTraditions.add(id);
-  renderTraditionChips(); renderPlants();
+if (activeTraditions.has(id)) activeTraditions.delete(id);
+else activeTraditions.add(id);
+renderTraditionChips(); renderPlants();
 }
 
 function renderPlants() {
-  const grid = document.getElementById('plant-grid');
-  const countEl = document.getElementById('db-count');
-  if (!grid) return;
-  const query = (document.getElementById('plant-search')?.value||'').toLowerCase();
-  const view = document.getElementById('db-view-toggle')?.value || 'all';
+const grid = document.getElementById('plant-grid');
+const countEl = document.getElementById('db-count');
+if (!grid) return;
+const query = (document.getElementById('plant-search')?.value||'').toLowerCase();
+const view = document.getElementById('db-view-toggle')?.value || 'all';
 
-  const filtered = plantData.filter(p => {
-    // Tradition filter
-    if (activeTraditions.size > 0 && !p.traditions.some(t => activeTraditions.has(t))) return false;
-    // View filter
-    if (view === 'curated' && p.stub) return false;
-    if (view === 'stub' && !p.stub) return false;
-    if (view === 'multi' && (!p.stub || (p.traditions||[]).length < 2)) return false;
-    if (view === 'fda' && p.evidence_tier !== 1) return false;
-    if (view === 'who' && p.evidence_tier !== 2) return false;
-    if (view === 'cochrane' && p.evidence_tier !== 3) return false;
-    if (view === 'priority' && p.priority_light !== 'green') return false;
-    // Search
-    if (query) {
-      const searchable = [
-        p.common_name,
-        p.modern_botanical||'',
-        ...(p.therapeutic_areas||[]),
-        p.modern_research?.key_compound||'',
-        p.modern_research?.summary||'',
-        ...p.traditions,
-        ...Object.values(p.tradition_names||{}),
-        ...Object.values(p.entries||{}).map(e=>`${e.condition||''} ${e.translation||''}`),
-        p.stub_note||'',
-      ].join(' ').toLowerCase();
-      if (!searchable.includes(query)) return false;
-    }
-    return true;
-  });
-
-  if (countEl) {
-    const stubCount = filtered.filter(p=>p.stub).length;
-    const curatedCount = filtered.filter(p=>!p.stub).length;
-    countEl.textContent = `${filtered.length} plants — ${curatedCount} curated · ${stubCount} stubs`;
+const filtered = plantData.filter(p => {
+  // Tradition filter
+  if (activeTraditions.size > 0 && !p.traditions.some(t => activeTraditions.has(t))) return false;
+  // View filter
+  if (view === 'curated' && p.stub) return false;
+  if (view === 'stub' && !p.stub) return false;
+  if (view === 'multi' && (!p.stub || (p.traditions||[]).length < 2)) return false;
+  if (view === 'fda' && p.evidence_tier !== 1) return false;
+  if (view === 'who' && p.evidence_tier !== 2) return false;
+  if (view === 'cochrane' && p.evidence_tier !== 3) return false;
+  if (view === 'priority' && p.priority_light !== 'green') return false;
+  // Search
+  if (query) {
+    const searchable = [
+      p.common_name,
+      p.modern_botanical||'',
+      ...(p.therapeutic_areas||[]),
+      p.modern_research?.key_compound||'',
+      p.modern_research?.summary||'',
+      ...p.traditions,
+      ...Object.values(p.tradition_names||{}),
+      ...Object.values(p.entries||{}).map(e=>`${e.condition||''} ${e.translation||''}`),
+      p.stub_note||'',
+    ].join(' ').toLowerCase();
+    if (!searchable.includes(query)) return false;
   }
+  return true;
+});
 
-  if (!filtered.length) {
-    grid.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">No plants match the current filters.</p>';
-    return;
-  }
+if (countEl) {
+  const stubCount = filtered.filter(p=>p.stub).length;
+  const curatedCount = filtered.filter(p=>!p.stub).length;
+  countEl.textContent = `${filtered.length} plants — ${curatedCount} curated · ${stubCount} stubs`;
+}
 
-  // Sort: curated first (by convergence), then stubs (by tradition count then mentions)
-  const sorted = [...filtered].sort((a,b) => {
-    if (!a.stub && b.stub) return -1;
-    if (a.stub && !b.stub) return 1;
-    if (!a.stub && !b.stub) return b.convergence_score - a.convergence_score;
-    const aTrad = (a.traditions||[]).length, bTrad = (b.traditions||[]).length;
-    if (aTrad !== bTrad) return bTrad - aTrad;
-    return (b.mentions_in_corpus||0) - (a.mentions_in_corpus||0);
-  });
+if (!filtered.length) {
+  grid.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">No plants match the current filters.</p>';
+  return;
+}
 
-  const statusMap = {
-    'validated':['status-validated','✓ Validated'],
-    'fully_validated':['status-validated','✓ Fully Validated'],
-    'breakthrough_validated':['status-breakthrough','★ Breakthrough'],
-    'validated_essential_medicine':['status-validated','✓ WHO Essential Medicine'],
-    'validated_renewed_interest':['status-validated','✓ Validated · Active Research'],
-    'needs_investigation':['status-gap','⚠ Needs Investigation'],
-    'critical_gap':['status-gap','⚠ Critical Gap'],
-    'preliminary':['status-preliminary','◐ Preliminary'],
-    'moderate_validation':['status-moderate','◑ Moderate Evidence'],
-    'significant_findings':['status-breakthrough','★ Significant Findings'],
-    'breakthrough_research':['status-breakthrough','★ Breakthrough Research'],
-    'corpus_mention':['status-preliminary','◌ Corpus Mention'],
-  };
+// Sort: curated first (by convergence), then stubs (by tradition count then mentions)
+const sorted = [...filtered].sort((a,b) => {
+  if (!a.stub && b.stub) return -1;
+  if (a.stub && !b.stub) return 1;
+  if (!a.stub && !b.stub) return b.convergence_score - a.convergence_score;
+  const aTrad = (a.traditions||[]).length, bTrad = (b.traditions||[]).length;
+  if (aTrad !== bTrad) return bTrad - aTrad;
+  return (b.mentions_in_corpus||0) - (a.mentions_in_corpus||0);
+});
 
-  grid.innerHTML = sorted.map(p => {
-    const conv = p.convergence_score;
-    const convClass = conv>=8?'convergence-high':conv>=5?'convergence-med':'convergence-low';
-    const [statusClass, statusLabel] = statusMap[p.investigation_status]||['status-preliminary','◐ Unknown'];
-    const completion = p.completion || (p.stub ? 15 : 100);
-    const isStub = !!p.stub;
+const statusMap = {
+  'validated':['status-validated','✓ Validated'],
+  'fully_validated':['status-validated','✓ Fully Validated'],
+  'breakthrough_validated':['status-breakthrough','★ Breakthrough'],
+  'validated_essential_medicine':['status-validated','✓ WHO Essential Medicine'],
+  'validated_renewed_interest':['status-validated','✓ Validated · Active Research'],
+  'needs_investigation':['status-gap','⚠ Needs Investigation'],
+  'critical_gap':['status-gap','⚠ Critical Gap'],
+  'preliminary':['status-preliminary','◐ Preliminary'],
+  'moderate_validation':['status-moderate','◑ Moderate Evidence'],
+  'significant_findings':['status-breakthrough','★ Significant Findings'],
+  'breakthrough_research':['status-breakthrough','★ Breakthrough Research'],
+  'corpus_mention':['status-preliminary','◌ Corpus Mention'],
+};
 
-    // Tradition chips
-    const tradChips = (p.traditions||[]).map(tid => {
-      const t = traditionData.find(x=>x.id===tid);
-      return t ? `<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${t.name}</span>`
-               : `<span class="tag">${tid}</span>`;
-    }).join('');
+grid.innerHTML = sorted.map(p => {
+  const conv = p.convergence_score;
+  const convClass = conv>=8?'convergence-high':conv>=5?'convergence-med':'convergence-low';
+  const [statusClass, statusLabel] = statusMap[p.investigation_status]||['status-preliminary','◐ Unknown'];
+  const completion = p.completion || (p.stub ? 15 : 100);
+  const isStub = !!p.stub;
 
-    // Completion bar
-    const barColor = completion === 100 ? 'var(--gold)' : completion > 50 ? 'var(--brown)' : '#ccc';
-    const completionBar = `<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.3rem">
-      <div style="flex:1;height:3px;background:#eee;border-radius:2px">
-        <div style="width:${completion}%;height:100%;background:${barColor};border-radius:2px"></div>
-      </div>
-      <span style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);white-space:nowrap">
-        ${completion===100?'Fully curated':completion>50?'Partially curated':'Corpus stub'}
-      </span>
-    </div>`;
+  // Tradition chips
+  const tradChips = (p.traditions||[]).map(tid => {
+    const t = traditionData.find(x=>x.id===tid);
+    return t ? `<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${t.name}</span>`
+             : `<span class="tag">${tid}</span>`;
+  }).join('');
 
-    // Priority + evidence badges
-    const priorityBadge = buildPriorityBadge(p);
-    const evidenceBadge = buildEvidenceBadge(p);
+  // Completion bar
+  const barColor = completion === 100 ? 'var(--gold)' : completion > 50 ? 'var(--brown)' : '#ccc';
+  const completionBar = `<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.3rem">
+    <div style="flex:1;height:3px;background:#eee;border-radius:2px">
+      <div style="width:${completion}%;height:100%;background:${barColor};border-radius:2px"></div>
+    </div>
+    <span style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);white-space:nowrap">
+      ${completion===100?'Fully curated':completion>50?'Partially curated':'Corpus stub'}
+    </span>
+  </div>`;
 
-    if (isStub) {
-      // Stub card — compact, honest about what's missing
-      const mentions = p.mentions_in_corpus || 0;
-      const segs = (p.corpus_segments || []).slice(0,2);
-      const segLinks = segs.map(s =>
-        `<div style="font-size:0.78rem;color:var(--muted);line-height:1.5;margin-top:0.3rem">
-          <span style="color:${getTradColor(s.tradition)}">${getTradIcon(s.tradition)}</span>
-          ${s.title || s.label}
-        </div>`
-      ).join('');
+  // Priority + evidence badges
+  const priorityBadge = buildPriorityBadge(p);
+  const evidenceBadge = buildEvidenceBadge(p);
 
-      return `<div class="plant-card" style="opacity:0.88">
-        <div class="plant-card-header" onclick="toggleCard(this)">
-          <div class="plant-name-block">
-            <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.2rem">
-              <span style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);background:#f5f5f5;padding:0.1rem 0.4rem">STUB · ${p.id}</span>
-              ${priorityBadge}
-            </div>
-            <h3 style="font-size:0.95rem">${p.common_name}</h3>
-            <div class="botanical">${p.modern_botanical || 'Botanical identification pending'}</div>
-            <div class="plant-tags" style="margin-top:0.4rem">${tradChips}</div>
-            ${completionBar}
-          </div>
-          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem">
-            <div style="text-align:center">
-              <div style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:${conv>=3?'var(--brown)':'var(--muted)'}">${conv}</div>
-              <div style="font-family:var(--font-code);font-size:0.5rem;text-transform:uppercase;color:var(--muted)">Traditions</div>
-            </div>
-            <span class="chevron" style="color:var(--muted)">▾</span>
-          </div>
-        </div>
-        <div class="plant-card-body">
-          <div style="padding:1rem 1.5rem;background:var(--vellum);border-bottom:1px solid var(--border)">
-            <div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem">
-              Mentioned ${mentions}x in corpus · ${(p.traditions||[]).length} tradition(s) · Awaiting full curation
-            </div>
-            ${segLinks}
-            <div style="margin-top:0.8rem;font-size:0.82rem;color:var(--muted);font-style:italic">${p.stub_note||''}</div>
-          </div>
-          ${(()=>{
-            const links=(p.corpus_links||[]).filter(s=>s.translation&&s.translation.length>40);
-            if(!links.length) return '';
-            const byT={};
-            links.forEach(s=>{ if(!byT[s.tradition]) byT[s.tradition]=[]; if(byT[s.tradition].length<3) byT[s.tradition].push(s); });
-            return `<div style="padding:0.8rem 1.5rem;border-bottom:1px solid var(--border)">
-              <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.4rem">
-                <span style="color:var(--gold)">◈</span> Source Passages — ${links.length} found
-              </div>
-              ${Object.entries(byT).map(([tid,segs])=>{
-                const t=traditionData.find(x=>x.id===tid);
-                const tc=t?.color||'#888';
-                return segs.map(s=>`<div style="background:#fafafa;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.6rem 0.8rem;margin-bottom:0.4rem">
-                  <div style="font-family:var(--font-code);font-size:0.55rem;color:${tc};text-transform:uppercase;margin-bottom:0.25rem">${t?.icon||''} ${t?.name||tid}${s.source_section?' · '+s.source_section:''}</div>
-                  ${s.original?`<div style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);font-style:italic;margin-bottom:0.3rem">${s.original.slice(0,200)}…</div>`:''}
-                  <p style="font-size:0.83rem;line-height:1.65;color:var(--ink);margin:0">${s.translation.slice(0,400)}${s.translation.length>400?'…':''}</p>
-                </div>`).join('');
-              }).join('')}
-            </div>`;
-          })()}
-          <div style="padding:0.8rem 1.5rem;background:var(--vellum)">
-            <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
-              ${p.id} · AI-extracted from corpus · not peer reviewed
-            </span>
-          </div>
-        </div>
-      </div>`;
-    }
+  if (isStub) {
+    // Stub card — compact, honest about what's missing
+    const mentions = p.mentions_in_corpus || 0;
+    const segs = (p.corpus_segments || []).slice(0,2);
+    const segLinks = segs.map(s =>
+      `<div style="font-size:0.78rem;color:var(--muted);line-height:1.5;margin-top:0.3rem">
+        <span style="color:${getTradColor(s.tradition)}">${getTradIcon(s.tradition)}</span>
+        ${s.title || s.label}
+      </div>`
+    ).join('');
 
-    // Full curated card
-    let entries = '';
-    for (const [tid, entry] of Object.entries(p.entries||{})) {
-      const t = traditionData.find(x=>x.id===tid);
-      entries += `<div class="source-section">
-        <span class="source-label" style="background:${t?.color||'#1C1A14'}">${t?.icon||''} ${t?.name||tid}</span>
-        ${entry.source_text?`<div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);margin-bottom:0.8rem">${entry.source_text}</div>`:''}
-        <div class="parallel-text">
-          <div class="text-column"><label>Original Text</label><p>${entry.original||''}</p></div>
-          <div class="text-column"><label>English Translation</label><p class="translation">${entry.translation||''}</p></div>
-        </div>
-        <div class="plant-meta">
-          ${entry.condition?`<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>`:''}
-          ${entry.preparation?`<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>`:''}
-        </div>
-        ${entry.notes?`<div class="notes-block">${entry.notes}</div>`:''}
-      </div>`;
-    }
-
-    return `<div class="plant-card">
+    return `<div class="plant-card" style="opacity:0.88">
       <div class="plant-card-header" onclick="toggleCard(this)">
         <div class="plant-name-block">
-          <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.3rem">
-            ${evidenceBadge}${priorityBadge}
+          <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.2rem">
+            <span style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);background:#f5f5f5;padding:0.1rem 0.4rem">STUB · ${p.id}</span>
+            ${priorityBadge}
           </div>
-          <h3>${p.common_name}</h3>
-          <div class="botanical">${p.modern_botanical||'Identification pending'}</div>
-          <div class="plant-tags" style="margin-top:0.5rem">
-            ${tradChips}
-            ${(p.therapeutic_areas||[]).slice(0,3).map(t=>`<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}
-          </div>
+          <h3 style="font-size:0.95rem">${p.common_name}</h3>
+          <div class="botanical">${p.modern_botanical || 'Botanical identification pending'}</div>
+          <div class="plant-tags" style="margin-top:0.4rem">${tradChips}</div>
           ${completionBar}
         </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem">
-          <div class="convergence-badge">
-            <span class="convergence-num ${convClass}">${conv}</span>
-            <span class="convergence-label">Convergence</span>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.4rem">
+          <div style="text-align:center">
+            <div style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:${conv>=3?'var(--brown)':'var(--muted)'}">${conv}</div>
+            <div style="font-family:var(--font-code);font-size:0.5rem;text-transform:uppercase;color:var(--muted)">Traditions</div>
           </div>
           <span class="chevron" style="color:var(--muted)">▾</span>
         </div>
       </div>
       <div class="plant-card-body">
-        ${entries}
-        ${p.modern_research?`<div class="source-section">
-          <span class="source-label modern">Modern Pharmacology</span>
-          <span class="research-status ${statusClass}">${statusLabel}</span>
-          <div class="plant-meta" style="margin-bottom:0.8rem">
-            <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
+        <div style="padding:1rem 1.5rem;background:var(--vellum);border-bottom:1px solid var(--border)">
+          <div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.5rem">
+            Mentioned ${mentions}x in corpus · ${(p.traditions||[]).length} tradition(s) · Awaiting full curation
           </div>
-          <p style="font-size:0.9rem;line-height:1.7;color:var(--ink);max-width:70ch">${p.modern_research.summary}</p>
-          <div class="notes-block" style="margin-top:0.8rem">${p.modern_research.significance}</div>
-        </div>`:''}
+          ${segLinks}
+          <div style="margin-top:0.8rem;font-size:0.82rem;color:var(--muted);font-style:italic">${p.stub_note||''}</div>
+        </div>
         ${(()=>{
-          const links = (p.corpus_links||[]).filter(s=>s.translation&&s.translation.length>40);
-          if (!links.length) return '';
-          const byT = {};
-          links.forEach(s=>{ if(!byT[s.tradition]) byT[s.tradition]=[]; if(byT[s.tradition].length<4) byT[s.tradition].push(s); });
-          const tCount = Object.keys(byT).length;
-          return `<div class="source-section" style="border-top:2px solid var(--gold)">
-            <div style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem">
-              <span style="color:var(--gold)">◈</span> Primary Sources — ${links.length} passage${links.length!==1?'s':''} from ${tCount} tradition${tCount!==1?'s':''}
+          const links=(p.corpus_links||[]).filter(s=>s.translation&&s.translation.length>40);
+          if(!links.length) return '';
+          const byT={};
+          links.forEach(s=>{ if(!byT[s.tradition]) byT[s.tradition]=[]; if(byT[s.tradition].length<3) byT[s.tradition].push(s); });
+          return `<div style="padding:0.8rem 1.5rem;border-bottom:1px solid var(--border)">
+            <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.4rem">
+              <span style="color:var(--gold)">◈</span> Source Passages — ${links.length} found
             </div>
             ${Object.entries(byT).map(([tid,segs])=>{
               const t=traditionData.find(x=>x.id===tid);
-              const tc=t?.color||'#888'; const ti=t?.icon||''; const tn=t?.name||tid;
-              return `<div style="margin-bottom:0.9rem">
-                <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.35rem">${ti} ${tn}</div>
-                ${segs.map((s,i)=>`<div style="background:var(--vellum);border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.4rem;${i>0?'display:none':''}" data-dbgroup="${p.id}-${tid}" class="db-passage">
-                  ${s.source_section?`<div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;margin-bottom:0.3rem">${s.source_section}</div>`:''}
-                  ${s.original?`<div style="font-family:var(--font-code);font-size:0.73rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.4rem;padding-bottom:0.4rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,250)}${s.original.length>250?'…':''}</div>`:''}
-                  <p style="font-size:0.85rem;line-height:1.7;color:var(--ink);margin:0">${s.translation.slice(0,500)}${s.translation.length>500?'…':''}</p>
-                  ${s.preparation?`<div style="margin-top:0.35rem;font-family:var(--font-code);font-size:0.6rem;color:var(--brown)">Preparation: ${s.preparation}</div>`:''}
-                </div>`).join('')}
-                ${segs.length>1?`<button onclick="(function(b){const all=document.querySelectorAll('[data-dbgroup=&quot;${p.id}-${tid}&quot;]');const anyHidden=[...all].some(e=>e.style.display==='none');all.forEach((e,i)=>e.style.display=anyHidden||i===0?'block':'none');b.textContent=anyHidden?'▴ Fewer passages':'▾ All ${segs.length} passages';})(this)" style="font-family:var(--font-code);font-size:0.58rem;color:var(--muted);background:none;border:none;cursor:pointer;padding:0.2rem 0;letter-spacing:0.06em;text-transform:uppercase">▾ All ${segs.length} passages</button>`:''}
-              </div>`;
+              const tc=t?.color||'#888';
+              return segs.map(s=>`<div style="background:#fafafa;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.6rem 0.8rem;margin-bottom:0.4rem">
+                <div style="font-family:var(--font-code);font-size:0.55rem;color:${tc};text-transform:uppercase;margin-bottom:0.25rem">${t?.icon||''} ${t?.name||tid}${s.source_section?' · '+s.source_section:''}</div>
+                ${s.original?`<div style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);font-style:italic;margin-bottom:0.3rem">${s.original.slice(0,200)}…</div>`:''}
+                <p style="font-size:0.83rem;line-height:1.65;color:var(--ink);margin:0">${s.translation.slice(0,400)}${s.translation.length>400?'…':''}</p>
+              </div>`).join('');
             }).join('')}
           </div>`;
         })()}
-        <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
-          <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Fully curated</span>
+        <div style="padding:0.8rem 1.5rem;background:var(--vellum)">
+          <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
+            ${p.id} · AI-extracted from corpus · not peer reviewed
+          </span>
         </div>
       </div>
     </div>`;
-  }).join('');
+  }
+
+  // Full curated card
+  let entries = '';
+  for (const [tid, entry] of Object.entries(p.entries||{})) {
+    const t = traditionData.find(x=>x.id===tid);
+    entries += `<div class="source-section">
+      <span class="source-label" style="background:${t?.color||'#1C1A14'}">${t?.icon||''} ${t?.name||tid}</span>
+      ${entry.source_text?`<div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);margin-bottom:0.8rem">${entry.source_text}</div>`:''}
+      <div class="parallel-text">
+        <div class="text-column"><label>Original Text</label><p>${entry.original||''}</p></div>
+        <div class="text-column"><label>English Translation</label><p class="translation">${entry.translation||''}</p></div>
+      </div>
+      <div class="plant-meta">
+        ${entry.condition?`<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>`:''}
+        ${entry.preparation?`<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>`:''}
+      </div>
+      ${entry.notes?`<div class="notes-block">${entry.notes}</div>`:''}
+    </div>`;
+  }
+
+  return `<div class="plant-card">
+    <div class="plant-card-header" onclick="toggleCard(this)">
+      <div class="plant-name-block">
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.3rem">
+          ${evidenceBadge}${priorityBadge}
+        </div>
+        <h3>${p.common_name}</h3>
+        <div class="botanical">${p.modern_botanical||'Identification pending'}</div>
+        <div class="plant-tags" style="margin-top:0.5rem">
+          ${tradChips}
+          ${(p.therapeutic_areas||[]).slice(0,3).map(t=>`<span class="tag">${t.replace(/_/g,' ')}</span>`).join('')}
+        </div>
+        ${completionBar}
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.5rem">
+        <div class="convergence-badge">
+          <span class="convergence-num ${convClass}">${conv}</span>
+          <span class="convergence-label">Convergence</span>
+        </div>
+        <span class="chevron" style="color:var(--muted)">▾</span>
+      </div>
+    </div>
+    <div class="plant-card-body">
+      ${entries}
+      ${p.modern_research?`<div class="source-section">
+        <span class="source-label modern">Modern Pharmacology</span>
+        <span class="research-status ${statusClass}">${statusLabel}</span>
+        <div class="plant-meta" style="margin-bottom:0.8rem">
+          <div class="meta-item"><label>Key Compound</label><span>${p.modern_research.key_compound}</span></div>
+        </div>
+        <p style="font-size:0.9rem;line-height:1.7;color:var(--ink);max-width:70ch">${p.modern_research.summary}</p>
+        <div class="notes-block" style="margin-top:0.8rem">${p.modern_research.significance}</div>
+      </div>`:''}
+      ${(()=>{
+        const links = (p.corpus_links||[]).filter(s=>s.translation&&s.translation.length>40);
+        if (!links.length) return '';
+        const byT = {};
+        links.forEach(s=>{ if(!byT[s.tradition]) byT[s.tradition]=[]; if(byT[s.tradition].length<4) byT[s.tradition].push(s); });
+        const tCount = Object.keys(byT).length;
+        return `<div class="source-section" style="border-top:2px solid var(--gold)">
+          <div style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.5rem">
+            <span style="color:var(--gold)">◈</span> Primary Sources — ${links.length} passage${links.length!==1?'s':''} from ${tCount} tradition${tCount!==1?'s':''}
+          </div>
+          ${Object.entries(byT).map(([tid,segs])=>{
+            const t=traditionData.find(x=>x.id===tid);
+            const tc=t?.color||'#888'; const ti=t?.icon||''; const tn=t?.name||tid;
+            return `<div style="margin-bottom:0.9rem">
+              <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.35rem">${ti} ${tn}</div>
+              ${segs.map((s,i)=>`<div style="background:var(--vellum);border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.4rem;${i>0?'display:none':''}" data-dbgroup="${p.id}-${tid}" class="db-passage">
+                ${s.source_section?`<div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;margin-bottom:0.3rem">${s.source_section}</div>`:''}
+                ${s.original?`<div style="font-family:var(--font-code);font-size:0.73rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.4rem;padding-bottom:0.4rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,250)}${s.original.length>250?'…':''}</div>`:''}
+                <p style="font-size:0.85rem;line-height:1.7;color:var(--ink);margin:0">${s.translation.slice(0,500)}${s.translation.length>500?'…':''}</p>
+                ${s.preparation?`<div style="margin-top:0.35rem;font-family:var(--font-code);font-size:0.6rem;color:var(--brown)">Preparation: ${s.preparation}</div>`:''}
+              </div>`).join('')}
+              ${segs.length>1?`<button onclick="(function(b){const all=document.querySelectorAll('[data-dbgroup=&quot;${p.id}-${tid}&quot;]');const anyHidden=[...all].some(e=>e.style.display==='none');all.forEach((e,i)=>e.style.display=anyHidden||i===0?'block':'none');b.textContent=anyHidden?'▴ Fewer passages':'▾ All ${segs.length} passages';})(this)" style="font-family:var(--font-code);font-size:0.58rem;color:var(--muted);background:none;border:none;cursor:pointer;padding:0.2rem 0;letter-spacing:0.06em;text-transform:uppercase">▾ All ${segs.length} passages</button>`:''}
+            </div>`;
+          }).join('')}
+        </div>`;
+      })()}
+      <div style="padding:1rem 1.5rem;background:var(--vellum);border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
+        <span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${p.id} · ${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Fully curated</span>
+      </div>
+    </div>
+  </div>`;
+}).join('');
 }
 
 function toggleCard(h) {
-  const b=h.nextElementSibling, c=h.querySelector('.chevron'), o=b.classList.contains('open');
-  b.classList.toggle('open',!o); c.classList.toggle('open',!o);
+const b=h.nextElementSibling, c=h.querySelector('.chevron'), o=b.classList.contains('open');
+b.classList.toggle('open',!o); c.classList.toggle('open',!o);
 }
 function filterPlants() { renderPlants(); }
 function filterByStatus(status, btn) {
-  activeStatusFilter = status==='all' ? null : status;
-  renderPlants();
+activeStatusFilter = status==='all' ? null : status;
+renderPlants();
 }
 
 // ── Longevity tab ────────────────────────────────────────
 function renderLongevity() {
-  const chart = document.getElementById('longevity-chart');
-  const achievGrid = document.getElementById('longevity-achievements-grid');
-  if (!chart || !longevityData.length) return;
+const chart = document.getElementById('longevity-chart');
+const achievGrid = document.getElementById('longevity-achievements-grid');
+if (!chart || !longevityData.length) return;
 
-  const modern = 85;
-  // Flatten all periods with tradition context
-  const allPeriods = [];
-  longevityData.forEach(t => {
-    (t.periods||[]).forEach(p => {
-      if (p.mean_elite_lifespan && typeof p.mean_elite_lifespan === 'number') {
-        allPeriods.push({ ...p, tradition_id: t.tradition_id, tradition_name: t.tradition_name, color: getTradColor(t.tradition_id) });
-      }
-    });
+const modern = 85;
+// Flatten all periods with tradition context
+const allPeriods = [];
+longevityData.forEach(t => {
+  (t.periods||[]).forEach(p => {
+    if (p.mean_elite_lifespan && typeof p.mean_elite_lifespan === 'number') {
+      allPeriods.push({ ...p, tradition_id: t.tradition_id, tradition_name: t.tradition_name, color: getTradColor(t.tradition_id) });
+    }
   });
-  allPeriods.sort((a,b) => b.mean_elite_lifespan - a.mean_elite_lifespan);
+});
+allPeriods.sort((a,b) => b.mean_elite_lifespan - a.mean_elite_lifespan);
 
-  chart.innerHTML = `
-    <div style="display:flex;justify-content:flex-end;margin-bottom:0.5rem;font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
-      ← ${modern} yrs (modern elite baseline)
+chart.innerHTML = `
+  <div style="display:flex;justify-content:flex-end;margin-bottom:0.5rem;font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">
+    ← ${modern} yrs (modern elite baseline)
+  </div>
+  ${allPeriods.map((p,i) => `
+  <div class="longevity-bar-row" style="cursor:pointer" onclick="toggleLongevityDetail(${i})">
+    <div class="longevity-label">
+      ${p.tradition_name}<br>
+      <span style="font-size:0.58rem;color:var(--muted)">${p.period} · ${p.dates}</span><br>
+      <span class="longevity-confidence conf-${p.confidence}">${p.confidence}</span>
     </div>
-    ${allPeriods.map((p,i) => `
-    <div class="longevity-bar-row" style="cursor:pointer" onclick="toggleLongevityDetail(${i})">
-      <div class="longevity-label">
-        ${p.tradition_name}<br>
-        <span style="font-size:0.58rem;color:var(--muted)">${p.period} · ${p.dates}</span><br>
-        <span class="longevity-confidence conf-${p.confidence}">${p.confidence}</span>
+    <div class="longevity-bar-track">
+      <div class="longevity-bar-fill" style="width:${(p.mean_elite_lifespan/modern*100).toFixed(1)}%;background:${p.color}">
+        <span class="longevity-bar-period">${p.tradition_name} ${p.period}</span>
       </div>
-      <div class="longevity-bar-track">
-        <div class="longevity-bar-fill" style="width:${(p.mean_elite_lifespan/modern*100).toFixed(1)}%;background:${p.color}">
-          <span class="longevity-bar-period">${p.tradition_name} ${p.period}</span>
-        </div>
-        <div class="longevity-bar-modern" style="left:100%"></div>
-      </div>
-      <div class="longevity-val">${p.mean_elite_lifespan}<span style="font-size:0.6rem;color:var(--muted)">yr</span></div>
+      <div class="longevity-bar-modern" style="left:100%"></div>
     </div>
-    <div id="detail-${i}" class="longevity-detail-card">
-      <strong>${p.period} · ${p.dates}</strong>
-      <p style="font-size:0.85rem;color:var(--muted);margin:0.5rem 0">${p.source_description||p.sample_description||''} · n=${p.sample_size||'?'}</p>
-      ${p.notes?`<p style="font-size:0.85rem;font-style:italic;color:var(--muted);margin-bottom:0.8rem">${p.notes}</p>`:''}
-      ${p.notable_examples?.length?`<div class="longevity-examples">
-        ${p.notable_examples.map(e=>`<div class="longevity-example">
-          <span class="example-name">${e.name}</span>
-          <span class="example-age">${e.age_at_death}</span>
-          <span class="example-note">${e.note}</span>
-        </div>`).join('')}
-      </div>`:''}
-      ${p.sources?.length?`<p style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);margin-top:0.8rem">${p.sources.join(' · ')}</p>`:''}
-    </div>`).join('')}`;
+    <div class="longevity-val">${p.mean_elite_lifespan}<span style="font-size:0.6rem;color:var(--muted)">yr</span></div>
+  </div>
+  <div id="detail-${i}" class="longevity-detail-card">
+    <strong>${p.period} · ${p.dates}</strong>
+    <p style="font-size:0.85rem;color:var(--muted);margin:0.5rem 0">${p.source_description||p.sample_description||''} · n=${p.sample_size||'?'}</p>
+    ${p.notes?`<p style="font-size:0.85rem;font-style:italic;color:var(--muted);margin-bottom:0.8rem">${p.notes}</p>`:''}
+    ${p.notable_examples?.length?`<div class="longevity-examples">
+      ${p.notable_examples.map(e=>`<div class="longevity-example">
+        <span class="example-name">${e.name}</span>
+        <span class="example-age">${e.age_at_death}</span>
+        <span class="example-note">${e.note}</span>
+      </div>`).join('')}
+    </div>`:''}
+    ${p.sources?.length?`<p style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);margin-top:0.8rem">${p.sources.join(' · ')}</p>`:''}
+  </div>`).join('')}`;
 
-  // Achievements grid
-  achievGrid.innerHTML = longevityData.map(t => {
-    const achievs = t.key_pharmaceutical_achievements||[];
-    if (!achievs.length) return '';
-    return `<div style="background:white;border:1px solid var(--border);border-top:4px solid ${getTradColor(t.tradition_id)};padding:1.2rem 1.4rem">
-      <div style="font-size:1.3rem;margin-bottom:0.4rem">${getTradIcon(t.tradition_id)}</div>
-      <h4 style="font-family:var(--font-display);font-size:0.85rem;color:var(--ink);margin-bottom:0.8rem">${t.tradition_name}</h4>
-      ${achievs.map(a=>`<div style="font-size:0.82rem;color:var(--muted);padding:0.25rem 0;border-bottom:1px solid var(--border)">— ${a}</div>`).join('')}
-    </div>`;
-  }).join('');
+// Achievements grid
+achievGrid.innerHTML = longevityData.map(t => {
+  const achievs = t.key_pharmaceutical_achievements||[];
+  if (!achievs.length) return '';
+  return `<div style="background:white;border:1px solid var(--border);border-top:4px solid ${getTradColor(t.tradition_id)};padding:1.2rem 1.4rem">
+    <div style="font-size:1.3rem;margin-bottom:0.4rem">${getTradIcon(t.tradition_id)}</div>
+    <h4 style="font-family:var(--font-display);font-size:0.85rem;color:var(--ink);margin-bottom:0.8rem">${t.tradition_name}</h4>
+    ${achievs.map(a=>`<div style="font-size:0.82rem;color:var(--muted);padding:0.25rem 0;border-bottom:1px solid var(--border)">— ${a}</div>`).join('')}
+  </div>`;
+}).join('');
 }
 
 function toggleLongevityDetail(i) {
-  const el = document.getElementById(`detail-${i}`);
-  el.classList.toggle('open');
+const el = document.getElementById(`detail-${i}`);
+el.classList.toggle('open');
 }
 
 function getTradColor(id) {
-  const t = traditionData.find(x=>x.id===id);
-  return t?.color || '#6B6050';
+const t = traditionData.find(x=>x.id===id);
+return t?.color || '#6B6050';
 }
 function getTradIcon(id) {
-  const t = traditionData.find(x=>x.id===id);
-  return t?.icon || '🌿';
+const t = traditionData.find(x=>x.id===id);
+return t?.icon || '🌿';
 }
 
 // ── Corpus browser ───────────────────────────────────────
 function renderCorpus() {
-  const list = document.getElementById('corpus-list');
-  const countEl = document.getElementById('corpus-count');
-  if (!list) return;
+const list = document.getElementById('corpus-list');
+const countEl = document.getElementById('corpus-count');
+if (!list) return;
 
-  if (!corpusData.length) {
-    list.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">Corpus data loading — Forge translation jobs may still be running. Check the Forge portal for status.</p>';
-    return;
-  }
-  filterCorpus();
+if (!corpusData.length) {
+  list.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:2rem 0">Corpus data loading — Forge translation jobs may still be running. Check the Forge portal for status.</p>';
+  return;
+}
+filterCorpus();
 }
 
 function filterCorpus() {
-  const list = document.getElementById('corpus-list');
-  const countEl = document.getElementById('corpus-count');
-  if (!list) return;
+const list = document.getElementById('corpus-list');
+const countEl = document.getElementById('corpus-count');
+if (!list) return;
 
-  const query = (document.getElementById('corpus-search')?.value||'').toLowerCase();
-  const typeFilter = document.getElementById('corpus-tradition-filter')?.value||'all';
+const query = (document.getElementById('corpus-search')?.value||'').toLowerCase();
+const typeFilter = document.getElementById('corpus-tradition-filter')?.value||'all';
 
-  const medicalKw = ['plant','herb','tree','bark','leaf','root','seed','flower','fruit','medicine','remedy','cure','treat','fever','pain'];
-  const mineralKw = ['stone','mineral','earth','clay','salt','metal','copper','silver','alum','sulfur','barro','tierra'];
-  const waterKw = ['water','spring','thermal','fountain','mineral water'];
+const medicalKw = ['plant','herb','tree','bark','leaf','root','seed','flower','fruit','medicine','remedy','cure','treat','fever','pain'];
+const mineralKw = ['stone','mineral','earth','clay','salt','metal','copper','silver','alum','sulfur','barro','tierra'];
+const waterKw = ['water','spring','thermal','fountain','mineral water'];
 
-  let filtered = corpusData.filter(r => {
-    const text = (r.title_inferred + ' ' + r.translation).toLowerCase();
-    const tradLabel = (r._tradition_label||r._tradition||'').toLowerCase();
-    if (query && !text.includes(query) && !tradLabel.includes(query)) return false;
-    if (typeFilter === 'plant') return medicalKw.some(k=>text.includes(k));
-    if (typeFilter === 'mineral') return mineralKw.some(k=>text.includes(k));
-    if (typeFilter === 'water') return waterKw.some(k=>text.includes(k));
-    // Tradition filters map to _tradition field
-    const tradMap = {
-      'kampo':'kampo','tibetan':'tibetan','maya':'maya',
-      'philippine':'philippine','australian':'australian',
-      'celtic':'celtic_norse','persian':'persian',
-      'andean':'cobo'
-    };
-    if (tradMap[typeFilter]) return (r._tradition||'').includes(tradMap[typeFilter]);
-    return true;
-  });
+let filtered = corpusData.filter(r => {
+  const text = (r.title_inferred + ' ' + r.translation).toLowerCase();
+  const tradLabel = (r._tradition_label||r._tradition||'').toLowerCase();
+  if (query && !text.includes(query) && !tradLabel.includes(query)) return false;
+  if (typeFilter === 'plant') return medicalKw.some(k=>text.includes(k));
+  if (typeFilter === 'mineral') return mineralKw.some(k=>text.includes(k));
+  if (typeFilter === 'water') return waterKw.some(k=>text.includes(k));
+  // Tradition filters map to _tradition field
+  const tradMap = {
+    'kampo':'kampo','tibetan':'tibetan','maya':'maya',
+    'philippine':'philippine','australian':'australian',
+    'celtic':'celtic_norse','persian':'persian',
+    'andean':'cobo'
+  };
+  if (tradMap[typeFilter]) return (r._tradition||'').includes(tradMap[typeFilter]);
+  return true;
+});
 
-  if (countEl) countEl.textContent = `${filtered.length} segments`;
+if (countEl) countEl.textContent = `${filtered.length} segments`;
 
-  list.innerHTML = filtered.slice(0,100).map((r,i) => {
-    const entities = r.entities_mentioned||[];
-    const entityTags = entities.slice(0,6).map(e => {
-      const type = guessEntityType(e.name||'');
-      return `<span class="corpus-entity-tag entity-${type}" onclick="searchForEntity('${(e.name||'').replace(/'/g,"\\'")}',event)">${e.name||'?'}</span>`;
-    }).join('');
-
-    return `<div class="corpus-segment" style="border-left-color:${i<3?'var(--gold)':getTradColor(r._tradition||'')}">
-      <div class="corpus-seg-header" onclick="toggleCorpusSeg(this)">
-        <div>
-          <div class="corpus-seg-title">${r.title_inferred||'Untitled segment'}</div>
-          <div class="corpus-seg-meta">
-            ${r._tradition_label ? `<span style="color:${getTradColor(r._tradition||'')}; font-weight:600">${getTradIcon(r._tradition||'')} ${r._tradition_label}</span> · ` : ''}${r._label||''}
-          </div>
-          ${entityTags?`<div style="margin-top:0.4rem">${entityTags}</div>`:''}
-        </div>
-        <span class="chevron" style="color:var(--muted);flex-shrink:0">▾</span>
-      </div>
-      <div class="corpus-seg-body">
-        ${r.translation?`<div class="corpus-translation">${r.translation}</div>`:''}
-        ${r.original_text?`<div class="corpus-original" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">${r.original_text.substring(0,600)}${r.original_text.length>600?'…':''}</div>`:''}
-        ${r.translator_notes?`<div class="notes-block" style="margin-top:0.8rem">${r.translator_notes}</div>`:''}
-      </div>
-    </div>`;
+list.innerHTML = filtered.slice(0,100).map((r,i) => {
+  const entities = r.entities_mentioned||[];
+  const entityTags = entities.slice(0,6).map(e => {
+    const type = guessEntityType(e.name||'');
+    return `<span class="corpus-entity-tag entity-${type}" onclick="searchForEntity('${(e.name||'').replace(/'/g,"\\'")}',event)">${e.name||'?'}</span>`;
   }).join('');
 
-  if (filtered.length > 100) {
-    list.innerHTML += `<p style="color:var(--muted);font-style:italic;padding:1rem 0;text-align:center">Showing 100 of ${filtered.length} segments. Refine your search to see more.</p>`;
-  }
+  return `<div class="corpus-segment" style="border-left-color:${i<3?'var(--gold)':getTradColor(r._tradition||'')}">
+    <div class="corpus-seg-header" onclick="toggleCorpusSeg(this)">
+      <div>
+        <div class="corpus-seg-title">${r.title_inferred||'Untitled segment'}</div>
+        <div class="corpus-seg-meta">
+          ${r._tradition_label ? `<span style="color:${getTradColor(r._tradition||'')}; font-weight:600">${getTradIcon(r._tradition||'')} ${r._tradition_label}</span> · ` : ''}${r._label||''}
+        </div>
+        ${entityTags?`<div style="margin-top:0.4rem">${entityTags}</div>`:''}
+      </div>
+      <span class="chevron" style="color:var(--muted);flex-shrink:0">▾</span>
+    </div>
+    <div class="corpus-seg-body">
+      ${r.translation?`<div class="corpus-translation">${r.translation}</div>`:''}
+      ${r.original_text?`<div class="corpus-original" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">${r.original_text.substring(0,600)}${r.original_text.length>600?'…':''}</div>`:''}
+      ${r.translator_notes?`<div class="notes-block" style="margin-top:0.8rem">${r.translator_notes}</div>`:''}
+    </div>
+  </div>`;
+}).join('');
+
+if (filtered.length > 100) {
+  list.innerHTML += `<p style="color:var(--muted);font-style:italic;padding:1rem 0;text-align:center">Showing 100 of ${filtered.length} segments. Refine your search to see more.</p>`;
+}
 }
 
 function toggleCorpusSeg(header) {
-  const body = header.nextElementSibling;
-  const chevron = header.querySelector('.chevron');
-  const open = body.classList.contains('open');
-  body.classList.toggle('open',!open);
-  chevron.classList.toggle('open',!open);
+const body = header.nextElementSibling;
+const chevron = header.querySelector('.chevron');
+const open = body.classList.contains('open');
+body.classList.toggle('open',!open);
+chevron.classList.toggle('open',!open);
 }
 
 function guessEntityType(name) {
-  const mineralWords = ['stone','mineral','clay','salt','metal','copper','silver','gold','earth','alum','sulfur','iron','tin','lead','mercury'];
-  const low = name.toLowerCase();
-  if (mineralWords.some(w=>low.includes(w))) return 'mineral';
-  return 'plant';
+const mineralWords = ['stone','mineral','clay','salt','metal','copper','silver','gold','earth','alum','sulfur','iron','tin','lead','mercury'];
+const low = name.toLowerCase();
+if (mineralWords.some(w=>low.includes(w))) return 'mineral';
+return 'plant';
 }
 
 function searchForEntity(name, e) {
-  e.stopPropagation();
-  document.getElementById('corpus-search').value = name;
-  filterCorpus();
+e.stopPropagation();
+document.getElementById('corpus-search').value = name;
+filterCorpus();
 }
 
 // ── Convergence Engine ───────────────────────────────────
 function renderConvergenceEngine() {
-  const select = document.getElementById('condition-select');
-  if (!select || !conditionData.length) return;
+const select = document.getElementById('condition-select');
+if (!select || !conditionData.length) return;
 
-  if (select.children.length <= 1) {
-    const grouped = {};
-    conditionData.forEach(c => {
-      if (!grouped[c.category]) grouped[c.category] = [];
-      grouped[c.category].push(c);
+if (select.children.length <= 1) {
+  const grouped = {};
+  conditionData.forEach(c => {
+    if (!grouped[c.category]) grouped[c.category] = [];
+    grouped[c.category].push(c);
+  });
+  Object.entries(grouped).forEach(([cat, conditions]) => {
+    const group = document.createElement('optgroup');
+    group.label = cat.replace(/_/g,' ').toUpperCase();
+    conditions.forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c.id;
+      opt.textContent = `${c.name} (${c.convergence_traditions?.length||0} traditions)`;
+      group.appendChild(opt);
     });
-    Object.entries(grouped).forEach(([cat, conditions]) => {
-      const group = document.createElement('optgroup');
-      group.label = cat.replace(/_/g,' ').toUpperCase();
-      conditions.forEach(c => {
-        const opt = document.createElement('option');
-        opt.value = c.id;
-        opt.textContent = `${c.name} (${c.convergence_traditions?.length||0} traditions)`;
-        group.appendChild(opt);
-      });
-      select.appendChild(group);
-    });
-  }
-  renderPriority();
+    select.appendChild(group);
+  });
+}
+renderPriority();
 }
 
 function runConvergenceQuery() {
-  const condId = document.getElementById('condition-select')?.value;
-  const minT = parseInt(document.getElementById('min-traditions-select')?.value||'1');
-  const resultsEl = document.getElementById('convergence-results');
-  const countEl = document.getElementById('query-result-count');
-  if (!resultsEl) return;
-  if (!condId) { resultsEl.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:1rem 0">Select a condition to query the archive.</p>'; return; }
+const condId = document.getElementById('condition-select')?.value;
+const minT = parseInt(document.getElementById('min-traditions-select')?.value||'1');
+const resultsEl = document.getElementById('convergence-results');
+const countEl = document.getElementById('query-result-count');
+if (!resultsEl) return;
+if (!condId) { resultsEl.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:1rem 0">Select a condition to query the archive.</p>'; return; }
 
-  const condition = conditionData.find(c=>c.id===condId);
-  if (!condition) return;
+const condition = conditionData.find(c=>c.id===condId);
+if (!condition) return;
 
-  // Find plants tagged to this condition
-  const termSet = new Set();
-  Object.values(condition.tradition_terms||{}).forEach(terms => {
-    (Array.isArray(terms)?terms:[terms]).forEach(t=>termSet.add(t.toLowerCase()));
-  });
+// Find plants tagged to this condition
+const termSet = new Set();
+Object.values(condition.tradition_terms||{}).forEach(terms => {
+  (Array.isArray(terms)?terms:[terms]).forEach(t=>termSet.add(t.toLowerCase()));
+});
 
-  // Match plants by therapeutic_areas or by searching translations
-  const matchingPlants = plantData.filter(p => {
-    const areas = (p.therapeutic_areas||[]).join(' ');
-    const condCategory = condition.category;
-    return areas.includes(condCategory) ||
-      condition.id.split('_').some(word=>areas.includes(word)) ||
-      (condition.key_discoveries||[]).some(d=>
-        (p.modern_research?.key_compound||'').toLowerCase().includes(d.toLowerCase().split('(')[0].trim().toLowerCase())
-      );
-  }).filter(p => p.traditions.length >= minT);
+// Match plants by therapeutic_areas or by searching translations
+const matchingPlants = plantData.filter(p => {
+  const areas = (p.therapeutic_areas||[]).join(' ');
+  const condCategory = condition.category;
+  return areas.includes(condCategory) ||
+    condition.id.split('_').some(word=>areas.includes(word)) ||
+    (condition.key_discoveries||[]).some(d=>
+      (p.modern_research?.key_compound||'').toLowerCase().includes(d.toLowerCase().split('(')[0].trim().toLowerCase())
+    );
+}).filter(p => p.traditions.length >= minT);
 
-  if (countEl) countEl.textContent = `${matchingPlants.length} result${matchingPlants.length!==1?'s':''}`;
+if (countEl) countEl.textContent = `${matchingPlants.length} result${matchingPlants.length!==1?'s':''}`;
 
-  if (!matchingPlants.length) {
-    resultsEl.innerHTML = `<p style="color:var(--muted);font-style:italic;padding:1rem 0">No plants found matching <strong>${condition.name}</strong> across ${minT}+ traditions. Try reducing the tradition threshold.</p>`;
-    return;
-  }
+if (!matchingPlants.length) {
+  resultsEl.innerHTML = `<p style="color:var(--muted);font-style:italic;padding:1rem 0">No plants found matching <strong>${condition.name}</strong> across ${minT}+ traditions. Try reducing the tradition threshold.</p>`;
+  return;
+}
 
-  const sorted = [...matchingPlants].sort((a,b)=>b.convergence_score-a.convergence_score);
+const sorted = [...matchingPlants].sort((a,b)=>b.convergence_score-a.convergence_score);
 
-  resultsEl.innerHTML = `
-    <div style="background:var(--vellum-dark);border:1px solid var(--border);padding:1rem 1.4rem;margin-bottom:1.5rem">
-      <strong>${condition.name}</strong> — documented in ${condition.convergence_traditions?.length||0} traditions<br>
-      <div style="margin-top:0.6rem;font-family:var(--font-code);font-size:0.65rem;color:var(--muted)">
-        Known discoveries: ${(condition.key_discoveries||[]).join(' · ')||'None documented'}
-      </div>
+resultsEl.innerHTML = `
+  <div style="background:var(--vellum-dark);border:1px solid var(--border);padding:1rem 1.4rem;margin-bottom:1.5rem">
+    <strong>${condition.name}</strong> — documented in ${condition.convergence_traditions?.length||0} traditions<br>
+    <div style="margin-top:0.6rem;font-family:var(--font-code);font-size:0.65rem;color:var(--muted)">
+      Known discoveries: ${(condition.key_discoveries||[]).join(' · ')||'None documented'}
     </div>
-    ${sorted.map(p => {
-      const tradBadges = p.traditions.map(tid=>{
-        const t=traditionData.find(x=>x.id===tid);
-        return t?`<span class="conv-trad-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
-      }).join('');
-      return `<div class="convergence-result-card" style="border-left-color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">
-        <div class="convergence-result-name">${p.common_name}</div>
-        <div class="convergence-result-botanical">${p.modern_botanical||'Identification pending'}</div>
-        <div class="convergence-tradition-dots">${tradBadges}</div>
-        <div style="display:flex;gap:1rem;align-items:center;margin:0.5rem 0">
-          <span style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">${p.convergence_score}</span>
-          <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);text-transform:uppercase">Convergence Score</span>
-        </div>
-        <div class="convergence-result-significance">${p.modern_research?.significance||''}</div>
-      </div>`;
-    }).join('')}`;
+  </div>
+  ${sorted.map(p => {
+    const tradBadges = p.traditions.map(tid=>{
+      const t=traditionData.find(x=>x.id===tid);
+      return t?`<span class="conv-trad-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
+    }).join('');
+    return `<div class="convergence-result-card" style="border-left-color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">
+      <div class="convergence-result-name">${p.common_name}</div>
+      <div class="convergence-result-botanical">${p.modern_botanical||'Identification pending'}</div>
+      <div class="convergence-tradition-dots">${tradBadges}</div>
+      <div style="display:flex;gap:1rem;align-items:center;margin:0.5rem 0">
+        <span style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:${p.convergence_score>=8?'var(--green)':p.convergence_score>=5?'var(--gold)':'var(--muted)'}">${p.convergence_score}</span>
+        <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);text-transform:uppercase">Convergence Score</span>
+      </div>
+      <div class="convergence-result-significance">${p.modern_research?.significance||''}</div>
+    </div>`;
+  }).join('')}`;
 }
 
 // ── Priority list ────────────────────────────────────────
 function renderPriority() {
-  const list = document.getElementById('priority-list');
-  if (!list || !plantData.length) return;
-  const sorted = [...plantData].sort((a,b)=>b.priority_score-a.priority_score);
-  const statusLabels = {
-    'validated':'✓ Validated','fully_validated':'✓ Fully Validated','breakthrough_validated':'★ Breakthrough',
-    'validated_essential_medicine':'✓ WHO Essential Medicine','validated_renewed_interest':'✓ Validated, Active Research',
-    'needs_investigation':'⚠ Needs Investigation','critical_gap':'⚠ Critical Research Gap',
-    'preliminary':'◐ Preliminary','moderate_validation':'◑ Moderate Evidence',
-    'significant_findings':'★ Significant Findings','breakthrough_research':'★ Breakthrough Research',
-  };
-  list.innerHTML = sorted.map(p => {
-    const tradIcons = p.traditions.map(tid=>{
-      const t=traditionData.find(x=>x.id===tid);
-      return t?`<span title="${t.name}" style="font-size:0.9rem">${t.icon}</span>`:'';
-    }).join('');
-    return `<div class="priority-item">
-      <div class="priority-score-block"><span class="priority-score-num">${p.priority_score}</span><span class="priority-score-label">Priority</span></div>
-      <div class="priority-content">
-        <h4>${p.common_name}</h4>
-        <div class="botanical-name">${p.modern_botanical||'Identification pending'}</div>
-        <div class="source-coverage" style="gap:0.3rem;margin:0.4rem 0">
-          ${tradIcons}
-          <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);margin-left:0.3rem">${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Convergence ${p.convergence_score}/10</span>
-        </div>
-        <p>${p.modern_research?.significance||'No modern research data available.'}</p>
-        <div style="margin-top:0.5rem"><span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${statusLabels[p.investigation_status]||p.investigation_status}</span></div>
-      </div>
-    </div>`;
+const list = document.getElementById('priority-list');
+if (!list || !plantData.length) return;
+const sorted = [...plantData].sort((a,b)=>b.priority_score-a.priority_score);
+const statusLabels = {
+  'validated':'✓ Validated','fully_validated':'✓ Fully Validated','breakthrough_validated':'★ Breakthrough',
+  'validated_essential_medicine':'✓ WHO Essential Medicine','validated_renewed_interest':'✓ Validated, Active Research',
+  'needs_investigation':'⚠ Needs Investigation','critical_gap':'⚠ Critical Research Gap',
+  'preliminary':'◐ Preliminary','moderate_validation':'◑ Moderate Evidence',
+  'significant_findings':'★ Significant Findings','breakthrough_research':'★ Breakthrough Research',
+};
+list.innerHTML = sorted.map(p => {
+  const tradIcons = p.traditions.map(tid=>{
+    const t=traditionData.find(x=>x.id===tid);
+    return t?`<span title="${t.name}" style="font-size:0.9rem">${t.icon}</span>`:'';
   }).join('');
+  return `<div class="priority-item">
+    <div class="priority-score-block"><span class="priority-score-num">${p.priority_score}</span><span class="priority-score-label">Priority</span></div>
+    <div class="priority-content">
+      <h4>${p.common_name}</h4>
+      <div class="botanical-name">${p.modern_botanical||'Identification pending'}</div>
+      <div class="source-coverage" style="gap:0.3rem;margin:0.4rem 0">
+        ${tradIcons}
+        <span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);margin-left:0.3rem">${p.traditions.length} tradition${p.traditions.length>1?'s':''} · Convergence ${p.convergence_score}/10</span>
+      </div>
+      <p>${p.modern_research?.significance||'No modern research data available.'}</p>
+      <div style="margin-top:0.5rem"><span style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">${statusLabels[p.investigation_status]||p.investigation_status}</span></div>
+    </div>
+  </div>`;
+}).join('');
 }
 
 // ── Research tab — PubMed scoring engine ─────────────────
@@ -2348,706 +2347,706 @@ const ICITE_BASE  = 'https://icite.od.nih.gov/api/pubs';
 
 // Study type scoring — the most important dimension (0-40)
 const STUDY_TYPE_SCORES = {
-  'systematic review': 40, 'meta-analysis': 40,
-  'randomized controlled trial': 35, 'clinical trial': 30,
-  'journal article': 15, // fallback — will be upgraded by title keywords
-  'review': 15, 'case reports': 5,
+'systematic review': 40, 'meta-analysis': 40,
+'randomized controlled trial': 35, 'clinical trial': 30,
+'journal article': 15, // fallback — will be upgraded by title keywords
+'review': 15, 'case reports': 5,
 };
 
 // Journal tier — known high-impact journals get full score (0-15)
 const HIGH_IMPACT_JOURNALS = new Set([
-  'nature', 'science', 'cell', 'new england journal of medicine',
-  'lancet', 'jama', 'bmj', 'pnas', 'plos one', 'plos medicine',
-  'frontiers in pharmacology', 'journal of ethnopharmacology',
-  'phytomedicine', 'phytotherapy research', 'natural product reports',
-  'evidence-based complementary and alternative medicine',
-  'journal of natural products', 'molecules', 'nutrients',
-  'cochrane database of systematic reviews',
+'nature', 'science', 'cell', 'new england journal of medicine',
+'lancet', 'jama', 'bmj', 'pnas', 'plos one', 'plos medicine',
+'frontiers in pharmacology', 'journal of ethnopharmacology',
+'phytomedicine', 'phytotherapy research', 'natural product reports',
+'evidence-based complementary and alternative medicine',
+'journal of natural products', 'molecules', 'nutrients',
+'cochrane database of systematic reviews',
 ]);
 
 function scoreStudyType(pubTypes, title, abstract) {
-  // Check publication type array first
-  for (const pt of (pubTypes || [])) {
-    const lower = pt.toLowerCase();
-    for (const [key, score] of Object.entries(STUDY_TYPE_SCORES)) {
-      if (lower.includes(key)) return { score, label: pt };
-    }
+// Check publication type array first
+for (const pt of (pubTypes || [])) {
+  const lower = pt.toLowerCase();
+  for (const [key, score] of Object.entries(STUDY_TYPE_SCORES)) {
+    if (lower.includes(key)) return { score, label: pt };
   }
-  // Fallback: scan title/abstract for study type signals
-  const text = ((title || '') + ' ' + (abstract || '')).toLowerCase();
-  if (text.includes('randomized') && text.includes('placebo')) return { score: 35, label: 'RCT (inferred)' };
-  if (text.includes('systematic review') || text.includes('meta-analysis')) return { score: 40, label: 'Systematic review (inferred)' };
-  if (text.includes('mechanism') || text.includes('receptor') || text.includes('alkaloid') || text.includes('isolated')) return { score: 30, label: 'Mechanistic study (inferred)' };
-  if (text.includes('clinical trial')) return { score: 30, label: 'Clinical trial (inferred)' };
-  if (text.includes('cohort') || text.includes('observational')) return { score: 20, label: 'Observational (inferred)' };
-  return { score: 12, label: 'Journal article' };
+}
+// Fallback: scan title/abstract for study type signals
+const text = ((title || '') + ' ' + (abstract || '')).toLowerCase();
+if (text.includes('randomized') && text.includes('placebo')) return { score: 35, label: 'RCT (inferred)' };
+if (text.includes('systematic review') || text.includes('meta-analysis')) return { score: 40, label: 'Systematic review (inferred)' };
+if (text.includes('mechanism') || text.includes('receptor') || text.includes('alkaloid') || text.includes('isolated')) return { score: 30, label: 'Mechanistic study (inferred)' };
+if (text.includes('clinical trial')) return { score: 30, label: 'Clinical trial (inferred)' };
+if (text.includes('cohort') || text.includes('observational')) return { score: 20, label: 'Observational (inferred)' };
+return { score: 12, label: 'Journal article' };
 }
 
 function scoreRecency(year) {
-  if (!year) return { score: 5, label: 'Unknown year' };
-  const y = parseInt(year);
-  if (y >= 2022) return { score: 20, label: `${y} — Recent` };
-  if (y >= 2018) return { score: 16, label: `${y} — Recent` };
-  if (y >= 2012) return { score: 12, label: `${y} — Modern` };
-  if (y >= 2005) return { score: 8,  label: `${y} — Established` };
-  return { score: 5, label: `${y} — Historical` };
+if (!year) return { score: 5, label: 'Unknown year' };
+const y = parseInt(year);
+if (y >= 2022) return { score: 20, label: `${y} — Recent` };
+if (y >= 2018) return { score: 16, label: `${y} — Recent` };
+if (y >= 2012) return { score: 12, label: `${y} — Modern` };
+if (y >= 2005) return { score: 8,  label: `${y} — Established` };
+return { score: 5, label: `${y} — Historical` };
 }
 
 function scoreCitations(count) {
-  if (count === null || count === undefined) return { score: 2, label: 'Citations loading...' };
-  if (count >= 500) return { score: 25, label: `${count} citations — High impact` };
-  if (count >= 100) return { score: 20, label: `${count} citations` };
-  if (count >= 50)  return { score: 15, label: `${count} citations` };
-  if (count >= 10)  return { score: 10, label: `${count} citations` };
-  if (count >= 1)   return { score: 5,  label: `${count} citations` };
-  return { score: 2, label: '0 citations' };
+if (count === null || count === undefined) return { score: 2, label: 'Citations loading...' };
+if (count >= 500) return { score: 25, label: `${count} citations — High impact` };
+if (count >= 100) return { score: 20, label: `${count} citations` };
+if (count >= 50)  return { score: 15, label: `${count} citations` };
+if (count >= 10)  return { score: 10, label: `${count} citations` };
+if (count >= 1)   return { score: 5,  label: `${count} citations` };
+return { score: 2, label: '0 citations' };
 }
 
 function scoreJournal(journal) {
-  if (!journal) return { score: 6, label: 'Unknown journal' };
-  const lower = journal.toLowerCase();
-  for (const j of HIGH_IMPACT_JOURNALS) {
-    if (lower.includes(j)) return { score: 15, label: `${journal} — High impact` };
-  }
-  // PubMed-indexed but not in known high-impact list — still a quality signal
-  return { score: 8, label: `${journal} — PubMed indexed` };
+if (!journal) return { score: 6, label: 'Unknown journal' };
+const lower = journal.toLowerCase();
+for (const j of HIGH_IMPACT_JOURNALS) {
+  if (lower.includes(j)) return { score: 15, label: `${journal} — High impact` };
+}
+// PubMed-indexed but not in known high-impact list — still a quality signal
+return { score: 8, label: `${journal} — PubMed indexed` };
 }
 
 function computeScore(article, citationCount) {
-  const studyType  = scoreStudyType(article.pubTypes, article.title, article.abstract);
-  const recency    = scoreRecency(article.year);
-  const citations  = scoreCitations(citationCount);
-  const journal    = scoreJournal(article.journal);
+const studyType  = scoreStudyType(article.pubTypes, article.title, article.abstract);
+const recency    = scoreRecency(article.year);
+const citations  = scoreCitations(citationCount);
+const journal    = scoreJournal(article.journal);
 
-  // Recency-citation adjustment: highly cited old papers get a bonus
-  // (foundational papers should stay relevant)
-  let citationBonus = 0;
-  if (citationCount >= 100 && parseInt(article.year||0) < 2010) citationBonus = 5;
+// Recency-citation adjustment: highly cited old papers get a bonus
+// (foundational papers should stay relevant)
+let citationBonus = 0;
+if (citationCount >= 100 && parseInt(article.year||0) < 2010) citationBonus = 5;
 
-  const total = Math.min(100,
-    studyType.score + recency.score + citations.score + journal.score + citationBonus
-  );
+const total = Math.min(100,
+  studyType.score + recency.score + citations.score + journal.score + citationBonus
+);
 
-  return {
-    total,
-    components: { studyType, recency, citations, journal, citationBonus },
-    tier: total >= 70 ? 'high' : total >= 45 ? 'moderate' : total >= 20 ? 'preliminary' : 'hide'
-  };
+return {
+  total,
+  components: { studyType, recency, citations, journal, citationBonus },
+  tier: total >= 70 ? 'high' : total >= 45 ? 'moderate' : total >= 20 ? 'preliminary' : 'hide'
+};
 }
 
 function buildPubMedQuery(plant) {
-  // Build a specific query: botanical name OR key compound + therapeutic areas
-  const parts = [];
-  if (plant.modern_botanical) parts.push(`"${plant.modern_botanical.split(' ').slice(0,2).join(' ')}"`);
-  if (plant.modern_research?.key_compound) {
-    const compound = plant.modern_research.key_compound.split('(')[0].trim().split(',')[0].trim();
-    if (compound && compound !== 'N/A') parts.push(`"${compound}"`);
-  }
-  // Add therapeutic area terms
-  const areas = (plant.therapeutic_areas || []).slice(0, 2).map(a =>
-    a.replace(/_/g, ' ')
-  );
-  const plantQuery = parts.join(' OR ');
-  const areaQuery  = areas.length ? `AND (${areas.join(' OR ')})` : '';
-  return `(${plantQuery}) ${areaQuery}`.trim();
+// Build a specific query: botanical name OR key compound + therapeutic areas
+const parts = [];
+if (plant.modern_botanical) parts.push(`"${plant.modern_botanical.split(' ').slice(0,2).join(' ')}"`);
+if (plant.modern_research?.key_compound) {
+  const compound = plant.modern_research.key_compound.split('(')[0].trim().split(',')[0].trim();
+  if (compound && compound !== 'N/A') parts.push(`"${compound}"`);
+}
+// Add therapeutic area terms
+const areas = (plant.therapeutic_areas || []).slice(0, 2).map(a =>
+  a.replace(/_/g, ' ')
+);
+const plantQuery = parts.join(' OR ');
+const areaQuery  = areas.length ? `AND (${areas.join(' OR ')})` : '';
+return `(${plantQuery}) ${areaQuery}`.trim();
 }
 
 async function fetchPubMed(query, maxResults = 15) {
-  // Step 1: esearch — get PMIDs
-  const searchUrl = `${PUBMED_BASE}/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&retmax=${maxResults}&sort=relevance&retmode=json`;
-  const searchRes = await fetch(searchUrl);
-  const searchData = await searchRes.json();
-  const pmids = searchData.esearchresult?.idlist || [];
-  if (!pmids.length) return [];
+// Step 1: esearch — get PMIDs
+const searchUrl = `${PUBMED_BASE}/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&retmax=${maxResults}&sort=relevance&retmode=json`;
+const searchRes = await fetch(searchUrl);
+const searchData = await searchRes.json();
+const pmids = searchData.esearchresult?.idlist || [];
+if (!pmids.length) return [];
 
-  // Step 2: esummary — get article metadata
-  const summaryUrl = `${PUBMED_BASE}/esummary.fcgi?db=pubmed&id=${pmids.join(',')}&retmode=json`;
-  const summaryRes = await fetch(summaryUrl);
-  const summaryData = await summaryRes.json();
-  const result = summaryData.result || {};
+// Step 2: esummary — get article metadata
+const summaryUrl = `${PUBMED_BASE}/esummary.fcgi?db=pubmed&id=${pmids.join(',')}&retmode=json`;
+const summaryRes = await fetch(summaryUrl);
+const summaryData = await summaryRes.json();
+const result = summaryData.result || {};
 
-  return pmids.map(id => {
-    const doc = result[id] || {};
-    return {
-      pmid: id,
-      title: doc.title || 'Untitled',
-      journal: doc.fulljournalname || doc.source || '',
-      year: doc.pubdate?.split(' ')[0] || '',
-      authors: (doc.authors || []).slice(0, 3).map(a => a.name).join(', '),
-      pubTypes: (doc.pubtype || []),
-      abstract: '', // abstract needs efetch — loaded on demand
-      url: `https://pubmed.ncbi.nlm.nih.gov/${id}/`,
-    };
-  });
+return pmids.map(id => {
+  const doc = result[id] || {};
+  return {
+    pmid: id,
+    title: doc.title || 'Untitled',
+    journal: doc.fulljournalname || doc.source || '',
+    year: doc.pubdate?.split(' ')[0] || '',
+    authors: (doc.authors || []).slice(0, 3).map(a => a.name).join(', '),
+    pubTypes: (doc.pubtype || []),
+    abstract: '', // abstract needs efetch — loaded on demand
+    url: `https://pubmed.ncbi.nlm.nih.gov/${id}/`,
+  };
+});
 }
 
 async function fetchICiteCitations(pmids) {
-  // iCite returns citation counts for PubMed IDs
-  try {
-    const url = `${ICITE_BASE}?pmids=${pmids.join(',')}&fields=citation_count,relative_citation_ratio`;
-    const res = await fetch(url);
-    const data = await res.json();
-    const counts = {};
-    (data.data || []).forEach(pub => {
-      counts[String(pub.pmid)] = pub.citation_count ?? 0;
-    });
-    return counts;
-  } catch (e) {
-    return {};
-  }
+// iCite returns citation counts for PubMed IDs
+try {
+  const url = `${ICITE_BASE}?pmids=${pmids.join(',')}&fields=citation_count,relative_citation_ratio`;
+  const res = await fetch(url);
+  const data = await res.json();
+  const counts = {};
+  (data.data || []).forEach(pub => {
+    counts[String(pub.pmid)] = pub.citation_count ?? 0;
+  });
+  return counts;
+} catch (e) {
+  return {};
+}
 }
 
 async function fetchAbstract(pmid) {
-  const url = `${PUBMED_BASE}/efetch.fcgi?db=pubmed&id=${pmid}&rettype=abstract&retmode=text`;
-  const res = await fetch(url);
-  const text = await res.text();
-  // Extract abstract section (crude but reliable for PubMed text format)
-  const lines = text.split('\n').filter(l => l.trim());
-  const absStart = lines.findIndex(l => l.includes('AB  -'));
-  if (absStart === -1) return '';
-  return lines.slice(absStart, absStart + 15)
-    .map(l => l.replace(/^AB\s+-\s+/, '').replace(/^\s+/, ''))
-    .join(' ').substring(0, 600);
+const url = `${PUBMED_BASE}/efetch.fcgi?db=pubmed&id=${pmid}&rettype=abstract&retmode=text`;
+const res = await fetch(url);
+const text = await res.text();
+// Extract abstract section (crude but reliable for PubMed text format)
+const lines = text.split('\n').filter(l => l.trim());
+const absStart = lines.findIndex(l => l.includes('AB  -'));
+if (absStart === -1) return '';
+return lines.slice(absStart, absStart + 15)
+  .map(l => l.replace(/^AB\s+-\s+/, '').replace(/^\s+/, ''))
+  .join(' ').substring(0, 600);
 }
 
 function initResearchTab() {
-  const select = document.getElementById('research-plant-select');
-  if (!select || select.children.length > 1) return;
-  plantData.forEach(p => {
-    const opt = document.createElement('option');
-    opt.value = p.id;
-    opt.textContent = `${p.common_name} (${p.modern_botanical || 'identification pending'})`;
-    select.appendChild(opt);
-  });
+const select = document.getElementById('research-plant-select');
+if (!select || select.children.length > 1) return;
+plantData.forEach(p => {
+  const opt = document.createElement('option');
+  opt.value = p.id;
+  opt.textContent = `${p.common_name} (${p.modern_botanical || 'identification pending'})`;
+  select.appendChild(opt);
+});
 }
 
 async function runResearchQuery() {
-  const select   = document.getElementById('research-plant-select');
-  const btn      = document.getElementById('research-search-btn');
-  const status   = document.getElementById('research-status');
-  const resultsEl = document.getElementById('research-results');
-  if (!select?.value) return;
+const select   = document.getElementById('research-plant-select');
+const btn      = document.getElementById('research-search-btn');
+const status   = document.getElementById('research-status');
+const resultsEl = document.getElementById('research-results');
+if (!select?.value) return;
 
-  const plant = plantData.find(p => p.id === select.value);
-  if (!plant) return;
+const plant = plantData.find(p => p.id === select.value);
+if (!plant) return;
 
-  btn.disabled = true;
-  status.textContent = 'Querying PubMed...';
-  resultsEl.innerHTML = '<div class="research-loading">Fetching results from PubMed — this takes 2–4 seconds...</div>';
+btn.disabled = true;
+status.textContent = 'Querying PubMed...';
+resultsEl.innerHTML = '<div class="research-loading">Fetching results from PubMed — this takes 2–4 seconds...</div>';
 
-  try {
-    const query = buildPubMedQuery(plant);
-    const articles = await fetchPubMed(query, 20);
+try {
+  const query = buildPubMedQuery(plant);
+  const articles = await fetchPubMed(query, 20);
 
-    if (!articles.length) {
-      resultsEl.innerHTML = `<div class="research-loading">No PubMed results for <strong>${plant.common_name}</strong>. Try a broader search or check the plant's modern botanical name.</div>`;
-      status.textContent = '';
-      btn.disabled = false;
-      return;
-    }
-
-    // Initial render with placeholder citation scores (loads immediately)
-    status.textContent = `${articles.length} results — loading citation counts...`;
-    renderResearchResults(plant, articles, {}, query);
-
-    // Fetch citation counts in parallel (non-blocking)
-    const pmids = articles.map(a => a.pmid);
-    const citations = await fetchICiteCitations(pmids);
-    status.textContent = `${articles.length} results · citation counts loaded`;
-
-    // Re-render with real citation scores
-    renderResearchResults(plant, articles, citations, query);
-
-  } catch (e) {
-    resultsEl.innerHTML = `<div class="research-error">PubMed query failed: ${e.message}. PubMed rate-limits unauthenticated requests — try again in a few seconds.</div>`;
+  if (!articles.length) {
+    resultsEl.innerHTML = `<div class="research-loading">No PubMed results for <strong>${plant.common_name}</strong>. Try a broader search or check the plant's modern botanical name.</div>`;
     status.textContent = '';
+    btn.disabled = false;
+    return;
   }
 
-  btn.disabled = false;
+  // Initial render with placeholder citation scores (loads immediately)
+  status.textContent = `${articles.length} results — loading citation counts...`;
+  renderResearchResults(plant, articles, {}, query);
+
+  // Fetch citation counts in parallel (non-blocking)
+  const pmids = articles.map(a => a.pmid);
+  const citations = await fetchICiteCitations(pmids);
+  status.textContent = `${articles.length} results · citation counts loaded`;
+
+  // Re-render with real citation scores
+  renderResearchResults(plant, articles, citations, query);
+
+} catch (e) {
+  resultsEl.innerHTML = `<div class="research-error">PubMed query failed: ${e.message}. PubMed rate-limits unauthenticated requests — try again in a few seconds.</div>`;
+  status.textContent = '';
+}
+
+btn.disabled = false;
 }
 
 function renderResearchResults(plant, articles, citations, query) {
-  const resultsEl = document.getElementById('research-results');
+const resultsEl = document.getElementById('research-results');
 
-  // Score all articles
-  const scored = articles.map(a => {
-    const citCount = citations[a.pmid] ?? null;
-    const score = computeScore(a, citCount);
-    return { ...a, score };
-  }).filter(a => a.score.tier !== 'hide')
-    .sort((a, b) => b.score.total - a.score.total);
+// Score all articles
+const scored = articles.map(a => {
+  const citCount = citations[a.pmid] ?? null;
+  const score = computeScore(a, citCount);
+  return { ...a, score };
+}).filter(a => a.score.tier !== 'hide')
+  .sort((a, b) => b.score.total - a.score.total);
 
-  const highCount = scored.filter(a => a.score.tier === 'high').length;
-  const modCount  = scored.filter(a => a.score.tier === 'moderate').length;
-  const preCount  = scored.filter(a => a.score.tier === 'preliminary').length;
-  const onlyWeak  = highCount === 0 && modCount === 0 && preCount > 0;
+const highCount = scored.filter(a => a.score.tier === 'high').length;
+const modCount  = scored.filter(a => a.score.tier === 'moderate').length;
+const preCount  = scored.filter(a => a.score.tier === 'preliminary').length;
+const onlyWeak  = highCount === 0 && modCount === 0 && preCount > 0;
 
-  const tierColor = { high: '#2E7D32', moderate: '#F57F17', preliminary: '#757575' };
-  const tierLabel = { high: '✦ High confidence', moderate: '◑ Moderate', preliminary: '◐ Preliminary' };
-  const tierBorder = { high: '#4CAF50', moderate: '#FFB300', preliminary: '#BDBDBD' };
+const tierColor = { high: '#2E7D32', moderate: '#F57F17', preliminary: '#757575' };
+const tierLabel = { high: '✦ High confidence', moderate: '◑ Moderate', preliminary: '◐ Preliminary' };
+const tierBorder = { high: '#4CAF50', moderate: '#FFB300', preliminary: '#BDBDBD' };
 
-  resultsEl.innerHTML = `
-    <div style="margin-bottom:1.5rem">
-      <p style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);margin-bottom:0.5rem">
-        PubMed query: <em style="color:var(--ink)">${query}</em>
-      </p>
-      <div style="display:flex;gap:1rem;flex-wrap:wrap;font-family:var(--font-code);font-size:0.68rem">
-        ${highCount ? `<span style="color:#2E7D32">✦ ${highCount} high confidence</span>` : ''}
-        ${modCount  ? `<span style="color:#F57F17">◑ ${modCount} moderate</span>` : ''}
-        ${preCount  ? `<span style="color:#757575">◐ ${preCount} preliminary</span>` : ''}
-        <span style="color:var(--muted)">${articles.length - scored.length} below threshold (hidden)</span>
+resultsEl.innerHTML = `
+  <div style="margin-bottom:1.5rem">
+    <p style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);margin-bottom:0.5rem">
+      PubMed query: <em style="color:var(--ink)">${query}</em>
+    </p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;font-family:var(--font-code);font-size:0.68rem">
+      ${highCount ? `<span style="color:#2E7D32">✦ ${highCount} high confidence</span>` : ''}
+      ${modCount  ? `<span style="color:#F57F17">◑ ${modCount} moderate</span>` : ''}
+      ${preCount  ? `<span style="color:#757575">◐ ${preCount} preliminary</span>` : ''}
+      <span style="color:var(--muted)">${articles.length - scored.length} below threshold (hidden)</span>
+    </div>
+  </div>
+  ${onlyWeak ? '<div class="only-evidence-warning">⚠ Only weak or preliminary evidence found for this plant in PubMed. This may indicate a genuine research gap — or that different search terms are needed.</div>' : ''}
+  ${scored.map(a => `
+  <div class="research-paper-card" style="border-left-color:${tierBorder[a.score.tier]}">
+    <div class="paper-score-row">
+      <div class="paper-title">
+        <a href="${a.url}" target="_blank" rel="noopener noreferrer">${a.title}</a>
+      </div>
+      <div class="paper-score-block">
+        <span class="paper-score-num" style="color:${tierColor[a.score.tier]}">${a.score.total}</span>
+        <span class="paper-score-label">${tierLabel[a.score.tier]}</span>
       </div>
     </div>
-    ${onlyWeak ? '<div class="only-evidence-warning">⚠ Only weak or preliminary evidence found for this plant in PubMed. This may indicate a genuine research gap — or that different search terms are needed.</div>' : ''}
-    ${scored.map(a => `
-    <div class="research-paper-card" style="border-left-color:${tierBorder[a.score.tier]}">
-      <div class="paper-score-row">
-        <div class="paper-title">
-          <a href="${a.url}" target="_blank" rel="noopener noreferrer">${a.title}</a>
-        </div>
-        <div class="paper-score-block">
-          <span class="paper-score-num" style="color:${tierColor[a.score.tier]}">${a.score.total}</span>
-          <span class="paper-score-label">${tierLabel[a.score.tier]}</span>
-        </div>
-      </div>
-      <div class="paper-meta">
-        <span>${a.journal}</span>
-        <span>${a.score.components.recency.label}</span>
-        <span>${a.authors}${a.authors ? ' et al.' : ''}</span>
-        <span>PMID ${a.pmid}</span>
-      </div>
-      <div class="score-breakdown">
-        <span class="score-component">Study type: ${a.score.components.studyType.score}/40 — ${a.score.components.studyType.label}</span>
-        <span class="score-component">Citations: ${a.score.components.citations.score}/25 — ${a.score.components.citations.label}</span>
-        <span class="score-component">Recency: ${a.score.components.recency.score}/20</span>
-        <span class="score-component">Journal: ${a.score.components.journal.score}/15</span>
-        ${a.score.components.citationBonus ? `<span class="score-component">Foundational bonus: +${a.score.components.citationBonus}</span>` : ''}
-      </div>
-      <div style="margin-top:0.5rem">
-        <button class="paper-toggle" onclick="toggleAbstract('${a.pmid}', this)">▸ Show abstract</button>
-      </div>
-      <div class="paper-abstract" id="abstract-${a.pmid}"></div>
-    </div>`).join('')}
-  `;
+    <div class="paper-meta">
+      <span>${a.journal}</span>
+      <span>${a.score.components.recency.label}</span>
+      <span>${a.authors}${a.authors ? ' et al.' : ''}</span>
+      <span>PMID ${a.pmid}</span>
+    </div>
+    <div class="score-breakdown">
+      <span class="score-component">Study type: ${a.score.components.studyType.score}/40 — ${a.score.components.studyType.label}</span>
+      <span class="score-component">Citations: ${a.score.components.citations.score}/25 — ${a.score.components.citations.label}</span>
+      <span class="score-component">Recency: ${a.score.components.recency.score}/20</span>
+      <span class="score-component">Journal: ${a.score.components.journal.score}/15</span>
+      ${a.score.components.citationBonus ? `<span class="score-component">Foundational bonus: +${a.score.components.citationBonus}</span>` : ''}
+    </div>
+    <div style="margin-top:0.5rem">
+      <button class="paper-toggle" onclick="toggleAbstract('${a.pmid}', this)">▸ Show abstract</button>
+    </div>
+    <div class="paper-abstract" id="abstract-${a.pmid}"></div>
+  </div>`).join('')}
+`;
 }
 
 async function toggleAbstract(pmid, btn) {
-  const el = document.getElementById(`abstract-${pmid}`);
-  if (el.classList.contains('open')) {
-    el.classList.remove('open');
-    btn.textContent = '▸ Show abstract';
-    return;
-  }
-  if (!el.textContent) {
-    btn.textContent = 'Loading...';
-    el.textContent = await fetchAbstract(pmid);
-  }
-  el.classList.add('open');
-  btn.textContent = '▾ Hide abstract';
+const el = document.getElementById(`abstract-${pmid}`);
+if (el.classList.contains('open')) {
+  el.classList.remove('open');
+  btn.textContent = '▸ Show abstract';
+  return;
+}
+if (!el.textContent) {
+  btn.textContent = 'Loading...';
+  el.textContent = await fetchAbstract(pmid);
+}
+el.classList.add('open');
+btn.textContent = '▾ Hide abstract';
 }
 
 // ── Init ────────────────────────────────────────────────
 loadData().then(() => {
-  renderPriority();
+renderPriority();
 });
 </script>
 <!-- ── GLOBAL SEARCH RESULTS OVERLAY ───────────────────────── -->
 <div class="search-results-overlay" id="search-overlay" onclick="handleOverlayClick(event)">
-  <div class="search-results-panel">
-    <div class="search-results-header">
-      <span class="search-results-title" id="search-results-title">Searching the archive…</span>
-      <button class="search-results-close" onclick="closeSearch()">✕</button>
-    </div>
-    <div class="search-results-body" id="search-results-body">
-      <div class="search-loading">
-        <div class="search-loading-spinner"></div><br>
-        Consulting 18 traditions…
-      </div>
+<div class="search-results-panel">
+  <div class="search-results-header">
+    <span class="search-results-title" id="search-results-title">Searching the archive…</span>
+    <button class="search-results-close" onclick="closeSearch()">✕</button>
+  </div>
+  <div class="search-results-body" id="search-results-body">
+    <div class="search-loading">
+      <div class="search-loading-spinner"></div><br>
+      Consulting 18 traditions…
     </div>
   </div>
+</div>
 </div>
 <div class="deeplink-toast" id="deeplink-toast">✓ Link copied to clipboard</div>
 <script>
 let currentSearchQuery = '';
 
 function getURLParams() {
-  const p = new URLSearchParams(window.location.search);
-  return { q: p.get('q') || '', r: p.get('r') || '' };
+const p = new URLSearchParams(window.location.search);
+return { q: p.get('q') || '', r: p.get('r') || '' };
 }
 function setURLParams(q, r) {
-  const p = new URLSearchParams();
-  if (q) p.set('q', q);
-  if (r) p.set('r', r);
-  window.history.replaceState({}, '', window.location.pathname + (p.toString() ? '?' + p.toString() : ''));
+const p = new URLSearchParams();
+if (q) p.set('q', q);
+if (r) p.set('r', r);
+window.history.replaceState({}, '', window.location.pathname + (p.toString() ? '?' + p.toString() : ''));
 }
 function buildShareURL(q, r) {
-  const p = new URLSearchParams();
-  if (q) p.set('q', q);
-  if (r) p.set('r', r);
-  return window.location.origin + window.location.pathname + '?' + p.toString();
+const p = new URLSearchParams();
+if (q) p.set('q', q);
+if (r) p.set('r', r);
+return window.location.origin + window.location.pathname + '?' + p.toString();
 }
 function showToast(msg) {
-  const t = document.getElementById('deeplink-toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2800);
+const t = document.getElementById('deeplink-toast');
+t.textContent = msg;
+t.classList.add('show');
+setTimeout(() => t.classList.remove('show'), 2800);
 }
 function copyToClipboard(url) {
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(url).then(() => showToast('✓ Link copied to clipboard'));
-  } else {
-    const ta = document.createElement('textarea');
-    ta.value = url; ta.style.position='fixed'; ta.style.opacity='0';
-    document.body.appendChild(ta); ta.select(); document.execCommand('copy');
-    document.body.removeChild(ta); showToast('✓ Link copied to clipboard');
-  }
+if (navigator.clipboard) {
+  navigator.clipboard.writeText(url).then(() => showToast('✓ Link copied to clipboard'));
+} else {
+  const ta = document.createElement('textarea');
+  ta.value = url; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+  document.body.removeChild(ta); showToast('✓ Link copied to clipboard');
+}
 }
 function buildShareBar(q, r, plantName) {
-  const url = buildShareURL(q, r);
-  const subject = plantName
-    ? `${plantName} — traditional remedy for ${q}`
-    : `Traditional remedies for ${q} across 18 civilisations`;
-  const bodyText = plantName
-    ? `Found this in the Materia Medica Americana archive — ${plantName} as a remedy for ${q}, documented across multiple world traditions:\n\n${url}`
-    : `What 18 world traditions discovered for "${q}" — from the Materia Medica Americana archive:\n\n${url}`;
-  const shortText = plantName
-    ? `${plantName} for ${q} — documented across world traditions`
-    : `Traditional remedies for "${q}" across 18 civilisations`;
-  const eu = encodeURIComponent(url);
-  const et = encodeURIComponent(shortText + ': ');
-  const eSubject = encodeURIComponent(subject);
-  const eBody = encodeURIComponent(bodyText);
-  const contextNote = plantName
-    ? `Sharing: ${plantName} (search: "${q}") — this link opens directly to this remedy`
-    : `Sharing search results for "${q}" — recipient sees the same results`;
-  const shareId = 'share-' + Math.random().toString(36).slice(2,8);
-  const native = (navigator.share && plantName)
-    ? `<button class="share-btn share-native" id="${shareId}" onclick="doNativeShare('${shareId}')">📤 Share</button>`
-    : '';
-  // Store share data for native share
-  if (plantName) {
-    window._shareData = window._shareData || {};
-    window._shareData[shareId] = { title: subject, text: shortText, url };
-  }
-  return `<div class="share-bar">
-    <span class="share-bar-label">↗ Share this</span>
-    ${native}
-    <a class="share-btn share-whatsapp" href="https://wa.me/?text=${et}${eu}" target="_blank" rel="noopener">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.529 5.852L0 24l6.335-1.506C8.03 23.459 9.975 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.898 0-3.665-.507-5.186-1.392l-.371-.22-3.762.895.946-3.665-.243-.384C2.522 15.446 2.182 13.77 2.182 12 2.182 6.562 6.562 2.182 12 2.182S21.818 6.562 21.818 12 17.438 21.818 12 21.818z"/></svg>
-      WhatsApp
-    </a>
-    <a class="share-btn share-messages" href="sms:?&body=${et}${eu}">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
-      Message
-    </a>
-    <a class="share-btn share-email" href="mailto:?subject=${eSubject}&body=${eBody}">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      Email
-    </a>
-    <a class="share-btn share-x" href="https://twitter.com/intent/tweet?text=${et}&url=${eu}" target="_blank" rel="noopener">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      X
-    </a>
-    <button class="share-btn share-copy" onclick="copyToClipboard('${url.replace(/'/g,"\\'")}');this.classList.add('copied');this.textContent='✓ Copied';setTimeout(()=>{this.classList.remove('copied');this.innerHTML='Copy link'},2000)">Copy link</button>
-  </div>
-  <div class="share-context">${contextNote}</div>`;
+const url = buildShareURL(q, r);
+const subject = plantName
+  ? `${plantName} — traditional remedy for ${q}`
+  : `Traditional remedies for ${q} across 18 civilisations`;
+const bodyText = plantName
+  ? `Found this in the Materia Medica Americana archive — ${plantName} as a remedy for ${q}, documented across multiple world traditions:\n\n${url}`
+  : `What 18 world traditions discovered for "${q}" — from the Materia Medica Americana archive:\n\n${url}`;
+const shortText = plantName
+  ? `${plantName} for ${q} — documented across world traditions`
+  : `Traditional remedies for "${q}" across 18 civilisations`;
+const eu = encodeURIComponent(url);
+const et = encodeURIComponent(shortText + ': ');
+const eSubject = encodeURIComponent(subject);
+const eBody = encodeURIComponent(bodyText);
+const contextNote = plantName
+  ? `Sharing: ${plantName} (search: "${q}") — this link opens directly to this remedy`
+  : `Sharing search results for "${q}" — recipient sees the same results`;
+const shareId = 'share-' + Math.random().toString(36).slice(2,8);
+const native = (navigator.share && plantName)
+  ? `<button class="share-btn share-native" id="${shareId}" onclick="doNativeShare('${shareId}')">📤 Share</button>`
+  : '';
+// Store share data for native share
+if (plantName) {
+  window._shareData = window._shareData || {};
+  window._shareData[shareId] = { title: subject, text: shortText, url };
+}
+return `<div class="share-bar">
+  <span class="share-bar-label">↗ Share this</span>
+  ${native}
+  <a class="share-btn share-whatsapp" href="https://wa.me/?text=${et}${eu}" target="_blank" rel="noopener">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.529 5.852L0 24l6.335-1.506C8.03 23.459 9.975 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-1.898 0-3.665-.507-5.186-1.392l-.371-.22-3.762.895.946-3.665-.243-.384C2.522 15.446 2.182 13.77 2.182 12 2.182 6.562 6.562 2.182 12 2.182S21.818 6.562 21.818 12 17.438 21.818 12 21.818z"/></svg>
+    WhatsApp
+  </a>
+  <a class="share-btn share-messages" href="sms:?&body=${et}${eu}">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    Message
+  </a>
+  <a class="share-btn share-email" href="mailto:?subject=${eSubject}&body=${eBody}">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    Email
+  </a>
+  <a class="share-btn share-x" href="https://twitter.com/intent/tweet?text=${et}&url=${eu}" target="_blank" rel="noopener">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    X
+  </a>
+  <button class="share-btn share-copy" onclick="copyToClipboard('${url.replace(/'/g,"\\'")}');this.classList.add('copied');this.textContent='✓ Copied';setTimeout(()=>{this.classList.remove('copied');this.innerHTML='Copy link'},2000)">Copy link</button>
+</div>
+<div class="share-context">${contextNote}</div>`;
 }
 function prefill(text) {
-  document.getElementById('global-search-input').value = text;
-  runGlobalSearch();
+document.getElementById('global-search-input').value = text;
+runGlobalSearch();
 }
 function handleOverlayClick(e) {
-  if (e.target === document.getElementById('search-overlay')) closeSearch();
+if (e.target === document.getElementById('search-overlay')) closeSearch();
 }
 function closeSearch() {
-  document.getElementById('search-overlay').classList.remove('open');
-  window.history.replaceState({}, '', window.location.pathname);
+document.getElementById('search-overlay').classList.remove('open');
+window.history.replaceState({}, '', window.location.pathname);
 }
 function buildRegulatoryBadge(p) {
-  const reg = regulatoryData.find(r => 
-    r.archive_id === p.id || 
-    r.common_name.toLowerCase() === p.common_name.toLowerCase()
-  );
-  if (!reg) return '';
-  const badges = [];
-  if (reg.who?.status?.includes('Monograph')) {
-    badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:#E3F2FD;color:#1565C0;border:1px solid #1565C0;border-radius:2px">🌐 WHO Monograph</span>`);
-  }
-  if (reg.ema?.status) {
-    const isWE = reg.ema.status.includes('Well-established');
-    badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:${isWE?'#E8F5E9':'#F3E5F5'};color:${isWE?'#2E7D32':'#6A1B9A'};border:1px solid ${isWE?'#388E3C':'#7B1FA2'};border-radius:2px">🇪🇺 EMA ${isWE?'Well-established':'Traditional Use'}</span>`);
-  }
-  if (reg.fda?.status && (reg.fda.status.includes('approved') || reg.fda.status.includes('GRAS'))) {
-    const isApproved = reg.fda.status.toLowerCase().includes('approved');
-    badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:${isApproved?'#E8F5E9':'#FFF8E1'};color:${isApproved?'#1B5E20':'#E65100'};border:1px solid ${isApproved?'#2E7D32':'#EF6C00'};border-radius:2px">🇺🇸 FDA ${isApproved?'Approved':'GRAS'}</span>`);
-  }
-  if (!badges.length) return '';
-  return `<div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.5rem">${badges.join('')}</div>`;
+const reg = regulatoryData.find(r => 
+  r.archive_id === p.id || 
+  r.common_name.toLowerCase() === p.common_name.toLowerCase()
+);
+if (!reg) return '';
+const badges = [];
+if (reg.who?.status?.includes('Monograph')) {
+  badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:#E3F2FD;color:#1565C0;border:1px solid #1565C0;border-radius:2px">🌐 WHO Monograph</span>`);
+}
+if (reg.ema?.status) {
+  const isWE = reg.ema.status.includes('Well-established');
+  badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:${isWE?'#E8F5E9':'#F3E5F5'};color:${isWE?'#2E7D32':'#6A1B9A'};border:1px solid ${isWE?'#388E3C':'#7B1FA2'};border-radius:2px">🇪🇺 EMA ${isWE?'Well-established':'Traditional Use'}</span>`);
+}
+if (reg.fda?.status && (reg.fda.status.includes('approved') || reg.fda.status.includes('GRAS'))) {
+  const isApproved = reg.fda.status.toLowerCase().includes('approved');
+  badges.push(`<span style="display:inline-flex;align-items:center;gap:0.3rem;font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.18rem 0.5rem;background:${isApproved?'#E8F5E9':'#FFF8E1'};color:${isApproved?'#1B5E20':'#E65100'};border:1px solid ${isApproved?'#2E7D32':'#EF6C00'};border-radius:2px">🇺🇸 FDA ${isApproved?'Approved':'GRAS'}</span>`);
+}
+if (!badges.length) return '';
+return `<div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.5rem">${badges.join('')}</div>`;
 }
 function buildPriorityBadge(p) {
-  const light = p.priority_light;
-  if (!light) return '';
-  const labels = {
-    green: 'Priority Investigation',
-    amber: 'Research Candidate',
-    red:   'On the Radar'
-  };
-  const reason = p.priority_reason || '';
-  return `<span class="priority-badge ${light}" title="${reason.replace(/'/g,"'")}">
-    <span class="priority-light ${light}"></span>${labels[light]}
-  </span>`;
+const light = p.priority_light;
+if (!light) return '';
+const labels = {
+  green: 'Priority Investigation',
+  amber: 'Research Candidate',
+  red:   'On the Radar'
+};
+const reason = p.priority_reason || '';
+return `<span class="priority-badge ${light}" title="${reason.replace(/'/g,"'")}">
+  <span class="priority-light ${light}"></span>${labels[light]}
+</span>`;
 }
 function buildEvidenceBadge(p) {
-  const tier = p.evidence_tier;
-  if (!tier) return '';
-  const icons = { 1:'✓', 2:'🌐', 3:'📋', 4:'🔬' };
-  const classes = { 1:'evidence-t1', 2:'evidence-t2', 3:'evidence-t3', 4:'evidence-t4' };
-  const labels = {
-    1: 'FDA Approved',
-    2: 'WHO Essential Medicine',
-    3: 'Cochrane Reviewed',
-    4: p.evidence_badge === 'BREAKTHROUGH RESEARCH' ? 'Breakthrough Research' : 'Clinical Research'
-  };
-  const badge = `<span class="evidence-badge ${classes[tier]}" title="${p.evidence_authority||''}">${icons[tier]} ${labels[tier]}</span>`;
-  return p.evidence_url
-    ? `<a class="evidence-badge-link" href="${p.evidence_url}" target="_blank" rel="noopener">${badge}</a>`
-    : badge;
+const tier = p.evidence_tier;
+if (!tier) return '';
+const icons = { 1:'✓', 2:'🌐', 3:'📋', 4:'🔬' };
+const classes = { 1:'evidence-t1', 2:'evidence-t2', 3:'evidence-t3', 4:'evidence-t4' };
+const labels = {
+  1: 'FDA Approved',
+  2: 'WHO Essential Medicine',
+  3: 'Cochrane Reviewed',
+  4: p.evidence_badge === 'BREAKTHROUGH RESEARCH' ? 'Breakthrough Research' : 'Clinical Research'
+};
+const badge = `<span class="evidence-badge ${classes[tier]}" title="${p.evidence_authority||''}">${icons[tier]} ${labels[tier]}</span>`;
+return p.evidence_url
+  ? `<a class="evidence-badge-link" href="${p.evidence_url}" target="_blank" rel="noopener">${badge}</a>`
+  : badge;
 }
 function makeRemedyId(p) {
-  return p.id.toLowerCase() + '-' + p.common_name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+$/,'');
+return p.id.toLowerCase() + '-' + p.common_name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/-+$/,'');
 }
 function quickShare(url, title) {
-  if (navigator.share) {
-    navigator.share({ title, url }).catch(()=> copyToClipboard(url));
-  } else {
-    copyToClipboard(url);
-  }
+if (navigator.share) {
+  navigator.share({ title, url }).catch(()=> copyToClipboard(url));
+} else {
+  copyToClipboard(url);
+}
 }
 function doNativeShare(id) {
-  const d = (window._shareData||{})[id];
-  if (!d) return;
-  navigator.share(d).catch(()=> copyToClipboard(d.url));
+const d = (window._shareData||{})[id];
+if (!d) return;
+navigator.share(d).catch(()=> copyToClipboard(d.url));
 }
 async function runGlobalSearch(autoOpenRemedy) {
-  const query = document.getElementById('global-search-input').value.trim();
-  if (!query) return;
-  currentSearchQuery = query;
-  setURLParams(query);
-  const overlay = document.getElementById('search-overlay');
-  const body = document.getElementById('search-results-body');
-  const title = document.getElementById('search-results-title');
-  overlay.classList.add('open');
-  title.textContent = `Searching for "${query}"…`;
-  body.innerHTML = '<div class="search-loading"><div class="search-loading-spinner"></div><br>Consulting 18 traditions across 4,000 years…</div>';
-  if (!plantData.length || !traditionData.length || !conditionData.length) await loadData();
-  const [aiResult, localResults] = await Promise.all([fetchAISummary(query), searchLocalData(query)]);
-  renderSearchResults(query, aiResult, localResults, autoOpenRemedy);
-  title.textContent = `"${query}" — across 18 traditions`;
+const query = document.getElementById('global-search-input').value.trim();
+if (!query) return;
+currentSearchQuery = query;
+setURLParams(query);
+const overlay = document.getElementById('search-overlay');
+const body = document.getElementById('search-results-body');
+const title = document.getElementById('search-results-title');
+overlay.classList.add('open');
+title.textContent = `Searching for "${query}"…`;
+body.innerHTML = '<div class="search-loading"><div class="search-loading-spinner"></div><br>Consulting 18 traditions across 4,000 years…</div>';
+if (!plantData.length || !traditionData.length || !conditionData.length) await loadData();
+const [aiResult, localResults] = await Promise.all([fetchAISummary(query), searchLocalData(query)]);
+renderSearchResults(query, aiResult, localResults, autoOpenRemedy);
+title.textContent = `"${query}" — across 18 traditions`;
 }
 async function fetchAISummary(query) {
-  try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({
-        model:'claude-sonnet-4-6', max_tokens:1000,
-        system:`You are a scholarly assistant for Materia Medica Americana, an archive of traditional medicine across 18 world traditions spanning 4,000 years. When given a health condition or symptom: (1) Give a brief plain-English overview of how traditions approached it (2-3 sentences). (2) Name the strongest cross-tradition patterns — specific plants and preparations. (3) Note modern validation where it exists. Rules: be specific, name actual plants, keep under 200 words, no markdown headers or bullets. End with exactly: "This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy."`,
-        messages:[{role:'user', content:`Traditional medicine across cultures for: ${query}`}]
-      })
-    });
-    const d = await r.json();
-    return d.content?.[0]?.text || null;
-  } catch(e) { return null; }
+try {
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({
+      model:'claude-sonnet-4-6', max_tokens:1000,
+      system:`You are a scholarly assistant for Materia Medica Americana, an archive of traditional medicine across 18 world traditions spanning 4,000 years. When given a health condition or symptom: (1) Give a brief plain-English overview of how traditions approached it (2-3 sentences). (2) Name the strongest cross-tradition patterns — specific plants and preparations. (3) Note modern validation where it exists. Rules: be specific, name actual plants, keep under 200 words, no markdown headers or bullets. End with exactly: "This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy."`,
+      messages:[{role:'user', content:`Traditional medicine across cultures for: ${query}`}]
+    })
+  });
+  const d = await r.json();
+  return d.content?.[0]?.text || null;
+} catch(e) { return null; }
 }
 function searchLocalData(query) {
-  const q = query.toLowerCase();
-  const terms = q.split(/\s+/).filter(t => t.length > 2);
-  const scored = plantData.map(p => {
-    let score = 0;
-    const txt = [p.common_name,...(p.therapeutic_areas||[]),p.modern_research?.key_compound||'',
-      p.modern_research?.summary||'',p.modern_research?.significance||'',
-      ...Object.values(p.tradition_names||{}),...Object.values(p.entries||{}).map(e=>`${e.translation||''} ${e.condition||''}`)
-    ].join(' ').toLowerCase();
-    terms.forEach(t => { if (txt.includes(t)) score += 3; });
-    if (p.therapeutic_areas?.some(a => q.includes(a.replace(/_/g,' ')) || a.replace(/_/g,' ').includes(q.split(' ')[0]))) score += 5;
-    score += p.convergence_score * 0.5;
-    return {p, score};
-  }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,8).map(x=>x.p);
-  const conds = conditionData.filter(c => {
-    const ct = [c.name,c.modern_description,c.id,c.category,...Object.values(c.tradition_terms||{}).flat()].join(' ').toLowerCase();
-    return terms.some(t=>ct.includes(t));
-  });
-  return {plants:scored, conditions:conds};
+const q = query.toLowerCase();
+const terms = q.split(/\s+/).filter(t => t.length > 2);
+const scored = plantData.map(p => {
+  let score = 0;
+  const txt = [p.common_name,...(p.therapeutic_areas||[]),p.modern_research?.key_compound||'',
+    p.modern_research?.summary||'',p.modern_research?.significance||'',
+    ...Object.values(p.tradition_names||{}),...Object.values(p.entries||{}).map(e=>`${e.translation||''} ${e.condition||''}`)
+  ].join(' ').toLowerCase();
+  terms.forEach(t => { if (txt.includes(t)) score += 3; });
+  if (p.therapeutic_areas?.some(a => q.includes(a.replace(/_/g,' ')) || a.replace(/_/g,' ').includes(q.split(' ')[0]))) score += 5;
+  score += p.convergence_score * 0.5;
+  return {p, score};
+}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,8).map(x=>x.p);
+const conds = conditionData.filter(c => {
+  const ct = [c.name,c.modern_description,c.id,c.category,...Object.values(c.tradition_terms||{}).flat()].join(' ').toLowerCase();
+  return terms.some(t=>ct.includes(t));
+});
+return {plants:scored, conditions:conds};
 }
 function renderSearchResults(query, aiSummary, localResults, autoOpenRemedy) {
-  const body = document.getElementById('search-results-body');
-  const {plants, conditions} = localResults;
-  let html = buildShareBar(query, null, null);
-  if (aiSummary) {
-    const di = aiSummary.indexOf('This is historical and scholarly');
-    const main = di>-1 ? aiSummary.substring(0,di).trim() : aiSummary;
-    const disc = di>-1 ? aiSummary.substring(di) : 'This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy.';
-    html += `<div class="search-ai-summary"><div class="search-ai-summary-label">✦ Archive Intelligence · Cross-Tradition Summary</div><p>${main.replace(/\n/g,'<br>')}</p><div class="search-ai-disclaimer">⚠ ${disc}</div></div>`;
+const body = document.getElementById('search-results-body');
+const {plants, conditions} = localResults;
+let html = buildShareBar(query, null, null);
+if (aiSummary) {
+  const di = aiSummary.indexOf('This is historical and scholarly');
+  const main = di>-1 ? aiSummary.substring(0,di).trim() : aiSummary;
+  const disc = di>-1 ? aiSummary.substring(di) : 'This is historical and scholarly information only. Consult a qualified healthcare provider before using any traditional remedy.';
+  html += `<div class="search-ai-summary"><div class="search-ai-summary-label">✦ Archive Intelligence · Cross-Tradition Summary</div><p>${main.replace(/\n/g,'<br>')}</p><div class="search-ai-disclaimer">⚠ ${disc}</div></div>`;
+}
+if (conditions.length) {
+  const ut = [...new Set(conditions.flatMap(c=>c.convergence_traditions||[]))];
+  html += `<div style="font-family:var(--font-code);font-size:0.68rem;color:var(--muted);margin-bottom:1rem;padding:0.6rem 0.8rem;background:var(--vellum-dark);border:1px solid var(--border)">📋 ${conditions.map(c=>c.name).join(' · ')} — documented across ${ut.length} traditions</div>`;
+}
+if (plants.length) {
+  // Priority callout — show if any green lights in results
+  const greenPlants = plants.filter(p => p.priority_light === 'green');
+  if (greenPlants.length) {
+    const names = greenPlants.slice(0,2).map(p => `<strong>${p.common_name}</strong>`).join(' and ');
+    html += `<div class="priority-callout">
+      <div class="priority-callout-label">
+        <span class="priority-light green" style="flex-shrink:0"></span>
+        Priority Investigation — Gap Between Traditional Knowledge and Modern Science
+      </div>
+      <p>${names} ${greenPlants.length > 2 ? `and ${greenPlants.length - 2} other${greenPlants.length - 2 > 1 ? 's' : ''}` : ''} in these results ${greenPlants.length === 1 ? 'has' : 'have'} strong cross-tradition convergence but no FDA approval or WHO Essential Medicine status. ${greenPlants.length === 1 ? 'This plant is' : 'These plants are'} the archive's highest-priority research candidates — documented by independent civilisations across millennia, active compounds identified, clinical development not yet pursued.</p>
+    </div>`;
   }
-  if (conditions.length) {
-    const ut = [...new Set(conditions.flatMap(c=>c.convergence_traditions||[]))];
-    html += `<div style="font-family:var(--font-code);font-size:0.68rem;color:var(--muted);margin-bottom:1rem;padding:0.6rem 0.8rem;background:var(--vellum-dark);border:1px solid var(--border)">📋 ${conditions.map(c=>c.name).join(' · ')} — documented across ${ut.length} traditions</div>`;
-  }
-  if (plants.length) {
-    // Priority callout — show if any green lights in results
-    const greenPlants = plants.filter(p => p.priority_light === 'green');
-    if (greenPlants.length) {
-      const names = greenPlants.slice(0,2).map(p => `<strong>${p.common_name}</strong>`).join(' and ');
-      html += `<div class="priority-callout">
-        <div class="priority-callout-label">
-          <span class="priority-light green" style="flex-shrink:0"></span>
-          Priority Investigation — Gap Between Traditional Knowledge and Modern Science
+  html += `<div style="font-family:var(--font-display);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem">Remedies from the Archive</div>`;
+  html += plants.map((p,i) => {
+    const conv = p.convergence_score;
+    const cc = conv>=8?'#2E7D32':conv>=5?'#E65100':'#757575';
+    const rid = makeRemedyId(p);
+    const url = buildShareURL(query, rid);
+    const badges = p.traditions.map(tid=>{
+      const t=traditionData.find(x=>x.id===tid);
+      return t?`<span class="remedy-tradition-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
+    }).join('');
+    const fe = Object.values(p.entries||{})[0];
+    const plain = fe?.condition ? `Used for: <strong>${fe.condition}</strong>` : (p.therapeutic_areas||[]).slice(0,3).map(a=>a.replace(/_/g,' ')).join(', ');
+    const prep = fe?.preparation||'';
+    const mr = (p.modern_research?.status==='fully_validated'||p.modern_research?.status==='breakthrough_validated')
+      ? `<div class="remedy-research-note">✓ ${p.modern_research.key_compound} — ${(p.modern_research.summary||'').substring(0,120)}…</div>` : '';
+    let detail = Object.entries(p.entries||{}).map(([tid,e])=>{
+      const t=traditionData.find(x=>x.id===tid);
+      return `<div style="margin-bottom:1rem"><span style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:${t?.color||'#888'}">${t?.icon||''} ${t?.name||tid}</span>${e.original?`<div class="remedy-original">${e.original}</div>`:''}<p style="font-size:0.88rem;line-height:1.7;margin-top:0.4rem">${e.translation||''}</p>${e.preparation?`<div class="remedy-preparation">Preparation: ${e.preparation}</div>`:''}</div>`;
+    }).join('');
+
+    // ── Primary Sources from corpus ────────────────────────────────
+    const corpusLinks = (p.corpus_links||[]).filter(s=>s.translation && s.translation.length > 40);
+    if (corpusLinks.length) {
+      // Group by tradition
+      const byTrad = {};
+      corpusLinks.forEach(s => {
+        if (!byTrad[s.tradition]) byTrad[s.tradition] = [];
+        if (byTrad[s.tradition].length < 4) byTrad[s.tradition].push(s);
+      });
+      const tradCount = Object.keys(byTrad).length;
+      const segCount = corpusLinks.length;
+      detail += `<div style="margin-top:1rem;border-top:2px solid var(--gold);padding-top:0.8rem">
+        <div style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.6rem">
+          <span style="color:var(--gold)">◈</span> Primary Sources — ${segCount} segment${segCount!==1?'s':''} across ${tradCount} tradition${tradCount!==1?'s':''}
         </div>
-        <p>${names} ${greenPlants.length > 2 ? `and ${greenPlants.length - 2} other${greenPlants.length - 2 > 1 ? 's' : ''}` : ''} in these results ${greenPlants.length === 1 ? 'has' : 'have'} strong cross-tradition convergence but no FDA approval or WHO Essential Medicine status. ${greenPlants.length === 1 ? 'This plant is' : 'These plants are'} the archive's highest-priority research candidates — documented by independent civilisations across millennia, active compounds identified, clinical development not yet pursued.</p>
+        ${Object.entries(byTrad).map(([tid, segs])=>{
+          const t = traditionData.find(x=>x.id===tid);
+          const tc = t?.color||'#888';
+          const ti = t?.icon||'';
+          const tn = t?.name||tid;
+          return `<div style="margin-bottom:0.8rem">
+            <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem">
+              ${ti} ${tn} · ${segs.length} passage${segs.length!==1?'s':''}
+            </div>
+            ${segs.map((s,i)=>`
+              <div style="background:white;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.5rem;${i>0?'display:none':''}${segs.length>1&&i===0?' position:relative':''}" class="corpus-passage-${p.id}-${tid}-${i}" data-corpus-group="${p.id}-${tid}">
+                <div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.35rem">${s.source_section||s.label||''}</div>
+                ${s.original?`<div style="font-family:var(--font-code);font-size:0.75rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.5rem;padding-bottom:0.5rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,300)}${s.original.length>300?'…':''}</div>`:''}
+                <div style="font-size:0.85rem;line-height:1.7;color:var(--ink)">${s.translation.slice(0,600)}${s.translation.length>600?'…':''}</div>
+                ${s.preparation?`<div style="margin-top:0.4rem;font-family:var(--font-code);font-size:0.62rem;color:var(--brown)">Preparation: ${s.preparation}</div>`:''}
+                ${s.condition?`<div style="margin-top:0.2rem;font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">Condition: ${s.condition}</div>`:''}
+              </div>`).join('')}
+            ${segs.length>1?`<button onclick="(function(btn){const els=document.querySelectorAll('[data-corpus-group=&quot;${p.id}-${tid}&quot;]');const hidden=document.querySelector('[data-corpus-group=&quot;${p.id}-${tid}&quot;][style*=none]');if(hidden){els.forEach(e=>e.style.display='block');btn.textContent='▴ Show less';}else{els.forEach((e,i)=>{if(i>0)e.style.display='none';});btn.textContent='▾ Show all ${segs.length} passages';};})(this)" style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);background:none;border:none;cursor:pointer;padding:0;letter-spacing:0.06em;text-transform:uppercase">▾ Show all ${segs.length} passages</button>`:''}
+          </div>`;
+        }).join('')}
       </div>`;
     }
-    html += `<div style="font-family:var(--font-display);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem">Remedies from the Archive</div>`;
-    html += plants.map((p,i) => {
-      const conv = p.convergence_score;
-      const cc = conv>=8?'#2E7D32':conv>=5?'#E65100':'#757575';
-      const rid = makeRemedyId(p);
-      const url = buildShareURL(query, rid);
-      const badges = p.traditions.map(tid=>{
-        const t=traditionData.find(x=>x.id===tid);
-        return t?`<span class="remedy-tradition-badge" style="background:${t.color}">${t.icon} ${t.name}</span>`:'';
-      }).join('');
-      const fe = Object.values(p.entries||{})[0];
-      const plain = fe?.condition ? `Used for: <strong>${fe.condition}</strong>` : (p.therapeutic_areas||[]).slice(0,3).map(a=>a.replace(/_/g,' ')).join(', ');
-      const prep = fe?.preparation||'';
-      const mr = (p.modern_research?.status==='fully_validated'||p.modern_research?.status==='breakthrough_validated')
-        ? `<div class="remedy-research-note">✓ ${p.modern_research.key_compound} — ${(p.modern_research.summary||'').substring(0,120)}…</div>` : '';
-      let detail = Object.entries(p.entries||{}).map(([tid,e])=>{
-        const t=traditionData.find(x=>x.id===tid);
-        return `<div style="margin-bottom:1rem"><span style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:${t?.color||'#888'}">${t?.icon||''} ${t?.name||tid}</span>${e.original?`<div class="remedy-original">${e.original}</div>`:''}<p style="font-size:0.88rem;line-height:1.7;margin-top:0.4rem">${e.translation||''}</p>${e.preparation?`<div class="remedy-preparation">Preparation: ${e.preparation}</div>`:''}</div>`;
-      }).join('');
-
-      // ── Primary Sources from corpus ────────────────────────────────
-      const corpusLinks = (p.corpus_links||[]).filter(s=>s.translation && s.translation.length > 40);
-      if (corpusLinks.length) {
-        // Group by tradition
-        const byTrad = {};
-        corpusLinks.forEach(s => {
-          if (!byTrad[s.tradition]) byTrad[s.tradition] = [];
-          if (byTrad[s.tradition].length < 4) byTrad[s.tradition].push(s);
-        });
-        const tradCount = Object.keys(byTrad).length;
-        const segCount = corpusLinks.length;
-        detail += `<div style="margin-top:1rem;border-top:2px solid var(--gold);padding-top:0.8rem">
-          <div style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.6rem;display:flex;align-items:center;gap:0.6rem">
-            <span style="color:var(--gold)">◈</span> Primary Sources — ${segCount} segment${segCount!==1?'s':''} across ${tradCount} tradition${tradCount!==1?'s':''}
-          </div>
-          ${Object.entries(byTrad).map(([tid, segs])=>{
-            const t = traditionData.find(x=>x.id===tid);
-            const tc = t?.color||'#888';
-            const ti = t?.icon||'';
-            const tn = t?.name||tid;
-            return `<div style="margin-bottom:0.8rem">
-              <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.4rem;display:flex;align-items:center;gap:0.4rem">
-                ${ti} ${tn} · ${segs.length} passage${segs.length!==1?'s':''}
-              </div>
-              ${segs.map((s,i)=>`
-                <div style="background:white;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.5rem;${i>0?'display:none':''}${segs.length>1&&i===0?' position:relative':''}" class="corpus-passage-${p.id}-${tid}-${i}" data-corpus-group="${p.id}-${tid}">
-                  <div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.35rem">${s.source_section||s.label||''}</div>
-                  ${s.original?`<div style="font-family:var(--font-code);font-size:0.75rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.5rem;padding-bottom:0.5rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,300)}${s.original.length>300?'…':''}</div>`:''}
-                  <div style="font-size:0.85rem;line-height:1.7;color:var(--ink)">${s.translation.slice(0,600)}${s.translation.length>600?'…':''}</div>
-                  ${s.preparation?`<div style="margin-top:0.4rem;font-family:var(--font-code);font-size:0.62rem;color:var(--brown)">Preparation: ${s.preparation}</div>`:''}
-                  ${s.condition?`<div style="margin-top:0.2rem;font-family:var(--font-code);font-size:0.62rem;color:var(--muted)">Condition: ${s.condition}</div>`:''}
-                </div>`).join('')}
-              ${segs.length>1?`<button onclick="(function(btn){const els=document.querySelectorAll('[data-corpus-group=&quot;${p.id}-${tid}&quot;]');const hidden=document.querySelector('[data-corpus-group=&quot;${p.id}-${tid}&quot;][style*=none]');if(hidden){els.forEach(e=>e.style.display='block');btn.textContent='▴ Show less';}else{els.forEach((e,i)=>{if(i>0)e.style.display='none';});btn.textContent='▾ Show all ${segs.length} passages';};})(this)" style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);background:none;border:none;cursor:pointer;padding:0;letter-spacing:0.06em;text-transform:uppercase">▾ Show all ${segs.length} passages</button>`:''}
-            </div>`;
-          }).join('')}
-        </div>`;
-      }
-      if (p.modern_research) detail += `<div style="margin-top:0.8rem;padding:0.8rem;background:white;border:1px solid var(--border)"><div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div><div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance||p.modern_research.summary||''}</div></div>`;
-      if (p.priority_light) {
-        const lightLabels = {green:'Priority Investigation',amber:'Research Candidate',red:'On the Radar'};
-        const lightColors = {green:'#2E7D32',amber:'#E65100',red:'#B71C1C'};
-        const lc = lightColors[p.priority_light];
-        detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${lc};background:white;display:flex;gap:0.7rem;align-items:flex-start">
-          <span class="priority-light ${p.priority_light}" style="margin-top:0.3rem;flex-shrink:0"></span>
-          <div>
-            <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${lc};margin-bottom:0.25rem">${lightLabels[p.priority_light]} · Research Gap</div>
-            <div style="font-size:0.85rem;line-height:1.6;color:var(--ink)">${p.priority_reason||''}</div>
-          </div>
-        </div>`;
-      }
-      const regBadges = buildRegulatoryBadge(p);
-      if (regBadges) {
-        const reg = regulatoryData.find(r => r.archive_id === p.id || r.common_name.toLowerCase() === p.common_name.toLowerCase());
-        detail += `<div style="margin-top:0.6rem;padding:0.8rem 1rem;border:1px solid #e0e0e0;background:#fafafa">
-          <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Regulatory Recognition</div>
-          ${regBadges}
-          ${reg?.who?.indications ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem"><strong>WHO indications:</strong> ${reg.who.indications.join('; ')}</div>` : ''}
-          ${reg?.ema?.indications ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.2rem"><strong>EMA indications:</strong> ${reg.ema.indications.join('; ')}</div>` : ''}
-          ${reg?.cochrane?.reviews?.length ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem"><strong>Cochrane:</strong> ${reg.cochrane.reviews[0]}</div>` : ''}
-        </div>`;
-      }
-      if (p.evidence_tier) {
-        const tierLabels = {1:'FDA Approved Drug',2:'WHO Essential Medicine',3:'Cochrane Systematic Review',4:'Active Clinical Research'};
-        const tierColors = {1:'#1B5E20',2:'#0D47A1',3:'#E65100',4:'#4A148C'};
-        detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${tierColors[p.evidence_tier]};background:white">
-          <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tierColors[p.evidence_tier]};margin-bottom:0.3rem">
-            Modern Validation · ${tierLabels[p.evidence_tier]}
-          </div>
-          <div style="font-size:0.85rem;line-height:1.6;color:var(--ink)">${p.evidence_authority||''}</div>
-          ${p.evidence_note ? `<div style="font-size:0.78rem;color:var(--muted);margin-top:0.3rem">${p.evidence_note}</div>` : ''}
-          ${p.evidence_url ? `<a href="${p.evidence_url}" target="_blank" rel="noopener" style="font-family:var(--font-code);font-size:0.6rem;color:${tierColors[p.evidence_tier]};text-decoration:none;letter-spacing:0.06em;margin-top:0.4rem;display:inline-block">→ View official record</a>` : ''}
-        </div>`;
-      }
-      detail += buildShareBar(query, rid, p.common_name);
-      const auto = autoOpenRemedy && autoOpenRemedy===rid;
-      return `<div class="remedy-card" id="remedy-${rid}" style="border-left-color:${cc}">
-        <div class="remedy-card-header" onclick="toggleRemedyDetail('${rid}','${query.replace(/'/g,"\'")}')">
-          <div style="flex:1">
-            <div style="margin-bottom:0.4rem">${badges}</div>
-            <div style="display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center;margin-bottom:0.15rem">
-              ${buildEvidenceBadge(p)}${buildPriorityBadge(p)}
-            </div>
-            <div style="font-family:var(--font-display);font-size:1rem;color:var(--ink);margin-bottom:0.3rem">${p.common_name}</div>
-            <div style="font-family:var(--font-code);font-size:0.65rem;color:var(--green);font-style:italic;margin-bottom:0.4rem">${p.modern_botanical||''}</div>
-            <div class="remedy-plain">${plain}</div>
-            ${prep?`<div class="remedy-preparation">How: ${prep}</div>`:''}
-            ${mr}
-            <button class="remedy-expand-btn" onclick="event.stopPropagation();toggleRemedyDetail('${rid}','${query.replace(/'/g,"\'")}')">▸ See original texts &amp; deeper research</button>
-          </div>
-          <div class="remedy-convergence" style="color:${cc}">${conv}<small>traditions<br>agree</small></div>
-          <button class="share-mini" onclick="event.stopPropagation();quickShare('${url.replace(/'/g,"\\'")}','${(p.common_name+' for '+query).replace(/'/g,"\\'")}')">↗ Share</button>
+    if (p.modern_research) detail += `<div style="margin-top:0.8rem;padding:0.8rem;background:white;border:1px solid var(--border)"><div style="font-family:var(--font-code);font-size:0.6rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:0.4rem">Modern Research</div><div style="font-size:0.85rem;line-height:1.65">${p.modern_research.significance||p.modern_research.summary||''}</div></div>`;
+    if (p.priority_light) {
+      const lightLabels = {green:'Priority Investigation',amber:'Research Candidate',red:'On the Radar'};
+      const lightColors = {green:'#2E7D32',amber:'#E65100',red:'#B71C1C'};
+      const lc = lightColors[p.priority_light];
+      detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${lc};background:white;display:flex;gap:0.7rem;align-items:flex-start">
+        <span class="priority-light ${p.priority_light}" style="margin-top:0.3rem;flex-shrink:0"></span>
+        <div>
+          <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${lc};margin-bottom:0.25rem">${lightLabels[p.priority_light]} · Research Gap</div>
+          <div style="font-size:0.85rem;line-height:1.6;color:var(--ink)">${p.priority_reason||''}</div>
         </div>
-        <div class="remedy-detail ${auto?'open':''}" id="remedy-detail-${rid}">${detail}</div>
       </div>`;
-    }).join('');
-  }
-  if (!plants.length && !aiSummary) {
-    html += `<div class="search-no-results"><p style="font-size:1.1rem;margin-bottom:0.5rem">No direct matches for "<strong>${query}</strong>"</p><p style="color:var(--muted);font-size:0.9rem">Try related terms — or browse the Convergence tab.</p></div>`;
-  }
-  html += `<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);display:flex;gap:1rem;flex-wrap:wrap">
-    <button onclick="closeSearch();showTabByName('convergence')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Convergence Engine</button>
-    <button onclick="closeSearch();showTabByName('research')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Modern Research</button>
-    <button onclick="closeSearch();showTabByName('corpus')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Full Corpus</button>
-  </div>`;
-  body.innerHTML = html;
-  if (autoOpenRemedy) setTimeout(()=>{ const el=document.getElementById(`remedy-${autoOpenRemedy}`); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }, 300);
+    }
+    const regBadges = buildRegulatoryBadge(p);
+    if (regBadges) {
+      const reg = regulatoryData.find(r => r.archive_id === p.id || r.common_name.toLowerCase() === p.common_name.toLowerCase());
+      detail += `<div style="margin-top:0.6rem;padding:0.8rem 1rem;border:1px solid #e0e0e0;background:#fafafa">
+        <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem">Regulatory Recognition</div>
+        ${regBadges}
+        ${reg?.who?.indications ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem"><strong>WHO indications:</strong> ${reg.who.indications.join('; ')}</div>` : ''}
+        ${reg?.ema?.indications ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.2rem"><strong>EMA indications:</strong> ${reg.ema.indications.join('; ')}</div>` : ''}
+        ${reg?.cochrane?.reviews?.length ? `<div style="font-size:0.8rem;color:var(--muted);margin-top:0.3rem"><strong>Cochrane:</strong> ${reg.cochrane.reviews[0]}</div>` : ''}
+      </div>`;
+    }
+    if (p.evidence_tier) {
+      const tierLabels = {1:'FDA Approved Drug',2:'WHO Essential Medicine',3:'Cochrane Systematic Review',4:'Active Clinical Research'};
+      const tierColors = {1:'#1B5E20',2:'#0D47A1',3:'#E65100',4:'#4A148C'};
+      detail += `<div style="margin-top:0.6rem;padding:0.7rem 0.9rem;border:1.5px solid ${tierColors[p.evidence_tier]};background:white">
+        <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tierColors[p.evidence_tier]};margin-bottom:0.3rem">
+          Modern Validation · ${tierLabels[p.evidence_tier]}
+        </div>
+        <div style="font-size:0.85rem;line-height:1.6;color:var(--ink)">${p.evidence_authority||''}</div>
+        ${p.evidence_note ? `<div style="font-size:0.78rem;color:var(--muted);margin-top:0.3rem">${p.evidence_note}</div>` : ''}
+        ${p.evidence_url ? `<a href="${p.evidence_url}" target="_blank" rel="noopener" style="font-family:var(--font-code);font-size:0.6rem;color:${tierColors[p.evidence_tier]};text-decoration:none;letter-spacing:0.06em;margin-top:0.4rem;display:inline-block">→ View official record</a>` : ''}
+      </div>`;
+    }
+    detail += buildShareBar(query, rid, p.common_name);
+    const auto = autoOpenRemedy && autoOpenRemedy===rid;
+    return `<div class="remedy-card" id="remedy-${rid}" style="border-left-color:${cc}">
+      <div class="remedy-card-header" onclick="toggleRemedyDetail('${rid}','${query.replace(/'/g,"\'")}')">
+        <div style="flex:1">
+          <div style="margin-bottom:0.4rem">${badges}</div>
+          <div style="display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center;margin-bottom:0.15rem">
+            ${buildEvidenceBadge(p)}${buildPriorityBadge(p)}
+          </div>
+          <div style="font-family:var(--font-display);font-size:1rem;color:var(--ink);margin-bottom:0.3rem">${p.common_name}</div>
+          <div style="font-family:var(--font-code);font-size:0.65rem;color:var(--green);font-style:italic;margin-bottom:0.4rem">${p.modern_botanical||''}</div>
+          <div class="remedy-plain">${plain}</div>
+          ${prep?`<div class="remedy-preparation">How: ${prep}</div>`:''}
+          ${mr}
+          <button class="remedy-expand-btn" onclick="event.stopPropagation();toggleRemedyDetail('${rid}','${query.replace(/'/g,"\'")}')">▸ See original texts &amp; deeper research</button>
+        </div>
+        <div class="remedy-convergence" style="color:${cc}">${conv}<small>traditions<br>agree</small></div>
+        <button class="share-mini" onclick="event.stopPropagation();quickShare('${url.replace(/'/g,"\\'")}','${(p.common_name+' for '+query).replace(/'/g,"\\'")}')">↗ Share</button>
+      </div>
+      <div class="remedy-detail ${auto?'open':''}" id="remedy-detail-${rid}">${detail}</div>
+    </div>`;
+  }).join('');
+}
+if (!plants.length && !aiSummary) {
+  html += `<div class="search-no-results"><p style="font-size:1.1rem;margin-bottom:0.5rem">No direct matches for "<strong>${query}</strong>"</p><p style="color:var(--muted);font-size:0.9rem">Try related terms — or browse the Convergence tab.</p></div>`;
+}
+html += `<div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);display:flex;gap:1rem;flex-wrap:wrap">
+  <button onclick="closeSearch();showTabByName('convergence')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Convergence Engine</button>
+  <button onclick="closeSearch();showTabByName('research')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Modern Research</button>
+  <button onclick="closeSearch();showTabByName('corpus')" style="font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.5rem 1rem;border:1px solid var(--border);background:white;cursor:pointer;color:var(--muted)">→ Full Corpus</button>
+</div>`;
+body.innerHTML = html;
+if (autoOpenRemedy) setTimeout(()=>{ const el=document.getElementById(`remedy-${autoOpenRemedy}`); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }, 300);
 }
 function toggleRemedyDetail(rid, query) {
-  const el = document.getElementById(`remedy-detail-${rid}`);
-  const open = el.classList.toggle('open');
-  setURLParams(query||currentSearchQuery, open?rid:null);
+const el = document.getElementById(`remedy-detail-${rid}`);
+const open = el.classList.toggle('open');
+setURLParams(query||currentSearchQuery, open?rid:null);
 }
 function showTabByName(name) {
-  document.querySelectorAll('.tab-btn').forEach(b => { if (b.getAttribute('onclick')?.includes(`'${name}'`)) b.click(); });
+document.querySelectorAll('.tab-btn').forEach(b => { if (b.getAttribute('onclick')?.includes(`'${name}'`)) b.click(); });
 }
 document.addEventListener('keydown', e => { if (e.key==='Escape') closeSearch(); });
 window.addEventListener('load', async () => {
-  const {q,r} = getURLParams();
-  if (q) {
-    document.getElementById('global-search-input').value = q;
-    await loadData();
-    await runGlobalSearch(r||null);
-  }
+const {q,r} = getURLParams();
+if (q) {
+  document.getElementById('global-search-input').value = q;
+  await loadData();
+  await runGlobalSearch(r||null);
+}
 });
 </script>
 
