@@ -68,7 +68,7 @@
     object-position: center 20%;
     display: block;
     transition: opacity 0.7s ease;
-    filter: sepia(15%) contrast(1.08) brightness(0.82);
+    filter: contrast(1.05) brightness(0.88);
   }
 
   .wec-codex-img.fading { opacity: 0; }
@@ -114,10 +114,7 @@
     color: #F5EDD8;
     letter-spacing: -0.02em;
     margin: 0;
-    text-shadow:
-      0 2px 4px rgba(0,0,0,0.9),
-      0 4px 24px rgba(0,0,0,0.7),
-      0 0 60px rgba(0,0,0,0.5);
+    text-shadow: none;
   }
 
   /* Footer bar at bottom of hero */
@@ -1894,8 +1891,8 @@
     <div class="wec-hero-bg">
       <img
         id="wec-codex-img"
-        src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg"
-        alt="Badianus Manuscript 1552"
+        src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Ming_herbal_%28painting%29%3B_Chinese_herbaceous_peony_Wellcome_L0039426.jpg"
+        alt="Ming Herbal — Chinese Peony, c.1640 CE"
         class="wec-codex-img"
       >
       <div class="wec-hero-overlay"></div>
@@ -2737,28 +2734,54 @@ let activeStatusFilter = null, activeTraditions = new Set();
   // ── Codex illustration cycler ─────────────────────────────
   const CODEX_IMAGES = [
     {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg',
-      label: 'Badianus Manuscript, 1552'
+      src: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Ming_herbal_%28painting%29%3B_Chinese_herbaceous_peony_Wellcome_L0039426.jpg',
+      label: 'Ming Herbal — Chinese Peony, c.1640 CE',
+      pos: 'center 30%'
     },
     {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg',
-      label: 'Badianus Manuscript, f.13v'
+      src: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Ming_herbal_%28painting%29%3B_%28Black%29_pepper_Wellcome_L0039436.jpg',
+      label: 'Ming Herbal — Black Pepper, c.1640 CE',
+      pos: 'center 20%'
     },
     {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg',
-      label: 'Badianus Manuscript, f.49v'
+      src: 'https://upload.wikimedia.org/wikipedia/commons/9/97/Badianus_Codex%2C_%28facsimile%29%2C_16th_century%3B_species_of_Datura_Wellcome_L0021252.jpg',
+      label: 'Badianus Manuscript — Datura, 1552 CE',
+      pos: 'center 15%'
     },
     {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/ViennaDioscoridesPlant.jpg',
-      label: 'Vienna Dioscorides, c.512 CE'
+      src: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Tacuinum_Sanitatis_%28Ibn_Butl%C4%81n%29.jpg',
+      label: 'Tacuinum Sanitatis — Ibn Butlan, c.1390 CE',
+      pos: 'center center'
     },
     {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg',
-      label: 'Dioscorides & the Mandrake, c.512 CE'
+      src: 'https://upload.wikimedia.org/wikipedia/commons/6/6c/Fruto_de_la_mandr%C3%A1gora_%28Tacuinum_Sanitatis%29.jpg',
+      label: 'Tacuinum Sanitatis — Mandrake, c.1390 CE',
+      pos: 'center center'
     },
     {
-      src: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg',
-      label: 'Wellcome Medicinal Plants, c.17th C'
+      src: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Plants_and_herbs_from_Culpeper%27s_%27The_Complete_Herbal...%27_Wellcome_L0034813.jpg',
+      label: "Culpeper's Complete Herbal, 1653 CE",
+      pos: 'center 25%'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Ming_herbal_%28painting%29%3B_Paulownia_Wellcome_L0039435.jpg',
+      label: 'Ming Herbal — Paulownia, c.1640 CE',
+      pos: 'center 20%'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/8/88/Famine_Relief_Herbal_%281593%29%3B_Lotus_root_Wellcome_L0039408.jpg',
+      label: 'Famine Relief Herbal — Lotus, 1593 CE',
+      pos: 'center 25%'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/Dioscorides_Vienna_%28detail%29.jpg',
+      label: 'Vienna Dioscorides, c.512 CE',
+      pos: 'center 20%'
+    },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg',
+      label: 'Ming Herbal — Lindera, c.1640 CE',
+      pos: 'center 25%'
     },
   ];
   let codexIdx = 0;
@@ -2769,10 +2792,11 @@ let activeStatusFilter = null, activeTraditions = new Set();
     if (!img) return;
     img.classList.add('fading');
     setTimeout(() => {
-      img.src = CODEX_IMAGES[codexIdx].src;
-      if (lbl) lbl.textContent = CODEX_IMAGES[codexIdx].label;
+      const item = CODEX_IMAGES[codexIdx];
+      img.src = item.src;
+      img.style.objectPosition = item.pos || 'center 20%';
+      if (lbl) lbl.textContent = item.label;
       img.onload = () => img.classList.remove('fading');
-      // fallback in case image already cached
       setTimeout(() => img.classList.remove('fading'), 600);
     }, 400);
   }
