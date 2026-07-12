@@ -1,0 +1,274 @@
+{
+  "segments": [
+    {
+      "label": "Philippine Traditional Medicine — Lagundi",
+      "text": "Plant: Lagundi — Vitex negundo — asthma, cough, fever (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Lagundi — Vitex negundo — asthma, cough, fever (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Sambong",
+      "text": "Plant: Sambong — Blumea balsamifera — kidney stones, diuretic (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Sambong — Blumea balsamifera — kidney stones, diuretic (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Tsaang gubat",
+      "text": "Plant: Tsaang gubat — Carmona retusa — diarrhea, stomach pain (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Tsaang gubat — Carmona retusa — diarrhea, stomach pain (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Niyog-niyogan",
+      "text": "Plant: Niyog-niyogan — Quisqualis indica — roundworm, parasites (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Niyog-niyogan — Quisqualis indica — roundworm, parasites (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Bayabas",
+      "text": "Plant: Bayabas — Psidium guajava (guava) — wound, diarrhea (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Bayabas — Psidium guajava (guava) — wound, diarrhea (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Akapulko",
+      "text": "Plant: Akapulko — Cassia alata — tinea, skin fungal (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Akapulko — Cassia alata — tinea, skin fungal (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Ulasimang bato",
+      "text": "Plant: Ulasimang bato — Peperomia pellucida — uric acid, gout (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Ulasimang bato — Peperomia pellucida — uric acid, gout (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Bawang",
+      "text": "Plant: Bawang — Allium sativum (garlic Philippine use) — hypertension (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Bawang — Allium sativum (garlic Philippine use) — hypertension (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Ampalaya",
+      "text": "Plant: Ampalaya — Momordica charantia — diabetes (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Ampalaya — Momordica charantia — diabetes (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Yerba buena",
+      "text": "Plant: Yerba buena — Mentha cordifolia — pain, fever (DOH approved)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Yerba buena — Mentha cordifolia — pain, fever (DOH approved)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Malunggay",
+      "text": "Plant: Malunggay — Moringa oleifera — nutritive, lactation, anti-inflammatory\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Malunggay — Moringa oleifera — nutritive, lactation, anti-inflammatory",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Guyabano",
+      "text": "Plant: Guyabano — Annona muricata — cancer, parasites, fever\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Guyabano — Annona muricata — cancer, parasites, fever",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Luya",
+      "text": "Plant: Luya — Zingiber officinale (Philippine ginger) — nausea, pain\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Luya — Zingiber officinale (Philippine ginger) — nausea, pain",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Tanglad",
+      "text": "Plant: Tanglad — Cymbopogon citratus (lemongrass) — fever, hypertension\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Tanglad — Cymbopogon citratus (lemongrass) — fever, hypertension",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Pandan",
+      "text": "Plant: Pandan — Pandanus amaryllifolius — headache, joint, fragrant\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Pandan — Pandanus amaryllifolius — headache, joint, fragrant",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Banaba",
+      "text": "Plant: Banaba — Lagerstroemia speciosa — diabetes, kidney (corosolic acid)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Banaba — Lagerstroemia speciosa — diabetes, kidney (corosolic acid)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Calamansi",
+      "text": "Plant: Calamansi — Citrofortunella microcarpa — vitamin C, cold, skin\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Calamansi — Citrofortunella microcarpa — vitamin C, cold, skin",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Kamias",
+      "text": "Plant: Kamias — Averrhoa bilimbi — hypertension, cough, wound\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Kamias — Averrhoa bilimbi — hypertension, cough, wound",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Makabayan",
+      "text": "Plant: Makabayan — Acanthospermum australe — wound healing\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Makabayan — Acanthospermum australe — wound healing",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Takip-kohol",
+      "text": "Plant: Takip-kohol — Centella asiatica (Philippine name) — wound, skin, cognitive\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Takip-kohol — Centella asiatica (Philippine name) — wound, skin, cognitive",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Tawa-tawa",
+      "text": "Plant: Tawa-tawa — Euphorbia hirta — dengue fever (Philippines controversy)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Tawa-tawa — Euphorbia hirta — dengue fever (Philippines controversy)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Duhat",
+      "text": "Plant: Duhat — Syzygium cumini (java plum) — diabetes, digestive\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Duhat — Syzygium cumini (java plum) — diabetes, digestive",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Papaya",
+      "text": "Plant: Papaya — Carica papaya (Philippine use) — dengue, digestive\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Papaya — Carica papaya (Philippine use) — dengue, digestive",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Sibuyas",
+      "text": "Plant: Sibuyas — Allium cepa (onion Philippine) — antimicrobial, cardiovascular\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Sibuyas — Allium cepa (onion Philippine) — antimicrobial, cardiovascular",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Kamoteng kahoy",
+      "text": "Plant: Kamoteng kahoy — Manihot esculenta (cassava) — wound, traditional\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Kamoteng kahoy — Manihot esculenta (cassava) — wound, traditional",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Alugbati",
+      "text": "Plant: Alugbati — Basella alba — laxative, nutritive\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Alugbati — Basella alba — laxative, nutritive",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Saluyot",
+      "text": "Plant: Saluyot — Corchorus olitorius — nutritive, anti-inflammatory\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Saluyot — Corchorus olitorius — nutritive, anti-inflammatory",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Kangkong",
+      "text": "Plant: Kangkong — Ipomoea aquatica — water spinach — nutritive, digestive\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Kangkong — Ipomoea aquatica — water spinach — nutritive, digestive",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Pansit-pansitan",
+      "text": "Plant: Pansit-pansitan — Peperomia pellucida — anti-gout (alternative name)\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Pansit-pansitan — Peperomia pellucida — anti-gout (alternative name)",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    },
+    {
+      "label": "Philippine Traditional Medicine — Makahiya",
+      "text": "Plant: Makahiya — Mimosa pudica — wound healing, sedative, antifungal\n\nGenerate a comprehensive Plantacopia entry from Philippine traditional medicine (hilot healing tradition). Include Philippine common name (Filipino/Tagalog/regional), Latin botanical name, and classification under the DOH-endorsed medicinal plants list where applicable. Describe traditional therapeutic uses documented by PITAHC (Philippine Institute of Traditional and Alternative Health Care), preparation methods, conditions treated, and any clinical evidence from Philippine pharmacological studies.",
+      "_meta": {
+        "plant": "Makahiya — Mimosa pudica — wound healing, sedative, antifungal",
+        "_corpusKey": "philippine_new",
+        "source_section": "Philippine Traditional Medicine"
+      }
+    }
+  ]
+}
