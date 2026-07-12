@@ -1,0 +1,454 @@
+{
+  "segments": [
+    {
+      "label": "Honzo Wamyo — Ninjin 人参",
+      "text": "Plant: Ninjin 人参 — Panax ginseng (Japanese use and cultivation)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Ninjin 人参 — Panax ginseng (Japanese use and cultivation)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Toki 当帰",
+      "text": "Plant: Toki 当帰 — Angelica acutiloba (Japanese Angelica) — blood, menstruation\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Toki 当帰 — Angelica acutiloba (Japanese Angelica) — blood, menstruation",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Kanzo 甘草",
+      "text": "Plant: Kanzo 甘草 — Licorice (Glycyrrhiza uralensis) — harmonizing\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Kanzo 甘草 — Licorice (Glycyrrhiza uralensis) — harmonizing",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Daio 大黄",
+      "text": "Plant: Daio 大黄 — Japanese rhubarb — purgative\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Daio 大黄 — Japanese rhubarb — purgative",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Oren 黄連",
+      "text": "Plant: Oren 黄連 — Coptis japonica — heat, antibacterial\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Oren 黄連 — Coptis japonica — heat, antibacterial",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Ogon 黄芩",
+      "text": "Plant: Ogon 黄芩 — Scutellaria baicalensis — heat, lung\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Ogon 黄芩 — Scutellaria baicalensis — heat, lung",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Bushi 附子",
+      "text": "Plant: Bushi 附子 — Aconite (Japanese processing) — cold, pain\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Bushi 附子 — Aconite (Japanese processing) — cold, pain",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Shakuyaku 芍薬",
+      "text": "Plant: Shakuyaku 芍薬 — Japanese peony — blood, pain\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Shakuyaku 芍薬 — Japanese peony — blood, pain",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Keishi 桂枝",
+      "text": "Plant: Keishi 桂枝 — Cinnamon twig (Japanese Kampo)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Keishi 桂枝 — Cinnamon twig (Japanese Kampo)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Maobou 麻黄",
+      "text": "Plant: Maobou 麻黄 — Ephedra sinica (Honzo perspective)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Maobou 麻黄 — Ephedra sinica (Honzo perspective)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Saikoh 柴胡",
+      "text": "Plant: Saikoh 柴胡 — Bupleurum falcatum — liver, fever\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Saikoh 柴胡 — Bupleurum falcatum — liver, fever",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Hange 半夏",
+      "text": "Plant: Hange 半夏 — Pinellia ternata (Japanese) — nausea, phlegm\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Hange 半夏 — Pinellia ternata (Japanese) — nausea, phlegm",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Bukuryo 茯苓",
+      "text": "Plant: Bukuryo 茯苓 — Poria (Japanese cultivation) — spirit, damp\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Bukuryo 茯苓 — Poria (Japanese cultivation) — spirit, damp",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Byakujutsu 白朮",
+      "text": "Plant: Byakujutsu 白朮 — Atractylodes japonica — spleen\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Byakujutsu 白朮 — Atractylodes japonica — spleen",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Mokko 木香",
+      "text": "Plant: Mokko 木香 — Saussurea (Japanese Honzo)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Mokko 木香 — Saussurea (Japanese Honzo)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Kijitsu 枳実",
+      "text": "Plant: Kijitsu 枳実 — Immature bitter orange — qi movement\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Kijitsu 枳実 — Immature bitter orange — qi movement",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Chinpi 陳皮",
+      "text": "Plant: Chinpi 陳皮 — Aged citrus peel (Japanese) — phlegm, qi\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Chinpi 陳皮 — Aged citrus peel (Japanese) — phlegm, qi",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Orenno 黄連湯",
+      "text": "Plant: Orenno 黄連湯 — Coptis formula (Japanese elaboration)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Orenno 黄連湯 — Coptis formula (Japanese elaboration)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Sansho 山椒",
+      "text": "Plant: Sansho 山椒 — Japanese pepper (Zanthoxylum piperitum)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Sansho 山椒 — Japanese pepper (Zanthoxylum piperitum)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Yomogi 蓬",
+      "text": "Plant: Yomogi 蓬 — Artemisia princeps (Japanese mugwort)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Yomogi 蓬 — Artemisia princeps (Japanese mugwort)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Kakkon 葛根",
+      "text": "Plant: Kakkon 葛根 — Kudzu (Pueraria lobata) — stiff neck, fever\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Kakkon 葛根 — Kudzu (Pueraria lobata) — stiff neck, fever",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Shoma 升麻",
+      "text": "Plant: Shoma 升麻 — Cimicifuga — fever, rash, lifting qi\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Shoma 升麻 — Cimicifuga — fever, rash, lifting qi",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Boioh 防已",
+      "text": "Plant: Boioh 防已 — Stephania — damp heat, joint\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Boioh 防已 — Stephania — damp heat, joint",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Mokutsuu 木通",
+      "text": "Plant: Mokutsuu 木通 — Akebia quinata — urinary, heat\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Mokutsuu 木通 — Akebia quinata — urinary, heat",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Zansho 山椒",
+      "text": "Plant: Zansho 山椒 — Sansho pepper — digestive warming\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Zansho 山椒 — Sansho pepper — digestive warming",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Shigyaku 四逆",
+      "text": "Plant: Shigyaku 四逆 — Four Rebellions formula (cold shock)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Shigyaku 四逆 — Four Rebellions formula (cold shock)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Dokkatsu 独活",
+      "text": "Plant: Dokkatsu 独活 — Angelica (Japanese wind-damp)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Dokkatsu 独活 — Angelica (Japanese wind-damp)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Bofu 防風",
+      "text": "Plant: Bofu 防風 — Saposhnikovia — wind, cold surface\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Bofu 防風 — Saposhnikovia — wind, cold surface",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Hakka 薄荷",
+      "text": "Plant: Hakka 薄荷 — Japanese peppermint — wind heat, throat\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Hakka 薄荷 — Japanese peppermint — wind heat, throat",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Kikka 菊花",
+      "text": "Plant: Kikka 菊花 — Japanese chrysanthemum — liver, eyes\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Kikka 菊花 — Japanese chrysanthemum — liver, eyes",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Sangyoh 桑葉",
+      "text": "Plant: Sangyoh 桑葉 — Japanese mulberry leaf — wind heat\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Sangyoh 桑葉 — Japanese mulberry leaf — wind heat",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Kyonin 杏仁",
+      "text": "Plant: Kyonin 杏仁 — Apricot kernel (Japanese use)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Kyonin 杏仁 — Apricot kernel (Japanese use)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Nantenomi 南天実",
+      "text": "Plant: Nantenomi 南天実 — Sacred bamboo berry — cough, asthma\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Nantenomi 南天実 — Sacred bamboo berry — cough, asthma",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Funori 布海苔",
+      "text": "Plant: Funori 布海苔 — Gloiopeltis furcata — throat, cough\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Funori 布海苔 — Gloiopeltis furcata — throat, cough",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Umeboshi 梅干",
+      "text": "Plant: Umeboshi 梅干 — Pickled plum — digestive, alkalizing\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Umeboshi 梅干 — Pickled plum — digestive, alkalizing",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Kuzu 葛",
+      "text": "Plant: Kuzu 葛 — Kudzu (food and medicine) — fever, diarrhea\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Kuzu 葛 — Kudzu (food and medicine) — fever, diarrhea",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Shiso 紫蘇",
+      "text": "Plant: Shiso 紫蘇 — Perilla (Japanese) — cold, nausea\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Shiso 紫蘇 — Perilla (Japanese) — cold, nausea",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Ginger 生姜",
+      "text": "Plant: Ginger 生姜 — Shoga — warming, nausea (Honzo)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Ginger 生姜 — Shoga — warming, nausea (Honzo)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Kombu 昆布",
+      "text": "Plant: Kombu 昆布 — Kelp (Saccharina japonica) — goiter, swelling\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Kombu 昆布 — Kelp (Saccharina japonica) — goiter, swelling",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Wakame 若布",
+      "text": "Plant: Wakame 若布 — Undaria pinnatifida — nutrient, thyroid\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Wakame 若布 — Undaria pinnatifida — nutrient, thyroid",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Shiitake 椎茸",
+      "text": "Plant: Shiitake 椎茸 — Lentinula edodes — immune, cancer prevention\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Shiitake 椎茸 — Lentinula edodes — immune, cancer prevention",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Maitake 舞茸",
+      "text": "Plant: Maitake 舞茸 — Grifola frondosa — immune, glucose regulation\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Maitake 舞茸 — Grifola frondosa — immune, glucose regulation",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Reishi 霊芝",
+      "text": "Plant: Reishi 霊芝 — Ganoderma lucidum (Japanese Honzo)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Reishi 霊芝 — Ganoderma lucidum (Japanese Honzo)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Aloe 蘆薈",
+      "text": "Plant: Aloe 蘆薈 — Aloe vera (Japanese Honzo introduction)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Aloe 蘆薈 — Aloe vera (Japanese Honzo introduction)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Rikkoku 六穀",
+      "text": "Plant: Rikkoku 六穀 — Six grains therapeutic properties\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Rikkoku 六穀 — Six grains therapeutic properties",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Ginkgo 銀杏",
+      "text": "Plant: Ginkgo 銀杏 — Ginkgo biloba — lung, cognitive (Japanese)\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Ginkgo 銀杏 — Ginkgo biloba — lung, cognitive (Japanese)",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Sugi 杉",
+      "text": "Plant: Sugi 杉 — Japanese cedar — medicinal bark uses\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Sugi 杉 — Japanese cedar — medicinal bark uses",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Hinoki 桧",
+      "text": "Plant: Hinoki 桧 — Japanese cypress — antimicrobial\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Hinoki 桧 — Japanese cypress — antimicrobial",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Matsu 松",
+      "text": "Plant: Matsu 松 — Japanese pine — longevity, joint\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Matsu 松 — Japanese pine — longevity, joint",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    },
+    {
+      "label": "Honzo Wamyo — Sakura 桜",
+      "text": "Plant: Sakura 桜 — Cherry (Prunus serrulata) — cough, skin\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Sakura 桜 — Cherry (Prunus serrulata) — cough, skin",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    }
+  ]
+}
