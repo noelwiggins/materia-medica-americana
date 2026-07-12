@@ -1,0 +1,454 @@
+{
+  "segments": [
+    {
+      "label": "Shennong Bencaojing / Kampo — Bai Xian Pi 白鮮皮",
+      "text": "Plant: Bai Xian Pi 白鮮皮 — Dictamnus — damp heat, skin disease\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Bai Xian Pi 白鮮皮 — Dictamnus — damp heat, skin disease",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Di Fu Zi 地膚子",
+      "text": "Plant: Di Fu Zi 地膚子 — Kochia — damp heat, urinary, itching\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Di Fu Zi 地膚子 — Kochia — damp heat, urinary, itching",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Che Qian Zi 車前子",
+      "text": "Plant: Che Qian Zi 車前子 — Plantain seed — damp, urinary, eyes\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Che Qian Zi 車前子 — Plantain seed — damp, urinary, eyes",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Yi Yi Ren 薏苡仁",
+      "text": "Plant: Yi Yi Ren 薏苡仁 — Coix seed — damp, joint, cancer\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Yi Yi Ren 薏苡仁 — Coix seed — damp, joint, cancer",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Mu Tong 木通",
+      "text": "Plant: Mu Tong 木通 — Akebia — urinary, heart fire, lactation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Mu Tong 木通 — Akebia — urinary, heart fire, lactation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Hua Shi 滑石",
+      "text": "Plant: Hua Shi 滑石 — Talc — damp heat, urinary, summer heat\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Hua Shi 滑石 — Talc — damp heat, urinary, summer heat",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Yin Chen Hao 茵陳蒿",
+      "text": "Plant: Yin Chen Hao 茵陳蒿 — Artemisia capillaris — jaundice, liver\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Yin Chen Hao 茵陳蒿 — Artemisia capillaris — jaundice, liver",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Jin Qian Cao 金錢草",
+      "text": "Plant: Jin Qian Cao 金錢草 — Lysimachia — stones, jaundice, urinary\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Jin Qian Cao 金錢草 — Lysimachia — stones, jaundice, urinary",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Hai Jin Sha 海金沙",
+      "text": "Plant: Hai Jin Sha 海金沙 — Lygodium — urinary stones, burning urination\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Hai Jin Sha 海金沙 — Lygodium — urinary stones, burning urination",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Shi Wei 石葦",
+      "text": "Plant: Shi Wei 石葦 — Pyrrosia leaf — urinary, cough, bleeding\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Shi Wei 石葦 — Pyrrosia leaf — urinary, cough, bleeding",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Bi Xie 萆薢",
+      "text": "Plant: Bi Xie 萆薢 — Dioscorea — damp turbid urine, joint\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Bi Xie 萆薢 — Dioscorea — damp turbid urine, joint",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Xiang Fu 香附",
+      "text": "Plant: Xiang Fu 香附 — Cyperus — liver qi, menstruation, pain\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Xiang Fu 香附 — Cyperus — liver qi, menstruation, pain",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Chuan Lian Zi 川楝子",
+      "text": "Plant: Chuan Lian Zi 川楝子 — Melia fruit — liver qi, pain, parasites\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Chuan Lian Zi 川楝子 — Melia fruit — liver qi, pain, parasites",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Yan Hu Suo 延胡索",
+      "text": "Plant: Yan Hu Suo 延胡索 — Corydalis — blood stasis pain, all types\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Yan Hu Suo 延胡索 — Corydalis — blood stasis pain, all types",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Yu Jin 鬱金",
+      "text": "Plant: Yu Jin 鬱金 — Curcuma root — blood stasis, liver qi, jaundice\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Yu Jin 鬱金 — Curcuma root — blood stasis, liver qi, jaundice",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Jiang Huang 薑黃",
+      "text": "Plant: Jiang Huang 薑黃 — Turmeric — blood stasis, pain, joints\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Jiang Huang 薑黃 — Turmeric — blood stasis, pain, joints",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — E Zhu 莪朮",
+      "text": "Plant: E Zhu 莪朮 — Zedoary — blood stasis mass, digestive stagnation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "E Zhu 莪朮 — Zedoary — blood stasis mass, digestive stagnation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — San Leng 三棱",
+      "text": "Plant: San Leng 三棱 — Sparganium — blood stasis mass, menstruation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "San Leng 三棱 — Sparganium — blood stasis mass, menstruation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Dan Shen 丹參",
+      "text": "Plant: Dan Shen 丹參 — Salvia miltiorrhiza — blood stasis, heart, menstruation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Dan Shen 丹參 — Salvia miltiorrhiza — blood stasis, heart, menstruation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Hong Hua 紅花",
+      "text": "Plant: Hong Hua 紅花 — Safflower — blood stasis, menstruation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Hong Hua 紅花 — Safflower — blood stasis, menstruation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Tao Ren 桃仁",
+      "text": "Plant: Tao Ren 桃仁 — Peach kernel — blood stasis, constipation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Tao Ren 桃仁 — Peach kernel — blood stasis, constipation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Chuan Niu Xi 川牛膝",
+      "text": "Plant: Chuan Niu Xi 川牛膝 — Cyathula — blood stasis, knee pain\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Chuan Niu Xi 川牛膝 — Cyathula — blood stasis, knee pain",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Huai Niu Xi 懷牛膝",
+      "text": "Plant: Huai Niu Xi 懷牛膝 — Achyranthes — kidney, liver, knee\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Huai Niu Xi 懷牛膝 — Achyranthes — kidney, liver, knee",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Ji Xue Teng 雞血藤",
+      "text": "Plant: Ji Xue Teng 雞血藤 — Millettia — blood deficiency stasis\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Ji Xue Teng 雞血藤 — Millettia — blood deficiency stasis",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Ze Lan 澤蘭",
+      "text": "Plant: Ze Lan 澤蘭 — Lycopus — blood stasis, menstruation, oedema\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Ze Lan 澤蘭 — Lycopus — blood stasis, menstruation, oedema",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Yi Mu Cao 益母草",
+      "text": "Plant: Yi Mu Cao 益母草 — Motherwort — blood stasis, menstruation, oedema\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Yi Mu Cao 益母草 — Motherwort — blood stasis, menstruation, oedema",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Wang Bu Liu Xing 王不留行",
+      "text": "Plant: Wang Bu Liu Xing 王不留行 — Vaccaria — blood stasis, lactation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Wang Bu Liu Xing 王不留行 — Vaccaria — blood stasis, lactation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Lu Lu Tong 路路通",
+      "text": "Plant: Lu Lu Tong 路路通 — Liquidambar — blood stasis, wind damp\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Lu Lu Tong 路路通 — Liquidambar — blood stasis, wind damp",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Chuan Bei Mu 川貝母",
+      "text": "Plant: Chuan Bei Mu 川貝母 — Fritillaria — heat phlegm, lung, cough\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Chuan Bei Mu 川貝母 — Fritillaria — heat phlegm, lung, cough",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Zhe Bei Mu 浙貝母",
+      "text": "Plant: Zhe Bei Mu 浙貝母 — Fritillaria thunbergii — phlegm heat, masses\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Zhe Bei Mu 浙貝母 — Fritillaria thunbergii — phlegm heat, masses",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Gua Lou 瓜蔞",
+      "text": "Plant: Gua Lou 瓜蔞 — Trichosanthes — phlegm heat, chest, constipation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Gua Lou 瓜蔞 — Trichosanthes — phlegm heat, chest, constipation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Ban Xia 半夏",
+      "text": "Plant: Ban Xia 半夏 — Pinellia — cold phlegm, nausea, masses\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Ban Xia 半夏 — Pinellia — cold phlegm, nausea, masses",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Tian Nan Xing 天南星",
+      "text": "Plant: Tian Nan Xing 天南星 — Arisaema — cold phlegm, wind, seizure\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Tian Nan Xing 天南星 — Arisaema — cold phlegm, wind, seizure",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Bai Jie Zi 白芥子",
+      "text": "Plant: Bai Jie Zi 白芥子 — White mustard — cold phlegm, joint\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Bai Jie Zi 白芥子 — White mustard — cold phlegm, joint",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Jie Geng 桔梗",
+      "text": "Plant: Jie Geng 桔梗 — Platycodon — lung, throat, phlegm, abscess\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Jie Geng 桔梗 — Platycodon — lung, throat, phlegm, abscess",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Xing Ren 杏仁",
+      "text": "Plant: Xing Ren 杏仁 — Apricot kernel — lung qi, cough, constipation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Xing Ren 杏仁 — Apricot kernel — lung qi, cough, constipation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Zhi Su Zi 紫蘇子",
+      "text": "Plant: Zhi Su Zi 紫蘇子 — Perilla seed — lung qi, cough, constipation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Zhi Su Zi 紫蘇子 — Perilla seed — lung qi, cough, constipation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Pi Pa Ye 枇杷葉",
+      "text": "Plant: Pi Pa Ye 枇杷葉 — Loquat leaf — lung heat, stomach qi\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Pi Pa Ye 枇杷葉 — Loquat leaf — lung heat, stomach qi",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Sang Bai Pi 桑白皮",
+      "text": "Plant: Sang Bai Pi 桑白皮 — Mulberry root bark — lung heat, edema\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Sang Bai Pi 桑白皮 — Mulberry root bark — lung heat, edema",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Ting Li Zi 葶藶子",
+      "text": "Plant: Ting Li Zi 葶藶子 — Descurania — phlegm, lung, edema\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Ting Li Zi 葶藶子 — Descurania — phlegm, lung, edema",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Kuan Dong Hua 款冬花",
+      "text": "Plant: Kuan Dong Hua 款冬花 — Coltsfoot — cough, lung\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Kuan Dong Hua 款冬花 — Coltsfoot — cough, lung",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Zi Wan 紫菀",
+      "text": "Plant: Zi Wan 紫菀 — Aster — cough, blood in sputum\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Zi Wan 紫菀 — Aster — cough, blood in sputum",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Bai Bu 百部",
+      "text": "Plant: Bai Bu 百部 — Stemona — cough, tuberculosis, parasites\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Bai Bu 百部 — Stemona — cough, tuberculosis, parasites",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — He Shou Wu 何首烏",
+      "text": "Plant: He Shou Wu 何首烏 — Fo-Ti — blood, kidney, hair loss\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "He Shou Wu 何首烏 — Fo-Ti — blood, kidney, hair loss",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Nu Zhen Zi 女貞子",
+      "text": "Plant: Nu Zhen Zi 女貞子 — Privet fruit — yin, liver, kidney\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Nu Zhen Zi 女貞子 — Privet fruit — yin, liver, kidney",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Han Lian Cao 旱蓮草",
+      "text": "Plant: Han Lian Cao 旱蓮草 — Eclipta — yin, bleeding, hair\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Han Lian Cao 旱蓮草 — Eclipta — yin, bleeding, hair",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Gui Ban 龜板",
+      "text": "Plant: Gui Ban 龜板 — Tortoise plastron — yin, fire, wind\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Gui Ban 龜板 — Tortoise plastron — yin, fire, wind",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Bie Jia 鱉甲",
+      "text": "Plant: Bie Jia 鱉甲 — Turtle shell — yin, fire, masses\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Bie Jia 鱉甲 — Turtle shell — yin, fire, masses",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Long Gu 龍骨",
+      "text": "Plant: Long Gu 龍骨 — Dragon bone (fossil) — spirit, sweating\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Long Gu 龍骨 — Dragon bone (fossil) — spirit, sweating",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Mu Li 牡蠣",
+      "text": "Plant: Mu Li 牡蠣 — Oyster shell — spirit, yin, masses, sweating\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Mu Li 牡蠣 — Oyster shell — spirit, yin, masses, sweating",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    }
+  ]
+}
