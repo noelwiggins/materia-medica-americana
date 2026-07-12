@@ -1,0 +1,554 @@
+{
+  "segments": [
+    {
+      "label": "Dioscorides I.1 — Iris",
+      "text": "Book and entry: De Materia Medica I.1\nPlant: Iris — Orris root (Iris germanica/florentina)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.1",
+        "plant": "Iris — Orris root (Iris germanica/florentina)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.1"
+      }
+    },
+    {
+      "label": "Dioscorides I.2 — Calamus",
+      "text": "Book and entry: De Materia Medica I.2\nPlant: Calamus — Sweet flag (Acorus calamus)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.2",
+        "plant": "Calamus — Sweet flag (Acorus calamus)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.2"
+      }
+    },
+    {
+      "label": "Dioscorides I.3 — Asarum",
+      "text": "Book and entry: De Materia Medica I.3\nPlant: Asarum — Wild ginger (Asarum europaeum)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.3",
+        "plant": "Asarum — Wild ginger (Asarum europaeum)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.3"
+      }
+    },
+    {
+      "label": "Dioscorides I.4 — Nardus",
+      "text": "Book and entry: De Materia Medica I.4\nPlant: Nardus — Spikenard (Nardostachys jatamansi)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.4",
+        "plant": "Nardus — Spikenard (Nardostachys jatamansi)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.4"
+      }
+    },
+    {
+      "label": "Dioscorides I.5 — Amomum",
+      "text": "Book and entry: De Materia Medica I.5\nPlant: Amomum — Cardamom-like spice\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.5",
+        "plant": "Amomum — Cardamom-like spice",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.5"
+      }
+    },
+    {
+      "label": "Dioscorides I.6 — Kostos",
+      "text": "Book and entry: De Materia Medica I.6\nPlant: Kostos — Costus root (Saussurea costus)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.6",
+        "plant": "Kostos — Costus root (Saussurea costus)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.6"
+      }
+    },
+    {
+      "label": "Dioscorides I.7 — Zingiberi",
+      "text": "Book and entry: De Materia Medica I.7\nPlant: Zingiberi — Ginger (Zingiber officinale)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.7",
+        "plant": "Zingiberi — Ginger (Zingiber officinale)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.7"
+      }
+    },
+    {
+      "label": "Dioscorides I.8 — Aspalathus",
+      "text": "Book and entry: De Materia Medica I.8\nPlant: Aspalathus — Desert thorn shrub\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.8",
+        "plant": "Aspalathus — Desert thorn shrub",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.8"
+      }
+    },
+    {
+      "label": "Dioscorides I.9 — Shoemaker herb",
+      "text": "Book and entry: De Materia Medica I.9\nPlant: Shoemaker herb — Styrax\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.9",
+        "plant": "Shoemaker herb — Styrax",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.9"
+      }
+    },
+    {
+      "label": "Dioscorides I.10 — Calamos aromatikos",
+      "text": "Book and entry: De Materia Medica I.10\nPlant: Calamos aromatikos — Cinnamon sedge\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.10",
+        "plant": "Calamos aromatikos — Cinnamon sedge",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.10"
+      }
+    },
+    {
+      "label": "Dioscorides I.11 — Xylon kinnamon",
+      "text": "Book and entry: De Materia Medica I.11\nPlant: Xylon kinnamon — Cinnamon (Cinnamomum verum)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.11",
+        "plant": "Xylon kinnamon — Cinnamon (Cinnamomum verum)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.11"
+      }
+    },
+    {
+      "label": "Dioscorides I.12 — Cassia",
+      "text": "Book and entry: De Materia Medica I.12\nPlant: Cassia — Cassia cinnamon (Cinnamomum cassia)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.12",
+        "plant": "Cassia — Cassia cinnamon (Cinnamomum cassia)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.12"
+      }
+    },
+    {
+      "label": "Dioscorides I.13 — Amomos",
+      "text": "Book and entry: De Materia Medica I.13\nPlant: Amomos — Cardamom (Elettaria cardamomum)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.13",
+        "plant": "Amomos — Cardamom (Elettaria cardamomum)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.13"
+      }
+    },
+    {
+      "label": "Dioscorides I.14 — Malobathron",
+      "text": "Book and entry: De Materia Medica I.14\nPlant: Malobathron — Tejpat leaf (Cinnamomum tamala)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.14",
+        "plant": "Malobathron — Tejpat leaf (Cinnamomum tamala)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.14"
+      }
+    },
+    {
+      "label": "Dioscorides I.15 — Nardostachys",
+      "text": "Book and entry: De Materia Medica I.15\nPlant: Nardostachys — Celtic spikenard\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.15",
+        "plant": "Nardostachys — Celtic spikenard",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.15"
+      }
+    },
+    {
+      "label": "Dioscorides I.16 — Phu",
+      "text": "Book and entry: De Materia Medica I.16\nPlant: Phu — Valerian (Valeriana officinalis)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.16",
+        "plant": "Phu — Valerian (Valeriana officinalis)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.16"
+      }
+    },
+    {
+      "label": "Dioscorides I.17 — Bakkhar",
+      "text": "Book and entry: De Materia Medica I.17\nPlant: Bakkhar — Valeriana celtica\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.17",
+        "plant": "Bakkhar — Valeriana celtica",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.17"
+      }
+    },
+    {
+      "label": "Dioscorides I.18 — Kyprinos",
+      "text": "Book and entry: De Materia Medica I.18\nPlant: Kyprinos — Henna (Lawsonia inermis)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.18",
+        "plant": "Kyprinos — Henna (Lawsonia inermis)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.18"
+      }
+    },
+    {
+      "label": "Dioscorides I.19 — Asphodel",
+      "text": "Book and entry: De Materia Medica I.19\nPlant: Asphodel — Daffodil (Asphodelus)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.19",
+        "plant": "Asphodel — Daffodil (Asphodelus)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.19"
+      }
+    },
+    {
+      "label": "Dioscorides I.20 — Nymphaea",
+      "text": "Book and entry: De Materia Medica I.20\nPlant: Nymphaea — Waterlily (Nymphaea alba)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.20",
+        "plant": "Nymphaea — Waterlily (Nymphaea alba)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.20"
+      }
+    },
+    {
+      "label": "Dioscorides I.21 — Lotus",
+      "text": "Book and entry: De Materia Medica I.21\nPlant: Lotus — Egyptian lotus (Nelumbo nucifera)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.21",
+        "plant": "Lotus — Egyptian lotus (Nelumbo nucifera)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.21"
+      }
+    },
+    {
+      "label": "Dioscorides I.22 — Fenugreek",
+      "text": "Book and entry: De Materia Medica I.22\nPlant: Fenugreek — Trigonella foenum-graecum\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.22",
+        "plant": "Fenugreek — Trigonella foenum-graecum",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.22"
+      }
+    },
+    {
+      "label": "Dioscorides I.23 — Sesame",
+      "text": "Book and entry: De Materia Medica I.23\nPlant: Sesame — Sesamum indicum\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.23",
+        "plant": "Sesame — Sesamum indicum",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.23"
+      }
+    },
+    {
+      "label": "Dioscorides I.24 — Linum",
+      "text": "Book and entry: De Materia Medica I.24\nPlant: Linum — Flax/Linseed (Linum usitatissimum)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.24",
+        "plant": "Linum — Flax/Linseed (Linum usitatissimum)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.24"
+      }
+    },
+    {
+      "label": "Dioscorides I.25 — Nettle",
+      "text": "Book and entry: De Materia Medica I.25\nPlant: Nettle — Urtica dioica\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.25",
+        "plant": "Nettle — Urtica dioica",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.25"
+      }
+    },
+    {
+      "label": "Dioscorides I.26 — Pennyroyal",
+      "text": "Book and entry: De Materia Medica I.26\nPlant: Pennyroyal — Mentha pulegium\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.26",
+        "plant": "Pennyroyal — Mentha pulegium",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.26"
+      }
+    },
+    {
+      "label": "Dioscorides I.27 — Mint",
+      "text": "Book and entry: De Materia Medica I.27\nPlant: Mint — Mentha species\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.27",
+        "plant": "Mint — Mentha species",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.27"
+      }
+    },
+    {
+      "label": "Dioscorides I.28 — Wild mint",
+      "text": "Book and entry: De Materia Medica I.28\nPlant: Wild mint — Mentha aquatica\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.28",
+        "plant": "Wild mint — Mentha aquatica",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.28"
+      }
+    },
+    {
+      "label": "Dioscorides I.29 — Basil",
+      "text": "Book and entry: De Materia Medica I.29\nPlant: Basil — Ocimum basilicum\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.29",
+        "plant": "Basil — Ocimum basilicum",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.29"
+      }
+    },
+    {
+      "label": "Dioscorides I.30 — Savory",
+      "text": "Book and entry: De Materia Medica I.30\nPlant: Savory — Satureja hortensis\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "I.30",
+        "plant": "Savory — Satureja hortensis",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica I.30"
+      }
+    },
+    {
+      "label": "Dioscorides II.82 — Honey",
+      "text": "Book and entry: De Materia Medica II.82\nPlant: Honey — Mel (therapeutic uses)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.82",
+        "plant": "Honey — Mel (therapeutic uses)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.82"
+      }
+    },
+    {
+      "label": "Dioscorides II.83 — Beeswax",
+      "text": "Book and entry: De Materia Medica II.83\nPlant: Beeswax — Cera (therapeutic uses)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.83",
+        "plant": "Beeswax — Cera (therapeutic uses)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.83"
+      }
+    },
+    {
+      "label": "Dioscorides II.84 — Oxyglyky",
+      "text": "Book and entry: De Materia Medica II.84\nPlant: Oxyglyky — honey-vinegar compound\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.84",
+        "plant": "Oxyglyky — honey-vinegar compound",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.84"
+      }
+    },
+    {
+      "label": "Dioscorides II.85 — Oxymel",
+      "text": "Book and entry: De Materia Medica II.85\nPlant: Oxymel — honey and vinegar preparation\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.85",
+        "plant": "Oxymel — honey and vinegar preparation",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.85"
+      }
+    },
+    {
+      "label": "Dioscorides II.86 — Hydromel",
+      "text": "Book and entry: De Materia Medica II.86\nPlant: Hydromel — mead for therapeutics\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.86",
+        "plant": "Hydromel — mead for therapeutics",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.86"
+      }
+    },
+    {
+      "label": "Dioscorides II.87 — Milk",
+      "text": "Book and entry: De Materia Medica II.87\nPlant: Milk — Lac (therapeutic uses of cow/goat/sheep milk)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.87",
+        "plant": "Milk — Lac (therapeutic uses of cow/goat/sheep milk)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.87"
+      }
+    },
+    {
+      "label": "Dioscorides II.88 — Butter",
+      "text": "Book and entry: De Materia Medica II.88\nPlant: Butter — Butyrum\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.88",
+        "plant": "Butter — Butyrum",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.88"
+      }
+    },
+    {
+      "label": "Dioscorides II.89 — Cheese",
+      "text": "Book and entry: De Materia Medica II.89\nPlant: Cheese — Caseus\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.89",
+        "plant": "Cheese — Caseus",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.89"
+      }
+    },
+    {
+      "label": "Dioscorides II.90 — Whey",
+      "text": "Book and entry: De Materia Medica II.90\nPlant: Whey — Serum lactis\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.90",
+        "plant": "Whey — Serum lactis",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.90"
+      }
+    },
+    {
+      "label": "Dioscorides II.91 — Vinegar",
+      "text": "Book and entry: De Materia Medica II.91\nPlant: Vinegar — Acetum (therapeutic uses)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.91",
+        "plant": "Vinegar — Acetum (therapeutic uses)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.91"
+      }
+    },
+    {
+      "label": "Dioscorides II.100 — Wheat",
+      "text": "Book and entry: De Materia Medica II.100\nPlant: Wheat — Triticum (therapeutic uses)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.100",
+        "plant": "Wheat — Triticum (therapeutic uses)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.100"
+      }
+    },
+    {
+      "label": "Dioscorides II.101 — Barley",
+      "text": "Book and entry: De Materia Medica II.101\nPlant: Barley — Hordeum vulgare (therapeutic)\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.101",
+        "plant": "Barley — Hordeum vulgare (therapeutic)",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.101"
+      }
+    },
+    {
+      "label": "Dioscorides II.102 — Spelt",
+      "text": "Book and entry: De Materia Medica II.102\nPlant: Spelt — Triticum spelta\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.102",
+        "plant": "Spelt — Triticum spelta",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.102"
+      }
+    },
+    {
+      "label": "Dioscorides II.103 — Millet",
+      "text": "Book and entry: De Materia Medica II.103\nPlant: Millet — Panicum miliaceum\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.103",
+        "plant": "Millet — Panicum miliaceum",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.103"
+      }
+    },
+    {
+      "label": "Dioscorides II.104 — Sorghum",
+      "text": "Book and entry: De Materia Medica II.104\nPlant: Sorghum — therapeutic uses\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.104",
+        "plant": "Sorghum — therapeutic uses",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.104"
+      }
+    },
+    {
+      "label": "Dioscorides II.105 — Lentil",
+      "text": "Book and entry: De Materia Medica II.105\nPlant: Lentil — Lens culinaris\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.105",
+        "plant": "Lentil — Lens culinaris",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.105"
+      }
+    },
+    {
+      "label": "Dioscorides II.106 — Chickpea",
+      "text": "Book and entry: De Materia Medica II.106\nPlant: Chickpea — Cicer arietinum\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.106",
+        "plant": "Chickpea — Cicer arietinum",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.106"
+      }
+    },
+    {
+      "label": "Dioscorides II.107 — Beans",
+      "text": "Book and entry: De Materia Medica II.107\nPlant: Beans — Vicia faba\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.107",
+        "plant": "Beans — Vicia faba",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.107"
+      }
+    },
+    {
+      "label": "Dioscorides II.108 — Lupine",
+      "text": "Book and entry: De Materia Medica II.108\nPlant: Lupine — Lupinus albus\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.108",
+        "plant": "Lupine — Lupinus albus",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.108"
+      }
+    },
+    {
+      "label": "Dioscorides II.109 — Fenugreek",
+      "text": "Book and entry: De Materia Medica II.109\nPlant: Fenugreek — Trigonella\n\nWrite a comprehensive Plantacopia corpus entry for this plant as documented by Dioscorides in De Materia Medica (77 CE). Include original Greek plant name, therapeutic uses documented by Dioscorides, preparation methods described, and conditions treated. Note any cross-references to other classical sources.",
+      "_meta": {
+        "entry_ref": "II.109",
+        "plant": "Fenugreek — Trigonella",
+        "tradition": "greek_roman",
+        "_corpusKey": "dioscorides",
+        "source_section": "De Materia Medica II.109"
+      }
+    }
+  ]
+}
