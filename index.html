@@ -715,6 +715,483 @@
     font-size: 0.88rem;
     line-height: 1.9;
   }
+/* ══ LIBRARY & BOOK READER ═════════════════════════════════ */
+
+  /* Intro */
+  .library-intro {
+    padding: 1.5rem 0 1rem;
+    max-width: 72ch;
+  }
+  .library-thesis {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+
+  /* Stat grid */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* Library section */
+  .library-section { margin-bottom: 3rem; }
+  .library-subtitle {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0.3rem 0 1.5rem;
+    max-width: 60ch;
+    line-height: 1.6;
+  }
+
+  /* Book shelf grid */
+  .book-shelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.2rem;
+  }
+
+  /* Individual book cover */
+  .book-cover {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s, box-shadow 0.15s;
+    position: relative;
+  }
+  .book-cover:hover {
+    transform: translateY(-3px) rotate(-0.5deg);
+    box-shadow: 4px 8px 24px rgba(0,0,0,0.18);
+  }
+
+  .book-cover-art {
+    aspect-ratio: 2/3;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #C8B46A;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .book-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+    filter: sepia(15%) contrast(1.05) brightness(0.95);
+  }
+
+  /* Cover overlay with title */
+  .book-cover-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(8,6,2,0.92) 0%, rgba(8,6,2,0.4) 50%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.8rem 0.7rem;
+  }
+
+  .book-cover-tradition {
+    font-family: var(--font-code);
+    font-size: 0.48rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.25rem;
+  }
+
+  .book-cover-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    color: #F5EDD8;
+  }
+
+  .book-cover-date {
+    font-family: var(--font-code);
+    font-size: 0.48rem;
+    color: #8A7A58;
+    margin-top: 0.2rem;
+  }
+
+  /* Completion badge */
+  .book-completion-badge {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    background: rgba(0,0,0,0.7);
+    border: 1px solid rgba(196,168,96,0.4);
+    font-family: var(--font-code);
+    font-size: 0.45rem;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    padding: 0.15rem 0.4rem;
+  }
+
+  .book-cover-meta {
+    padding: 0.5rem 0.2rem 0;
+    font-family: var(--font-code);
+    font-size: 0.52rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ── Reader panel ── */
+  .reader-topbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: var(--ink);
+    color: var(--vellum);
+    flex-wrap: wrap;
+  }
+
+  .reader-back-btn {
+    background: none;
+    border: 1px solid rgba(196,168,96,0.4);
+    color: var(--gold);
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.8rem;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .reader-back-btn:hover { background: rgba(196,168,96,0.1); }
+
+  .reader-title-block { flex: 1; min-width: 0; }
+  .reader-tradition {
+    font-family: var(--font-code);
+    font-size: 0.52rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+  .reader-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 0.9rem;
+    color: #F5EDD8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .reader-progress {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+  }
+  #reader-progress-label {
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    color: #6A5E48;
+    white-space: nowrap;
+  }
+  .reader-progress-bar {
+    width: 80px;
+    height: 3px;
+    background: #2A2618;
+    border-radius: 2px;
+  }
+  .reader-progress-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+    transition: width 0.3s;
+  }
+
+  /* Search bar */
+  .reader-search-bar {
+    padding: 0.6rem 1.5rem;
+    background: #F0EBD8;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+  .reader-search-input {
+    width: 100%;
+    max-width: 560px;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--border);
+    background: white;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--ink);
+    outline: none;
+  }
+  .reader-search-input:focus { border-color: var(--gold); }
+
+  .reader-search-results {
+    position: absolute;
+    top: 100%;
+    left: 1.5rem;
+    right: 1.5rem;
+    max-width: 560px;
+    background: white;
+    border: 1px solid var(--border);
+    border-top: none;
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .reader-result-item {
+    padding: 0.6rem 0.9rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.82rem;
+  }
+  .reader-result-item:hover { background: var(--vellum); }
+  .reader-result-title { font-weight: 600; color: var(--ink); }
+  .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+  .reader-result-match { background: #FFF3B0; font-weight: 600; }
+
+  /* Two-column spread */
+  .reader-spread {
+    display: grid;
+    grid-template-columns: 1fr 14px 1fr;
+    min-height: 500px;
+    background: #0C0A06;
+    padding: 1rem 1.5rem;
+    gap: 0;
+  }
+
+  .reader-page {
+    background: #FAF4E2;
+    border: 1px solid #C8B46A;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    overflow-y: auto;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reader-page-left { border-right: none; }
+  .reader-page-right { border-left: none; }
+
+  .reader-spine {
+    background: linear-gradient(to right,
+      #0C0906 0%, #2A1E0A 18%, #8A7030 42%,
+      #D4B848AA 50%, #8A7030 58%, #2A1E0A 82%, #0C0906 100%);
+    box-shadow: -3px 0 10px rgba(0,0,0,0.6), 3px 0 10px rgba(0,0,0,0.6);
+  }
+
+  .reader-page-inner {
+    padding: 1.5rem 1.8rem;
+    flex: 1;
+  }
+
+  .reader-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.7rem 1.8rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .reader-lang-label {
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .reader-section-ref {
+    font-family: var(--font-code);
+    font-size: 0.52rem;
+    color: var(--gold);
+  }
+
+  .reader-page-footer {
+    padding: 0.6rem 1.8rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-code);
+    font-size: 0.5rem;
+    color: var(--muted);
+    flex-shrink: 0;
+    margin-top: auto;
+  }
+
+  /* Passage display */
+  .reader-passage {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed var(--border);
+  }
+  .reader-passage:last-child { border-bottom: none; }
+
+  .reader-passage-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+  .reader-passage-orig {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 0.85rem;
+    line-height: 1.85;
+    color: #4A3820;
+  }
+  .reader-passage-trans {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--ink);
+    margin-bottom: 0.8rem;
+  }
+  .reader-passage-img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: contain;
+    object-position: center top;
+    margin-bottom: 0.6rem;
+    background: #FAF4E2;
+  }
+  .reader-passage-prep {
+    background: var(--vellum);
+    border-left: 3px solid var(--gold);
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-top: 0.6rem;
+  }
+  .reader-passage-prep strong {
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+  .reader-correlate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.6rem;
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    background: none;
+    border: 1px solid var(--gold);
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+  }
+  .reader-correlate-btn:hover { background: rgba(196,168,96,0.08); }
+
+  /* Nav bar */
+  .reader-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 1.5rem;
+    background: #0C0A06;
+    border-top: 1px solid #2A2618;
+  }
+  .reader-nav-btn {
+    background: #1C1A12;
+    border: 1px solid #3A3420;
+    color: var(--gold);
+    font-family: var(--font-code);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: background 0.12s;
+  }
+  .reader-nav-btn:hover { background: #2A2618; }
+  .reader-nav-btn:disabled { opacity: 0.3; cursor: default; }
+  .reader-nav-center {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    color: #6A5E48;
+    text-align: center;
+  }
+
+  /* Correlations panel */
+  .reader-correlations {
+    margin: 0 1.5rem 1rem;
+    border: 1px solid var(--gold);
+    background: #FFFDF4;
+  }
+  .reader-correlations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    background: var(--gold);
+    color: var(--ink);
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .reader-correlations-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--ink);
+  }
+  #reader-correlations-body {
+    padding: 0.8rem;
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+  .corr-item {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
+  .corr-item:hover { background: var(--vellum); }
+  .corr-item:last-child { border-bottom: none; }
+  .corr-tradition-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    flex-shrink: 0; margin-top: 5px;
+  }
+  .corr-text { flex: 1; }
+  .corr-title { font-weight: 600; font-size: 0.8rem; }
+  .corr-source { font-size: 0.72rem; color: var(--muted); }
+
+  /* Mobile */
+  @media (max-width: 660px) {
+    .book-shelf { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.8rem; }
+    .reader-spread {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 8px auto;
+      padding: 0.5rem;
+    }
+    .reader-spine {
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(to bottom, #0C0906, #8A7030, #0C0906);
+    }
+    .reader-page { max-height: none; }
+    .reader-page-inner { padding: 1rem; }
+  }
+
+  /* ══ END LIBRARY & BOOK READER ══════════════════════════════ */
 </style>
 </head>
 
@@ -812,99 +1289,82 @@
 
   <!-- HOME TAB -->
   <section class="tab-panel active" id="tab-home">
+  <div style="padding:1.2rem 0 0.8rem;max-width:72ch">
+    <p style="font-size:1rem;line-height:1.75;color:var(--ink)">In 1971, a Chinese pharmacologist read a 4th-century Daoist text, found a reference to sweet wormwood for fever, isolated artemisinin, and won the Nobel Prize. The answers to medicine&#39;s most urgent questions are sitting in these books.</p>
+  </div>
+  <div class="stat-grid">
+    <button class="stat-tile" onclick="showTab('traditions', document.querySelector('[onclick*=traditions]'))" title="22 traditions">
+      <div class="stat-tile-num">22</div><div class="stat-tile-label">Traditions</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+    <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="584 plants">
+      <div class="stat-tile-num">584</div><div class="stat-tile-label">Plants Documented</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+    <button class="stat-tile" onclick="showTab('corpus', document.querySelector('[onclick*=corpus]'))" title="823 passages">
+      <div class="stat-tile-num">823</div><div class="stat-tile-label">Source Passages</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+    <button class="stat-tile" onclick="showTab('convergence', document.querySelector('[onclick*=convergence]'))" title="Cross-book matches">
+      <div class="stat-tile-num">116</div><div class="stat-tile-label">Cross-Book Matches</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+  </div>
+  <div style="margin-bottom:0.4rem">
+    <div class="section-eyebrow">The Library</div>
+    <h2 class="section-title" style="margin-bottom:0.25rem">Choose a Book</h2>
+    <p style="font-size:0.85rem;color:var(--muted);margin:0 0 1.2rem;max-width:60ch;line-height:1.6">Each is a primary source. Open it to read original text with translation, search within it, and see how it connects to the others.</p>
+  </div>
+  <div class="book-shelf" id="book-shelf-grid">
+    <div style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);padding:1rem">Loading library&#8230;</div>
+  </div>
+</section>
 
-    <div class="thesis-block" style="margin-bottom:2rem;">
-      <p>In 1971, Chinese pharmacologist Tu Youyou read a 4th-century Daoist text and found a reference to sweet wormwood for fever. She isolated artemisinin. It became the world's most important antimalarial drug. She won the Nobel Prize in 2015. The answers to some of medicine's most urgent questions are sitting in historical texts. This archive exists to find them.</p>
+<!-- BOOK READER TAB -->
+<section class="tab-panel" id="tab-reader">
+  <div class="reader-topbar">
+    <button class="reader-back-btn" onclick="closeReader()">&#8592; Library</button>
+    <div class="reader-title-block">
+      <span class="reader-tradition" id="reader-tradition-label"></span>
+      <span class="reader-title" id="reader-book-title"></span>
     </div>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-bottom:2rem;">
-      <button class="stat-tile" onclick="showTab('traditions', document.querySelector('[onclick*=traditions]'))" title="Browse all 22 traditions">
-        <div class="stat-tile-num">22</div>
-        <div class="stat-tile-label">Traditions</div>
-        <div class="stat-tile-arrow">↗</div>
-      </button>
-      <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]')); setTimeout(()=>{ const s=document.getElementById('db-view-select'); if(s){s.value='curated'; renderPlants();} },200)" title="Browse 116 curated plants">
-        <div class="stat-tile-num">116</div>
-        <div class="stat-tile-label">Curated Plants</div>
-        <div class="stat-tile-arrow">↗</div>
-      </button>
-      <button class="stat-tile" onclick="showTab('corpus', document.querySelector('[onclick*=corpus]'))" title="Browse 823 source passages">
-        <div class="stat-tile-num">823</div>
-        <div class="stat-tile-label">Source Passages</div>
-        <div class="stat-tile-arrow">↗</div>
-      </button>
-      <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="Browse all 584 plants">
-        <div class="stat-tile-num">584</div>
-        <div class="stat-tile-label">Plants Documented</div>
-        <div class="stat-tile-arrow">↗</div>
-      </button>
+    <div class="reader-progress">
+      <span id="reader-progress-label">Page 1 of 1</span>
+      <div class="reader-progress-bar"><div class="reader-progress-fill" id="reader-progress-fill"></div></div>
     </div>
-
-    <hr class="divider">
-
-    <!-- ── Tradition Cards ──────────────────────────────────── -->
-    <div class="section-header" style="margin-bottom:1.2rem">
-      <div class="section-eyebrow">22 Traditions · 5,000 Years</div>
-      <h2 class="section-title">The Archive by Tradition</h2>
-      <p style="font-size:0.9rem;color:var(--muted);margin-top:0.4rem;max-width:60ch">Each tradition is a primary source. Click any card to open the original texts alongside their translations.</p>
-    </div>
-
-    <div class="tradition-cards-grid" id="tradition-cards-grid">
-      <!-- Populated by renderTraditionCards() -->
-      <div style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);padding:2rem">Loading traditions…</div>
-    </div>
-
-    <!-- ── Book Reader Modal ─────────────────────────────────── -->
-    <div class="book-modal-overlay" id="book-modal" onclick="closeBookModal(event)" style="display:none">
-      <div class="book-modal" onclick="event.stopPropagation()">
-
-        <!-- Modal header -->
-        <div class="book-modal-header">
-          <div>
-            <div class="book-modal-eyebrow" id="book-modal-eyebrow">Tradition</div>
-            <h2 class="book-modal-title" id="book-modal-title">Source Title</h2>
-            <div class="book-modal-source-note" id="book-modal-source-note" style="font-family:var(--font-code);font-size:0.52rem;color:#8A7A58;letter-spacing:0.08em;margin-top:0.2rem"></div>
-          </div>
-          <div style="display:flex;align-items:center;gap:0.8rem">
-            <div class="book-nav">
-              <button onclick="bookPage(-1)" id="book-prev">‹ Prev</button>
-              <span id="book-page-label" style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted);white-space:nowrap">1 / 1</span>
-              <button onclick="bookPage(1)" id="book-next">Next ›</button>
-            </div>
-            <button class="book-close-btn" onclick="closeBookModal()">✕</button>
-          </div>
-        </div>
-
-        <!-- Two-column book spread -->
-        <div class="book-spread">
-          <!-- Left page: original language -->
-          <div class="book-page book-page-left">
-            <div class="book-page-header">
-              <span class="book-page-lang" id="book-lang-label">Original</span>
-              <span class="book-page-ref" id="book-section-label"></span>
-            </div>
-            <div class="book-page-content" id="book-original"></div>
-          </div>
-
-          <!-- Spine -->
-          <div class="book-spine"></div>
-
-          <!-- Right page: translation -->
-          <div class="book-page book-page-right">
-            <div class="book-page-header">
-              <span class="book-page-lang">Translation</span>
-              <span class="book-page-ref" id="book-title-label"></span>
-            </div>
-            <div class="book-page-content" id="book-translation"></div>
-            <div class="book-page-footer" id="book-footer"></div>
-          </div>
-        </div>
-
+  </div>
+  <div class="reader-search-bar">
+    <input type="text" id="reader-search-input" placeholder="Search this book &#8212; plant name, symptom, preparation&#8230;" oninput="searchReader(this.value)" class="reader-search-input">
+    <div class="reader-search-results" id="reader-search-results" style="display:none"></div>
+  </div>
+  <div class="reader-spread">
+    <div class="reader-page reader-page-left" id="reader-page-left">
+      <div style="padding:0.5rem 1.2rem 0;border-bottom:1px solid var(--border);flex-shrink:0">
+        <span style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)" id="reader-lang-label">Original</span>
       </div>
+      <div class="reader-page-inner" id="reader-left-content"></div>
     </div>
-  </section>
+    <div class="reader-spine"></div>
+    <div class="reader-page reader-page-right" id="reader-page-right">
+      <div class="reader-page-header">
+        <span class="reader-lang-label">Translation</span>
+        <span class="reader-section-ref" id="reader-section-ref"></span>
+      </div>
+      <div class="reader-page-inner" id="reader-right-content"></div>
+      <div class="reader-page-footer" id="reader-page-footer"></div>
+    </div>
+  </div>
+  <div class="reader-nav-bar">
+    <button class="reader-nav-btn" id="reader-prev-btn" onclick="readerPageNav(-1)">&#8592; Previous</button>
+    <span class="reader-nav-center" id="reader-nav-label">1 / 1</span>
+    <button class="reader-nav-btn" id="reader-next-btn" onclick="readerPageNav(1)">Next &#8594;</button>
+  </div>
+  <div class="reader-correlations" id="reader-correlations" style="display:none">
+    <div class="reader-correlations-header">
+      <span>&#8596; This Plant in Other Books</span>
+      <button onclick="document.getElementById('reader-correlations').style.display='none'">&#10005;</button>
+    </div>
+    <div id="reader-correlations-body" style="padding:0.8rem;font-size:0.82rem;line-height:1.6"></div>
+  </div>
+</section>
 
-  <!-- COBO TAB -->
+<!-- COBO TAB -->
   <section class="tab-panel" id="tab-cobo">
     <div class="section-header">
       <div class="section-eyebrow">Historia del Nuevo Mundo · Books IV–VI · First English Translation</div>
@@ -1850,6 +2310,7 @@ try {
     const seen = new Set();
 
     await Promise.all(traditionFiles.map(async ({ url, tradition, label }) => {
+          const corpusKey = url.replace('/data/','').replace('.json','');
       try {
         const res = await fetch(url);
         if (!res.ok) return;
@@ -3204,5 +3665,418 @@ if (q) {
 <footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #E2DED6;margin-top:2rem;background:var(--vellum,#F7F5F0)">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
 
 </div>
+
+<script>
+// ══ PLANTACOPIA LIBRARY & BOOK READER ══════════════════════
+
+const BOOKS = [
+  { id:'badianus', title:'Libellus de Medicinalibus Indorum Herbis', short:'Badianus Manuscript',
+    tradition:'mesoamerican', date:'1552 CE', language:'Latin / Nahuatl',
+    author:'Martín de la Cruz',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg/400px-Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg',
+    color:'#8B4513', corpusKeys:['cobo','cobo_recovery','cobo_mineral_air','cobo_missing','cobo_nontarget'], totalEntries:185,
+    description:'The only surviving Aztec herbal. 185 illustrated plant medicines with preparations, written in Nahuatl by a Tlatelolco physician and translated into Latin in 1552.' },
+  { id:'dioscorides', title:'De Materia Medica', short:'De Materia Medica',
+    tradition:'greek_roman', date:'77 CE', language:'Classical Greek',
+    author:'Pedanius Dioscorides',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg/400px-Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg',
+    color:'#4A3060', corpusKeys:['dioscorides','greek_roman','dioscorides_complete','dioscorides_books5_6'], totalEntries:600,
+    description:'The foundational pharmacological text of Western medicine. 600 plants across 5 books, used continuously for 1,500 years.' },
+  { id:'ebers', title:'Papyrus Ebers', short:'Ebers Papyrus',
+    tradition:'egyptian', date:'c.1550 BCE', language:'Hieratic Egyptian',
+    author:'Anonymous Egyptian physicians',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Papyrus_Ebers.png/400px-Papyrus_Ebers.png',
+    color:'#8B6914', corpusKeys:['egyptian'], totalEntries:700,
+    description:'The oldest and most complete ancient medical text. 700 remedies, 300 plant medicines, surgical procedures from 1550 BCE.' },
+  { id:'charaka', title:'Charaka Samhita', short:'Charaka Samhita',
+    tradition:'ayurveda', date:'c.400 BCE (compiled)', language:'Sanskrit',
+    author:'Charaka',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg/400px-Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg',
+    color:'#A0522D', corpusKeys:['charaka','charaka_extended'], totalEntries:340,
+    description:'The foundational Ayurvedic text. 340 chapters covering pharmacology and the 8 branches of medicine. Documents plants 2,000 years before modern clinical validation.' },
+  { id:'bencao', title:'Bencao Gangmu (本草綱目)', short:'Bencao Gangmu',
+    tradition:'chinese', date:'1596 CE', language:'Classical Chinese',
+    author:'Li Shizhen (27 years of field research)',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg/400px-Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg',
+    color:'#8B0000', corpusKeys:['bencao','gangmu'], totalEntries:1892,
+    description:'The most comprehensive pharmacopoeia in human history before the 18th century. 1,892 substances across 52 volumes.' },
+  { id:'canon', title:'Al-Qanun fi al-Tibb', short:'Canon of Medicine',
+    tradition:'unani', date:'1025 CE', language:'Arabic',
+    author:'Ibn Sina (Avicenna)',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Dioscorides%2C_Codex_Julianae_Aniciae%3B_Saffron.jpg/400px-Dioscorides%2C_Codex_Julianae_Aniciae%3B_Saffron.jpg',
+    color:'#2F5233', corpusKeys:['ibn_sina','ibn_baitar'], totalEntries:760,
+    description:'The encyclopedia that ruled Islamic and European medicine for 600 years. 760 drugs with the first systematic pharmacological classification.' },
+  { id:'tibetan', title:'Gyushi (rGyud bzhi)', short:'Gyushi — Four Tantras',
+    tradition:'tibetan', date:'c.12th century CE', language:'Classical Tibetan',
+    author:'Yuthok Yönten Gönpo',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg/400px-Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg',
+    color:'#8B1A1A', corpusKeys:['tibetan'], totalEntries:300,
+    description:'The foundational Tibetan medical text. 300 chapters synthesizing Indian, Chinese, and indigenous Tibetan pharmacological traditions.' },
+  { id:'bencaojing', title:'Shennong Bencaojing (神農本草經)', short:'Shennong Classic',
+    tradition:'chinese', date:'c.200 CE (compiled)', language:'Classical Chinese',
+    author:'Attributed to Shennong',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg/400px-Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg',
+    color:'#B8860B', corpusKeys:['bencao','kampo'], totalEntries:365,
+    description:'The foundational Chinese materia medica. 365 substances in three therapeutic grades. Basis of Kampo (Japanese) medicine.' },
+  { id:'dongui', title:'Dongui Bogam (동의보감)', short:'Dongui Bogam',
+    tradition:'korean', date:'1613 CE', language:'Classical Chinese / Korean',
+    author:'Heo Jun — Royal physician',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg/400px-Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg',
+    color:'#C62828', corpusKeys:['korean'], totalEntries:1400,
+    description:'UNESCO Memory of the World. 25 volumes, 1,400 medicines. The most comprehensive East Asian medical encyclopedia after the Bencao Gangmu.' },
+  { id:'cobo', title:'Historia del Nuevo Mundo', short:'Cobo — Historia',
+    tradition:'mesoamerican', date:'1653 CE', language:'17th-century Spanish',
+    author:'Bernabé Cobo — Jesuit missionary',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg/400px-Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg',
+    color:'#2D5016', corpusKeys:['cobo','cobo_recovery','cobo_mineral_air'], totalEntries:2000,
+    description:'The most comprehensive natural history of the Americas. 2,000+ plants from Peru, Bolivia, and Mexico — 61 years of field observation.' },
+  { id:'west_african', title:'West African Traditional Medicine', short:'West African Corpus',
+    tradition:'west_african', date:'Oral (documented 18th–20th c.)', language:'Yoruba, Hausa, Twi',
+    author:'Traditional healers across West Africa',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg/400px-Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg',
+    color:'#E65100', corpusKeys:['west_african'], totalEntries:500,
+    description:'The plant pharmacopoeia of West African traditional medicine, documented across Ghana, Nigeria, Senegal, and Côte d\'Ivoire.' },
+  { id:'south_african', title:'Southern African Traditional Medicine', short:'Zulu / San / Khoikhoi',
+    tradition:'southern_african', date:'Ancient (documented 1650s+)', language:'Zulu, Xhosa, San, Khoikhoi',
+    author:'San, Zulu, and Khoikhoi healers',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg/400px-Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg',
+    color:'#FF7043', corpusKeys:['southern_african'], totalEntries:600,
+    description:'The world\'s oldest continuous healing tradition from the San, who have occupied southern Africa for 40,000+ years. Source of Devil\'s Claw, Umckaloabo, and Rooibos.' },
+];
+
+// ── Reader state ────────────────────────────────────────────
+var readerBook = null;
+var readerSegments = [];
+var readerPageIdx = 0;
+var PASSAGES_PER_PAGE = 3;
+
+// ── Render book shelf ───────────────────────────────────────
+function renderBookShelf() {
+  var grid = document.getElementById('book-shelf-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  BOOKS.forEach(function(book) {
+    var segs = corpusData.filter(function(s) {
+      return book.corpusKeys.some(function(k) { return s._corpusKey && s._corpusKey.startsWith(k); }) &&
+        s.translation && ['[PARSE ERROR]','[SEGMENT FAILED]'].indexOf(s.title_inferred||'') === -1;
+    });
+    var count = segs.length;
+    var pct = Math.min(100, Math.round(count / book.totalEntries * 100));
+    var t = traditionData.find(function(x) { return x.id === book.tradition; });
+    var color = (t && t.color) ? t.color : book.color;
+
+    var card = document.createElement('div');
+    card.className = 'book-cover';
+    card.title = book.description;
+    card.onclick = (function(b) { return function() { openBook(b); }; })(book);
+
+    var art = document.createElement('div');
+    art.className = 'book-cover-art';
+
+    var img = document.createElement('img');
+    img.className = 'book-cover-img';
+    img.src = book.cover;
+    img.alt = book.short;
+    img.loading = 'lazy';
+    img.onerror = function() { this.style.display = 'none'; art.style.background = color + '33'; };
+    art.appendChild(img);
+
+    var overlay = document.createElement('div');
+    overlay.className = 'book-cover-overlay';
+    var trad = document.createElement('div');
+    trad.className = 'book-cover-tradition';
+    trad.style.color = color;
+    trad.textContent = book.tradition.replace(/_/g,' ');
+    var ttl = document.createElement('div');
+    ttl.className = 'book-cover-title';
+    ttl.textContent = book.short;
+    var dt = document.createElement('div');
+    dt.className = 'book-cover-date';
+    dt.textContent = book.date;
+    overlay.appendChild(trad); overlay.appendChild(ttl); overlay.appendChild(dt);
+    art.appendChild(overlay);
+
+    var badge = document.createElement('div');
+    badge.className = 'book-completion-badge';
+    badge.textContent = pct + '% transcribed';
+    art.appendChild(badge);
+
+    var meta = document.createElement('div');
+    meta.className = 'book-cover-meta';
+    var s1 = document.createElement('span'); s1.textContent = count + ' passages';
+    var s2 = document.createElement('span'); s2.textContent = book.author.split(' — ')[0].split(',')[0];
+    meta.appendChild(s1); meta.appendChild(s2);
+
+    card.appendChild(art);
+    card.appendChild(meta);
+    grid.appendChild(card);
+  });
+}
+
+// ── Open a book ─────────────────────────────────────────────
+function openBook(book) {
+  readerBook = book;
+  readerPageIdx = 0;
+  readerSegments = corpusData.filter(function(s) {
+    return book.corpusKeys.some(function(k) { return s._corpusKey && s._corpusKey.startsWith(k); }) &&
+      s.translation && ['[PARSE ERROR]','[SEGMENT FAILED]'].indexOf(s.title_inferred||'') === -1;
+  });
+  var el = function(id) { return document.getElementById(id); };
+  el('reader-tradition-label').textContent = book.tradition.replace(/_/g,' ').toUpperCase() + ' · ' + book.date;
+  el('reader-book-title').textContent = book.title;
+  el('reader-lang-label').textContent = book.language;
+  el('reader-search-input').value = '';
+  el('reader-search-results').style.display = 'none';
+  el('reader-correlations').style.display = 'none';
+  showTab('reader', null);
+  renderReaderSpread();
+}
+
+function openBookById(id) {
+  var book = BOOKS.find(function(b) { return b.id === id; });
+  if (book) openBook(book);
+}
+
+function closeReader() {
+  showTab('home', null);
+}
+
+// ── Render spread ────────────────────────────────────────────
+function renderReaderSpread() {
+  var total = Math.ceil(readerSegments.length / PASSAGES_PER_PAGE) || 1;
+  var start = readerPageIdx * PASSAGES_PER_PAGE;
+  var pageSegs = readerSegments.slice(start, start + PASSAGES_PER_PAGE);
+  var el = function(id) { return document.getElementById(id); };
+
+  el('reader-progress-label').textContent = 'Page ' + (readerPageIdx+1) + ' of ' + total;
+  el('reader-nav-label').textContent = (readerPageIdx+1) + ' / ' + total;
+  var pct = total > 1 ? (readerPageIdx / (total-1) * 100) : 100;
+  el('reader-progress-fill').style.width = pct + '%';
+  el('reader-prev-btn').disabled = (readerPageIdx === 0);
+  el('reader-next-btn').disabled = (readerPageIdx >= total-1);
+
+  var leftEl  = el('reader-left-content');
+  var rightEl = el('reader-right-content');
+  var footEl  = el('reader-page-footer');
+  leftEl.innerHTML = '';
+  rightEl.innerHTML = '';
+
+  pageSegs.forEach(function(seg) {
+    var title = seg.title_inferred || '';
+    var ref   = seg.source_section || '';
+    var titleLow = title.toLowerCase();
+    var transLow = (seg.translation || '').slice(0, 300).toLowerCase();
+
+    // Illustration lookup
+    var illUrl = null;
+    for (var plant in illustrationsData) {
+      if (titleLow.indexOf(plant) !== -1 || transLow.indexOf(plant) !== -1) {
+        illUrl = illustrationsData[plant].url;
+        break;
+      }
+    }
+
+    // Left page: illustration + original
+    var lp = document.createElement('div');
+    lp.className = 'reader-passage';
+    var lt = document.createElement('div');
+    lt.className = 'reader-passage-title';
+    lt.textContent = title;
+    lp.appendChild(lt);
+
+    if (illUrl) {
+      var img = document.createElement('img');
+      img.className = 'reader-passage-img';
+      img.src = illUrl;
+      img.alt = title;
+      img.loading = 'lazy';
+      img.onerror = function() { this.style.display = 'none'; };
+      lp.appendChild(img);
+    }
+
+    var orig = document.createElement('div');
+    orig.className = 'reader-passage-orig';
+    if (seg.original_text) {
+      orig.innerHTML = seg.original_text.replace(/\n/g, '<br>');
+    } else {
+      orig.style.cssText = 'color:var(--muted);font-size:0.8rem;padding:0.5rem 0;font-style:normal';
+      orig.textContent = '[Original text not yet digitized for this passage]';
+    }
+    lp.appendChild(orig);
+    leftEl.appendChild(lp);
+
+    // Right page: translation + prep + correlate btn
+    var rp = document.createElement('div');
+    rp.className = 'reader-passage';
+
+    if (ref) {
+      var refEl = document.createElement('div');
+      refEl.style.cssText = 'font-family:var(--font-code);font-size:0.55rem;color:var(--gold);letter-spacing:0.08em;margin-bottom:0.5rem';
+      refEl.textContent = ref;
+      rp.appendChild(refEl);
+    }
+
+    var trans = document.createElement('div');
+    trans.className = 'reader-passage-trans';
+    trans.innerHTML = (seg.translation || '').replace(/\n\n/g, '</p><p>').replace(/\n/g, ' ');
+    rp.appendChild(trans);
+
+    if (seg.preparation) {
+      var prep = document.createElement('div');
+      prep.className = 'reader-passage-prep';
+      prep.innerHTML = '<strong>Preparation</strong>' + seg.preparation;
+      rp.appendChild(prep);
+    }
+    if (seg.condition) {
+      var cond = document.createElement('div');
+      cond.className = 'reader-passage-prep';
+      cond.style.marginTop = '0.4rem';
+      cond.innerHTML = '<strong>Condition</strong>' + seg.condition;
+      rp.appendChild(cond);
+    }
+
+    var plantName = title.split('(')[0].trim();
+    var corrBtn = document.createElement('button');
+    corrBtn.className = 'reader-correlate-btn';
+    corrBtn.textContent = '↔ See this plant in other books';
+    corrBtn.onclick = (function(pn) { return function() { showCorrelations(pn); }; })(plantName);
+    rp.appendChild(corrBtn);
+
+    rightEl.appendChild(rp);
+  });
+
+  if (readerBook) {
+    footEl.textContent = readerBook.title + ' — ' + readerBook.author;
+    if (pageSegs[0]) el('reader-section-ref').textContent = pageSegs[0].source_section || '';
+  }
+
+  el('reader-page-left').scrollTop = 0;
+  el('reader-page-right').scrollTop = 0;
+}
+
+function readerPageNav(dir) {
+  var total = Math.ceil(readerSegments.length / PASSAGES_PER_PAGE) || 1;
+  readerPageIdx = Math.max(0, Math.min(total-1, readerPageIdx + dir));
+  renderReaderSpread();
+}
+
+// ── Search within book ──────────────────────────────────────
+function searchReader(query) {
+  var results = document.getElementById('reader-search-results');
+  if (!query || query.length < 2) { results.style.display = 'none'; return; }
+  var q = query.toLowerCase();
+
+  var matches = readerSegments.map(function(s, i) {
+    var score = 0;
+    if ((s.title_inferred||'').toLowerCase().indexOf(q) !== -1) score += 3;
+    if ((s.translation||'').toLowerCase().indexOf(q) !== -1) score += 2;
+    if ((s.preparation||'').toLowerCase().indexOf(q) !== -1) score += 1;
+    if ((s.condition||'').toLowerCase().indexOf(q) !== -1) score += 1;
+    return { seg:s, idx:i, score:score };
+  }).filter(function(x) { return x.score > 0; })
+    .sort(function(a,b) { return b.score - a.score; })
+    .slice(0, 10);
+
+  if (!matches.length) {
+    results.innerHTML = '<div style="padding:0.6rem 0.9rem;color:var(--muted);font-size:0.8rem">No results</div>';
+    results.style.display = 'block';
+    return;
+  }
+
+  function hl(text, q) {
+    var idx = text.toLowerCase().indexOf(q);
+    if (idx < 0) return text.slice(0,80) + '…';
+    var s = Math.max(0, idx-30);
+    return (s>0?'…':'') + text.slice(s,idx) +
+      '<mark style="background:#FFF3B0">' + text.slice(idx, idx+q.length) + '</mark>' +
+      text.slice(idx+q.length, idx+q.length+60) + '…';
+  }
+
+  results.innerHTML = matches.map(function(m) {
+    var pg = Math.floor(m.idx / PASSAGES_PER_PAGE);
+    var snip = hl(m.seg.translation || m.seg.preparation || '', query);
+    return '<div class="reader-result-item" onclick="jumpToResult(' + pg + ')">' +
+      '<div class="reader-result-title">' + (m.seg.title_inferred||'Passage '+(m.idx+1)) + '</div>' +
+      '<div class="reader-result-snippet">' + snip + '</div>' +
+      '</div>';
+  }).join('');
+  results.style.display = 'block';
+}
+
+function jumpToResult(pageNum) {
+  readerPageIdx = pageNum;
+  renderReaderSpread();
+  document.getElementById('reader-search-results').style.display = 'none';
+  document.getElementById('reader-search-input').value = '';
+}
+
+// ── Cross-book correlations ─────────────────────────────────
+function showCorrelations(plantName) {
+  var panel = document.getElementById('reader-correlations');
+  var body  = document.getElementById('reader-correlations-body');
+  var q = plantName.toLowerCase();
+  var matches = [];
+
+  BOOKS.forEach(function(book) {
+    if (readerBook && book.id === readerBook.id) return;
+    var segs = corpusData.filter(function(s) {
+      return book.corpusKeys.some(function(k) { return s._corpusKey && s._corpusKey.startsWith(k); }) &&
+        ((s.title_inferred||'').toLowerCase().indexOf(q) !== -1 ||
+         (s.translation||'').slice(0,300).toLowerCase().indexOf(q) !== -1);
+    });
+    segs.slice(0,2).forEach(function(s) { matches.push({ book:book, seg:s }); });
+  });
+
+  body.innerHTML = '';
+  if (!matches.length) {
+    body.innerHTML = '<p style="color:var(--muted);font-size:0.82rem">No direct references to <em>' + plantName + '</em> found in other books currently in the corpus.</p>';
+  } else {
+    var intro = document.createElement('p');
+    intro.style.cssText = 'font-size:0.78rem;color:var(--muted);margin-bottom:0.6rem';
+    intro.innerHTML = '<strong>' + plantName + '</strong> appears in ' + matches.length + ' other source' + (matches.length!==1?'s':'') + ':';
+    body.appendChild(intro);
+
+    matches.forEach(function(m) {
+      var t = traditionData.find(function(x) { return x.id === m.book.tradition; });
+      var col = (t && t.color) ? t.color : m.book.color;
+      var item = document.createElement('div');
+      item.className = 'corr-item';
+      item.onclick = (function(b) { return function() { openBook(b); }; })(m.book);
+
+      var dot = document.createElement('div');
+      dot.className = 'corr-tradition-dot';
+      dot.style.background = col;
+      var txt = document.createElement('div');
+      txt.className = 'corr-text';
+      txt.innerHTML = '<div class="corr-title">' + m.book.short + ' · ' + (m.seg.title_inferred||'') + '</div>' +
+        '<div class="corr-source">' + m.book.date + ' · ' + (m.seg.translation||'').slice(0,100) + '…</div>';
+      item.appendChild(dot);
+      item.appendChild(txt);
+      body.appendChild(item);
+    });
+  }
+  panel.style.display = 'block';
+  panel.scrollIntoView({ behavior:'smooth', block:'nearest' });
+}
+
+// Wire into data load
+var _origRenderTraditionCards = typeof renderTraditionCards !== 'undefined' ? renderTraditionCards : function(){};
+document.addEventListener('DOMContentLoaded', function() {
+  // renderBookShelf is called from renderTraditionCards override below
+});
+
+// Hook into post-load
+var _libOrigLoadDone = false;
+var _libCheckInterval = setInterval(function() {
+  if (corpusData.length > 0 && traditionData.length > 0 && !_libOrigLoadDone) {
+    _libOrigLoadDone = true;
+    clearInterval(_libCheckInterval);
+    renderBookShelf();
+  }
+}, 500);
+
+// ══ END LIBRARY & BOOK READER ════════════════════════════
+</script>
+
 </body>
 </html>
