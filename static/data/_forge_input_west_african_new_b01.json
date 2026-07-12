@@ -1,0 +1,504 @@
+{
+  "segments": [
+    {
+      "label": "West African Traditional Medicine — Morinda lucida",
+      "text": "Plant/Drug: Morinda lucida — Brimstone tree (Yoruba: oruwo) — fever, malaria\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Morinda lucida — Brimstone tree (Yoruba: oruwo) — fever, malaria",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Vernonia amygdalina",
+      "text": "Plant/Drug: Vernonia amygdalina — Bitter leaf (Yoruba: ewuro) — diabetes, malaria, hepatitis\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Vernonia amygdalina — Bitter leaf (Yoruba: ewuro) — diabetes, malaria, hepatitis",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Azadirachta indica",
+      "text": "Plant/Drug: Azadirachta indica — Neem (Yoruba: dongoyaro) — malaria, skin, fever\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Azadirachta indica — Neem (Yoruba: dongoyaro) — malaria, skin, fever",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Bridelia ferruginea",
+      "text": "Plant/Drug: Bridelia ferruginea — Obi ata (Yoruba) — diabetes, wound healing\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Bridelia ferruginea — Obi ata (Yoruba) — diabetes, wound healing",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Chromolaena odorata",
+      "text": "Plant/Drug: Chromolaena odorata — Siam weed — wound healing, antifungal\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Chromolaena odorata — Siam weed — wound healing, antifungal",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Newbouldia laevis",
+      "text": "Plant/Drug: Newbouldia laevis — Boundary tree — epilepsy, female fertility\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Newbouldia laevis — Boundary tree — epilepsy, female fertility",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Daniellia oliveri",
+      "text": "Plant/Drug: Daniellia oliveri — African copaiba balsam — fever, pain\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Daniellia oliveri — African copaiba balsam — fever, pain",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Parkia biglobosa",
+      "text": "Plant/Drug: Parkia biglobosa — Locust bean (dawadawa) — skin disorders\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Parkia biglobosa — Locust bean (dawadawa) — skin disorders",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Vitex doniana",
+      "text": "Plant/Drug: Vitex doniana — Black plum — anemia, liver\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Vitex doniana — Black plum — anemia, liver",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Lannea acida",
+      "text": "Plant/Drug: Lannea acida — Wild grape — dysentery, diarrhea\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Lannea acida — Wild grape — dysentery, diarrhea",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Khaya senegalensis",
+      "text": "Plant/Drug: Khaya senegalensis — African mahogany — fever, malaria\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Khaya senegalensis — African mahogany — fever, malaria",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Securidaca longipedunculata",
+      "text": "Plant/Drug: Securidaca longipedunculata — Violet tree — snakebite, epilepsy\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Securidaca longipedunculata — Violet tree — snakebite, epilepsy",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Combretum micranthum",
+      "text": "Plant/Drug: Combretum micranthum — Kinkeliba — malaria, fever (Senegal)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Combretum micranthum — Kinkeliba — malaria, fever (Senegal)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Entada africana",
+      "text": "Plant/Drug: Entada africana — African entada — wound, skin disease\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Entada africana — African entada — wound, skin disease",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Crossopteryx febrifuga",
+      "text": "Plant/Drug: Crossopteryx febrifuga — febrifuge tree — malaria\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Crossopteryx febrifuga — febrifuge tree — malaria",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Cochlospermum planchonii",
+      "text": "Plant/Drug: Cochlospermum planchonii — yellow cotton tree — malaria (Ghana)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Cochlospermum planchonii — yellow cotton tree — malaria (Ghana)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Cassia sieberiana",
+      "text": "Plant/Drug: Cassia sieberiana — African laburnum — jaundice, liver\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Cassia sieberiana — African laburnum — jaundice, liver",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Afzelia africana",
+      "text": "Plant/Drug: Afzelia africana — African mahogany alternative — pain\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Afzelia africana — African mahogany alternative — pain",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Senna alata",
+      "text": "Plant/Drug: Senna alata — Candle bush (ringworm bush) — skin fungal\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Senna alata — Candle bush (ringworm bush) — skin fungal",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Mitragyna inermis",
+      "text": "Plant/Drug: Mitragyna inermis — abura — malaria, leprosy\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Mitragyna inermis — abura — malaria, leprosy",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Annona senegalensis",
+      "text": "Plant/Drug: Annona senegalensis — Wild custard apple — liver, malaria\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Annona senegalensis — Wild custard apple — liver, malaria",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Detarium microcarpum",
+      "text": "Plant/Drug: Detarium microcarpum — dattier du Senegal — dysentery\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Detarium microcarpum — dattier du Senegal — dysentery",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Zanthoxylum zanthoxyloides",
+      "text": "Plant/Drug: Zanthoxylum zanthoxyloides — fagara — toothache, malaria\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Zanthoxylum zanthoxyloides — fagara — toothache, malaria",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Piliostigma thonningii",
+      "text": "Plant/Drug: Piliostigma thonningii — camel's foot — respiratory\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Piliostigma thonningii — camel's foot — respiratory",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Capparis corymbosa",
+      "text": "Plant/Drug: Capparis corymbosa — African caper — rheumatism\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Capparis corymbosa — African caper — rheumatism",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Byrsocarpus coccineus",
+      "text": "Plant/Drug: Byrsocarpus coccineus — Nigerian bitters plant — liver\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Byrsocarpus coccineus — Nigerian bitters plant — liver",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Waltheria indica",
+      "text": "Plant/Drug: Waltheria indica — malva de cien nudos — epilepsy (Hausa)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Waltheria indica — malva de cien nudos — epilepsy (Hausa)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Psorospermum febrifugum",
+      "text": "Plant/Drug: Psorospermum febrifugum — fever plum — malaria\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Psorospermum febrifugum — fever plum — malaria",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Ficus gnaphalocarpa",
+      "text": "Plant/Drug: Ficus gnaphalocarpa — mampala fig — diarrhea, wound\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Ficus gnaphalocarpa — mampala fig — diarrhea, wound",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Momordica charantia",
+      "text": "Plant/Drug: Momordica charantia — bitter melon — diabetes (West Africa)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Momordica charantia — bitter melon — diabetes (West Africa)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Sclerocarya birrea",
+      "text": "Plant/Drug: Sclerocarya birrea — marula — diarrhea, skin, pregnancy\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Sclerocarya birrea — marula — diarrhea, skin, pregnancy",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Terminalia avicennioides",
+      "text": "Plant/Drug: Terminalia avicennioides — alligator pepper tree — dysentery\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Terminalia avicennioides — alligator pepper tree — dysentery",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Grewia lasiodiscus",
+      "text": "Plant/Drug: Grewia lasiodiscus — tick berry — fever, pain\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Grewia lasiodiscus — tick berry — fever, pain",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Desmodium adscendens",
+      "text": "Plant/Drug: Desmodium adscendens — strong back — asthma (Ghana)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Desmodium adscendens — strong back — asthma (Ghana)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Griffonia simplicifolia",
+      "text": "Plant/Drug: Griffonia simplicifolia — 5-HTP source — depression (Ghana)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Griffonia simplicifolia — 5-HTP source — depression (Ghana)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Hibiscus sabdariffa",
+      "text": "Plant/Drug: Hibiscus sabdariffa — sorrel/bissap — hypertension (all West Africa)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Hibiscus sabdariffa — sorrel/bissap — hypertension (all West Africa)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Ocimum gratissimum",
+      "text": "Plant/Drug: Ocimum gratissimum — fever basil — fever, malaria (Yoruba)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Ocimum gratissimum — fever basil — fever, malaria (Yoruba)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Cymbopogon citratus",
+      "text": "Plant/Drug: Cymbopogon citratus — lemongrass — fever, malaria (Ghana)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Cymbopogon citratus — lemongrass — fever, malaria (Ghana)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Lippia multiflora",
+      "text": "Plant/Drug: Lippia multiflora — Gambian tea bush — fever, headache\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Lippia multiflora — Gambian tea bush — fever, headache",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Paullinia pinnata",
+      "text": "Plant/Drug: Paullinia pinnata — akube — malaria, snake bite\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Paullinia pinnata — akube — malaria, snake bite",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Rauvolfia vomitoria",
+      "text": "Plant/Drug: Rauvolfia vomitoria — swizzle stick tree — hypertension, insanity\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Rauvolfia vomitoria — swizzle stick tree — hypertension, insanity",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Strophanthus hispidus",
+      "text": "Plant/Drug: Strophanthus hispidus — arrow poison — cardiac\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Strophanthus hispidus — arrow poison — cardiac",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Trema orientalis",
+      "text": "Plant/Drug: Trema orientalis — pigeon wood — wound healing\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Trema orientalis — pigeon wood — wound healing",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Uvaria chamae",
+      "text": "Plant/Drug: Uvaria chamae — finger root — fever, malaria\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Uvaria chamae — finger root — fever, malaria",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Euphorbia hirta",
+      "text": "Plant/Drug: Euphorbia hirta — asthma weed — asthma, bronchitis (pan-African)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Euphorbia hirta — asthma weed — asthma, bronchitis (pan-African)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Persea americana",
+      "text": "Plant/Drug: Persea americana — avocado — hypertension (Nigeria traditional)\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Persea americana — avocado — hypertension (Nigeria traditional)",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Artocarpus altilis",
+      "text": "Plant/Drug: Artocarpus altilis — breadfruit — hypertension\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Artocarpus altilis — breadfruit — hypertension",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Allium sativum",
+      "text": "Plant/Drug: Allium sativum — garlic (West African use) — infections\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Allium sativum — garlic (West African use) — infections",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Carica papaya",
+      "text": "Plant/Drug: Carica papaya — papaya (West African use) — malaria, constipation\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Carica papaya — papaya (West African use) — malaria, constipation",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    },
+    {
+      "label": "West African Traditional Medicine — Psidium guajava",
+      "text": "Plant/Drug: Psidium guajava — guava (West African use) — diarrhea, diabetes\n\nWest African traditional medicine — documented from ethnobotanical surveys across Ghana, Nigeria, Senegal, Mali, Côte d'Ivoire, and Burkina Faso. Write a comprehensive entry for this plant.",
+      "_meta": {
+        "plant": "Psidium guajava — guava (West African use) — diarrhea, diabetes",
+        "tradition": "west",
+        "_corpusKey": "west",
+        "source_section": "West African Traditional Medicine"
+      }
+    }
+  ]
+}
