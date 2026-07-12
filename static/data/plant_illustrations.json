@@ -1,0 +1,19 @@
+{
+  "illustrations": {
+    "garlic": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Allium_sativum_Woodwill_1793.jpg",
+      "source": "File:Allium_sativum_Woodwill_1793.jpg",
+      "credit": "Wikimedia Commons (Public Domain)"
+    },
+    "aloe vera": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/960px-Aloe_vera_flower_inset.png",
+      "source": "File:Aloe_vera_flower_inset.png",
+      "credit": "Wikimedia Commons (Public Domain)"
+    }
+  },
+  "sources": {
+    "kohler": "Köhler's Medizinal-Pflanzen (1887) — 283 botanical plates, public domain",
+    "wellcome": "Wellcome Collection — medical history images, Creative Commons",
+    "wikimedia": "Wikimedia Commons — various botanical illustration sources"
+  }
+}
