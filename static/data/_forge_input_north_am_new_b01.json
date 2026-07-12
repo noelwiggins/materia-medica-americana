@@ -1,0 +1,454 @@
+{
+  "segments": [
+    {
+      "label": "North American Indigenous Medicine — Echinacea purpurea",
+      "text": "Plant: Echinacea purpurea — Purple coneflower (Lakota: ičháȟpe hu) — wound, immune, snake bite\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Echinacea purpurea — Purple coneflower (Lakota: ičháȟpe hu) — wound, immune, snake bite",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Echinacea angustifolia",
+      "text": "Plant: Echinacea angustifolia — Narrow-leaf coneflower — Plains tribes medicine\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Echinacea angustifolia — Narrow-leaf coneflower — Plains tribes medicine",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Goldenseal",
+      "text": "Plant: Goldenseal — Hydrastis canadensis (Cherokee: nûñ'yûnûwi) — antimicrobial, digestive\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Goldenseal — Hydrastis canadensis (Cherokee: nûñ'yûnûwi) — antimicrobial, digestive",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Black cohosh",
+      "text": "Plant: Black cohosh — Actaea racemosa (Algonquin) — menstruation, arthritis\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Black cohosh — Actaea racemosa (Algonquin) — menstruation, arthritis",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Blue cohosh",
+      "text": "Plant: Blue cohosh — Caulophyllum thalictroides — Iroquois — childbirth\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Blue cohosh — Caulophyllum thalictroides — Iroquois — childbirth",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Wild bergamot",
+      "text": "Plant: Wild bergamot — Monarda fistulosa (Ojibwe: makwa-mashkosi) — cold, fever, headache\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Wild bergamot — Monarda fistulosa (Ojibwe: makwa-mashkosi) — cold, fever, headache",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Bee balm",
+      "text": "Plant: Bee balm — Monarda didyma — Oswego tea — fever, respiratory\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Bee balm — Monarda didyma — Oswego tea — fever, respiratory",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Elderberry",
+      "text": "Plant: Elderberry — Sambucus canadensis — widespread — fever, immune\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Elderberry — Sambucus canadensis — widespread — fever, immune",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — American ginseng",
+      "text": "Plant: American ginseng — Panax quinquefolius (Cherokee: âtali'gûli) — qi tonic\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "American ginseng — Panax quinquefolius (Cherokee: âtali'gûli) — qi tonic",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Slippery elm",
+      "text": "Plant: Slippery elm — Ulmus rubra — Iroquois — sore throat, wound\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Slippery elm — Ulmus rubra — Iroquois — sore throat, wound",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Cascara",
+      "text": "Plant: Cascara — Rhamnus purshiana — Pacific Northwest — laxative\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Cascara — Rhamnus purshiana — Pacific Northwest — laxative",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Oregon grape",
+      "text": "Plant: Oregon grape — Mahonia aquifolium — Pacific tribes — antimicrobial\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Oregon grape — Mahonia aquifolium — Pacific tribes — antimicrobial",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Yerba santa",
+      "text": "Plant: Yerba santa — Eriodictyon californicum — California tribes — lung, cold\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Yerba santa — Eriodictyon californicum — California tribes — lung, cold",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — California poppy",
+      "text": "Plant: California poppy — Eschscholzia californica — Costanoan — pain, sleep\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "California poppy — Eschscholzia californica — Costanoan — pain, sleep",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Western yarrow",
+      "text": "Plant: Western yarrow — Achillea millefolium (Navajo: házhó'ó) — wound, fever\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Western yarrow — Achillea millefolium (Navajo: házhó'ó) — wound, fever",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Wild bergamot",
+      "text": "Plant: Wild bergamot — Apache use — ceremony, medicine\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Wild bergamot — Apache use — ceremony, medicine",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Chaparro amargosa",
+      "text": "Plant: Chaparro amargosa — Castela emoryi — Sonoran tribes — amoeba, dysentery\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Chaparro amargosa — Castela emoryi — Sonoran tribes — amoeba, dysentery",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Osha",
+      "text": "Plant: Osha — Ligusticum porteri — Zuni — lung, immune\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Osha — Ligusticum porteri — Zuni — lung, immune",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Yerba mansa",
+      "text": "Plant: Yerba mansa — Anemopsis californica — Cahuilla — inflammation\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Yerba mansa — Anemopsis californica — Cahuilla — inflammation",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Sagebrush",
+      "text": "Plant: Sagebrush — Artemisia tridentata (Navajo: ts'ah) — cold, headache, ceremony\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Sagebrush — Artemisia tridentata (Navajo: ts'ah) — cold, headache, ceremony",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Desert sage",
+      "text": "Plant: Desert sage — Salvia dorrii — Great Basin tribes — fever\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Desert sage — Salvia dorrii — Great Basin tribes — fever",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Four-wing saltbush",
+      "text": "Plant: Four-wing saltbush — Atriplex canescens — Hopi — headache, abrasions\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Four-wing saltbush — Atriplex canescens — Hopi — headache, abrasions",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Peyote",
+      "text": "Plant: Peyote — Lophophora williamsii — Huichol, NAC — ceremony, pain\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Peyote — Lophophora williamsii — Huichol, NAC — ceremony, pain",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Tobacco",
+      "text": "Plant: Tobacco — Nicotiana rustica (ceremonial) — widespread — ceremony, wound\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Tobacco — Nicotiana rustica (ceremonial) — widespread — ceremony, wound",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Corn silk",
+      "text": "Plant: Corn silk — Zea mays (Cherokee use) — urinary, diuretic\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Corn silk — Zea mays (Cherokee use) — urinary, diuretic",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Juniper",
+      "text": "Plant: Juniper — Juniperus species (Navajo) — purification, arthritis\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Juniper — Juniperus species (Navajo) — purification, arthritis",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Pine needles",
+      "text": "Plant: Pine needles — Pinus species (widespread) — vitamin C, scurvy prevention\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Pine needles — Pinus species (widespread) — vitamin C, scurvy prevention",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Bearberry",
+      "text": "Plant: Bearberry — Arctostaphylos uva-ursi (Ojibwe) — urinary infection\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Bearberry — Arctostaphylos uva-ursi (Ojibwe) — urinary infection",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Boneset",
+      "text": "Plant: Boneset — Eupatorium perfoliatum (Iroquois) — fever, influenza, bone pain\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Boneset — Eupatorium perfoliatum (Iroquois) — fever, influenza, bone pain",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Joe-pye weed",
+      "text": "Plant: Joe-pye weed — Eutrochium species — Haudenosaunee — kidney, fever\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Joe-pye weed — Eutrochium species — Haudenosaunee — kidney, fever",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Wild ginger",
+      "text": "Plant: Wild ginger — Asarum canadense (Cherokee) — digestive, contraceptive\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Wild ginger — Asarum canadense (Cherokee) — digestive, contraceptive",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Spicebush",
+      "text": "Plant: Spicebush — Lindera benzoin (Iroquois) — cold, fever, rheumatism\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Spicebush — Lindera benzoin (Iroquois) — cold, fever, rheumatism",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Witch hazel",
+      "text": "Plant: Witch hazel — Hamamelis virginiana (Mohegan) — wound, hemorrhoid\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Witch hazel — Hamamelis virginiana (Mohegan) — wound, hemorrhoid",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Sweet grass",
+      "text": "Plant: Sweet grass — Hierochloe odorata — widespread — purification, ceremony\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Sweet grass — Hierochloe odorata — widespread — purification, ceremony",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Sage",
+      "text": "Plant: Sage — Salvia apiana (Chumash) — purification, antimicrobial\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Sage — Salvia apiana (Chumash) — purification, antimicrobial",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Sumac",
+      "text": "Plant: Sumac — Rhus typhina (Anishinaabe) — diarrhea, sore throat\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Sumac — Rhus typhina (Anishinaabe) — diarrhea, sore throat",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Bloodroot",
+      "text": "Plant: Bloodroot — Sanguinaria canadensis (Menominee) — throat, skin disease\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Bloodroot — Sanguinaria canadensis (Menominee) — throat, skin disease",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Lobelia",
+      "text": "Plant: Lobelia — Lobelia inflata (Penobscot) — asthma, tobacco alternative\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Lobelia — Lobelia inflata (Penobscot) — asthma, tobacco alternative",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Mayapple",
+      "text": "Plant: Mayapple — Podophyllum peltatum (Iroquois) — purgative, cancer (podophyllin)\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Mayapple — Podophyllum peltatum (Iroquois) — purgative, cancer (podophyllin)",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Trillium",
+      "text": "Plant: Trillium — Trillium erectum (Cherokee) — childbirth, menstruation\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Trillium — Trillium erectum (Cherokee) — childbirth, menstruation",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Passionflower",
+      "text": "Plant: Passionflower — Passiflora incarnata (Cherokee) — anxiety, sleep\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Passionflower — Passiflora incarnata (Cherokee) — anxiety, sleep",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Devil's club",
+      "text": "Plant: Devil's club — Oplopanax horridus (Haida) — infection, diabetes\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Devil's club — Oplopanax horridus (Haida) — infection, diabetes",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Labrador tea",
+      "text": "Plant: Labrador tea — Rhododendron groenlandicum (Cree) — cold, headache\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Labrador tea — Rhododendron groenlandicum (Cree) — cold, headache",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Fireweed",
+      "text": "Plant: Fireweed — Epilobium angustifolium (widespread) — anti-inflammatory\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Fireweed — Epilobium angustifolium (widespread) — anti-inflammatory",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Plantain",
+      "text": "Plant: Plantain — Plantago major (adapted use) — wound, insect bites\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Plantain — Plantago major (adapted use) — wound, insect bites",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Goldenrod",
+      "text": "Plant: Goldenrod — Solidago canadensis (Haudenosaunee) — kidney, arthritis\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Goldenrod — Solidago canadensis (Haudenosaunee) — kidney, arthritis",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Wild strawberry",
+      "text": "Plant: Wild strawberry — Fragaria virginiana — digestive, liver\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Wild strawberry — Fragaria virginiana — digestive, liver",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Chokecherry",
+      "text": "Plant: Chokecherry — Prunus virginiana (Lakota) — cough, diarrhea, tonic\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Chokecherry — Prunus virginiana (Lakota) — cough, diarrhea, tonic",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Wild plum",
+      "text": "Plant: Wild plum — Prunus americana — bark used for fever\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Wild plum — Prunus americana — bark used for fever",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    },
+    {
+      "label": "North American Indigenous Medicine — Balsam fir",
+      "text": "Plant: Balsam fir — Abies balsamea (Micmac) — respiratory, wound\n\nGenerate a comprehensive Plantacopia entry for this plant from North American Indigenous healing traditions. Include common name, Latin botanical name, and the specific nation(s) documented using this plant (with indigenous name in that language where known). Describe therapeutic uses, preparation methods (tea, poultice, smoke, ceremony), and conditions treated. Note any cross-cultural uses across multiple nations, and any pharmacological research validating traditional uses.",
+      "_meta": {
+        "plant": "Balsam fir — Abies balsamea (Micmac) — respiratory, wound",
+        "_corpusKey": "north_american_new",
+        "source_section": "North American Indigenous Medicine"
+      }
+    }
+  ]
+}
