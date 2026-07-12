@@ -1,0 +1,454 @@
+{
+  "segments": [
+    {
+      "label": "Persian Traditional Medicine — Aloe vera",
+      "text": "Plant: Aloe vera — Sabr (صبر) — Avicenna and Zoroastrian use\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Aloe vera — Sabr (صبر) — Avicenna and Zoroastrian use",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Saffron",
+      "text": "Plant: Saffron — Za'faran (زعفران) — antidepressant, menstrual\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Saffron — Za'faran (زعفران) — antidepressant, menstrual",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Pomegranate",
+      "text": "Plant: Pomegranate — Anar (انار) — antiparasitic, digestive, antioxidant\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Pomegranate — Anar (انار) — antiparasitic, digestive, antioxidant",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Fenugreek",
+      "text": "Plant: Fenugreek — Shanbalileh (شنبلیله) — diabetes, lactation, digestive\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Fenugreek — Shanbalileh (شنبلیله) — diabetes, lactation, digestive",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Black seed",
+      "text": "Plant: Black seed — Siah daneh (سیاه‌دانه) — prophetic medicine, immune\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Black seed — Siah daneh (سیاه‌دانه) — prophetic medicine, immune",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Sumac",
+      "text": "Plant: Sumac — Somagh (سماق) — antioxidant, digestive, diabetes\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Sumac — Somagh (سماق) — antioxidant, digestive, diabetes",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Barberry",
+      "text": "Plant: Barberry — Zereshk (زرشک) — berberine, liver, antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Barberry — Zereshk (زرشک) — berberine, liver, antimicrobial",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Rose",
+      "text": "Plant: Rose — Gol (گل سرخ) — rosewater, antidepressant, heart\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Rose — Gol (گل سرخ) — rosewater, antidepressant, heart",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Marshmallow",
+      "text": "Plant: Marshmallow — Khatmi (ختمی) — respiratory, wound, digestive\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Marshmallow — Khatmi (ختمی) — respiratory, wound, digestive",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Chicory",
+      "text": "Plant: Chicory — Kasni (کاسنی) — liver, digestive, diuretic\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Chicory — Kasni (کاسنی) — liver, digestive, diuretic",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Borage",
+      "text": "Plant: Borage — Gol gav zaban (گل گاوزبان) — cardiac, depression, fever\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Borage — Gol gav zaban (گل گاوزبان) — cardiac, depression, fever",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Purslane",
+      "text": "Plant: Purslane — Khorfeh (خرفه) — anti-inflammatory, omega-3 source\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Purslane — Khorfeh (خرفه) — anti-inflammatory, omega-3 source",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Quince",
+      "text": "Plant: Quince — Beh (به) — digestive, nausea, constipation\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Quince — Beh (به) — digestive, nausea, constipation",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Hawthorn",
+      "text": "Plant: Hawthorn — Zaalzalak (زالزالک) — cardiac, hypertension\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Hawthorn — Zaalzalak (زالزالک) — cardiac, hypertension",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Valerian",
+      "text": "Plant: Valerian — Sumbul (سنبل) — sedative, anxiety, Zoroastrian ritual\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Valerian — Sumbul (سنبل) — sedative, anxiety, Zoroastrian ritual",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Chamomile",
+      "text": "Plant: Chamomile — Babuneh (بابونه) — digestive, anti-inflammatory\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Chamomile — Babuneh (بابونه) — digestive, anti-inflammatory",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Licorice",
+      "text": "Plant: Licorice — Shirin bayan (شیرین‌بیان) — respiratory, ulcer, adrenal\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Licorice — Shirin bayan (شیرین‌بیان) — respiratory, ulcer, adrenal",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Dill",
+      "text": "Plant: Dill — Shevid (شوید) — digestive, colic, Persian cuisine/medicine\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Dill — Shevid (شوید) — digestive, colic, Persian cuisine/medicine",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Coriander",
+      "text": "Plant: Coriander — Gishniz (گشنیز) — digestive, detox, cooling\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Coriander — Gishniz (گشنیز) — digestive, detox, cooling",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Fennel",
+      "text": "Plant: Fennel — Razianeh (رازیانه) — digestive, colic, estrogenic\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Fennel — Razianeh (رازیانه) — digestive, colic, estrogenic",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Cumin",
+      "text": "Plant: Cumin — Zireh (زیره) — digestive, metabolic, antifungal\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Cumin — Zireh (زیره) — digestive, metabolic, antifungal",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Thyme",
+      "text": "Plant: Thyme — Ahviyeh (آویشن) — antimicrobial, respiratory, Persian\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Thyme — Ahviyeh (آویشن) — antimicrobial, respiratory, Persian",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Mint",
+      "text": "Plant: Mint — Nana (نعنا) — digestive, headache, fever\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Mint — Nana (نعنا) — digestive, headache, fever",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Garlic",
+      "text": "Plant: Garlic — Sir (سیر) — universal Persian remedy, hypertension\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Garlic — Sir (سیر) — universal Persian remedy, hypertension",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Onion",
+      "text": "Plant: Onion — Piyaz (پیاز) — antimicrobial, cardiovascular, traditional\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Onion — Piyaz (پیاز) — antimicrobial, cardiovascular, traditional",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Ginger",
+      "text": "Plant: Ginger — Zanjabil (زنجبیل) — digestive, anti-inflammatory, Avicenna\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Ginger — Zanjabil (زنجبیل) — digestive, anti-inflammatory, Avicenna",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Turmeric",
+      "text": "Plant: Turmeric — Zardchubeh (زردچوبه) — anti-inflammatory, liver\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Turmeric — Zardchubeh (زردچوبه) — anti-inflammatory, liver",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Cardamom",
+      "text": "Plant: Cardamom — Hel (هل) — digestive, cardiac, Persian coffee\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Cardamom — Hel (هل) — digestive, cardiac, Persian coffee",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Cinnamon",
+      "text": "Plant: Cinnamon — Darchin (دارچین) — diabetes, digestive, warming\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Cinnamon — Darchin (دارچین) — diabetes, digestive, warming",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Nutmeg",
+      "text": "Plant: Nutmeg — Jowz-e-buya (جوز بویا) — digestive, sedative, antiseptic\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Nutmeg — Jowz-e-buya (جوز بویا) — digestive, sedative, antiseptic",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Clove",
+      "text": "Plant: Clove — Mikhak (میخک) — dental, digestive, antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Clove — Mikhak (میخک) — dental, digestive, antimicrobial",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Mastic",
+      "text": "Plant: Mastic — Konde (کندور) — peptic ulcer, antimicrobial (Pistacia lentiscus)\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Mastic — Konde (کندور) — peptic ulcer, antimicrobial (Pistacia lentiscus)",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Tragacanth",
+      "text": "Plant: Tragacanth — Katira (کتیرا) — soothing, respiratory, wound\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Tragacanth — Katira (کتیرا) — soothing, respiratory, wound",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Myrrh",
+      "text": "Plant: Myrrh — Murr (مر) — antimicrobial, wound, Zoroastrian ritual\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Myrrh — Murr (مر) — antimicrobial, wound, Zoroastrian ritual",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Frankincense",
+      "text": "Plant: Frankincense — Kondur (کندر) — anti-inflammatory, ritual, wound\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Frankincense — Kondur (کندر) — anti-inflammatory, ritual, wound",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Wormwood",
+      "text": "Plant: Wormwood — Afsantin (افسنطین) — Avicenna antiparasitic, digestive\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Wormwood — Afsantin (افسنطین) — Avicenna antiparasitic, digestive",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Rue",
+      "text": "Plant: Rue — Siyadab (سداب) — Avicenna: contraceptive, menstrual, antipyretic\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Rue — Siyadab (سداب) — Avicenna: contraceptive, menstrual, antipyretic",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Henna",
+      "text": "Plant: Henna — Henna (حنا) — wound healing, antifungal, ritual\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Henna — Henna (حنا) — wound healing, antifungal, ritual",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Jujube",
+      "text": "Plant: Jujube — Annab (عناب) — sedative, respiratory, immune\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Jujube — Annab (عناب) — sedative, respiratory, immune",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Fig",
+      "text": "Plant: Fig — Anjir (انجیر) — laxative, nutrient, Avicenna tonic\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Fig — Anjir (انجیر) — laxative, nutrient, Avicenna tonic",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Grape",
+      "text": "Plant: Grape — Angur (انگور) — vinegar, raisins — therapeutic Avicenna\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Grape — Angur (انگور) — vinegar, raisins — therapeutic Avicenna",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Walnut",
+      "text": "Plant: Walnut — Gerdoo (گردو) — brain tonic, cardiovascular, antifungal\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Walnut — Gerdoo (گردو) — brain tonic, cardiovascular, antifungal",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Almond",
+      "text": "Plant: Almond — Badam (بادام) — respiratory, nutrient, emollient\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Almond — Badam (بادام) — respiratory, nutrient, emollient",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Pistachio",
+      "text": "Plant: Pistachio — Pesteh (پسته) — liver, digestive, cardiac\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Pistachio — Pesteh (پسته) — liver, digestive, cardiac",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Apricot",
+      "text": "Plant: Apricot — Zardalu (زردآلو) — kernel medicinal, fruit nutritive\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Apricot — Zardalu (زردآلو) — kernel medicinal, fruit nutritive",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Quince seed",
+      "text": "Plant: Quince seed — Tokhm beh (توخم به) — soothing, eye, respiratory\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Quince seed — Tokhm beh (توخم به) — soothing, eye, respiratory",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Nigella",
+      "text": "Plant: Nigella — Siah daneh (سیاه‌دانه) — 'cure for all disease except death'\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Nigella — Siah daneh (سیاه‌دانه) — 'cure for all disease except death'",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Peganum harmala",
+      "text": "Plant: Peganum harmala — Espand (اسپند) — smoke purification, antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Peganum harmala — Espand (اسپند) — smoke purification, antimicrobial",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Ferula asafoetida",
+      "text": "Plant: Ferula asafoetida — Angadan (انگدان) — digestive, Zoroastrian ritual\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Ferula asafoetida — Angadan (انگدان) — digestive, Zoroastrian ritual",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Persian Traditional Medicine — Ephedra",
+      "text": "Plant: Ephedra — Hum (هوم/هوما) — Zoroastrian sacred plant — energy, ritual\n\nGenerate a comprehensive Plantacopia entry from Persian traditional medicine (Tibb-e-Sonnati). Include Persian name (Farsi script and romanization), Arabic name where relevant. Reference Avicenna's Canon where applicable, and also pre-Islamic Zoroastrian uses where documented. Include mizaj (temperament), therapeutic properties, preparation methods from Persian tradition, and conditions treated. Note any Zoroastrian ritual or spiritual significance.",
+      "_meta": {
+        "plant": "Ephedra — Hum (هوم/هوما) — Zoroastrian sacred plant — energy, ritual",
+        "_corpusKey": "persian_new",
+        "source_section": "Persian Traditional Medicine"
+      }
+    }
+  ]
+}
