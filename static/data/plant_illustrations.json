@@ -1,19 +1,404 @@
 {
   "illustrations": {
     "garlic": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Allium_sativum_Woodwill_1793.jpg",
-      "source": "File:Allium_sativum_Woodwill_1793.jpg",
-      "credit": "Wikimedia Commons (Public Domain)"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Allium_sativum_Woodwill_1793.jpg/600px-Allium_sativum_Woodwill_1793.jpg",
+      "filename": "Allium_sativum_Woodwill_1793.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "wormwood": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-018.jpg/600px-Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-018.jpg",
+      "filename": "Artemisia_absinthium_-_Köhler–s_Medizinal-Pflanzen-018.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "opium poppy": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Papaver_somniferum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-146.jpg/600px-Papaver_somniferum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-146.jpg",
+      "filename": "Papaver_somniferum_-_Köhler–s_Medizinal-Pflanzen-146.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "chamomile": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Matricaria_camomilla_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-118.jpg/600px-Matricaria_camomilla_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-118.jpg",
+      "filename": "Matricaria_camomilla_-_Köhler–s_Medizinal-Pflanzen-118.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "peppermint": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mentha_%C3%97_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-093.jpg/600px-Mentha_%C3%97_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-093.jpg",
+      "filename": "Mentha_×_piperita_-_Köhler–s_Medizinal-Pflanzen-093.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "licorice root": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-069.jpg/600px-Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-069.jpg",
+      "filename": "Glycyrrhiza_glabra_-_Köhler–s_Medizinal-Pflanzen-069.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "fennel": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Foeniculum_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-055.jpg/600px-Foeniculum_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-055.jpg",
+      "filename": "Foeniculum_vulgare_-_Köhler–s_Medizinal-Pflanzen-055.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "belladonna": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Atropa_belladonna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-020.jpg/600px-Atropa_belladonna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-020.jpg",
+      "filename": "Atropa_belladonna_-_Köhler–s_Medizinal-Pflanzen-020.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "henbane": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Hyoscyamus_niger_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-080.jpg/600px-Hyoscyamus_niger_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-080.jpg",
+      "filename": "Hyoscyamus_niger_-_Köhler–s_Medizinal-Pflanzen-080.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "mandrake": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Mandragora_officinarum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-114.jpg/600px-Mandragora_officinarum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-114.jpg",
+      "filename": "Mandragora_officinarum_-_Köhler–s_Medizinal-Pflanzen-114.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "saffron": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Crocus_sativus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-063.jpg/600px-Crocus_sativus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-063.jpg",
+      "filename": "Crocus_sativus_-_Köhler–s_Medizinal-Pflanzen-063.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "black pepper": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-022.jpg/600px-Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-022.jpg",
+      "filename": "Piper_nigrum_-_Köhler–s_Medizinal-Pflanzen-022.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "echinacea": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Echinacea_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-180.jpg/600px-Echinacea_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-180.jpg",
+      "filename": "Echinacea_purpurea_-_Köhler–s_Medizinal-Pflanzen-180.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "milk thistle": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Silybum_marianum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-163.jpg/600px-Silybum_marianum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-163.jpg",
+      "filename": "Silybum_marianum_-_Köhler–s_Medizinal-Pflanzen-163.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "yarrow": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Achillea_millefolium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-001.jpg/600px-Achillea_millefolium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-001.jpg",
+      "filename": "Achillea_millefolium_-_Köhler–s_Medizinal-Pflanzen-001.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "elderflower": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-031.jpg/600px-Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-031.jpg",
+      "filename": "Sambucus_nigra_-_Köhler–s_Medizinal-Pflanzen-031.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "rosemary": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Rosmarinus_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-155.jpg/600px-Rosmarinus_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-155.jpg",
+      "filename": "Rosmarinus_officinalis_-_Köhler–s_Medizinal-Pflanzen-155.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "lavender": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-090.jpg/600px-Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-090.jpg",
+      "filename": "Lavandula_angustifolia_-_Köhler–s_Medizinal-Pflanzen-090.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "thyme": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Thymus_vulgaris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-171.jpg/600px-Thymus_vulgaris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-171.jpg",
+      "filename": "Thymus_vulgaris_-_Köhler–s_Medizinal-Pflanzen-171.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "sage": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Salvia_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-165.jpg/600px-Salvia_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-165.jpg",
+      "filename": "Salvia_officinalis_-_Köhler–s_Medizinal-Pflanzen-165.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "dill": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Anethum_graveolens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-014.jpg/600px-Anethum_graveolens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-014.jpg",
+      "filename": "Anethum_graveolens_-_Köhler–s_Medizinal-Pflanzen-014.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "caraway": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Carum_carvi_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-032.jpg/600px-Carum_carvi_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-032.jpg",
+      "filename": "Carum_carvi_-_Köhler–s_Medizinal-Pflanzen-032.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "cumin": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cuminum_cyminum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-065.jpg/600px-Cuminum_cyminum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-065.jpg",
+      "filename": "Cuminum_cyminum_-_Köhler–s_Medizinal-Pflanzen-065.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "fenugreek": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Trigonella_foenum-graecum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-191.jpg/600px-Trigonella_foenum-graecum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-191.jpg",
+      "filename": "Trigonella_foenum-graecum_-_Köhler–s_Medizinal-Pflanzen-191.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "pomegranate": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Punica_granatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-166.jpg/600px-Punica_granatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-166.jpg",
+      "filename": "Punica_granatum_-_Köhler–s_Medizinal-Pflanzen-166.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "flaxseed": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Linum_usitatissimum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-101.jpg/600px-Linum_usitatissimum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-101.jpg",
+      "filename": "Linum_usitatissimum_-_Köhler–s_Medizinal-Pflanzen-101.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "rhubarb": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rheum_palmatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-157.jpg/600px-Rheum_palmatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-157.jpg",
+      "filename": "Rheum_palmatum_-_Köhler–s_Medizinal-Pflanzen-157.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "hyssop": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Hyssopus_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-082.jpg/600px-Hyssopus_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-082.jpg",
+      "filename": "Hyssopus_officinalis_-_Köhler–s_Medizinal-Pflanzen-082.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "mallow": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Malva_sylvestris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-113.jpg/600px-Malva_sylvestris_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-113.jpg",
+      "filename": "Malva_sylvestris_-_Köhler–s_Medizinal-Pflanzen-113.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "rue": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ruta_graveolens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-162.jpg/600px-Ruta_graveolens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-162.jpg",
+      "filename": "Ruta_graveolens_-_Köhler–s_Medizinal-Pflanzen-162.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "horehound": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Marrubium_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-116.jpg/600px-Marrubium_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-116.jpg",
+      "filename": "Marrubium_vulgare_-_Köhler–s_Medizinal-Pflanzen-116.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "centaury": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Centaurium_erythraea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-037.jpg/600px-Centaurium_erythraea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-037.jpg",
+      "filename": "Centaurium_erythraea_-_Köhler–s_Medizinal-Pflanzen-037.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "willow bark": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Salix_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg/600px-Salix_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg",
+      "filename": "Salix_alba_-_Köhler–s_Medizinal-Pflanzen-164.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "camphor": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Cinnamomum_camphora_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-042.jpg/600px-Cinnamomum_camphora_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-042.jpg",
+      "filename": "Cinnamomum_camphora_-_Köhler–s_Medizinal-Pflanzen-042.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "cinnamon": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Cinnamomum_verum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-044.jpg/600px-Cinnamomum_verum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-044.jpg",
+      "filename": "Cinnamomum_verum_-_Köhler–s_Medizinal-Pflanzen-044.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "cassia": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cinnamomum_cassia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-043.jpg/600px-Cinnamomum_cassia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-043.jpg",
+      "filename": "Cinnamomum_cassia_-_Köhler–s_Medizinal-Pflanzen-043.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "cannabis": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Cannabis_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg/600px-Cannabis_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg",
+      "filename": "Cannabis_sativa_-_Köhler–s_Medizinal-Pflanzen-027.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "hemlock": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Conium_maculatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-048.jpg/600px-Conium_maculatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-048.jpg",
+      "filename": "Conium_maculatum_-_Köhler–s_Medizinal-Pflanzen-048.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "aconite": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Aconitum_napellus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-001.jpg/600px-Aconitum_napellus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-001.jpg",
+      "filename": "Aconitum_napellus_-_Köhler–s_Medizinal-Pflanzen-001.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "passionflower": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Passiflora_incarnata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-104.jpg/600px-Passiflora_incarnata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-104.jpg",
+      "filename": "Passiflora_incarnata_-_Köhler–s_Medizinal-Pflanzen-104.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "red clover": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Trifolium_pratense_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-194.jpg/600px-Trifolium_pratense_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-194.jpg",
+      "filename": "Trifolium_pratense_-_Köhler–s_Medizinal-Pflanzen-194.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "feverfew": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Tanacetum_parthenium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-174.jpg/600px-Tanacetum_parthenium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-174.jpg",
+      "filename": "Tanacetum_parthenium_-_Köhler–s_Medizinal-Pflanzen-174.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "motherwort": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Leonurus_cardiaca_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-098.jpg/600px-Leonurus_cardiaca_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-098.jpg",
+      "filename": "Leonurus_cardiaca_-_Köhler–s_Medizinal-Pflanzen-098.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "datura": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Datura_stramonium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-068.jpg/600px-Datura_stramonium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-068.jpg",
+      "filename": "Datura_stramonium_-_Köhler–s_Medizinal-Pflanzen-068.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "ginger": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Zingiber_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-293.jpg/600px-Zingiber_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-293.jpg",
+      "filename": "Zingiber_officinale_-_Köhler–s_Medizinal-Pflanzen-293.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "turmeric": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Curcuma_longa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-064.jpg/600px-Curcuma_longa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-064.jpg",
+      "filename": "Curcuma_longa_-_Köhler–s_Medizinal-Pflanzen-064.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "hawthorn": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Crataegus_monogyna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-060.jpg/600px-Crataegus_monogyna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-060.jpg",
+      "filename": "Crataegus_monogyna_-_Köhler–s_Medizinal-Pflanzen-060.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "valerian": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-283.jpg/600px-Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-283.jpg",
+      "filename": "Valeriana_officinalis_-_Köhler–s_Medizinal-Pflanzen-283.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "frankincense": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Boswellia_sacra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg/600px-Boswellia_sacra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-025.jpg",
+      "filename": "Boswellia_sacra_-_Köhler–s_Medizinal-Pflanzen-025.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "myrrh": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Commiphora_myrrha_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-143.jpg/600px-Commiphora_myrrha_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-143.jpg",
+      "filename": "Commiphora_myrrha_-_Köhler–s_Medizinal-Pflanzen-143.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "mint": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Mentha_spicata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-094.jpg/600px-Mentha_spicata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-094.jpg",
+      "filename": "Mentha_spicata_-_Köhler–s_Medizinal-Pflanzen-094.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
     },
     "aloe vera": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/960px-Aloe_vera_flower_inset.png",
-      "source": "File:Aloe_vera_flower_inset.png",
-      "credit": "Wikimedia Commons (Public Domain)"
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/600px-Aloe_vera_flower_inset.png",
+      "filename": "Aloe_vera_flower_inset.png",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "ginseng": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Panax_ginseng_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-189.jpg/600px-Panax_ginseng_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-189.jpg",
+      "filename": "Panax_ginseng_-_Köhler–s_Medizinal-Pflanzen-189.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "neem": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Azadirachta_indica_Blanco2.363.png/600px-Azadirachta_indica_Blanco2.363.png",
+      "filename": "Azadirachta_indica_Blanco2.363.png",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "moringa": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Moringa_oleifera_Blanco2.320.jpg/600px-Moringa_oleifera_Blanco2.320.jpg",
+      "filename": "Moringa_oleifera_Blanco2.320.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "ashwagandha": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Withania_somnifera_%28Dunal%29_1885.jpg/600px-Withania_somnifera_%28Dunal%29_1885.jpg",
+      "filename": "Withania_somnifera_(Dunal)_1885.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "maize": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Zea_mays_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-287.jpg/600px-Zea_mays_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-287.jpg",
+      "filename": "Zea_mays_-_Köhler–s_Medizinal-Pflanzen-287.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "potato": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Solanum_tuberosum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-182.jpg/600px-Solanum_tuberosum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-182.jpg",
+      "filename": "Solanum_tuberosum_-_Köhler–s_Medizinal-Pflanzen-182.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "ephedra": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ephedra_sinica_Botanical_Illustration.jpg/600px-Ephedra_sinica_Botanical_Illustration.jpg",
+      "filename": "Ephedra_sinica_Botanical_Illustration.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "black seed": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Nigella_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-133.jpg/600px-Nigella_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-133.jpg",
+      "filename": "Nigella_sativa_-_Köhler–s_Medizinal-Pflanzen-133.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "watercress": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Nasturtium_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-132.jpg/600px-Nasturtium_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-132.jpg",
+      "filename": "Nasturtium_officinale_-_Köhler–s_Medizinal-Pflanzen-132.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "meadowsweet": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Filipendula_ulmaria_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-052.jpg/600px-Filipendula_ulmaria_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-052.jpg",
+      "filename": "Filipendula_ulmaria_-_Köhler–s_Medizinal-Pflanzen-052.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "horse chestnut": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Aesculus_hippocastanum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-131.jpg/600px-Aesculus_hippocastanum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-131.jpg",
+      "filename": "Aesculus_hippocastanum_-_Köhler–s_Medizinal-Pflanzen-131.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "psyllium": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Plantago_ovata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-148.jpg/600px-Plantago_ovata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-148.jpg",
+      "filename": "Plantago_ovata_-_Köhler–s_Medizinal-Pflanzen-148.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "senna": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Cassia_senna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-031.jpg/600px-Cassia_senna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-031.jpg",
+      "filename": "Cassia_senna_-_Köhler–s_Medizinal-Pflanzen-031.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "broom": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cytisus_scoparius_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-066.jpg/600px-Cytisus_scoparius_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-066.jpg",
+      "filename": "Cytisus_scoparius_-_Köhler–s_Medizinal-Pflanzen-066.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "ginkgo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Ginkgo_biloba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-067.jpg/600px-Ginkgo_biloba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-067.jpg",
+      "filename": "Ginkgo_biloba_-_Köhler–s_Medizinal-Pflanzen-067.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "st john's wort": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hypericum_perforatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-079.jpg/600px-Hypericum_perforatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-079.jpg",
+      "filename": "Hypericum_perforatum_-_Köhler–s_Medizinal-Pflanzen-079.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "opium": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ViennaDioscoridesPlant.jpg/600px-ViennaDioscoridesPlant.jpg",
+      "filename": "ViennaDioscoridesPlant.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "spikenard": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-083.jpg/600px-K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-083.jpg",
+      "filename": "Köhler–s_Medizinal-Pflanzen-083.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "iris root": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Iris_germanica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-083.jpg/600px-Iris_germanica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-083.jpg",
+      "filename": "Iris_germanica_-_Köhler–s_Medizinal-Pflanzen-083.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "rooibos": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Aspalathus_linearis_5.jpg/600px-Aspalathus_linearis_5.jpg",
+      "filename": "Aspalathus_linearis_5.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "devil's claw": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Harpagophytum_procumbens_Illustration.jpg/600px-Harpagophytum_procumbens_Illustration.jpg",
+      "filename": "Harpagophytum_procumbens_Illustration.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "hoodia": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hoodia_gordonii2.jpg/600px-Hoodia_gordonii2.jpg",
+      "filename": "Hoodia_gordonii2.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "buchu": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Agathosma_betulina_-_1887_-_Print_-_Iconographia_Botanica_Exotica.jpg/600px-Agathosma_betulina_-_1887_-_Print_-_Iconographia_Botanica_Exotica.jpg",
+      "filename": "Agathosma_betulina_-_1887_-_Print_-_Iconographia_Botanica_Exotica.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "kudzu": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pueraria_lobata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-167.jpg/600px-Pueraria_lobata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-167.jpg",
+      "filename": "Pueraria_lobata_-_Köhler–s_Medizinal-Pflanzen-167.jpg",
+      "credit": "Köhler's Medizinal-Pflanzen (1887) / Wikimedia Commons — Public Domain"
+    },
+    "schisandra": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Schisandra_chinensis_1.jpg/600px-Schisandra_chinensis_1.jpg",
+      "filename": "Schisandra_chinensis_1.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "astragalus": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Astragalus_membranaceus.jpg/600px-Astragalus_membranaceus.jpg",
+      "filename": "Astragalus_membranaceus.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "saw palmetto": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Serenoa_repens_illustration.jpg/600px-Serenoa_repens_illustration.jpg",
+      "filename": "Serenoa_repens_illustration.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
+    },
+    "bitter melon": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Momordica_charantia_Blanco1.68.jpg/600px-Momordica_charantia_Blanco1.68.jpg",
+      "filename": "Momordica_charantia_Blanco1.68.jpg",
+      "credit": "Wikimedia Commons — Public Domain"
     }
-  },
-  "sources": {
-    "kohler": "Köhler's Medizinal-Pflanzen (1887) — 283 botanical plates, public domain",
-    "wellcome": "Wellcome Collection — medical history images, Creative Commons",
-    "wikimedia": "Wikimedia Commons — various botanical illustration sources"
   }
 }
