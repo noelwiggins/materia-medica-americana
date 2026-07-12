@@ -1,0 +1,13 @@
+{
+  "segments": [
+    {
+      "label": "Honzo Wamyo — Ume 梅",
+      "text": "Plant: Ume 梅 — Japanese plum — antibacterial, digestive\n\nGenerate a comprehensive Plantacopia entry from the Honzo Wamyo (本草和名, 918 CE) — the oldest Japanese pharmaceutical encyclopedia by Fukane no Sukehito. Include Japanese name (kanji and romaji), Chinese source name, original Yamato (ancient Japanese) vernacular name where applicable, and therapeutic uses as documented in the Honzo Wamyo. Note unique Japanese observations and any plants indigenous to Japan not found in Chinese sources.",
+      "_meta": {
+        "plant": "Ume 梅 — Japanese plum — antibacterial, digestive",
+        "_corpusKey": "honzo",
+        "source_section": "Honzo Wamyo"
+      }
+    }
+  ]
+}
