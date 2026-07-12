@@ -1,0 +1,274 @@
+{
+  "segments": [
+    {
+      "label": "Amazonian Traditional Medicine — Ayahuasca",
+      "text": "Plant: Ayahuasca — Banisteriopsis caapi vine + Psychotria viridis (DMT/MAOI) — spirit healing, depression\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Ayahuasca — Banisteriopsis caapi vine + Psychotria viridis (DMT/MAOI) — spirit healing, depression",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Cat's claw",
+      "text": "Plant: Cat's claw — Uncaria tomentosa (uña de gato, Ashaninka) — immune, anti-inflammatory, cancer\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Cat's claw — Uncaria tomentosa (uña de gato, Ashaninka) — immune, anti-inflammatory, cancer",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Sangre de grado",
+      "text": "Plant: Sangre de grado — Croton lechleri — wound healing, antiviral, diarrhea\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Sangre de grado — Croton lechleri — wound healing, antiviral, diarrhea",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Copaiba",
+      "text": "Plant: Copaiba — Copaifera species — wound, pain, antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Copaiba — Copaifera species — wound, pain, antimicrobial",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Andiroba",
+      "text": "Plant: Andiroba — Carapa guianensis — anti-inflammatory, insecticide, wound\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Andiroba — Carapa guianensis — anti-inflammatory, insecticide, wound",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Pau d'arco",
+      "text": "Plant: Pau d'arco — Tabebuia species (lapacho) — antifungal, cancer, immune\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Pau d'arco — Tabebuia species (lapacho) — antifungal, cancer, immune",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Guaraná",
+      "text": "Plant: Guaraná — Paullinia cupana — energy, cognition, caffeine source\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Guaraná — Paullinia cupana — energy, cognition, caffeine source",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Açaí",
+      "text": "Plant: Açaí — Euterpe oleracea — antioxidant, nutrition, cardiovascular\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Açaí — Euterpe oleracea — antioxidant, nutrition, cardiovascular",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Brazil nut",
+      "text": "Plant: Brazil nut — Bertholletia excelsa — selenium, thyroid, nutrition\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Brazil nut — Bertholletia excelsa — selenium, thyroid, nutrition",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Camu camu",
+      "text": "Plant: Camu camu — Myrciaria dubia — highest vitamin C, immune\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Camu camu — Myrciaria dubia — highest vitamin C, immune",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Sacha inchi",
+      "text": "Plant: Sacha inchi — Plukenetia volubilis — omega-3, protein, Shipibo\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Sacha inchi — Plukenetia volubilis — omega-3, protein, Shipibo",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Maca",
+      "text": "Plant: Maca — Lepidium meyenii — adaptogen, reproductive, energy (Andean adjacent)\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Maca — Lepidium meyenii — adaptogen, reproductive, energy (Andean adjacent)",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Chuchuhuasi",
+      "text": "Plant: Chuchuhuasi — Maytenus krukovii — arthritis, pain, immune\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Chuchuhuasi — Maytenus krukovii — arthritis, pain, immune",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Jatobá",
+      "text": "Plant: Jatobá — Hymenaea courbaril — respiratory, antifungal, energy\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Jatobá — Hymenaea courbaril — respiratory, antifungal, energy",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Maracujá",
+      "text": "Plant: Maracujá — Passiflora edulis — anxiety, sleep, blood pressure\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Maracujá — Passiflora edulis — anxiety, sleep, blood pressure",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Graviola",
+      "text": "Plant: Graviola — Annona muricata (soursop) — cancer, parasites, immune\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Graviola — Annona muricata (soursop) — cancer, parasites, immune",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Muira puama",
+      "text": "Plant: Muira puama — Ptychopetalum olacoides — libido, nerve tonic, adaptogen\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Muira puama — Ptychopetalum olacoides — libido, nerve tonic, adaptogen",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Catuaba",
+      "text": "Plant: Catuaba — Trichilia catigua — aphrodisiac, nerve, memory\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Catuaba — Trichilia catigua — aphrodisiac, nerve, memory",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Pfaffia",
+      "text": "Plant: Pfaffia — Pfaffia paniculata (suma/Brazilian ginseng) — adaptogen\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Pfaffia — Pfaffia paniculata (suma/Brazilian ginseng) — adaptogen",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Ipê roxo",
+      "text": "Plant: Ipê roxo — Tabebuia impetiginosa — antifungal, cancer (quercetin)\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Ipê roxo — Tabebuia impetiginosa — antifungal, cancer (quercetin)",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Simarouba",
+      "text": "Plant: Simarouba — Simarouba amara — malaria, ulcer, antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Simarouba — Simarouba amara — malaria, ulcer, antimicrobial",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Cumaru",
+      "text": "Plant: Cumaru — Dipteryx odorata — coumarin source, pain, fragrance\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Cumaru — Dipteryx odorata — coumarin source, pain, fragrance",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Acerola",
+      "text": "Plant: Acerola — Malpighia emarginata — vitamin C, immune, antioxidant\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Acerola — Malpighia emarginata — vitamin C, immune, antioxidant",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Tucumã",
+      "text": "Plant: Tucumã — Astrocaryum aculeatum — eye health, antioxidant, nutrition\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Tucumã — Astrocaryum aculeatum — eye health, antioxidant, nutrition",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Buriti",
+      "text": "Plant: Buriti — Mauritia flexuosa — beta-carotene, wound, nutrition\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Buriti — Mauritia flexuosa — beta-carotene, wound, nutrition",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Cupuaçu",
+      "text": "Plant: Cupuaçu — Theobroma grandiflorum — antioxidant, energy (theobromine)\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Cupuaçu — Theobroma grandiflorum — antioxidant, energy (theobromine)",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Pupunha",
+      "text": "Plant: Pupunha — Bactris gasipaes — peach palm — nutrition, protein\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Pupunha — Bactris gasipaes — peach palm — nutrition, protein",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Virola",
+      "text": "Plant: Virola — Virola species — hallucinogenic snuff (Yanomami), antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Virola — Virola species — hallucinogenic snuff (Yanomami), antimicrobial",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Curare",
+      "text": "Plant: Curare — Strychnos toxifera (tubocurarine) — muscle relaxant, arrow poison\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Curare — Strychnos toxifera (tubocurarine) — muscle relaxant, arrow poison",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    },
+    {
+      "label": "Amazonian Traditional Medicine — Quinine",
+      "text": "Plant: Quinine — Cinchona officinalis — malaria (bark of the Countess)\n\nGenerate a comprehensive Plantacopia entry from Amazonian and Andean traditional medicine. Include local names in indigenous languages (Quechua, Shipibo, Yanomami, Ashaninka, etc.), therapeutic uses documented by ethnobotanists, preparation methods (decoction, resin, smoke, ritual), conditions treated, and relevant pharmacological research. Note where the plant has been studied for pharmaceutical applications.",
+      "_meta": {
+        "plant": "Quinine — Cinchona officinalis — malaria (bark of the Countess)",
+        "_corpusKey": "amazonian_new",
+        "source_section": "Amazonian Traditional Medicine"
+      }
+    }
+  ]
+}
