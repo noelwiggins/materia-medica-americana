@@ -684,6 +684,37 @@
   }
   .stat-tile:hover .stat-tile-arrow { opacity: 1; }
 
+
+  /* ── Book reader illustrations ── */
+  .book-illustration {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.8rem;
+  }
+  .book-ill-img {
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    object-position: center top;
+    display: block;
+    background: #FAF4E2;
+  }
+  .book-ill-credit {
+    font-family: var(--font-code);
+    font-size: 0.48rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-align: center;
+    padding-top: 0.3rem;
+    text-transform: uppercase;
+  }
+  .book-orig-text {
+    font-style: italic;
+    color: #3A3020;
+    font-size: 0.88rem;
+    line-height: 1.9;
+  }
 </style>
 </head>
 
@@ -832,6 +863,7 @@
           <div>
             <div class="book-modal-eyebrow" id="book-modal-eyebrow">Tradition</div>
             <h2 class="book-modal-title" id="book-modal-title">Source Title</h2>
+            <div class="book-modal-source-note" id="book-modal-source-note" style="font-family:var(--font-code);font-size:0.52rem;color:#8A7A58;letter-spacing:0.08em;margin-top:0.2rem"></div>
           </div>
           <div style="display:flex;align-items:center;gap:0.8rem">
             <div class="book-nav">
@@ -1564,7 +1596,7 @@
 
 <script>
 // ── State ────────────────────────────────────────────────
-let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [];
+let plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [], illustrationsData = {};
 let activeStatusFilter = null, activeTraditions = new Set();
 
 // ── Tab navigation ──────────────────────────────────────
@@ -1767,12 +1799,20 @@ try {
     fetch('/data/plants.json'),
     fetch('/data/traditions.json'),
     fetch('/data/regulatory_data.json').catch(()=>null),
+      fetch('/data/plant_illustrations.json').catch(()=>null),
     fetch('/data/conditions.json'),
     fetch('/data/longevity.json'),
   ]);
   plantData = (await pRes.json()).plants || [];
   traditionData = (await tRes.json()).traditions || [];
   if (rRes && rRes.ok) regulatoryData = (await rRes.json()).plants || [];
+    // Load illustrations separately
+    try {
+      const illRes = await fetch('/data/plant_illustrations.json');
+      if (illRes.ok) { const id = await illRes.json(); illustrationsData = id.illustrations || {}; }
+    } catch(e) {}
+    const iRes = responses ? responses[5] : null;
+    if (iRes && iRes.ok) { const id = await iRes.json(); illustrationsData = id.illustrations || {}; }
   conditionData = (await cRes.json()).conditions || [];
   longevityData = (await lRes.json()).traditions || [];
 
