@@ -1,0 +1,40 @@
+{
+  "segments": [
+    {
+      "label": "Shennong Bencaojing / Kampo — Suan Zao Ren 酸棗仁",
+      "text": "Plant: Suan Zao Ren 酸棗仁 — Ziziphus — spirit, insomnia, sweating\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Suan Zao Ren 酸棗仁 — Ziziphus — spirit, insomnia, sweating",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Bai Zi Ren 柏子仁",
+      "text": "Plant: Bai Zi Ren 柏子仁 — Biota seed — spirit, heart, constipation\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Bai Zi Ren 柏子仁 — Biota seed — spirit, heart, constipation",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Yuan Zhi 遠志",
+      "text": "Plant: Yuan Zhi 遠志 — Polygala — spirit, phlegm, insomnia\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Yuan Zhi 遠志 — Polygala — spirit, phlegm, insomnia",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    },
+    {
+      "label": "Shennong Bencaojing / Kampo — Shi Chang Pu 石菖蒲",
+      "text": "Plant: Shi Chang Pu 石菖蒲 — Acorus — orifice opening, damp phlegm\n\nGenerate a comprehensive Plantacopia entry. Include Chinese name (pinyin and characters), Japanese Kampo name where applicable, classical category (superior/middle/inferior herb), Five Flavors (wu wei), Four Natures (si qi), channel tropism (gui jing), and therapeutic actions from the Shennong Bencaojing tradition (c.200 CE) and subsequent Kampo (Japanese) elaborations. Note any key classical formulas featuring this herb.",
+      "_meta": {
+        "plant": "Shi Chang Pu 石菖蒲 — Acorus — orifice opening, damp phlegm",
+        "_corpusKey": "kampo",
+        "source_section": "Shennong Bencaojing / Kampo"
+      }
+    }
+  ]
+}
