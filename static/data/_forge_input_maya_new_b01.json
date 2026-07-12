@@ -1,0 +1,274 @@
+{
+  "segments": [
+    {
+      "label": "Maya Traditional Medicine — Chaya",
+      "text": "Plant: Chaya — Cnidoscolus aconitifolius (chay) — nutrition, diabetes, blood\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Chaya — Cnidoscolus aconitifolius (chay) — nutrition, diabetes, blood",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Epazote",
+      "text": "Plant: Epazote — Dysphania ambrosioides — antiparasitic, digestive\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Epazote — Dysphania ambrosioides — antiparasitic, digestive",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Annatto",
+      "text": "Plant: Annatto — Bixa orellana (achiote) — antioxidant, fever, skin\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Annatto — Bixa orellana (achiote) — antioxidant, fever, skin",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Ceiba",
+      "text": "Plant: Ceiba — Ceiba pentandra (yaxché) — sacred tree — fever, wound\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Ceiba — Ceiba pentandra (yaxché) — sacred tree — fever, wound",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Copal",
+      "text": "Plant: Copal — Bursera bipinnata (pom) — ritual, respiratory\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Copal — Bursera bipinnata (pom) — ritual, respiratory",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Cacao",
+      "text": "Plant: Cacao — Theobroma cacao — Maya medicine for fatigue, skin, ceremonial\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Cacao — Theobroma cacao — Maya medicine for fatigue, skin, ceremonial",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Chili",
+      "text": "Plant: Chili — Capsicum annuum — pain, antimicrobial, metabolic\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Chili — Capsicum annuum — pain, antimicrobial, metabolic",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Vanilla",
+      "text": "Plant: Vanilla — Vanilla planifolia — aphrodisiac, digestive, aromatherapy\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Vanilla — Vanilla planifolia — aphrodisiac, digestive, aromatherapy",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Zapote",
+      "text": "Plant: Zapote — Manilkara zapota (sapodilla) — diarrhea, skin, fever\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Zapote — Manilkara zapota (sapodilla) — diarrhea, skin, fever",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Guanabana",
+      "text": "Plant: Guanabana — Annona muricata — fever, parasites, cancer\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Guanabana — Annona muricata — fever, parasites, cancer",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Nance",
+      "text": "Plant: Nance — Byrsonima crassifolia — antiseptic, diarrhea, skin\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Nance — Byrsonima crassifolia — antiseptic, diarrhea, skin",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Breadnut",
+      "text": "Plant: Breadnut — Brosimum alicastrum (ramon) — nutrition, tonic\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Breadnut — Brosimum alicastrum (ramon) — nutrition, tonic",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Allspice",
+      "text": "Plant: Allspice — Pimenta dioica — digestive, pain, antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Allspice — Pimenta dioica — digestive, pain, antimicrobial",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Copalchi",
+      "text": "Plant: Copalchi — Croton niveus — malaria, fever, antimicrobial\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Copalchi — Croton niveus — malaria, fever, antimicrobial",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Piñal",
+      "text": "Plant: Piñal — Neurolaena lobata — malaria, skin, antiparasitic\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Piñal — Neurolaena lobata — malaria, skin, antiparasitic",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Contribo",
+      "text": "Plant: Contribo — Aristolochia trilobata — snakebite, infection (caution: nephrotoxic)\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Contribo — Aristolochia trilobata — snakebite, infection (caution: nephrotoxic)",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Albahaca",
+      "text": "Plant: Albahaca — Ocimum campechianum — Maya basil — infection, respiratory\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Albahaca — Ocimum campechianum — Maya basil — infection, respiratory",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — China root",
+      "text": "Plant: China root — Smilax ornata — skin disease, syphilis, cleansing\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "China root — Smilax ornata — skin disease, syphilis, cleansing",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Hierba santa",
+      "text": "Plant: Hierba santa — Piper auritum — digestive, wound, anise flavor\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Hierba santa — Piper auritum — digestive, wound, anise flavor",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Hoja de sen",
+      "text": "Plant: Hoja de sen — Cassia obtusifolia — laxative, liver\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Hoja de sen — Cassia obtusifolia — laxative, liver",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Bejuco de indio",
+      "text": "Plant: Bejuco de indio — Hippocratea excelsa — inflammation, fever\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Bejuco de indio — Hippocratea excelsa — inflammation, fever",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Madre cacao",
+      "text": "Plant: Madre cacao — Gliricidia sepium — wound, lice, toothache\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Madre cacao — Gliricidia sepium — wound, lice, toothache",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Ramon blanco",
+      "text": "Plant: Ramon blanco — Trophis racemosa — lactation, nutrition\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Ramon blanco — Trophis racemosa — lactation, nutrition",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Palo de jiote",
+      "text": "Plant: Palo de jiote — Bursera simaruba — wound, resin antiseptic\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Palo de jiote — Bursera simaruba — wound, resin antiseptic",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Cuachalalate",
+      "text": "Plant: Cuachalalate — Amphipterygium adstringens — gastric ulcer, antifungal\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Cuachalalate — Amphipterygium adstringens — gastric ulcer, antifungal",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Xiu",
+      "text": "Plant: Xiu — Traditional Maya plant classification system\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Xiu — Traditional Maya plant classification system",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Pixoy",
+      "text": "Plant: Pixoy — Guazuma ulmifolia — diarrhea, wound, skin\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Pixoy — Guazuma ulmifolia — diarrhea, wound, skin",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Sac nicté",
+      "text": "Plant: Sac nicté — Plumeria alba — skin, ceremonial (Maya white flower)\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Sac nicté — Plumeria alba — skin, ceremonial (Maya white flower)",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Xtabentún",
+      "text": "Plant: Xtabentún — Turbina corymbosa (morning glory) — Maya ceremony, vision\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Xtabentún — Turbina corymbosa (morning glory) — Maya ceremony, vision",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    },
+    {
+      "label": "Maya Traditional Medicine — Balché",
+      "text": "Plant: Balché — Lonchocarpus violaceus — fermented ceremonial drink, purgative\n\nGenerate a comprehensive Plantacopia entry from Maya traditional medicine (healing documented in the Ritual of the Bacabs, Chilam Balam, and modern ethnobotanical surveys). Include Maya/Yucatec name, Spanish colonial name, and Latin botanical name. Describe therapeutic uses, preparation methods (vapour bath, tea, poultice, resin), ritual context, and conditions treated. Note any h'men (healer) practices or ceremonial use alongside therapeutic application.",
+      "_meta": {
+        "plant": "Balché — Lonchocarpus violaceus — fermented ceremonial drink, purgative",
+        "_corpusKey": "maya_new",
+        "source_section": "Maya Traditional Medicine"
+      }
+    }
+  ]
+}
