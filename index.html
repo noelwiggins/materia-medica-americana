@@ -2375,14 +2375,19 @@ try {
         const res = await fetch(url);
         if (!res.ok) return;
         const data = await res.json();
-        const results = (data.results || []).filter(r =>
-          r.title_inferred && !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
+        // Handle legacy {results:[]}, Forge {segments:[]}, and bare array formats
+        const rawItems = Array.isArray(data) ? data :
+          (data.segments || data.results || data.chapters || []);
+        const results = rawItems.filter(r =>
+          r && r.translation && r.title_inferred &&
+          !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
         );
         results.forEach(r => {
-          const key = r._label || r.title_inferred;
+          const key = (r._label || r.title_inferred || '') + '|' + tradition;
           if (!seen.has(key)) {
             seen.add(key);
-            allResults.push({ ...r, _tradition: tradition, _tradition_label: label });
+            allResults.push({ ...r, _tradition: tradition, _tradition_label: label,
+                              _corpusKey: url.replace('/data/','').replace('.json','') });
           }
         });
       } catch(e) { /* file may not exist yet — skip silently */ }
