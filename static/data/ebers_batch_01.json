@@ -1,0 +1,1462 @@
+{
+  "job_name": "Ebers Papyrus — Batch 1/1 (Another Remedy Which The Godde)",
+  "completed_at": "2026-07-13T17:12:46.544987",
+  "segment_count": 37,
+  "results": [
+    {
+      "title_inferred": "Remedy of Isis for Headache Pains",
+      "original_text": "ANOTHER REMEDY WHICH THE GODDESS ISIS PREPARED FOR THE GOD RA TO DRIVE OUT THE PAINS THAT ARE IN HIS HEAD:\nBerry-of-the-Coriander\nBerry-of-the-Poppy-plant\nWormwood\nBerry-of-the-sames-plant\nBerry-of-the-Juniper-plant\nHoney",
+      "translation": "Another remedy which the goddess Isis prepared for the god Ra to drive out the pains that are in his head: Berry of the coriander plant; berry of the poppy plant; wormwood; berry of the sames plant; berry of the juniper plant; honey.",
+      "entities_mentioned": [
+        {
+          "name": "Berry-of-the-Coriander",
+          "modern_identification": "Coriandrum sativum (coriander seed)",
+          "identification_confidence": "high",
+          "notes": "Coriander seeds were commonly used in ancient Egyptian medicine; likely used here for their analgesic or soothing properties."
+        },
+        {
+          "name": "Berry-of-the-Poppy-plant",
+          "modern_identification": "Papaver somniferum (opium poppy seed capsule)",
+          "identification_confidence": "high",
+          "notes": "Poppy was used in ancient Egypt as a sedative and analgesic, highly appropriate for a headache remedy."
+        },
+        {
+          "name": "Wormwood",
+          "modern_identification": "Artemisia absinthium or Artemisia herba-alba",
+          "identification_confidence": "medium",
+          "notes": "Wormwood was used in Egyptian medicine for its bitter, anti-inflammatory, and analgesic properties. The exact species is uncertain."
+        },
+        {
+          "name": "Berry-of-the-sames-plant",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "'Sames' is an unidentified plant; the name may be a transliteration of an Egyptian term not yet confidently matched to a modern botanical equivalent. Possibly a corruption or OCR artifact of another plant name."
+        },
+        {
+          "name": "Berry-of-the-Juniper-plant",
+          "modern_identification": "Juniperus communis (juniper berry)",
+          "identification_confidence": "high",
+          "notes": "Juniper berries were widely used in ancient Egyptian remedies for their aromatic and medicinal properties."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Apis mellifera (honey)",
+          "identification_confidence": "high",
+          "notes": "Honey served as a common base or binding agent in Egyptian medicinal preparations, also valued for its antiseptic and soothing properties."
+        }
+      ],
+      "translator_notes": "The line 'Ss = + S me ee' in the source text appears to be an OCR artifact or printing corruption, likely representing a dosage notation, measurement symbols, or mixing instruction that was illegible in the original scan. It has been omitted from the translation as [ILLEGIBLE: possible dosage or preparation notation]. The remedy is framed mythologically as a preparation by the goddess Isis for the sun god Ra, a common literary device lending divine authority to medical prescriptions in the Ebers Papyrus.",
+      "_label": "Another Remedy Which The Goddess Isis Prepared"
+    },
+    {
+      "title_inferred": "Remedy to Clear Out the Body and Expel Excrement",
+      "original_text": "REMEDY TO CLEAR OUT THE BODY AND TO GET RID OF THE EXCREMENT IN THE BODY OF A PERSON\nBerries-of-the-Castor-oil-tree I\nChew and swallow down with Beer in order to clear out all that is in the body.",
+      "translation": "Remedy to clear out the body and to get rid of the excrement in the body of a person: Castor oil tree berries [ricinus seeds], 1 part. Chew and swallow down with beer in order to clear out all that is in the body.",
+      "entities_mentioned": [
+        {
+          "name": "Berries-of-the-Castor-oil-tree",
+          "modern_identification": "Ricinus communis (castor bean / castor oil plant seeds)",
+          "identification_confidence": "high",
+          "notes": "The seeds of Ricinus communis contain ricin and ricinoleic acid precursors; the expressed oil has well-documented purgative properties and was widely used in ancient Egyptian medicine as a laxative. Chewing raw castor beans is dangerous due to ricin content, though ancient preparations may have differed."
+        },
+        {
+          "name": "Beer",
+          "modern_identification": "Ancient Egyptian fermented barley beer (zythum)",
+          "identification_confidence": "high",
+          "notes": "Beer served as a common vehicle for medicinal preparations in ancient Egypt, aiding in administration of remedies."
+        }
+      ],
+      "translator_notes": "The trailing editorial comment ('But they are not all as simple as that; nor as effective, one may venture to add.') is an interpolation by the 1930 translator Bryan and does not appear in the original papyrus text. It has been excluded from the translation field but is preserved in the original_text for completeness. The quantity indicator 'I' following the ingredient likely represents the numeral '1' (one unit or measure), a common OCR ambiguity in this source. The section heading 'CONSTIPATION, ETC. 45' appears to be a chapter/page reference from the 1930 published edition, not part of the original papyrus.",
+      "_label": "Remedy To Clear Out The Body And To Get Rid Of"
+    },
+    {
+      "title_inferred": "Remedy for the Body (Castor Oil Leaves and Dates)",
+      "original_text": "ANOTHER REMEDY FOR THE BODY\n\nLeaves-of-the-Castor-oil-plant 1\nDates-of-the-Male-Palm 5\nCyperus-grass 1\nStalk-of-the-Poppy-plant 1\nCoriander 1\nCold Beer 1\nKeep moist, strain, and take for four days.\n\nANOTHER\nFresh Dates 1\nSea-salt 1\nSebbet-juice 1",
+      "translation": "Another remedy for the body: Take one part leaves of the castor-oil plant, five parts dates of the male palm, one part cyperus-grass, one part stalk of the poppy plant, one part coriander, and one part cold beer. Keep moist, strain, and take [the preparation] for four days.\n\nAnother [remedy]: Take one part fresh dates, one part sea-salt, one part sebbet-juice.",
+      "entities_mentioned": [
+        {
+          "name": "Leaves-of-the-Castor-oil-plant",
+          "modern_identification": "Ricinus communis (castor oil plant)",
+          "identification_confidence": "high",
+          "notes": "Castor oil plant leaves were used medicinally in ancient Egypt; the plant is well attested in Ebers Papyrus contexts."
+        },
+        {
+          "name": "Dates-of-the-Male-Palm",
+          "modern_identification": "Phoenix dactylifera (date palm, male fruit or spadix)",
+          "identification_confidence": "high",
+          "notes": "Dates from the male date palm; possibly referring to the unripe or inferior fruit of male palms, used as a medicinal ingredient."
+        },
+        {
+          "name": "Cyperus-grass",
+          "modern_identification": "Cyperus esculentus or Cyperus rotundus (sedge/nutsedge)",
+          "identification_confidence": "medium",
+          "notes": "Various Cyperus species are attested in Egyptian medicine; exact species is uncertain."
+        },
+        {
+          "name": "Stalk-of-the-Poppy-plant",
+          "modern_identification": "Papaver somniferum (opium poppy) or related species",
+          "identification_confidence": "medium",
+          "notes": "Identification of poppy in the Ebers Papyrus is debated; some scholars question whether this truly refers to Papaver somniferum or another plant."
+        },
+        {
+          "name": "Coriander",
+          "modern_identification": "Coriandrum sativum (coriander)",
+          "identification_confidence": "high",
+          "notes": "Coriander is well documented in ancient Egyptian medicine and cuisine."
+        },
+        {
+          "name": "Cold Beer",
+          "modern_identification": "Ancient Egyptian beer (fermented barley beverage)",
+          "identification_confidence": "high",
+          "notes": "Beer was a common vehicle/solvent for medicinal preparations in ancient Egypt."
+        },
+        {
+          "name": "Fresh Dates",
+          "modern_identification": "Phoenix dactylifera (date palm, fresh fruit)",
+          "identification_confidence": "high",
+          "notes": "Fresh dates used as a base or sweetening agent in remedies."
+        },
+        {
+          "name": "Sea-salt",
+          "modern_identification": "Sodium chloride (sea salt or natron-derived salt)",
+          "identification_confidence": "high",
+          "notes": "Salt was widely used in Egyptian medicine as a preservative and medicinal agent."
+        },
+        {
+          "name": "Sebbet-juice",
+          "modern_identification": "Unknown; possibly juice of the dom palm (Hyphaene thebaica) or another plant",
+          "identification_confidence": "unknown",
+          "notes": "The term 'sebbet' is not definitively identified; some scholars associate it with a specific Egyptian plant or its fruit juice. Marked as uncertain."
+        }
+      ],
+      "translator_notes": "Quantities in the source text appear to use the symbol 'i' or 'ir' for unit measures, likely denoting a standard fractional part (e.g., 1/64 or 1 part depending on context); rendered here as '1 part' for clarity. The '$' symbol for Cold Beer is likely an OCR artifact for a hieratic measure sign, interpreted as '1 part'. The second remedy ('ANOTHER') is fragmentary and appears to be a separate, shorter formula. 'Sebbet-juice' remains unidentified in modern botanical terms.",
+      "_label": "Another Remedy For The Body"
+    },
+    {
+      "title_inferred": "Suppository Remedy to Regulate Bowel Evacuation",
+      "original_text": "REMEDY TO REGULATE EVACUATION\n\nHoney\nsasa-seeds\nWormwood\nElderberry\nBerries-of-the-uan-tree\nKernel-of-the-ut'ait-fruit\nCaraway\naaam-seeds\nXam-seeds\nSea-salt\n\nForm into a Suppository and put into the Rectum.",
+      "translation": "A remedy to regulate evacuation [of the bowels]: Honey; sasa-seeds; Wormwood; Elderberry; Berries of the uan-tree; Kernel of the ut'ait-fruit; Caraway; aaam-seeds; xam-seeds; Sea-salt. Form into a suppository and insert into the rectum.",
+      "entities_mentioned": [
+        {
+          "name": "Honey",
+          "modern_identification": "Honey (Apis mellifera product)",
+          "identification_confidence": "high",
+          "notes": "Common base or binding agent in Egyptian medical preparations; also has mild laxative and antimicrobial properties."
+        },
+        {
+          "name": "sasa-seeds",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Egyptian plant name not conclusively identified; possibly a seed with digestive or laxative properties."
+        },
+        {
+          "name": "Wormwood",
+          "modern_identification": "Artemisia absinthium",
+          "identification_confidence": "high",
+          "notes": "Bitter herb with known digestive and antispasmodic uses; historically used to stimulate bowel movement."
+        },
+        {
+          "name": "Elderberry",
+          "modern_identification": "Sambucus nigra or related species",
+          "identification_confidence": "medium",
+          "notes": "Elderberries have mild laxative effects; identification as Sambucus is plausible but not certain in an Egyptian context."
+        },
+        {
+          "name": "Berries-of-the-uan-tree",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The uan-tree is an unidentified Egyptian plant; the berries may have served a laxative or regulatory function."
+        },
+        {
+          "name": "Kernel-of-the-ut'ait-fruit",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The ut'ait-fruit is an unidentified Egyptian plant; the kernel (seed) was likely used for its active compounds."
+        },
+        {
+          "name": "Caraway",
+          "modern_identification": "Carum carvi",
+          "identification_confidence": "high",
+          "notes": "Caraway seeds are well attested in ancient Egyptian medicine and are known carminatives and digestive aids."
+        },
+        {
+          "name": "aaam-seeds",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Unidentified Egyptian plant name; possibly a phonetic rendering of a known seed, but no confident modern equivalent."
+        },
+        {
+          "name": "Xam-seeds",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Unidentified Egyptian plant name; possibly a variant transcription of a known seed."
+        },
+        {
+          "name": "Sea-salt",
+          "modern_identification": "Sodium chloride (NaCl)",
+          "identification_confidence": "high",
+          "notes": "Used in Egyptian medicine as a preservative, antiseptic, and for its osmotic laxative effect in rectal preparations."
+        }
+      ],
+      "translator_notes": "The repeated equals signs and forward slashes in the source text (e.g., '= = = = SS FS', '= S =') appear to represent dosage or quantity markers that were either illegible or rendered as symbols by OCR corruption; they have been silently omitted from the translation as their precise values cannot be recovered. The preparation method — forming ingredients into a suppository for rectal insertion — is a well-documented technique in the Papyrus Ebers. Several ingredient names (sasa, aaam, xam, uan-tree, ut'ait-fruit) remain untranslated from Egyptian as no confident modern identification exists.",
+      "_label": "Remedy To Regulate Evacuation"
+    },
+    {
+      "title_inferred": "Remedy to Expel Diseased Excrement from the Body",
+      "original_text": "ANOTHER REMEDY TO DRIVE OUT THE DISEASED EXCREMENT IN THE BODY OF A PERSON\nWhite-cake 1\nRed tit-corn 1\nMilk-of-a-Woman",
+      "translation": "Another remedy to drive out the diseased excrement in the body of a person: White-cake [a prepared cereal or bread product], 1 part; Red tit-corn [a variety of grain or sorghum], 1 part; Milk of a woman [human breast milk].",
+      "entities_mentioned": [
+        {
+          "name": "White-cake",
+          "modern_identification": "A prepared bread or cake product, possibly made from emmer wheat or barley flour",
+          "identification_confidence": "low",
+          "notes": "The term 'white-cake' likely refers to a light, pale bread or compressed cereal product used as a vehicle or active ingredient in the remedy. Exact composition uncertain."
+        },
+        {
+          "name": "Red tit-corn",
+          "modern_identification": "Possibly sorghum (Sorghum bicolor) or a red-grained variety of emmer wheat (Triticum dicoccum)",
+          "identification_confidence": "low",
+          "notes": "'Tit-corn' is an archaic or dialectal term that may refer to a small-grained cereal. The 'red' qualifier may indicate a specific cultivar. Some scholars associate this with red ochre-colored grain varieties known from ancient Egypt."
+        },
+        {
+          "name": "Milk-of-a-Woman",
+          "modern_identification": "Human breast milk",
+          "identification_confidence": "high",
+          "notes": "Human breast milk appears frequently in the Ebers Papyrus as a medicinal ingredient, used both internally and externally. It was considered to have purifying and nurturing properties."
+        }
+      ],
+      "translator_notes": "The segment title was split across a line break in the source ('DISEASED EXCRE-' / 'MENT'), silently corrected to 'DISEASED EXCREMENT'. No preparation method is explicitly stated in the surviving text; the remedy may be incomplete or the preparation was assumed to be self-evident (e.g., mixing the ingredients together, possibly for oral administration). Quantities are given as '1' for the first two ingredients, while no quantity is specified for the breast milk, suggesting it may serve as a liquid base or medium.",
+      "_label": "Another Remedy To Drive Out The Diseased Excre-"
+    },
+    {
+      "title_inferred": "Remedy to Stop Diarrhea",
+      "original_text": "REMEDY TO STOP THE DIARRHEA.\n\nGreen Onions\nFreshly-cooked-Gruel\nOil and Honey\nWater",
+      "translation": "A remedy to stop diarrhea: [consisting of] green onions, freshly cooked gruel, oil and honey, [and] water.",
+      "entities_mentioned": [
+        {
+          "name": "Green Onions",
+          "modern_identification": "Allium cepa (green/spring onion) or Allium fistulosum",
+          "identification_confidence": "high",
+          "notes": "Onions were widely used in ancient Egyptian medicine for gastrointestinal complaints. Green onions specifically may refer to young, unripe onion shoots. Known for antimicrobial properties relevant to treating diarrhea."
+        },
+        {
+          "name": "Freshly-cooked-Gruel",
+          "modern_identification": "Cooked porridge, likely of emmer wheat (Triticum dicoccum) or barley (Hordeum vulgare)",
+          "identification_confidence": "medium",
+          "notes": "Gruel appears frequently in Ebers Papyrus remedies as a base or binding agent. Freshly cooked gruel would provide a bland, easily digestible substance suitable for treating gastrointestinal distress. Grain species is unspecified in the source."
+        },
+        {
+          "name": "Oil",
+          "modern_identification": "Likely castor oil (Ricinus communis) or moringa oil (Moringa oleifera), though olive oil (Olea europaea) is also possible",
+          "identification_confidence": "low",
+          "notes": "The specific oil is not identified in this passage. Various oils appear in the Ebers Papyrus; the intended species is ambiguous without further context. In this context, oil may serve as a soothing or lubricating agent for the digestive tract."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Apis mellifera (bee honey)",
+          "identification_confidence": "high",
+          "notes": "Honey is one of the most common ingredients in the Ebers Papyrus. It has well-documented antimicrobial properties and was used extensively as both a sweetener and a medicinal agent in ancient Egypt."
+        },
+        {
+          "name": "Water",
+          "modern_identification": "Water",
+          "identification_confidence": "high",
+          "notes": "Water serves as the liquid medium or diluent for the remedy. Its inclusion suggests the remedy was prepared as a drinkable mixture or decoction."
+        }
+      ],
+      "translator_notes": "This segment is a list-form prescription without explicit quantities or preparation instructions, which is somewhat unusual compared to other Ebers Papyrus entries. The preparation method (mixing, drinking, etc.) is not stated in the source text. The combination of gruel and honey suggests an oral remedy intended to soothe and bind the gut. The absence of dosage information may reflect an incomplete or condensed entry in the original papyrus.",
+      "_label": "Remedy To Stop The Diarrhea."
+    },
+    {
+      "title_inferred": "Remedy for Indigestion Using a Hog's Tooth",
+      "original_text": "ANOTHER REMEDY FOR INDIGESTION\n\nA Hog's Tooth",
+      "translation": "Another remedy for indigestion: A hog's tooth.",
+      "entities_mentioned": [
+        {
+          "name": "Hog's Tooth",
+          "modern_identification": "Tooth of a domestic pig (Sus scrofa domesticus)",
+          "identification_confidence": "high",
+          "notes": "Animal-derived materia medica. The tooth of a pig was likely used in powdered form, as an amulet, or administered in some prepared manner. The segment is fragmentary and provides no preparation method, dosage, or further instructions, suggesting either that the text is incomplete as preserved or that the remedy was considered self-evident in its application. Use of animal teeth in ancient Egyptian medicine is attested elsewhere in the Ebers Papyrus, often ground and mixed with other substances."
+        }
+      ],
+      "translator_notes": "This segment is unusually terse — it names only the single ingredient with no preparation method, quantity, vehicle, or administration instructions recorded. This may indicate a lacuna in the original papyrus, an OCR or transcription omission from the 1930 Bryan edition, or a genuinely minimal entry. Scholars should cross-reference with the original hieratic manuscript and the Wreszinski facsimile edition for context.",
+      "_label": "Another Remedy For Indigestion"
+    },
+    {
+      "title_inferred": "Another Remedy For The Abdomen",
+      "original_text": "ANOTHER REMEDY FOR THE ABDOMEN\n\nuah-grain t\nGrapes 4\nHerbs-of-the-Field +\nFigs a little\nSycamore-dough\nor Onions-from-the-Oasis.",
+      "translation": "Another remedy for the abdomen: uah-grain [quantity: t], Grapes [quantity: 4], Herbs-of-the-Field [quantity: +], Figs [a little], Sycamore-dough, or Onions-from-the-Oasis.",
+      "entities_mentioned": [
+        {
+          "name": "uah-grain",
+          "modern_identification": "possibly a variety of emmer wheat or sedge grain",
+          "identification_confidence": "low",
+          "notes": "The quantity marker 't' is likely a fractional or unit measure from the original hieratic text; precise identification of uah-grain remains uncertain among Egyptologists."
+        },
+        {
+          "name": "Grapes",
+          "modern_identification": "Vitis vinifera",
+          "identification_confidence": "high",
+          "notes": "Grapes were commonly used in Egyptian medicinal preparations, both fresh and dried (raisins). Quantity given as '4', likely referring to a standard measure or number of units."
+        },
+        {
+          "name": "Herbs-of-the-Field",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A generic term possibly referring to wild herbs or grasses gathered from cultivated or fallow fields. Precise botanical identity is unclear. Quantity marker '+' may indicate a standard measure in the hieratic original."
+        },
+        {
+          "name": "Figs",
+          "modern_identification": "Ficus carica",
+          "identification_confidence": "high",
+          "notes": "Figs were a staple ingredient in Egyptian medicinal recipes, particularly for gastrointestinal complaints. Quantity noted as 'a little'."
+        },
+        {
+          "name": "Sycamore-dough",
+          "modern_identification": "Ficus sycomorus (fruit pulp or processed form)",
+          "identification_confidence": "medium",
+          "notes": "Sycamore-dough likely refers to a paste or preparation made from the fruit of the sycamore fig tree (Ficus sycomorus), widely used in ancient Egyptian medicine."
+        },
+        {
+          "name": "Onions-from-the-Oasis",
+          "modern_identification": "Allium cepa",
+          "identification_confidence": "medium",
+          "notes": "Oasis onions were considered a distinct variety or quality of onion in Egyptian texts, possibly dried or preserved. Presented here as an alternative ingredient to Sycamore-dough."
+        }
+      ],
+      "translator_notes": "The quantity markers 't' and '+' are likely shorthand for specific fractional measures in the original hieratic script and cannot be precisely rendered in this translation without additional paleographic context. The word 'or' before 'Onions-from-the-Oasis' suggests this ingredient is an optional substitute for Sycamore-dough rather than an additive. No preparation method is explicitly described in this segment, which may indicate the remedy's preparation was considered self-evident or was described elsewhere in the papyrus. The condition treated is described only as 'the abdomen,' which could encompass a range of gastrointestinal ailments.",
+      "_label": "Another Remedy For The Abdomen"
+    },
+    {
+      "title_inferred": "Remedies to Drive Out Inflammation in the Abdomen",
+      "original_text": "ANOTHER REMEDY TO DRIVE OUT INFLAMMATION IN THE ABDOMEN\nA-piece-of-the-Stem-of-the-Flax-Plant I\nFresh Milk I\nApply to the abdomen of the Sick Person.\nANOTHER\nOil-from-the-Top-of-the-des-jar\nPut on the Patient's abdomen.",
+      "translation": "Another remedy to drive out inflammation in the abdomen: A piece of the stem of the flax plant [quantity: 1 part]; Fresh milk [quantity: 1 part]. Apply to the abdomen of the sick person. Another [remedy]: Oil from the top of the 'des'-jar. Put on the patient's abdomen.",
+      "entities_mentioned": [
+        {
+          "name": "Stem of the Flax Plant",
+          "modern_identification": "Linum usitatissimum (common flax/linseed)",
+          "identification_confidence": "high",
+          "notes": "The stem of the flax plant is used here as a topical application. Flax has a long history of medicinal use including as an anti-inflammatory poultice."
+        },
+        {
+          "name": "Fresh Milk",
+          "modern_identification": "Animal milk, likely cow or goat",
+          "identification_confidence": "medium",
+          "notes": "Fresh milk appears frequently in Papyrus Ebers remedies as a vehicle or soothing agent, often applied topically or ingested."
+        },
+        {
+          "name": "Oil-from-the-Top-of-the-des-jar",
+          "modern_identification": null,
+          "identification_confidence": "low",
+          "notes": "The 'des'-jar is a specific Egyptian vessel type. Oil collected from the top of such a jar may refer to a particular grade or type of oil, possibly sesame or another plant oil that naturally separates and rises. The exact identity is uncertain without further archaeological context."
+        }
+      ],
+      "translator_notes": "The segment includes an editorial interpolation by Bryan (1930) regarding the general safety record of the Papyrus Ebers remedies and their apparent ineffectiveness against intestinal parasites. This commentary is Bryan's own and is not part of the original Egyptian text. The 'I' notations following ingredients likely represent unit quantity markers in the original manuscript. The 'des'-jar is a known Egyptian vessel type, but the precise nature of the oil derived from its top layer remains uncertain.",
+      "_label": "Another Remedy To Drive Out Inflammation In"
+    },
+    {
+      "title_inferred": "Remedy to Cool the Anus",
+      "original_text": "REMEDY TO COOL THE ANUS\n\nOnion-meal aby\nTail-of-a-Mouse ds\nHoney 2\nWater 4",
+      "translation": "Remedy to cool the anus: Onion-meal, 1 aby [measure]; Tail-of-a-Mouse [plant], 1 ds [measure]; Honey, 2 [parts]; Water, 4 [parts].",
+      "entities_mentioned": [
+        {
+          "name": "Onion-meal",
+          "modern_identification": "Allium cepa (onion, ground or powdered)",
+          "identification_confidence": "high",
+          "notes": "Ground or milled onion preparation. Onions were widely used in ancient Egyptian medicine for their cooling and anti-inflammatory properties. Quantity given as 'aby', an Egyptian unit of measure."
+        },
+        {
+          "name": "Tail-of-a-Mouse",
+          "modern_identification": "Possibly Myosurus minimus (mousetail plant) or an unidentified Egyptian plant with a descriptive folk name",
+          "identification_confidence": "low",
+          "notes": "A plant known by the descriptive Egyptian folk name 'Tail-of-a-Mouse'. The exact botanical identity is uncertain. The quantity is given as 'ds', an Egyptian measure. Could refer to a slender-rooted or thin-stemmed plant resembling a mouse's tail."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Apis mellifera honey",
+          "identification_confidence": "high",
+          "notes": "A common ingredient in Egyptian medical preparations, valued for its soothing, antimicrobial, and demulcent properties. Used here in a ratio of 2 parts."
+        },
+        {
+          "name": "Water",
+          "modern_identification": "Water",
+          "identification_confidence": "high",
+          "notes": "Used as the liquid base/vehicle for the remedy, in a ratio of 4 parts."
+        }
+      ],
+      "translator_notes": "The condition treated ('cooling the anus') likely refers to inflammation, irritation, burning, or itching of the anal region, possibly including conditions such as hemorrhoids or proctitis. The measures 'aby' and 'ds' are ancient Egyptian volumetric units whose precise modern equivalents are debated. The numeric values for honey (2) and water (4) appear to be proportional parts rather than absolute quantities. 'Tail-of-a-Mouse' is a folk botanical name that resists confident modern identification.",
+      "_label": "Remedy To Cool The Anus"
+    },
+    {
+      "title_inferred": "Remedy Against Sores in the Anus",
+      "original_text": "ANOTHER REMEDY AGAINST SORES IN THE ANUS\n\nEgg-of-the-Goose I\nGuts-of-the-Goose I\nClap on the anus.",
+      "translation": "Another remedy against sores in the anus:\n\nEgg of the goose: 1\nGuts [intestines] of the goose: 1\nApply directly to the anus.",
+      "entities_mentioned": [
+        {
+          "name": "Egg-of-the-Goose",
+          "modern_identification": "Goose egg (Anser anser domesticus or similar)",
+          "identification_confidence": "high",
+          "notes": "A whole goose egg used as a topical application. May refer to the raw contents of the egg applied as a poultice, potentially for its emollient or binding properties."
+        },
+        {
+          "name": "Guts-of-the-Goose",
+          "modern_identification": "Goose intestines",
+          "identification_confidence": "high",
+          "notes": "The intestinal tissue of a goose, used here as a topical application against anal sores. Possibly applied warm or fresh as a compress. Animal-based medicinal applications were common in ancient Egyptian medicine."
+        }
+      ],
+      "translator_notes": "The remainder of the source text following the remedy is an editorial introduction by translator Cyril P. Bryan to Chapter XI ('Minor Medicine') and is not part of the original papyrus content. It has been excluded from the translation and original_text fields as it is modern commentary rather than ancient source material. The instruction 'Clap on the anus' renders the Egyptian directive to press or apply the mixture directly to the affected area.",
+      "_label": "Another Remedy Against Sores In The Anus"
+    },
+    {
+      "title_inferred": "Remedy to Drive Out Pain in the Head",
+      "original_text": "REMEDY TO DRIVE OUT THE PAIN IN THE HEAD\n\nInner-of-Onions\nFruit-of-the-am-tree\nNatron\nsetseft-seeds\nBone-of-the-Sword-fish, cooked\nRedfish, cooked\nSkull-of-the-Crayfish, cooked\nHoney\nabra-ointment\n\nSmear the Head therewith for four days.",
+      "translation": "Remedy to drive out pain in the head:\n\nTake the inner part of onions, fruit of the am-tree, natron, setseft-seeds, bone of the swordfish (cooked), redfish (cooked), skull of the crayfish (cooked), honey, and abra-ointment. Smear the head with this preparation for four days.",
+      "entities_mentioned": [
+        {
+          "name": "Inner-of-Onions",
+          "modern_identification": "Allium cepa (inner flesh or juice of the onion)",
+          "identification_confidence": "high",
+          "notes": "Onion was widely used in ancient Egyptian medicine; the inner portion likely refers to the fleshy inner layers or juice."
+        },
+        {
+          "name": "Fruit-of-the-am-tree",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The 'am-tree' is an unidentified plant in Egyptian botanical literature; its fruit is listed as a therapeutic ingredient here."
+        },
+        {
+          "name": "Natron",
+          "modern_identification": "Hydrated sodium carbonate (sodium sesquicarbonate, trona mineral)",
+          "identification_confidence": "high",
+          "notes": "Natron was a naturally occurring salt used extensively in Egyptian medicine, ritual, and preservation."
+        },
+        {
+          "name": "setseft-seeds",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The 'setseft' plant is unidentified in modern botanical terms; the seeds are used here as a topical ingredient."
+        },
+        {
+          "name": "Bone-of-the-Sword-fish",
+          "modern_identification": "Xiphias gladius (swordfish) or related billfish species",
+          "identification_confidence": "medium",
+          "notes": "Likely refers to skeletal material from a large billfish; cooked before application, possibly to render it friable for use in an ointment."
+        },
+        {
+          "name": "Redfish",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The specific species of 'redfish' is unclear; it may refer to a Nile species with reddish colouring. Cooked before application."
+        },
+        {
+          "name": "Skull-of-the-Crayfish",
+          "modern_identification": "Carapace or head-shell of a freshwater crayfish or lobster species",
+          "identification_confidence": "low",
+          "notes": "Likely the calcified carapace of a freshwater crustacean; cooked before use, possibly ground into the ointment mixture."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Apis mellifera honey",
+          "identification_confidence": "high",
+          "notes": "Honey was a ubiquitous binding and therapeutic agent in Egyptian medicine, known for its antimicrobial properties."
+        },
+        {
+          "name": "abra-ointment",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The 'abra-ointment' is an unidentified preparation; it may be a named proprietary or traditional Egyptian unguent base whose composition is not specified in this passage."
+        },
+        {
+          "name": "Hide-of-the-Hippopotamus",
+          "modern_identification": "Hippopotamus amphibius skin",
+          "identification_confidence": "high",
+          "notes": "Mentioned in the translator's commentary as part of a separate headache remedy; included here as it appears in the source text fragment."
+        }
+      ],
+      "translator_notes": "The final lines of the source text ('For the stubborn headache there was a wide choice of other messy masses recommended for inunction. For instance, one could smear the aching head with an unguent composed of Hide-of-the-Hippopotamus') appear to be editorial commentary by translator Cyril P. Bryan (1930) rather than direct translation of the papyrus text, and have been excluded from the formal translation but noted here. The dashes ('= S = = = SS SS = SS') in the original appear to be OCR artefacts of a section divider and have been omitted from the cleaned text. The preparation method is entirely topical (inunction); no internal administration is indicated.",
+      "_label": "Remedy To Drive Out The Pain In The Head"
+    },
+    {
+      "title_inferred": "Remedies for the Shins, Squashed Leg, and Diseased Toes",
+      "original_text": "REMEDY FOR THE FRONT OF THE SHINS\n\nThe Inner-of-the-Shadfish; what is found in its Head\nSoak in Honey and apply as a Poultice.\nIT WILL HEAL THE PATIENT FORTHWITH.\n\nANOTHER FOR A SQUASHED LEG\nChopped-up Chaff soaked in Water\nLay thereon as a Poultice in order to heal him at once. It is also to be used for any Limb that thou wishest.\n\nTO HEAL THE DISEASED TOES\nFennel",
+      "translation": "REMEDY FOR THE FRONT OF THE SHINS: Take the inner part of the shad fish [Alosa species], specifically what is found within its head. Soak in honey and apply as a poultice. It will heal the patient forthwith.\n\nANOTHER REMEDY FOR A SQUASHED LEG: Take chopped-up chaff soaked in water. Lay it upon the affected area as a poultice in order to heal him at once. This remedy may also be applied to any limb as desired.\n\nTO HEAL THE DISEASED TOES: [Use] fennel [preparation method not preserved in this fragment].",
+      "entities_mentioned": [
+        {
+          "name": "Inner-of-the-Shadfish (what is found in its Head)",
+          "modern_identification": "Brain or cranial tissue of the shad fish (Alosa species, a herring-like fish found in the Nile)",
+          "identification_confidence": "medium",
+          "notes": "The 'shadfish' is a tentative identification by Bryan; the specific anatomical part — described as the 'inner' of the head — likely refers to brain tissue or cranial marrow. Used as a topical poultice mixed with honey."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Apis mellifera honey",
+          "identification_confidence": "high",
+          "notes": "Used as a soaking medium and binding agent for the poultice. Honey is well-attested in Egyptian medicine for its antiseptic and wound-healing properties."
+        },
+        {
+          "name": "Chopped-up Chaff",
+          "modern_identification": "Grain chaff (husks of wheat or barley, Triticum or Hordeum species)",
+          "identification_confidence": "medium",
+          "notes": "Bryan notes this remedy as a precursor to the bran poultice. The use of moistened grain chaff as a poultice is an early form of emollient compress, likely providing warmth and moisture retention."
+        },
+        {
+          "name": "Fennel",
+          "modern_identification": "Foeniculum vulgare",
+          "identification_confidence": "medium",
+          "notes": "The entry is incomplete as preserved; no preparation method or dosage is recorded in this fragment. Fennel is used for diseased toes, but the remedy is cut off."
+        }
+      ],
+      "translator_notes": "This segment appears to be Bryan's editorial composite, interweaving the ancient remedies with his own interpretive commentary (e.g., 'In the remedy for a squashed leg there are, some will see, the glimmerings of the first Bran Poultice'). These editorial interpolations are Bryan's own prose and are not part of the original papyrus text. The 'Fennel' entry for diseased toes is clearly truncated — the preparation instructions are missing, suggesting the source text either continues beyond this segment or was damaged. The term 'Shadfish' is Bryan's translation choice; the Egyptian original likely refers to a Nile fish species. The phrase 'any Limb that thou wishest' indicates the chaff poultice was understood as a general-purpose topical remedy.",
+      "_label": "Remedy For The Front Of The Shins"
+    },
+    {
+      "title_inferred": "Remedy Against the Bite or Sting of People",
+      "original_text": "REMEDY AGAINST THE BITE OR STING OF PEOPLE",
+      "translation": "Remedy Against the Bite or Sting of People",
+      "entities_mentioned": [
+        {
+          "name": "Bite or Sting of People",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "This appears to be a section header only, with no accompanying remedy text preserved in this segment. The phrase 'bite or sting of people' likely refers to human bites or scratches, possibly including injuries from conflict or assault, rather than insect or animal stings. It may also encompass injuries caused by fingernails or teeth in altercations. No plants, drugs, or preparation methods are described in this segment as transmitted."
+        }
+      ],
+      "translator_notes": "This segment contains only a title heading with no body text. The remedy itself appears to have been lost, omitted in transcription, or belongs to a lacuna in the papyrus. 'People' here may be a translation choice by Bryan for the Egyptian term referring to human adversaries or assailants, distinguishing this entry from remedies for animal or insect bites treated elsewhere in the Ebers Papyrus. Scholars should cross-reference adjacent sections for possible continuation of the remedy.",
+      "_label": "Remedy Against The Bite Or Sting Of People"
+    },
+    {
+      "title_inferred": "Remedy for the Turning-White (Depigmentation/Scarring) of a Burn",
+      "original_text": "ANOTHER REMEDY TO DRIVE AWAY THE TURNING-WHITE OF A BURN\nDurra-Bread-in-Oil-and-Salt",
+      "translation": "Another remedy to drive away the turning-white [depigmentation or scarring] of a burn: Durra-bread [sorghum bread] in oil and salt.",
+      "entities_mentioned": [
+        {
+          "name": "Durra-Bread",
+          "modern_identification": "Bread made from sorghum (Sorghum bicolor) or possibly a related millet-type grain",
+          "identification_confidence": "medium",
+          "notes": "'Durra' is an Arabic-derived term commonly used by early 20th-century translators to denote a grain crop, likely sorghum or a related cereal. In the Egyptian context it may also refer to emmer wheat or another staple grain; the identification with sorghum is plausible but debated."
+        },
+        {
+          "name": "Oil",
+          "modern_identification": "Likely vegetable oil, possibly castor oil (Ricinus communis) or linseed oil; olive oil also possible",
+          "identification_confidence": "low",
+          "notes": "The specific type of oil is not stated in the source text. Egyptian medical papyri frequently employ castor, moringa, or olive oil in topical preparations."
+        },
+        {
+          "name": "Salt",
+          "modern_identification": "Sodium chloride (common salt) or natron",
+          "identification_confidence": "medium",
+          "notes": "Salt was a common ingredient in Egyptian medical preparations, both as a preservative and for its antiseptic properties. 'Salt' here may also refer to natron (a naturally occurring sodium carbonate compound), which was widely used in ancient Egypt."
+        }
+      ],
+      "translator_notes": "The phrase 'turning-white' (Egyptian: likely referencing blanching or depigmentation of the skin following a burn) may describe post-inflammatory hypopigmentation, scarring, or simply the whitened, devitalized skin characteristic of a burn wound. The remedy — bread soaked or mixed in oil and salt — is a topical application intended to reverse or treat this discoloration. Bryan's 1930 translation uses a hyphenated compound noun to render what is likely a single Egyptian technical term for this symptom.",
+      "_label": "Another Remedy To Drive Away The Turning-White"
+    },
+    {
+      "title_inferred": "Another Remedy to Dress a Wound",
+      "original_text": "ANOTHER REMEDY TO DRESS A WOUND\n\nHuman excrement",
+      "translation": "Another remedy to dress a wound: Human excrement.",
+      "entities_mentioned": [
+        {
+          "name": "Human excrement",
+          "modern_identification": "Human feces",
+          "identification_confidence": "high",
+          "notes": "Human excrement was used in ancient Egyptian medicine as a topical application for wounds. This practice is now understood to be counterproductive and potentially dangerous due to the risk of infection. Its use likely stemmed from ritualistic or sympathetic magic principles, or from empirical tradition. The remedy is notably incomplete as recorded — no quantities, preparation method, or application instructions are given in this segment, suggesting either a lacuna in the source text or that such details were considered self-evident."
+        }
+      ],
+      "translator_notes": "This segment is unusually terse, providing only the single ingredient without dosage, preparation method, or application instructions. It is possible that additional text has been lost or that this entry was intended to be read in conjunction with surrounding remedies. The use of excrement in wound dressing is attested elsewhere in the Ebers Papyrus and in other ancient medical traditions.",
+      "_label": "Another Remedy To Dress A Wound"
+    },
+    {
+      "title_inferred": "Remedy Against the Uases Abscess Using Animal Bloods",
+      "original_text": "ANOTHER REMEDY AGAINST THE UASES ABSCESS\n\nBlood-of-a-Dove\nBlood-of-a-Goose\nBlood-of-a-Swallow\nBlood-of-a-Vulture\nAnoint therewith.",
+      "translation": "Another remedy against the Uases abscess: Take the blood of a dove, the blood of a goose, the blood of a swallow, and the blood of a vulture. Anoint [the affected area] therewith.",
+      "entities_mentioned": [
+        {
+          "name": "Blood-of-a-Dove",
+          "modern_identification": "Blood of Columba livia (rock dove) or related species",
+          "identification_confidence": "medium",
+          "notes": "Used as a topical anointing agent; dove blood appears in several Egyptian medicinal preparations as a component believed to carry healing or protective properties."
+        },
+        {
+          "name": "Blood-of-a-Goose",
+          "modern_identification": "Blood of Anser anser or related goose species",
+          "identification_confidence": "medium",
+          "notes": "Geese were common domestic and sacred animals in ancient Egypt; their blood was used in various medicinal and ritual contexts."
+        },
+        {
+          "name": "Blood-of-a-Swallow",
+          "modern_identification": "Blood of Hirundo rustica or related swallow species",
+          "identification_confidence": "medium",
+          "notes": "Swallow blood appears in other Ebers Papyrus remedies; the swallow had symbolic significance in Egyptian religion and medicine."
+        },
+        {
+          "name": "Blood-of-a-Vulture",
+          "modern_identification": "Blood of Gyps fulvus (griffon vulture) or Neophron percnopterus (Egyptian vulture)",
+          "identification_confidence": "low",
+          "notes": "The vulture (likely the Egyptian vulture) was a sacred animal associated with the goddess Nekhbet; its blood was considered medicinally potent in ancient Egyptian practice."
+        },
+        {
+          "name": "Uases abscess",
+          "modern_identification": "Uncertain; possibly a suppurating or gangrenous skin lesion",
+          "identification_confidence": "unknown",
+          "notes": "'Uases' is an Ancient Egyptian medical term that does not map cleanly to a modern diagnosis; Bryan and other translators associate it with a type of abscess or ulcerative condition. The translator's aside notes that 'stinking ulcers' were numerous in the Papyrus."
+        }
+      ],
+      "translator_notes": "The bracketed editorial commentary by Bryan ('Stinking ulcers—their number must have been legion...') is a translator's aside and not part of the original papyrus text; it has been excluded from the translated remedy but is preserved in context. Bryan flags a puzzle: why the subsequent advisory tag appears only on the following remedy rather than this one or others similarly structured. The Uases condition recurs throughout the Papyrus and remains imprecisely identified in modern terms.",
+      "_label": "Another Remedy Against The Uases Abscess"
+    },
+    {
+      "title_inferred": "Remedy to Drive Out a Stinking Ulcer in the Body",
+      "original_text": "ANOTHER REMEDY TO DRIVE OUT A STINKING ULCER IN THE BODY OF A MAN OR WOMAN\nEgg-of-an-Ostrich\nTortoise-shell\nThorns-of-the-am-tree\nWarm and anoint therewith.\nBut DON'T GET TIRED DOING IT!\nTo dry a wound it was plastered with Incense, Onions, and Cow Fat; or if the only animal available was a goat, then some Goat's Fat was beaten up with Onions and Wax and used as a poultice. For those who had any objection to Cows or Goats there remained the Hippopotamus and the Wasp, not to mention the Hog:\nANOTHER TO HEAL",
+      "translation": "Another remedy to drive out a stinking [foul-smelling, suppurating] ulcer in the body of a man or woman: Take an egg of an ostrich, tortoise-shell, and thorns of the am-tree. Warm [the mixture] and anoint [the affected area] therewith. But do not grow weary of applying it! To dry a wound, it was plastered with incense, onions, and cow fat; or if the only animal available was a goat, then goat's fat was beaten together with onions and wax and applied as a poultice. For those who had any objection to cows or goats, there remained hippopotamus [fat] and the wasp, not to mention the hog. Another remedy to heal [follows].",
+      "entities_mentioned": [
+        {
+          "name": "Egg-of-an-Ostrich",
+          "modern_identification": "Ostrich egg (Struthio camelus)",
+          "identification_confidence": "high",
+          "notes": "Likely used in powdered or dried form as an ingredient in the topical remedy."
+        },
+        {
+          "name": "Tortoise-shell",
+          "modern_identification": "Shell of a tortoise or freshwater turtle, species unspecified",
+          "identification_confidence": "medium",
+          "notes": "Possibly ground or burned to ash for application; tortoise-shell ash was used in various ancient remedies."
+        },
+        {
+          "name": "Thorns-of-the-am-tree",
+          "modern_identification": "Possibly Acacia nilotica or another thorned Egyptian tree; 'am' tree unidentified with certainty",
+          "identification_confidence": "low",
+          "notes": "The 'am' tree is an unresolved Egyptian botanical term. Acacia species are common candidates for thorned trees in Egyptian medical texts."
+        },
+        {
+          "name": "Incense",
+          "modern_identification": "Likely frankincense (Boswellia sacra) or a resinous gum",
+          "identification_confidence": "medium",
+          "notes": "Used here as part of a wound-drying plaster alongside onions and cow fat."
+        },
+        {
+          "name": "Onions",
+          "modern_identification": "Allium cepa",
+          "identification_confidence": "high",
+          "notes": "Onions appear frequently in Egyptian medical texts; known for antimicrobial properties."
+        },
+        {
+          "name": "Cow Fat",
+          "modern_identification": "Bovine tallow (Bos taurus)",
+          "identification_confidence": "high",
+          "notes": "Used as a base for plasters and poultices throughout the Papyrus Ebers."
+        },
+        {
+          "name": "Goat's Fat",
+          "modern_identification": "Caprine fat (Capra hircus)",
+          "identification_confidence": "high",
+          "notes": "Used as an alternative to cow fat when unavailable; beaten with onions and wax to form a poultice."
+        },
+        {
+          "name": "Wax",
+          "modern_identification": "Beeswax (Apis mellifera)",
+          "identification_confidence": "high",
+          "notes": "Used as a binding agent in the poultice formulation."
+        },
+        {
+          "name": "Hippopotamus",
+          "modern_identification": "Hippopotamus amphibius — fat/grease derived from the animal",
+          "identification_confidence": "high",
+          "notes": "Hippopotamus fat was used medicinally in ancient Egypt; likely the relevant preparation here, though the text is elliptical."
+        },
+        {
+          "name": "Wasp",
+          "modern_identification": "Vespula or Polistes species — possibly wasp larvae, nest material, or the insect itself",
+          "identification_confidence": "low",
+          "notes": "The exact use of wasp in this context is unclear; may refer to a preparation from the insect or its nest."
+        },
+        {
+          "name": "Hog",
+          "modern_identification": "Domestic pig (Sus scrofa domesticus) — likely pig fat/lard",
+          "identification_confidence": "high",
+          "notes": "Pig fat appears elsewhere in Egyptian medical texts as a topical base."
+        }
+      ],
+      "translator_notes": "The phrase 'But DON'T GET TIRED DOING IT!' is a striking directive preserved in the source text, suggesting repeated daily application was required and that patient compliance was a recognized concern. The segment as printed in Bryan (1930) includes editorial commentary from the translator woven into the text describing additional wound-drying remedies and alternative animal-fat sources; these passages are translator interpolations rather than direct papyrus translation and have been treated accordingly. The 'am-tree' remains botanically unresolved in Egyptological literature. The transition to 'ANOTHER TO HEAL' at the end signals the beginning of the next remedy entry.",
+      "_label": "Another Remedy To Drive Out A Stinking Ulcer In"
+    },
+    {
+      "title_inferred": "Remedy to Treat Wheals (Welts) from Blows",
+      "original_text": "REMEDY TO DRIVE AWAY THE WHEALS FROM BLOWS\n\nHoney\nCow's Brain\nMason's Clay\nLinseed-water\nDate-juice",
+      "translation": "A remedy to dispel wheals [raised welts or bruises] caused by blows: Honey; Cow's brain; Mason's clay [mud used in construction]; Linseed-water [an infusion or decoction of linseed]; Date-juice.",
+      "entities_mentioned": [
+        {
+          "name": "Honey",
+          "modern_identification": "Honey (Apis mellifera product)",
+          "identification_confidence": "high",
+          "notes": "Widely used in ancient Egyptian medicine as an antiseptic, anti-inflammatory, and soothing agent; well-documented in the Ebers Papyrus."
+        },
+        {
+          "name": "Cow's Brain",
+          "modern_identification": "Bovine brain tissue",
+          "identification_confidence": "high",
+          "notes": "Animal-derived ingredient used topically, likely for its fat content as an emollient or base for the remedy."
+        },
+        {
+          "name": "Mason's Clay",
+          "modern_identification": "Nile mud or construction clay (hydrated aluminum silicates)",
+          "identification_confidence": "medium",
+          "notes": "Referred to in Egyptian texts as the clay used by builders; applied topically, likely for its cooling and drawing properties on inflamed tissue."
+        },
+        {
+          "name": "Linseed-water",
+          "modern_identification": "Infusion of Linum usitatissimum (flax/linseed)",
+          "identification_confidence": "high",
+          "notes": "Linseed produces a mucilaginous liquid when steeped in water; used as a soothing, anti-inflammatory carrier in the preparation."
+        },
+        {
+          "name": "Date-juice",
+          "modern_identification": "Juice or extract from Phoenix dactylifera (date palm)",
+          "identification_confidence": "high",
+          "notes": "A common ingredient in ancient Egyptian remedies; may serve as a sweetener, vehicle, or mild astringent."
+        }
+      ],
+      "translator_notes": "The remedy is listed as ingredients only, with no explicit preparation method described in this segment. It is likely intended as a topical poultice or compress applied directly to the affected skin. 'Wheals' refers to raised, reddened welts resulting from physical trauma such as blows or lashes. The combination of honey, brain fat, and clay suggests a soothing, emollient poultice aimed at reducing inflammation and swelling.",
+      "_label": "Remedy To Drive Away The Wheals From Blows"
+    },
+    {
+      "title_inferred": "Remedy to Regulate the Urine",
+      "original_text": "REMEDY TO REGULATE THE URINE\n\nA measuring-glass filled with Water from the Bird-pond\nElderberry\nFibres of the asit-plant\nFresh Milk\nBeer-Swill\nFlowers of the Cucumber\nGreen Dates",
+      "translation": "Remedy to regulate the urine: A measuring-glass filled with water from the bird-pond; elderberry; fibres of the asit-plant; fresh milk; beer-swill [dregs or rinsings of beer]; flowers of the cucumber; green dates.",
+      "entities_mentioned": [
+        {
+          "name": "Water from the Bird-pond",
+          "modern_identification": "Fresh pond water, possibly from a domesticated waterfowl pool",
+          "identification_confidence": "low",
+          "notes": "Likely refers to water collected from a pool or pond where birds were kept; ritual or practical purity may have been implied."
+        },
+        {
+          "name": "Elderberry",
+          "modern_identification": "Sambucus nigra (European elder) or a related Sambucus species",
+          "identification_confidence": "medium",
+          "notes": "Elderberry has historically been used as a diuretic, which aligns with the urinary regulation purpose of this remedy."
+        },
+        {
+          "name": "Fibres of the asit-plant",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The 'asit' plant is an unidentified Egyptian plant term; 'fibres' suggests the stringy or woody parts of the plant were used rather than leaves or seeds."
+        },
+        {
+          "name": "Fresh Milk",
+          "modern_identification": "Milk (bovine or other domesticated animal)",
+          "identification_confidence": "high",
+          "notes": "A common ingredient in Egyptian medicinal preparations, likely serving as a base or soothing agent."
+        },
+        {
+          "name": "Beer-Swill",
+          "modern_identification": "Residual liquid or dregs from beer brewing (ancient Egyptian beer, likely emmer wheat-based)",
+          "identification_confidence": "medium",
+          "notes": "Beer and its by-products were extremely common in ancient Egyptian medicine. 'Beer-swill' likely refers to the rinsings or lees remaining after fermentation."
+        },
+        {
+          "name": "Flowers of the Cucumber",
+          "modern_identification": "Cucumis sativus (cucumber) flowers, or possibly Cucumis melo (melon)",
+          "identification_confidence": "medium",
+          "notes": "Cucumber and related cucurbits were known diuretics in ancient medicine; use of the flowers rather than the fruit is notable."
+        },
+        {
+          "name": "Green Dates",
+          "modern_identification": "Unripe fruit of Phoenix dactylifera (date palm)",
+          "identification_confidence": "high",
+          "notes": "Green (unripe) dates were distinguished from ripe dates in Egyptian pharmacopoeia and may have had differing medicinal properties."
+        }
+      ],
+      "translator_notes": "The trailing '= = = = SS SS' in the source text appears to be OCR artifacts or transcription marks indicating a section break or scribal notation in the original papyrus, and has been omitted from the cleaned translation. The remedy consists entirely of ingredients with no explicit preparation method stated, suggesting the ingredients may have been mixed and consumed as a drink, which is a common format in the Ebers Papyrus for liquid remedies.",
+      "_label": "Remedy To Regulate The Urine"
+    },
+    {
+      "title_inferred": "Remedy to Force Out the Urine (Diuretic)",
+      "original_text": "REMEDY TO FORCE OUT THE URINE\n\nCrocus-from-the-Hills\nCrocus-from-the-Delta\nabu-plant-from-Upper-Egypt\nabu-plant-from-Lower-Egypt\nBerry-of-the-uan-tree\nFresh Gruel\nLinseed\nuam-seeds\nduat-plant\nWater\n\nKeep moist, strain, and take for four days.\n\nUrinary ailments in children were specially prescribed for. To regulate micturition in a child a [text continues]",
+      "translation": "A remedy to promote urination: Take Crocus-from-the-Hills, Crocus-from-the-Delta, abu-plant from Upper Egypt, abu-plant from Lower Egypt, berry of the uan-tree, fresh gruel, linseed, uam-seeds, and duat-plant with water. Keep moist, strain, and take for four days. Urinary ailments in children were specially prescribed for. To regulate urination in a child [text continues].",
+      "entities_mentioned": [
+        {
+          "name": "Crocus-from-the-Hills",
+          "modern_identification": "Possibly saffron crocus (Crocus sativus) or a related Crocus species from highland regions",
+          "identification_confidence": "low",
+          "notes": "The geographic qualifier 'from-the-Hills' may distinguish a wild upland variety from a cultivated or delta-grown variety."
+        },
+        {
+          "name": "Crocus-from-the-Delta",
+          "modern_identification": "Possibly saffron crocus (Crocus sativus) or a related Crocus species cultivated in the Nile Delta",
+          "identification_confidence": "low",
+          "notes": "Distinguished from the hills variety by its origin; geographic distinction may imply different properties or availability."
+        },
+        {
+          "name": "abu-plant-from-Upper-Egypt",
+          "modern_identification": "Unknown; possibly a sedge or reed plant native to Upper Egypt",
+          "identification_confidence": "unknown",
+          "notes": "The 'abu' plant appears in multiple Ebers remedies; geographic variants (Upper vs Lower Egypt) suggest regional distinctions in type or potency."
+        },
+        {
+          "name": "abu-plant-from-Lower-Egypt",
+          "modern_identification": "Unknown; possibly a sedge or reed plant native to Lower Egypt",
+          "identification_confidence": "unknown",
+          "notes": "Paired with the Upper Egypt variant; geographic distinction may indicate a morphologically different plant or simply a trade provenance."
+        },
+        {
+          "name": "Berry-of-the-uan-tree",
+          "modern_identification": "Unknown; possibly a berry-bearing native Egyptian tree",
+          "identification_confidence": "unknown",
+          "notes": "The 'uan-tree' has not been definitively identified in modern botanical terms."
+        },
+        {
+          "name": "Fresh Gruel",
+          "modern_identification": "Porridge or thin cereal mash, likely made from emmer wheat or barley",
+          "identification_confidence": "high",
+          "notes": "A common vehicle or base ingredient in Egyptian medical recipes; provides bulk and possibly soothing properties."
+        },
+        {
+          "name": "Linseed",
+          "modern_identification": "Linum usitatissimum (flaxseed)",
+          "identification_confidence": "high",
+          "notes": "Flax was widely cultivated in ancient Egypt; linseed is well attested as a demulcent and diuretic agent."
+        },
+        {
+          "name": "uam-seeds",
+          "modern_identification": "Unknown; possibly a wild plant seed used as a diuretic",
+          "identification_confidence": "unknown",
+          "notes": "The 'uam' plant or its seeds appear occasionally in Ebers papyrus remedies but remain unidentified botanically."
+        },
+        {
+          "name": "duat-plant",
+          "modern_identification": "Unknown Egyptian plant",
+          "identification_confidence": "unknown",
+          "notes": "The 'duat-plant' is referenced in several Ebers remedies; no consensus modern identification has been established."
+        },
+        {
+          "name": "Water",
+          "modern_identification": "Water (solvent/vehicle)",
+          "identification_confidence": "high",
+          "notes": "Standard solvent used to prepare and administer the remedy."
+        }
+      ],
+      "translator_notes": "The middle portion of the source text ('re Bee / Be Ss Cols GH BH SH ool le') is clearly corrupted OCR output and has been treated as illegible/garbled. Based on context and the structure of comparable Ebers remedies, the intended ingredients likely included 'duat-plant' and 'Water,' which appear immediately after. The garbled line has been silently removed from the cleaned original text with those legible elements preserved. The passage notes that a continuation exists regarding urinary remedies for children ('To regulate micturition in a child'), but the source text is cut off; this has been flagged in the translation.",
+      "_label": "Remedy To Force Out The Urine"
+    },
+    {
+      "title_inferred": "Remedy for a Child for Clearing Out the Accumulation of Urine in the Body",
+      "original_text": "REMEDY FOR A CHILD FOR CLEARING OUT THE ACCUMULATION OF URINE IN HIS BODY\nAn-old-Book-cooked-in-Oil\nSmear on his Body.\nAn old Book means, of course, a discarded papyrus and in this case the virtue of the papyrus would be enhanced by the writing-fluid, both of which 'drugs' —paper and ink—are as much a part of the pharmacopoea of the day as Red-lead or Honey, or a host of others, and are frequently prescribed for many ailments.\nAnother remedy proposed for a child who is having trouble with his urine must be noticed here. Xent-grains are made into a pill, which is given to the child in his food if he is old enough to manage it. But, if it is a suckling that is to be treated, the wet-nurse is",
+      "translation": "REMEDY FOR A CHILD FOR CLEARING OUT THE ACCUMULATION OF URINE IN HIS BODY\nTake an old book [discarded papyrus scroll] cooked in oil and smear it on the child's body.\n[Translator's note: 'An old book' refers to a discarded papyrus scroll; its medicinal virtue was thought to be enhanced by the writing fluid upon it. Both the papyrus material and the ink were considered medicinal substances, as commonly used in the pharmacopoeia of the period as red lead, honey, or many other ingredients, and were frequently prescribed for various ailments.]\nAnother remedy for a child suffering from difficulty with urination: Xent-grains are formed into a pill and given to the child in his food, provided he is old enough to take it in this manner. However, if the patient is a suckling infant, the wet-nurse is [text continues].",
+      "entities_mentioned": [
+        {
+          "name": "An old Book (discarded papyrus)",
+          "modern_identification": "Papyrus scroll, used as a writing material in ancient Egypt",
+          "identification_confidence": "high",
+          "notes": "A discarded papyrus scroll, cooked in oil and applied topically. Both the papyrus fiber and the carbon- or mineral-based ink were considered pharmacologically active substances in ancient Egyptian medicine."
+        },
+        {
+          "name": "Oil",
+          "modern_identification": "Vegetable or animal oil, likely castor or olive oil",
+          "identification_confidence": "medium",
+          "notes": "Used as the cooking and carrier medium for the papyrus remedy. The specific oil is not identified in this passage."
+        },
+        {
+          "name": "Red-lead",
+          "modern_identification": "Lead tetroxide (Pb3O4)",
+          "identification_confidence": "high",
+          "notes": "Mentioned as a comparative example of a common pharmacopoeia ingredient of the period; not a component of this specific remedy."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Apis mellifera honey",
+          "identification_confidence": "high",
+          "notes": "Cited as a commonly prescribed ingredient in ancient Egyptian medicine for comparison; not a direct component of this remedy."
+        },
+        {
+          "name": "Xent-grains",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "An unidentified grain or seed used in pill form to treat urinary difficulties in children. The Egyptian term 'xent' has not been conclusively matched to a modern botanical species."
+        }
+      ],
+      "translator_notes": "The segment is incomplete — the description of the wet-nurse remedy is cut off mid-sentence. The translator (Bryan, 1930) provides an editorial interpolation clarifying the nature of 'an old book' as a discarded papyrus scroll and contextualizing the use of papyrus and ink as materia medica. The condition treated appears to be urinary retention or suppression of urine in infants. The two remedies described (papyrus-in-oil applied topically, and xent-grain pills administered orally or via wet-nurse) represent distinct therapeutic approaches in the same passage.",
+      "_label": "Remedy For A Child For Clearing Out The Accumu-"
+    },
+    {
+      "title_inferred": "Remedy to Induce Labour and Delivery in a Woman",
+      "original_text": "REMEDY TO CAUSE A WOMAN TO BE DELIVERED\n\nPeppermint",
+      "translation": "Remedy to cause a woman to be delivered: Peppermint.",
+      "entities_mentioned": [
+        {
+          "name": "Peppermint",
+          "modern_identification": "Mentha × piperita or possibly Mentha longifolia (Egyptian mint; true peppermint is a modern hybrid, but various Mentha species were known in ancient Egypt)",
+          "identification_confidence": "medium",
+          "notes": "The term 'peppermint' in Bryan's 1930 translation likely reflects a loose rendering of an Egyptian mint species. True peppermint (Mentha × piperita) is a post-ancient hybrid; the intended plant is more probably Mentha longifolia or another wild mint variety native to the Nile region. Mint preparations have historically been associated with stimulating uterine contractions, which would align with its use here as an obstetric aid to facilitate delivery."
+        }
+      ],
+      "translator_notes": "This segment is unusually brief, listing only a single ingredient with no preparation method, dosage, or application instructions preserved. It is possible the original papyrus contained additional text that was lost, damaged, or omitted from Bryan's 1930 edition. The remedy falls within the category of obstetric treatments in the Ebers Papyrus, aimed at facilitating or accelerating childbirth.",
+      "_label": "Remedy To Cause A Woman To Be Delivered"
+    },
+    {
+      "title_inferred": "Remedy to Reposition a Prolapsed Uterus",
+      "original_text": "REMEDY TO ALLOW THE WOMB OF A WOMAN TO SLIP INTO ITS PLACE\nThe-Film-of-Dampness-which-is-found-on-the-Wood-of-Ships (mould)\nRub in Yeast-of-Fermented-Beer and let her drink it.\nANOTHER\nPut an Ibis-of-Wax on the coals and allow the fumes thereof to penetrate into her sex-organs.\nANOTHER\nDried Human excrement\nPut in Incense; the woman bends herself over the same and lets the fumes thereof penetrate into her sex-organs.\nANOTHER\nOil-of-the-Earth (? Petroleum) with peddu",
+      "translation": "REMEDY TO ALLOW THE WOMB OF A WOMAN TO SLIP INTO ITS PLACE\n\nFirst remedy: Take the film of dampness [mould] found on the wood of ships. Rub it together with yeast of fermented beer and let the woman drink it.\n\nAnother remedy: Place a wax figure of an ibis upon hot coals and allow the fumes thereof to penetrate into her sexual organs.\n\nAnother remedy: Take dried human excrement and place it in incense [i.e., burn it with incense]; the woman bends over the same and allows the fumes thereof to penetrate into her sexual organs.\n\nAnother remedy: Oil-of-the-Earth [possibly petroleum] together with peddu [unidentified substance].",
+      "entities_mentioned": [
+        {
+          "name": "The-Film-of-Dampness-which-is-found-on-the-Wood-of-Ships",
+          "modern_identification": "Mould or fungal growth (as noted parenthetically in source); likely a type of mildew or algae from ship timber",
+          "identification_confidence": "medium",
+          "notes": "Translator's parenthetical gloss identifies this as mould. Possibly used for its biological active compounds in an empirical folk medicine context."
+        },
+        {
+          "name": "Yeast-of-Fermented-Beer",
+          "modern_identification": "Brewer's yeast (Saccharomyces cerevisiae)",
+          "identification_confidence": "high",
+          "notes": "A common ingredient in Egyptian medicinal preparations; likely served as a vehicle or active agent in this oral remedy."
+        },
+        {
+          "name": "Ibis-of-Wax",
+          "modern_identification": "A votive or ritual wax figurine in the shape of an ibis, sacred to Thoth",
+          "identification_confidence": "high",
+          "notes": "The use of a wax ibis burned on coals suggests a fumigation ritual with possible religious or magical significance. The ibis was sacred to Thoth, associated with healing and wisdom."
+        },
+        {
+          "name": "Dried Human excrement",
+          "modern_identification": "Human feces (dried and burned as fumigant)",
+          "identification_confidence": "high",
+          "notes": "Used here as a fumigation agent burned with incense. Excrement-based remedies appear elsewhere in the Ebers Papyrus; burning may have been intended to create stimulating or contracting vapors."
+        },
+        {
+          "name": "Incense",
+          "modern_identification": "Likely frankincense (Boswellia sacra) or a generic aromatic resin",
+          "identification_confidence": "medium",
+          "notes": "Used as the burning medium or aromatic carrier for the fumigation treatment."
+        },
+        {
+          "name": "Oil-of-the-Earth",
+          "modern_identification": "Possibly petroleum or bitumen (crude oil seep)",
+          "identification_confidence": "low",
+          "notes": "Translator's parenthetical suggests petroleum. Bitumen or natural oil seeps were known in the ancient Near East and Egypt and used medicinally."
+        },
+        {
+          "name": "peddu",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "An unidentified Egyptian term; left untranslated by the 1930 translator. May be a plant, mineral, or preparation whose identification remains uncertain."
+        }
+      ],
+      "translator_notes": "This segment describes treatments for what is likely uterine prolapse — the 'womb slipping' and requiring repositioning. The remedies combine oral ingestion (first remedy), ritual fumigation (wax ibis, excrement with incense), and topical or fumigant application. The fumigation technique — having the woman squat or bend over burning materials — is a recurring gynecological treatment method in the Ebers Papyrus. The final remedy is incomplete as presented in the source text, ending with 'peddu' without specifying application method, suggesting a possible lacuna or truncation in the original or the 1930 transcription.",
+      "_label": "Remedy To Allow The Womb Of A Woman To Slip"
+    },
+    {
+      "title_inferred": "Remedy for the Thigh",
+      "original_text": "REMEDY FOR THE THIGH\n\nOnions\nDried Beans\nRed Natron\nSea-salt\nSour Milk",
+      "translation": "A remedy for [ailment of] the thigh: Onions, dried beans, red natron [a naturally occurring sodium carbonate salt], sea-salt, and sour milk.",
+      "entities_mentioned": [
+        {
+          "name": "Onions",
+          "modern_identification": "Allium cepa",
+          "identification_confidence": "high",
+          "notes": "Commonly used in Egyptian medicine as an anti-inflammatory and antimicrobial agent."
+        },
+        {
+          "name": "Dried Beans",
+          "modern_identification": "Vicia faba (broad bean) or related legume",
+          "identification_confidence": "medium",
+          "notes": "Likely refers to dried broad beans or a similar legume commonly cultivated in ancient Egypt; specific species uncertain."
+        },
+        {
+          "name": "Red Natron",
+          "modern_identification": "Sodium carbonate/bicarbonate (natron) with iron oxide impurities giving red coloration",
+          "identification_confidence": "medium",
+          "notes": "Natron is a naturally occurring salt compound; the 'red' variety may indicate a specific mineral source with iron-rich coloring. Used as a cleansing and preservative agent."
+        },
+        {
+          "name": "Sea-salt",
+          "modern_identification": "Sodium chloride (NaCl)",
+          "identification_confidence": "high",
+          "notes": "Used medicinally as an antiseptic and preservative in ancient Egyptian remedies."
+        },
+        {
+          "name": "Sour Milk",
+          "modern_identification": "Fermented or curdled cow's or goat's milk",
+          "identification_confidence": "high",
+          "notes": "Likely used as a vehicle or binding agent for the remedy, and may have had mild antimicrobial properties due to lactic acid content."
+        }
+      ],
+      "translator_notes": "The segment lists ingredients only, with no explicit preparation method or dosage instructions preserved. It is unclear whether the remedy was intended for internal consumption or external application (e.g., a poultice). The specific thigh condition being treated is not named. 'Red Natron' is distinguished from plain natron in Egyptian texts and may refer to a mineralogically distinct variety.",
+      "_label": "Remedy For The Thigh"
+    },
+    {
+      "title_inferred": "Remedy to Free the Flesh from Disease",
+      "original_text": "REMEDY TO FREE THE FLESH FROM DISEASE\n\nAss's Milk\nResin-of-Acanthus\nIndigo\nduat-plant\nTurpentine-nuts\nHoney",
+      "translation": "A remedy to free the flesh from disease [i.e., to cleanse or heal diseased tissue]:\n\n- Ass's milk\n- Resin of acanthus\n- Indigo\n- Duat-plant\n- Turpentine-nuts\n- Honey",
+      "entities_mentioned": [
+        {
+          "name": "Ass's Milk",
+          "modern_identification": "Donkey milk (Equus asinus)",
+          "identification_confidence": "high",
+          "notes": "Commonly used in ancient Egyptian medicine as a soothing, emollient, and nutritive base for remedies. Known for its relatively high whey protein and antimicrobial properties."
+        },
+        {
+          "name": "Resin-of-Acanthus",
+          "modern_identification": "Resin from Acanthus species, possibly Acanthus spinosus or related thorny shrub",
+          "identification_confidence": "medium",
+          "notes": "Acanthus was known in the ancient Mediterranean world. The resin may have had antiseptic or anti-inflammatory properties. Exact species is uncertain in Egyptian context."
+        },
+        {
+          "name": "Indigo",
+          "modern_identification": "Indigofera tinctoria or related Indigofera species",
+          "identification_confidence": "medium",
+          "notes": "Used in ancient Egypt both as a dye and medicinally. May have been applied for its purported antimicrobial or anti-inflammatory properties on skin conditions."
+        },
+        {
+          "name": "duat-plant",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The duat-plant is an unidentified Egyptian botanical term. 'Duat' also refers to the Egyptian underworld, but in medical papyri it likely denotes a specific plant whose modern identity has not been conclusively established."
+        },
+        {
+          "name": "Turpentine-nuts",
+          "modern_identification": "Pistacia terebinthus (terebinth) nuts or resinous fruits",
+          "identification_confidence": "medium",
+          "notes": "Likely refers to the fruits or seeds of the terebinth tree, a source of turpentine resin. Known for antiseptic and anti-inflammatory properties; used widely in ancient Near Eastern and Mediterranean medicine."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Honey (Apis mellifera)",
+          "identification_confidence": "high",
+          "notes": "One of the most frequently cited ingredients in the Ebers Papyrus. Used as a binder, preservative, and active antimicrobial agent in wound and skin treatments."
+        }
+      ],
+      "translator_notes": "No explicit preparation method or dosage is given in this segment; the text lists ingredients only. This is consistent with other terse remedy listings in the Ebers Papyrus where mixing and application instructions are sometimes implied or recorded elsewhere. The condition treated ('disease of the flesh') likely refers to skin lesions, infected wounds, or inflammatory conditions of the skin or superficial tissues.",
+      "_label": "Remedy To Free The Flesh From Disease"
+    },
+    {
+      "title_inferred": "Another Remedy for the Filming-Over (Leucoma) Rising in the Eye",
+      "original_text": "ANOTHER REMEDY FOR THE FILMING-OVER WHICH RISES IN THE EYE\nDried-excrement-from-the-Body-of-a-Child 1\nHoney 1\nPut in Fresh Milk and then apply to the Eyes.",
+      "translation": "Another remedy for the filming-over [leucoma] which rises in the eye: Dried excrement from the body of a child, 1 part; Honey, 1 part. Place in fresh milk and apply to the eyes.\n\n[Translator's commentary:] Leucoma was a complaint that set these ancient oculists on their mettle. They tried to dispel it with a lotion of cream and milk, or another of collyrium [eye-salve], ink, and water. These failing, they ground ebony wood and collyrium to powder and applied it. Next they dressed the eyes with a poultice of powdered granite. Then, growing desperate, they tried a paste made from collyrium and the bile of the abdu-fish. Finally they resorted to magic, combined with the brain of a tortoise mixed with honey.",
+      "entities_mentioned": [
+        {
+          "name": "Dried-excrement-from-the-Body-of-a-Child",
+          "modern_identification": "Human infant feces (dried)",
+          "identification_confidence": "high",
+          "notes": "Used as a topical agent in ancient Egyptian ophthalmological remedies; no known therapeutic value; may have held ritual or sympathetic-magic significance."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Honey (Apis mellifera product)",
+          "identification_confidence": "high",
+          "notes": "Widely used in ancient Egyptian medicine as a carrier and antimicrobial agent; has documented wound-healing and antibacterial properties."
+        },
+        {
+          "name": "Fresh Milk",
+          "modern_identification": "Cow's or goat's milk (fresh)",
+          "identification_confidence": "medium",
+          "notes": "Used as a liquid vehicle for the remedy; eye-wash applications of milk appear frequently in Ebers Papyrus ophthalmic prescriptions."
+        },
+        {
+          "name": "Collyrium",
+          "modern_identification": "Kohl / galena-based eye-salve (lead sulfide)",
+          "identification_confidence": "medium",
+          "notes": "A common ancient Egyptian eye preparation, often containing ground galena or malachite; used both cosmetically and medicinally for eye complaints."
+        },
+        {
+          "name": "Ebonywood",
+          "modern_identification": "Ebony (Diospyros spp.)",
+          "identification_confidence": "medium",
+          "notes": "Ground to powder and combined with collyrium as a topical ophthalmic application for leucoma."
+        },
+        {
+          "name": "Powdered Granite",
+          "modern_identification": "Ground granite (mineral abrasive)",
+          "identification_confidence": "high",
+          "notes": "Applied as a poultice to the eyes; likely intended as an abrasive to physically reduce the opaque corneal growth; potentially harmful."
+        },
+        {
+          "name": "Bile-of-the-abdu-fish",
+          "modern_identification": "Bile from an unidentified Nile fish species (possibly Tilapia or Lates niloticus)",
+          "identification_confidence": "low",
+          "notes": "The 'abdu' fish is a Nile species mentioned in the Ebers Papyrus; exact species identification remains uncertain. Bile mixed with collyrium used as a paste for leucoma."
+        },
+        {
+          "name": "Brain-of-a-Tortoise",
+          "modern_identification": "Tortoise brain tissue",
+          "identification_confidence": "high",
+          "notes": "Mixed with honey and applied in conjunction with magic spells as a last resort treatment for leucoma; reflects the integration of empirical and ritual medicine."
+        }
+      ],
+      "translator_notes": "This segment combines the actual remedy prescription (dried child excrement, honey, fresh milk) with an extensive editorial commentary by the 1930 translator Cyril P. Bryan, summarizing the range of treatments Egyptian physicians attempted for leucoma (corneal opacity). The translator's commentary is not part of the original papyrus text and has been clearly separated in the translation. The segment ends mid-title ('ANOTHER TO DRIVE OUT THE WHITE GROWTH IN THE'), indicating the text continues in the next segment. Bryan's commentary reflects a somewhat condescending early 20th-century attitude toward ancient medicine, though it usefully surveys the progression of treatments recorded in the papyrus.",
+      "_label": "Another Remedy For The Filming-Over Which"
+    },
+    {
+      "title_inferred": "Remedy for the Eye When Something Evil Has Happened to It; Remedies for Squinting Eyes",
+      "original_text": "REMEDY FOR THE EYE WHEN SOMETHING EVIL HAS HAPPENED TO IT\nA Human Brain\nDivide it in halves.\nTo one half add Honey and anoint the Eye therewith in the Evening.\nDry the other half, crush, powder, and anoint the Eye therewith in the Morning.\nTo correct Squint, Collyrium, Red-lead, and Soda were beaten into a paste and applied to the wandering eye. When the futility of this became apparent, a poultice of Onions, Granite, and Resin, was tried. This in turn failing to straighten the squinting optic, the animal world was combed for a remedy:\nTO DRIVE AWAY SQUINTING IN THE EYES\nTortoise-brain",
+      "translation": "REMEDY FOR THE EYE WHEN SOMETHING EVIL HAS HAPPENED TO IT\nTake a human brain and divide it into two halves. To one half add honey and anoint the eye with it in the evening. Dry the other half, crush it into a powder, and anoint the eye with it in the morning.\n\nTo correct a squint [strabismus], collyrium [eye-salve], red-lead [minium], and soda [natron] were beaten into a paste and applied to the wandering eye. When the futility of this treatment became apparent, a poultice of onions, granite [ground stone], and resin was tried. This in turn failing to straighten the squinting eye, the animal world was searched for a remedy:\n\nTO DRIVE AWAY SQUINTING IN THE EYES\nTortoise-brain [applied topically; preparation not yet specified in this segment]",
+      "entities_mentioned": [
+        {
+          "name": "Human Brain",
+          "modern_identification": "Human cerebral tissue",
+          "identification_confidence": "high",
+          "notes": "Used both as a fresh paste mixed with honey (evening application) and dried, crushed, and powdered (morning application) as a topical eye treatment."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Apis mellifera honey",
+          "identification_confidence": "high",
+          "notes": "Mixed with one half of the human brain for an evening eye ointment; honey was widely used in ancient Egyptian medicine for its antimicrobial properties."
+        },
+        {
+          "name": "Collyrium",
+          "modern_identification": "Eye-salve / kohl (likely galena-based)",
+          "identification_confidence": "medium",
+          "notes": "A general term for ancient eye cosmetic or medicinal preparations; often based on antimony or galena."
+        },
+        {
+          "name": "Red-lead",
+          "modern_identification": "Minium (lead tetroxide, Pb3O4)",
+          "identification_confidence": "high",
+          "notes": "Used as a pigment and in medicinal pastes in antiquity; toxic by modern standards."
+        },
+        {
+          "name": "Soda",
+          "modern_identification": "Natron (sodium carbonate/bicarbonate mixture)",
+          "identification_confidence": "high",
+          "notes": "A naturally occurring salt widely used in ancient Egypt for purification and medicinal purposes."
+        },
+        {
+          "name": "Onions",
+          "modern_identification": "Allium cepa",
+          "identification_confidence": "high",
+          "notes": "Used as part of a poultice for squint correction; onions appear frequently in the Ebers Papyrus as a medicinal ingredient."
+        },
+        {
+          "name": "Granite",
+          "modern_identification": "Ground granite stone (silicate rock powder)",
+          "identification_confidence": "medium",
+          "notes": "Likely used as an abrasive or binding agent in the poultice; modern identification as granite is uncertain — may refer to another ground mineral."
+        },
+        {
+          "name": "Resin",
+          "modern_identification": "Plant resin (species unspecified; possibly conifer or terebinth resin)",
+          "identification_confidence": "medium",
+          "notes": "Resins were commonly used in ancient Egyptian medicine as adhesives and antiseptics in poultices."
+        },
+        {
+          "name": "Tortoise-brain",
+          "modern_identification": "Cerebral tissue of a tortoise (Testudo sp. or similar)",
+          "identification_confidence": "medium",
+          "notes": "Introduced at the end of this segment as an animal-derived remedy for squint; preparation details are cut off and continue in the following segment."
+        }
+      ],
+      "translator_notes": "This segment contains both a general eye remedy and a series of treatments for strabismus (squinting). The transitional prose between remedies ('When the futility of this became apparent...') appears to be editorial commentary by the 1930 translator, Bryan, rather than literal translation of the papyrus text — it reflects his interpretive narrative style. The segment ends mid-entry on 'Tortoise-brain,' indicating the remedy continues in the next passage. The use of human brain tissue is notable and documented in the Ebers Papyrus; its efficacy is nil by modern standards. Red-lead (minium) would be considered dangerously toxic today.",
+      "_label": "Remedy For The Eye When Something Evil Has"
+    },
+    {
+      "title_inferred": "Remedy for Drying Wounds",
+      "original_text": "REMEDY WHICH DRIES THE WOUNDS:\n\nHead-of-the-amamu-animal\nGazelle's Ears\nTortoise-shell\nannek-plant\nVery frequently this stops it completely.",
+      "translation": "A remedy which dries wounds: [Head of the amamu-animal], [Gazelle's ears], [Tortoise-shell], [annek-plant]. Very frequently this stops it [the wound weeping] completely.",
+      "entities_mentioned": [
+        {
+          "name": "Head-of-the-amamu-animal",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The amamu-animal is unidentified; the 'head' likely refers to a portion of the animal used as a medicinal ingredient, possibly dried or powdered. Could be a plant name colloquially derived from an animal association rather than a literal animal part."
+        },
+        {
+          "name": "Gazelle's Ears",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "May refer to literal dried ears of a gazelle used for their astringent or absorptive properties, or alternatively a plant whose leaves resemble gazelle ears. The desiccating theme of the remedy suggests an astringent ingredient."
+        },
+        {
+          "name": "Tortoise-shell",
+          "modern_identification": "Chelonian shell (dried, powdered)",
+          "identification_confidence": "medium",
+          "notes": "Tortoise or turtle shell was used in various ancient medical traditions. When powdered, it may have served as a desiccant or absorbent applied to wounds. Likely ground before application."
+        },
+        {
+          "name": "annek-plant",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The annek-plant is an unidentified Egyptian botanical term. It appears in other Ebers Papyrus remedies but has not been conclusively matched to a known species."
+        }
+      ],
+      "translator_notes": "The remedy's stated purpose is to dry or desiccate wounds, suggesting all four ingredients were understood to have astringent or absorbent properties. The phrase 'very frequently this stops it completely' implies the remedy was considered highly effective, though not infallible. The identities of the amamu-animal and annek-plant remain uncertain in Egyptological scholarship. Preparation method is not specified in the source text, but a topical application (powdered or paste form) is most likely given the drying intent.",
+      "_label": "Remedy Which Dries The Wounds:"
+    },
+    {
+      "title_inferred": "Remedy to Make the Met Supple",
+      "original_text": "REMEDY TO MAKE THE MET SUPPLE\n\nFruit-of-the-Dompalm\nBeans\namaa-grains\nOnions\nSplinters-of-the-Cedar-tree\nSplinters-of-the-Mulberry-tree\nSplinters-of-the-Willow-tree\nSplinters-of-the-Zizyphus-Lotus\nSplinters-of-the-Sycamore\nSplinters-of-the-uan-tree\nResin-of-Acanthus\nResin-of-the-Zizyphus-Lotus\nResin-of-the-am-tree\nResin-of-the-Sycamore",
+      "translation": "A remedy to make the met [vessels or sinews; possibly nerves or tendons in ancient Egyptian medical understanding] supple:\n\nFruit of the doum palm; beans; amaa-grains [unidentified grain]; onions; splinters of the cedar tree; splinters of the mulberry tree; splinters of the willow tree; splinters of the zizyphus-lotus [Christ's thorn]; splinters of the sycamore; splinters of the uan-tree [unidentified]; resin of acanthus [thorn-tree]; resin of the zizyphus-lotus; resin of the am-tree [unidentified]; resin of the sycamore.",
+      "entities_mentioned": [
+        {
+          "name": "Fruit-of-the-Dompalm",
+          "modern_identification": "Hyphaene thebaica (doum palm)",
+          "identification_confidence": "high",
+          "notes": "Common Egyptian palm; fruit used frequently in medicinal preparations in the Ebers Papyrus."
+        },
+        {
+          "name": "Beans",
+          "modern_identification": "Vicia faba (broad bean) or similar legume",
+          "identification_confidence": "medium",
+          "notes": "Generic term; likely refers to broad beans, widely cultivated in ancient Egypt."
+        },
+        {
+          "name": "amaa-grains",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Unidentified grain or seed; term appears in Ebers Papyrus but has not been securely identified botanically."
+        },
+        {
+          "name": "Onions",
+          "modern_identification": "Allium cepa",
+          "identification_confidence": "high",
+          "notes": "Onions were widely used in ancient Egyptian medicine and diet."
+        },
+        {
+          "name": "Splinters-of-the-Cedar-tree",
+          "modern_identification": "Cedrus libani (Cedar of Lebanon) or Juniperus species",
+          "identification_confidence": "medium",
+          "notes": "Cedar was imported into Egypt; exact species uncertain. Wood splinters possibly used for their aromatic resinous properties."
+        },
+        {
+          "name": "Splinters-of-the-Mulberry-tree",
+          "modern_identification": "Morus nigra or Morus alba",
+          "identification_confidence": "medium",
+          "notes": "Mulberry trees known in the ancient Near East; presence in Egypt is possible but less certain."
+        },
+        {
+          "name": "Splinters-of-the-Willow-tree",
+          "modern_identification": "Salix subserrata or Salix safsaf (Nile willow)",
+          "identification_confidence": "high",
+          "notes": "Willows are native to Nile valley. Willow bark and wood contain salicylates with anti-inflammatory properties."
+        },
+        {
+          "name": "Splinters-of-the-Zizyphus-Lotus",
+          "modern_identification": "Ziziphus lotus or Ziziphus spina-christi (Christ's thorn)",
+          "identification_confidence": "medium",
+          "notes": "Ziziphus species were common in Egypt and used medicinally."
+        },
+        {
+          "name": "Splinters-of-the-Sycamore",
+          "modern_identification": "Ficus sycomorus (sycamore fig)",
+          "identification_confidence": "high",
+          "notes": "The sycamore fig was sacred and widely used in ancient Egypt."
+        },
+        {
+          "name": "Splinters-of-the-uan-tree",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Unidentified tree; 'uan' is a transliteration of an Egyptian term not securely matched to a known species."
+        },
+        {
+          "name": "Resin-of-Acanthus",
+          "modern_identification": "Acacia nilotica or related Acacia species",
+          "identification_confidence": "medium",
+          "notes": "'Acanthus' in this context likely refers to a thorny acacia rather than the ornamental plant Acanthus; gum/resin from Acacia was common in Egyptian medicine."
+        },
+        {
+          "name": "Resin-of-the-Zizyphus-Lotus",
+          "modern_identification": "Ziziphus lotus or Ziziphus spina-christi",
+          "identification_confidence": "medium",
+          "notes": "Resin or gum from the zizyphus plant; used alongside the wood splinters of the same plant."
+        },
+        {
+          "name": "Resin-of-the-am-tree",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Unidentified tree; 'am' is a transliteration of an Egyptian term with no secure modern botanical identification."
+        },
+        {
+          "name": "Resin-of-the-Sycamore",
+          "modern_identification": "Ficus sycomorus",
+          "identification_confidence": "high",
+          "notes": "Sycamore fig resin or latex; used alongside wood splinters of the same tree in this compound remedy."
+        }
+      ],
+      "translator_notes": "The term 'met' [Egyptian: metu] is a key anatomical/physiological concept in ancient Egyptian medicine, referring broadly to vessels, channels, sinews, or conduits in the body — encompassing what we might today distinguish as blood vessels, nerves, and tendons. The goal of making the met 'supple' suggests a treatment for stiffness, rigidity, or impaired movement possibly associated with neurological or musculoskeletal conditions. The segment header 'THE NERVOUS SYSTEM 115' is a page or section heading from Bryan's 1930 translation and not part of the original Egyptian text. The preparation method is not described in this passage — it appears to be an ingredient list only, with method likely given elsewhere. The combination of wood splinters and resins from the same trees is notable and may reflect a theory of sympathetic or concentrated action.",
+      "_label": "Remedy To Make The Met Supple"
+    },
+    {
+      "title_inferred": "Remedy to Allow the Met [Vessels/Channels] to Absorb the Remedy",
+      "original_text": "REMEDY TO ALLOW THE MET TO TAKE UP THE REMEDY\n\nMilk-of-a-Woman-who-has-borne-a-Son",
+      "translation": "Remedy to allow the met [metu: the bodily vessels or channels] to take up the remedy:\n\nMilk of a woman who has borne a son.",
+      "entities_mentioned": [
+        {
+          "name": "Met (Metu)",
+          "modern_identification": "A theoretical anatomical concept in ancient Egyptian medicine referring to vessels, channels, or ducts of the body (not directly equivalent to any single modern anatomical structure; variously interpreted as blood vessels, ducts, nerves, or tendons)",
+          "identification_confidence": "medium",
+          "notes": "The 'metu' are central to ancient Egyptian physiological theory. They were believed to carry blood, air, fluids, and disease throughout the body. The term is often transliterated as 'met' or 'metu' and does not map neatly onto any single modern anatomical concept."
+        },
+        {
+          "name": "Milk-of-a-Woman-who-has-borne-a-Son",
+          "modern_identification": "Human breast milk from a woman who has given birth to a male child",
+          "identification_confidence": "high",
+          "notes": "Human breast milk, specifically from a mother of a male child, was a commonly prescribed ingredient in ancient Egyptian medicine, believed to have special therapeutic or facilitating properties. It appears frequently in the Ebers Papyrus as a carrier or potentiating agent for other remedies."
+        }
+      ],
+      "translator_notes": "This appears to be a brief facilitating or preparatory remedy — intended not to treat a specific disease directly, but to help the body's channels (metu) absorb and distribute a therapeutic remedy. The use of human breast milk from a mother of a son (rather than a daughter) reflects a common Egyptian belief that such milk carried particular potency. The passage is notably terse, suggesting it may be an introductory formula or heading for a series of related preparations.",
+      "_label": "Remedy To Allow The Met To Take Up The Remedy"
+    },
+    {
+      "title_inferred": "Remedy to Prevent Grey Hairs",
+      "original_text": "ANOTHER REMEDY TO PREVENT GREY HAIRS\n\nBlood-from-the-Neck-of-the-gabgu-bird\nPut in Real Balsam and rub therewith.\nHE STRETCHES UP HIS HAND TO THE BACK OF A LIVING FALCON, PLACING HIM ON HIS HEAD AGAINST A LIVING SWALLOW!\n\nAlmost it reads like the daily paper account of the after-results of a gland-graft, but actually it is understood that the Scribe merely wishes to convey that the medicament overcomes the disease like the Falcon the Swallow.\n\nThe remedies for dyeing grey hairs provide powerful sermons on the vanity of old or of middle-old age. Rubbing the head with the Horn-of-a-Fawn, warmed in Oil, was recommended. As a hair-dye it leaves much to be desired, but for all that it had its points and was",
+      "translation": "Another remedy to prevent grey hairs: Take blood from the neck of the gabgu-bird, mix it in genuine balsam, and rub it onto the hair. [Incantation or scribal flourish:] 'He stretches his hand to the back of a living falcon, placing it upon his head against a living swallow!' The translator notes that this likely means the remedy overpowers the condition as a falcon overpowers a swallow. Additionally, rubbing the head with the horn of a fawn, warmed in oil, was also recommended as a treatment for grey hair.",
+      "entities_mentioned": [
+        {
+          "name": "Blood-from-the-Neck-of-the-gabgu-bird",
+          "modern_identification": "Unknown bird; 'gabgu' is an Egyptian term not definitively identified with a modern species",
+          "identification_confidence": "unknown",
+          "notes": "The blood is specifically taken from the neck of this bird. The gabgu-bird remains unidentified in modern ornithology."
+        },
+        {
+          "name": "Real Balsam",
+          "modern_identification": "Possibly resin or oil from Commiphora or Balanites aegyptiaca (desert date), or another aromatic resin used in ancient Egypt",
+          "identification_confidence": "low",
+          "notes": "The qualifier 'real' or 'genuine' balsam suggests the Egyptians distinguished between authentic and adulterated forms. Exact botanical source is uncertain."
+        },
+        {
+          "name": "Horn-of-a-Fawn warmed in Oil",
+          "modern_identification": "Fawn (young deer) horn, likely burned or rendered; no modern equivalent therapeutic use",
+          "identification_confidence": "medium",
+          "notes": "Recommended as a hair treatment for grey hair. The keratin-rich horn may have been thought to nourish hair when combined with a carrier oil. Mentioned as a separate remedy within the same passage."
+        },
+        {
+          "name": "Falcon",
+          "modern_identification": "Falco species, likely Falco peregrinus or Falco biarmicus in Egyptian context",
+          "identification_confidence": "medium",
+          "notes": "Referenced in what appears to be a ritual incantation or scribal metaphor, symbolising the remedy's power over the condition, as a falcon dominates a swallow."
+        },
+        {
+          "name": "Swallow",
+          "modern_identification": "Hirundo rustica or related swallow species",
+          "identification_confidence": "medium",
+          "notes": "Used metaphorically in the incantation to represent the disease or condition being overcome."
+        }
+      ],
+      "translator_notes": "The passage as translated by Bryan (1930) is partially incomplete, ending mid-sentence ('and was'), indicating this is a truncated segment from a longer text. The capitalised exclamatory passage ('HE STRETCHES UP HIS HAND...') appears to be either a ritual incantation accompanying the remedy or a scribal colophon; Bryan interprets it as a metaphor for the remedy's efficacy. Bryan's aside comparing the passage to 'gland-graft' accounts reflects early 20th-century interest in endocrinology and rejuvenation therapies (e.g., Voronoff's gland grafting experiments), contextualising his editorial commentary. The two remedies described (bird's blood in balsam; fawn's horn in oil) may be separate prescriptions grouped under the same heading.",
+      "_label": "Another Remedy To Prevent Grey Hairs"
+    },
+    {
+      "title_inferred": "Remedy Against a Mole (Skin Blemish)",
+      "original_text": "REMEDY AGAINST A MOLE\n\nBerries-of-the-t'as-plant\nmamer-grain",
+      "translation": "Remedy against a mole: [apply] berries of the t'as-plant [and] mamer-grain.",
+      "entities_mentioned": [
+        {
+          "name": "berries-of-the-t'as-plant",
+          "modern_identification": "possibly Coriandrum sativum (coriander) or an unidentified shrub native to ancient Egypt",
+          "identification_confidence": "low",
+          "notes": "The t'as-plant is an ancient Egyptian botanical term that has not been definitively identified in modern taxonomy. The use of its berries suggests a fruiting shrub or herb."
+        },
+        {
+          "name": "mamer-grain",
+          "modern_identification": "unknown; possibly an emmer wheat derivative or another cereal grain",
+          "identification_confidence": "unknown",
+          "notes": "The term 'mamer' does not correspond to any confidently identified modern substance. It may refer to a specific variety or preparation of grain used as an abrasive or binding agent in topical applications."
+        }
+      ],
+      "translator_notes": "The word 'mole' here likely refers to a pigmented skin lesion or blemish rather than the animal. The remedy appears to be a topical application, though no explicit preparation method (grinding, mixing, applying) is stated in the surviving text — the passage may be fragmentary or the method was considered self-evident. The segment is notably brief, possibly indicating a lacuna in the original papyrus.",
+      "_label": "Remedy Against A Mole"
+    },
+    {
+      "title_inferred": "Remedy to Beautify the Skin",
+      "original_text": "REMEDY TO BEAUTIFY THE SKIN\n\nMeal-of-Alabaster\nMeal-of-Natron\nSea-salt\nHoney",
+      "translation": "A remedy to beautify the skin: Meal of alabaster [finely ground alabaster powder], meal of natron [ground natron], sea-salt, honey. [Mix together and apply to the skin.]",
+      "entities_mentioned": [
+        {
+          "name": "Meal-of-Alabaster",
+          "modern_identification": "Finely ground calcium carbonate or calcium sulfate (alabaster/calcite)",
+          "identification_confidence": "high",
+          "notes": "Alabaster in ancient Egypt typically refers to calcite (Egyptian alabaster), not the gypsum-based alabaster of later periods. Ground into a fine powder for cosmetic use as an exfoliant or skin-smoothing agent."
+        },
+        {
+          "name": "Meal-of-Natron",
+          "modern_identification": "Sodium carbonate / sodium bicarbonate (natron)",
+          "identification_confidence": "high",
+          "notes": "Natron is a naturally occurring salt mixture composed chiefly of sodium carbonate decahydrate with sodium bicarbonate, sodium chloride, and sodium sulfate. Widely used in ancient Egypt for cleansing and purification."
+        },
+        {
+          "name": "Sea-salt",
+          "modern_identification": "Sodium chloride (NaCl)",
+          "identification_confidence": "high",
+          "notes": "Common sea salt; used here likely as a mild abrasive and preservative component in the cosmetic preparation."
+        },
+        {
+          "name": "Honey",
+          "modern_identification": "Honey (Apis mellifera product)",
+          "identification_confidence": "high",
+          "notes": "Honey appears frequently in Ebers Papyrus remedies as a binding agent, humectant, and antimicrobial ingredient. Here it likely serves as a binder and skin-conditioning agent."
+        }
+      ],
+      "translator_notes": "The source text appears incomplete — no quantities, preparation method, or application instructions are given, suggesting either a lacuna in the original papyrus or that this entry was truncated in the 1930 Bryan translation. The page reference 'COSMETICS 161' is a section/page header from the printed edition and not part of the original Egyptian text. The remedy is a cosmetic paste or scrub formula consistent with other ancient Egyptian skin-care preparations combining abrasives, alkaline salts, and a moisturising binder.",
+      "_label": "Remedy To Beautify The Skin"
+    },
+    {
+      "title_inferred": "Remedy for Sweaty Feet",
+      "original_text": "REMEDY TO DRIVE AWAY SWEATY FEET IN A PERSON\n\nuadu-plant-of-the-Fields\nFel-from-the-Canal\nWarm in Oil and smear both feet therewith.",
+      "translation": "A remedy to drive away sweaty feet in a person: [Take] the uadu-plant of the Fields [and] fel from the Canal. Warm in oil and smear both feet therewith.",
+      "entities_mentioned": [
+        {
+          "name": "uadu-plant-of-the-Fields",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "An Egyptian plant designated 'uadu' (also rendered 'wad' or 'waad' in some transliterations), specified as the field variety. Precise botanical identification remains uncertain; possibly a sedge or rush species common to Egyptian agricultural land."
+        },
+        {
+          "name": "Fel-from-the-Canal",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "'Fel' may refer to a mineral deposit, algal mat, sediment, or organic matter collected from canal water. The term is ambiguous in the source and may reflect an OCR or transliteration artifact; could potentially be 'silt' or a specific plant gathered from canal banks."
+        },
+        {
+          "name": "Oil",
+          "modern_identification": "Likely vegetable oil, possibly castor oil (Ricinus communis) or moringa oil (Moringa oleifera), both common in ancient Egyptian medicine",
+          "identification_confidence": "medium",
+          "notes": "Oil is used as the carrier/vehicle for warming and topical application to the feet. The specific oil type is not identified in this passage."
+        }
+      ],
+      "translator_notes": "The segment is followed by a chapter heading ('CHAPTER XXIV – DOMESTIC HINTS') and editorial commentary by Bryan, which has been excluded from the remedy translation as it constitutes the translator's own framing rather than source text. The preparation method is simple: warm the ingredients in oil and apply topically to both feet. The condition treated is hyperhidrosis (excessive sweating) of the feet.",
+      "_label": "Remedy To Drive Away Sweaty Feet In A Person"
+    },
+    {
+      "title_inferred": "Remedy to Stop the Crying of a Child",
+      "original_text": "REMEDY TO STOP THE CRYING OF A CHILD\n\nPods-of-the-Poppy-plant (Opium)\nFly-dirt-which-is-on-the-Wall",
+      "translation": "A remedy to stop the crying of a child: [administer] pods of the poppy plant [opium] and fly-dirt [fly specks] found on the wall.",
+      "entities_mentioned": [
+        {
+          "name": "Pods-of-the-Poppy-plant (Opium)",
+          "modern_identification": "Papaver somniferum (opium poppy)",
+          "identification_confidence": "high",
+          "notes": "The Bryan translation explicitly glosses this ingredient as opium. Opium derived from poppy pods was used in ancient Egypt as a sedative and analgesic, and its use to quiet crying children is well attested in the Ebers Papyrus. The active alkaloids (morphine, codeine) would produce genuine sedative effects, though the practice is of course highly dangerous by modern standards."
+        },
+        {
+          "name": "Fly-dirt-which-is-on-the-Wall",
+          "modern_identification": "Fly excrement / fly specks",
+          "identification_confidence": "medium",
+          "notes": "This refers to the dark specks left by flies on walls. It appears as a component in several Ebers Papyrus remedies. Its inclusion likely reflects magical or sympathetic thinking rather than pharmacological efficacy. Some scholars suggest it may have functioned as a vehicle or filler ingredient, or carried ritual significance."
+        }
+      ],
+      "translator_notes": "The passage is brief and lacks explicit preparation or dosage instructions in this segment, suggesting that application method may have been described elsewhere in the papyrus or was considered understood by practitioners. The use of opium to sedate children is consistent with other ancient medical traditions but represents a serious hazard by modern standards. The fly excrement ingredient is characteristic of the Egyptian materia medica's inclusion of waste and animal-derived substances, often interpreted as having apotropaic or magical functions alongside physical ones.",
+      "_label": "Remedy To Stop The Crying Of A Child"
+    },
+    {
+      "title_inferred": "Remedy to Stop the Crying of a Child",
+      "original_text": "REMEDY TO STOP THE CRYING OF A CHILD\n\n(NEW STYLE)\nPowder-which-contains-Opium\nFly-dirt-which-is-on-the-Dummy",
+      "translation": "A remedy to stop the crying of a child (new style [i.e., a revised or updated formulation]): A powder containing opium; fly excrement found on the [infant's] pacifier [dummy].",
+      "entities_mentioned": [
+        {
+          "name": "Powder-which-contains-Opium",
+          "modern_identification": "Opium (dried latex of Papaver somniferum)",
+          "identification_confidence": "high",
+          "notes": "Opium was used in ancient Egyptian pediatric preparations as a sedative or analgesic. The Bryan translation explicitly names opium, rendering the Egyptian term directly. The designation '(New Style)' may indicate a revised or updated formula within the papyrus tradition."
+        },
+        {
+          "name": "Fly-dirt-which-is-on-the-Dummy",
+          "modern_identification": "Fly excrement / fecal deposits from flies (Diptera spp.)",
+          "identification_confidence": "medium",
+          "notes": "The 'dummy' refers to an infant's pacifier or soother. Fly excrement scraped from such objects was incorporated into the remedy, possibly as a carrier or on the basis of sympathetic or empirical folk reasoning. This ingredient poses obvious modern sanitary concerns and would be considered hazardous."
+        }
+      ],
+      "translator_notes": "The parenthetical '(NEW STYLE)' is Bryan's rendering of a phrase in the original papyrus indicating this is a variant or updated version of an older remedy. The segment heading 'DOMESTIC HINTS 163' appears to be a chapter or section reference from Bryan's 1930 editorial organization, not part of the original Egyptian text. The use of opium to sedate infants, while alarming by modern standards, was documented across multiple ancient cultures. The preparation method is not explicitly described beyond the listing of ingredients; the powder form suggests grinding and mixing.",
+      "_label": "Remedy To Stop The Crying Of A Child"
+    }
+  ]
+}
