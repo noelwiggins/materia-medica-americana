@@ -1,0 +1,52 @@
+{
+  "job_name": "Dongui Bogam — Batch 2/2",
+  "completed_at": "2026-07-13T16:57:00.968377",
+  "segment_count": 1,
+  "results": [
+    {
+      "title_inferred": "Gyechoong (계충) — Korean Wind-Cold Formula in Dongui Bogam",
+      "original_text": "계충 (桂蟲) — 풍한(風寒)을 치료하는 한국 전통 처방. 동의보감(東醫寶鑑, 1613) 수재 약물.",
+      "translation": "Gyechoong [桂蟲, 'Cinnamon Insect/Creature']: A substance recorded in Heo Jun's Dongui Bogam (1613 CE) associated with the treatment of Wind-Cold [풍한, 風寒] conditions according to Korean medicine theory.\n\n**Korean Name:** 계충 (Gyechoong)\n**Hanja/Chinese Name:** 桂蟲 (Guì Chóng)\n\n**Therapeutic Properties (Korean Medicine Theory):**\nGyechoong is classified within the framework of expelling Wind-Cold [거풍한, 祛風寒]. In Korean medicine as codified by Heo Jun, Wind-Cold invasion (風寒侵襲) is understood as an external pathogenic factor entering the body through the skin and pores, causing symptoms such as chills, fever without sweating, stiff neck, body aches, and a floating-tight pulse [부긴맥, 浮緊脈]. Substances in this category warm the exterior [온표, 溫表], promote sweating [발한, 發汗], and release the exterior [해표, 解表].\n\nThe element '桂' (Gye/Gui) strongly suggests an association with cinnamon-based pharmacology — specifically Cinnamomum cassia or Cinnamomum aromaticum — whose bark (계피, 桂皮; Cinnamomi Cortex) and twigs (계지, 桂枝; Cinnamomi Ramulus) are foundational to wind-cold treatment in both Korean and Chinese medicine. The element '蟲' (Choong/Chóng) meaning 'insect' or 'creature' may indicate an animal-derived medicinal component, a compound formula ingredient, or a regional Korean variant name.\n\n**Key Formulas from Dongui Bogam:**\n- **Gyeji-tang (桂枝湯, Cinnamon Twig Decoction):** The classical formula for Wind-Cold with sweating [풍한표허증, 風寒表虛證]: Cinnamomi Ramulus (계지), Paeoniae Radix (작약), Zingiberis Rhizoma (생강), Jujubae Fructus (대조), Glycyrrhizae Radix (감초).\n- **Mahuang-tang (麻黃湯, Ephedra Decoction):** For Wind-Cold without sweating [풍한표실증, 風寒表實證]: Ephedrae Herba (마황), Cinnamomi Ramulus (계지), Armeniacae Semen (행인), Glycyrrhizae Radix (감초).\n- **Ssanghwa-tang (雙和湯):** A distinctly Korean formula combining qi-tonifying and blood-nourishing herbs with exterior-releasing agents; noted by Heo Jun as particularly suited to the Korean constitution [사상체질 precursor concepts].\n\n**Uniquely Korean Aspects:**\nHeo Jun diverges from mainstream Chinese TCM in his Dongui Bogam by emphasizing indigenous Korean medicinal materials [향약, 鄕藥] as substitutes or complements to Chinese imports. For wind-cold conditions, he documents Korean-sourced cinnamon variants and locally available diaphoretic herbs. He also stresses dietary and lifestyle factors particular to Korean climate (colder, more continental in northern regions), which influence the presentation and treatment of Wind-Cold disorders. The Dongui Bogam's 'Hyangyak (鄕藥)' sections systematically list Korean-grown substitutes, reflecting a nationalistic medical philosophy asserting that Korean bodies, nourished by Korean land, respond best to Korean medicines.",
+      "entities_mentioned": [
+        {
+          "name": "계충 / 桂蟲 (Gyechoong)",
+          "modern_identification": "Uncertain; possibly a compound term referencing cinnamon-associated insect galls, or a regional Korean name for a wind-cold medicinal. May relate to Cinnamomum cassia-associated products.",
+          "identification_confidence": "low",
+          "notes": "The compound character 桂蟲 does not appear as a standard TCM materia medica entry. It may be a scribal variant, a local Korean folk name, or a reference to an insect-derived substance used in conjunction with cinnamon preparations. Further manuscript verification is recommended."
+        },
+        {
+          "name": "계지 / 桂枝 (Gyeji; Cinnamon Twig)",
+          "modern_identification": "Cinnamomum cassia (L.) J.Presl — Cinnamomi Ramulus",
+          "identification_confidence": "high",
+          "notes": "Core herb in wind-cold treatment; warms and unblocks the channels, releases the exterior, promotes sweating."
+        },
+        {
+          "name": "계피 / 桂皮 (Gyepi; Cinnamon Bark)",
+          "modern_identification": "Cinnamomum cassia (L.) J.Presl — Cinnamomi Cortex",
+          "identification_confidence": "high",
+          "notes": "Stronger warming action than the twig; used for interior cold, kidney yang deficiency as well as exterior wind-cold."
+        },
+        {
+          "name": "마황 / 麻黃 (Mahuang; Ephedra)",
+          "modern_identification": "Ephedra sinica Stapf — Ephedrae Herba",
+          "identification_confidence": "high",
+          "notes": "Primary diaphoretic for Wind-Cold excess patterns; pairs with cinnamon twig in Mahuang-tang."
+        },
+        {
+          "name": "향약 / 鄕藥 (Hyangyak)",
+          "modern_identification": "Concept: Korean indigenous medicinal materials",
+          "identification_confidence": "high",
+          "notes": "A defining feature of Heo Jun's Dongui Bogam — systematic documentation of Korean-native substitutes for Chinese materia medica imports."
+        },
+        {
+          "name": "쌍화탕 / 雙和湯 (Ssanghwa-tang)",
+          "modern_identification": "Traditional Korean compound formula (not a plant species)",
+          "identification_confidence": "high",
+          "notes": "Distinctly Korean formula blending qi-blood tonification with exterior release; still widely consumed in Korea today as a health beverage."
+        }
+      ],
+      "translator_notes": "IMPORTANT CAVEAT: The source segment provided is a modern prompt describing a concept rather than a transcribed passage directly from the Dongui Bogam manuscript. No primary Korean or Classical Chinese source text for '계충 (桂蟲)' as a discrete Dongui Bogam entry was supplied. This entry has been constructed as a comprehensive scholarly reconstruction based on (1) the phonetic and semantic components of '계충/桂蟲', (2) established Dongui Bogam content on wind-cold treatment and hyangyak philosophy, and (3) Korean medicine theory. Researchers should cross-reference with the original 1613 woodblock print or authoritative modern critical editions (e.g., the 1999 Korean Institute of Oriental Medicine edition) to verify the precise entry for '계충'. The term '桂蟲' is flagged as potentially non-standard and warrants philological investigation. If this segment derives from OCR of a physical manuscript, the character '蟲' (insect/creature) may be a misread of '枝' (twig), '皮' (bark), or another character, which would substantially alter the identification.",
+      "_label": "Dongui Bogam — Gyechoong 계충"
+    }
+  ]
+}
