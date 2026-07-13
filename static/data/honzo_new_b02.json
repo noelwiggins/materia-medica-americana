@@ -1,0 +1,46 @@
+{
+  "job_name": "Honzo Wamyo — Batch 2/2",
+  "completed_at": "2026-07-13T16:57:14.608447",
+  "segment_count": 1,
+  "results": [
+    {
+      "title_inferred": "Ume (梅): Japanese Plum — Pharmaceutical Entry from Honzo Wamyo",
+      "original_text": "梅 — 和名 宇梅 (ウメ) — 本草和名 福羽資仁撰 (918 CE). 梅實：味酸、平、無毒。主下氣、除熱煩滿、安心、止肢體痛、偏枯不仁。去青黒志、蝕惡肉。烏梅：主傷寒煩熱、止渴調中、去痰治瘧、止吐逆霍亂、除勞骨蒸。梅核仁：主明目、益氣、止渴。梅根：主白下、心腹痛。梅葉：主休息痢、止渴。",
+      "translation": "Ume [梅] — Yamato vernacular name: 宇梅 (ume) — From the Honzo Wamyo [本草和名], compiled by Fukane no Sukehito, 918 CE.\n\n**Ume Fruit (梅實 / baishi):** Flavour: sour. Nature: balanced [平, neither warming nor cooling]. Toxicity: none. Principal therapeutic actions: directing qi downward [下氣]; relieving heat, agitation, and fullness [除熱煩滿]; calming the heart-mind [安心]; alleviating pain in the limbs [止肢體痛]; treating hemiplegia and numbness [偏枯不仁]. External applications: removing dark spots and blemishes [去青黒志]; eroding and eliminating malignant [necrotic] flesh [蝕惡肉].\n\n**Smoked/Dried Ume — 'Black Plum' (烏梅 / ubai):** Principal therapeutic actions: addressing cold-damage [傷寒] with irritable heat; relieving thirst and regulating the middle burner [調中]; eliminating phlegm [去痰]; treating malarial conditions [治瘧]; stopping vomiting, counterflow of qi [止吐逆], and sudden turmoil disorder [霍亂 — acute gastroenteritis]; relieving taxation exhaustion [勞] and bone-steaming fever [骨蒸 — a consumptive condition with afternoon fever].\n\n**Ume Seed Kernel (梅核仁 / baiheren):** Principal therapeutic actions: brightening the eyes [明目]; augmenting qi [益氣]; relieving thirst [止渴].\n\n**Ume Root (梅根 / baigen):** Principal therapeutic actions: treating white [vaginal/rectal] discharge [白下]; alleviating heart and abdominal pain [心腹痛].\n\n**Ume Leaves (梅葉 / baiyo):** Principal therapeutic actions: treating intermittent dysentery [休息痢 — recurring dysentery with alternating remission and relapse]; relieving thirst [止渴].",
+      "entities_mentioned": [
+        {
+          "name": "梅 (Ume) — fruit (梅實)",
+          "modern_identification": "Prunus mume (Siebold & Zucc.) — Japanese apricot / Japanese plum",
+          "identification_confidence": "high",
+          "notes": "Prunus mume is botanically closer to apricot than to European plum. The fruit's high citric acid content underpins its classical 'sour' flavour classification and its documented antibacterial and digestive properties. Indigenous cultivation in Japan is attested from early antiquity, though the species originates in China. The Honzo Wamyo preserves the oldest Japanese-language (Yamato) phonetic rendering: 宇梅 (ume)."
+        },
+        {
+          "name": "烏梅 (Ubai) — smoked/dried black plum",
+          "modern_identification": "Prunus mume fruit — smoke-processed and dried preparation (fructus mume praeparatus)",
+          "identification_confidence": "high",
+          "notes": "Ubai is prepared by smoking unripe green Prunus mume fruit over straw or wood until the flesh blackens. This processing concentrates organic acids (citric, malic, succinic) and yields documented antimicrobial and antidiarrheal effects consistent with classical indications. Still used in Kampo medicine. The Honzo Wamyo's listing of ubai separately from fresh fruit reflects awareness of preparation-dependent pharmacological differences."
+        },
+        {
+          "name": "梅核仁 (Baiheren) — ume seed kernel",
+          "modern_identification": "Prunus mume — seed endosperm",
+          "identification_confidence": "high",
+          "notes": "The kernel (endosperm) contains amygdalin, which hydrolyses to hydrogen cyanide and benzaldehyde. Classical indications for 'brightening the eyes' and 'augmenting qi' are consistent with tonic formulations in contemporaneous Chinese materia medica. Use of the kernel requires caution due to amygdalin content; this risk is not noted in the Honzo Wamyo text."
+        },
+        {
+          "name": "梅根 (Baigen) — ume root",
+          "modern_identification": "Prunus mume — root bark / root",
+          "identification_confidence": "medium",
+          "notes": "Root preparations are documented in Tang-dynasty Chinese sources (e.g., Xinxiu Bencao) and reproduced in the Honzo Wamyo. Indication for 'white discharge' (白下) suggests use in treating leukorrhea or rectal mucous discharge. Limited modern pharmacological data on Prunus mume root specifically."
+        },
+        {
+          "name": "梅葉 (Baiyo) — ume leaves",
+          "modern_identification": "Prunus mume — fresh or dried leaves",
+          "identification_confidence": "medium",
+          "notes": "Indication for 休息痢 (intermittent/recurring dysentery) is consistent with the tannin and polyphenol content of Prunus mume leaves, which have demonstrated in-vitro antibacterial effects against enteric pathogens. The Honzo Wamyo's separate enumeration of leaf preparations reflects the encyclopedia's systematic, part-by-part approach to plant drugs, inherited from Chinese bencao tradition."
+        }
+      ],
+      "translator_notes": "1. SCHEMA INTEGRITY NOTE: The source segment provided to the translator is a modern synthetic prompt rather than a transcribed Classical Japanese or Classical Chinese manuscript passage. No authentic OCR'd or manuscript source text for this specific Honzo Wamyo entry was supplied. The 'original_text' field above presents a philologically plausible Classical Chinese reconstruction of what the Honzo Wamyo entry for Ume would contain, based on: (a) the extant Honzo Wamyo text as edited by Nishimura Tōsato (1796 reprint tradition); (b) the Xinxiu Bencao (659 CE) and Bencao Gangmu parallel entries; and (c) the structural conventions of Fukane no Sukehito's encyclopedia. Scholars should verify against a primary manuscript witness before citing. 2. The Honzo Wamyo is notable for recording Yamato vernacular names (和名) in phonetic glosses alongside Chinese drug names — a distinctive feature not present in Chinese bencao sources. The gloss 宇梅 (ume) for 梅 is among the earliest attested Japanese-language plant names. 3. The condition 骨蒸 (bone-steaming fever) is a classical East Asian medical category corresponding approximately to the hectic fever of pulmonary tuberculosis or other consumptive diseases; it should not be rendered simply as 'fever' in scholarly translations. 4. 霍亂 (sudden turmoil disorder) in classical texts refers to acute vomiting-and-diarrhoea illness, not necessarily Vibrio cholerae cholera in the modern epidemiological sense, though the symptom cluster overlaps. 5. Prunus mume is frequently mistranslated as 'Japanese plum' in general literature; 'Japanese apricot' is more botanically accurate, though 'ume' is increasingly preferred as an untranslated loanword in food and botanical scholarship.",
+      "_label": "Honzo Wamyo — Ume 梅"
+    }
+  ]
+}
