@@ -1,0 +1,1440 @@
+{
+  "job_name": "Bencao Gangmu — Batch 9/18 (海帶–柏)",
+  "completed_at": "2026-07-13T21:20:37.163450",
+  "segment_count": 50,
+  "results": [
+    {
+      "title_inferred": "Sea Belt (Haidai) — Medicinal Seaweed Entry",
+      "original_text": "【集解】禹錫曰︰海帶，出東海水中石上，似海藻而粗，柔韌而長。今登州人乾之以束器物。醫家用以下水，勝於海藻、昆布。\n\n【氣味】鹹，寒，無毒。\n\n【主治】催生，治婦人病，及療風下水（《嘉祐》）。治水病癭瘤，功同海藻（時珍）。",
+      "translation": "**Collected Explanations:** Yu Xi states: Haidai [sea belt] grows on rocks beneath the water of the Eastern Sea. It resembles haizao [Sargassum] but is coarser, and is both pliable and long. Today the people of Dengzhou dry it to bind and bundle objects. Physicians use it to drain [retained] water [from the body], and it surpasses haizao and kunbu [kelp] in this regard.\n\n**Qi and Flavor:** Salty; cold; non-toxic.\n\n**Indications and Treatments:** Promotes parturition [催生, accelerates labor]; treats women's diseases; and cures wind-induced water [retention] (Jiayou Bencao). Treats water disease [edema], goiter, and tumors; its efficacy is the same as haizao (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "海帶 (Haidai)",
+          "modern_identification": "Laminaria japonica (Japanese kelp / kombu)",
+          "identification_confidence": "high",
+          "notes": "A large brown algae harvested from the East Sea (Yellow Sea / Sea of Japan region). Dried by people of Dengzhou (modern Shandong peninsula). Rich in iodine, consistent with its use in treating goiter (iodine-deficiency-related swellings)."
+        },
+        {
+          "name": "海藻 (Haizao)",
+          "modern_identification": "Sargassum spp.",
+          "identification_confidence": "high",
+          "notes": "Used as a comparator plant; haidai is described as coarser and medicinally superior to haizao for draining water."
+        },
+        {
+          "name": "昆布 (Kunbu)",
+          "modern_identification": "Ecklonia kurome or Laminaria spp.",
+          "identification_confidence": "medium",
+          "notes": "Another seaweed used as a medicinal comparator; haidai is said to surpass it for draining water."
+        }
+      ],
+      "translator_notes": "The source citation '《嘉 》' in the original OCR is clearly a truncation of 《嘉祐本草》 (Jiayou Bencao, 1060 CE), silently completed in the cleaned text. The condition '風下水' is interpreted as wind-induced water retention (a Classical Chinese pathological category). '催生' refers specifically to facilitating or accelerating childbirth. '癭瘤' refers to neck swellings/goiters, likely iodine-deficiency goiter, which is plausibly treated by iodine-rich seaweed. Li Shizhen's attribution '時珍' in the final line indicates his own editorial addition.",
+      "_label": "海帶 (草之八)"
+    },
+    {
+      "title_inferred": "Kunbu (Kelp / Brown Seaweed) — Materia Medica Entry",
+      "original_text": "【釋名】綸布。\n\n時珍曰︰按《吳普本草》，綸布一名昆布，則《爾雅》所謂綸似綸，東海有之者，即昆布也。綸音關，青絲綬也，訛而爲昆耳。陶弘景以綸爲青苔、紫菜輩，謂組爲昆布；陳藏器又謂綸、組是二種藻。不同如此。\n\n【集解】《別錄》曰︰昆布生東海。\n\n弘景曰︰今惟出高麗。繩把索之如卷麻，作黃黑色，柔韌可食。《爾雅》云︰綸似綸，組似組，東海有之。今青苔、紫菜皆似綸，而昆布亦似組，恐即是也。\n\n藏器曰︰昆布生南海，葉如手，大似薄葦，紫赤色。其細葉者，海藻也。曰︰其草順流而生。出新羅者葉細，黃黑色。胡人搓之爲索，陰乾，從舶上來中國。\n\n時珍曰︰昆布生登、萊者，搓如繩索之狀。出閩、浙者，大葉似菜。蓋海中諸菜性味相近，主療一致。雖稍有不同，亦無大異也。\n\n【氣味】鹹，寒，滑，無毒。普曰︰酸、鹹，寒，無毒。權曰︰溫，有小毒。\n\n【主治】十二種水腫，癭瘤聚結氣，瘡（《別錄》）。破積聚（思邈）。治陰腫，含之咽汁（藏器）。利水道，去面腫，治惡瘡鼠瘻（甄權）。\n\n【發明】杲曰︰鹹能軟堅，故癭堅如石者非此不除，與海藻同功。\n\n詵曰︰昆布下氣，久服瘦人，無此疾者不可食。海島之人愛食之，爲無好菜，只食此物，服久相習，病亦不生，遂傳說其功於北人。北人食之皆生病，是水土不宜耳。凡是海中菜，皆損人，不可多食。",
+      "translation": "**[Nomenclature]** Also known as Guanbu [綸布].\n\nLi Shizhen states: According to Wu Pu's *Bencao* [*Wu Pu's Materia Medica*], Guanbu is another name for Kunbu. Thus, what the *Erya* [*Erya* lexicon] describes as \"guan resembles guan-silk cord, found in the Eastern Sea\" refers to Kunbu. The character 綸 (guan) is pronounced like 'guan' and means a blue-green silk ribbon; it was corrupted in pronunciation to 'kun.' Tao Hongjing took 綸 (guan) to mean green moss [qingtai] and purple laver [zicai], and identified 組 (zu) as Kunbu; Chen Zangqi further held that 綸 and 組 were two distinct types of seaweed. Their interpretations differ in this manner.\n\n**[Collected Commentaries]** The *Bielu* [*Mingyi Bielu*] states: Kunbu grows in the Eastern Sea.\n\nTao Hongjing states: Today it comes only from Goryeo [Korea]. It is bundled into rope-like coils resembling rolled hemp, yellowish-black in colour, pliable, and edible. The *Erya* says: \"guan resembles a silk cord, zu resembles a woven band, both found in the Eastern Sea.\" Today, green moss and purple laver both resemble guan-cord, while Kunbu resembles the woven band (zu); it is probably identical to that.\n\nChen Zangqi states: Kunbu grows in the Southern Sea; its fronds are hand-shaped, roughly the size of thin reed leaves, and purplish-red in colour. The variety with fine fronds is haizao [seaweed / Sargassum]. [Another source] states: this plant grows flowing with the current. The variety from Silla [ancient Korea] has fine fronds and is yellowish-black. Foreign peoples twist it into rope-like strands, dry it in the shade, and it arrives in China by sea vessel.\n\nLi Shizhen states: Kunbu produced in Dengzhou and Laizhou [Shandong] is twisted into rope-like coils. That from Fujian and Zhejiang has large fronds resembling a vegetable. In general, the various sea vegetables share similar flavour and nature, and their therapeutic applications are consistent. Though there are minor differences, there is no great disparity.\n\n**[Flavour and Nature]** Salty, cold, slippery [i.e., lubricating in action], non-toxic. Wu Pu states: sour and salty, cold, non-toxic. [Cui] Quan states: warm, mildly toxic.\n\n**[Principal Treatments]** The twelve types of water-swelling [oedema]; goitre and tumour with accumulation of qi; sores [《Bielu》]. Breaks up accumulations and masses [Sun Simiao]. Treats swelling of the genitals [yin swelling]; hold it in the mouth and swallow the juice [Chen Zangqi]. Promotes the water passages [diuretic], reduces facial swelling, treats malignant sores and scrofulous fistulas [rat-sore / luou] [Zhen Quan].\n\n**[Elucidation]** Zhang Yuansu [Dongyuan] states: Saltiness can soften hardness; therefore, goitres hard as stone cannot be eliminated without this herb. Its function is the same as haizao [Sargassum].\n\nMeng Shen states: Kunbu moves qi downward; taken over a long period it causes weight loss in people, and those without the relevant ailment should not consume it. Island-dwellers are fond of eating it because they have no better vegetables — eating only this, they grow accustomed to it over time and do not fall ill, and so they spread word of its benefits to northerners. But northerners who eat it all fall ill — this is because the climate and environment do not suit them. In general, all sea vegetables are somewhat harmful to people and should not be consumed in excess.",
+      "entities_mentioned": [
+        {
+          "name": "昆布 (Kunbu)",
+          "modern_identification": "Laminaria japonica (kombu / kelp; family Laminariaceae) or related brown algae such as Ecklonia kurome",
+          "identification_confidence": "high",
+          "notes": "The primary subject of this entry. Described as rope-like when from Shandong, large-leafed when from Fujian/Zhejiang. Used extensively in East Asian cuisine and medicine."
+        },
+        {
+          "name": "綸布 (Guanbu)",
+          "modern_identification": "Likely the same as Kunbu (Laminaria spp.) or possibly a related alga",
+          "identification_confidence": "medium",
+          "notes": "Alternative name; Li Shizhen argues it is the same plant as Kunbu, etymologically corrupted."
+        },
+        {
+          "name": "海藻 (Haizao)",
+          "modern_identification": "Sargassum pallidum or Sargassum fusiforme (family Sargassaceae)",
+          "identification_confidence": "high",
+          "notes": "Mentioned as the fine-fronded variety distinct from Kunbu; treated as a separate but closely related seaweed."
+        },
+        {
+          "name": "青苔 (Qingtai)",
+          "modern_identification": "Green algae / green moss (various freshwater or marine Chlorophyta)",
+          "identification_confidence": "low",
+          "notes": "Mentioned by Tao Hongjing as resembling 綸 (guan-cord algae); general term."
+        },
+        {
+          "name": "紫菜 (Zicai)",
+          "modern_identification": "Pyropia yezoensis or Porphyra spp. (nori / purple laver)",
+          "identification_confidence": "high",
+          "notes": "Cited by Tao Hongjing for comparison."
+        }
+      ],
+      "translator_notes": "1. The ailment terms require clarification: 十二種水腫 ('twelve types of water-swelling') is a classical taxonomic category of oedema. 癭瘤 refers to goitre-type swellings, consistent with iodine deficiency — modern pharmacology confirms iodine content in Laminaria. 鼠瘻 ('rat-fistula') is a classical term for scrofula or cervical lymph node fistula.\n2. The passage on Silla (新羅, i.e., ancient Korea) records an early trade route for dried kelp reaching China by sea.\n3. Meng Shen's dietary caution reflects a classical humoralist concern about regional suitability (水土不宜), not a toxicological finding.\n4. The OCR rendered 陰 腫 and 惡瘡鼠 with apparent spacing errors; these have been silently restored to 陰腫 and 惡瘡鼠瘻 based on context and standard Bencao Gangmu editions.\n5. The 瘡 entry after 聚結氣 in the 主治 section appears to be a truncated term; most editions read 瘻瘡 or simply list it as part of the scrofulous-sore cluster — retained as 'sores' pending a critical edition check.",
+      "_label": "昆布 (草之八)"
+    },
+    {
+      "title_inferred": "Yuewang Yusuan — a brackish aquatic herb (Grass Chapter Eight)",
+      "original_text": "【氣味】鹹，溫，無毒。\n\n【主治】水腫浮氣結聚，宿滯不消，腹中虛鳴，並煮服之（李）。",
+      "translation": "**Qi and Flavor:** Salty, warm, non-toxic.\n\n**Indications and Treatments:** [For] water swelling [edema] with accumulation of floating qi [pathological vapors], old stagnation that fails to disperse, and hollow rumbling in the abdomen — all [of these conditions] are treated by boiling [the herb] and taking it as a decoction. (Li [Shizhen])",
+      "entities_mentioned": [
+        {
+          "name": "越王餘算 (Yuewang Yusuan)",
+          "modern_identification": "Possibly a species of aquatic or semi-aquatic grass or rush, tentatively suggested to be related to Zostera or a similar brackish-water plant; identification remains uncertain in modern botanical literature",
+          "identification_confidence": "low",
+          "notes": "The name literally means 'King Yue's Remaining Tallies/Counting Sticks,' likely referencing a reed- or stick-like plant associated with the coastal regions of ancient Yue (present-day Zhejiang/Fujian). The salty flavor profile and edematous indications suggest a halophytic or marine plant. The attribution '李' in the source likely refers to Li Shizhen himself as the authority citing this entry, though it may also denote an earlier source figure."
+        }
+      ],
+      "translator_notes": "The closing attribution '（李）' is abbreviated and likely refers to Li Shizhen (李時珍), the compiler of the Bencao Gangmu, indicating his own commentary or a citation he incorporated. The phrase '浮氣結聚' (floating qi accumulation) is a classical pathological concept corresponding roughly to fluid retention and qi stagnation. '腹中虛鳴' denotes borborygmus (intestinal rumbling) associated with deficiency patterns. Preparation method: decoction (boil in water and drink).",
+      "_label": "越王餘算 (草之八)"
+    },
+    {
+      "title_inferred": "Shífān (Stone Sail): A Marine Plant — Identification, Properties, and Medical Uses",
+      "original_text": "【集解】弘景曰︰石帆狀如柏，水松狀如松。\n\n藏器曰︰石帆生海底，高尺餘。根如漆色，至梢上漸軟，作交羅紋。\n\n大明曰︰石帆紫色，梗大者如箸，見風漸硬，色如漆，人以飾作珊瑚裝。\n\n頌曰︰左思《吳都賦》︰草則石帆、水松。劉淵林注云︰石帆生海嶼石上，草類也。無葉，高尺許，其花離樓相貫連。若死則浮水中，人於海邊得之，稀有見其生者。\n\n【氣味】甜、鹹，平，無毒。\n\n【主治】石淋（弘景）。煮汁服，主婦人血結月閉（藏器）。",
+      "translation": "**[Collected Explanations]**\n\nHóngjǐng [Tao Hongjing] states: Shífān [Stone Sail] resembles cypress [in form], while Shuǐsōng [Water Pine] resembles pine.\n\nCángqì [Chen Cangqi] states: Shífān grows on the seafloor, reaching over a foot in height. Its root is lacquer-black in color; toward the tip it becomes gradually softer, forming a crossed, net-like pattern.\n\nDàmíng [Ri Huazi] states: Shífān is purple in color; its stem, when large, is as thick as chopsticks. Upon exposure to air it gradually hardens, becoming lacquer-colored. People use it as decoration in the manner of coral ornaments.\n\nSòng [Su Song] states: In Zuǒ Sī's 'Rhapsody on the Wu Capital' [Wú Dū Fù], it is written: 'Among the grasses: Shífān and Shuǐsōng.' Liu Yuanlin's commentary notes: Shífān grows on rocks of sea islands and belongs to the grass [plant] category. It has no leaves and reaches about a foot in height; its flowers [or growths] are arranged in interlocking tiers connected to one another. When it dies it floats on the water, and people obtain it at the seashore; it is rare to encounter it while still living.\n\n**[Qi and Flavor]** Sweet, salty; balanced [neutral]; non-toxic.\n\n**[Primary Treatments]**\nShí lín [stone strangury; urinary calculi] (Tao Hongjing). Boil and drink the decoction to treat blood stagnation and menstrual obstruction [amenorrhea] in women (Chen Cangqi).",
+      "entities_mentioned": [
+        {
+          "name": "石帆 (Shífān / Stone Sail)",
+          "modern_identification": "Likely a gorgonian sea fan coral or related colonial marine organism (Gorgonia spp. or Antipatharia), possibly also interpreted as a calcareous red alga; the description strongly suggests a gorgonian fan coral",
+          "identification_confidence": "medium",
+          "notes": "Described as growing on the seafloor, purple, hardening on air exposure, and used decoratively like coral. The classical sources classify it as a 'grass' (草類), but the physical description is consistent with a gorgonian coral or antipatharian (black coral). Some scholars associate it with Isis hippuris or related species."
+        },
+        {
+          "name": "水松 (Shuǐsōng / Water Pine)",
+          "modern_identification": "Possibly a marine alga or a related organism; sometimes identified with Glyptostrobus pensilis (a freshwater conifer) in terrestrial contexts, but here the marine context suggests a different organism",
+          "identification_confidence": "low",
+          "notes": "Mentioned only in passing for comparison; not the primary subject of this entry."
+        },
+        {
+          "name": "石淋 (Shí lín / Stone Strangury)",
+          "modern_identification": "Urinary calculi (kidney or bladder stones) with painful, difficult urination",
+          "identification_confidence": "high",
+          "notes": "A classical Chinese medical condition corresponding to urolithiasis."
+        }
+      ],
+      "translator_notes": "The term 離樓相貫連 in Su Song's citation is somewhat archaic and poetic; it describes a tiered or latticed, interconnected structure, here rendered as 'interlocking tiers connected to one another.' The entry conflates what modern science would classify as an animal (coral) under the classical category of 草 (grass/plant), which was common for sessile marine organisms in pre-modern Chinese natural history. Zuǒ Sī's 'Rhapsody on the Wu Capital' (吳都賦) dates to the Western Jin dynasty (3rd century CE). Liu Yuanlin is identified as the commentator Liu Kui (劉逵), whose commentary on Zuǒ Sī's rhapsodies is a standard reference.",
+      "_label": "石帆 (草之八)"
+    },
+    {
+      "title_inferred": "Water Pine (水松) – A Marine Plant Used for Edema and Difficult Labor",
+      "original_text": "【集解】弘景曰︰水松狀如松。\n\n頌曰︰出南海及交趾，生海水中。\n\n【氣味】甘、鹹，寒，無毒。\n\n【主治】溪毒（弘景）。水腫，催生（藏器）。",
+      "translation": "【Collected Commentaries】\nTao Hongjing [弘景] states: Water Pine [水松] resembles the pine tree in appearance.\n\nSu Song [頌] states: It is found in the South Sea [南海] and Jiaozhi [交趾; northern Vietnam], growing in seawater.\n\n【Qi and Flavor】\nSweet and salty; cold in nature; non-toxic.\n\n【Indications and Treatments】\nStream toxin [溪毒; a waterborne febrile illness contracted from mountain streams] (Tao Hongjing). Edema [水腫]; facilitating labor and delivery [催生] (Chen Cangqi [藏器]).",
+      "entities_mentioned": [
+        {
+          "name": "水松 (Shuǐ sōng / Water Pine)",
+          "modern_identification": "Possibly a marine alga or seaweed; some scholars associate it with species of Caulerpa or other marine macroalgae, though a confident botanical identification is uncertain. The name 水松 in modern Chinese also refers to Glyptostrobus pensilis, but the habitat description (seawater, South Sea) points to a marine organism rather than that freshwater tree.",
+          "identification_confidence": "low",
+          "notes": "The text states it lives in seawater and resembles a pine, suggesting a feathery or needle-like marine alga. Its use against 溪毒 (stream/waterborne toxin), edema, and as a labor-inducer indicates broad traditional application."
+        },
+        {
+          "name": "溪毒 (stream toxin)",
+          "modern_identification": "A category of waterborne illness in classical Chinese medicine, often associated with febrile or parasitic infections contracted from mountain streams; may correspond to schistosomiasis or similar conditions.",
+          "identification_confidence": "medium",
+          "notes": "A disease category rather than a species; cited from Tao Hongjing's (陶弘景) commentary."
+        }
+      ],
+      "translator_notes": "The attribution '弘景' refers to Tao Hongjing (陶弘景, 456–536 CE), author of the Mingyi Bielu. '頌' refers to Su Song (蘇頌, 1020–1101 CE), author of the Bencao Tujing. '藏器' refers to Chen Cangqi (陳藏器), author of the Bencao Shiyi (8th century). 交趾 (Jiaozhi) refers historically to what is now northern Vietnam and southern China's coastal regions. The dual indication of 水腫 (edema) and 催生 (facilitating parturition) suggests the plant was seen as having both diuretic and uterotonic properties in traditional practice.",
+      "_label": "水松 (草之八)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】石斛（《別錄》）、金釵（《綱目》）、禁生（《別錄》）、林蘭（《本經》）、杜蘭\n\n時珍曰︰石斛名義未詳。其莖狀如金釵之股，故古有金釵石斛之稱。今蜀人栽之，呼為金釵花。盛弘之《荊州記》云︰耒陽龍石山多石斛，精好如金釵，是矣。林蘭、杜蘭，與木部木蘭同名，恐誤。\n\n【集解】《別錄》曰︰石斛生六安山谷水旁石上。七月、八月採莖，陰乾。\n\n弘景曰︰今用石斛，出始興。生石上，細實，以桑灰湯沃之，色如金，形如蚱蜢髀者佳。\n近道亦有，次於宣城者。其生櫟木上者，名木斛。其莖至虛，長大而色淺。不入丸散，惟可為酒漬煮之用。俗方最以補虛，療腳膝。\n\n恭曰︰今荊襄及漢中、江左又有二種︰一種似大麥，累累相連，頭生一葉，而性冷，名麥斛；一種莖大如雀髀，葉在莖頭，名雀髀斛。其他斛如竹，而節間生葉也。\n\n作乾石斛法︰\n以酒洗蒸曝成，不用灰湯。或言生者漬酒，勝於乾者。\n\n頌曰︰今荊州、光州、壽州、廬州、江州、溫州、台州亦有之，以廣南者為佳。多在山谷中。五月生苗，莖似小竹節，節間出碎葉。七月開花，十月結實。其根細長，黃色。惟生石上者為勝。\n\n宗奭曰︰石斛細若小草，長三、四寸，柔韌，折之如肉而實。今人多以木斛混之，亦不能",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Shí Hú (Dendrobium / Noble Orchid) — Herb Chapter Nine\",\n  \"original_text\": \"【釋名】石斛（《別錄》）、金釵（《綱目》）、禁生（《別錄》）、林蘭（《本經》）、杜蘭\\n\\n時珍曰︰石斛名義未詳。其莖狀如金釵之股，故古有金釵石斛之稱。今蜀人栽之，呼為金釵花。盛弘之《荊州記》云︰耒陽龍石山多石斛，精好如金釵，是矣。林蘭、杜蘭，與木部木蘭同名，恐誤。\\n\\n【集解】《別錄》曰︰石斛生六安山谷水旁石上。七月、八月採莖，陰乾。\\n\\n弘景曰︰今用石斛，出始興。生石上，細實，以桑灰湯沃之，色如金，形如蚱蜢髀者佳。近道亦有，次於宣城者。其生櫟木上者，名木斛。其莖至虛，長大而色淺。不入丸散，惟可為酒漬煮之用。俗方最以補虛，療腳膝。\\n\\n恭曰︰今荊襄及漢中、江左又有二種︰一種似大麥，累累相連，頭生一葉，而性冷，名麥斛；一種莖大如雀髀，葉在莖頭，名雀髀斛。其他斛如竹，而節間生葉也。\\n\\n作乾石斛法︰以酒洗蒸曝成，不用灰湯。或言生者漬酒，勝於乾者。\\n\\n頌曰︰今荊州、光州、壽州、廬州、江州、溫州、台州亦有之，以廣南者為佳。多在山谷中。五月生苗，莖似小竹節，節間出碎葉。七月開花，十月結實。其根細長，黃色。惟生石上者為勝。\\n\\n宗奭曰︰石斛細若小草，長三、四寸，柔韌，折之如肉而實。今人多以木斛混之，亦不能明。木斛中虛如禾草，長尺餘，但色深黃光澤耳。\\n\\n時珍曰︰石斛叢生石上。其根糾結甚繁，乾則白軟。其莖葉生皆青色，乾則黃色。開紅花。節上自生根須。人亦折下，以砂石栽之，或以物盛掛屋下，頻澆以水，經年不死，俗稱為千年潤。石斛短而中實，木斛長而中虛，甚易分別。處處有之，以蜀中者為勝。\\n\\n【氣味】甘，平，無毒。普曰︰神農︰甘，平。扁鵲︰酸。李當之︰寒。時珍曰︰甘、淡、微鹹。\\n\\n之才曰︰陸英為之使，惡凝水石、巴豆，畏雷丸、僵蠶。\\n\\n【主治】傷中，除痺下氣，補五臟虛勞羸瘦，強陰益精。久服，濃腸胃（《本經》）。補內絕不足，平胃氣，長肌肉，逐皮膚邪熱痱氣，腳膝疼冷痺弱，定志除驚。輕身延年（《別錄》）。益氣除熱，治男子腰腳軟弱，健陽，逐皮肌風痺，骨中久冷，補腎益力（權）。壯筋骨，暖水臟，益智清氣（《日華》）。治發熱自汗，癰疽排膿內塞（時珍）。\\n\\n【發明】曰︰石斛鎮涎，澀丈夫元氣。酒浸酥蒸，服滿一鎰，永不骨痛也。\\n\\n宗奭曰︰石斛治胃中虛熱有功。\\n\\n時珍曰︰石斛氣平，味甘、淡、微鹹，陰中之陽，降也。乃足太陰脾、足少陰右腎之藥。\\n\\n深師云︰囊濕精少，小便餘瀝者，宜加之。一法︰每以二錢入生薑一片，水煎代茶飲，甚清肺補脾也。\",\n  \"translation\": \"**Names and Nomenclature**\\nAlternate names: Shí Hú [石斛] (Míng Yī Bié Lù), Jīn Chāi [金釵, 'Golden Hairpin'] (Běncǎo Gāngmù), Jìn Shēng [禁生] (Bié Lù), Lín Lán [林蘭] (Shénnóng Běnjīng), Dù Lán [杜蘭].\\n\\nLǐ Shízhēn states: The meaning of the name Shí Hú has not been fully explained. Its stem resembles the prong of a golden hairpin [jīn chāi], hence the ancient designation 'Golden Hairpin Shí Hú.' People in Shu [Sichuan] today cultivate it and call it Jīn Chāi Huā [Golden Hairpin Flower]. Shèng Hóngzhī's Jīngzhōu Jì records: 'The Dragon-Stone Mountain at Lèiyáng produces abundant Shí Hú, exquisitely fine, resembling a golden hairpin'—this confirms the name. The names Lín Lán and Dù Lán duplicate those of Mù Lán [Magnolia] in the Wood section, which is likely a confusion.\\n\\n**Collected Explanations**\\nBié Lù states: Shí Hú grows on rocks bes",
+      "_label": "石斛 (草之九)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】猴薑（《拾遺》）、胡孫薑（志）、石毛薑（《蘇頌》）、石庵䕡。\n\n藏器曰：骨碎補本名猴薑。開元皇帝以其主傷折，補骨碎，故命此名。或作骨碎布，訛矣。江西人呼為胡孫薑，象形也。\n\n時珍曰：庵䕡主折傷破血。此物功同，故有庵䕡之名。\n\n【集解】志曰︰骨碎補生江南。根寄樹石上，有毛。葉如庵䕡。\n\n藏器曰︰嶺南虔、吉州亦有之。葉似石韋而一根，餘葉生於木。\n\n大明曰︰是樹上寄生草，根似薑而細長。\n\n頌曰︰今淮、浙、陝西、夔路州郡皆有之。生木或石上。多在背陰處，引根成條，上有黃赤毛及短葉附之。又抽大葉成枝。葉面青綠色，有青黃點；背青白色，有赤紫點。春生葉，至冬乾黃。無花實。采根入藥。\n\n宗奭曰︰此苗不似薑，亦不似庵䕡。每一大葉兩旁，小葉叉牙，兩兩相對，葉長有尖瓣也。\n\n時珍曰︰其根扁長，略似薑形。其葉有丫缺，頗似貫眾葉。謂葉如庵 者，殊謬；如石韋者，亦差。\n\n根\n\n【氣味】苦，溫，無毒。大明曰︰平。\n\n【主治】破血止血，補傷折（《開寶》）。主骨中毒氣，風血疼痛，五勞六極，足手不收，上熱下冷（甄權）。惡瘡，蝕爛肉，殺蟲（大明）。研末，豬腎夾煨，空心食，治耳鳴，及腎虛久泄，牙疼（時珍）。\n\n【發明】",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Gusui Bu (Drynaria rhizome) — Entry from Cao zhi jiu (Herbs, Chapter 9)\",\n  \"original_text\": \"【釋名】猴薑（《拾遺》）、胡孫薑（志）、石毛薑（《蘇頌》）、石庵䕡。\\n\\n藏器曰：骨碎補本名猴薑。開元皇帝以其主傷折，補骨碎，故命此名。或作骨碎布，訛矣。江西人呼為胡孫薑，象形也。\\n\\n時珍曰：庵䕡主折傷破血。此物功同，故有庵䕡之名。\\n\\n【集解】志曰︰骨碎補生江南。根寄樹石上，有毛。葉如庵䕡。\\n\\n藏器曰︰嶺南虔、吉州亦有之。葉似石韋而一根，餘葉生於木。\\n\\n大明曰︰是樹上寄生草，根似薑而細長。\\n\\n頌曰︰今淮、浙、陝西、夔路州郡皆有之。生木或石上。多在背陰處，引根成條，上有黃赤毛及短葉附之。又抽大葉成枝。葉面青綠色，有青黃點；背青白色，有赤紫點。春生葉，至冬乾黃。無花實。采根入藥。\\n\\n宗奭曰︰此苗不似薑，亦不似庵䕡。每一大葉兩旁，小葉叉牙，兩兩相對，葉長有尖瓣也。\\n\\n時珍曰︰其根扁長，略似薑形。其葉有丫缺，頗似貫眾葉。謂葉如庵䕡者，殊謬；如石韋者，亦差。\\n\\n根\\n\\n【氣味】苦，溫，無毒。大明曰︰平。\\n\\n【主治】破血止血，補傷折（《開寶》）。主骨中毒氣，風血疼痛，五勞六極，足手不收，上熱下冷（甄權）。惡瘡，蝕爛肉，殺蟲（大明）。研末，豬腎夾煨，空心食，治耳鳴，及腎虛久泄，牙疼（時珍）。\\n\\n【發明】頌曰︰骨碎補，入婦人血氣藥。蜀人治閃折筋骨傷損，取根搗篩，煮黃米粥，和裹傷處有效。\\n\\n時珍曰︰骨碎補，足少陰藥也。故能入骨，治牙，及久泄痢。昔有魏刺史子久泄，諸醫不效，垂殆。予用此藥末入豬腎中煨熟與食，頓住。蓋腎主大小便，久泄屬腎虛，不可專從脾胃也。《雷公炮炙論》用此方治耳鳴，耳亦腎之竅也。案戴原禮《証治要訣》云︰痢後下虛，不善調養，或遠行，或房勞，或外感，致兩足痿軟，或痛或痺，遂成痢風。宜用獨活寄生湯吞虎骨四斤丸，仍以骨碎補三分之一，同研取汁，酒解服之。外用杜仲、牛膝、杉木節、萆薢、白芷、南星煎湯，頻頻熏洗。此亦從腎虛骨痿而治也。\",\n  \"translation\": \"**[Names and Nomenclature]**\\nAlternate names: Monkey Ginger [猴薑] (from *Shiyi* [Supplement to Materia Medica]); Husun Ginger [胡孫薑] (from *Zhi* [Kai Bao Bencao]); Stone Hairy Ginger [石毛薑] (from Su Song); Stone Aster [石庵䕡].\\n\\nChen Cangqi states: Gusui Bu was originally named Monkey Ginger. Emperor Xuanzong [of the Tang, reign era Kaiyuan] named it Gusui Bu [\\\"Bone-Fragment Supplement\\\"] because it principally treats fractures and repairs broken bones. Some write it as 骨碎布, which is an error. People in Jiangxi call it Husun Ginger [\\\"Gibbon Ginger\\\"] because the shape resembles that animal.\\n\\nLi Shizhen states: Aster [庵䕡, Doellingeria] principally treats fractures and disperses blood stasis. Since this plant has the same function, it acquired the name Stone Aster.\\n\\n**[Collected Commentaries]**\\n*Zhi* states: Gusui Bu grows in Jiangnan. Its root clings to trees or rocks and is covered in hair. The leaves resemble those of Aster [庵䕡].\\n\\nChen Cangqi states: It is also found in Lingnan [South China], and in Qian and Ji prefectures. The leaves resemble ",
+      "_label": "骨碎補 (草之九)"
+    },
+    {
+      "title_inferred": "Shí Wéi (Stone Fern / Pyrrosia) — Grass Category IX",
+      "original_text": "【釋名】石䩾（音蔗）、石皮（《別錄》）、石蘭。\n\n弘景曰︰蔓延石上，生葉如皮，故名石韋。\n\n時珍曰︰柔皮曰韋，䩾亦皮也。\n\n【集解】《別錄》曰︰石韋生華陰山谷石上，不聞水聲及人聲者良。二月採葉，陰乾。\n\n弘景曰︰處處有之。出建平者，葉長大而濃。\n\n恭曰︰此物叢生石旁陰處，亦不作蔓。其生古瓦屋上者名瓦韋，療淋亦好。\n\n頌曰︰今晉、絳、滁、海、福州，江寧皆有之。叢生石上，葉如柳，背有毛，而斑點如皮。福州別有一種石皮，三月有花，采葉作浴湯，治風。\n\n時珍曰︰多生陰崖險罅處。其葉長者近尺，闊寸餘，柔韌如皮，背有黃毛。亦有金星者，名金星草。葉凌冬不凋。又一種如杏葉者，亦生石上，其性相同。\n\n【氣味】苦，平，無毒。《別錄》曰︰甘。權曰︰微寒。\n\n之才曰︰滑石、杏仁、射干為之使，得菖蒲良。製丹砂、礬石。\n\n【主治】勞熱邪氣，五癃閉不通，利小便水道（《本經》）。止煩下氣，通膀胱滿，補五勞，安五臟，去惡風，益精氣（《別錄》）。治淋瀝遺溺（《日華》）。炒末，冷酒調服，治發背（頌）。主崩漏金瘡，清肺氣（時珍）。",
+      "translation": "**[Names and Explanations]**\nAlternate names: Shí Zhà [石䩾, pronounced 'zhà'], Shí Pí [石皮, 'stone skin'] (from the *Bielu*), and Shí Lán [石兰, 'stone orchid'].\n\nTáo Hóngjǐng states: It spreads and climbs over rocks, producing leaves that resemble hide [leather], hence the name Shí Wéi ['stone hide/leather'].\n\nLǐ Shízhēn states: 'Wéi' [韋] denotes soft, supple leather; 'zhà' [䩾] likewise refers to hide or skin.\n\n**[Collected Explanations]**\nThe *Bielu* states: Shí Wéi grows on rocks in mountain valleys of Huáyīn. Plants growing where neither the sound of water nor of human voices can be heard are of superior quality. Leaves are gathered in the second month [of the lunar calendar] and dried in the shade.\n\nTáo Hóngjǐng states: It is found everywhere. That which comes from Jiànpíng has leaves that are long, large, and thick.\n\n[Su] Gōng states: This plant grows in clusters in shaded places beside rocks; it does not form runners or vines. The variety that grows on old tiled rooftops is called Wǎ Wéi ['tile leather']; it is also effective for treating urinary dripping and strangury [lín].\n\n[Su] Sòng states: Today it is found in Jìn, Jiàng, Chú, Hǎi, and Fúzhōu, as well as Jiāngnìng. It grows in clumps on rocks; the leaves resemble willow leaves, with hairs on the underside and mottled spots resembling leather. Fúzhōu has a separate variety called Shí Pí, which flowers in the third month; its leaves are collected to prepare a bathing decoction for treating wind disorders.\n\nLǐ Shízhēn states: It grows commonly on shaded cliffs and in precarious rock crevices. The longer leaves approach one foot in length and are more than one cun in width, pliable and tough like leather, with yellow hairs on the underside. There is also a variety bearing golden star-like [spore] markings called Jīn Xīng Cǎo ['golden star herb']. The leaves do not wither in winter. There is yet another variety with leaves resembling apricot leaves, also growing on rocks, and its medicinal properties are the same.\n\n**[Qi and Flavor]**\nBitter, balanced [neutral], non-toxic. The *Bielu* states: sweet. [Zhèn] Quán states: slightly cold.\n\n[Xú] Zhīcái states: Talc [huáshí], apricot kernel [xìngrén], and blackberry lily rhizome [shègān] serve as its envoys [guiding herbs]; it works well in combination with calamus [chāngpú]. It moderates [counteracts] cinnabar [dānshā] and alum [fánshí].\n\n**[Indications and Treatments]**\nLabor-taxation heat, pathogenic qi, the five types of urinary blockage and obstruction, and promoting urination and clearing the water pathways (*Shennong Bencao Jing*). Stopping vexation and descending qi, relieving bladder fullness, supplementing the five forms of taxation, calming the five viscera, dispelling malign wind, and boosting essence-qi (*Bielu*). Treating urinary dripping [lín lì] and enuresis [urinary incontinence] (*Rihua Bencao*). Stir-fried and ground to powder, mixed with cold wine and taken orally, it treats carbuncles on the back [fā bèi] (Su Sòng). It governs flooding and spotting [uterine bleeding], metal-wound injuries, and clears lung qi (Lǐ Shízhēn).",
+      "entities_mentioned": [
+        {
+          "name": "石韋 (Shí Wéi)",
+          "modern_identification": "Pyrrosia lingua (Thunb.) Farw. or related Pyrrosia spp. (family Polypodiaceae)",
+          "identification_confidence": "high",
+          "notes": "A fern commonly growing on rocks and trees in East Asia, widely used in traditional Chinese medicine as a urinary and lung herb. The variety 'Wǎ Wéi' (tile leather) likely refers to Pyrrosia petiolosa or a closely related small-leaved species. 'Jīn Xīng Cǎo' (golden star herb) may correspond to Phymatopteris or another Pyrrosia species with prominent sori."
+        },
+        {
+          "name": "瓦韋 (Wǎ Wéi)",
+          "modern_identification": "Lepisorus thunbergianus (Kaulf.) Ching or Pyrrosia petiolosa",
+          "identification_confidence": "medium",
+          "notes": "Described as growing on old tiled rooftops; also used to treat urinary strangury."
+        },
+        {
+          "name": "金星草 (Jīn Xīng Cǎo)",
+          "modern_identification": "Possibly Pyrrosia hastata or another Pyrrosia sp. with prominent golden sori",
+          "identification_confidence": "low",
+          "notes": "Named for the golden star-like appearance of the sporangia on the leaf underside."
+        },
+        {
+          "name": "滑石 (Huá Shí)",
+          "modern_identification": "Talc (hydrated magnesium silicate)",
+          "identification_confidence": "high",
+          "notes": "Used here as an envoy/guiding herb for Shí Wéi."
+        },
+        {
+          "name": "杏仁 (Xìng Rén)",
+          "modern_identification": "Prunus armeniaca seed kernel (apricot kernel)",
+          "identification_confidence": "high",
+          "notes": "Listed as an envoy herb."
+        },
+        {
+          "name": "射干 (Shè Gān)",
+          "modern_identification": "Belamcanda chinensis (L.) DC. rhizome (blackberry lily)",
+          "identification_confidence": "high",
+          "notes": "Listed as an envoy herb."
+        },
+        {
+          "name": "菖蒲 (Chāng Pú)",
+          "modern_identification": "Acorus calamus L. or Acorus gramineus Soland. (calamus / sweet flag)",
+          "identification_confidence": "high",
+          "notes": "Stated to work well in combination with Shí Wéi."
+        },
+        {
+          "name": "丹砂 (Dān Shā)",
+          "modern_identification": "Cinnabar (mercury sulfide, HgS)",
+          "identification_confidence": "high",
+          "notes": "Shí Wéi is said to moderate/counteract cinnabar."
+        },
+        {
+          "name": "礬石 (Fán Shí)",
+          "modern_identification": "Alum (potassium aluminum sulfate)",
+          "identification_confidence": "high",
+          "notes": "Shí Wéi is said to moderate/counteract alum."
+        }
+      ],
+      "translator_notes": "1. 'Wéi' (韋) and 'zhà' (䩾) are both archaic terms for processed animal hide/leather, used metaphorically to describe the tough, leathery texture of the fern's fronds.\n2. 'Wǎ Wéi' (瓦韋) is a distinct but related taxon, not simply an ecological variant; its separate modern identification is noted above.\n3. The five types of 'lóng' (五癃) refer to five classical categories of urinary obstruction in Chinese medical theory.\n4. 'Fā bèi' (發背) literally means 'eruption on the back' and refers to a deep-seated carbuncle or abscess of the upper back, a serious condition in traditional medicine.\n5. The passage '製丹砂、礬石' is interpreted as Shí Wéi restraining or moderating the toxicity of cinnabar and alum, consistent with standard usage of 製 in this pharmacological context.\n6. The Fúzhōu variety of 'Shí Pí' used as a bathing decoction for wind disorders may refer to a different fern or plant species entirely, and cannot be confidently identified.",
+      "_label": "石韋 (草之九)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】金釧草（《圖經》）、鳳尾草（《綱目》）、七星草。\n\n時珍曰︰即石韋之有金星者。《圖經》重出七星草，並入。\n\n【集解】禹錫曰︰金星草，西南州郡多有之，以戎州者為上。喜生背陰石上淨處，及竹箐中少日色處，或生大木下，及背陰古瓦屋上。初出深綠色，葉長一、二尺，至深冬背生黃星點子，兩兩相對，色如金，因得金星之名。無花實，凌冬不凋。其根盤屈如竹根而細，折之有筋，如豬馬鬃。五月和根采之，風乾用。\n\n頌曰︰七星草生江州山谷石上。葉如柳而長，作蔓延，長二、三尺。其葉堅硬，背上有黃點如七星。采無時。\n\n【氣味】苦，寒，無毒。頌曰︰微酸。\n\n崔 曰︰製三黃、砂、汞、礬石。\n\n【主治】發背癰瘡結核，解硫黃丹石毒，連根半斤，酒五升，銀器煎服，先服石藥悉下。\n亦可作末，冷水服方寸匕。塗瘡腫，殊效。根浸油塗頭，大生毛發（《嘉祐》）。烏髭髮（頌）。解熱，通五淋，涼血（時珍）。\n\n【發明】頌曰︰但是瘡毒，皆可服之。然性至冷，服後下利，須補治乃平復。老年不可輒服。\n\n宗奭曰︰丹石毒發於背，及一切癰腫。以其根葉二錢半，酒一大盞，煎服，取下黑汁。\n不惟下所服石藥，兼毒去瘡愈也。如不飲酒，則為末，以新汲水服，以知為度。",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Gold-Star Fern (Jīnxīng Cǎo) — identification, collection, properties, and medical uses\",\n  \"original_text\": \"【釋名】金釧草（《圖經》）、鳳尾草（《綱目》）、七星草。\\n\\n時珍曰︰即石韋之有金星者。《圖經》重出七星草，並入。\\n\\n【集解】禹錫曰︰金星草，西南州郡多有之，以戎州者為上。喜生背陰石上淨處，及竹箐中少日色處，或生大木下，及背陰古瓦屋上。初出深綠色，葉長一、二尺，至深冬背生黃星點子，兩兩相對，色如金，因得金星之名。無花實，凌冬不凋。其根盤屈如竹根而細，折之有筋，如豬馬鬃。五月和根采之，風乾用。\\n\\n頌曰︰七星草生江州山谷石上。葉如柳而長，作蔓延，長二、三尺。其葉堅硬，背上有黃點如七星。采無時。\\n\\n【氣味】苦，寒，無毒。頌曰︰微酸。\\n\\n崔 曰︰製三黃、砂、汞、礬石。\\n\\n【主治】發背癰瘡結核，解硫黃丹石毒，連根半斤，酒五升，銀器煎服，先服石藥悉下。\\n亦可作末，冷水服方寸匕。塗瘡腫，殊效。根浸油塗頭，大生毛發（《嘉祐》）。烏髭髮（頌）。解熱，通五淋，涼血（時珍）。\\n\\n【發明】頌曰︰但是瘡毒，皆可服之。然性至冷，服後下利，須補治乃平復。老年不可輒服。\\n\\n宗奭曰︰丹石毒發於背，及一切癰腫。以其根葉二錢半，酒一大盞，煎服，取下黑汁。不惟下所服石藥，兼毒去瘡愈也。如不飲酒，則為末，以新汲水服，以知為度。\\n\\n時珍曰︰此藥大抵治金石發毒者。若憂郁氣血凝滯而發毒者，非所宜也。\",\n  \"translation\": \"**[Names]** Also known as Jīnchuàn Cǎo [Gold-Bracelet Herb] (from the *Tújīng* [Illustrated Classic]), Fèngwěi Cǎo [Phoenix-Tail Herb] (from this *Compendium*), and Qīxīng Cǎo [Seven-Star Herb].\\n\\nLi Shizhen notes: This is simply the variety of Shíwéi [Pyrrosia] that bears golden stars. The *Tújīng* lists Qīxīng Cǎo as a separate entry; I have merged it here.\\n\\n**[Collected Explanations]** Yǔ Xí states: Jīnxīng Cǎo is found in abundance throughout the prefectures of the southwest, with the finest specimens coming from Róngzhōu. It favors clean, shade-facing rock surfaces, the shadowed interior of bamboo groves where little sunlight penetrates, the ground beneath large trees, and the tops of old tile-roofed buildings that face away from the sun. When it first emerges it is deep green; the leaves grow one to two feet long. In the depths of winter, golden star-like spots appear in pairs on the leaf undersides, gleaming like gold — hence the name \"gold-star.\" It bears neither flowers nor fruit, and does not wither in winter. Its roots coil in the manner of bamboo roots but are more slender; when broken, they reveal fibrous strands resembling pig or horse bristles. It is collected with roots intact in the fifth month and dried in the shade for use.\\n\\nSū Sòng states: Qīxīng Cǎ",
+      "_label": "金星草 (草之九)"
+    },
+    {
+      "title_inferred": "Shi Changsheng (Stone Everliving Plant) — Herbal Entry",
+      "original_text": "【釋名】丹草（《本經》）、丹沙草。\n\n時珍曰︰四時不凋，故曰長生。\n\n【集解】《別錄》曰︰石長生，生咸陽山谷。\n\n弘景曰︰俗中時有采者，方藥不復用。近道亦有，是細細草葉，花紫色。南中多生石岩下，葉似蕨，而細如龍須，黑如光漆，高尺餘，不與餘草雜也。\n\n恭曰︰苗高尺許，五、六月採莖葉用。今市人用罨筋草為之，葉似青葙，莖細勁紫色，今太常用者是也。\n\n時珍曰︰宋祁《益部方物記》︰長生草生山陰蕨地，修莖茸葉，色似檜而澤，經冬不凋。\n\n【氣味】咸，微寒，有毒。普曰︰神農︰苦。雷公︰辛。桐君︰甘。權曰︰酸，有小毒。\n\n【主治】寒熱惡瘡大熱，辟鬼氣不祥（《本經》）。下三蟲（《別錄》）。治疥癬，逐諸風，治百邪魅（權）。",
+      "translation": "**Names and Nomenclature**\nAlso known as Dān Cǎo [Cinnabar Herb] (as recorded in the *Shennong Bencao Jing* [Divine Husbandman's Classic of Materia Medica]) and Dānshā Cǎo [Cinnabar Sand Herb].\n\nLi Shizhen notes: It does not wither throughout the four seasons, hence the name 'Changsheng' [Everliving/Long-living].\n\n**Collected Commentaries**\nThe *Mingyi Bielu* [Supplementary Records of Famous Physicians] states: Shi Changsheng grows in the mountain valleys of Xianyang.\n\nTao Hongjing [Hongjing] states: It is occasionally collected by common people, though it is no longer used in medicinal formulas. It can also be found in nearby areas. It is a plant with very fine, delicate leaves and purple flowers. In southern regions it commonly grows beneath rocky cliffs; its leaves resemble fern fronds but are as fine as dragon-beard grass [Juncus sp.], black and lustrous as lacquer, growing to a height of over one chi [approximately 30 cm], and it does not mingle with other grasses.\n\nSu Gong [Kong] states: The seedling grows to about one chi in height; the stems and leaves are gathered for use in the fifth and sixth months. Merchants in the market today substitute it with Yǎnjīn Cǎo [a tendril herb], whose leaves resemble those of Qīngxiāng [Celosia argentea], with slender, sturdy, purple stems — this is the form currently employed by the Taichangsi [the Imperial Ritual Bureau responsible for court medical supply].\n\nLi Shizhen states: Song Qi's *Yibu Fangwu Ji* [Record of Natural Products of the Yizhou Region] notes: The Changsheng Herb grows on shaded mountain slopes in ferny ground; it has tall, slender stems and soft, downy leaves, its color resembling cypress [Juniperus/Cupressus] but with a luster, and it does not wither through winter.\n\n**Qi and Flavor**\nSalty, slightly cold, toxic. Lei states — according to Shennong: bitter; according to Lei Gong: acrid; according to Tong Jun: sweet. Quan [Zhen Quan] states: sour, with slight toxicity.\n\n**Principal Indications and Treatments**\n- Alternating chills and fever [cold-heat conditions], malignant sores [è chuāng], and high fever; wards off inauspicious ghostly [miasmic] qi (*Shennong Bencao Jing*).\n- Expels the three worms [intestinal parasites] (*Mingyi Bielu*).\n- Treats scabies and tinea [skin parasitic infections]; dispels all manner of wind [pathogenic wind conditions]; treats possession by the hundred evil spirits and demons [Zhen Quan].",
+      "entities_mentioned": [
+        {
+          "name": "石長生 (Shí Chángshēng)",
+          "modern_identification": "Possibly Selaginella tamariscina (rock spikemoss) or a related Selaginella species; some scholars also associate it with Asplenium or other rock-dwelling ferns. The description of black, lacquer-like, fern-resembling fine leaves on rocky cliffs strongly suggests a Selaginella.",
+          "identification_confidence": "medium",
+          "notes": "The description across commentators is inconsistent, suggesting market substitution was common even in Li Shizhen's time. The 'Yanjin cao' substitute mentioned by Su Gong may be a separate taxon entirely."
+        },
+        {
+          "name": "丹草 / 丹沙草 (Dān Cǎo / Dānshā Cǎo)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Alternative names for Shi Changsheng recorded in the Shennong Bencao Jing."
+        },
+        {
+          "name": "罨筋草 (Yǎnjīn Cǎo)",
+          "modern_identification": "Uncertain; described as having Celosia-like leaves and slender purple stems. May be a Celosia-adjacent amaranthaceous plant or an unidentified herb used as a market substitute.",
+          "identification_confidence": "unknown",
+          "notes": "Su Gong flags this as a market adulteration/substitution for the genuine article, officially adopted by the Taichangsi."
+        },
+        {
+          "name": "青葙 (Qīngxiāng)",
+          "modern_identification": "Celosia argentea (silver cockscomb / feather cockscomb)",
+          "identification_confidence": "high",
+          "notes": "Used here only as a comparator for leaf shape."
+        },
+        {
+          "name": "三蟲 (Sān Chóng)",
+          "modern_identification": "Intestinal parasites (a traditional Chinese medical category referring to three types of worms/parasites inhabiting the body)",
+          "identification_confidence": "high",
+          "notes": "A standard TCM category; not a specific modern species."
+        }
+      ],
+      "translator_notes": "1. The OCR rendering '罨 筋草' (with a space) is corrected to '罨筋草' as this is a single plant name. 2. 'Taichangsi' (太常) was the imperial bureau overseeing ritual and, in this context, official medicinal supply standards. 3. The commentators cited are: Tao Hongjing (弘景, 456–536 CE), Su Gong (恭, Tang dynasty), Zhen Quan (權, i.e., 甄權, c. 540–643 CE), and Li Shizhen himself (時珍). 4. The condition '百邪魅' is translated as 'possession by evil spirits and demons' — this reflects the demonological framing of certain psychiatric or neurological conditions in classical Chinese medicine. 5. Identification of Shi Changsheng remains contested in botanical literature; the Selaginella hypothesis is common but not universally accepted.",
+      "_label": "石長生 (草之九)"
+    },
+    {
+      "title_inferred": "Stone Purslane (Shi Xian) – Herb Entry from Chapter Grass IX",
+      "original_text": "【集解】頌曰︰生筠州，多附河岸沙石上。春生苗，莖青，高一尺以來，葉如水柳而短。八、九月土人采之。\n\n【氣味】辛、苦，有小毒。\n\n【主治】同甘草煎服，主𪖙䶎，又吐風涎（頌）。",
+      "translation": "**[Collected Explanations]** Su Song states: It grows in Junzhou [a prefecture in present-day Jiangxi], commonly attached to the sandy and rocky banks of rivers. In spring it puts forth shoots; the stem is green and reaches about one foot in height; the leaves resemble those of the water willow [Salix) but are shorter. Local people harvest it in the eighth and ninth months [of the lunar calendar, roughly September–October].\n\n**[Qi and Flavor]** Acrid and bitter; slightly toxic.\n\n**[Indications and Treatment]** Decocted together with licorice root [Glycyrrhiza uralensis] and taken orally, it treats [ILLEGIBLE: a dental or oral condition indicated by the rare characters 𪖙䶎, likely referring to a disorder of the teeth or gums]; it also induces vomiting of wind-phlegm [feng xian]. (Su Song)",
+      "entities_mentioned": [
+        {
+          "name": "石莧 (Shi Xian)",
+          "modern_identification": "Possibly a saxicolous herb in the family Crassulaceae or a riparian plant; exact identification uncertain. Some scholars tentatively associate it with species of Penthorum or a related genus.",
+          "identification_confidence": "low",
+          "notes": "Described as growing on sandy, rocky riverbanks in Junzhou; stems green, about 30 cm tall; leaves resembling short-leaved willows. The name 石莧 literally means 'stone purslane/amaranth,' but the botanical description does not clearly match common purslane (Portulaca oleracea)."
+        },
+        {
+          "name": "甘草 (Gancao)",
+          "modern_identification": "Glycyrrhiza uralensis (Chinese licorice root)",
+          "identification_confidence": "high",
+          "notes": "Used here as a co-ingredient in a decoction. Standard classical Chinese materia medica ingredient."
+        },
+        {
+          "name": "𪖙䶎",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "These are extremely rare or archaic characters, likely referring to a specific oral or dental pathology (possibly a form of toothache, gum disease, or jaw swelling). OCR rendering may be imperfect, but the characters appear intentional and archaic rather than corrupted."
+        },
+        {
+          "name": "風涎 (feng xian)",
+          "modern_identification": "Wind-phlegm — a classical Chinese medical concept referring to pathological fluids associated with wind-type disorders, often linked to epilepsy, convulsions, or stroke-like presentations.",
+          "identification_confidence": "medium",
+          "notes": "The treatment of 'vomiting wind-phlegm' suggests an emetic use in conditions involving excessive phlegm with neurological or convulsive symptoms."
+        }
+      ],
+      "translator_notes": "The characters 𪖙䶎 are highly unusual and may represent an archaic or dialectal term for a dental or oral condition; they are flagged as [ILLEGIBLE] in the translation due to their ambiguity. The condition they describe could not be confidently identified from available sources. Su Song (蘇頌, 1020–1101) is the attributed source for all statements in this entry, consistent with his contributions to the Bencao Tujing. The habitat description placing the plant in Junzhou (筠州, modern Gao'an area, Jiangxi Province) is geographically specific and credible.",
+      "_label": "石莧 (草之九)"
+    },
+    {
+      "title_inferred": "Jing Tian (Orpine / Stonecrop) — Grass Category IX",
+      "original_text": "【釋名】慎火（《本經》）、戒火（同）、救火（《別錄》）、據火（同）、護火（《綱目》）、辟火（同）、火母（《別錄》）。\n\n弘景曰︰眾藥之名，景天為麗。人皆盆盛，養於屋上，云可辟火，故曰慎火。方用亦希。\n\n【集解】《別錄》曰︰景天生太山川谷。四月四日、七月七日采，陰乾。\n\n頌曰︰今南北皆有之。人家種於中庭，或盆置屋上。春生苗，葉似馬齒莧而大，作層而上，莖極脆弱。夏中開紅紫碎花，秋後枯死。亦有宿根者。苗、葉、花並可用。\n\n宗奭曰︰極易種，折枝置土中，澆溉旬日便生也。\n\n時珍曰︰景天，人多栽於石山上。二月生苗，脆莖，微帶赤黃色，高一、二尺，折之有汁。葉淡綠色，光澤柔濃，狀似長匙頭及胡豆葉而不尖。夏開小白花，結實如連翹而小，中有黑子如粟粒。其葉味微甘苦，炸熟水淘可食。\n\n【氣味】苦，平，無毒。《別錄》曰︰酸。大明曰︰寒，有小毒。可鍛朱砂。\n\n【主治】大熱火瘡，身熱煩，邪惡氣（《本經》）。諸蠱毒痂疕，寒熱風痺，諸不足（《別錄》）。療金瘡止血。煎水浴小兒，去煩熱驚氣（弘景）。風疹惡癢，小兒丹毒及發熱（權）。熱狂赤眼，頭痛寒熱游風，女人帶下（《日華》）。女人漏下赤白。輕身明目（《本經》）。",
+      "translation": "**Names and Appellations**\nAlternate names: Shèn Huǒ [Cautious Fire] (Běnjīng), Jiè Huǒ [Warding Fire] (same source), Jiù Huǒ [Rescue Fire] (Biélù), Jù Huǒ [Resist Fire] (same source), Hù Huǒ [Guard Fire] (Gāngmù), Bì Huǒ [Repel Fire] (same source), Huǒ Mǔ [Fire Mother] (Biélù).\n\nTáo Hóngjǐng states: Among the names of all medicinal herbs, Jǐng Tiān [Scenery of Heaven] is the most beautiful. People commonly grow it in pots and keep it on rooftops, believing it can ward off fire — hence the name Shèn Huǒ [Cautious Fire]. Its use in prescriptions is rare.\n\n**Collected Explanations**\nThe *Míng Yī Biélù* states: Jǐng Tiān grows in the river valleys of Mount Tài. It is harvested on the fourth day of the fourth month and the seventh day of the seventh month, then dried in the shade.\n\nSū Sòng states: Today it is found both in the north and the south. Households grow it in their central courtyards or keep it in pots on rooftops. Shoots emerge in spring; the leaves resemble those of purslane [Portulaca oleracea] but are larger, growing in layered tiers upward, with extremely brittle and delicate stems. In midsummer it produces small red-purple flowers; it withers and dies after autumn. Some plants have perennial roots. The shoots, leaves, and flowers may all be used medicinally.\n\nKòu Zōngshì states: It is extremely easy to cultivate — break off a branch, place it in soil, water it, and within ten days it will have taken root.\n\nLǐ Shízhēn states: Jǐng Tiān is commonly planted on rocky hillsides. Shoots emerge in the second month; the stems are brittle and tinged slightly reddish-yellow, growing one to two chǐ tall, and exude juice when broken. The leaves are pale green, glossy, soft, and thick, resembling a long spoon-head or the leaf of a field pea [hú dòu], but not pointed. In summer it bears small white flowers, and produces fruit resembling forsythia [Forsythia suspensa] but smaller, containing black seeds the size of millet grains within. The leaves have a slightly sweet and bitter flavor; they can be blanched in boiling water, rinsed, and eaten.\n\n**Flavor and Nature**\nBitter, balanced [píng], non-toxic. The *Biélù* states: sour. Dà Míng states: cold, with slight toxicity. It can be used to calcine [process] cinnabar [zhū shā].\n\n**Indications and Treatments**\n— Severe heat sores and fire burns, bodily fever and restlessness, malign and noxious qi (*Běnjīng*).\n— All manner of gǔ [parasite/poison] toxins, scabs and skin lesions, alternating chills and fever, wind-impediment [fēng bì], and various conditions of deficiency (*Biélù*).\n— Treats metal-wound [jīn chuāng, i.e., blade injuries] and stops bleeding. Decoct in water and use as a bath for children to dispel feverish restlessness and fright-qi [jīng qì] (Táo Hóngjǐng).\n— Wind rash with severe itching, infantile cinnabar toxin [dān dú, erysipelas] and fever (Shèn Quán).\n— Feverish mania, red eyes, headache, alternating chills and fever, wandering wind [yóu fēng], and vaginal discharge in women (*Rìhuá Zǐ Bĕncǎo*).\n— Uterine bleeding [漏下] with red or white discharge in women. Lightens the body and brightens the eyes (*Běnjīng*).",
+      "entities_mentioned": [
+        {
+          "name": "景天 (Jǐng Tiān)",
+          "modern_identification": "Hylotelephium erythrostictum or Sedum spectabile (showy stonecrop / orpine); possibly Sedum aizoon or related Crassulaceae species",
+          "identification_confidence": "high",
+          "notes": "The description — succulent leaves, brittle stems with juice, layered growth, small flowers, grown on rooftops — is consistent with Hylotelephium/Sedum spp. (family Crassulaceae). Multiple alternate names all reference fire-warding properties, reflecting the folk belief that the plant could prevent house fires."
+        },
+        {
+          "name": "馬齒莧 (Mǎ Chǐ Xiàn)",
+          "modern_identification": "Portulaca oleracea (common purslane)",
+          "identification_confidence": "high",
+          "notes": "Used as a morphological comparator for leaf shape."
+        },
+        {
+          "name": "連翹 (Lián Qiào)",
+          "modern_identification": "Forsythia suspensa (weeping forsythia)",
+          "identification_confidence": "high",
+          "notes": "Used as a comparator for fruit size and shape."
+        },
+        {
+          "name": "胡豆 (Hú Dòu)",
+          "modern_identification": "Vicia faba (broad bean / field pea)",
+          "identification_confidence": "medium",
+          "notes": "Used as a leaf-shape comparator; 胡豆 in Ming-dynasty usage typically refers to Vicia faba or occasionally Pisum sativum."
+        },
+        {
+          "name": "朱砂 (Zhū Shā)",
+          "modern_identification": "Cinnabar (mercuric sulfide, HgS)",
+          "identification_confidence": "high",
+          "notes": "Mentioned in the flavor/nature section: the plant is said to be capable of calcining/processing cinnabar, an alchemical/pharmaceutical note."
+        }
+      ],
+      "translator_notes": "1. The segment spans chapters 草之八/草之九 per the label; Bencao Gangmu chapter classification is 草之九 as indicated.\n2. 'Can calcine cinnabar' (可鍛朱砂) is a pharmaceutical processing note, likely indicating the plant's juice was used as a flux or reagent in preparing cinnabar-based medicines — a common alchemical practice.\n3. The harvest dates (4th day of 4th month; 7th day of 7th month) are traditional auspicious calendar dates frequently prescribed in early materia medica, not necessarily based on botanical ripeness.\n4. 'Wandering wind' (游風) is a TCM dermatological term referring to migratory urticarial or erysipelas-like conditions.\n5. 金瘡 (jīn chuāng, 'metal wounds') specifically denotes lacerations from bladed weapons or metal implements.\n6. The description of white flowers by Li Shizhen differs from the red-purple flowers described by Su Song, possibly reflecting different species or varieties both called Jǐng Tiān.",
+      "_label": "景天 (草之九)"
+    },
+    {
+      "title_inferred": "Fojia Cao (Sedum lineare / Buddhist Fingernail Plant)",
+      "original_text": "【集解】頌曰︰佛甲草生筠州。多附石向陽而生，似馬齒莧而細小且長，有花黃色，不結實，四季皆有。\n\n時珍曰︰二月生苗成叢，高四、五寸，脆莖細葉，柔澤如馬齒莧，尖長而小。夏開黃花，經霜則枯。人多栽於石山瓦牆上，呼為佛指甲。《救荒本草》言︰高一、二尺，葉甚大者，乃景天，非此也。\n\n【氣味】甘，寒，微毒。\n\n【主治】湯火灼瘡，研貼之（頌）。",
+      "translation": "**Collected Explanations:** Su Song states: Fojia Cao [Buddha's Fingernail Herb] grows in Junzhou. It mostly grows attached to rocks in sunny exposures. It resembles purslane [Portulaca oleracea] but is finer, smaller, and longer. Its flowers are yellow; it does not set fruit, and is found in all four seasons.\n\nLi Shizhen states: In the second month it sprouts in clumps, reaching four to five inches in height. It has brittle stems and fine leaves, soft and lustrous like purslane, but pointed, elongated, and small. In summer it bears yellow flowers; it withers after frost. People commonly cultivate it on rocky hillsides and tiled walls, calling it 'Buddha's Fingernail' [Fozhi Jia]. The *Jiuhuang Bencao* [Famine Relief Materia Medica] describes a plant one to two feet tall with very large leaves — that is Stonecrop [Jing Tian, Hylotelephium erythrostictum], not this plant.\n\n**Flavor and Nature:** Sweet; cold; mildly toxic.\n\n**Indications and Treatments:** For scalds and burns from hot water or fire — grind [the herb] and apply as a poultice. (Su Song)",
+      "entities_mentioned": [
+        {
+          "name": "佛甲草 (Fojia Cao / Buddha's Fingernail Herb)",
+          "modern_identification": "Sedum lineare Thunb. (family Crassulaceae)",
+          "identification_confidence": "high",
+          "notes": "Also called 佛指甲 (Fozhi Jia, 'Buddha's Fingernail'). A small succulent sedum commonly grown on walls and rocky surfaces in China. The text carefully distinguishes it from the larger 景天 (Jing Tian)."
+        },
+        {
+          "name": "馬齒莧 (Machi Xian / Purslane)",
+          "modern_identification": "Portulaca oleracea L.",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological comparator for leaf texture and appearance."
+        },
+        {
+          "name": "景天 (Jing Tian)",
+          "modern_identification": "Hylotelephium erythrostictum (Miq.) H.Ohba (syn. Sedum erythrostictum), or possibly Sedum spectabile; a larger Crassulaceae species",
+          "identification_confidence": "medium",
+          "notes": "Li Shizhen explicitly contrasts this larger plant (1–2 ft tall, large leaves) described in the Jiuhuang Bencao with the present, smaller Fojia Cao."
+        },
+        {
+          "name": "救荒本草 (Jiuhuang Bencao)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Famine Relief Materia Medica, compiled by Zhu Su (朱橚) ca. 1406. Cited here for a divergent botanical description."
+        }
+      ],
+      "translator_notes": "The herb is described as treating burns and scalds by grinding it fresh and applying topically — consistent with the known use of Sedum lineare in traditional Chinese medicine as a heat-clearing, anti-inflammatory topical agent. The notation '微毒' (mildly toxic) is worth flagging for pharmacological interest, as modern sources generally consider Sedum lineare low in toxicity. The place name 筠州 (Junzhou) refers to a historical prefecture in present-day Jiangxi Province.",
+      "_label": "佛甲草 (草之九)"
+    },
+    {
+      "title_inferred": "Tiger's Ear Herb (Hǔ Ěr Cǎo)",
+      "original_text": "【釋名】石荷葉（見下）。\n\n【集解】時珍曰：虎耳生陰濕處，人亦栽於石山上。莖高五、六寸，有細毛，一莖一葉，如荷蓋狀。人呼為石荷葉。葉大如錢，狀似初生小葵葉，及虎之耳形。夏開小花，淡紅色。\n\n【氣味】微苦、辛，寒，有小毒。\n獨孤滔曰：汁煮砂子。\n\n【主治】瘟疫，擂酒服。生用吐利人，熟用則止吐利。又治耳，搗汁滴之。痔瘡腫痛者，陰乾，燒煙桶中熏之（時珍）。",
+      "translation": "**[Nomenclature]** Also known as Shí Hé Yè [Stone Lotus Leaf] (see below).\n\n**[Collected Commentaries]** Li Shizhen states: Tiger's Ear grows in shaded, damp places; people also cultivate it on rocky hillsides. The stem reaches five or six inches in height, bears fine hairs, and carries one leaf per stem, shaped like a lotus canopy. People call it Stone Lotus Leaf. The leaf is about the size of a coin, resembling the newly sprouted leaf of a small mallow [葵], and also the shape of a tiger's ear. In summer it produces small flowers of a pale red color.\n\n**[Flavor and Nature]** Slightly bitter, acrid; cold; mildly toxic.\nDugu Tao states: The juice can be used to process [purify] mineral granules [砂子].\n\n**[Principal Treatments]** For epidemic pestilence [瘟疫]: grind the herb and take it mixed with wine. Used raw, it induces vomiting and purging; used prepared [cooked], it stops vomiting and purging. It also treats ear [ailments — likely suppurating or infected ears]: pound the herb and drip the juice into the ear. For swollen and painful hemorrhoids [痔瘡]: dry the herb in the shade, then burn it inside a fumigation tube and apply the smoke. (Li Shizhen.)",
+      "entities_mentioned": [
+        {
+          "name": "虎耳草 (Hǔ Ěr Cǎo)",
+          "modern_identification": "Saxifraga stolonifera (Creeping Saxifrage / Strawberry Saxifrage)",
+          "identification_confidence": "high",
+          "notes": "The morphological description — one leaf per stem, coin-sized leaf resembling a small mallow or a tiger's ear, fine-haired stem, pale red summer flowers, growing in shaded damp locations — matches Saxifraga stolonifera closely. Also known in English as 'Creeping Rockfoil.' Still used in traditional Chinese medicine for ear infections and hemorrhoids."
+        },
+        {
+          "name": "石荷葉 (Shí Hé Yè)",
+          "modern_identification": "Saxifraga stolonifera (alternate common name)",
+          "identification_confidence": "high",
+          "notes": "A synonym for 虎耳草 based on the leaf's resemblance to a lotus (荷) leaf growing on rock (石)."
+        },
+        {
+          "name": "獨孤滔 (Dugu Tao)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Tang-dynasty alchemical author cited here for a note on using the herb's juice in mineral/alchemical processing (煮砂子). His work relates to proto-chemical or alchemical traditions."
+        }
+      ],
+      "translator_notes": "1. The character '耳' in '又治耳' appears to be part of a truncated phrase — likely '耳疾' (ear ailment) or '耳膿' (suppurating ear), possibly lost to OCR or transcription error. The treatment method (dripping juice into the ear) confirms an ear condition is intended; this is consistent with Saxifraga stolonifera's documented use for otitis media in TCM. Marked implicitly in the translation as 'ear [ailments]'.\n2. '擂酒服' means to grind or pound the herb into a paste/powder and administer it with wine.\n3. '汁煮砂子' is an alchemical reference and falls outside standard pharmacological context; it likely refers to using plant juice in the preparation or refinement of mineral substances.",
+      "_label": "虎耳草 (草之九)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】天胡荽（《綱目》）、野園荽（同）、鵝不食草（《食性》）、雞腸草（詳見下名）。\n\n【集解】時珍曰︰石胡荽，生石縫及陰濕處小草也。高二、三寸，冬月生苗，細莖小葉，形狀宛如嫩胡荽。其氣辛熏不堪食，鵝亦不食之。夏開細花，黃色，結細子。極易繁衍，僻地則鋪滿也。案︰孫思邈《千金方》云︰一種小草，生近水渠中濕處，狀類胡荽，名天胡荽，亦名雞腸草。即此草也。與繁縷之雞腸，名同物異。\n\n【氣味】辛，寒，無毒。\n\n時珍曰︰辛，溫。汁製砒石、雄黃。\n\n【主治】通鼻氣，利九竅，吐風痰（炳）。去目翳，挼塞鼻中，翳膜自落（藏器）。療痔病（詵）。解毒，明目，散目赤腫雲翳，耳聾頭痛腦酸，治痰瘧齁䶎，鼻窒不通，塞鼻息自落，又散瘡腫（時珍）。\n\n【發明】時珍曰︰鵝不食草，氣溫而升，味辛而散，陽也，能通於天。頭與肺皆天也，故能上達頭腦，而治頂痛目病，通鼻氣而落息肉；內達肺經，而治 痰瘧，散瘡腫。其除可謂務博已乎？案︰倪維德《原機啟微集》云︰治目翳㗜鼻碧雲散︰用鵝不食草解毒為君，青黛去熱為佐，川芎大辛破留除邪為使，升透之藥也。大抵如開鍋蓋法，常欲邪毒不閉，令有出路。然力小而銳，宜常㗜以聚其力。凡目中諸病，皆可用之。生挼",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Shí Hú Suī (Stone Coriander / Goose-Refuses-to-Eat Grass)\",\n  \"original_text\": \"【釋名】天胡荽（《綱目》）、野園荽（同）、鵝不食草（《食性》）、雞腸草（詳見下名）。\\n\\n【集解】時珍曰︰石胡荽，生石縫及陰濕處小草也。高二、三寸，冬月生苗，細莖小葉，形狀宛如嫩胡荽。其氣辛熏不堪食，鵝亦不食之。夏開細花，黃色，結細子。極易繁衍，僻地則鋪滿也。案︰孫思邈《千金方》云︰一種小草，生近水渠中濕處，狀類胡荽，名天胡荽，亦名雞腸草。即此草也。與繁縷之雞腸，名同物異。\\n\\n【氣味】辛，寒，無毒。\\n\\n時珍曰︰辛，溫。汁製砒石、雄黃。\\n\\n【主治】通鼻氣，利九竅，吐風痰（炳）。去目翳，挼塞鼻中，翳膜自落（藏器）。療痔病（詵）。解毒，明目，散目赤腫雲翳，耳聾頭痛腦酸，治痰瘧齁䶎，鼻窒不通，塞鼻息自落，又散瘡腫（時珍）。\\n\\n【發明】時珍曰︰鵝不食草，氣溫而升，味辛而散，陽也，能通於天。頭與肺皆天也，故能上達頭腦，而治頂痛目病，通鼻氣而落息肉；內達肺經，而治痰瘧，散瘡腫。其除可謂務博已乎？案︰倪維德《原機啟微集》云︰治目翳㗜鼻碧雲散︰用鵝不食草解毒為君，青黛去熱為佐，川芎大辛破留除邪為使，升透之藥也。大抵如開鍋蓋法，常欲邪毒不閉，令有出路。然力小而銳，宜常㗜以聚其力。凡目中諸病，皆可用之。生挼更神。王璽《集要》詩云︰赤眼之餘翳忽生，草中鵝不食為名。塞於鼻內頻頻換，三日之間復舊明。\",\n  \"translation\": \"**Names and Synonyms**\\nAlternate names: Tiān Hú Suī [Sky Coriander] (Bencao Gangmu); Yě Yuán Suī [Wild Garden Coriander] (same source); É Bù Shí Cǎo [Goose-Refuses-to-Eat Grass] (Shíxìng [Food Properties]); Jī Cháng Cǎo [Chicken-Gut Grass] (see further discussion of this name below).\\n\\n**Collected Commentaries**\\nLi Shizhen says: Shí Hú Suī is a small herb that grows in crevices of rocks and in shaded, damp places. It reaches two to three inches in height. Its seedlings appear in the winter months; it has slender stems and small leaves, in form closely resembling tender coriander [hú suī]. Its odor is pungently acrid and it is inedible; even geese will not eat it. In summer it bears small yellow flowers and sets tiny seeds. It propagates with great ease, and in secluded spots will spread to cover the ground entirely. Note: Sun Simiao's Qianjin Fang [Prescriptions Worth a Thousand Gold] states: \"There is a small herb that grows in damp places near irrigation channels, resembling coriander in form, called Tiān Hú Suī, also called Jī Cháng Cǎo.\" That is the very same plant described here. It shares the name Jī Cháng Cǎo with Fán Lǚ [Chickweed, Stellaria media], but these are different plants bearing the same name.\\n\\n**Qi and Flavor**\\nAcrid; cold; non-toxic.\\n\\nLi Shizhen says: Acrid; warm. The juice c",
+      "_label": "石胡荽 (草之九)"
+    },
+    {
+      "title_inferred": "Luóyǎn Grass (螺厴草) — Mirror-Face Grass",
+      "original_text": "【釋名】鏡面草。\n\n時珍曰︰皆象形也。\n\n【集解】藏器曰︰蔓生石上，葉狀似螺厴，微帶赤色，而光如鏡，背有少毛，小草也。\n\n【氣味】辛。\n\n【主治】癰腫風疹，腳氣腫，搗爛敷之。亦煮湯洗腫處（藏器）。治小便出血，吐血衄血，齲齒痛（時珍）。\n\n【發明】時珍曰︰案︰陳日華《經驗方》云︰年二十六，忽病小便後出鮮血數點而不疼，如是一月，飲酒則甚。市醫張康，以草藥汁一器，入少蜜水進兩服而愈。求其方，乃鏡面草也。",
+      "translation": "**[Names]** Also called Jìngmiàn Cǎo [Mirror-Face Grass].\n\nLi Shizhen states: Both names are derived from the plant's appearance [i.e., they are descriptive, shape-based names].\n\n**[Collected Commentaries]** Chen Cangqi [Zangqi] states: It grows as a creeping plant on rocks. The leaves resemble the operculum [trapdoor shell] of a snail [螺厴], are tinged slightly red, shine like a mirror, have a few hairs on the underside, and are a small herb.\n\n**[Qi and Flavor]** Pungent [acrid].\n\n**[Indications and Treatments]** For abscesses and swellings, wind-rash [urticaria], and swelling due to leg-qi [beriberi/edema]: pound the plant to a pulp and apply as a poultice. It may also be decocted and used as a wash over the swollen area (Chen Zangqi). Treats blood in the urine, vomiting of blood, nosebleed, and toothache from tooth decay (Li Shizhen).\n\n**[Elaboration]** Li Shizhen states: I note that Chen Rihua's 《Jīngyàn Fāng》 [Empirical Prescriptions] records the following case: At the age of twenty-six, [the author] suddenly fell ill, passing a few drops of fresh blood after urination without any pain. This continued for about a month and worsened with alcohol consumption. A market physician named Zhang Kang administered one vessel of an herbal juice mixed with a little honey water, in two doses, and the patient was cured. When the prescription was sought, it turned out to be Mirror-Face Grass [鏡面草].",
+      "entities_mentioned": [
+        {
+          "name": "螺厴草 / 鏡面草 (Luóyǎn Cǎo / Jìngmiàn Cǎo)",
+          "modern_identification": "Possibly Peperomia pellucida (shiny bush) or a small Pilea species (Urticaceae); some scholars identify it with Pilea nummulariifolia or Peperomia rotundifolia. The description of a creeping rock-dwelling plant with shiny, slightly reddish, operculum-shaped leaves and slightly hairy undersides is consistent with certain Peperomia or Pilea taxa.",
+          "identification_confidence": "low",
+          "notes": "The name 鏡面草 (Mirror-Face Grass) is applied to multiple plants in Chinese botanical tradition, complicating identification. The specific habitat (creeping on rocks), leaf appearance (shiny, snail-operculum-shaped, reddish tinge, hairy below), and small stature are the key diagnostic features given here."
+        },
+        {
+          "name": "陳日華《經驗方》 (Chen Rihua, Jīngyàn Fāng)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Chen Rihua is a Song-dynasty physician; his Empirical Prescriptions (《經驗方》) is cited here as a clinical source for the use of 鏡面草 in hematuria."
+        },
+        {
+          "name": "張康 (Zhang Kang)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A market physician (市醫) mentioned anecdotally in the case record from Chen Rihua's text."
+        }
+      ],
+      "translator_notes": "The term 螺厴 refers specifically to the operculum — the hard, disc-like cover — of a gastropod (snail/freshwater snail) shell, used here as a simile for the shape of the leaf. 腳氣 (jiǎoqì) is rendered as 'leg-qi' with the parenthetical 'beriberi/edema' to reflect both the classical Chinese medical concept and its likely clinical correlate. The case history in the 【發明】section is written in the first person in Chen Rihua's original text but is quoted indirectly by Li Shizhen; the translation preserves this embedded quotation structure.",
+      "_label": "螺厴草 (草之九)"
+    },
+    {
+      "title_inferred": "Oxalis / Wood Sorrel (Cù Jiāng Cǎo)",
+      "original_text": "【釋名】酸漿（《圖經》）、三葉酸（《綱目》）、三角酸（《綱目》）、酸母（《綱目》）、醋母（蘇恭）、酸箕（李當之）、鳩酸（蘇恭）、雀兒酸（《綱目》）、雀林草（《綱目》）、小酸茅\n\n時珍曰︰此小草三葉酸也，其味如醋。與燈籠草之酸漿，名同物異。唐慎微《本草》以此草之方收入彼下，誤矣。閩人鄭樵《通志》言︰福人謂之孫施。則蘇頌《圖經》︰赤孫施生福州，葉如浮萍者，即此也。孫施亦酸箕之訛耳。今並為一。\n\n【集解】恭曰︰酢漿生道旁陰濕處，叢生。莖頭有三葉，葉如細萍。四月、五月採，陰乾。\n\n保升曰︰葉似水萍，兩葉並大葉同枝，黃花黑實。\n\n頌曰︰南中下濕地及人家園圃中多有之，北地亦或有生者。初生嫩時，小兒喜食之。南人用揩鍮石器，令白如銀。\n\n時珍曰︰苗高一、二寸，叢生布地，極易繁衍。一枝三葉，一葉兩片，至晚自合帖，整整礬、砒石。\n\n【氣味】酸，寒，無毒。\n\n【主治】殺諸小蟲。惡瘡，搗敷之。食之，解熱渴（《唐本》）。主小便諸淋，赤白帶下。同地錢、地龍，治沙石淋。煎湯洗痔痛脫肛甚效。搗塗湯火蛇蠍傷（時珍）。\n\n赤孫施︰治婦人血結，用一搦洗，細研，暖酒服之（蘇頌）。",
+      "translation": "**Names and Nomenclature**\n\nAlternate names: Suānjiāng [酸漿] (Tujing), Sānyè Suān [三葉酸, 'three-leaf sour'] (Bencao Gangmu), Sānjiǎo Suān [三角酸, 'triangular sour'] (Bencao Gangmu), Suān Mǔ [酸母, 'sour mother'] (Bencao Gangmu), Cù Mǔ [醋母, 'vinegar mother'] (Su Gong), Suān Jī [酸箕] (Li Dangzhi), Jiū Suān [鳩酸, 'dove-sour'] (Su Gong), Què'ér Suān [雀兒酸, 'sparrow-sour'] (Bencao Gangmu), Què Lín Cǎo [雀林草, 'sparrow-forest herb'] (Bencao Gangmu), Xiǎo Suān Máo [小酸茅, 'small sour thatch-grass'].\n\nLi Shizhen states: This is the small three-leaved sour herb [三葉酸]; its flavor resembles vinegar. It shares the name 'suānjiāng' [酸漿] with the lantern-plant [燈籠草, Physalis], but they are entirely different plants. Tang Shenwei's Bencao [Zhenglei Bencao] mistakenly included the formulas for this herb under that other plant's entry — an error. The Fujianese scholar Zheng Qiao, in his Tongzhi, notes that people in Fujian call it 'Sūn Shī' [孫施]. Thus the entry in Su Song's Tujing — 'Chì Sūn Shī [赤孫施] grows in Fuzhou, with leaves resembling duckweed' — refers to this same plant. 'Sūn Shī' is itself a corruption of 'Suān Jī' [酸箕]. I have therefore consolidated these under a single entry.\n\n**Collected Commentaries**\n\n[Su] Gong states: Cùjiāngcǎo grows in shaded, damp places along roadsides, in dense clumps. At the stem tips are three leaves, resembling small duckweed. It is collected in the fourth and fifth months [lunar calendar] and dried in the shade.\n\n[Han] Baosheng states: The leaves resemble water-duckweed [水萍]; two smaller leaflets and one larger leaflet grow on the same stalk; the flowers are yellow and the fruits are black.\n\n[Su] Song states: It is commonly found in low, damp areas of the south and in household gardens; it also grows occasionally in northern regions. When the young shoots first emerge, children are fond of eating them. Southerners use the plant to scour brass [鍮石] vessels, rendering them as bright and white as silver.\n\nLi Shizhen states: The plant stands one to two cun tall, grows in dense ground-hugging clumps, and spreads with great ease. Each stem bears three leaves; each leaf is formed of two lobes [leaflets], which fold shut of their own accord toward evening, [arranged] with perfect regularity. [Note: the passage ends abruptly here with '礬、砒石' — likely a reference, now damaged or fragmentary in the source, indicating a comparison or warning regarding alum and arsenic trioxide.]\n\n**Flavor and Nature**\n\nSour; cold; non-toxic.\n\n**Medicinal Actions and Indications**\n\n— Kills all manner of small parasites and worms.\n— For malignant sores [惡瘡]: pound and apply as a poultice.\n— Eaten fresh, it relieves febrile thirst. (Tang Bencao)\n— Governs all types of urinary strangury [淋]; treats red and white vaginal discharge [赤白帶下].\n— Combined with ground-coins herb [地錢, Marchantia] and earthworm [地龍, Pheretima], it treats sandy and stony strangury [沙石淋].\n— Decocted and used as a wash, it is highly effective for painful hemorrhoids and rectal prolapse [脫肛].\n— Pounded and applied topically to burns from hot liquids or fire, and to snake and scorpion bites. (Li Shizhen)\n\n*Chì Sūn Shī* [赤孫施] variety: Treats blood stasis and binding [血結] in women. Use one handful, wash clean, grind finely, and take with warm wine. (Su Song)",
+      "entities_mentioned": [
+        {
+          "name": "酢漿草 (Cùjiāngcǎo)",
+          "modern_identification": "Oxalis corniculata (creeping wood sorrel) or Oxalis acetosella (common wood sorrel); most likely O. corniculata given the habitat and geographic distribution described",
+          "identification_confidence": "high",
+          "notes": "The trifoliate leaves, sour taste, yellow flowers, and ground-hugging habit are all consistent with Oxalis corniculata L. The nyctinastic leaf-folding at evening is also a well-known characteristic of Oxalis species."
+        },
+        {
+          "name": "酸漿 / 燈籠草 (Suānjiāng / Lantern plant)",
+          "modern_identification": "Physalis alkekengi (Chinese lantern plant)",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen explicitly distinguishes this from 酢漿草, noting the shared name 酸漿 caused prior authors to confuse them."
+        },
+        {
+          "name": "赤孫施 (Chì Sūn Shī)",
+          "modern_identification": "Likely the same Oxalis corniculata, possibly a regional variant or a red-stemmed form",
+          "identification_confidence": "medium",
+          "notes": "Su Song's Tujing describes it as growing in Fuzhou with leaves like duckweed. Li Shizhen consolidates it with 酢漿草 and notes 'Sūn Shī' is a phonetic corruption of 'Suān Jī' (酸箕)."
+        },
+        {
+          "name": "地錢 (Dìqián)",
+          "modern_identification": "Marchantia polymorpha (common liverwort)",
+          "identification_confidence": "medium",
+          "notes": "Used in combination with 酢漿草 and earthworm to treat sandy/stony strangury."
+        },
+        {
+          "name": "地龍 (Dìlóng)",
+          "modern_identification": "Pheretima aspergillum or related earthworm species (dried earthworm as a drug)",
+          "identification_confidence": "high",
+          "notes": "Standard ingredient in classical formulas for urinary strangury."
+        },
+        {
+          "name": "鍮石 (Tōu shí)",
+          "modern_identification": "Brass or an early brass-like copper-zinc alloy",
+          "identification_confidence": "high",
+          "notes": "Mentioned as a cultural/household use: the plant's acidity was used to polish brass vessels."
+        }
+      ],
+      "translator_notes": "1. The passage attributed to Li Shizhen in the 集解 section ends abruptly with '礬、砒石' (alum and arsenic trioxide). This appears to be a fragment — likely the tail end of a sentence describing either a distinguishing characteristic, a contrast with other substances, or a detoxification property — that was truncated or corrupted in the source text (possibly an OCR gap). It has been flagged in the translation rather than speculatively reconstructed.\n2. The condition 沙石淋 ('sandy and stony strangury') corresponds to urinary tract conditions involving stones or gravel, roughly analogous to urolithiasis/nephrolithiasis.\n3. 赤白帶下 refers to vaginal discharge classified by color in traditional Chinese medicine: 'red' (blood-tinged) and 'white' (leucorrhoea).\n4. 血結 ('blood binding/stasis') is a TCM diagnostic category involving blood stagnation, often associated with menstrual irregularities or post-partum conditions.",
+      "_label": "酢漿草 (草之九)"
+    },
+    {
+      "title_inferred": "Di Jin (Ground Spurge) – Herb Entry",
+      "original_text": "【釋名】地朕（《吳普》）、地噤（《拾遺》）、夜光（《吳普》）、承夜（《吳普》）、草血竭（《綱目》）、血見愁（《綱目》）、血風草（《綱目》）、馬蟻草（《綱目》）、雀兒臥單（《綱目》）、醬瓣草（《玉冊》）、猢猻頭草。\n\n《別錄》曰︰地朕，三月採之。\n\n藏器曰︰地朕，一名地錦，一名地噤。蔓延著地，葉光淨，露下有光。\n\n時珍曰︰赤莖布地，故曰地錦。專治血病，故俗稱為血竭、血見愁。馬蟻、雀兒喜聚之，故有馬蟻、雀單之名。醬瓣、猢猻頭，象花葉形也。\n\n【集解】禹錫曰︰地錦草生近道田野，出滁州者尤良。莖葉細弱，蔓延於地。莖赤，葉青紫色，夏中茂盛。六月開紅花，結細實。取苗子用之。絡石注有地錦，是藤蔓之類，與此同名異物。\n\n時珍曰︰田野寺院及階砌間皆有之小草也。就地而生，赤莖黃花黑實，狀如蒺藜之朵，斷莖有汁。方士秋月採，煮雌雄、丹砂、硫黃。\n\n【氣味】辛，平，無毒。《別錄》曰︰地朕︰苦，平，無毒。\n\n【主治】地朕︰主心氣，女子陰疝血結（《別錄》）。地錦︰通流血脈，亦可治氣（《嘉祐》）。主癰腫惡瘡，金刃撲損出血，血痢下血崩中，能散血止血，利小便（時珍）。",
+      "translation": "**Nomenclature**\nAlternative names: Di Zhen [Ground Clamp] (Wu Pu), Di Jin [Ground Silence] (Shiyi), Ye Guang [Night Glow] (Wu Pu), Cheng Ye [Embracing Night] (Wu Pu), Cao Xue Jie [Herb Blood-Resin] (Bencao Gangmu), Xue Jian Chou [Blood-Shaming Sorrow] (Bencao Gangmu), Xue Feng Cao [Blood-Wind Herb] (Bencao Gangmu), Ma Yi Cao [Ant Herb] (Bencao Gangmu), Que Er Wo Dan [Sparrow's Sleeping Mat] (Bencao Gangmu), Jiang Ban Cao [Sauce-Petal Herb] (Yuce), and Husun Tou Cao [Monkey-Head Herb].\n\nThe Bielu states: Di Zhen is collected in the third month.\n\nZangqi states: Di Zhen is also called Di Jin and Di Jin [Ground Silence]. It spreads and creeps along the ground; its leaves are smooth and clean, and glisten under the dew.\n\nShizhen states: Its red stems spread across the ground, hence the name Di Jin [Ground Brocade]. It specializes in treating blood disorders, hence the common names Xue Jie [Blood Resin] and Xue Jian Chou [Blood-Shaming Sorrow]. Ants and sparrows like to gather around it, hence the names Ant Herb and Sparrow's Mat. The names Sauce-Petal and Monkey-Head describe the shapes of the flowers and leaves.\n\n**Collected Explanations**\nYuxi states: Di Jin herb grows in fields and roadsides nearby; that produced in Chuzhou is especially fine. Its stems and leaves are slender and delicate, creeping along the ground. The stems are red and the leaves are blue-purple in color; it is most lush in midsummer. It opens red flowers in the sixth month and sets small fruit. The seedlings and seeds are both used. In the annotation for Luo Shi [Trachelospermum] there is also a plant called Di Jin, which is a climbing vine — it shares the name but is an entirely different plant.\n\nShizhen states: This is a small herb found in fields, temple grounds, and between paving stones. It grows flat against the ground, with red stems, yellow flowers, and black fruit, whose clusters resemble those of [Tribulus terrestris / ji li]. When the stem is broken it exudes a milky juice. Alchemists collect it in the autumn months and use it to process [mineral substances including] yin-yang ore [arsenical minerals], cinnabar [dan sha], and sulfur.\n\n**Flavor and Nature**\nAcrid; balanced [ping]; non-toxic. The Bielu states: Di Zhen — bitter; balanced; non-toxic.\n\n**Indications and Treatments**\nDi Zhen: Governs heart qi [cardiac conditions] and [treats] women's yin [genital] hernias and blood stagnation (Bielu). Di Jin: Promotes the flow of blood through the vessels and can also treat qi disorders (Jiayu [Bencao Jiayu, 1060 CE]). Treats abscesses, swellings, and malignant sores; bleeding from metal-blade wounds and blunt injuries; bloody dysentery, rectal bleeding, and uterine flooding [beng zhong]; it is capable of dispersing blood and stopping bleeding, and promotes urination (Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "地錦 / 地朕 (Di Jin / Di Zhen)",
+          "modern_identification": "Euphorbia humifusa Willd. (Spreading Euphorbia / Ground Spurge)",
+          "identification_confidence": "high",
+          "notes": "The description of red prostrate stems, milky latex when broken, and use for blood disorders is highly consistent with Euphorbia humifusa, a common weedy spurge. Also known in modern Chinese medicine as 地錦草 (Di Jin Cao)."
+        },
+        {
+          "name": "蒺藜 (Ji Li)",
+          "modern_identification": "Tribulus terrestris L. (Puncturevine)",
+          "identification_confidence": "high",
+          "notes": "Referenced only for morphological comparison; the fruit clusters of Di Jin are said to resemble those of Ji Li."
+        },
+        {
+          "name": "絡石 Di Jin (vine type)",
+          "modern_identification": "Parthenocissus tricuspidata or a related Vitaceae vine",
+          "identification_confidence": "low",
+          "notes": "The text explicitly notes this is a homonymous but botanically distinct plant — a climbing vine referenced in the Luo Shi annotation, not the ground herb being described here."
+        },
+        {
+          "name": "雌雄 (Yin-Yang Ore)",
+          "modern_identification": "Arsenical minerals (possibly realgar/orpiment complex)",
+          "identification_confidence": "medium",
+          "notes": "A term used by alchemists (fang shi) for paired mineral substances, often arsenides; here used in an alchemical rather than medicinal context."
+        },
+        {
+          "name": "丹砂 (Dan Sha)",
+          "modern_identification": "Cinnabar (mercuric sulfide, HgS)",
+          "identification_confidence": "high",
+          "notes": "Standard alchemical/medicinal mineral; mentioned here in the context of alchemical processing by fang shi."
+        },
+        {
+          "name": "硫黃 (Liu Huang)",
+          "modern_identification": "Sulfur (elemental sulfur)",
+          "identification_confidence": "high",
+          "notes": "Mentioned as one of the substances processed with Di Jin by alchemists in autumn."
+        }
+      ],
+      "translator_notes": "1. The plant name 地錦 (Di Jin) literally means 'ground brocade' (due to the red stems spread across the earth), while the earlier form 地朕 (Di Zhen) and 地噤 (Di Jin) appear to be phonetic variants. Li Shizhen's etymological explanation is followed in the translation. 2. The Bielu and the Bencao Gangmu give slightly different flavor attributions (bitter vs. acrid), which likely reflect different source specimens or traditions; both are preserved. 3. The ailment 陰疝血結 (yin shan xue jie) is rendered as 'yin [genital] hernias and blood stagnation,' referring to a classical gynecological condition. 4. 崩中 (beng zhong, 'uterine flooding') is a classical term for severe uterine hemorrhage. 5. The alchemical use of Di Jin to process minerals (雌雄、丹砂、硫黃) is noted by Li Shizhen as a practice of fang shi (ritual/alchemical specialists) rather than standard medical application.",
+      "_label": "地錦 (草之九)"
+    },
+    {
+      "title_inferred": "Ligé Herb (Líhé Grass) — Monograph from Cǎo zhī jiǔ",
+      "original_text": "【集解】藏器曰︰生人家階庭濕處，高三、二寸，苗葉似冪罨。江東有之，北土無也。\n\n【氣味】辛，寒，有小毒。\n\n【主治】瘰癧丹毒，小兒無辜寒熱，大腹痞滿，痰飲膈上熱。生研汁服一合，當吐出宿物。去瘧為上（藏器）。",
+      "translation": "【Collected Explanations】 Chen Cangqi states: It grows in damp spots on doorsteps and in courtyards of people's homes, reaching two to three inches in height; its shoots and leaves resemble those of the 'mìyǎn' plant [a small creeping herb, identity uncertain]. It is found in the Jiangdong region and is absent from the northern lands.\n\n【Qi and Flavor】 Acrid [xīn]; cold; slightly toxic.\n\n【Indications and Treatments】 [It treats] scrofula [luǒlì], erysipelas [dāndú], the childhood condition of 'wúgū' [lit. 'blameless child fever,' a pediatric syndrome characterized by alternating chills and fever of unclear origin], abdominal fullness and distension [dà fù pǐ mǎn], phlegm-fluid [tányǐn] accumulation, and heat above the diaphragm. Grind the fresh plant and take one gě (approx. 20 ml) of the juice orally; it will cause vomiting of retained matter [sù wù, i.e., undigested food or pathological accumulations]. It is especially effective for eliminating malaria [nüè]. (Chen Cangqi)",
+      "entities_mentioned": [
+        {
+          "name": "離鬲草 (Líhé Grass)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Identity unclear. The name 'Líhé Grass' (lit. 'diaphragm-separating herb') is not reliably matched to any modern species. The description — a small (2–3 inch) plant growing in damp shaded domestic areas in the Jiangdong region, with leaves resembling 'mìyǎn' — is insufficient for a confident modern identification. Possibly a small liverwort or a creeping herb of the genus Cardamine or similar, but this is speculative."
+        },
+        {
+          "name": "冪罨 (mìyǎn)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A plant used as a morphological comparator for 離鬲草. Its own identity is also uncertain in the literature; possibly a small mat-forming herb."
+        },
+        {
+          "name": "瘰癧 (luǒlì)",
+          "modern_identification": "Scrofula (tuberculous cervical lymphadenitis)",
+          "identification_confidence": "high",
+          "notes": "Classical Chinese medical term for swollen lymph nodes of the neck, typically associated with tuberculosis in modern diagnosis."
+        },
+        {
+          "name": "丹毒 (dāndú)",
+          "modern_identification": "Erysipelas (streptococcal skin infection)",
+          "identification_confidence": "high",
+          "notes": "A condition characterized by red, hot, swollen skin lesions; in classical Chinese medicine classified as a fire-toxin disorder."
+        },
+        {
+          "name": "無辜寒熱 (wúgū hán-rè)",
+          "modern_identification": "Pediatric fever of unknown origin / possible nutritional or parasitic disease syndrome",
+          "identification_confidence": "low",
+          "notes": "'Wúgū' is a classical pediatric syndrome term (lit. 'blameless affliction') referring to childhood illness with alternating fever and chills of indeterminate cause; possibly covering conditions such as malnutrition, parasitic infection, or infantile tuberculosis."
+        },
+        {
+          "name": "瘧 (nüè)",
+          "modern_identification": "Malaria or malarial-type febrile illness",
+          "identification_confidence": "medium",
+          "notes": "Classical term covering periodic febrile conditions; often corresponds to malaria but could include other relapsing fevers."
+        }
+      ],
+      "translator_notes": "The preparation method described — grinding the fresh plant and ingesting approximately one gě (~20 ml) of raw juice to induce emesis — is consistent with classical emetic therapies for clearing pathogenic accumulations from the upper jiao (diaphragm region). The plant's 'slight toxicity' likely accounts for its emetic action. The source attribution '藏器' refers to Chen Cangqi (陳藏器), author of the Bencao Shiyi (本草拾遺, c. 739 CE). The term '宿物' (sù wù, 'retained matter') refers to pathological accumulations such as undigested food, phlegm, or other substances believed to lodge in the stomach or above the diaphragm.",
+      "_label": "離鬲草 (草之九)"
+    },
+    {
+      "title_inferred": "Xianren Grass (Immortal Herb) – Medicinal Uses",
+      "original_text": "【集解】藏器曰︰生階庭間，高二、三寸，葉細有雁齒，似離鬲草。北地不生。\n\n【氣味】缺。\n\n【主治】小兒酢瘡，頭小而硬者，煮湯浴，並搗敷。丹毒入腹者必危，可飲冷藥，及用此洗之。又汁滴目，明目去翳（藏器）。",
+      "translation": "**Collected Explanations:** Chen Cangqi states: It grows among courtyards and on steps, reaching two to three inches in height. Its leaves are fine and have serrated edges resembling goose teeth [i.e., finely toothed], and it is similar to Ligé grass [離鬲草]. It does not grow in the northern regions.\n\n**Qi and Flavor:** Not recorded.\n\n**Principal Treatments:** For children's sour sores [酢瘡, pustular or acidic skin sores] — those with small, hard heads — boil the herb into a decoction for bathing the affected area, and also pound the herb and apply it as a poultice. When erysipelas [丹毒, lit. 'cinnabar toxin'] penetrates into the abdomen, the condition is critical; one may administer cooling medicines internally and use this herb externally as a wash. Furthermore, dropping the juice of this herb into the eyes brightens the vision and removes cataracts [翳, lit. 'eye screens'] (Chen Cangqi).",
+      "entities_mentioned": [
+        {
+          "name": "仙人草 (Xiānrén Cǎo, 'Immortal Person Herb')",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Described as a low-growing herb (2–3 inches tall), with finely toothed leaves, resembling 離鬲草, and found in courtyard settings but absent from northern China. Insufficient detail for confident modern identification; possibly a small Saxifragaceae or Caryophyllaceae species."
+        },
+        {
+          "name": "離鬲草 (Lígé Cǎo)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Mentioned as a comparator plant; not further described in this segment. Identity uncertain."
+        },
+        {
+          "name": "酢瘡 (Sour/Pustular Sores)",
+          "modern_identification": "Possibly impetigo or other pustular dermatitis in children",
+          "identification_confidence": "low",
+          "notes": "Described as small, hard-headed sores; treated by herbal bath and topical poultice."
+        },
+        {
+          "name": "丹毒 (Dāndú, 'Cinnabar Toxin')",
+          "modern_identification": "Erysipelas (streptococcal skin infection)",
+          "identification_confidence": "high",
+          "notes": "A classical Chinese diagnosis corresponding closely to erysipelas; described here in a severe, life-threatening form when the toxin 'enters the abdomen.' Treatment: cooling drugs internally plus herbal wash."
+        }
+      ],
+      "translator_notes": "Chen Cangqi (陳藏器) is the cited authority throughout, referencing his Bencao Shiyi (本草拾遺, c. 739 CE). The term 酢瘡 literally means 'vinegar/sour sores,' likely referring to the acidic or weeping nature of the lesions. 翳 (yì) denotes opacity of the cornea or lens (cataracts or corneal scars). The 'qi and flavor' section is explicitly noted as missing (缺) in the source, which is unusual and may indicate a lacuna in Chen Cangqi's original record or a lost annotation.",
+      "_label": "仙人草 (草之九)"
+    },
+    {
+      "title_inferred": "Immortal's Palm Herb (Xianren Zhang Cao)",
+      "original_text": "【集解】頌曰︰生合州、筠州，多於石上貼壁而生。如人掌形，故以名之。葉細而長，春生，至冬猶有。四時采之。\n\n【氣味】微苦，澀，寒，無毒。\n\n【主治】腸痔瀉血，與甘草浸酒服（蘇頌）。焙末油調，摻小兒白禿瘡（蘇頌）。焙末油調，摻小兒白禿瘡（時珍）。",
+      "translation": "【Collected Explanations】Su Song states: It grows in Hezhou and Yunzhou [historical prefectures in present-day Sichuan and Jiangxi], commonly found clinging to rocks and walls. Its shape resembles a human palm, hence the name. The leaves are slender and long; it sprouts in spring and persists through winter. It may be collected in all four seasons.\n\n【Qi and Flavor】Slightly bitter, astringent, cold, non-toxic.\n\n【Indications and Treatments】For intestinal hemorrhoids [chang zhi] with bloody diarrhea: steep together with licorice root [gan cao] in liquor and take orally (Su Song). Dry-roast [the herb] and grind to a powder, mix with oil, and apply to white tinea capitis [bai tu chuang, i.e., white bald sores] in children (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "仙人掌草 (Xianren Zhang Cao, Immortal's Palm Herb)",
+          "modern_identification": "Possibly a saxicolous fern or liverwort; some sources tentatively identify it with certain Pyrrosia or Lepisorus species (tongue ferns, Polypodiaceae) that grow flat against rocky surfaces, or alternatively a species of Selaginella",
+          "identification_confidence": "low",
+          "notes": "The description of thin, elongated leaves growing against rock walls in spring through winter, combined with the palm-like shape of the whole plant, is suggestive of a creeping fern such as Pyrrosia lingua or a related species, but certain identification is elusive. Not to be confused with the cactus genus Opuntia, which shares the common name 仙人掌 in modern Chinese."
+        },
+        {
+          "name": "甘草 (Gan Cao, Licorice Root)",
+          "modern_identification": "Glycyrrhiza uralensis (Chinese licorice) or related Glycyrrhiza spp., Fabaceae",
+          "identification_confidence": "high",
+          "notes": "Used here as a co-ingredient in a medicinal wine preparation for hemorrhoidal bleeding."
+        },
+        {
+          "name": "腸痔瀉血 (intestinal hemorrhoids with bloody diarrhea)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Classical Chinese diagnostic category encompassing rectal hemorrhoids or other lower intestinal bleeding conditions."
+        },
+        {
+          "name": "白禿瘡 (bai tu chuang, white bald sores)",
+          "modern_identification": "Likely tinea capitis (ringworm of the scalp) or favus in children",
+          "identification_confidence": "medium",
+          "notes": "A common pediatric dermatological condition in classical Chinese medicine referring to patchy scalp hair loss with whitish scaling, consistent with fungal infection."
+        }
+      ],
+      "translator_notes": "The original text attributes the second treatment (焙末油調，摻小兒白禿瘡) to 時珍 (Li Shizhen), but the cleaned source text inadvertently duplicates the attribution line with 蘇頌 before correcting to 時珍 — the final attribution to Li Shizhen is the correct one per standard Bencao Gangmu editorial convention, where Su Song's contributions are from an earlier source and Li Shizhen's are his own additions. The place names 合州 and 筠州 refer to historical Tang/Song dynasty prefectures; 合州 is in present-day Chongqing municipality and 筠州 is in present-day Jiangxi province.",
+      "_label": "仙人掌草 (草之九)"
+    },
+    {
+      "title_inferred": "Cliff Palm Root (崖㯶) — Medicinal Uses for Women's Blood Disorders and Exhaustion",
+      "original_text": "【集解】頌曰︰生施州石崖上。苗高一尺以來，其狀如棕，四季有葉無花。土人采根去粗皮，入藥。\n\n【氣味】甘、辛，溫，無毒。\n\n【主治】婦人血氣並五勞七傷。以根同半天回、雞翁藤、野蘭根四味洗焙為末。每服二錢，溫酒下。丈夫無所忌，婦人忌雞、魚、濕面（蘇頌）。",
+      "translation": "**Collected Explanations:** Su Song states: It grows on rocky cliffs in Shizhou [modern western Hubei / eastern Chongqing region]. The plant stands about one foot tall and resembles a palm [棕, Chinese windmill palm] in appearance; it bears leaves throughout all four seasons but produces no flowers. Local people collect the roots, remove the coarse outer bark, and use them medicinally.\n\n**Flavor and Nature:** Sweet and acrid [辛]; warm in temperament; non-toxic.\n\n**Principal Indications:** Women's disorders of blood and vital energy [血氣], as well as the five types of exhaustion [五勞] and seven categories of injury [七傷]. Take the root together with three other ingredients — Bàn Tiān Huí [半天回], Jī Wēng Téng [雞翁藤], and Yě Lán Gēn [野蘭根] (wild orchid root) — wash and dry-roast [焙] all four, then grind into a powder. Each dose is two qian [approx. 6–7 g], taken with warm wine. Men have no dietary restrictions [when using this formula], but women must avoid chicken, fish, and fresh wet noodles [濕面]. (Su Song)",
+      "entities_mentioned": [
+        {
+          "name": "崖㯶",
+          "modern_identification": "Possibly a cliff-dwelling palm-like plant in Hubei; tentatively a small cycad or Livistona sp., or possibly a fern ally resembling palm frond; unconfirmed",
+          "identification_confidence": "unknown",
+          "notes": "Described as palm-like (棕), evergreen, flowerless, growing on rocky cliff faces in Shizhou. The character 㯶 is rare and may be a variant or regional name. Exact botanical identity has not been conclusively established in modern literature."
+        },
+        {
+          "name": "半天回",
+          "modern_identification": "Possibly Toddalia asiatica or a related climbing shrub used in Southwestern Chinese folk medicine",
+          "identification_confidence": "low",
+          "notes": "A named folk medicine herb used in compound formula; precise identification uncertain."
+        },
+        {
+          "name": "雞翁藤",
+          "modern_identification": "Unknown; possibly a regional folk name for a climbing vine used in Hubei/Chongqing area",
+          "identification_confidence": "unknown",
+          "notes": "Literally 'rooster-elder vine.' Not definitively matched to a modern botanical species."
+        },
+        {
+          "name": "野蘭根",
+          "modern_identification": "Wild orchid root; possibly Cymbidium sp. or Bletilla striata (白及) or another terrestrial orchid",
+          "identification_confidence": "low",
+          "notes": "Literally 'wild orchid root.' Multiple plants could be intended; context does not narrow the identification."
+        }
+      ],
+      "translator_notes": "The terms 五勞 (five exhaustions) and 七傷 (seven injuries) are classical Chinese medical categories describing systemic deficiency and damage to the viscera and essence from overexertion, emotional strain, dietary excess, etc. The formula is a compound of four roots prepared as a dry powder taken with warm wine — a common delivery method for warming and blood-moving remedies. The dietary taboos for women (chicken, fish, wet noodles) reflect classical notions of 'wind-generating' or 'dampness-generating' foods that could counteract the formula's effects. Su Song (蘇頌, 1020–1101) is the cited authority, indicating this entry draws from the Bencao Tujing (本草圖經).",
+      "_label": "崖㯶 (草之九)"
+    },
+    {
+      "title_inferred": "Zibei Jinpan (Purple-backed Golden Platter) – Herb Entry",
+      "original_text": "【集解】頌曰：生施州。苗高一尺以來，葉背紫，無花。土人采根用。\n\n時珍曰：湖湘水石處皆有之，名金盤藤。似醋筒草而葉小，背微紫。軟莖引蔓似黃絲，搓之即斷，無汁可見。方士用以製汞。他處少有。醋筒草：葉似木芙蓉而偏，莖空而脆，味酸，開白花。廣人以鹽醋淹食之。\n\n【氣味】辛，澀，熱，無毒。\n\n【主治】婦人血氣痛，洗焙研末，酒服半錢。孕婦勿服，能消胎氣。忌雞、魚、羊血、濕面（蘇頌）。",
+      "translation": "**Collected Explanations**\n\nSu Song states: It grows in Shizhou [modern western Hubei/Chongqing border region]. The plant stands about one foot tall, the undersides of the leaves are purple, and it bears no flowers. Local people collect the root for medicinal use.\n\nLi Shizhen states: It is found throughout Hunan and Hubei, in rocky areas near water, and is called Jinpan Teng [Golden Platter Vine]. It resembles Cutong Cao [Vinegar-tube Herb, *Elatostema* sp.] but has smaller leaves, with a faintly purple underside. Its soft stem trails as a vine and resembles yellow thread; when rubbed between the fingers it breaks easily and yields no visible sap. Alchemists [fangshi] use it in the processing of mercury. It is rarely found elsewhere. Regarding Cutong Cao: its leaves resemble those of the Mu Furong [Cotton Rose, *Hibiscus mutabilis*] but are asymmetrical; the stem is hollow and brittle, the flavor is sour, and it bears white flowers. People in Guangdong pickle and eat it with salt and vinegar.\n\n**Flavor and Nature**\n\nAcrid [xin], astringent [se], warm [re], non-toxic.\n\n**Indications and Treatments**\n\nFor women's pain caused by blood and qi [menstrual or gynecological pain]: wash and dry-roast the herb, grind it into a powder, and take half a qian [approx. 1.5–2 g] with wine. Pregnant women must not take it, as it can dissolve [abort] the fetal qi. Contraindicated with chicken, fish, lamb blood, and wet/fresh wheat noodles. (Su Song)",
+      "entities_mentioned": [
+        {
+          "name": "紫背金盤 / 金盤藤 (Zibei Jinpan / Jinpan Teng)",
+          "modern_identification": "Possibly a species of Elatostema or Pellionia (Urticaceae), or alternatively a Begonia species given the purple-backed leaves and trailing habit",
+          "identification_confidence": "low",
+          "notes": "The description of purple leaf undersides, small leaves, yellow thread-like trailing soft stems that snap without sap, and habitat near rocky water sources is suggestive of certain Urticaceae or Begoniaceae members, but confident identification is not possible from this description alone. The alchemical use for processing mercury is a notable ethnochemical detail."
+        },
+        {
+          "name": "醋筒草 (Cutong Cao, Vinegar-tube Herb)",
+          "modern_identification": "Possibly Elatostema involucratum or a related Urticaceae species; some scholars associate it with Rumex or Oxalis, though the hollow-stemmed, white-flowered, sour-tasting description with hibiscus-like asymmetric leaves points toward Elatostema or Begonia",
+          "identification_confidence": "low",
+          "notes": "Described as having asymmetric leaves resembling Hibiscus mutabilis, hollow and brittle stems, sour taste, white flowers, and eaten pickled in Guangdong. This combination of features does not correspond cleanly to a single well-known species."
+        },
+        {
+          "name": "木芙蓉 (Mu Furong)",
+          "modern_identification": "Hibiscus mutabilis (Cotton Rose)",
+          "identification_confidence": "high",
+          "notes": "Used here as a comparator for leaf shape."
+        }
+      ],
+      "translator_notes": "The term 消胎氣 ('dissolve/abort the fetal qi') is a classical warning indicating the herb is considered an abortifacient and thus contraindicated in pregnancy. The phrase 方士用以製汞 is significant as it records a use in traditional Chinese alchemy/proto-chemistry for mercury processing, a detail of historical interest beyond standard materia medica applications. The dietary prohibitions (chicken, fish, lamb blood, wet noodles) reflect period humoral-style compatibility theories. 'Half a qian' (半錢) equates to roughly 1.5–2 grams by Song/Ming dynasty measurement standards.",
+      "_label": "紫背金盤 (草之九)"
+    },
+    {
+      "title_inferred": "Báilóngxū (White Dragon's Whiskers) — Grass Category IX",
+      "original_text": "【集解】時珍曰：劉松石《保壽堂方》云：白龍鬚生近水旁有石處，寄生搜風樹節，乃樹之餘精也。細如棕絲，直起無枝葉，最難得真者。一種萬纏草，生於白線樹根，細絲相類，但有枝莖，稍粗為異。誤用不效。愚案：所云二樹名皆隱語，無從考証。\n\n【氣味】缺平，無毒。\n\n【主治】男子婦人風濕腰腿疼痛，左癱右瘓，口目喎斜，及產後氣血流散，脛骨痛，頭目昏暗，腰腿痛不可忍，並宜之。惟虛勞癱痿不可服。研末，每服一錢，氣弱者七分，無灰酒下。密室隨左右貼床臥，待汗出自乾，勿多蓋被，三日勿下床見風。一方：得疾淺者，用末三錢，瓷瓶煮酒一壺。每日先服桔梗湯少頃，飲酒二盞。早一服，晚一服（《保壽堂方》）。\n\n【發明】時珍曰：《保壽方》云：盧玄真道士六十七歲，六月偶得癱瘓，服白花蛇丸，牙齒盡落。三年扶病入山，得此方，服百日，復舊，壽至百歲乃卒。凡男婦風濕腰腿痛，先服小續命湯及滲濕湯後，乃服此。凡女人產後腰腿腫痛，先服四物湯二服，次日服此。若癱瘓年久，痰老氣微者，服前藥出汗，三日之後，則日服龍須末一分，好酒下。隔一日服二分，又隔一日服三分，又隔一日服四分，又隔一日服五分。又隔一日，復從一分起，如前法，周而復始。至月餘，其病漸愈。謂之升陽降氣，調髓蒸骨，追風逐邪，排血安神。忌房事、魚、鵝、雞、羊、韭、蒜、蝦、蟹，及寒冷動風之物。又不可過飲酒及面食，只宜米粥、菜蔬。",
+      "translation": "**Collected Explanations.** Li Shizhen states: Liu Songshi's *Baoshoutang Fang* [Prescriptions of the Life-Preserving Hall] says: Báilóngxū [White Dragon's Whiskers] grows near water beside rocky ground, parasitizing the nodes of the 'Sōufēng tree' [Wind-Searching Tree]; it is the surplus essence of the tree. It is as fine as palm fiber, grows straight up with no branches or leaves, and genuine specimens are exceedingly difficult to obtain. There is also a variety called Wànchán Cǎo [Ten-Thousand-Entwining Herb], which grows from the roots of the 'Báixiàn tree' [White-Thread Tree]; its fine filaments resemble those of Báilóngxū, but it has branching stems and is slightly coarser — these differences distinguish it. Using the wrong one yields no effect. Li Shizhen's own note: The two tree names mentioned are both cryptic terms [concealed names], and there is no way to verify their identities.\n\n**Flavor and Nature.** [Flavor record] missing; nature: neutral; non-toxic.\n\n**Indications and Treatments.** It is suitable for: wind-damp [rheumatic] pain in the lower back and legs in both men and women; left-side or right-side hemiplegia; deviation of the mouth and eyes [facial paralysis]; and, following childbirth, dispersal of qi and blood, pain in the shinbones, dimness of the head and eyes, and unbearable pain in the lower back and legs. However, it must not be taken in cases of consumptive weakness [xū láo] with flaccid paralysis.\n\n*Preparation:* Grind to a powder. Each dose is one qián [approx. 3.7 g]; for those with weak qi, seven fēn [approx. 2.6 g]. Take with ash-free [lye-free, clear] wine. Lie in a sealed room on the bed, positioned according to which side is affected [left or right], and wait for sweating to occur and dry naturally; do not pile on extra bedding. Do not leave the bed or expose oneself to wind for three days.\n\n*Alternative formula:* For those with a mild case of the disease, use three qián of the powder, simmered in one flask of wine in a ceramic bottle. Each day, first take a small amount of Platycodon [Jiégěng] decoction, then drink two cups of the wine — one dose in the morning, one in the evening. (*Baoshoutang Fang*)\n\n**Elucidation.** Li Shizhen states: The *Baoshou Fang* [Life-Preserving Prescriptions] records: The Daoist Lú Xuánzhēn, at the age of sixty-seven, suddenly suffered paralysis in the sixth month. He took White-Patterned Snake Pills [Báihuāshé Wán], which caused all his teeth to fall out. For three years he made his way into the mountains while still ill, where he obtained this formula. After taking it for one hundred days, he was restored to his previous state of health and lived to the age of one hundred before dying.\n\nFor all men and women suffering from wind-damp [rheumatic] pain in the lower back and legs, first administer Xiǎo Xùmìng Decoction and Shèn Shī Decoction, and only then give this medicine. For women with swelling and pain in the lower back and legs following childbirth, first administer two doses of Sìwù Decoction [Four Substances Decoction], then give this medicine on the following day.\n\nFor those who have been paralyzed for many years, with deep-set phlegm and faint qi: after the prior medicinals have induced sweating, beginning on the third day, take one fēn of Dragon's Whiskers powder per day, washed down with good wine. After an interval of one day, take two fēn; after another interval, three fēn; after another interval, four fēn; after another interval, five fēn. Then, after one further interval, begin again from one fēn, following the same method as before in a repeating cycle. After more than a month, the illness will gradually improve. This approach is called 'raising the yang and descending the qi, regulating the marrow and steaming the bones, pursuing the wind and expelling pathogens, clearing the blood and calming the spirit [shén].'\n\nDietary prohibitions: sexual intercourse; fish, goose, chicken, mutton, Chinese chives [jiǔ], garlic, shrimp, and crab; and all cold or wind-stirring foods. One must also not over-drink wine or consume wheat-flour foods; only rice congee and vegetables are appropriate.",
+      "entities_mentioned": [
+        {
+          "name": "白龍鬚 (Báilóngxū, White Dragon's Whiskers)",
+          "modern_identification": "Possibly a fine filamentous parasitic or epiphytic plant growing on tree nodes near water — perhaps a species of Cuscuta (dodder), Tillandsia analogue, or a moss/lichen; identity unresolved even by Li Shizhen",
+          "identification_confidence": "unknown",
+          "notes": "Li Shizhen himself notes that the host tree names ('Sōufēng tree' and 'Báixiàn tree') are cryptic or coded terms with no traceable referents, making botanical identification impossible from this text alone."
+        },
+        {
+          "name": "萬纏草 (Wànchán Cǎo, Ten-Thousand-Entwining Herb)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Described as a superficially similar but distinct plant growing on the roots of the 'Báixiàn tree'; warned against as a substitute. Has branching stems and is slightly coarser than Báilóngxū."
+        },
+        {
+          "name": "搜風樹 (Sōufēng Shù, Wind-Searching Tree)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Named as the host plant for Báilóngxū; Li Shizhen identifies this as a cryptic/concealed name that cannot be verified."
+        },
+        {
+          "name": "白線樹 (Báixiàn Shù, White-Thread Tree)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Named as the host plant for Wànchán Cǎo; similarly identified by Li Shizhen as a cryptic name."
+        },
+        {
+          "name": "白花蛇丸 (Báihuāshé Wán, White-Patterned Snake Pills)",
+          "modern_identification": "A classical patent formula containing Agkistrodon/Bungarus snake (白花蛇); used for wind-stroke and paralysis",
+          "identification_confidence": "medium",
+          "notes": "Referenced as a prior treatment by the Daoist Lú Xuánzhēn that caused him to lose all his teeth — suggesting toxicity or adverse reaction."
+        },
+        {
+          "name": "桔梗湯 (Jiégěng Tāng, Platycodon Decoction)",
+          "modern_identification": "Decoction based on Platycodon grandiflorus (balloon flower root)",
+          "identification_confidence": "high",
+          "notes": "Taken as a preparatory dose before drinking the medicated wine in the alternative formula."
+        },
+        {
+          "name": "小續命湯 (Xiǎo Xùmìng Tāng, Minor Life-Continuing Decoction)",
+          "modern_identification": "Classical compound formula for wind-stroke (apoplexy/hemiplegia), containing multiple herbs including Ephedra, Aconite, Cinnamon, etc.",
+          "identification_confidence": "high",
+          "notes": "Prescribed as a prerequisite treatment before Báilóngxū in cases of wind-damp lumbar and leg pain."
+        },
+        {
+          "name": "滲濕湯 (Shèn Shī Tāng, Dampness-Percolating Decoction)",
+          "modern_identification": "Classical formula for damp-impediment conditions; multiple versions exist in the literature",
+          "identification_confidence": "medium",
+          "notes": "Co-administered with Xiǎo Xùmìng Tāng as a prerequisite."
+        },
+        {
+          "name": "四物湯 (Sìwù Tāng, Four Substances Decoction)",
+          "modern_identification": "Classical blood-nourishing formula: Rehmannia, Angelica sinensis, Ligusticum chuanxiong, Paeonia",
+          "identification_confidence": "high",
+          "notes": "Prescribed for postpartum women before Báilóngxū."
+        },
+        {
+          "name": "盧玄真 (Lú Xuánzhēn)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Named as a Daoist practitioner whose case history is cited in the *Baoshou Fang* to validate the efficacy of Báilóngxū; claimed to have lived to one hundred years old."
+        },
+        {
+          "name": "劉松石 (Liú Sōngshí) / 《保壽堂方》",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Author and text cited as the primary source for this entry. The *Baoshoutang Fang* is a Ming-dynasty medical formulary."
+        }
+      ],
+      "translator_notes": "1. The flavor entry reads '缺平' — '缺' meaning 'missing/absent' and '平' meaning 'neutral/balanced.' This is rendered as '[Flavor record] missing; nature: neutral,' consistent with Li Shizhen's practice of noting gaps in earlier sources.\n2. '無灰酒' (ash-free wine) refers to wine clarified without wood-ash alkali — a standard qualifier in Ming pharmacy indicating a neutral, unaltered wine carrier.\n3. The dosing regimen of incremental fēn (1→2→3→4→5, then back to 1) is unusual and carefully preserved in translation as it appears deliberate and clinically specific.\n4. Li Shizhen's personal editorial note ('愚案') is marked by modest self-reference ('愚,' meaning 'this foolish one'); translated as 'Li Shizhen's own note' for clarity.\n5. '左癱右瘓' literally means 'left-side paralysis, right-side paralysis' — a classical way of expressing bilateral or alternating hemiplegia; translated as 'left-side or right-side hemiplegia.'\n6. The two tree names are explicitly flagged by Li Shizhen as 隱語 (hidden/coded language), which is an unusually candid admission of ignorance for this text; this has been preserved and emphasized in the translation.",
+      "_label": "白龍鬚 (草之九)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】側梨（恭）、水苔（《開寶》）、石發（同）、石衣（《廣雅》）、水衣（《說文》）、水綿（《綱目》）、藫（音覃）。\n\n恭曰︰《藥對》云︰河中側梨。側梨、陟釐，聲相近也。王子年《拾遺記》︰晉武帝賜張華側理紙，乃水苔為之，後人訛陟釐為側理耳。此乃水中粗苔，作紙青黃色，名苔紙，青澀。\n\n《范東陽方》云︰水中石上生者，如毛，綠色。石發之名以此。\n\n時珍曰︰郭璞曰︰ ，水苔也。一名石發。江東食之。案︰石發有二︰生水中者為陟釐，生陸地者為烏韭。\n\n【集解】《別錄》曰︰陟釐生江南池澤。\n\n弘景曰︰此即南人用作紙者，惟合斷下藥用之。\n\n志曰︰此即石發也。色類苔而粗澀為異。水苔性冷，浮水中；陟釐性溫，生水中石上。\n\n宗奭曰︰陟釐，今人乾之，治為苔脯，堪 ，青苔亦可作脯食，皆利人。汴京市中甚多\n\n頌曰︰石發乾之作菜，以齏 之尤美。苔之類有井中苔、垣衣、昔邪、屋游，大抵主療略同。陸龜蒙《苔賦》云︰高有瓦松，卑有澤葵。散岩竇者曰石發，補空田者曰垣衣。在屋曰昔邪，在藥曰陟釐。是矣。澤葵，鳧葵也。雖異類，而皆感瓦石之氣而生，故推類而云耳。\n\n時珍曰︰陟釐有水中石上生者，蒙茸如發；有水污無石而自生者，纏牽如絲綿之",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Zhili (River Moss / Water Silk) — Aquatic Algae Entry\",\n  \"original_text\": \"【釋名】側梨（恭）、水苔（《開寶》）、石發（同）、石衣（《廣雅》）、水衣（《說文》）、水綿（《綱目》）、藫（音覃）。\\n\\n恭曰︰《藥對》云︰河中側梨。側梨、陟釐，聲相近也。王子年《拾遺記》︰晉武帝賜張華側理紙，乃水苔為之，後人訛陟釐為側理耳。此乃水中粗苔，作紙青黃色，名苔紙，青澀。\\n\\n《范東陽方》云︰水中石上生者，如毛，綠色。石發之名以此。\\n\\n時珍曰︰郭璞曰︰藫，水苔也。一名石發。江東食之。案︰石發有二︰生水中者為陟釐，生陸地者為烏韭。\\n\\n【集解】《別錄》曰︰陟釐生江南池澤。\\n\\n弘景曰︰此即南人用作紙者，惟合斷下藥用之。\\n\\n志曰︰此即石發也。色類苔而粗澀為異。水苔性冷，浮水中；陟釐性溫，生水中石上。\\n\\n宗奭曰︰陟釐，今人乾之，治為苔脯，堪食，青苔亦可作脯食，皆利人。汴京市中甚多。\\n\\n頌曰︰石發乾之作菜，以齏食之尤美。苔之類有井中苔、垣衣、昔邪、屋游，大抵主療略同。陸龜蒙《苔賦》云︰高有瓦松，卑有澤葵。散岩竇者曰石發，補空田者曰垣衣。在屋曰昔邪，在藥曰陟釐。是矣。澤葵，鳧葵也。雖異類，而皆感瓦石之氣而生，故推類而云耳。\\n\\n時珍曰︰陟釐有水中石上生者，蒙茸如發；有水污無石而自生者，纏牽如絲綿之狀，俗名水綿。其性味皆同。《述異記》言︰苔錢謂之澤葵，與鳧葵同名異物。蘇氏指為鳧葵者，誤矣。《苔賦》所述，猶未詳盡。蓋苔衣之類有五︰在水曰陟釐，在石曰石濡，在瓦曰屋游，在牆曰垣衣，在地曰地衣。其蒙翠而長數寸者亦有五︰在石曰烏韭，在屋曰瓦松，在牆曰土馬鬃，在山曰卷柏，在水曰藫也。\\n\\n【氣味】甘，大溫，無毒。\\n\\n【主治】心腹大寒，溫中消穀，強胃氣，止泄痢（《別錄》）。搗汁服，治天行病心悶（《日華》）。\\n\\n作脯食，止渴疾，禁食鹽（宗奭）。搗塗丹毒赤游。（時珍）\",\n  \"translation\": \"**Names and Appellations**\\n\\nAlternative names: Cèlí [側梨] (Su Gong), Shuǐtái [Water Moss] (Kaibao Bencao), Shífā [Stone Hair] (ibid.), Shíyī [Stone Garment] (Guangya), Shuǐyī [Water Garment] (Shuowen), Shuǐmián [Water Silk] (Bencao Gangmu), and Tán [藫] (pronounced tán).\\n\\nSu Gong states: The Yaodui records \"Cèlí from rivers.\" The names Cèlí and Zhīlí are phonetically similar. Wang Zinian's Shíyí Jì records that Emperor Wu of Jin presented Zhang Hua with \"Cèlǐ paper\" [側理紙], which was in fact made from water moss; later people corrupted the name Zhīlí into Cèlǐ. This is a coarse moss growing in water; paper made from it is blue-yellow in color and is called \"moss paper\" [苔紙]; it has a rough, astringent texture.\\n\\nThe Fàn Dōngyáng Fāng states: The variety growing on rocks in the water resembles hair and is green in color — this is the origin of the name Shífā [Stone Hair].\\n\\nLi Shizhen states: Guo Pu said: Tán [藫] is water moss, also called Shífā; people in Jiangdong eat it. Note: there are two kinds of Shífā — that growing in water is Zhīlí, while that growing on land is Wūjiǔ [烏韭, a moss/fern].\\n\\n**Collec",
+      "_label": "陟釐 (草之十)"
+    },
+    {
+      "title_inferred": "Dried Seaweed (Gan Tai)",
+      "original_text": "【集解】藏器曰：乾苔，海族之流也。\n\n時珍曰：此海苔也。彼人乾之為脯。海水咸，故與陟釐不同。張華《博物志》云：石發生海中者，長尺餘，大小如韭葉，以肉雜蒸食極美。張勃《吳錄》云：江蘺生海水中，正青似亂髮，乃海苔之類也。蘇恭以此為水苔者，不同。水苔不甚咸。\n\n【氣味】鹹，寒，無毒。大明曰：溫。弘景曰：柔苔寒乾苔熱。\n\n詵曰：苔脯食多，發瘡疥，令人痿黃少血色。瑞曰：有飲嗽人不可食。\n\n【主治】癭瘤結氣（弘景）。治痔殺蟲，及霍亂嘔吐不止，煮汁服（孟詵）。心腹煩悶者，冷水研如泥，飲之即止（藏器）。下一切丹石，殺諸藥毒。納木孔中，殺蠹（《日華》）。消茶積（瑞）。燒末吹鼻，止衄血。湯浸搗，敷手背腫痛（時珍）。\n\n【發明】時珍曰：洪氏《夷堅志》云：河南一寺僧盡患癭疾。有洛陽僧共寮，每食取苔脯同餐。經數月，僧項贅皆消。乃知海物皆能除是疾也。",
+      "translation": "**Collected Explanations:** Chen Cangqi [Zangqi] states: Dried seaweed [gan tai] belongs to the category of sea organisms.\n\nLi Shizhen states: This is marine algae [hai tai]. The coastal people dry it into a preserved food [fu, jerky-like preparation]. Because seawater is salty, it differs from freshwater algae [zhi li]. Zhang Hua's *Bowu Zhi* [Records of Diverse Matters] states: 'Stone-hair [shi fa] growing in the sea reaches over a foot in length, with blades similar in size to Chinese chive leaves; steamed together with meat it makes an exceptionally delicious dish.' Zhang Bo's *Wu Lu* [Records of Wu] states: 'Jiang li grows in seawater, is a pure green color resembling tangled hair, and is a type of sea algae.' Su Gong's identification of this as freshwater algae [shui tai] is incorrect — freshwater algae is not particularly salty.\n\n**Flavor and Nature:** Salty, cold, non-toxic. Da Ming states: Warm. Tao Hongjing states: Fresh soft algae is cold; dried algae is warm [hot].\n\nMeng Shen states: Eating too much dried algae preserved food can cause sores and scabies [chuang jie], and may render a person sallow and deficient in blood complexion. Wu Rui states: Those with coughs and fluid retention [yin sou] should not eat it.\n\n**Indications and Treatments:**\n- Goiter and nodular swellings [ying liu] and congealed qi [Tao Hongjing].\n- Treats hemorrhoids, kills parasites, and stops persistent vomiting from cholera-like illness [huo luan]; decoct and drink the juice [Meng Shen].\n- For vexation and oppression in the chest and abdomen: grind in cold water to a paste and drink; the condition ceases immediately [Chen Cangqi].\n- Eliminates all mineral elixir [dan shi] toxicities and counteracts the poisons of various drugs. Inserted into holes in wood, it kills wood-boring insects [*Rihua Zhu Jia Bencao*].\n- Disperses accumulations from excessive tea consumption [Wu Rui].\n- Burned to a powder and blown into the nostrils, it stops nosebleeds. Soaked in hot water, pounded, and applied as a poultice to the back of the hand, it treats swelling and pain [Li Shizhen].\n\n**Elucidation:** Li Shizhen states: Hong Mai's *Yijian Zhi* [Record of the Listener] recounts: All the monks of a monastery in Henan suffered from goiter [ying disease]. A monk from Luoyang who shared their quarters ate dried seaweed preserved food [tai fu] together with them at every meal. After several months, the neck growths of all the monks had disappeared. From this it is known that all marine products are capable of curing this disease.",
+      "entities_mentioned": [
+        {
+          "name": "乾苔 (gan tai) — Dried Seaweed",
+          "modern_identification": "Dried marine algae, likely species of Porphyra (nori/laver) or Ulva/Enteromorpha; possibly Sargassum or related brown/green seaweeds",
+          "identification_confidence": "medium",
+          "notes": "The text distinguishes this from freshwater algae (陟釐, zhi li). The iodine content of marine seaweeds is consistent with the described efficacy against goiter (endemic iodine-deficiency goiter)."
+        },
+        {
+          "name": "陟釐 (zhi li) — Freshwater Algae",
+          "modern_identification": "Likely Cladophora or Spirogyra species (freshwater green algae)",
+          "identification_confidence": "low",
+          "notes": "Contrasted with marine seaweed; said to be less salty."
+        },
+        {
+          "name": "石發 (shi fa) — 'Stone Hair'",
+          "modern_identification": "Possibly Enteromorpha or Ulva species; described as growing in the sea, over a foot long, similar in width to chive leaves",
+          "identification_confidence": "low",
+          "notes": "Cited from Zhang Hua's Bowu Zhi."
+        },
+        {
+          "name": "江蘺 (jiang li)",
+          "modern_identification": "Gracilaria species (red alga); or possibly Cladophora; described as pure green and resembling tangled hair",
+          "identification_confidence": "medium",
+          "notes": "Cited from Zhang Bo's Wu Lu. Modern Chinese botany uses 江蘺 for Gracilaria, a red alga, though the color description here ('pure green') may not match."
+        },
+        {
+          "name": "癭瘤 (ying liu) — Goiter / Neck Nodules",
+          "modern_identification": "Likely endemic iodine-deficiency goiter",
+          "identification_confidence": "high",
+          "notes": "The anecdote about monks whose goiters resolved after eating sea algae is consistent with iodine supplementation treating endemic goiter."
+        }
+      ],
+      "translator_notes": "1. The anecdote from Hong Mai's Yijian Zhi about goiter being cured by regular consumption of dried seaweed is a notable pre-modern observation consistent with iodine deficiency as the cause of endemic goiter. 2. 'Dan shi' (丹石) refers to alchemical mineral preparations (e.g., cinnabar, sulfur compounds) ingested as elixirs; the claim that seaweed counteracts their toxicity is a recurring motif in Bencao literature. 3. The disagreement between authorities on whether the drug is 'cold' or 'warm/hot' reflects the standard variation in humorally-coded monographs. 4. '苔脯' (tai fu) is translated as 'dried seaweed preserved food' — fu normally refers to dried/cured meat; here applied by analogy to dried algae.",
+      "_label": "乾苔 (草之十)"
+    },
+    {
+      "title_inferred": "Well Moss (Jing Zhong Tai)",
+      "original_text": "【集解】弘景曰︰廢井中多生苔萍，及磚土間多生雜草萊。藍既解毒，在井中者尤佳，非別一物也。\n\n【氣味】甘，大寒，無毒。\n\n【主治】漆瘡熱瘡水腫。井中藍︰殺野葛、巴豆諸毒（《別錄》）。療湯火灼瘡（弘景）",
+      "translation": "【Collected Explanations】 Hongjing [Tao Hongjing] states: Abandoned wells commonly grow moss and duckweed, and various weeds and wild plants grow abundantly between the bricks and soil. Since indigo [lan] is already known to counteract toxins, that which grows within wells is especially excellent — it is not an altogether separate substance.\n\n【Qi and Flavor】 Sweet; greatly cold; non-toxic.\n\n【Indications and Treatments】 [Used for] lacquer sores [contact dermatitis from lacquer], heat sores, and water swelling [edema]. Well Indigo [Jing Zhong Lan]: counteracts the poisons of wild kudzu [ye ge, i.e., Gelsemium or Dolichos?], croton seeds [ba dou], and various other toxins (Bielu). Treats scalds and burns from hot water or fire (Hongjing).",
+      "entities_mentioned": [
+        {
+          "name": "井中苔 (Jing Zhong Tai) — Well Moss",
+          "modern_identification": "Various mosses and algae (bryophytes, Chlorophyta) growing in well environments",
+          "identification_confidence": "low",
+          "notes": "The text conflates well moss/duckweed with well-growing indigo (藍, lan), treating them as variants of the same substance rather than distinct plants."
+        },
+        {
+          "name": "苔萍 (Tai Ping) — Moss and Duckweed",
+          "modern_identification": "Likely Lemna spp. (duckweed) and various bryophyte mosses",
+          "identification_confidence": "medium",
+          "notes": "Growing in abandoned wells; grouped together here as a single medicinal category."
+        },
+        {
+          "name": "井中藍 (Jing Zhong Lan) — Well Indigo",
+          "modern_identification": "Indigofera tinctoria or related Isatis/Indigofera species growing in wells",
+          "identification_confidence": "medium",
+          "notes": "Tao Hongjing argues this is not a separate substance from ordinary 藍 (indigo), merely a well-grown variety considered superior for detoxification."
+        },
+        {
+          "name": "野葛 (Ye Ge) — Wild Kudzu / Wild Ge",
+          "modern_identification": "Possibly Gelsemium elegans (heartbreak grass, highly toxic) or Pueraria montana; the toxic context strongly suggests Gelsemium elegans",
+          "identification_confidence": "medium",
+          "notes": "野葛 in classical toxicological contexts typically refers to Gelsemium elegans, a highly poisonous plant, rather than edible kudzu (Pueraria)."
+        },
+        {
+          "name": "巴豆 (Ba Dou) — Croton Seeds",
+          "modern_identification": "Croton tiglium",
+          "identification_confidence": "high",
+          "notes": "A well-known drastically purgative and toxic seed in Chinese materia medica; here listed among poisons that well indigo is said to counteract."
+        }
+      ],
+      "translator_notes": "The passage is notable for Tao Hongjing's editorial comment collapsing the distinction between well moss/duckweed and well-growing indigo (藍), asserting they share the same detoxifying properties and are not separate medicinal substances. The medical applications extracted are: (1)漆瘡 lacquer contact dermatitis, (2) 熱瘡 heat sores/inflammatory skin lesions, (3) 水腫 edema, (4) antidotal use against wild kudzu and croton poisoning, and (5) scalds and burns. No preparation method is specified in this segment.",
+      "_label": "井中苔 (草之十)"
+    },
+    {
+      "title_inferred": "Ship-Bottom Moss (Cang'ai / 舩底苔)",
+      "original_text": "【氣味】甘，冷，無毒。\n\n【主治】鼻洪吐血淋疾，同炙甘草、豉汁，濃煎湯呷之（孟詵）。解天行熱病伏熱，頭目不清，神志昏塞，及諸大毒。以五兩，和酥餅末一兩半，麵糊丸梧子大。每溫酒下五十丸（時珍）。\n\n【發明】時珍曰︰案方賢《奇效方》云︰水之精氣，漬船板木中，累見風日，久則變為青色，蓋因太陽晒之，中感陰陽之氣。故服之能分陰陽，去邪熱，調臟腑。物之氣味所宜也。",
+      "translation": "**Flavor and Qi:** Sweet; cold; non-toxic.\n\n**Principal Treatments:** For severe nosebleed [鼻洪], vomiting of blood, and urinary painful-dribbling disorders [淋疾]: decoct together with honey-fried licorice root [炙甘草] and fermented black-bean juice [豉汁] into a concentrated broth and sip it (Meng Shen). To resolve epidemic febrile diseases [天行熱病] with latent heat [伏熱], unclear head and eyes, clouded and obstructed spirit and consciousness, and all manner of severe toxins: take five liang [of the moss], mix with one and a half liang of powdered butter-cake [酥餅末], and form into pills with flour paste [麵糊] the size of firmiana seeds [梧子大]. Each time, take fifty pills washed down with warm wine (Li Shizhen).\n\n**Elucidation:** Li Shizhen states: According to Fang Xian's *Extraordinary Efficacy Formulary* [《奇效方》]: The essential qi of water soaks into the planks of a ship's hull; after prolonged exposure to wind and sunlight, it eventually turns a bluish-green color. This is because it is sunned by the great yang [太陽] and thereby absorbs the qi of both yin and yang from within. Therefore, when taken internally, it is capable of separating yin from yang, expelling pathogenic heat [邪熱], and regulating the viscera and bowels [臟腑]. Such are the properties befitting the flavor and qi of this substance.",
+      "entities_mentioned": [
+        {
+          "name": "舩底苔 (Ship-Bottom Moss)",
+          "modern_identification": "Algae or cyanobacterial biofilm (likely blue-green algae, Cyanobacteria spp.) growing on the submerged wooden hull of boats",
+          "identification_confidence": "medium",
+          "notes": "The text describes it as a blue-green growth that forms on wooden ship planks through prolonged exposure to water, wind, and sunlight. This is consistent with cyanobacterial or algal biofilms, though precise species identification is not possible."
+        },
+        {
+          "name": "炙甘草 (Honey-fried Licorice Root)",
+          "modern_identification": "Glycyrrhiza uralensis (or related Glycyrrhiza spp.), processed by roasting with honey",
+          "identification_confidence": "high",
+          "notes": "Standard materia medica ingredient."
+        },
+        {
+          "name": "豉汁 (Fermented Black-Bean Juice)",
+          "modern_identification": "Liquid derived from Glycine max fermented soybeans (douchi)",
+          "identification_confidence": "high",
+          "notes": "A common culinary and medicinal preparation in classical Chinese medicine."
+        },
+        {
+          "name": "酥餅末 (Powdered Butter-Cake)",
+          "modern_identification": "A baked preparation made with clarified butter or cream (酥); precise composition varies",
+          "identification_confidence": "medium",
+          "notes": "Used here as an excipient for pill formation."
+        },
+        {
+          "name": "孟詵 (Meng Shen)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Tang dynasty physician and author of 《食療本草》 (Materia Medica of Dietary Therapy); cited as the source for the first treatment indication."
+        },
+        {
+          "name": "方賢《奇效方》",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Fang Xian's formulary, full title 《奇效良方》, a Ming dynasty medical compilation. Cited as the theoretical source in the Elucidation section."
+        }
+      ],
+      "translator_notes": "The character 舩 is an archaic/variant form of 船 (boat/ship); both are used interchangeably in classical texts. The condition 鼻洪 refers specifically to profuse or torrential nosebleed, distinguishable from ordinary epistaxis. The pill size reference 梧子大 ('firmiana seed size') is a standard classical dosage descriptor, approximately 6–8 mm in diameter. The theoretical framework in the Elucidation section reflects classical Chinese cosmological thinking in which a substance absorbs both yin and yang qualities through environmental exposure, thereby gaining the therapeutic power to balance them in the body.",
+      "_label": "舩底苔 (草之十)"
+    },
+    {
+      "title_inferred": "Stone Lichen (Shi Rui / Shi Ru)",
+      "original_text": "【釋名】石濡（《別錄》）、石芥（同）、雲茶（《綱目》）、蒙頂茶。\n\n時珍曰：其狀如花蕊，其味如茶，故名。石芥乃茶字之誤。\n\n【集解】藏器曰：石蕊生太山石上，如花蕊，為丸散服之。今時無復有此也，王隱《晉書》：庾褒入林慮山，食木實，餌石蕊，遂得長年，即此也。又曰：石濡生石之陰，如屋游、垣衣之類，得雨即展，故名石濡。早春青翠，端開四葉。山人名石芥。\n\n時珍曰：《別錄》石濡，具其功用，不言形狀。陳藏器言是屋游之類，復出石蕊一條，功同石濡。蓋不知其即一物也。此物惟諸高山石上者為良。今人謂之蒙頂茶，生兗州蒙山石上，乃煙霧熏染，日久結成，蓋苔衣類也，彼人春初刮取曝乾饋人，謂之雲茶。其狀白色輕薄如花蕊，其氣香如蕈，其味甘澀如茗。不可煎飲，止宜咀嚼及浸湯啜，清涼有味。庾褒入山餌此，以代茗而已。長年之道，未必盡緣此物也。\n\n【氣味】甘，溫，無毒。時珍曰：甘、澀，涼。\n\n【主治】石濡：明目益精氣。令人不飢渴，輕身延年（《別錄》）。石蕊：主長年不飢（藏器）。生津潤咽，解熱化痰（時珍）。",
+      "translation": "**Nomenclature**\nAlternate names: Shi Ru [Stone Moist] (Mingyi Bielu), Shi Jie [Stone Mustard] (same source), Yun Cha [Cloud Tea] (Bencao Gangmu), Mengtop Tea.\n\nLi Shizhen notes: Its form resembles flower stamens [花蕊], and its flavor resembles tea [茶], hence the name. \"Shi Jie\" [Stone Mustard] is a scribal error for the character \"cha\" [tea].\n\n**Collected Explanations**\nChen Cangqi [Zang Qi] states: Shi Rui grows on rocks of Mount Tai, resembling flower stamens; it is taken in pill or powder form. There is none to be found nowadays. Wang Yin's Jin Shu [History of the Jin Dynasty] records: Yu Bao entered Mount Linlü, ate the fruits of trees and consumed Shi Rui, and thus attained long life — this is the same substance. [Chen Cangqi] further states: Shi Ru grows on the shaded side of rocks, resembling wu you [roof tile moss, Lepraria or similar] and yuan yi [wall lichen/moss], both of which unfurl upon rain — hence the name Shi Ru [Stone Moist]. In early spring it is green and fresh, with four leaves opening at its tip. Mountain people call it Shi Jie [Stone Mustard].\n\nLi Shizhen notes: The Mingyi Bielu entry on Shi Ru describes its properties and uses but gives no description of its appearance. Chen Cangqi stated it belongs to the same category as wu you [roof tile moss], and separately listed Shi Rui as a distinct entry, noting its functions are the same as Shi Ru — apparently unaware that the two are in fact the same thing. This substance is best when gathered from rocks on high mountains. People today call it Mengtop Tea [蒙頂茶]; it grows on rocks of Mount Meng in Yanzhou [modern Shandong], formed over a long period through absorption of mist and smoke. It belongs to the category of moss [苔衣]. The local people scrape it off in early spring, dry it in the sun, and give it as gifts, calling it Yun Cha [Cloud Tea]. In appearance it is white, light, and thin like flower stamens; in fragrance it resembles mushrooms; in flavor it is sweet and astringent like tea. It should not be decocted and drunk; it is best only for chewing or steeping and sipping as an infusion — cooling and flavorful. When Yu Bao went into the mountains and ate this, it was merely as a substitute for tea. The way to long life cannot necessarily be attributed entirely to this substance.\n\n**Flavor and Nature**\nSweet, warm, non-toxic. Li Shizhen notes: Sweet, astringent, cooling.\n\n**Indications and Treatments**\n- Shi Ru: Brightens the eyes and replenishes essence-qi [精氣]; prevents hunger and thirst; lightens the body and prolongs life (Mingyi Bielu).\n- Shi Rui: Primarily promotes longevity and prevents hunger (Chen Cangqi).\n- Engenders fluids and moistens the throat; clears heat and transforms phlegm (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "石蕊 (Shi Rui)",
+          "modern_identification": "Thallus Lichenum / a crustose or foliose lichen, possibly Cladonia or Usnea species; most likely Usnea diffracta or a closely related rock-dwelling lichen",
+          "identification_confidence": "medium",
+          "notes": "Described as white, light, thin like flower stamens, fragrant like mushrooms, sweet and astringent in flavor, growing on high mountain rocks. The description as 苔衣 (moss-like growth) and its formation from prolonged mist exposure strongly suggests a lichen. Preparation: scraped off rocks, sun-dried, then chewed or steeped in hot water as an infusion; also historically compounded into pills or powders."
+        },
+        {
+          "name": "石濡 (Shi Ru)",
+          "modern_identification": "Same as Shi Rui; likely the same lichen taxon described under a different name in the Mingyi Bielu",
+          "identification_confidence": "medium",
+          "notes": "Li Shizhen explicitly argues that Shi Ru and Shi Rui are the same substance. Conditions treated: brightens eyes, replenishes essence-qi, prevents hunger and thirst, lightens the body, prolongs life."
+        },
+        {
+          "name": "雲茶 / 蒙頂茶 (Yun Cha / Mengtop Tea)",
+          "modern_identification": "Local name for the same lichen gathered from Mount Meng, Yanzhou (modern Shandong province)",
+          "identification_confidence": "medium",
+          "notes": "Not to be confused with the famous cultivated Mengding Mountain tea (Camellia sinensis) of Sichuan; this is a lichen product, not a true tea plant."
+        },
+        {
+          "name": "屋游 (Wu You)",
+          "modern_identification": "Roof tile moss or lichen; possibly Lepraria or Parmotrema species",
+          "identification_confidence": "low",
+          "notes": "Mentioned as a comparator organism in Chen Cangqi's description."
+        },
+        {
+          "name": "垣衣 (Yuan Yi)",
+          "modern_identification": "Wall moss or lichen; possibly Tortula muralis or a related bryophyte/lichen",
+          "identification_confidence": "low",
+          "notes": "Also mentioned as a comparator organism by Chen Cangqi."
+        }
+      ],
+      "translator_notes": "1. Li Shizhen's editorial synthesis here is notable: he collapses two separate Bielu/Cangqi entries (石濡 and 石蕊) into a single substance, arguing for their identity based on shared morphology and function. This reflects his broader taxonomic methodology. 2. The 'Mount Tai' (太山) mentioned by Chen Cangqi is the famous Taishan in Shandong; 'Mount Meng in Yanzhou' (兗州蒙山) is a separate location also in Shandong. 3. '長年' (longevity / long life) is a Daoist longevity concept; Li Shizhen's skeptical closing remark ('the way to long life cannot necessarily be attributed entirely to this substance') is characteristic of his empirical approach. 4. The character 茶 in 石芥 being a 'scribal error' for 茶 is puzzling since they are the same modern character; this likely reflects a historical variant form or copyist substitution between 芥 (jiè, mustard) and 茶 (chá, tea) based on graphic similarity in manuscript transmission.",
+      "_label": "石蕊 (草之十)"
+    },
+    {
+      "title_inferred": "Ground Lichen Herb (Di Yi Cao)",
+      "original_text": "【釋名】仰天皮（《拾遺》）、掬天皮（《綱目》）。\n\n【集解】大明曰此乃陰濕地被日晒起苔蘚也。\n\n藏器曰：即濕地上苔衣如草狀者耳。\n\n【氣味】苦，冷，微毒。藏器曰：平，無毒。\n\n【主治】卒心痛中惡，以人垢膩為丸，服七粒。又主馬反花瘡，生油調敷（大明）。明目（藏器）。研末，新汲水服之，治中暑（時珍）。",
+      "translation": "**Nomenclature:** [Also known as] Yǎngtiān Pí ['Sky-facing Skin'] (from *Shiyi* [*Bencao Shiyi*]), and Jū Tiān Pí ['Cupped-sky Skin'] (from *Gangmu*).\n\n**Collected Commentaries:** Daming [Ri Huazi] states: This is the moss and lichen [tāixiǎn] that rises up on shaded, damp ground after exposure to sunlight.\n\nZangqi [Chen Cangqi] states: It is simply the lichen-like, grass-resembling coating found on moist ground.\n\n**Qi and Flavor:** Bitter, cold, mildly toxic. Zangqi states: Balanced [ping], non-toxic.\n\n**Indications and Treatments:** For sudden heart pain and malign stroke [zhòng è — sudden affliction by noxious influences], form into pills with human body grease [rén gòu nì — sebaceous matter scraped from the skin], and take seven pills. Also indicated for horse-flower sores [mǎ fǎn huā chuāng — a type of proliferative ulcer or fungating wound], applied topically mixed with raw oil (Daming). Brightens the eyes (Zangqi). Ground into powder and taken with freshly drawn water, it treats heatstroke [zhòng shǔ] (Shizhen [Li Shizhen]).",
+      "entities_mentioned": [
+        {
+          "name": "地衣草 (Dì Yī Cǎo)",
+          "modern_identification": "Terrestrial lichen or cyanobacterial soil crust; possibly species such as Nostoc commune (terrestrial cyanobacterium/gelatinous lichen) or a crustose/foliose lichen of damp soil",
+          "identification_confidence": "medium",
+          "notes": "The description — a moss- or lichen-like growth on damp, shaded ground that swells after sunlight — is consistent with Nostoc commune, a gelatinous colonial cyanobacterium common on moist soil surfaces in China, sometimes called 'ground ear.' Could also refer generically to soil-surface cryptogams."
+        },
+        {
+          "name": "馬反花瘡 (mǎ fǎn huā chuāng)",
+          "modern_identification": "Likely a fungating or exuberant granulation wound, possibly referring to proud flesh or a type of proliferative skin ulcer",
+          "identification_confidence": "low",
+          "notes": "The term 'horse-flower sore' (反花瘡) in classical Chinese medicine typically refers to a wound with everted, flower-like proliferative tissue, analogous to what modern medicine might describe as fungating ulcers or exuberant granulation tissue."
+        }
+      ],
+      "translator_notes": "1. 'Rén gòu nì' (人垢膩) literally refers to greasy sebaceous matter or accumulated grime scraped from human skin; this is a classical pharmaceutical ingredient used in several folk remedies of the period and is rendered as 'human body grease' for clarity. 2. 'Zhōng è' (中惡) is a classical diagnostic category referring to sudden affliction by malign or noxious environmental or supernatural influences, often manifesting as sudden collapse, chest pain, or syncope. 3. The discrepancy in flavor/toxicity assessment between Daming (bitter, cold, mildly toxic) and Zangqi (balanced, non-toxic) is preserved faithfully from the source. 4. OCR appears clean; no illegible passages detected.",
+      "_label": "地衣草 (草之十)"
+    },
+    {
+      "title_inferred": "Yuanyi (Wall Moss / Lichen)",
+      "original_text": "【釋名】垣嬴（《別錄》）、天韭（《別錄》）、鼠韭（《別錄》）、昔邪（《別錄》）。\n\n【集解】《別錄》曰︰垣衣生古垣牆陰或屋上。三月三日采，陰乾。\n\n恭曰︰此即古牆北陰青苔衣也。其生石上者名昔邪，一名烏韭；生屋上者名屋游。形並相似，為療略同。江南少牆，故陶弘景云︰方不複用，俗中少見也。\n\n時珍曰︰此乃磚牆城垣上苔衣也。生屋瓦上者，即為屋游。\n\n【氣味】酸，冷，無毒。\n\n【主治】黃膽心煩，咳逆血氣，暴熱在腸胃，暴風口噤，金瘡內塞，酒漬服之。久服補中益氣，長肌肉，好顏色（《別錄》）。搗汁服，止衄血。燒灰油和，敷湯火傷（時珍）。",
+      "translation": "**Names and Synonyms**\nAlso known as: Yuanying [垣嬴] (Míng Biélù [《別錄》]); Tianjiu [天韭, 'heavenly chive'] (Biélù); Shujiu [鼠韭, 'rat chive'] (Biélù); Xixie [昔邪] (Biélù).\n\n**Collected Commentaries**\nThe Míng Biélù states: Yuanyi grows in the shaded areas of old walls and enclosures, or on rooftops. It is collected on the third day of the third month and dried in the shade.\n\nSu Gong [恭] states: This is none other than the green moss [青苔衣] that grows on the northern, shaded face of old walls. The variety growing on rocks is called Xixie [昔邪], also known as Wujiu [烏韭, 'black chive']; the variety growing on rooftops is called Wuyou [屋游]. Their forms are all similar, and their therapeutic uses are roughly the same. In the Jiangnan region there are few stone walls, which is why Tao Hongjing remarked that it is no longer used in prescriptions and is rarely seen in common practice.\n\nLi Shizhen [時珍] states: This is the moss [苔衣] growing on brick walls and city ramparts. The variety growing on roof tiles is called Wuyou [屋游].\n\n**Flavor and Nature**\nSour; cold; non-toxic.\n\n**Indications and Treatments**\n- Jaundice [黃疸] with heart vexation [心煩], counterflow cough [咳逆] with blood and qi [blood-qi] disorders, sudden heat [暴熱] in the stomach and intestines, sudden wind [暴風] causing lockjaw [口噤], and traumatic wounds [金瘡] with internal blockage: steep in wine and take orally. (*Biélù*)\n- Prolonged use tonifies the middle [補中], boosts qi, builds muscle tissue, and improves complexion. (*Biélù*)\n- Pound to extract juice and take orally to stop nosebleed [衄血]. (*Li Shizhen*)\n- Burn to ash, mix with oil, and apply topically to scalds and burns [湯火傷]. (*Li Shizhen*)",
+      "entities_mentioned": [
+        {
+          "name": "垣衣 (Yuanyi)",
+          "modern_identification": "Mosses or algae growing on old stone/brick walls, likely species of Tortula, Grimmia, or cyanobacterial/algal crusts (Cyanobacteria or Chlorophyta)",
+          "identification_confidence": "medium",
+          "notes": "The description — green moss on the shaded north face of old walls — is consistent with various wall-dwelling bryophytes or algal films. A precise species identification is difficult given the broad ecological description."
+        },
+        {
+          "name": "昔邪 / 烏韭 (Xixie / Wujiu)",
+          "modern_identification": "Selaginella tamariscina or a saxicolous moss/lichen growing on rocks",
+          "identification_confidence": "low",
+          "notes": "This rock-dwelling variant is distinguished from wall-growing Yuanyi. Classical sources sometimes conflate Wujiu with Selaginella species, but here it may refer to lithophytic mosses or lichens."
+        },
+        {
+          "name": "屋游 (Wuyou)",
+          "modern_identification": "Moss or lichen growing on roof tiles, possibly Bryum argenteum or similar urban bryophyte",
+          "identification_confidence": "low",
+          "notes": "Wuyou is treated as a separate entry elsewhere in the Bencao Gangmu (草之十) but is noted here as the roof-tile variety of the same general organism."
+        }
+      ],
+      "translator_notes": "The character 黃膽 in the source is the older orthographic variant of 黃疸 (jaundice); corrected silently in the translation. The medical term 金瘡 refers specifically to wounds caused by metal implements (blades, arrows), here with internal obstruction/bleeding. 'Sudden wind causing lockjaw' (暴風口噤) may refer to tetanus-like or stroke-like presentations in classical Chinese medicine. Su Gong's comment about Jiangnan having 'few walls' likely refers to the relative scarcity of old stone or brick walls in that region compared to the north, explaining why Tao Hongjing found it rare.",
+      "_label": "垣衣 (草之十)"
+    },
+    {
+      "title_inferred": "Wūyóu — Roof Moss (Chapter: Grasses, Part Ten)",
+      "original_text": "【釋名】瓦衣（《綱目》）、瓦苔（《嘉祐》）、瓦蘚（《綱目》）、博邪。\n\n【集解】《別錄》曰：屋游生屋上陰處。八月、九月採。\n\n弘景曰：此古瓦屋上青苔衣也。剝取用之。\n\n時珍曰：其長數寸者，即為瓦松也。\n\n【氣味】甘，寒，無毒。\n\n【主治】浮熱在皮膚，往來寒熱，利小腸膀胱氣（《別錄》）。止消渴（之才）。小兒癇熱，時氣煩悶（《開寶》）。煎水入鹽漱口，治熱毒牙齦宣露。研末，新汲水調服二錢，止鼻衄（時珍）。\n\n【發明】時珍曰：《別錄》主治之証，與《本經》烏韭文相同，蓋一類，性氣不甚遼遠也。",
+      "translation": "**Names and Nomenclature**\nAlternate names: Wǎyī [Tile Garment] (Bencao Gangmu), Wǎtái [Tile Moss] (Jiayou [Bencao]), Wǎxiǎn [Tile Lichen] (Bencao Gangmu), and Bóxié.\n\n**Collected Explanations**\nThe Bielu states: Wūyóu grows in shaded places on rooftops. It is gathered in the eighth and ninth months.\n\nHongjing [Tao Hongjing] states: This is the green mossy growth found on the tiles of old roofed buildings. It is scraped off and used directly.\n\nShizhen [Li Shizhen] states: When specimens grow to several cun in length, they are then classified as Wǎsōng [Orostachys/roof stonecrop].\n\n**Flavor and Nature**\nSweet; cold; non-toxic.\n\n**Indications and Treatments**\n- Superficial [floating] heat in the skin, alternating chills and fever, and promoting the qi of the small intestine and bladder (Bielu).\n- Stopping [excessive] thirst [xiāokě, i.e., wasting-thirst disorder] (Zhicai).\n- Febrile convulsions [epileptic heat] in children, and seasonal qi [epidemic] disorders with vexation and stifling sensations (Kaibao [Bencao]).\n- Decocted in water with salt added, used as a mouth rinse: treats toxic heat causing gingival recession and exposure of the roots [xuānlù].\n- Ground into powder and taken with two qian [approx. 6 g] dissolved in freshly drawn water: stops nosebleed [epistaxis] (Shizhen).\n\n**Elaboration**\nShizhen states: The indications listed in the Bielu are essentially the same as those recorded in the Benjing [Shennong Bencao Jing] for Wūjǔ [dark filmy fern]. These are plants of the same general class, and their natures and qi are not substantially different from one another.",
+      "entities_mentioned": [
+        {
+          "name": "屋游 (Wūyóu)",
+          "modern_identification": "Likely a bryophyte or cyanobacterial/algal crust growing on roof tiles, possibly Grimmia or related genera (mosses on tiles); sometimes equated with Lepraria or similar crustose lichens",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen distinguishes it from Wǎsōng (Orostachys fimbriata) by its smaller size. It is described as a green moss-like film (青苔衣) on old tiled roofs."
+        },
+        {
+          "name": "瓦松 (Wǎsōng)",
+          "modern_identification": "Orostachys fimbriata (Crassulaceae) — roof stonecrop",
+          "identification_confidence": "high",
+          "notes": "Mentioned as the larger form of the same growth; treated as a related but distinct drug."
+        },
+        {
+          "name": "烏韭 (Wūjǔ)",
+          "modern_identification": "Possibly Selaginella tamariscina or a filmy fern (Hymenophyllaceae); classical identification disputed",
+          "identification_confidence": "low",
+          "notes": "Referenced from the Shennong Bencao Jing as having similar indications to Wūyóu, underscoring their perceived pharmacological kinship."
+        }
+      ],
+      "translator_notes": "1. The source text shows '《嘉 》' (OCR missing a character); this has been silently corrected to '《嘉祐》' (Jiayou Bencao, Song dynasty materia medica), which is the standard reference cited in this context.\n2. 'Xiāokě' (消渴) is translated as 'wasting-thirst disorder,' the classical Chinese diagnostic category that broadly encompasses diabetes mellitus and other polydipsic conditions.\n3. 'Xuānlù' (宣露) refers specifically to gingival recession with root exposure, a condition attributed to toxic heat in the gums.\n4. The preparation methods described include: (a) gargling with a salt-infused decoction for gum disease; (b) oral ingestion of powdered drug (2 qian) in fresh water for nosebleed.\n5. Li Shizhen's comparative note linking Wūyóu to Wūjǔ reflects his broader taxonomic-pharmacological method of grouping plants by habitat and therapeutic similarity.",
+      "_label": "屋游 (草之十)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】瓦松（《唐本》）、瓦花（《綱目》）、向天草（《綱目》）\n\n，赤者名鐵腳婆羅門草（《綱目》）、天王鐵塔草。\n\n時珍曰︰其名殊不可解。\n\n頌曰︰瓦松，如松子作層，故名。\n\n【集解】恭曰︰昨葉何草生上黨屋上，如蓬。初生高尺餘，遠望如松栽。\n\n志曰︰處處有之。生年久瓦屋上。六月、七月採苗，晒乾。\n\n【氣味】酸，平，無毒。\n\n時珍曰︰按︰《庚辛玉冊》云︰向天草即瓦松，陰草也。生屋瓦上及深山石縫中。莖如漆圓銳，葉背有白毛。有大毒。燒灰淋汁沐發，發即落。誤入目，令人瞽。搗汁能結草砂，伏雌、雄、砂、汞、白礬。其說與本草無毒及生眉發之說相反，不可不知。\n\n【主治】口中乾痛，水穀血痢，止血（《唐本》）。生眉發膏為要藥（馬志）。行女子經絡\n（蘇頌）。大腸下血，燒灰，水服一錢。又塗諸瘡不斂（時珍）。",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Zuoyehe Grass (Rooftop Stonecrop / Orostachys)\",\n  \"original_text\": \"【釋名】瓦松（《唐本》）、瓦花（《綱目》）、向天草（《綱目》），赤者名鐵腳婆羅門草（《綱目》）、天王鐵塔草。\\n\\n時珍曰︰其名殊不可解。\\n\\n頌曰︰瓦松，如松子作層，故名。\\n\\n【集解】恭曰︰昨葉何草生上黨屋上，如蓬。初生高尺餘，遠望如松栽。\\n\\n志曰︰處處有之。生年久瓦屋上。六月、七月採苗，晒乾。\\n\\n【氣味】酸，平，無毒。\\n\\n時珍曰︰按︰《庚辛玉冊》云︰向天草即瓦松，陰草也。生屋瓦上及深山石縫中。莖如漆圓銳，葉背有白毛。有大毒。燒灰淋汁沐發，發即落。誤入目，令人瞽。搗汁能結草砂，伏雌、雄、砂、汞、白礬。其說與本草無毒及生眉發之說相反，不可不知。\\n\\n【主治】口中乾痛，水穀血痢，止血（《唐本》）。生眉發膏為要藥（馬志）。行女子經絡（蘇頌）。大腸下血，燒灰，水服一錢。又塗諸瘡不斂（時珍）。\",\n  \"translation\": \"**Names and Nomenclature**\\nAlternate names: Wasong [Tile-Pine] (Tang Bencao), Wahua [Tile-Flower] (Gangmu), Xiangtian Cao [Sky-Facing Herb] (Gangmu). The red variety is called Tiejiao Poluomen Cao [Iron-Footed Brahmin Herb] (Gangmu) and Tianwang Tieta Cao [Heavenly King Iron Pagoda Herb].\\n\\nLi Shizhen states: The origin of its primary name [Zuoyehe Cao] is quite impossible to explain.\\n\\nSu Song states: \"Wasong\" [Tile-Pine] is so named because it grows in layered tiers resembling pine cones.\\n\\n**Collected Explanations**\\nSu Gong states: Zuoyehe Cao grows on rooftops in Shangdang [a region in modern Shanxi], resembling a bushy clump. When first sprouting it reaches over a foot in height; viewed from a distance it resembles a young pine sapling.\\n\\nMa Zhi states: It is found everywhere, growing on the tiles of old rooftops. The sprouts are collected in the sixth and seventh months and dried in the sun.\\n\\n**Flavor and Nature**\\nSour; balanced [neither warm nor cold]; non-toxic.\\n\\nLi Shizhen states: According to the Gengxin Yuce [an alchemical text]: \"The sky-facing herb is Wasong, a plant of yin character. It grows on roof tiles and in the rocky crevices of deep mountains. Its stem is round and tapering, smooth as lacquer; the underside of its leaves bears white hairs. It is highly toxic. If burned to ash and the lye water used to wash the hair, the hair will immediately fall out. If it accidentally enters the eyes, it will cause blindness. Its pressed juice can precipitate herbal mercury sulphide [caos",
+      "_label": "昨葉何草 (草之十)"
+    },
+    {
+      "title_inferred": "Wujiu (Black Chive Moss / Rock Moss) — Herb Entry",
+      "original_text": "【釋名】石發（《唐本》）、石衣（《日華》）、石苔（《唐本》）、石花（《綱目》）、石馬鬃（《綱目》）、鬼韭（與麗同）。\n\n弘景曰：垣衣，亦名烏韭，而為療異，非此種類也。\n\n時珍曰：《別錄》主療之証，與垣衣相同，則其為一類，通名烏韭，亦無害也。但石發與陟釐同名，則有水、陸之性，稍有不同耳。\n\n【集解】《別錄》曰：烏韭生山谷石上。又曰：鬼韭，生石上。嫩之日柔，為沐。\n\n恭曰：石苔也。又名石發。生岩石之陰，不見日處，與卷柏相類。\n\n藏器曰：生大石及木間陰處，青翠茸茸者，似苔而非苔也。\n\n大明曰：此即石衣也。長者可四、五寸。\n\n【氣味】甘，寒，無毒。\n\n大明曰：冷，有毒。垣衣為之使。\n\n【主治】皮膚往來寒熱，利小腸膀胱氣（《本經》）。療黃膽，金瘡內塞，補中益氣（《別錄》）。燒灰沐頭，長發令黑（大明）。",
+      "translation": "**[Names and Synonyms]**\nAlternate names: Shifa [Stone Hair] (Tang Bencao), Shiyi [Stone Garment] (Rihua), Shitai [Stone Moss] (Tang Bencao), Shihua [Stone Flower] (Bencao Gangmu), Shimazong [Stone Horse Mane] (Bencao Gangmu), Guijiu [Ghost Chive] (written with the character 韭, homophonous with 麗 in the source).\n\nHongjing [Tao Hongjing] states: Yuanyi [Wall Moss, *Grimmia* sp.] is also called Wujiu, but its therapeutic uses differ; it is not of the same type as this plant.\n\nShizhen [Li Shizhen] states: The indications listed in the Bielu are the same as those for Yuanyi, so they may indeed be considered of the same category, and sharing the common name Wujiu causes no great harm. However, since Shifa shares a name with Zhili [a water plant], there are differences in aquatic versus terrestrial nature, and slight differences accordingly.\n\n**[Collected Explanations]**\nThe Bielu states: Wujiu grows on rocks in mountain valleys. It also states: Guijiu grows on rocks. When young it is soft and can be used as a hair wash.\n\nKong [Su Gong] states: It is a stone moss [Shitai], also called Shifa. It grows on the shaded side of cliff rocks where sunlight does not reach, and is similar in appearance to Juanbai [Selaginella].\n\nZangqi [Chen Zangqi] states: It grows in shaded spots on large rocks and between trees; it is bright green and fluffy in texture — resembling moss but not truly a moss.\n\nDaming [Ri Huazi] states: This is the same as Shiyi [Stone Garment]. The longer specimens can reach four to five cun [inches] in length.\n\n**[Qi and Flavor]**\nSweet; cold; non-toxic.\n\nDaming states: Cold; toxic. Yuanyi [Wall Moss] acts as its [complementary] guide drug.\n\n**[Indications and Treatments]**\n- Alternating chills and fever in the skin; promotes flow of qi in the small intestine and urinary bladder. (Shennong Bencao Jing)\n- Treats jaundice; internally seals metal [weapon] wounds; supplements the middle [jiao] and boosts qi. (Bielu)\n- Burned to ash and used to wash the head, it promotes hair growth and turns hair black. (Daming)",
+      "entities_mentioned": [
+        {
+          "name": "烏韭 (Wujiu)",
+          "modern_identification": "Likely a rock-dwelling cryptogam, possibly a filamentous green alga or bryophyte such as Porella or a related liverwort/moss growing on shaded rock surfaces; some scholars identify it with Cladophora or Stigonema spp. (algae) or a species of Selaginella",
+          "identification_confidence": "low",
+          "notes": "The description — growing on shaded rock, bright green, fluffy, similar to but distinct from true moss, and similar to Juanbai (Selaginella) — is consistent with a rock-dwelling liverwort, alga, or fern ally. Precise identification remains uncertain."
+        },
+        {
+          "name": "垣衣 (Yuanyi / Wall Moss)",
+          "modern_identification": "Possibly Grimmia or Tortula species (mosses growing on walls), or interpreted as a lichen",
+          "identification_confidence": "low",
+          "notes": "Used here as a comparative reference plant and also noted as the guide drug (使) for Wujiu according to Daming."
+        },
+        {
+          "name": "石發 (Shifa)",
+          "modern_identification": "Possibly Vaucheria or Cladophora (freshwater/aquatic algae) when referring to the water variety; the rock-dwelling form overlaps with Wujiu",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen notes that Shifa shares a name with Zhili (陟釐), a water plant, indicating that the name covers both aquatic and terrestrial varieties with slightly different properties."
+        },
+        {
+          "name": "陟釐 (Zhili)",
+          "modern_identification": "Likely Cladophora or a similar freshwater alga",
+          "identification_confidence": "medium",
+          "notes": "Referenced as an aquatic plant sharing the name Shifa; contrasted with the terrestrial/rock-dwelling Wujiu."
+        },
+        {
+          "name": "卷柏 (Juanbai)",
+          "modern_identification": "Selaginella tamariscina (Beauv.) Spring",
+          "identification_confidence": "high",
+          "notes": "Cited by Su Gong as a plant morphologically similar to Wujiu."
+        }
+      ],
+      "translator_notes": "1. The original text contains an OCR/transcription anomaly: '鬼 與麗同' and '鬼麗' have been interpreted as '鬼韭' (Guijiu, 'Ghost Chive'), with an editorial note that the character 麗 was used in the source as a phonetic substitute or scribal variant for 韭. This is a common textual issue in Ming-era woodblock editions.\n2. The phrase '之日柔，為沐' (rendered here as 'When young it is soft and can be used as a hair wash') is likely corrupt or fragmentary; '嫩之日柔' has been supplied as the probable intended reading based on context. Marked as potentially [ILLEGIBLE: short corrupt clause] in the original.\n3. The medical indications include: (a) alternating chills and fever; (b) promoting urinary/intestinal qi flow; (c) jaundice; (d) traumatic/weapon wounds (金瘡); (e) tonifying the middle jiao. Preparation methods: primarily topical wash (hair ash preparation) and presumably oral decoction for internal uses, though no explicit decoction method is stated in this passage.\n4. Daming's claim that it is 'toxic' (有毒) directly contradicts the Bencao Jing's 'non-toxic' (無毒); this contradiction is preserved faithfully in the translation.",
+      "_label": "烏韭 (草之十)"
+    },
+    {
+      "title_inferred": "Tu Ma Zong (Wall Moss / Earth Horse-Mane Moss)",
+      "original_text": "【集解】禹錫曰︰所在背陰古牆垣上有之。歲多雨則茂盛。或以為垣衣，非也。垣衣生垣牆之側。此生垣牆之上，比垣衣更長，故謂之馬鬃，苔之類也。\n\n時珍曰︰垣衣乃磚牆上苔衣，此乃土牆上烏韭也。\n\n【氣味】甘、酸，寒，無毒。\n\n【主治】骨熱敗煩，熱毒壅衄鼻（《嘉祐》）。沐發令長黑，通大小便（時珍）。",
+      "translation": "**Collected Explanations:** Yu Xi states: This plant is found on the shaded side of old walls and earthen enclosures wherever they exist. In years of heavy rainfall it grows luxuriantly. Some take it to be 'Yuan Yi' [wall lichen/moss, *Parmotrema* or similar wall-coating lichen], but this is incorrect. Yuan Yi grows on the sides of walls, whereas this plant grows on top of walls and is considerably longer than Yuan Yi; hence it is called 'horse-mane' [ma zong], and belongs to the category of mosses [tai].\n\nLi Shizhen states: Yuan Yi is the moss coating found on brick walls, whereas this plant is the 'wu jiu' [dark/black fern-moss] found on earthen walls.\n\n**Flavor and Nature:** Sweet, sour; cold; non-toxic.\n\n**Indications and Treatments:** Bone fever with exhaustion and vexation; heat toxin congestion causing nosebleed [衄鼻] (from the *Jiayou Bencao*). When used to wash the hair, it promotes long, dark hair growth; it also promotes the flow of both urine and stool (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "土馬鬃 (Tu Ma Zong)",
+          "modern_identification": "Polytrichum commune or a related species of haircap moss (family Polytrichaceae); possibly Atrichum undulatum",
+          "identification_confidence": "medium",
+          "notes": "The name 'horse-mane' refers to its relatively tall, bristly appearance compared to flat wall mosses. Li Shizhen identifies it specifically as 烏韭 (wu jiu) growing on earthen walls, which complicates identification as wu jiu is sometimes associated with fern allies or dark mosses."
+        },
+        {
+          "name": "垣衣 (Yuan Yi)",
+          "modern_identification": "Likely a crustose lichen or thin moss on brick walls, possibly Tortula muralis or a Parmelia species",
+          "identification_confidence": "low",
+          "notes": "Distinguished from Tu Ma Zong by growing on the sides rather than tops of walls, and by being shorter in stature. Li Shizhen specifies it as the moss coating of brick walls."
+        },
+        {
+          "name": "烏韭 (Wu Jiu)",
+          "modern_identification": "Selaginella uncinata or a dark moss/fern ally; context here suggests a moss-type plant",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen uses this term to describe Tu Ma Zong when growing on earthen walls, suggesting these names overlapped in usage."
+        }
+      ],
+      "translator_notes": "The source text abbreviates 《嘉祐》 (Jiayou Bencao, a Song dynasty materia medica compiled under the Jiayou reign period, 1056–1063) as 《嘉 》 — this is a clear OCR/print truncation and has been silently restored. The medical indications include: (1) bone fever with exhaustion and vexation [骨熱敗煩], and heat-toxin-induced nosebleed — sourced from the Jiayou Bencao; (2) hair growth and darkening when used as a hair wash, and promotion of urination and defecation — attributed to Li Shizhen. No specific preparation method is given in this segment beyond the implied topical use (hair wash) and presumed internal use.",
+      "_label": "土馬鬃 (草之十)"
+    },
+    {
+      "title_inferred": "Juanbai (Resurrection Plant / Spikemoss) — Grasses, Chapter 10",
+      "original_text": "【釋名】萬歲（《本經》）、長生不死草（《綱目》）、豹足（《吳普》）、求股（《別錄》）、交時（《別錄》）。\n\n時珍曰︰卷柏、豹足，象形也。萬歲、長生，言其耐久也。\n\n【集解】《別錄》曰︰卷柏生常山山谷石間。五月、七月採，陰乾。\n\n弘景曰︰今出近道。叢生石土上，細葉似柏，屈藏如雞足，青黃色。用之，去下近沙石處。\n\n禹錫曰︰出建康。\n\n《范子計然》曰︰出三輔。\n\n頌曰︰今關陝及沂、兗諸州亦有之。宿根紫色多須。春生苗，似柏葉而細，拳攣如雞足，高三、五寸。無花、子，多生石上。\n\n【氣味】辛，溫，無毒。《別錄》曰︰甘，平。普曰︰神農︰辛，平；桐君、雷公︰甘，微寒。\n\n【主治】五臟邪氣，女子陰中寒熱痛，症瘕血閉絕子。久服輕身和顏色（《本經》）。止咳逆，治脫肛，散淋結，頭中風眩，痿蹶，強陰益精，令人好容顏（《別錄》）。通月經，治尸疰鬼疰腹痛，百邪鬼魅啼泣（甄權）。鎮心，除面頭風，暖水臟。生用破血，炙用止血（大明）。",
+      "translation": "**Nomenclature**\nAlternate names: Wansui [Ten-thousand-years] (Benjing), Changsheng Busi Cao [Herb of Immortal Life] (Gangmu), Baozu [Leopard's Foot] (Wu Pu), Qiugu (Bielu), Jiaoshi (Bielu).\n\nLi Shizhen states: The names 'Juanbai' [Curled Cypress] and 'Leopard's Foot' are derived from the plant's appearance. 'Ten-thousand-years' and 'Immortal Life' refer to its remarkable longevity and endurance.\n\n**Collected Commentaries**\nThe Bielu states: Juanbai grows among the rocks in mountain valleys of Changshan. It is collected in the fifth and seventh months and dried in the shade.\n\nTao Hongjing states: It is found near the roads today. It grows in clusters on rocky soil; its fine leaves resemble those of cypress [Platycladus], curling and folding like a chicken's foot, and are blue-green to yellowish in color. When using it, remove the lower portions near the sand and stones.\n\nYu Xi states: It comes from Jiankang.\n\nThe Fanzi Jiran states: It comes from the Sanfu region.\n\nSu Song states: Today it is also found in the Guan-Shan [Shaanxi] region and in the prefectures of Yi and Yan. The perennial root is purple with many rootlets. In spring it sends up shoots resembling cypress leaves but finer, curled and contracted like a chicken's foot, growing three to five inches tall. It bears no flowers or seeds, and grows mostly on rocks.\n\n**Qi and Flavor**\nAcrid, warm, non-toxic. The Bielu states: Sweet, neutral. Wu Pu states — Shennong: acrid, neutral; Tongjun and Leigong: sweet, slightly cold.\n\n**Indications and Treatments**\n— Pathogenic qi [evil influences] in the five viscera; cold-heat pain in the woman's yin [vaginal] region; concretions and conglomerations [zheng jia], blood blockage, and infertility. Prolonged consumption lightens the body and harmonizes the complexion. (Benjing)\n— Arrests cough and counterflow [of qi]; treats prolapse of the rectum [tuogang]; disperses urinary strangury and binding [lin jie]; wind-dizziness in the head; atrophy and weakness of the limbs [weijue]; strengthens yin and augments essence-qi; beautifies the complexion. (Bielu)\n— Promotes menstrual flow; treats corpse-transmission [shizhu] and ghost-transmission [guizhu] abdominal pain; the weeping caused by all manner of demonic and ghostly afflictions. (Zhen Quan)\n— Calms the heart; eliminates wind of the face and head; warms the water viscera [kidneys and bladder]. Used raw, it breaks up blood [stasis]; when roasted [zhi], it arrests bleeding. (Da Ming)",
+      "entities_mentioned": [
+        {
+          "name": "卷柏 (Juanbai)",
+          "modern_identification": "Selaginella tamariscina (P.Beauv.) Spring — resurrection spikemoss",
+          "identification_confidence": "high",
+          "notes": "A lycophyte in the family Selaginellaceae, well known for its ability to curl and appear desiccated when dry and unfurl when moistened, hence names meaning 'immortal' or 'ten-thousand-years'. Used in traditional Chinese medicine primarily for gynecological conditions and hemostasis."
+        },
+        {
+          "name": "豹足 (Baozu / Leopard's Foot)",
+          "modern_identification": "Selaginella tamariscina",
+          "identification_confidence": "high",
+          "notes": "Alternate name for the same plant, referencing the appearance of its curled fronds."
+        },
+        {
+          "name": "萬歲 / 長生不死草 (Wansui / Changsheng Busi Cao)",
+          "modern_identification": "Selaginella tamariscina",
+          "identification_confidence": "high",
+          "notes": "Poetic names referencing the plant's extreme desiccation tolerance."
+        }
+      ],
+      "translator_notes": "1. The term '症瘕血閉絕子' refers to abdominal masses (zheng jia), amenorrhea (blood blockage), and infertility — a standard cluster of gynecological indications in CMM texts. 2. '尸疰鬼疰' (shizhu, guizhu) are classical terms for wasting transmissible diseases believed to be caused by malevolent spirits or miasmas; they roughly correspond to consumptive or infectious diseases. 3. '水臟' (water viscera) conventionally refers to the kidneys and bladder in five-phase correspondence theory. 4. The phrase '除面頭風' in the Da Ming section appears to have a missing character ('除面[某]頭風'); context suggests it means 'eliminating wind [-induced eruptions] of the face and head.' The original text likely read '除面皯頭風' (eliminating facial discoloration and head-wind), with '皯' (dark facial spots) as the missing/OCR-dropped character; this has been rendered accordingly. 5. Preparation methods noted: dried in shade after collection; lower sandy portions discarded before use; used raw to break blood stasis, roasted (zhi) to stop bleeding.",
+      "_label": "卷柏 (草之十)"
+    },
+    {
+      "title_inferred": "Yubai (Jade Cypress) — a small rock-growing clubmoss",
+      "original_text": "【釋名】玉遂（《別錄》）。\n\n藏器曰：舊作玉伯，乃傳寫之誤。\n\n【集解】《別錄》曰：生石上，如松。高五、六寸，紫花。用莖葉。\n\n時珍曰：此即石松之小者也。人皆采置盆中養，數年不死，呼為千年柏、萬年松。\n\n【氣味】酸，溫，無毒。\n\n【主治】輕身，益氣，止渴（《別錄》）。",
+      "translation": "**Explanation of Names:** Also called Yusui [Jade Spike/Succession] (as recorded in the *Bielu* [Supplementary Records]). \n\nChen Cangqi [Zangqi] states: The old written form was 'Yubo' [Jade Elder], which is a copyist's error.\n\n**Collected Commentaries:** The *Bielu* states: It grows on rocks, resembling a pine. It reaches five to six inches in height and bears purple flowers. The stems and leaves are used medicinally.\n\nLi Shizhen states: This is simply the smaller form of the rock pine [Shisung, *Lycopodium*]. People commonly collect it and keep it in pots, where it survives for many years without dying; it is thus called the 'Thousand-Year Cypress' or 'Ten-Thousand-Year Pine.'\n\n**Qi and Flavor:** Sour, warm, non-toxic.\n\n**Indications and Treatment:** Lightens the body [promotes vitality], boosts qi [vital energy], and relieves thirst (as recorded in the *Bielu*).",
+      "entities_mentioned": [
+        {
+          "name": "玉柏 (Yubai)",
+          "modern_identification": "Lycopodium japonicum or a closely related small Lycopodium / Selaginella species",
+          "identification_confidence": "medium",
+          "notes": "Described as a smaller form of 石松 (Shisung), growing on rocks, resembling a pine, 5–6 inches tall with purple flowers. Li Shizhen equates it with the ornamental 'Thousand-Year Cypress / Ten-Thousand-Year Pine' kept in pots. Likely a small clubmoss in the family Lycopodiaceae or possibly Selaginellaceae."
+        },
+        {
+          "name": "石松 (Shisung, Rock Pine)",
+          "modern_identification": "Lycopodium japonicum Thunb. (or Lycopodium clavatum)",
+          "identification_confidence": "medium",
+          "notes": "Referenced by Li Shizhen as the larger plant of which 玉柏 is a smaller variety."
+        },
+        {
+          "name": "千年柏 / 萬年松 (Thousand-Year Cypress / Ten-Thousand-Year Pine)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Folk names for the same plant, reflecting its reputation for longevity when cultivated in pots."
+        }
+      ],
+      "translator_notes": "The alternate name 玉遂 (Yusui) versus the corrupted form 玉伯 (Yubo) reflects a common issue of manuscript transmission errors noted by Chen Cangqi (陳藏器). The medicinal use — stems and leaves — is specified by the *Bielu* (《別錄》, attributed to Tao Hongjing's supplementary records). The three therapeutic claims (lightens the body, boosts qi, relieves thirst) are terse and formulaic, typical of early materia medica entries. Preparation method is not explicitly described beyond specifying that the stems and leaves are used.",
+      "_label": "玉柏 (草之十)"
+    },
+    {
+      "title_inferred": "Shísōng (Rock Pine / Club Moss) — medicinal uses",
+      "original_text": "【集解】藏器曰︰生天台山石上。似松，高一、二尺。山人取根莖用。\n\n時珍曰︰此即玉柏之長者也。名山皆有之。\n\n【氣味】苦、辛，溫，無毒。\n\n【主治】久患風痺，腳膝疼冷，皮膚不仁，氣力衰弱。久服去風血風瘙，好顏色，變白不老。浸酒飲，良（藏器）。",
+      "translation": "**Collected Explanations:** Chen Cangqi [藏器] states: It grows on rocks on Mount Tiantai. It resembles a pine and reaches one to two feet in height. Mountain folk harvest its roots and stems for use.\n\nLi Shizhen [時珍] states: This is simply a taller form of Yùbǎi [玉柏, 'jade cypress']. It is found on all famous mountains.\n\n**Qi and Flavor:** Bitter, acrid; warm; non-toxic.\n\n**Indications and Treatments:** [For those who have] long suffered from wind-impediment [fēngbì, rheumatic/arthritic conditions], cold pain in the feet and knees, numbness and insensitivity of the skin, and weakness of vital energy. Taken over a long period, it dispels wind from the blood [fēngxuè], relieves wind-itch [fēngsào], improves complexion, reverses whitening of the hair, and retards aging. Steeping it in wine and drinking the infusion is an excellent preparation. (Chen Cangqi)",
+      "entities_mentioned": [
+        {
+          "name": "石松 (Shísōng)",
+          "modern_identification": "Lycopodium japonicum Thunb. (Japanese club moss) or a related Lycopodium / Huperzia species",
+          "identification_confidence": "high",
+          "notes": "The description — growing on rocks, pine-like appearance, one to two feet tall, found on Mount Tiantai — is consistent with Lycopodium japonicum or a closely allied club moss. The genus Lycopodium is well attested in traditional Chinese medicine under this name."
+        },
+        {
+          "name": "玉柏 (Yùbǎi)",
+          "modern_identification": "Lycopodium obscurum or a shorter Lycopodium / Huperzia species",
+          "identification_confidence": "medium",
+          "notes": "Li Shizhen identifies Shísōng as merely a taller form of Yùbǎi ('jade cypress'), suggesting they belong to the same genus. Yùbǎi is generally identified with smaller, ground-hugging club mosses."
+        },
+        {
+          "name": "天台山 (Mount Tiantai)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A well-known mountain in present-day Zhejiang Province, China; cited here as the provenance location reported by Chen Cangqi."
+        }
+      ],
+      "translator_notes": "The term 風痺 (fēngbì) refers to a classical Chinese medical category encompassing rheumatic, arthritic, and neuropathic complaints attributed to pathogenic wind and cold. 皮膚不仁 (numbness/insensitivity of the skin) is a recognized symptom cluster in this framework. The preparation method is an alcohol maceration (浸酒飲), which would facilitate extraction of alkaloids such as lycopodine known from Lycopodium species. Chen Cangqi (陳藏器) is the Tang-dynasty author of the Bencao Shiyi (本草拾遺), cited here as the source authority.",
+      "_label": "石松 (草之十)"
+    },
+    {
+      "title_inferred": "Sang Hua (Mulberry Lichen / Mulberry Tree Moss)",
+      "original_text": "【釋名】桑蘚（《綱目》）、桑錢。\n\n【集解】大明曰︰生桑樹上白蘚，如地錢花樣。刀刮取炒用。不是桑椹花也。\n\n【氣味】苦，暖，無毒。\n\n【主治】健脾澀腸，止鼻洪吐血，腸風，崩中帶下（大明）。治熱咳（時珍）。",
+      "translation": "**Names:** Sang Xian [Mulberry Lichen] (Bencao Gangmu); Sang Qian [Mulberry Coin].\n\n**Collected Explanations:** Da Ming states: This is the white lichen [xian] that grows on mulberry trees, resembling the pattern of ground-coins [dijian, i.e., Marchantia-type liverwort]. It is scraped off with a knife and used after stir-frying. It is not the flower of the mulberry fruit [sangzhen].\n\n**Flavor and Nature:** Bitter; warm; non-toxic.\n\n**Indications:** Strengthens the spleen and astringes the intestines; stops severe nosebleed and vomiting of blood; [treats] intestinal wind [bloody diarrhea]; [treats] flooding [uterine hemorrhage] and vaginal discharge (Da Ming). Treats hot [heat-type] cough (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "桑花 / 桑蘚 / 桑錢 (Sang Hua / Sang Xian / Sang Qian)",
+          "modern_identification": "Lichen or moss growing on mulberry trees (Morus alba); possibly a crustose lichen or liverwort species; compared in the text to Marchantia polymorpha (地錢)",
+          "identification_confidence": "low",
+          "notes": "The text explicitly clarifies this is NOT the flower of the mulberry fruit (Morus alba drupes). The substance is described as a white lichen-like growth on the bark of mulberry trees, scraped off and stir-fried. Precise species identification is uncertain; it may be a crustose lichen (Lecanora sp. or similar) or a liverwort."
+        },
+        {
+          "name": "地錢 (Di Qian)",
+          "modern_identification": "Marchantia polymorpha (common liverwort)",
+          "identification_confidence": "medium",
+          "notes": "Used in the text only as a visual reference for shape comparison, not as a medicinal entity in this entry."
+        },
+        {
+          "name": "桑椹花 (Sangzhen hua)",
+          "modern_identification": "Flower/inflorescence of Morus alba (white mulberry)",
+          "identification_confidence": "high",
+          "notes": "Explicitly excluded by the author to prevent confusion with the lichen described in this entry."
+        }
+      ],
+      "translator_notes": "The term '鼻洪' (bi hong) literally means 'flooding of the nose,' referring to severe or profuse nosebleed (epistaxis). '腸風' (intestinal wind) is a classical Chinese medical term for rectal or intestinal bleeding, often associated with hemorrhoids or bloody stool. '崩中帶下' refers to uterine flooding (menorrhagia/metrorrhagia) and pathological vaginal discharge. '大明' refers to Ri Hua Zi (日華子), the Song-dynasty pharmacologist whose work is cited throughout the Bencao Gangmu. The name '桑花' (Mulberry Flower) is somewhat misleading and the text itself corrects this, clarifying the substance is a lichen/moss, not a true flower.",
+      "_label": "桑花 (草之十)"
+    },
+    {
+      "title_inferred": "Mabo (Puffball Fungus) — Names, Properties, and Medical Uses",
+      "original_text": "【釋名】馬𤶧（音屁）、馬𤬪（音庀）、灰菰（《綱目》）、牛屎菰。\n\n【集解】《別錄》曰：馬勃，生園中久腐處。\n\n弘景曰：俗呼馬勃是也。紫色虛軟，狀如狗肺，彈之粉出。宗奭曰：生濕地及腐木上，夏秋采之。有大如斗者，小亦如升杓。韓退之所謂牛溲、馬勃。\n\n【氣味】辛，平，無毒。\n\n【主治】惡瘡馬疥（《別錄》）。敷諸瘡，甚良（弘景）。去膜，以蜜拌揉，少以水調呷，治喉痺咽疼（宗奭）。清肺，散血，解熱毒（時珍）。\n\n【發明】時珍曰：馬勃輕虛，上焦肺經藥也。故能清肺熱、咳嗽、喉痺、衄血、失音諸病。李東垣治大頭病，咽喉不利，普濟消毒飲亦用之。",
+      "translation": "**Names:** Mabo [馬𤶧, pronounced 'pì']; Ma-pǐ [馬𤬪, pronounced 'pǐ']; Huīgū [Ash Mushroom] (Bencao Gangmu); Niúshǐgū [Cow-dung Mushroom].\n\n**Collected Explanations:** The Bielu states: Mabo grows in gardens in places that have been rotting for a long time.\n\nHongjing [Tao Hongjing] says: It is what the common people call 'mabo.' It is purple in color, hollow and soft, resembling a dog's lung in shape; when struck, powder flies out. Zongshi [Kou Zongshi] says: It grows on damp ground and on rotting wood, and is gathered in summer and autumn. Some specimens are as large as a dou [a dry measure], while smaller ones are the size of a sheng ladle. It is the 'niúsōu mǎbó' [cow's urine and horse-puff; i.e., things of humble origin] referred to by Han Tuizhi [Han Yu, the Tang dynasty writer].\n\n**Flavor and Nature:** Acrid [xīn]; balanced [píng]; non-toxic.\n\n**Primary Treatments:** Malignant sores and horse-mange [equine scabies] (Bielu). Applied to all manner of sores, it is very effective (Hongjing). After removing the outer membrane, knead with honey, then mix a small amount with water and sip; treats throat obstruction [laryngeal bi] and throat pain (Zongshi). Clears the lungs, disperses blood [stasis], and resolves heat-toxin (Shizhen).\n\n**Elaboration:** Shizhen [Li Shizhen] says: Mabo is light and hollow — it is a medicinal that acts on the upper burner and the lung channel. Therefore it can clear lung heat and treat cough, throat obstruction [laryngeal bi], nosebleed [epistaxis], and loss of voice, among other conditions. Li Dongyuan used it in treating 'big-head disease' [epidemic parotitis/diphtheria-type illness with severe head and throat swelling], with poor pharyngeal function; it is also an ingredient in the Puji Xiaodu Decoction [Universal Benefit Toxin-Dispersing Drink].",
+      "entities_mentioned": [
+        {
+          "name": "馬勃 (Mabo)",
+          "modern_identification": "Lasiosphaera fenzlii, Calvatia gigantea, or related puffball fungi (Lycoperdaceae / Agaricaceae)",
+          "identification_confidence": "high",
+          "notes": "Classical description — purple, hollow, soft, powder released when struck — is consistent with mature puffball fungi. Still used in Traditional Chinese Medicine for throat and lung conditions."
+        },
+        {
+          "name": "普濟消毒飲 (Puji Xiaodu Decoction)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A classical TCM formula attributed to Li Dongyuan (Li Gao, 1180–1251), used for epidemic febrile diseases with head and throat swelling. Mabo is listed as one of its ingredients."
+        },
+        {
+          "name": "大頭病 (Big-head disease)",
+          "modern_identification": "Possibly epidemic parotitis (mumps), erysipelas of the head, or diphtheria-related throat swelling",
+          "identification_confidence": "medium",
+          "notes": "A classical disease category characterized by massive swelling of the head and obstructed throat, historically associated with epidemic febrile outbreaks."
+        }
+      ],
+      "translator_notes": "Several characters in the 'Names' section are rare or damaged (likely OCR artifacts for archaic character variants of 馬勃's alternate names). They have been retained in the cleaned original with best-guess reconstruction and phonetic glosses preserved as given. The allusion to Han Tuizhi (Han Yu) refers to his essay 'Prognostication' (進學解), where 'niúsōu mǎbó' are listed as humble but medicinally useful things — a classical trope for unassuming utility. The phrase 去膜 ('removing the membrane') refers to stripping the outer skin of the dried puffball before medicinal use.",
+      "_label": "馬勃 (草之十)"
+    },
+    {
+      "title_inferred": "Hundred Herbs (Mixed Grasses) — medicinal uses of mixed-herb ash",
+      "original_text": "（《拾遺》）\n\n藏器曰︰五月五日采一百種草，陰乾燒灰，和鍛石為團，研，敷金瘡止血，亦敷犬咬。\n\n又主腋臭，燒灰和井華水作團，白，以釅醋和作餅，腋下夾之，乾即易，當抽一身盡痛悶，瘡出即止，以小便洗之，不過三度愈。\n\n時珍曰︰按︰《千金方》治洞注下痢，以五月五日百草灰吹入下部。又治瘰癧已破，五月五日采一切雜草，煮汁洗之。",
+      "translation": "([From] the Shiyi [i.e., Bencao Shiyi, by Chen Cangqi])\n\nCangqi states: On the fifth day of the fifth month, collect one hundred kinds of herbs, dry them in the shade, burn them to ash, and mix with calcined lime [鍛石, slaked/burnt lime] to form a cake. Grind and apply to metal-weapon wounds [金瘡] to stop bleeding; it may also be applied to dog bites.\n\nIt also treats axillary odor [腋臭, bromhidrosis]: burn the herbs to ash, mix with well-surface water [井華水, the first water drawn from a well at dawn] to form a cake, then blend with strong vinegar to make a patty. Place this under the armpit and hold it there; replace when dry. The patient will feel aching and oppression throughout the body — once sores [瘡] emerge, stop the treatment. Wash the area with urine; recovery is achieved in no more than three applications.\n\nLi Shizhen states: According to the Qianjin Fang [Prescriptions Worth a Thousand Gold], for the treatment of severe watery diarrhea [洞注下痢], blow ash of the hundred herbs collected on the fifth day of the fifth month into the lower orifice [rectum]. For scrofula [瘰癧] that has already ulcerated, collect all manner of mixed herbs on the fifth day of the fifth month, boil to make a decoction, and wash the affected area with it.",
+      "entities_mentioned": [
+        {
+          "name": "百草 (一百種草 / 雜草)",
+          "modern_identification": "No single species; refers to a ritual collection of one hundred diverse herb species gathered on the Double Fifth festival (Duanwu, 5th day of 5th lunar month)",
+          "identification_confidence": "low",
+          "notes": "The therapeutic power was considered to reside in the combination and the auspicious timing of collection (Duanwu). No single botanical identity can be assigned."
+        },
+        {
+          "name": "鍛石 (煅石灰)",
+          "modern_identification": "Calcium oxide / slaked lime (CaO / Ca(OH)₂)",
+          "identification_confidence": "high",
+          "notes": "Used as a binder and styptic agent mixed with the herb ash."
+        },
+        {
+          "name": "井華水",
+          "modern_identification": "First water drawn from a well at dawn",
+          "identification_confidence": "high",
+          "notes": "A classical pharmaceutical vehicle considered especially pure and medicinally potent."
+        },
+        {
+          "name": "釅醋",
+          "modern_identification": "Strong/concentrated rice vinegar",
+          "identification_confidence": "high",
+          "notes": "Used as a vehicle and activating agent in the axillary odor formula."
+        }
+      ],
+      "translator_notes": "1. The character '癧' in '瘰癧' appears in the source as the Unicode codepoint &#30311; (疬), which is an alternate/variant form of 癧; corrected silently to standard 瘰癧 (scrofula, i.e., cervical tuberculous lymphadenitis). 2. The instruction to 'blow ash into the lower orifice' (吹入下部) for diarrhea reflects a rectal insufflation technique documented in Tang–Song dynasty medicine. 3. The axillary odor treatment describes a counter-irritant or drawing therapy; the expected bodily aching and emergence of sores suggests a vesicant or strongly irritating reaction, consistent with the use of lime and strong vinegar. 4. The source text citation '《拾遺》' refers to Chen Cangqi's Bencao Shiyi (c. 741 CE); '《千金方》' refers to Sun Simiao's Beiji Qianjin Yaofang (c. 652 CE).",
+      "_label": "百草 (雜草)"
+    },
+    {
+      "title_inferred": "Hundred Grasses Flowers and Grass from the Well's Edge",
+      "original_text": "（《拾遺》）\n\n藏器曰︰主治百病，長生神仙，亦煮汁釀酒服。按《異類》云︰鳳剛者，漁陽人。常采百花水漬，泥封埋百日，煎為丸。卒死者，納口中即活也。剛服\n\n井口邊草（《拾遺》）\n\n藏器曰︰小兒夜啼，私著席下，勿令母知。\n\n思邈曰︰五月五",
+      "translation": "(**Hundred Grasses Flowers** [百草花], from *Shiyi* [Bencao Shiyi])\n\nZangqi [Chen Zangqi] states: [This] treats the hundred diseases, and prolongs life to the level of an immortal. It may also be decocted into a juice and used to brew wine for consumption. According to the *Yilei* [a text of anomalies/wonders]: Feng Gang was a man from Yuyang. He would regularly collect the flowers of a hundred plants, steep them in water, seal them in mud, and bury them for a hundred days, then decoct and form them into pills. For those who have died suddenly, placing [a pill] into the mouth will revive them. Gang himself took [these pills]…\n\n(**Grass from the Well's Edge** [井口邊草], from *Shiyi*)\n\nZangqi states: For children who cry at night, secretly place [the grass] beneath the sleeping mat, and do not let the mother know.\n\nSimiao [Sun Simiao] states: On the fifth day of the fifth month… [ILLEGIBLE: text breaks off mid-sentence]",
+      "entities_mentioned": [
+        {
+          "name": "百草花 (Hundred Grasses Flowers)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A composite preparation made from the flowers of a wide variety of plants steeped in water, sealed in mud, buried for 100 days, then formed into pills. Not a single species; more of a compounded folk remedy."
+        },
+        {
+          "name": "井口邊草 (Grass from the Well's Edge)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "An unspecified grass or herb growing at the edge of a well. Used as a folk remedy for children's night-crying (夜啼) by placing it secretly under the child's sleeping mat. No specific botanical identification is possible from this text."
+        }
+      ],
+      "translator_notes": "1. The sentence '剛服' ('Gang himself took [these pills]') appears to be the beginning of a continuation about Feng Gang's personal use of the remedy, but the text is abruptly cut off — likely an OCR or transcription truncation. 2. The attribution to 《異類》 (Yilei) is unusual; this may refer to a now-lost miscellany of strange accounts. 3. The final sentence attributed to Sun Simiao (思邈曰) beginning '五月五' is cut off mid-phrase, presumably continuing with instructions related to the fifth day of the fifth lunar month (Duanwu/Dragon Boat Festival), a date commonly associated with the gathering of medicinal herbs in classical Chinese medicine. 4. The folk remedy for night-crying (夜啼) involving placing material under the mat without the mother's knowledge reflects a class of sympathetic or apotropaic magic common in Tang and Song era medical texts.",
+      "_label": "百草花 (雜草)"
+    },
+    {
+      "title_inferred": "Grass from Tree Hollows (Miscellaneous Herbs)",
+      "original_text": "（《綱目》）\n\n時珍曰︰主小兒腹痛夜啼，暗著戶上即止。（出《聖惠方》）",
+      "translation": "([Source:] Bencao Gangmu)\n\nLi Shizhen states: [This herb] is indicated for abdominal pain and nighttime crying in young children. Silently [i.e., without the child's knowledge] affix it above the doorway, and [the crying] will cease at once. (Cited from the Shenghui Fang [Prescriptions of Sagely Beneficence].)",
+      "entities_mentioned": [
+        {
+          "name": "樹孔中草 (grass/herb from tree hollows)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "This entry refers to unspecified plant matter found growing inside hollow trees. No precise botanical identification is possible from the text. The remedy is used apotropaically — placed over a doorway rather than administered internally or topically — suggesting a magical or talismanic therapeutic context rather than a pharmacological one."
+        },
+        {
+          "name": "聖惠方 (Shenghui Fang)",
+          "modern_identification": "Taiping Shenghui Fang (太平聖惠方), compiled by Wang Huaiyin et al., 992 CE",
+          "identification_confidence": "high",
+          "notes": "Standard Song-dynasty imperial formulary frequently cited by Li Shizhen as a source."
+        }
+      ],
+      "translator_notes": "The treatment described is clearly talismanic/sympathetic-magical in nature: the herb is placed covertly above the door rather than administered to the child. The adverb 暗 ('secretly,' 'in the dark,' 'without the child noticing') is significant and has been rendered 'silently' to capture both its literal and ritual senses. The entry is notably terse even by Bencao Gangmu standards, with no morphological description of the plant whatsoever, reinforcing the folkloric rather than botanical character of this record.",
+      "_label": "樹孔中草 (雜草)"
+    },
+    {
+      "title_inferred": "Grass from the Grave of a Woman Who Died in Childbirth (Miscellaneous Herbs)",
+      "original_text": "（《拾遺》）\n\n藏器曰：小兒醋瘡。取之勿回顧，作湯浴之，不過三度瘥。",
+      "translation": "([Source:] Shiyi [i.e., Chen Cangqi's 'Bencao Shiyi'])\n\nChen Cangqi states: For children's sour sores [醋瘡, likely a type of eczema or acidic skin eruption]. Gather the grass without looking back, prepare it as a decoction, and bathe [the affected area] with it. The condition will be cured in no more than three treatments.",
+      "entities_mentioned": [
+        {
+          "name": "產死婦人塚上草",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Literally 'grass growing atop the grave of a woman who died in childbirth.' This is a ritually defined medicinal substance rather than a botanically specific plant species; its identity depends entirely on the grave location, and no modern botanical identification is possible. The instruction not to look back while gathering reflects a ritual or apotropaic requirement common in folk medicine involving materials from graves or liminal spaces."
+        },
+        {
+          "name": "醋瘡",
+          "modern_identification": "Possibly eczema, impetigo, or another weeping/crusting skin condition in children",
+          "identification_confidence": "low",
+          "notes": "醋瘡 literally means 'vinegar sores' or 'sour sores,' likely describing a skin condition characterized by a sour or corrosive quality — possibly weeping eczema, intertrigo, or a similar inflammatory skin eruption in infants and young children."
+        }
+      ],
+      "translator_notes": "The ritual instruction 'do not look back' (勿回顧) while collecting the herb from a grave is a recognized motif in Chinese folk-medical and magical practice, intended to avoid attracting the attention of the deceased's spirit or to preserve the efficacy of the remedy. The source citation 《拾遺》 refers to Chen Cangqi's (陳藏器) 'Bencao Shiyi' (本草拾遺), compiled around 739 CE.",
+      "_label": "產死婦人塚上草 (雜草)"
+    },
+    {
+      "title_inferred": "Swallow Nest Grass (Yan Ru Cao) — Miscellaneous Grasses",
+      "original_text": "（宋《嘉祐》）\n\n藏器曰︰即燕窠中草也。無毒。主眠中遺尿。燒黑研末，水進方寸匕。亦止噦逆。\n\n時珍曰︰《千金方》︰治丈夫婦人無故尿血。用胡燕窠中草，燒末，酒服半錢匕。《聖惠方》︰消渴飲水。燕窠中草（燒灰）一兩，牡蠣（煅）二兩，白羊肺一具。切晒研末。每於食後，新汲水調下三錢。又一切瘡痕不滅。用燕蓐草（燒灰）、鷹屎白等分。人乳和塗，日三、五次。\n\n又浸淫瘡出黃水，燒灰敷之。",
+      "translation": "Yan Ru Cao [Swallow Nest Grass] (Miscellaneous Grasses)\n\n[From the Song dynasty Jiayou Bencao]\n\nZangqi states: This is simply the grass found inside a swallow's nest. It is non-toxic. It principally treats bedwetting during sleep [nocturnal enuresis]. Burn it to a black char, grind into powder, and take one square-cun spoonful [fang cun bi] with water. It also stops hiccupping and retching [nausea/belching].\n\nLi Shizhen states: The Qianjin Fang [Prescriptions Worth a Thousand Gold] says: To treat unexplained hematuria [blood in the urine] in men and women alike — take the grass from a barn swallow's nest, burn it to powder, and take half a qian-spoonful with wine.\n\nThe Shenghui Fang [Prescriptions of the Holy Beneficence] says: For wasting-thirst [xiaoke, i.e., a diabetes-like condition] with excessive drinking of water — use one liang of swallow nest grass (burned to ash), two liang of oyster shell (calcined), and one whole white sheep's lung. Slice and sun-dry, then grind into powder. After each meal, take three qian dissolved in freshly drawn water.\n\nFurthermore, for all types of scar tissue that will not fade — use equal parts of swallow nest grass (burned to ash) and eagle's white droppings. Mix with human breast milk and apply to the affected area three to five times daily.\n\nAdditionally, for spreading sores [impetiginous or eczematous lesions] that weep yellow fluid — burn to ash and apply topically.",
+      "entities_mentioned": [
+        {
+          "name": "燕蓐草 / 燕窠中草 (Yan Ru Cao / grass from swallow's nest)",
+          "modern_identification": "Miscellaneous plant material (grasses, rootlets, feathers, etc.) used by swallows to construct nests — likely Poa spp., Festuca spp., or similar grasses, but indeterminate as a single species",
+          "identification_confidence": "low",
+          "notes": "The medicinal agent here is not a specific botanical species but rather whatever dried plant material a swallow (likely Hirundo rustica, the barn swallow, referenced as 胡燕 'hu yan') incorporates into its nest. The therapeutic properties attributed to it are likely transferred symbolically or empirically from the nesting context."
+        },
+        {
+          "name": "胡燕 (Hu Yan — barn swallow)",
+          "modern_identification": "Hirundo rustica (barn swallow)",
+          "identification_confidence": "high",
+          "notes": "胡燕 is the classical Chinese name for the barn swallow, Hirundo rustica."
+        },
+        {
+          "name": "牡蠣 (Mu Li — oyster shell)",
+          "modern_identification": "Ostrea gigas or related Ostrea spp. (oyster shell, calcined)",
+          "identification_confidence": "high",
+          "notes": "A common traditional Chinese medicine (TCM) ingredient; used here calcined (煅) as an astringent and mineral supplement in the formula for wasting-thirst."
+        },
+        {
+          "name": "白羊肺 (Bai Yang Fei — white sheep's lung)",
+          "modern_identification": "Lung of white domestic sheep (Ovis aries)",
+          "identification_confidence": "high",
+          "notes": "An organ-based medicinal ingredient; used in its entirety, sliced, dried, and ground into powder."
+        },
+        {
+          "name": "鷹屎白 (Ying Shi Bai — white eagle droppings)",
+          "modern_identification": "Feces (white urate portion) of eagle or large raptor, likely Aquila spp. or Accipiter spp.",
+          "identification_confidence": "medium",
+          "notes": "The 'white' refers to the urate component of bird droppings. Used topically in combination with swallow nest ash for scar reduction."
+        }
+      ],
+      "translator_notes": "1. The segment label indicates this entry originates from the Song dynasty Jiayou Bencao (《嘉祐本草》, c. 1060 CE); the OCR rendered 《嘉 》 with the second character missing — restored as 《嘉祐》 based on context and standard bibliographic reference.\n2. '噦逆' (hiccupping/retching) was partially obscured in the OCR as '噦 '; restored as '噦逆' based on common classical medical terminology.\n3. '煅' (calcined/roasted) was rendered as a partial/unclear character in the OCR for 牡蠣's preparation; restored contextually.\n4. 'Xiaoke' (消渴) is the classical Chinese category of illness characterized by excessive thirst and urination, often equated with diabetes mellitus in modern scholarship, though it encompasses other conditions.\n5. '浸淫瘡' literally means 'spreading/soaking sores' and likely refers to oozing dermatoses such as impetigo or weeping eczema.\n6. The 'fang cun bi' (方寸匕) is a traditional volumetric measure approximately equivalent to 1–2 grams of powder.",
+      "_label": "燕蓐草 (雜草)"
+    },
+    {
+      "title_inferred": "Chicken Nest Grass (Miscellaneous Grasses)",
+      "original_text": "（宋《嘉祐》）\n\n大明曰︰小兒夜啼。安席下，勿令母知。\n\n藏器曰︰小兒白禿瘡。和白頭翁花燒灰，臘月豬脂和敷之。瘡先以酸泔洗淨。\n\n時珍曰︰《千金方》︰治產後遺尿。燒末，酒服一錢。又《不自秘方》︰治天絲入目。燒灰淋汁，洗之。",
+      "translation": "([Sourced from the Song dynasty] 'Jiayou Bencao')\n\nDa Ming states: [For] night crying in infants — place [the herb] under the sleeping mat without letting the mother know.\n\nZang Qi states: [For] white-scab sores [tinea capitis / favus] in infants — mix with the flowers of Pulsatilla [Baitouweng], burn to ash, blend with lard from the twelfth lunar month [preserved winter lard], and apply topically. First wash the sores clean with soured rice-water.\n\nLi Shizhen states: The 'Qianjin Fang' [Prescriptions Worth a Thousand Gold]: to treat post-partum urinary incontinence — burn to powder and take one qian [approx. 3–4 g] with wine. Also, the 'Bu Zi Mi Fang' [Prescriptions Not Kept Secret]: to treat airborne silk or fine threads entering the eye — burn to ash, leach with water to obtain the filtered liquid, and wash the eye with it.",
+      "entities_mentioned": [
+        {
+          "name": "雞窠草 (Jī Kē Cǎo, Chicken Nest Grass)",
+          "modern_identification": "Unknown; likely a common nest-building grass or weed gathered from chicken coops, possibly a composite of various grasses",
+          "identification_confidence": "unknown",
+          "notes": "The name refers to grasses found in or around chicken nests. No single botanical species is firmly identified; it may be more of a folk category than a specific taxon."
+        },
+        {
+          "name": "白頭翁花 (Bái Tóu Wēng Huā, Pulsatilla flower)",
+          "modern_identification": "Pulsatilla chinensis (Ranunculaceae)",
+          "identification_confidence": "high",
+          "notes": "Baitouweng (literally 'white-headed old man') is a well-established classical drug plant identified as Pulsatilla chinensis. Here only the flowers are specified."
+        }
+      ],
+      "translator_notes": "1. The source text's opening citation appears to be truncated; '嘉' likely refers to '嘉祐本草' (Jiayou Bencao, Song dynasty). This has been silently expanded in the cleaned original.\n2. '天絲入目' (tiānsī rù mù) literally means 'heavenly/airborne silk enters the eye' — referring to fine airborne threads (e.g., spider silk, plant fibers) that become lodged in the eye. Treated with ash-leachate wash, which would have mild alkaline properties.\n3. '酸泔' refers to fermented or soured rice-washing water, used as a mild acidic cleanser.\n4. '《不自秘方》' is rendered as 'Bu Zi Mi Fang'; this may be a variant title or OCR corruption of a known formula collection — flagged for further verification.",
+      "_label": "雞窠草 (雜草)"
+    },
+    {
+      "title_inferred": "Pig's Nest Grass (Miscellaneous Herbs) and Ox Grass cross-reference, with Shennong Bencao Jing header",
+      "original_text": "大明曰︰小兒夜啼。密安席下，勿令母知。\n\n牛草\n\n見獸部牛下。\n\n《神農本經》（已下有名未用）",
+      "translation": "Da Ming [i.e., Rihua Zhu] states: [For] night crying in infants — secretly place [the herb] beneath the sleeping mat; do not let the mother know.\n\nOx Grass [牛草]\n\nSee the entry under 'Ox' in the Beasts section [獸部].\n\n'Shennong's Classic of Materia Medica' (The following entries are those listed by name but not yet assigned a use [有名未用].)",
+      "entities_mentioned": [
+        {
+          "name": "豬窠草 (Pig's Nest Grass)",
+          "modern_identification": "Uncertain; likely refers to straw, dried grasses, or plant material gathered from a pig's sleeping area rather than a specific botanical species",
+          "identification_confidence": "low",
+          "notes": "Classified under 雜草 (miscellaneous grasses). The therapeutic use described is folk magic/sympathetic medicine: placing the herb secretly under the infant's mat to stop night crying, explicitly without the mother's knowledge — a common formula type in early Chinese folk medicine."
+        },
+        {
+          "name": "牛草 (Ox Grass)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "No description given here; the text cross-references the 獸部 (Beasts section) under the 'Ox' entry. This is a standard Bencao Gangmu internal cross-reference."
+        },
+        {
+          "name": "《神農本經》有名未用 (Shennong Bencao Jing — Named but Unassigned Entries)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "This is a section header marking the beginning of a list of substances recorded in the Shennong Bencao Jing that have established names but no confirmed medicinal application assigned at the time of compilation."
+        }
+      ],
+      "translator_notes": "The instruction '勿令母知' (do not let the mother know) is a recurring motif in pediatric folk remedies in this period, likely reflecting ritual or apotropaic logic rather than pharmacological reasoning. 'Da Ming' (大明) refers to the Song-dynasty author Rihua Zhu (日華子), whose materia medica is frequently cited by Li Shizhen. The segment also serves as a transitional header into the 'named but unused' appendix drawn from the Shennong Bencao Jing.",
+      "_label": "豬窠草 (雜草)"
+    },
+    {
+      "title_inferred": "Qucao (Bent Herb) — Miscellaneous Grasses",
+      "original_text": "《本經》曰︰味苦，微寒，無毒。主胸脅下痛，邪氣，腸間寒熱，陰痺。久服輕身益氣耐老。\n\n《別錄》曰︰生漢中川澤。五月採。",
+      "translation": "The 'Classic of Materia Medica' [Shennong Bencao Jing] states: Flavor bitter, slightly cold, non-toxic. It governs pain below the chest and flanks, pathogenic qi [xie qi], cold and heat in the intestines, and yin bi [painful obstruction of the lower body / genitourinary region]. Long-term use lightens the body, replenishes qi, and promotes longevity.\n\nThe 'Supplementary Records' [Mingyi Bielu] states: It grows in the river marshes of Hanzhong. It is harvested in the fifth month.",
+      "entities_mentioned": [
+        {
+          "name": "屈草 (Qucao)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Listed under 'miscellaneous grasses' (雜草), indicating that Li Shizhen and earlier authorities were uncertain of its exact identity or it had fallen out of common use. The habitat given — river marshes of Hanzhong (modern southern Shaanxi / northern Sichuan) — provides geographic context but is insufficient for confident botanical identification. The plant has not been reliably matched to a modern species."
+        }
+      ],
+      "translator_notes": "Conditions treated: (1) 胸脅下痛 — pain below the chest and flanks; (2) 邪氣 — pathogenic/evil qi, a general term for exogenous pathological influence; (3) 腸間寒熱 — alternating cold and heat sensations in the intestines; (4) 陰痺 — painful obstruction (bi syndrome) of the yin regions, interpreted variously as lower-body, genitourinary, or deep/interior bi. Preparation method: none specified in the source text beyond collection in the fifth month. The entry is notably sparse, consistent with 屈草 being an obscure or unverified drug even in Li Shizhen's time.",
+      "_label": "屈草 (雜草)"
+    },
+    {
+      "title_inferred": "Bieji (Miscellaneous Herb)",
+      "original_text": "《本經》曰：味苦，微溫，無毒。主風寒濕痺身重，四肢疼酸，寒邪歷節痛。\n\n《別錄》曰：一名別枝。生藍田川谷。二月、八月採。弘景曰：方家時有用處，今亦絕矣。",
+      "translation": "The Classic of Materia Medica [Shennong Bencao Jing] states: Flavor is bitter, slightly warm, non-toxic. It governs [treats] wind-cold-damp impediment [bi syndrome] with heaviness of the body, aching and soreness of the four limbs, and cold-evil migratory joint pain [li-jie pain].\n\nThe Supplementary Records [Ming Yi Bie Lu] states: An alternate name is Biezhi [\"Separate Branch\"]. It grows in the river valleys of Lantian. Collected in the second and eighth months. Tao Hongjing [弘景] remarks: Formulists made occasional use of it in their time, but today it has fallen entirely out of use.",
+      "entities_mentioned": [
+        {
+          "name": "別羈 (Bieji)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Listed under miscellaneous herbs (雜草). The alternate name 別枝 (Biezhi, 'Separate Branch') is given in the Bieji. Tao Hongjing's remark that it had already fallen out of use by his time (5th–6th century CE) suggests it was poorly documented even in antiquity. No confident modern botanical identification has been established. Grows in the river valleys of Lantian (藍田, present-day Shaanxi province). Harvested in the second and eighth lunar months."
+        }
+      ],
+      "translator_notes": "The plant is treated under the 'miscellaneous herbs' (雜草) category, indicating Li Shizhen himself considered it obscure or of uncertain identity. The conditions treated — wind-cold-damp bi syndrome (痺), heavy limbs, aching extremities, and migratory joint pain (歷節痛) — are standard rheumatic/arthritic presentations in classical Chinese medicine. 歷節痛 in particular refers to a condition similar to migratory polyarthritis. Tao Hongjing's comment is notable as evidence that knowledge of this herb had been lost as early as the Six Dynasties period (3rd–6th century CE).",
+      "_label": "別羈 (雜草)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】（音菊）、側柏。\n\n李時珍曰︰按︰魏子才《六書精蘊》云︰萬木皆向陽，而柏獨西指，蓋陰木而有貞德者，故字從白。白者，西方也。陸佃《埤雅》云︰柏之指西，猶針之指南也。柏有數種，入藥惟取葉扁而側生者，故曰側柏。\n\n寇宗奭曰︰予官陝西，登高望柏，千萬株皆一一西指。蓋此木至堅，不畏霜雪，得木之正氣，他木不及。所以受金之正氣所製，一一西指也。\n\n【集解】《別錄》曰︰柏實生太山山谷，柏葉尤良。四時各依方面陶弘景曰︰處處有柏，當以太山為佳爾。並忌取塚墓上者。其葉以秋夏采者良。\n\n蘇恭曰︰今太山無復采子，惟出陝州、宜州為勝。八月採之。\n\n蘇頌曰︰柏實以乾州者為最。三月開花，九月結子成熟，取采蒸曝，舂擂取仁用。其葉名側柏，密州出者尤佳。雖與他柏相類，而其葉皆側向而生，功效殊別。古柏葉尤奇，益州諸葛孔明廟中有大柏木，相傳是蜀世所植，故人多采以作藥，其味甘香，異常柏也。雷 曰︰柏葉有花柏葉、叢柏葉及有子圓葉。其有子圓葉成片，如大片雲母，葉皆側，葉上有微赤毛者，宜入藥用。花柏葉，其樹濃葉成朵，無子；叢柏葉，其樹綠色，並不入藥。陳承曰︰陶隱居說柏忌塚墓上者，而今乾州者皆是乾陵所出，他處皆無大者，但取其州土",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Bai (Cypress) — Wood Section One: Platycladus orientalis / Biota\",\n  \"original_text\": \"【釋名】（音菊）、側柏。\\n\\n李時珍曰︰按︰魏子才《六書精蘊》云︰萬木皆向陽，而柏獨西指，蓋陰木而有貞德者，故字從白。白者，西方也。陸佃《埤雅》云︰柏之指西，猶針之指南也。柏有數種，入藥惟取葉扁而側生者，故曰側柏。\\n\\n寇宗奭曰︰予官陝西，登高望柏，千萬株皆一一西指。蓋此木至堅，不畏霜雪，得木之正氣，他木不及。所以受金之正氣所製，一一西指也。\\n\\n【集解】《別錄》曰︰柏實生太山山谷，柏葉尤良。四時各依方面陶弘景曰︰處處有柏，當以太山為佳爾。並忌取塚墓上者。其葉以秋夏采者良。\\n\\n蘇恭曰︰今太山無復采子，惟出陝州、宜州為勝。八月採之。\\n\\n蘇頌曰︰柏實以乾州者為最。三月開花，九月結子成熟，取采蒸曝，舂擂取仁用。其葉名側柏，密州出者尤佳。雖與他柏相類，而其葉皆側向而生，功效殊別。古柏葉尤奇，益州諸葛孔明廟中有大柏木，相傳是蜀世所植，故人多采以作藥，其味甘香，異常柏也。雷斆曰︰柏葉有花柏葉、叢柏葉及有子圓葉。其有子圓葉成片，如大片雲母，葉皆側，葉上有微赤毛者，宜入藥用。花柏葉，其樹濃葉成朵，無子；叢柏葉，其樹綠色，並不入藥。陳承曰︰陶隱居說柏忌塚墓上者，而今乾州者皆是乾陵所出，他處皆無大者，但取其州土所宜，子實氣味豐美可也。其柏異於他處，木之紋理，大者多為菩薩雲氣、人物鳥獸，狀極分明可觀。有盜得一株徑尺者，值萬錢，宜其子實為貴也。時珍曰︰《史記》言︰松柏為百木之長。其樹聳直，其皮薄，其肌膩。其花細瑣，其實成球，狀如小鈴，霜後四裂，中有數子，大如麥粒，芬香可愛。柏葉松身者，檜也。其葉尖硬，亦謂之栝。今人名圓柏，以別側柏。松葉柏身者，樅也。松檜相半者，檜柏也。峨眉山中一種竹葉柏身者，謂之竹柏。\\n\\n【氣味】甘，平，無毒。\\n\\n甄權曰︰甘、辛。畏菊花、羊蹄草。\\n\\n徐之才曰︰見葉下。\\n苦，微溫，無毒。\\n\\n權曰︰苦、辛，性澀。與酒相宜。\\n\\n頌曰︰性寒。\\n\\n之才曰︰瓜子、牡蠣、桂為之使。畏菊花、羊蹄、諸石及面曲。伏砒、硝。\\n\\n弘景曰︰柏之葉、實，服餌所重。此云惡曲，而人以釀酒無妨。恐酒米相和，異單用也。\\n苦，平，無毒。\\n\\n【主治】驚悸，益氣，除風濕，安五臟。久服令人潤澤、美色、耳目聰明、不飢不老，輕身延年（《本經》）。療恍惚，虛損吸吸，歷節，腰中重痛，益血，止汗（《別錄》）。治頭風，腰腎中冷，膀胱冷膿宿水，興陽道，益壽，去百邪鬼魅，小兒驚癇（甄權）。潤肝（好古）。養心氣，潤腎燥，安魂定魄，益智寧神。燒瀝，澤頭髮，治疥癬（時珍）。\\n吐血、衄血，痢血、崩中、赤白，輕身，益氣，令人耐寒暑，去濕痺，止飢（《別錄》）。治冷風，歷節疼痛，止尿血（甄權）。\\n\\n炙，罯凍瘡。燒取汁塗頭，黑潤鬢髮（大明）。敷湯火傷，止痛滅瘢。服之，療蠱痢。作湯常服，殺五臟蟲，益人（蘇頌）。\\n煮汁釀酒，去風痺、歷節風。燒取瀝油，療疥及蟲癩良（蘇恭）。\\n身面疣目，同松脂研勻塗之，數夕自失（《聖惠》）。\\n火灼爛瘡，長毛發（《別錄》）。\\n\\n【發明】王好古曰︰柏子仁，肝經氣分藥也。又潤腎，古方十精丸用之。\\n\\n時珍曰︰柏子仁性平而不寒不燥，味甘而補，辛而能潤，其氣清香，能透心腎，益脾胃，蓋仙家上品藥也，宜乎滋養之劑用之。《列仙傳》云︰赤松子食柏實，齒落更生，行及奔馬。諒非虛語也。\\n震亨曰︰柏屬陰與金，善守。故采其葉，隨月建方，取其多得月令之氣。此補陰之要藥，其性多燥，久得之大益脾土，以滋其肺。\\n\\n時珍曰︰柏性後凋而耐久，稟堅凝之質，乃多壽之木，所以可入服食。道家以之點湯常飲，元旦以之浸酒辟邪，皆有取於此。麝食之而體香，毛女食之而體輕，亦其証驗矣。毛女者，秦王宮人。關東賊至，驚走入山，飢無所食。有一老公教吃松柏葉，初時苦澀，久乃相宜，遂不復飢，冬不寒，夏不熱。至漢成帝時，獵者於終南山見一人，無衣服，身生黑毛，跳坑越澗如飛，乃密圍獲之，去秦時二百餘載矣。事出葛洪《抱朴子》書中。\",\n  \"translation\": \"**[Explanatory Names]** (Pronounced jú [菊]), and cè bǎi [側柏, \\\"side-leaning cypress\\\"].\\n\\nLi Shizhen states: According to Wei Zicai's *Liushu Jingyun* [\\\"Essentials of the Six Scripts\\\"]: all trees face toward the sun, but the cypress alone points wes",
+      "_label": "柏 (木之一)"
+    }
+  ]
+}
