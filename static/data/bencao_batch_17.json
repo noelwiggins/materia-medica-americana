@@ -1,0 +1,1244 @@
+{
+  "job_name": "Bencao Gangmu — Batch 17/18 (鹿角菜–草)",
+  "completed_at": "2026-07-13T17:42:06.774321",
+  "segment_count": 50,
+  "results": [
+    {
+      "title_inferred": "Lujiao Cai (Deer-Antler Seaweed) — Medicinal and Culinary Uses",
+      "original_text": "【釋名】猴葵。\n\n時珍曰︰按︰沈懷遠《南越志》云︰猴葵一名鹿角。蓋鹿角以形名，猴葵因其性滑也。\n\n【集解】士良曰︰鹿角菜生海州、登、萊、沂、密諸處海中。\n\n時珍曰︰鹿角菜，生東南海中石崖間。長三、四寸，大如鐵線，分丫如鹿角狀，紫黃色。土人采曝，貨爲海錯。以水洗醋拌，則脹起如新，味極滑美。若久浸則化如膠狀，女人用以梳發，粘而不亂。\n\n【氣味】甘，大寒，滑，無毒。\n\n詵曰︰微毒。丈夫不可久食，發痼疾，損腰腎、經絡、血氣，令人腳冷痺，少顏色。\n\n【主治】下熱風氣，療小兒骨蒸熱勞。服丹石人食之，能下石力（士良）。解面熱（大明）。",
+      "translation": "**Explanation of Names:** Also called Hou Kui [Monkey Mallow].\n\nLi Shizhen states: According to Shen Huaiyuan's *Nanyue Zhi* [Records of the Southern Yue]: Hou Kui is another name for Lujiao [Deer Antler]. The name 'Deer Antler' refers to the plant's shape, while 'Monkey Mallow' [Hou Kui] refers to its slippery [smooth] nature.\n\n**Collected Explanations:** Shi Liang states: Lujiao Cai [Deer-Antler Seaweed] grows in the sea near Haizhou, Deng, Lai, Yi, Mi, and other such places.\n\nLi Shizhen states: Lujiao Cai grows among the rocky cliffs in the southeastern seas. It is three to four cun [approximately 10–13 cm] in length, about the thickness of iron wire, and branches in a forked pattern resembling deer antlers, purplish-yellow in color. Local people harvest and sun-dry it, selling it as a marine delicacy [hai cuo]. When washed with water and dressed with vinegar, it swells up as if fresh, and its flavor is extremely smooth and delicious. If soaked for a long time, it dissolves into a gel-like substance, which women use to dress their hair, making it sticky and smooth.\n\n**Flavor and Nature:** Sweet, greatly cold, slippery, non-toxic.\n\nMeng Shen states: Slightly toxic. Men should not eat it for prolonged periods, as it may trigger chronic [stubborn] ailments, damage the lumbar region, kidneys, channels and collaterals [jing luo], and the blood and qi, causing coldness and numbness in the legs and diminishing the complexion.\n\n**Primary Treatments:** Disperses heat-wind qi [热风气]; treats bone-steaming fever and consumption [gu zheng re lao] in children. For those taking elixirs of cinnabar and minerals [dan shi], eating this can discharge the potency of those minerals (Shi Liang). Relieves facial heat (Da Ming).",
+      "entities_mentioned": [
+        {
+          "name": "鹿角菜 (Lujiao Cai)",
+          "modern_identification": "Silvetia siliquosa or Chondrus / Gloiopeltis species — likely a red or brown branching alga such as Gloiopeltis furcata or a member of the Ceramiales; possibly Campylaephora hypnaeoides",
+          "identification_confidence": "medium",
+          "notes": "Described as purplish-yellow, branching like deer antlers, gelatinous when soaked, found on rocky sea cliffs in eastern China. These features are consistent with several branching red algae common to the coasts of Shandong and Jiangsu provinces."
+        },
+        {
+          "name": "猴葵 (Hou Kui)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "An alternate name for the same plant (Lujiao Cai), cited from Shen Huaiyuan's Nanyue Zhi. The name is said to derive from the plant's slippery texture."
+        },
+        {
+          "name": "丹石 (Dan Shi, cinnabar and mineral elixirs)",
+          "modern_identification": "Mercury sulfide (cinnabar) and various mineral compounds used in Daoist alchemical medicine",
+          "identification_confidence": "high",
+          "notes": "The text notes that Lujiao Cai can help 'discharge the potency' (下石力) of mineral elixirs, suggesting a detoxifying or counteracting role — a common concern in Tang and Song dynasty medical literature regarding the toxic side effects of dan shi preparations."
+        }
+      ],
+      "translator_notes": "1. 'Shi Liang' (士良) refers to Chen Shiliang (陳士良), author of the *Shixing Bencao* (食性本草), a Tang dynasty dietary materia medica. 'Da Ming' (大明) refers to Ri Huazi (日華子), author of the *Rihua Zhu Jia Bencao*.\n2. The condition 骨蒸熱勞 (gu zheng re lao, 'bone-steaming fever and consumption') refers to a syndrome associated with tuberculosis-like wasting diseases in classical Chinese medicine.\n3. The warning that the plant is harmful to men if eaten long-term (damaging kidney qi and causing cold-bi in the legs) reflects classical yin-cold dietary theory; its 'greatly cold' nature was seen as potentially depleting yang qi with chronic use.\n4. The cosmetic use of the plant's gel as a hair-setting agent is a notable ethnobotanical detail consistent with the properties of modern carrageenan-containing algae.",
+      "_label": "鹿角菜 (菜之三)"
+    },
+    {
+      "title_inferred": "Dragon's Whisker Vegetable (Lóngsū Cài) — a marine alga used for goitre and urination",
+      "original_text": "【集解】時珍曰︰龍須菜生東南海邊石上。叢生無枝，葉狀如柳，根須長者尺餘，白色。以醋浸食之，和肉蒸食亦佳。《博物志》一種石發似指此物，與石衣之石發同名也。\n\n【氣味】甘，寒，無毒。\n\n【主治】癭結熱氣，利小便（時珍）。",
+      "translation": "【Collected Explanations】 Li Shizhen states: Lóngsū Cài [Dragon's Whisker Vegetable] grows on rocks along the southeastern seacoast. It grows in dense clumps without branches; its leaves are shaped like those of a willow. The root-filaments of the longest specimens exceed one Chinese foot [chǐ] in length, and are white in colour.\n\nIt may be eaten by soaking in vinegar, or it is also excellent when steamed together with meat. The Bówùzhì [Record of the Investigation of Things] mentions a type called Shífā [Stone-Hair] that appears to refer to this same plant — sharing the name 'Shífā' with the 'Shífā of Shíyī' [a different stone-dwelling plant/lichen].\n\n【Flavour and Nature】 Sweet; cold; non-toxic.\n\n【Indications and Treatment】 Scrofulous goitre [yǐng jié] with heat-qi; promotes urination. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "龍須菜 (Lóngsū Cài)",
+          "modern_identification": "Caulacanthus ustulatus or Gracilaria spp. (red marine algae); possibly Chondrus or a related rhodophyte found on rocky intertidal shores of southeastern China",
+          "identification_confidence": "medium",
+          "notes": "The description — growing on sea rocks in clumps, willow-leaf-shaped fronds, long whitish root-like holdfasts — is consistent with several intertidal red algae. 'Dragon's Whisker Vegetable' (龍須菜) is today often applied to Gracilaria lemaneiformis in Chinese commerce, though historical usage may differ. Conditions treated: goitre with heat, and dysuria. Preparation: soaked in vinegar and eaten cold, or steamed with meat."
+        },
+        {
+          "name": "石發 (Shífā, 'Stone-Hair') — as cited in 《博物志》",
+          "modern_identification": "Possibly Lemanea or a filamentous freshwater/marine alga; also sometimes applied to lichens (石衣)",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen notes that the term Shífā is shared by at least two different organisms: one cited in the Bówùzhì that he equates with Lóngsū Cài, and another associated with Shíyī (stone-clothing, i.e., lichens). The conflation of names across sources is flagged by Li Shizhen himself."
+        }
+      ],
+      "translator_notes": "The term 癭結 (yǐng jié) refers to nodular swellings of the neck, classically associated with goitre (iodine deficiency), consistent with the use of iodine-containing marine algae as a treatment. The Bówùzhì (博物志) is a 3rd-century CE encyclopaedic text attributed to Zhang Hua. '石衣之石發' refers to a separate entry in the Bencao Gangmu where Shífā is categorized under Shíyī (rock-clothing lichens); Li Shizhen is careful to distinguish these homonymous plants.",
+      "_label": "龍鬚菜 (菜之三)"
+    },
+    {
+      "title_inferred": "Suicai / Sleep Vegetable (Nymphoides or Menyanthes sp.)",
+      "original_text": "【釋名】瞑菜（瞑音眠）綽菜、醉草、懶婦箴（《記事珠》。未詳）。\n\n【集解】時珍曰︰按︰稽含《南方草木狀》云︰綽菜夏生池沼間。葉類慈菇，根如藕條。南海人食之，令人思睡，呼爲瞑菜。段公路《北戶錄》云︰睡菜五、六月生田塘中。土人采根爲鹽菹，食之好睡。郭憲《洞冥記》有卻睡草，食之令人不睡，與此相反也。珍按︰苦菜、龍葵皆能使人不睡。卻睡之草，其此類乎？\n\n【氣味】甘、微苦，寒，無毒。\n\n【主治】心膈邪熱不得眠（時珍）。",
+      "translation": "**Names:** Míngcài [瞑菜; míng pronounced as 'mián/mián', i.e., sleep], Chuòcài [綽菜], Zuìcǎo [醉草, 'Intoxicating Herb'], Lǎnfù Zhēn [懶婦箴, 'Lazy Wife's Admonition'] (from *Jìshì Zhū*; meaning unclear).\n\n**Collected Commentaries:** Li Shizhen states: According to Ji Han's *Nanfang Caomu Zhuang* [Flora of the Southern Regions]: Chuòcài grows in ponds and marshes during summer. Its leaves resemble those of arrowhead [慈菇, *Sagittaria*], and its roots are like sections of lotus rhizome. The people of the South Sea [Nanhai] eat it and find it makes them drowsy, so they call it Míngcài [Sleep Vegetable]. Duan Gonglu's *Běihù Lù* [Record of the Northern Households] states: Sleep Vegetable grows in fields and ponds in the fifth and sixth months. Local people harvest the roots, pickle them in salt, and eating them induces sleepiness. Guo Xian's *Dòngmíng Jì* [Records of the Mysterious Cavern] mentions a 'Sleep-Dispelling Herb' [卻睡草] which, when eaten, prevents sleep — the opposite effect of this plant. Shizhen remarks: Bitter greens [苦菜] and black nightshade [龍葵, *Solanum nigrum*] are both capable of preventing sleep. Could the Sleep-Dispelling Herb be of that type?\n\n**Flavor and Nature:** Sweet, slightly bitter; cold; non-toxic.\n\n**Indications and Treatment:** Pathogenic heat in the cardiac region and diaphragm causing inability to sleep (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "睡菜 / 瞑菜 / 綽菜 (Suicai / Mingcai / Chuocai)",
+          "modern_identification": "Nymphoides indica or Menyanthes trifoliata (bogbean / buckbean); most likely Nymphoides species given the southern Chinese aquatic habitat description",
+          "identification_confidence": "medium",
+          "notes": "Described as growing in ponds and marshes in summer, with arrowhead-like leaves and lotus-rhizome-like roots. The sedative property is consistent with Menyanthaceae family members. Some modern sources identify this as Nymphoides indica."
+        },
+        {
+          "name": "慈菇 (Cígu, arrowhead)",
+          "modern_identification": "Sagittaria trifolia",
+          "identification_confidence": "high",
+          "notes": "Used as a morphological reference for the leaf shape of Suicai."
+        },
+        {
+          "name": "卻睡草 (Quèshuì Cǎo, Sleep-Dispelling Herb)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Mentioned in Guo Xian's Dongming Ji as a plant with opposite effects — consuming it prevents sleep. Li Shizhen speculatively associates it with bitter greens or black nightshade. Not definitively identified."
+        },
+        {
+          "name": "苦菜 (Kǔcài, bitter greens)",
+          "modern_identification": "Sonchus oleraceus or Ixeris species",
+          "identification_confidence": "medium",
+          "notes": "Cited by Li Shizhen as a plant that suppresses sleep, offered as a possible analog to the Sleep-Dispelling Herb."
+        },
+        {
+          "name": "龍葵 (Lóngkuí, black nightshade)",
+          "modern_identification": "Solanum nigrum",
+          "identification_confidence": "high",
+          "notes": "Cited alongside bitter greens as a sleep-suppressing plant."
+        }
+      ],
+      "translator_notes": "The condition treated — 'pathogenic heat in the cardiac region and diaphragm causing inability to sleep' [心膈邪熱不得眠] — is a classical Chinese medical diagnostic category involving excess heat disturbing the shen (spirit/mind), manifesting as insomnia. The plant's sweet, slightly bitter, and cold nature would be understood in TCM terms as appropriate to clear such heat and calm the mind. The bibliographic sources cited (Ji Han's Nanfang Caomu Zhuang, Duan Gonglu's Beihù Lu, Guo Xian's Dongming Ji) are real historical texts, lending some credibility to the ethnobotanical record. The name 懶婦箴 ('Lazy Wife's Admonition') is noted as unexplained even by Li Shizhen.",
+      "_label": "睡菜 (菜之三)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】苬（音囚）。\n\n時珍曰︰芝本作之，篆文象草生地上之形。後人借之字爲語辭，遂加草以別之也。《爾雅》云︰苬，芝也。注云︰一歲三華瑞草。或曰生於剛處曰菌，生於柔處曰芝。昔四皓采芝，群仙服食，則芝亦菌屬可食者，故移入菜部。\n\n【集解】《別錄》曰︰青芝生泰山，赤芝生霍山，黃芝生嵩山，白芝生華山，黑芝生常山，紫芝生高夏山谷。六芝皆六月、八月採。\n\n弘景曰︰南岳本是衡山，漢武帝始以小霍山代之，此赤芝當生衡山也。郡縣無高夏名，恐是山名也。此六芝皆仙草之類，俗所稀見，族類甚多，形色 異，並載《芝草圖》中。今俗所用紫芝，乃是朽木株上所生，狀如木 ，名爲紫芝，止療痔，不宜合諸補丸藥也。凡得芝草，便正爾食之，無余節度，故皆不云服法也。\n\n恭曰︰《五芝經》云︰皆以五色生於五岳。諸方所獻，白芝未必華山，黑芝又非常岳。\n\n且多黃、白，稀有黑、青者。然紫芝最多，非五芝類。但芝自難得，縱獲一、二，豈得終久服耶？\n\n禹錫曰︰王充《論衡》云︰芝生於土。土氣和，故芝草生。《瑞命記》云︰王者仁慈，則芝草生。是也。\n\n時珍曰︰芝類甚多，亦有花實者。《本草》惟以六芝標名，然其種屬不可不識。\n\n《神農經》云︰山川雲雨、四時五",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Zhi (Lingzhi / Sacred Mushrooms) — Vegetables, Part Three\",\n  \"original_text\": \"【釋名】苬（音囚）。\\n\\n時珍曰︰芝本作之，篆文象草生地上之形。後人借之字爲語辭，遂加草以別之也。《爾雅》云︰苬，芝也。注云︰一歲三華瑞草。或曰生於剛處曰菌，生於柔處曰芝。昔四皓采芝，群仙服食，則芝亦菌屬可食者，故移入菜部。\\n\\n【集解】《別錄》曰︰青芝生泰山，赤芝生霍山，黃芝生嵩山，白芝生華山，黑芝生常山，紫芝生高夏山谷。六芝皆六月、八月採。\\n\\n弘景曰︰南岳本是衡山，漢武帝始以小霍山代之，此赤芝當生衡山也。郡縣無高夏名，恐是山名也。此六芝皆仙草之類，俗所稀見，族類甚多，形色異，並載《芝草圖》中。今俗所用紫芝，乃是朽木株上所生，狀如木耳，名爲紫芝，止療痔，不宜合諸補丸藥也。凡得芝草，便正爾食之，無余節度，故皆不云服法也。\\n\\n恭曰︰《五芝經》云︰皆以五色生於五岳。諸方所獻，白芝未必華山，黑芝又非常岳。且多黃、白，稀有黑、青者。然紫芝最多，非五芝類。但芝自難得，縱獲一、二，豈得終久服耶？\\n\\n禹錫曰︰王充《論衡》云︰芝生於土。土氣和，故芝草生。《瑞命記》云︰王者仁慈，則芝草生。是也。\\n\\n時珍曰︰芝類甚多，亦有花實者。《本草》惟以六芝標名，然其種屬不可不識。《神農經》云︰山川雲雨、四時五行、陰陽晝夜之精，以生五色神芝，爲聖王休祥。《瑞應圖》云︰芝草常以六月生，春青夏紫，秋白冬黑。葛洪《抱朴子》云︰芝有石芝、木芝、草芝、肉芝、菌芝，凡數百種也。石芝石象，生於海隅石山島嶼之涯。肉芝狀如肉，附於大石，頭尾具有，乃生物也。赤者如珊瑚，白者如截肪，黑者如澤漆，青者如翠羽，黃者如紫金，皆光明洞徹如堅冰也。大者十餘斤，小者三、四斤。凡求芝草，入名山，必以三月、九月，乃山開出神藥之月。必以天輔時，出三奇吉門，到山須六陰之日，明堂。\\n\\n【氣味】酸，平，無毒。\\n\\n時珍曰︰五色之芝，配以五行之味，蓋亦據理而已，未必其味便隨五色也。即如五畜以羊屬火，五果以杏配心，皆云味苦之義。\\n\\n之才曰︰青、赤、黃、白、黑、紫六芝，並以薯蕷爲之使，得發良，得麻子仁、白瓜子、牡桂甚益人，惡常山，畏扁青、茵陳蒿。\\n苦，平，無毒。\\n甘，平，無毒。\\n辛，平，無毒。\\n鹹，平，無毒。\\n甘，溫，無毒。\\n\\n甄權曰︰平。\\n\\n【主治】明目，補肝氣，安精魂，仁恕。久食，輕身不老，延年神仙。（《本經》）。不忘強志（《唐本》）。\\n胸中結，益心氣，補中，增智慧，不忘。久食，輕身不老，延年神仙（《本經》）。\\n心腹五邪，益脾氣，安神，忠信和樂。久食，輕身不老，延年神仙（《本經》）。\\n咳逆上氣，益肺氣，通利口鼻，強志意，勇悍，安魄。久食，輕身不老，延年神仙（《本經》）。\\n癃，利水道，益腎氣，通九竅，聰察。久服，輕身不老，延年神仙（《本經》）。\\n耳聾，利關節，保神，益精氣，堅筋骨，好顏色。久服，輕身不老延年（《本經》）。療虛勞，治痔（時珍）。\",\n  \"translation\": \"**[Explanation of Names]** Alternative name: 苬 (pronounced qiú).\\n\\nLi Shizhen states: The character 芝 was originally written as 之, whose seal-script [zhuan] form resembles the image of a plant growing from the ground. Later people borrowed 之 as a grammatical particle, so the grass radical was added to distinguish the plant meaning. The *Erya* [ancient Chinese dictionary] says: \"苬 is 芝.\" The commentary notes: \"An auspicious herb that flowers three times in one year.\" It is also said that fungi growing in hard/rocky places are called 菌 [jun], while those growing in soft places are called 芝 [zhi]. In antiquity, the Four Hoary Elders [the Four Greybeards of Mount Shang] gathered zhi, and th",
+      "_label": "芝 (菜之三)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】木𣚊（而、軟二音）。木菌（窘、卷二音）。木㙡 （音縱）。樹雞（韓文）、木蛾。\n\n時珍曰︰木耳生於朽木之上，無枝葉，乃濕熱余氣所生。曰耳曰蛾，象形也。曰 ，以軟濕者佳也。曰雞曰 ，因味似也。南楚人謂雞爲 。曰菌，猶 也，亦象形也。 乃貝子之名。\n\n或曰︰地生爲菌，木生爲蛾。北人曰蛾，南人曰蕈。\n桑 （《唐本》）、桑蛾（《宋本》）、桑雞（《綱目》）、桑黃（《藥性》）、桑臣（《藥性》）、桑上寄生。\n\n弘景曰︰斷谷方︰桑 又呼爲桑上寄生。名同物異也。\n\n時珍曰︰桑 以下皆軟耳之名，桑黃以下皆硬菰之名，其功性則一也。\n槐 （《唐本》）、槐菌（《唐本》）、槐雞（《蜀本》）、赤雞（《綱目》）、槐蛾。\n\n恭曰︰此槐樹上菌也。當取堅如桑耳者。\n\n權曰︰煮漿粥安槐木上，草覆之，即生蕈耳。\n柘黃。\n\n【集解】《別錄》曰︰五木耳生犍爲山谷。六月多雨時采，即曝乾。\n\n弘景曰︰此云五木耳，而不顯言是何木。惟老桑樹生桑耳，有青、黃、赤、白者。軟濕者人采以作菹，無復藥用。\n\n恭曰︰桑、槐、楮、榆、柳，此爲五木耳。軟者並堪啖。楮耳人常食，槐耳療痔。煮漿粥安諸木上，以草覆之，即生蕈爾。\n\n時珍曰︰木耳各木皆生，其",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Wood Ear Fungus (Mù ěr) — Varieties, Properties, and Medical Uses\",\n  \"original_text\": \"【釋名】木㯍（而、軟二音）。木菌（窘、卷二音）。木㙡（音縱）。樹雞（韓文）、木蛾。\\n\\n時珍曰：木耳生於朽木之上，無枝葉，乃濕熱余氣所生。曰耳曰蛾，象形也。曰㯍，以軟濕者佳也。曰雞曰㙡，因味似也。南楚人謂雞爲㙡。曰菌，猶㙡也，亦象形也。㙡乃貝子之名。\\n\\n或曰：地生爲菌，木生爲蛾。北人曰蛾，南人曰蕈。\\n桑㯍（《唐本》）、桑蛾（《宋本》）、桑雞（《綱目》）、桑黃（《藥性》）、桑臣（《藥性》）、桑上寄生。\\n\\n弘景曰：斷谷方：桑㯍又呼爲桑上寄生。名同物異也。\\n\\n時珍曰：桑㯍以下皆軟耳之名，桑黃以下皆硬菰之名，其功性則一也。\\n槐㯍（《唐本》）、槐菌（《唐本》）、槐雞（《蜀本》）、赤雞（《綱目》）、槐蛾。\\n\\n恭曰：此槐樹上菌也。當取堅如桑耳者。\\n\\n權曰：煮漿粥安槐木上，草覆之，即生蕈耳。\\n柘黃。\\n\\n【集解】《別錄》曰：五木耳生犍爲山谷。六月多雨時采，即曝乾。\\n\\n弘景曰：此云五木耳，而不顯言是何木。惟老桑樹生桑耳，有青、黃、赤、白者。軟濕者人采以作菹，無復藥用。\\n\\n恭曰：桑、槐、楮、榆、柳，此爲五木耳。軟者並堪啖。楮耳人常食，槐耳療痔。煮漿粥安諸木上，以草覆之，即生蕈爾。\\n\\n時珍曰：木耳各木皆生，其良毒亦必隨木性，不可不審。然今貨者，亦多雜木，惟桑、柳、楮、榆之耳爲多云。\\n\\n【氣味】甘，平，有小毒。\\n\\n權曰：蕈耳，古槐、桑樹上者良，柘木者次之。其餘樹上，多動風氣，發痼疾，令人肋下急，損經絡背膊，悶人。\\n\\n藏器曰：木耳，惡蛇、蟲從下過者，有毒。楓木上生者，令人笑不止。采歸色變者有毒，夜視有光者、欲爛不生蟲者並有毒，並生搗冬瓜蔓汁解之。\\n\\n時珍曰：按：張仲景云：木耳赤色及仰生者，並不可食。\\n甘，平，有毒。\\n\\n詵曰：寒，無毒。\\n\\n大明曰：溫，微毒。\\n\\n權曰：桑、槐耳：甘、辛，平，無毒。\\n苦、辛，平，無毒。\\n平，無毒。\\n\\n【主治】益氣不飢，輕身強志（《本經》）。斷谷治痔（時珍）。\\n黑者，主女人漏下赤白汁，血病症瘕積聚，陰痛，陰陽寒熱，無子（《本經》）。\\n\\n療月水不調。其黃熟陳白者，止久泄，益氣不飢。其金色者，治癖飲積聚，腹痛金瘡（《別錄》）。治女子崩中帶下，月閉血凝，產後血凝，男子癥癖（甄權）。止血衄，腸風瀉血，婦人心腹痛（大明）。利五臟，宣腸胃氣，排毒氣。壓丹石人發熱，和蔥、豉作羹食（孟詵）。\\n五痔脫肛，下血心痛，婦人陰中瘡痛（蘇恭）。治風破血，益力（甄權）。\\n令人不飢（時珍）。\\n補胃理氣（時珍）。\\n肺癰咳唾膿血腥臭，不問膿成未成。用一兩研末，同百齒霜二錢，糊丸梧子大。米飲下三十丸，效甚捷（時珍）。\\n\\n楊櫨耳\\n\\n藏器曰：出南山。\\n老血結塊，破血止血，煮服之（藏器）。\\n\\n【發明】穎曰：一人患痔，諸藥不效，用木耳煮羹食之而愈，極驗。\\n\\n時珍曰：按：《生生編》云：柳蛾補胃，木耳衰精。言老柳之蛾能補胃理氣。木耳乃朽木所生，得一陰之氣，故有衰精冷腎之害也。\",\n  \"translation\": \"**[Names and Nomenclature]**\\n\\nAlternate names: Mù ruǎn [木㯍] (pronounced either 'ér' or 'ruǎn'); Mùjùn [木菌] (pronounced either 'jiǒng' or 'juǎn'); Mùzòng [木㙡] (pronounced 'zòng'); Shùjī [樹雞, 'Tree Chicken'] (from Han Yu's writings); Mù'é [木蛾, 'Wood Moth'].\\n\\nLi Shizhen says: Wood ear [fungus] grows on rotting wood and has neither branches nor leaves; it is generated by the residual qi [vital energy] of dampness and heat. It is called 'ear' [耳] and 'moth' [蛾] by analogy of shape. It is called ruǎn [soft] because the soft and moist specimens are the finest. It is called 'chicken' [雞] and zòng [㙡] because of its similar ",
+      "_label": "木耳 (菜之三)"
+    },
+    {
+      "title_inferred": "杉菌 (Fir Mushroom) — Medicinal Fungus Growing on Aged Fir Wood",
+      "original_text": "【集解】頌曰：杉菌出宜州。生積年杉木上，狀若菌。采無時。\n\n【氣味】甘、辛，微溫，無毒。\n\n【主治】心脾氣疼，及暴心痛（蘇頌）。",
+      "translation": "【Collected Explanations】Su Song states: Shanjun [fir mushroom] comes from Yizhou. It grows on fir trees [Cunninghamia lanceolata] that have accumulated many years of age, and its form is like that of a common mushroom. It may be gathered at any time of year.\n\n【Qi and Flavor】Sweet, acrid [pungent], slightly warm, non-toxic.\n\n【Indications and Treatments】Pain due to qi [vital energy] disturbance in the heart and spleen, as well as sudden acute heart pain. (Su Song)",
+      "entities_mentioned": [
+        {
+          "name": "杉菌 (Shānjùn)",
+          "modern_identification": "A bracket fungus or polypore species growing on Cunninghamia lanceolata (Chinese fir); possibly a species of Ganoderma, Trametes, or related wood-decay fungi",
+          "identification_confidence": "low",
+          "notes": "The text specifies growth on aged fir (杉木), but the precise fungal species is not determinable from this description alone. Multiple fungal taxa colonize Cunninghamia lanceolata."
+        },
+        {
+          "name": "杉木 (Shān mù, fir wood/tree)",
+          "modern_identification": "Cunninghamia lanceolata (Chinese fir)",
+          "identification_confidence": "high",
+          "notes": "The host tree on which the fungus grows; 杉木 consistently refers to Cunninghamia lanceolata in classical Chinese botanical texts."
+        },
+        {
+          "name": "蘇頌 (Su Song)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Su Song (1020–1101), Northern Song dynasty polymath and author of the Bencao Tujing; cited here as the source of the medicinal claims."
+        }
+      ],
+      "translator_notes": "Yizhou (宜州) refers to a historical administrative region in present-day Guangxi, southern China. The condition '心脾氣疼' denotes pain attributed to disordered qi in the heart and spleen systems (in Chinese medicine), not strictly cardiac or splenic organ disease in the modern anatomical sense. '暴心痛' (sudden acute heart pain) may encompass angina-like symptoms, gastric pain, or other acute epigastric/chest pain as understood in classical Chinese medical nosology.",
+      "_label": "杉菌 (菜之三)"
+    },
+    {
+      "title_inferred": "Gleditsia Tree Mushroom (Zaojiao Xun)",
+      "original_text": "【集解】時珍曰︰生皂莢樹上木耳也。不可食。采得焙乾備用。\n\n【氣味】辛，有毒。\n\n【主治】積垢作痛，泡湯飲之，微泄效。未已再服。又治腫毒初起，磨醋塗之，良（時珍）。",
+      "translation": "**Collected Explanations:** Li Shizhen states: This is a wood-ear fungus [mu'er] that grows on the Gleditsia [soap-pod] tree. It is not suitable for eating. Gather it, dry it by baking, and store for use.\n\n**Flavor and Nature:** Acrid [xin]; toxic.\n\n**Indications and Treatments:** For pain caused by accumulated waste and filth [jì gòu]: steep [the fungus] in hot water and drink the infusion; a mild purging effect will bring relief. If the condition has not yet resolved, take another dose. It also treats the initial onset of swelling toxins [zhong du]: grind [the dried fungus] with vinegar and apply topically — this is effective. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "皂角蕈 (Zaojiao Xun)",
+          "modern_identification": "A fungus (likely a wood-ear or bracket fungus species) growing on Gleditsia sinensis (Chinese honey locust / soap-pod tree); possibly Auricularia sp. or a related wood-decay fungus on Gleditsia sinensis",
+          "identification_confidence": "low",
+          "notes": "The host tree, Gleditsia sinensis (皂莢樹), is well-identified; however, the specific fungal species growing on it that Li Shizhen refers to here has not been definitively matched to a modern taxonomic name. Li Shizhen explicitly warns it is not edible."
+        },
+        {
+          "name": "皂莢樹 (Zaojia Shu)",
+          "modern_identification": "Gleditsia sinensis Lam. (Chinese honey locust / soap-pod tree)",
+          "identification_confidence": "high",
+          "notes": "A well-known medicinal tree; its pods (皂莢) are widely used in traditional Chinese medicine."
+        }
+      ],
+      "translator_notes": "The term 積垢作痛 (jì gòu zuò tòng) refers to pain arising from accumulation of undigested matter or internal filth — a classical Chinese medical concept roughly analogous to constipation or digestive obstruction. The treatment described (an infusion taken orally causing mild diarrhea/purging) is consistent with a laxative or purgative action. The topical application ground with vinegar for swelling and toxins (腫毒初起) follows a common classical Chinese medical preparation method for early-stage skin infections or inflammatory swellings. Li Shizhen is both the compiler and the cited authority here (時珍), indicating this entry reflects his own observations or synthesis.",
+      "_label": "皂角蕈 (菜之三)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰蕈從覃。覃，延也。蕈味雋永，有覃延之意。\n\n【集解】瑞曰︰蕈生桐、柳、枳 木上。紫色者名香蕈，白色者名肉蕈，皆因濕氣熏蒸而成。生山僻處者，有毒殺人。\n\n穎曰︰香蕈生深山爛楓木上。小於菌而薄，黃黑色，味甚香美，最爲佳品。\n\n時珍曰︰蕈品不一。宋人陳仁玉著《菌譜》甚詳。今錄其略於此云︰芝、菌，皆氣茁也。自商山茹芝，而五台天花，亦甲群匯。仙居介乎天台、括蒼之間，叢山入天，仙靈所宮，爰產異菌。林居岩棲者，左右 之，乃藜莧之至腴。近或以羞王公、登玉食矣。\n\n一曰合蕈，又名台蕈，生台之韋羌山。寒極雪收，春氣欲動，土松芽活，此菌候也。其質外褐色，肌理玉潔，芳香韻味，一發釜鬲，聞於百步。山人曝乾以售，香味減於生者。他山雖產，其柄高而香劣，不及矣。二曰稠膏蕈，生孟溪諸山。秋中雨零露浸，釀山膏木腴，發爲菌花。生絕頂樹杪，初如蕊珠，圓瑩類輕酥滴乳，淺黃白色，味尤甘。已乃張傘大若掌，味頓渝矣。春時亦生而膏液少。食之之法，下鼎似沸，漉起參和衆味，而特全於酒。切勿攪動，則涎腥不可食矣。亦可蒸熟致遠。三曰松蕈，生松陰，采無時。凡物松出，無不可愛者。\n\n四曰麥蕈，生溪邊沙壤中。味殊美，絕類蘑菰。五曰玉",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Fragrant Mushroom (Xiangxun / Shiitake)\",\n  \"original_text\": \"【釋名】時珍曰︰蕈從覃。覃，延也。蕈味雋永，有覃延之意。\\n\\n【集解】瑞曰︰蕈生桐、柳、枳木上。紫色者名香蕈，白色者名肉蕈，皆因濕氣熏蒸而成。生山僻處者，有毒殺人。\\n\\n穎曰︰香蕈生深山爛楓木上。小於菌而薄，黃黑色，味甚香美，最爲佳品。\\n\\n時珍曰︰蕈品不一。宋人陳仁玉著《菌譜》甚詳。今錄其略於此云︰芝、菌，皆氣茁也。自商山茹芝，而五台天花，亦甲群匯。仙居介乎天台、括蒼之間，叢山入天，仙靈所宮，爰產異菌。林居岩棲者，左右之，乃藜莧之至腴。近或以羞王公、登玉食矣。\\n\\n一曰合蕈，又名台蕈，生台之韋羌山。寒極雪收，春氣欲動，土松芽活，此菌候也。其質外褐色，肌理玉潔，芳香韻味，一發釜鬲，聞於百步。山人曝乾以售，香味減於生者。他山雖產，其柄高而香劣，不及矣。二曰稠膏蕈，生孟溪諸山。秋中雨零露浸，釀山膏木腴，發爲菌花。生絕頂樹杪，初如蕊珠，圓瑩類輕酥滴乳，淺黃白色，味尤甘。已乃張傘大若掌，味頓渝矣。春時亦生而膏液少。食之之法，下鼎似沸，漉起參和衆味，而特全於酒。切勿攪動，則涎腥不可食矣。亦可蒸熟致遠。三曰松蕈，生松陰，采無時。凡物松出，無不可愛者。\\n\\n四曰麥蕈，生溪邊沙壤中。味殊美，絕類蘑菰。五曰玉蕈，初寒時生，潔皙可愛。作羹微韌。俗名寒蒲蕈。六曰黃蕈，叢生山中。黃色，俗名黃纘蕈，又名黃蕈。七曰紫蕈，赭紫色，產山中，爲下品。八曰四季蕈，生林木中，味甘而肌理粗峭。九曰鵝膏蕈，生高山中，狀類鵝子，久而傘開。味殊甘滑，不減稠膏。然與杜蕈相亂，不可不慎。杜蕈，土菌也。\\n\\n【氣味】甘，平，無毒。\\n\\n【主治】益氣不飢，治風破血（吳瑞）。松蕈︰治溲濁不禁，食之有效（《菌譜》）。\",\n  \"translation\": \"**Explanation of the Name**\\nLi Shizhen says: The character 蕈 (xùn, mushroom) derives from 覃 (tán). 覃 means to extend or to linger. The flavor of mushrooms is deep and lasting [雋永], which carries the sense of 覃—something that extends and endures.\\n\\n**Collected Explanations**\\nWu Rui says: Mushrooms [蕈] grow on paulownia [桐], willow [柳], and trifoliate orange [枳] trees. Those of purple color are called fragrant mushrooms [香蕈]; those of white color are called flesh mushrooms [肉蕈]. All arise through the steaming action of damp qi [濕氣]. Those growing in remote mountain locations may be poisonous and can kill people.\\n\\nWang Ying says: The fragrant mushroom [香蕈] grows on rotting maple wood deep in the mountains. It is smaller and thinner than common fungi [菌], yellow-black in color, and has a very fragrant and delicious flavor—it is reckoned the finest variety.\\n\\nLi Shizhen says: There are many varieties of mushroom. The Song-dynasty author Chen Renyu wrote the *Jǔn Pǔ* [Mushroom Monograph], which is extremely detailed. I record a summary of it here: Fungi and mushrooms [芝、菌] both arise from the sprouting of qi. From the ganoderma [芝] eaten on Shang Mountain, to the tianhua mushro",
+      "_label": "香蕈 (菜之三)"
+    },
+    {
+      "title_inferred": "Kudzu Flower Mushroom (Gegen Hua Cai)",
+      "original_text": "【釋名】葛乳。\n\n時珍曰︰諸名山皆有之，惟太和山采取，云乃葛之精華也。秋霜浮空，如芝、菌涌生地上，其色赤脆，蓋蕈類也。\n\n【氣味】苦、甘，無毒。\n\n【主治】醒神，治酒積（時珍。《太和山志》）。",
+      "translation": "**Names:** Also called Ge Ru [Kudzu Milk].\n\nLi Shizhen states: This grows on many famous mountains, but is collected only from Mount Taihe [Wudang Mountain]. It is said to be the essence and flower of the kudzu plant. In autumn, when frost hangs in the air, it springs up from the ground like lingzhi [ganoderma] or other fungi; its color is red and its texture is brittle. It belongs to the mushroom class [of plants].\n\n**Flavor:** Bitter and sweet; non-toxic.\n\n**Indications:** Awakens the spirit [clears the mind]; treats alcohol accumulation [damage from chronic alcohol consumption]. (Li Shizhen; *Taihe Shan Zhi* [Gazetteer of Mount Taihe].)",
+      "entities_mentioned": [
+        {
+          "name": "葛花菜 / 葛乳 (Ge Hua Cai / Ge Ru)",
+          "modern_identification": "Possibly a fungus or lichen associated with kudzu (Pueraria montana / Pueraria lobata) roots or vicinity; exact species uncertain. Some scholars suggest it may refer to a coral fungus or similar basidiomycete fruiting in autumn.",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen himself classifies it as a mushroom/fungus type (蕈類). The red, brittle, autumn-fruiting description is consistent with certain coral fungi or similar species. The association with kudzu may be ecological rather than parasitic."
+        },
+        {
+          "name": "太和山 (Mount Taihe)",
+          "modern_identification": "Wudang Mountain, Hubei Province, China",
+          "identification_confidence": "high",
+          "notes": "Taihe is the Taoist sacred name for Wudang Mountain. The source citation references the local gazetteer *Taihe Shan Zhi*."
+        },
+        {
+          "name": "《太和山志》 (Taihe Shan Zhi)",
+          "modern_identification": "Gazetteer of Mount Taihe (Wudang Mountain)",
+          "identification_confidence": "high",
+          "notes": "Cited as a source authority alongside Li Shizhen's own observations."
+        }
+      ],
+      "translator_notes": "The name 葛花菜 literally means 'kudzu flower vegetable,' but Li Shizhen explicitly identifies it as a fungus (蕈類), not a flowering plant part. The term 酒積 ('alcohol accumulation') refers in classical Chinese medicine to a pattern of pathological accumulation caused by excessive alcohol consumption, affecting the stomach and liver. The description of it sprouting like lingzhi (芝) in autumn frost is characteristic of certain bracket or coral fungi. Confidence in modern botanical/mycological identification remains low due to the vague description.",
+      "_label": "葛花菜 (菜之三)"
+    },
+    {
+      "title_inferred": "Tianhua Mushroom (Tianhua Rui)",
+      "original_text": "【釋名】天花菜。\n\n【集解】瑞曰︰天花菜出山西五台山。形如松花而大，香氣如蕈，白色，食之甚美。\n\n時珍曰︰五台多蛇蕈，感其氣而生，故味美而無益，其價頗珍。段成式《酉陽雜俎》云︰代北有樹雞，如杯狀，俗呼胡孫眼。其此類歟？\n\n【氣味】甘，平，無毒。\n\n時珍曰︰按︰《正要》云︰有毒。\n\n【主治】益氣，殺蟲（吳瑞）。",
+      "translation": "**Nomenclature:** Also called Tianhua Cai [Heavenly Flower Vegetable].\n\n**Collected Explanations:** Wu Rui states: Tianhua Cai comes from Mount Wutai in Shanxi. Its shape resembles a pine flower but is larger; its fragrance is like that of a mushroom [shen]; it is white in color and very pleasant to eat.\n\nLi Shizhen states: Mount Wutai abounds in snake mushrooms [she-rui], and this mushroom grows by absorbing their vapors [qi]. Hence, though its flavor is delicious, it confers no nutritional benefit, yet its price is quite precious. Duan Chengshi's *Youyang Zazu* records that in the region north of Dai [northern Shanxi], there is a fungus called 'tree chicken' [shu ji], shaped like a cup, and commonly called 'monkey's eye' [husun yan]. Might this be the same type?\n\n**Flavor and Properties:** Sweet, neutral, non-toxic.\n\nLi Shizhen states: According to the *Yinshan Zhengyao* [Proper Essentials for Food and Drink], it is [in fact] toxic.\n\n**Indications and Treatments:** Supplements [tonifies] qi; kills parasites/worms. (Wu Rui)",
+      "entities_mentioned": [
+        {
+          "name": "天花蕈 / 天花菜 (Tianhua Rui / Tianhua Cai)",
+          "modern_identification": "Sparassis crispa (cauliflower mushroom) or a related species such as Sparassis radicata; the white, flower-like morphology and origin on Mount Wutai are consistent with this genus",
+          "identification_confidence": "medium",
+          "notes": "The description of a large, white, flower- or pine-blossom-shaped edible fungus with a pleasant aroma from Mount Wutai strongly suggests Sparassis spp. (cauliflower or coral mushrooms). The association with snake vapors is a folk-etiological explanation, not a biological one."
+        },
+        {
+          "name": "蛇蕈 (she-rui, 'snake mushroom')",
+          "modern_identification": "null",
+          "identification_confidence": "unknown",
+          "notes": "A folk category of mushrooms said to grow where snakes are abundant; Li Shizhen uses this to explain why the Tianhua mushroom tastes good but is nutritionally worthless or potentially toxic."
+        },
+        {
+          "name": "樹雞 / 胡孫眼 (shu ji / husun yan, 'tree chicken' / 'monkey's eye')",
+          "modern_identification": "Possibly a bracket fungus or a species of Sparassis; Duan Chengshi's cup-shaped description may refer to a different species",
+          "identification_confidence": "low",
+          "notes": "Cited from Duan Chengshi's (fl. 9th c.) *Youyang Zazu*; the cup shape differs slightly from the Tianhua mushroom description, so Li Shizhen is uncertain whether they are the same."
+        }
+      ],
+      "translator_notes": "1. The character rendered as '杯狀' (cup-shaped) in the *Youyang Zazu* quotation appears in the source as '如杯 ' with a missing or corrupted character after 杯; '狀' (shape/form) has been silently supplied as the most plausible reading. 2. The *Yinshan Zhengyao* (飲膳正要, 1330, by Hu Sihui) is abbreviated in the source as 《正要》; translated accordingly. 3. There is a notable internal contradiction: the main entry lists the mushroom as 'non-toxic,' while Li Shizhen's appended note cites the *Yinshan Zhengyao* calling it toxic — both readings are preserved in the translation as they appear in the original. 4. 'Kills worms/parasites' (殺蟲) likely refers to intestinal parasites in classical medical context.",
+      "_label": "天花蕈 (菜之三)"
+    },
+    {
+      "title_inferred": "Mógū Mushroom (Mógu Xùn)",
+      "original_text": "【釋名】肉蕈。\n\n【集解】時珍曰︰蘑菰出山東、淮北諸處。埋桑、楮諸木於土中，澆以米泔，待菰生采之。長二、三寸，本小末大，白色柔軟，其中空虛，狀如未開玉簪花。俗名雞腿蘑菰，謂其味如雞也。一種狀如羊肚，有蜂窠眼者，名羊肚菜。\n\n【氣味】甘，寒，無毒。\n\n《正要》曰︰有毒。動氣發病，不可多食。\n\n【主治】益腸胃，化痰理氣（時珍。出《生生編》）。",
+      "translation": "**Explanatory Names:** Also called Ròu Xùn [Flesh Mushroom].\n\n**Collected Explanations:** Li Shizhen states: The mógū mushroom originates from Shandong and the regions north of the Huai River. Mulberry and paper-mulberry [Broussonetia] logs are buried in the soil and watered with rice-washing water [米泔, the starchy water from rinsing uncooked rice]; when the mushrooms sprout, they are harvested. They grow two to three inches tall, narrow at the base and broader at the top, white in color, soft in texture, and hollow inside — resembling an unopened hosta flower [玉簪花]. The common name is 'Chicken-Leg Mushroom' [雞腿蘑菰], referring to its flavor, which resembles chicken. There is another variety shaped like a sheep's tripe [羊肚], with honeycomb-like pits, called Yáng Dù Cài [Sheep-Tripe Vegetable].\n\n**Flavor and Nature:** Sweet, cold, non-toxic.\n\nThe [Yinshan] Zhengyao states: It is toxic. It stirs the qi and provokes illness; one should not eat it in excess.\n\n**Indications and Treatments:** Benefits the intestines and stomach; dissolves phlegm and regulates qi. (Li Shizhen, cited from the Shēngshēng Biān.)",
+      "entities_mentioned": [
+        {
+          "name": "蘑菰蕈 (Mógū Xùn) / 肉蕈 (Ròu Xùn)",
+          "modern_identification": "Volvariella volvacea (paddy straw mushroom) or possibly a cultivated Agaricus/Lentinula species; the 'chicken-leg' description may correspond to Volvariella volvacea or Macrolepiota procera",
+          "identification_confidence": "low",
+          "notes": "The cultivation method described — burying mulberry and paper-mulberry wood and watering with rice-washing water — resembles techniques for growing Lentinula edodes (shiitake) or related wood-decomposing fungi, but the morphological description (hollow, narrow base, broad cap, white) may better fit Volvariella volvacea or another species. Definitive identification from the text alone is uncertain."
+        },
+        {
+          "name": "羊肚菜 (Yáng Dù Cài) / Sheep-Tripe Vegetable",
+          "modern_identification": "Morchella esculenta or related morel species (Morchellaceae)",
+          "identification_confidence": "high",
+          "notes": "The description of a honeycomb-pitted, tripe-shaped mushroom is a classic description of the morel mushroom."
+        },
+        {
+          "name": "玉簪花 (Yùzān Huā)",
+          "modern_identification": "Hosta plantaginea (fragrant hosta / August lily)",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological simile for the unopened mushroom cap, not as a medicinal entity."
+        }
+      ],
+      "translator_notes": "The text cites two contradictory safety assessments: Li Shizhen classifies the mushroom as non-toxic, while the Yinshan Zhengyao (飲膳正要, a Yuan-dynasty dietary compendium) warns of toxicity and advises against overconsumption. Li Shizhen records both without explicit resolution. The cultivation method described — burying logs and applying rice-washing water — is an early documented form of mushroom cultivation in China. 米泔 (mǐ gān) specifically denotes the cloudy water produced by washing uncooked rice, which would be rich in starch and nutrients. The Shēngshēng Biān (生生編) is a Ming-dynasty health and dietary text cited as the source for the therapeutic claims.",
+      "_label": "蘑菰蕈 (菜之三)"
+    },
+    {
+      "title_inferred": "Jizong Mushroom (Termite Mushroom)",
+      "original_text": "【釋名】雞菌。\n\n時珍曰︰南人謂爲雞㙡，皆言其味似之也。\n\n【集解】時珍曰︰雞㙡出雲南，生沙地間丁蕈也。高腳傘頭。土人采烘寄遠，以充方物。\n\n點茶、烹肉皆宜。氣味皆似香蕈，而不及其風韻也。又廣西橫州出雷菌，遇雷過即生，須疾采之，稍遲則腐或老，故名。作羹甚美，亦如雞㙡之屬。\n\n此數種其價並珍。\n\n【氣味】甘，平，無毒。\n\n【主治】益胃清神，治痔（時珍）。",
+      "translation": "**Explanatory Names:** Also called jijun [雞菌, 'chicken mushroom'].\n\nLi Shizhen states: The people of the south call it jizong [雞㙡]; all such names refer to its flavor resembling that of chicken.\n\n**Collected Commentaries:** Li Shizhen states: Jizong originates from Yunnan and grows as a stalked mushroom [dīng xùn, 丁蕈] in sandy soil. It has a tall stalk and an umbrella-shaped cap. The local people harvest and dry it over heat, then send it to distant places as a regional specialty. It is suitable both for preparing tea and for cooking with meat. Its aroma and flavor resemble those of the fragrant mushroom [xiāng xùn, 香蕈; shiitake], though it does not quite match its elegance. Furthermore, in Hengzhou, Guangxi, there grows the 'thunder mushroom' [léi jūn, 雷菌], which sprouts immediately after thunder passes; it must be gathered quickly, as even a slight delay causes it to rot or become over-mature — hence the name. It makes an exceptionally fine broth and belongs to the same category as jizong.\n\nAll of these several varieties command a precious price.\n\n**Flavor:** Sweet, neutral [in temperament], non-toxic.\n\n**Primary Medical Uses:** Strengthens the stomach and clears the mind; treats hemorrhoids. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "雞㙡 (jizong)",
+          "modern_identification": "Termitomyces albuminosus (or related Termitomyces spp.)",
+          "identification_confidence": "high",
+          "notes": "A prized edible mushroom from Yunnan that grows in sandy soil, associated with termite mounds. The 'high-stalked umbrella-head' description is consistent with Termitomyces species."
+        },
+        {
+          "name": "雷菌 (léi jūn, 'thunder mushroom')",
+          "modern_identification": "Possibly Calvatia or Volvariella spp., or another fast-fruiting mushroom species; uncertain",
+          "identification_confidence": "low",
+          "notes": "Described as appearing immediately after thunderstorms in Hengzhou, Guangxi, and deteriorating very rapidly. Exact species identification is unclear from description alone."
+        },
+        {
+          "name": "香蕈 (xiāng xùn)",
+          "modern_identification": "Lentinula edodes (shiitake mushroom)",
+          "identification_confidence": "high",
+          "notes": "Used here as a flavor and aroma benchmark for comparison with jizong."
+        }
+      ],
+      "translator_notes": "The character 㙡 is an archaic or regional variant character used specifically for this mushroom's name; rendered consistently as 'jizong' throughout. The phrase 丁蕈 (dīng xùn) likely describes the mushroom's nail- or peg-like stalk shape rather than being a separate taxonomic term. The preparation method described — harvesting and smoke-drying for shipment — suggests the mushroom was commercially traded as a preserved delicacy. The therapeutic claims (益胃清神，治痔) are attributed directly to Li Shizhen himself, indicating original observation rather than citation of earlier sources.",
+      "_label": "雞㙡 (菜之三)"
+    },
+    {
+      "title_inferred": "Rudder Mushroom (Duocai)",
+      "original_text": "【集解】時珍曰︰此即海舶舵上所生菌也。亦不多得。\n\n【氣味】鹹、甘，寒，無毒。\n\n【主治】癭結氣，痰飲（時珍）。",
+      "translation": "【Collected Explanations】Li Shizhen says: This is the fungus that grows on the rudders of ocean-going vessels. It is also not easily obtained.\n\n【Flavor and Nature】Salty, sweet; cold; non-toxic.\n\n【Indications and Treatment】Goiter with stagnant qi [癭結氣], and phlegm-fluid accumulation [痰飲]. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "舵菜 (Duocai, Rudder Mushroom)",
+          "modern_identification": "Uncertain; likely a marine-environment fungus or possibly a bryozoan/encrusting organism growing on wooden ship rudders. Some scholars tentatively associate it with salt-tolerant wood-decay fungi, but no firm modern identification has been established.",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen describes it as a fungus (菌) growing specifically on the rudders (舵) of seagoing ships (海舶). Its rarity is noted. The salty environment of its growth substrate likely informed its perceived medicinal properties, particularly for goiter — consistent with the traditional understanding that iodine-rich marine substances treat thyroid conditions."
+        },
+        {
+          "name": "癭結氣 (Goiter with stagnant qi)",
+          "modern_identification": "Goiter; likely iodine-deficiency goiter or thyroid swelling",
+          "identification_confidence": "high",
+          "notes": "A common indication for marine-derived materia medica in the Bencao Gangmu, reflecting the empirical correlation between marine products and thyroid conditions."
+        },
+        {
+          "name": "痰飲 (Phlegm-fluid accumulation)",
+          "modern_identification": "Broadly corresponds to conditions involving pathological fluid retention, mucus accumulation, or certain respiratory/digestive disorders in TCM nosology",
+          "identification_confidence": "medium",
+          "notes": "A standard TCM diagnostic category; not a single modern disease equivalent."
+        }
+      ],
+      "translator_notes": "The entry is notably brief, which Li Shizhen himself implicitly acknowledges by noting the substance is rarely obtained. No preparation method is specified, which is unusual; the text gives only flavor/nature properties and indications. The attribution '(時珍)' at the end of the indications section marks these as Li Shizhen's own additions rather than citations from earlier sources.",
+      "_label": "舵菜 (菜之三)"
+    },
+    {
+      "title_inferred": "Earth Mushroom (Tu Jun) — Varieties, Toxicity, and Medicinal Uses",
+      "original_text": "【釋名】杜蕈（《菌譜》）、地蕈（《拾遺》）、菰子（《食物》）、地雞（《爾雅》）、獐頭。\n\n藏器曰︰地生者爲菌，木生者爲蕈。江東人呼爲蕈。《爾雅》云︰中馗，菌也。孫炎注云︰地蕈子也。或云地雞，亦云獐頭。\n\n郭璞注云︰地蕈似釘蓋，江東名爲土菌，可啖。凡菌從地中出者，皆主瘡疥，牛糞上黑菌尤佳。若燒灰地上經秋雨，生菌重台者，名仙人帽，大主血病。\n\n時珍曰︰中馗神名，又槌名也。此菌釘上若傘，其狀如槌及中馗之帽，故以名之。\n\n【氣味】甘，寒，有毒。\n\n詵曰︰菌子有數般，槐樹上者良。野田中者有毒殺人，又多發冷氣，令人腹中微微痛，發五臟風，擁經脈，動痔病，令人昏昏多睡，背膊四肢無力。\n\n藏器曰︰菌，冬春無毒，夏秋有毒，有蛇、蟲從下過也。夜中有光者，欲爛無蟲者，煮之不熟者，煮訖照人無影者，上有毛下無紋者，仰卷赤色者，並有毒殺人。中其毒者，地漿及糞汁解之。\n\n穎曰︰凡煮菌，投以薑屑、飯粒，若色黑者殺人，否則無毒。\n\n時珍曰︰按︰《菌譜》云︰杜蕈生土中，與山中鵝膏蕈相亂。俗言毒蕈之氣所成，食之殺人。甚美有惡，食肉不食馬肝，未爲不知味也。凡中其毒者，必笑不止。解之以苦茗、白礬，酌新水並咽之，無不立愈。又按︰楊士瀛《直指方》云︰廣南人殺毒蛇，覆之以草，以水洒之，數日菌生。采乾爲末，入酒毒人。遇再飲酒，毒發立死。又陳氏《拾遺》云︰南夷以胡蔓草毒人至死，懸尸於樹，汁滴地上，生菌子收之，名菌藥，毒人至烈。此皆不可不知，故並記之。馬勃亦菌類，見草部。\n\n【主治】燒灰，敷瘡疥（藏器）。",
+      "translation": "**Names and Nomenclature**\nAlternative names: Du Xun [杜蕈] (from *Junpu* [Mushroom Manual]); Di Xun [地蕈] (from *Shiyi* [Supplement to Materia Medica]); Gu Zi [菰子] (from *Shiwu* [Food Matters]); Di Ji [地雞, 'Earth Chicken'] (from *Erya*); Zhang Tou [獐頭, 'Roedeer Head'].\n\n[Chen] Cangqi states: Those that grow from the ground are called *jun* [菌]; those that grow from wood are called *xun* [蕈]. People of the Jiangdong region call them *xun*. The *Erya* says: 'Zhong Kui is a *jun*.' Sun Yan's commentary explains: 'It is the earth mushroom [地蕈子].' Some call it Di Ji ['Earth Chicken'], others Zhang Tou ['Roedeer Head'].\n\nGuo Pu's commentary states: The earth mushroom [地蕈] resembles a nail-cap [釘蓋]; in Jiangdong it is called Tu Jun [土菌, 'Earth Mushroom'] and is edible. All mushrooms that emerge from the ground are effective against sores and scabies; those black mushrooms growing on cow dung are especially good. If ash from burning is left on the ground and survives autumn rains to produce a double-layered mushroom [重台], it is called the 'Immortal's Hat' [仙人帽] and is particularly indicated for blood disorders.\n\nLi Shizhen states: 'Zhong Kui' is a deity's name, and also the name of a type of mallet. This mushroom has a cap atop a stalk like an umbrella, resembling the shape of a mallet or the hat of the deity Zhong Kui, hence the name.\n\n**Flavor and Nature**\nSweet; cold; toxic.\n\n[Meng] Shen states: There are several kinds of mushrooms; those growing on pagoda trees [槐樹] are the best. Those growing in wild fields are toxic and can kill people. They also tend to generate cold qi, causing mild abdominal pain, stirring wind in the five viscera [五臟], obstructing the channels and vessels [經脈], aggravating hemorrhoidal disease [痔病], causing drowsiness and dullness, and leaving the back, shoulders, and four limbs without strength.\n\n[Chen] Cangqi states: Mushrooms are non-toxic in winter and spring, but toxic in summer and autumn, because snakes and insects pass beneath them during those seasons. The following kinds are all toxic and can kill people: those that glow in the night; those that are decaying yet have no insects; those that do not fully cook; those that cast no shadow of a person when held up after cooking; those that have hair on top but no gills underneath; and those that curl upward and are red in color. Those who are poisoned by such mushrooms can be treated with di jiang [地漿, 'earth slurry water'] or fecal juice as antidotes.\n\n[Wu] Ying states: When cooking mushrooms, add shredded ginger and grains of cooked rice; if the mixture turns black, the mushroom is lethal; if not, it is non-toxic.\n\nLi Shizhen states: According to the *Junpu*, the Du Xun [杜蕈] grows in soil and is easily confused with the 'goose-fat mushroom' [鵝膏蕈, Amanita] found in mountain forests. It is popularly said to be formed from the qi of toxic mushrooms, and eating it kills people. Though it may be supremely delicious, there is that which is harmful within it — just as one who eats meat but avoids horse liver cannot be said to be ignorant of flavor [i.e., sometimes discretion over fine things is itself wisdom]. Anyone poisoned by it will laugh uncontrollably [笑不止]. The antidote is bitter tea [苦茗] and white alum [白礬] dissolved in fresh water and swallowed; recovery is invariably immediate.\n\nFurther, according to Yang Shiying's *Zhizhi Fang* [Direct Guidance Prescriptions]: People in Guangnan kill venomous snakes, cover them with grass, and sprinkle water over them; within a few days mushrooms grow. These are collected, dried, and ground into powder, then mixed into wine to poison people. Upon drinking again, the poison activates and the person dies immediately.\n\nMoreover, Chen's *Shiyi* records: The southern Yi peoples use Hu Man grass [胡蔓草, *Gelsemium elegans*] to poison people to death, then hang the corpse from a tree; the dripping fluids fall to the ground and produce mushrooms, which are collected and called 'mushroom drug' [菌藥]. This substance is extremely virulent as a poison. All of these matters must be known, and so they are recorded here. *Ma Bo* [馬勃, puffball] is also a type of mushroom; see the Herbs section.\n\n**Indications and Treatments**\nBurn to ash and apply externally to treat sores and scabies. (Cangqi)",
+      "entities_mentioned": [
+        {
+          "name": "土菌 / 杜蕈 / 地蕈 (Tu Jun / Du Xun / Di Xun)",
+          "modern_identification": "Various terrestrial fungi; possibly includes Agaricus campestris and other wild ground mushrooms; toxic varieties likely include Amanita species",
+          "identification_confidence": "medium",
+          "notes": "The text treats this as a broad category of ground-growing mushrooms rather than a single species. The entry explicitly notes confusion with 鵝膏蕈 (Amanita spp.), suggesting some overlap with deadly Amanita species."
+        },
+        {
+          "name": "鵝膏蕈 (E Gao Xun, 'Goose-fat Mushroom')",
+          "modern_identification": "Amanita spp. (Death Cap / Destroying Angel group)",
+          "identification_confidence": "high",
+          "notes": "Named as a dangerous look-alike for Du Xun. The name 鵝膏 corresponds closely to Amanita phalloides or related deadly Amanita species."
+        },
+        {
+          "name": "仙人帽 (Xian Ren Mao, 'Immortal's Hat')",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Described as a double-layered mushroom growing from ash after autumn rains. Possibly a fanciful or legendary category; insufficient information for identification."
+        },
+        {
+          "name": "馬勃 (Ma Bo)",
+          "modern_identification": "Calvatia gigantea or Lasiosphaera fenzlii (Giant Puffball); various puffball fungi",
+          "identification_confidence": "high",
+          "notes": "Mentioned briefly as also being a type of fungus; cross-referenced to the Herbs section."
+        },
+        {
+          "name": "胡蔓草 (Hu Man Cao)",
+          "modern_identification": "Gelsemium elegans (Heartbreak Grass)",
+          "identification_confidence": "high",
+          "notes": "Described as a poison used by southern Yi peoples; the text notes that mushrooms growing from corpses of those killed by this plant are in turn used as a virulent poison called 菌藥."
+        },
+        {
+          "name": "地漿 (Di Jiang, 'Earth Slurry')",
+          "modern_identification": "Water stirred with clean earth and strained; a traditional antidote preparation",
+          "identification_confidence": "high",
+          "notes": "Used as an antidote for mushroom poisoning; a well-documented classical remedy."
+        },
+        {
+          "name": "白礬 (Bai Fan, White Alum)",
+          "modern_identification": "Potassium alum (KAl(SO₄)₂·12H₂O)",
+          "identification_confidence": "high",
+          "notes": "Combined with bitter tea and fresh water as an antidote for mushroom poisoning causing uncontrollable laughter."
+        }
+      ],
+      "translator_notes": "1. The OCR rendered 木生者爲 with a missing character (蕈); restored as 木生者爲蕈 based on context and the immediate following sentence. Similarly, 毒 之氣 was restored to 毒蕈之氣.\n2. The symptom of 'uncontrollable laughter' (笑不止) following poisoning by Du Xun/Amanita is a historically documented but medically curious observation; it may reflect neurological symptoms of certain Amanita toxins.\n3. The folk test of adding ginger and rice during cooking to detect toxic mushrooms (blackening = toxic) has no reliable scientific basis and is noted here as a historical belief only.\n4. The description of mushrooms grown from a poisoned snake's decaying body or from a hanged corpse reflects traditional beliefs about the spontaneous generation of fungi from corrupted matter, as well as historically attested practices of secondary poisoning.\n5. 重台 (double-layered) likely refers to a mushroom with a volva or partial veil remnant giving the appearance of stacked caps.",
+      "_label": "土菌 (菜之三)"
+    },
+    {
+      "title_inferred": "Bamboo Fungus (Zhuru / Bamboo Flesh)",
+      "original_text": "【釋名】竹肉（《拾遺》）、竹菰（《綱目》）、竹蕈。\n\n時珍曰︰草更生曰蓐，得溽濕之氣而成也。陳藏器《本草》作竹肉，因其味也。\n\n【集解】詵曰︰慈竹林夏月逢雨，滴汁著地生蓐。似鹿角，白色，可食。\n\n藏器曰︰竹肉生苦竹枝上。如雞子，似肉臠，有大毒。以灰汁煮三度煉訖，然後依常菜茹食之。煉不熟者，戟人喉出血，手爪盡脫。應別有功，人未盡識之。\n\n時珍曰︰此即竹菰也。生朽竹根節上。狀如木耳，紅色。段成式《酉陽雜俎》云︰江淮有竹肉，大如彈丸，味如白樹雞。即此物也。惟苦竹生者有毒耳。\n\n【氣味】甘、鹹，寒，無毒。\n\n藏器曰︰苦竹肉︰有大毒。\n\n【主治】一切赤白痢，和薑、醬食之（孟詵）。苦竹肉︰灰汁煉過食，殺三蟲毒邪氣，破老血（藏器）。",
+      "translation": "**Names:** Bamboo Flesh [竹肉] (Shiyi), Bamboo Mushroom [竹菰] (Bencao Gangmu), Bamboo Fungus [竹蕈].\n\nLi Shizhen states: The word 'ru' [蓐] refers to vegetation that grows anew; it forms from the qi of warm dampness and moisture. Chen Cangqi's Bencao [Shiyi] calls it 'bamboo flesh' [竹肉] on account of its flavor.\n\n**Collected Explanations:** Meng Shen states: In groves of ci-bamboo [Neosinocalamus affinis], during summer rains, droplets fall to the ground and give rise to this growth. It resembles deer antler [in shape] and is white in color; it is edible.\n\nChen Cangqi states: Bamboo flesh grows on the branches of bitter bamboo [ku zhu]. It is the size of a hen's egg, resembling a piece of cut meat, and is extremely toxic. It must be boiled three times in lye water [ash-water] and thoroughly refined [detoxified], after which it may be eaten like ordinary vegetables. If insufficiently refined, it will lacerate the throat causing bleeding and cause the fingernails to fall off entirely. It likely has special medicinal virtues not yet fully understood by people.\n\nLi Shizhen states: This is precisely the bamboo mushroom [竹菰]. It grows on the root nodes of decayed bamboo. Its form resembles wood-ear fungus [mu er] and is red in color. Duan Chengshi's Youyang Zazu states: 'In the Jianghuai region there is bamboo flesh, as large as a pellet, tasting like white tree-chicken [bai shu ji, i.e., a white wood-ear fungus].' This refers to the same thing. Only that which grows on bitter bamboo is toxic.\n\n**Flavor and Nature:** Sweet and salty; cold; non-toxic.\n\nChen Cangqi states: Bitter-bamboo flesh — extremely toxic.\n\n**Therapeutic Uses:** For all types of dysentery [red and white flux], eat it prepared with ginger and fermented sauce [jiang] (Meng Shen). Bitter-bamboo flesh — when refined by boiling in lye water and then eaten, it kills the three worms [san chong], expels toxic and pathogenic qi, and breaks up old stagnant blood (Chen Cangqi).",
+      "entities_mentioned": [
+        {
+          "name": "竹蓐 / 竹肉 / 竹菰 / 竹蕈 (Zhuru / Zhu Rou / Zhugu / Zhu Xun)",
+          "modern_identification": "Likely a fungus growing on bamboo, possibly Shiraia bambusicola (a parasitic fungus on bamboo) or a related species such as Phlebia or Ganoderma found on decayed bamboo; the red color and growth on decayed bamboo nodes is consistent with Shiraia bambusicola",
+          "identification_confidence": "medium",
+          "notes": "The text describes two distinct forms: a white antler-shaped growth from ci-bamboo (Neosinocalamus affinis) in summer rain, and a red wood-ear-like growth on decayed bamboo roots. These may represent different species or different growth stages. The highly toxic form on bitter bamboo (ku zhu, Pleioblastus amarus) may be a separate organism. Shiraia bambusicola is a strong candidate for at least the red form."
+        },
+        {
+          "name": "慈竹 (Ci Zhu)",
+          "modern_identification": "Neosinocalamus affinis (formerly Bambusa emeiensis)",
+          "identification_confidence": "high",
+          "notes": "A common bamboo species native to Sichuan and southwestern China."
+        },
+        {
+          "name": "苦竹 (Ku Zhu)",
+          "modern_identification": "Pleioblastus amarus (bitter bamboo)",
+          "identification_confidence": "high",
+          "notes": "The fungus growing on this species is described as having extreme toxicity, requiring repeated boiling in lye water before consumption."
+        },
+        {
+          "name": "三蟲 (San Chong)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A traditional Chinese medical concept referring to three types of internal parasites or pathogenic agents believed to reside in the body."
+        }
+      ],
+      "translator_notes": "The preparation method for bitter-bamboo flesh — boiling three times in ash/lye water (灰汁) — is a traditional detoxification technique analogous to nixtamalization or lye treatment used in many cultures to neutralize toxins. The described toxicity symptoms (throat hemorrhage, loss of fingernails) suggest the presence of proteolytic enzymes or other caustic compounds in the raw fungus. The 'white tree-chicken' (白樹雞) referenced by Duan Chengshi in Youyang Zazu is a colloquial name for a white wood-ear or chicken-of-the-woods type fungus, used here as a flavor comparison. The segment straddles the vegetable (菜) and fungal categories, consistent with its placement in 菜之三.",
+      "_label": "竹蓐 (菜之三)"
+    },
+    {
+      "title_inferred": "Huanjun (Reed Mushroom / Guanjun)",
+      "original_text": "【釋名】雚蘆（《本經》）。\n\n時珍曰︰雚當作萑，乃蘆葦之屬，此菌生於其下，故名也。若雚音觀，乃鳥名，與萑蘆無關。\n\n【集解】《別錄》曰︰菌生東海池澤及渤海章武。八月採，陰乾。\n\n弘景曰︰出北來，此亦無有。形狀似菌，云鸛屎所化生，一名鸛菌。單末之，豬肉和食，可以遣蛔蟲。\n\n恭曰︰菌今出渤海蘆葦澤中鹼鹵地，自然有此菌爾，非鸛屎所化生也。其菌色白輕虛，表裡相似，與衆菌不同。療蛔有效。\n\n保升曰︰今出滄州。秋雨以時即有，天旱久霖即稀。晒乾者良。\n\n【氣味】鹹，平，有小毒。\n\n《別錄》曰︰甘，微溫。\n\n權曰︰苦。得酒良，畏雞子。\n\n【主治】心痛，溫中，去長蟲白癬蟯蟲，蛇螫毒，症瘕諸蟲（《本經》）。疽蝸，去蛔蟲、寸白，惡瘡（《別錄》）。除腹內冷痛，治白禿（甄權）。",
+      "translation": "**Nomenclature [釋名]**\nAlso called Huanlu (in the *Shennong Bencao Jing* [Classic of the Divine Husbandman]).\n\nLi Shizhen states: The character 雚 should properly be written 萑, which belongs to the category of reeds and rushes [蘆葦之屬]. This mushroom grows beneath them, hence the name. If 雚 is read as guān, it is the name of a bird [stork], which has no connection to the reed 萑蘆.\n\n**Collected Commentaries [集解]**\nThe *Mingyi Bielu* [Supplementary Records of Famous Physicians] states: This mushroom grows in the marshes and ponds of the Eastern Sea [East China Sea region] and in Zhangwu of the Bohai area. It is collected in the eighth month and dried in the shade.\n\nTao Hongjing states: It comes from the north; here [in the south] there is none of it. Its form resembles a common mushroom. It is said to be generated from stork droppings, and is thus also called Guanjun [Stork Mushroom]. Ground into powder alone and eaten mixed with pork, it can expel roundworms [蛔蟲].\n\nSu Gong states: This mushroom now comes from the alkaline and saline marshlands of the reed swamps along the Bohai coast. It grows there naturally and is not generated from stork droppings. The mushroom is white in color, light, and spongy; its inner and outer surfaces look alike, unlike other common mushrooms. It is effective in treating roundworm infestations.\n\nKou Zongshi [保升, i.e., Han Baosheng] states: It now comes from Cangzhou. When autumn rains are timely, it appears; during prolonged drought or excessive rain, it is scarce. Specimens dried in the sun are of superior quality.\n\n**Flavor and Nature [氣味]**\nSalty, neutral [平], slightly toxic.\n\nThe *Mingyi Bielu* states: Sweet, mildly warm.\n\nZhen Quan states: Bitter. Its effect is enhanced by wine; it is incompatible with [lit. fears] eggs [雞子].\n\n**Indications [主治]**\nHeart pain; warming the middle [burner]; eliminating long worms [長蟲, i.e., roundworms], white ringworm [白癬], pinworms [蟯蟲], snake-bite venom, and abdominal masses with parasites [症瘕諸蟲] (*Shennong Bencao Jing*). Abscesses and skin sores [疽蝸]; eliminating roundworms and tapeworms [寸白蟲]; malignant sores [惡瘡] (*Mingyi Bielu*). Relieving cold pain within the abdomen; treating white scalp baldness [白禿] (Zhen Quan).",
+      "entities_mentioned": [
+        {
+          "name": "雚菌 (Huanjun / Guanjun)",
+          "modern_identification": "Possibly a saline-tolerant fungus growing among reeds, tentatively associated with species such as Agaricus or Coprinus spp. in coastal alkali-halophyte environments; precise identification uncertain",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen corrects the character 雚 to 萑 (a type of reed), clarifying the mushroom is named for its habitat beneath reed plants, not for any association with storks (鸛). The white, lightweight, internally uniform appearance distinguishes it from ordinary mushrooms according to Su Gong."
+        },
+        {
+          "name": "蛔蟲 (roundworm)",
+          "modern_identification": "Ascaris lumbricoides",
+          "identification_confidence": "high",
+          "notes": "Primary therapeutic target; mushroom powder mixed with pork or taken alone cited as treatment."
+        },
+        {
+          "name": "寸白蟲 (tapeworm)",
+          "modern_identification": "Taenia spp.",
+          "identification_confidence": "high",
+          "notes": "Listed as an indication in the Mingyi Bielu."
+        },
+        {
+          "name": "蟯蟲 (pinworm)",
+          "modern_identification": "Enterobius vermicularis",
+          "identification_confidence": "high",
+          "notes": "Listed among parasites treated in the Shennong Bencao Jing citation."
+        }
+      ],
+      "translator_notes": "1. The name 雚菌 appears in the Shennong Bencao Jing; Li Shizhen's philological note clarifies a long-standing scribal confusion between 雚 (a bird name, pronounced guān) and 萑 (a type of reed), insisting the latter is correct. 2. The preparation method cited by Tao Hongjing—powder mixed with pork—is a specific formulation for anthelmintic use and is extracted as such. 3. '疽蝸' in the Bielu citation is an unusual compound; it likely refers to abscesses and ulcerative skin lesions (蝸 may be a variant or OCR/print corruption of 蝸 meaning lesions). 4. '畏雞子' (fears/is incompatible with eggs) is a classical pharmaceutical incompatibility note, not to be read as a toxicological statement in the modern sense. 5. The geographic references—Eastern Sea (東海), Bohai (渤海), Zhangwu (章武), and Cangzhou (滄州)—all point to the coastal marshlands of present-day Hebei and Shandong provinces.",
+      "_label": "雚菌 (菜之三)"
+    },
+    {
+      "title_inferred": "Ground Ear (Di Er) — an edible ground-growing algae or fungus",
+      "original_text": "【釋名】地踏菰（《綱目》）。\n\n【集解】《別錄》曰︰地耳生丘陵，如碧石青也。\n\n時珍曰︰地耳亦石耳之屬，生於地者也。狀如木耳。春夏生雨中，雨後即早采之，見日即不堪。俗名地踏菰是也。\n\n【氣味】甘，寒，無毒。\n\n【主治】明目益氣，令人有子（《別錄》）。",
+      "translation": "**Nomenclature:** Also called Dì Tà Gū [Ground-treading Mushroom] (Bencao Gangmu).\n\n**Collected Explanations:** The Bielu states: Ground Ear [Di Er] grows on hills and mounds, and resembles bluish-green [碧] stone [i.e., it has a greenish-blue colour like jade or stone].\n\nLi Shizhen states: Ground Ear also belongs to the same category as Stone Ear [Shi Er], but grows upon the ground. Its form resembles Wood Ear [Mu Er, tree fungus]. It grows in spring and summer during rain; after rain it should be gathered early, as it becomes unfit for use once exposed to sunlight. Its common name is Dì Tà Gū [Ground-treading Mushroom].\n\n**Flavour and Nature:** Sweet, cold, non-toxic.\n\n**Indications and Treatments:** Brightens the eyes, boosts qi [vital energy], and promotes fertility [lit. 'causes people to have children'] (Bielu).",
+      "entities_mentioned": [
+        {
+          "name": "地耳 (Dì Ěr, Ground Ear)",
+          "modern_identification": "Nostoc commune (a terrestrial cyanobacterium / blue-green algae, also sometimes grouped with gelatinous lichens)",
+          "identification_confidence": "high",
+          "notes": "The description — gelatinous, bluish-green, growing on the ground after rain in spring and summer, resembling wood ear fungus — strongly matches Nostoc commune, a colonial cyanobacterium common across East Asia, still consumed as food today."
+        },
+        {
+          "name": "地踏菰 (Dì Tà Gū, Ground-treading Mushroom)",
+          "modern_identification": "Nostoc commune",
+          "identification_confidence": "high",
+          "notes": "A folk/colloquial synonym for 地耳 recorded in the Bencao Gangmu."
+        },
+        {
+          "name": "石耳 (Shí Ěr, Stone Ear)",
+          "modern_identification": "Umbilicaria esculenta or related rock-dwelling lichens/fungi",
+          "identification_confidence": "medium",
+          "notes": "Mentioned as a related category to which Ground Ear belongs; Stone Ear typically grows on rocks rather than the ground."
+        },
+        {
+          "name": "木耳 (Mù Ěr, Wood Ear)",
+          "modern_identification": "Auricularia auricula-judae",
+          "identification_confidence": "high",
+          "notes": "Cited only for morphological comparison; not the subject of this entry."
+        }
+      ],
+      "translator_notes": "The phrase '如碧石青也' in the Bielu citation is slightly ambiguous — it could mean 'resembling the green of jade-coloured stone' or 'like bluish stone, greenish.' The translation renders it descriptively as a colour reference. The medical claim '令人有子' (promotes fertility / causes one to have children) is a classical formulation found across many Bielu entries. The preparation method implied is simple collection and presumably consumption fresh or dried, though no explicit preparation instructions are given in this entry.",
+      "_label": "地耳 (菜之三)"
+    },
+    {
+      "title_inferred": "Rock Ear (Shi Er) — A Lichen Used as Food and Medicine",
+      "original_text": "【釋名】靈芝（《靈苑方》）。\n\n【集解】瑞曰︰石耳生天台、四明、河南、宣州、黃山、巴西、邊徼諸山石崖上，遠望如煙。\n\n時珍曰︰廬山亦多，狀如地耳。山僧采曝饋遠。洗去沙土，作茹勝於木耳，佳品也。\n\n【氣味】甘，平，無毒。\n\n穎曰︰冷。段成式曰︰熱。\n\n【主治】久食益色，至老不改，令人不飢，大小便少（吳瑞）。\n\n明目益精（時珍）。",
+      "translation": "**Explanation of Names**\nAlso called Líng zhī [Numinous Fungus] (according to the *Lingyuan Fang*).\n\n**Collected Explanations**\nWu Rui states: Rock Ear [Shí ěr] grows on the stone cliffs of the mountains of Tiantai, Siming, Henan, Xuanzhou, Huangshan, Baxi, and the frontier border ranges. Viewed from a distance, it resembles wisps of smoke.\n\nLi Shizhen states: It is also found in abundance on Mount Lu, and its shape resembles Ground Ear [dì ěr, i.e., Nostoc]. Mountain monks collect it, dry it in the sun, and send it as gifts to distant places. After washing away the sand and soil, it is prepared as a vegetable and surpasses Wood Ear [mù ěr] in quality — it is an excellent product.\n\n**Flavor and Nature**\nSweet, balanced [píng], non-toxic.\n\nYing states: It is cold in nature. Duan Chengshi states: It is hot in nature.\n\n**Indications and Treatments**\nLong-term consumption improves complexion, which does not fade even into old age; it suppresses hunger and reduces the frequency of urination and defecation (Wu Rui).\n\nIt brightens the eyes and replenishes essence [jīng] (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "石耳 (Shí ěr / Rock Ear)",
+          "modern_identification": "Umbilicaria esculenta (edible rock lichen)",
+          "identification_confidence": "high",
+          "notes": "A foliose lichen growing on rock faces in mountainous regions of China and East Asia. Still consumed as a delicacy, especially in Korean and Japanese cuisine."
+        },
+        {
+          "name": "地耳 (Dì ěr / Ground Ear)",
+          "modern_identification": "Nostoc commune (a terrestrial cyanobacterium, sometimes called 'ground ear' or 'star jelly')",
+          "identification_confidence": "medium",
+          "notes": "Used here as a morphological comparison for the shape of Stone Ear."
+        },
+        {
+          "name": "木耳 (Mù ěr / Wood Ear)",
+          "modern_identification": "Auricularia auricula-judae (Wood Ear fungus)",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen favorably compares Rock Ear to this well-known edible fungus."
+        },
+        {
+          "name": "靈芝 (Líng zhī)",
+          "modern_identification": "Ganoderma lucidum or generic term for auspicious fungi; here used as an alternate name for Rock Ear, not the standard Lingzhi mushroom",
+          "identification_confidence": "low",
+          "notes": "The use of 'Lingzhi' as an alternate name for Stone Ear in the Lingyuan Fang is unusual and likely reflects a broader classical usage of the term for any mystical or efficacious fungal organism, rather than specifically identifying Ganoderma."
+        }
+      ],
+      "translator_notes": "Two classical authors (Ying and Duan Chengshi) disagree on whether the herb is cold or hot in nature — a common point of contention in materia medica literature that Li Shizhen records without resolution. The location 'Baxi' (巴西) refers to the ancient Chinese region in modern Sichuan, not Brazil. The condition 'reduces urination and defecation' (大小便少) is listed as a benefit, reflecting a classical medical view that conserving bodily excretions preserves vitality.",
+      "_label": "石耳 (菜之三)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】巨勝（《本經》）、方莖（《吳普》）、狗虱（《別錄》）、油麻（《食療》）、脂麻（《衍義》。俗作芝麻，非）。葉名青蘘（音箱）。莖名麻䕸（音皆，亦作稽）。\n\n時珍曰︰按︰沈存中《筆談》云︰胡麻即今油麻，更無他說。古者中國止有大麻，其實為蕡。漢使張騫始自大宛得油麻種來，故名胡麻，以別中國大麻也。寇宗奭《衍義》，亦據此釋胡麻，故今併入油麻焉。巨勝即胡麻之角巨如方勝者，非二物也。方莖以莖名，狗虱以形名，油麻、脂麻謂其多脂油也。按張揖《廣雅》︰胡麻一名藤弘，弘亦巨也。《別錄》一名鴻藏者，乃藤弘之誤也。又杜寶《拾遺記》云︰隋大業四年，改胡麻曰交麻。\n\n【集解】《別錄》曰︰胡麻一名巨勝，生上黨川澤，秋采之。青蘘，巨勝苗也，生中原川谷。\n\n弘景曰︰胡麻，八穀之中，惟此為良。純黑者名巨勝。巨者，大也。本生大宛，故名胡麻。又以莖方者為巨勝，圓者為胡麻。\n\n恭曰︰其角作八棱者為巨勝，四棱者為胡麻。都以烏者為良，白者為劣。\n\n詵曰︰沃地種者八棱，山田種者四棱。土地有異，功力則同。\n\n斆曰︰巨勝有七棱，色赤味酸澀者，乃真。其八棱者，兩頭尖者，色紫黑者，及烏油麻，並呼胡麻，誤矣。\n\n頌曰︰胡麻處處種之，稀復野",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Huma (Sesame) — Nomenclature, Collected Commentaries, Flavor, and Indications\",\n  \"original_text\": \"【釋名】巨勝（《本經》）、方莖（《吳普》）、狗虱（《別錄》）、油麻（《食療》）、脂麻（《衍義》。俗作芝麻，非）。葉名青蘘（音箱）。莖名麻䕸（音皆，亦作稽）。\\n\\n時珍曰︰按︰沈存中《筆談》云︰胡麻即今油麻，更無他說。古者中國止有大麻，其實為蕡。漢使張騫始自大宛得油麻種來，故名胡麻，以別中國大麻也。寇宗奭《衍義》，亦據此釋胡麻，故今併入油麻焉。巨勝即胡麻之角巨如方勝者，非二物也。方莖以莖名，狗虱以形名，油麻、脂麻謂其多脂油也。按張揖《廣雅》︰胡麻一名藤弘，弘亦巨也。《別錄》一名鴻藏者，乃藤弘之誤也。又杜寶《拾遺記》云︰隋大業四年，改胡麻曰交麻。\\n\\n【集解】《別錄》曰︰胡麻一名巨勝，生上黨川澤，秋采之。青蘘，巨勝苗也，生中原川谷。\\n\\n弘景曰︰胡麻，八穀之中，惟此為良。純黑者名巨勝。巨者，大也。本生大宛，故名胡麻。又以莖方者為巨勝，圓者為胡麻。\\n\\n恭曰︰其角作八棱者為巨勝，四棱者為胡麻。都以烏者為良，白者為劣。\\n\\n詵曰︰沃地種者八棱，山田種者四棱。土地有異，功力則同。\\n\\n斆曰︰巨勝有七棱，色赤味酸澀者，乃真。其八棱者，兩頭尖者，色紫黑者，及烏油麻，並呼胡麻，誤矣。\\n\\n頌曰︰胡麻處處種之，稀復野生。苗梗如麻，而葉圓銳光澤。嫩時可作蔬，道家多食之。\\n\\n《本經》謂胡麻一名巨勝。陶弘景以莖之方圓分別，蘇恭以角棱多少分別，仙方有服胡麻、巨勝二法，功用小別，是皆以為二物矣。或云即今油麻，本生胡中，形體類麻，故名胡麻。八穀之中最為大勝，故名巨勝，乃一物二名。如此則是一物而有二種，如天雄、附子之類。故葛洪云︰胡麻中有一葉兩尖者為巨勝。《別錄》序例云︰細麻即胡麻也，形扁扁爾。其莖方者名巨勝，是也。今人所用胡麻之葉，如荏而狹尖。莖高四、五尺。黃花，生子成房，如胡麻角而小。嫩時可食，甚甘滑，利大腸。皮亦可作布，類大麻，色黃而脆，俗亦謂之黃麻。其實黑色，如韭子而粒細，味苦如膽，杵末略無膏油。其說各異。此乃服食家要藥，乃爾差誤，豈復得效也？\\n\\n宗奭曰︰胡麻諸說參差不一，止是今人脂麻，更無他義。以其種來自大宛，故名胡麻。今胡地所出者皆肥大，其紋鵲，其色紫黑，取油亦多。\\n\\n【氣味】甘，平，無毒。\\n\\n士良曰︰初食利大小腸，久食即否，去陳留新。\\n\\n《鏡源》曰︰巨勝可煮丹砂。\\n\\n【主治】傷中虛羸，補五內，益氣力，長肌肉，填髓腦。久服，輕身不老（《本經》）。堅筋骨，明耳目，耐飢渴，延年。療金瘡止痛，及傷寒溫瘧大吐後，虛熱羸困（《別錄》）。補中益氣，潤養五臟，補肺氣，止心驚，利大小腸，耐寒暑，逐風濕氣、游風、頭風，治勞氣，產後羸困，催生落胞。細研塗髪令長。白蜜蒸餌，治百病（《日華》）。炒食，不生風。病風人久食，則步履端正，語言不蹇（李廷飛）。生嚼塗小兒頭瘡，煎湯浴惡瘡、婦人陰瘡，大效（蘇恭）。\",\n  \"translation\": \"**[Nomenclature]** [Also known as:] Jusheng [\\\"greatly superior\\\"] (Shennong Bencao Jing [Classic of Materia Medica]); Fangjing [\\\"square-stemmed\\\"] (Wu Pu's Materia Medica); Goushi [\\\"dog louse\\\"] (Mingyi Bielu [Supplementary Records of Famous Physicians]); Youma [\\\"oil hemp\\\"] (Shiliao [Dietary Therapy]); Zhima [\\\"fat/oily hemp\\\"] (Bencao Yanyi [Dilations on Materia Medica] — commonly written 芝麻, which is incorrect). The leaf is called Qingrang (pronounced xiang [箱]). The stem is called Maji (pronounced jie [皆], also written 稽).\\n\\nLi Shizhen states: According to Shen Cunzhong's Bitan [Dream Pool Essays]: huma is simply today's youma [sesame oil plant], and there is nothing mo",
+      "_label": "胡麻 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】夢神，巨勝苗也。生中原山谷。（《別錄》）。\n\n【氣味】甘，大寒，無毒。\n\n宗奭曰︰白脂麻，世用不可一日闕者，亦不至於大寒也。\n\n原曰︰生者性寒而治疾，炒者性熱而發病，蒸者性溫而補人。\n\n詵曰︰久食抽人肌肉。其汁停久者，飲之發霍亂。\n甘，微寒，無毒。\n甘，寒，無毒。\n\n【主治】治虛勞，滑腸胃，行風氣，通血脈，去頭上浮風，潤肌肉。食後生啖一合，終身勿輟。又與乳母服之，孩子永不生病。客熱，可作飲汁服之。生嚼，敷小兒頭上諸瘡，良（孟詵）。仙方蒸以辟穀（蘇頌）。\n利大腸，產婦胞衣不落。生油摩瘡腫，生禿髪（《別錄》）。去頭面游風（孫思邈）。主天行熱 ，腸內結熱。服一合，取利為度（藏器）。主喑啞，殺五黃，下三焦熱毒气，通少時，即瀉下熱毒，甚良（孟詵）。陳油︰煎膏，生肌長肉止痛，消癰腫，補皮裂（《日華》）。治癰疽熱病（蘇頌）。解熱毒、食毒、蟲毒，殺諸蟲螻蟻（時珍）。\n能吐風痰食毒，塗癰腫熱毒。又治 犬咬傷，以灌瘡口，甚良（\n五臟邪氣，風寒濕痺，益氣，補腦髓，堅筋骨。久服，耳目聰明，不飢不老增壽（《本經》）。主傷暑熱（思邈）。作湯沐頭，去風潤髮，滑皮膚，益血色（《日華》）。治崩中血凝注者，生搗一",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"White Sesame (Bái Yóu Má) — Grains, Chapter One\",\n  \"original_text\": \"【釋名】夢神，巨勝苗也。生中原山谷。（《別錄》）。\\n\\n【氣味】甘，大寒，無毒。\\n\\n宗奭曰︰白脂麻，世用不可一日闕者，亦不至於大寒也。\\n\\n原曰︰生者性寒而治疾，炒者性熱而發病，蒸者性溫而補人。\\n\\n詵曰︰久食抽人肌肉。其汁停久者，飲之發霍亂。\\n甘，微寒，無毒。\\n甘，寒，無毒。\\n\\n【主治】治虛勞，滑腸胃，行風氣，通血脈，去頭上浮風，潤肌肉。食後生啖一合，終身勿輟。又與乳母服之，孩子永不生病。客熱，可作飲汁服之。生嚼，敷小兒頭上諸瘡，良（孟詵）。仙方蒸以辟穀（蘇頌）。\\n利大腸，產婦胞衣不落。生油摩瘡腫，生禿髮（《別錄》）。去頭面游風（孫思邈）。主天行熱，腸內結熱。服一合，取利為度（藏器）。主喑啞，殺五黃，下三焦熱毒氣，通少時，即瀉下熱毒，甚良（孟詵）。陳油︰煎膏，生肌長肉止痛，消癰腫，補皮裂（《日華》）。治癰疽熱病（蘇頌）。解熱毒、食毒、蟲毒，殺諸蟲螻蟻（時珍）。\\n能吐風痰食毒，塗癰腫熱毒。又治犬咬傷，以灌瘡口，甚良。\\n五臟邪氣，風寒濕痺，益氣，補腦髓，堅筋骨。久服，耳目聰明，不飢不老增壽（《本經》）。主傷暑熱（思邈）。作湯沐頭，去風潤髮，滑皮膚，益血色（《日華》）。治崩中血凝注者，生搗一升，熱湯絞汁半升服，立愈（甄權）。祛風解毒潤腸。又治飛絲入咽喉者，嚼之即愈（時珍）。\\n生禿髮（思邈）。潤大腸。人身上生肉疔者，擦之即愈（時珍）。\\n燒灰，入點痣去惡肉方中用（時珍）。\\n\\n【發明】甄權曰︰巨勝乃《仙經》所重。以白蜜等分合服，名靜神丸。治肺氣，潤五臟，其功甚多。亦能休糧，填人精髓，有益於男子。患人虛而吸吸者，加而用之。\\n\\n時珍曰︰胡麻取油以白者為勝。服食以黑者為良，胡地者尤妙。取其黑色入通於腎，而能潤燥也。赤者狀如老茄子，殼濃油少，但可食爾，不堪服食。唯錢乙治小兒痘疹變黑歸腎，百祥丸，用赤脂麻煎湯送下，蓋亦取其解毒耳。《五符經》有巨勝丸，云︰即胡麻，本生大宛，五穀之長也。服之不息，可以知萬物，通神明，與世常存。《參同契》亦云︰巨勝可延年，還丹入口中。古以胡麻為仙藥，而近世罕用，或者未必有此神驗，但久服有益而已耶？劉、阮入天台，遇仙女，食胡麻飯。亦以胡麻同米作飯，為仙家食品焉爾。又按蘇東坡與程正輔書云︰凡痔疾，宜斷酒肉與鹽酪、醬菜、濃味及粳米飯，唯宜食淡麵一味。及以九蒸胡麻（即黑脂麻），同去皮茯苓，入少白蜜為餌食之。日久氣力不衰而百病自去，而痔漸退。此乃長生要訣，但易知。\",\n  \"translation\": \"**[Names and Synonyms]**\\nAlso called Mèng Shén [Dream Spirit]; it is the seedling of Jù Shèng [巨勝, black sesame]. It grows in the mountain valleys of the Central Plains. (From the *Bielu* [别錄].)\\n\\n**[Qi and Flavor]**\\nSweet; greatly cold; non-toxic.\\n\\nZōng Shì states: White sesame [白脂麻, bái zhī má] is something the world cannot go a single day without; it is not, however, as severely cold as claimed.\\n\\nYuán states: When raw, its nature is cold and it can treat illness; when stir-fried, its nature is hot and can aggravate disease; when steamed, its nature is warm and can supplement the body.\\n\\nShēn [Mèng Shēn] states: Eating it for a long time causes the flesh and muscles to waste away. Juice that has been left to sit for a long time, when drunk, can trigger cholera-like illness [霍亂, huòluàn].\\n[Additional flavor notations from other sources:] Sweet; sli",
+      "_label": "白油麻 (穀之一)"
+    },
+    {
+      "title_inferred": "Flax (Yama / Ya Ma) – Grain Chapter One",
+      "original_text": "【釋名】鵶麻（《圖經》）、壁虱胡麻（《綱目》）。\n\n【集解】頌曰︰亞麻子出兗州、威勝軍。苗葉俱青，花白色。八月上旬采其實用。\n\n時珍曰︰今陝西人亦種之，即壁虱胡麻也。其實亦可榨油點燈，氣惡不堪食。其莖穗頗似茺蔚，子不同。\n\n【氣味】甘，微溫，無毒。\n\n【主治】大風瘡癬（蘇頌）。",
+      "translation": "**Explanation of Names:** Yama [鵶麻, 'crow hemp'] (from the *Illustrated Classic* [《圖經》]); Bishi Huma [壁虱胡麻, 'bedbug sesame'] (from the *Compendium* [《綱目》]).\n\n**Collected Commentaries:** Su Song states: The seeds of Yama [flax] are produced in Yanzhou and Wusheng commandery. The seedlings and leaves are both green; the flowers are white. The seeds are gathered for use in the first ten days of the eighth month.\n\nLi Shizhen states: People in Shaanxi also cultivate it today — this is what is called Bishi Huma ['bedbug sesame']. Its seeds can also be pressed to extract oil for use in lamps, but the odor is foul and it is unfit for eating. Its stems and seed-heads are quite similar to those of Chongwei [茺蔚, *Leonurus japonicus*, motherwort], though the seeds differ.\n\n**Flavor and Nature:** Sweet, slightly warm, non-toxic.\n\n**Indications and Treatments:** Great wind [leprosy / severe wind-toxic skin disease], sores, and tinea [ringworm/scabies] (Su Song).",
+      "entities_mentioned": [
+        {
+          "name": "亞麻 (Ya Ma)",
+          "modern_identification": "Linum usitatissimum (Common flax / linseed)",
+          "identification_confidence": "high",
+          "notes": "Also called 鵶麻 (Yama, 'crow hemp') and 壁虱胡麻 (Bishi Huma, 'bedbug sesame'). Cultivated in Yanzhou and Shaanxi. Seeds pressed for lamp oil; not considered edible due to unpleasant odor."
+        },
+        {
+          "name": "茺蔚 (Chongwei)",
+          "modern_identification": "Leonurus japonicus (Chinese motherwort)",
+          "identification_confidence": "high",
+          "notes": "Mentioned as a morphological comparator; flax stems and seed-heads are described as resembling those of Chongwei, though the seeds differ."
+        }
+      ],
+      "translator_notes": "The term 大風 (dà fēng, 'great wind') in classical Chinese medicine most commonly refers to leprosy (Hansen's disease) or severe wind-toxic conditions manifesting as skin ulceration; it is translated here as 'great wind' with a bracketed gloss. 蘇頌 (Su Song) is the Northern Song official and author of the *Illustrated Classic of Materia Medica* (《本草圖經》, 1061). The place name 威勝軍 (Wusheng commandery) is a Song-dynasty military prefecture in modern Shanxi province. The characterization of flax oil as 氣惡不堪食 ('the odor is foul and it is unfit for eating') likely refers to raw linseed oil, which has a strong drying-oil smell.",
+      "_label": "亞麻 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】火麻（《日用》）、黃麻（俗名）、漢麻（《爾雅翼》），雄者名枲麻（《詩疏》）、牡麻（同上），雌者名苴麻（同上）、茡麻（音字）。花名麻蕡（《本經》）、麻勃。\n\n時珍曰︰麻從兩木在广下，象屋下泒麻之形也。木音泒，广音儼。餘見下注。云漢麻者，以別胡麻也。\n\n【氣味】辛，溫，無毒。\n\n甄權曰︰苦，微熱，無毒。畏牡蠣。入行血藥，以䗪蟲為之使。\n辛，平，有毒。\n\n普曰︰神農︰辛。雷公︰甘。岐伯︰有毒。畏牡蠣、白薇。\n甘，平，無毒。詵曰︰微寒。\n\n普曰︰先藏地中者，食之殺人。\n\n士良曰：多食損血脈，滑精氣，痿陽氣。婦人多食即髮帶疾。　畏牡蠣、白薇，惡茯苓。\n辛，有毒。\n\n【主治】一百二十種惡風，黑色遍身苦癢，逐諸風惡血，治女人經候不通（《藥性》）。治健忘及金瘡內漏（時珍）。\n五勞七傷。多服，令人見鬼狂走（《本經》。詵曰︰要見鬼者，取生麻子、菖蒲、鬼臼等分，杵丸彈子大。每朝向日服一丸。滿百日即見鬼也）。利五臟，下血，寒氣，破積止痺散膿。久服，通神明，輕身（《別錄》）。\n補中，益氣。久服肥健、不老、神仙（《本經》）。治中風汗出，逐水氣，利小便，破積血，復血脈，乳婦產後余疾。沐髮長潤（《別錄》）。下",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Da Ma (Hemp / Cannabis sativa) — Grains, Chapter 1\",\n  \"original_text\": \"【釋名】火麻（《日用》）、黃麻（俗名）、漢麻（《爾雅翼》），雄者名枲麻（《詩疏》）、牡麻（同上），雌者名苴麻（同上）、茡麻（音字）。花名麻蕡（《本經》）、麻勃。\\n\\n時珍曰︰麻從兩木在广下，象屋下泒麻之形也。木音泒，广音儼。餘見下注。云漢麻者，以別胡麻也。\\n\\n【氣味】辛，溫，無毒。\\n\\n甄權曰︰苦，微熱，無毒。畏牡蠣。入行血藥，以䗪蟲為之使。\\n辛，平，有毒。\\n\\n普曰︰神農︰辛。雷公︰甘。岐伯︰有毒。畏牡蠣、白薇。\\n甘，平，無毒。詵曰︰微寒。\\n\\n普曰︰先藏地中者，食之殺人。\\n\\n士良曰：多食損血脈，滑精氣，痿陽氣。婦人多食即髮帶疾。畏牡蠣、白薇，惡茯苓。\\n辛，有毒。\\n\\n【主治】一百二十種惡風，黑色遍身苦癢，逐諸風惡血，治女人經候不通（《藥性》）。治健忘及金瘡內漏（時珍）。\\n五勞七傷。多服，令人見鬼狂走（《本經》。詵曰︰要見鬼者，取生麻子、菖蒲、鬼臼等分，杵丸彈子大。每朝向日服一丸。滿百日即見鬼也）。利五臟，下血，寒氣，破積止痺散膿。久服，通神明，輕身（《別錄》）。\\n補中，益氣。久服肥健、不老、神仙（《本經》）。治中風汗出，逐水氣，利小便，破積血，復血脈，乳婦產後余疾。沐髮長潤（《別錄》）。下氣，去風痺、皮頑，令人心歡，炒香浸小便，絞汁服之。婦人倒產，吞二、七枚即正（藏器）。潤五臟，利大腸風熱結燥及熱淋（士良）。補虛勞，逐一切風氣，長肌肉，益毛髮，通乳汁，止消渴，催生難產（《日華》）。取汁煮粥，去五臟風，潤肺，治關節不通，髮落（孟詵）。利女人經脈，調大腸下痢。塗諸瘡癩，殺蟲。取汁煮粥食，止嘔逆（時珍）。\\n熬黑壓油，敷頭，治髮落不生。煎熟，時時啜之，治硫黃毒發身熱（時珍。出《千金方》、《外台秘要》）。\\n搗汁服五合，下蛔蟲；搗爛敷蠍毒，俱效（蘇恭）。浸湯沐髮長潤，令白髮不生。\\n\\n甄權曰︰以葉一握，同子五升搗和，浸三日，去滓沐髮。\\n破血，通小便（時珍）。\\n搗汁或煮汁服，主瘀血石淋（陶弘景）。治產難衣不出，破血壅脹，帶下崩中不止者，以水煮服之，效（蘇恭）。治熱淋下血不止，取三、九枚，洗淨，水五升，煮三升，分服，血止神驗（《藥性》）。根及葉搗汁服，治撾打瘀血，心腹滿氣短，及折骨痛不可忍者，皆效。無則以麻煮汁代之（蘇頌。出韋宙《獨行方》）。\\n\\n漚麻汁\\n止消渴，治瘀血（蘇恭）。\\n\\n【發明】弘景曰︰麻勃方藥少用。術家合人參服之，逆知未來事。\\n\\n時珍曰︰按︰《范汪方》有治健忘方︰七月七日收麻勃一升，人參二兩，為末，蒸令氣遍。每臨臥服一刀圭，能盡知四方之事。此乃治健忘，服之能記四方事也。陶云逆知未來事，過言矣。又《外台》言生疔腫人，忌見麻勃，見之即死者，用胡麻、針砂、燭燼為末，醋和敷之。不知麻勃與疔何故相忌？亦如人有見漆即生瘡者，此理皆不可曉。\\n弘景曰︰麻子中仁，合丸藥並釀酒，大善。但性滑利。\\n\\n劉完素曰︰麻，木穀也而治風，同氣相求也。\\n\\n好古曰︰麻仁，手陽明、足太陰藥也。陽明病汗多、胃熱、便難，三者皆燥也。故用之以通潤也。\\n\\n成無己曰︰脾欲緩，急食甘以緩之。麻仁之甘，以緩脾潤燥。\\n時珍曰︰按︰郭文《瘡科心要》︰烏金散治癰疽疔腫，時毒惡瘡。方中用火麻頭，同麻黃諸藥發汗，則葉之有毒攻毒可知矣。《普濟方》用之截瘧，尤可推焉。\",\n  \"translation\": \"**Names and Nomenclature**\\n\\nAlternate names: Huo Ma [Fire Hemp] (Riyong [Daily Use]); Huang Ma [Yellow Hemp] (common name); Han Ma [Han Hemp] (Erya Yi [Expanded Erya]). The male plant is called Xi Ma [Male Hemp] (Shi Shu [Commentary on the Odes]) or Mu Ma [Bull Hemp] (same source). The female plant is called Ju Ma [Seeded Hemp] (same source) or Zi Ma (pronounced as the character 'zi'). The flower is called Ma Fen (Bencao Jing [Classic of Materia Medica]) or Ma Bo.\\n\\nLi Shizhen states: The character 麻 (hemp) is forme",
+      "_label": "大麻 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】來。\n\n時珍曰︰來亦作䅘。許氏《說文》云︰天降瑞麥，一來二麰，象芒刺之形，天所來也。如足行來，故麥字從來從夊。夊音綏，足行也。《詩》云︰“貽我來牟”是矣。又云︰來象其實，夊象其根。《梵書》名麥曰迦師錯。\n\n【集解】頌曰︰大、小麥秋種冬長，春秀夏實，具四時中和之氣，故為五穀之貴。地暖處亦可春種，至夏便收。然比秋種者，四氣不足，故有毒。\n\n時珍曰︰北人種麥漫撒，南人種麥撮撒。北麥皮薄麵多，南麥反此。或云︰收麥以蠶沙和之，辟蠹。或云︰立秋前以蒼耳銼碎同晒收，亦不蛀。秋後則蟲已生矣。蓋麥性惡濕，故久雨水潦，即多不熟也。\n\n【氣味】甘、鹹，寒，無毒。\n甘，溫，有微毒。不能消熱止煩（《別錄》）。\n\n大明曰︰性壅熱，小動風氣，發丹石毒。\n\n思邈曰︰多食，長宿 ，加客氣。畏漢椒、蘿蔔。\n甘，涼，無毒。\n甘，涼，無毒。\n甘，微寒，無毒。\n辛，寒，無毒。\n\n【主治】除客熱，止煩渴咽燥，利小便，養肝氣，止漏血唾血。令女人易孕（《別錄》）。養心氣，心病宜食之（思邈）。煎湯飲，治暴淋（宗奭）。熬末服，殺腸中蛔蟲（《藥性》）。陳者煎湯飲，止虛汗。燒存性，油調，塗諸瘡湯火傷灼（時珍）。\n益氣除熱，止自汗盜汗",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Wheat (Xiaomai) — Nomenclature, Cultivation, Properties, and Medicinal Uses\",\n  \"original_text\": \"【釋名】來。\\n\\n時珍曰︰來亦作䅘。許氏《說文》云︰天降瑞麥，一來二麰，象芒刺之形，天所來也。如足行來，故麥字從來從夊。夊音綏，足行也。《詩》云︰\"貽我來牟\"是矣。又云︰來象其實，夊象其根。《梵書》名麥曰迦師錯。\\n\\n【集解】頌曰︰大、小麥秋種冬長，春秀夏實，具四時中和之氣，故為五穀之貴。地暖處亦可春種，至夏便收。然比秋種者，四氣不足，故有毒。\\n\\n時珍曰︰北人種麥漫撒，南人種麥撮撒。北麥皮薄麵多，南麥反此。或云︰收麥以蠶沙和之，辟蠹。或云︰立秋前以蒼耳銼碎同晒收，亦不蛀。秋後則蟲已生矣。蓋麥性惡濕，故久雨水潦，即多不熟也。\\n\\n【氣味】甘、鹹，寒，無毒。\\n甘，溫，有微毒。不能消熱止煩（《別錄》）。\\n\\n大明曰︰性壅熱，小動風氣，發丹石毒。\\n\\n思邈曰︰多食，長宿 ，加客氣。畏漢椒、蘿蔔。\\n甘，涼，無毒。\\n甘，涼，無毒。\\n甘，微寒，無毒。\\n辛，寒，無毒。\\n\\n【主治】除客熱，止煩渴咽燥，利小便，養肝氣，止漏血唾血。令女人易孕（《別錄》）。養心氣，心病宜食之（思邈）。煎湯飲，治暴淋（宗奭）。熬末服，殺腸中蛔蟲（《藥性》）。陳者煎湯飲，止虛汗。燒存性，油調，塗諸瘡湯火傷灼（時珍）。\\n益氣除熱，止自汗盜汗，骨蒸虛熱，婦人勞熱（時珍）。\\n時疾熱瘡，湯火瘡爛，撲損傷折瘀血，醋炒貼之（《日華》）。和麵作餅，止泄痢，調中去熱健人。以醋拌蒸熱，袋盛，包熨人馬冷失腰腳傷折處，止痛散血（藏器）。醋蒸，熨手足風濕痺痛，寒濕腳氣，互易至汗出，並良。末服，止虛汗（時珍）。\\n補虛。久食，實人膚體，濃腸胃，強氣力（藏器）。養氣，補不足，助五臟（《日華》）。水調服，治人中暑，馬病肺熱（宗奭）。敷癰腫損傷，散血止痛。生食，利大腸。水調服，止鼻衄吐血（時珍）。\\n補中，益氣脈，和五臟，調經絡。又炒一合，湯服，斷下痢（孟詵）。醋熬成膏，消一切癰腫、湯火傷（時珍）。\\n解熱和中，勞熱人宜煮食之（時珍）。寬中益氣（寧原）。\\n消渴，止煩（《蜀本》）。\\n消酒毒暴熱，酒疸目黃，並搗爛絞汁日飲之。又解蠱毒，煮汁濾服（藏器）。除煩悶，解時疾狂熱，退胸膈熱，利小腸，作虀食甚益顏色（日華）。\\n熱煩，天行熱毒。解丹石毒（藏器）。治陽毒溫毒，熱極發狂大渴，及溫瘧（時珍）。\\n燒灰，入去疣痣、蝕惡肉膏中用（時珍）。\\n\\n【發明】時珍曰︰按︰《素問》云︰麥屬火，心之穀也。鄭玄云︰麥有孚甲，屬木。許慎云︰麥屬金，金王而生，火王而死。三說各異。而《別錄》云︰麥養肝氣，與鄭說合。孫思邈云︰麥養心氣，與《素問》合。夷考其功，除煩、止渴、收汗、利溲、止血，皆心之病也，當以《素問》為準。蓋許以時，鄭以形，而《素問》以功性，故立論不同爾。\\n\\n震亨曰︰飢年用小麥代穀，須晒燥，以少水潤，舂去皮，煮為飯食，可免麵熱之患。\\n時珍曰︰麩乃麥皮也。與浮麥同性，而止汗之功次於浮麥，蓋浮麥無肉也。凡人身體疼痛及瘡瘍腫爛沾漬，或小兒暑月出痘瘡，潰爛不能著席睡臥者，並用夾褥盛麩縫合藉臥，性涼而軟，誠妙法也。\\n詵曰︰麵有熱毒者，多是陳黝之色，又為磨中石末在內故也。但杵食之，即良。\\n\\n藏器曰︰麵性熱，惟第二磨者涼，為其近麩也。河渭以西，白麥麵性涼，以其春種，闕二氣也。\\n\\n穎曰︰東南卑濕，春多雨水，麥已受濕氣，又不曾出汗，故食之作渴，動風氣，助濕發熱。西北……\",\n  \"translation\": \"**[Nomenclature] Alternative name: Lái (來).**\\n\\nLi Shizhen states: The character lái (來) is also written as 䅘. Xu Shen's *Shuowen Jiezi* says: Heaven sent down an auspicious grain [wheat]; 'one lái, two móu' [referring to wheat and barley], whose form resembles the shape of awns and bristles — that which Heaven caused to come [lái]. Like feet walking [coming toward one], the character for mài [wheat] is thus composed of lái (來) and suī (夊). Suī is pronounced *suí* and mean",
+      "_label": "小麥 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】牟麥。\n\n時珍曰︰麥之苗粒皆大於來，故得大名。牟亦大也。通作麰。\n\n【集解】弘景曰︰今稞麥一名牟麥，似穬麥，惟皮薄爾。\n\n恭曰︰大麥出關中，即青稞麥，形似小麥而大，皮濃，故謂大麥，不似穬麥也。\n\n頌曰︰大麥今南北皆能種蒔。穬麥有二種︰一種類小麥而大，一種類大麥而大。\n\n藏器曰︰大穬、 二麥，前後兩出。蓋穬麥是連皮者，大麥是麥米，但分有殼、無殼也。蘇以青稞為大麥，非矣。青稞似大麥，天生皮肉相離，秦隴巴西種之。今人將當大麥米之，不能分也。\n\n陳承曰︰小麥，今人以磨麵日用者為之。大麥，今人以粒皮似稻者為之，作飯滑，飼馬良。 麥，今人以似小麥而大粒，色青黃，作麵脆硬，食多脹人，汴洛、河北之間又呼為黃稞。關中一種青稞，比近道者粒微小，色微青，專以飼馬，未見入藥用。然大、 二麥，其名差互。今之 麥似小麥而大者，當謂之大麥；今之大麥不似小麥而礦脆者，當謂之 麥。不可不審。\n\n時珍曰︰大、 二麥，注者不一。按︰《吳普本草》︰大麥一名 麥，五穀之長也。\n王禎《農書》云︰青稞有大、小二種，似大、小麥，而粒大皮薄，多麵無麩，西人種之，不過與大、小麥異名而已。郭義恭《廣志》云︰大麥有黑 麥。有KT 麥",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Barley (Dàmài) — Grains, Chapter One\",\n  \"original_text\": \"【釋名】牟麥。\\n\\n時珍曰：麥之苗粒皆大於來，故得大名。牟亦大也。通作麰。\\n\\n【集解】弘景曰：今稞麥一名牟麥，似穬麥，惟皮薄爾。\\n\\n恭曰：大麥出關中，即青稞麥，形似小麥而大，皮濃，故謂大麥，不似穬麥也。\\n\\n頌曰：大麥今南北皆能種蒔。穬麥有二種：一種類小麥而大，一種類大麥而大。\\n\\n藏器曰：大穬、二麥，前後兩出。蓋穬麥是連皮者，大麥是麥米，但分有殼、無殼也。蘇以青稞為大麥，非矣。青稞似大麥，天生皮肉相離，秦隴巴西種之。今人將當大麥米之，不能分也。\\n\\n陳承曰：小麥，今人以磨麵日用者為之。大麥，今人以粒皮似稻者為之，作飯滑，飼馬良。麥，今人以似小麥而大粒，色青黃，作麵脆硬，食多脹人，汴洛、河北之間又呼為黃稞。關中一種青稞，比近道者粒微小，色微青，專以飼馬，未見入藥用。然大、二麥，其名差互。今之麥似小麥而大者，當謂之大麥；今之大麥不似小麥而礦脆者，當謂之麥。不可不審。\\n\\n時珍曰：大、二麥，注者不一。按：《吳普本草》：大麥一名麥，五穀之長也。王禎《農書》云：青稞有大、小二種，似大、小麥，而粒大皮薄，多麵無麩，西人種之，不過與大、小麥異名而已。郭義恭《廣志》云：大麥有黑麥。有KT麥（出涼州，似大麥）。有赤麥（赤色而肥）。據此則麥是大麥中一種皮濃而青色者也。大抵是一類異種，如粟、粳之種近百，總是一類，但方土有不同爾。故二麥主治不甚相遠。大麥亦有粘者，名糯麥，可以釀酒。\\n\\n【氣味】鹹，溫、微寒，無毒。為五穀長，令人多熱。\\n\\n詵曰：暴食似腳弱，為下氣故也。久服宜人。熟則有益，帶生則冷而損人。石蜜為之使。\\n\\n【主治】消渴除熱，益氣調中（《別錄》）。補虛劣，壯血脈，益顏色，實五臟，化穀食，止泄，不動風氣。久食，令人肥白，滑肌膚。為麵，勝於小麥，無躁熱（士良）。麵：平胃止渴，消食療脹滿（蘇恭）。久食，頭髮不白。和針砂、沒石子等，染發黑色（孟詵）。寬胸下氣。諸黃，利小便，杵汁日日服（《類要》）。冬月面目手足皴瘃，煮汁洗之（《時珍》）。解熱疾，消藥毒（藏器）。\\n\\n【發明】宗奭曰：大麥性平涼滑膩。有人患纏喉風，食不能下。用此麵作稀糊，令咽以助胃氣而平。三伏中，朝廷作麨，以賜臣下。\\n\\n震亨曰：大麥初熟，人多炒食。此物有火，能生熱病，人不知也。\\n\\n時珍曰：大麥作飯食，響而有益。煮粥甚滑。磨麵作醬甚甘美。\",\n  \"translation\": \"**[Names and Nomenclature]**\\nAlternate name: Móumài [牟麥].\\n\\nLi Shizhen states: The seedlings and grains of this grain are all larger than those of common wheat [lái, 來], hence it receives the name 'large' [dà, 大]. Móu likewise means 'large.' It is also commonly written as 麰.\\n\\n**[Collected Commentaries]**\\nTao Hongjing states: Today's naked barley [kēmài, 稞麥] has an alternate name of móumài; it resembles hulled barley [kuàngmài, 穬麥] but has a thinner husk.\\n\\nSu Gong states: Dàmài comes from Guanzhong and is the same as green barley [qīngkē mài, 青稞麥]. Its form resembles wheat but is larger, with a thick husk — hence the name 'large barley.' It is not the same as hulled barley [穬麥].\\n\\nSu Song states: Dàmài is now cultivated throughout the north and south. Hulled barley [穬麥] comes in two varieties: one resembles wheat but is larger, and one resembles barley but is larger.\\n\\nChen Cangqi states: Dàmài and 穬m",
+      "_label": "大麥 (穀之一)"
+    },
+    {
+      "title_inferred": "Kuang Mai (Hull Barley / Rough-Husked Barley)",
+      "original_text": "【釋名】時珍曰：穬之殼濃而粗礦也。\n\n【集解】弘景曰：穬麥是馬所食者。服食家並食大、穬二麥，令人輕健。\n\n炳曰：穬麥西川人種食之。山東、河北人正月種之，名春穬。形狀與大麥相似。\n\n時珍曰：穬麥有二種：一類小麥而大，一類大麥而大。\n\n頌曰：穬麥，即大麥一種皮濃者。陳藏器謂即大麥之連殼者，非也。按：《別錄》自有穬麥功用，其皮豈可食乎？詳大麥下。\n\n【氣味】甘，微寒，無毒。\n\n弘景曰：此麥性熱而云微寒，恐是作屑與合殼異也。\n\n恭曰：穬麥性寒，陶云性熱，非矣。江東少有故也。\n\n大明曰：暴食似動冷氣，久即益人。\n\n【主治】輕身除熱。久服，令人多力健行。作糵，溫中消食（《別錄》）。補中，不動風氣。作餅食，良（蕭炳）。\n\n【發明】時珍曰：《別錄》穬麥糵附見穬麥下，而大麥下無之，則作糵當以穬為良也。今人通用，不復分別矣。",
+      "translation": "**Explanation of Names**\nLi Shizhen says: The character 穬 [kuàng] refers to the grain's husk being thick and coarse [cū kuàng].\n\n**Collected Commentaries**\nTao Hongjing says: Kuang mai [rough-husked barley] is what horses eat. Those who practice dietary cultivation eat both da mai [great barley] and kuang mai, which makes the body light and vigorous.\n\nXiao Bing says: Kuang mai is cultivated and eaten by the people of Western Sichuan. The people of Shandong and Hebei sow it in the first month and call it spring kuang [chūn kuàng]. In appearance it resembles da mai [barley].\n\nLi Shizhen says: Kuang mai comes in two varieties: one resembles wheat [xiǎo mài] but is larger, and one resembles barley [dà mài] but is larger.\n\nSu Song says: Kuang mai is simply a variety of da mai with a thicker husk. Chen Cangqi's claim that it is merely da mai with its husk still attached is incorrect. As the Bielu [Supplementary Records] records kuang mai's properties and uses separately, how could one eat its husk? See the entry on da mai for details.\n\n**Qi and Flavor**\nSweet; slightly cold; non-toxic.\n\nTao Hongjing says: This grain is said to be warm in nature, yet here it is described as slightly cold — this discrepancy may arise from the difference between using it ground into flour versus using it whole with the husk.\n\nSu Gong says: Kuang mai is cold in nature; Tao's claim that it is warm is mistaken — likely because it is rare in Jiangdong and he had little experience with it.\n\nDa Ming says: Eating it in excess appears to stir up cold qi, but prolonged consumption benefits the person.\n\n**Indications and Treatments**\nLightens the body and dispels heat. Prolonged consumption gives one great strength and makes walking easy. Prepared as malt [niè, sprouted grain], it warms the center and aids digestion (Bielu). Supplements the center [zhōng jiāo] and does not stir wind qi. Made into cakes and eaten, it is excellent (Xiao Bing).\n\n**Elaboration**\nLi Shizhen says: In the Bielu, the entry for kuang mai malt [kuàng mài niè] appears appended under kuang mai, whereas the entry for da mai contains no such reference — this suggests that kuang mai is the superior choice for making malt. Today people use both interchangeably and no longer distinguish between them.",
+      "entities_mentioned": [
+        {
+          "name": "穬麥 (kuàng mài)",
+          "modern_identification": "Hordeum vulgare var. nudum or a thick-hulled barley cultivar (possibly hull barley / covered barley, Hordeum vulgare sensu lato)",
+          "identification_confidence": "medium",
+          "notes": "Described as a thick-husked variety of barley, distinct from ordinary da mai. Historically fed to horses; also consumed by humans. Two sub-varieties noted: one larger than wheat, one larger than barley."
+        },
+        {
+          "name": "大麥 (dà mài)",
+          "modern_identification": "Hordeum vulgare L. (barley)",
+          "identification_confidence": "high",
+          "notes": "Referenced for comparison; kuang mai is described as a thick-husked form of da mai."
+        },
+        {
+          "name": "穬麥糵 (kuàng mài niè)",
+          "modern_identification": "Sprouted/malted kuang mai (barley malt)",
+          "identification_confidence": "high",
+          "notes": "Malt prepared from kuang mai; used to warm the center and aid digestion. Li Shizhen considers kuang mai superior to da mai for malt production."
+        }
+      ],
+      "translator_notes": "Several characters in the original OCR are garbled or missing (e.g., repeated occurrences of bare '麥' without the 穬 radical, and '作 ' missing the character 糵 for malt). These have been silently reconstructed from context as 穬麥 and 糵 respectively, as the intended reading is unambiguous. The passage contains multiple attributed voices (Tao Hongjing / 弘景, Su Gong / 恭, Xiao Bing / 炳, Su Song / 頌, Da Ming / 大明, Li Shizhen / 時珍), which is standard for Bencao Gangmu. The 'Bielu' (《別錄》) referenced is the Mingyi Bielu attributed to Tao Hongjing.",
+      "_label": "穬麥 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】燕麥（《唐本》）、 （音藥）、杜姥草（《外台》）、牛星草。\n\n時珍曰︰此野麥也。燕雀所食，故名。《日華本草》謂此為瞿麥者，非矣。\n\n【集解】恭曰︰雀麥在處有之，生故墟野林下。苗葉似小麥而弱，其實似 麥而細。\n\n宗奭曰︰苗與麥同，但穗細長而疏。唐‧劉夢得所謂“菟葵燕麥，動搖春風”者也。周\n定王曰︰燕麥穗極細，每穗又分小叉十數個，子亦細小。舂去皮，作面蒸食，及作餅食，皆可救荒。\n\n【氣味】甘，平，無毒。\n甘，平，無毒。\n\n【主治】充飢滑腸（時珍）。\n\n苗\n女人產不出，煮汁飲之（蘇恭）。",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Sparrow Wheat (Wild Oat) — Grain Chapter, Part One\",\n  \"original_text\": \"【釋名】燕麥（《唐本》）、䅟（音藥）、杜姥草（《外台》）、牛星草。\\n\\n時珍曰︰此野麥也。燕雀所食，故名。《日華本草》謂此為瞿麥者，非矣。\\n\\n【集解】恭曰︰雀麥在處有之，生故墟野林下。苗葉似小麥而弱，其實似䅟麥而細。\\n\\n宗奭曰︰苗與麥同，但穗細長而疏。唐‧劉夢得所謂\"菟葵燕麥，動搖春風\"者也。周定王曰︰燕麥穗極細，每穗又分小叉十數個，子亦細小。舂去皮，作面蒸食，及作餅食，皆可救荒。\\n\\n【氣味】甘，平，無毒。\\n\\n【主治】充飢滑腸（時珍）。\\n\\n苗\\n女人產不出，煮汁飲之（蘇恭）。\",\n  \"translation\": \"**Explanation of Names**\\nAlso known as: Yànmài [Oat] (from the *Tang Bencao*); Yuè [pronounced 'yào'] (䅟); Dùmǔcǎo [Old Dame's Herb] (from the *Waitai Miyao*); Niúxīngcǎo [Ox-star Grass].\\n\\nLi Shizhen states: This is a wild wheat [grain]. Swallows and sparrows eat it, hence the name. The *Rihua Bencao* identifies this plant as qúmài [fringed pink, *Dianthus* sp.], which is incorrect.\\n\\n**Collected Explanations**\\nSu Gong states: Sparrow wheat is found everywhere, growing in old ruins and beneath wild woodland. Its seedlings and leaves resemble those of common wheat but are more slender and delicate; its grain resembles yuè-wheat [a small-grained cereal] but is finer.\\n\\nKou Zongshi states: The seedlings are similar to those of ordinary wheat, but the ears are slender, elongated, and sparsely spaced. This is precisely what Tang dynasty poet Liu Mengde [Liu Yuxi] described as: \"hare's-mallow and wild oat, swaying in the spring breeze.\" Prince Zhu Ding [Zhou Dingwang] states: The ears of wild oat are extremely fine; each ear further divides into over ten small branches, and the seeds too are small and fine. Once hulled by pounding, the grain can be steamed as flour or made into flatbreads — both methods are suitable for famine relief.\\n\\n**Flavor and Nature**\\nSweet; neutral; non-toxic.\\n\\n**Primary Indications**\\nSatisfies hunger and lubricates the intestines. (Li Shizhen)\\n\\n*Seedlings / Young Shoots*\\nFor a woman whose labor is obstructed and delivery cannot proceed: boil the shoots and have her drink the decoction. (Su Gong)\",\n  \"entities_mentioned\": [\n    {\n      \"name\": \"雀麥 (Quèmài / Sparrow Wheat)\"",
+      "_label": "雀麥 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】麥（音翹）、烏麥（吳瑞）、花蕎。\n\n時珍曰︰蕎麥之莖弱而翹然，易長易收，磨面如麥，故曰蕎曰 ，而與麥同名也。俗亦呼為甜蕎，以別苦蕎。楊慎《丹鉛錄》，指烏麥為燕麥，蓋未讀《日用本草》也。\n\n【集解】炳曰︰蕎麥作飯，須蒸使氣餾，烈日曝令開口，舂取米仁作之。\n\n時珍曰︰蕎麥南北皆有。立秋前後下種，八、九月收刈，性最畏霜。苗高一、二尺，赤莖綠葉，如烏 樹葉。開小白花，繁密粲粲然。結實累累如羊蹄，實有三棱，老則烏黑色。\n王禎《農書》云︰北方多種。磨而為麵，作煎餅，配蒜食。或作湯餅，謂之河漏，以供常食，滑細如粉，亞於麥麵。南方亦種，但作粉餌食，乃農家居冬穀也。\n\n【氣味】甘，平，寒，無毒。\n\n思邈曰︰酸，微寒。食之難消。久食動風，令人頭眩。作面和豬、羊肉熱食，不過八、九頓，即患熱風，須眉脫落，還生亦希。涇、 以北，多此疾。又不可合黃魚食。\n\n【主治】實腸胃，益氣力，續精神，能煉五臟滓穢（孟詵）。作飯食，壓丹石毒，甚良\n（蕭炳）。以醋調粉，塗小兒丹毒赤腫熱瘡（吳瑞）。降氣寬腸，磨積滯，消熱腫風痛，除白濁白帶，脾積泄瀉。以沙糖水調炒面二錢服，治痢疾。炒焦，熱水沖服，治絞腸沙痛（時珍）。\n作茹食",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Buckwheat (Qiaomai) — Grains, Chapter One\",\n  \"original_text\": \"【釋名】蕎麥（音翹）、烏麥（吳瑞）、花蕎。\\n\\n時珍曰︰蕎麥之莖弱而翹然，易長易收，磨面如麥，故曰蕎曰蕎，而與麥同名也。俗亦呼為甜蕎，以別苦蕎。楊慎《丹鉛錄》，指烏麥為燕麥，蓋未讀《日用本草》也。\\n\\n【集解】炳曰︰蕎麥作飯，須蒸使氣餾，烈日曝令開口，舂取米仁作之。\\n\\n時珍曰︰蕎麥南北皆有。立秋前後下種，八、九月收刈，性最畏霜。苗高一、二尺，赤莖綠葉，如烏桕樹葉。開小白花，繁密粲粲然。結實累累如羊蹄，實有三棱，老則烏黑色。\\n王禎《農書》云︰北方多種。磨而為麵，作煎餅，配蒜食。或作湯餅，謂之河漏，以供常食，滑細如粉，亞於麥麵。南方亦種，但作粉餌食，乃農家居冬穀也。\\n\\n【氣味】甘，平，寒，無毒。\\n\\n思邈曰︰酸，微寒。食之難消。久食動風，令人頭眩。作面和豬、羊肉熱食，不過八、九頓，即患熱風，須眉脫落，還生亦希。涇、渭以北，多此疾。又不可合黃魚食。\\n\\n【主治】實腸胃，益氣力，續精神，能煉五臟滓穢（孟詵）。作飯食，壓丹石毒，甚良（蕭炳）。以醋調粉，塗小兒丹毒赤腫熱瘡（吳瑞）。降氣寬腸，磨積滯，消熱腫風痛，除白濁白帶，脾積泄瀉。以沙糖水調炒面二錢服，治痢疾。炒焦，熱水沖服，治絞腸沙痛（時珍）。\\n作茹食，下氣，利耳目。多食即微泄（士良。孫思邈曰︰生食，動刺風，令人身癢）。\\n\\n秸\\n燒灰淋汁取鹼熬乾，同鍛石等分，蜜收。能爛癰疽，蝕惡肉，去靨痣，最良。穰作荐，辟壁虱（時珍。《日華》曰︰燒灰淋汁，洗六畜瘡，並驢、馬躁蹄。）。\\n\\n【發明】穎曰︰本草言蕎麥能煉五臟滓穢。俗言一年沉積在腸胃者，食之亦消去也。\\n\\n時珍曰︰蕎麥最降氣寬腸，故能煉腸胃滓滯，而治濁帶泄痢腹痛上氣之疾，氣盛有濕熱者宜之。若脾胃虛寒人食之，則大脫元氣而落須眉，非所宜矣。孟詵云︰益氣力者，殆未然也。\\n\\n按︰楊起《簡便方》云︰肚腹微微作痛，出即瀉，瀉亦不多，日夜數行者。用蕎麥麵一味作飯，連食三、四次即愈。予壯年患此兩月，瘦怯尤甚。用消食化氣藥俱不效，一僧授此而愈，轉用皆效，此可征其煉積滯之功矣。《普濟》治小兒天吊及歷節風方中亦用之。\",\n  \"translation\": \"【Names】Qiaomai [buckwheat; 'qiao' pronounced as the rising tone], also called Wumai ['black wheat'] (Wu Rui), and Huaqiao ['flower buckwheat'].\\n\\nLi Shizhen [Shizhen] says: The stem of buckwheat is slender and upright [qiao-ran], it grows quickly and is harvested quickly, and its ground flour resembles wheat flour — hence it is called 'qiao' and shares the character for 'mai' [grain/wheat] in its name. It is also commonly called 'sweet buckwheat' [tiánqiáo] to distinguish it from 'bitter buckwheat' [kǔqiáo]. Yang Shen's Danqian Lu [Records of Cinnabar and Lead] identifies 'Wumai' as oats [yanmai], but this is because he had not read the Riyong Bencao [Materia Medica for Daily Use].\\n\\n【Collected Explanations】[Xiao] Bing says: When cooking buckwheat as a grain dish, one must steam it until the steam thoroughly penetrates, then expose it to fierce sunlight until the hulls split open, and then hull and pound it to extract the grain kernels.\\n\\nLi Shizhen says: Buckwheat is found throughout the north and sout",
+      "_label": "蕎麥 (穀之一)"
+    },
+    {
+      "title_inferred": "Bitter Buckwheat (Ku Qiao Mai) — Grain Chapter One",
+      "original_text": "【集解】時珍曰︰苦蕎出南方，春社前後種之。莖青多枝，葉似蕎麥而尖，開花帶綠色，結實亦似蕎麥，稍尖而棱角不峭。其味苦惡，農家磨搗為粉，蒸使氣餾，滴去黃汁，乃可作為糕餌食之，色如豬肝。穀之下者，聊濟荒爾。\n\n【氣味】甘、苦，溫，有小毒。\n\n時珍曰︰多食傷胃，發風動氣，能發諸病，黃疾人尤當禁之。",
+      "translation": "**Collected Explanations:** Li Shizhen states: Bitter buckwheat [苦蕎, ku qiao] originates in the southern regions and is sown around the time of the Spring Social Festival [春社, a seasonal festival typically in the third month]. Its stems are green and bear many branches; its leaves resemble those of common buckwheat [蕎麥] but are more pointed. The flowers are tinged with green, and the seeds likewise resemble those of common buckwheat, though slightly more pointed and with less sharply defined ridges. Its flavor is bitter and unpleasant. Farming households grind and pound it into flour, steam it until vapor has passed through [i.e., thoroughly cooked by steaming], then drain off the yellow juice; only then can it be made into cakes and pastries for eating. The color resembles pig's liver. It ranks among the inferior grains, serving merely to relieve famine.\n\n**Flavor and Nature:** Sweet and bitter; warm; mildly toxic.\n\nLi Shizhen states: Eating it in excess damages the stomach, stirs wind and moves qi [發風動氣], and can provoke various illnesses. Those suffering from jaundice [黃疾] should especially be prohibited from consuming it.",
+      "entities_mentioned": [
+        {
+          "name": "苦蕎麥 (ku qiao mai) — Bitter Buckwheat",
+          "modern_identification": "Fagopyrum tataricum (Tartary buckwheat)",
+          "identification_confidence": "high",
+          "notes": "Tartary buckwheat is widely cultivated in southern and mountainous regions of China. Its notably bitter flavor, pointed seeds, green-tinged flowers, and use as a famine food align well with Fagopyrum tataricum. The described processing method (steaming and draining yellow juice) reflects traditional detoxification of its bitter rutin-rich compounds."
+        },
+        {
+          "name": "蕎麥 (qiao mai) — Common Buckwheat",
+          "modern_identification": "Fagopyrum esculentum",
+          "identification_confidence": "high",
+          "notes": "Referenced as a morphological comparator for the bitter buckwheat entry."
+        },
+        {
+          "name": "黃疾 (huang ji) — Jaundice / Yellow Disease",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A classical Chinese medical term broadly referring to jaundice or hepatic conditions characterized by yellowing. Li Shizhen specifically warns that individuals with this condition should not consume bitter buckwheat."
+        }
+      ],
+      "translator_notes": "The phrase 春社前後 ('around the time of the Spring Social Festival') refers to a traditional Chinese festival day tied to the lunar calendar, falling approximately 105 days after the winter solstice, placing sowing in early to mid spring. The processing instruction 蒸使氣餾，滴去黃汁 describes a steaming-and-draining technique likely intended to leach out bitter or mildly toxic constituents (possibly rutin or tannins). The comparison of the cooked product's color to 豬肝 ('pig's liver') — a dark reddish-brown — reflects the characteristic color of processed Tartary buckwheat flour products. The warning against consumption in cases of 黃疾 (jaundice) is clinically noteworthy, as Tartary buckwheat's high rutin content could theoretically interact with liver-related conditions.",
+      "_label": "苦蕎麥 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】（音杜）、糯（亦作 ）。\n\n時珍曰︰稻 者，粳、糯之通稱。《物理論》所謂“稻者溉種之總稱”是矣。本草則專\n指糯以為稻也。稻從舀（音函），象人在臼上治稻之義。 則方言稻音之轉爾。其性粘軟，故謂之糯。\n\n穎曰︰糯米緩筋，令人多睡，其性懦也。\n\n【集解】弘景曰︰道家方藥有稻米、粳米俱用者，此則兩物也。稻米白如霜，江東無此，故通呼粳為稻耳，不知色類復云何也？\n\n恭曰︰稻者， 、穀之通名。《爾雅》云︰ ，稻也。粳者不粘之稱，一曰 。 勝之云︰三月種粳稻，四月種秫稻。即並稻也，陶謂為二，蓋不可解也。\n\n志曰︰此稻米即糯米也。其粒大小似 米，細糠白如雪。今通呼 、糯二穀為稻，所以惑之。按︰李含光《音義》引《字書》解粳字云︰稻也。 字云︰稻屬也，不粘。粢字云︰\n稻餅也。粢蓋糯也。\n\n禹錫曰︰《爾雅》云︰ ，稻。郭璞注云︰別二名也。今沛國呼 。周頌云︰豐年多黍多。《禮記》云︰牛宜 。《幽風》云︰十月獲稻。皆是一物也。《說文》云︰ ，稻屬也。沛國謂稻為糯。《字林》云︰糯，粘稻也。 ，不粘稻也。然 、糯甚相類，以粘不粘為異爾。當依《說文》以稻為糯。顏師古《刊謬正俗》云︰本草稻米，即今之糯米也。或通呼",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Glutinous Rice (Dao / Nuo) — Grains, Chapter 1\",\n  \"original_text\": \"【釋名】（音杜）、糯（亦作 ）。\\n\\n時珍曰︰稻者，粳、糯之通稱。《物理論》所謂\"稻者溉種之總稱\"是矣。本草則專指糯以為稻也。稻從舀（音函），象人在臼上治稻之義。則方言稻音之轉爾。其性粘軟，故謂之糯。\\n\\n穎曰︰糯米緩筋，令人多睡，其性懦也。\\n\\n【集解】弘景曰︰道家方藥有稻米、粳米俱用者，此則兩物也。稻米白如霜，江東無此，故通呼粳為稻耳，不知色類復云何也？\\n\\n恭曰︰稻者，穀之通名。《爾雅》云︰稻也。粳者不粘之稱，一曰。勝之云︰三月種粳稻，四月種秫稻。即並稻也，陶謂為二，蓋不可解也。\\n\\n志曰︰此稻米即糯米也。其粒大小似米，細糠白如雪。今通呼糯二穀為稻，所以惑之。按︰李含光《音義》引《字書》解粳字云︰稻也。字云︰稻屬也，不粘。粢字云︰稻餅也。粢蓋糯也。\\n\\n禹錫曰︰《爾雅》云︰稻。郭璞注云︰別二名也。今沛國呼。周頌云︰豐年多黍多。《禮記》云︰牛宜。《幽風》云︰十月獲稻。皆是一物也。《說文》云︰稻屬也。沛國謂稻為糯。《字林》云︰糯，粘稻也。不粘稻也。然糯甚相類，以粘不粘為異爾。當依《說文》以稻為糯。顏師古《刊謬正俗》云︰本草稻米，即今之糯米也。或通呼粳、糯為稻。孔子云︰食夫稻。周官有稻人。漢有稻田使者。並通指糯而言。所以後人混稱，不知稻即糯也。\\n\\n宗奭曰︰稻米，今造酒糯稻也。其性溫，故可為酒。酒為陽，故多熱。西域記︰天竺國土溽熱，稻歲四熟，亦可驗矣。\\n\\n時珍曰︰糯稻，南方水田多種之。其性粘，可以釀酒，可以為粢，可以蒸糕，可以熬餳，可以炒食。其類亦多，其穀殼有紅、白二色，或有毛，或無毛。其米亦有赤、白二色，赤者酒多糟少，一種粒白如霜，長三、四分者。《齊民要術》糯有九格、雉木、大黃、馬首、虎皮、火[ILLEGIBLE: text breaks off mid-list]\\n\\n【氣味】苦，溫，無毒。思邈曰︰味甘。宗奭曰︰性溫。\\n\\n頌曰︰糯米性寒，作酒則熱，糟乃溫平，亦如大豆與豉、醬之性不同也。\\n\\n詵曰︰涼。發風動氣，使人多睡，不可多食。\\n\\n藏器曰︰久食令人身軟，緩人筋也。小貓、犬食之，亦腳屈不能行。馬食之，足重。妊婦雜肉食之，令子不利。\\n\\n蕭炳曰︰擁諸經絡氣，使四肢不收，發風昏昏。\\n\\n士良曰︰久食發心悸，及癰疽瘡癤中痛。合酒食之，醉難醒。\\n\\n時珍曰︰糯性粘滯難化，小兒、病患最宜忌之。\\n甘，涼，無毒。\\n辛、甘，熱，無毒。\\n\\n【主治】作飯溫中，令人多熱，大便堅（《別錄》）。能行營衛中血積，解芫青、斑蝥毒（士良）。益氣止泄（思邈）。補中益氣。止霍亂後吐逆不止，以一合研水服之（大明）。以駱駝脂作煎餅食，主痔疾（蕭炳）。作糜一斗食，主消渴（藏器）。暖脾胃，止虛寒泄痢，縮小便，收自汗，發痘瘡（時珍）。\\n益氣，止煩渴霍亂，解毒。食鴨肉不消者，頓飲一盞，即消（時珍）。\\n陰乾，入揩牙、烏須方用（時珍）。\\n黃病如金色，煮汁浸之；仍以穀芒炒黃為末，酒服（藏器）。燒灰，治墜撲傷損黃病，為末酒服。（藏器）又解蠱毒，煎汁飲（《日[ILLEGIBLE: source citation truncated]》）。\\n\\n糯糠\\n齒黃，燒取白灰，旦旦擦之（時珍）。\\n\\n【發明】思邈曰︰糯米味甘，脾之穀也，脾病宜食之。\\n楊士瀛曰︰痘疹用米，取其解毒，能釀而發之也。\\n\\n時珍曰︰糯米性溫，釀酒則熱，熬餳尤甚，故脾肺虛寒者宜之。若素有痰熱風病，及脾病不能轉輸，食之最能發病成積。孟詵、蘇頌或言其性涼、性寒者，謬說也。《別錄》已謂其溫中堅大便，令人多熱，是豈寒涼者乎？今人冷泄者，炒食即止。老人小便數者，作粢糕或丸子，夜食亦止。其溫肺暖脾可驗矣。痘証用之，亦取此義。\\n頌曰︰稻稈灰方，出劉禹錫《傳信方》。云︰湖南李從事墜馬撲傷損，用稻稈燒灰，以新熟酒連糟入鹽和，淋取汁，淋痛處，立瘥也。\\n\\n時珍曰︰稻穰煮治作紙，嫩心取以為，皆大為民利。其紙不可貼瘡，能爛肉。按︰《江湖紀聞》云︰有人壁虱入耳，頭痛不可忍，百藥不效。用稻稈灰煎汁灌入，即死而出也。\",\n  \"translation\": \"**[Names and Nomenclature]**\\n\\n[The character for] 稻 is pronounced \\\"du\\\"; 糯 is also written with a variant character.\\n\\nLi Shizhen [時珍] states: The term 稻 [dao] is a general designation encompassing both 粳 [jīng, non-glutinou",
+      "_label": "稻 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】（與粳同）。\n\n時珍曰︰粳乃穀稻之總名也，有早、中、晚三收。諸本草獨以晚稻為粳者，非矣。粘者為糯，不粘者為粳。糯者懦也，粳者硬也。但入解熱藥，以晚粳為良爾。\n米瀋。\n\n時珍曰︰淅，音錫，洗米也。瀋，汁也。泔，甘汁也。第二次者，清而可用，故曰淅二泔。\n\n【集解】弘景曰︰粳米，即今人常食之米，但有白、赤、小、大異族四、五種，猶同一類也。可作廩米。\n\n詵曰︰淮、泗之間最多。襄、洛土粳米，亦堅實而香。南方多收火稻，最補益人。諸處雖多粳米，但充飢耳。\n\n時珍曰︰粳有水、旱二稻。南方土下塗泥，多宜水稻。北方地平，惟澤土宜旱稻。西南夷亦有燒山地為 田種旱稻者，謂之火米。古者惟下種成畦，故祭祀謂稻為嘉蔬，今人皆拔秧栽插矣。其種近百，名各不同，俱隨土地所宜也。其穀之光、芒、長、短、大、細，百不同也。其米之赤、白、紫、烏、堅、松、香、否，不同也。其性之溫、涼、寒、熱，亦因土產形色而異也。真臘有水稻，高丈許，隨水而長。南方有一歲再熟之稻。蘇頌之香粳，長白如玉，可充御貢。皆粳之稍異者也。\n\n粳米\n\n【氣味】甘、苦，平，無毒。\n\n思邈曰︰生者寒，燔者熱。\n\n時珍曰︰北粳涼，南粳溫。赤粳熱，白粳涼，晚白粳",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Jing (粳): Non-Glutinous Rice — Properties, Varieties, and Medical Uses\",\n  \"original_text\": \"【釋名】（與粳同）。\\n\\n時珍曰︰粳乃穀稻之總名也，有早、中、晚三收。諸本草獨以晚稻為粳者，非矣。粘者為糯，不粘者為粳。糯者懦也，粳者硬也。但入解熱藥，以晚粳為良爾。\\n米瀋。\\n\\n時珍曰︰淅，音錫，洗米也。瀋，汁也。泔，甘汁也。第二次者，清而可用，故曰淅二泔。\\n\\n【集解】弘景曰︰粳米，即今人常食之米，但有白、赤、小、大異族四、五種，猶同一類也。可作廩米。\\n\\n詵曰︰淮、泗之間最多。襄、洛土粳米，亦堅實而香。南方多收火稻，最補益人。諸處雖多粳米，但充飢耳。\\n\\n時珍曰︰粳有水、旱二稻。南方土下塗泥，多宜水稻。北方地平，惟澤土宜旱稻。西南夷亦有燒山地為田種旱稻者，謂之火米。古者惟下種成畦，故祭祀謂稻為嘉蔬，今人皆拔秧栽插矣。其種近百，名各不同，俱隨土地所宜也。其穀之光、芒、長、短、大、細，百不同也。其米之赤、白、紫、烏、堅、松、香、否，不同也。其性之溫、涼、寒、熱，亦因土產形色而異也。真臘有水稻，高丈許，隨水而長。南方有一歲再熟之稻。蘇頌之香粳，長白如玉，可充御貢。皆粳之稍異者也。\\n\\n粳米\\n\\n【氣味】甘、苦，平，無毒。\\n\\n思邈曰︰生者寒，燔者熱。\\n\\n時珍曰︰北粳涼，南粳溫。赤粳熱，白粳涼，晚白粳寒。新粳熱，陳粳涼。凡人嗜生米，久成米瘕，治之以雞屎白。\\n\\n穎曰︰新米乍食，動風氣。陳者下氣，病患尤宜。\\n\\n詵曰︰常食乾粳飯，令人熱中，唇口乾。不可同馬肉食，發痼疾。不可和蒼耳食，令人卒心痛，急燒倉米灰和蜜漿服之，不爾即死。\\n甘，寒，無毒。\\n\\n【主治】益氣，止煩止渴止泄（《別錄》）。溫中，和胃氣，長肌肉（《蜀本》）。補中，壯筋骨，益腸胃（《日華》）。煮汁，主心痛，止渴，斷熱毒下痢（孟詵）。合芡實作粥食，益精強志，聰耳明目（好古）。通血脈，和五臟，好顏色（時珍。出《養生集要》）。常食乾粳飯\\n清熱，止煩渴，利小便，涼血（時珍）。\\n益胃除濕。不去火毒，令人作渴（時珍）。\\n粳穀奴（穀穗煤黑者）\\n走馬喉痺，燒研，酒服方寸匕，立效（時珍。出《千金方》）。\\n\\n禾稈\\n解砒毒，燒灰，新汲水淋汁濾清，冷服一碗，毒當下出（時珍。出《衛生易簡方》）。\\n\\n【發明】詵曰︰粳米赤者粒大而香，水漬之有味益人。大抵新熟者動氣，經再年者亦發病。惟江南人多收火稻貯倉，燒去毛，至春舂米食之，即不發病宜人，溫中益氣，補下元也。\\n\\n宗奭曰︰粳以白晚米為第一，早熟米不及也。平和五臟，補益胃氣，其功莫逮。然稍生則復不益脾，過熟乃佳。\\n\\n穎曰︰粳有早、中、晚三收，以晚白米為第一。各處所產，種類甚多，氣味不能無少異，而亦不大相遠也。天生五穀，所以養人，得之則生，不得則死。惟此穀得天地中和之氣，同造化生育之功，故非他物可比。入藥之功在所略爾。\\n\\n好古曰︰《本草》言粳米益脾胃，而張仲景白虎湯用之入肺。以味甘為陽明之經，色白為西方之象，而氣寒入手太陰也。少陰証桃花湯，用之以補正氣。竹葉石膏湯，用之以益不足。\\n\\n時珍曰︰粳稻六、七月收者為早粳（止可充食），八、九月收者為遲粳，十月收者為晚粳。北方氣寒，粳性多涼，八、九月收者即可入藥。南方氣熱，粳性多溫，惟十月晚稻氣涼乃可入藥。遲粳、\",\n  \"translation\": \"**[Explanation of Names]** (Same character as 粳.)\\n\\nLi Shizhen says: Jing [粳] is a general name for grain rice [穀稻], which has three harvests: early, middle, and late. Those herbals that designate only the late-harvest rice as jing are mistaken. Sticky [glutinous] rice is called nuo [糯]; non-sticky rice is called jing [粳]. Nuo implies softness [懦]; jing implies hardness [硬]. However, for use in heat-clearing medicines, late-harvest jing is the best.\\n\\n**Rice-washing water [米瀋 / 淅二泔]:**\\nLi Shizhen says: Xi [淅], pronounced like \"xi\" [錫], me",
+      "_label": "粳 (穀之一)"
+    },
+    {
+      "title_inferred": "Xian Rice (Early-Ripening Rice) — Grains, Chapter 1",
+      "original_text": "【釋名】占稻（《綱目》）、早稻。\n\n時珍曰：秈，亦粳屬之先熟而鮮明之者，故謂之秈。種自占城國，故謂之占。俗作粘者，非矣。\n\n【集解】時珍曰：秈似粳而粒小，始自閩人，得種於占城國。宋真宗遣使就閩取三萬斛，分給諸道為種，故今各處皆有之。高仰處俱可種，其熟最早，六、七月可收。品類亦多，有赤、白二色，與粳大同小異。\n\n米\n\n【氣味】甘，溫，無毒。\n\n【主治】溫中益氣，養胃和脾，除濕止泄（時珍）。\n\n稈\n反胃，燒灰淋汁溫服，令吐。蓋胃中有蟲，能殺之也（《普濟》）。",
+      "translation": "**Nomenclature:** Also called Zhàn-dào [Champa rice] (Bencao Gangmu), and Zǎo-dào [early rice].\n\nLi Shizhen states: Xiān (秈) belongs to the gěng [non-glutinous rice] category; it is the variety that ripens earliest and has a bright, fresh appearance, hence the name xiān. The seeds originated from the kingdom of Champa [占城國, in present-day Vietnam], hence the name zhàn. The common written form 粘 [meaning 'sticky'] is incorrect.\n\n**Collected Commentaries:** Li Shizhen states: Xiān rice resembles gěng rice but has smaller grains. It was first introduced by the people of Fujian [閩], who obtained the seeds from the kingdom of Champa. During the reign of Emperor Zhenzong of the Song dynasty, an envoy was dispatched to Fujian to procure thirty thousand hú [斛, a dry measure] of the seeds, which were then distributed to the various circuits [道] for cultivation. Thus it is now found everywhere. It can be grown on elevated and dry terrain and ripens earliest of all rices, being harvestable in the sixth or seventh month. There are many varieties, including red and white types, differing only slightly from gěng rice in most respects.\n\n**The Grain (Rice)**\n\n*Flavor and Nature:* Sweet; warm; non-toxic.\n\n*Indications and Actions:* Warms the center [middle burner] and supplements qi; nourishes the stomach and harmonizes the spleen; eliminates dampness and stops diarrhea. (Li Shizhen)\n\n**The Stalk (Straw)**\n\n[For] regurgitation [反胃]: burn the straw to ash, leach water through the ash [淋汁], and take warm; this induces vomiting. The underlying rationale is that there are worms [蟲] in the stomach, and this preparation can kill them. (Puji Fang [《普濟》])",
+      "entities_mentioned": [
+        {
+          "name": "秈 / 占稻 / 早稻 (Xiān rice / Champa rice / Early rice)",
+          "modern_identification": "Oryza sativa subsp. indica (indica-type rice, specifically early-ripening Champa rice varieties introduced from Southeast Asia)",
+          "identification_confidence": "high",
+          "notes": "Champa rice (占城稻) was a drought-resistant, early-ripening variety originating from the Champa kingdom in central Vietnam, introduced to China via Fujian during the Song dynasty. Its large-scale distribution under Emperor Zhenzong (r. 997–1022 CE) is well-documented historically and greatly expanded Chinese rice cultivation into less fertile upland areas."
+        },
+        {
+          "name": "米 (the rice grain/kernel)",
+          "modern_identification": "Oryza sativa — grain",
+          "identification_confidence": "high",
+          "notes": "Used medicinally to warm the middle burner, supplement qi, nourish the stomach, harmonize the spleen, eliminate dampness, and stop diarrhea."
+        },
+        {
+          "name": "稈 (rice straw)",
+          "modern_identification": "Oryza sativa — straw/stem",
+          "identification_confidence": "high",
+          "notes": "Prepared as ash lye (burned to ash, then water leached through it) and taken warm to treat 反胃 (regurgitation/stomach reflux). The Puji Fang source attributes the mechanism to killing parasitic worms in the stomach. Condition treated: 反胃 (regurgitation/gastroparesis-like syndrome). Preparation: burn straw to ash, leach water through ash, drink the warm liquid to induce vomiting."
+        }
+      ],
+      "translator_notes": "The segment label uses '秈' (OCR may have dropped this character in the opening lines of 釋名 and 集解, where the subject character appears as a blank or gap in the source). Context makes the intended character unambiguous as 秈. The reference '《普濟》' is to the Puji Fang (《普濟方》), a large Ming-dynasty medical formulary compiled ca. 1406 CE. '斛' was a volumetric measure (approximately 60 liters in the Song dynasty). The notion of 'worms in the stomach' causing regurgitation reflects pre-modern Chinese pathological theory rather than a modern parasitological diagnosis.",
+      "_label": "秈 (穀之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】穄（音祭）、粢（音咨）。\n\n時珍曰︰稷，從禾從畟。畟音即，諧聲也。又進力治稼也。《詩》云畟畟良耜是矣。種稷者必畟，畟進力也。南人承北音，呼稷為穄，謂其米可供祭也。《禮記》︰祭宗廟稷曰明粢。\n\n《爾雅》云︰粢，稷也。羅願云︰稷、穄、粢皆一物，語音之輕重耳。赤者名𪎭，白者名芑，黑者名秬。注見黍下。\n\n【集解】弘景曰︰稷米人亦不識，書記多云黍與稷相似。又注黍米云︰ 米與黍米相似，而粒殊大，食之不宜人，言發宿病。《詩》云︰黍稷稻粱，禾麻菽麥。此八穀也，俗猶莫能辨証，況芝英乎？\n\n蘇恭曰︰《呂氏春秋》云︰飯之美者，有陽山之 。高誘注云︰關西謂之𪎭，音糜），冀州謂之䵖（音牽，去聲）。《廣雅》云︰䵖，穄也。《禮記》云︰稷曰明粢。《爾雅》云︰粢，稷也。《說文》云︰“稷乃五穀長”，田正也。此乃官名，非谷號也。先儒以稷為粟類，或言粟之上者，皆說其義，而不知其實也。按︰ 勝之《種植書》，有黍不言稷本草有稷不載， 即稷也。楚人謂之稷，關中謂之糜，呼其米為黃米。其苗與黍同類，故呼黍為 秫。陶言與黍相似者，得之矣。\n\n藏器曰︰稷、穄，一物也，塞北最多，如黍黑色。\n\n詵曰︰稷在八穀之中，最為下苗。黍乃作酒，",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Ji (Millet / Proso Millet) — Grains, Part Two\",\n  \"original_text\": \"【釋名】穄（音祭）、粢（音咨）。\\n\\n時珍曰︰稷，從禾從畟。畟音即，諧聲也。又進力治稼也。《詩》云畟畟良耜是矣。種稷者必畟，畟進力也。南人承北音，呼稷為穄，謂其米可供祭也。《禮記》︰祭宗廟稷曰明粢。\\n\\n《爾雅》云︰粢，稷也。羅願云︰稷、穄、粢皆一物，語音之輕重耳。赤者名𪎭，白者名芑，黑者名秬。注見黍下。\\n\\n【集解】弘景曰︰稷米人亦不識，書記多云黍與稷相似。又注黍米云︰米與黍米相似，而粒殊大，食之不宜人，言發宿病。《詩》云︰黍稷稻粱，禾麻菽麥。此八穀也，俗猶莫能辨証，況芝英乎？\\n\\n蘇恭曰︰《呂氏春秋》云︰飯之美者，有陽山之穄。高誘注云︰關西謂之𪎭（音糜），冀州謂之䵖（音牽，去聲）。《廣雅》云︰䵖，穄也。《禮記》云︰稷曰明粢。《爾雅》云︰粢，稷也。《說文》云︰\"稷乃五穀長\"，田正也。此乃官名，非谷號也。先儒以稷為粟類，或言粟之上者，皆說其義，而不知其實也。按︰氾勝之《種植書》，有黍不言稷，本草有稷不載穄，穄即稷也。楚人謂之稷，關中謂之糜，呼其米為黃米。其苗與黍同類，故呼黍為秫。陶言與黍相似者，得之矣。\\n\\n藏器曰︰稷、穄，一物也，塞北最多，如黍黑色。\\n\\n詵曰︰稷在八穀之中，最為下苗。黍乃作酒，此乃作飯，用之殊塗。\\n\\n頌曰︰稷米，出粟處皆能種之。今人不甚珍此，惟祠事用之。農家惟以備他谷之不熟，則為糧耳。\\n\\n宗奭曰︰稷米，今謂之穄米，先諸米熟，其香可愛，故取以供祭祀。然發故疾，只堪作飯，不粘，其味淡。\\n\\n時珍曰︰稷與黍，一類二種也。粘者為黍，不粘者為稷。稷可作飯，黍可釀酒。猶稻之有粳與糯也。陳藏器獨指黑黍為稷，亦偏矣。稷黍之苗似粟而低小有毛，結子成枝而殊散，其粒如粟而光滑。三月下種，五、六月可收，亦有七、八月收者。其色有赤、白、黃、黑數種，黑者禾稍高，今俗通呼為黍子，不複呼稷矣。北邊地寒，種之有補。\\n\\n【氣味】甘，寒，無毒。\\n\\n詵曰︰多食，發三十六種冷病氣。不與瓠子同食，發冷病，但飲黍穰汁即瘥。又不可與附子同服。\\n\\n【主治】益氣，補不足（《別錄》）。治熱，壓丹石毒發熱，解苦瓠毒（《日華》）。作飯食，安中利胃宜脾（《心鏡》）。涼血解暑（時珍。《生生編》）。心氣痛，產難（時珍）。\\n\\n【發明】時珍曰︰按︰孫真人云︰稷，脾之谷也。脾病宜食之。氾勝之云︰燒黍稷則瓠死，此物性相製也。稷米、黍穰，能解苦瓠之毒。《淮南萬畢術》云︰祠塚之黍，啖兒令不思母。此亦有所厭耶？\",\n  \"translation\": \"**[Explanation of Names]** Also called *jie* (穄, pronounced like 'ji' in the fourth tone [祭]) and *zi* (粢, pronounced like 'zi' [咨]).\\n\\nLi Shizhen says: The character *ji* (稷) is composed of the radicals for grain [禾] and *ce* [畟]. The character *ce* is pronounced 'ji' [即], making it a phonetic compound. It also carries the meaning of exerting effort in cultivating crops. The *Book of Odes* says: '*ce ce* [畟畟] — the fine ploughshare.' When planting *ji*, one must apply vigorous effort [*ce*], meaning to press forward with energy. Southerners, following the northern pronunciation, call *ji* by the name *jie* [穄], meaning that its grain can be used for ritual offerings. The *Book of Rites* states: 'The *ji* grain used in ancestral temple sacrifices is called *mingzi* [明粢, bright millet].'\\n\\nThe *Erya* [爾雅] states: '*Zi* [粢] is *ji* [稷].' Luo Yuan [羅願] says: *ji*,",
+      "_label": "稷 (穀之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】赤黍曰虋（音門）、曰𪎭（音糜），白黍曰芑（音起），黑黍曰秬（音距），一稃二米曰秠（音疕。並《爾雅》）。\n\n時珍曰︰按︰許慎《說文》云︰黍可為酒，從禾入水為意也。魏子才《六書精蘊》云︰\n禾下從汆，象細粒散垂之形。 勝之云︰黍者暑也。待暑而生，暑後乃成也。《詩》云︰誕降嘉種，維秬維秠，維𪎭維芑。𪎭即 虋音轉也。郭璞以虋芑為粱粟，以秠即黑黍之二米者，羅願以秠為來牟，皆非矣。\n\n【集解】弘景曰︰黍，荊、郢州及江北皆種之。其苗如蘆而異於粟，粒亦大。今人多呼秫粟為黍，非矣。北人作黍飯，方藥釀黍米酒，皆用秫黍也。《別錄》丹黍米，即赤黍米也。亦出北間，江東時有，而非土所宜，多入神藥用。又有黑黍名 ，釀酒，供祭祀用。\n\n恭曰︰黍有數種。其苗亦不似蘆，雖似粟而非粟也。\n\n頌曰︰今汴、洛、河、陝間皆種之。《爾雅》云︰ ，赤苗。芑，白苗。 ，黑黍。是也。李巡云︰ 是黑黍中一稃有二米者。古之定律者，以上黨 黍之中者累之，以生律度\n衡量。後人取此黍定之，終不能協律。或云︰ 乃黍之中者，一稃二米之黍也。此黍得天地中和之氣而生，蓋不常有。有則一穗皆同，二米粒並均勻無小大，故可定律。他黍則不然。\n地有肥瘠，歲有",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Shu (Broomcorn/Glutinous Millet) — Grains, Chapter 2\",\n  \"original_text\": \"【釋名】赤黍曰虋（音門）、曰𪎭（音糜），白黍曰芑（音起），黑黍曰秬（音距），一稃二米曰秠（音疕。並《爾雅》）。\\n\\n時珍曰︰按︰許慎《說文》云︰黍可為酒，從禾入水為意也。魏子才《六書精蘊》云︰禾下從汆，象細粒散垂之形。勝之云︰黍者暑也。待暑而生，暑後乃成也。《詩》云︰誕降嘉種，維秬維秠，維𪎭維芑。𪎭即虋音轉也。郭璞以虋芑為粱粟，以秠即黑黍之二米者，羅願以秠為來牟，皆非矣。\\n\\n【集解】弘景曰︰黍，荊、郢州及江北皆種之。其苗如蘆而異於粟，粒亦大。今人多呼秫粟為黍，非矣。北人作黍飯，方藥釀黍米酒，皆用秫黍也。《別錄》丹黍米，即赤黍米也。亦出北間，江東時有，而非土所宜，多入神藥用。又有黑黍名秬，釀酒，供祭祀用。\\n\\n恭曰︰黍有數種。其苗亦不似蘆，雖似粟而非粟也。\\n\\n頌曰︰今汴、洛、河、陝間皆種之。《爾雅》云︰虋，赤苗。芑，白苗。秬，黑黍。是也。李巡云︰秠是黑黍中一稃有二米者。古之定律者，以上黨秬黍之中者累之，以生律度衡量。後人取此黍定之，終不能協律。或云︰秠乃黍之中者，一稃二米之黍也。此黍得天地中和之氣而生，蓋不常有。有則一穗皆同，二米粒並均勻無小大，故可定律。他黍則不然。地有肥瘠，歲有凶穰，故米有大小不常矣。今上黨民間，或值豐歲，往往得二米者。但稀闊，故不以充貢爾。\\n\\n時珍曰︰黍乃稷之粘者。亦有赤、白、黃、黑數種，其苗色亦然。郭義恭《廣志》有赤黍、白黍、黃黍、大黑黍、牛黍、燕頷、馬革、驢皮、稻尾諸名。俱以三月種者為上時，五月即熟。四月種者為中時，七月即熟。五月種者為下時，八月乃熟。《詩》云釀鬯一卣，則黍之為酒尚也。白者亞於糯，赤者最粘，可蒸食，俱可作餳。古人以黍粘履，以黍雪桃，皆取其粘也。菰葉裹成粽食，謂之角黍。《淮南萬畢術》云︰獲黍置溝。\\n\\n【正誤】頌曰︰粘者為秫，可以釀酒，北人謂為黃米，亦曰黃糯；不粘者為黍，可食。如稻之有粳、糯也。\\n\\n時珍曰︰此誤。\\n\\n【氣味】甘，溫，無毒。久食令人多熱煩（《別錄》）。\\n\\n詵曰︰性寒，有小毒，發故疾。久食昏五臟，令人好睡，緩人筋骨，絕血脈。小兒多食，令久不能行。小貓、犬食之，其腳屈。合葵菜食，成痼疾。合牛肉、白酒食，生寸白。李鵬飛曰︰五種黍米，多食閉氣。\\n\\n【主治】益氣，補中（《別錄》）。燒灰和油，塗杖瘡，止痛，不作瘢（孟詵）。嚼濃汁，塗小兒鵝口瘡，有效（時珍）。\\n\\n【發明】思邈曰︰黍米，肺之谷也。肺病宜食之。主益氣。\\n\\n時珍曰︰按︰羅願云︰黍者，暑也。以其象火，為南方之谷。蓋黍最粘滯，與糯米同性，其氣溫暖，故功能補肺，而多食作煩熱，緩筋骨也。孟氏謂其性寒，非矣。\",\n  \"translation\": \"**[Explanation of Names]**\\nRed shu [黍] is called mén [虋] (pronounced mén) or méi [𪎭] (pronounced mí); white shu is called qǐ [芑] (pronounced qǐ); black shu is called jù [秬] (pronounced jù); that which has one husk containing two grains is called pǐ [秠] (pronounced pǐ). All these names are from the Erya.\\n\\nLi Shizhen notes: According to Xu Shen's Shuowen Jiezi, shu [黍] can be made into wine; the character is formed from hé [禾, grain] combined with water [水], suggesting its nature. Wei Zicai's Liushu Jingyun states: below the hé [禾] radical is the element zhuān [汆], representing the image of small grains hanging and scattering. [The scholar] Shengzhi says: shu means shǔ [暑, summer heat] — it germinates waiting for the summer heat, and ripens only after the heat has passed. The Book ",
+      "_label": "黍 (穀之二)"
+    },
+    {
+      "title_inferred": "Red Glutinous Millet (Dan Shu Mi) — Flavor, Properties, and Medical Uses",
+      "original_text": "【氣味】甘，微寒，無毒。思邈曰：微溫。\n\n大明曰：溫，有小毒。不可合蜜及葵同食。\n\n宗奭曰：動風性熱，多食難消。余同黍米。\n辛，熱，有小毒。\n\n詵曰：醉臥黍穰，令人生厲。人家取其莖穗作提拂掃地，用以煮汁入藥，更佳。\n\n【主治】咳逆上氣，霍亂，止泄利，除熱，止煩渴（《別錄》）。下氣，止咳嗽，退熱（大明）。治鱉瘕，以新熟者淘泔汁，生服一升，不過三、二度愈（孟詵）。\n煮汁飲之，解苦瓠毒。浴身，去浮腫。和小豆煮汁服，下小便（孟詵）。燒灰酒",
+      "translation": "**[Flavor and Properties]** Sweet, slightly cold, non-toxic. Sun Simiao states: slightly warm.\n\nDa Ming states: Warm, with slight toxicity. Should not be eaten together with honey or mallow [葵, Malva sp.].\n\nKou Zongshi states: It stirs wind [i.e., aggravates wind-type conditions] and is hot in nature; eaten in excess it is difficult to digest. In other respects it is the same as common millet [黍米]. [The grain itself is also described as:] pungent, hot, with slight toxicity.\n\nMeng Shen states: Sleeping drunk in millet straw [黍穰] can cause the skin disease [厲, likely a leprous or ulcerative skin condition]. People commonly take the stalks and ears to make brooms for sweeping floors; if these are then used to decoct a juice for medicinal purposes, the effect is even better.\n\n**[Indications and Treatments]**\nTreats coughing with rebellious qi [咳逆上氣], cholera-like sudden turmoil illness [霍亂]; stops diarrhea and dysentery; eliminates heat; relieves vexing thirst. (Source: *Mingyi Bielu* [《別錄》])\n\nDirects qi downward; stops coughing; reduces fever. (Source: Da Ming)\n\nTreats turtle-shaped abdominal masses [鱉瘕]: take newly ripened grain, rinse and collect the milky rinse-water [泔汁], and drink one sheng [approx. 200 ml] raw. Recovery occurs within two or three doses. (Source: Meng Shen)\n\nBoil [the stalks/grain] and drink the decoction to counteract the toxicity of bitter bottle gourd [苦瓠]. Bathe the body in the decoction to eliminate pitting edema [浮腫]. Boil together with adzuki beans and drink the decoction to promote urination [下小便]. (Source: Meng Shen)\n\nBurn to ash [and take with] wine— [text breaks off; continuation not present in this segment]",
+      "entities_mentioned": [
+        {
+          "name": "丹黍米 (Dan Shu Mi)",
+          "modern_identification": "Panicum miliaceum var. (red/glutinous variety of broomcorn millet)",
+          "identification_confidence": "high",
+          "notes": "A red-husked or reddish glutinous variety of common broomcorn millet; distinct from plain 黍米 (huang shu mi) primarily in color and slight differences in medicinal properties attributed by various authorities."
+        },
+        {
+          "name": "黍穰 (Shu Rang)",
+          "modern_identification": "Millet straw/stalks of Panicum miliaceum",
+          "identification_confidence": "high",
+          "notes": "The dried stalk of the millet plant; warned against sleeping in when drunk; also recommended as a medicinal decoction ingredient when taken from sweep-brooms made of millet stalks and ears."
+        },
+        {
+          "name": "葵 (Kui)",
+          "modern_identification": "Malva verticillata (mallow) or Abelmoschus manihot",
+          "identification_confidence": "medium",
+          "notes": "A common vegetable herb in classical Chinese texts; here listed as a dietary incompatibility with Dan Shu Mi when combined with honey."
+        },
+        {
+          "name": "苦瓠 (Ku Hu)",
+          "modern_identification": "Lagenaria siceraria (bitter bottle gourd)",
+          "identification_confidence": "high",
+          "notes": "The bitter variety of bottle gourd, known to be toxic; the decoction of Dan Shu Mi is cited as an antidote."
+        },
+        {
+          "name": "小豆 (Xiao Dou)",
+          "modern_identification": "Vigna angularis (adzuki bean)",
+          "identification_confidence": "high",
+          "notes": "Cooked together with Dan Shu Mi in decoction to promote diuresis."
+        },
+        {
+          "name": "鱉瘕 (Bie Jia)",
+          "modern_identification": "Abdominal mass (possibly parasitic or hepatosplenic in origin); 'turtle-shaped accumulation'",
+          "identification_confidence": "low",
+          "notes": "A classical TCM diagnostic category describing a firm abdominal mass thought to resemble a turtle in shape. The exact modern pathological correlate is uncertain."
+        }
+      ],
+      "translator_notes": "1. The segment ends mid-sentence ('燒灰酒') indicating the source text is cut off; a note has been added flagging this.\n2. The attribution structure in the original alternates between different historical authorities (Sun Simiao/思邈, Da Ming/大明 referring to the Rihuazi Bencao, Kou Zongshi/宗奭, and Meng Shen/孟詵); these have been preserved in the translation.\n3. '厲' in '令人生厲' could refer to leprosy or a general severe skin ulceration; translated cautiously as 'skin disease.'\n4. '泔汁' refers specifically to the cloudy, starchy water produced from rinsing grain, a common medicinal preparation in classical Chinese pharmacy.\n5. The statement 'pungent, hot, with slight toxicity' appears to be a separate characterization (possibly of the stalk or a different part) interpolated into the flavor section without a named source; this is preserved as-is.",
+      "_label": "丹黍米 (穀之二)"
+    },
+    {
+      "title_inferred": "Sorghum (Shǔ Shǔ) — Grains, Chapter Two",
+      "original_text": "【釋名】蜀秫（俗名）、蘆穄（《食物》）、蘆粟（並俗）、木稷（《廣雅》）、荻粱（同上）、高粱。\n\n時珍曰︰蜀黍不甚經見，而今北方最多。按︰《廣雅》︰荻粱，木稷也。蓋此亦黍稷之類，而高碩如蘆荻者，故俗有諸名。種始自蜀，故謂之蜀黍。\n\n【集解】穎曰︰蜀黍北地種之，以備缺糧，余及牛馬。谷之最長者。南人呼為蘆穄。\n\n時珍曰︰蜀黍宜下地。春月布種，秋月收之。莖高丈許，狀似蘆荻而內實。葉亦似蘆。穗大如帚。粒大如椒，紅黑色。米性堅實，黃赤色。有二種︰粘者可和糯秫釀酒作餌；不粘者可以作糕煮粥。可以濟荒，可以養畜，梢可作帚，莖可織箔席、編籬、供爨，最有利於民者。今人祭祀用以代稷者，誤矣。其谷殼浸水色紅，可以紅酒。《博物志》云︰地種蜀黍，年久多蛇。\n\n米\n\n【氣味】甘，澀，溫，無毒。\n\n【主治】溫中，澀腸胃，止霍亂。粘者與黍米功同（時珍）。\n\n根\n煮汁服，利小便，止喘滿。燒灰酒服，治產難有效（時珍）。",
+      "translation": "**Nomenclature**\nAlternate names: Shǔ shú [蜀秫, common name], Lú jì [蘆穄, from *Shíwù*], Lú sù [蘆粟, common], Mù jì [木稷, from *Guǎng Yǎ*], Dí liáng [荻粱, same source], Gāo liáng [高粱, 'tall grain'].\n\nLi Shizhen states: Shǔ shǔ [sorghum] does not appear frequently in classical texts, yet today it is most abundant in the northern regions. According to the *Guǎng Yǎ*: 'Dí liáng is mù jì.' This plant belongs to the same category as millet and panicled millet [黍稷], but it grows tall and robust like common reed [蘆] and flute reed [荻]; hence the various popular names. Its cultivation originated in Shu [modern Sichuan], and so it is called Shǔ shǔ [蜀黍, 'Shu millet'].\n\n**Collected Commentaries**\nYǐng [Su Song's associate or a cited authority] states: Shǔ shǔ is cultivated in the northern lands as a reserve grain in times of shortage, with the surplus feeding cattle and horses. It is the tallest of all grains. Southerners call it Lú jì.\n\nLi Shizhen states: Shǔ shǔ is suited to low-lying ground. It is sown in spring and harvested in autumn. The stalk grows to about a zhàng [≈3 m] in height, resembling common reed and flute reed in appearance but solid within. The leaves also resemble those of the reed. The panicle is as large as a broom. The grains are as large as Sichuan pepper [椒], reddish-black in color. The grain [rice/kernel] is firm and dense, yellowish-red in color. There are two varieties: the glutinous type can be combined with glutinous millet [糯秫] to brew wine or make cakes; the non-glutinous type can be used to make pastries or boiled into porridge. It can relieve famine and feed livestock; the tips of the stalks can be made into brooms; the stalks can be woven into screens and mats, made into fences, or used as fuel — it is among the most beneficial plants to the common people. Those today who use it as a substitute for jì [稷] in sacrificial rites are mistaken. The husks, when soaked in water, produce a red color and can be used to color wine red. The *Bówùzhì* [博物志, *Record of Diverse Matters*] states: Land on which shǔ shǔ has been grown for many years will harbor many snakes.\n\n---\n**Grain [Kernel/Mi]**\n\n*Qi and Flavor:* Sweet, astringent, warm, non-toxic.\n\n*Indications and Treatment:*\nWarms the center [middle jiao]; astringes the intestines and stomach; arrests cholera-like illness [霍亂, sudden turmoil disorder with vomiting and diarrhea]. The glutinous variety has the same therapeutic action as glutinous millet [黍米]. (Li Shizhen)\n\n---\n**Root**\n\nDecoct and take the liquid orally: promotes urination [diuretic]; arrests panting and fullness [dyspnea and distension]. Burn to ash and take with wine: effective for treating difficult labor [dystocia]. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "蜀黍 (Shǔ shǔ) / 高粱 (Gāo liáng)",
+          "modern_identification": "Sorghum bicolor (L.) Moench — sorghum",
+          "identification_confidence": "high",
+          "notes": "Also listed under synonyms: 蜀秫, 蘆穄, 蘆粟, 木稷, 荻粱. Described as originating from Shu (Sichuan); now primarily cultivated in northern China. Two varieties noted: glutinous and non-glutinous."
+        },
+        {
+          "name": "米 (grain/kernel of 蜀黍)",
+          "modern_identification": "Sorghum bicolor — grain",
+          "identification_confidence": "high",
+          "notes": "Treated as: warming the middle jiao, astringing the intestines and stomach, stopping sudden turmoil disorder (cholera-like illness). No special preparation described beyond standard consumption."
+        },
+        {
+          "name": "根 (root of 蜀黍)",
+          "modern_identification": "Root of Sorghum bicolor",
+          "identification_confidence": "high",
+          "notes": "Two preparations described: (1) decocted in water and taken orally as a diuretic and for dyspnea/fullness; (2) burned to ash and taken with wine to treat difficult labor (dystocia)."
+        }
+      ],
+      "translator_notes": "1. The character rendered as '蘆穄' in the original appears as '蘆㯉' or '蘆穄' in various editions; OCR likely garbled it as '蘆' with a truncated second character. '蘆穄' (lú jì) has been restored as the standard reading. 2. '霍亂' in classical Chinese medicine refers to acute sudden-onset vomiting and diarrhea (sudden turmoil disorder), not necessarily the bacterial disease cholera, though symptomatically overlapping. 3. The *Bówùzhì* (博物志) citation about snakes is a folk observation with no pharmacological relevance; it is retained for completeness. 4. 'Zhàng' (丈) is a classical Chinese unit of length approximately equal to 3.3 meters; 'about a zhàng' is retained as a period measure. 5. The note that using sorghum to replace jì [稷] in sacrificial rites is an error reflects Li Shizhen's concern for taxonomic precision — jì is traditionally identified with Panicum miliaceum or Setaria italica, not sorghum.",
+      "_label": "蜀黍 (穀之二)"
+    },
+    {
+      "title_inferred": "Maize (Jade Sorghum) — Grain Section Two",
+      "original_text": "【釋名】玉高粱。\n\n【集解】時珍曰：玉蜀黍種出西土，種者亦罕。其苗葉俱似蜀黍而肥矮，亦似薏苡。苗高三、四尺。六、七月開花成穗如秕麥狀。苗心別出一苞，如棕魚形，苞上出白須垂垂。久則苞拆子出，顆顆攢簇。子亦大如棕子，黃白色。可炸炒食之。炒拆白花，如炒拆糯谷之狀。\n\n米\n【氣味】甘，平，無毒。\n【主治】調中開胃（時珍）。\n\n根葉\n【主治】小便淋瀝沙石，痛不可忍，煎湯頻飲（時珍）。",
+      "translation": "**Nomenclature:** Also called Jade Sorghum [玉高粱].\n\n**Collected Commentaries:** Li Shizhen states: Jade Sorghum [玉蜀黍, maize] originates from the western lands, and those who cultivate it are also rare. Its seedlings and leaves both resemble those of sorghum [蜀黍] but are stouter and shorter; they also resemble those of Job's tears [薏苡]. The plant grows three to four feet tall. In the sixth and seventh months it flowers, forming ears [穗] resembling the appearance of blighted wheat. From the center of the stalk there separately emerges a husk [苞], shaped like a palm catkin [棕魚], from the top of which white silks hang down in abundance. After some time the husk splits open and the kernels emerge, each grain clustered tightly together. The kernels are also as large as palm seeds [棕子], yellow-white in color. They may be deep-fried or stir-fried and eaten. When fried, they split open into white flowers [i.e., popped corn], just as glutinous grain pops open when fried.\n\n**Grain [米]**\n*Flavor and Nature:* Sweet, neutral [平], non-toxic.\n*Indications:* Regulates the middle [burner] and stimulates the appetite. (Li Shizhen)\n\n**Roots and Leaves**\n*Indications:* For urinary dribbling [淋瀝] with sand and stones [i.e., urinary calculi], with pain so severe it is unbearable — decoct in water and drink frequently. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "玉蜀黍 (Yù Shǔ Shǔ)",
+          "modern_identification": "Zea mays L. (maize / corn)",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen notes it originates from 'western lands,' consistent with maize's introduction to China via Central Asia or the Americas through trade routes in the 16th century. The description of popping is an early Chinese record of popcorn."
+        },
+        {
+          "name": "玉高粱 (Yù Gāoliáng)",
+          "modern_identification": "Zea mays L. (maize / corn)",
+          "identification_confidence": "high",
+          "notes": "Alternative name meaning 'Jade Sorghum,' reflecting its resemblance to sorghum."
+        },
+        {
+          "name": "蜀黍 (Shǔ Shǔ)",
+          "modern_identification": "Sorghum bicolor (L.) Moench (sorghum)",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological comparator for maize."
+        },
+        {
+          "name": "薏苡 (Yì Yǐ)",
+          "modern_identification": "Coix lacryma-jobi L. (Job's tears)",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological comparator for maize leaves."
+        }
+      ],
+      "translator_notes": "The original text contains some structural disorder around the '米' (grain) and 'root and leaves' sections, likely due to OCR misplacement of tags (e.g., stray '</span>' characters and a duplicated 'small urinary dribbling' passage attributed ambiguously). The cleaned text reassigns the 'regulate the middle and stimulate appetite' indication to the grain, and the urinary/calculus indication to the roots and leaves, which is the most internally consistent reading and matches other editions of the Bencao Gangmu. The description of fried maize splitting into white flowers is one of the earliest Chinese textual references to popcorn. 'Sand and stones' in the urinary context refers to urinary tract stones/calculi.",
+      "_label": "玉蜀黍 (穀之二)"
+    },
+    {
+      "title_inferred": "Liang (Millet/Grain — Grains, Part Two)",
+      "original_text": "【釋名】時珍曰︰粱者，良也，谷之良者也。或云種出自梁州，或云粱米性涼，故得粱名，皆各執己見也。粱即粟也。考之《周禮》，九谷、六谷之名，有粱無粟可知矣。自漢以後，始以大而毛長者為粱，細而毛短者為粟。今則通呼為粟，而粱之名反隱矣。今世俗稱粟中之大穗長芒，粗粒而有紅毛、白毛、黃毛之品者，即粱也。黃、白、青、赤，亦隨色命名耳。郭義恭《廣志》有解粱、貝粱、遼東赤粱之名，乃因地命名也。\n\n【集解】弘景曰︰凡云粱米，皆是粟類，惟其牙頭色異為分別耳。勝之云︰粱是秫粟，則不爾也。黃粱出青、冀州，東間不見有。白粱處處有之，襄陽竹根者為佳。青粱江東少有。又漢中一種粱，粒如粟而皮黑可食，釀酒甚消玉。\n\n恭曰︰粱雖粟類，細論則別。黃粱出蜀、漢、商、浙間，穗大毛長，谷米俱粗於白粱。而收子少，不耐水旱。食之香美，勝於諸粱，人號竹根黃。陶以竹根為白粱，非矣。白粱穗大多毛且長，而谷粗扁長，不似粟圓也。米亦白而大，食之香美，亞於黃粱。青粱谷穗有毛而粒青，米亦微青而細於黃、白粱，其粒似青稞而少粗，早熟而收薄。夏月食之，極為清涼。但味短色惡，不如黃、白粱，故人少種之。作餳清白，勝於余米。\n\n頌曰︰粱者，粟類也。粟雖粒細而功用則無別也。今汴、洛、河、陝間多種白粱，而青、黃稀有，因其損地力而斬獲少也。\n\n宗奭曰︰黃粱、白粱，西洛農家多種，為飯尤佳。余用不甚相宜。",
+      "translation": "**[Explanation of Names]** Li Shizhen states: The character 粱 [liáng] derives from 良 [liáng], meaning 'excellent' — it is the finest of grains. Some say the variety originated in Liangzhou; others say liang rice has a cooling [liáng] nature, and thus received its name. Both explanations reflect personal bias. In truth, liang is simply a form of millet [sù/粟]. Consulting the Zhou Rites [Zhōulǐ], among the Nine Grains and Six Grains listed, 'liang' appears but 'su' does not — which makes this clear. From the Han dynasty onward, people began distinguishing between them: the larger grain with longer awns was called liang, while the finer grain with shorter awns was called su. Nowadays both are generally called su, and the name liang has fallen into obscurity. What people today call 'su with large panicles, long awns, coarse grains, and red, white, or yellow awns' — that is liang. The varieties are also named by color: yellow, white, green, and red. Guo Yigong's Guangzhi [Extensive Records] mentions the names 'Jie-liang,' 'Bei-liang,' and 'Liaodong Red Liang,' which are names derived from place of origin.\n\n**[Collected Commentaries]** Tao Hongjing states: All grains referred to as 'liang rice' belong to the millet [su] category, distinguished only by differences in the color of the sprouting tip. [Someone citing] Shengzhi says liang is waxy millet [shú sù — glutinous millet], but this is not so. Yellow liang [huáng liáng] comes from Qing and Ji prefectures and is not seen in the eastern regions. White liang [bái liáng] is found everywhere; the variety from Xiangyang's Zhugen [Bamboo Root] area is the finest. Green liang [qīng liáng] is rare in Jiangdong. There is also a type of liang from Hanzhong whose grains resemble su but have a black husk; it is edible and produces an excellent wine that is remarkably clarifying.\n\nSu Gong [Tang Materia Medica compiler] states: Although liang belongs to the millet category, examined closely, they differ. Yellow liang is produced in the Shu, Han, Shang, and Zhe regions; its panicles are large and awns long, and both the unhusked grain and the rice are coarser than those of white liang. However, it yields little seed and does not tolerate drought or flood well. When eaten it is fragrant and delicious, surpassing all other liang varieties; people call it 'Zhugen Yellow' [Bamboo Root Yellow]. Tao Hongjing's identification of the Zhugen variety as white liang is incorrect. White liang has large panicles with many long awns, and the unhusked grain is coarse, flat, and elongated — not round like su. The rice is also white and large; eaten, it is fragrant and delicious, second only to yellow liang. Green liang panicles have awns and the grain is greenish; the rice too is slightly green and finer than yellow or white liang. The grain resembles highland barley [qīng kē] but is somewhat coarser; it ripens early but yields little. Eaten in summer, it is extremely cooling and refreshing. However, its flavor is thin and its color unappealing, inferior to yellow and white liang, and so few people cultivate it. It makes a clear and white malt syrup [yí/餳] superior to that made from other grains.\n\nSu Song states: Liang belongs to the millet [su] category. Although su has finer grains, in terms of uses and properties the two are no different. Today in the Bian, Luo, He, and Shan regions, white liang is widely cultivated, while green and yellow liang are rare, because those varieties deplete the soil and yield little at harvest.\n\nKou Zongshi states: Yellow liang and white liang are widely cultivated by farming households in the western Luo region; as cooked rice they are particularly excellent. For other uses they are not especially suitable.",
+      "entities_mentioned": [
+        {
+          "name": "粱 (liáng) — general",
+          "modern_identification": "Setaria italica (foxtail millet), large-panicled varieties",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen equates liang with the broader su (millet) category but specifies that liang refers to coarser, large-panicled, long-awned cultivars of foxtail millet."
+        },
+        {
+          "name": "黃粱 (huáng liáng) — Yellow Liang",
+          "modern_identification": "Setaria italica var. (yellow-grained large-panicled cultivar)",
+          "identification_confidence": "high",
+          "notes": "Described as the finest-tasting variety; produced in Sichuan, Han, Shang, and Zhe regions. Also called 'Zhugen Yellow.' Low yield; not drought/flood tolerant."
+        },
+        {
+          "name": "白粱 (bái liáng) — White Liang",
+          "modern_identification": "Setaria italica var. (white-grained large-panicled cultivar)",
+          "identification_confidence": "high",
+          "notes": "Most widely cultivated variety; found throughout the country; flavor second only to yellow liang. The Xiangyang 'Bamboo Root' variety noted as especially fine."
+        },
+        {
+          "name": "青粱 (qīng liáng) — Green Liang",
+          "modern_identification": "Setaria italica var. (green-grained cultivar)",
+          "identification_confidence": "high",
+          "notes": "Early ripening, thin-yielding; considered cooling in summer; thin flavor and poor color. Used to make clear, white malt syrup (yí) of superior quality."
+        },
+        {
+          "name": "漢中黑皮粱 — Hanzhong black-husked liang",
+          "modern_identification": "Possibly a local Setaria italica cultivar with dark pericarp",
+          "identification_confidence": "low",
+          "notes": "Described as having grains like su but with black husks; edible and used for brewing wine."
+        },
+        {
+          "name": "解粱、貝粱、遼東赤粱",
+          "modern_identification": "Regional cultivars of Setaria italica",
+          "identification_confidence": "medium",
+          "notes": "Named varieties mentioned in Guo Yigong's Guangzhi; identified by place of origin rather than color or morphology."
+        }
+      ],
+      "translator_notes": "1. The phrase '釀酒甚消玉' in the Hongjing section is somewhat obscure; '消玉' may be a figurative expression meaning the wine is clarifying or exceptionally pure/refined, possibly an OCR corruption of a more standard phrase. Translated as 'remarkably clarifying' with caution. 2. '勝之' in Hongjing's commentary likely refers to a cited authority (possibly Xiao Shengzhi or a similar figure); the name could not be confirmed and is rendered by surname only. 3. '餳' (yí) refers to a thick malt sugar syrup or candy made by saccharifying cooked grain — rendered as 'malt syrup' for clarity. 4. Li Shizhen's philological argument about the Zhou Rites is accurate: 'liang' appears in classical grain lists where 'su' does not, supporting his claim that liang is the older, more prestigious term.",
+      "_label": "粱 (穀之二)"
+    },
+    {
+      "title_inferred": "Yellow Millet (Huáng Liáng Mǐ) — Flavor, Medicinal Uses, and Commentary",
+      "original_text": "【氣味】甘，平，無毒。\n\n【主治】益氣，和中，止泄（《別錄》）。去客風頑痺（《日華》）。止霍亂下痢，利小便，除煩熱（時珍）。\n\n【發明】宗奭曰︰青粱、白粱，性皆微涼。獨黃粱性味甘平，豈非得土之中和氣多耶？\n\n頌曰︰諸粱比之他谷，最益脾胃。",
+      "translation": "**Flavor and Nature:** Sweet, balanced [ping], non-toxic.\n\n**Principal Treatments:** Supplements qi [vital energy], harmonizes the middle [digestive center], and arrests diarrhea (Bielu [Miscellaneous Records]). Expels adventitious wind [exogenous pathogenic wind] and stubborn impediment-bi [painful obstruction syndrome] (Rihua [Daily Flower Materia Medica]). Arrests cholera-like disorder [huoluan] and dysenteric diarrhea, promotes urination, and eliminates vexing heat (Li Shizhen).\n\n**Elucidation:** Kou Zongshi [Zongshi] states: Green millet [qing liang] and white millet [bai liang] are both in nature slightly cooling. Yellow millet alone has a sweet and balanced nature and flavor — is this not because it has absorbed the most of earth's harmonizing and neutral qi?\n\nSu Song [Song] states: Among all the millets, compared to other grains, [yellow millet] is the most beneficial to the spleen and stomach.",
+      "entities_mentioned": [
+        {
+          "name": "黃粱米 (Huáng Liáng Mǐ, Yellow Millet)",
+          "modern_identification": "Setaria italica (foxtail millet), specifically a yellow-grained variety; some sources equate huáng liáng more precisely with Panicum miliaceum (broomcorn/proso millet), though scholarly consensus favors a yellow cultivar of Setaria italica",
+          "identification_confidence": "medium",
+          "notes": "The three liáng millets (green, white, yellow) are generally understood as cultivar variants of Setaria italica or related Panicum species. Conditions treated: qi deficiency, diarrhea, wind-bi obstruction, cholera-like illness, dysentery, difficult urination, vexing heat. Preparation method: not explicitly stated in this segment; consumed as grain/rice preparation (implied as cooked grain)."
+        },
+        {
+          "name": "青粱 (Qīng Liáng, Green Millet)",
+          "modern_identification": "Setaria italica, green-grained cultivar",
+          "identification_confidence": "medium",
+          "notes": "Mentioned for comparative purposes; described as slightly cooling in nature."
+        },
+        {
+          "name": "白粱 (Bái Liáng, White Millet)",
+          "modern_identification": "Setaria italica, white-grained cultivar",
+          "identification_confidence": "medium",
+          "notes": "Mentioned for comparative purposes; described as slightly cooling in nature."
+        }
+      ],
+      "translator_notes": "The term 客風頑痺 (kè fēng wán bì) literally means 'guest/adventitious wind and stubborn bi-obstruction,' referring in classical Chinese medicine to painful joint or muscle conditions caused by exogenous pathogenic wind. 霍亂 (huòluàn) in this pre-modern context refers to acute gastrointestinal upset (vomiting and diarrhea simultaneously) rather than the modern bacterial disease cholera specifically, though the symptom profile overlaps. The cosmological reasoning offered by Kou Zongshi — that yellow millet's balanced nature derives from the earth phase's 'central harmonizing qi' — reflects the Five Phases (wuxing) framework, where yellow corresponds to earth and the spleen-stomach organ system.",
+      "_label": "黃粱米 (穀之二)"
+    },
+    {
+      "title_inferred": "White Millet Rice (Báiliáng Mǐ) — Flavor, Nature, and Medical Uses",
+      "original_text": "【氣味】甘，微寒，無毒。\n\n【主治】除熱，益氣（《別錄》）。除胸膈中客熱，移五臟氣，緩筋骨。凡患胃虛並嘔吐食及水者，以米汁二合，生薑汁一合，和服之，佳（孟詵）。炊飯食之，和中，止煩渴（時珍）",
+      "translation": "**Flavor and Nature:** Sweet, slightly cold, non-toxic.\n\n**Principal Treatments:** Eliminates heat and supplements [vital] qi (Bielu [Mingyi Bielu]). Clears adventitious heat [externally-contracted heat] from the chest and diaphragm, regulates the qi of the five viscera, and relaxes the sinews and bones. For all cases of stomach deficiency accompanied by vomiting of food or water: take two [Chinese] gě (合) of rice water [rice congee liquid] mixed with one gě of fresh ginger juice and drink the combined preparation — this is excellent (Meng Shen). Cooked as steamed rice and eaten, it harmonizes the middle [burner] and relieves vexing thirst (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "白粱米 (báiliáng mǐ, white millet rice)",
+          "modern_identification": "Panicum miliaceum (white variety of common millet / broomcorn millet)",
+          "identification_confidence": "medium",
+          "notes": "Traditional Chinese sources distinguish several varieties of liáng (粱); 白粱 refers specifically to the white-grained type. Some scholars identify it with Setaria italica (foxtail millet), though Panicum miliaceum is the more common current assignment for 粱 in general."
+        },
+        {
+          "name": "生薑 (shēngjiāng, fresh ginger)",
+          "modern_identification": "Zingiber officinale",
+          "identification_confidence": "high",
+          "notes": "Used here as a juice (生薑汁) in combination with rice water to treat stomach deficiency with vomiting."
+        }
+      ],
+      "translator_notes": "The citation '《別錄》' refers to the Mingyi Bielu (名醫別錄), a classical materia medica. '孟詵' (Meng Shen) was a Tang dynasty dietetic physician and author of Shiliao Bencao. '時珍' refers to Li Shizhen himself, the compiler of the Bencao Gangmu. The unit 合 (gě) is approximately 20 mL in the Ming period context. The term 客熱 ('adventitious heat' or 'guest heat') denotes heat from an external pathogen lodging in the body, distinct from constitutional internal heat.",
+      "_label": "白粱米 (穀之二)"
+    },
+    {
+      "title_inferred": "Green Millet Rice (Qīng Liáng Mǐ) — Properties, Medical Uses, and Grain-Abstinence Formulas",
+      "original_text": "【氣味】甘，微寒，無毒。\n\n【主治】胃痺，熱中消渴，止泄痢，利小便，益氣補中，輕身長年。煮粥食之（《別錄》）。健脾，治泄精（大明）。\n\n【發明】時珍曰：今粟中有大而青黑色者是也。其谷芒多米少，稟受金水之氣，其性最涼，而宜病患。\n\n詵曰：青粱米可辟谷。以純苦酒浸三日，百蒸百晒，藏之。遠行，日一餐之，可度十日；若重餐之，四百九十日不飢也。又方：以米一斗，赤石脂三斤，水漬置暖處，一、二日，上青白衣，搗為丸如李大。日服三丸，亦不飢也。\n\n掌禹錫曰：按：《靈寶五符經》中，白鮮米，九蒸九曝，作辟谷糧，而此用青粱米，未見出處。",
+      "translation": "**[Qi and Flavor]** Sweet, slightly cold, non-toxic.\n\n**[Principal Indications]** Gastric obstruction [胃痺, wei bi], heat in the middle [熱中], wasting-thirst [消渴, xiao ke]; stops diarrhea and dysentery; promotes urination; augments qi and supplements the middle [burner]; lightens the body and prolongs life. To be prepared as congee and eaten. (From the *Bielu* [Supplementary Records].)\nStrengthens the spleen; treats seminal emission [泄精]. (From Da Ming [Rihuazi Bencao].)\n\n**[Elaboration]** Li Shizhen states: Among present-day millets, this is the variety that is large and blue-black in color. Its grain has many awns and little grain flesh; it receives the qi of Metal and Water [in Five-Phase terms], so its nature is the coldest of all [such grains] and is most suitable for the sick.\n\nMeng Shen [詵] states: Green millet rice can be used for grain abstinence [辟谷, bigu]. Soak it in pure bitter wine [苦酒, i.e., strong vinegar or sour wine] for three days, then steam and sun-dry it one hundred times in succession, and store it. When traveling far, consuming one meal of it per day allows one to go ten days [without other food]; if one doubles the portion, one will not feel hungry for four hundred and ninety days. Another formula: Take one dou of rice and three jin of red halloysite [赤石脂, chi shi zhi]; soak in water and set in a warm place for one or two days until a blue-white mold [coating] appears on the surface; pound into pills the size of a plum [李]. Take three pills daily; one will similarly not feel hungry.\n\nZhang Yuxi [掌禹錫] states: According to the *Lingbao Wufu Jing* [《靈寶五符經》, Scripture of the Five Talismans of the Numinous Treasure], it is white xian rice [白鮮米] that is steamed and sun-dried nine times to make grain-abstinence provisions — whereas this formula uses green millet rice, for which I have not found the original source.",
+      "entities_mentioned": [
+        {
+          "name": "青粱米 (Qīng Liáng Mǐ, Green Millet Rice)",
+          "modern_identification": "Setaria italica (foxtail millet), a blue-black, large-grained variety",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen identifies it as the large, blue-black variant of common millet (粟). Classified as sweet, slightly cold, and associated with Metal-Water qi in Five-Phase cosmology."
+        },
+        {
+          "name": "苦酒 (Kǔ Jiǔ, Bitter Wine)",
+          "modern_identification": "Rice vinegar or strong sour wine (Zhenjiang/rice vinegar type)",
+          "identification_confidence": "medium",
+          "notes": "In classical Chinese pharmacopeia, 苦酒 typically refers to a strong vinegar or fermented sour liquid used as a solvent or preservative."
+        },
+        {
+          "name": "赤石脂 (Chì Shí Zhī, Red Halloysite)",
+          "modern_identification": "Halloysite or red kaolin clay (hydrated aluminum silicate)",
+          "identification_confidence": "high",
+          "notes": "A well-known mineral drug in Chinese medicine, used here combined with green millet in a grain-abstinence pill formula."
+        },
+        {
+          "name": "胃痺 (Wèi Bì, Gastric Obstruction)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A classical Chinese medical term for a syndrome of gastric blockage or painful obstruction, not directly mappable to a single modern condition."
+        },
+        {
+          "name": "消渴 (Xiāo Kě, Wasting-Thirst)",
+          "modern_identification": "Possibly diabetes mellitus or conditions involving polydipsia",
+          "identification_confidence": "medium",
+          "notes": "Classical term for a syndrome characterized by excessive thirst, hunger, and urination; often compared to diabetes in modern scholarship."
+        },
+        {
+          "name": "《靈寶五符經》 (Língbǎo Wǔfú Jīng)",
+          "modern_identification": "A Daoist scripture in the Lingbao tradition",
+          "identification_confidence": "high",
+          "notes": "Cited by Zhang Yuxi as a different source prescribing white xian rice (白鮮米) for bigu, in contrast to the green millet formula quoted above."
+        }
+      ],
+      "translator_notes": "The bigu (辟谷) formulas described here are Daoist practices of grain abstinence aimed at transcending ordinary bodily needs, not conventional medical treatments. The figure of '490 days without hunger' is clearly idealized or numerologically symbolic. The 'blue-white coating' (青白衣) that forms on the soaked rice-and-clay mixture is likely mold growth, which is notable from a modern food-safety perspective. Zhang Yuxi's closing note is a bibliographic caveat acknowledging that the green millet bigu formula's source is unknown to him, distinguishing it from the white xian rice formula in the Lingbao scripture. 'Meng Shen' (詵) refers to Meng Shen (孟詵), Tang-dynasty author of the *Shiliao Bencao* (食療本草).",
+      "_label": "青粱米 (穀之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】粟。\n\n時珍曰︰粟，古文作 ，象穗在禾上之形。而《春秋說》題辭云︰西乃金所立，米為陽之精，故西字合米為粟。此鑿說也。許慎云︰粟之為言續也。續於谷也。古者以粟為黍、稷、粱、秫之總稱，而今之粟，在古但呼為粱。後人乃專以粱之細者名粟，故唐孟詵《本草》\n言人不識粟，而近世皆不識粟也。大抵粘者為秫，不粘者為粟。故呼此為 粟，以別秫而配。北人謂之小米也。\n\n【集解】弘景曰︰粟，江南西間所種皆是。其粒細於粱，熟舂令白，亦當白粱，呼為白粱粟，或呼為粢米。\n\n恭曰︰粟類多種，而並細於諸粱。北土常食，與粱有別。粢乃稷米，陶注非矣。\n\n詵曰︰粟，顆粒小者是，今人多不識之。其粱米粒粗大，隨色別之。南方多 田，種之極易。舂粒細香美，少虛怯，只於灰中種之，又不鋤治故也。北田所種多鋤之，即難舂；不鋤即草翳死。都由土地使然爾。\n\n時珍曰︰粟，即粱也。穗大而毛長粒粗者為粱，穗小而毛短粒細者為粟。苗俱似茅。種類凡數十，有青、赤、黃、白、黑諸色，或因姓氏地名，或因形似時令，隨義賦名。故早則有趕麥黃、百日糧之類，中則有八月黃、老軍頭之類，晚則有雁頭青、寒露粟之類。按︰賈思勰《齊民要術》云︰粟之成熟有早、晚，苗稈有高、",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Millet (Sù / 粟) — Grains, Chapter Two\",\n  \"original_text\": \"【釋名】粟。\\n\\n時珍曰︰粟，古文作，象穗在禾上之形。而《春秋說》題辭云︰西乃金所立，米為陽之精，故西字合米為粟。此鑿說也。許慎云︰粟之為言續也。續於谷也。古者以粟為黍、稷、粱、秫之總稱，而今之粟，在古但呼為粱。後人乃專以粱之細者名粟，故唐孟詵《本草》言人不識粟，而近世皆不識粟也。大抵粘者為秫，不粘者為粟。故呼此為粟，以別秫而配。北人謂之小米也。\\n\\n【集解】弘景曰︰粟，江南西間所種皆是。其粒細於粱，熟舂令白，亦當白粱，呼為白粱粟，或呼為粢米。\\n\\n恭曰︰粟類多種，而並細於諸粱。北土常食，與粱有別。粢乃稷米，陶注非矣。\\n\\n詵曰︰粟，顆粒小者是，今人多不識之。其粱米粒粗大，隨色別之。南方多田，種之極易。舂粒細香美，少虛怯，只於灰中種之，又不鋤治故也。北田所種多鋤之，即難舂；不鋤即草翳死。都由土地使然爾。\\n\\n時珍曰︰粟，即粱也。穗大而毛長粒粗者為粱，穗小而毛短粒細者為粟。苗俱似茅。種類凡數十，有青、赤、黃、白、黑諸色，或因姓氏地名，或因形似時令，隨義賦名。故早則有趕麥黃、百日糧之類，中則有八月黃、老軍頭之類，晚則有雁頭青、寒露粟之類。按︰賈思勰《齊民要術》云︰粟之成熟有早、晚，苗稈有高、下，收實有息耗，質性有強弱，米味有美惡，山澤有異宜。順天時，量地利，則用力少而成功多；任性返道，勞而無獲。大抵早粟皮薄米實，晚粟皮濃米少。\",\n  \"translation\": \"**[Explanation of Names]** Sù (粟, millet).\\n\\nLi Shizhen states: The character 粟 [sù] in ancient script was written in a form depicting an ear of grain atop a stalk [禾]. The apocryphal commentary *Chunqiu Shuo* [Elucidations of the Spring and Autumn Annals] claims: 'West [西] is established by the Metal [phase]; rice [米] is the essence of Yang — therefore the character for West combined with rice yields the character for millet [粟].' This is a forced interpretation. Xu Shen [author of *Shuowen Jiezi*] explained: 'The word sù [粟] means \"continuity\" [續], continuing [the supply] from grain.' In antiquity, sù served as a general term encompassing glutinous millet [shǔ, 黍], panicled millet [jì, 稷], foxtail millet [liáng, 粱], and glutinous millet [shú, 秫]; but what is now called sù was in ancient times simply called liáng [粱]. Later generations came to apply the name sù specifically to the fine-grained variety of liáng. This is why Meng Shen's [孟詵] *Bencao* of the Tang dynasty remarked that people could no longer identify sù — and indeed in recent times most people do not recognize it. In general, sticky [glutinous] varieties are shú [秫], and non-sticky varieties are sù [粟]. Hence this grain is called [non-glutinous] sù to distinguish it from shú. Northerners call it xiǎomǐ [小米, 'small rice/millet'].\\n\\n**[",
+      "_label": "粟 (穀之二)"
+    },
+    {
+      "title_inferred": "Millet (粟米) — Flavor, Properties, Medicinal Uses, and Related Products",
+      "original_text": "【氣味】鹹，微寒，無毒。時珍曰：鹹、淡。\n\n宗奭曰：生者難化。熟者滯氣，隔食，生蟲。\n\n藏器曰：胃冷者不宜多食。粟浸水至敗者，損人。\n\n瑞曰：與杏仁同食，令人吐瀉。雁食粟，翼重不能飛。\n\n【主治】養腎氣，去脾胃中熱，益氣。陳者：苦，寒。治胃熱消渴，利小便（《別錄》）。止痢，壓丹石熱（孟詵）。水煮服，治熱腹痛及鼻衄。為粉，和水濾汁，解諸毒，治霍亂及轉筋入腹，又治卒得鬼打（藏器）。解小麥毒，發熱（士良）。治反胃熱痢。煮粥食，益丹田（《日用》）。\n\n【發明】弘景曰：陳粟乃三、五年者，尤解煩悶，服食家亦將食之。\n\n宗奭曰：粟米利小便，故能益脾胃。\n\n震亨曰：粟屬水與土。陳者最硬難化，得漿水乃化也。\n\n時珍曰：粟之味鹹淡，氣寒下滲，腎之谷也，腎病宜食之。虛熱消渴泄痢，皆腎病也。滲利小便，所以泄腎邪也。降胃火，故脾胃之病宜食之。\n\n霍亂卒熱，心煩渴，飲數升立瘥。臭泔：止消渴，尤良（蘇恭）。酸泔及澱：洗皮膚瘙疥，殺蟲。飲之，主五痔。和臭樗皮煎服，治小兒疳痢（藏器）。痔漏脫肛，和諸藥薰之（時珍）。\n\n粟奴\n利小腸，除煩懣（時珍）。\n\n【發明】時珍曰：粟奴，即粟苗成穗時生黑煤者。古方不用。《聖惠》治小腸結澀不通，心煩悶亂，有粟奴湯：用粟奴、苦竹須、小豆葉、炙甘草各一兩，燈心十寸，蔥白五寸，銅錢七文，水煎分服。取效乃止。\n\n粟廩米\n見後陳廩米下。\n\n粟米\n見後米下。\n\n粟糗\n見後下。",
+      "translation": "**[Flavor and Qi]** Salty, slightly cold, non-toxic. Li Shizhen states: salty and bland.\n\nKou Zongshi states: When raw, it is difficult to digest. When cooked, it may stagnate qi, obstruct food [digestion], and generate worms.\n\nChen Cangqi states: Those with cold stomachs should not eat it in excess. Millet soaked in water until spoiled is harmful to people.\n\nWu Rui states: Eaten together with apricot kernels [xing ren], it causes vomiting and diarrhea. When wild geese eat millet, their wings become heavy and they cannot fly.\n\n**[Indications and Treatments]**\nNourishes kidney qi, removes heat from the spleen and stomach, and supplements qi. Aged millet [chen zhe]: bitter, cold. Treats stomach-heat wasting-thirst [xiao ke / diabetes-like condition] and promotes urination (Mingyi Bielu). Stops dysentery and suppresses the heat from mineral elixirs [dan shi] (Meng Shen). Decocted in water and taken orally, treats hot abdominal pain and nosebleed [epistaxis]. Ground into powder and filtered with water into a liquid, it resolves various poisons, treats cholera [huo luan] and cramps extending into the abdomen, and also treats sudden assault by malevolent spirits [gui da] (Chen Cangqi). Resolves toxicity from wheat and treats fever (Shi Liang). Treats regurgitation [fan wei] and heat dysentery. Cooked into porridge and eaten, it nourishes the cinnabar field [dan tian] (Riyon Bencao).\n\n**[Elaboration / Faming]**\nTao Hongjing states: Aged millet, meaning that stored for three to five years, is especially effective at relieving vexation and oppression; those who practice dietary cultivation [fushi] also eat it.\n\nKou Zongshi states: Millet promotes urination, and thereby benefits the spleen and stomach.\n\nZhu Zhenheng states: Millet belongs to the phases of Water and Earth. Aged millet is the hardest and most difficult to digest; it is only broken down upon contact with fermented liquid [jiang shui].\n\nLi Shizhen states: The flavor of millet is salty and bland; its qi is cold and percolating downward — it is the grain of the kidney. Those with kidney disease should eat it. Deficiency-heat wasting-thirst [xiao ke] and diarrhea-dysentery are all kidney diseases. By percolating and promoting urination, it drains pathogenic kidney qi. It also descends stomach fire, and therefore diseases of the spleen and stomach are also amenable to its consumption.\n\n[Regarding millet water wash / soaking liquid:] For sudden heat in cholera [huo luan], with vexing thirst, drinking several sheng [of this liquid] brings immediate recovery. Foul millet washing water [chou gan]: especially effective at stopping wasting-thirst (Su Gong). Sour millet washing water and its sediment [suan gan ji dian]: used to wash itchy skin and scabies, and to kill parasites. Drunk, it treats the five types of hemorrhoids [wu zhi]. Decocted with the bark of foul chun tree [chou chu pi, i.e., Ailanthus altissima] and taken orally, it treats childhood gan-dysentery [gan li] (Chen Cangqi). For hemorrhoidal fistulas and rectal prolapse, combined with various drugs and used as a fumigant (Li Shizhen).\n\n**Millet Smut [Su Nu]**\nBenefits the small intestine and relieves vexation and oppression (Li Shizhen).\n\n**[Elaboration]**\nLi Shizhen states: Millet smut [su nu] is the black sooty growth that forms on millet stalks when they are forming ears. It is not used in ancient formulas. The Shenghuifang [Shenghui Formulary] includes a formula called 'Millet Smut Decoction' [su nu tang] for treating obstructed small intestine with inability to pass [stool or urine], accompanied by vexing agitation of the heart-mind: use millet smut, bitter bamboo rootlets [ku zhu xu], small red bean leaves [xiao dou ye], honey-roasted licorice root [zhi gancao], one liang each; rush pith [deng xin] ten cun; scallion whites [cong bai] five cun; seven copper coins [tong qian]; decoct in water, divide into doses and take. Stop once efficacy is achieved.\n\n**Granary-stored Millet [Su Lin Mi]**\nSee later entry under Aged Granary Rice [Chen Lin Mi].\n\n**Millet [Su Mi / Bai Mi]**\nSee later entry under Rice.\n\n**Parched Millet Flour [Su Qiu]**\nSee later entry.",
+      "entities_mentioned": [
+        {
+          "name": "粟米 (Su Mi) — Millet",
+          "modern_identification": "Setaria italica (foxtail millet)",
+          "identification_confidence": "high",
+          "notes": "The principal subject of the entry. Described as salty, bland, and slightly cold in nature; associated with the kidney in five-phase theory. Used for wasting-thirst (xiao ke), dysentery, abdominal pain, nosebleed, cholera, and general kidney and spleen-stomach complaints."
+        },
+        {
+          "name": "陳粟 (Chen Su) — Aged Millet",
+          "modern_identification": "Setaria italica (aged/stored)",
+          "identification_confidence": "high",
+          "notes": "Millet stored 3–5 years; described as bitter and cold; especially used for relieving vexation and stomach heat."
+        },
+        {
+          "name": "臭泔 (Chou Gan) — Foul Millet Washing Water",
+          "modern_identification": "Fermented/soured water from washing millet (Setaria italica)",
+          "identification_confidence": "high",
+          "notes": "Liquid byproduct of washing or soaking millet; used to treat wasting-thirst (xiao ke). Attributed to Su Gong."
+        },
+        {
+          "name": "酸泔及澱 (Suan Gan ji Dian) — Sour Millet Water and Sediment",
+          "modern_identification": "Acidified soaking water and starchy sediment from millet",
+          "identification_confidence": "high",
+          "notes": "Used topically for skin itching and scabies; taken internally for the five hemorrhoids; combined with Ailanthus bark for childhood gan-dysentery."
+        },
+        {
+          "name": "粟奴 (Su Nu) — Millet Smut",
+          "modern_identification": "Probably Ustilago crameri or related smut fungus infecting Setaria italica",
+          "identification_confidence": "medium",
+          "notes": "Described as a black sooty fungal growth appearing on millet during ear formation. Used in the Shenghuifang formula 'Su Nu Tang' for obstructed small intestine with vexation."
+        },
+        {
+          "name": "臭樗皮 (Chou Chu Pi) — Bark of Foul Chun Tree",
+          "modern_identification": "Ailanthus altissima (tree of heaven), root or stem bark",
+          "identification_confidence": "high",
+          "notes": "Combined with sour millet water and decocted for childhood gan-dysentery."
+        },
+        {
+          "name": "苦竹須 (Ku Zhu Xu) — Bitter Bamboo Rootlets",
+          "modern_identification": "Pleioblastus amarus or Phyllostachys nigra var. henonis (root fibers)",
+          "identification_confidence": "medium",
+          "notes": "Ingredient in the Su Nu Tang formula for obstructed small intestine."
+        },
+        {
+          "name": "小豆葉 (Xiao Dou Ye) — Small Red Bean Leaves",
+          "modern_identification": "Vigna angularis (adzuki bean) leaves",
+          "identification_confidence": "medium",
+          "notes": "Ingredient in Su Nu Tang."
+        },
+        {
+          "name": "炙甘草 (Zhi Gancao) — Honey-roasted Licorice Root",
+          "modern_identification": "Glycyrrhiza uralensis (roasted/processed)",
+          "identification_confidence": "high",
+          "notes": "Standard harmonizing ingredient in Su Nu Tang formula."
+        },
+        {
+          "name": "燈心 (Deng Xin) — Rush Pith",
+          "modern_identification": "Juncus effusus (rush pith)",
+          "identification_confidence": "high",
+          "notes": "Ingredient in Su Nu Tang; used for its heat-clearing and urination-promoting properties."
+        },
+        {
+          "name": "杏仁 (Xing Ren) — Apricot Kernel",
+          "modern_identification": "Prunus armeniaca seed",
+          "identification_confidence": "high",
+          "notes": "Noted as incompatible with millet; combination said to cause vomiting and diarrhea."
+        }
+      ],
+      "translator_notes": "1. The source text contains a duplicated 【發明】section (the Tao Hongjing, Kou Zongshi, Zhu Zhenheng, and Li Shizhen commentaries appear twice). This appears to be a transcription/OCR artifact; the section is rendered once in the translation with the second occurrence omitted, except where the second instance contains unique content (Li Shizhen's note on 粟奴, which only appears in the second block).\n2. 'Gui da' (卒得鬼打, sudden assault by malevolent spirits) is a traditional diagnostic category, likely corresponding to sudden mysterious pain or trauma of unknown cause.\n3. 'Dan tian' (丹田) is a traditional physiological concept referring to the lower abdomen energy center; rendered as 'cinnabar field' to preserve the technical vocabulary.\n4. 'Dan shi' (丹石) refers to mineral-based alchemical elixirs; heat from ingesting such preparations was a recognized medical concern in medieval Chinese medicine.\n5. The entries for 粟廩米, 粟米 (alternate form), and 粟糗 are cross-references with no substantive content in this segment; they are translated accordingly.\n6. Dosage unit: one liang (兩) ≈ approximately 37.3 g in Ming dynasty standards; cun (寸) is a traditional length unit (~3.33 cm).\n7. 'Xiao ke' (消渴) is frequently equated with diabetes mellitus in modern scholarship, though it broadly covers wasting-thirst syndromes.",
+      "_label": "粟米 (穀之二)"
+    },
+    {
+      "title_inferred": "Shu (Glutinous Millet) — Grains, Chapter 2",
+      "original_text": "【釋名】眾（音終。《爾雅》）、糯秫（《唐本》）、糯粟（《唐本》）、黃糯。\n\n時珍曰：秫字篆文，象其禾體柔弱之形，俗呼糯粟是矣。北人呼為黃糯，亦曰黃米。釀酒劣於糯也。\n\n【集解】恭曰：秫是稻秫也。今人呼粟糯為秫。北土多以釀酒，而汁少於黍米。凡黍、稷、粟、秫、粳、糯，三谷皆有粳、糯也。\n\n禹錫曰：秫米似黍米而粒小，可作酒。\n\n宗奭曰：秫米，初搗出淡黃白色，亦如糯，不堪作飯，最粘，故宜作酒。\n\n時珍曰：秫即粱米、粟米之粘者。有赤、白、黃三色，皆可釀酒、熬糖、作糕食之。蘇頌《圖經》謂秫為黍之粘者，許慎《說文》謂秫為稷之粘者，崔豹《古今注》謂秫為稻之粘者，皆誤也。惟蘇恭以粟、秫分粳、糯，孫炎注《爾雅》謂秫為粘粟者，得之。\n秫米（即黃米）\n\n【氣味】甘，微寒，無毒。\n\n詵曰：性平。不可常食，擁五臟氣，動風，迷悶人。\n\n時珍曰：按：《養生集》云：味酸性熱，粘滯，易成黃積病，小兒不宜多食。\n\n【主治】寒熱，利大腸，療漆瘡（《別錄》）。治筋骨攣急，殺瘡疥毒熱。生搗，和雞子白，敷毒腫，良（孟詵）。主犬咬，凍瘡，嚼敷之（《日華》）。治肺瘧，及陽盛陰虛，夜不得眠，及食鵝鴨成症，妊娠下黃汁（時珍）。煮湯，洗風（孟詵）。\n\n【發明】弘景曰：北人以此米作酒煮糖，肥軟易消。方藥不正用，惟嚼以塗漆瘡及釀諸藥醪爾。\n\n時珍曰：秫者，肺之谷也，肺病宜食之。故能去寒熱，利大腸。大腸者肺之合，而肺病多作皮寒熱也。《千金》治肺瘧方用之，取此義也。《靈樞經》岐伯治陽盛陰虛，夜不得瞑，半夏湯中用之，取其益陰氣而利大腸也。大腸利則陽不盛矣。方見半夏條。又《異苑》云：宋元嘉中，有人食鴨成症瘕。醫以秫米研粉調水服之。須臾煩躁，吐出一鴨雛而瘥也。\n\n《千金方》治食鴨肉成病，胸滿面赤，不能食，以秫米湯一盞飲之。",
+      "translation": "**Names and Nomenclature**\n\nAlso known as: Zhòng [眾, pronounced 'zhōng'; from the *Erya*], Nuòshú [糯秫; from the *Tang Bencao*], Nuòsù [糯粟; from the *Tang Bencao*], and Huángnuò [黃糯, 'yellow glutinous grain'].\n\nLi Shizhen states: The seal-script form of the character *shú* [秫] resembles the pliant, soft body of a grain plant — precisely what the common name 'glutinous millet' [nuòsù] conveys. Northerners call it Huángnuò ('yellow glutinous grain') or Huángmǐ ('yellow rice'). For brewing wine, it is inferior to [rice-based] nuò [糯].\n\n**Collected Commentaries**\n\nSu Gong states: Shú is a kind of glutinous grain. Today people call glutinous millet shú. In the northern lands it is widely used for brewing wine, though it yields less liquid than black millet [shǔ]. Among the grains — black millet, panicled millet, foxtail millet, glutinous millet, round-grained non-glutinous rice, and glutinous rice — all three grain types have both a non-glutinous [jīng, 粳] and a glutinous [nuò, 糯] variety.\n\nYu Xi states: Shú grain resembles black millet [shǔ] but has smaller kernels, and can be used to make wine.\n\nZou Zongshi states: When shú is first pounded, it is a pale yellowish-white color, similar to glutinous rice [nuò]; it is not suitable for making cooked rice as it is extremely sticky, and is therefore best used for brewing wine.\n\nLi Shizhen states: Shú is simply the glutinous variety of sorghum [liáng] or foxtail millet [sù]. It comes in three colors — red, white, and yellow — all of which can be used to brew wine, boil into syrup, or make cakes for eating. Su Song's *Illustrated Classic* [*Tujing*] identifies shú as the glutinous variety of black millet [shǔ]; Xu Shen's *Shuowen* identifies it as the glutinous variety of panicled millet [jì]; and Cui Bao's *Gujin Zhu* identifies it as the glutinous variety of rice — all three are incorrect. Only Su Gong's distinction between non-glutinous and glutinous forms of foxtail millet [sù], and Sun Yan's commentary on the *Erya* identifying shú as 'sticky millet,' are correct.\n\n*Shú grain (that is, yellow rice)*\n\n**Flavor and Nature**\n\nSweet, slightly cold, non-toxic.\n\nMeng Shen states: Its nature is balanced [píng]. It should not be eaten regularly, as it obstructs the qi of the five viscera, stirs up wind, and causes confusion and oppression in a person.\n\nLi Shizhen states: According to the *Yangsheng Ji* [Collection on Nourishing Life]: its flavor is sour and its nature is hot; it is sticky and cloying, and readily causes jaundice-accumulation disease [huángjí bìng]. Children should not eat it in excess.\n\n**Indications and Treatments**\n\n- Alternating chills and fever [hánrè]; promotes movement of the large intestine; treats lacquer-rash [qīchuāng] (*Bielu*).\n- Treats cramping and spasms of the sinews and bones; eliminates the toxic heat of sores and scabies. Pound it fresh, mix with egg white, and apply to toxic swellings — effective (Meng Shen).\n- Governs dog bites and frostbite: chew and apply topically (*Rihua*).\n- Treats pulmonary malaria [fèi nüè]; excess yang with deficient yin causing inability to sleep at night; abdominal masses [zhèng] caused by eating goose or duck; and yellow vaginal discharge during pregnancy (Li Shizhen).\n- Boil into a decoction and wash [affected areas] for wind-related conditions (Meng Shen).\n\n**Elucidation**\n\nTao Hongjing states: Northerners use this grain to make wine and boil syrup [táng]; it is rich, soft, and easy to digest. It is not commonly used in formal medicine — only chewed and applied to lacquer-rash, or used to brew medicated wines [yào láo].\n\nLi Shizhen states: Shú is the grain of the lung; those with lung disease should eat it. Hence it can dispel alternating chills and fever and promote movement of the large intestine. The large intestine is paired with [and corresponds to] the lung, and lung disease commonly manifests as chills and fever of the skin. This is why the *Qianjin* [*Essential Prescriptions Worth a Thousand Gold*] uses it in prescriptions for pulmonary malaria — drawing on exactly this principle. In the *Lingshu Jing*, Qi Bo uses it in the Pinellia Decoction [Bànxià Tāng] for the treatment of excess yang with deficient yin causing inability to sleep, taking advantage of its ability to nourish yin qi and promote movement of the large intestine. When the large intestine moves freely, yang will no longer be in excess. The formula appears under the entry for pinellia [bànxià]. Furthermore, the *Yiyuan* [Garden of Strange Tales] records that during the Yuanjia reign period of the [Liu] Song dynasty, a person developed an abdominal mass [zhèng jiǎ] from eating duck. A physician ground shú grain into powder, mixed it with water, and administered it. Shortly afterward the patient became agitated and vomited out a duckling [embryo], whereupon he recovered.\n\nThe *Qianjin Fang* [*Essential Prescriptions Worth a Thousand Gold*] treats illness caused by eating duck meat — characterized by fullness in the chest, flushing of the face, and inability to eat — by having the patient drink one cup of shú grain decoction.",
+      "entities_mentioned": [
+        {
+          "name": "秫 / 秫米 / 黃米 (shú, shú mǐ, huáng mǐ)",
+          "modern_identification": "Setaria italica var. (glutinous/waxy foxtail millet); possibly also referring to glutinous proso millet (Panicum miliaceum var. glutinosum) in some northern usages",
+          "identification_confidence": "medium",
+          "notes": "Li Shizhen argues at length that shú is the glutinous variety of foxtail millet (sù), correcting several earlier authorities who associated it with rice, panicled millet, or black millet. The modern identification as waxy foxtail millet is broadly accepted, though regional usage varied historically."
+        },
+        {
+          "name": "漆瘡 (qīchuāng)",
+          "modern_identification": "Allergic contact dermatitis caused by exposure to urushiol (lacquer/Toxicodendron vernicifluum)",
+          "identification_confidence": "high",
+          "notes": "A well-documented condition in classical Chinese medicine associated with contact with raw lacquer."
+        },
+        {
+          "name": "肺瘧 (fèi nüè)",
+          "modern_identification": "Pulmonary malaria or a febrile respiratory condition classified under the malarial syndrome category",
+          "identification_confidence": "medium",
+          "notes": "Classical Chinese nosological category; may correspond to severe malaria with pulmonary involvement or another febrile respiratory illness."
+        },
+        {
+          "name": "半夏湯 (Bànxià Tāng, Pinellia Decoction)",
+          "modern_identification": "Classical formula from the Lingshu Jing containing Pinellia ternata and shú grain",
+          "identification_confidence": "high",
+          "notes": "Cited for treatment of insomnia due to yang excess and yin deficiency. Li Shizhen cross-references the banxia (pinellia) entry."
+        },
+        {
+          "name": "黃糯 / 糯粟 (huángnuò / nuòsù)",
+          "modern_identification": "Waxy/glutinous foxtail millet (Setaria italica var. glutinosa)",
+          "identification_confidence": "medium",
+          "notes": "Alternative regional names for shú used in northern China."
+        },
+        {
+          "name": "症瘕 (zhèng jiǎ)",
+          "modern_identification": "Abdominal masses; a broad classical category encompassing various intra-abdominal pathologies",
+          "identification_confidence": "medium",
+          "notes": "The anecdote of vomiting a duckling is clearly legendary/exemplary in nature, illustrating the drug's purported ability to dissolve food-based accumulations."
+        }
+      ],
+      "translator_notes": "1. The OCR shows '粳、糯' split by a space/artifact in the Collected Commentaries section ('三谷皆有 、糯也'); restored as '三谷皆有粳、糯也' based on context. Similarly, '作 糕' is restored to '作糕', and 'pasting' artifacts throughout are silently corrected.\n2. The anecdote from the *Yiyuan* about vomiting a duckling is a stock literary motif in medieval Chinese medical literature and should not be taken as a literal clinical observation.\n3. Li Shizhen's organ-grain correspondence ('shú is the grain of the lung') reflects the Five Phases [wuxing] cosmological framework standard to classical Chinese medicine.\n4. The *Qianjin Fang* referenced is Sun Simiao's 7th-century *Beiji Qianjin Yaofang*.\n5. 'Jaundice-accumulation disease' [黃積病, huángjí bìng] from the *Yangsheng Ji* citation may refer to a condition resembling biliary or hepatic dysfunction.",
+      "_label": "秫 (穀之二)"
+    },
+    {
+      "title_inferred": "Cānzǐ (Finger Millet / Dragon-Claw Millet)",
+      "original_text": "【釋名】龍爪粟、鴨爪稗。\n\n時珍曰︰乃不粘之稱也。又不實之貌也。龍爪、鴨爪，象其穗歧之形。\n\n【集解】周定王曰︰子生水田中及下濕地。葉似稻，但差短。梢頭結穗，仿佛稗子穗。其子如黍粒大，茶褐色。搗米，煮粥、炊飯、磨面皆宜。\n\n時珍曰︰子，山東、河南亦五月種之。苗如茭黍，八、九月抽莖，有三棱，如水中草之莖。開細花，簇簇結穗如粟穗，而分數歧，如鷹爪之狀。內有細子如黍粒而細，赤色。其稃甚薄，其味粗澀。\n\n【氣味】甘，澀，無毒。\n\n【主治】補中益氣，濃腸胃，濟飢。",
+      "translation": "**Names and Appellations**\nAlso known as: Dragon-Claw Millet [龍爪粟] and Duck-Claw Barnyard Grass [鴨爪稗].\n\nLi Shizhen states: The name [參子, Cānzǐ] denotes a grain that is non-glutinous [not sticky]. It also suggests an unfilled or sparse appearance. The names 'Dragon-Claw' and 'Duck-Claw' are derived from the forking, claw-like shape of the panicles.\n\n**Collected Commentaries**\nPrince Zhouding [周定王] states: Cānzǐ grows in paddy fields and low-lying wet ground. Its leaves resemble those of rice, though somewhat shorter. It forms panicles at the tip of the stem, resembling the panicles of barnyard grass [稗]. Its seeds are about the size of millet grains [黍粒] and are tea-brown in color. The grain may be hulled and used to cook porridge, steam rice, or grind into flour — all are suitable.\n\nLi Shizhen states: Cānzǐ is also sown in May in Shandong and Henan. The seedlings resemble wild rice [茭黍]. In the eighth and ninth months, stems emerge with three ridges [三棱], similar to the stems of aquatic grasses. It bears tiny flowers that cluster together, forming panicles resembling those of foxtail millet [粟], branching into several forks in the shape of an eagle's talons. Within are small seeds, finer than millet grains, and red in color. The hulls [稃] are very thin, and the flavor is coarse and astringent.\n\n**Flavor and Nature**\nSweet, astringent; non-toxic.\n\n**Principal Indications and Treatments**\nSupplements the center [中焥] and augments [vital] qi; enriches and strengthens the stomach and intestines; relieves hunger.",
+      "entities_mentioned": [
+        {
+          "name": "參子 (Cānzǐ)",
+          "modern_identification": "Eleusine coracana (finger millet)",
+          "identification_confidence": "medium",
+          "notes": "The branching, claw-like panicle morphology, non-glutinous grain, and reddish-brown seeds described here are consistent with finger millet (Eleusine coracana), widely cultivated in Asia and Africa. Some scholars also suggest it could refer to a variety of Echinochloa or another wild millet-like grass grown in wetlands; confidence is therefore medium rather than high."
+        },
+        {
+          "name": "龍爪粟 (Dragon-Claw Millet)",
+          "modern_identification": "Eleusine coracana (finger millet)",
+          "identification_confidence": "medium",
+          "notes": "Synonymous alternate name for the same plant; the 'dragon-claw' epithet refers to the multi-branched panicle."
+        },
+        {
+          "name": "鴨爪稗 (Duck-Claw Barnyard Grass)",
+          "modern_identification": "Eleusine coracana or related species",
+          "identification_confidence": "low",
+          "notes": "A secondary folk name emphasizing the forked panicle shape; may reflect regional naming conventions in Ming-dynasty China."
+        }
+      ],
+      "translator_notes": "1. The plant name 參子 (Cānzǐ) is uncommon in modern botanical literature; Li Shizhen's gloss associates it with non-glutinous and sparse-grain qualities. The character 參 may be a variant or phonetic approximation. 2. 'Supplements the center and augments qi' (補中益氣) is a standard tonic formula phrase in classical Chinese medicine referring to strengthening the spleen-stomach system. 3. Prince Zhouding (周定王 Zhu Su, 1361–1425) is the author of 《救荒本草》 (Famine Relief Materia Medica), frequently cited by Li Shizhen. 4. The description of three-ridged stems and aquatic habitat creates some taxonomic ambiguity; further cross-referencing with《救荒本草》illustrations would aid identification.",
+      "_label": "參子 (穀之二)"
+    },
+    {
+      "title_inferred": "Bai (Barnyard Grass / Wild Millet) — Grains, Chapter 2",
+      "original_text": "【釋名】時珍曰︰稗乃禾之卑賤者也，故字從卑。\n\n【集解】弘景曰︰稗子亦可食。又有烏禾，生野中如稗，荒年可代糧而殺蟲，煮以沃地，螻、蚓皆死。\n\n藏器曰︰稗有二種︰一種黃白色，一種紫黑色。紫黑者似芑有毛，北人呼為烏禾。\n\n時珍曰︰稗處處野生，最能亂苗。其莖葉穗粒並如黍稷。一斗可得米三升。故曰︰五穀不熟，不如稗。苗似稗而穗如粟，有紫毛，即烏禾也。《爾雅》謂之迭（音迭）。周定王曰︰稗有水稗、旱稗。水稗生田中。旱稗苗葉似子，色深綠，根下葉帶紫色。梢頭出扁穗，結子如黍粒，茶褐色，味微苦，性溫。以煮粥、炊飯、磨面食之皆宜。\n\n稗米\n【氣味】辛、甘、苦，微寒，無毒。\n穎曰︰辛、脆。\n【主治】作飯食，益氣宜脾，故曹植有芳菰精稗之稱（時珍）。\n\n苗根\n金瘡及傷損，血出不已。搗敷或研末摻之即止，甚驗（時珍）。",
+      "translation": "**Explanation of the Name**\nLi Shizhen states: Bai [稗] is the lowliest of the grain grasses; hence the character is formed with the element 'bei' [卑, meaning low or base].\n\n**Collected Commentaries**\nTao Hongjing states: The seeds of bai are also edible. There is also a plant called Wu He [烏禾, 'dark grain'], which grows wild and resembles bai. In years of famine it can substitute for food, and it kills insects: when its water of decoction is poured on the ground, mole crickets and earthworms all die.\n\nChen Cangqi [Zangqi] states: There are two varieties of bai — one is yellow-white in color, and one is purple-black. The purple-black variety resembles qi [芑, a type of millet] and has hair [bristles]; people of the north call it Wu He.\n\nLi Shizhen states: Bai grows wild everywhere and is especially prone to becoming a weed among crop seedlings. Its stems, leaves, ears, and grains all resemble those of shu [黍, broomcorn millet] and ji [稷, foxtail millet]. From one dou [a dry measure] one can obtain three sheng of rice [husked grain]. Hence the saying: 'When the five grains fail to ripen, they are no better than bai.' The plant whose seedlings resemble bai but whose ear resembles millet [su, 粟] and which has purple bristles — that is Wu He. The Erya refers to it as 迭 (pronounced 'die'). King Zhoudingwang states: there are water-bai [水稗] and dry-land bai [旱稗]. Water-bai grows in paddies. The seedlings and leaves of dry-land bai resemble [ILLEGIBLE: one character missing, likely a comparison plant], deep green in color, with the leaves near the root tinged purple. At the tip it puts forth a flat ear, bearing seeds like broomcorn millet grains, tea-brown in color, slightly bitter in flavor, and warm in nature [xing]. It is suitable for cooking into porridge, steaming as rice, or grinding into flour for food.\n\n**Bai Grain [稗米]**\n*Flavor and Nature:* Acrid [xin], sweet, and bitter; slightly cold; non-toxic.\nYing [穎] states: Acrid and crisp.\n*Indications and Treatments:* When eaten as cooked rice, it replenishes qi and benefits the spleen. Hence Cao Zhi [the poet] praised it in his phrase 'fragrant water-oats and refined bai.' (Li Shizhen)\n\n**Seedlings and Roots**\n*Condition treated:* Metal-edge wounds [jin chuang, 金瘡] and injuries with incessant bleeding.\n*Preparation:* Pound fresh and apply as a poultice, or grind to powder and dust onto the wound — bleeding stops immediately. Highly efficacious. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "稗 (bai)",
+          "modern_identification": "Echinochloa crus-galli (barnyard grass) or related Echinochloa spp.",
+          "identification_confidence": "high",
+          "notes": "A common wild grass weed of rice paddies and cultivated fields; its grain was used as an emergency food. Two varieties described: yellow-white and purple-black (Wu He)."
+        },
+        {
+          "name": "烏禾 (Wu He, 'dark grain')",
+          "modern_identification": "Possibly Echinochloa colona or a bristled variety of Echinochloa crus-galli",
+          "identification_confidence": "medium",
+          "notes": "Described as purple-black, hairy/bristled, resembling qi millet; identified in the Erya as 迭 (die). Said to kill mole crickets and earthworms when its decoction water is poured on the ground."
+        },
+        {
+          "name": "稗米 (bai mi, bai grain/rice)",
+          "modern_identification": "Processed grain of Echinochloa crus-galli",
+          "identification_confidence": "high",
+          "notes": "Flavor: acrid, sweet, bitter; slightly cold; non-toxic. Used to replenish qi and benefit the spleen when eaten as cooked rice."
+        },
+        {
+          "name": "稗苗根 (seedlings and roots of bai)",
+          "modern_identification": "Echinochloa crus-galli — aerial parts and roots",
+          "identification_confidence": "high",
+          "notes": "Used medicinally for metal-edge wounds and traumatic injuries with incessant bleeding. Preparation: pound fresh and apply as poultice, or grind to powder and apply topically."
+        },
+        {
+          "name": "水稗 (shui bai, water bai)",
+          "modern_identification": "Echinochloa crus-galli var. oryzoides or similar aquatic ecotype",
+          "identification_confidence": "medium",
+          "notes": "Grows in paddy fields; distinguished from dry-land bai (旱稗)."
+        },
+        {
+          "name": "旱稗 (han bai, dry-land bai)",
+          "modern_identification": "Echinochloa crus-galli var. crus-galli or related dryland ecotype",
+          "identification_confidence": "medium",
+          "notes": "Deep green leaves with purple coloring near the root; flat ears; seeds tea-brown in color, slightly bitter, warm in nature; suitable for porridge, rice, or flour."
+        }
+      ],
+      "translator_notes": "1. One character is missing or illegible in the phrase '旱稗苗葉似子' — the comparison plant name appears to have dropped out, likely an OCR or manuscript lacuna; rendered as [ILLEGIBLE].\n2. The phrase '五穀不熟，不如稗' is a proverbial saying meaning that when proper crops fail, even the lowly bai surpasses them as food.\n3. Cao Zhi's phrase '芳菰精稗' is a literary allusion praising bai as a refined food; 菰 refers to water oats (Zizania latifolia).\n4. 'Jin chuang' (金瘡) literally means 'metal wounds' — injuries from bladed weapons or metal implements; a standard classical medical category.\n5. The Erya character given as 迭 (音迭) may be a corruption or OCR artifact of a rarer graph; the phonetic gloss 'die' is preserved as given in the source.",
+      "_label": "稗 (穀之二)"
+    },
+    {
+      "title_inferred": "Wild Foxtail Grass (Yě láng wěi cǎo) — Grain Chapter Two",
+      "original_text": "【釋名】稂（音郎）、童粱（《爾雅》）、野狼茅（《爾雅》）、孟（《爾雅》）、宿田翁（《詩疏》）、守田（《詩疏》）。\n\n時珍曰︰野狼尾，其穗象形也。秀而不成，嶷然在田，故有宿田、守田之稱。\n\n【集解】藏器曰︰野狼尾生澤地，似茅作穗。《廣志》云︰子可作黍食。《爾雅》云︰孟，野狼尾。似茅，可以覆屋，是也。\n\n時珍曰︰野狼尾莖、葉、穗、粒並如粟，而穗色紫黃，有毛。荒年亦可采食。許慎《說文》云︰禾粟之穗，生而不成者，謂之稂。其秀而不實者，名狗尾草，見草部。\n\n米\n\n【氣味】甘，平，無毒。\n\n【主治】作飯食之，令人不飢（藏器）。",
+      "translation": "**Nomenclature**\n\nAlternate names: Láng [稂, pronounced láng]; Tóng liáng [童粱] (as written in the *Erya*); Yě láng máo [野狼茅, 'wild wolf grass'] (*Erya*); Mèng [孟] (*Erya*); Sù tián wēng [宿田翁, 'old one dwelling in the field'] (*Shī shū*); Shǒu tián [守田, 'guardian of the field'] (*Shī shū*).\n\nLi Shizhen states: The name 'wild wolf's tail' [野狼尾] is derived from the shape of its spike. Because it heads out but does not fully ripen, standing solitary and unmoved in the field, it has received the names 'field-dweller' [宿田] and 'field-guardian' [守田].\n\n**Collected Commentaries**\n\nChen Cangqi states: Wild wolf's tail [野狼尾] grows in marshy ground and resembles cogon grass [máo, 茅] in forming spikes. The *Guangzhi* records: its seeds can be cooked and eaten in the manner of millet [shǔ, 黍]. The *Erya* states: Mèng [孟] is wild wolf's tail; it resembles cogon grass and can be used for thatching roofs — this is indeed the same plant.\n\nLi Shizhen states: The stems, leaves, spikes, and grains of wild wolf's tail all resemble those of millet [sù, 粟], but the spike is purplish-yellow in color and bears hairs. In years of famine it may also be gathered and eaten. Xu Shen's *Shuowen* states: the spike of a grain or millet plant that grows but does not mature is called láng [稂]. That which heads out but bears no grain is called dog's-tail grass [gǒu wěi cǎo, 狗尾草]; see the Grass section.\n\n**Grain [Mǐ, 米]**\n\n**Flavor and Nature**\n\nSweet; balanced [píng, 平]; non-toxic.\n\n**Indications and Treatments**\n\nCooked into a rice [or grain porridge] and eaten, it prevents hunger. (Chen Cangqi)",
+      "entities_mentioned": [
+        {
+          "name": "野狼尾草 (Yě láng wěi cǎo)",
+          "modern_identification": "Pennisetum alopecuroides (Chinese fountaingrass / swamp foxtail grass)",
+          "identification_confidence": "high",
+          "notes": "Described as growing in marshy ground, resembling cogon grass, with purplish-yellow hairy spikes; seeds edible in famine; stems, leaves, spikes, and grains resemble millet (粟). This matches Pennisetum alopecuroides well, though some sources link 稂 broadly to sterile or weedy grasses in the Poaceae family."
+        },
+        {
+          "name": "狗尾草 (Gǒu wěi cǎo)",
+          "modern_identification": "Setaria viridis (green foxtail / bristly foxtail)",
+          "identification_confidence": "high",
+          "notes": "Distinguished from 野狼尾草 as the plant that heads but sets no grain; cross-referenced to the Grass (草) section of the Bencao Gangmu."
+        },
+        {
+          "name": "稂 (Láng)",
+          "modern_identification": "Pennisetum alopecuroides or a related sterile Poaceae taxon",
+          "identification_confidence": "medium",
+          "notes": "Cited from Xu Shen's Shuowen Jiezi as the term for a grain or millet spike that grows but does not mature; used as a synonym for 野狼尾草 in this entry."
+        }
+      ],
+      "translator_notes": "1. The OCR rendered the alternate name '童粱' with a placeholder character '（《爾雅》作童粱）'; this has been restored to 童粱 as the context makes the intended reading unambiguous. 2. The character '稂' in the Shuowen citation appears to have been partially garbled in the source OCR (rendered as a blank space before '其秀而不實者'); it has been silently restored. 3. The medical/nutritional application here is minimal — the grain is described only as 'preventing hunger' when cooked, with no specific therapeutic preparation beyond standard cooking. 4. 'Píng' (平) in the flavor-nature system denotes a thermally neutral quality, translated as 'balanced' to reflect period technical usage.",
+      "_label": "野狼尾草 (穀之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【集解】藏器曰︰東 生河西。苗似蓬，子似葵。九月、十月熟，可為飯食。河西人語\n\n曰︰貸我東 ，償我田粱。《廣志》云︰東 子粒似葵，青黑色。並、涼間有之。\n\n時珍曰︰相如賦“東 雕胡”，即此。《魏書》云︰烏丸地宜東 ，似 ，可作白酒。\n又《廣志》云︰粱禾，蔓生，其子如葵子，其米粉白如面，可作 粥。六月種，九月收。\n牛食之尤肥。此亦一谷似東 者也。\n\n子\n\n【氣味】甘，平，無毒。\n\n【主治】益氣輕身。久服，不飢，堅筋骨，能步行（藏器）。",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Dong Su (穀之二) — A Grain Plant from the Western Regions\",\n  \"original_text\": \"【集解】藏器曰︰東䆉生河西。苗似蓬，子似葵。九月、十月熟，可為飯食。河西人語曰︰貸我東䆉，償我田粱。《廣志》云︰東䆉子粒似葵，青黑色。並、涼間有之。\\n時珍曰︰相如賦\"東䆉雕胡\"，即此。《魏書》云︰烏丸地宜東䆉，似稷，可作白酒。又《廣志》云︰粱禾，蔓生，其子如葵子，其米粉白如面，可作糜粥。六月種，九月收。牛食之尤肥。此亦一谷似東䆉者也。\\n\\n子\\n\\n【氣味】甘，平，無毒。\\n\\n【主治】益氣輕身。久服，不飢，堅筋骨，能步行（藏器）。\",\n  \"translation\": \"**Collected Explanations:** Chen Cangqi [Zangqi] states: Dong Su [東䆉] grows in Hexi [the region west of the Yellow River]. Its sprouts resemble mugwort [Artemisia/peng], and its seeds resemble mallow [kui]. It ripens in the ninth and tenth months and can be cooked as a staple food. The people of Hexi have a saying: 'Lend me Dong Su, and I will repay you with field millet [tian liang].' The *Guangzhi* [Records of Broad Knowledge] states: The seeds of Dong Su resemble mallow seeds and are greenish-black in color. It is found in the areas of Bing [Shanxi] and Liang [Gansu].\\n\\nLi Shizhen states: In Sima Xiangru's rhapsody [fu], 'Dong Su and Jiao Hu [wild rice]' refers to this very plant. The *Weishu* [Book of Wei] states: The land of the Wuhuan people is well suited to Dong Su; it resembles millet [ji] and can be used to make white wine [bai jiu]. The *Guangzhi* further states: There is a grain called Liang He [粱禾] that grows as a vine; its seeds are like mallow seeds, and its flour is white as wheat flour; it can be made into porridge [mi zhou]. It is sown in the sixth month and harvested in the ninth month. Cattle that eat it become especially fat. This is another grain that resembles Dong Su.\\n\\n**Seeds**\\n\\n**Flavor and Nature:** Sweet; neutral; non-toxic.\\n\\n**Indications and Treatments:** Supplements qi and lightens the body. Long-term consumption prevents hunger, strengthens sinews and bones, and enables vigorous walking. (Chen Cangqi [Zangqi])\",\n  \"entities_mentioned\": [\n    {\n      \"name\": \"東䆉 (Dong Su)\",\n      \"modern_identification\": \"Possibly Chenopodium album (lamb's quarters) or a related chenopod; alternatively suggeste",
+      "_label": "東 (穀之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】茭米（《文選》）、雕蓬（《爾雅》）、雕 （《說文》。《唐韻》作KT 胡）、雕\n胡時珍曰︰菰本作 ，茭草也。其中生菌如瓜形，可食，故謂之 。其米須霜雕時采之，故謂之凋 。或訛為雕胡。枚乘《七發》謂之安胡。《爾雅》︰嚙，雕蓬；荐，黍蓬。孫\n炎注云︰雕蓬即茭米。古人以為五飯之一者。鄭樵《通志》云︰雕蓬即米茭，可作飯食，故謂之嚙。其黍蓬即茭之不結實者，惟堪作荐，故謂之荐。楊慎《卮言》云︰蓬有水、陸二種︰雕蓬乃水蓬，雕 是也。黍蓬乃旱蓬，青科是也。青科結實如黍，羌人食之，今松州有焉。珍按︰鄭、楊二說不同，然皆有理，蓋蓬類非一種故也。\n\n【集解】弘景曰︰菰米一名雕胡，可作餅食。\n\n藏器曰︰雕胡，是菰蔣草米，古人所貴。故《內則》云︰魚宜 。皆水物也。曹子建《七啟》云︰芳菰精稗。謂二草之實，可以為飯也。\n\n頌曰︰菰生水中，葉如蒲葦。其苗有莖梗者，謂之菰蔣草。至秋結實，乃雕胡米也。古人以為美饌。今飢歲，人猶采以當糧。葛洪《西京雜記》云︰漢太液池邊，皆是雕胡、紫籜、綠節、蒲叢之類。蓋菰之有米者，長安人謂之雕胡；菰之有首者，謂之綠節；葭蘆之未解\n葉者，謂之紫籜也。\n\n宗奭曰︰菰蔣，花如葦。結青子，細",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Gū Mǐ (Wild Rice / Water Oats) — Grains, Part II\",\n  \"original_text\": \"【釋名】茭米（《文選》）、雕蓬（《爾雅》）、雕胡（《說文》）\\n時珍曰：菰本作蒽，茭草也。其中生菌如瓜形，可食，故謂之菰。其米須霜雕時采之，故謂之凋胡。或訛為雕胡。枚乘《七發》謂之安胡。《爾雅》：嚙，雕蓬；荐，黍蓬。孫炎注云：雕蓬即茭米。古人以為五飯之一者。鄭樵《通志》云：雕蓬即米茭，可作飯食，故謂之嚙。其黍蓬即茭之不結實者，惟堪作荐，故謂之荐。楊慎《卮言》云：蓬有水、陸二種：雕蓬乃水蓬，雕胡是也。黍蓬乃旱蓬，青科是也。青科結實如黍，羌人食之，今松州有焉。珍按：鄭、楊二說不同，然皆有理，蓋蓬類非一種故也。\\n\\n【集解】弘景曰：菰米一名雕胡，可作餅食。\\n藏器曰：雕胡，是菰蔣草米，古人所貴。故《內則》云：魚宜菰。皆水物也。曹子建《七啟》云：芳菰精稗。謂二草之實，可以為飯也。\\n頌曰：菰生水中，葉如蒲葦。其苗有莖梗者，謂之菰蔣草。至秋結實，乃雕胡米也。古人以為美饌。今飢歲，人猶采以當糧。葛洪《西京雜記》云：漢太液池邊，皆是雕胡、紫籜、綠節、蒲叢之類。蓋菰之有米者，長安人謂之雕胡；菰之有首者，謂之綠節；葭蘆之未解葉者，謂之紫籜也。\\n宗奭曰：菰蔣，花如葦。結青子，細若青麻黃，長幾寸。野人收之，合粟為粥食之，甚濟飢也。\\n時珍曰：雕胡，九月抽莖，開花如葦芒。結實長寸許，霜後采之，大如茅針，皮黑褐色。其米甚白而滑膩，作飯香脆。杜甫詩\"波漂菰米沉雲黑\"者，即此。《周禮》供御乃六谷、九谷之數，《管子書》謂之雁膳，故收米入此。其茭筍、菰根，別見菜部。\\n\\n【氣味】甘，冷，無毒。\\n\\n【主治】止渴（藏器）。解煩熱，調腸胃（時珍）。\",\n  \"translation\": \"**[Synonyms]** Jiāo mǐ [\\\"jiao-grass grain\\\"] (Wenxuan); Diāo péng [\\\"withered rush\\\"] (Erya); Diāo hú [\\\"withered grain\\\"] (Shuowen; Tang Yun writes it as KT-hú); Diāo hú.\\n\\nLi Shizhen says: The character 菰 (gū) was originally written as a related form, referring to the jiao grass [Zizania]. A fungus-like growth [actually the smut fungus causing the water-bamboo shoot] forms within it, shaped like a gourd and edible, hence the plant is called gū. Its grain must be harvested at the time of the frost-withering, hence called diāo hú [\\\"frost-withered grain\\\"]. This was sometimes corrupted into diāo hú [雕胡, \\\"carved gourd\\\"]. Mei Cheng's \\\"Qifa\\\" calls it ān hú. The Erya records: \\\"niè is diāo péng; jiàn is shǔ péng.\\\" Sun Yan's commentary states: diāo péng is the jiāo grain. The ancients regarded it as one of the five kinds of prepared rice. Zheng Qiao's Tongzhi states: diāo péng is the grain-bearing jiao [water oat], which can be cooked into rice, hence called niè. The shǔ péng is the jiao plant that does not form grain and is only suitable for use as mat material, hence called jiàn. Yang Shen's Zhiyan states: the péng plant has two kinds — aquatic and terrestrial. Diāo péng is the aquatic péng, ",
+      "_label": "菰米 (穀之二)"
+    },
+    {
+      "title_inferred": "Peng Grass Seeds (Broom-plant / Tumbleweed Seeds)",
+      "original_text": "【集解】時珍曰︰陳藏器《本草》載蓬草子，不具形狀。珍按︰蓬類不一︰有雕蓬，即菰草也，見菰米下；有黍蓬，即青科也；又有黃蓬草、飛蓬草。不識陳氏所指果何蓬也？以理推之，非黃蓬即青柯爾。黃蓬草生湖澤中，葉如菰蒲，秋月結實成穗，子細如雕胡米。飢年人采食之，須浸洗曝舂，乃不苦澀。青科西南夷人種之，葉如茭黍，秋月結實成穗，有子如赤黍而細，其稃甚薄，曝舂炊食。又粟類有七棱青科、八棱青科，麥類有青稞、黃稞，皆非此類，乃物異名同也。其飛蓬乃藜蒿之類，末大本小，風易拔之，故號飛蓬。子如灰菜子，亦可濟荒。又《魏略》云︰鮑出遇飢歲，采蓬實，日得數斗，為母作食。《西京雜記》云︰宮中正月上辰，出池邊盥濯，食蓬餌，以祓邪氣。此皆不知所采乃何蓬也？大抵三種蓬子，亦不甚相遠。\n\n子\n\n【氣味】酸、澀，平，無毒。\n\n【主治】作飯食之，益飢，無異粳米（藏器）。",
+      "translation": "**[Collected Explanations]** Li Shizhen states: Chen Zangqi's *Bencao* [*Bencao Shiyi*] records 'peng grass seeds' [蓬草子] but gives no description of their appearance. I, Shizhen, note: the category of 'peng' [broom-plant / rush-like grasses] is not uniform. There is 'diao-peng' [雕蓬], which is the same as gu-grass [菰草; wild rice], discussed under the entry for gu-mi [菰米]. There is 'shu-peng' [黍蓬], which is the same as qing-ke [青科]. There are also huang-peng grass [黃蓬草] and fei-peng grass [飛蓬草, tumbleweed]. I cannot determine which peng Chen [Zangqi] was actually referring to. Reasoning it out, it must be either huang-peng or qing-ke.\n\nHuang-peng grass [黃蓬草] grows in lakes and marshes. Its leaves resemble those of gu-pu [菰蒲; wild rice and cattail]. In autumn it forms seeds in spikes; the seeds are as fine as diao-hu-mi [雕胡米; wild rice grain]. In years of famine, people gather and eat them. They must first be soaked, washed, sun-dried, and hulled by pounding [曝舂], so as to remove their bitterness and astringency.\n\nQing-ke [青科] is cultivated by the peoples of the southwestern [ethnic minority] regions. Its leaves resemble those of jiao-shu [茭黍; wild rice / water oats]. In autumn it forms seeds in spikes; the seeds resemble red millet [赤黍] but are smaller, with very thin husks [稃]. It is sun-dried, hulled by pounding, and cooked for eating.\n\nAmong millet-type [粟類] plants there is also 'seven-ridged qing-ke' [七棱青科] and 'eight-ridged qing-ke' [八棱青科], and among wheat-type [麥類] plants there is qing-ke barley [青稞] and huang-ke [黃稞]—these are all of a different kind, being different things that share a similar name.\n\nAs for fei-peng [飛蓬, tumbleweeds], these belong to the category of li-hao [藜蒿; goosefoot/mugwort type plants]. Their tops are large and their bases small; the wind easily uproots them, hence the name 'flying peng' [飛蓬]. Their seeds resemble those of hui-cai [灰菜; Chenopodium album, lamb's quarters] and can also be used to relieve famine.\n\nFurthermore, the *Wei Lüe* [《魏略》, *Brief Records of Wei*] states: 'Bao Chu, in a year of famine, gathered peng seeds; each day he obtained several dou [bushels], and made food from them for his mother.' The *Xijing Zaji* [《西京雜記》, *Miscellaneous Records of the Western Capital*] states: 'In the palace, on the first chen-day [辰日] of the first month, [people] went to the pool-side to wash their hands and faces, ate peng cakes [蓬餌], and thereby expelled evil influences [祓邪氣].' In none of these cases do we know which peng was actually gathered. On the whole, the seeds of the three types of peng [discussed above] are not very different from one another.\n\n**Seeds [子]**\n\n**[Flavor and Nature]** Sour and astringent; neutral [平]; non-toxic.\n\n**[Indications and Treatment]** Cooked into a rice-like food [作飯] and eaten, it relieves hunger, and is no different from [ordinary] polished rice [粳米]. (Chen Zangqi)",
+      "entities_mentioned": [
+        {
+          "name": "蓬草子 (peng cao zi) — peng grass seeds",
+          "modern_identification": "Uncertain; likely seeds of wetland grasses or goosefoot-family plants depending on species context",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen himself is uncertain which specific plant Chen Zangqi originally referred to; the term 'peng' covers multiple unrelated species."
+        },
+        {
+          "name": "雕蓬 / 菰草 (diao-peng / gu-cao)",
+          "modern_identification": "Zizania latifolia (Manchurian wild rice)",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen explicitly equates diao-peng with gu-grass (菰草), the source of gu-mi (wild rice grain)."
+        },
+        {
+          "name": "黍蓬 / 青科 (shu-peng / qing-ke)",
+          "modern_identification": "Possibly a variety of barnyard millet or related wild cereal; distinct from barley 青稞 (Hordeum vulgare var. nudum)",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen distinguishes this agricultural qing-ke of southwestern peoples from the barley-type qing-ke (青稞), cautioning against name confusion."
+        },
+        {
+          "name": "黃蓬草 (huang-peng cao)",
+          "modern_identification": "Possibly Phragmites or a related wetland grass; uncertain",
+          "identification_confidence": "low",
+          "notes": "Grows in lakes and marshes, leaves like wild rice/cattail, small grain seeds in autumn spikes. Used as famine food after soaking, drying, and pounding."
+        },
+        {
+          "name": "飛蓬 (fei-peng) — flying peng / tumbleweed",
+          "modern_identification": "Likely Erigeron (fleabane) or Chenopodium/Atriplex type tumbleweed; possibly Kochia scoparia",
+          "identification_confidence": "medium",
+          "notes": "Described as top-heavy, easily uprooted by wind (tumbleweed behavior). Seeds resemble those of Chenopodium album (hui-cai). Used as famine food."
+        },
+        {
+          "name": "灰菜 (hui-cai)",
+          "modern_identification": "Chenopodium album (lamb's quarters / white goosefoot)",
+          "identification_confidence": "high",
+          "notes": "Used as a reference plant for comparing the size/type of fei-peng seeds."
+        },
+        {
+          "name": "青稞 / 黃稞 (qing-ke / huang-ke barley)",
+          "modern_identification": "Hordeum vulgare var. nudum (naked barley)",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen explicitly distinguishes these wheat-category plants from the qing-ke discussed in the peng entry, noting they share a name only."
+        },
+        {
+          "name": "粳米 (jing mi)",
+          "modern_identification": "Oryza sativa (non-glutinous polished rice)",
+          "identification_confidence": "high",
+          "notes": "Used as the benchmark for comparison: peng seeds said to be equivalent in nutritive value when cooked."
+        }
+      ],
+      "translator_notes": "Li Shizhen's discussion is explicitly taxonomically uncertain—he acknowledges he cannot identify which 'peng' Chen Zangqi originally meant, and surveys multiple candidates. The medical/nutritional indication is minimal: the seeds are classified as sour, astringent, neutral, non-toxic, and equivalent to polished rice for relieving hunger. Preparation method: soaking, washing, sun-drying, and hulling by pounding (浸洗曝舂) is required to remove bitterness before eating. The historical anecdotes from *Wei Lüe* and *Xijing Zaji* are cited as cultural corroboration but Li Shizhen acknowledges their botanical ambiguity. The term '青科' appears to be a distinct cultivated grain of southwestern China (possibly a millet relative) and must not be confused with '青稞' (naked barley), as Li Shizhen carefully warns.",
+      "_label": "蓬草子 (穀之二)"
+    },
+    {
+      "title_inferred": "Huangcao (皇草) — a wild grain plant of abandoned paddies",
+      "original_text": "【釋名】皇（《爾雅》）、守田（同上）、守氣（同）。\n\n時珍曰︰皇、䅌，音相近也。\n\n【集解】藏器曰︰䅌草生水田中，苗似小麥而小。四月熟，可作飯。\n\n時珍曰︰《爾雅》︰皇，守田。郭璞云︰一名守氣，生廢田中，似燕麥，子如雕胡，可食。\n\n米\n\n【氣味】甘，寒，無毒。\n\n【主治】作飯，去熱，利腸胃，益氣力。久食，不飢（藏器）。",
+      "translation": "**Names and Nomenclature**\nAlternate names: Huáng [皇] (from the *Erya*); Shǒutián [守田, 'Guardian of the Fields'] (ibid.); Shǒuqì [守氣, 'Guardian of the Qi'] (ibid.).\n\nLi Shizhen remarks: The names Huáng [皇] and Suì [䅌] are close in pronunciation.\n\n**Collected Explanations**\nChen Cangqi states: Suì grass [䅌草] grows in irrigated rice paddies. Its seedlings resemble wheat but are smaller. It ripens in the fourth month and can be cooked into rice.\n\nLi Shizhen states: The *Erya* records: 'Huáng is Shǒutián.' Guo Pu [郭璞] comments: 'It is also called Shǒuqì; it grows in abandoned fields, resembles wild oat [燕麥], and its grains are like those of water-oat [雕胡; i.e., Manchurian wild rice], and are edible.'\n\n**Grain [米]**\n\n*Qi and Flavor:* Sweet; cold; non-toxic.\n\n*Principal Treatments:* When cooked as a grain dish, it dispels heat, benefits the intestines and stomach, and augments qi and physical strength. Prolonged consumption prevents hunger. (Chen Cangqi)",
+      "entities_mentioned": [
+        {
+          "name": "䅌草 / 皇 / 守田 / 守氣",
+          "modern_identification": "Possibly Beckmannia syzigachne (American sloughgrass / Asian beckmannia) or a related wetland grass; some scholars associate it with Leersia or similar aquatic grasses found in East Asian paddies.",
+          "identification_confidence": "low",
+          "notes": "The description — growing in water paddies or abandoned fields, seedlings resembling small wheat, ripening in the fourth lunar month, grain resembling Zizania (雕胡) — is suggestive of a wetland grass grain, but no firm modern consensus exists. The comparison to Avena (燕麥) and Zizania (雕胡) indicates a small-grained aquatic or semi-aquatic grass."
+        },
+        {
+          "name": "雕胡",
+          "modern_identification": "Zizania latifolia (Manchurian wild rice / water oat)",
+          "identification_confidence": "high",
+          "notes": "Used here as a size/appearance reference for the grain of 䅌草."
+        },
+        {
+          "name": "燕麥",
+          "modern_identification": "Avena sativa / Avena fatua (oat / wild oat)",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological comparison for the plant's vegetative appearance."
+        }
+      ],
+      "translator_notes": "The character 䅌 (suì) appears to have been partially lost or rendered as a blank in the OCR source; it has been restored from context and the parallel text of the *Bencao Gangmu*. The segment header '草 (穀之二)' places this entry in the grain chapter, consistent with the plant being used as a food grain. Chen Cangqi (藏器) refers to Chen Cangqi of the Tang dynasty, author of the *Bencao Shiyi*. Guo Pu (郭璞, 276–324 CE) was the Jin-dynasty commentator on the *Erya*.",
+      "_label": "草 (穀之二)"
+    }
+  ]
+}
