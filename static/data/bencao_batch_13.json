@@ -1,0 +1,1193 @@
+{
+  "job_name": "Bencao Gangmu — Batch 13/18 (城東腐木–鉤栗)",
+  "completed_at": "2026-07-13T18:16:09.934557",
+  "segment_count": 50,
+  "results": [
+    {
+      "title_inferred": "Rotted Wood from the East Side of a City Wall (城東腐木)",
+      "original_text": "【釋名】地主。\n\n藏器曰︰城東腐木，即城東古木在土中腐爛者，一名地主。城東者，猶東牆土之義也。\n\n《杜正倫》方︰用古城柱木煮湯服，治難產。即其類也。\n\n【氣味】鹹，溫，無毒。藏器曰︰平。\n\n【主治】心腹痛，止泄、便膿血（《別錄》）。主鬼氣腐木漬汁塗之，亦可研末和醋敷之（藏器）。凡手足掣痛，不仁不隨者，朽木煮湯，熱漬痛處，甚良（時珍）。",
+      "translation": "**Explanatory Names:** [Also called] Dìzhǔ (地主, 'Earth Master').\n\nChen Cangqi [藏器] states: 'Rotted wood from the east of a city wall' refers to ancient timber buried in the earth on the eastern side of a city wall and there decayed; another name for it is Dìzhǔ. The significance of 'eastern side of the city' is analogous to that of 'eastern-wall earth' [a separately recognized medicinal substance].\n\nThe Du Zhenglun [杜正倫] formula uses timber from old city-wall pillars, boiled into a decoction and taken orally, to treat difficult labor [dystocia]. This belongs to the same category of use.\n\n**Flavor and Nature:** Salty, warm, non-toxic. Chen Cangqi states: neutral.\n\n**Principal Treatments:** [Treats] pain in the heart and abdomen; stops diarrhea and bloody purulent stools (Bielu [《別錄》]). Governs malign [ghost] qi [鬼氣]: soak the rotted wood and apply the infused liquid topically; alternatively, grind it to a powder, mix with vinegar, and apply as a poultice (Chen Cangqi). For all cases of spasmodic pain in the hands and feet, numbness, or loss of motor control, boil the decayed wood into a decoction and soak the painful area while it is still hot — this is highly effective (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "城東腐木 (Chéngdōng Fǔmù) / 地主 (Dìzhǔ)",
+          "modern_identification": "Decayed ancient timber (unspecified wood species) excavated from the eastern base of a city wall",
+          "identification_confidence": "low",
+          "notes": "This is a materially defined substance — old rotted wood from a specific positional context — rather than a botanically defined plant species. No single modern species identification is possible. The rationale for efficacy appears largely sympathetic/ritual (association with eastern direction and buried antiquity)."
+        },
+        {
+          "name": "東牆土 (Eastern-wall earth)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Mentioned only by analogy; a separately recognized materia medica substance in classical Chinese pharmacy, consisting of earth scraped from the eastern face of a wall."
+        }
+      ],
+      "translator_notes": "The text references Chen Cangqi (陳藏器), compiler of the Bencao Shiyi (本草拾遺, c. 739 CE), and the Mingyi Bielu (名醫別錄) as source authorities. 'Du Zhenglun' (杜正倫) was a Tang dynasty official; the formula attributed to him circulated as a folk remedy. The condition 不仁不隨 (numbness and loss of motor control) likely refers to what modern medicine would classify as peripheral neuropathy or post-stroke sequelae. The therapeutic modality here — hot soaking of decayed wood decoction — is an external hydrotherapy approach. 鬼氣 ('ghost qi') is a classical category for illnesses of unclear or sudden onset attributed to malign supernatural influences.",
+      "_label": "城東腐木 (木之六)"
+    },
+    {
+      "title_inferred": "East-Side Chicken-Roost Wood (Wood Section VI)",
+      "original_text": "【釋名】時珍曰：《酉陽雜俎》作東門雞棲木。\n\n【主治】無毒。主失音不語，燒灰，水服，盡一升效（藏器）。",
+      "translation": "【Explanation of Names】 Li Shizhen states: In the Youyang Zazu [a Tang-dynasty miscellany], this substance is written as 'East-Gate Chicken-Roost Wood' (東門雞棲木).\n\n【Indications and Treatment】 Non-toxic. It primarily treats loss of voice and inability to speak. [Preparation:] Burn to ash and take orally with water; consuming a full sheng [approx. one litre] produces the effect. (Attributed to [Chen] Cangqi.)",
+      "entities_mentioned": [
+        {
+          "name": "東家雞棲木 / 東門雞棲木",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "This is not a specific botanical species but rather the wood of whatever tree or timber was used as a chicken roost on the east side of a house or at the east gate. Its identity would therefore vary by region and context. The therapeutic use is folk-medicinal rather than derived from a defined plant taxon."
+        },
+        {
+          "name": "酉陽雜俎 (Youyang Zazu)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "A well-known Tang-dynasty miscellany compiled by Duan Chengshi (段成式, c. 803–863), cited here as the textual source for the variant name 東門雞棲木."
+        },
+        {
+          "name": "藏器 (Cangqi)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Refers to Chen Cangqi (陳藏器), Tang-dynasty pharmacologist and author of the Bencao Shiyi (本草拾遺), cited as the original source of this medicinal entry."
+        }
+      ],
+      "translator_notes": "The unit '一升' (one sheng) is a classical Chinese volume measure roughly equivalent to one litre in the Tang–Ming period context, though the exact value varied by dynasty. The preparation method (burning to ash and ingesting with water) is a common folk-remedy technique in classical Chinese medicine. The substance is not a botanical species per se but an object defined by its domestic function (a roost pole), making modern botanical identification impossible without further context.",
+      "_label": "東家雞棲木 (木之六)"
+    },
+    {
+      "title_inferred": "Ancient Latrine Wood — medicinal uses",
+      "original_text": "【主治】鬼魅傳尸溫疫，魍魎神祟，以太歲所在日時，當戶燒熏。又熏杖瘡，令冷風不入（藏器）。",
+      "translation": "【Indications】For [conditions attributed to] demon possession, corpse-transmission pestilence [chuanshi], epidemic disease, and malign spirits and supernatural afflictions: burn and fumigate at the doorway on the day and hour governed by the Grand Year [Taisui, i.e., the astrologically determined auspicious time]. Also used to fumigate cane-strike wounds [wounds from flogging], preventing cold wind from entering [the wound]. (Source: Cang Qi [Chen Cangqi, Tang dynasty])",
+      "entities_mentioned": [
+        {
+          "name": "古廁木 (Gǔ cè mù) — Ancient Latrine Wood",
+          "modern_identification": "Old timber from latrines/privies; not a specific botanical species — decayed or smoke-impregnated wood from outhouse structures",
+          "identification_confidence": "low",
+          "notes": "This is a category of material medica defined by its origin (old wood from latrines) rather than botanical identity. Its medicinal rationale likely draws on the concept that such wood absorbs foul qi which can then be redirected against malign spirits and infections."
+        },
+        {
+          "name": "傳尸 (chuanshi) — corpse-transmission disease",
+          "modern_identification": "Likely tuberculosis or a similar wasting/contagious disease",
+          "identification_confidence": "medium",
+          "notes": "Classical term for a contagious wasting disease believed to pass between family members, often associated with tuberculosis in retrospective analyses."
+        },
+        {
+          "name": "太歲 (Taisui) — Grand Year",
+          "modern_identification": "null",
+          "identification_confidence": "unknown",
+          "notes": "An astrological/calendrical concept referring to the celestial stem-branch cycle governing a given year; the 'day and hour of Taisui' indicates an auspicious or potent time for ritual fumigation."
+        },
+        {
+          "name": "杖瘡 (zhàng chuāng) — cane-strike wounds",
+          "modern_identification": "Lacerations or contusions from judicial or corporal flogging",
+          "identification_confidence": "high",
+          "notes": "A recognized category of wound in classical Chinese medicine, treated here by fumigation to exclude wind-cold pathogens from the open wound."
+        }
+      ],
+      "translator_notes": "The attribution '藏器' refers to Chen Cangqi (陳藏器), the Tang dynasty pharmacologist and author of Bencao Shiyi (本草拾遺), cited here as the source authority. The fumigation method combining ritual timing (Taisui) with practical wound care reflects the blending of cosmological and empirical medicine typical of this period.",
+      "_label": "古廁木 (木之六)"
+    },
+    {
+      "title_inferred": "Ancient Coffin Board (Old Burial Casket Wood)",
+      "original_text": "【集解】藏器曰：此古塚中棺木也。彌古者佳，杉材最良。千歲者通神，宜作琴底。《爾雅注》云：杉木作棺，埋之不腐。\n\n【主治】無毒。主鬼氣注忤中惡，心腹痛，背急氣喘，惡夢悸，常為鬼神所祟撓者。水及酒和東引桃枝煎服，當得吐下（藏器）。",
+      "translation": "【Collected Explanations】Chen Cangqi states: This is the wood of coffins taken from ancient tombs. The older the specimen, the better; Chinese fir [Cunninghamia] timber is the finest of all. Wood a thousand years old is said to commune with the spirits, and is suitable for use as the back panel of a zither [qin]. The Commentary on the Erya states: Coffins made of fir wood, when buried, do not rot.\n\n【Indications and Treatment】Non-toxic. It governs [conditions caused by] malevolent ghost-qi, sudden affliction by noxious forces [zhong'e], pain in the chest and abdomen, tightness in the back with labored breathing, frightening dreams with palpitations, and cases where the patient is persistently vexed and disturbed by ghosts or spirits. Decoct it together with eastward-growing peach branches [dong yin tao zhi] in water and wine and take orally; this should induce vomiting and purgation. (Chen Cangqi)",
+      "entities_mentioned": [
+        {
+          "name": "古櫬板 (gǔ chèn bǎn) — Ancient Coffin Board",
+          "modern_identification": "Aged burial coffin wood, most valuably Cunninghamia lanceolata (Chinese fir)",
+          "identification_confidence": "high",
+          "notes": "The medicinal substance is the aged wood of coffins excavated from old tombs. Chen Cangqi (陳藏器), compiler of the Bencao Shiyi (本草拾遺, c. 739 CE), is the cited authority. The text specifies fir (杉, Cunninghamia lanceolata) as the superior variety due to its resistance to decay underground."
+        },
+        {
+          "name": "杉木 (shān mù) — Fir/Chinese Fir",
+          "modern_identification": "Cunninghamia lanceolata (Chinese fir)",
+          "identification_confidence": "high",
+          "notes": "Cited both as the preferred coffin material and as a reference from the Erya commentary regarding its resistance to underground decay."
+        },
+        {
+          "name": "東引桃枝 (dōng yǐn táo zhī) — Eastward-growing peach branches",
+          "modern_identification": "Prunus persica (peach tree), specifically branches growing toward the east",
+          "identification_confidence": "high",
+          "notes": "A traditional apotropaic ingredient in Chinese medicine; branches oriented eastward were believed to have enhanced power against malevolent spirits. Used here as a co-ingredient in the decoction."
+        }
+      ],
+      "translator_notes": "The conditions described — 鬼氣注忤中惡 (ghost-qi affliction, sudden malevolent possession), 悸 (palpitations/fright), and 鬼神所祟撓 (persistent harassment by ghosts and spirits) — reflect classical Chinese medical categories mixing demonological and physiological frameworks. These likely correspond to acute psychosomatic episodes, sudden febrile or pain crises, and anxiety or nightmare disorders in modern terms. The emetic-purgative outcome (吐下) is consistent with classical theories of expelling pathogens. The reference to the Erya (爾雅) here is to Guo Pu's (郭璞) 4th-century commentary on that classic lexicon.",
+      "_label": "古櫬板 (木之六)"
+    },
+    {
+      "title_inferred": "Thunder-Struck Wood (Zhenshao Mu)",
+      "original_text": "【釋名】霹靂木。\n\n時珍曰︰此雷所擊之木也。方士取刻符印，以召鬼神。周日用注《博物志》云︰用擊鳥影，其鳥必自墮也。\n\n【主治】火驚失心，煮汁服之。又掛門戶，大厭火災（藏器）。",
+      "translation": "**Explanation of Names:** Also called Pīlì Mù [Thunderbolt Wood].\n\nLi Shizhen states: This is wood that has been struck by lightning. Fāngshì [Daoist practitioners/magicians] take it and carve talismanic seals from it in order to summon ghosts and spirits. Zhou Riyong, in his commentary on the *Bowu Zhi* [Record of the Investigation of Things], states: If it is used to strike the shadow of a bird, that bird will inevitably fall of its own accord.\n\n**Indications and Treatments:** For fright from fire causing loss of consciousness [literally: loss of heart/mind], boil [the wood] and drink the decoction. It may also be hung at the door of a dwelling to powerfully ward off fire disasters. (Attributed to [Chen] Cangqi.)",
+      "entities_mentioned": [
+        {
+          "name": "震燒木 / 霹靂木",
+          "modern_identification": "Wood struck by lightning (no specific species; the property is defined by the event of lightning strike, not botanical identity)",
+          "identification_confidence": "unknown",
+          "notes": "This entry does not describe a specific plant species but rather any wood that has been struck by lightning. Its medicinal and magical properties are attributed to the lightning event itself. The alternate name 霹靂木 (Pīlì Mù) means 'thunderbolt wood.' Attributed in the treatment section to Chen Cangqi (陳藏器), author of the *Bencao Shiyi* (c. 741 CE)."
+        },
+        {
+          "name": "博物志",
+          "modern_identification": "Bowu Zhi — encyclopedic text attributed to Zhang Hua (3rd century CE); Zhou Riyong's commentary referenced here",
+          "identification_confidence": "high",
+          "notes": "Classical Chinese miscellany; the commentary by Zhou Riyong (周日用) is cited for the folkloric use of lightning-struck wood against birds."
+        }
+      ],
+      "translator_notes": "The medical indication '火驚失心' is rendered as 'fright from fire causing loss of consciousness,' following the classical sense of 驚 (shock/fright) and 失心 (loss of senses/mind). The treatment (boiling the wood and drinking the decoction) is attributed to Chen Cangqi (藏器 = 陳藏器). The hanging of the wood at doorways to ward off fire is a talismanic/apotropaic use, not a pharmaceutical one. The passage about striking bird shadows is clearly folkloric magic. No specific tree species is identifiable from this entry.",
+      "_label": "震燒木 (木之六)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【主治】令人飲酒不醉。五月五日，取七寸投酒中二遍，飲之，必能飲也 附錄諸木一十九種\n\n新雉木\n\n《別錄》曰︰味苦，香，溫，無毒。主風眩痛，可作沐藥。\n\n合新木\n\n《別錄》曰︰味辛，平，無毒。解心煩，止瘡痛。生遼東。\n\n俳蒲木\n\n《別錄》曰︰味甘，平，無毒。主少氣，止煩。生陵谷。葉\n\n遂陽木\n\n《別錄》曰︰味甘，無毒。主益氣。生山中。如白楊葉。三月實，十月熟赤可食。\n\n學木核\n\n《別錄》曰︰味甘，寒，無毒。主脅下留飲，胃氣不平，除熱。如蕤核。五月採，陰乾。\n\n（音荀）核\n\n《別錄》曰︰味苦。療水，身面癰腫。五月採。\n\n木核\n\n《別錄》曰︰療腸 。花︰療不足。子︰療傷中。根︰療心腹逆氣，止渴。十月採。\n\n荻皮\n\n《別錄》曰︰味苦。止消渴白蟲，益氣。生江南。如松葉，有\n\n閘極木皮\n\n曰︰味苦，溫，無毒。主霍亂吐瀉，小兒吐乳，暖胃正氣，並宜水煎服。按︰《廣志》云︰生廣南山野。其樹如桑。\n\n乾陀木皮\n\n曰︰按︰《西域記》云︰生西國。彼人用染僧褐，故名。乾陀，褐色也。樹大皮濃，葉如櫻桃。安南亦有。溫，平，無毒。主症瘕氣塊，溫腹暖胃，止嘔逆，並良。破宿血，婦人血閉，腹內血塊，酒煎服之。馬瘍木根皮 藏",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Riverbank Tree and Appendix of Nineteen Miscellaneous Woods (Chapter: Wood VI)\",\n  \"original_text\": \"【主治】令人飲酒不醉。五月五日，取七寸投酒中二遍，飲之，必能飲也。附錄諸木一十九種\\n\\n新雉木\\n《別錄》曰：味苦，香，溫，無毒。主風眩痛，可作沐藥。\\n\\n合新木\\n《別錄》曰：味辛，平，無毒。解心煩，止瘡痛。生遼東。\\n\\n俳蒲木\\n《別錄》曰：味甘，平，無毒。主少氣，止煩。生陵谷。葉。\\n\\n遂陽木\\n《別錄》曰：味甘，無毒。主益氣。生山中。如白楊葉。三月實，十月熟赤可食。\\n\\n學木核\\n《別錄》曰：味甘，寒，無毒。主脅下留飲，胃氣不平，除熱。如蕤核。五月採，陰乾。\\n\\n（音荀）核\\n《別錄》曰：味苦。療水，身面癰腫。五月採。\\n\\n木核\\n《別錄》曰：療腸。花：療不足。子：療傷中。根：療心腹逆氣，止渴。十月採。\\n\\n荻皮\\n《別錄》曰：味苦。止消渴白蟲，益氣。生江南。如松葉，有。\\n\\n閘極木皮\\n曰：味苦，溫，無毒。主霍亂吐瀉，小兒吐乳，暖胃正氣，並宜水煎服。按：《廣志》云：生廣南山野。其樹如桑。\\n\\n乾陀木皮\\n曰：按：《西域記》云：生西國。彼人用染僧褐，故名。乾陀，褐色也。樹大皮濃，葉如櫻桃。安南亦有。溫，平，無毒。主症瘕氣塊，溫腹暖胃，止嘔逆，並良。破宿血，婦人血閉，腹內血塊，酒煎服之。\\n\\n馬瘍木根皮\\n藏器曰：有小毒。主惡瘡，疥癬有蟲。為末，和油塗之。出江南山谷。樹如櫪也。\\n\\n角落木皮\\n藏器曰：味苦，溫，無毒。主赤白痢，煮汁服之。生江西山谷。似茱萸獨莖也。\\n\\n樹\\n藏器曰：有大毒。主風痺偏枯，筋骨攣縮癱緩，皮膚不仁疼冷等。取枝葉搗碎，大甑蒸熱，鋪床上臥之，冷更易。骨節間風盡出，當得大汗。用補藥及羹粥食之。慎風冷勞復。生江南深山。葉長濃，冬月不凋。山人識之。\\n\\n白馬骨\\n藏器曰：無毒。主惡瘡。和黃連、細辛、白調、牛膝、雞桑皮、黃荊等，燒末淋汁。取治瘰癧惡瘡，蝕息肉，白癜風，揩破塗之。又單取莖葉煮汁服，止水痢。生江東。似石榴而短小，對節。\\n\\n慈母枝葉\\n藏器曰：炙香作飯，下氣止渴，令人不睡。主小兒痰痞。\",\n  \"translation\": \"**[Riverbank Tree — Hé Biān Mù]**\\n\\n**[Indications and Governance]:** Makes a person able to drink wine without becoming intoxicated. On the fifth day of the fifth month, take a seven-cun piece [of the wood] and steep it in wine twice, then drink the wine — one will certainly be capable of drinking [great quantities].\\n\\n---\\n\\n**Appendix: Nineteen Miscellaneous Woods**\\n\\n**Xīn Zhì Mù [New Pheasant Tree]**\\n*Bielu* states: Flavor: bitter, fragrant; temperature: warm; non-toxic. Governs wind-dizziness and pain. Can be used as a hair-washing [medicated bath] drug.\\n\\n**Hé Xīn Mù [Joining-New Tree]**\\n*Bielu* states: Flavor: acrid; temperature: balanced; non-toxic. Resolves vexation of the heart and stops sore pain. Grows in Liaodong.\\n\\n**Pái Pú Mù [Wandering Cattail Tree]**\\n*Bielu* states: Flavor: sweet; temperature: balanced; non-toxic. Governs deficiency of qi [shortness of breath] and stops vexation. Grows in hilly valleys. [The medicinal part used is] the leaf.\\n\\n**Suì Yáng Mù [Suiyang Tree]**\\n",
+      "_label": "河邊木 (木之六)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】嘉慶子。\n\n時珍曰︰按︰羅願《爾雅翼》云︰李乃木之多子者，故字從木、子。竊謂木之多子者多矣，何獨李稱木子耶？按︰《素問》言︰李味酸屬肝，東方之果也。則李於五果屬木，故得專稱爾。今人呼干李爲嘉慶子。按︰韋述《兩京記》云︰東都嘉慶坊有美李，人稱爲嘉慶子。\n\n久之稱謂既熟，不復知其所自矣。梵書名李曰居陵迦。\n\n【集解】弘景曰︰李類甚多。京口有麥李，麥秀時熟，小而肥甜，核不入藥。姑熟有南居李，解核如杏子形者，入藥爲佳。\n\n志曰︰李有綠李、黃李、紫李、牛李、水李，並甘美堪食，核不中用。有野李，味苦，核仁入藥。\n\n頌曰︰李處處有之。郭璞注《爾雅》︰休，乃無實李也。一名趙李。痤（音磋），乃接慮李也。一名麥李。細熟有溝道，與麥同熟。駁，乃赤李也。陶氏所謂南居李，今不復識。醫家但用核若杏核者。\n\n宗奭曰︰李樹大者高丈許。一種御李子，大如櫻桃，紅黃色，先諸李熟，醫家用者亦少。\n\n時珍曰︰李，綠葉白花，樹能耐久，其種近百。其子大者如杯如卵，小者如彈如櫻。其味有甘、酸、苦、澀數種。其色有青、綠、紫、朱、黃、赤、縹綺、胭脂、青皮、紫灰之殊。\n\n其形有牛心、馬肝、柰李、杏李、水李、離核、合核、無核、匾縫之",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Li (Plum) — Fruit Chapter One\",\n  \"original_text\": \"【釋名】嘉慶子。\\n\\n時珍曰︰按︰羅願《爾雅翼》云︰李乃木之多子者，故字從木、子。竊謂木之多子者多矣，何獨李稱木子耶？按︰《素問》言︰李味酸屬肝，東方之果也。則李於五果屬木，故得專稱爾。今人呼干李爲嘉慶子。按︰韋述《兩京記》云︰東都嘉慶坊有美李，人稱爲嘉慶子。久之稱謂既熟，不復知其所自矣。梵書名李曰居陵迦。\\n\\n【集解】弘景曰︰李類甚多。京口有麥李，麥秀時熟，小而肥甜，核不入藥。姑熟有南居李，解核如杏子形者，入藥爲佳。\\n\\n志曰︰李有綠李、黃李、紫李、牛李、水李，並甘美堪食，核不中用。有野李，味苦，核仁入藥。\\n\\n頌曰︰李處處有之。郭璞注《爾雅》︰休，乃無實李也。一名趙李。痤（音磋），乃接慮李也。一名麥李。細熟有溝道，與麥同熟。駁，乃赤李也。陶氏所謂南居李，今不復識。醫家但用核若杏核者。\\n\\n宗奭曰︰李樹大者高丈許。一種御李子，大如櫻桃，紅黃色，先諸李熟，醫家用者亦少。\\n\\n時珍曰︰李，綠葉白花，樹能耐久，其種近百。其子大者如杯如卵，小者如彈如櫻。其味有甘、酸、苦、澀數種。其色有青、綠、紫、朱、黃、赤、縹綺、胭脂、青皮、紫灰之殊。其形有牛心、馬肝、柰李、杏李、水李、離核、合核、無核、匾縫之異。其產有武陵、房陵諸李。早則麥李、御李，四月熟。遲則晚李、冬李，十月、十一月熟。又有季春李，冬花春實也。按︰王禎《農書》云︰北方一種御黃李，形大而肉濃核小，甘香而美。江南建寧一種均亭李，紫而肥大，味甘如蜜。有擘李，熟則自裂。有糕李，肥粘如糕。皆李之嘉美者也。\\n\\n今人用鹽曝、糖藏、蜜煎爲果，惟曝乾白李有益。其法︰夏李色黃時摘之，以鹽去汁，合鹽晒萎，去核復晒乾，荐酒、作齏皆佳。\\n\\n實\\n\\n【氣味】苦、酸，微溫，無毒。\\n\\n時珍曰︰李味甘酸，其苦澀者不可食。不沉水者有毒，不可食。\\n\\n大明曰︰多食令人臚脹，發虛熱。\\n\\n詵曰︰臨水食之，令發痰瘧。不可合雀肉食。合蜜食，損五臟。\\n\\n宗奭曰︰不可合漿水食，發霍亂，澀氣而然。服術人忌之。\\n\\n【主治】暴食，去痼熱，調中（《別錄》）。去骨節間勞熱（孟詵）。肝病宜食之（思邈）。\\n\\n核仁\\n\\n僵仆躃折，瘀血骨痛（《別錄》）。令人好顏色（吳普）。治女子少腹腫滿。利小腸，下水氣，除浮腫（甄權）。治面黑子（蘇頌）。\\n\\n消渴，止心煩逆奔豚氣（《別錄》）。治瘡（吳普）。煎水含漱，治齒痛（弘景）。\\n\\n煎汁飲，主赤白痢（大明）。炙黃煎湯，日再飲之，治女人卒赤白下，有驗（孟詵）。治小兒暴熱，解丹毒（時珍）。苦李根皮︰味鹹，治腳下氣，主熱毒煩躁。煮汁服，止消渴（甄權）。\\n\\n令人面澤，去粉滓（時珍）。\\n\\n小兒壯熱，痰疾驚癇，煎湯浴之，良（大明）。\\n\\n目翳，定痛消腫（時珍）。\",\n  \"translation\": \"**[Names and Nomenclature]** Also called Jiaqing zi [\\\"Jiaqing fruit\\\"].\\n\\nLi Shizhen states: According to Luo Yuan's *Erya Yi* [Expansions on the Erya]: \\\"The li [plum] is a tree [mu] that bears many seeds [zi], hence the character is formed from 'tree' [木] and 'seed/child' [子].\\\" I venture to suggest, however, that there are many trees bearing abundant seeds — why should the plum alone be called 'tree-seed'? According to the *Suwen* [Plain Questions]: \\\"The li has a sour flavour and belongs to the liver; it is the fruit of the Eastern direction.\\\" Therefore, among the Five Fruits [五果], the li belongs to wood [木], and so it rightfully claims this designation exclusively. People today call dried plums \\\"Jiaqing zi.\\\" According to Wei Shu's *Liangjing Ji* [Re",
+      "_label": "李 (果之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】甜梅。\n\n時珍曰︰杏字篆文象子在木枝之形。或云從口及從可者，並非也。《江南錄》云︰楊行密改杏名甜梅。\n\n【集解】《別錄》曰︰杏生晉山川谷。五月採之。\n\n頌曰︰今處處有之。有數種︰黃而圓者名金杏，相傳種出自濟南郡之分流山，彼人謂之漢帝杏，言漢武帝上苑之種也。今近汴洛皆種之，熟最早。其扁而青黃者名木杏，味酢不及之。山杏不堪入藥。杏仁今以從東來人家種者爲勝。\n\n宗奭曰︰金杏深赭色，核大而扁，乃接成者，其味最勝。又有白杏，熟時色青白或微黃，味甘淡而不酢。生杏可晒脯作乾果食之。山杏輩只可收仁用耳。\n\n時珍曰︰諸杏，葉皆圓而有尖，二月開紅花，亦有千葉者，不結實。甘而有沙者爲沙杏，黃而帶酢者爲梅杏，青而帶黃者爲柰杏。其金杏大如梨，黃如橘。《西京雜記》載蓬萊杏花五色，蓋異種也。按王禎《農書》云︰北方肉杏甚佳，赤大而扁，謂之金剛拳。凡杏熟時，榨濃汁，塗盤中晒乾，以手摩刮收之，可和水調 食，亦五果爲助之義也。\n\n實\n\n【氣味】酸，熱，有小毒。（《別錄》）\n\n頌曰︰杏之類梅者味酢，類桃者味甘。\n\n宗奭曰︰凡杏性皆熱。小兒多食，致瘡癰膈熱。\n\n扁鵲曰︰多食動宿疾，令人目盲、須眉落。\n\n源曰︰多食，生痰",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Apricot (Xing) — Fruit Chapter One\",\n  \"original_text\": \"【釋名】甜梅。\\n\\n時珍曰︰杏字篆文象子在木枝之形。或云從口及從可者，並非也。《江南錄》云︰楊行密改杏名甜梅。\\n\\n【集解】《別錄》曰︰杏生晉山川谷。五月採之。\\n\\n頌曰︰今處處有之。有數種︰黃而圓者名金杏，相傳種出自濟南郡之分流山，彼人謂之漢帝杏，言漢武帝上苑之種也。今近汴洛皆種之，熟最早。其扁而青黃者名木杏，味酢不及之。山杏不堪入藥。杏仁今以從東來人家種者爲勝。\\n\\n宗奭曰︰金杏深赭色，核大而扁，乃接成者，其味最勝。又有白杏，熟時色青白或微黃，味甘淡而不酢。生杏可晒脯作乾果食之。山杏輩只可收仁用耳。\\n\\n時珍曰︰諸杏，葉皆圓而有尖，二月開紅花，亦有千葉者，不結實。甘而有沙者爲沙杏，黃而帶酢者爲梅杏，青而帶黃者爲柰杏。其金杏大如梨，黃如橘。《西京雜記》載蓬萊杏花五色，蓋異種也。按王禎《農書》云︰北方肉杏甚佳，赤大而扁，謂之金剛拳。凡杏熟時，榨濃汁，塗盤中晒乾，以手摩刮收之，可和水調食，亦五果爲助之義也。\\n\\n實\\n\\n【氣味】酸，熱，有小毒。（《別錄》）\\n\\n頌曰︰杏之類梅者味酢，類桃者味甘。\\n\\n宗奭曰︰凡杏性皆熱。小兒多食，致瘡癰膈熱。\\n\\n扁鵲曰︰多食動宿疾，令人目盲、須眉落。\\n\\n源曰︰多食，生痰熱，昏精神。產婦尤忌之。\\n甘、苦，溫、冷利，有小毒。兩仁者殺人，可以毒狗。\\n\\n震亨曰︰杏仁性熱，因寒者可用。\\n\\n思邈曰︰杏仁作湯如白沫不解者，食之令氣壅身熱。湯經宿者動冷氣。\\n\\n時珍曰︰凡杏、桃諸花皆五出。若六出必雙仁，爲其反常，故有毒也。\\n\\n徐之才曰︰得火良。惡黃芩、黃耆、葛根，畏蘘草。\\n苦，溫，無毒。\\n\\n【主治】生食多，傷筋骨（《別錄》）。曝脯食，止渴，去冷熱毒。心之果，心病宜食之（思邈）。\\n\\n核仁\\n咳逆、上氣雷鳴，喉痺，下氣，產乳，金瘡，寒心，奔豚（《本經》）。驚癇，心下煩熱，風氣往來，時行頭痛，解肌，消心下急滿痛，殺狗毒（《別錄》）。解錫毒（之才）。治腹痺不通，發汗，主溫病，咳嗽，上氣，喘促。入天門冬煎，潤心肺。和酪作湯，潤聲氣（甄權）。除肺熱，治上焦風燥，利胸膈氣逆，潤大腸氣秘（元素）。殺蟲，治諸瘡疥，消腫，去頭面諸風氣（時珍）。\\n補不足，女子傷中，寒熱痺厥逆（《別錄》）。\\n人卒腫滿，身面洪大，煮濃汁熱漬，亦少少服之（《肘後》）。\\n\\n枝\\n墮傷，取一握，水一升煮減半，入酒三合和勻，分再服，大效（蘇頌）。\\n食杏仁多，致迷亂將死，切碎煎湯服，即解（時珍）。\\n\\n【發明】元素曰︰杏仁氣薄味濃，濁而沉墜，降也、陰也。入手太陰經。其用有三︰潤肺也，消食積也，散滯氣也。\\n\\n杲曰︰杏仁散結潤燥，除肺中風熱咳嗽。杏仁下喘，治氣也；桃仁療狂，治血也。俱治大便秘，當分氣、血。晝則便難，行陽氣也；夜則便難，行陰血也。故虛人便閉，不可過泄。脈浮者屬氣，用杏仁、陳皮；脈沉者屬血，用桃仁、陳皮。手陽明與手太陰爲表裡，賁門主往來，魄門主收閉，爲氣之通道，故並用陳皮佐之。\\n\\n好古曰︰張仲景麻黃湯，及王朝奉治傷寒氣上喘逆，並用杏仁者，爲其利氣、瀉肺、解肌也。\\n\\n時珍曰︰杏仁能散能降，故解肌散風、降氣潤燥、消積治傷損藥中用之。治瘡殺蟲，用其毒也。按《醫余》云︰凡索面、豆粉近杏仁則爛。頃一兵官食粉成積，醫師以積氣丸、杏仁相半研爲丸，熟水下，數服愈。又《野人閑話》云︰翰林學士辛士遜，在青城山道院中，夢皇姑謂曰︰可服杏仁，令汝聰明，老而健壯，心力不倦。求其方，則用杏仁一味，每盥漱畢，以七枚納口中。\",\n  \"translation\": \"**[Nomenclature]** Alternative name: Sweet Plum [甜梅, tián méi].\\n\\nLi Shizhen states: The character 杏 (xìng, apricot) in seal script depicts seeds on a tree branch. Some say it derives from the components 口 (mouth) or 可, but both interpretations are incorrect. The *Jiangnan Lu* records that Yang Xingmi renamed the apricot 'Sweet Plum' [甜梅].\\n\\n**[Collected Explanations]** The *Bié Lù* states: Apricots grow in the mountain valleys of Jin [Shanxi]. Th",
+      "_label": "杏 (果之一)"
+    },
+    {
+      "title_inferred": "Bādān Apricot (Jordan Almond / Sweet Almond)",
+      "original_text": "【釋名】八擔杏（《正要》）、忽鹿麻。\n\n【集解】時珍曰︰巴旦杏，出回回舊地，今關西諸土亦有。樹如杏而葉差小，實亦尖小而肉薄。其核如梅核，殼薄而仁甘美。點茶食之，味如榛子。西人以充方物。\n\n【氣味】甘，平，溫，無毒。\n\n【主治】止咳下氣，消心腹逆悶（時珍。出《飲膳正要》）。",
+      "translation": "【Nomenclature】 Also called Bādān Xìng [Eight-Carrier Apricot] (as recorded in the Yǐnshàn Zhèngyào [Principles of Correct Diet]), and Hūlùmá.\n\n【Collected Commentaries】 Li Shizhen states: The bādān apricot originates from the former lands of the Huihui [Muslim peoples of Central/West Asia], and is now also found in various places in Guanxi [the regions west of the Passes, i.e., Shaanxi and surrounding areas]. The tree resembles the common apricot but its leaves are somewhat smaller; the fruit is likewise small and pointed, with thin flesh. Its kernel resembles that of the plum, with a thin shell and a sweet, fine-flavored kernel. It is eaten by infusing it into tea, and its flavor resembles that of the hazelnut. The people of the West present it as a local specialty product.\n\n【Qi and Flavor】 Sweet, balanced [píng], warming, non-toxic.\n\n【Indications and Treatments】 Arrests coughing and directs qi downward; disperses counterflow oppression and stuffiness in the heart and abdomen. (Li Shizhen; sourced from the Yǐnshàn Zhèngyào.)",
+      "entities_mentioned": [
+        {
+          "name": "巴旦杏 (Bādān Xìng)",
+          "modern_identification": "Prunus dulcis (sweet almond); possibly also encompassing the Jordan almond type. The name 'bādān' derives from Persian 'bādām' (almond).",
+          "identification_confidence": "high",
+          "notes": "Also listed under the alternate names 八擔杏 (Bādān Xìng, a phonetic variant) and 忽鹿麻 (Hūlùmá, likely a transliteration of a Turkic or Mongolian term). Li Shizhen associates it with the Islamic/Central Asian world ('Huihui lands') and notes its introduction into northwestern China."
+        },
+        {
+          "name": "忽鹿麻 (Hūlùmá)",
+          "modern_identification": "Likely a transliteration of a Central Asian (Turkic or Persian) word for almond",
+          "identification_confidence": "low",
+          "notes": "Possibly a phonetic rendering of a Uyghur or Mongolian term; exact etymology uncertain."
+        },
+        {
+          "name": "榛子 (Zhēnzǐ)",
+          "modern_identification": "Corylus spp. (hazelnut)",
+          "identification_confidence": "high",
+          "notes": "Used here as a flavor comparison for the almond kernel."
+        }
+      ],
+      "translator_notes": "The term '回回' (Huíhuí) historically referred to Muslim peoples of Central and West Asia and is used here to indicate the almond's foreign, westerly origin. '關西' (Guānxī) refers to the region west of the Tong Pass (Tongguan), roughly corresponding to modern Shaanxi, Gansu, and adjacent areas — a key corridor for goods arriving via the Silk Road. The Yǐnshàn Zhèngyào (飲膳正要, 1330 CE) is a Yuan-dynasty dietary manual by Hu Sihui, cited as Li Shizhen's source for both the alternate name and the medicinal indications. '點茶' (diǎn chá) refers to a method of preparing powdered or ground ingredients whisked into hot water or tea, a technique prominent in Song and Yuan culture.",
+      "_label": "巴旦杏 (果之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰梅古文作呆，象子在木上之形。梅乃杏類，故反杏爲呆。書家訛爲甘木。後作梅，從每，諧聲也。或云︰梅者媒也，媒合衆味。故書云︰若作和羹，爾惟鹽梅。\n\n而梅字亦從某也。陸佃《埤雅》言梅入北方變爲杏，郭璞注《爾雅》以 爲梅，皆誤矣。\n\n即 木，荊人呼爲梅，見陸璣《草木疏》。\n鹽梅、霜梅。\n\n【集解】《別錄》曰︰梅實生漢中山谷。五月採實，火乾。\n\n頌曰︰今襄漢、川蜀、江湖、淮嶺皆有之。\n\n時珍曰︰按︰陸璣《詩疏》云︰梅，杏類也。樹、葉皆略似杏，葉有長尖，先衆木而花。其實酢，曝乾爲脯，入羹 齏中，又含之可以香口。子赤者材堅，子白者材脆。范成大《梅譜》云︰江梅，野生者，不經栽接，花小而香，子小而硬。消梅，實圓松脆，多液無滓，惟可生啖，不入煎造。綠萼梅，枝跗皆綠。重葉梅，花葉重疊，結實多雙。紅梅，花色如杏。\n\n杏梅，色淡紅，實扁而斑，味全似杏。鴛鴦梅，即多葉紅梅也，一蒂雙實。一云︰苦楝接梅，則花帶黑色。譚子化書云︰李接桃而本強者其實毛，梅接杏而本強者其實甘。梅實采半黃者，以煙熏之爲烏梅；青者鹽腌曝乾爲白梅。亦可蜜煎、糖藏，以充果 。熟者笮汁晒收爲梅醬惟烏梅、白梅可入藥。梅醬，夏月可調渴水",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Mei (Plum/Apricot-plum) — Fruits, Part One\",\n  \"original_text\": \"【釋名】時珍曰：梅古文作呆，象子在木上之形。梅乃杏類，故反杏爲呆。書家訛爲甘木。後作梅，從每，諧聲也。或云：梅者媒也，媒合衆味。故書云：若作和羹，爾惟鹽梅。而梅字亦從某也。陸佃《埤雅》言梅入北方變爲杏，郭璞注《爾雅》以柟爲梅，皆誤矣。即柟木，荊人呼爲梅，見陸璣《草木疏》。鹽梅、霜梅。\\n\\n【集解】《別錄》曰：梅實生漢中山谷。五月採實，火乾。頌曰：今襄漢、川蜀、江湖、淮嶺皆有之。時珍曰：按：陸璣《詩疏》云：梅，杏類也。樹、葉皆略似杏，葉有長尖，先衆木而花。其實酢，曝乾爲脯，入羹齏中，又含之可以香口。子赤者材堅，子白者材脆。范成大《梅譜》云：江梅，野生者，不經栽接，花小而香，子小而硬。消梅，實圓松脆，多液無滓，惟可生啖，不入煎造。綠萼梅，枝跗皆綠。重葉梅，花葉重疊，結實多雙。紅梅，花色如杏。杏梅，色淡紅，實扁而斑，味全似杏。鴛鴦梅，即多葉紅梅也，一蒂雙實。一云：苦楝接梅，則花帶黑色。譚子化書云：李接桃而本強者其實毛，梅接杏而本強者其實甘。梅實采半黃者，以煙熏之爲烏梅；青者鹽腌曝乾爲白梅。亦可蜜煎、糖藏，以充果饌。熟者笮汁晒收爲梅醬。惟烏梅、白梅可入藥。梅醬，夏月可調渴水飲之。\\n\\n實\\n【氣味】酸，平，無毒。大明曰：多食損齒傷筋，蝕脾胃，令人發膈上痰熱。服黃精人忌食之。食梅齒齼者，嚼胡桃肉解之。《物類相感志》云：梅子同韶粉食，則不酸，不軟牙。酸，溫、平，澀，無毒。杲曰：寒。忌豬肉。酸、鹹，平，無毒。酸，平，無毒。微酸，澀，無毒。酸，平，無毒。\\n\\n【主治】下氣，除熱煩滿，安心，止肢體痛，偏枯不仁，死肌，去青黑痣，蝕惡肉（《本經》）。去痺，利筋脈，止下痢，好唾口乾（《別錄》）。水漬汁飲，治傷寒煩熱（弘景）。止渴調中，去痰治瘧瘴，止吐逆霍亂，除冷熱痢（藏器）。治虛勞骨蒸，消酒毒，令人得睡。和建茶、乾薑爲丸服，止休息痢，大驗（大明）。斂肺澀腸，止久嗽瀉痢，反胃噎膈，蛔厥吐利，消腫涌痰，殺蟲，解魚毒、馬汗毒、硫黃毒（時珍）。\\n\\n白梅：和藥點痣，蝕惡肉（弘景）。刺在肉中者，嚼敷之即出（孟詵）。治刀箭傷，止血，研爛敷之（大明）。乳癰腫毒，杵爛貼之，佳（汪穎）。除痰（蘇頌）。治中風驚癇，喉痺痰厥僵仆，牙關緊閉者，取梅肉揩擦牙齦，涎出即開。又治瀉痢煩渴，霍亂吐下，下血血崩，功同烏梅（時珍）。明目，益氣，不飢（吳普）。除煩熱（甄權）。治代指忽然腫痛，搗爛，和醋浸之（時珍。《肘後方》）。\\n\\n花：休息痢及霍亂，煮濃汁飲之（大明）。\\n\\n藏器曰：嵩陽子言：清水揉梅葉，洗蕉葛衣，經夏不脆。有驗。時珍曰：夏衣生霉點，梅葉煎湯洗之即去，甚妙。風痺（《別錄》。出土者殺人）。初生小兒，取根同桃、李根煮湯浴之，無瘡熱之患（崔氏《纂要》）。煎湯飲，治霍亂，止休息痢（大明）。\\n\\n【發明】宗奭曰：食梅則津液泄者，水生木也。津液泄則傷腎，腎屬水，外爲齒故也。時珍曰：梅，花開於冬而實熟於夏，得木之全氣，故其味最酸，所謂曲直作酸也。肝爲乙木，膽爲甲木。人之舌下有四竅，兩竅通膽液，故食梅則津生者，類相感應也。故《素問》云：味過於酸，肝氣以津。又云：酸走筋，筋病無多食酸。不然，物之味酸者多矣，何獨梅能生津耶？\\n\\n烏梅：弘景曰：生梅、烏梅、白梅，功應相似。好古曰：烏梅，脾、肺二經血分藥也。能收肺氣，治燥嗽。肺欲收，急食酸以收之。時珍曰：烏梅、白梅所主諸病，皆取其酸收之義。惟張仲景治蛔厥烏梅丸及蟲方中用者，取蟲得酸即止之義，稍有不同耳。《醫說》載：曾魯公痢血百餘日，國醫不能療。陳應之用鹽水梅肉一枚研爛，合臘茶，入醋服之，一啜而安。大丞梁莊肅公亦痢血，應之用烏梅、胡黃連、灶下土等分爲末，茶調服，亦效。蓋血得酸則斂，得寒則止，得苦則澀故也。其蝕惡瘡息肉，雖是酸收，卻有物理之妙。\",\n  \"translation\": \"**[Explanation of Names]** Li Shizhen says: In ancient script, *mei* [梅] was written as 呆, depicting the form of a fruit on a tree. The mei is a type of xing [apricot], so the character for xing [杏] was inverted to form 呆. Calligraphers corrupted this into 甘木 ['sweet wood']. Later the form *mei* [梅] was adopted, using 每 as its phonetic compon",
+      "_label": "梅 (果之一)"
+    },
+    {
+      "title_inferred": "Langmei (榔梅) — a grafted plum-like fruit from Junzhou / Taihe Mountain",
+      "original_text": "【集解】時珍曰︰梅出均州太和山。相傳真武折梅枝插於榔樹。誓曰︰吾道若成，開花結果。後果如其言。今樹尚在五龍宮北，榔木梅實，杏形桃核。道士每歲采而蜜漬，以充貢獻焉。榔乃榆樹也。\n\n實\n\n【氣味】甘、酸，平，無毒。\n\n【主治】生津止渴，清神下氣，消酒（時珍）。",
+      "translation": "**Collected Explanations:** Li Shizhen states: The langmei [榔梅] comes from Taihe Mountain in Junzhou [present-day Danjiangkou, Hubei]. According to tradition, the Perfected Warrior [Zhenwu, the Daoist deity] broke off a branch of plum [mei] and inserted it into a lang tree [榔樹], swearing: 'If my Way succeeds, this shall flower and bear fruit.' Afterward it was indeed as he had said. The tree still stands to the north of the Wulong Palace [五龍宮]. The lang tree bears a plum-like fruit with the shape of an apricot and the stone of a peach. Each year Daoist priests collect the fruit and preserve it in honey, presenting it as tribute. The lang [榔] is in fact the elm tree [榆樹].\n\n**Fruit**\n\n**Flavor and Nature:** Sweet and sour; balanced [ping]; non-toxic.\n\n**Indications and Treatments:** Promotes the generation of fluids and relieves thirst; clears the mind and directs qi downward; resolves the effects of alcohol. (Li Shizhen.)",
+      "entities_mentioned": [
+        {
+          "name": "榔梅 (Langmei)",
+          "modern_identification": "Likely a graft hybrid or cultivar of Prunus mume (Chinese plum/mei) grafted onto an elm (Ulmus) rootstock, producing a fruit resembling an apricot with a peach-like stone; the exact botanical identity is uncertain",
+          "identification_confidence": "low",
+          "notes": "The text describes a legendary origin involving the Daoist deity Zhenwu grafting plum onto a lang tree. Li Shizhen identifies the lang (榔) as elm (榆, Ulmus sp.). The resulting fruit is described as having an apricot shape and peach stone, suggesting a hybrid or unusual cultivar. The tree was located near Wulong Palace on Wudang Mountain (Taihe Mountain, Junzhou)."
+        },
+        {
+          "name": "榔樹 / 榆樹 (Lang tree / Elm)",
+          "modern_identification": "Ulmus sp. (elm)",
+          "identification_confidence": "medium",
+          "notes": "Li Shizhen explicitly equates 榔 (lang) with 榆 (elm). However, some scholars have questioned this identification; 'lang' sometimes refers to other trees in regional usage."
+        },
+        {
+          "name": "梅 (Mei, plum)",
+          "modern_identification": "Prunus mume",
+          "identification_confidence": "high",
+          "notes": "The standard Chinese plum/apricot used in medicine and cuisine."
+        }
+      ],
+      "translator_notes": "The original OCR text appears to have dropped the character 榔 before 樹 in the phrase '插於[榔]樹' and before '木梅實' (should read '榔木梅實'), and also omitted 榔 before '乃榆樹也' (should read '榔乃榆樹也'). These have been silently restored in the cleaned original text as the intended characters are unambiguous from context. The segment is classified under 果之一 (Fruits, Part 1) in the Bencao Gangmu. The tribute practice of honey-preserved langmei sent from Wudang Mountain to the imperial court is historically attested.",
+      "_label": "榔梅 (果之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰桃性早花，易植而子繁，故字從木、兆。十億曰兆，言其多也。或云從兆諧聲也。\n桃奴（《別錄》）、梟景（同上）、神桃。\n\n《別錄》曰︰此是桃實著樹經冬不落者，正月採之，中實者良。\n\n時珍曰︰桃子乾懸如梟首 木之狀，故名。\n\n奴者，言其不能成實也。《家寶方》謂之神桃，言其辟惡也。千葉桃花結子在樹不落者，名鬼髑髏。\n\n雷 《炮炙論》有修治之法，而方書未見用者。\n\n曰︰鬼髑髏，十一月採得，以酒拌蒸之，從巳至未，焙乾，以銅刀切，焙取肉用。\n\n【集解】《別錄》曰︰桃生太山川谷。\n\n弘景曰︰今處處有之。核仁入藥，當取解核者種之爲佳，山桃仁不堪用。\n\n頌曰︰汴東、陝西者尤大而美。大抵佳果肥美者，皆圃人以他木接成，殊失本性。入藥當用本生者爲佳。今市肆賣者，多雜接核之仁，爲不堪也。\n\n宗奭曰︰山中一種桃，正合《月令》桃始華者，花多子少，不堪啖，惟堪取仁入藥。汴中有油桃，小於衆桃，光如塗油，不益脾胃。太原有金桃，色深黃。洛中有昆侖桃，肉深紅紫色。又有餅子桃，狀如香餅子。其味皆甘。\n\n時珍曰︰桃品甚多，易於栽種，且早結實。五年宜以刀 其皮，出其脂液，則多延數年。\n\n其花有紅、紫、白、千葉、二色之殊",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Peach (Táo) — Fruit Chapter One\",\n  \"original_text\": \"【釋名】時珍曰︰桃性早花，易植而子繁，故字從木、兆。十億曰兆，言其多也。或云從兆諧聲也。\\n桃奴（《別錄》）、梟景（同上）、神桃。\\n《別錄》曰︰此是桃實著樹經冬不落者，正月採之，中實者良。\\n時珍曰︰桃子乾懸如梟首木之狀，故名。奴者，言其不能成實也。《家寶方》謂之神桃，言其辟惡也。千葉桃花結子在樹不落者，名鬼髑髏。\\n雷《炮炙論》有修治之法，而方書未見用者。\\n曰︰鬼髑髏，十一月採得，以酒拌蒸之，從巳至未，焙乾，以銅刀切，焙取肉用。\\n【集解】《別錄》曰︰桃生太山川谷。\\n弘景曰︰今處處有之。核仁入藥，當取解核者種之爲佳，山桃仁不堪用。\\n頌曰︰汴東、陝西者尤大而美。大抵佳果肥美者，皆圃人以他木接成，殊失本性。入藥當用本生者爲佳。今市肆賣者，多雜接核之仁，爲不堪也。\\n宗奭曰︰山中一種桃，正合《月令》桃始華者，花多子少，不堪啖，惟堪取仁入藥。汴中有油桃，小於衆桃，光如塗油，不益脾胃。太原有金桃，色深黃。洛中有昆侖桃，肉深紅紫色。又有餅子桃，狀如香餅子。其味皆甘。\\n時珍曰︰桃品甚多，易於栽種，且早結實。五年宜以刀劃其皮，出其脂液，則多延數年。其花有紅、紫、白、千葉、二色之殊，其實有紅桃、緋桃、碧桃、緗桃、白桃、烏桃、金桃、銀桃、胭脂桃，皆以色名者也。有綿桃、油桃、御桃、方桃、匾桃、偏核桃，皆以形名者也。有五月早桃、十月冬桃、秋桃、霜桃，皆以時名者也。並可供食。惟山中毛桃，即《爾雅》所謂榹桃者，小而多毛，核粘味惡。其仁充滿多脂，可入藥用，蓋外不足者內有餘也。冬桃一名西王母桃，一名仙人桃，即昆侖桃，形如栝蔞，表裡微赤，得霜始熟。方桃形微方。匾桃出南番，形匾肉澀，核狀如盒，其仁甘美。番人珍之，名波淡樹，樹甚高碩。偏核桃出波斯，形薄而尖，頭偏，狀如半月，其仁酷似新羅松子，可食，性熱。又楊維楨、宋濂集中並載元朝御庫蟠桃，核大如碗，以爲神異。按︰王子年《拾遺記》載︰漢明帝時，常山獻巨核桃，霜下始花，隆暑方熟。《玄中記》載︰積…\\n【氣味】辛、酸、甘，熱，微毒。多食令人有熱。\\n詵曰︰能發丹石毒，生者尤損人。\\n思邈曰︰《黃帝書》云︰食桃飽，入水浴，令人成淋及寒熱病。\\n時珍曰︰生桃多食，令人膨脹及生癰癤，有損無益。五果列桃爲下以此。\\n瑞曰︰桃與鱉同食，患心痛。服術人忌食之。\\n苦、甘，平，無毒。\\n思邈曰︰苦、甘、辛，平。詵曰︰溫。\\n弘景曰︰桃仁作酪，性冷。香附爲之使。\\n辛，平，微毒。\\n苦，微溫，有小毒。\\n苦，平，無毒。\\n苦，平，無毒。\\n苦，平，無毒。\\n苦，平，無毒。\\n【主治】作脯食，益顏色（大明）。肺之果，肺病宜食之（思邈）。\\n冬桃，食之解勞熱（時珍。出《爾雅注》）。\\n核仁\\n瘀血、血閉，症瘕、邪氣，殺小蟲（《本經》）。止咳逆、上氣，消心下堅硬，除卒暴擊血，通月水，止心腹痛（《別錄》）。治血結、血秘、血燥，通潤大便，破畜血（元素）。殺三蟲。又每夜嚼一枚和蜜塗手、面良（孟詵）。主血滯、風痺、骨蒸，肝瘧、寒熱，鬼注疼痛，產後血病（時珍）。\\n破血閉，下血瘕，寒熱積聚，無子，帶下諸疾（《別錄》）。\\n療崩中，破癖氣（大明）。治惡鬼邪氣（孟詵）。\\n桃梟\\n殺百鬼精物（《本經》）。殺精魅五毒不祥，療中惡腹痛（《別錄》。頌曰︰胡洽治中惡毒瓦斯蠱疰有桃梟湯。治肺氣腰痛，破血，療心痛，酒磨暖服之（大明）。\\n主吐血諸藥不效，燒存性，研末，米湯調服，有驗（汪穎）。\\n治小兒虛汗，婦人妊娠下血，破伏梁結氣，止邪瘧。燒煙熏痔瘡。燒黑油調，敷小兒頭上肥瘡軟癤（時珍）。\\n殺疰惡鬼，令人好顏色（《本經》）。\\n悅澤人面，除水氣，破石淋，利大小便，下三蟲（《別錄》）。\\n消腫滿，下惡氣（蘇恭）。治心腹痛及禿瘡（孟詵）。利宿水痰飲積滯，治風狂。研末，敷頭上肥瘡，手足皸瘡（時珍）。\\n除尸蟲，出瘡中小蟲（《別錄》）。治惡氣，小兒寒熱客忤（大明）。療傷寒、時氣、風痺無汗，治頭風，通大小便，止霍亂腹痛（時珍）。\\n除邪鬼中惡腹痛，去胃中熱（《別錄》）。治疰忤心腹痛，解蠱毒，辟疫癘，療黃膽身目如金，殺諸瘡蟲（時珍）。\\n煉服，保中不飢，忍風寒（《別錄》）。下石淋，破血，治中惡疰忤（蘇恭）。主惡鬼邪氣（孟詵）。和血益氣，治下痢，止痛（時珍）。\\n中惡，精魅邪氣，水煮汁服之（孟詵）。\\n卒心腹痛，鬼疰，破血，辟邪惡氣脹滿，煮汁服之，與桃符同功（藏器）。\\n【發明】杲曰︰桃仁苦重於甘，氣薄味濃，沉而降，陰中之陽，手、足厥陰經血分藥也。苦以泄滯血，甘以生新血，故破凝血者用之。其功有四︰治熱入血室，一也；泄腹中滯血，二也；除皮膚血熱燥癢，三也；行皮膚凝聚之血，四也。\\n成無己曰︰肝者血之源，血聚則肝氣燥。肝",
+      "_label": "桃 (果之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰栗，《說文》作KT ，從 （音條），象花實下垂之狀也。梵書名篤迦。\n\n【集解】《別錄》曰︰栗生山陰，九月採。\n\n弘景曰︰今會稽諸暨栗，形大皮濃，不美；剡及始豐栗，皮薄而甜，乃佳。\n\n頌曰︰栗處處有之，而兗州、宣州者最勝。木高二、三丈，葉極類櫟。四月開花青黃色，長條似胡桃花。實有房 ，大者若拳，中子三、五；小者若桃李，中子惟一、二。將熟則罅拆子出。栗類亦多。按︰陸璣《詩疏》云︰栗，五方皆有之，周、秦、吳、揚特饒。惟濮陽及范陽栗甜美味長，他方者不及也。倭、韓國諸島上栗大如雞子，味短不美。桂陽有莘栗，叢生，實大如杏仁，皮、子形色與栗無異，但小耳。又有奧栗，皆與栗同，子圓而細，惟江湖有之，或云即莘也。莘音榛，《詩》云「樹之莘栗」是矣。\n\n保升曰︰板栗、錐栗二樹皆大。茅栗似板栗而細如橡子，其樹雖小，葉亦不殊，但春生夏花、秋實冬枯爲異耳。\n\n宗奭曰︰湖北一種旋栗，頂圓末尖，即榛栗，象榛子形也。栗欲乾收，莫如曝之；欲生收，莫如潤沙藏之，至夏初尚如新也。\n\n時珍曰︰栗但可種成，不可移栽。按︰《事類合璧》云︰栗木高二、三丈，苞生多刺如毛，每枝不下四、五個苞，有青、黃、赤三色。中子或單或雙",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Chestnut (Lì) — Fruit Chapter One\",\n  \"original_text\": \"【釋名】時珍曰：栗，《說文》作KT，從（音條），象花實下垂之狀也。梵書名篤迦。\\n\\n【集解】《別錄》曰：栗生山陰，九月採。\\n\\n弘景曰：今會稽諸暨栗，形大皮濃，不美；剡及始豐栗，皮薄而甜，乃佳。\\n\\n頌曰：栗處處有之，而兗州、宣州者最勝。木高二、三丈，葉極類櫟。四月開花青黃色，長條似胡桃花。實有房，大者若拳，中子三、五；小者若桃李，中子惟一、二。將熟則罅拆子出。栗類亦多。按：陸璣《詩疏》云：栗，五方皆有之，周、秦、吳、揚特饒。惟濮陽及范陽栗甜美味長，他方者不及也。倭、韓國諸島上栗大如雞子，味短不美。桂陽有莘栗，叢生，實大如杏仁，皮、子形色與栗無異，但小耳。又有奧栗，皆與栗同，子圓而細，惟江湖有之，或云即莘也。莘音榛，《詩》云「樹之莘栗」是矣。\\n\\n保升曰：板栗、錐栗二樹皆大。茅栗似板栗而細如橡子，其樹雖小，葉亦不殊，但春生夏花、秋實冬枯為異耳。\\n\\n宗奭曰：湖北一種旋栗，頂圓末尖，即榛栗，象榛子形也。栗欲乾收，莫如曝之；欲生收，莫如潤沙藏之，至夏初尚如新也。\\n\\n時珍曰：栗但可種成，不可移栽。按：《事類合璧》云：栗木高二、三丈，苞生多刺如毛，每枝不下四、五個苞，有青、黃、赤三色。中子或單或雙，或三或四。其殼生黃熟紫，殼內有膜裹仁，九月霜降乃熟。其苞自裂而子墜者，乃可久藏，苞未裂者易腐也。其花作條，大如箸頭，長四、五寸，可以點燈。栗之大者為板栗，中心扁子為栗楔。稍小者為山栗。山栗之圓而末尖者為錐栗。圓小如橡子者為莘栗。小如指頂者為茅栗，即《爾雅》所謂栗也，一名栗，可炒食之。劉恂\\n\\n【氣味】鹹，溫，無毒。\\n\\n詵曰：吳栗雖大味短，不如北栗。凡栗日中曝乾食，即下氣補益；不爾猶有木氣，不補益也。火煨去汗，亦殺水氣。生食則發氣，蒸炒熟食則壅氣。凡患風水人不宜食，味鹹生水也。\\n\\n恭曰：栗作粉食，勝於菱、芡；但以飼孩兒，令齒不生。\\n\\n宗奭曰：小兒不可多食。生則難化，熟則滯氣，膈食生蟲，往往致病。\\n甘，平，澀，無毒。\\n同。\\n\\n【主治】益氣，濃腸胃，補腎氣，令人耐飢（《別錄》）。\\n\\n生食，治腰腳不遂（思邈）。療筋骨斷碎，腫痛瘀血，生嚼塗之，有效（蘇恭）。\\n\\n栗楔（音屑） 時珍曰：一球三顆，其中扁者栗楔也。\\n筋骨風痛（士良）。活血尤效（頌曰：今衡山合活血丹用之）。每日生食七枚，破冷癖。又生嚼，惡刺，出箭頭，敷瘰癧腫毒痛（大明）。\\n搗散，和蜜塗面，令光急去皺紋（蘇恭）。\\n反胃消渴，煮汁飲之（孟詵）。煮汁飲，止瀉血（大明）。\\n煮汁，洗火丹毒腫（蘇恭）。\\n\\n花\\n瘰癧（吳瑞）。\\n\\n樹皮\\n煮汁，洗沙虱、溪毒（蘇恭）。療瘡毒（蘇頌）。治丹毒五色無常。剝皮有刺者，煎水洗之（孟詵。出《肘後方》）。\\n\\n根\\n偏腎氣，酒煎服之（汪穎）。\\n\\n【發明】思邈曰：栗，腎之果也。腎病宜食之。\\n\\n弘景曰：相傳有人患腰腳弱，往栗樹下食數升，便能起行。此是補腎之義，然應生啖。若服餌則宜蒸曝之。\\n\\n宗奭曰：栗之補腎，為其味鹹，又滯其氣也。\\n\\n時珍曰：栗於五果屬水。水潦之年則栗不熟，類相應也。有人內寒，暴泄如注，令食煨栗二、三十枚，頓愈。腎主大便，栗能通腎，於此可驗。《經驗後方》治腎虛腰腳無力，以袋盛生栗懸干，每旦吃十餘顆，次吃豬腎粥助之，久必強健。蓋風乾之栗，勝於日曝，而火煨油炒，勝於煮蒸。仍須細嚼，連液吞咽，則有益。若頓食至飽，反致傷脾矣。按：蘇子由詩云：老去自添腰腳病，山翁服栗舊傳方。客來為說晨興晚，三咽徐收白玉漿。此得食栗之訣也。王禎《農書》云：《史記》載：秦飢，應侯請發五苑棗、栗。則本草栗濃腸胃、補腎氣、令人耐飢之說，殆非虛語矣。\",\n  \"translation\": \"**[Explanation of Names]**\\nLi Shizhen states: The character 栗 (chestnut) is written in the *Shuowen Jiezi* [etymological dictionary] as [ILLEGIBLE: archaic graphic form of 栗], derived from the component pronounced *tiáo*, the shape of which depicts flowers and fruits hanging downward. In Sanskrit texts it is called *dukka* [篤迦].\\n\\n**[Collected Explanations]**\\nThe *Bielu* [Supplementary ",
+      "_label": "栗 (果之一)"
+    },
+    {
+      "title_inferred": "Tianshi Chestnut (Tiānshī Lì) — Fruit Chapter One",
+      "original_text": "【集解】時珍曰︰按︰宋祁《益州方物記》云︰天師栗，惟西蜀青城山中有之，他處無有也。云張天師學道於此所遺，故名。似栗而味美，惟獨房若橡爲異耳。今武當山所賣娑羅子，恐即此物也。\n\n【氣味】甘，溫，無毒。\n\n【主治】久食，已風攣（時珍。出《益州記》）。",
+      "translation": "【Collected Explanations】 Li Shizhen states: According to Song Qi's 'Record of the Natural Products of Yizhou' [《益州方物記》]: The Tianshi Chestnut [Tiānshī Lì, lit. 'Heavenly Master's Chestnut'] is found only in the Qingcheng Mountains of western Shu [modern Sichuan]; it exists nowhere else. It is said to have been left behind by Zhang Tianshi [Zhang Daoling, the founding patriarch of Taoism] while he was cultivating the Dao there, and thus takes its name from him. It resembles a chestnut and is delicious in flavor, differing only in that each fruit occupies a single compartment [i.e., a single-seeded pod], similar to an acorn [橡]. The Suoluo seeds [娑羅子] currently sold at Wudang Mountain are very likely this same plant.\n\n【Flavor and Nature】 Sweet, warm, non-toxic.\n\n【Indications and Treatment】 Prolonged consumption cures wind-induced cramps and contractures [風攣] (Li Shizhen; cited from the 'Record of Yizhou' [《益州記》]).",
+      "entities_mentioned": [
+        {
+          "name": "天師栗 (Tiānshī Lì)",
+          "modern_identification": "Aesculus wilsonii or Aesculus chinensis (Chinese horse chestnut)",
+          "identification_confidence": "high",
+          "notes": "The description of a single-seeded, acorn-like pod growing in the Qingcheng Mountains of Sichuan strongly points to one of the Chinese horse chestnuts. The cross-reference to 娑羅子 (Suoluo seeds) further supports identification as Aesculus sp., as 娑羅子 is the standard name for the fruit of Aesculus in the Bencao tradition."
+        },
+        {
+          "name": "娑羅子 (Suōluó Zǐ)",
+          "modern_identification": "Aesculus chinensis or Aesculus wilsonii (seed of Chinese horse chestnut)",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen tentatively equates the Suoluo seeds sold at Wudang Mountain with Tianshi Chestnut. Suoluo zi is a recognized traditional Chinese medicine drug derived from Aesculus species."
+        },
+        {
+          "name": "宋祁 (Song Qi)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Northern Song dynasty official and scholar (998–1061), author of the 《益州方物記》 (Record of the Natural Products of Yizhou), an important source on the flora and fauna of Sichuan."
+        },
+        {
+          "name": "張天師 (Zhang Tianshi)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Refers to Zhang Daoling (34–156 CE), the legendary founder of Celestial Masters Taoism, traditionally associated with the Qingcheng Mountains in Sichuan."
+        },
+        {
+          "name": "青城山 (Qingcheng Mountain)",
+          "modern_identification": "Qingcheng Mountain, Dujiangyan, Sichuan Province, China",
+          "identification_confidence": "high",
+          "notes": "A famous Taoist sacred mountain in western Sichuan, cited as the sole habitat of Tianshi Chestnut in the source."
+        },
+        {
+          "name": "武當山 (Wudang Mountain)",
+          "modern_identification": "Wudang Mountain, Hubei Province, China",
+          "identification_confidence": "high",
+          "notes": "A major Taoist mountain in Hubei; Li Shizhen notes that Suoluo seeds sold there may be the same plant as the Tianshi Chestnut."
+        }
+      ],
+      "translator_notes": "The term 風攣 (fēng luán) refers to spasms or contractures attributed in traditional Chinese medicine to 'wind' pathogenic factor invading the sinews — roughly equivalent to what might today be described as muscle spasms, cramps, or spastic paralysis of neurological origin. The phrase 獨房若橡 is somewhat unusual; it describes the fruit as having a single locule or chamber (獨房) resembling an acorn (橡), which is consistent with the morphology of Aesculus fruit. Li Shizhen's citation distinguishes between 《益州方物記》 (Song Qi's fuller work) and the briefer 《益州記》, both of which he appears to draw upon.",
+      "_label": "天師栗 (果之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰按陸佃《埤雅》云︰大曰棗，小曰棘。棘，酸棗也。棗性高，故重 ；棘性低，故並 。朿音次。棗、棘皆有刺針，會意也。\n乾棗（《別錄》）、美棗（《別錄》）、良棗。\n\n《別錄》曰︰八月採，曝乾。\n\n瑞曰︰此即晒乾大棗也。味最良美，故宜入藥。今人亦有用膠棗之肥大者。\n\n【集解】《別錄》曰︰棗生河東平澤。\n\n弘景曰︰世傳河東猗氏縣棗特異。今青州出者形大而核細，多膏甚甜。郁州互市者亦好，小不及耳。江東臨沂、金城棗形大而虛，少脂，好者亦可用之。南棗大惡，不堪啖。\n\n頌曰︰近北州郡皆出棗，惟青州之種特佳。晉州、絳州者雖大，而不及青州肉濃也。江南出者，堅燥少脂。今園圃種蒔者，其種甚多。美者有水菱棗、御棗之類，皆不堪入藥，蓋肌肉輕虛故也。南郡人煮而曝乾，皮薄而皺，味更甘於他棗，謂之天蒸棗，亦不入藥。按郭璞注《爾雅》云︰壺棗大而銳，壺猶瓠也。邊，腰棗也，細腰，今謂之轆轤棗。櫅，白棗也，子白乃熟。洗，大棗也，出河東猗氏縣，大如雞卵。遵，羊棗也，實小紫黑，俗名羊矢棗。樲，酸棗也，木小而實酢。還味，棯棗也，其味短。蹶泄，苦棗也，其味苦。晰，無實棗也。\n\n宗奭曰︰大棗先青州，次晉州，皆可晒曝入藥，益脾胃",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Jujube (Zao 棗) — Fruit Chapter One\",\n  \"original_text\": \"【釋名】時珍曰︰按陸佃《埤雅》云︰大曰棗，小曰棘。棘，酸棗也。棗性高，故重朿；棘性低，故並朿。朿音次。棗、棘皆有刺針，會意也。\\n乾棗（《別錄》）、美棗（《別錄》）、良棗。\\n《別錄》曰︰八月採，曝乾。\\n瑞曰︰此即晒乾大棗也。味最良美，故宜入藥。今人亦有用膠棗之肥大者。\\n\\n【集解】《別錄》曰︰棗生河東平澤。\\n弘景曰︰世傳河東猗氏縣棗特異。今青州出者形大而核細，多膏甚甜。郁州互市者亦好，小不及耳。江東臨沂、金城棗形大而虛，少脂，好者亦可用之。南棗大惡，不堪啖。\\n頌曰︰近北州郡皆出棗，惟青州之種特佳。晉州、絳州者雖大，而不及青州肉濃也。江南出者，堅燥少脂。今園圃種蒔者，其種甚多。美者有水菱棗、御棗之類，皆不堪入藥，蓋肌肉輕虛故也。南郡人煮而曝乾，皮薄而皺，味更甘於他棗，謂之天蒸棗，亦不入藥。按郭璞注《爾雅》云︰壺棗大而銳，壺猶瓠也。邊，腰棗也，細腰，今謂之轆轤棗。櫅，白棗也，子白乃熟。洗，大棗也，出河東猗氏縣，大如雞卵。遵，羊棗也，實小紫黑，俗名羊矢棗。樲，酸棗也，木小而實酢。還味，棯棗也，其味短。蹶泄，苦棗也，其味苦。晰，無實棗也。\\n宗奭曰︰大棗先青州，次晉州，皆可晒曝入藥，益脾胃。余者止可充食用耳。青州人以棗去皮核，焙乾爲棗圈，以爲奇果。有御棗，甘美輕脆，後衆棗熟而易生蟲，今人所謂撲落酥者是也。又有牙棗，先衆棗熟，亦甘美，微酸而尖長。二棗皆可啖，不堪收曝。\\n時珍曰︰棗木赤心有刺。四月生小葉，尖觥光澤。五月開小花，白色微青。南北皆有，惟青、晉所出者肥大甘美，入藥爲良。其類甚繁，《爾雅》所載之外，郭義恭《廣志》有狗牙、雞心、牛頭、羊矢、獼猴、細腰、赤心、三星、駢白之名，又有木棗、氐棗、桂棗、夕棗、灌棗、墟棗、蒸棗、白棗、丹棗、棠棗，及安邑、信都諸棗。谷城[以下文字缺]\\n\\n【氣味】甘、辛，熱，無毒。多食令人寒熱。凡羸瘦者不可食。\\n思邈曰︰多食令人熱渴膨脹，動臟腑，損脾元，助濕熱。\\n甘，平，無毒。\\n思邈曰︰甘、辛，熱，滑，無毒。\\n杲曰︰溫。\\n大明曰︰有齒病、疳病、蟲䘌人不宜啖棗，小兒尤不宜食。又忌與蔥同食，令人五臟不和；與魚同食，令人腰腹痛。\\n時珍曰︰今人蒸棗多用糖、蜜拌過，久食最損脾、助濕熱也。啖棗多，令人齒黃生蟲。故嵇康《養生論》云︰齒處晉而黃，虱處頭而黑。\\n燔之，苦，平，無毒。\\n甘，溫，微毒。《別錄》曰︰散服使人瘦，久則嘔吐。\\n甘，澀，溫，有小毒。\\n\\n【主治】心腹邪氣，安中，養脾氣，平胃氣，通九竅，助十二經，補少氣、少津液、身中不足，大驚，四肢重，和百藥。久服輕身、延年（《本經》。宗奭曰：煮取肉，和脾胃藥甚佳）。補中，益氣，堅志，強力，除煩悶，療心下懸，除腸澼。久服不飢、神仙（《別錄》）。潤心肺，止嗽，補五臟，治虛損，除腸胃癖氣。和光粉燒，治疳痢（大明）。小兒患秋痢與蛀，棗食之良（孟詵）。殺烏頭、附子、天雄毒（之才）。和陰陽，調營衛，生津液（李杲）。\\n腹痛邪氣（《別錄》）。惡氣卒疰忤（孟詵）。核燒研，摻脛瘡良（時珍）。\\n覆麻黃，能令出汗（《本經》）。和葛粉，揩熱痱瘡，良（《別錄》）。治小兒壯熱，煎湯浴之（大明）。\\n中蠱腹痛，面目青黃，淋露骨立。銼取一斛，水淹三寸，煮至二斗澄清，煎五升。旦服五合，取吐即愈。又煎紅水服之，能通經脈。（時珍，出《短劇方》）。\\n\\n根\\n小兒赤丹從腳趺起，煎湯頻浴之。（時珍，出《千金》）。\\n同老桑樹皮，並取北向者，等分，燒研。每用一合，井水煎，澄取清，洗目。一月三洗，昏者復明。忌葷、酒、房事（時珍）。\\n\\n【發明】弘景曰︰道家方藥，以棗爲佳餌。其皮利，肉補虛，所以合湯皆擘之也。\\n杲曰︰大棗氣味俱濃，陽也。溫以補不足，甘以緩陰血。\\n成無己曰︰邪在營衛者，辛甘以解之。故用薑、棗以和營衛，生發脾胃升騰之氣。張仲景治奔豚，用大棗滋脾土以平腎氣也。治水飲脅痛有十棗湯，益土而勝水也。\\n震亨曰︰棗屬土而有火，味甘性緩。甘先入脾，補脾者未嘗用甘。故今人食甘多者，脾必受病也。\\n時珍曰︰《素問》言棗爲脾之果，脾病宜食之。謂治病和藥，棗爲脾經血分藥也。若無故頻食，則生蟲損齒，貽害多矣。按王好古云︰中滿者勿食甘，甘令人滿。故張仲景建中湯心下痞者，減餳、棗，與甘草同例，此得用棗之方矣。又按許叔微《本事方》云︰一婦病臟燥悲泣不止，祈禱備至。予憶古方治此証用大棗湯，遂治，與服盡劑而愈。古人識病治方，妙絕如此。又陳自明《婦人良方》云︰程虎卿內人妊娠四、五個月，遇晝則慘戚悲傷，淚下數欠，如有所憑，醫巫兼治皆無益。管伯周說︰先[文字截斷]\",\n  \"translation\": \"**[Explanation of Name",
+      "_label": "棗 (果之一)"
+    },
+    {
+      "title_inferred": "Zhongsi Date (Immortal Date)",
+      "original_text": "【釋名】仙棗。\n\n志曰︰北齊時有仙人仲思得此棗種之，因以爲名。\n\n【集解】志曰︰仲思棗形如大棗，長一、二寸，正紫色，細紋小核，味甘。今亦少有。\n\n時珍曰︰按︰杜寶《大業拾遺記》云︰隋時信都郡獻仲思棗，長四寸，圍五寸，肉肥核小有味，勝於青州棗，亦名仙棗。觀此，則《廣志》之西王母棗、谷城紫棗，皆此類也。\n\n【氣味】甘，溫，無毒。\n\n【主治】補虛益氣，潤五臟，去痰嗽冷氣。久服令人肥健，好顏色，神仙不飢（《開寶》）。",
+      "translation": "**Explanation of Names:** Also called the Immortal Date [xiān zǎo 仙棗].\n\n[Meng Shen's] *Bencao* [志] states: During the Northern Qi dynasty, an immortal [practitioner] named Zhongsi obtained seeds of this date and cultivated them; the fruit was therefore named after him.\n\n**Collected Commentaries:** [The same source] states: The Zhongsi date resembles a large jujube, measuring one to two cun in length, deep purple in color, with fine surface markings, a small pit, and a sweet flavor. It is rarely encountered today.\n\nLi Shizhen states: According to Du Bao's *Daye Shiyi Ji* [\"Miscellaneous Records of the Daye Reign\"]: During the Sui dynasty, Xindu Commandery presented Zhongsi dates measuring four cun in length and five cun in circumference, with thick flesh, small pits, and excellent flavor — surpassing the dates of Qingzhou. They were also called Immortal Dates. Considering this, the Queen Mother of the West dates [西王母棗] and the Gucheng Purple Dates [谷城紫棗] recorded in the *Guangzhi* are all of the same type.\n\n**Flavor and Nature:** Sweet, warm, non-toxic.\n\n**Indications and Treatments:** Supplements vacuity and augments [righteous] qi; moistens the five viscera; dispels phlegm, cough, and cold qi. Long-term consumption causes a person to become robust and well-nourished, improves complexion, and, in the manner of immortals, eliminates hunger. (Source: *Kaibao Bencao*)",
+      "entities_mentioned": [
+        {
+          "name": "仲思棗 (Zhongsi Date / Immortal Date)",
+          "modern_identification": "Ziziphus jujuba Mill. (a cultivar of the common jujube/Chinese date)",
+          "identification_confidence": "high",
+          "notes": "Described as a large, deep purple, fine-textured variety with a small pit and sweet taste. Likely an exceptional cultivar of the common jujube rather than a distinct species."
+        },
+        {
+          "name": "西王母棗 (Queen Mother of the West Date)",
+          "modern_identification": "Ziziphus jujuba Mill. (cultivar)",
+          "identification_confidence": "medium",
+          "notes": "Referenced from the *Guangzhi*; Li Shizhen considers it the same type as the Zhongsi date."
+        },
+        {
+          "name": "谷城紫棗 (Gucheng Purple Date)",
+          "modern_identification": "Ziziphus jujuba Mill. (cultivar)",
+          "identification_confidence": "medium",
+          "notes": "Also referenced from the *Guangzhi* and grouped with the Zhongsi date by Li Shizhen."
+        }
+      ],
+      "translator_notes": "The source citation 志曰 most likely refers to Meng Shen's (孟詵) *Shiliao Bencao* or possibly the *Guangzhi* (廣志); the exact attribution is ambiguous in context. The medicinal claims are drawn from the *Kaibao Bencao* (《開寶》, Song dynasty). The measurements given (cun 寸) are traditional Chinese units; one cun approximates 3–4 cm depending on the dynasty and context, making the Sui-era Zhongsi date described by Du Bao remarkably large (approximately 12–16 cm long). This hyperbolic size may reflect courtly tribute exaggeration. The phrase 神仙不飢 ('immortals do not hunger') is a conventional formula for tonic foods in classical Chinese pharmacopeia.",
+      "_label": "仲思棗 (果之一)"
+    },
+    {
+      "title_inferred": "Bitter Jujube (Kǔ Zǎo)",
+      "original_text": "【釋名】蹶泄（《爾雅》。名義未詳）。\n\n【集解】士良曰︰苦棗處處有之。色青而小，味苦不堪，人多不食。\n\n實\n\n【氣味】苦，大寒，無毒。\n\n【主治】傷寒熱伏在臟腑，狂蕩煩滿，大小便閉澀。取肉煮研，和蜜丸服（士良）。",
+      "translation": "【Explanation of Names】 Also called Juéxiè (《Erya》; the meaning of this name is not clearly known).\n\n【Collected Commentaries】 Shì Liáng states: The bitter jujube is found everywhere. It is greenish and small, with a bitterness so intense as to be unpalatable; most people do not eat it.\n\nFruit\n\n【Qi and Flavor】 Bitter; greatly cold [dà hán]; non-toxic.\n\n【Indications and Treatment】 [For] latent heat from cold-damage febrile illness [shāng hán] lodged in the viscera and bowels, manic agitation and oppressive fullness, and obstruction of urination and defecation: take the flesh, boil and grind it, mix with honey, and administer as pills (Shì Liáng).",
+      "entities_mentioned": [
+        {
+          "name": "苦棗 (Kǔ Zǎo, Bitter Jujube)",
+          "modern_identification": "Ziziphus jujuba var. spinosa or a related small, bitter-fruited Ziziphus species",
+          "identification_confidence": "medium",
+          "notes": "Described as small, greenish, and extremely bitter — distinguishing it from the common cultivated jujube (Ziziphus jujuba). May correspond to wild or unimproved forms of Ziziphus, possibly Ziziphus spinosa. The alternate name Juéxiè (蹶泄) appears in the Erya but its etymological meaning is noted as unknown even by Li Shizhen."
+        },
+        {
+          "name": "蹶泄 (Juéxiè)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Alternate name recorded in the classical lexicon Erya; meaning unexplained in the source text."
+        },
+        {
+          "name": "士良 (Shì Liáng)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Chen Shiliang (陳士良), author of the Shíxìng Bencao (食性本草), a Tang-dynasty dietary materia medica; cited here as the source of both the collected commentary and the therapeutic indication."
+        }
+      ],
+      "translator_notes": "The condition 傷寒熱伏在臟腑 refers to the classical Chinese medical concept of latent or suppressed heat from a cold-damage (shāng hán) disorder that has penetrated deeply into the internal organs. The preparation method — boiling the fruit flesh, grinding it, and forming honey pills — is a standard classical pharmaceutical form (蜜丸, honey pill). The category label 果樹 ('fruit trees') places this entry in the fruit-tree section of the Bencao Gangmu.",
+      "_label": "苦棗 (果之一)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】快果、果宗、玉乳、蜜父。\n\n震亨曰︰梨者，利也。其性下行流利也。\n\n弘景曰︰梨種殊多，並皆冷利，多食損人，故俗人謂之快果，不入藥用。\n\n【集解】頌曰︰梨，處處皆有，而種類殊別。醫方相承，用乳梨、鵝梨。乳梨，出宣城，皮濃而肉實，其味極長；鵝梨，河之南北州郡皆有之，皮薄而漿多，味差短，其香則過之。其餘水梨、消梨、紫糜梨、赤梨、青梨、茅梨、甘棠梨、御兒梨之類甚多，俱不入藥也。\n\n一種桑梨，惟堪蜜煮食之，止口乾，生食不益人，冷中。又有紫花梨，療心熱。唐武宗有此疾，百藥不效。青城山邢道人以此梨絞汁進之，帝疾遂愈。複求之，不可得。常山郡忽有一株，因緘封以進。帝多食之，解煩燥殊效。歲久木枯，不複有種，今人不得而用之矣。\n\n時珍曰︰梨樹高二、三丈，尖葉光膩有細齒，二月開白花如雪六出。上巳無風則結實必佳。故古語云︰上巳有風梨有蠹，中秋無月蚌無胎。賈思勰言︰梨核每顆有十餘子，種之惟一、二子生梨，余皆生杜，此亦一異也。杜，即棠梨也。梨品甚多，必須棠梨、桑樹接過者，則結子早而佳。梨有青、黃、紅、紫四色。乳梨，即雪梨；鵝梨，即綿梨；消梨，即香水梨也。俱為上品，可以治病。御兒梨，即玉乳梨之訛。或云御兒一作",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Pear (lí) — Fruit Section II\",\n  \"original_text\": \"【釋名】快果、果宗、玉乳、蜜父。\\n\\n震亨曰︰梨者，利也。其性下行流利也。\\n\\n弘景曰︰梨種殊多，並皆冷利，多食損人，故俗人謂之快果，不入藥用。\\n\\n【集解】頌曰︰梨，處處皆有，而種類殊別。醫方相承，用乳梨、鵝梨。乳梨，出宣城，皮濃而肉實，其味極長；鵝梨，河之南北州郡皆有之，皮薄而漿多，味差短，其香則過之。其餘水梨、消梨、紫糜梨、赤梨、青梨、茅梨、甘棠梨、御兒梨之類甚多，俱不入藥也。\\n\\n一種桑梨，惟堪蜜煮食之，止口乾，生食不益人，冷中。又有紫花梨，療心熱。唐武宗有此疾，百藥不效。青城山邢道人以此梨絞汁進之，帝疾遂愈。複求之，不可得。常山郡忽有一株，因緘封以進。帝多食之，解煩燥殊效。歲久木枯，不複有種，今人不得而用之矣。\\n\\n時珍曰︰梨樹高二、三丈，尖葉光膩有細齒，二月開白花如雪六出。上巳無風則結實必佳。故古語云︰上巳有風梨有蠹，中秋無月蚌無胎。賈思勰言︰梨核每顆有十餘子，種之惟一、二子生梨，余皆生杜，此亦一異也。杜，即棠梨也。梨品甚多，必須棠梨、桑樹接過者，則結子早而佳。梨有青、黃、紅、紫四色。乳梨，即雪梨；鵝梨，即綿梨；消梨，即香水梨也。俱為上品，可以治病。御兒梨，即玉乳梨之訛。或云御兒一作語兒，地名也，在蘇州嘉興縣，見《漢書注》。\\n\\n其他青皮、早谷、半斤、沙糜諸梨，皆粗澀不堪，只可蒸煮及切烘為脯爾。一種醋梨，易水煮熟，則甜美不損人也。昔人言梨，皆以常山真定、山陽鉅野、梁國睢陽、齊國臨淄、巨鹿、弘農、京兆、鄴都、洛陽為稱。蓋好梨多產於北土，南方惟宣城者為勝。故司馬遷《史記》云︰淮北、滎南、河濟之間，千株梨其人與千戶侯等也。又魏文帝詔云︰\\n\\n【氣味】甘、微酸，寒，無毒。多食令人寒中萎困。金瘡、乳婦、血虛者，尤不可食。志曰︰《別本》云︰梨，甘寒，多食成冷痢。桑梨︰生食冷中，不益人。\\n\\n【主治】熱嗽，止渴。切片貼燙火傷，止痛不爛（蘇恭）。治客熱，中風不語，治傷寒熱發，解丹石熱氣、驚邪，利大小便（《開寶》）。除賊風，止心煩氣喘熱狂。作漿，吐風痰（大明）。猝喑風不語者，生搗汁頻服。胸中痞塞熱結者，宜多食之（孟詵）。潤肺涼心，消痰降火，解瘡毒、酒毒（時珍）。去面黑粉滓（時珍。方見李花下）。\\n\\n葉\\n霍亂吐利不止，煮汁服。作煎，治風（蘇恭）。治小兒寒疝（蘇頌）。搗汁服，解中菌毒（吳瑞）。解傷寒時氣（時珍）。\\n\\n【發明】宗奭曰︰梨，多食動脾，少則不及病，用梨者當斟酌之。惟病酒煩渴人食之甚佳，終不能卻疾。\\n\\n慎微曰︰孫光憲《北夢瑣言》云︰有一朝士見奉御梁新診之，曰︰風疾已深，請速歸去。複見鄜州馬醫趙鄂診之，言與梁同，但請多吃消梨，咀嚼不及，絞汁而飲。到家旬日，唯吃消梨，頓爽也。\\n\\n時珍曰︰《別錄》著梨，只言其害，不著其功。陶隱居言梨不入藥。蓋古人論病多主風寒，用藥皆是桂、附，故不知梨有治風熱、潤肺涼心、消痰降火、解毒之功也。今人痰病、火病，十居六、七。梨之有益，蓋不為少，但不宜過食爾。按︰《類編》云︰一士人狀若有疾，厭厭無聊，往謁楊吉老診之。楊曰︰君熱症已極，氣血消鑠，此去三年，當以疽死。士人不樂而去。聞茅山有道士醫術通神，而不欲自鳴。乃衣仆衣，詣山拜之，願執薪水之役。道士留置弟子中。久之以實白道士。道士診之，笑曰︰汝便下山，但日日吃好梨一顆。如生梨已盡，則取乾者泡湯，食滓飲汁，疾自當平。士人如其戒，經一歲。\",\n  \"translation\": \"**[Explanatory Names]** Kuaiguo [Quick Fruit / Pleasing Fruit], Guozong [Sovereign of Fruits], Yuru [Jade Milk], Mifu [Honey Father].\\n\\nZhu Zhenheng [Zhen Heng] states: The character lí [pear] carries the meaning of lì [flowing / smooth passage]. Its nature is downward-moving and free-flowing.\\n\\nTao Hongjing [Hong Jing] states: There are very many varieties of pear; all of them are cold in nature and promote downward flow [lì]. Eating too many harms a person. Hence common people call it kuaiguo [quick/pleas",
+      "_label": "梨 (果之二)"
+    },
+    {
+      "title_inferred": "Lù lí (Wild Mountain Pear)",
+      "original_text": "【釋名】鼠梨（《詩疏》）、山梨（《毛詩》）、楊檖（《爾雅》）、羅。\n\n時珍曰：《爾雅》云：檖，羅也。其木有紋如羅，故名。《詩》云：隰有樹檖。毛萇注云：檖，一名赤羅，一名山梨，一名樹梨。今人謂之楊檖。陸機《詩疏》云：檖，即鹿梨也，一名鼠梨。\n\n【集解】頌曰：江寧府信州一種小梨，名鹿梨，葉如茶，根如小拇指。彼人取皮治瘡，八月採之。近處亦有，但采實作乾，不知入藥也。\n\n時珍曰：山梨，野梨也，處處有之。梨大如杏，可食。其木紋細密，赤者紋急，白者紋緩。按：陸機云：鹿梨，齊郡堯山、魯國、河內皆有，人亦種之。實似梨而酢，亦有美脆者。\n\n實\n\n【氣味】酸，澀，寒，無毒。\n\n【主治】煨食治痢（蘇頌）。\n\n根皮\n瘡疥，煎汁洗之（蘇頌）。",
+      "translation": "**[Names and Nomenclature]**\nAlternate names: Shǔ lí [Mouse Pear] (from the *Shī Shū* [Odes Commentary]); Shān lí [Mountain Pear] (from the *Máo Shī* [Mao Recension of the Odes]); Yáng suì (from the *Ěr Yǎ* [Elegant Erudition]); Luó.\n\nLi Shizhen states: The *Ěr Yǎ* says: 'Suì is also called Luó.' The wood has a grain resembling silk gauze [luó], hence the name. The *Book of Odes* says: 'In the lowland marshes grows the suì tree.' Máo Cháng's commentary notes: 'Suì is also called Chì Luó [Red Gauze], Shān lí [Mountain Pear], and Shù lí [Tree Pear]. People today call it Yáng suì.' Lù Jī's *Shī Shū* [Odes Commentary] states: 'Suì is none other than Lù lí [Deer Pear], also known as Shǔ lí [Mouse Pear].'\n\n**[Collected Explanations]**\nSū Sòng states: In Jiāngníng Prefecture and Xìn Prefecture there is a small pear called Lù lí. Its leaves resemble those of the tea plant, and its roots are about the size of a little finger. The local people take the bark to treat sores [chuāng], harvesting it in the eighth month. It also grows in nearby areas, but people there only dry the fruit for food and do not know it can be used medicinally.\n\nLi Shizhen states: Shān lí is the wild pear; it grows everywhere. The fruit is about the size of an apricot and is edible. The wood grain is fine and dense — the red-grained variety has tighter grain, while the white-grained variety has looser grain. According to Lù Jī: Lù lí is found in Yáo Shān in Qí Commandery, in the state of Lǔ, and in Hénèi; people also cultivate it. The fruit resembles a pear but is sour; some specimens are pleasant and crisp.\n\n**Fruit**\n\n**[Properties and Flavors]** Sour, astringent, cold, non-toxic. [Note: the properties of the root bark are the same as those of the fruit.]\n\n**[Indications and Treatments]** Roasted and eaten, it treats dysentery [lì]. (Sū Sòng)\n\n**Root Bark**\nFor sores and scabies [chuāng jiè]: decoct the bark into a liquid and wash the affected area. (Sū Sòng)",
+      "entities_mentioned": [
+        {
+          "name": "鹿梨 (Lù lí / Deer Pear)",
+          "modern_identification": "Pyrus calleryana Decne. (Callery Pear) or a closely related wild Pyrus species native to China",
+          "identification_confidence": "medium",
+          "notes": "Also known as 山梨 (wild/mountain pear) and 鼠梨 (mouse pear). The description of small, sour, apricot-sized fruit on a wild pear with fine-grained wood is consistent with Pyrus calleryana or Pyrus betulifolia. Conditions treated: dysentery (fruit, roasted); sores and scabies (root bark, decocted as a wash)."
+        },
+        {
+          "name": "楊檖 (Yáng suì)",
+          "modern_identification": "Same plant as above; alternate classical name recorded in the Ěr Yǎ",
+          "identification_confidence": "medium",
+          "notes": "Classical name appearing in the Ěr Yǎ; equated with Lù lí by Li Shizhen."
+        }
+      ],
+      "translator_notes": "The character '檖' (suì) was likely rendered as a placeholder or blank in some OCR versions of the source text; it has been restored here based on context from the Ěr Yǎ and Máo Shī references. The phrase '同實' ('same as the fruit') following the root bark's properties section appears to indicate that the root bark shares the same flavor/property profile as the fruit; this has been rendered as a bracketed note in the translation. Sū Sòng (蘇頌, 1020–1101) is the Northern Song official and naturalist credited with the *Bencao Tujing*; his attributions are preserved as in-text citations per Li Shizhen's convention.",
+      "_label": "鹿梨 (果之二)"
+    },
+    {
+      "title_inferred": "Tang Li (Wild Pear / Pyrus betulifolia) — Fruit Chapter Two",
+      "original_text": "【釋名】甘棠。\n\n時珍曰︰《爾雅》云︰杜，甘棠也。赤者杜，白者棠。或云︰牝曰杜，牡曰棠。或云︰澀者杜，甘者棠。杜者澀也，棠者糖也。三說俱通，末說近是。\n\n【集解】時珍曰︰棠梨，野梨也。處處山林有之。樹似梨而小。葉似蒼朮葉，亦有團者，三叉者，葉邊皆有鋸齒，色頗黲白。二月開白花，結實如小楝子大，霜後可食。其樹接梨甚嘉。有甘酢、赤白二種。按︰陸機《詩疏》云︰白棠，甘棠也，子多酸美而滑。赤棠子澀而酢，木理亦赤，可作弓材。《救荒本草》云︰其葉味微苦，嫩時炸熟，水浸淘淨，油、鹽調食，或蒸晒代茶。其花亦可炸食，或晒乾磨面，作燒餅食，以濟飢。又楊慎《丹鉛錄》言︰尹伯奇采蘋花以濟飢。注者言︰蘋，即山梨，乃今棠梨也。未知是否？\n\n實\n\n【氣味】酸、甘，澀，寒，無毒。\n同實。\n\n【主治】燒食，止滑痢（時珍）。\n\n枝葉\n霍亂吐瀉不止，轉筋腹痛，取一握，同木瓜二兩煎汁，細呷之（時珍。《聖惠方》）。",
+      "translation": "**[Names and Nomenclature]** Also called Gantang [Sweet Crab-Apple Pear].\n\nLi Shizhen states: The *Erya* says: 'Du is the Gantang.' The red variety is called Du; the white variety is called Tang. Another account says: the female plant is called Du, the male is called Tang. Yet another says: the astringent variety is Du, the sweet variety is Tang — 'du' meaning astringent, 'tang' meaning sweet [like sugar, 糖]. All three explanations are plausible, but the last is closest to the truth.\n\n**[Collected Explanations]** Li Shizhen states: Tang-li is a wild pear, found in mountain forests everywhere. The tree resembles a pear tree but is smaller. Its leaves resemble those of Atractylodes [Cang-zhu], some being rounded, some three-lobed, all with serrated edges and of a rather grayish-white color. In the second month [approximately March] it bears white flowers and produces fruit about the size of small chinaberry [Melia] seeds, which become edible after frost. This tree is an excellent rootstock for grafting pear cultivars. There are two varieties — sweet-sour, and red and white. According to Lu Ji's *Commentary on the Book of Odes*: 'The white Tang, the Sweet Gantang, bears fruit that is mostly sour, pleasant, and slippery [in texture]. The fruit of the red Tang is astringent and sour; its wood grain is also red and can be used for making bows.' The *Jiuhuang Bencao* [Materia Medica for Relief of Famine] states: 'Its leaves have a slightly bitter flavor. When young, they may be deep-fried until cooked, soaked and rinsed in water, then dressed with oil and salt for eating; or steamed and sun-dried as a tea substitute. The flowers may also be fried for eating, or sun-dried and ground into flour to make baked flatcakes, to relieve famine.' Furthermore, Yang Shen's *Danqian Lu* records that Yin Boqi gathered [ling/ping] flowers to relieve hunger. Commentators note that [this plant] is the mountain pear, which is today's Tang-li. Whether this is indeed so remains uncertain.\n\n---\n\n**Fruit**\n\n**[Qi and Flavor]** Sour, sweet, astringent; cold [in nature]; non-toxic.\n[Same as the fruit.]\n\n**[Indications and Treatment]** Roasted and eaten, it stops slippery dysentery [chronic diarrhea with uncontrolled discharge]. (Li Shizhen)\n\n---\n\n**Branches and Leaves**\n\n[For] cholera [sudden turmoil illness, huo-luan] with unceasing vomiting and diarrhea, muscle cramps [转筋], and abdominal pain: take one handful [of branches and leaves] together with two liang [approx. 75 g] of Chinese quince [Mu-gua], decoct into a liquid, and sip slowly in small amounts. (Li Shizhen; citing the *Shenghui Fang* [Formulary of Sagely Beneficence])",
+      "entities_mentioned": [
+        {
+          "name": "棠梨 (Tang-li)",
+          "modern_identification": "Pyrus betulifolia Bunge (birch-leaved pear / wild pear)",
+          "identification_confidence": "high",
+          "notes": "Described as a wild pear found throughout mountain forests; used as a grafting rootstock for cultivated pear varieties. Fruit edible after frost. Two varieties noted: red (Du) and white (Tang)."
+        },
+        {
+          "name": "甘棠 (Gantang)",
+          "modern_identification": "Pyrus betulifolia or closely related Pyrus species",
+          "identification_confidence": "high",
+          "notes": "Classical name used in the Erya and Book of Odes; identified here as synonymous with Tang-li."
+        },
+        {
+          "name": "蒼朮 (Cang-zhu)",
+          "modern_identification": "Atractylodes lancea or Atractylodes chinensis",
+          "identification_confidence": "high",
+          "notes": "Referenced only for leaf-shape comparison."
+        },
+        {
+          "name": "楝子 (Lian-zi)",
+          "modern_identification": "Melia azedarach (chinaberry / Persian lilac) fruit",
+          "identification_confidence": "high",
+          "notes": "Referenced only as a size comparison for the fruit of Tang-li."
+        },
+        {
+          "name": "木瓜 (Mu-gua)",
+          "modern_identification": "Chaenomeles sinensis or Pseudocydonia sinensis (Chinese quince)",
+          "identification_confidence": "high",
+          "notes": "Used in combination with Tang-li branches and leaves (two liang) to treat cholera-like illness with vomiting, diarrhea, and cramps. Preparation: decoct together and sip slowly.",
+          "condition_treated": "Sudden turmoil illness (huo-luan) with vomiting, diarrhea, muscle cramps, and abdominal pain",
+          "preparation": "One handful of Tang-li branches and leaves plus two liang of Mu-gua, decocted into liquid, sipped in small amounts"
+        }
+      ],
+      "translator_notes": "1. The character for the plant Yin Boqi gathered (rendered here as 蘋) is ambiguous in the source; the OCR/manuscript likely has an unclear or partially illegible graph. Li Shizhen himself expresses uncertainty about this identification ('未知是否'), so the passage is intentionally left open. Marked as [ling/ping] to flag the ambiguity.\n2. '同實' (lit. 'same as the fruit') is an editorial cross-reference note indicating that qi-flavor data for another part repeats that of the fruit entry; its exact referent in the original chapter structure is unclear out of context.\n3. 'Slippery dysentery' (滑痢) refers specifically to dysentery characterized by uncontrolled, involuntary discharge — a classical TCM subcategory.\n4. 'Huo-luan' (霍亂) in classical Chinese medicine refers to a syndrome of sudden, violent vomiting and diarrhea (not necessarily the bacterial cholera of modern medicine, though overlapping symptoms).\n5. The *Shenghui Fang* (聖惠方) is the *Formulary of Sagely Beneficence* (Taiping Shenghui Fang), a Song dynasty imperial formulary compiled 992 CE.",
+      "_label": "棠梨 (果之二)"
+    },
+    {
+      "title_inferred": "Hǎihóng (Sea-Red / Chinese Flowering Crabapple Fruit)",
+      "original_text": "【釋名】海棠梨。\n\n時珍曰︰按︰李德裕《草木記》云︰凡花木名海者，皆從海外來，如海棠之類是也。又李白詩注云︰海紅乃花名，出新羅國甚多。則海棠之自海外有據矣。\n\n【集解】時珍曰︰《飲膳正要》果類有海紅，不知出處，此即海棠梨之實也。狀如木瓜而小，二月開紅花，實至八月乃熟。鄭樵《通志》云︰海棠子名海紅，即《爾雅》赤棠也。\n\n沈立《海棠記》云︰棠有甘棠、沙棠、棠梨，皆非海棠也。海棠盛於蜀中。其出江南者名南海棠，大抵相類，而花差小。棠性多類梨。其核生者長慢，十數年乃花。以枝接梨及木瓜者易茂，其根色黃而盤勁，其木堅而多節，外白中赤。其枝葉密而條暢。其葉類杜，大者縹綠色，小者淺紫色。\n\n二月開花五出，初如胭脂點點然，開則漸成纈暈，落則有若素妝淡粉。其蒂長寸余，淡紫色，或三萼、五萼成叢。其蕊如金粟，中有紫須。其實狀如梨，大如櫻桃，至秋可食，味甘酸。大抵海棠花以紫綿色者為正，余皆棠梨耳。海棠花不香，惟蜀之嘉州者有香而木大。\n\n有黃海棠，花黃。貼乾海棠，花小而鮮。垂絲海棠，花粉紅向下。皆無子，非真海棠也。\n\n子\n\n【氣味】酸、甘，平，無毒。\n\n【主治】泄痢（時珍。出《正要》）。",
+      "translation": "**Explanatory Names:** Hǎitáng lí [Sea-crabapple pear].\n\nLi Shizhen states: According to Li Deyu's *Cǎomù Jì* [Record of Plants and Trees]: all flowering trees whose names contain the character 'hǎi' [sea] came from overseas, such as the hǎitáng [sea-crabapple] and its kind. Furthermore, a commentary on a poem by Li Bai states: 'hǎihóng' is a flower name, and it grows in great abundance in the kingdom of Silla [in the Korean peninsula]. Thus there is textual basis for the sea-crabapple having come from overseas.\n\n**Collected Explanations:** Li Shizhen states: The *Yǐnshàn Zhèngyào* [Principles of Correct Diet] lists hǎihóng among its fruits, without specifying its origin; this is none other than the fruit of the hǎitáng lí [sea-crabapple pear]. The fruit resembles a quince [mùguā] but is smaller. It blooms with red flowers in the second month [approximately March], and the fruit ripens by the eighth month [approximately September]. Zheng Qiao's *Tōngzhì* states: the fruit of the hǎitáng is called hǎihóng, and it is the same as the 'red-crabapple' [chìtáng] mentioned in the *Ěryǎ* [classical dictionary].\n\nShen Li's *Hǎitáng Jì* [Record of the Sea-Crabapple] states: Among the tāng [crabapple] varieties there are gāntáng [sweet crabapple], shātáng [sand crabapple], and tánglí [crabapple pear]—none of these is the hǎitáng. The hǎitáng flourishes most in Shu [Sichuan]. Those grown in Jiangnan are called nán hǎitáng [southern sea-crabapple]; they are broadly similar but with somewhat smaller flowers. The crabapple's nature is in many respects like the pear. Trees grown from seed are slow to develop and take over ten years to flower. Those grafted onto pear or quince rootstock grow vigorously and quickly. The roots are yellow and twisted with strength; the wood is hard and knotty, white on the outside and red within. The branches and leaves are dense yet free-growing. The leaves resemble those of the dù [wild pear, Pyrus betulifolia]; larger leaves are pale green, smaller ones are light purple.\n\nIn the second month [approximately March] it opens five-petalled flowers, which at first appear like scattered dots of rouge; as they open they gradually take on a mottled, blended hue; when they fall they look like a fair complexion lightly powdered. The flower stalk is just over an inch long, pale purple in color, with clusters of three to five calyxes. The stamens resemble golden millet grains, with purple filaments at the center. The fruit resembles a pear in shape, is about the size of a cherry, becomes edible in autumn, and tastes sweet-sour. Generally speaking, the true hǎitáng flower is the purple-crimson variety; all others are merely tánglí [crabapple pear]. The hǎitáng flower is not fragrant, except for the variety grown in Jiazhou in Shu [present-day Leshan, Sichuan], which is fragrant and produces a large tree.\n\nThere is the Huáng hǎitáng [yellow sea-crabapple], with yellow flowers. The Tiē gàn hǎitáng [upright-stalk sea-crabapple], with small but vivid flowers. The Chuísī hǎitáng [weeping-thread sea-crabapple, Malus halliana], with pink flowers drooping downward. All of these bear no fruit and are not the true hǎitáng.\n\n**Fruit**\n\n**Qi and Flavor:** Sour and sweet; balanced [neutral]; non-toxic.\n\n**Primary Treatment:** Diarrhea and dysentery [xiè lì]. (Li Shizhen; sourced from the *Zhèngyào* [*Yǐnshàn Zhèngyào*].)",
+      "entities_mentioned": [
+        {
+          "name": "海紅 (hǎihóng)",
+          "modern_identification": "Malus spectabilis (Chinese flowering crabapple) or closely related Malus species; the fruit specifically",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen equates hǎihóng with the fruit of hǎitáng lí. The text also links it to the 'chìtáng' in the classical Ěryǎ."
+        },
+        {
+          "name": "海棠梨 (hǎitáng lí)",
+          "modern_identification": "Malus spectabilis or related Malus spp. (Chinese crabapple)",
+          "identification_confidence": "high",
+          "notes": "Used interchangeably with hǎihóng in this entry; the 'lí' component reflects its pear-like qualities."
+        },
+        {
+          "name": "木瓜 (mùguā)",
+          "modern_identification": "Chaenomeles sinensis (Chinese quince) or Pseudocydonia sinensis",
+          "identification_confidence": "high",
+          "notes": "Mentioned as a size comparator for the fruit and as a grafting rootstock."
+        },
+        {
+          "name": "甘棠 (gāntáng)",
+          "modern_identification": "Pyrus calleryana or Pyrus betulifolia (callery pear / birch-leaf pear)",
+          "identification_confidence": "medium",
+          "notes": "Distinguished from hǎitáng in Shen Li's account."
+        },
+        {
+          "name": "沙棠 (shātáng)",
+          "modern_identification": "Possibly Pyrus × phaeocarpa or a related rosaceous shrub; identification uncertain",
+          "identification_confidence": "low",
+          "notes": "Mentioned as a separate tāng variety, not the hǎitáng."
+        },
+        {
+          "name": "棠梨 (tánglí)",
+          "modern_identification": "Pyrus betulifolia (birch-leaf pear) or Pyrus calleryana",
+          "identification_confidence": "medium",
+          "notes": "The text states that all non-purple-crimson flowered 'hǎitáng' are in fact merely tánglí."
+        },
+        {
+          "name": "垂絲海棠 (chuísī hǎitáng)",
+          "modern_identification": "Malus halliana (Hall's crabapple)",
+          "identification_confidence": "high",
+          "notes": "Described as having pink drooping flowers and bearing no fruit; noted as not the true hǎitáng."
+        },
+        {
+          "name": "黃海棠 (huáng hǎitáng)",
+          "modern_identification": "Possibly Hypericum ascyron or a yellow-flowered Malus cultivar; uncertain in this context",
+          "identification_confidence": "low",
+          "notes": "Described as having yellow flowers and bearing no fruit; considered not the true hǎitáng."
+        },
+        {
+          "name": "貼乾海棠 (tiē gàn hǎitáng)",
+          "modern_identification": "Possibly Malus micromalus or a related compact cultivar",
+          "identification_confidence": "low",
+          "notes": "Described as having small but vivid flowers; bears no fruit; not the true hǎitáng."
+        }
+      ],
+      "translator_notes": "1. The quotation from Li Deyu's *Cǎomù Jì* and the note on Li Bai's poem reflect standard Bencao Gangmu citation practice of marshaling literary evidence for botanical origins. The claim that 'hǎi-' plants came from overseas (specifically Silla/Korea) is a folk-etymological tradition, not necessarily botanically accurate. 2. The *Yǐnshàn Zhèngyào* (Principles of Correct Diet, 1330, compiled by Hu Sihui for the Yuan court) is the source for the therapeutic use cited at the end. 3. 'Shu' refers to the Sichuan region; 'Jiazhou' is modern Leshan, Sichuan. 4. The phrase 纈暈 (xié yùn) denotes a blurred, tie-dye-like mottled pattern—used poetically to describe the transitional colour of the opening petals. 5. The medicinal use (treating diarrhea and dysentery) applies specifically to the fruit (子), not the flower or wood.",
+      "_label": "海紅 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】（音茂）。\n\n時珍曰︰按︰《爾雅》云︰ ，木瓜。郭璞注云︰木實如小瓜，酢而可食。則木瓜之名取此義也。或云︰木瓜味酸，得木之正氣故名。亦通。 從林、矛，諧聲也。\n\n【集解】弘景曰︰木瓜，山陰蘭亭尤多，彼人以為良果。又有 楂，大而黃。有楂子，小而澀。《禮》云︰楂、梨鑽之。古亦以楂為果，今則不也。\n\n保升曰︰其樹枝狀如柰，花作房生子，形似栝蔞，火乾甚香。楂子似梨而酢，江外常為果食。\n\n頌曰︰木瓜，處處有之，而宣城者為佳。木狀如柰，春末開花，深紅色。其實大者如瓜，小者如拳，上黃似著粉。宣人種蒔尤謹，遍滿山谷。始實成則鏃紙花粘於上，夜露日烘，漸變紅，花文如生。本州以充土貢，故有宣城花木瓜之稱。 楂酷類木瓜，但看蒂間別有重蒂如乳者為木瓜，無者為 楂也。\n\n曰︰真木瓜皮薄，色赤黃，香而甘酸不澀，其向裡子頭尖，一面方，食之益人。有和圓子，色微黃，蒂粗，其子小圓，味澀微鹹，能傷人氣。有蔓子，顆小，味絕澀，不堪用。\n\n有土伏子，味絕苦澀不堪，子如大樣油麻，餌之令人目澀、目赤筋痛也。\n\n宗奭曰︰西洛大木瓜，其味和美，至熟只青白色，入藥絕有功，勝宣州者，味淡。\n\n時珍曰︰木瓜可種可接，可以枝壓。其葉光",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Mugua (Chinese Quince) — Fruit Section Two\",\n  \"original_text\": \"【釋名】（音茂）。\\n\\n時珍曰︰按︰《爾雅》云︰棤，木瓜。郭璞注云︰木實如小瓜，酢而可食。則木瓜之名取此義也。或云︰木瓜味酸，得木之正氣故名。亦通。棤從林、矛，諧聲也。\\n\\n【集解】弘景曰︰木瓜，山陰蘭亭尤多，彼人以為良果。又有棯楂，大而黃。有楂子，小而澀。《禮》云︰楂、梨鑽之。古亦以楂為果，今則不也。\\n\\n保升曰︰其樹枝狀如柰，花作房生子，形似栝蔞，火乾甚香。楂子似梨而酢，江外常為果食。\\n\\n頌曰︰木瓜，處處有之，而宣城者為佳。木狀如柰，春末開花，深紅色。其實大者如瓜，小者如拳，上黃似著粉。宣人種蒔尤謹，遍滿山谷。始實成則鏃紙花粘於上，夜露日烘，漸變紅，花文如生。本州以充土貢，故有宣城花木瓜之稱。棯楂酷類木瓜，但看蒂間別有重蒂如乳者為木瓜，無者為棯楂也。\\n\\n曰︰真木瓜皮薄，色赤黃，香而甘酸不澀，其向裡子頭尖，一面方，食之益人。有和圓子，色微黃，蒂粗，其子小圓，味澀微鹹，能傷人氣。有蔓子，顆小，味絕澀，不堪用。有土伏子，味絕苦澀不堪，子如大樣油麻，餌之令人目澀、目赤筋痛也。\\n\\n宗奭曰︰西洛大木瓜，其味和美，至熟只青白色，入藥絕有功，勝宣州者，味淡。\\n\\n時珍曰︰木瓜可種可接，可以枝壓。其葉光而濃，其實如小瓜而有鼻，津潤味不木者，為木瓜；圓小於木瓜，味木而酢澀者，為木桃；似木瓜而無鼻，大於木桃，味澀者，為木李，亦曰木梨，即棯楂及和圓子也。鼻乃花脫處，非臍蒂也。木瓜性脆，可蜜漬之為果。去子蒸爛，搗泥入蜜與薑作煎，冬月飲尤佳。木桃、木李性堅，可蜜煎及作糕食之。木瓜燒灰散池中，可以毒魚，說出《淮南萬畢術》。又《廣志》云︰木瓜枝，一尺有百二十節，可為杖。\\n\\n實\\n\\n【氣味】酸，溫，無毒。\\n\\n思邈曰︰酸、鹹，溫，澀。詵曰︰不可多食，損齒及骨。並酸、澀，溫，無毒。\\n\\n【主治】濕痺邪氣，霍亂大吐下，轉筋不止（《別錄》）。治腳氣沖心，取嫩者一顆，去子，煎服，佳。強筋骨，下冷氣，止嘔逆，心膈痰唾，消食，止水利後渴不止，作飲服之（《藏器》）。止吐瀉奔豚，及水腫冷熱痢，心腹痛（大明）。調營衛，助穀氣（雷斆）。去濕和胃，滋脾益肺，治腹脹善噫，心下煩痞（好古）。霍亂煩躁氣急，每嚼七粒，溫水咽之（時珍。出《聖惠》）。\\n\\n枝、葉、皮、根\\n煮汁飲，並止霍亂、吐下、轉筋，療腳氣（《別錄》）。枝，作杖，利筋脈。根、葉，煮湯淋足脛，可以已蹶。木材作桶濯足，甚益人（蘇頌）。枝、葉煮汁飲，治熱痢（時珍。出《千金》）。\\n\\n花\\n面黑粉滓（方見李花）。\\n\\n【發明】杲曰︰木瓜，入手、足太陰血分，氣脫能收，氣滯能和。\\n\\n弘景曰︰木瓜最療轉筋。如轉筋時，但呼其名及書上作木瓜字，皆愈。此理亦不可解。俗人拄木瓜杖，云利筋脛也。\\n\\n宗奭曰︰木瓜得木之正，酸能入肝，故益筋與血。病腰腎腳膝無力，皆不可缺也。人以鉛霜或胡粉塗之，則失酢味，且無渣，蓋受金之製也。\\n\\n時珍曰︰木瓜所主霍亂、吐利、轉筋、腳氣，皆脾胃病，非肝病也。肝雖主筋，而轉筋則由濕熱、寒濕之邪襲傷脾胃所致，故筋轉必起於足腓。腓及宗筋皆屬陽明。木瓜治轉筋，非益筋也，理脾而伐肝也。土病則金衰而木盛，故用酸溫以收脾肺之耗散，而借其走筋以平肝邪，乃土中瀉木以助金也。木平則土得令而金受蔭矣。《素問》云︰酸走筋。筋病無多食酸。孟詵云︰多食木瓜，損齒及骨。皆伐肝之明驗，而木瓜入手、足太陰，為脾、肺藥，非肝藥，益可征矣。又《針經》云︰多食酸，令人癃。酸入於胃，其氣澀以收，上之兩焦出入，流入胃中，下去膀胱，胞薄以軟。\",\n  \"translation\": \"**[Nomenclature]** (Pronounced 'mào' [棤]).\\n\\nLi Shizhen states: According to the *Erya* [Classical Chinese glossary]: '棤 is mugua [wood-melon/quince].' Guo Pu's commentary says: 'The fruit of the tree resembles a small melon; it is sour and edible.' Thus the name mugua [木瓜, 'wood melon'] derives from this meaning. Some say: mugua has a sour flavor and embodies the correct qi [vital energy] of wood [木], hence the name. This interpreta",
+      "_label": "木瓜 (果之二)"
+    },
+    {
+      "title_inferred": "Zhazi (Chinese Quince / Wild Wood-Apple) — Fruits, Part II",
+      "original_text": "【釋名】木桃（《埤雅》）、和圓子。\n\n時珍曰︰木瓜酸香而性脆。木桃酢澀而多渣，故謂之楂，《雷公炮炙論》和圓子即此也。\n\n【集解】《藏器》曰︰楂子生中都，似木瓜而小，江外常為果食，北土無之。\n\n頌曰︰處處有之，孟州特多。\n\n弘景曰︰《禮》云︰楂梨鑽之。謂鑽去核也。鄭玄不識，以為梨之不臧者。郭璞以為似梨而酢澀。古以為果，今不入例矣。\n\n時珍曰︰楂子乃木瓜之酢澀者，小於木瓜，色微黃，蒂、核皆粗，核中之子小圓也。按︰王禎《農書》云︰楂似小梨，西川、唐、鄧間多種之。味劣於梨與木瓜，而入蜜煮湯，則香美過之。《莊子》云︰楂、梨、橘、柚皆可於口。《淮南子》云︰樹楂、梨、橘，食之則美，嗅之則香。皆指此也。\n\n【氣味】酸，澀，平，無毒。\n\n詵曰︰多食傷氣，損齒及筋。\n\n【主治】斷痢（弘景）。去惡心咽酸，止酒痰黃水（藏器）。煮汁飲，治霍亂轉筋，功與木瓜相近（孟詵）。",
+      "translation": "**Names and Nomenclature**\nAlso called Mùtáo [\"wood peach\"] (per the *Piya*) and Héyuánzǐ [\"round harmony fruit\"].\n\nLi Shizhen states: The mùguā [Chinese quince, *Chaenomeles sinensis*] is sour-fragrant and crisp in texture. The mùtáo is sour-astringent and full of fibrous residue [zhā], hence the name zhā. The \"héyuánzǐ\" mentioned in Lei Gong's *Pao Zhi Lun* [*Treatise on Preparation of Medicinals*] is this same fruit.\n\n**Collected Explanations**\nChén Cángqì states: Zhāzi grows in the central regions [Zhōngdū]. It resembles [mùguā] but is smaller. South of the Jianghuai region it is commonly eaten as a fruit; it is not found in the northern lands.\n\nSū Sòng states: It is found everywhere, but is especially abundant in Mengzhou.\n\nTáo Hóngjǐng states: The *Rites* [*Li*] says: \"Pierce the zhā and the lí [pear].\" This refers to boring out the core. Zhèng Xuán did not recognize the fruit and took it to be an inferior variety of pear. Guō Pú held that it resembles a pear but is sour and astringent. In antiquity it was regarded as a fruit for consumption, but today it is no longer counted among the common fruits.\n\nLi Shizhen states: Zhāzi is essentially a sour and astringent form of mùguā. It is smaller than mùguā, slightly yellow in color, with a coarse stem and a coarse core; the seeds within the core are small and round. According to Wáng Zhēn's *Nóngshū* [*Agricultural Treatise*]: \"Zhā resembles a small pear and is widely cultivated in the Xīchuān, Táng, and Dèng regions. Its flavor is inferior to both the pear and mùguā, but when boiled into a decoction with honey, its fragrance and taste surpass them both.\" The *Zhuangzi* says: \"Zhā, pear, orange, and pomelo are all pleasing to the mouth.\" The *Huainanzi* says: \"Plant zhā, pear, and orange — eating them is a delight, smelling them a pleasure.\" Both passages refer to this fruit.\n\n**Flavor and Nature**\nSour, astringent, neutral [píng], non-toxic.\n\nMèng Shēn states: Consuming it in excess damages the qi [vital energy], and harms the teeth and sinews.\n\n**Indications and Treatments**\n- Stops dysentery [duàn lì] (Táo Hóngjǐng).\n- Eliminates nausea and acid rising in the throat; checks phlegm from alcohol and yellow [bilious] fluid accumulation (Chén Cángqì).\n- Boiled and the decoction drunk, it treats cholera [huòluàn] with muscle cramping; its efficacy is similar to that of mùguā (Mèng Shēn).",
+      "entities_mentioned": [
+        {
+          "name": "楂子 (Zhāzi)",
+          "modern_identification": "Chaenomeles cathayensis (Chinese flowering quince) or a closely related Chaenomeles species; possibly a wild or inferior form of Chaenomeles sinensis",
+          "identification_confidence": "medium",
+          "notes": "The text distinguishes zhāzi from mùguā (Chaenomeles sinensis) by its smaller size, more astringent flavor, coarser core, and yellow coloration. It may represent C. cathayensis or a regional variety."
+        },
+        {
+          "name": "木瓜 (Mùguā)",
+          "modern_identification": "Chaenomeles sinensis (Chinese quince)",
+          "identification_confidence": "high",
+          "notes": "Used as the primary comparator for zhāzi throughout the entry."
+        },
+        {
+          "name": "和圓子 (Héyuánzǐ)",
+          "modern_identification": "Same as zhāzi; alternate folk name",
+          "identification_confidence": "high",
+          "notes": "Identified by Li Shizhen as the 'héyuánzǐ' listed in Lei Gong's Pao Zhi Lun."
+        }
+      ],
+      "translator_notes": "1. The OCR rendered '似 而小' with a missing character; context and comparison with standard editions of the Bencao Gangmu strongly indicate the missing character is '木瓜' (mùguā), giving '似木瓜而小' ('resembles mùguā but is smaller'). This has been silently restored in the cleaned text.\n2. 'Zhōngdū' in Cángqì's note likely refers to the central regions of China rather than a single city.\n3. The ailment 'huòluàn zhuǎnjīn' (霍亂轉筋) denotes acute gastrointestinal illness with severe muscle cramping — colloquially rendered as 'cholera with cramps,' though not necessarily the modern disease cholera.\n4. Preparation method for dysentery/cramps: boil the fruit and drink the decoction. Honey decoction preparation is noted for culinary improvement of flavor but is not listed under formal medicinal uses.\n5. The condition '止酒痰黃水' refers to phlegm and yellow (bilious/watery) discharges associated with alcohol overconsumption.",
+      "_label": "楂子 (果之二)"
+    },
+    {
+      "title_inferred": "Zha (楂) — Chinese Quince, Fruit Section Two",
+      "original_text": "【釋名】蠻楂（《通志》）、瘙楂（《拾遺》）、木李（《詩經》）、木梨（《埤雅》）。\n\n時珍曰：木李生於吳越，故鄭樵《通志》謂之蠻楂。云俗呼為木梨，則楂蓋蠻楂之訛也。\n\n【集解】頌曰：楂木、葉、花、實酷類木瓜，但比木瓜大而黃色。辨之惟看蒂間別有重蒂如乳者為木瓜，無此則楂也。可以進酒去痰。道家生壓取汁，和甘松、玄參末作濕香，云甚爽神也。\n\n詵曰：楂氣辛香，置衣箱中殺蠹蟲。\n\n時珍曰：楂，乃木瓜之大而黃色無重蒂者也；楂子，乃木瓜之短小而味酢澀者也；，則楂類之生於北土者也。三物與木瓜皆是一類各種，故其形狀功用不甚相遠，但木瓜得木之正氣，為可貴耳。\n\n【氣味】酸，平，無毒。\n\n【主治】解酒去痰（弘景）。食之去惡心，止心中酸水（藏器）。煨食，止痢。浸油梳頭，治發白、發赤（大明）。煮汁服，治霍亂轉筋（吳瑞）。",
+      "translation": "**Names and Nomenclature**\nAlso known as: Mán zhā [\"Barbarian quince\"] (Zheng Qiao's *Tongzhi*), Sào zhā (Chen Cangqi's *Shiyi*), Mù lǐ [\"Wood plum\"] (*Book of Odes*), Mù lí [\"Wood pear\"] (*Piya*).\n\nLi Shizhen states: Mù lǐ grows in the Wu and Yue regions [present-day Jiangsu and Zhejiang], which is why Zheng Qiao in his *Tongzhi* calls it mán zhā [\"Barbarian quince\"]. The common name mù lí [\"wood pear\"] is recorded there as well; thus, zhā is likely a corruption of mán zhā.\n\n**Collected Commentaries**\nSu Song states: The wood, leaves, flowers, and fruit of zhā closely resemble those of mù guā [Chinese quince, *Chaenomeles sinensis*], but the zhā is larger and yellow in color. The way to distinguish them is to look at the base of the calyx: if there is a secondary, nipple-like protrusion at the stem-end, it is mù guā; if absent, it is zhā. It can promote the digestion of wine and dispel phlegm. Daoist practitioners press it raw to extract the juice, mix it with the powders of gān sōng [spikenard] and xuán shēn [figwort root] to make a moist incense, which is said to be greatly refreshing to the spirit.\n\nMeng Shen states: Zhā has a pungent, fragrant aroma; placing it in a clothing chest kills clothes-moths [bookworms / fabric pests].\n\nLi Shizhen states: Zhā is essentially a mù guā that is large, yellow, and lacks the secondary calyx protrusion; zhā zi [\"small quince\"] is a mù guā that is short and small with a sour, astringent flavor; [a third variety, name apparently missing from the text] is the type belonging to the zhā group that grows in northern regions. These three, together with mù guā, all belong to the same general category of distinct varieties; therefore their form, appearance, and medicinal uses are not greatly different from one another. However, mù guā receives the most correct and concentrated vital energy [zhèng qì] of wood-nature, and is therefore the most prized.\n\n**Flavor and Nature**\nSour; balanced [neither warm nor cold]; non-toxic.\n\n**Indications and Treatments**\n- Counteracts the effects of alcohol and dispels phlegm. (Tao Hongjing)\n- Eating it relieves nausea and stops acidic fluid rising in the heart [i.e., heartburn / acid reflux]. (Chen Cangqi, *Shiyi*)\n- Roasted and eaten, it stops dysentery. Infused in oil and used to comb the hair, it treats white hair and reddish hair. (Da Ming, *Kaibao Bencao*)\n- Decocted and the liquid drunk, it treats cholera with muscle cramps [霍亂轉筋, i.e., acute gastroenteritis with painful spasms]. (Wu Rui)",
+      "entities_mentioned": [
+        {
+          "name": "楂 (zhā) / 蠻楂 / 木李 / 木梨",
+          "modern_identification": "Chaenomeles cathayensis (Chinese flowering quince) or a closely related large-fruited Chaenomeles species",
+          "identification_confidence": "high",
+          "notes": "Described as larger and more yellow than mù guā (Chaenomeles sinensis), lacking the secondary calyx nipple. Li Shizhen distinguishes at least three related varieties within this group."
+        },
+        {
+          "name": "木瓜 (mù guā)",
+          "modern_identification": "Chaenomeles sinensis (Chinese quince) or Pseudocydonia sinensis",
+          "identification_confidence": "high",
+          "notes": "Used as the primary comparison plant; distinguished by a secondary nipple-like protrusion at the calyx end."
+        },
+        {
+          "name": "楂子 (zhā zi)",
+          "modern_identification": "Chaenomeles japonica or a small-fruited Chaenomeles species",
+          "identification_confidence": "medium",
+          "notes": "Described as short, small, sour, and astringent; distinguished from zhā and mù guā."
+        },
+        {
+          "name": "甘松 (gān sōng)",
+          "modern_identification": "Nardostachys jatamansi (spikenard / nard)",
+          "identification_confidence": "high",
+          "notes": "Used with xuán shēn and zhā juice to make a Daoist aromatic incense said to refresh the spirit."
+        },
+        {
+          "name": "玄參 (xuán shēn)",
+          "modern_identification": "Scrophularia ningpoensis (Chinese figwort)",
+          "identification_confidence": "high",
+          "notes": "Powdered and mixed with gān sōng and zhā juice as an aromatic preparation."
+        }
+      ],
+      "translator_notes": "1. The text contains an apparent lacuna where Li Shizhen names a third variety (the 'northern' type of zhā): the name of this variety is missing from the source text, likely lost to OCR failure or manuscript damage. It is marked implicitly by an empty clause before '則楂類之生於北土者也.' This is flagged as a minor [ILLEGIBLE: plant name] gap.\n2. 霍亂轉筋 (huòluàn zhuǎnjīn) is a classical Chinese medical term referring to an acute condition resembling cholera or severe gastroenteritis, accompanied by painful muscle cramps or spasms — not the modern bacterial disease Vibrio cholerae specifically.\n3. Authorities cited: Tao Hongjing (陶弘景, 456–536); Chen Cangqi (陳藏器, *Bencao Shiyi*); Meng Shen (孟詵, *Shiliao Bencao*); Da Ming (大明, *Kaibao Bencao*); Wu Rui (吳瑞, *Rioyong Bencao*); Su Song (蘇頌, *Bencao Tujing*); Zheng Qiao (鄭樵, *Tongzhi*).\n4. '進酒去痰' is interpreted as 'promotes digestion of alcohol and dispels phlegm' rather than the more literal 'advances wine,' consistent with classical pharmacological usage.",
+      "_label": "楂 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰ ，性溫而氣 ，故名。 （音孛），香氣也。\n\n【集解】志曰︰ 生北土，似楂子而小。\n\n頌曰︰今關陝有之，沙苑出者更佳。其實大抵類楂，但膚慢而多毛，味尤甘。其氣芬馥，置衣笥中亦香。\n\n藏器曰︰樹如林檎，花白綠色。\n\n宗奭曰︰食之須淨去浮毛，不爾損人肺。花白色，亦香。最多生蟲，少有不蛀者。\n\n時珍曰︰ ，蓋 楂之類生於北土者，故其形狀功用皆相仿佛。李 《南海藥錄》言︰關中謂林檎為 。按︰《述征記》云︰林檎佳美。 微大而狀丑有毛，其味香，關輔乃有，江南甚希。觀此則林檎、 ，蓋相似而二物也。李氏誤矣。\n\n【氣味】酸、甘，微溫，無毒。\n\n士良曰︰發毒熱，秘大小腸，聚胸中痰，壅澀血脈，不宜多食。\n\n瑞曰︰同車螯食，發疝氣。\n\n【主治】溫中，下氣消食，除心間酸水，去臭，辟衣魚（《開寶》）。去胸膈積食，止渴除煩。將臥時，啖一、兩枚，生、熟皆宜（蘇頌。宗奭曰︰臥時啖此太多，亦痞塞胃脘也）。\n\n主水瀉腸虛煩熱，散酒氣，並宜生食（李 ）。\n\n木皮\n搗末，敷瘡（蘇頌）。",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Pei (棠毬/榠楂 relative) — a northern hawthorn-like fruit\",\n  \"original_text\": \"【釋名】時珍曰：㮈，性溫而氣馥，故名。馥（音孛），香氣也。\\n\\n【集解】志曰：㮈生北土，似楂子而小。\\n\\n頌曰：今關陝有之，沙苑出者更佳。其實大抵類楂，但膚慢而多毛，味尤甘。其氣芬馥，置衣笥中亦香。\\n\\n藏器曰：樹如林檎，花白綠色。\\n\\n宗奭曰：食之須淨去浮毛，不爾損人肺。花白色，亦香。最多生蟲，少有不蛀者。\\n\\n時珍曰：㮈，蓋棠楂之類生於北土者，故其形狀功用皆相仿佛。李珣《南海藥錄》言：關中謂林檎為㮈。按：《述征記》云：林檎佳美。㮈微大而狀丑有毛，其味香，關輔乃有，江南甚希。觀此則林檎、㮈，蓋相似而二物也。李氏誤矣。\\n\\n【氣味】酸、甘，微溫，無毒。\\n\\n士良曰：發毒熱，秘大小腸，聚胸中痰，壅澀血脈，不宜多食。\\n\\n瑞曰：同車螯食，發疝氣。\\n\\n【主治】溫中，下氣消食，除心間酸水，去臭，辟衣魚（《開寶》）。去胸膈積食，止渴除煩。將臥時，啖一、兩枚，生、熟皆宜（蘇頌。宗奭曰：臥時啖此太多，亦痞塞胃脘也）。\\n\\n主水瀉腸虛煩熱，散酒氣，並宜生食（李珣）。\\n\\n木皮\\n搗末，敷瘡（蘇頌）。\",\n  \"translation\": \"**Explanation of Names**\\nLi Shizhen states: The [㮈, *pèi*] is warm in nature and fragrant in aroma — hence its name. The character 馥 (pronounced *bó*) means fragrant vapour.\\n\\n**Collected Explanations**\\n[Zhi] states: The 㮈 grows in the northern lands and resembles the *zha* fruit [hawthorn/quince] but is smaller.\\n\\n[Su] Song states: It is found today in the Guan-Shan [Shaanxi] region; specimens from Shayuan are superior. The fruit is broadly similar to the *zha*, but the skin is loose and densely hairy, and the flavour is especially sweet. Its fragrance is rich and full; even when placed in a clothes chest it imparts a pleasing scent.\\n\\n[Chen] Cangqi states: The tree resembles the *linjin* [Malus asiatica], with white-green flowers.\\n\\nKou Zongshi states: Before eating it one must carefully remove all the surface hairs, otherwise they will damage the lungs. The flowers are white and also fragrant. Insects are extremely common in this fruit; rarely does one find a specimen that is not bored through.\\n\\nLi Shizhen states: The 㮈 is evidently a member of the *tang-zha* [wild pear/crabapple] group that grows in the northern lands; hence its form and medicinal uses closely resemble those plants. Li Xun's *Nanhai Yaolu* [Records of Southern Sea Drugs] claims that in the Guan-zhong region the *linjin* is called 㮈. However, according to the *Shuzheng Ji* [Record of an Expedition]: \"the *linjin* is fin",
+      "_label": "?? (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】赤爪子（側巧切，《唐本》）、鼠楂《唐本》、猴楂（危氏）、茅楂（《日用》）、子（音求）、 梅（音計。並《爾雅》）、羊 （《唐本》）、棠 子（《圖經》）、山裡果（《食鑒》）。\n\n時珍曰︰山楂，味似楂子，故亦名楂。世俗皆作查字，誤矣。查（音槎）乃水中浮木，與楂何關？郭璞注《爾雅》云︰ （音求）樹如梅。其子大如指頭，赤色似小柰，可食，此即山楂也。世俗作 字，亦誤矣。 乃櫟實，於 何關？楂、 之名，見於《爾雅》。自晉、宋以來，不知其原，但用查、 耳。此物生於山原茅林中，猴、鼠喜食之，故又有諸名也。《唐本草》赤爪木當作赤棗，蓋棗、爪音訛也，楂狀似赤棗故爾。范成大《虞衡志》有赤棗子。王 《百一選方》云︰山裡紅果，俗名酸棗，又名鼻涕團。正合此義矣。\n\n【集解】恭曰︰赤爪木，赤楂也。出山南、申、安、隨諸州。小樹高五、六尺，葉似香。子似虎掌，大如小林檎，赤色。\n\n藏器曰︰赤爪草，即鼠楂 也。生高原， 似小楂而赤，人食之。\n\n頌曰︰棠 子生滁州。三月開白花，隨便結實，采無時。彼人用治下痢及腰疼有效。他處亦有，不入藥用。\n\n時珍曰︰赤爪、棠 、山楂，一物也。古方罕用，故《唐本》雖有赤爪，後人不知即此也",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Shanzha (Hawthorn) — Fruits, Part II\",\n  \"original_text\": \"【釋名】赤爪子（側巧切，《唐本》）、鼠楂《唐本》、猴楂（危氏）、茅楂（《日用》）、子（音求）、梅（音計。並《爾雅》）、羊（《唐本》）、棠子（《圖經》）、山裡果（《食鑒》）。\\n\\n時珍曰︰山楂，味似楂子，故亦名楂。世俗皆作查字，誤矣。查（音槎）乃水中浮木，與楂何關？郭璞注《爾雅》云︰（音求）樹如梅。其子大如指頭，赤色似小柰，可食，此即山楂也。世俗作字，亦誤矣。乃櫟實，於何關？楂、之名，見於《爾雅》。自晉、宋以來，不知其原，但用查、耳。此物生於山原茅林中，猴、鼠喜食之，故又有諸名也。《唐本草》赤爪木當作赤棗，蓋棗、爪音訛也，楂狀似赤棗故爾。范成大《虞衡志》有赤棗子。王《百一選方》云︰山裡紅果，俗名酸棗，又名鼻涕團。正合此義矣。\\n\\n【集解】恭曰︰赤爪木，赤楂也。出山南、申、安、隨諸州。小樹高五、六尺，葉似香。子似虎掌，大如小林檎，赤色。\\n\\n藏器曰︰赤爪草，即鼠楂也。生高原，似小楂而赤，人食之。\\n\\n頌曰︰棠子生滁州。三月開白花，隨便結實，采無時。彼人用治下痢及腰疼有效。他處亦有，不入藥用。\\n\\n時珍曰︰赤爪、棠、山楂，一物也。古方罕用，故《唐本》雖有赤爪，後人不知即此也。自丹溪朱氏始著山楂之功，而後遂為要藥。其類有二種，皆生山中。一種小者，山人呼為棠子、茅楂、猴楂，可入藥用。樹高數尺，葉有五尖。丫間有刺。三月開五出小白花。實有赤、黃二色，肥者如小林檎，小者如指頭，九月乃熟，小兒采而賣之。閩人取熟者去皮核，搗和糖、蜜，作為楂糕，以充果物。其核狀如牽牛子，黑色甚堅。一種大者，山人呼為羊子。樹高丈餘，花葉皆同，但實稍大而色黃綠，皮澀肉虛為異爾。初甚酸澀，經霜乃可食。功用相同，而采藥者不收。\\n\\n實\\n\\n【氣味】酸，冷，無毒。\\n\\n時珍曰︰酸、甘，微溫。生食多，令人嘈煩易飢，損齒，齒齲人尤不宜也。\\n\\n【主治】煮汁服，止水痢。沐頭洗身，治瘡癢（《唐本》）。煮汁洗漆瘡，多瘥（弘景）。治腰痛有效（蘇頌）。消食積，補脾，治小腸疝氣，發小兒瘡疹（吳瑞）。健胃，行結氣。治婦人產後兒枕痛，惡露不盡，煎汁入沙糖服之，立效（震亨）。化飲食，消肉積症瘕，痰飲痞滿吞酸，滯血痛脹（時珍）。化血塊氣塊，活血（寧原）。吞之，化食磨積，治疝（時珍）。\\n\\n【發明】震亨曰︰山楂大能克化飲食。若胃中無食積，脾虛不能運化，不思食者，多服之，則反克伐脾胃生發之氣也。\\n\\n時珍曰︰凡脾弱食物不克化，胸腹酸刺脹悶者，於每食後嚼二、三枚，絕佳。但不可多用，恐反克伐也。按︰《物類相感志》言︰煮老雞、硬肉，入山楂數顆即易爛。則其消肉積之功，蓋可推矣。珍鄰家一小兒，因食積黃腫，腹脹如鼓。偶往羊樹下，取食之至飽。歸而大吐痰水，其病遂愈。羊乃山楂同類，醫家不用而有此效，則其功應相同矣。\",\n  \"translation\": \"**[Names and Nomenclature]**\\nAlternate names: Chìzhuǎzǐ [Red-claw fruit] (pronunciation: cè-qiǎo, from *Tangben* [Newly Revised Materia Medica]); Shǔzhā [Mouse hawthorn] (*Tangben*); Hóuzhā [Monkey hawthorn] (Wei shi); Máozhā [Thatch hawthorn] (*Riyong* [Daily Use]); Qiú (pronunciation: qiú) and Jì-méi (pronunciation: jì; both from *Erya* [Elegantiae]); Yáng [Goat-hawthorn] (*Tangben*); Táng-qiú-zǐ [Pear-crabapple fruit] (*Tujing* [Illustrated Classic of Materia Medica]); Shānlǐguǒ [Mountain fruit] (*Shijian* [Dietary Examination]).\\n\\nLi Shizhen states: The shānzhā has a flavour resembling the zhā fruit [Chaenomeles], hence it shares the name zhā. Common usage writes the character 查, which is an error. The character 查 (pronounced chá, like a ",
+      "_label": "山楂 (果之二)"
+    },
+    {
+      "title_inferred": "Red-Claw Wood (Chì Zhǎo Mù) — Flavor, Indications, and Uses of Root, Stem, and Leaves",
+      "original_text": "【氣味】\n苦，寒，無毒。\n\n【主治】水痢，頭風身癢（《唐本》）。\n\n根\n消積，治反胃（時珍）。\n\n莖、葉\n煮汁，洗漆瘡（時珍。出《肘後》）。",
+      "translation": "**Flavor and Nature**\nBitter; cold; non-toxic.\n\n**Principal Indications**\nWatery dysentery [水痢]; headwind [頭風, wind-induced headache]; bodily itching. (From the *Tang Bencao* [Newly Revised Materia Medica of the Tang dynasty].)\n\n**Root**\nDissolves accumulations [消積]; treats regurgitation/reflux [反胃]. (Li Shizhen.)\n\n**Stems and Leaves**\nDecoct into a liquid and wash [the affected area] to treat lacquer sores [漆瘡, contact dermatitis caused by lacquer-tree sap]. (Li Shizhen, citing the *Zhouhou Beiji Fang* [Emergency Formulas to Keep at Hand].)",
+      "entities_mentioned": [
+        {
+          "name": "赤爪木 (Chì Zhǎo Mù, Red-Claw Wood)",
+          "modern_identification": "Crataegus cuneata or a related hawthorn species (Rosaceae); possibly Crataegus pinnatifida var. major or a small-fruited wild hawthorn",
+          "identification_confidence": "medium",
+          "notes": "The name 赤爪木 ('red-claw tree') is an archaic or variant name associated with hawthorn relatives. Some sources equate it with a small wild hawthorn (Crataegus spp.); identification is not fully certain."
+        },
+        {
+          "name": "水痢 (watery dysentery)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A classical condition characterized by frequent watery stools; treated with the fruit."
+        },
+        {
+          "name": "頭風 (headwind)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A classical diagnostic category referring to recurrent or chronic wind-induced headache."
+        },
+        {
+          "name": "反胃 (regurgitation/reflux)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Classical term for food regurgitation; treated using the root to dissolve accumulations."
+        },
+        {
+          "name": "漆瘡 (lacquer sores)",
+          "modern_identification": "Allergic contact dermatitis from Toxicodendron vernicifluum (lacquer tree) sap",
+          "identification_confidence": "high",
+          "notes": "Treated by washing the affected skin with a decoction of the stems and leaves; method cited from the Zhouhou Beiji Fang (葛洪, c. 4th century CE)."
+        }
+      ],
+      "translator_notes": "The three-part structure (fruit body, root, stems/leaves) reflects the standard Bencao Gangmu format of treating different plant parts as separate drug entities with distinct indications. The citation 《唐本》 refers to the *Xinxiu Bencao* (新修本草, 659 CE), the official Tang dynasty materia medica. The citation 《肘後》 refers to Ge Hong's *Zhouhou Beiji Fang* (肘後備急方). Li Shizhen (時珍) attributes the root and stem/leaf entries to his own additions.",
+      "_label": "赤爪木 (果之二)"
+    },
+    {
+      "title_inferred": "Āmra Fruit (Mango)",
+      "original_text": "【釋名】庵摩羅迦果（出佛書）、香蓋。\n\n時珍曰︰庵羅，梵音二合者也。庵摩羅，梵音三合者也。華言清淨是也。\n\n【集解】志曰︰庵羅果，樹生，若林檎而極大。\n\n宗奭曰︰西洛甚多，梨之類也。其狀似梨，先諸梨熟，七夕前後已堪啖。色黃如鵝梨，才熟便松軟，入藥亦希。\n\n時珍曰︰按︰《一統志》云︰庵羅果俗名香蓋，乃果中極品。種出西域，亦柰類也。葉似茶葉，實似北梨，五、六月熟，多食亦無害。今安南諸地亦有之。\n\n【氣味】甘，溫，無毒。士良曰︰酸，微寒。\n\n志曰︰動風疾。凡天行病及食飽後，俱不可食。同大蒜、辛物食，令人患黃病。\n\n【主治】食之止渴（《開寶》）。主婦人經脈不通，丈夫營衛中血脈不行。久食，令人不飢（士良）。\n\n葉\n渴疾，煎湯飲（士良）。",
+      "translation": "**Names and Nomenclature**\nAlso known as: Āmrāphala [庵摩羅迦果] (from Buddhist scriptures); Xiānggài [香蓋, 'fragrant canopy'].\n\nLi Shizhen states: 'Ānluó' [庵羅] is the two-syllable Sanskrit contraction; 'Ānmóluó' [庵摩羅] is the three-syllable Sanskrit form. In Chinese [the meaning] translates as 'pure and clean' [清淨].\n\n**Collected Commentaries**\nZhi [Zhu] states: The āmra fruit grows on trees and resembles the Chinese crabapple [林檎], but is exceedingly large.\n\nKou Zongshi states: It is found in great abundance in the Xiluo [western Luoyang] region and belongs to the pear family. In shape it resembles a pear. It ripens before all other pears—by around the Qixi Festival [seventh day of the seventh month] it is already fit to eat. Its colour is yellow like that of the goose-pear [鵝梨]; as soon as it is ripe it becomes soft and yielding. It is rarely used in medicine.\n\nLi Shizhen states: According to the *Yitong Zhi* [Comprehensive Gazetteer]: the āmra fruit is commonly called Xiānggài ['fragrant canopy'] and is considered the finest of all fruits. Its variety originated in the Western Regions [Central Asia]; it also belongs to the nài [柰, apple/Malus] family. Its leaves resemble tea leaves, its fruit resembles the northern pear, and it ripens in the fifth or sixth month [lunar calendar]. Eating it in large quantities is nonetheless harmless. It is also found today in Annan [present-day Vietnam] and surrounding areas.\n\n**Flavour and Nature**\nSweet, warm, non-toxic. Meng Sililiang [士良] says: sour, slightly cold.\n\nZhi states: It may provoke wind ailments [風疾]. It should not be eaten during epidemics [天行病] or immediately after a full meal. Eating it together with garlic or other pungent foods will cause the person to develop jaundice [黃病].\n\n**Medicinal Uses**\nEating the fruit relieves thirst (*Kaibao* [Materia Medica]). It governs obstruction of the menstrual channels in women and impeded circulation of blood through the ying-wei [營衛, nutritive and defensive qi] vessels in men. Prolonged consumption suppresses hunger (Meng Sililiang).\n\n**Leaves**\nFor thirst disorders [渴疾]: decoct the leaves and drink the liquid as a tea (Meng Sililiang).",
+      "entities_mentioned": [
+        {
+          "name": "庵羅果 / 庵摩羅迦果 / 香蓋 (Ānluó guǒ / Āmrāphala / Xiānggài)",
+          "modern_identification": "Mangifera indica L. (Mango)",
+          "identification_confidence": "high",
+          "notes": "The Sanskrit term 'āmra' (庵摩羅) is the classical designation for mango. Li Shizhen's descriptions of the fruit's shape, colour, ripening season, origin in the Western Regions, and presence in Annan (Vietnam) all align closely with Mangifera indica. The alternate common name Xiānggài ('fragrant canopy') likely refers to the tree's large, spreading canopy. Li Shizhen also associates it with the nài (柰) category, indicating familiarity with broadly pome-like or fleshy tropical fruits."
+        },
+        {
+          "name": "林檎 (Línqín)",
+          "modern_identification": "Malus asiatica or Malus pumila (Chinese crabapple / paradise apple)",
+          "identification_confidence": "medium",
+          "notes": "Used as a size and shape comparator for the mango fruit."
+        },
+        {
+          "name": "鵝梨 (Élí, goose-pear)",
+          "modern_identification": "Pyrus sp. (a pale-yellow Chinese pear variety)",
+          "identification_confidence": "medium",
+          "notes": "Used as a colour comparator for the ripe mango's yellow skin."
+        }
+      ],
+      "translator_notes": "1. 'Āmra' (庵羅) is indeed the Sanskrit word for mango (Mangifera indica), confirming this is one of the earliest substantial Chinese pharmacopoeia descriptions of the mango, noting its Indian/Southeast Asian origin and dissemination into southern China and Annan. 2. The medical cautions against eating with garlic or pungent foods 'causing jaundice' (黃病) reflect classical humoural-style dietary contraindication theory common in Bencao literature. 3. 士良 refers to Meng Sililiang (孟詵), the Tang-dynasty dietetic physician, whose work *Shiliao Bencao* (食療本草) is frequently cited here. 4. 風疾 ('wind ailments') is a broad classical Chinese medical category encompassing conditions from rheumatism to stroke-like disorders. 5. 天行病 ('epidemic diseases spread by seasonal qi') is the classical term for infectious or seasonal epidemic illness. 6. 《開寶》 refers to the *Kaibao Bencao* (開寶本草), a Song-dynasty pharmacopoeia compiled c. 973–974 CE.",
+      "_label": "庵羅果 (果之二)"
+    },
+    {
+      "title_inferred": "Nai (Apple / Crabapple) — Fruits, Chapter 2",
+      "original_text": "【釋名】頻婆（音波）。\n\n時珍曰︰篆文柰字，象子綴於木之形。梵言謂之頻婆，今北人亦呼之，猶云端好也。\n\n【集解】弘景曰︰柰，江南雖有，而北國最豐。作脯食之，不宜人。林檎相似而小，俱不益人。\n\n士良曰︰此有三種︰大而長者為柰，圓者為林檎，皆夏熟；小者味澀為楸子，秋熟，一名楸子。\n\n時珍曰︰柰與林檎，一類二種也。樹、實皆似林檎而大，西土最多，可栽可壓。有白、赤、青三色。白者為素柰，赤者為丹柰，亦曰朱柰，青者為綠柰，皆夏熟。涼州有冬柰，冬熟，子帶碧色。孔氏《六帖》言︰涼州白柰，大如兔頭。《西京雜記》言︰上林苑紫柰，大如升，核紫花青。其汁如漆，著衣不可浣，名脂衣柰。此皆異種也。郭義恭《廣志》云︰西方例多柰，家家收切，曝乾為脯，數十百斛，以為蓄積，謂之頻婆糧。亦取柰汁為豉用。其法︰取熟柰納瓮中，勿令蠅入；六、七日待爛，以酒腌，痛拌令如粥狀，下水更拌，濾去皮子；良久，去清汁，傾布上，以灰在下引汁盡，劃開，晒乾，為末，調物甘酸得所也。劉熙《釋名》載︰柰油，以柰搗汁塗繒上，曝燥取下，色如油也。今關西人以赤柰、楸子取汁塗器中，曝乾，名果單是矣。味甘酸，可以饋遠。杜恕《篤論》云︰日給之花似柰，柰實而日給零落，虛偽與真實相似也。則日給乃柰之不實者。而《王羲之帖》云︰來禽、日給，皆囊盛為佳果。則又似指柰為日給矣。木槿花亦名日及，或同名耳。\n\n實\n\n【氣味】苦，寒，有小毒。多食令人肺壅、臚脹，有病患尤甚（《別錄》）。\n\n思邈曰︰酸、苦，寒，澀，無毒。\n\n時珍曰︰案︰《正要》云︰頻婆︰甘，無毒。\n\n【主治】補中焦諸不足氣，和脾。治猝食飽氣壅不通者，搗汁服（孟詵）。益心氣，耐飢。",
+      "translation": "**Explanation of Names**\nAlso called 頻婆 [Píngpó] (pronounced 'bō').\n\nLi Shizhen says: In seal-script [篆文], the character 柰 depicts fruits hanging from a tree. In Sanskrit it is called *píngpó*; northerners today also use this term, much as one might say 'perfectly fine [端好]'.\n\n**Collected Explanations**\nTao Hongjing says: Though nai exists in Jiangnan, it is most abundant in the northern regions. Eating it dried as preserved fruit [脯] is not beneficial to people. The lín qín [林檎, Chinese crabapple] resembles it but is smaller; neither variety is beneficial to people.\n\nMeng Shiliang says: There are three types: the large and elongated one is the nai; the round one is the lín qín — both ripen in summer. The small, astringent-tasting one is the qiū zǐ [楸子], which ripens in autumn and is also called qiū zǐ.\n\nLi Shizhen says: Nai and lín qín are two varieties of the same genus. The tree and fruit both resemble lín qín but are larger. They are most abundant in the western regions and can be cultivated by planting or layering. They come in three colors: white, red, and green. The white is called sù nai [素柰, plain nai]; the red is called dān nai [丹柰] or zhū nai [朱柰]; the green is called lǜ nai [綠柰]. All ripen in summer. Liangzhou has a winter nai [冬柰] that ripens in winter and has bluish-green fruits. Kong's *Liutie* records: the white nai of Liangzhou is as large as a rabbit's head. The *Xijing Zaji* records: the purple nai [紫柰] of the Shanglin Imperial Gardens is as large as a shēng [升, a unit of measure], with purple seeds and blue-green flowers. Its juice is like lacquer — once it stains clothing it cannot be washed out — and is called 'grease-cloth nai' [脂衣柰]. These are all unusual varieties.\n\nGuo Yigong's *Guangzhi* states: The western regions habitually produce great quantities of nai. Every household slices and sun-dries them into preserved fruit, storing dozens to hundreds of hú [斛] as provisions, calling this 'píngpó rations' [頻婆糧]. They also take nai juice to make a fermented paste [豉]. The method is as follows: place ripe nai into a crock, taking care to keep flies out; after six or seven days, when they have rotted, pickle them in wine, stirring vigorously until they reach a gruel-like consistency; add water and stir again, then strain out the skins and seeds. After a good while, remove the clear liquid, pour the remainder onto cloth, with ash placed beneath to draw out the remaining moisture; scrape it open, sun-dry it, and grind it to a powder — the result is well-balanced in sweetness and sourness, suitable for seasoning.\n\nLiu Xi's *Shiming* [Explanation of Names] records: 'nai oil' [柰油] is made by pounding nai to extract the juice, coating it onto silk, sun-drying it, and peeling it off — the color resembles oil. Today, people of the Guanxi region take the juice of red nai and qiū zǐ, coat it onto vessels, and sun-dry it; this is what is called 'fruit leather' [果單]. The flavor is sweet and sour and it keeps well for sending over long distances.\n\nDu Shu's *Dulun* says: The flower of rì jǐ [日給] resembles that of nai — nai bears fruit while rì jǐ withers and falls, just as the false resembles the true. Thus rì jǐ must be the non-fruiting form of nai. Yet Wang Xizhi's *Tie* [letter] says: 'lái qín [來禽] and rì jǐ, both kept in pouches, make fine fruits' — which again seems to identify nai as rì jǐ. The flower of mù jǐn [木槿, rose of Sharon] is also called rì jí [日及]; perhaps the names simply coincide.\n\n---\n**Fruit**\n\n**Flavor and Nature**\nBitter, cold, slightly toxic. Eating too much causes lung congestion [肺壅] and abdominal distension [臚脹]; this is especially severe in those who are already ill. (*Mingyi Bielu*)\n\nSun Simiao says: Sour, bitter, cold, astringent, non-toxic.\n\nLi Shizhen notes: According to the *Yinshan Zhengyao* [Principles of Correct Diet]: píngpó is sweet and non-toxic.\n\n**Indications and Medicinal Uses**\nSupplements all deficiencies of qi in the middle jiao [中焦] and harmonizes the spleen. Treats sudden overeating leading to qi obstruction and blockage: pound the fruit and drink the juice. (Meng Shen) Benefits heart qi and relieves hunger.",
+      "entities_mentioned": [
+        {
+          "name": "柰 (Nai)",
+          "modern_identification": "Malus pumila or Malus asiatica (Chinese apple / Central Asian apple)",
+          "identification_confidence": "high",
+          "notes": "Described in three color varieties (white, red, green) and a winter variety from Liangzhou. The text treats nai and lín qín as two varieties of the same genus. Likely an early cultivated apple closely related to modern Malus domestica."
+        },
+        {
+          "name": "頻婆 (Píngpó)",
+          "modern_identification": "Malus pumila or related Malus sp.",
+          "identification_confidence": "high",
+          "notes": "Sanskrit loanword for nai; also used as the name for the stored dried fruit product ('píngpó rations')."
+        },
+        {
+          "name": "林檎 (Lín qín)",
+          "modern_identification": "Malus asiatica (Chinese pearleaf crabapple)",
+          "identification_confidence": "high",
+          "notes": "Described as similar to nai but smaller and rounder, ripening in summer. Considered a second variety of the same genus."
+        },
+        {
+          "name": "楸子 (Qiū zǐ)",
+          "modern_identification": "Malus prunifolia (plum-leaf crabapple)",
+          "identification_confidence": "medium",
+          "notes": "Small, astringent variety ripening in autumn; used to make 'fruit leather' (果單) in the Guanxi region."
+        },
+        {
+          "name": "冬柰 (Dōng nai)",
+          "modern_identification": "Possibly a late-ripening Malus cultivar from Liangzhou (Gansu region)",
+          "identification_confidence": "low",
+          "notes": "Described as a winter-ripening variety with bluish-green fruits; likely a regional cultivar no longer identifiable with certainty."
+        },
+        {
+          "name": "紫柰 (Zǐ nai)",
+          "modern_identification": "Unknown Malus cultivar",
+          "identification_confidence": "low",
+          "notes": "Unusual variety from the Shanglin Imperial Gardens with purple seeds, blue-green flowers, and juice described as lacquer-like. May be legendary or heavily exaggerated."
+        },
+        {
+          "name": "日給 (Rì jǐ)",
+          "modern_identification": "Possibly a sterile or ornamental Malus variety, or confused with Hibiscus syriacus",
+          "identification_confidence": "low",
+          "notes": "Li Shizhen is uncertain whether rì jǐ is a non-fruiting form of nai or a separate plant; he also notes confusion with mù jǐn (木槿, Hibiscus syriacus), which shares an alternate name rì jí (日及)."
+        },
+        {
+          "name": "木槿 (Mù jǐn)",
+          "modern_identification": "Hibiscus syriacus (rose of Sharon)",
+          "identification_confidence": "high",
+          "notes": "Mentioned only in passing as sharing the alternate name 'rì jí' with rì jǐ."
+        }
+      ],
+      "translator_notes": "1. The source text has a likely OCR/copyist error in the Shiliang section where the small astringent variety is listed twice as '楸子'; one instance likely originally read a different character (possibly '柰' or a variant graph). The text has been rendered consistently as '楸子' since the intended meaning is unambiguous from context.\n2. The medical entry is cut off mid-sentence at '耐飢' ('relieves hunger'); the original text continues further but is not included in this segment.\n3. 'Middle jiao' (中焦) is a traditional Chinese medicine term referring to the middle of the three body cavities (burners), associated with the spleen and stomach; it is retained in brackets for technical accuracy.\n4. The unit 斛 (hú) is a classical dry measure approximately equal to 10 dǒu (roughly 50–100 liters depending on dynasty); rendered as 'hú' with explanation.\n5. 果單 (guǒ dān, 'fruit leather') is the earliest documented description of a fruit leather/roll-up preparation method in Chinese literature and is of notable culinary-historical interest.\n6. The preparation method for nai-based fermented paste (豉) translated here is among the most detailed food-processing descriptions in the Bencao Gangmu and merits attention from food historians.",
+      "_label": "柰 (果之二)"
+    },
+    {
+      "title_inferred": "Lin Qin (Chinese Crabapple / Apple) — Fruit Section Two",
+      "original_text": "【釋名】來禽（《法帖》）、文林郎果。\n\n《藏器》曰︰文林郎生渤海間。云其樹從河中浮來，有文林郎拾得種之，因以為名。\n\n曰︰文林郎，南人呼為是矣。\n\n時珍曰︰案︰洪玉父云︰此果味甘，能來眾禽於林，故有林禽、來禽之名。又唐高宗時，紀王李謹得五色林檎似朱柰以貢。帝大悅，賜謹為文林郎。人因呼林檎為文林郎果。又《述征記》云︰林檎實佳美。其微大而狀丑，有毛而香，關輔乃有，江南甚希。據此，則林檎是文林郎，非也。\n\n【集解】志曰︰林檎，在處有之。樹似柰，皆二月開粉紅花。子亦如柰而差圓，六月、七月熟。\n\n頌曰︰亦有甘、酢二種︰甘者，早熟而味脆美；酢者，差晚，須爛熟乃堪啖。今醫家乾之入治傷寒藥，謂之林檎散。\n\n時珍曰︰林檎，即柰之小而圓者。其味酢者，即楸子也。其類有金林檎、紅林檎、水林檎、蜜林檎、黑林檎，皆以色味立名。黑者色似紫柰。有冬月再實者。林檎熟時，晒乾研末點湯服甚美，謂之林檎煎。僧贊寧《物類相感志》云︰林檎樹生毛蟲，埋蠶蛾於下，或以洗魚水澆之即止。皆物性之妙也。\n\n【氣味】酸、甘，溫，無毒。\n\n思邈曰︰酸、苦，平，澀，無毒。多食令人百脈弱。\n\n志曰︰多食發熱及冷痰澀氣，令人好唾，或生瘡癤，閉百脈。其子食之，令人煩心。\n\n【主治】下氣消痰，治霍亂肚痛（大明）。消渴者，宜食之（蘇頌）。療水穀痢、泄精（孟詵）。小兒閃癖（時珍）。\n白蟲、蛔蟲，消渴好唾（孟詵）。",
+      "translation": "【Explanations of Names】\nAlso called Lai Qin [\"bird-attracting\"] (cited in Fa Tie) and Wenlin Lang Guo [\"Wenlin Gentleman's Fruit\"].\n\nChen Cangqi states: The Wenlin Lang [variety] grows in the region of Bohai. It is said that the tree floated down a river, was retrieved by an official of the rank Wenlin Lang [a minor civil title], who planted its seed; hence the name.\n\n[Another source] states: Wenlin Lang — the people of the south call it by that name, which is correct.\n\nLi Shizhen states: According to Hong Yufu, this fruit is sweet in flavor and is able to attract many birds to the forest, hence the names Lin Qin [\"forest bird\"] and Lai Qin [\"bird-attractor\"]. Furthermore, during the reign of Emperor Gaozong of the Tang dynasty, Prince Ji, Li Jin, obtained five-colored Lin Qin resembling the red Nai [apple] and presented them as tribute. The emperor was greatly pleased and conferred upon Li Jin the rank of Wenlin Lang. People thereafter called the Lin Qin the \"Wenlin Lang Fruit.\" The Shu Zheng Ji also records: The Lin Qin fruit is excellent and fine. [Another fruit] is slightly larger in size but ugly in appearance, hairy and fragrant, found only in the Guan and Fu regions, and very rare in Jiangnan. Based on this, it is clear that the Lin Qin is [the same as] the Wenlin Lang [fruit] and is not [that other fruit].\n\n【Collected Explanations】\nMa Zhi states: Lin Qin is found everywhere. The tree resembles the Nai [apple]; both bloom with pink flowers in the second month. The fruit also resembles the Nai but is somewhat rounder, ripening in the sixth and seventh months.\n\nSu Song states: There are two varieties — sweet and sour [酢]. The sweet variety ripens early and has a crisp, pleasant flavor; the sour variety ripens somewhat later and must be fully soft before it is fit to eat. Physicians today dry it for use in remedies treating cold-damage [shanghán] disorders, called the \"Lin Qin Powder\" [Lin Qin San].\n\nLi Shizhen states: The Lin Qin is simply a small, round form of the Nai [apple]. The sour-flavored variety is what is called the Qiu Zi [crabapple]. Its kinds include the Golden Lin Qin, Red Lin Qin, Water Lin Qin, Honey Lin Qin, and Black Lin Qin — all named according to color or flavor. The black variety resembles the purple Nai in color. Some varieties bear fruit again in winter. When Lin Qin is ripe, it may be sun-dried, ground into a powder, and stirred into hot water for drinking — a very pleasant preparation called \"Lin Qin Jian\" [Lin Qin decoction-paste]. The monk Zan Ning, in his Wu Lei Xiang Gan Zhi, notes: If hairy caterpillars infest a Lin Qin tree, burying silkworm moths beneath it, or watering it with water used to wash fish, will stop the infestation. These are the marvelous workings of the natures of things.\n\n【Qi and Flavor】\nSour, sweet; warm; non-toxic.\n\nSun Simiao states: Sour, bitter; balanced [píng]; astringent; non-toxic. Eating too much weakens all the vessels [bai mai].\n\nMa Zhi states: Eating too much generates heat and cold phlegm, obstructs the qi, and causes excessive salivation or the development of sores and boils, and closes off all the vessels. Eating the seeds causes vexation of the heart.\n\n【Indications and Treatments】\nDirects qi downward and disperses phlegm; treats cholera [huoluan] and abdominal pain (Da Ming). Those with wasting-thirst [xiaoke, i.e., diabetes-like condition] are advised to eat it (Su Song). Treats dysentery due to water and grain [i.e., food-borne diarrhea] and seminal efflux (Meng Shen). Treats abdominal accumulations [shan pi] in children (Li Shizhen).\n[Also treats] white worms [tapeworms] and roundworms [ascariasis], wasting-thirst, and excessive salivation (Meng Shen).",
+      "entities_mentioned": [
+        {
+          "name": "林檎 (Lin Qin)",
+          "modern_identification": "Malus asiatica (Chinese pearleaf crabapple) or a closely related small-fruited Malus species; possibly ancestral to some East Asian apple cultivars",
+          "identification_confidence": "high",
+          "notes": "Described as a small, round version of the Nai (柰, likely Malus pumila). Multiple cultivar names (gold, red, water, honey, black) suggest a diverse cultivar group."
+        },
+        {
+          "name": "柰 (Nai)",
+          "modern_identification": "Malus pumila (common apple) or a related large-fruited Malus species",
+          "identification_confidence": "medium",
+          "notes": "Used as a comparison plant to characterize Lin Qin as a smaller, rounder variant."
+        },
+        {
+          "name": "楸子 (Qiu Zi)",
+          "modern_identification": "Malus prunifolia (plum-leaved crabapple) or Malus asiatica sour variety",
+          "identification_confidence": "medium",
+          "notes": "Li Shizhen identifies the sour-flavored Lin Qin with the Qiu Zi."
+        },
+        {
+          "name": "林檎散 (Lin Qin San)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A dried powder preparation of Lin Qin used by physicians in treating cold-damage (shanghán) disorders."
+        },
+        {
+          "name": "林檎煎 (Lin Qin Jian)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A preparation made by sun-drying ripe Lin Qin, grinding to powder, and dissolving in hot water; a pleasant beverage-medicine."
+        },
+        {
+          "name": "霍亂 (Huoluan)",
+          "modern_identification": "Acute gastroenteritis or cholera-like illness (classical Chinese medical category, not necessarily Vibrio cholerae)",
+          "identification_confidence": "medium",
+          "notes": "Listed as a condition treated by Lin Qin."
+        },
+        {
+          "name": "消渴 (Xiaoke)",
+          "modern_identification": "Wasting-thirst syndrome; broadly corresponds to diabetes mellitus or other polydipsic conditions",
+          "identification_confidence": "medium",
+          "notes": "Su Song recommends Lin Qin for this condition; Meng Shen also lists it."
+        },
+        {
+          "name": "白蟲、蛔蟲 (Bai Chong, Hui Chong)",
+          "modern_identification": "Tapeworms (Taenia spp.) and roundworms (Ascaris lumbricoides)",
+          "identification_confidence": "high",
+          "notes": "Parasitic infestations listed among the conditions Lin Qin is said to treat."
+        }
+      ],
+      "translator_notes": "1. The term 文林郎 (Wenlin Lang) is both a minor Tang civil service rank (rank 9b) and a personal epithet attached to the fruit's origin legend; both senses are preserved in context. 2. The character rendered 煎 (jian, decoction-paste) in 林檎煎 appears as a damaged/missing character in the source OCR — context strongly implies 煎. 3. The phrase 小兒閃癖 (xiǎo ér shǎn pǐ) refers to a pediatric syndrome of hidden or shifting abdominal accumulations; translated as \"abdominal accumulations in children.\" 4. 百脈 (bai mai, \"all the vessels/channels\") is a classical physiological concept indicating the totality of the body's circulation and energy pathways. 5. One attributive sentence beginning with 曰︰文林郎，南人呼為 is missing the cited fruit name due to apparent OCR loss; marked as incomplete but not flagged as [ILLEGIBLE] since the surrounding context clarifies the general meaning. 6. The pest-control passage from 《物類相感志》 (Wu Lei Xiang Gan Zhi) by monk Zan Ning is a notable early record of empirical pest management using biological materials.",
+      "_label": "林檎 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰ 從KT ，音滓，諧聲也。俗作 ，非矣。 （音肺），削木片也。\n\n胡名鎮頭\n\n【集解】頌曰︰柿南北皆有之，其種亦多。紅柿所在皆有。黃柿生汴、洛諸州。朱柿出華山，似紅柿而圓小，皮薄可愛，味更甘珍。 柿色青，可生啖。諸柿食之皆美而益人。又有一種小柿，謂之軟棗，俗呼為牛奶柿。世傳柿有七絕︰一多壽，二多陰，三無鳥巢，四無蟲蠹，五霜葉可玩，六嘉賓，七落葉肥滑，可以臨書也。\n\n宗奭曰︰柿有數種︰著蓋柿，於蒂下別有一重。又有牛心柿，狀如牛心。蒸餅柿，狀如市賣蒸餅。華州朱柿，小而深紅。塔柿，大於諸柿，去皮掛木上，風晒乾之佳。火乾者，味不甚佳。其生者，可以溫水養去澀味也。\n\n時珍曰︰柿高樹大葉，圓而光澤。四月開小花，黃白色。結實青綠色，八、九月乃熟。\n\n生柿置器中自紅者謂之烘柿，晒乾者謂之白柿，火乾者謂之烏柿，水浸藏者謂之 柿。其核形扁，狀如木鱉子仁而硬堅。其根甚固，謂之柿盤。案《事類合璧》云︰柿，朱果也。大者如碟，八棱稍扁；其次如拳；小或如雞子、鴨子、牛心、鹿心之狀。一種小而如拆二錢者，謂之猴棗。皆以核少者為佳。\n\n烘柿︰時珍曰︰烘柿，非謂火烘也。即青綠之柿，收置器中，自然紅熟如烘成，",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Persimmon (柿) — Fruit Chapter Two\",\n  \"original_text\": \"【釋名】時珍曰：從木，音滓，諧聲也。俗作柹，非矣。朿（音肺），削木片也。胡名鎮頭。\\n\\n【集解】頌曰：柿南北皆有之，其種亦多。紅柿所在皆有。黃柿生汴、洛諸州。朱柿出華山，似紅柿而圓小，皮薄可愛，味更甘珍。椑柿色青，可生啖。諸柿食之皆美而益人。又有一種小柿，謂之軟棗，俗呼為牛奶柿。世傳柿有七絕：一多壽，二多陰，三無鳥巢，四無蟲蠹，五霜葉可玩，六嘉賓，七落葉肥滑，可以臨書也。\\n\\n宗奭曰：柿有數種：著蓋柿，於蒂下別有一重。又有牛心柿，狀如牛心。蒸餅柿，狀如市賣蒸餅。華州朱柿，小而深紅。塔柿，大於諸柿，去皮掛木上，風晒乾之佳。火乾者，味不甚佳。其生者，可以溫水養去澀味也。\\n\\n時珍曰：柿高樹大葉，圓而光澤。四月開小花，黃白色。結實青綠色，八、九月乃熟。生柿置器中自紅者謂之烘柿，晒乾者謂之白柿，火乾者謂之烏柿，水浸藏者謂之醂柿。其核形扁，狀如木鱉子仁而硬堅。其根甚固，謂之柿盤。案《事類合璧》云：柿，朱果也。大者如碟，八棱稍扁；其次如拳；小或如雞子、鴨子、牛心、鹿心之狀。一種小而如拆二錢者，謂之猴棗。皆以核少者為佳。\\n\\n烘柿：時珍曰：烘柿，非謂火烘也。即青綠之柿，收置器中，自然紅熟如烘成，澀味盡去，其甘如蜜。歐陽修《歸田錄》言：襄、鄧人以楂或榠或橘葉於中則熟，亦不必。\\n\\n【氣味】甘，寒，澀，無毒。\\n\\n弘景曰：生柿性冷，鹿心柿尤不可食，令人腹痛。\\n宗奭曰：凡柿皆涼，不至大寒。食之引痰，為其味甘也。晒乾者，食多動風。\\n頌曰：凡柿同蟹食，令人腹痛作瀉，二物俱寒也。\\n時珍曰：按：王璆《百一選方》云：一人食蟹，多食紅柿，至夜大吐，繼之以血，昏不省人。一道者云：惟木香可解。乃磨汁灌之，即漸蘇醒而愈也。\\n白柿：甘，平，澀，無毒。\\n弘景曰：晒乾者性冷，生柿彌冷。火熏者性熱。\\n烏柿：甘，溫，無毒。\\n柿蒂：澀，平，無毒。\\n\\n【主治】通耳鼻氣，治腸澼不足。解酒毒，壓胃間熱，止口乾（《別錄》）。續經脈氣（詵）。補虛勞不足，消腹中宿血，澀中濃腸，健脾胃氣（詵）。開胃澀腸，消痰止渴，治吐血，潤心肺，療肺痿心熱咳嗽，潤聲喉，殺蟲（大明）。溫補。多食，去面䵟（藏器）。治反胃咯血，血淋腸澼，痔漏下血（時珍）。\\n柿霜：清上焦心肺熱，生津止渴，化痰寧嗽，治咽喉。\\n柿蒂：殺蟲，療金瘡、火瘡，生肉止痛（《別錄》）。治狗嚙瘡，斷下痢（弘景）。服藥口苦及嘔逆者，食少許即止（藏器）。\\n\\n醂柿（音覽）：澀下焦，健脾胃，消宿血（詵）。\\n\\n柿糕：作餅及糕與小兒食，治秋痢（詵）。黃柿和米粉作糗蒸，與小兒食，止下痢、下血有效（《藏器》）。\\n\\n柿蒂：咳逆噦氣，煮汁服（詵）。下血。晒焙研末，米飲服二錢，兩服可止（頌）。湯火瘡，燒灰，油調敷（時珍）。\\n\\n根：血崩，血痢，下血（時珍）。\\n\\n【發明】藏器曰：飲酒食紅柿，令人易醉或心痛欲死。《別錄》言解酒毒，失之矣。\\n\\n白柿、柿霜：震亨曰：乾柿屬金而有土，屬陰而有收意。故止血治咳，亦可為助也。\\n\\n時珍曰：柿乃脾、肺血分之果也。其味甘而氣平，性澀而能收，故有健脾澀腸、治嗽止血之功。蓋大腸者，肺之合而胃之子也。真正柿霜，乃其精液，入肺病上焦藥尤佳。按：方勺《泊宅編》云：外兄劉掾云：病臟毒下血，凡半月，自分必死。得一方，只以乾柿燒灰，飲服二錢，遂愈。又王璆《百一方》云：曾通判子病下血十年，亦用此方一服而愈。為散、為丸皆可，與本草治腸澼、消宿血、解熱毒之義相合。則柿為太陰血分之藥，益可証矣。\\n\\n又《經驗方》云：有人三世死於反胃病，至孫得一方：用乾柿餅同乾飯日日食之，絕不用水飲，如法食之，其病遂愈。此又一証也。\\n\\n震亨曰：人之陰氣，依胃為養。土傷則木挾相火，直沖清道而上作咳逆。古人以柿蒂治咳逆。\\n\\n時珍曰：咳逆者，氣自臍下沖脈直上至咽膈，作呃忒蹇逆之聲也。朱肱《……》\",\n  \"translation\": \"**[Explanatory Names]** Li Shizhen states: The character [柿] is formed with the wood radical [木]; the phonetic element has the sound zǐ, making it a phonetic compound character. The common variant form [柹] is incorrect. The character 朿 (pronounced fèi) means to shave wood into slivers. Its foreign [Hu] name is Zhèntó",
+      "_label": "柿 (果之二)"
+    },
+    {
+      "title_inferred": "Junzi (君迁/柿漆): Small Black Persimmon",
+      "original_text": "【釋名】漆柿（《日華》）、綠柿（《日用》）、青柿（《廣志》）、烏柿（《開寶》）、花柿（《日用》）、赤棠柿。\n\n時珍曰：柿乃柿之小而卑者，故謂之柿。他柿至熟則黃赤，惟此雖熟亦青黑色。搗碎浸汁謂之柿漆，可以染罾、扇諸物，故有漆柿之名。\n\n【集解】志曰：柿生江淮以南，似柿而青黑。潘岳《閑居賦》所謂「梁侯烏柿之柿」是也。\n\n頌曰：柿出宣歙、荊襄、閩廣諸州。柿大如杏，惟堪生啖，不可為乾也。\n\n【氣味】甘，寒，澀，無毒。\n\n弘景曰：生啖性冷，服石家宜之，不入藥用。不可與蟹同食。\n\n【主治】壓丹石藥發熱，利水，解酒毒，去胃中熱。久食，令人寒中（《開寶》）。止煩渴，潤心肺，除腹臟冷熱（《日華》）。",
+      "translation": "**[Names]** Also called: Lacquer Persimmon [漆柿] (Rihua); Green Persimmon [綠柿] (Riyong); Blue-Green Persimmon [青柿] (Guangzhi); Black Persimmon [烏柿] (Kaibao); Speckled Persimmon [花柿] (Riyong); Red-Tang Persimmon [赤棠柿].\n\nLi Shizhen states: This persimmon is small and low-growing compared to common persimmons, hence its name [君迁/柿]. Other persimmons turn yellow-red when fully ripe, but this variety remains greenish-black even when fully ripe. When pounded and soaked, its juice is called 'persimmon lacquer' [柿漆], which can be used to dye fishing nets, fans, and various objects — hence the name 'Lacquer Persimmon.'\n\n**[Collected Explanations]** Zhi [Su Gong] states: This persimmon grows south of the Jianghuai region. It resembles a common persimmon but is greenish-black in color. It is the variety referred to in Pan Yue's 'Rhapsody on Leisure Dwelling' [閑居賦] as 'the black persimmon of the Marquis of Liang.'\n\nSu Song states: This persimmon is produced in the prefectures of Xuanzhou, Shezhou, Jingzhou, Xiangzhou, Fujian, and Guangzhou. The fruit is as large as an apricot and is only suitable for eating fresh; it cannot be dried.\n\n**[Qi and Flavor]** Sweet, cold, astringent, non-toxic.\n\nTao Hongjing states: Eating it fresh has a cold nature, making it suitable for those who have taken mineral elixirs [服石]. It is not used in medicinal preparations. It should not be eaten together with crab.\n\n**[Principal Indications]** Suppresses heat caused by mineral elixir drugs [丹石藥]; promotes urination; resolves alcohol toxicity; removes heat from the stomach. Prolonged consumption causes cold to accumulate in the middle [寒中] (Kaibao). Stops vexing thirst; moistens the heart and lungs; disperses cold and heat in the abdominal viscera (Rihua).",
+      "entities_mentioned": [
+        {
+          "name": "柿 (君迁子 / 漆柿 / 烏柿)",
+          "modern_identification": "Diospyros lotus L. (Date plum or Caucasian persimmon); possibly also Diospyros cathayensis",
+          "identification_confidence": "high",
+          "notes": "Described as small, greenish-black when ripe, used to produce 'persimmon lacquer' for dyeing. Distinct from the common persimmon (Diospyros kaki). The description closely matches Diospyros lotus, known in Chinese as 君迁子."
+        },
+        {
+          "name": "丹石藥 (mineral/elixir drugs)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Refers to mineral-based alchemical preparations (e.g., cinnabar, arsenolite compounds) taken as tonics or longevity elixirs. This fruit was considered useful for counteracting the heat side-effects of such drugs."
+        },
+        {
+          "name": "潘岳《閑居賦》",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Pan Yue (247–300 CE), Jin dynasty literary figure. His 'Rhapsody on Leisure Dwelling' is cited as a classical textual reference corroborating the identification of this variety."
+        }
+      ],
+      "translator_notes": "The segment header uses the character 柿 for what is almost certainly 君迁子 (Diospyros lotus), a species distinct from the common persimmon (柿, Diospyros kaki). The OCR has rendered several variant characters for the fruit name (possibly 柿 with a different radical) uniformly as 柿; the text clearly intends a distinct taxon throughout. The names 青柿 and 烏柿 in the 'Names' section originally use characters with a tree radical (木) rather than the standard 柿, but as the referent is unambiguous they have been normalized. The preparation of 柿漆 (persimmon astringent juice) by pounding and soaking is a well-attested historical practice for waterproofing and stiffening cloth, paper fans, and fishing nets.",
+      "_label": "柿 (果之二)"
+    },
+    {
+      "title_inferred": "Junqianzi (Date Plum / Black Sapote-relative): Entry from Bencao Gangmu, Fruits Chapter Two",
+      "original_text": "【釋名】軟棗（《千金》作軟棗）、棪棗（《廣志》。音逞）、牛奶柿（《名苑》）、丁香柿\n\n時珍曰︰君遷之名，始見於左思《吳都賦》，而著其狀於劉欣期《交州記》，名義莫詳。軟棗，其形似棗而軟也。司馬光《名苑》云︰君遷子似馬奶，即今牛奶柿也，以形得名。崔豹《古今注》云︰牛奶柿即軟棗，葉如柿，子亦如柿而小。唐宋諸家，不知君遷、軟棗為一物也。\n\n【集解】藏器曰︰君遷子生海南，樹高丈餘，子中有汁，如乳汁甜美。《吳都賦》平仲君遷是也。\n\n時珍曰︰君遷即軟棗，其木類柿而葉長。但結實小而長，狀如牛奶，乾熟則紫黑色。一種小圓如指頂大者，名丁香柿，味尤美。《救荒本草》以為羊矢棗，誤矣。其樹接大柿最佳。《廣志》云︰棪棗，小柿也。肌細而濃，少核，可以供御。即此。\n\n【氣味】甘、澀，平，無毒。\n\n【主治】止消渴，去煩熱，令人潤澤（《藏器》）。鎮心。久服，悅人顏色，令人輕健。",
+      "translation": "**Names and Nomenclature**\n\nAlternate names: Ruǎn Zǎo [Soft Date] (written as 軟棗 in the *Qianjin* [Prescriptions Worth a Thousand Gold]); Yǎn Zǎo (棪棗, in the *Guangzhi* [Extensive Records]; pronounced *chěng*); Niú Nǎi Shì [Cow's-Milk Persimmon] (in the *Mingyuan* [Garden of Names]); Dīng Xiāng Shì [Clove Persimmon].\n\nLi Shizhen states: The name Junqian first appears in Zuo Si's *Ode to the Wu Capital* [吳都賦], and its form is described in Liu Xinqi's *Record of Jiaozhou* [交州記], though the meaning of the name is not clearly explained. \"Ruǎn Zǎo\" refers to its resemblance to a date [jujube] but with a soft texture. Sima Guang's *Mingyuan* says: \"Junqianzi resembles a horse's teat\"—this is the present-day Niú Nǎi Shì [Cow's-Milk Persimmon], named for its shape. Cui Bao's *Gujin Zhu* [Annotations on Things Old and New] says: \"Niú Nǎi Shì is the same as Ruǎn Zǎo; its leaves resemble those of the persimmon, and its fruit also resembles persimmon but is smaller.\" Scholars of the Tang and Song dynasties did not know that Junqian and Ruǎn Zǎo were one and the same plant.\n\n**Collected Explanations**\n\nChen Cangqi [藏器] states: Junqianzi grows in Hainan. The tree reaches over one zhang [approx. 3 metres] in height. The fruit contains a juice as sweet and fine as milk. This is the \"Pinzhong Junqian\" mentioned in the *Ode to the Wu Capital*.\n\nLi Shizhen states: Junqian is the same as Ruǎn Zǎo. Its wood resembles that of the persimmon, but its leaves are longer. The fruits are small and elongated, shaped like a cow's teat; when dry and fully ripe they turn purplish-black. There is a variety whose fruits are small and round, about the size of a fingertip, called Dīng Xiāng Shì [Clove Persimmon]; its flavour is especially fine. The *Jiuhuang Bencao* [Famine Relief Materia Medica] identifies this plant as Yáng Shǐ Zǎo [Sheep-Dung Jujube], which is an error. This tree is best used as a rootstock for grafting the large persimmon. The *Guangzhi* says: \"Yǎn Zǎo is a small persimmon. Its flesh is fine-textured and thick, with few seeds, and it is fit to be presented as tribute to the court.\" This is precisely the plant in question.\n\n**Flavour and Nature**\n\nSweet and astringent; balanced [neither warming nor cooling]; non-toxic.\n\n**Indications and Uses**\n\nStops wasting-thirst [消渴, xiāo kě; a condition analogous to diabetes]; dispels vexing heat; moistens and beautifies the body (Chen Cangqi [*Bencao Shiyi*]). Calms the heart. Taken over a long period, it brightens the complexion and makes the body light and vigorous.",
+      "entities_mentioned": [
+        {
+          "name": "君遷子 (Junqianzi)",
+          "modern_identification": "Diospyros lotus L. (Date Plum; Caucasian persimmon)",
+          "identification_confidence": "high",
+          "notes": "The description — leaves longer than persimmon, small elongated fruit ripening to purplish-black, resembling a cow's teat, used as grafting stock for Diospyros kaki — closely matches Diospyros lotus. Sometimes also compared to D. virginiana."
+        },
+        {
+          "name": "軟棗 (Ruǎn Zǎo / Soft Date)",
+          "modern_identification": "Diospyros lotus L.",
+          "identification_confidence": "high",
+          "notes": "Identified in the text as a synonym for Junqianzi."
+        },
+        {
+          "name": "棪棗 (Yǎn Zǎo)",
+          "modern_identification": "Diospyros lotus L.",
+          "identification_confidence": "high",
+          "notes": "Another synonym cited from the Guangzhi; described as a small persimmon with fine flesh and few seeds, suitable as tribute."
+        },
+        {
+          "name": "牛奶柿 (Niú Nǎi Shì / Cow's-Milk Persimmon)",
+          "modern_identification": "Diospyros lotus L.",
+          "identification_confidence": "high",
+          "notes": "A colloquial name based on the elongated, teat-like shape of the fruit."
+        },
+        {
+          "name": "丁香柿 (Dīng Xiāng Shì / Clove Persimmon)",
+          "modern_identification": "Possibly a variety of Diospyros lotus or a closely related small-fruited Diospyros species",
+          "identification_confidence": "medium",
+          "notes": "Described as a small, round, fingertip-sized variant with particularly fine flavour; may be a cultivar or a distinct subspecies."
+        },
+        {
+          "name": "消渴 (xiāo kě)",
+          "modern_identification": "Diabetes mellitus / wasting-thirst syndrome",
+          "identification_confidence": "high",
+          "notes": "Classical Chinese medical condition characterised by excessive thirst, urination, and wasting; commonly equated with diabetes in modern interpretations."
+        }
+      ],
+      "translator_notes": "1. The repeated 'KT' strings in the source text are OCR artefacts for the character 棪 (yǎn) or, in context, 軟 (ruǎn). These have been silently restored based on surrounding context: 軟棗 (Ruǎn Zǎo, 'Soft Date') and 棪棗 (Yǎn Zǎo) where the *Guangzhi* citation is concerned. The phonetic gloss 音逞 supports reading 棪 (though standard readings differ; the text's own gloss is retained).\n2. The attribution line for 鎮心/久服/悅人顏色/令人輕健 is blank in the source (empty parentheses); the source work is likely the *Bencao Shiyi* (《本草拾遺》) by Chen Cangqi, as with the preceding entry, but this cannot be confirmed and is left unattributed.\n3. '平仲君遷' in the *Ode to the Wu Capital* is a paired literary reference to two trees; 平仲 refers to Ginkgo biloba, and 君遷 to Diospyros lotus.\n4. The *Jiuhuang Bencao* identification of this plant as 羊矢棗 (Yáng Shǐ Zǎo, 'Sheep-Dung Jujube') is explicitly rejected by Li Shizhen.",
+      "_label": "君遷子 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】若榴（《廣雅》）、丹若（《古今注》）、金罌。\n\n時珍曰︰榴者，瘤也，丹實垂垂如贅瘤也。《博物志》云︰漢張騫出使西域，得塗林安石國榴種以歸，故名安石榴。又按︰《齊民要術》云︰凡植榴者須安僵石枯骨於根下，即花實繁茂。則安石之名義或取此也。若木乃扶桑之名，榴花丹 似之，故亦有丹若之稱。傅玄\n\n《榴賦》所謂“灼若旭日棲扶桑”者是矣。《筆衡》云︰五代吳越王錢 改榴為金罌。《酉陽雜俎》言︰榴甜者名天漿。道家書謂榴為三尸酒，言三尸蟲得此果則醉也。故范成大詩云︰玉池咽清肥，三彭跡如掃。\n\n【集解】弘景曰︰石榴花赤可愛，故人多植之，尤為外國所重。有甜、酢二種，醫家惟用酢者之根、殼。榴子乃服食者所忌。\n\n頌曰︰安石榴，本生西域，今處處有之。木不甚高碩，枝柯附幹，自地便生作叢。種極易息，折其條盤土中便生也。花有黃、赤二色。實有甘、酢二種，甘者可食，酢者入藥。又一種山石榴，形頗相類而絕小，不作房生，青、齊間甚多，不入藥，但蜜漬以當果甚美。\n\n宗曰︰石榴有酸、淡二種。旋開單葉花，旋結實，實中子紅，孫枝甚多，秋後經霜則自坼裂。一種子白，瑩澈如水晶者，味亦甘，謂之水晶石榴。惟酸石榴入藥，須老木所結，收留陳久",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Pomegranate (Anshiliú / 安石榴) — Fruit Chapter Two\",\n  \"original_text\": \"【釋名】若榴（《廣雅》）、丹若（《古今注》）、金罌。\\n\\n時珍曰︰榴者，瘤也，丹實垂垂如贅瘤也。《博物志》云︰漢張騫出使西域，得塗林安石國榴種以歸，故名安石榴。又按︰《齊民要術》云︰凡植榴者須安僵石枯骨於根下，即花實繁茂。則安石之名義或取此也。若木乃扶桑之名，榴花丹似之，故亦有丹若之稱。傅玄《榴賦》所謂\"灼若旭日棲扶桑\"者是矣。《筆衡》云︰五代吳越王錢改榴為金罌。《酉陽雜俎》言︰榴甜者名天漿。道家書謂榴為三尸酒，言三尸蟲得此果則醉也。故范成大詩云︰玉池咽清肥，三彭跡如掃。\\n\\n【集解】弘景曰︰石榴花赤可愛，故人多植之，尤為外國所重。有甜、酢二種，醫家惟用酢者之根、殼。榴子乃服食者所忌。\\n\\n頌曰︰安石榴，本生西域，今處處有之。木不甚高碩，枝柯附幹，自地便生作叢。種極易息，折其條盤土中便生也。花有黃、赤二色。實有甘、酢二種，甘者可食，酢者入藥。又一種山石榴，形頗相類而絕小，不作房生，青、齊間甚多，不入藥，但蜜漬以當果甚美。\\n\\n宗曰︰石榴有酸、淡二種。旋開單葉花，旋結實，實中子紅，孫枝甚多，秋後經霜則自坼裂。一種子白，瑩澈如水晶者，味亦甘，謂之水晶石榴。惟酸石榴入藥，須老木所結，收留陳久者乃佳。\\n\\n時珍曰︰榴五月開花，有紅、黃、白三色。單葉者結實。千葉者不結實，或結亦無子也。實有甜、酸、苦三種。《抱朴子》言︰苦者出積石山。或云即山石榴也。《酉陽雜俎》言︰南詔石榴皮薄如紙。《瑣碎錄》言︰河陰石榴名三十八者，其中只有三十八子也。又南中有四季榴，四時開花，秋月結實，實方綻，隨複開花。有火石榴赤色如火。海石榴高一、二尺即結實。皆異種也。案︰《事類合璧》云︰榴大如杯，赤色有黑斑點，皮中如蜂窠，有黃膜隔之，子形如人齒，淡紅色，亦有潔白如雪者。潘岳賦云︰榴者，天下之奇樹，九州之名果。千房同膜，千子如一。御飢療渴，解酲止醉。\\n\\n甘石榴\\n\\n【氣味】甘、酸，溫，澀，無毒。多食損人肺（《別錄》）。\\n\\n詵曰︰多食損齒令黑。凡服食藥物人忌食之。\\n\\n震亨曰︰榴者，留也。其汁酸性滯，粘膈成痰。\\n酸，溫，澀，無毒。\\n同實。\\n同皮。\\n\\n【主治】咽喉燥渴（《別錄》）。能理乳石毒（段成式）。製三尸蟲（時珍）。\\n\\n酸石榴\\n赤白痢腹痛，連子搗汁，頓服一枚（孟詵）。止瀉痢崩中帶下（時珍）。\\n止下痢漏精（《別錄》）。治筋骨風，腰腳不遂，行步攣急疼痛，澀腸。取汁點目，止淚下（權）。煎服，下蛔蟲（《藏器》）。止瀉痢，下血脫肛，崩中帶下（時珍）。\\n蛔蟲、寸白（《別錄》）。青者，入染須用（權）。治口齒病（頌）。止澀瀉痢、帶。\\n陰乾為末，和鐵丹服，一年變白髮如漆（藏器。鐵丹，飛鐵為丹也，亦鐵粉之屬）。千葉者，治心熱吐血。又研末吹鼻，止衄血，立效。亦敷金瘡出血（蘇頌）。\\n\\n【發明】時珍曰︰榴受少陽之氣，而榮於四月，盛於五月，實於盛夏，熟於深秋。丹花赤實，其味甘酸，其氣溫澀，具木火之象。故多食損肺、齒而生痰涎。酸者則兼收斂之氣，故入斷下、崩中之藥。或云︰白榴皮治白痢，紅榴皮治紅痢，亦通。\",\n  \"translation\": \"**[Nomenclature]** Also called Ruòliú [若榴] (Guǎngyǎ), Dānruò [丹若] (Gǔjīnzhù), and Jīnyīng [金罌, 'golden jar'].\\n\\nLi Shizhen states: The character liú [榴] means a lump or growth [瘤], because the crimson fruits hang down like pendulous tumours. The Bówùzhì records: During the Han dynasty, Zhang Qian was sent as an envoy to the Western Regions and brought back seeds of the pomegranate from the kingdom of Túlín Ānshí [Parthia/Sogdia], hence the name Ānshí liú ['pomegranate of Ānshí']. Moreover, the Qímín Yàoshù states: anyone who plants a pomegranate must place hardened stones and dry bones beneath the roots, whereupon ",
+      "_label": "安石榴 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】時珍曰︰橘，從 音鷸，諧聲也。又云五色為慶，二色為矞 。 云外赤內黃、非煙非霧、郁郁紛紛之象。橘實外赤內黃，剖之香霧紛郁，有似乎 云。橘之從 ，又取此意也。\n紅皮（《湯液》）、陳皮（《食療》）。\n\n弘景曰︰橘皮療氣大勝。以東橘為好，西江者不如。須陳久者為良。\n\n好古曰︰橘皮以色紅日久者為佳，故曰紅皮、陳皮。去白者曰橘紅也。\n\n【集解】《別錄》曰︰橘、柚，生江南及山南山谷，十月採。\n\n恭曰︰柚之皮濃味甘，不似橘皮味辛苦。其肉亦如橘，有甘有酸。酸者名胡柑。今俗謂橙為柚，非矣。案︰郭璞云︰柚似橙而實酢，大於橘。孔安國云︰小曰橘，大曰柚，皆為柑也。\n\n頌曰︰橘、柚，今江浙、荊襄、湖嶺皆有之。木高一、二丈，葉與枳無辨，刺出莖間。夏初生白花，六、七月成實，至冬黃熟。舊說小為橘，大為柚。今醫家乃用黃橘、青橘，不言柚。豈青橘是柚之類乎？\n\n宗奭曰︰橘、柚自是兩種。《本草》云︰一名橘皮。後人誤加柚字，妄生分別。且青橘、黃橘治療尚殊，況柚為別種乎？惟郭璞所言，乃真識橘、柚者。若不如此分別，誤以柚皮為橘皮，是貽無窮之患矣。\n\n時珍曰︰橘、柚，蘇恭所說甚是。蘇頌不知青橘即橘之未黃者，乃以為柚，誤矣。夫",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Jú (橘) — Mandarin Orange / Tangerine: Nomenclature, Botany, Flavors, and Medicinal Uses\",\n  \"original_text\": \"【釋名】時珍曰：橘，從矞，音鷸，諧聲也。又云五色為慶，二色為矞。云外赤內黃、非煙非霧、郁郁紛紛之象。橘實外赤內黃，剖之香霧紛郁，有似乎矞云。橘之從矞，又取此意也。\\n紅皮（《湯液》）、陳皮（《食療》）。\\n\\n弘景曰：橘皮療氣大勝。以東橘為好，西江者不如。須陳久者為良。\\n\\n好古曰：橘皮以色紅日久者為佳，故曰紅皮、陳皮。去白者曰橘紅也。\\n\\n【集解】《別錄》曰：橘、柚，生江南及山南山谷，十月採。\\n\\n恭曰：柚之皮濃味甘，不似橘皮味辛苦。其肉亦如橘，有甘有酸。酸者名胡柑。今俗謂橙為柚，非矣。案：郭璞云：柚似橙而實酢，大於橘。孔安國云：小曰橘，大曰柚，皆為柑也。\\n\\n頌曰：橘、柚，今江浙、荊襄、湖嶺皆有之。木高一、二丈，葉與枳無辨，刺出莖間。夏初生白花，六、七月成實，至冬黃熟。舊說小為橘，大為柚。今醫家乃用黃橘、青橘，不言柚。豈青橘是柚之類乎？\\n\\n宗奭曰：橘、柚自是兩種。《本草》云：一名橘皮。後人誤加柚字，妄生分別。且青橘、黃橘治療尚殊，況柚為別種乎？惟郭璞所言，乃真識橘、柚者。若不如此分別，誤以柚皮為橘皮，是貽無窮之患矣。\\n\\n時珍曰：橘、柚，蘇恭所說甚是。蘇頌不知青橘即橘之未黃者，乃以為柚，誤矣。夫橘、柚、柑三者相類而不同。橘實小，其瓣味微酢，其皮薄而紅，味辛而苦。柑大於橘，其瓣味甘，其皮稍濃而黃，味辛而甘。柚大小皆如橙，其瓣味酢，其皮最濃而黃，味甘而不甚辛。如此分之，即不誤矣。\\n\\n按：《事類合璧》云：橘樹高丈許，枝多生刺。其葉兩頭尖，綠色光面，大寸余，長二寸許。四月著小白花，甚香。結實至冬黃熟，大者如杯，包中有瓣，瓣中有核也。\\n\\n宋韓彥直著《橘譜》三卷甚詳，其略云：柑橘出蘇州、台州，西出荊州，南出閩、廣、撫州，皆不如溫州者為上也。柑品有八，橘品十有四，多是接成。惟種成者，氣味尤勝。黃橘，扁小而多香霧，乃橘之上品也；朱橘，小而色赤如……\\n\\n【氣味】甘、酸，溫，無毒。\\n\\n弘景曰：食之多痰，恐非益也。\\n原曰：多食粘膈生痰，滯肺氣。\\n瑞曰：同螃蟹食，令人患軟癰。\\n\\n（橘皮）苦、辛，溫，無毒。\\n（青橘皮）苦、辛，溫，無毒。\\n（橘核）苦，平，無毒。\\n\\n【主治】\\n（橘核）腎疰腰痛，膀胱氣痛，腎冷。炒研，每溫酒服一錢，或酒煎服之（大明）。治酒風、鼻赤。炒研，每服一錢，胡桃肉一個，擂酒服，以知為度（宗奭）。小腸疝氣及陰核腫。\\n導胸膈逆氣，入厥陰，行肝氣，消腫散毒，乳癰脅痛，用之行經（震亨）。\\n\\n（橘肉）甘者潤肺，酸者聚痰（藏器）。止消渴，開胃，除胸中膈氣（大明）。\\n\\n（橘皮）胸中瘕熱逆氣，利水穀。久服去臭，下氣通神（《本經》）。下氣，止嘔咳，治氣沖胸中，吐逆霍亂，療脾不能消穀，止泄，除膀胱留熱停水，五淋，利小便，去寸白蟲（《別錄》）。清痰涎，治上氣咳嗽，開胃，主氣痢，破症瘕癖（甄權）。療嘔噦反胃嘈雜，時吐清水，痰痞瘧，大腸秘塞，婦人乳癰。入食料，解魚腥毒（時珍）。\\n\\n（青橘皮）氣滯，下食，破積結及膈氣（頌）。破堅癖，散滯氣，去下焦諸濕，治左脅肝經積氣（元素）。治胸膈氣逆，脅痛，小腹疝痛，消乳腫，疏肝膽，瀉肺氣（時珍）。\\n\\n（橘核）口渴、吐酒。炒熟，煎湯飲，甚效（大明）。\\n\\n【發明】時珍曰：橘皮，下氣消痰，其肉生痰聚飲，表裡之異如此，凡物皆然。今人以蜜煎橘充果食甚佳，亦可醬菹也。\\n\\n黃橘皮\\n杲曰：橘皮，氣薄味濃，陽中之陰也。可升可降，為脾、肺二經氣分藥。留白則補脾胃，去白則理肺氣；同白朮則補脾胃，同甘草則補肺，獨用則瀉肺損脾。其體輕浮，一能導胸中寒邪，二破滯氣，三益脾胃。加青皮減半用之，去滯氣，推陳致新。但多用久服，能損元氣也。\\n\\n原曰：橘皮，能散、能瀉、能溫、能補、能和，化痰治嗽，順氣理中，調脾快膈，通五淋，療酒病，其功當在諸藥之上。\\n\\n時珍曰：橘皮，苦能泄、能燥，辛能散，溫能和。其治百病，總是取其理氣燥濕之功。同補藥則補，同瀉藥則瀉，同升藥則升，同降藥則降。脾乃元氣之母，肺乃攝氣之籥，故橘皮為二經氣分之藥，但隨所配而補瀉升降也。潔古張氏云：陳皮、枳殼利其氣而痰自下，蓋此義也。同杏仁治大腸氣秘，同桃仁治大腸血秘，皆取其通滯也。詳見杏仁下。按方勺《泊宅編》云：橘皮……\",\n  \"translation\": \"**[Nomenclature]** Li Shizhen states: The character 橘 (jú) is phonetically formed from 矞 (yù, pron",
+      "_label": "橘 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】木奴。\n\n志曰︰柑，未經霜時猶酸，霜後甚甜，故名柑子。\n\n時珍曰︰漢李衡種柑於武陵洲上，號為木奴焉。\n\n【集解】炳曰︰乳柑出西戎者佳。\n\n志曰︰柑生嶺南及江南，樹似橘，實亦似橘而圓大，皮色生青熟黃赤。惟乳柑皮入藥，山\n\n藏器曰︰柑有朱柑、黃柑、乳柑、石柑、沙柑。橘有朱橘、乳橘、塌橘、山橘、黃淡子。此輩皮皆去氣調中，實俱堪食，就中以乳柑為上也。\n\n時珍曰︰柑，南方果也，而閩、廣、溫、台、蘇、撫、荊州為盛，川蜀雖有不及之。其樹無異於橘，但刺少耳。柑皮比橘色黃而稍濃，理稍粗而味不苦。橘可久留，柑易腐敗。柑樹畏冰雪，橘樹略可。此柑、橘之異也。柑、橘皮，今人多混用，不可不辨，詳見橘下。\n\n案︰韓彥直《橘譜》云︰乳柑，出溫州諸邑，惟泥山者為最，以其味似乳酪故名。彼人呼為真柑，似以它柑為假矣。其木婆娑，其葉纖長，其花香韻，其實圓正，膚理如澤蠟，其大六、七寸，其皮薄而味珍，脈不粘瓣，食不留滓，一顆僅二、三核，亦有全無者，擘之香霧 人，為柑中絕品也。生枝柑，形不圓，色青膚粗，味帶微酸，留之枝間，可耐久也，俟味變甘，乃帶葉折，故名。海紅柑，樹小而顆極大，有圍及尺者，皮濃色紅，可久藏，今獅頭柑亦是其",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Gan (Mandarin/Sweet Citrus) — Fruits, Chapter Two\",\n  \"original_text\": \"【釋名】木奴。\\n\\n志曰︰柑，未經霜時猶酸，霜後甚甜，故名柑子。\\n\\n時珍曰︰漢李衡種柑於武陵洲上，號為木奴焉。\\n\\n【集解】炳曰︰乳柑出西戎者佳。\\n\\n志曰︰柑生嶺南及江南，樹似橘，實亦似橘而圓大，皮色生青熟黃赤。惟乳柑皮入藥。\\n\\n藏器曰︰柑有朱柑、黃柑、乳柑、石柑、沙柑。橘有朱橘、乳橘、塌橘、山橘、黃淡子。此輩皮皆去氣調中，實俱堪食，就中以乳柑為上也。\\n\\n時珍曰︰柑，南方果也，而閩、廣、溫、台、蘇、撫、荊州為盛，川蜀雖有不及之。其樹無異於橘，但刺少耳。柑皮比橘色黃而稍濃，理稍粗而味不苦。橘可久留，柑易腐敗。柑樹畏冰雪，橘樹略可。此柑、橘之異也。柑、橘皮，今人多混用，不可不辨，詳見橘下。\\n\\n案︰韓彥直《橘譜》云︰乳柑，出溫州諸邑，惟泥山者為最，以其味似乳酪故名。彼人呼為真柑，似以它柑為假矣。其木婆娑，其葉纖長，其花香韻，其實圓正，膚理如澤蠟，其大六、七寸，其皮薄而味珍，脈不粘瓣，食不留滓，一顆僅二、三核，亦有全無者，擘之香霧噴人，為柑中絕品也。生枝柑，形不圓，色青膚粗，味帶微酸，留之枝間，可耐久也，俟味變甘，乃帶葉折，故名。海紅柑，樹小而顆極大，有圍及尺者，皮濃色紅，可久藏，今獅頭柑亦是其類也。洞庭柑，種出洞庭山，皮細味美，其熟最早也。甜柑，類洞庭而大，每顆必八瓣，不待霜而黃也。木柑，類洞庭，膚粗頑，瓣大而少液，故謂之木也。朱柑，類洞庭而大，色絕嫣紅，其味酸，人不重之。饅頭柑，近蒂起如饅頭尖，味香美也。\\n\\n【氣味】甘，大寒，無毒。頌曰︰冷。\\n\\n志曰︰多食令人肺冷生痰，脾冷發痼癖，大腸瀉利，發陰汗。\\n辛、甘，寒，無毒。\\n\\n時珍曰︰橘皮苦辛溫，柑皮辛甘寒。外形雖似，而氣味不同。\\n\\n詵曰︰多食令肺燥。\\n\\n【主治】利腸胃中熱毒，解丹石，止暴渴，利小便（《開寶》）。\\n下氣調中（藏器）。解酒毒及酒渴，去白，焙研末，點湯入鹽飲之（大明）。治產後肌浮，為末酒服（藏器）。傷寒飲食勞複者，濃煎汁服（時珍）。\\n\\n山柑皮︰治咽喉痛，效（《[ILLEGIBLE: source title cut off]》）。\\n\\n核\\n作塗面藥（《蘇頌》）。\\n\\n葉\\n耳流水或膿血。取嫩頭七個，入水數滴，杵取汁滴之，即愈（藺氏）。\",\n  \"translation\": \"**[Explanation of Names]** Alternative name: Mùnú [\\\"Wooden Slave/Servant\\\"].\\n\\nZhi [Maji] says: The gan [citrus fruit] is still sour before it has experienced frost; after frost it becomes very sweet, hence the name gānzi [\\\"sweet fruit\\\"].\\n\\nShizhen says: In the Han dynasty, Li Heng planted gan trees on an islet in Wuling and called them mùnú [\\\"wooden slaves,\\\" implying they served him as wealth].\\n\\n**[Collected Explanations]** Bing says: The rǔgān [\\\"milk gan\\\"] from the western frontier regions is the finest.\\n\\nZhi says: Gan grows in Lingnan [south of the Nanling Mountains] and Jiangnan [south of the Yangtze]. The tree resembles the jú [mandarin orange]; the fruit likewise resembles it but is rounder and larger. The rind is green when unripe and turns yellow-red when ripe. Only the rind of the rǔgān is used medicinally.\\n\\nZangqi [Chen Cangqi] says: Among the gan there are: zhūgān [scarlet gan], huánggān [yellow gan], rǔgān",
+      "_label": "柑 (果之二)"
+    },
+    {
+      "title_inferred": "Orange (Chéng) — Fruit Chapter Two",
+      "original_text": "【釋名】金球、鵠殼。\n\n時珍曰︰案︰陸佃《埤雅》云︰橙，柚屬也。可登而成之，故字從登。又諧聲也。\n\n【集解】志曰︰橙，樹似橘而葉大，其形圓，大於橘而香，皮濃而皺，八月熟。\n\n時珍曰︰橙產南土，其實似柚而香，葉有兩刻，缺如兩段，亦有一種氣臭者。柚乃柑屬之大者，早黃難留；橙乃橘屬之大者，晚熟耐久，皆有大小二種。案︰《事類合璧》云︰橙樹高枝，葉不甚類橘，亦有刺。其實大者如碗，頗似朱欒，經霜早熟，色黃皮濃，蹙衄如沸，香氣馥郁。其皮可以熏衣，可以㰼鮮，可以和菹醢，可以為醬齏，可以蜜煎，可以糖製為橙丁，可以蜜製為橙膏。嗅之則香，食之則美，誠佳果也。\n\n宗奭曰︰橙皮，今只以為果，或合湯待賓，未見入藥。宿酒未解者，食之速醒。\n\n【氣味】酸，寒，無毒。\n\n士良曰︰暖。多食傷肝氣，發虛熱。與獺肉同食，發頭旋惡心。\n\n時珍曰︰獺乃水獺之屬也。諸家本草皆作檳榔，誤矣。\n苦、辛，溫，無毒。\n\n【主治】洗去酸汁，切和鹽、蜜，煎成貯食，止惡心，能去胃中浮風惡氣（《開寶》）。\n\n行風氣，療癭氣，發瘰癧，殺魚、蟹毒（士良）。\n\n皮\n作醬、醋香美，散腸胃惡氣，消食下氣，去胃中浮風氣（《開寶》）。和鹽貯食，止惡心，解酒病（孟詵）。糖作橙丁，甘美，消痰下氣，利膈寬中，解酒（時珍）。\n面㾴粉刺，濕研，夜夜塗之（時珍）。",
+      "translation": "**[Names]** Golden Ball (金球), Hú Shell (鵠殼).\n\nLi Shizhen states: According to Lu Dian's *Piya* [Supplementary Elegance]: the orange [chéng 橙] belongs to the pomelo [yòu] category. It is said that it 'can be climbed upon to ripen' [a folk-etymological explanation], hence the character uses the element 登 (to ascend). It is also a phonetic compound.\n\n**[Collected Explanations]** [Su] Zhi states: The orange tree resembles the mandarin [jú] but has larger leaves. Its fruit is round, larger than the mandarin and more fragrant, with thick and wrinkled skin; it ripens in the eighth month.\n\nLi Shizhen states: Oranges grow in the southern regions. Their fruit resembles the pomelo and is fragrant; the leaves bear two notches, as if cut into two sections. There is also a variety whose aroma is unpleasant. The pomelo is the largest of the citrus [gān] family, turning yellow early and difficult to keep; the orange is the largest of the mandarin [jú] family, ripening late and lasting well — each has both large and small varieties. According to the *Shilei Hebi* [Classified Compendium of Affairs]: the orange tree has high branches; its leaves do not closely resemble those of the mandarin, and it also bears thorns. Its largest fruits are the size of a bowl, rather like the red luan [zhū luán, i.e., shaddock/pomelo variety]; they ripen early after frost, yellow in colour with thick skin, puckered and ridged like a boiling surface, and richly fragrant. The peel can be used to scent clothing, to wash fresh fish, to mix with pickled vegetables and meat sauces, to make seasoned pastes, to be simmered in honey, to be processed with sugar into orange strips [chéng dīng], or to be preserved with honey into orange paste [chéng gāo]. To smell it is delightful; to eat it is delicious — truly a fine fruit.\n\n[Kou] Zongshi states: Orange peel is today used only as a food, or combined into a drink to serve guests; it is not seen used as medicine. Those who have not yet sobered up from the previous night's drinking will recover quickly upon eating it.\n\n**[Flavour and Nature]** Sour, cold, non-toxic.\n\n[Meng] Shiliang states: [Also considered] warm. Excessive consumption injures the liver qi and brings on deficiency heat. Eaten together with otter flesh [獺肉], it causes dizziness and nausea.\n\nLi Shizhen states: The character [獺] refers to the river otter [water otter] family. All other materia medica works write it as 'areca nut' [檳榔], which is an error.\n[The peel is:] bitter, acrid, warm, non-toxic.\n\n**[Indications and Treatments]**\n\n*Fruit:* Wash away the sour juice, slice and combine with salt and honey, simmer and store for eating; [this] stops nausea and can expel the floating wind-evil qi from the stomach (Kaibao [Bencao]).\n\nPromotes the movement of wind qi, treats goitre [yǐng qi], disperses scrofula [luǒ lì], and neutralises the toxicity of fish and crab (Shiliang).\n\n*Peel:* Made into sauce or vinegar it is fragrant and pleasant; disperses evil qi from the intestines and stomach, aids digestion and directs qi downward, expels floating wind qi from the stomach (Kaibao [Bencao]). Preserved with salt and eaten, it stops nausea and relieves alcohol sickness (Meng Shen). Made with sugar into orange strips [chéng dīng], it is sweet and pleasant, dissolves phlegm and directs qi downward, benefits the diaphragm and relaxes the middle [burner], and relieves alcohol [intoxication] (Li Shizhen).\n\n*For facial blemishes and acne [粉刺]:* Grind [the peel] while moist and apply nightly (Li Shizhen).",
+      "entities_mentioned": [
+        {
+          "name": "橙 (chéng)",
+          "modern_identification": "Citrus sinensis (sweet orange) or Citrus aurantium (bitter/sour orange)",
+          "identification_confidence": "high",
+          "notes": "Described as the largest of the jú [mandarin] family, late-ripening, thick-skinned, and very fragrant. Both sweet and bitter orange species were known in Ming-dynasty China; the text likely encompasses both."
+        },
+        {
+          "name": "柚 (yòu)",
+          "modern_identification": "Citrus maxima (pomelo)",
+          "identification_confidence": "high",
+          "notes": "Described as the largest of the gān [citrus/mandarin] family, turning yellow early and difficult to keep."
+        },
+        {
+          "name": "朱欒 (zhū luán)",
+          "modern_identification": "Citrus maxima or a large pomelo/shaddock variety",
+          "identification_confidence": "medium",
+          "notes": "Used as a size comparison for the largest oranges."
+        },
+        {
+          "name": "橙丁 (chéng dīng)",
+          "modern_identification": "Candied/sugar-preserved orange peel strips",
+          "identification_confidence": "high",
+          "notes": "A preparation method: sugar-processing the peel into small strips."
+        },
+        {
+          "name": "橙膏 (chéng gāo)",
+          "modern_identification": "Honey-preserved orange paste",
+          "identification_confidence": "high",
+          "notes": "A preparation method: honey-preserving the peel into a paste."
+        },
+        {
+          "name": "獺 (tǎ) / 水獺",
+          "modern_identification": "Lutra lutra (Eurasian river otter)",
+          "identification_confidence": "high",
+          "notes": "Li Shizhen corrects earlier sources that mistakenly wrote 'areca nut' (檳榔) instead of 'otter' (獺) as the contraindicated food combination with orange."
+        },
+        {
+          "name": "癭氣 (yǐng qì)",
+          "modern_identification": "Goitre (thyroid enlargement)",
+          "identification_confidence": "high",
+          "notes": "Condition treated by the fruit of the orange."
+        },
+        {
+          "name": "瘰癧 (luǒ lì)",
+          "modern_identification": "Scrofula (tuberculous cervical lymphadenitis)",
+          "identification_confidence": "high",
+          "notes": "Condition for which the orange fruit is said to help disperse."
+        }
+      ],
+      "translator_notes": "1. The character rendered as '㰼' (wash/rinse fresh food) in the phrase '可以㰼鮮' is an uncommon character meaning to rinse or clean fresh fish/meat; translated contextually. 2. Li Shizhen's philological note correcting 獺 (otter) vs. 檳榔 (areca nut) is an important textual-critical remark preserved in translation. 3. The phrase '蹙衄如沸' (literally 'puckered and bleeding like boiling') is a vivid description of the orange peel's dimpled, bubbled surface texture — translated as 'puckered and ridged like a boiling surface.' 4. The character '面㾴粉刺' involves '㾴' (facial blemish/dark spot); OCR originally rendered this unclearly. 5. The two flavour entries (酸寒 for the fruit and 苦辛溫 for the peel) are distinguished in the original but run together; the translation explicitly labels which part is described.",
+      "_label": "橙 (果之二)"
+    },
+    {
+      "title_inferred": "Yòu (Pomelo / Citrus maxima) — Fruit Section II",
+      "original_text": "【釋名】（與柚同）、條（《爾雅》）、壺柑（《唐本》）、臭橙（《食性》）、朱欒。\n\n時珍曰︰柚，色油然，其狀如卣，故名。壺亦象形。今人呼其黃而小者為蜜筒，正此意也。其大者謂之朱欒，亦取團欒之象。最大者謂之香欒。《爾雅》謂之𣔼（音廢），又曰櫾（音賈）。《廣雅》謂之鐳柚，鐳亦壺也。《桂海志》謂之臭柚，皆一物。但以大小、古今方言稱呼不同耳。\n\n【集解】恭曰︰柚皮濃味甘，不似橘皮薄味辛而苦。其肉亦如橘，有甘有酸，酸者名壺柑。今俗人謂橙為柚，非矣。案︰《呂氏春秋》云︰果之美者，江浦之橘，云夢之柚。郭璞云︰柚出江南，似橙而實酢，大如橘。禹貢云︰揚州厥包橘、柚。孔安國云︰小曰橘，大曰柚，皆為柑也。\n\n頌曰︰閩中、嶺外、江南皆有柚，比橘黃，白色而大。襄、唐間柚，色青黃而實小。其味皆酢，皮濃，不堪入藥。\n\n時珍曰︰柚，樹、葉皆似橙。其實有大、小二種︰小者如柑、如橙；大者如瓜、如升，有圍及尺餘者，亦橙之類也。今人呼為朱欒，形色圓正，都類柑、橙。但皮濃而粗，其味甘，其氣臭，其瓣堅而酸惡不可食，其花甚香。南人種其核，長成以接柑、橘，云甚良也。蓋橙乃橘屬，故其皮皺濃而香，味苦而辛；柚乃柑屬，故其皮粗濃而臭，味甘而辛。如此分，柚與橙、橘自明矣。郭璞云︰櫾，大柚也。實大如盞，皮濃二、三寸，子似枳，食之少味。\n\n范成大云︰廣南臭柚大如瓜，可食，其皮甚濃，染墨打碑，可代氈刷，且不損紙也。《列子》云︰吳越之間有木焉，其名為櫾。碧樹而冬青，實丹而味酸。食其皮汁，已憤厥之疾。渡淮而北，化而為枳。此言地氣之不同如此。\n\n【氣味】酸，寒，無毒。\n甘、辛，平，無毒。\n\n【主治】消食，解酒毒，治飲酒人口氣，去腸胃中惡氣，療妊婦不思食、口淡（大明）。\n\n皮\n下氣。宜食，不入藥（弘景）。消食快膈，散憤懣之氣，化痰（時珍）。\n頭風痛，同蔥白搗，貼太陽穴（時珍）。\n\n花\n蒸麻油作香澤面脂，長發潤燥（時珍）。",
+      "translation": "**[Names and Nomenclature]**\nAlternate names: Tiáo [條] (Erya); Hú gān [壺柑, 'jar-orange'] (Tang Materia Medica); Chòu chéng [臭橙, 'stinking orange'] (Shí Xìng [Food Properties]); Zhūluán [朱欒].\n\nLi Shizhen says: The yòu [柚] has an oily [lustrous] appearance and its shape resembles a yǒu [卣, a type of ancient bronze vessel], hence the name. Hú [壺, 'jar'] is likewise a reference to its shape. People today call the smaller, yellow variety mì tǒng ['honey tube'], which carries the same sense. The larger variety is called zhūluán, also evoking its round, full shape. The very largest is called xiāng luán ['fragrant luán']. The Erya refers to it as 𣔼 (pronounced fèi) and also as 櫾 (pronounced jiǎ). The Guangya calls it léi yòu [鐳柚]—léi likewise meaning a jar or vessel. The Guìhǎi Zhì calls it chòu yòu ['stinking yòu']. All these names refer to the same fruit; the differences are merely due to size, era, and regional dialect.\n\n**[Collected Explanations]**\nSu Gong says: The yòu has a thick rind with a sweet flavour, unlike the thin, pungent, and bitter rind of the orange [júzi]. Its flesh is also like the orange, being either sweet or sour; the sour variety is called hú gān. Common people today call the orange a yòu, which is incorrect. According to the Lüshi Chunqiu: 'Among fine fruits are the oranges of Jiangpu and the yòu of Yunmeng.' Guo Pu says: 'The yòu comes from Jiangnan; it resembles the orange but its flesh is sour, and it is as large as an orange.' The Tribute of Yu [Shujing] states: 'The tribute of Yangzhou includes packages of oranges and yòu.' Kong Anguo comments: 'The small one is called jú [橘], the large one is called yòu [柚]; both are types of gān [柑, mandarin-orange].'\n\nSu Song says: The yòu is found in Minzhong, beyond the Nanling mountains, and throughout Jiangnan. It is larger than the orange, with a yellowish-white colour. The yòu of the Xiang and Tang regions is greenish-yellow and produces smaller fruits. All varieties are sour-tasting with a thick rind and are not suitable for medicinal use.\n\nLi Shizhen says: The yòu tree and its leaves both resemble the orange tree. The fruit comes in two sizes: the smaller kind resembles the gān [柑] or the orange; the larger kind resembles a melon or a shēng [升, a dry measure], with a circumference exceeding a foot—this too belongs to the orange family. People today call it zhūluán; it is round and regular in shape, much resembling the gān and the orange, but with a thick, coarse rind. Its flavour is sweet, its odour is pungent [lit. 'stinking'], its segments are firm and unpleasantly sour and inedible, yet its flowers are very fragrant. Southerners plant its seeds and grow the stock for grafting onto gān and jú, which is said to work very well. Now, the orange [chéng, 橙] belongs to the jú [橘] family—hence its rind is wrinkled, thick, and fragrant, with a bitter and pungent taste. The yòu belongs to the gān [柑] family—hence its rind is coarse, thick, and malodorous, with a sweet and pungent taste. By this distinction, the yòu, the orange [chéng], and the jú [橘] are readily told apart. Guo Pu says: 'The 櫾 is the large yòu. Its fruit is as large as a cup, its rind is two to three cun [inches] thick, its seeds resemble those of zhǐ [枳, trifoliate orange], and it has little flavour when eaten.'\n\nFan Chengda says: 'The stinking yòu [chòu yòu] of Guangnan is as large as a melon and is edible; its rind is very thick, and when soaked in ink and pressed on a stone inscription rubbing, it can substitute for a felt brush and does not damage the paper.' The Liezi states: 'Between Wu and Yue there is a tree called 櫾 [yòu]. Its leaves are deep green and evergreen in winter; its fruit is red and sour in flavour. Eating the juice of its rind cures the ailment of fènjué [憤厥, fainting from stifled rage/qi obstruction]. But once it crosses the Huai River northward, it transforms into zhǐ [枳].' This illustrates how greatly the character of the earth's qi may differ by region.\n\n**[Qi and Flavour]**\nSour, cold, non-toxic.\nSweet and pungent, balanced [平], non-toxic.\n\n**[Indications and Treatments]**\n*(Flesh)*\nPromotes digestion; resolves alcohol toxicity; treats bad breath in drinkers; expels noxious qi from the stomach and intestines; treats loss of appetite and bland taste in the mouth in pregnant women. (Da Ming)\n\n*(Rind)*\nDirects qi downward [descends rebellious qi]. Suitable as food; not used in medicine. (Hongjing [Tao Hongjing])\nPromotes digestion, clears and opens the diaphragm, disperses pent-up and depressed qi [fèn mèn], and resolves phlegm. (Li Shizhen)\n[For] wind headache [tóufēng tòng]: pound the rind together with scallion-white [cōng bái] and apply as a poultice to the tàiyáng acupoint [temples]. (Li Shizhen)\n\n*(Flower)*\nSteam with sesame oil to make a fragrant facial ointment [xiāng zé miàn zhī]: promotes hair growth and moistens dryness. (Li Shizhen)",
+      "entities_mentioned": [
+        {
+          "name": "柚 (yòu)",
+          "modern_identification": "Citrus maxima (pomelo)",
+          "identification_confidence": "high",
+          "notes": "The text clearly describes the large citrus fruit known today as the pomelo (Citrus maxima / Citrus grandis). Various size-based and regional synonyms are discussed at length."
+        },
+        {
+          "name": "朱欒 (zhūluán)",
+          "modern_identification": "Citrus maxima, large-fruited variety",
+          "identification_confidence": "high",
+          "notes": "Described as the large form of the yòu; Li Shizhen explicitly equates it with the yòu."
+        },
+        {
+          "name": "壺柑 (hú gān)",
+          "modern_identification": "Citrus maxima, sour variety",
+          "identification_confidence": "medium",
+          "notes": "Named as the sour-fleshed variant of the yòu."
+        },
+        {
+          "name": "橙 (chéng)",
+          "modern_identification": "Citrus sinensis or Citrus aurantium (orange)",
+          "identification_confidence": "high",
+          "notes": "Compared and contrasted with yòu throughout; Li Shizhen classifies it as belonging to the jú (橘) family."
+        },
+        {
+          "name": "橘 (jú)",
+          "modern_identification": "Citrus reticulata (mandarin / tangerine)",
+          "identification_confidence": "high",
+          "notes": "Referenced as a related fruit and grafting stock."
+        },
+        {
+          "name": "枳 (zhǐ)",
+          "modern_identification": "Citrus trifoliata / Poncirus trifoliata (trifoliate orange)",
+          "identification_confidence": "high",
+          "notes": "Cited in the Liezi quote and by Guo Pu as a comparison for the seeds, and as the form the yòu supposedly transforms into north of the Huai River."
+        },
+        {
+          "name": "柚 花 (yòu flower)",
+          "modern_identification": "Citrus maxima flower",
+          "identification_confidence": "high",
+          "notes": "Used cosmetically: steamed with sesame oil to make a fragrant facial and hair ointment."
+        },
+        {
+          "name": "柚 皮 (yòu rind)",
+          "modern_identification": "Citrus maxima pericarp",
+          "identification_confidence": "high",
+          "notes": "Used medicinally for digestion, qi stagnation, phlegm, and topically (with scallion-white) for wind headache applied to the temples."
+        }
+      ],
+      "translator_notes": "1. Several characters in the original appear to have been corrupted or are rare graphemes (e.g., 𣔼, 櫾); these have been restored based on context and standard references to the Erya and Guangya. They are marked with their reconstructed readings in the translation.\n2. The 'Qi and Flavour' section lists two sets of properties without specifying which part of the fruit each set applies to; the first (sour, cold) likely refers to the sour-fleshed variety or the flesh generally, the second (sweet-pungent, balanced) likely to the sweet variety. The original text is ambiguous.\n3. 'Fènjué' (憤厥) is rendered as 'fainting from stifled rage/qi obstruction,' a condition associated in classical Chinese medicine with extreme emotional suppression causing qi reversal.\n4. 'Tàiyáng acupoint' refers to the temporal region, a classical acupuncture/acupressure point for headache.\n5. The Liezi passage about the tree transforming into zhǐ north of the Huai River is a well-known classical allusion; it is faithfully reproduced here as Li Shizhen cites it to discuss the role of regional soil and climate.",
+      "_label": "柚 (果之二)"
+    },
+    {
+      "title_inferred": "Citron and Buddha's Hand (Gou Yuan / Fo Shou Gan)",
+      "original_text": "【釋名】香櫞（俗作圓）、佛手柑。\n\n時珍曰︰義未詳。佛手，取象也。\n\n【集解】藏器曰︰枸櫞生嶺南，柑、橘之屬也。其葉大，其實大如盞，味辛酸。\n\n頌曰︰今閩廣、江南皆有之，彼人呼為香櫞子。形長如小瓜狀，其皮若橙而光澤可愛，肉甚濃，白如蘿蔔而松虛。雖味短而香芬大勝，置衣笥中，則數日香不歇。寄至北方，人甚貴重。古作五和糝用之。\n\n時珍曰︰枸櫞產閩廣間。木似朱欒而葉尖長，枝間有刺。植之近水乃生。其實狀如人手，有指，俗呼為佛手柑。有長一尺四、五寸者。皮如橙柚而濃，皺而光澤。其色如瓜，生綠熟黃。其核細。其味不甚佳而清香襲人。南人雕鏤花鳥，作蜜煎果食。置之几案，可供玩。若安芋片於蒂而以濕紙圍護，經久不癟。或搗蒜罨其蒂上，則香更充溢。《異物志》云：浸汁浣葛，勝似酸漿也！\n\n皮瓤\n\n【氣味】辛、酸，無毒。弘景曰︰性溫。恭曰︰性冷。陶說誤矣。藏器曰︰性溫\n\n【主治】下氣，除心頭痰水（藏器）。煮酒飲，治痰氣咳嗽。煎湯，治心下氣痛（時珍）。\n\n根、葉\n同皮（《橘譜》）。",
+      "translation": "**[Explanation of Names]** Also called Xiang Yuan (commonly written as 圓, 'round'); and Fo Shou Gan [Buddha's Hand Citrus].\n\nLi Shizhen says: The precise meaning of the name 枸櫞 (Gou Yuan) is not entirely clear. The name 'Buddha's Hand' (Fo Shou) is derived from its resemblance in shape.\n\n**[Collected Explanations]** Chen Cangqi [Zangqi] says: Gou Yuan grows in Lingnan [southern China, south of the Nanling Mountains]. It belongs to the mandarin-orange and tangerine [citrus] family. Its leaves are large, its fruit is as large as a small cup, and its flavor is pungent and sour.\n\nSu Song [Song] says: It is found today in Fujian, Guangdong, and Jiangnan, where the locals call it Xiang Yuan Zi ['fragrant citron fruit']. It is elongated in shape, resembling a small melon. Its rind is like that of an orange but glossy and pleasing to the eye. The flesh is very thick, white like a radish, yet spongy and loose. Although its flavor is mild, its fragrance is greatly superior; when placed inside a clothes chest, the scent lingers for several days without fading. When sent to the northern regions, people hold it in high regard. In ancient times it was used as one of the ingredients in the Five-Harmony Relish [wu he san].\n\nLi Shizhen says: Gou Yuan is produced in the Fujian and Guangdong region. The tree resembles the Zhu Luan [pomelo] but has pointed, elongated leaves, and spines grow between the branches. It grows best when planted near water. The fruit is shaped like a human hand, with finger-like projections, and is commonly called Fo Shou Gan [Buddha's Hand Citrus]. Some specimens reach one chi four or five cun [approximately 45–50 cm] in length. The rind is like that of an orange or citron but thicker, wrinkled, and glossy. In color it resembles a melon: green when unripe, yellow when ripe. The seeds are small. The flavor is not particularly fine, but the clear fragrance is captivating. People of the south carve flowers and birds into its surface and prepare it as a candied confection. Placed on a table or desk, it can serve as an ornament. If a slice of taro is placed at the stem end and wrapped with damp paper, the fruit will remain plump for a long time without shriveling. Alternatively, pounding garlic and applying it over the stem end will make the fragrance even more abundant. The Yiwu Zhi [Record of Strange Things] states: 'Soaking [the fruit] and using the juice to wash kudzu cloth is superior to using sour slurry [suan jiang]!'\n\n**Rind and Flesh [Pi Rang]**\n\n**[Qi and Flavor]** Pungent, sour; non-toxic. Tao Hongjing says: Warm in nature. Su Gong [Kong] says: Cold in nature; Tao's account is mistaken. Chen Cangqi says: Warm in nature.\n\n**[Indications and Treatment]** Descends qi [regulates the flow of vital energy downward]; eliminates phlegm and water accumulation around the heart [epigastric region] (Chen Cangqi). Simmered in wine and drunk, it treats cough due to phlegm-qi obstruction. Decocted into a soup, it treats qi pain below the heart [epigastric pain] (Li Shizhen).\n\n**Root and Leaves**\nSame [therapeutic use] as the rind (as recorded in the Ju Pu [Treatise on Citrus]).",
+      "entities_mentioned": [
+        {
+          "name": "枸櫞 (Gou Yuan) / 香櫞 (Xiang Yuan)",
+          "modern_identification": "Citrus medica L. (citron)",
+          "identification_confidence": "high",
+          "notes": "The general term 枸櫞/香櫞 refers to the citron. The text describes both the standard citron form and the finger-like cultivar known as Buddha's Hand."
+        },
+        {
+          "name": "佛手柑 (Fo Shou Gan)",
+          "modern_identification": "Citrus medica var. sarcodactylis (Buddha's Hand citron)",
+          "identification_confidence": "high",
+          "notes": "Described as having finger-like projections resembling a human hand. This is a well-known cultivar of Citrus medica and is still used in traditional Chinese medicine and as an ornamental."
+        },
+        {
+          "name": "朱欒 (Zhu Luan)",
+          "modern_identification": "Citrus maxima (pomelo)",
+          "identification_confidence": "medium",
+          "notes": "Used as a morphological comparator for the tree's appearance."
+        },
+        {
+          "name": "五和糝 (Wu He San)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "An ancient relish or condiment preparation involving five ingredients; the exact recipe is unclear from this context."
+        }
+      ],
+      "translator_notes": "1. The text conflates two closely related plants — the common citron (Citrus medica) and the Buddha's Hand cultivar (Citrus medica var. sarcodactylis) — treating them under a single entry, which reflects the period understanding. Modern botany distinguishes them as varieties of the same species.\n2. 'Heart area' (心頭, 心下) in therapeutic indications refers to the epigastric region, not the cardiac organ per se, consistent with classical Chinese medical terminology.\n3. The disagreement between Tao Hongjing (warm) and Su Gong (cold) regarding thermal nature reflects a common pattern of doctrinal dispute in the Bencao tradition; Li Shizhen does not resolve it explicitly here.\n4. The citation from 《異物志》 (Yiwu Zhi, 'Record of Strange Things') refers likely to the text attributed to Yang Fu of the Han/Three Kingdoms period, concerning wonders of the southern regions.\n5. The OCR rendered '-{几}-案' and '-{云}-' with formatting artifacts; these have been silently corrected to 几案 and 云 respectively, as the intended characters are unambiguous in context.",
+      "_label": "枸櫞 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】金柑（《橘譜》）、盧橘（《漢書》）、夏橘（《廣州記》）、山橘（《北戶錄》）、給客橙（《魏王花木志》）。\n\n時珍曰︰此橘生時青盧色，黃熟則如金，故有金橘、盧橘之名。盧，黑色也。或云盧，酒器之名，其形肖之故也。注《文選》者以枇杷為盧橘，誤矣。案︰司馬相如《上林賦》云︰盧橘夏熟，枇杷 柿。以二物並列，則非一物明矣。此橘夏冬相繼，故云夏熟，而裴淵《廣州記》謂之夏橘。給客橙者，其芳香如橙，可供給客也。\n\n【集解】時珍曰︰金橘，生吳粵、江浙、川廣間。或言出營道者為冠，而江浙者皮甘肉酸，次之。其樹似橘，不甚高碩。五月開白花結實，秋冬黃熟，大者徑寸，小者如指頭，形長而皮堅，肌理細瑩，生則深綠色，熟乃黃如金。其味酸甘，而芳香可愛，糖造、蜜煎皆佳。案︰《魏王花木志》云︰蜀之成都、臨邛、江源諸處，有給客橙，一名盧橘。似橘而非，若柚而香。夏冬花實常相繼，或如彈丸，或如櫻桃，通歲食之。又劉恂《嶺表錄異》云︰山橘子大如土瓜，次如彈丸，小樹綠葉，夏結冬熟，金色薄皮而味酸，偏能破氣。容、廣人連枝藏之，入膾醋尤加香美。韓彥直《橘譜》云︰金柑出江西，北人不識。景 中始至汴都，因溫成皇後嗜之，價遂貴重。藏綠豆中可經",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Jinjú (Gold Citrus / Kumquat) — Fruits, Chapter 2\",\n  \"original_text\": \"【釋名】金柑（《橘譜》）、盧橘（《漢書》）、夏橘（《廣州記》）、山橘（《北戶錄》）、給客橙（《魏王花木志》）。\\n\\n時珍曰︰此橘生時青盧色，黃熟則如金，故有金橘、盧橘之名。盧，黑色也。或云盧，酒器之名，其形肖之故也。注《文選》者以枇杷為盧橘，誤矣。案︰司馬相如《上林賦》云︰盧橘夏熟，枇杷柿。以二物並列，則非一物明矣。此橘夏冬相繼，故云夏熟，而裴淵《廣州記》謂之夏橘。給客橙者，其芳香如橙，可供給客也。\\n\\n【集解】時珍曰︰金橘，生吳粵、江浙、川廣間。或言出營道者為冠，而江浙者皮甘肉酸，次之。其樹似橘，不甚高碩。五月開白花結實，秋冬黃熟，大者徑寸，小者如指頭，形長而皮堅，肌理細瑩，生則深綠色，熟乃黃如金。其味酸甘，而芳香可愛，糖造、蜜煎皆佳。案︰《魏王花木志》云︰蜀之成都、臨邛、江源諸處，有給客橙，一名盧橘。似橘而非，若柚而香。夏冬花實常相繼，或如彈丸，或如櫻桃，通歲食之。又劉恂《嶺表錄異》云︰山橘子大如土瓜，次如彈丸，小樹綠葉，夏結冬熟，金色薄皮而味酸，偏能破氣。容、廣人連枝藏之，入膾醋尤加香美。韓彥直《橘譜》云︰金柑出江西，北人不識。景祐中始至汴都，因溫成皇後嗜之，價遂貴重。藏綠豆中可經時不變，蓋橘性熱、豆性涼也。又有山金柑，一名山金橘，俗名金豆。木高尺許，實如櫻桃，內只一核。俱可蜜漬，香味清美。以上諸說，皆指今之金橘，但有一類數種之異耳。\\n\\n【氣味】酸、甘，溫，無毒。\\n\\n【主治】下氣快膈，止渴解酲，辟臭。皮尤佳（時珍）。\",\n  \"translation\": \"**Names and Nomenclature**\\nAlso known as: Jīngān [Gold Mandarin] (《橘譜》 *Jú Pǔ / Treatise on Citrus*); Lú jú [Dark/Vessel Citrus] (《漢書》 *Book of Han*); Xià jú [Summer Citrus] (《廣州記》 *Guangzhou Records*); Shān jú [Mountain Citrus] (《北戶錄》 *Běihù Records*); Jǐkè chéng [Guest-Serving Orange] (《魏王花木志》 *Prince Wei's Treatise on Trees and Flowers*).\\n\\nLi Shizhen states: When this citrus is unripe it is a dark greenish-black [lú] color; when fully ripe it turns golden, hence the names Jīn jú [Gold Citrus] and Lú jú. The character *lú* means the color black. Alternatively, some say *lú* is the name of a type of wine vessel, and the fruit resembles its shape. Commentators on the *Wénxuǎn* [Selections of Refined Literature] who identify *lú jú* as loquat [pípá] are mistaken. According to Sima Xiangru's *Shànglín Fù* [Rhapsody on the Shanglin Park]: \"The lú jú ripens in summer; loquats and persimmons...\" — since the two are listed side by side, it is clear they are not the same thing. This citrus fruits successively through summer and winter, hence the description \"summer-ripening,\" and Pei Yuan's *Guangzhou Records* calls it the Summer Citrus. The name Jǐkè chéng [Guest-Serving Orange] derives from its fragrance resembling that of the orange, maki",
+      "_label": "金橘 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】宗奭曰︰其葉形似琵琶，故名。\n\n【集解】頌曰︰枇杷，舊不著所出州土，今襄、漢、吳、蜀、閩、嶺、江西南、湖南北皆有之。木高丈餘，肥枝長葉，大如驢耳，背有黃毛，陰密婆娑可愛，四時不凋。盛冬開白花，至三、四月成實作 ，生大如彈丸，熟時色如黃杏，微有毛，皮肉甚薄，核大如茅栗，黃褐色。四月採葉，曝乾用。\n\n時珍曰︰案︰郭義恭《廣志》云︰枇杷易種，葉微似栗，冬花春實。其子簇結有毛，四月熟，大者如雞子，小者如龍眼，白者為上，黃者次之。無核者名焦子，出廣州。又楊萬里詩云︰大葉聳長耳，一枝堪滿盤。荔枝分與核，金橘卻無酸。頗盡其狀。注《文選》者以枇杷為盧橘，誤矣。詳金橘。\n\n實\n\n【氣味】甘、酸，平，無毒。\n\n志曰︰寒。詵曰︰溫。多食發痰熱，傷脾。同炙肉及熱面食，令人患熱毒黃疾。\n苦，平，無毒。\n\n權曰︰甘、微辛。弘景曰︰煮汁飲之，則小冷。\n\n【主治】止渴下氣，利肺氣，止吐逆，主上焦熱，潤五臟（大明）。\n\n葉\n猝 不止，下氣，煮汁服（《別錄》）。弘景曰︰若不暇煮，但嚼汁咽，亦瘥）。治嘔噦不止，婦人產後口乾（大明）。煮汁飲，主渴疾，治肺氣熱嗽，及肺風瘡，胸面上瘡\n頭風，鼻流清涕。辛夷等分，研末，酒服",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Loquat (Pipa / Eriobotrya japonica) — Fruit Section Two\",\n  \"original_text\": \"【釋名】宗奭曰︰其葉形似琵琶，故名。\\n\\n【集解】頌曰︰枇杷，舊不著所出州土，今襄、漢、吳、蜀、閩、嶺、江西南、湖南北皆有之。木高丈餘，肥枝長葉，大如驢耳，背有黃毛，陰密婆娑可愛，四時不凋。盛冬開白花，至三、四月成實作簇，生大如彈丸，熟時色如黃杏，微有毛，皮肉甚薄，核大如茅栗，黃褐色。四月採葉，曝乾用。\\n\\n時珍曰︰案︰郭義恭《廣志》云︰枇杷易種，葉微似栗，冬花春實。其子簇結有毛，四月熟，大者如雞子，小者如龍眼，白者為上，黃者次之。無核者名焦子，出廣州。又楊萬里詩云︰大葉聳長耳，一枝堪滿盤。荔枝分與核，金橘卻無酸。頗盡其狀。注《文選》者以枇杷為盧橘，誤矣。詳金橘。\\n\\n實\\n\\n【氣味】甘、酸，平，無毒。\\n\\n志曰︰寒。詵曰︰溫。多食發痰熱，傷脾。同炙肉及熱面食，令人患熱毒黃疾。\\n\\n葉\\n\\n苦，平，無毒。\\n\\n權曰︰甘、微辛。弘景曰︰煮汁飲之，則小冷。\\n\\n【主治】止渴下氣，利肺氣，止吐逆，主上焦熱，潤五臟（大明）。\\n\\n葉\\n\\n猝噦不止，下氣，煮汁服（《別錄》）。弘景曰︰若不暇煮，但嚼汁咽，亦瘥）。治嘔噦不止，婦人產後口乾（大明）。煮汁飲，主渴疾，治肺氣熱嗽，及肺風瘡，胸面上瘡。\\n\\n頭風，鼻流清涕。辛夷等分，研末，酒服二錢，日二服（時珍）。\\n\\n木白皮\\n\\n生嚼咽汁，止吐逆不下食，煮汁冷服，尤佳（思邈）。\\n\\n【發明】時珍曰︰枇杷葉，氣薄味濃，陽中之陰。治肺胃之病，大都取其下氣之功耳。\\n\\n氣下則火降痰順，而逆者不逆，嘔者不嘔，渴者不渴，咳者不咳矣。\\n\\n宗奭曰︰治肺熱嗽甚有功。一婦人患肺熱久嗽，身如火炙，肌瘦將成癆。以枇杷葉、木通、款冬花、紫菀、杏仁、桑白皮各等分，大黃減半。如常治訖，為末，蜜丸櫻桃大。食後、夜臥各含化一丸，未終劑而愈矣。\",\n  \"translation\": \"**Explanation of the Name**\\nKou Zongshi [Bkou Zongshi] states: The leaves resemble the shape of a pipa [lute], hence the name.\\n\\n**Collected Explanations**\\nSu Song states: The loquat [pipa] was not previously recorded by the region of its origin, but today it is found in Xiang, Han, Wu, Shu, Min, Ling, the south of Jiangxi, and both north and south of Hunan. The tree grows more than one zhang [~3 m] tall, with stout branches and long leaves as large as a donkey's ears; the underside of the leaves is covered with yellow down. The dense, gracefully spreading canopy is delightful to behold, and the tree does not shed its leaves in any season. In the depths of winter it bears white flowers; by the third or fourth month the fruit forms in clusters. The unripe fruit is as large as a musket ball; when ripe it is the colour of a yellow apricot, slightly hairy, with very thin skin and flesh, and a stone as large as a cogongrass chestnut [茅栗], yellowish-brown in colour. Leaves are gathered in the fourth month and dried in the sun for use.\\n\\nLi Shizhen states: According to Guo Yigong's Guangzhi [Broad Records]: the l",
+      "_label": "枇杷 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】子（音求）。\n\n時珍曰︰其形如水楊子而味似梅，故名。段氏《北戶錄》名 子。揚州人呼白楊梅為聖僧。\n\n【集解】志曰︰楊梅，生江南、嶺南山谷。樹若荔枝樹，而葉細陰青。子形似水楊子，而生青熟紅，肉在核上，無皮殼。四月、五月採之。南人腌藏為果，寄至北方。\n\n時珍曰︰楊梅樹葉如龍眼及紫瑞香，冬月不凋。二月開花結實，形如楮實子，五月熟，有紅、白、紫三種，紅勝於白，紫勝於紅，顆大而核細，鹽藏、蜜漬、糖收皆佳。東方朔《林邑記》云︰邑有楊梅，其大如杯碗，青時極酸，熟則如蜜。用以釀酒，號為梅香酎，甚珍重之。贊寧《物類相感志》云︰桑上接楊梅則不酸。楊梅樹生癩，以甘草釘釘之則無。皆物理之妙也。\n\n藏器曰︰張華《博物志》言地瘴處多生楊梅，驗之信然。\n\n實\n\n【氣味】酸、甘，溫，無毒。\n\n詵曰︰熱，微毒。久食令人發熱，損齒及筋。忌生蔥同食。\n\n瑞曰︰發瘡致痰。\n\n【主治】鹽藏食，去痰止嘔噦，消食下酒。乾作屑，臨飲酒時服方寸匕，止吐酒（《開寶》）。止渴，和五臟，能滌腸胃，除煩憒惡氣。燒灰服，斷下痢，甚驗。鹽者常含一枚，咽汁，利五臟下氣（詵）。\n腳氣。\n\n時珍曰︰案，王明清《揮塵錄》云︰會稽楊梅為天下冠。童貫",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Chinese Bayberry (Yangmei) — Fruit Section Two\",\n  \"original_text\": \"【釋名】䴡子（音求）。\\n\\n時珍曰︰其形如水楊子而味似梅，故名。段氏《北戶錄》名䴡子。揚州人呼白楊梅為聖僧。\\n\\n【集解】志曰︰楊梅，生江南、嶺南山谷。樹若荔枝樹，而葉細陰青。子形似水楊子，而生青熟紅，肉在核上，無皮殼。四月、五月採之。南人腌藏為果，寄至北方。\\n\\n時珍曰︰楊梅樹葉如龍眼及紫瑞香，冬月不凋。二月開花結實，形如楮實子，五月熟，有紅、白、紫三種，紅勝於白，紫勝於紅，顆大而核細，鹽藏、蜜漬、糖收皆佳。東方朔《林邑記》云︰邑有楊梅，其大如杯碗，青時極酸，熟則如蜜。用以釀酒，號為梅香酎，甚珍重之。贊寧《物類相感志》云︰桑上接楊梅則不酸。楊梅樹生癩，以甘草釘釘之則無。皆物理之妙也。\\n\\n藏器曰︰張華《博物志》言地瘴處多生楊梅，驗之信然。\\n\\n實\\n\\n【氣味】酸、甘，溫，無毒。\\n\\n詵曰︰熱，微毒。久食令人發熱，損齒及筋。忌生蔥同食。\\n\\n瑞曰︰發瘡致痰。\\n\\n【主治】鹽藏食，去痰止嘔噦，消食下酒。乾作屑，臨飲酒時服方寸匕，止吐酒（《開寶》）。止渴，和五臟，能滌腸胃，除煩憒惡氣。燒灰服，斷下痢，甚驗。鹽者常含一枚，咽汁，利五臟下氣（詵）。\\n腳氣。\\n\\n時珍曰︰案，王明清《揮塵錄》云︰會稽楊梅為天下冠。童貫苦腳氣，或云楊梅仁可治之。郡守王嶷饋五十石，貫用之而愈。取仁法︰以柿漆拌核曝之，則自裂出也。\\n\\n樹皮及根\\n煎湯，洗惡瘡疥癬（大明）。煎水，漱牙痛。服之，解砒毒。\\n\\n燒灰油調，塗湯火傷。\",\n  \"translation\": \"**[Nomenclature]** Also called Qiuzi [䴡子, pronounced 'qiu'].\\n\\nLi Shizhen states: Its shape resembles the fruit of the water willow [shuiyang] and its flavor is similar to the plum [mei], hence the name [yangmei, 'willow-plum']. Duan Gonglu's *Beihu Lu* calls it Qiuzi. The people of Yangzhou call the white variety 'Shengseng' [Holy Monk].\\n\\n**[Collected Commentaries]** [Su] Zhi states: Yangmei grows in the mountain valleys of Jiangnan and Lingnan. The tree resembles the lychee tree, with small, deep-green leaves. The fruit resembles the water-willow berry [shuiyang zi] in shape; it is green when unripe and turns red when ripe. The flesh sits directly on the pit with no outer skin or shell. It is harvested in the fourth and fifth months. Southerners pickle and preserve it as a fruit and send it to the north.\\n\\nLi Shizhen states: The leaves of the yangmei tree resemble those of the longan and the purple daphne [zi ruixiang], and they do not fall in winter. It flowers and sets fruit in the second month; the fruit resembles the fruit of the paper mulberry [chu shi zi]. It ripens in the fifth month and comes in three varieties: red, white, and purple. Red is superior to white, and purple is superior to red. The berries are large with small pits. Pres",
+      "_label": "楊梅 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】鶯桃（《禮注》）、含桃（《月令》）、荊桃。\n\n宗奭曰︰孟詵《本草》言︰此乃櫻，非桃也。雖非桃類，以其形肖桃，故曰櫻桃，又何疑焉？如沐猴梨、胡桃之類，皆取其形相似耳。《禮記》︰仲春，天子以含桃荐宗廟，即此。故王維詩云︰才是寢園春荐後，非幹御苑鳥銜殘。藥中不甚用。\n\n時珍曰︰其顆如瓔珠，故謂之櫻。而許慎作鶯桃，雲鶯所含食，故又曰含桃，亦通。案︰《爾雅》云︰楔（音戛），荊桃也。孫炎注云︰即今櫻桃。最大而甘者，謂之崖蜜。\n\n【集解】頌曰︰櫻桃，處處有之，而洛中者最勝。其木多陰，先百果熟，故古人多貴之。其實熟時深紅色者，謂之朱櫻。紫色，皮裡有細黃點者，謂之紫櫻，味最珍重。又有正黃明者，謂之蠟櫻。小而紅者，謂之櫻珠，味皆不及。極大者，有若彈丸，核細而肉濃，尤難得。\n\n時珍曰︰櫻桃樹不甚高。春初開白花，繁英如雪。葉團，有尖及細齒。結子一枝數十顆，三月熟時須守護，否則鳥食無遺也。鹽藏、蜜煎皆可，或同蜜搗作糕食，唐人以酪荐食之。林洪《山家清供》云︰櫻桃經雨則蟲自內生，人莫之見。用水浸良久，則蟲皆出，乃可食也。試之果然。\n\n【氣味】甘，熱，澀，無毒。大明曰︰平，微毒。多食令人吐。\n\n詵曰︰食多無損",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Cherry (Yīng Táo) — Fruit Section II\",\n  \"original_text\": \"【釋名】鶯桃（《禮注》）、含桃（《月令》）、荊桃。\\n\\n宗奭曰︰孟詵《本草》言︰此乃櫻，非桃也。雖非桃類，以其形肖桃，故曰櫻桃，又何疑焉？如沐猴梨、胡桃之類，皆取其形相似耳。《禮記》︰仲春，天子以含桃荐宗廟，即此。故王維詩云︰才是寢園春荐後，非幹御苑鳥銜殘。藥中不甚用。\\n\\n時珍曰︰其顆如瓔珠，故謂之櫻。而許慎作鶯桃，雲鶯所含食，故又曰含桃，亦通。案︰《爾雅》云︰楔（音戛），荊桃也。孫炎注云︰即今櫻桃。最大而甘者，謂之崖蜜。\\n\\n【集解】頌曰︰櫻桃，處處有之，而洛中者最勝。其木多陰，先百果熟，故古人多貴之。其實熟時深紅色者，謂之朱櫻。紫色，皮裡有細黃點者，謂之紫櫻，味最珍重。又有正黃明者，謂之蠟櫻。小而紅者，謂之櫻珠，味皆不及。極大者，有若彈丸，核細而肉濃，尤難得。\\n\\n時珍曰︰櫻桃樹不甚高。春初開白花，繁英如雪。葉團，有尖及細齒。結子一枝數十顆，三月熟時須守護，否則鳥食無遺也。鹽藏、蜜煎皆可，或同蜜搗作糕食，唐人以酪荐食之。林洪《山家清供》云︰櫻桃經雨則蟲自內生，人莫之見。用水浸良久，則蟲皆出，乃可食也。試之果然。\\n\\n【氣味】甘，熱，澀，無毒。大明曰︰平，微毒。多食令人吐。\\n\\n詵曰︰食多無損，但發虛熱耳。有暗風人不可食，食之立發。\\n\\n李鵬飛曰︰傷筋骨，敗血氣。有寒熱病患不可食。\\n甘，平，無毒。煮老鵝，易軟熟。\\n\\n【主治】調中，益脾氣，令人好顏色，美志（《別錄》）。止泄精、水穀痢（孟詵）。\\n蛇咬，搗汁飲，並敷之（頌）。\\n\\n東行根\\n煮汁服，立下寸白、蛔蟲（頌）。\\n\\n枝\\n雀卵斑，同紫萍、牙皂、白梅肉研和，日用洗面（時珍）。\\n\\n花\\n面黑粉滓（方見李花）。\\n\\n【發明】宗奭曰︰小兒食之過多，無不作熱。此果三月末、四月初熟，得正陽之氣，先諸果熟，故性熱也。\\n\\n震亨曰︰櫻桃屬火而有土，性大熱而發濕。舊有熱病及喘嗽者，得之立病，且有死者也。\\n\\n時珍曰︰案︰張子和《儒門事親》云︰舞水一富家有二子，好食紫櫻，每日啖一、二升。半月後，長者發肺痿，幼者發肺癰，相繼而死。嗚呼﹗百果之生，所以養人，非欲害人。富貴之家，縱其嗜欲取死，是何？天耶？命耶？邵堯夫詩云︰爽口物多終作疾。真格言哉﹗觀此，則寇、朱二氏之言，益可証矣。王維詩云︰飽食不須愁內熱，大官還有蔗漿寒。蓋謂寒物同食，猶可解其熱也。\\n\\n葉\",\n  \"translation\": \"**[Explanation of Names]** Yīng táo [cherry]; also called yīng táo [oriole peach] (Lǐ Zhù [Commentary on the Rites]); hán táo [contained peach] (Yuè Lìng [Monthly Ordinances]); jīng táo [Jing peach].\\n\\nKòu Zōngshì says: Mèng Shēn's Běncǎo states that this fruit is a cherry (yīng), not a peach (táo). Although it does not belong to the peach family, because its form resembles a peach it is called yīng táo — why should this be doubted? It is the same principle as with the mùhóu pear [macaque pear] and the hú táo [walnut]: all are named by resemblance of form. The Lǐjì [Book of Rites] records that in mid-spring the Son of Heaven offered hán táo at the ancestral temple — this is the very same fruit. Hence the poet Wáng Wéi wrote: 'Only after the spring offering at the garden of the sleeping palace, and not the remnants pecked by birds in the imperial garden.' It is not greatly used in medicine.\\n\\nLǐ Shízhē",
+      "_label": "櫻桃 (果之二)"
+    },
+    {
+      "title_inferred": "Mountain Cherry (Shān Yīng Táo) — Fruit Chapter II",
+      "original_text": "【釋名】朱桃（《別錄》）、麥櫻（《吳普》）、英豆（《別錄》）、李桃。\n\n詵曰︰此嬰桃俗名李桃，又名柰桃。前櫻桃名櫻，非桃也。\n\n【集解】《別錄》曰︰嬰桃實大如麥，多毛。四月採，陰乾。\n\n弘景曰︰櫻桃即今朱櫻，可煮食者。嬰桃形相似而實乖異，山間時有之，方藥不用。\n\n時珍曰︰樹如朱嬰，但葉長尖不團。子小而尖，生青熟黃赤，亦不光澤，而味惡不堪食。\n\n實\n\n【氣味】辛，平，無毒。\n\n【主治】止泄、腸澼，除熱，調中益脾氣，令人好顏色，美志（《別錄》）。止泄精（孟詵）。",
+      "translation": "**Names and Synonyms**\nAlso known as: Zhū Táo [Red Peach] (Bielu), Mài Yīng [Wheat Cherry] (Wu Pu), Yīng Dòu [Heroic Bean] (Bielu), and Lǐ Táo [Plum-Peach].\n\nMeng Shen states: This yīng táo is commonly called Lǐ Táo, and also Nài Táo. The previously discussed cherry (yīngtáo) is named yīng, not a peach at all.\n\n**Collected Explanations**\nThe Bielu states: The fruit of yīng táo is as large as a grain of wheat and heavily covered with hair. It is gathered in the fourth month and dried in the shade.\n\nTao Hongjing states: The cherry (yīngtáo) is what we now call the red cherry (zhū yīng), which can be cooked and eaten. The mountain cherry (yīng táo) resembles it in form but differs in substance; it is found from time to time in the hills, and is not used in prescriptions or medicines.\n\nLi Shizhen states: The tree resembles the red cherry, but its leaves are long and pointed rather than rounded. The fruit is small and pointed; it is green when unripe and turns yellow-red when ripe. It also lacks luster and has an unpleasant flavor, making it unfit to eat.\n\n**Fruit**\n\n*Flavor and Nature:* Acrid [xīn], neutral [píng], non-toxic.\n\n*Indications and Therapeutic Uses:* Stops diarrhea and intestinal dysentery [cháng pì]; eliminates heat; regulates the middle [jiāo] and supplements spleen qi; improves complexion; uplifts the spirit (Bielu). Stops seminal emission [xiè jīng] (Meng Shen).",
+      "entities_mentioned": [
+        {
+          "name": "山嬰桃 (Shān Yīng Táo) / 嬰桃",
+          "modern_identification": "Prunus tomentosa (Nanking cherry / downy cherry) or a closely related hairy-fruited Prunus species",
+          "identification_confidence": "medium",
+          "notes": "Distinguished from the cultivated cherry (朱櫻, Prunus pseudocerasus) by its small, hairy, dull-colored fruit and pointed leaves. The description of hairy fruit, wheat-grain size, and yellow-red coloration at ripeness is consistent with Prunus tomentosa or a related wild Prunus. Li Shizhen notes it is inedible and not used medicinally."
+        },
+        {
+          "name": "朱桃 (Zhū Táo)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Synonym listed in the Bielu; likely a descriptive color-based name for the same plant."
+        },
+        {
+          "name": "麥櫻 (Mài Yīng)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Synonym from Wu Pu; refers to the wheat-grain size of the fruit."
+        },
+        {
+          "name": "櫻桃 / 朱嬰 (Yīng Táo / Zhū Yīng)",
+          "modern_identification": "Prunus pseudocerasus (Chinese cherry)",
+          "identification_confidence": "high",
+          "notes": "Referenced as a distinct and better-known species for comparison; described as edible and the 'true' cherry of commerce."
+        }
+      ],
+      "translator_notes": "1. The source text reads '腸' followed by a gap that appears to be an OCR error; contextually this is almost certainly '腸澼' (cháng pì), a classical term for intestinal dysentery or bloody flux, and has been restored as such in both the cleaned text and translation.\n2. '美志' is rendered as 'uplifts the spirit' — literally 'beautifies the will/aspiration'; it may refer to a general sense of emotional well-being.\n3. Meng Shen (孟詵) refers to the Tang-dynasty physician and author of the Shiliao Bencao (Dietary Materia Medica). Tao Hongjing (弘景) refers to the Liang-dynasty scholar Tao Hongjing, commentator on the Shennong Bencao Jing.\n4. '柰桃' (Nài Táo) is an alternate folk name; 'nài' normally refers to a type of apple (Malus), suggesting possible popular confusion or broad use of fruit names in vernacular speech.",
+      "_label": "山嬰桃 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】白果（《日用》）、鴨腳子。\n\n時珍曰︰原生江南，葉似鴨掌，因名鴨腳。宋初始入貢，改呼銀杏，因其形似小杏而核色白也。今名白果。梅堯臣詩︰鴨腳類綠李，其名因葉高。歐陽修詩︰絳囊初入貢，銀杏貴中州。是矣。\n\n【集解】時珍曰︰銀杏生江南，以宣城者為勝。樹高二、三丈。葉薄縱理，儼如鴨掌形，有刻缺，面綠背淡。二月開花成簇，青白色，二更開花，隨即卸落，人罕見之。一枝結子百十，狀如楝子，經霜乃熟爛。去肉取核為果，其核兩頭尖，三棱為雄，二棱為雌。其仁嫩時綠色，久則黃。須雌雄同種，其樹相望，乃結實；或雌樹臨水亦可；或鑿一孔，內雄木一塊，泥之，亦結。陰陽相感之妙如此。其樹耐久，肌理白膩。術家取刻符印，云能召使也。\n\n《文選‧吳都賦》注︰平仲果，其實如銀。未知即此果否？\n\n核仁\n\n【氣味】甘、苦，平，澀，無毒。\n\n時珍曰︰熟食，小苦微甘，性溫有小毒。多食令人臚脹。\n\n瑞曰︰多食壅氣動風。小兒食多昏霍，發驚引疳。同鰻鱺魚食，患軟風。\n\n【主治】生食，引疳解酒，熟食益人（李鵬飛）。熟食，溫肺益氣，定喘嗽，縮小便，止白濁。生食，降痰，消毒殺蟲。嚼漿，塗鼻面手足，去 皴皺，及疥癬疳 陰虱（時珍）。\n\n【發明】",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Ginkgo (Bai Guo / Silver Apricot) — Fruit Section II\",\n  \"original_text\": \"【釋名】白果（《日用》）、鴨腳子。\\n\\n時珍曰︰原生江南，葉似鴨掌，因名鴨腳。宋初始入貢，改呼銀杏，因其形似小杏而核色白也。今名白果。梅堯臣詩︰鴨腳類綠李，其名因葉高。歐陽修詩︰絳囊初入貢，銀杏貴中州。是矣。\\n\\n【集解】時珍曰︰銀杏生江南，以宣城者為勝。樹高二、三丈。葉薄縱理，儼如鴨掌形，有刻缺，面綠背淡。二月開花成簇，青白色，二更開花，隨即卸落，人罕見之。一枝結子百十，狀如楝子，經霜乃熟爛。去肉取核為果，其核兩頭尖，三棱為雄，二棱為雌。其仁嫩時綠色，久則黃。須雌雄同種，其樹相望，乃結實；或雌樹臨水亦可；或鑿一孔，內雄木一塊，泥之，亦結。陰陽相感之妙如此。其樹耐久，肌理白膩。術家取刻符印，云能召使也。\\n\\n《文選‧吳都賦》注︰平仲果，其實如銀。未知即此果否？\\n\\n核仁\\n\\n【氣味】甘、苦，平，澀，無毒。\\n\\n時珍曰︰熟食，小苦微甘，性溫有小毒。多食令人臚脹。\\n\\n瑞曰︰多食壅氣動風。小兒食多昏霍，發驚引疳。同鰻鱺魚食，患軟風。\\n\\n【主治】生食，引疳解酒，熟食益人（李鵬飛）。熟食，溫肺益氣，定喘嗽，縮小便，止白濁。生食，降痰，消毒殺蟲。嚼漿，塗鼻面手足，去皴皺，及疥癬疳陰虱（時珍）。\\n\\n【發明】時珍曰︰銀杏，宋初始著名，而修本草者不收。近時方藥亦時用之。其氣薄味濃，性澀而收，色白屬金。故能入肺經，益肺氣，定喘嗽，縮小便。生搗能浣油膩，則其去痰濁之功，可類推矣。其花夜開，人不得見，蓋陰毒之物，故又能殺蟲消毒。然食多則收令太過，令人氣壅臚脹昏頓。故《物類相感志》言︰銀杏能醉人。而《三元延壽書》言︰白果食滿千個者死。又云︰昔有飢者，同以白果代飯食飽，次日皆死也。\",\n  \"translation\": \"**Names and Nomenclature**\\nAlternate names: Bai Guo [White Fruit] (from *Riyong* [Daily Use materia medica]); Yajiaozi [Duck-foot Seed].\\n\\nLi Shizhen states: The tree originally grew in the Jiangnan region. Its leaves resemble a duck's foot [webbed palm], hence the name Yajiao [Duck-foot]. At the beginning of the Song dynasty it was first presented as tribute, and was then renamed Yinxing [Silver Apricot], because its shape resembles a small apricot and its kernel is white. Today it is commonly called Bai Guo [White Fruit]. The poet Mei Yaochen wrote: \"The duck-foot resembles a green plum, its name derived from its lofty leaves.\" The poet Ouyang Xiu wrote: \"In crimson bags first offered as tribute, the silver apricot is prized throughout the Central Plains.\" These references confirm the name.\\n\\n**Collected Explanations**\\nLi Shizhen states: The ginkgo grows in Jiangnan; the finest specimens come from Xuancheng. The tree reaches two to three zhang [roughly 6–10 metres] in height. The leaves are thin with longitudinal veining, shaped exactly like a duck's palm, with notched margins, green on the upper surface and pale on the underside. In the second month [appro",
+      "_label": "銀杏 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】羌桃（《名物志》）、核桃。\n\n頌曰︰此果本出羌胡，漢時張騫使西域始得種還，植之秦中，漸及東土，故名之。\n\n時珍曰︰此果外有青皮肉包之，其形如桃，胡桃乃其核也。羌音呼核如胡，名或以此。\n\n或作核桃。《梵書》名播羅師。\n\n【集解】頌曰︰胡桃生北土，今陝、洛間甚多。大株濃葉多陰，實亦有房，秋冬熟時采之。出陳倉者，薄皮多肌；出陰平者，大而皮脆，急捉則碎。汴州雖有而實不佳，江表亦時有之，南方則無。\n\n時珍曰︰胡桃樹高丈許，春初生葉，長四、五寸，微似大青葉，兩兩相對，頗作惡氣。\n\n三月開花如栗花，穗蒼黃色。結實至秋如青桃狀，熟時漚爛皮肉，取核為果。\n\n人多以櫸柳接之。案劉恂《嶺表錄異》云︰南方有山胡桃，底平如檳榔，皮濃而大堅，多肉少穰。其殼甚濃，須椎之方破。然則南方亦有，但不佳耳。\n\n核仁\n\n【氣味】甘，平、溫，無毒。\n\n頌曰︰性熱，不可多食。\n\n思邈曰︰甘冷滑。多食動痰飲，令人惡心、吐水、吐食物。\n\n志曰︰多食動風，脫人眉。同酒食，多令人咯血。\n\n穎曰︰多食生痰、動腎火。\n辛，熱，有毒。\n苦，澀，無毒。\n\n【主治】食之令人肥健、潤肌、黑鬚髮。多食利小便、去五痔。搗和胡粉，拔白鬚髮，內孔中",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Walnut (Húttáo) — Fruit Chapter Two\",\n  \"original_text\": \"【釋名】羌桃（《名物志》）、核桃。\\n\\n頌曰︰此果本出羌胡，漢時張騫使西域始得種還，植之秦中，漸及東土，故名之。\\n\\n時珍曰︰此果外有青皮肉包之，其形如桃，胡桃乃其核也。羌音呼核如胡，名或以此。或作核桃。《梵書》名播羅師。\\n\\n【集解】頌曰︰胡桃生北土，今陝、洛間甚多。大株濃葉多陰，實亦有房，秋冬熟時采之。出陳倉者，薄皮多肌；出陰平者，大而皮脆，急捉則碎。汴州雖有而實不佳，江表亦時有之，南方則無。\\n\\n時珍曰︰胡桃樹高丈許，春初生葉，長四、五寸，微似大青葉，兩兩相對，頗作惡氣。三月開花如栗花，穗蒼黃色。結實至秋如青桃狀，熟時漚爛皮肉，取核為果。人多以櫸柳接之。案劉恂《嶺表錄異》云︰南方有山胡桃，底平如檳榔，皮濃而大堅，多肉少穰。其殼甚濃，須椎之方破。然則南方亦有，但不佳耳。\\n\\n核仁\\n\\n【氣味】甘，平、溫，無毒。\\n\\n頌曰︰性熱，不可多食。\\n\\n思邈曰︰甘冷滑。多食動痰飲，令人惡心、吐水、吐食物。\\n\\n志曰︰多食動風，脫人眉。同酒食，多令人咯血。\\n\\n穎曰︰多食生痰、動腎火。辛，熱，有毒。苦，澀，無毒。\\n\\n【主治】食之令人肥健、潤肌、黑鬚髮。多食利小便、去五痔。搗和胡粉，拔白鬚髮，內孔中，則生黑毛。燒存性，和松脂研，敷瘰癧瘡（《開寶》）。食之令人能食，通潤血脈，骨肉細膩（詵，方見下）。治損傷、石淋。同破故紙蜜丸服，補下焦（頌）。補氣養血，潤燥化痰，益命門，利三焦，溫肺潤腸，治虛寒喘嗽，腰腳重痛，心腹疝痛，血痢腸風，散腫毒，發痘瘡，製銅毒（時珍）。\\n\\n油胡桃\\n殺蟲攻毒，治癰腫、癘風、疥癬、楊梅、白禿諸瘡，潤鬚髮（時珍）。染髭及帛，皆黑。\\n\\n志曰︰仙方取青皮壓油，和詹糖香，塗毛發，色如漆也。止水痢。春月斫皮汁，沐頭至黑。煎水，可染褐（《開寶》）。燒存性，入下血、崩中藥（時珍）。\\n\\n【發明】震亨曰︰胡桃屬土而有火，性熱。本草云甘平，是無熱矣。然又云動風、脫人眉，非熱何以傷肺耶？\\n\\n時珍曰︰胡桃仁味甘氣熱，皮澀肉潤。孫真人言其冷滑，誤矣。近世醫方用治痰氣喘嗽、醋心及癘風諸病，而酒家往往醉後嗜之。則食多吐水、吐食、脫眉，及酒同食咯血之說，亦未必盡然也。但胡桃性熱，能入腎肺，惟虛寒者宜之。而痰火積熱者，不宜多食耳。\\n\\n韓曰︰破故紙屬火，能使心包與命門之火相通。胡桃屬木，主潤血養血。血屬陰，陰惡燥，故油以潤之。佐破故紙，有木火相生之妙。故古有云︰黃柏無知母，破故紙無胡桃，猶水母之無蝦也。\\n\\n時珍曰︰三焦者，元氣之別使。命門者，三焦之本原。蓋一原一委也。命門指所居之腑而名，為藏精系胞之物。三焦指分治之部而名，為出納腐熟之司。蓋一以體名，一以用名。其體非脂非肉，白膜裹之，在七節之旁，兩腎之間。二系著脊，下通二腎，上通心肺，貫屬於腦。為生命之原，相火之主，精氣之腑。人物皆有之，生人生物\",\n  \"translation\": \"**[Names and Nomenclature]**\\nAlso called Qiáng táo [Qiang peach] (as recorded in the *Míngwù zhì* [Record of Names and Things]) and hé táo [kernel peach / walnut].\\n\\nSòng [Su Song] states: This fruit originally came from the Qiang and Hu [northwestern barbarian] regions. During the Han dynasty, Zhang Qian, on his diplomatic mission to the Western Regions, first obtained the seeds and brought them back. They were planted in the Qin [Shaanxi] heartland and gradually spread eastward — hence the name.\\n\\nShízhēn [Li Shizhen] states: This fruit is enclosed in an outer green fleshy husk, and its overall form resembles a peach [táo]; the hú táo [walnut] is specifically the kernel [hé] inside. In the Qiang dialect, ",
+      "_label": "胡桃 (果之二)"
+    },
+    {
+      "title_inferred": "[PARSE ERROR]",
+      "original_text": "【釋名】KT （古榛字）。\n\n時珍曰︰案︰羅氏《爾雅翼》云︰《禮記》鄭玄注云︰關中甚多此果。關中，秦地也。\n\n榛之從秦，蓋取此意。《左傳》云︰女贄不過榛、栗、棗、 ，以告虔也。則榛有臻至之義，以其名告己之虔也。古作KT ，從辛，從木。俗作莘，誤矣。莘，音詵。\n\n【集解】志曰︰榛生遼東山谷。樹高丈許。子如小栗，軍行食之當糧。中土亦有。鄭玄云︰關中 、坊甚多。\n\n頌曰︰桂陽有KT 而叢生，實大如杏子中仁，皮子形色與栗無異，但小耳。\n\n大明曰︰新羅榛子肥白，最良。\n\n時珍曰︰榛樹低小如荊，叢生。冬末開花如櫟花，成條下垂，長二、三寸。二月生葉如初生櫻桃，葉多皺紋而有細齒及尖。其實作苞，三、五相粘，一苞一實。實如櫟實，下壯上銳，生青熟褐，其殼濃而堅，其仁白而圓，大如杏仁，亦有皮尖，然多空者，故諺云十榛九空。按︰陸機《詩疏》云︰榛有兩種︰一種大小、枝葉、皮樹皆如栗，而子小，形如橡子，味亦如栗，枝莖可以為燭，《詩》所謂樹之榛栗者也；一種高丈餘，枝葉如木蓼，子作胡桃味，遼、代、上黨甚多\n\n仁\n\n【氣味】甘，平，無毒。\n\n【主治】益氣力，實腸胃，令人不飢、健行（《開寶》）。止飢，調中開胃，甚驗（大明）",
+      "translation": "[Failed to parse model output as JSON]",
+      "entities_mentioned": [],
+      "translator_notes": "{\n  \"title_inferred\": \"Hazelnut (Zhen) — Fruit Chapter Two\",\n  \"original_text\": \"【釋名】榛（古榛字）。\\n\\n時珍曰︰案︰羅氏《爾雅翼》云︰《禮記》鄭玄注云︰關中甚多此果。關中，秦地也。榛之從秦，蓋取此意。《左傳》云︰女贄不過榛、栗、棗、脩，以告虔也。則榛有臻至之義，以其名告己之虔也。古作榛，從辛，從木。俗作莘，誤矣。莘，音詵。\\n\\n【集解】志曰︰榛生遼東山谷。樹高丈許。子如小栗，軍行食之當糧。中土亦有。鄭玄云︰關中、坊甚多。\\n\\n頌曰︰桂陽有榛而叢生，實大如杏子中仁，皮子形色與栗無異，但小耳。\\n\\n大明曰︰新羅榛子肥白，最良。\\n\\n時珍曰︰榛樹低小如荊，叢生。冬末開花如櫟花，成條下垂，長二、三寸。二月生葉如初生櫻桃，葉多皺紋而有細齒及尖。其實作苞，三、五相粘，一苞一實。實如櫟實，下壯上銳，生青熟褐，其殼濃而堅，其仁白而圓，大如杏仁，亦有皮尖，然多空者，故諺云十榛九空。按︰陸機《詩疏》云︰榛有兩種︰一種大小、枝葉、皮樹皆如栗，而子小，形如橡子，味亦如栗，枝莖可以為燭，《詩》所謂樹之榛栗者也；一種高丈餘，枝葉如木蓼，子作胡桃味，遼、代、上黨甚多。\\n\\n仁\\n\\n【氣味】甘，平，無毒。\\n\\n【主治】益氣力，實腸胃，令人不飢、健行（《開寶》）。止飢，調中開胃，甚驗（大明）。\",\n  \"translation\": \"**Nomenclature**\\nThe ancient written form of 榛 [zhēn, hazelnut] is [an archaic character combining 辛 and 木].\\n\\nLi Shizhen [時珍] states: According to Luo's [Luo Yuan's] *Erya Yi* [Expanded Erya]: Zheng Xuan's commentary on the *Liji* [Book of Rites] states that this fruit is very abundant in Guanzhong [the Wei River basin region]. Guanzhong is the land of Qin [the ancient state of Qin]. The character 榛 [zhēn] incorporating 秦 [Qin] likely derives from this association. The *Zuozhuan* states: \"Gifts presented by a woman consist of no more than hazelnuts [zhēn], chestnuts [lì], dates [zǎo], and dried meat [xiū], expressing sincerity.\" Thus 榛 carries the meaning of \"arriving in full earnestness [臻至],\" the name conveying one's own devotion and sincerity. In antiquity the character was written with the components 辛 and 木. The popular variant writing 莘 (pronounced shēn) is incorrect.\\n\\n**Collected Explanations**\\n[Su] Zhi states: The hazelnut grows in the mountain valleys of Liaodong. The tree reaches about one zhang [~3 m] in height. The nuts resemble small chestnuts; armies on the march eat them in place of rations. They are also found in the central lands. Zheng Xuan says they are very abundant in the Guanzhong and Fang [Bin] regions.\\n\\n[Su] Song states: In Guiyang [the hazelnuts] grow in thickets; the fruit is as large as the kernel inside an apricot. The skin and appe",
+      "_label": "榛 (果之二)"
+    },
+    {
+      "title_inferred": "Pistachio (Āyuèhúnzǐ) — Fruit Chapter II",
+      "original_text": "【釋名】胡榛子（《拾遺》）、無名子（《海藥》）。\n\n【集解】藏器曰︰阿月渾子生西國諸番，與胡榛子同樹，一歲胡榛子，二歲阿月渾子也。\n曰︰按︰徐表《南州記》云︰無名木生嶺南山谷，其實狀若榛子，號無名子，波斯家呼為阿月渾子也。\n\n仁\n\n【氣味】辛，溫，澀，無毒。\n辛，大溫，無毒。\n\n【主治】諸痢，去冷氣，令人肥健（藏器）。治腰冷，陰腎虛弱，房中術多用之，得木香、山茱萸良（李珣）。\n\n無名木皮（《海藥》）\n陰腎萎弱，囊下濕癢，並煎汁小浴，極妙。",
+      "translation": "**Names and Synonyms**\nAlso known as: Húzhēnzǐ [\"foreign hazelnut\"] (from *Shiyi* [Supplement to Materia Medica]), and Wúmíngzǐ [\"nameless seed\"] (from *Haiyao* [Overseas Materia Medica]).\n\n**Collected Explanations**\nChen Cangqi states: Āyuèhúnzǐ grows in the various foreign countries of the West. It shares the same tree as Húzhēnzǐ [the foreign hazelnut]: in the first year the tree produces Húzhēnzǐ, and in the second year it produces Āyuèhúnzǐ.\n[Another commentator] notes: According to Xu Biao's *Nanzhou Ji* [Record of the Southern Regions]: the Wúmíng tree grows in the mountain valleys of Lingnan [southern China]. Its fruit resembles a hazelnut in appearance and is called Wúmíngzǐ [\"nameless seed\"]. The Persian people call it Āyuèhúnzǐ.\n\n**Kernel (Rén)**\n\n*Flavor and Nature:* Pungent, warm, astringent, non-toxic. [Another source:] Pungent, greatly warm, non-toxic.\n\n*Principal Treatments:* Treats all manner of dysentery [zhūlì]; dispels cold qi [cold vital energy]; makes a person well-nourished and robust (Chen Cangqi). Treats cold sensation in the lower back and deficiency-weakness of the yin kidneys [reproductive/urological weakness]; it is frequently used in the arts of the bedchamber [fángzhōng shù — sexual cultivation practices]. It works especially well in combination with mù xiāng [costus root] and shān zhūyú [Cornus officinalis] (Li Xun).\n\n**Bark of the Wúmíng Tree** (from *Haiyao*)\nFor wilting weakness of the yin kidneys [genital debility] and damp itching beneath the scrotum: decoct the bark into a liquid and use it as a sitz bath [small bath of the affected area] — this is extremely effective.",
+      "entities_mentioned": [
+        {
+          "name": "阿月渾子 (Āyuèhúnzǐ)",
+          "modern_identification": "Pistacia vera (pistachio)",
+          "identification_confidence": "high",
+          "notes": "The name 阿月渾子 is a transliteration of the Persian word for pistachio (pistah / āl-ūzun). The text explicitly notes that Persians call it by this name. The description of it as a hazelnut-like fruit from western foreign lands is consistent with pistachio."
+        },
+        {
+          "name": "胡榛子 (Húzhēnzǐ)",
+          "modern_identification": "Pistacia vera or a related Pistacia species",
+          "identification_confidence": "medium",
+          "notes": "Described as coming from the same tree as 阿月渾子, produced in the first year. May refer to a related Pistacia species fruit, or alternatively could be a confusion between two stages of the same plant's fruiting cycle."
+        },
+        {
+          "name": "無名子 / 無名木 (Wúmíngzǐ / Wúmíng tree)",
+          "modern_identification": "Pistacia vera (pistachio)",
+          "identification_confidence": "high",
+          "notes": "Identified in the text itself as the same plant as Āyuèhúnzǐ; the name means 'nameless seed/tree.' Said to grow in Lingnan (southern China) according to Xu Biao's Nanzhou Ji, though the pistachio is not native to Lingnan — this may reflect trade goods or a misidentification of a related species."
+        },
+        {
+          "name": "木香 (Mù xiāng)",
+          "modern_identification": "Saussurea costus (costus root / Indian costus)",
+          "identification_confidence": "high",
+          "notes": "Used in combination with 阿月渾子 kernel to treat kidney deficiency and lower back cold."
+        },
+        {
+          "name": "山茱萸 (Shān zhūyú)",
+          "modern_identification": "Cornus officinalis (Japanese cornelian cherry)",
+          "identification_confidence": "high",
+          "notes": "Used in combination with 阿月渾子 kernel; a classical tonic herb for kidney and liver deficiency."
+        }
+      ],
+      "translator_notes": "1. The attribution '（李 ）' in the source text has a missing character after 李, almost certainly 李珣 (Li Xun), the Tang-dynasty author of *Haiyao Bencao* — corrected silently in the cleaned text. 2. The claim that Āyuèhúnzǐ and Húzhēnzǐ come from 'the same tree' in different years is botanically incorrect and likely reflects a misunderstanding or folk belief. 3. 'Fángzhōng shù' (房中術) refers to classical Chinese sexual cultivation/longevity practices; rendered transparently with a bracketed gloss. 4. The 'small bath' (小浴) for the bark decoction is a sitz bath or local wash application, not a full bath. 5. Several attribution markers at the start of quotations are unclear or abbreviated in the original, likely due to OCR loss or manuscript damage.",
+      "_label": "阿月渾子 (果之二)"
+    },
+    {
+      "title_inferred": "Zhuzhi (Chu Fruit) — Stone Oak / Evergreen Oak Nut",
+      "original_text": "【集解】藏器曰︰櫧子生江南。皮、樹如栗，冬月不凋，子小於橡子。\n\n穎曰︰櫧子有苦、甜二種，治作粉食、糕食，褐色甚佳。\n\n時珍曰︰櫧子，處處山谷有之。其木大者數抱，高二、三丈。葉長大如栗，葉稍尖而濃堅光澤，鋸齒峭利，凌冬不凋。三、四月開白花成穗，如栗花。結實大如槲子，外有小苞，霜後苞裂子墜。子圓褐而有尖，大如菩提子。內仁如杏仁，生食苦澀，煮、炒乃帶甘，亦可磨粉。甜櫧子粒小，木紋細白，俗名面櫧。苦櫧子粒大，木紋粗赤，俗名血櫧。其色黑者名鐵櫧。按︰《山海經》云︰前山有木，其名曰櫧。郭璞注曰︰櫧子似柞子，可食，冬月採之。\n\n木作屋柱、棺材，難腐也。\n\n仁\n\n【氣味】苦、澀，平，無毒。\n\n時珍曰︰案︰《正要》云︰酸、甘，微寒。不可多食。\n\n【主治】食之不飢，令人健行，止泄痢，破惡血，止渴（藏器）。\n\n皮、葉\n煮汁飲，止產婦血（藏器）。嫩葉︰貼 瘡，一日三換，良（吳瑞）。",
+      "translation": "**[Collected Explanations]**\n\nZangqi [Chen Cangqi] states: Zhuzhi [chu fruit] grows in Jiangnan. The bark and tree resemble chestnut [Castanea]; it does not shed its leaves in winter, and the fruit is smaller than acorns [xiangzi].\n\nYing [Hua Shou] states: Zhuzhi comes in two varieties — bitter and sweet. The fruit can be processed into flour for eating or made into cakes; it is brownish in color and quite fine.\n\nShizhen [Li Shizhen] states: Zhuzhi is found in mountain valleys everywhere. The larger trees require several arms' spans to encircle and stand two to three zhang [approximately 6–10 meters] tall. The leaves are long and large, like chestnut leaves, but slightly more pointed, thick, firm, and glossy, with sharp serrated edges; they do not fall in winter. In the third and fourth months [April–May], white flowers bloom in spikes, resembling chestnut flowers. The fruit is as large as a Quercus dentata [huzhi] acorn, enclosed in a small involucre [bract cup]; after frost the involucre splits and the nut falls. The nut is round and brownish with a pointed tip, about the size of a bodhi seed [Elaeocarpus robustus]. The inner kernel resembles an apricot kernel; eaten raw it is bitter and astringent, but becomes mildly sweet when boiled or roasted; it can also be ground into flour. The sweet variety [tian zhuzhi] has smaller nuts and fine, white-grained wood, commonly called 'mian zhu' [flour chu]. The bitter variety [ku zhuzhi] has larger nuts and coarse, red-grained wood, commonly called 'xue zhu' [blood chu]. The variety with black-colored wood is called 'tie zhu' [iron chu]. Note: The Shanhaijing [Classic of Mountains and Seas] states: 'On the Qian Mountains there is a tree called zhu.' Guo Pu's commentary notes: 'The zhu fruit resembles the zuozi [Quercus acorn] and is edible; it is gathered in the winter months.'\n\nThe wood is used to make house pillars and coffins, as it is highly resistant to decay.\n\n**Kernel [Ren]**\n\n**[Flavor and Nature]** Bitter, astringent; balanced [ping]; non-toxic.\n\nShizhen states: According to the Zhengyao [Yinshan Zhengyao / Principles of Correct Diet], it is described as sour and sweet, slightly cold [wei han]. It should not be eaten in excess.\n\n**[Indications and Uses]** Eating the fruit wards off hunger, enables vigorous walking [strengthens the body], stops diarrhea and dysentery [xie li], breaks up stagnant [malign] blood [e xue], and relieves thirst. (Zangqi)\n\n**Bark and Leaves**\n\nBoil and drink the decoction to stop postpartum bleeding in women. (Zangqi)\n\nTender leaves: Apply as a poultice to sores and ulcers [chuang], replacing the dressing three times a day; effective. (Wu Rui)",
+      "entities_mentioned": [
+        {
+          "name": "櫧子 (Zhuzhi)",
+          "modern_identification": "Castanopsis species, likely Castanopsis sclerophylla (Chinese evergreen chinkapin) or related Castanopsis spp.; possibly also encompassing Lithocarpus spp.",
+          "identification_confidence": "high",
+          "notes": "The text describes an evergreen oak-like tree with edible nuts, two varieties (bitter/sweet), found widely in southern Chinese mountain valleys. Castanopsis sclerophylla is the most commonly cited modern identification. The 'sweet' (面櫧/mian zhu) and 'bitter' (血櫧/xue zhu) varieties may represent distinct species within Castanopsis or Lithocarpus."
+        },
+        {
+          "name": "橡子 (Xiangzi)",
+          "modern_identification": "Quercus acorns (various Quercus spp.)",
+          "identification_confidence": "high",
+          "notes": "Used as a size comparison reference."
+        },
+        {
+          "name": "槲子 (Huzhi)",
+          "modern_identification": "Quercus dentata (daimyo oak) acorn",
+          "identification_confidence": "high",
+          "notes": "Used as a size comparison for the fruit."
+        },
+        {
+          "name": "菩提子 (Putizi)",
+          "modern_identification": "Elaeocarpus robustus or Coix lacryma-jobi seeds; the term is ambiguous in historical texts",
+          "identification_confidence": "medium",
+          "notes": "Used as a size comparison for the nut."
+        },
+        {
+          "name": "柞子 (Zuozi)",
+          "modern_identification": "Quercus mongolica or related oak species acorn",
+          "identification_confidence": "medium",
+          "notes": "Referenced from Guo Pu's commentary on the Shanhaijing as a morphological comparison."
+        }
+      ],
+      "translator_notes": "1. The medical indications extracted: (a) Kernel — relieves hunger, aids walking/strengthens body, stops diarrhea and dysentery, resolves blood stasis, relieves thirst; preparation: consumed directly, boiled, roasted, or ground into flour. (b) Bark and leaves — decoction drunk to stop postpartum hemorrhage. (c) Tender leaves — applied topically as poultice for sores, changed three times daily. 2. The source '《正要》' refers to the Yinshan Zhengyao (飲膳正要), a 14th-century dietary manual by Hu Sihui. 3. The original text has a minor spacing issue around '貼 瘡' (a space between the two characters), likely an OCR artifact; it has been preserved in the original_text and rendered as '貼瘡' in translation. 4. Heights given in zhang: 1 zhang ≈ 3.2 meters in Ming dynasty measure, so 2–3 zhang ≈ 6.4–9.6 meters.",
+      "_label": "櫧子 (果之二)"
+    },
+    {
+      "title_inferred": "Hook Chestnut (Gou Li) — Fruit Chapter Two",
+      "original_text": "【釋名】巢鉤子（《拾遺》）、甜櫧子。\n\n瑞曰︰鉤栗即甜櫧子。\n\n時珍曰︰鉤、櫧二字，方音相近。其狀如櫟，當作鉤櫟。\n\n【集解】藏器曰︰鉤栗生江南山谷。木大數圍，冬月不凋，其子似栗而圓小。又有雀子，相似而圓黑，久食不飢。詳櫧子下。\n\n仁\n\n【氣味】甘，平，無毒。\n\n【主治】食之不飢，濃腸胃，令人肥健（藏器）。",
+      "translation": "**Explanation of Names:** Also called Cháo Gōu Zǐ (from the *Shiyi* [*Bencao Shiyi*]) and Tián Zhū Zǐ [Sweet Zhū Nut].\n\nRui [Wu Rui] states: Gōu Lì is the same as Tián Zhū Zǐ.\n\nShizhen [Li Shizhen] states: The characters *gōu* and *zhū* are phonetically close in regional dialects. Its appearance resembles that of the oak (*Quercus*), so it should properly be written as Gōu Lì [Hook Oak].\n\n**Collected Explanations:** Zang Qi [Chen Cangqi] states: Gōu Lì grows in the mountain valleys of Jiangnan [south of the Yangtze River]. The tree is large, several arm-spans in girth, and does not shed its leaves in winter. Its fruits resemble chestnuts but are round and small. There is also a variety called Què Zǐ [Sparrow Nut], which is similarly shaped but round and black; eating it over a long period prevents hunger. See further details under the entry for Zhū Zǐ.\n\n**Kernel (Rén)**\n\n**Flavor and Nature:** Sweet, neutral [平], non-toxic.\n\n**Medicinal Uses:** Eating it prevents hunger, fortifies and thickens the intestines and stomach, and causes a person to become plump and robust. (Zang Qi)",
+      "entities_mentioned": [
+        {
+          "name": "鉤栗 (Gōu Lì)",
+          "modern_identification": "Castanopsis eyrei or a related Castanopsis species (evergreen chinkapin); possibly Cyclobalanopsis or Lithocarpus species",
+          "identification_confidence": "medium",
+          "notes": "Li Shizhen equates it with Tián Zhū Zǐ (sweet zhū nut) and notes resemblance to oak. The evergreen habit, large trunk, and small round nut-like fruit are consistent with Castanopsis or Lithocarpus (stone oak) of southern China."
+        },
+        {
+          "name": "甜櫧子 (Tián Zhū Zǐ)",
+          "modern_identification": "Castanopsis species, likely Castanopsis sclerophylla or C. eyrei",
+          "identification_confidence": "medium",
+          "notes": "Identified by multiple sources as synonymous with Gōu Lì; the 'sweet' qualifier distinguishes it from bitter varieties."
+        },
+        {
+          "name": "雀子 (Què Zǐ / Sparrow Nut)",
+          "modern_identification": "Possibly a different Castanopsis or Lithocarpus variety with dark, rounded fruits; uncertain",
+          "identification_confidence": "low",
+          "notes": "Described as similar to Gōu Lì but round and black; said to stave off hunger when eaten regularly. Likely a related mast-producing tree species."
+        }
+      ],
+      "translator_notes": "The condition treated is general debility / poor nourishment, addressed by consuming the kernel. Preparation method is simply eating the kernel (食之). The term 濃腸胃 ('thickens/fortifies the intestines and stomach') is a classical Chinese dietary therapy expression indicating a tonic effect on the digestive system. 'Cháo Gōu Zǐ' (巢鉤子) as listed in the *Bencao Shiyi* (陳藏器, Tang dynasty) is the earlier name. The cross-reference 'see Zhū Zǐ below' indicates a related main entry in the same chapter that provides further detail.",
+      "_label": "鉤栗 (果之二)"
+    }
+  ]
+}
