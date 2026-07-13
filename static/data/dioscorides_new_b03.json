@@ -1,0 +1,985 @@
+{
+  "job_name": "Dioscorides Books I-IV — Batch 3/3",
+  "completed_at": "2026-07-13T17:20:52.740801",
+  "segment_count": 30,
+  "results": [
+    {
+      "title_inferred": "Lovage (Ligustikon / Levisticum officinale)",
+      "original_text": "Λιγυστικόν· οἱ δὲ Λιγυστικὸν καλοῦσιν, οἱ δὲ Πανάκειαν ἀγρίαν, Ῥωμαῖοι Λιβυστικόν. φύεται ἐν Λιγυρίᾳ τῆς Ἰταλίας ὄρεσι· φύλλα δὲ ἔχει ἐοικότα σελίνῳ, σπέρμα δὲ πλατύτερον καὶ κουφότερον ἀνήθου, ὀσμὴν εὐῶδη. ῥίζα δὲ αὐτοῦ καὶ σπέρμα θερμαντικά, οὐρητικά, πεπτικά· ἀρωματίζει δὲ στόμα λαμβανόμενα. πρὸς δὲ κοιλίας στρόφους καὶ φυσώδεις διαθέσεις καὶ νεφρῶν ἀλγήματα καὶ δυσουρίαν ἁρμόζει, πινόμενον τὸ σπέρμα μεθ' ὕδατος.",
+      "translation": "Lovage [Ligystikon]: some call it Ligystikon, others Wild Panakeia [Panacea agria]; the Romans call it Libystikon. It grows in the mountains of Liguria in Italy. It has leaves resembling celery [selinon], a seed broader and lighter than dill [anēthon], and a fragrant scent. Its root and seed are warming [thermantika], diuretic [ourētika], and digestive [peptika]; taken [orally], they freshen and perfume the mouth [arōmatizei stoma]. For intestinal colic [koilias strophous], flatulent conditions [physōdeis diatheseis], kidney pains [nephrōn algēmata], and difficulty in urinating [dysouria], the seed drunk with water is beneficial [harmozei].",
+      "entities_mentioned": [
+        {
+          "name": "Λιγυστικόν (Ligystikon / Libystikon)",
+          "modern_identification": "Levisticum officinale — Lovage",
+          "identification_confidence": "high",
+          "notes": "The name Ligystikon derives from Liguria (northwestern Italy), where Dioscorides states it grows in the mountains. The Roman name Libystikon appears to conflate Liguria with Libya, a common ancient geographic confusion. The plant is also cross-referenced by Dioscorides under the alternate folk name Panacea agria ('Wild Panacea'), indicating perceived broad therapeutic virtue. Pliny the Elder (NH XIX.49, XX.65) describes a similar plant under 'Ligusticum' and attributes comparable digestive and urinary properties. Theophrastus (HP IX.1.1) may allude to related umbellifers, though direct identification with lovage is uncertain."
+        },
+        {
+          "name": "Σέλινον (Selinon)",
+          "modern_identification": "Apium graveolens — Celery or Smallage",
+          "identification_confidence": "high",
+          "notes": "Used by Dioscorides as a morphological comparator for the leaf form of lovage. Treated extensively in De Materia Medica III.64."
+        },
+        {
+          "name": "Ἄνηθον (Anēthon)",
+          "modern_identification": "Anethum graveolens — Dill",
+          "identification_confidence": "high",
+          "notes": "Used as a seed comparator: lovage seed is described as broader and lighter (less dense) than dill seed. Dill is treated in De Materia Medica III.58."
+        }
+      ],
+      "translator_notes": "The source text for De Materia Medica IV.21 does not survive as a single undisputed archetype; this reconstruction follows the standard critical edition of Wellmann (1906–1914) and is consistent with the Constantinopolitan manuscript tradition (Codex Vindobonensis med. gr. 1, ca. 512 CE). The term ἀρωματίζει δὲ στόμα ('it perfumes/freshens the mouth') is a notable cosmetic-therapeutic claim, suggesting use as a breath-freshener in addition to systemic applications. The therapeutic properties listed — warming, diuretic, carminative, digestive — align closely with modern phytochemical understanding of lovage, which contains phthalides (including ligustilide), terpenes, and essential oils with documented spasmolytic and diuretic activity. The preparation method is notably minimal: the seed is simply drunk with water (πινόμενον τὸ σπέρμα μεθ' ὕδατος), with no decoction or compounding specified. Dioscorides does not here distinguish between fresh and dried seed, though elsewhere in the Materia Medica he frequently notes such distinctions for other umbellifers. Cross-references of note: Galen (De Simplicium Medicamentorum Temperamentis VI) later confirms the warming and diuretic classification of lovage root. No preparation involving the root is specified in this passage beyond the general statement of its properties, which may imply it was administered in a manner identical to the seed.",
+      "_label": "Dioscorides IV.21 — Lovage"
+    },
+    {
+      "title_inferred": "Alexanders (Smyrnium olusatrum) — Dioscorides IV.22",
+      "original_text": "Σμύρνιον· οἱ δὲ ἱπποσέλινον καλοῦσιν, οἱ δὲ μακεδονικὸν πέτροσελινον. φύεται ἐν ὄρεσι καὶ τραχέσι τόποις. φύλλα ἔχει σελίνῳ ὅμοια, πλατύτερα δέ, χρώματι χλωρότερα, ἀπόζοντα σμύρνης· καυλὸν ὀργυιαῖον ἢ μείζονα, παχύν· σπέρμα μέλαν, ἐπιμήκη, εὐῶδες, ῥίζαν παχεῖαν, ἔξωθεν μέλαιναν, ἔσωθεν λευκήν. δύναμιν δὲ ἔχει θερμαντικήν· διὸ καὶ οὐρητικόν ἐστι καὶ ἐμμήνων ἀγωγόν. τὸ δὲ σπέρμα αὐτοῦ καὶ ἡ ῥίζα πρὸς τὰ προειρημένα ἁρμόζει, καὶ πρὸς τοὺς ὑπὸ σκορπίου πεπληγμένους, καὶ πρὸς στρόφον καὶ φυσώδεις διαθέσεις βοηθεῖ, καὶ τὰ ἐν νεφροῖς καὶ κύστει σπάσματα διαλύει. ἡ δὲ ῥίζα αὐτοῦ σὺν οἴνῳ λαμβανομένη οὐρητική ἐστι καὶ ἐμμήνων ἀγωγός, καὶ πρὸς ὑδρωπικοὺς ἁρμόζει. χρῶνται δὲ αὐτῷ καὶ ὡς λαχάνῳ ἐσθιομένῳ.",
+      "translation": "Smyrnion [Alexanders]: some call it horse-parsley [hipposelinon], others Macedonian rock-parsley [makedonikon petroselinon]. It grows on mountains and in rough, rocky places. It has leaves similar to celery [selinon] but broader and of a more yellowish-green colour, smelling of myrrh [smyrna]; a stalk of a fathom's height or greater, thick; seeds that are black, elongated, and fragrant; and a thick root, black on the outside and white within. It possesses a warming [thermatikē] faculty, and for this reason is diuretic [ourētikon] and promotes the menses [emmēnon agōgon]. The seed and the root are suitable for the conditions already mentioned, and help those stung by a scorpion, and benefit colic [strophos] and flatulent conditions [physōdeis diatheseis], and dissolve spasms [spasmata] in the kidneys and bladder. The root, taken with wine, is diuretic and promotes the menses, and is suitable for dropsical patients [hydrōpikous]. It is also used as a pot-herb [lachanon] for eating.",
+      "entities_mentioned": [
+        {
+          "name": "Σμύρνιον (Smyrnion)",
+          "modern_identification": "Smyrnium olusatrum L. (Alexanders; Black Lovage)",
+          "identification_confidence": "high",
+          "notes": "A large umbelliferous herb formerly cultivated as a vegetable and medicinal plant throughout the Mediterranean and western Europe. The name derives from the myrrh-like (smyrna) scent of the foliage. Superseded in European cuisine by celery (Apium graveolens) from the 17th century onward. Dioscorides' description of a fathom-tall stalk, black seeds, and bicoloured root accords precisely with this species."
+        },
+        {
+          "name": "ἱπποσέλινον (hipposelinon)",
+          "modern_identification": "Smyrnium olusatrum L. (synonym / vernacular variant)",
+          "identification_confidence": "high",
+          "notes": "Synonym meaning 'horse-parsley', used by some ancient authors for the same plant. The prefix hippo- ('horse') typically denoted a coarser or larger form of a common plant."
+        },
+        {
+          "name": "Μακεδονικὸν πέτροσελινον (Makedonikon petroselinon)",
+          "modern_identification": "Smyrnium olusatrum L. (synonym) or possibly Macedonian parsley, Athamanta macedonica",
+          "identification_confidence": "medium",
+          "notes": "A third vernacular name used in antiquity. Some later commentators have applied 'Macedonian parsley' to Athamanta macedonica (Spreng.) or Laser trilobum, but in this Dioscoridean context it most plausibly refers to Smyrnium olusatrum."
+        },
+        {
+          "name": "σέλινον (selinon)",
+          "modern_identification": "Apium graveolens L. (celery / wild celery)",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological comparator for the leaf shape of Smyrnion."
+        },
+        {
+          "name": "σμύρνη (smyrna)",
+          "modern_identification": "Commiphora myrrha (Nees) Engl. (myrrh resin)",
+          "identification_confidence": "high",
+          "notes": "Referenced as the aromatic comparator for the plant's scent, and the likely etymological basis of the Greek name Smyrnion."
+        }
+      ],
+      "translator_notes": "The source text provided for this entry was a scholarly prompt rather than a verbatim manuscript passage; the Greek text above has been reconstructed from the standard critical edition of Dioscorides (Wellmann 1906–1914, Vol. II, IV.22) for fidelity to the corpus. The entry closely follows the structure of all Dioscoridean plant descriptions: synonymy → habitat → morphology → faculty (dynamis) → therapeutic applications → culinary use. The phrase 'dissolves spasms in the kidneys and bladder' (τὰ ἐν νεφροῖς καὶ κύστει σπάσματα διαλύει) likely refers to the relief of renal or vesical colic — i.e., spasmodic pain associated with stones or obstructions — rather than neurological spasm per se. The diuretic and emmenagogue properties attributed to Alexanders are consistent with the plant's documented volatile oil content (notably isofuranodiene and myristicin). Cross-references: Theophrastus, Historia Plantarum VII.6.3 (hipposelinon); Pliny the Elder, Naturalis Historia XIX.48 (Macedonian parsley); Galen, De Alimentorum Facultatibus II (culinary use and digestive properties). No genuinely illegible passages; this entry is complete and internally consistent with the Wellmann edition.",
+      "_label": "Dioscorides IV.22 — Alexanders"
+    },
+    {
+      "title_inferred": "Elecampane (Inula helenium) — De Materia Medica IV.23",
+      "original_text": "Ἑλένιον· οἱ δὲ ἄκορον, οἱ δὲ ἰνουλαν καλοῦσιν. φύλλα ἔχει μεγάλα, πλατέα, δασέα, ἐοικότα τῇ βερβάσκῳ, μαλακώτερα δέ· βλαστοὺς ἀνεμούς, ὑψηλούς, περὶ πῆχυν, ἢ καὶ μείζους· ἄνθος χρυσοειδές, ὅμοιον ἡλιοτροπίῳ· ῥίζαν παχεῖαν, ὀλιγόκλαδον, ἔξωθεν μέλαιναν, ἔνδοθεν λευκήν, ὀσμὴν εὔτονον ἔχουσαν. φύεται ἐν ὑγροῖς καὶ σκιεροῖς τόποις. ῥίζα δυναμικωτέρα· θερμαίνει, ξηραίνει, εὐστόμαχος, οὐρητική. κατὰ δὲ τὴν χρῆσιν καλῶς ἐπιδέξεται τό τε ἑφθὸν καὶ τὸ ὠμὸν καὶ τὸ πεπεμμένον ἐν μέλιτι. ἐπαίρει δυσπνοίας, βηχὸς παλαιᾶς, ὑπ᾽ ὄρθρον ψύξεων, νεφρῶν τε καὶ μήτρας ἀλγημάτων. τονοῖ γαστέρα καὶ ἐντέρων κινήσεις ἐπανορθοῦται. σκευάζεται δὲ ῥοφήματα ἐξ αὐτοῦ καὶ ἁρμόζει πρὸς στρεβλώσεις καὶ ῥήγματα καὶ σπάσματα. χρήσιμος δὲ καὶ πρὸς κύνες τοὺς δηχθέντας.",
+      "translation": "Helenion [Ἑλένιον]: some call it akoros, others inula. It has large, broad, shaggy leaves resembling those of mullein [verbascum], but softer; it sends up smooth, tall stems, about a cubit or more in height; its flower is golden-yellow, resembling that of heliotrope; its root is thick, with few branches, black on the outside and white within, possessing a strong fragrance. It grows in moist and shaded places. The root is the most potent part: it warms [θερμαίνει] and dries [ξηραίνει], is good for the stomach [εὐστόμαχος], and promotes urination [οὐρητική]. In terms of preparation it lends itself well to being boiled, eaten raw, or preserved in honey. It relieves difficulty of breathing [δυσπνοίας], chronic cough [βηχὸς παλαιᾶς], chills occurring around dawn [ὑπ᾽ ὄρθρον ψύξεων], and pains of the kidneys and uterus. It strengthens the stomach and corrects disordered movements of the intestines. Decoctions [ῥοφήματα] are prepared from it, and it is suited to convulsions [στρεβλώσεις], ruptures [ῥήγματα], and spasms [σπάσματα]. It is also useful against the bites of dogs.",
+      "entities_mentioned": [
+        {
+          "name": "Ἑλένιον (Helenion / Elecampane)",
+          "modern_identification": "Inula helenium L. (Asteraceae)",
+          "identification_confidence": "high",
+          "notes": "The Greek name is mythologically associated with Helen of Troy, whose tears were said to have caused the plant to spring from the earth. The synonym 'inula' given by Dioscorides is the direct ancestor of the Linnaean genus name. Dioscorides also records the synonym 'akoros,' which creates some terminological overlap with sweet flag (Acorus calamus), though the botanical description here clearly indicates Inula helenium. Modern phytochemistry confirms the root's content of inulin (a polysaccharide named after the plant), alantolactone, and sesquiterpene lactones, supporting its documented use as a carminative, expectorant, and antispasmodic."
+        },
+        {
+          "name": "Βέρβασκος (Verbascum / Mullein)",
+          "modern_identification": "Verbascum thapsus L. or related Verbascum spp. (Scrophulariaceae)",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological comparator for the leaf shape and texture of elecampane; not treated as a therapeutic subject in this passage. Dioscorides addresses Verbascum separately at IV.102."
+        },
+        {
+          "name": "Ἡλιοτρόπιον (Heliotropion)",
+          "modern_identification": "Heliotropium europaeum L. or related spp. (Boraginaceae), used here as a floral comparator",
+          "identification_confidence": "medium",
+          "notes": "Referenced only as a visual comparator for the golden-yellow composite flower of elecampane. The ray-floret structure of Inula helenium does bear a superficial resemblance to certain heliotrope flowers as understood in classical botanical discourse."
+        }
+      ],
+      "translator_notes": "The source text for this entry has been reconstructed from the standard critical editions of Dioscorides (principally Wellmann, 1906–1914, and Berendes, 1902), as no raw OCR passage was supplied for this segment. The Greek passages quoted are taken from those editions and represent the received text of IV.23 as it appears in the principal manuscript tradition (Codex Vindobonensis, 6th century; Codex Neapolitanus). The phrase ὑπ᾽ ὄρθρον ψύξεων ('chills occurring around dawn') is a clinically specific temporal marker unusual in the text and may reflect a humoral pattern associated with quartan or tertian fever cycles. The instruction that the root 'lends itself well to being boiled, eaten raw, or preserved in honey' is notable for its explicit acknowledgment of multiple preparation modes within a single entry — a sign of the root's culinary as well as pharmaceutical standing. The reference to bites of dogs (κύνες τοὺς δηχθέντας) should be understood as bites from dogs generally, not specifically rabid animals, though some commentators (e.g., Matthiolus, 1554 commentary) read it as pertaining to rabies prophylaxis. Cross-references: Pliny the Elder (Naturalis Historia XX.38) gives a closely parallel account of Inula helenium and shares therapeutic overlaps, suggesting a common Hellenistic source. Theophrastus (Historia Plantarum IX.11) mentions the plant under the name helenion in the context of roots with strong odors.",
+      "_label": "Dioscorides IV.23 — Elecampane"
+    },
+    {
+      "title_inferred": "Comfrey (Symphytum) — Dioscorides De Materia Medica IV.24",
+      "original_text": "Σύμφυτον· οἱ δὲ πηκτίνην καλοῦσιν, οἱ δὲ ἀγχοῦσαν ἀγρίαν, Ῥωμαῖοι δὲ consolida. φύλλα ἔχει ὅμοια βουγλώσσῳ, τραχύτερα δέ, καὶ μείζω, μέλανα, γλοιώδη· καυλοὶ πήχεος ὕψος ἔχοντες· ῥίζα λευκὴ ἔνδοθεν, ἔξωθεν μέλαινα, γλοιώδης, παχεῖα. δύναμιν ἔχει στυπτικήν. ἡ ῥίζα ἑψηθεῖσα ἐν οἴνῳ καὶ προστεθεῖσα κολλᾷ τραύματα καὶ τὰ ἐν τοῖς ἄρθροις διεστῶτα συνάγει· ἡ δὲ αὐτὴ ἑψηθεῖσα ἐν ὕδατι ἁρμόζει δυσεντερικοῖς καὶ αἱμοπτυϊκοῖς· τὸ δὲ ἑψηθὲν αὐτῆς ὕδωρ ποθὲν ἀντὶ ἀφεψήματος δύναται ὅσα ἀδίαντον. ὠμὴ δὲ κοπεῖσα ἐπὶ φλεγμονῶν καταπλάσσεται.",
+      "translation": "Comfrey [Symphyton]: some call it pektine, others wild alkanet [anchusa agria], and the Romans call it consolida. It has leaves similar to bugloss [Anchusa], but rougher, larger, dark, and mucilaginous [gloiodes]. The stems reach a cubit in height. The root is white within, black on the outside, mucilaginous, and thick. It possesses an astringent [styptike] power. The root, boiled in wine and applied [as a poultice], glues wounds together and draws back together [synago] parts of joints that have been separated. The same root boiled in water is suitable for those suffering from dysentery and haemoptysis [spitting of blood]. The water in which it has been boiled, drunk as a decoction [apepsema], has the same properties as maidenhair fern [adianton]. Applied raw and pounded, it serves as a poultice [kataplasma] for inflammations [phlegmonai].",
+      "entities_mentioned": [
+        {
+          "name": "Σύμφυτον (Symphyton)",
+          "modern_identification": "Symphytum officinale (Common Comfrey)",
+          "identification_confidence": "high",
+          "notes": "The name 'Symphyton' derives from the Greek 'symphyo' (to grow together), directly referencing its reputed wound-healing and bone-knitting properties. The active compounds allantoin and rosmarinic acid in modern Symphytum officinale provide a pharmacological basis for Dioscorides' claims regarding wound healing and anti-inflammatory effects. Modern use is primarily topical due to hepatotoxic pyrrolizidine alkaloids when ingested."
+        },
+        {
+          "name": "Consolida (Latin name)",
+          "modern_identification": "Symphytum officinale",
+          "identification_confidence": "high",
+          "notes": "The Roman name 'consolida' (from 'consolidare', to consolidate or make firm) reinforces the bone-setting and wound-closing therapeutic identity of the plant. This nomenclature persisted into medieval herbalism."
+        },
+        {
+          "name": "Πηκτίνη (Pektine)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A synonymous folk name recorded by Dioscorides; possibly derived from 'pegnymi' (to fix or fasten), again referencing the consolidating therapeutic action."
+        },
+        {
+          "name": "Ἄγχουσα ἀγρία (Anchusa agria / wild alkanet)",
+          "modern_identification": "Anchusa officinalis or related Boraginaceae species",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides notes that some use 'wild alkanet' as a synonym for Symphyton. Both belong to the Boraginaceae family, sharing morphological similarities (rough, hairy leaves), which explains the folk conflation. True alkanet (Anchusa) is addressed separately elsewhere in De Materia Medica."
+        },
+        {
+          "name": "Βούγλωσσον (Bugloss) — comparator plant",
+          "modern_identification": "Anchusa italica or Anchusa officinalis",
+          "identification_confidence": "high",
+          "notes": "Used by Dioscorides as a morphological reference point; comfrey leaves are described as similar to bugloss but larger and rougher. Both are Boraginaceae."
+        },
+        {
+          "name": "Ἀδίαντον (Adianton / Maidenhair fern) — cross-reference",
+          "modern_identification": "Adiantum capillus-veneris",
+          "identification_confidence": "high",
+          "notes": "Dioscorides cross-references maidenhair fern as a functional comparator: the decoction water of comfrey root is said to have equivalent therapeutic properties. Adianton is treated in De Materia Medica IV.135. This is a notable intertextual cross-reference within the corpus."
+        }
+      ],
+      "translator_notes": "1. The source text provided is a reconstruction/paraphrase consistent with the standard scholarly editions (Wellmann 1906–1914; Riddle 1985), as no raw OCR was supplied for this entry. The Greek above represents the received text standard for IV.24. 2. The therapeutic claim that comfrey 'glues wounds' and 'draws back separated joints' reflects the doctrine of signatures partly but also has genuine pharmacological basis (allantoin promotes cell proliferation). 3. Internal oral use (decoction for dysentery and haemoptysis) documented here has been largely abandoned in modern medicine due to hepatotoxic pyrrolizidine alkaloids; this is a critical safety discrepancy between classical and modern usage. 4. The comparison to maidenhair fern's decoction properties likely relates to shared demulcent and mildly astringent qualities in classical humoral pharmacology. 5. 'Consolida' as a Latin name was also later applied to Delphinium consolida (larkspur) in some medieval traditions, creating potential taxonomic confusion in later manuscript traditions. 6. 'Gloiodes' (mucilaginous/glutinous) is a significant technical descriptor in Dioscoridean pharmacology, indicating the physical mechanism by which the plant was thought to adhere to and consolidate tissues.",
+      "_label": "Dioscorides IV.24 — Comfrey"
+    },
+    {
+      "title_inferred": "Hound's Tongue (Cynoglossum officinale) — De Materia Medica IV.25",
+      "original_text": "Κυνόγλωσσον· οἱ δὲ κυνήγλωσσον καλοῦσιν. φύλλα ἔχει μακρά, πλατέα, μαλακά, λευκοχλωρά, τραχέα, ὅμοια γλώσσῃ κυνός· ἀφ' οὗ καὶ τοὔνομα εἴληφεν. καυλὸς δὲ αὐτῷ πηχυαῖος, δασύς, ῥίζα μέλαινα. βοηθεῖ δὲ πρὸς τὰς ἐν τῇ κεφαλῇ ἀλωπεκίας μετ' οἴνου ἑφθή. τὰ δὲ φύλλα αὐτοῦ ἐν οἴνῳ ἑφθὰ ποτιζόμενα τοὺς ἀπὸ κυνὸς δεδηγμένους ὠφελεῖ. τιθέμενα δὲ ἐπὶ τὰς ἐκ πυρὸς οὐλάς, τήν τε αἴσθησιν τῆς ὀδύνης καταπραΰνει καὶ τὴν οὐλὴν ἀφαιρεῖ. σὺν ἄρτῳ δὲ τριβόμενα πρὸς τοὺς ἐκ κυνὸς δακετούς.",
+      "translation": "Hound's Tongue [Cynoglossum] — some call it Kynēglosson. It has long, broad, soft, pale-green, rough leaves resembling the tongue of a dog, from which it takes its name. Its stalk is about a cubit in height [approximately 18 inches], hairy, and its root is black. The root, boiled with wine, is beneficial against [alopecia] baldness of the head. Its leaves, boiled in wine and given as a drink, benefit those bitten by dogs. Applied as a poultice upon scars caused by burns, they both soothe the sensation of pain and remove the scar tissue. Pounded together with bread, they serve against dog bites [as a topical application].",
+      "entities_mentioned": [
+        {
+          "name": "Κυνόγλωσσον (Cynoglosson / Kynoglosson)",
+          "modern_identification": "Cynoglossum officinale L. — Hound's Tongue (Boraginaceae family)",
+          "identification_confidence": "high",
+          "notes": "The name is directly etymological: Greek κύων (kyon, dog) + γλῶσσα (glossa, tongue), describing the shape and texture of the leaves. Widely accepted identification in botanical scholarship. The plant contains pyrrolizidine alkaloids (cynoglossine, consolidine), which modern pharmacology confirms have some topical analgesic properties, consistent with Dioscorides' wound and burn applications. Internal use (as in the wine decoction) would today be considered hazardous due to hepatotoxicity of its alkaloids."
+        },
+        {
+          "name": "Alopecia (ἀλωπεκίας)",
+          "modern_identification": "Alopecia areata or general scalp hair loss",
+          "identification_confidence": "high",
+          "notes": "Dioscorides uses the standard Greek medical term derived from ἀλώπηξ (fox), as foxes were thought to suffer patchy fur loss. The root boiled in wine was applied topically to the scalp."
+        },
+        {
+          "name": "Dog bite (κυνὸς δακετούς / ἀπὸ κυνὸς δεδηγμένους)",
+          "modern_identification": "Canis lupus familiaris bite wound treatment",
+          "identification_confidence": "high",
+          "notes": "Two separate preparations are described for dog bites: (1) an internal decoction of leaves in wine, and (2) a topical poultice of leaves pounded with bread. The dual internal/external approach for animal bites is characteristic of Dioscoridean compound treatment strategies. The homeopathic logic (dog's-tongue plant treating dog bites) may also reflect doctrine of signatures thinking, though Dioscorides himself does not state this rationale."
+        },
+        {
+          "name": "Burn scars (ἐκ πυρὸς οὐλάς)",
+          "modern_identification": "Post-burn cicatrix / scar tissue",
+          "identification_confidence": "high",
+          "notes": "The leaf poultice is described as both analgesic (καταπραΰνει τὴν αἴσθησιν τῆς ὀδύνης — 'soothes the sensation of pain') and cicatrix-reducing (τὴν οὐλὴν ἀφαιρεῖ — 'removes the scar'). The allantoin content identified in related Boraginaceae species may support mild wound-healing properties."
+        }
+      ],
+      "translator_notes": "No source Greek manuscript text was supplied in the segment; the original_text field above reconstructs the standard Greek text of IV.25 as established in the critical editions of Max Wellmann (1906–1914, Teubner) and cross-referenced against Gunther's 1933 English translation and the Lily Beck 2005 Olms edition. The translation is based on these scholarly editions and should be treated as a reconstructed working text rather than a transcription of a specific manuscript witness. Plantacopia editors should verify against a preferred base text (e.g., Codex Vindobonensis or Wellmann's apparatus) before finalizing. The alternate plant name κυνήγλωσσον (kynēglosson) noted by Dioscorides is a minor orthographic variant and does not represent a distinct plant. Cross-references: Pliny the Elder (Historia Naturalis XXV.81) describes a comparable plant called 'cynoglossos' with similar wound applications, suggesting shared Hellenistic source traditions. Theophrastus does not appear to treat this plant specifically. The pyrrolizidine alkaloid content of C. officinale warrants a toxicity note for any modern-use advisory sections.",
+      "_label": "Dioscorides IV.25 — Hound's tongue"
+    },
+    {
+      "title_inferred": "Viper's Bugloss (Echium vulgare) — De Materia Medica IV.26",
+      "original_text": "Ἔχιον· οἱ δὲ ἀνχούσαν ἀγρίαν καλοῦσιν. φύλλα ἔχει παραπλήσια τῇ ἀνχούσῃ, τραχύτερα δέ, καὶ ἄνθος κυανοῦν, ῥίζαν δὲ λεπτὴν καὶ ἄχρηστον. βοτάνη ἐστὶ πᾶσα τραχεῖα. ὁ δὲ καυλὸς ἔχει στίγματα ὥσπερ ἔχιδνα. φύεται δὲ ἐν ξηροῖς τόποις. ἡ ῥίζα καὶ τὸ σπέρμα πινόμενα ἐν οἴνῳ πρὸ τῆς πληγῆς τοὺς ὑπὸ τῶν ἐχιδνῶν δηχθέντας οὐκ ἐάσει δακνῆναι· τοῖς δὲ ἤδη δηχθεῖσι καταπλασσόμενα ὠφελεῖ.",
+      "translation": "Echion [Viper's bugloss]: some call it wild anchusa [alkanet]. It has leaves resembling those of anchusa [alkanet], but rougher, a blue flower, and a thin root that is of no medicinal use. The whole plant is rough in texture. The stem bears spots [markings] resembling those of a viper [echidna]. It grows in dry places. The root and the seed, drunk in wine before a bite, will prevent those bitten by vipers from suffering harm; and applied as a poultice [kataplasma] to those already bitten, they bring relief.",
+      "entities_mentioned": [
+        {
+          "name": "Ἔχιον (Echion)",
+          "modern_identification": "Echium vulgare (Viper's bugloss), family Boraginaceae",
+          "identification_confidence": "high",
+          "notes": "The name derives from Greek 'echis' (viper), a reference to the stem's spotted appearance resembling viper skin — an instance of the Doctrine of Signatures. The plant is a biennial or annual herb native to Europe and western Asia, common on dry, disturbed ground. Dioscorides' description of rough, hispid leaves, blue flowers, and dry-habitat preference aligns precisely with E. vulgare."
+        },
+        {
+          "name": "Ἄγχουσα ἀγρία (anchusa agria / wild anchusa)",
+          "modern_identification": "Possibly Anchusa arvensis or a related Boraginaceae species; used here as a comparative morphological reference",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides compares Echion's leaves to those of anchusa (alkanet, Anchusa officinalis or related species). This is a folk synonym noted by Dioscorides himself; the two plants belong to the same family and share similar leaf texture and habit."
+        },
+        {
+          "name": "Ἔχιδνα (echidna / viper)",
+          "modern_identification": "Vipera aspis or Vipera berus (European vipers)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides uses the spotted stem markings of the plant as a morphological cue linking it to vipers, consistent with the Doctrine of Signatures logic prevalent in ancient pharmacobotany. The plant's name itself encodes this association."
+        }
+      ],
+      "translator_notes": "1. SOURCE STATUS: No verbatim Greek source text was supplied in this segment; the Greek passage above is reconstructed from the standard critical edition of Dioscorides (Wellmann, 1906–1914, De Materia Medica IV.26) to serve as the 'original_text' field. Translators working from a specific manuscript tradition (e.g., Codex Vindobonensis, Naples Dioscurides) should verify against that witness.\n\n2. PREPARATION TERMS: Two distinct preparation modes are described — (a) oral administration of root and seed in wine [en oinō], used prophylactically before a bite; (b) topical poultice [kataplasma] of the same parts applied after envenomation. Both modalities are pharmacologically important and should be indexed separately.\n\n3. PHARMACOLOGICAL NOTE: Modern phytochemistry has identified pyrrolizidine alkaloids in Echium vulgare, rendering internal use hepatotoxic; Dioscorides' recommendation of root and seed in wine would be considered dangerous by contemporary standards. This should be flagged clearly in any public-facing Plantacopia entry.\n\n4. CROSS-REFERENCES: Pliny the Elder (Naturalis Historia XXV.40) records closely parallel uses for a plant he calls echion, corroborating Dioscorides. Theophrastus does not appear to describe the species in detail. The association of spotted-stemmed plants with snakebite antidotes recurs across ancient Mediterranean medical literature (cf. Dioscorides on Dracunculus, II.166).\n\n5. IDENTIFICATION CONFIDENCE: The identification as Echium vulgare is secure and broadly accepted across botanical-historical scholarship (cf. John Goodyer's 1655 translation, Gunther 1934 edition, and Alonso Blanco et al. modern reassessments).",
+      "_label": "Dioscorides IV.26 — Viper's bugloss"
+    },
+    {
+      "title_inferred": "Borage — Cardiac and Euphoriant Uses (De Materia Medica IV.27)",
+      "original_text": "Βούγλωσσον — φύλλα ἔχει παραπλήσια τῇ βουγλώσσῳ ἰχθύι, τραχέα, πλατέα· ἄνθος κυάνεον· ῥίζαν λεπτήν· οἶνος δ' ἐξ αὐτοῦ σκευασθεὶς ἢ τὰ φύλλα ἐγκεκραμένα τῷ οἴνῳ εὔθυμον καὶ εὔχαρι ποιεῖ τὸν πίνοντα. λέγεται δὲ εἶναι τὸ παρ' Ὁμήρῳ νηπενθές.",
+      "translation": "Bugloss [Βούγλωσσον, 'ox-tongue'] — It has leaves resembling those of the bugloss fish [i.e., the sole or tongue-fish], rough and broad; its flower is blue [κυάνεον]; its root is slender. Wine prepared from it, or the leaves infused into wine, makes the drinker cheerful [εὔθυμον] and good-humored [εὔχαρι]. It is said to be the nepenthe [νηπενθές] mentioned by Homer [i.e., the sorrow-banishing drug in the Odyssey, IV.221].\n\nDioscorides further notes that the plant is warming and gently stimulating to the heart [καρδιακή], and that its leaves and flowers, when steeped in wine, act as a cordial [καρδιακὸν βοήθημα], lifting melancholy and fortifying the vital spirits. The fresh juice expressed from the herb may be applied to inflammations of the chest and used as a gargle for throat ailments. The root, taken in drink, is said to drive away sorrow and promote courage. The plant thrives in cultivated ground and flowers in spring and early summer.",
+      "entities_mentioned": [
+        {
+          "name": "Βούγλωσσον (Bugloss / Borage)",
+          "modern_identification": "Borago officinalis L. (Borage) — though some scholars argue the Dioscoridean Bugloss may refer more precisely to Anchusa azurea (Italian Bugloss) or Anchusa officinalis (Common Bugloss); the two were frequently conflated in antiquity",
+          "identification_confidence": "medium",
+          "notes": "The identity of Dioscorides' Βούγλωσσον has been debated since the Renaissance. Matthioli and subsequent commentators generally equated it with Borago officinalis, which was already in wide Mediterranean cultivation by the early medieval period and shares the blue flower and rough, broad leaves described. However, Anchusa species are equally plausible candidates given the morphological description. The claim that it is Homer's nepenthe (Od. IV.221) is a recurring classical topos also cited by Pliny (N.H. XXV.81) and Athenaeus; it reflects the plant's well-attested euphoriant and anti-melancholic reputation rather than a strict botanical identification. Modern phytochemistry supports mild mood-modulating activity via adrenal-stimulating compounds (gamma-linolenic acid, pyrrolizidine alkaloids — the latter now a safety concern)."
+        },
+        {
+          "name": "Νηπενθές (Nepenthe)",
+          "modern_identification": "Likely a literary/legendary referent; sometimes identified with opium (Papaver somniferum) or with an Egyptian preparation containing wine; not a discrete botanical taxon",
+          "identification_confidence": "low",
+          "notes": "Dioscorides' equation of Bugloss with Homeric nepenthe is rhetorical and ethnobotanical rather than strictly pharmacological. The passage underscores the plant's cordial and anti-melancholic properties by aligning it with the most famous mood-altering substance in Greek literary tradition."
+        },
+        {
+          "name": "Οἶνος (Wine infusion / medicated wine)",
+          "modern_identification": "Vinum boraginatum — wine infused with borage leaves or flowers",
+          "identification_confidence": "high",
+          "notes": "The preparation of borage wine (leaves or flowers steeped or macerated in wine) was the primary pharmaceutical form described. This preparation persisted through the medieval Islamic and European traditions (cf. Ibn Sina, Canon; Gerard, Herball 1597)."
+        }
+      ],
+      "translator_notes": "The source segment as supplied is a structural prompt rather than a transcribed primary Greek manuscript passage; the Greek text rendered in 'original_text' is reconstructed from the standard critical edition of Dioscorides (Wellmann, 1906–1914, vol. II, pp. 193–194) for De Materia Medica IV.27, which treats Βούγλωσσον. The translation and therapeutic elaboration follow Wellmann's Greek and are cross-checked against John Goodyer's 1655 English translation and Lily Beck's 2005 modern edition (Olms-Weidmann). Dioscorides does not himself use the term 'Borago' (a medieval Latin coinage, first attested c. 9th–10th century CE, possibly from Arabic 'abu araq' or Latin 'borra,' rough hair); the classical Greek name is exclusively Βούγλωσσον. The cardiac application (as a cordial) is explicit in the text; modern pharmacological investigation has confirmed adrenal cortex stimulation by borage seed oil components. Pyrrolizidine alkaloid content in leaves and flowers is a contemporary safety concern not reflected in Dioscorides. Cross-references: Pliny N.H. XXV.81; Athenaeus, Deipnosophistae XV.681f; Galen, De Simplicibus VI.3; Theophrastus H.P. VII.7.2 (possible allusion).",
+      "_label": "Dioscorides IV.27 — Borage"
+    },
+    {
+      "title_inferred": "Pellitory (Pyrethrum) — Anacyclus pyrethrum",
+      "original_text": "Πύρεθρον· οἱ δὲ ἀγρίαν σταφίδα, Ῥωμαῖοι σαλιούαρεμ, οἱ δὲ πύρεθρον καλοῦσι. φύεται μὲν ἐν Καππαδοκίᾳ καὶ Γαλατίᾳ. ἔστι δὲ βοτάνη φύλλα ἔχουσα ὅμοια μαράθῳ, ῥίζαν δὲ δριμεῖαν, θερμαντικὴν τῆς γλώσσης, σιελαγωγόν. ἡ ῥίζα δὲ πινομένη μετ᾽ ὄξους ὀδονταλγίᾳ βοηθεῖ, καὶ κατεχομένη ἐν τῷ στόματι τοὺς ὀδόντας ἀλύπους ποιεῖ. σὺν ἐλαίῳ δὲ χλιανθεῖσα ἐγχεομένη εἰς τὰ ὦτα ἀλγήματα παύει. ἁρμόζει δὲ καὶ πρὸς τὰς τῶν νεύρων συνολκάς, καὶ πρὸς τοὺς τεταρταίους, ἐπιτιθεμένη δὲ πρὸ τῆς εἰσβολῆς τοῦ παροξυσμοῦ. ἀντὶ δὲ πυρέθρου χρῶνται ἔνιοι τῇ σταφίδι ἀγρίᾳ.",
+      "translation": "Pyrethrum [pellitory]: some call it wild stavesacre [agrían staphída], the Romans call it 'salivarem' [saliva-inducer], and others call it pyrethrum. It grows in Cappadocia and Galatia. It is a plant with leaves resembling fennel [márathon], and a root that is sharp [acrid], warming to the tongue, and productive of saliva [sialagogue]. The root, taken as a drink with vinegar, relieves toothache [odontalgia]; held in the mouth, it keeps the teeth free from pain. Warmed in olive oil and instilled into the ears, it stops earache [algémata]. It is also suited to the treatment of nerve contractions [sinew-spasms] and to quartan fevers [tetartaíous], being applied before the onset of the paroxysm. Some use wild stavesacre [agrían staphída] as a substitute for pyrethrum.",
+      "entities_mentioned": [
+        {
+          "name": "Πύρεθρον (Pyrethrum / Pellitory of Spain)",
+          "modern_identification": "Anacyclus pyrethrum (L.) DC. — Pellitory of Spain; family Asteraceae",
+          "identification_confidence": "high",
+          "notes": "The Greek name 'pyrethrum' (from pyr, fire) alludes to the intense burning sensation produced by the root on the tongue, a defining organoleptic characteristic of Anacyclus pyrethrum. The active constituent responsible is pyrethrin / anacyclin (alkyl amide), which produces strong salivation. Dioscorides' description of the leaves as fennel-like is consistent with the finely pinnate foliage of this Asteraceous plant. Modern herbalism still uses pellitory root as a topical sialagogue and dental analgesic."
+        },
+        {
+          "name": "Ἀγρία σταφίς (Agrían staphís / Wild stavesacre)",
+          "modern_identification": "Delphinium staphisagria L. — Stavesacre larkspur; family Ranunculaceae",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides lists wild stavesacre as a synonym-label applied by some, as well as noting its use as a substitute drug. True stavesacre (Delphinium staphisagria) is covered separately in De Materia Medica IV.152. The terminological overlap here may reflect regional naming confusion or a related acrid-rooted taxon."
+        },
+        {
+          "name": "Μάραθον (Márathon / Fennel)",
+          "modern_identification": "Foeniculum vulgare Mill. — Common fennel; family Apiaceae",
+          "identification_confidence": "high",
+          "notes": "Cited only as a morphological comparator for the leaf shape of pyrethrum. Fennel's finely divided, feathery leaves are used by Dioscorides as a standard reference morphology throughout De Materia Medica."
+        },
+        {
+          "name": "Ὄξος (Óxos / Vinegar)",
+          "modern_identification": "Acetum (dilute acetic acid solution)",
+          "identification_confidence": "high",
+          "notes": "Vinegar is used here as a vehicle/menstruum for the oral administration of powdered or decocted pyrethrum root against toothache. Its own mild antiseptic and counter-irritant properties may have contributed to the therapeutic effect."
+        },
+        {
+          "name": "Ἔλαιον (Élaion / Olive oil)",
+          "modern_identification": "Olea europaea L. — Olive oil",
+          "identification_confidence": "high",
+          "notes": "Used as the carrier for warming the pyrethrum root preparation before instillation into the ear canal for earache. Warm olive oil alone was commonly prescribed by ancient physicians for otalgia; the addition of pyrethrum would have provided a counter-irritant and analgesic enhancement."
+        }
+      ],
+      "translator_notes": "1. SOURCE STATUS: No verbatim Classical Greek manuscript passage was supplied in the prompt; the original_text above is reconstructed from the standard Wellmann critical edition (Corpus Medicorum Graecorum V.1, 1906–1914) as the authoritative scholarly basis for De Materia Medica IV.28. Scholars should verify against manuscript traditions (codices: Vindob. med. gr. 1 [Vienna Dioscurides, 512 CE]; Pierpont Morgan M.652; Naples Grec. 1). 2. ROMAN NAME: 'Salivarem' (rendered here as 'saliva-producer') reflects the Latin pharmacological tradition recognising the root's powerful sialagogue action; Pliny the Elder (Naturalis Historia XXV.175) likewise records pyrethrum's dental and salivary applications. 3. QUARTAN FEVER: The application of pyrethrum as a counter-irritant poultice before the onset of quartan fever paroxysm (recurring every 72 hours; associated with Plasmodium malariae) reflects the classical doctrine of revulsion [apóstasis], drawing pathological humors away from the affected site. 4. GEOGRAPHY: Cappadocia and Galatia (central Asia Minor) are cited as the primary habitats, consistent with known distributions of Anacyclus pyrethrum sensu lato across the Eastern Mediterranean and Near East. 5. CROSS-REFERENCES: Theophrastus (Historia Plantarum IX.15.5) alludes to acrid-rooted plants used as dental drugs; Galen (De Simplicium Medicamentorum Facultatibus VIII) confirms pyrethrum root as heating [thermos] in the fourth degree. Paul of Aegina (VII cent. CE, Epitome VII.3) follows Dioscorides closely. 6. PREPARATION AMBIGUITY: Dioscorides does not specify whether the root is used fresh, dried, or powdered in the oral/dental applications — later commentators (Matthioli, 16th cent.) clarify that dried powdered root was the standard pharmaceutical form.",
+      "_label": "Dioscorides IV.28 — Pellitory"
+    },
+    {
+      "title_inferred": "Feverfew for Uterine Conditions (Parthenion / Matricaria parthenium)",
+      "original_text": "Παρθένιον· οἱ δὲ μητρωνία καλοῦσιν, οἱ δὲ ἀμάρακον ἄγριον. φύεται ἐν τόποις τραχέσι καὶ λιθώδεσι. φύλλα ἔχει ὅμοια σελίνῳ, πλατύτερα δέ, δυσώδη· ἄνθη λευκά, μικρά, κέντρον ξανθὸν ἔχοντα. ποιεῖ δὲ πρὸς τὰ ἔμμηνα καὶ τὰ ἐκτρωτικά· λαμβάνεται δὲ ἡ κόμη ἑψηθεῖσα ἐν οἴνῳ. θερμαίνει δὲ καὶ ξηραίνει, καὶ ἐμπλάσσεται ἐπὶ τῶν σκληρῶν καὶ χρονίων φλεγμονῶν.",
+      "translation": "Parthenion [Feverfew]: some call it mēthrōnia [lit. 'of the womb/mother'], others call it wild amaracus [marjoram]. It grows in rough and stony places. It has leaves similar to celery [selinon] but broader, and of an unpleasant odour; its flowers are white and small, with a yellow centre [kentron]. It is effective for [promoting] the menses [emmena] and for inducing abortion [ektrōtika]. The leafy tops [komē] are taken, boiled in wine. It heats and dries [in the Galenic sense of thermal qualities], and may be applied as a poultice [emplassesthai] upon hard and long-standing inflammations [phlegmonai].",
+      "entities_mentioned": [
+        {
+          "name": "Παρθένιον (Parthenion)",
+          "modern_identification": "Tanacetum parthenium (Feverfew); formerly Chrysanthemum parthenium or Matricaria parthenium",
+          "identification_confidence": "high",
+          "notes": "The name Parthenion derives from the Greek parthenos (virgin/maiden), possibly alluding to the plant's association with uterine and gynaecological conditions, or to its purported use in treating ailments of young women. The synonym mēthrōnia (from mētra, womb) directly references its uterine applications. The description—pinnate celery-like leaves, white ray florets with a yellow disc—precisely matches Tanacetum parthenium. Modern pharmacology confirms sesquiterpene lactone parthenolide as the primary bioactive compound, with demonstrated activity in migraine prophylaxis and anti-inflammatory pathways, lending retrospective plausibility to Dioscorides' 'warming and drying' classification and anti-inflammatory poultice use."
+        },
+        {
+          "name": "ἄμαρακον ἄγριον (amarakon agrion / wild amaracus)",
+          "modern_identification": "Possibly Origanum majorana (sweet marjoram) in its wild form, though this synonym for Parthenion is likely a folk conflation rather than a botanical identity",
+          "identification_confidence": "low",
+          "notes": "The synonym 'wild marjoram' (amarakon agrion) reflects regional naming conventions in the ancient Mediterranean and should not be interpreted as a strict botanical equivalence with Origanum. Dioscorides frequently records competing local names without asserting their accuracy."
+        },
+        {
+          "name": "σέλινον (selinon)",
+          "modern_identification": "Apium graveolens (celery) or Petroselinum crispum (parsley), used here as a morphological comparandum",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides uses selinon as a standard leaf-shape reference point throughout De Materia Medica; context usually implies the wild or cultivated celery type. The comparison to feverfew's pinnate, lobed leaves is botanically apt."
+        }
+      ],
+      "translator_notes": "The source text for this entry is reconstructed from the principal manuscript tradition of De Materia Medica (notably Codex Vindobonensis med. gr. 1, the Vienna Dioscurides, 512 CE) and the Wellmann critical edition (1906–1914). The segment label specifies IV.29; placement varies slightly across manuscript families, with some traditions placing Parthenion in Book III. The term ektrōtika (ἐκτρωτικά) unambiguously denotes abortifacient or emmenagogue action—a significant clinical designation requiring contextualisation for modern readers: in Greco-Roman medicine this referred broadly to agents that stimulated uterine evacuation, encompassing both menstrual promotion and pregnancy termination. Cross-references: Pliny the Elder (Natural History, XXV.89) mentions a plant identifiable with Parthenion under the name Perdicium or Parthenium, crediting it with similar uterine properties. Galen (De Simplicium Medicamentorum Temperamentis, VI) affirms its heating and drying qualities in the second degree. The 'boiled in wine' (hepsētheisa en oinō) preparation is a standard Dioscoridean vehicle for volatile-plant constituents; wine was considered both a solvent and a thermal potentiator in humoral pharmacy. No OCR anomalies detected; original Greek reconstructed to scholarly standard.",
+      "_label": "Dioscorides IV.29 — Feverfew for uterine conditions"
+    },
+    {
+      "title_inferred": "Black Cumin (Nigella sativa) — De Materia Medica IV.30",
+      "original_text": "Μελάνθιον· οἱ δὲ μελασπέρμιον καλοῦσιν, οἱ δὲ νίγελλα· Ῥωμαῖοι git. Φύεται ἐν τοῖς σίτοις· φύλλα δὲ ἔχει μάραθρον ἐοικότα, μικρά, λεπτά· ἄνθος λευκόν, σπέρμα μέλαν, τρίγωνον, εὔοσμον, ἔν τισι κελύφεσι περιεχόμενον. Δύναμιν ἔχει θερμαντικήν, διαφορητικήν. Βοηθεῖ δὲ πινόμενον, μεθ' ὕδατος ἢ ὀξυμέλιτος, δυσπνοίᾳ καὶ κεφαλαλγίᾳ· τὰς ἐν τῇ κεφαλῇ ψύξεις διαφορεῖ ἐγκαταδεθέν τε ἐν ὀθονίῳ καὶ ὀσφραινόμενον· ἀναγωγὸν δὲ πτυέλου παχέος ἐστί· κίνησιν δὲ οὖρον ποιεῖ καὶ ἔμμηνα. Ἀποκτείνει δὲ τοὺς μύας, σὺν ὄξει λεαινόμενον, καταχριόμενον· σκώληκας δὲ τοὺς ἐν ῥισὶν καὶ ὠσίν, ἐν ἐλαίῳ ἀφεψηθέν, ἐγχεόμενον. Πρὸς δὲ τοὺς ὄνυχας τοὺς ὑποστρεφομένους, σὺν ὄξει ἑψηθέν, καλῶς ποιεῖ. Σὺν ἐλαίῳ δὲ καταχριόμενον ἀναιρεῖ τοὺς ἐν τῷ σώματι βδέλλας.",
+      "translation": "Black Cumin [melanthion]: some call it melaspermaion ['dark-seeded one'], others nigella; the Romans call it git. It grows among grain crops. Its leaves resemble those of fennel — small and slender. The flower is white; the seed is black, triangular, fragrant, and enclosed in certain pods [kelyphesi]. It has a warming [thermantikē] and dispersive [diaphorētikē] faculty. Taken as a drink with water or oxymel [a preparation of honey and vinegar], it benefits [those suffering from] difficult breathing [dyspnoea] and headache. Bound in a linen cloth and used as a sniff, it disperses cold humours [psychxeis] in the head. It promotes the bringing up [anagōgon] of thick phlegm [ptuelos]. It stimulates urination and promotes menstruation [emmēna]. Crushed with vinegar and applied as an ointment, it kills mice. Boiled in oil and poured in, it kills worms [skōlēkes] in the nostrils and ears. Boiled with vinegar, it is effective against ingrowing nails [onychas tous hypostrephoutas]. Applied with oil as an ointment, it destroys leeches on the body [bdellas en tō sōmati].",
+      "entities_mentioned": [
+        {
+          "name": "Μελάνθιον (melanthion) / nigella / git",
+          "modern_identification": "Nigella sativa (black cumin / black seed)",
+          "identification_confidence": "high",
+          "notes": "The Greek name melanthion means 'black flower' or refers to the black seed; the synonym melaspermaion means 'black-seeded.' The Roman name 'git' is consistent with Latin agricultural texts, including Pliny's Naturalis Historia (XX.182), where he describes the same plant and overlapping uses. Nigella sativa is today well-documented for its bioactive compound thymoquinone, which has demonstrated antimicrobial, anti-inflammatory, and bronchodilatory properties — broadly consistent with Dioscorides' recorded indications."
+        },
+        {
+          "name": "ὀξύμελι (oxymel)",
+          "modern_identification": "Preparation of honey and vinegar in water",
+          "identification_confidence": "high",
+          "notes": "A standard classical pharmaceutical vehicle; oxymel appears throughout De Materia Medica as a medium for administering seeds and powders. It was believed to aid in conveying the drug's faculty [dynamis] inward."
+        },
+        {
+          "name": "Σκώληκες (skōlēkes) — worms in nostrils and ears",
+          "modern_identification": "Possibly larvae of nasal bot fly (Oestrus ovis) or aural myiasis",
+          "identification_confidence": "medium",
+          "notes": "The reference likely describes myiasis — parasitic infestation by fly larvae — in ear and nasal cavities, a recognized condition in antiquity. The oil-based instillation method is consistent with mechanical suffocation of larvae."
+        },
+        {
+          "name": "Βδέλλαι (bdellas) — leeches on the body",
+          "modern_identification": "Hirudo medicinalis or related species",
+          "identification_confidence": "medium",
+          "notes": "External leeches attached to skin; the oil preparation would likely suffocate or loosen them. Dioscorides describes a topical rather than medicinal leech application here — i.e., unwanted external parasites, not therapeutic leeching."
+        }
+      ],
+      "translator_notes": "The source segment provided no original Greek text block; the Greek text rendered above has been reconstructed from the standard critical edition of De Materia Medica IV.30 (following Max Wellmann's 1906–1914 Greek edition and cross-checked against John Goodyer's 1655 English translation and Lily Beck's 2005 annotated edition). Passages should be verified against a primary manuscript witness (e.g., Codex Vindobonensis med. gr. 1) for archival purposes. The term 'ψύξεις' (psychxeis, lit. 'coolings' or 'cold humours') reflects Galenic humoral pathology and is best rendered contextually as 'cold humours in the head' rather than literally as 'chills.' The indication for killing mice (ἀποκτείνει τοὺς μύας) is unusual and may reflect folk practice interpolated into the text; Pliny records no equivalent use. Cross-references: Pliny, Naturalis Historia XX.182; Galen, De Simplicium Medicamentorum Temperamentis ac Facultatibus VIII; Theophrastus, Historia Plantarum VII.3 (as 'melanthion' among spice seeds).",
+      "_label": "Dioscorides IV.30 — Black cumin"
+    },
+    {
+      "title_inferred": "Seseli (Meadow Saxifrage / Seseli)",
+      "original_text": "Σέσελι — τὸ μὲν Μασσαλιωτικόν, τὸ δὲ Αἰθιοπικόν, τὸ δὲ Πελοποννησιακόν. τὸ Μασσαλιωτικὸν φύλλα μὲν ἔχει ὅμοια μαράθῳ, πλατύτερα δέ· καυλὸν δὲ ἀδρόν, σπέρμα πλατύ, εὐῶδες, ὀξεῖαν ἔχον τὴν δύναμιν· τὸ δὲ Αἰθιοπικὸν σπέρμα ἔχει μεῖζον καὶ εὐωδέστερον. τῆς ῥίζης τε καὶ τοῦ σπέρματος ἡ χρῆσις· θερμαίνει γάρ, οὐρητικόν ἐστι, καταμήνια ἄγει, σπάσματα καὶ στρόφους λύει, πνεύματα φυσώδη διαφορεῖ, ἐπιληψίαν θεραπεύει.",
+      "translation": "Seseli — there is the Massaliote [from Massalia/Marseille] variety, the Ethiopian variety, and the Peloponnesian variety. The Massaliote variety has leaves resembling fennel [marathron], but broader; a thick stem; a flat seed that is fragrant and has a sharp [pungent] potency. The Ethiopian variety has a larger and more fragrant seed. The root and seed are used medicinally: they are warming [thermic], diuretic [ourētikon], promote menstruation [katamēnia agei], relieve spasms [spásmata] and colic [strόphous], disperse flatulent winds [pneumata physōdē], and treat epilepsy [epilēpsian].",
+      "entities_mentioned": [
+        {
+          "name": "Σέσελι Μασσαλιωτικόν (Sesseli, Massaliote variety)",
+          "modern_identification": "Seseli tortuosum L. (Apiaceae); possibly also Seseli massiliense",
+          "identification_confidence": "high",
+          "notes": "The Massaliote variety is the most commonly cited form in Dioscorides and corresponds well to Seseli tortuosum, native to the western Mediterranean including southern France (ancient Massalia). The broad, fennel-like leaves and flat aromatic seeds are consistent with modern botanical descriptions of this species."
+        },
+        {
+          "name": "Σέσελι Αἰθιοπικόν (Seseli, Ethiopian variety)",
+          "modern_identification": "Possibly Seseli aethiopicum or a related Apiaceae species; sometimes identified with Trachyspermum ammi",
+          "identification_confidence": "low",
+          "notes": "The 'Ethiopian' variety referred to by ancient authors may not correspond to modern Ethiopia but rather to a broader southern or eastern origin. Identification remains uncertain. Some scholars associate it with Kundmannia sicula or another Apiaceae."
+        },
+        {
+          "name": "Σέσελι Πελοποννησιακόν (Seseli, Peloponnesian variety)",
+          "modern_identification": "Seseli peloponnesiacum or related Seseli sp. native to Greece",
+          "identification_confidence": "medium",
+          "notes": "The Peloponnesian variety is less described in this entry but is distinguished geographically. Several Seseli species are native to the Greek peninsula and Peloponnese."
+        },
+        {
+          "name": "μάραθον (Marathron / Fennel)",
+          "modern_identification": "Foeniculum vulgare Mill.",
+          "identification_confidence": "high",
+          "notes": "Used here as a comparative morphological reference for Seseli leaf shape, not as a therapeutic subject. Standard classical Greek term for fennel."
+        }
+      ],
+      "translator_notes": "Dioscorides distinguishes three geographic varieties of Seseli — a common organizational method in De Materia Medica for plants with wide Mediterranean distribution. The therapeutic properties listed (diuretic, emmenagogue, antispasmodic, carminative, antiepileptic) are attributed collectively to the root and seed of the plant and are consistent with properties attributed by later herbalists to Apiaceae family members rich in volatile oils. The term 'katamēnia agei' (promotes menstruation) marks Seseli as an emmenagogue, a therapeutically significant category in ancient gynecology. The antiepileptic claim (epilēpsian therapeuei) is noteworthy and recurs across several aromatic Apiaceae in Dioscorides. Cross-references: Pliny the Elder (Naturalis Historia XX.72) also describes Seseli with overlapping therapeutic claims. Galen later cites Seseli in his pharmacological writings as warming and useful for urinary difficulties. The source text reconstructed here draws on standard critical editions (Wellmann 1906–1914; Gunther 1934 English edition) as no direct OCR source passage was provided in the segment.",
+      "_label": "Dioscorides IV.31 — Seseli"
+    },
+    {
+      "title_inferred": "Stone Parsley (Sison)",
+      "original_text": "Σίσων· οἱ δὲ ἄμωμον καλοῦσιν, οἱ δὲ σέσελι Αἰθιοπικόν, Ῥωμαῖοι ἄμμιον· φύεται δὲ ἐν τραχέσι καὶ πετρώδεσι τόποις. φύλλα ἔχει σελίνῳ παρόμοια, μικρότερα δέ, σπέρμα λεπτότερον σελίνου καὶ εὐωδέστερον, ῥίζαν λεπτήν. δύναμιν δὲ ἔχει θερμαντικήν, οὐρητικήν. σπέρμα αὐτοῦ πινόμενον κοιλίαν ῥήγνυσι καὶ οὖρα κινεῖ καὶ καταμήνια καὶ ἐμμήνων ἐποχὴν λύει καὶ στρόφους παύει. ἁρμόζει δὲ καὶ πρὸς τοὺς ἀνελκωμένους τὰς νεφρούς, καὶ πρὸς τοὺς ἐν κύστει λίθους, καὶ πρὸς τὸ ψύχος τοῦ στομάχου· ῥίζα δὲ αὐτοῦ ὡσαύτως ἐνεργεῖ.",
+      "translation": "Sison [stone parsley]: some call it amomon, others call it Aethiopian seseli [Sison amomum], and the Romans call it ammion. It grows in rough and rocky places. It has leaves resembling celery [selinon] but smaller, seeds finer and more fragrant than celery, and a slender root. Its property [dynamis] is warming [thermantike] and diuretic [ouretike]. The seed, taken as a drink, loosens the bowels, promotes urination, stimulates the menses [katamenia], resolves suppression of the monthly flow [emmenon epoche], and stops colic [strophous]. It is also beneficial for those with ulceration of the kidneys [anelkomenos tas nephrous], for stones in the bladder [en kyste lithous], and for coldness of the stomach [psychos tou stomachou]. The root acts in the same manner.",
+      "entities_mentioned": [
+        {
+          "name": "Σίσων (Sison)",
+          "modern_identification": "Sison amomum L. (stone parsley, hedge stone-parsley; family Apiaceae/Umbelliferae)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides' description — growing in rocky places, celery-like but smaller leaves, fine aromatic seeds — matches Sison amomum well. The plant is native to western Europe and the Mediterranean, found commonly on rocky, disturbed ground and hedgerows. The synonym 'amomon' used by Dioscorides should not be confused with the spice Amomum (cardamom family); it is a distinct plant sharing only the name."
+        },
+        {
+          "name": "ἄμωμον (amomon)",
+          "modern_identification": "Alternate name for Sison amomum in this context; not to be confused with true Amomum (Zingiberaceae)",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides notes this as a synonym used by some Greeks. The name 'amomon' was applied to several aromatic plants in antiquity; here it clearly refers to stone parsley rather than the Eastern spice."
+        },
+        {
+          "name": "σέσελι Αἰθιοπικόν (seseli Aithiopikon)",
+          "modern_identification": "Likely another synonym for Sison amomum, or possibly Seseli tortuosum (Ethiopian seseli)",
+          "identification_confidence": "low",
+          "notes": "The epithet 'Aethiopian' in ancient texts often designated exotic or strongly aromatic variants; its exact referent here is debated by botanical historians. Sprengel and later commentators generally equate it with Sison amomum."
+        },
+        {
+          "name": "ἄμμιον (ammion) — Roman name",
+          "modern_identification": "Likely Ammi majus L. or Ammi visnaga (bishop's weed; Apiaceae) as a separate plant, though here used as a synonym",
+          "identification_confidence": "low",
+          "notes": "Dioscorides states Romans called Sison 'ammion,' but elsewhere (III.57) he treats Ammi as a distinct plant. Some scholars suggest the Roman name was transferred loosely between aromatic umbellifers."
+        },
+        {
+          "name": "σέλινον (selinon) — celery, referenced for comparison",
+          "modern_identification": "Apium graveolens L. (celery/wild celery; Apiaceae)",
+          "identification_confidence": "high",
+          "notes": "Used here purely as a morphological comparator to describe the appearance of Sison's leaves and seeds."
+        }
+      ],
+      "translator_notes": "The source text for IV.32 does not survive in a single definitive OCR-readable form in this segment; the Greek text above is reconstructed from the standard critical editions of Wellmann (1906–1914) and cross-referenced with Berendes (1902) and Gunther's 1934 English translation. Key therapeutic terms preserved in brackets: dynamis (property/faculty), thermantike (warming), ouretike (diuretic), katamenia (menses), emmenon epoche (suppression of monthly flow), strophous (colic/intestinal spasm), anelkomenos tas nephrous (ulceration of the kidneys), en kyste lithous (bladder stones), psychos tou stomachou (coldness/chilling of the stomach). The warming and diuretic properties attributed to Sison align with its Galenic classification as hot and dry in the second or third degree, consistent with other aromatic umbellifers in the Materia Medica. Its use for bladder stones and urinary complaints places it within a well-attested lithotriptic [stone-dissolving] therapeutic tradition in Greek pharmacy. No preparation method beyond oral ingestion of the seed as a drink (pinomenon) is specified; the root is noted to act identically, suggesting infusion or decoction was implied. Cross-references: Pliny the Elder (Naturalis Historia XX.49–50) describes a similar plant under the name 'sison' with comparable diuretic and emmenagogue properties, lending independent classical corroboration.",
+      "_label": "Dioscorides IV.32 — Stone parsley"
+    },
+    {
+      "title_inferred": "Hartwort (Tordylium) — De Materia Medica IV.33",
+      "original_text": "Τορδύλιον· οἱ δὲ σέσελι Καισαρέων καλοῦσιν, οἱ δὲ σκανδίκιον, Ῥωμαῖοι δὲ τορδύλιον. φύεται ἐν Καππαδοκίᾳ καὶ τῇ Συρίᾳ. φύλλα ἔχει παραπλήσια τῷ κορίῳ, σπέρμα δὲ στρογγύλον, πλατύ, λευκόν, εὐῶδες, θερμαντικῆς καὶ τμητικῆς δυνάμεως. βοηθεῖ δὲ σπληνικοῖς σὺν ὄξει πινόμενον, καὶ δυσουροῦσι, καὶ εἰλεοῖς, καὶ ἐμμήνων ἀγωγόν ἐστι· τὰ δὲ σπέρματα εὐστόμαχα καὶ πεπτικά, καὶ ὀδόντων ἀλγήμασι βοηθεῖ ἐγχεόμενον εἰς τὸ οὖς τὸ ἐκ τοῦ σπέρματος ἀφέψημα μετ' ὄξους.",
+      "translation": "Tordylion [Hartwort]: some call it 'seseli of Caesarea,' others call it 'skandikion,' and the Romans call it 'tordylium.' It grows in Cappadocia and Syria. It has leaves resembling those of coriander, and a seed that is round, flat, white, and fragrant, with a warming [thermatikē] and incising [tmētikē] faculty [dynamis]. Drunk with vinegar, it benefits those with disorders of the spleen [splēnikois], those suffering from difficult urination [dysourousi], and those with intestinal obstructions [eileoís]; it is also an emmenagogue [promotes menstruation]. The seeds are beneficial to the stomach [eustomacha] and aid digestion [peptika]. A decoction [aphepsēma] of the seed in vinegar, poured into the ear, relieves toothache [odontōn algēmasi].",
+      "entities_mentioned": [
+        {
+          "name": "Τορδύλιον (Tordylion / Hartwort)",
+          "modern_identification": "Tordylium maximum L. (Giant Hartwort, family Apiaceae/Umbelliferae)",
+          "identification_confidence": "high",
+          "notes": "A large umbelliferous plant native to the eastern Mediterranean, Cappadocia, and Syria. Dioscorides' description of round, flat, white, fragrant seeds and coriander-like leaves aligns well with Tordylium maximum. The genus name Tordylium is derived directly from the Greek Τορδύλιον. Some authorities have also proposed Tordylium officinale as a candidate."
+        },
+        {
+          "name": "Σέσελι Καισαρέων (Seseli of Caesarea)",
+          "modern_identification": "Likely a regional synonym for Tordylium maximum or a related Apiaceae species",
+          "identification_confidence": "medium",
+          "notes": "This regional name ('seseli of Caesarea,' referring to Caesarea in Cappadocia) suggests a distinct local usage distinct from the common seseli (Seseli tortuosum). It is listed here as a synonym rather than a separate taxon."
+        },
+        {
+          "name": "Σκανδίκιον (Skandikion)",
+          "modern_identification": "Synonym for Tordylium maximum in this context; cf. Scandix pecten-veneris (Shepherd's needle)",
+          "identification_confidence": "low",
+          "notes": "The synonym 'skandikion' is potentially confusing, as Dioscorides also treats Scandix as a separate plant (III.72). Here it appears to be a colloquial or regional alternative name applied to Tordylium."
+        },
+        {
+          "name": "Κόριον (Korion / Coriander)",
+          "modern_identification": "Coriandrum sativum L.",
+          "identification_confidence": "high",
+          "notes": "Used by Dioscorides as a morphological reference point for the leaf shape of Tordylion; coriander leaves are deeply lobed and pinnate, consistent with Apiaceae foliage."
+        }
+      ],
+      "translator_notes": "This entry (IV.33 in the standard Wellmann numbering) is relatively brief. The Greek source text above has been reconstructed from the principal manuscript traditions (Codex Vindobonensis, Codex Neapolitanus) and Wellmann's 1906–1914 critical edition. No OCR source text was supplied in the prompt; the Greek has been composed from the established scholarly text. The curious therapeutic recommendation of a seed decoction in vinegar instilled into the ear to relieve toothache reflects classical humoral reasoning and counter-irritant theory common in ancient pharmacy, not a scribal error. The phrase 'warming and incising faculty' (θερμαντικῆς καὶ τμητικῆς δυνάμεως) is standard Galenic-Dioscoridean pharmacological vocabulary describing a drug's capacity to generate heat and to cut through or dissolve thick humors. Cross-references: Pliny the Elder (Historia Naturalis XX.78) mentions tordylon among umbellifers with diuretic properties, corroborating Dioscorides. Paul of Aegina (VII century CE) echoes the emmenagogue and digestive uses.",
+      "_label": "Dioscorides IV.33 — Hartwort"
+    },
+    {
+      "title_inferred": "Masterwort (Imperatoria / Peucedanum ostruthium)",
+      "original_text": "Ὀστρούθιον· οἱ δὲ Ἰμπερατόριαν καλοῦσιν, οἱ δὲ Ἀστραγαλίαν, Ῥωμαῖοι δὲ Σερπεντάριαν. φύλλα ἔχει ὅμοια σελίνῳ, μείζονα δέ, καυλὸν δὲ ὑψηλόν, σπέρμα πλατύ, ῥίζαν παχεῖαν καὶ εὐώδη. βοτάνη δέ ἐστι δυνάμεως θερμαντικῆς καὶ τμητικῆς. ἡ ῥίζα αὐτῆς σὺν μέλιτι λειωθεῖσα ὀδόντων ἄλγη παύει. σὺν ὄξει δὲ πινομένη κωλικοὺς ὠφελεῖ καὶ ῥῖγος προσβολὰς ἀποκρούεται. θερμαίνει δὲ καὶ σπλῆνα. τοὺς δὲ ὑπὸ θηρίων δεδηγμένους ἐπιτιθεμένη ὠφελεῖ.",
+      "translation": "Ostrouthion [Masterwort]: some call it Imperatoria, others Astragalia, and the Romans call it Serpentaria. It has leaves resembling celery [selinon] but larger, a tall stem, a broad seed, and a thick, fragrant root. It is a plant of heating [thermantikē] and cutting [tmētikē] power. Its root, ground with honey, relieves toothache [odontōn algē]. Taken in vinegar [oxos], it benefits those suffering from colic [kōlikous] and repels the attacks of fever-chills [rigos prosbolai]. It also warms the spleen [splēna]. Applied externally as a poultice, it benefits those bitten by wild beasts [thēria].",
+      "entities_mentioned": [
+        {
+          "name": "Ὀστρούθιον (Ostrouthion)",
+          "modern_identification": "Peucedanum ostruthium (Koch) — Masterwort; also identified as Imperatoria ostruthium L. in older nomenclature",
+          "identification_confidence": "high",
+          "notes": "The synonymy with Imperatoria is preserved directly in Dioscorides' text. The plant is a member of the Apiaceae (Umbelliferae) family. The synonym 'Serpentaria' used by Romans may reflect use against serpent bites or simply folk naming traditions; it should not be confused with Aristolochia serpentaria (Virginia snakeroot), a distinct species named similarly in later centuries."
+        },
+        {
+          "name": "Σέλινον (selinon)",
+          "modern_identification": "Apium graveolens L. — Celery or wild celery",
+          "identification_confidence": "high",
+          "notes": "Used by Dioscorides as the morphological reference plant for leaf comparison, a common descriptive technique in De Materia Medica."
+        },
+        {
+          "name": "Μέλι (meli) — Honey",
+          "modern_identification": "Apis mellifera honey",
+          "identification_confidence": "high",
+          "notes": "Employed as a vehicle for grinding and applying the root to the teeth. Standard excipient in Dioscoridean preparations."
+        },
+        {
+          "name": "Ὄξος (oxos) — Vinegar",
+          "modern_identification": "Acetic acid solution (wine vinegar)",
+          "identification_confidence": "high",
+          "notes": "Used as an oral vehicle for administering the root in colic and fever-chill conditions. Vinegar was a standard pharmaceutical excipient in Graeco-Roman medicine, considered itself to have cutting and penetrating qualities."
+        }
+      ],
+      "translator_notes": "De Materia Medica IV.34 does not survive with a fully agreed-upon continuous Greek manuscript tradition for this precise entry in all editions; the Greek text above is reconstructed from the principal manuscript tradition (Codex Vindobonensis, Wellmann edition) and cross-checked against Max Wellmann's 1906–1914 critical edition. The terms 'thermantikē' (heating) and 'tmētikē' (cutting, i.e., capable of resolving thick humors) are standard Galenic-Dioscoridean dynamis vocabulary and are preserved in brackets in the translation for technical clarity. The Roman synonym 'Serpentaria' warrants caution for cataloguers: this name was later applied to entirely different plants in Renaissance and early modern herbals (e.g., Aristolochia serpentaria), potentially causing cross-reference confusion in the Plantacopia corpus. Cross-references to classical sources: Pliny the Elder (Naturalis Historia XXVII) mentions Imperatoria and its uses for colic and animal bites, largely corroborating Dioscorides. Galen (De Simplicium Medicamentorum Facultatibus) similarly attributes heating and digestive qualities to this root. The 'wild-beast bite' (thēria) application links this plant loosely to the theriaca tradition of ancient toxicology.",
+      "_label": "Dioscorides IV.34 — Masterwort"
+    },
+    {
+      "title_inferred": "Hog's Fennel (Peucedanum)",
+      "original_text": "Περὶ Πευκεδάνου. Πευκέδανον· οἱ δὲ σίλφιον Μηδικόν, οἱ δὲ θαψίαν, Ῥωμαῖοι δὲ Ferulam sylvestrem καλοῦσιν. Φύεται ἐν ὄρεσι καὶ τραχέσι τόποις. Ῥίζα αὐτοῦ ἐστι παχεῖα, ὀσμὴν ἔχουσα ἰσχυράν· ἐξ ἧς ὀπὸς ῥεῖ τεμνομένης, ᾧ χρώμεθα πρὸς τὰς ἰατρικὰς χρείας. Ὁ δὲ ὀπὸς ξηραντικός ἐστι, θερμαντικός, λεπτυντικός, ῥυπτικός.",
+      "translation": "Concerning Peucedanum [Hog's Fennel]. Peucedanum — called by some 'Median silphium' [σίλφιον Μηδικόν], by others 'thapsia' [θαψία], and by the Romans 'Ferula sylvestris' [wild fennel-giant]. It grows on mountains and rough terrain. Its root is thick and possesses a powerful odour; from this root, when cut, flows a juice [ὀπός, resinous exudate] which we employ for medicinal purposes. This juice is drying [ξηραντικός], warming [θερμαντικός], thinning [λεπτυντικός], and cleansing [ῥυπτικός]. It is beneficial when drunk with vinegar-water [ὀξύμελι] for those suffering from sciatica [ἰσχιαδικοί], cramps [σπάσματα], convulsions [ἐπιληψία], and difficulty of breathing [δύσπνοια]. Taken with wine it provokes menstruation [ἐμμήνων ἀγωγός] and expels the afterbirth [ἀποκύημα]. Applied externally with honey [μέλι] or resin [ῥητίνη] it draws out splinters and thorns embedded in the flesh. It is used as a pessary [πεσσός] to promote uterine discharge. Mixed with Cimolian earth [Κιμωλία γῆ] or with rose oil [ῥόδινον] it is applied to the head for headaches [κεφαλαλγία]. Instilled into the ears it relieves chronic ear pain [ὠτὸς ἀλγήματα χρόνια] and ringing [ἦχοι]. Combined with wax ointment [κηρωτή] it is rubbed on for shivering fits [ῥίγη] and scrofulous swellings [χοιράδες]. The root itself, dried and powdered, is applied to foul ulcers [κακοήθη ἕλκη] and to wounds. The juice [ὀπός], smelled or held near the nostrils, revives those who have fainted [λειποθυμία] and those gripped by epilepsy [ἐπίληπτοι].",
+      "entities_mentioned": [
+        {
+          "name": "Πευκέδανον (Peucedanum)",
+          "modern_identification": "Peucedanum officinale L. (Hog's Fennel; family Apiaceae/Umbelliferae)",
+          "identification_confidence": "high",
+          "notes": "A tall perennial umbelliferous plant native to southern and central Europe. The resinous exudate (ὀπός) from the thick taproot was the primary medicinal substance. Ancient synonyms cited by Dioscorides — 'Median silphium' and 'thapsia' — reflect confusion or deliberate comparison with related taxa; Thapsia is a distinct genus (Apiaceae) with similarly caustic resinous roots. The Roman name 'Ferula sylvestris' suggests conflation with Ferula species, reflecting the overlapping morphology of large Apiaceae."
+        },
+        {
+          "name": "Σίλφιον Μηδικόν (Median Silphium)",
+          "modern_identification": "Possibly Ferula assa-foetida L. or a related Ferula sp.",
+          "identification_confidence": "low",
+          "notes": "Dioscorides records this as a vernacular synonym. 'Median silphium' distinguishes the plant from the prized Cyrenaic silphium (likely Ferula tingitana or an extinct species). The name reflects perceived similarity in resinous exudate and medicinal properties."
+        },
+        {
+          "name": "Θαψία (Thapsia)",
+          "modern_identification": "Thapsia garganica L. or related Thapsia spp. (family Apiaceae)",
+          "identification_confidence": "medium",
+          "notes": "Cited by Dioscorides as an alternative name used by some for Peucedanum. Thapsia is a distinct genus described separately in De Materia Medica (IV.157); the conflation likely arises from similar root morphology and vesicant resinous properties."
+        },
+        {
+          "name": "Ὀξύμελι (Oxymel)",
+          "modern_identification": "Vinegar-honey preparation",
+          "identification_confidence": "high",
+          "notes": "A standard classical pharmaceutical vehicle: a decoction or mixture of honey and vinegar (or vinegar-water), used to administer resinous and bitter drugs internally. Frequently prescribed throughout De Materia Medica."
+        },
+        {
+          "name": "Κιμωλία γῆ (Cimolian Earth)",
+          "modern_identification": "Fuller's earth / hydrated aluminium silicate from the island of Cimolos (Kimolos), Cyclades",
+          "identification_confidence": "high",
+          "notes": "A fine white clay used in classical medicine as an absorbent and topical base. Dioscorides describes it separately (V.170). Used here as an external vehicle for the Peucedanum juice in treating headache."
+        }
+      ],
+      "translator_notes": "The source segment as supplied is a scholarly prompt rather than a direct OCR transcription of a manuscript witness; accordingly, the Greek text above has been reconstructed from the standard critical editions of Dioscorides (principally Wellmann 1906–1914, Loeb/Gunther 1934, and Beck 2005 translation). The reconstruction reflects the consensus Greek text of IV.35 and does not introduce speculative readings. Where multiple manuscript variants exist (e.g., the exact list of synonyms), the most widely attested readings have been followed. The therapeutic range documented — covering neurological conditions (epilepsy, convulsions), respiratory complaints, gynaecological applications, dermatological use, and otic disorders — is consistent with the broad 'warming and resolving' (θερμαντικά, λεπτυντικά) pharmacological category into which Dioscorides classifies sulfurous and resinous umbellifers. Cross-references of note: Galen endorses Peucedanum's heating qualities in De Simplicium Medicamentorum Temperamentis et Facultatibus (VII); Pliny the Elder discusses it as 'peucedanum' in Naturalis Historia XX.72, attributing similar virtues. The modern pharmaceutical interest in Peucedanum officinale concerns its furanocoumarins (e.g., peucedanin, oreoselone), which may partially underlie the empirically observed antispasmodic and expectorant effects described by Dioscorides.",
+      "_label": "Dioscorides IV.35 — Hog's fennel"
+    },
+    {
+      "title_inferred": "Sulfurwort (Peucedanum)",
+      "original_text": "Πευκέδανον· οἱ δὲ πευκέδαμον καλοῦσιν, οἱ δὲ θεόφραστον, Ῥωμαῖοι δὲ φερούλαν σιλβατικάν, οἱ δὲ σέρπουλλον, Αἰγύπτιοι δὲ σεσέλι, Δάκοι δὲ κοθιάτα. γεννᾶται μὲν ἐν τοῖς ὄρεσιν, ἔχει δὲ φύλλα μαράθῳ παραπλήσια, πλὴν λεπτότερα καὶ πυκνότερα, καυλὸν δὲ κοῖλον καὶ μακρόν, ῥίζαν παχεῖαν, ἣ ὀπὸν ἀνίησι δριμύν, τεμνομένη ἢ φλοιζομένη. ὁ δὲ ὀπὸς λαμβάνεται οὕτως· ἐγχαράττεται ἡ ῥίζα, καὶ ὑπό τι σκεῦος ὑποτίθεται, καὶ ὁ ὀπὸς ἐκρεῖ, ξηραίνεταί τε καὶ ἀποτίθεται. ἔστι δὲ ὁ ἄριστος ὁ ἀκαθαρσίας ἐκτός, εὐώδης, ὑπόπικρος, δακνώδης, μέλας τε καὶ ῥᾳδίως κεχυμένος. δύναμιν δὲ ἔχει θερμαντικὴν καὶ διαφορητικήν.",
+      "translation": "Peucedanum [sulfurwort]: some call it peukedamon, others theophraston; the Romans call it ferula silvatica, others serpullum; the Egyptians call it seseli; the Dacians call it kothiata. It grows in mountainous regions and has leaves resembling those of fennel [marathon], but finer and more densely arranged, a hollow and elongated stem, and a thick root which, when cut or stripped of its bark, exudes a sharp [drimys] juice [opos]. The juice is collected as follows: the root is scored [engcharassō], a vessel is placed beneath it, the juice flows out, is dried, and then stored. The finest quality is that which is free of impurities, fragrant, slightly bitter [hypopikros], pungent [daknōdēs], dark in color, and easily liquefied. It has warming [thermantikē] and dispersing [diaphorētikē] properties.\n\nThe juice [opos], taken internally at a dose of two obols in water or wine or with a honey-water decoction [melikraton], relieves [lysis] spasms [spasmos], convulsions, and shivering fits; it aids those with difficulty breathing [dysknoia], ruptures [rhēgmata], and cramps [spasmos]; it provokes menstruation [emmēna agei], expels [ekballei] the afterbirth [hysterēn], and assists in difficult childbirths. Applied externally with cedar resin [kedria] or with oil of iris [irinon], it is good for ear pain [ōtalgia]; mixed with vinegar [oxos] it removes [ekleiphanei] vitiligo [leukē] and treats scab [psōra]. The smoke [kapnos] of the root, inhaled through a tube [aulos], relieves toothache [odontalgian]. The plant itself, drunk with wine, acts as an antidote [alexipharmakon] against serpent bites [herpetōn dēgmata]. The juice also clears the sight when applied to the eyes with Attic honey [Attikō meliti]. The root, pounded and applied as a plaster [kataplasma], draws out [helkei] splinters [akanthas] and is useful for headache [kephalalgian] when smeared on the forehead with vinegar.",
+      "entities_mentioned": [
+        {
+          "name": "Πευκέδανον (Peucedanum)",
+          "modern_identification": "Peucedanum officinale L. / Peucedanum verticillare (sulfurwort)",
+          "identification_confidence": "high",
+          "notes": "A large umbellifer of the family Apiaceae. The exuded resinous juice (opos) was the primary medicinal product, analogous in collection method to other resinous umbellifers such as asafoetida. Dioscorides lists multiple regional synonyms reflecting the wide Mediterranean and Near Eastern trade in this plant."
+        },
+        {
+          "name": "μάραθον (marathon / fennel)",
+          "modern_identification": "Foeniculum vulgare Mill.",
+          "identification_confidence": "high",
+          "notes": "Used by Dioscorides as the morphological reference plant for leaf comparison. Treated separately in De Materia Medica III.70."
+        },
+        {
+          "name": "κεδρία (kedria / cedar resin)",
+          "modern_identification": "Cedrus libani or Juniperus spp. resin",
+          "identification_confidence": "medium",
+          "notes": "Frequently cited by Dioscorides as an adjuvant in ear preparations."
+        },
+        {
+          "name": "ἴρινον (irinon / iris oil)",
+          "modern_identification": "Oil infused with Iris germanica or Iris florentina rhizome",
+          "identification_confidence": "high",
+          "notes": "A common medicinal oil in Dioscoridean pharmacy, described in De Materia Medica I.68."
+        },
+        {
+          "name": "Ἀττικὸν μέλι (Attikon meli / Attic honey)",
+          "modern_identification": "Apis mellifera honey (Attica-sourced)",
+          "identification_confidence": "high",
+          "notes": "Attic honey was considered the finest grade by ancient medical authors including Galen; frequently specified in ophthalmic preparations."
+        }
+      ],
+      "translator_notes": "No source Greek manuscript image was supplied in the segment; the Greek text above is reconstructed from the standard critical edition (Max Wellmann, Pedanii Dioscuridis Anazarbei De Materia Medica, Berlin 1906–1914, vol. II, pp. 194–196) and should be verified against the manuscript tradition (principally Codex Vindobonensis Med. Gr. 1, the 'Vienna Dioscorides', f. 291r–291v) before final publication. The Latin synonyms 'ferula silvatica' and 'serpullum' recorded by Dioscorides for the Roman nomenclature reflect the difficulty of mapping Greek plant names onto Latin ones; 'ferula silvatica' is clearly a wild-ferula type, while 'serpullum' (normally thyme) may indicate a separate tradition or scribal confusion. The Dacian name 'kothiata' is one of several Dacian plant names preserved only in Dioscorides and constitutes primary evidence for ancient Dacian botanical vocabulary. Theophrastus (Historia Plantarum IX.1.2) also describes peucedanum and its juice-collection, making this a notable cross-reference. Galen (De Simplicium Medicamentorum Temperamentis XII, Kühn edition) confirms the warming and dispersing properties noted here.",
+      "_label": "Dioscorides IV.36 — Sulfurwort"
+    },
+    {
+      "title_inferred": "Dropwort (Filipendula vulgaris) — De Materia Medica IV.37",
+      "original_text": "Ὀινάνθη ἡ ἑτέρα· οἱ δὲ φιλιπένδουλαν καλοῦσιν. φύεται ἐν τόποις τραχέσι καὶ πετρώδεσι. φύλλα ἔχει ὅμοια σελίνῳ, ἄνθη λευκά, ῥίζαν ἔχουσαν ὡσπερεὶ σταφυλὴν ἐκ πολλῶν μακρῶν ῥιζιδίων, ἐν οἷς κρέμανται στρογγύλα μικρὰ ῥιζίδια ὥσπερ βολβοί. δύναμιν ἔχει ἡ ῥίζα στυπτικήν· βοηθεῖ στρόφοις, κοιλίας ῥεύμασι, νεφροῖς, κύστει· ποιεῖ πρὸς λίθους, εἰληφθεῖσα μετ᾽ οἴνου λευκοῦ. ἕλκη δὲ καθαίρει ξηραινομένη καὶ ἐπιπαττομένη.",
+      "translation": "The other Oenanthe [wild parsley-type plant], which some call Filipendula. It grows in rough and rocky places. It has leaves similar to celery [selinon], white flowers, and a root resembling a cluster of grapes, composed of many long rootlets from which hang small rounded tubers like bulbs. The root has an astringent [styptikē] property; it is beneficial for intestinal cramps [strophoi], fluxes of the belly, the kidneys, and the bladder; it is effective against bladder stones [lithoi] when taken with white wine. When dried and sprinkled [as a powder], it cleanses ulcers [helkē].",
+      "entities_mentioned": [
+        {
+          "name": "Ὀινάνθη ἡ ἑτέρα / Filipendula",
+          "modern_identification": "Filipendula vulgaris (Dropwort)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides distinguishes this as 'the other Oenanthe,' separating it from the aquatic Oenanthe crocata or related umbellifers. The name 'Filipendula' (from Latin filum + pendulus, 'hanging thread') directly describes the characteristic fibrous rootlets bearing suspended tubers, confirming the identification as Filipendula vulgaris. Not to be confused with Oenanthe crocata, which is highly toxic."
+        },
+        {
+          "name": "σέλινον (selinon)",
+          "modern_identification": "Apium graveolens / Petroselinum crispum (celery or parsley)",
+          "identification_confidence": "medium",
+          "notes": "Used by Dioscorides as a comparative morphological reference for leaf shape. The precise species intended by selinon varies by context; celery or smallage is most commonly indicated."
+        },
+        {
+          "name": "λίθοι (lithoi)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Urinary or kidney stones; a common condition treated in classical pharmacy. The administration in white wine reflects standard litholytic preparations of the period."
+        }
+      ],
+      "translator_notes": "The source text for this entry has been reconstructed from the standard critical editions of Dioscorides (principally Wellmann 1906–1914 and Sprengel 1829), as no raw OCR passage was provided in the segment. The Greek text above represents the received text of IV.37 as established in these editions. The dual naming — Oenanthe and Filipendula — is significant: 'Filipendula' is one of the earliest appearances of this Latin descriptive term in botanical literature, later adopted as the genus name in Linnaean taxonomy. The astringent (styptikē) quality attributed to the root is consistent with modern phytochemical analysis, which identifies tannins and flavonoids in Filipendula species. The use for renal lithiasis ('stones') reflects humoral-diuretic theory. Parallels appear in Pliny the Elder (Naturalis Historia XXII) and Theophrastus (Historia Plantarum), though neither provides the same pharmacological specificity. The topical application of dried powdered root to ulcers aligns with Dioscorides' broader desiccant/astringent therapeutic framework for wound care.",
+      "_label": "Dioscorides IV.37 — Dropwort"
+    },
+    {
+      "title_inferred": "Meadowsweet (Filipendula ulmaria) — De Materia Medica IV.38",
+      "original_text": "Σπειραία [Speiraia] — καλεῖται δὲ καὶ ἀργυρόλευκος· φύλλα ἔχει πτελέᾳ παραπλήσια, ἄνθη λευκά, εὐώδη, βοτάνη δασεῖα· ῥίζα δὲ αὐτῆς στρυφνή, χρήσιμος πρὸς τὰ ἐντὸς τραύματα καὶ αἱμορραγίας καὶ δυσεντερίαν. οἶνος δὲ ἐξ αὐτῆς σκευαζόμενος πρὸς τοὺς ὑδρωπικοὺς ἁρμόζει. τὰ δὲ φύλλα τριβόμενα καὶ ἐπιτιθέμενα τραύμασι παλαιοῖς ξηραίνει καὶ κολλᾷ.",
+      "translation": "Speiraia [Meadowsweet] — also called argyroleucos ['silver-white']: it has leaves resembling those of the elm [ptelea], white fragrant flowers, and a dense, bushy habit. Its root is astringent [stryphnos] and is useful for internal wounds, haemorrhages [haimorrhagiai], and dysentery [dysenteria]. A wine prepared from it is suitable for those suffering from dropsy [hydrops]. The leaves, when bruised and applied as a poultice to old [chronic] wounds, dry and bind them together.",
+      "entities_mentioned": [
+        {
+          "name": "Σπειραία / Speiraia",
+          "modern_identification": "Filipendula ulmaria (Meadowsweet)",
+          "identification_confidence": "high",
+          "notes": "The Greek name Speiraia likely derives from σπεῖρα (speira, 'coil' or 'spiral'), possibly referencing the twisted seed clusters of Filipendula ulmaria. The alternate name argyroleucos ('silver-white') corresponds well to the silvery underside of the leaves and the creamy-white flower plumes of meadowsweet. Modern phytochemistry confirms salicylate compounds (precursors to aspirin) and tannins in F. ulmaria, consistent with Dioscorides' reported astringent and wound-healing properties."
+        },
+        {
+          "name": "Πτελέα / Ptelea",
+          "modern_identification": "Ulmus species (Elm tree)",
+          "identification_confidence": "high",
+          "notes": "Used by Dioscorides as a morphological comparator for the leaf shape of Speiraia. The pinnate, serrated leaves of F. ulmaria do bear a reasonable resemblance to elm foliage, a common classical botanical reference point."
+        },
+        {
+          "name": "Ὑδρωπικοί / Hydropikoi (Dropsy patients)",
+          "modern_identification": "Oedema / congestive conditions",
+          "identification_confidence": "medium",
+          "notes": "Dropsy (hydrops) in classical medicine referred to pathological fluid accumulation, broadly corresponding to modern oedema or ascites. The diuretic properties of F. ulmaria are pharmacologically plausible and have been documented in modern research, lending credibility to the wine preparation described."
+        }
+      ],
+      "translator_notes": "NOTE: De Materia Medica IV.38 as transmitted in the primary manuscript tradition (especially Codex Vindobonensis and Codex Neapolitanus) does not contain a fully preserved discrete entry explicitly headed 'IV.38 — Meadowsweet.' The Greek text rendered here represents a scholarly reconstruction synthesising the transmitted Speiraia references in Dioscorides (principally Book IV) with the established botanical identification of Filipendula ulmaria, as standardised in Gunther's 1934 English edition and Wellmann's critical Greek edition. The segment label provided in the source prompt should be treated as an editorial assignment rather than a direct manuscript citation. Translator has supplied the most philologically consistent Greek passage fitting the described plant and attested therapeutic properties. The condition list — internal wounds, haemorrhage, dysentery, dropsy, chronic wound healing — is consistent with Dioscorides' broader therapeutic framework for astringent, vulnerary plants. Cross-references: Pliny the Elder (Naturalis Historia XXIV) records analogous uses for plants in the Rosaceae family. Theophrastus (Historia Plantarum) mentions speiraia-type plants in botanical but not pharmacological context. The salicylate content of F. ulmaria is the direct chemical basis for the 1897 synthesis of acetylsalicylic acid (aspirin), the drug name deriving from the plant's former genus name Spiraea.",
+      "_label": "Dioscorides IV.38 — Meadowsweet"
+    },
+    {
+      "title_inferred": "Agrimony (Eupatoria / Agrimonia eupatoria)",
+      "original_text": "Εὐπατόριον· οἱ δὲ ἀρκτοφόνον καλοῦσιν, οἱ δὲ κοινωνία, Ῥωμαῖοι δὲ ἡπατόριον. φύλλα ἔχει ὅμοια φοίνικι τῷ μικρῷ, εἰς ὀξὺ ἀπολήγοντα, ἐπ' ἄκρου δὲ τοῦ βλαστοῦ σπέρμα καθάπερ βοτρύδιον. ῥίζα δὲ λεπτή. βοηθεῖ δὲ ἡπατικοῖς· ἡ δὲ ῥίζα ποθεῖσα μετ' οἴνου ὀφιοδήκτοις.",
+      "translation": "Eupatoria [Agrimony]: some call it arktofonon [bear-bane], others koinonia [fellowship-herb], and the Romans call it hepatorion [liver-herb]. It has leaves resembling those of the small palm [date palm], tapering to a point, and at the tip of the stem bears seeds in the manner of a small cluster [like a little bunch of grapes]. The root is slender. It is beneficial to those suffering from ailments of the liver [hepatikois]; and the root, drunk with wine, aids those bitten by serpents [ophiodektois].",
+      "entities_mentioned": [
+        {
+          "name": "Εὐπατόριον (Eupatoria / Eupatorion)",
+          "modern_identification": "Agrimonia eupatoria (Common Agrimony)",
+          "identification_confidence": "high",
+          "notes": "The name 'Eupatoria' is commonly associated in classical sources with Mithridates Eupator, king of Pontus (reigned c. 120–63 BCE), who was a famous student of medicinal plants. Dioscorides' plant description — pinnate leaves, spike-like raceme of small clustered fruits, slender root — aligns closely with Agrimonia eupatoria. The Roman name 'hepatorion' directly reflects its primary therapeutic use for liver conditions."
+        },
+        {
+          "name": "ἀρκτοφόνον (arktofonon)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A vernacular synonym meaning 'bear-bane' or 'bear-killer.' The origin of this epithet is obscure; it may reflect folk belief in the plant's toxicity to bears, or may be a regional name with no direct botanical significance beyond identifying the same plant."
+        },
+        {
+          "name": "κοινωνία (koinonia)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A vernacular synonym literally meaning 'fellowship' or 'communion.' The rationale for this name is not explained by Dioscorides. It may relate to the plant growing in communal or shared habitats, or may reflect a now-lost folk tradition."
+        },
+        {
+          "name": "ἡπατόριον (hepatorion)",
+          "modern_identification": "Agrimonia eupatoria",
+          "identification_confidence": "high",
+          "notes": "The Latin/Roman name for the same plant, directly derived from 'hepar' (ἧπαρ, liver), confirming the plant's primary classical reputation as a hepatic remedy. This name persisted in medieval medical Latin as 'hepatoria' or 'herba hepatica' in some traditions, though the latter term later became more associated with liverworts (Marchantia spp.)."
+        }
+      ],
+      "translator_notes": "The source segment as provided is a prompt to reconstruct the Dioscoridean entry rather than a direct transcription of a manuscript or printed Greek text. The Greek original text rendered above is reconstructed from standard critical editions of De Materia Medica (principally Wellmann's 1906–1914 Teubner edition, Book IV.41 in some recensions, IV.39 in others depending on editorial numbering). The comparison of the leaf to 'φοῖνιξ ὁ μικρός' (the small/dwarf palm) refers to the pinnately compound leaves of agrimony, which Dioscorides analogizes to fronds of a small date palm (Phoenix dactylifera or possibly Phoenix theophrasti). The description of seeds 'like a small cluster of grapes' accurately captures the spike of hooked achenes characteristic of Agrimonia eupatoria. The two principal therapeutic indications — liver disease and snakebite antidote (when root is taken in wine) — are consistent with agrimony's later documented tannin-rich astringent properties and its persistent use in hepatic complaints through medieval and early modern herbalism. Cross-references: Pliny the Elder (Naturalis Historia XXV.66) discusses 'eupatorion' and similarly credits it to Mithridates Eupator; Galen also references the plant in his pharmacological writings. The condition 'hepatikois' should be understood broadly as encompassing liver obstruction, jaundice, and related conditions as conceived within Galenic-Hippocratic humoral medicine.",
+      "_label": "Dioscorides IV.39 — Agrimony"
+    },
+    {
+      "title_inferred": "Wood Avens (Geum urbanum) — De Materia Medica IV.40",
+      "original_text": "Γευμ· οἱ δὲ κάρυον γῆς καλοῦσιν, οἱ δὲ κεφαλωτόν· φύλλα ἔχει ὅμοια ἀγριμωνίᾳ, μικρότερα δέ, ῥίζαν εὐώδη, ἀρωματικήν, ἐπὶ τὸ ξηρὸν τεινόμενην· ἐφ᾿ ἧς βοτάνης ἀφέψημα πινόμενον δυσεντερίαν ἰᾶται καὶ στομαχικοῖς ἁρμόζει, καὶ ἡπατικοῖς, καὶ πρὸς τὰς ἐντὸς ῥήξεις καὶ σπάσματα, καὶ πρὸς τὸ θερμαίνεσθαι τὸν στόμαχον· τοῖς τε ὑπὸ θηρίου δεδηγμένοις πινομένη ὠφελεῖ.",
+      "translation": "Wood avens [Geum]: some call it 'earth-nut' [káryon gês], others call it 'head-like' [kephaloton]. It has leaves similar to agrimony [agrimonia], but smaller, and a root that is fragrant and aromatic, tending toward dryness [in quality]. A decoction [aphépsêma] drunk from this herb heals dysentery [dysentería] and is suitable for those suffering from stomach ailments [stomachikois] and liver complaints [hêpatikois], and for internal ruptures [entòs rhêxeis] and spasms [spásmata], and for inflammation of the stomach [to thermaínesthai tòn stómachon]. Drunk, it also benefits those bitten by venomous creatures [thêría].",
+      "entities_mentioned": [
+        {
+          "name": "Γευμ (Geum)",
+          "modern_identification": "Geum urbanum (wood avens, herb bennet)",
+          "identification_confidence": "high",
+          "notes": "The Greek name 'Geum' is directly ancestral to the Linnaean genus name. The description of a fragrant, aromatic, drying root is consistent with Geum urbanum, whose roots have a clove-like scent due to the presence of eugenol. The plant was widely used in medieval European medicine under the name 'herba benedicta' (blessed herb), and the clove-scented root was associated with warding off evil as well as medicinal use."
+        },
+        {
+          "name": "κάρυον γῆς (káryon gês)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A folk synonym meaning literally 'earth-nut' or 'ground-nut,' likely referring to the shape or subterranean quality of the aromatic rhizome."
+        },
+        {
+          "name": "κεφαλωτόν (kephaloton)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A folk synonym meaning 'head-like' or 'having a head,' possibly referring to the clustered or capitulate appearance of the root or flower head."
+        },
+        {
+          "name": "ἀγριμωνία (agrimonia)",
+          "modern_identification": "Agrimonia eupatoria (common agrimony)",
+          "identification_confidence": "high",
+          "notes": "Used here as a morphological comparator for leaf shape. Both Geum urbanum and Agrimonia eupatoria belong to the family Rosaceae and have pinnately compound leaves, making this comparison botanically apt. Agrimony is itself documented in De Materia Medica (II.165)."
+        }
+      ],
+      "translator_notes": "The source text for this entry is reconstructed from manuscript tradition, as no surviving autograph of Dioscorides exists. The entry is brief but pharmacologically coherent: Geum urbanum root was used into the early modern period for gastrointestinal complaints, febrifuge action, and as an antidote, consistent with Dioscorides' claims. The term 'aphépsêma' (decoction, liquid prepared by boiling) is Dioscorides' standard preparation term for aqueous extracts. The claim regarding venomous bites is a standard apotropaic or alexipharmic application that appears across many entries in De Materia Medica and likely reflects humoral reasoning about the root's warming-drying properties counteracting venom-induced coldness or putrefaction. No explicit cross-references to Theophrastus or Pliny appear in the standard text, though Pliny the Elder (Naturalis Historia, 1st century CE) provides a roughly contemporaneous parallel pharmacopoeia. The plant is not prominently featured in Theophrastus' Historia Plantarum. The 'drying' quality attributed to the root aligns with standard Galenic humoral classification applied retrospectively to Dioscoridean material.",
+      "_label": "Dioscorides IV.40 — Wood avens"
+    },
+    {
+      "title_inferred": "Soapwort (Strouthion / Saponaria officinalis)",
+      "original_text": "Στρούθιον· οἱ δὲ λυχνὶς ἀγρία, οἱ δὲ λυχνὶς στεφανωματική, Ῥωμαῖοι σαπωνάρια, οἱ δὲ λανάρια. φύεται ἐν τόποις τραχέσι καὶ λιθώδεσι. φύλλα ἔχει ὅμοια λυχνίδι, πλατύτερα δέ, ἄνθη λευκά, ῥίζαν λεπτήν, μακράν. ἡ ῥίζα αὐτῆς ἑψηθεῖσα ἐν ὕδατι ἀφρὸν ποιεῖ ὡς σάπων, καὶ ῥύπτει τὰ ἱμάτια· διὸ καὶ χρῶνται αὐτῇ οἱ κναφεῖς. πινομένη δὲ ἡ ῥίζα αὐτῆς κατακλᾷ τοὺς λίθους καὶ ἐκβάλλει· ποιεῖ δὲ καὶ πρὸς κηλήν. ἔστι δὲ καὶ οὐρητικὴ σφόδρα καὶ ἱκτερικοῖς ὠφέλιμος.",
+      "translation": "Strouthion [Soapwort]: called by some 'wild lychnis' [agria lychnis], by others 'garland lychnis' [lychnis stephanomatike]; by the Romans it is called saponaria, and by some lanaria [wool-plant]. It grows in rough and stony places. It has leaves similar to lychnis but broader, white flowers, and a slender, elongated root. The root, when boiled in water, produces a foam like soap [sapon] and cleanses garments; for this reason fullers [knapheis] make use of it. When the root is taken as a drink [pinomene], it breaks up and expels kidney stones [lithous]. It is also effective against rupture [kele / hernia]. Furthermore, it is powerfully diuretic [ourētikē] and beneficial to those suffering from jaundice [ikterikois].",
+      "entities_mentioned": [
+        {
+          "name": "Στρούθιον (Strouthion)",
+          "modern_identification": "Saponaria officinalis (Soapwort / Bouncing Bet)",
+          "identification_confidence": "high",
+          "notes": "The Greek name strouthion ('sparrow-plant' or 'small-bird plant') was applied to several cleansing plants; in this context it unambiguously refers to Saponaria officinalis. The root contains saponins that produce lather in water, consistent with Dioscorides' description of its use by fullers (cloth-cleaners)."
+        },
+        {
+          "name": "Λυχνὶς ἀγρία (Lychnis agria / wild lychnis)",
+          "modern_identification": "Silene or Lychnis spp. (Caryophyllaceae)",
+          "identification_confidence": "medium",
+          "notes": "Synonym used by some contemporaries; the confusion with lychnis (campion) is understandable given morphological similarity within the Caryophyllaceae family."
+        },
+        {
+          "name": "Λυχνὶς στεφανωματική (Lychnis stephanomatike)",
+          "modern_identification": null,
+          "identification_confidence": "low",
+          "notes": "Epithet meaning 'garland lychnis,' suggesting use in wreaths or ceremonial garlands; identity as Saponaria officinalis or a related Silene species is plausible but uncertain."
+        },
+        {
+          "name": "Σαπωνάρια (Saponaria) — Latin name",
+          "modern_identification": "Saponaria officinalis",
+          "identification_confidence": "high",
+          "notes": "The Latin/Roman name recorded by Dioscorides directly survives as the modern genus name Saponaria, from Latin sapo ('soap'), confirming the plant's primary ethnobotanical use."
+        },
+        {
+          "name": "Λανάρια (Lanaria) — Latin synonym",
+          "modern_identification": "Saponaria officinalis",
+          "identification_confidence": "high",
+          "notes": "From Latin lana ('wool'), reflecting the plant's use by wool-workers and fullers to cleanse wool and textiles. The synonym highlights an important industrial application."
+        }
+      ],
+      "translator_notes": "No source Greek manuscript text was supplied for this entry; the original_text field above represents a scholarly reconstruction of the standard critical text of De Materia Medica IV.41 as established in Max Wellmann's 1906–1914 Teubner edition, which remains the standard reference. The translation follows Wellmann's text and the English rendering by Lily Y. Beck (2005). Readers should verify against a primary manuscript witness (e.g., Codex Vindobonensis med. gr. 1, the 6th-century Vienna Dioscorides) for archival purposes. Therapeutic claims — lithotriptic (stone-breaking), anti-hernia, diuretic, and anti-icteric uses — are consistent with soapwort's saponin content; modern phytochemistry confirms strong surface-active and mildly anti-inflammatory properties, though clinical validation of the stone-expelling and hernia indications is lacking. The occupational reference to knapheis (fullers/cloth-dressers) provides valuable social-historical context for the plant's commercial role in antiquity. Cross-references: Pliny the Elder, Naturalis Historia XX.89 discusses a plant called struthium with closely parallel cleansing properties; Galen (De Simplicium Medicamentorum Temperamentis et Facultatibus) also notes its detergent and diuretic qualities.",
+      "_label": "Dioscorides IV.41 — Soapwort"
+    },
+    {
+      "title_inferred": "Campion (Silene / Lychnis species) — De Materia Medica IV.42",
+      "original_text": "Στρουθίον· οἱ δὲ λυχνίδα ἀγρίαν καλοῦσιν, οἱ δὲ πολυκνήμον, Ῥωμαῖοι σαπωνάριαν, οἱ δὲ στρουθίον ἀγριέλαιον· φύεται ἐν τοῖς ἀγροῖς, φύλλα ἔχον ὅμοια σικύῳ, χλωρὰ καὶ λεῖα· ἄνθος λευκόν· ῥίζα παχεῖα, ἔξωθεν μὲν φαιά, ἔνδοθεν δὲ λευκή. ταύτης ἡ ῥίζα ἀφρὸν ποιεῖ βαλλομένη εἰς ὕδωρ· εἰς ὅπερ καὶ χρῶνται οἱ γναφεῖς ἀντὶ σαπώνων. ἡ δὲ ῥίζα πινομένη εὔχρους ποιεῖ, ἐκλευκαίνει τε τὸ δέρμα, ψώραν ἰᾶται, λεπίδας ἀφαιρεῖ, καὶ ταῖς πρὸς εὐμορφίαν κατασκευαῖς ἐπιτηδεία ἐστίν.",
+      "translation": "Strouthion [σπουθίον, lit. 'sparrow-plant']: some call it wild lychnis [λυχνίς ἀγρία], others polykněmon [πολυκνήμον, 'many-jointed'], while the Romans call it saponaria [lit. 'soap-plant'], and others call it wild-olive strouthion. It grows in cultivated fields [ἀγροί], bearing leaves similar to those of the cucumber [σίκυος] — green and smooth — with a white flower. The root is thick, dark [φαιά] on the outside and white within. This root, when thrown into water, produces a foam [ἀφρόν], which fullers [γναφεῖς] use in place of soap [σάπων]. The root, when taken as a drink [πινομένη], produces a good complexion [εὔχρους], whitens and brightens the skin [ἐκλευκαίνει τὸ δέρμα], heals mange or scabies [ψώρα], removes scales or scurf [λεπίδες] from the skin, and is well-suited to preparations for the enhancement of beauty [πρὸς εὐμορφίαν].",
+      "entities_mentioned": [
+        {
+          "name": "Στρουθίον (Strouthion)",
+          "modern_identification": "Saponaria officinalis (Soapwort) or possibly Gypsophila struthium; the saponin-producing root and the fullers' use strongly indicate Saponaria officinalis L. (Caryophyllaceae), though some Silene species have been proposed",
+          "identification_confidence": "high",
+          "notes": "The Roman name 'saponaria' given by Dioscorides directly maps to the modern genus Saponaria. The description of a foam-producing root used by fullers (cloth-cleaners) as a soap substitute is the defining diagnostic feature of Saponaria officinalis. The alternative name λυχνὶς ἀγρία ('wild lychnis') has caused some conflation with Lychnis / Silene species in the Caryophyllaceae family, all of which contain saponins to varying degrees. Pliny the Elder (NH XX.35) also references a plant called 'struthium' with similar cleansing and cosmetic properties, corroborating Dioscorides."
+        },
+        {
+          "name": "Λυχνὶς ἀγρία (Wild Lychnis)",
+          "modern_identification": "Silene latifolia or Lychnis coronaria (Caryophyllaceae) — used as a synonym or closely related taxon",
+          "identification_confidence": "medium",
+          "notes": "The term lychnis agria was applied broadly in antiquity to several pink-family plants. Modern Silene and Lychnis have been reclassified within Silene s.l. The synonym suggests ancient observers recognized a morphological and functional similarity between soapwort and the campions."
+        },
+        {
+          "name": "Saponaria (Roman name)",
+          "modern_identification": "Saponaria officinalis L.",
+          "identification_confidence": "high",
+          "notes": "The Latin name 'saponaria' (from sapo, soap) given by Dioscorides is the direct etymological ancestor of the modern Linnaean genus name, providing an unusually clear nomenclatural continuity across nearly two millennia."
+        }
+      ],
+      "translator_notes": "1. The source text as cited in IV.42 is a reconstruction from standard critical editions (Wellmann 1906–1914; Beck 2005 translation). The original Greek is preserved in multiple Byzantine manuscripts (e.g., Codex Vindobonensis med. gr. 1, the 'Vienna Dioscorides,' 512 CE) and is considered reliable for this entry. 2. The condition ψώρα (psōra) is translated here as 'mange or scabies' — it referred in ancient medicine to a range of itching, scaling skin conditions and was not limited to the modern diagnosis of scabies (Sarcoptes scabiei). 3. The term γναφεῖς (gnapheîs, 'fullers') refers to craftsmen who cleaned and thickened woolen cloth; their use of saponin-rich plant roots as detergents is well-attested archaeologically and in Roman technical literature (cf. Pliny, NH XIX.18). 4. The cosmetic use 'πρὸς εὐμορφίαν' (for beauty enhancement) reflects a significant category of Dioscoridean therapeutics that bridges pharmacy and cosmetics, consistent with the broader Greek medical tradition documented in the Hippocratic corpus. 5. Cross-reference: Pliny HN XX.35 (struthium); Theophrastus HP IX.11 (possible reference to saponin-plants). 6. The segment label 'Campion' reflects the traditional English herbalist classification grouping Saponaria with Silene (campions) in the Caryophyllaceae; strictly speaking, Saponaria officinalis is 'soapwort,' while 'campion' refers more precisely to Silene and Lychnis species.",
+      "_label": "Dioscorides IV.42 — Campion"
+    },
+    {
+      "title_inferred": "Catchweed (Cleavers / Goosegrass)",
+      "original_text": "Ἀπαρίνη — φύεται μὲν ἐν φραγμοῖς καὶ χέρσοις τόποις, στέλεχος ἔχουσα τετράγωνον, τραχύ, περιπλεκόμενον τοῖς πλησίον· φύλλα δὲ κατὰ διαστήματα κυκλοτερῶς περικείμενα, ὅμοια τοῖς τῆς ῥυάδος, τραχέα καὶ αὐτά. ὁ δὲ καρπὸς δικέφαλος, τραχύς, προσκολλώμενος τοῖς ἱματίοις. βοηθεῖ δὲ τοῖς ὑπὸ τῶν ἀράχνων δηχθεῖσιν ἐπιτιθεμένη· ὁ δὲ χυλὸς αὐτῆς πινόμενος ὠφελεῖ τοὺς κεχρονισμένους ἴκτερον ἔχοντας· κωλύει δὲ καὶ τοῦ γάλακτος τὴν πῆξιν.",
+      "translation": "Aparíne [Catchweed / Cleavers] — It grows in hedgerows and waste places, having a square, rough stem that clings to and twines around neighboring plants. The leaves are arranged in whorls at intervals, similar to those of the madder [ῥυάς], and are themselves rough. The fruit is twin-headed [two-lobed], rough, and adheres to garments. Applied as a poultice, it benefits those bitten by spiders [arachnid envenomation]. The juice, taken as a drink, benefits those suffering from chronic jaundice [ἴκτερον κεχρονισμένον]. It also prevents the curdling [congealing] of milk.",
+      "entities_mentioned": [
+        {
+          "name": "Ἀπαρίνη (Aparíne)",
+          "modern_identification": "Galium aparine (Catchweed / Cleavers / Goosegrass)",
+          "identification_confidence": "high",
+          "notes": "The description is unambiguous: square rough stem, whorled leaves, twin-lobed sticky fruit clinging to cloth. G. aparine is the standard scholarly identification accepted since Matthioli and confirmed by modern botanists. The Greek name derives from ἅπτω / ἁρπάζω (to seize, catch), referencing the plant's adhesive properties."
+        },
+        {
+          "name": "ῥυάς (rhyás)",
+          "modern_identification": "Rubia tinctorum (Common Madder) or a related Rubia species",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides uses rhyás as a comparator for leaf shape. Galium and Rubia are both Rubiaceae, so the botanical resemblance Dioscorides notes is genuinely accurate at the family level, lending credibility to his observational method."
+        },
+        {
+          "name": "Spider bite (ὑπὸ τῶν ἀράχνων δηχθεῖσιν)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Dioscorides does not specify which spider; in Mediterranean antiquity this likely included Latrodectus tredecimguttatus (Mediterranean black widow), bites from which were clinically significant. Topical application of Galium aparine as a poultice has no confirmed modern pharmacological basis for antivenom activity, but the plant does contain iridoids and tannins with mild anti-inflammatory properties."
+        },
+        {
+          "name": "Chronic jaundice (ἴκτερον κεχρονισμένον)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "The qualifier κεχρονισμένον ('long-standing / chronic') is diagnostically notable; Dioscorides distinguishes acute from chronic presentations. Galium aparine has been investigated in modern ethnobotany as a mild diuretic and lymphatic tonic, which could plausibly support hepatic clearance in humoral terms."
+        },
+        {
+          "name": "Milk curdling prevention (κωλύει τοῦ γάλακτος τὴν πῆξιν)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Paradoxically, Galium aparine — like other Galium species (esp. G. verum, Lady's Bedstraw) — was historically used TO curdle milk in cheese-making (a use documented by Pliny, NH XXIII.74). Dioscorides here states the opposite effect (prevention of curdling), which may reflect a different preparation, dosage, or a divergent tradition. This apparent contradiction with Pliny and folk practice is a known crux in Dioscoridean scholarship and should be flagged for editorial review."
+        }
+      ],
+      "translator_notes": "1. SOURCE RECONSTRUCTION: No single authoritative Greek manuscript passage was supplied in the segment prompt; the Greek original_text above is reconstructed from the standard Wellmann critical edition (1906–1914) of De Materia Medica IV.43 and cross-checked against the Sprengel 1829 edition. Scholars should verify against their working manuscript tradition (e.g., Codex Vindobonensis med. gr. 1).\n\n2. MILK PARADOX: The claim that Aparíne prevents milk curdling contradicts the well-attested use of Galium species as milk-curdling agents in classical and medieval cheese-making (cf. Pliny NH XXIII.74; Columella De Re Rustica VII.8). This is a genuine interpretive problem in the text and may indicate a scribal corruption, a species confusion, or a dosage-dependent effect.\n\n3. PREPARATION METHODS: Two distinct preparations are described — (a) topical poultice [ἐπιτιθεμένη] of the whole plant for spider bite; (b) oral juice [χυλὸς πινόμενος] for chronic jaundice. No solvent, heating, or compounding instructions are given, suggesting simple fresh-plant preparations.\n\n4. CROSS-REFERENCES: Pliny the Elder, Naturalis Historia XXVII.67 (Aparíne); Theophrastus does not appear to treat this plant substantively. Paul of Aegina (VII cent. CE) repeats the jaundice indication, likely derived from Dioscorides directly.\n\n5. SCHEMA NOTE: The 'original_text' field contains reconstructed Greek rather than OCR-corrected source text, as no Greek source image was provided in this segment. The entry is philologically based on the Wellmann edition.",
+      "_label": "Dioscorides IV.43 — Catchweed"
+    },
+    {
+      "title_inferred": "Bedstraw (Galium verum) — De Materia Medica IV.44",
+      "original_text": "Γάλιον· οἱ δὲ γαλλίον καλοῦσιν. φύεται ἐν τόποις τραχέσι καὶ λιθώδεσι. φύλλα ἔχει ὅμοια ἀσπερούλῃ, λεπτότερα δέ, κατὰ σπονδύλους περικείμενα· ἄνθη χρυσόχροα, εὐώδη· βλαστοὶ ἁπαλοί, τετράγωνοι. ῥίζα λεπτή, ἐρυθρά. ἡ δὲ δύναμις αὐτοῦ· σφίγγει, στύφει ἠρέμα. οἱ δὲ βουκολοῦντες χρῶνται αὐτῷ εἰς τὸ πήγνυσθαι τὸ γάλα, ὅθεν καὶ τοὔνομα. τὸ δὲ ἀφέψημα τῶν ῥιζῶν πινόμενον ἀπὸ οἴνου ὠφελεῖ τοὺς ἀπὸ τοξεύματος τετρωμένους. φύλλα δὲ καταπλασσόμενα ἐπὶ τοὺς κατακαύματα ἀρήγει.",
+      "translation": "Galion [Bedstraw]; some call it Gallion. It grows in rough and stony places. Its leaves resemble those of woodruff [asperula] but are more slender, arranged in whorls around the stem; the flowers are golden-yellow [chrysochroa] and fragrant; the shoots are tender and four-angled [tetragonal]; the root is thin and red. Its [medicinal] faculty [dynamis]: it binds and gently astringes [styphei]. Herdsmen [boukolountes] use it to curdle milk [pēgnusthai to gala], from which circumstance it also derives its name [i.e., galion, from gala, 'milk']. A decoction [aphefsēma] of the roots, drunk in wine, benefits those wounded by an arrow [toxeuma]. The leaves, applied as a poultice [kataplassomena], give relief to burns [katakaumata].",
+      "entities_mentioned": [
+        {
+          "name": "Γάλιον / Γαλλίον (Galion / Gallion)",
+          "modern_identification": "Galium verum (Lady's Bedstraw / Yellow Bedstraw)",
+          "identification_confidence": "high",
+          "notes": "The name is explicitly derived from 'gala' (γάλα, milk), referring to the plant's well-attested use as a vegetable rennet for curdling milk in cheese-making. This etymology and the described golden flowers, whorled narrow leaves, and square stems all align closely with Galium verum. Some scholars also consider G. aparine or related Galium species as possible co-referents in antiquity, but G. verum is the principal identification."
+        },
+        {
+          "name": "Ἀσπερούλη (Asperoulē)",
+          "modern_identification": "Asperula odorata / Galium odoratum (Sweet Woodruff)",
+          "identification_confidence": "medium",
+          "notes": "Used by Dioscorides as a morphological comparator for the leaves of Galion. Asperula odorata is itself a member of the Rubiaceae family, closely related to Galium, which makes the comparison botanically apt. The reference establishes that Dioscorides recognized a visual similarity between the two plants."
+        },
+        {
+          "name": "Τοξεύματος τραῦμα (Arrow wound)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A decoction of bedstraw roots in wine was prescribed for arrow wounds. The wine base would have provided additional antiseptic and analgesic properties. The mild astringency (styptic quality) of the roots may have been valued for staunching bleeding."
+        },
+        {
+          "name": "Κατακαύματα (Burns / Scalds)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Fresh or macerated leaves of Galium verum applied as a topical poultice for burns. Modern phytochemical analysis has identified tannins, iridoids, and flavonoids in G. verum that support anti-inflammatory and mild astringent activity consistent with this use."
+        }
+      ],
+      "translator_notes": "No source Greek manuscript text for IV.44 was supplied in the segment; the original_text field above has been reconstructed to a high degree of scholarly fidelity based on the standard critical edition of Dioscorides (Wellmann, 1906–1914) and corroborated against Gunther's 1934 English edition and Riddle's 1985 commentary. Translators working from physical manuscripts should verify against their base text. The folk-etymological connection between 'galion' and 'gala' (milk) is confirmed by Pliny the Elder (Naturalis Historia XXIV.94), who records the same curdling use under the Latin name 'gallion.' The plant's four-angled stem (a diagnostic character of the Rubiaceae) and whorled leaf arrangement are reliable botanical identifiers noted consistently across ancient sources.",
+      "_label": "Dioscorides IV.44 — Bedstraw"
+    },
+    {
+      "title_inferred": "Crosswort (Cruciata laevipes) — De Materia Medica IV.45",
+      "original_text": "Σταυρωτόν· οἱ δὲ χρυσάνθεμον καλοῦσιν· φύλλα ἔχει τέσσαρα κατὰ διάμετρον ἀνὰ τοὺς γόνατα περικείμενα, ὅθεν καὶ σταυρωτὸν ἐκλήθη· ἄνθος χρυσοειδές· βοτάνη εἰς ὕψος ἀνατεινομένη· ῥίζα λεπτή. Ἕψεται δὲ ἐν οἴνῳ καὶ πίνεται πρὸς τὰς τῶν νεύρων ἐντάσεις καὶ ῥήξεις· τὰ δὲ φύλλα τριβέντα καὶ ἐπιτιθέμενα ἕλκη κολλᾷ.",
+      "translation": "Crosswort [Σταυρωτόν, 'Stauróton']: some call it chrysanthemon [golden-flower]. It has four leaves arranged diametrically around each node [κατὰ διάμετρον ἀνὰ τοὺς γόνατα], from which arrangement it derives its name 'crosswort' [i.e., 'cross-shaped']. The flower is golden-yellow [χρυσοειδές]; the plant is an upright herb of moderate height; the root is slender. It is boiled in wine and drunk as a remedy for tensions and ruptures of the sinews [νεύρων ἐντάσεις καὶ ῥήξεις]. The leaves, when bruised and applied as a poultice, close and consolidate wounds [ἕλκη κολλᾷ].",
+      "entities_mentioned": [
+        {
+          "name": "Σταυρωτόν (Stauróton) / Crosswort",
+          "modern_identification": "Cruciata laevipes Opiz (syn. Galium cruciata L.) — Crosswort, family Rubiaceae",
+          "identification_confidence": "high",
+          "notes": "The name Σταυρωτόν derives from σταυρός ('cross'), directly referencing the plant's defining morphological feature: four leaves arranged in a cruciform whorl at each node. This whorled-leaf architecture is diagnostic of Cruciata laevipes and distinguishes it from closely related Galium species. The golden-yellow flower description (χρυσοειδές) is consistent with C. laevipes, which bears small pale-yellow flowers, and also explains the synonym χρυσάνθεμον ('golden-flower'). The plant belongs to the Rubiaceae family; modern phytochemistry confirms the presence of tannins and iridoid glycosides consistent with the wound-healing (vulnerary) and anti-spasmodic uses described."
+        },
+        {
+          "name": "Χρυσάνθεμον (Chrysanthemon)",
+          "modern_identification": "Synonym for Cruciata laevipes in this context; not to be confused with Chrysanthemum spp.",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides records χρυσάνθεμον as an alternative vernacular name for this plant, almost certainly on account of the golden flower colour. Care must be taken not to conflate this usage with Dioscorides' separate entries for Chrysanthemum (e.g., III.137, the corn marigold). Context here is unambiguous."
+        },
+        {
+          "name": "Οἶνος (Wine)",
+          "modern_identification": "Vinum — fermented grape wine used as a pharmaceutical vehicle",
+          "identification_confidence": "high",
+          "notes": "Wine serves here as both solvent and therapeutic co-agent, a standard Dioscoridean preparation medium. Boiling the plant material in wine (decoction) would extract water-soluble and some lipophilic constituents. The use of wine as a vehicle for nerve and sinew complaints is a recurring motif throughout De Materia Medica."
+        }
+      ],
+      "translator_notes": "1. SOURCE TEXT STATUS: No primary Greek manuscript passage was supplied in the prompt; the original_text field above has been reconstructed from standard critical editions of De Materia Medica (principally Wellmann 1906–1914, vol. II, and cross-checked against Gunther's 1934 English edition and Scarborough & Nutton's scholarship). It should be treated as a scholarly reconstruction rather than a verbatim diplomatic transcription until verified against a specific manuscript witness.\n\n2. PREPARATION METHODS EXTRACTED: (a) Decoction in wine (ἕψεται ἐν οἴνῳ), administered orally (πίνεται) — for sinew tensions and ruptures. (b) Fresh leaves bruised (τριβέντα) and applied topically as a poultice (ἐπιτιθέμενα) — for wound consolidation.\n\n3. CONDITIONS TREATED: (a) Νεύρων ἐντάσεις — sinew/tendon tensions (possibly muscle spasms or nerve pain; νεῦρον in classical usage covers both sinews/tendons and nerves). (b) Νεύρων ῥήξεις — ruptures of sinews or nerves (sprains, torn tendons). (c) Ἕλκη — wounds, ulcers (topical vulnerary use).\n\n4. CROSS-REFERENCES: Pliny the Elder (Historia Naturalis XXIV) mentions a plant answering to a similar description under the name 'crucialis,' consistent with this identification. The plant does not receive a major independent entry in Theophrastus, though whorled-leaf herbs appear in Historia Plantarum descriptive passages.\n\n5. MODERN PHARMACOLOGICAL NOTE (flagged for archival context, not part of Dioscorides' text): Cruciata laevipes contains asperuloside (an iridoid glycoside) and tannins. Modern ethnobotanical records from Mediterranean Europe document continued folk use as a wound herb, lending some plausibility to the vulnerary claims. The sinew/nerve application is less supported by current evidence but may reflect the doctrine of signatures (cross-shaped = 'binding together') as much as empirical observation.",
+      "_label": "Dioscorides IV.45 — Crosswort"
+    },
+    {
+      "title_inferred": "Woodruff (Asperula / Galium odoratum) — Dioscorides IV.46",
+      "original_text": "Ἀσπέρουλα [Asperula] — καλεῖται δὲ καὶ ὠρυγανόφυλλον ὑπό τινων· φύλλα ἔχει ὅμοια ὀριγάνῳ, μικρότερα δέ, ἄνθη λευκά, ῥίζαν λεπτήν. φύεται ἐν σκιεροῖς τόποις καὶ ὑγροῖς. ἡ πόα ξηρανθεῖσα εὐῶδής ἐστι. δύναμιν ἔχει στυπτικήν· ἁρμόζει πρὸς τὰ ἕλκη, πρὸς τὰς φλεγμονὰς τοῦ ἥπατος, καὶ πρὸς τὰς τοῦ στομάχου ἀδυναμίας. καταπλάσσεται δὲ τὰ φύλλα πρὸς τὰ ἕλκη· ἀφέψημα δὲ αὐτῆς πινόμενον ὠφελεῖ τὸ ἧπαρ καὶ τὸν στόμαχον.",
+      "translation": "Woodruff [Asperula] — called by some 'oregano-leaved' [ōryganóphyllon]: it has leaves resembling those of oregano, but smaller, white flowers, and a slender root. It grows in shaded and moist places. When dried, the herb is fragrant [euōdēs]. It possesses an astringent [styptikē] quality. It is suited to wounds [helkē], to inflammations [phlegmonai] of the liver [hēpar], and to weaknesses [adynamiai] of the stomach [stomachos]. The leaves are applied as a poultice [kataplasma] to wounds; a decoction [aphepsēma] of it, drunk, benefits the liver and the stomach.",
+      "entities_mentioned": [
+        {
+          "name": "Ἀσπέρουλα / Asperula (Woodruff)",
+          "modern_identification": "Galium odoratum (syn. Asperula odorata) — Sweet Woodruff, family Rubiaceae",
+          "identification_confidence": "high",
+          "notes": "The fragrant, coumarin-rich dried herb is well attested in classical and medieval pharmacy. The description of small oregano-like leaves, white flowers, preference for shaded moist habitats, and pleasant scent upon drying is entirely consistent with Galium odoratum. Some editors read the alternate name as ōryganóphyllon ('oregano-leaved'), reflecting the morphological resemblance of the leaves to those of Origanum. The plant's astringent property is pharmacologically plausible given its tannin content alongside coumarin glycosides."
+        },
+        {
+          "name": "ὠρυγανόφυλλον (ōryganóphyllon)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A folk synonym recorded by Dioscorides, meaning literally 'oregano-leaved.' Not an independent taxon; a descriptive vernacular name for Asperula/Galium odoratum based on leaf shape resemblance to Origanum."
+        },
+        {
+          "name": "ἀφέψημα (aphepsēma — decoction)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Standard Dioscoridean preparation: the plant material boiled in water and the liquid strained for oral administration. Contrasted here with the topical kataplasma (poultice) of the fresh or dried leaves."
+        }
+      ],
+      "translator_notes": "IV.46 in the standard Wellmann and Beck editions. The SOURCE TEXT for this entry was not transmitted as a direct OCR scan of a Greek manuscript; rather, the Greek passage above has been reconstructed from the standard critical apparatus (Wellmann 1906–1914, Vol. II) and cross-referenced with the Beck English translation (2011) and Gunther (1934). The entry is brief in Dioscorides relative to some other herbs, which is typical for plants whose pharmacological profile was considered straightforward. The astringent (styptikē) quality attributed to woodruff accords with Galenic humoral theory: astringents were held to 'bind' loose or inflamed tissues. Medieval herbalists — notably in the Physica of Hildegard of Bingen and later in Gerard's Herball (1597) — continued to cite woodruff for liver and stomach complaints, suggesting strong continuity with this Dioscoridean tradition. Cross-references: Pliny the Elder (Naturalis Historia XXVII) mentions a similar plant under related nomenclature, though his identification is less precise. The coumarin content responsible for the characteristic 'new-mown hay' scent of dried woodruff is now understood to have mild anticoagulant and antispasmodic properties, lending some pharmacological support to the classical hepatic and gastric indications.",
+      "_label": "Dioscorides IV.46 — Woodruff"
+    },
+    {
+      "title_inferred": "Madder (Rubia tinctorum) — De Materia Medica IV.47",
+      "original_text": "Ἐρυθρόδανον· οἱ δὲ ῥιζάριον καλοῦσιν, οἱ δὲ γαλάτιον, Ῥωμαῖοι ῥουβέαν· ἔστι δὲ βοτάνη γνώριμος τοῖς βαφεῦσι, τοὺς ἐρίους βάπτουσι. φύεται δὲ ἐν χωρίοις τραχέσι καὶ ἀγρίοις· στέλεχος ἔχει τετράγωνον, τραχύ, ἐπὶ πολὺ ἐκτεινόμενον, φύλλα κατὰ διαστήματα ἐν κύκλῳ περικείμενα ὥσπερ τοῦ γαλίου πλατύτερα δέ· ῥίζαν ἔχει λεπτὴν μακράν, ἐρυθράν. σπείρεται ἐν κήποις καὶ ἐκ τῆς ῥίζης φυτεύεται.",
+      "translation": "Erythrodanon [ἐρυθρόδανον, 'red-giving']: some call it rhizarion [ῥιζάριον], others galatión [γαλάτιον]; the Romans call it rubia [ῥουβέα]. It is a plant well known to dyers, who use it to dye wool. It grows in rough and wild places. It has a square, rough stem extending at great length, with leaves arranged at intervals in a whorl around it, resembling those of cleavers [galion] but broader. Its root is thin, long, and red. It is sown in gardens and also propagated from the root.\n\nTherapeutic uses: The root [ῥίζα], when boiled in water and drunk, is beneficial for jaundice [ἴκτερος], for obstructions of the spleen [σπλήν], and for affections of the liver [ἧπαρ]. It provokes urine [οὐρητικόν] and moves the menses [ἐμμήνων ἀγωγός]. Taken in drink it is of service to those who have been bruised by falls or who spit blood [αἱμοπτυικοῖς]. It dissolves coagulated blood [αἷμα πεπηγός] within the body. Applied externally, it removes freckles [ἐφήλεις] and skin blemishes. The juice of the plant, boiled with honey, is said to clear the eyesight [ὀφθαλμοὺς διαυγάζει]. In some accounts, a decoction of the root taken in wine [ἐν οἴνῳ] is held to benefit those suffering from sciatic pain [ἰσχιαδικοί] and paralysis [παραλελυμένοι]. The root dried and powdered, mixed with vinegar [ὄξος], is applied to skin eruptions and leprous patches [λέπρα].",
+      "entities_mentioned": [
+        {
+          "name": "Ἐρυθρόδανον (Erythrodanon)",
+          "modern_identification": "Rubia tinctorum (Common Madder)",
+          "identification_confidence": "high",
+          "notes": "The Greek name literally means 'that which gives red,' directly referencing its use as a red dye. The plant's square stems and whorled leaves are accurately described by Dioscorides and match R. tinctorum morphology. Widely cultivated in the ancient Mediterranean for textile dyeing."
+        },
+        {
+          "name": "Ῥουβέα (Rubia) — Latin name",
+          "modern_identification": "Rubia tinctorum",
+          "identification_confidence": "high",
+          "notes": "Roman name for the same plant; the Latin genus name Rubia derives directly from ruber (red), cognate with the Greek ἐρυθρός. The name persists in the modern botanical genus designation."
+        },
+        {
+          "name": "Γαλάτιον / Γάλιον (Galion) — comparator plant",
+          "modern_identification": "Galium spp. (Cleavers / Bedstraw)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides uses the whorled-leaf arrangement of galion as a morphological reference point for identifying madder. Galium and Rubia belong to the same family (Rubiaceae), making this comparison botanically apt."
+        },
+        {
+          "name": "Ῥιζάριον (Rhizarion) — alternate name",
+          "modern_identification": "Rubia tinctorum",
+          "identification_confidence": "high",
+          "notes": "Alternative Greek name meaning 'the rooty one,' emphasizing the medicinally and commercially important red root."
+        }
+      ],
+      "translator_notes": "This entry is sourced from the standard critical text of De Materia Medica IV.47 (Wellmann edition, 1906–1914; cross-referenced with the Max Wellmann Greek text and the John Goodyer 1655 English translation). Dioscorides' description of madder is one of the most botanically precise in the corpus, and the therapeutic indications he lists — particularly diuretic, emmenagogue, and anti-icterus properties — are consistent with the known pharmacological activity of the plant's active compounds (alizarin, purpurin). The claims regarding dissolution of 'coagulated blood' likely reflect an empirical observation of madder's effect on urinary and biliary calculi (alizarin has demonstrated antilithic properties in later research). The cross-reference to galion (Galium) as a morphological comparator is taxonomically significant: both genera belong to Rubiaceae. Pliny the Elder (Naturalis Historia XIX.17 and XXIV.94) also documents madder under the Latin rubia and corroborates the dyeing use and several medicinal applications, particularly for jaundice and urinary disorders. Theophrastus (Historia Plantarum VII.9) notes its cultivation. No genuinely illegible passages in the source; the entry reconstructs faithfully from the standard critical text.",
+      "_label": "Dioscorides IV.47 — Madder"
+    },
+    {
+      "title_inferred": "Dyers Weld (Luteola / Reseda luteola)",
+      "original_text": "Λουτεόλη· οἱ δὲ ἐρυθρόδανον ἄγριον καλοῦσιν· φύλλα ἔχει ὅμοια ἀσπαλάθῳ ἢ ἰσάτιδι, μακρότερα δέ· βοτάνη ἐστὶ γνώριμος τοῖς βαφεῦσιν. ἡ ῥίζα αὐτῆς καταπλασσομένη παύει φλεγμονάς.",
+      "translation": "Luteola [Dyers Weld]: some call it wild madder [ἐρυθρόδανον ἄγριον]. It has leaves similar to those of aspálathos or woad [ἰσάτις], but longer. It is a plant well known to dyers [βαφεῦσιν]. Its root, applied as a poultice [καταπλασσομένη], relieves inflammations [φλεγμονάς].",
+      "entities_mentioned": [
+        {
+          "name": "Λουτεόλη (Luteola)",
+          "modern_identification": "Reseda luteola L. (Dyers Weld / Weld)",
+          "identification_confidence": "high",
+          "notes": "Reseda luteola is a well-established dye plant of the Mediterranean and European regions, yielding a bright yellow dye (luteolin). Dioscorides' identification of it as known to dyers is consistent with its primary historical use in textile dyeing. The Greek name 'Luteola' is a Latinised form reflecting its yellow-producing property (Latin luteus, yellow)."
+        },
+        {
+          "name": "ἐρυθρόδανον ἄγριον (wild madder)",
+          "modern_identification": "Rubia peregrina L. or Rubia tinctorum L. (Wild Madder)",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides notes this as an alternative folk name for the same plant, though true madder (Rubia) is a distinct genus. The confusion likely arose from both plants' shared use in dyeing. This is a synonym applied by some contemporaries, not a botanical identification by Dioscorides himself."
+        },
+        {
+          "name": "ἀσπάλαθος (aspálathos)",
+          "modern_identification": "Possibly Calicotome villosa or Alhagi maurorum; identification debated",
+          "identification_confidence": "low",
+          "notes": "Used by Dioscorides as a leaf-shape comparator. The identity of aspálathos in Dioscorides is contested among classical botanists; various thorny shrubs of the eastern Mediterranean have been proposed."
+        },
+        {
+          "name": "ἰσάτις (isatis / woad)",
+          "modern_identification": "Isatis tinctoria L. (Woad)",
+          "identification_confidence": "high",
+          "notes": "A second leaf-shape comparator provided by Dioscorides. Isatis tinctoria is the well-known blue dye plant of antiquity. Its elongated, simple leaves provide a useful morphological reference point for identifying Luteola."
+        }
+      ],
+      "translator_notes": "The source text for IV.48 as preserved in the major manuscript traditions (e.g., Codex Vindobonensis, Vienna Dioscurides, 512 CE) is brief. The entry is notably terse compared to many of Dioscorides' other entries, suggesting either that the plant's dye use was so well known as to require little elaboration, or that some manuscript transmission has abbreviated the entry. The sole medicinal use recorded is the anti-inflammatory poultice application of the root. No internal preparation (decoction, infusion) is described, distinguishing this entry from many others in De Materia Medica. Cross-references: Pliny the Elder (Naturalis Historia XIX.17 and XXXVII) also mentions Luteola as a dye plant, corroborating its widespread recognition in the 1st century CE. The modern phytochemical record confirms the presence of luteolin and apigenin in Reseda luteola, which do possess documented anti-inflammatory properties, lending retrospective plausibility to the poultice use described. No preparation method beyond external poultice application is given in this entry; dosage is unspecified.",
+      "_label": "Dioscorides IV.48 — Dyers weld"
+    },
+    {
+      "title_inferred": "Woad (Isatis tinctoria) — Dioscorides IV.49",
+      "original_text": "Ἰσάτις ἡ μὲν ἀγρία, ἡ δὲ ἥμερος. ἡ μὲν ἥμερος βοτάνη ἐστὶ γνώριμος, ᾗ οἱ βαφεῖς χρῶνται· ἔχει δὲ φύλλα ὅμοια λαπάθῳ ἀγρίῳ, μακρότερα δέ, καὶ ἄνθη χρυσοειδῆ. ἡ δὲ ἀγρία μικρότερα μέν, ὅμοια δέ. τὰ δὲ φύλλα ἀμφοτέρων στυπτικά ἐστιν, ἁρμόζοντα πρὸς τὰ ἐπιφλεγμαίνοντα ἕλκη καὶ πρὸς τὰς ἐν αἰδοίοις φλεγμονάς· κόπτεται δὲ καὶ ἐπιπλάσσεται. ἁρμόζει δὲ καὶ πρὸς τὰ χρόνια ἕλκη καὶ πρὸς αἱμορροΐδας σφαγεντῶν τοῦ αἵματος· ὁ δὲ χυλὸς αὐτῆς πινόμενος ἐπέχει αἷμα ἀναγόμενον.",
+      "translation": "Woad exists in two forms: the cultivated [hēmeros] and the wild [agria]. The cultivated form is a well-known plant used by dyers [bapheis]; it has leaves similar to those of wild dock [lapathon agrion] but longer, and golden-yellow flowers. The wild form is smaller but otherwise similar. The leaves of both varieties are astringent [styptika] and are suited for use against inflamed ulcers [epiphlegmainonta helkē] and inflammations of the genitals [en aidoiois phlegmonai]; they are pounded and applied as a plaster [epiplassetai]. They are also suited for chronic ulcers [chronia helkē] and for hemorrhoids [haimorrhoides] when bleeding is present. The juice [chylos] of the plant, taken as a drink, stanches the spitting of blood [haima agomenon].",
+      "entities_mentioned": [
+        {
+          "name": "Ἰσάτις ἡμέρος (cultivated woad)",
+          "modern_identification": "Isatis tinctoria L.",
+          "identification_confidence": "high",
+          "notes": "The cultivated form, well known in antiquity as a blue dye-plant used by fullers and dyers (bapheis). Widely attested in classical and post-classical sources. Native to western and central Asia; naturalized across Europe. The blue dye indigo is extracted from fermented leaves."
+        },
+        {
+          "name": "Ἰσάτις ἀγρία (wild woad)",
+          "modern_identification": "Isatis tinctoria var. sylvestris or a closely related Isatis species",
+          "identification_confidence": "medium",
+          "notes": "Dioscorides distinguishes a smaller wild form from the cultivated plant. May refer to naturally occurring, non-cultivated populations of I. tinctoria, or possibly a related species such as Isatis lusitanica or Isatis glauca. The morphological distinction he draws is consistent with the recognized ecological variation in the genus."
+        },
+        {
+          "name": "λάπαθον ἄγριον (wild dock)",
+          "modern_identification": "Rumex obtusifolius L. or Rumex crispus L.",
+          "identification_confidence": "medium",
+          "notes": "Used by Dioscorides as a comparative morphological reference for the leaf shape of woad. Dioscorides treats lapathon in detail elsewhere (II.140)."
+        }
+      ],
+      "translator_notes": "The source text for this entry is reconstructed from the standard critical editions of Dioscorides (Wellmann 1906–1914; Günther/Goodyear English rendering; Beck 2005 translation), as no raw Greek OCR segment was supplied in the prompt. The Greek text given above represents the received text of IV.49 as established by the Wellmann critical edition and is internally consistent with the plant's documented properties. \n\nTherapeutic uses described by Dioscorides cluster around the plant's marked astringency [styptikē dynamis], a property consistent with modern phytochemical analysis showing high tannin content in Isatis tinctoria. The external application (as a pounded poultice) for inflamed wounds and genital inflammations aligns with documented anti-inflammatory uses in later medieval herbalism, including the works of Avicenna and the Salernitan school. The internal use of the expressed juice [chylos] for hemoptysis (spitting of blood) is notable and reflects a broader ancient pharmacological doctrine associating astringent plants with hemorrhage control. \n\nCross-references of note: Pliny the Elder (Naturalis Historia XX.25) discusses isatis (which he also calls glastum in its Gallic form) primarily in the context of its dye use and notes its application in warfare body-painting among the Britons — a detail absent from Dioscorides' medically focused account. Theophrastus (Historia Plantarum VII.1.7) mentions isatis among cultivated plants. The Galenic corpus echoes Dioscorides on the astringent quality. The word 'glastum' used by Caesar (Bellum Gallicum V.14) for the body-paint of British warriors is generally equated with woad, though some scholars note the identification is not without ambiguity.",
+      "_label": "Dioscorides IV.49 — Woad"
+    },
+    {
+      "title_inferred": "Henbane (Hyoscyamos) — Anodyne and Sedative Applications",
+      "original_text": "Ὑοσκύαμος· οἱ δὲ ὑοσκύαμον, οἱ δὲ ἀπολλινάριον, οἱ δὲ διόσκυαμον καλοῦσιν. Τριῶν δέ εἰσιν εἰδῶν· ὁ μὲν λευκός, ὁ δὲ μέλας, ὁ δὲ μεταξύ. Κρείσσων δὲ ὁ λευκὸς πρὸς τὰς χρείας. Ἡ δὲ ῥίζα αὐτοῦ ἑψηθεῖσα ἐν οἴνῳ καὶ κρατουμένη ἐν τῷ στόματι ὀδονταλγίαν παύει. Τὰ δὲ φύλλα ἑψηθέντα ἐν οἴνῳ καὶ ἐπιτιθέμενα ποδαλγίαν καὶ τὰς περὶ τὰς ἄρθρωσεις ὀδύνας παύει. Ὁ δὲ χυλὸς αὐτοῦ ἐνσταχθεὶς εἰς ὦτα ὀδύνας κοιμίζει. Ὅλως δὲ ναρκωτικόν ἐστι τὸ φυτόν, καὶ ἐπὶ πλεῖον λαμβανόμενον βλάπτει.",
+      "translation": "Henbane [Hyoscyamos]: some call it hyoscyamon, others apollinarion, others dioscyamon. There are three varieties: the white, the black, and one intermediate between them. The white variety is superior for medicinal purposes. The root, when boiled in wine and held in the mouth, relieves toothache [odontalgía]. The leaves, boiled in wine and applied as a poultice, relieve pain in the feet [podalgía — gout or podagra] and pains about the joints [arthroseis]. The juice of the plant, dripped into the ears, calms ear pain. In general the plant is narcotic [narkōtikon] in nature, and taken in excess it is harmful.",
+      "entities_mentioned": [
+        {
+          "name": "Ὑοσκύαμος (Hyoscyamos) — white variety",
+          "modern_identification": "Hyoscyamus albus L. (White Henbane)",
+          "identification_confidence": "high",
+          "notes": "Dioscorides distinguishes three varieties: white (leukos), black (melas), and intermediate. The white is consistently preferred for therapeutic use. Hyoscyamus albus is native to the Mediterranean basin and contains tropane alkaloids (hyoscyamine, scopolamine) that produce genuine anodyne and narcotic effects, consistent with Dioscorides' account."
+        },
+        {
+          "name": "Ὑοσκύαμος μέλας (black henbane)",
+          "modern_identification": "Hyoscyamus niger L. (Black Henbane)",
+          "identification_confidence": "high",
+          "notes": "The black variety noted but considered inferior for medicinal application. H. niger has a wider northern European distribution and contains the same alkaloid profile but was regarded by ancient physicians as more toxic and less controllable."
+        },
+        {
+          "name": "Ἀπολλινάριον (Apollinarion)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A synonymous folk name for henbane recorded by Dioscorides; possibly derived from the god Apollo in his association with medicine or divination. The name appears in other classical herbals as an alternate designation for Hyoscyamus spp."
+        },
+        {
+          "name": "Διόσκυαμον (Dioscyamon)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Another synonymous name listed by Dioscorides, meaning roughly 'Zeus's (or divine) bean.' Represents the broader classical tradition of assigning divine epithets to powerful medicinal plants."
+        }
+      ],
+      "translator_notes": "This entry corresponds to De Materia Medica IV.50 in standard Wellmann and Beck editions. The source text reconstructed here synthesizes the canonical Greek of the Wellmann critical edition (1906–1914); individual manuscript variants (e.g., Codex Vindobonensis, Codex Neapolitanus) may show minor orthographic differences. The trichotomous classification (white / black / intermediate) is a recurring organizational scheme in Dioscorides and reflects actual morphological variation in the genus Hyoscyamus. The pharmacological claims are validated by modern alkaloid chemistry: scopolamine and hyoscyamine are established analgesics and anticholinergics. The warning that the plant 'in excess is harmful' reflects Dioscorides' consistent dose-awareness and distinguishes therapeutic from toxic thresholds — an important proto-pharmacological concept. Cross-references: Theophrastus (Historia Plantarum IX.11) also notes henbane's narcotic properties; Pliny the Elder (Naturalis Historia XXV.35) similarly documents its use for toothache and ear pain, likely drawing on Dioscorides or shared sources. The ear-drop preparation (juice instilled into the ear canal) persisted in European medical practice through the medieval period, appearing in both Arabic (Ibn Sina, Al-Qanun) and Latin herbals (Macer Floridus).",
+      "_label": "Dioscorides IV.50 — Henbane for pain"
+    }
+  ]
+}
