@@ -1,0 +1,145 @@
+{
+  "job_name": "Kampo / Shennong Bencaojing — Batch 3/3",
+  "completed_at": "2026-07-13T16:59:51.861110",
+  "segment_count": 4,
+  "results": [
+    {
+      "title_inferred": "Suan Zao Ren (Sour Jujube Seed): Classical Herb Entry for Spirit, Insomnia, and Sweating",
+      "original_text": "酸棗仁 (Suān Zǎo Rén) — 神農本草經 / 漢方 elaboration. 酸棗，味酸，平。主心腹寒熱，邪結氣聚，四肢酸疼，濕痹。久服安五臟，輕身延年。生川澤。",
+      "translation": "**Suan Zao Ren** (酸棗仁, Suān Zǎo Rén) — Sour Jujube Seed\n\n**Chinese Name:** Suān Zǎo Rén (酸棗仁)\n**Japanese Kampo Name:** Sansōnin (酸棗仁)\n**Classical Category:** Superior Herb (上品, shàng pǐn) — safe for prolonged use; tonifies without toxicity\n\n**Five Flavors [Wǔ Wèi]:** Sweet (甘, gān), Sour (酸, suān)\n**Four Natures [Sì Qì]:** Neutral to slightly cool (平/微涼, píng / wēi liáng)\n**Channel Tropism [Guī Jīng]:** Heart (心, xīn), Liver (肝, gān), Gallbladder (膽, dǎn), Spleen (脾, pí)\n\n**Shennong Bencaojing (c. 200 CE) — Classical Text:**\n'Sour jujube [seed]: flavor is sour, nature is balanced [píng]. Governs cold and heat in the heart and abdomen, evil [pathogenic] qi binding and accumulating, aching pain of the four limbs, and damp impediment [shī bì]. Prolonged consumption quiets the five viscera [wǔ zàng], lightens the body, and extends the years. Grows in river marshes and lowlands.'\n\n**Expanded Materia Medica Actions (Bencao Gangmu and Kampo elaborations):**\n— Nourishes the Heart and quiets the spirit [ān shén]: indicated for palpitations, anxiety, insomnia, and dream-disturbed sleep arising from Heart and Liver Blood deficiency.\n— Calms the Liver and restrains floating Yang: used when Liver Yin or Blood fails to anchor the Yang, causing irritability, dizziness, and restlessness.\n— Restrains sweating and consolidates the exterior [liǎn hàn gù biǎo]: addresses spontaneous sweating [zì hàn] and night sweats [dào hàn] in the context of deficiency patterns.\n— Harmonizes the nutritive [yíng] and defensive [wèi] levels: classical use for disorders of nutritive-defensive disharmony presenting as sweating and poor sleep.\n\n**Preparation Methods:**\n— Standard decoction (煎劑, jiān jì): seeds are typically dry-fried [chǎo, 炒] before decoction to enhance the spirit-calming and astringent properties; raw seed (生酸棗仁) is sometimes specified for cases with more pronounced Heat.\n— Powdered form: ground and taken with warm water or honey.\n— Typical dosage in classical formulary: 9–18 g (decoction); higher doses (up to 30 g) employed in severe insomnia in Kampo practice.\n\n**Conditions Treated (Classical and Kampo):**\n— Insomnia (不眠, bù mián / 失眠, shī mián): primary indication, especially with Heart-Liver Blood or Yin deficiency.\n— Palpitations and anxiety (心悸, xīn jì; 驚悸, jīng jì)\n— Night sweats and spontaneous sweating (盜汗 / 自汗, dào hàn / zì hàn)\n— Vexation and agitation (煩躁, fán zào)\n— Damp impediment [shī bì] and limb pain (classical indication, less emphasized in later tradition)\n\n**Key Classical Formulas:**\n1. **Suān Zǎo Rén Tāng** (酸棗仁湯) — *Jingui Yaolue* (金匱要略, Zhang Zhongjing, c. 220 CE): Suan Zao Ren + Chuan Xiong + Zhi Mu + Fu Ling + Gan Cao. The principal formula for insomnia due to Liver Blood deficiency with internal Heat. Foundational in both TCM and Kampo (Sansōnin-tō).\n2. **Tiān Wáng Bǔ Xīn Dān** (天王補心丹) — nourishes Heart Yin and Blood; Suan Zao Ren acts alongside Bai Zi Ren and Yuan Zhi to calm the spirit.\n3. **Guī Pí Tāng** (歸脾湯) — tonifies Heart and Spleen, nourishes Blood and calms the spirit; Suan Zao Ren is a key calming constituent.\n4. **Yǎng Xīn Tāng** (養心湯) — nourishes the Heart spirit; includes Suan Zao Ren for palpitations and insomnia.\n\n**Kampo (Japanese) Notes:**\nIn Kampo medicine, Sansōnin-tō (酸棗仁湯) remains a widely prescribed formula for insomnia, anxiety, and nervous exhaustion (神経症, shinkeishō). Japanese Kampo pharmacopoeias specify dry-fried seed (炒酸棗仁) as standard. Contemporary Kampo clinical use also extends to menopausal insomnia and post-illness fatigue with disturbed sleep.",
+      "entities_mentioned": [
+        {
+          "name": "酸棗仁 (Suān Zǎo Rén) / Sansōnin",
+          "modern_identification": "Ziziphus jujuba Mill. var. spinosa (Bunge) Hu ex H.F. Chow — dried ripe seeds (family Rhamnaceae)",
+          "identification_confidence": "high",
+          "notes": "The wild, thorny variety (spinosa) is pharmacopoeially specified; distinct from the common cultivated jujube (Z. jujuba var. inermis). The seed (kernel), not the fruit flesh, is the medicinal part. Modern pharmacological research confirms sedative, anxiolytic, and hypnotic activity attributable to saponins (jujubosides), flavonoids (spinosin, swertisin), and alkaloids (sanjoinine)."
+        },
+        {
+          "name": "酸棗仁湯 (Suān Zǎo Rén Tāng) / Sansōnin-tō",
+          "modern_identification": "Classical decoction formula from Jingui Yaolue",
+          "identification_confidence": "high",
+          "notes": "Composed of: Suan Zao Ren (君/Chief), Chuan Xiong (川芎), Zhi Mu (知母), Fu Ling (茯苓), Gan Cao (甘草). Benchmark formula for Liver Blood deficiency insomnia with vexation heat. Included in Japanese Kampo NHI formulary as Sansōnin-tō."
+        },
+        {
+          "name": "Shennong Bencaojing (神農本草經)",
+          "modern_identification": "Foundational Chinese materia medica text, c. 200 CE (Han dynasty); authorship attributed traditionally to the Divine Farmer (Shennong)",
+          "identification_confidence": "high",
+          "notes": "Survives in reconstructed form; original text lost, reconstructed from quotations in later encyclopaedias. Suan Zao Ren appears in the Superior Herb category."
+        },
+        {
+          "name": "濕痹 (shī bì) — Damp Impediment",
+          "modern_identification": "Classical diagnostic category approximating damp-type arthralgia/rheumatic conditions",
+          "identification_confidence": "medium",
+          "notes": "Classical indication from Shennong Bencaojing; later commentators de-emphasize this action, centering on spirit-calming and astringent properties instead."
+        }
+      ],
+      "translator_notes": "The source text as supplied is a modern descriptive label rather than a verbatim classical passage; accordingly, the original_text field reconstructs the most authoritative classical Chinese formulation from Shennong Bencaojing (Superior Herb section) and the translation/entry expands this with Bencao Gangmu and Kampo elaborations per the prompt's instruction. The reconstructed classical sentence ('酸棗，味酸，平。主心腹寒熱…') follows the standard Shennong Bencaojing template as preserved in Song-dynasty recensions. Dry-frying (chǎo) of the seed is a post-Han processing refinement not present in the original Shennong text but universal in later practice; this is noted explicitly. The assignment to 'neutral' rather than strictly 'cool' nature reflects the Shennong text (平, píng); later authors (e.g., Li Shizhen in Bencao Gangmu) nuance this to 'slightly cool' for the raw seed and 'neutral-warm' for the dry-fried seed.",
+      "_label": "Shennong Bencaojing / Kampo — Suan Zao Ren 酸棗仁"
+    },
+    {
+      "title_inferred": "Bai Zi Ren (Biota Seed): Classical Materia Medica Entry",
+      "original_text": "柏子仁 — 味甘，平。主驚悸，安五臟，益氣，除風濕痹。久服，令人悅澤美色，耳目聰明，不飢不老，輕身延年。生山谷。",
+      "translation": "Bai Zi Ren [柏子仁, Biota orientalis seed kernel]. Flavor: sweet [甘]. Nature: balanced/neutral [平]. Classical category: Superior Herb [上品, shang pin].\n\nChannel Tropism [歸經, gui jing]: Heart [心], Kidney [腎], Large Intestine [大腸].\n\nFive Flavors [五味]: Sweet [甘].\nFour Natures [四氣]: Neutral/Balanced [平].\n\nPrimary therapeutic actions according to the Shennong Bencaojing tradition: Governs fright palpitations [驚悸]; calms and harmonizes the five viscera [安五臟]; augments and replenishes qi [益氣]; dispels wind-damp impediment [除風濕痹].\n\nWith prolonged administration [久服]: the complexion becomes radiant and lustrous [令人悅澤美色]; hearing and vision become acute and keen [耳目聰明]; hunger is suppressed [不飢]; ageing is forestalled [不老]; the body becomes light [輕身]; and the years of life are extended [延年].\n\nHabitat: grows in mountain valleys [生山谷].\n\nKampo elaboration [日本漢方]: Known in Japanese Kampo medicine as Hakushinin [ハクシニン / 柏子仁]. Regarded principally as a Heart-nourishing, spirit-quieting [養心安神] agent, and secondarily as a moistening laxative [潤腸通便] for constipation arising from Blood or fluid insufficiency. The dual action on both the spirit/mind [神, shen] and the intestines reflects the classical understanding that Heart-Blood vacuity may simultaneously manifest as insomnia, palpitations, anxiety, and dry, difficult defecation. Kampo physicians also note its capacity to stabilize and contain the spirit [寧心安神], making it suitable for patients presenting with excessive dreaming, nocturnal fright, or generalized restlessness alongside constitutional dryness.\n\nKey classical and Kampo formulas featuring Bai Zi Ren:\n1. Bai Zi Yang Xin Wan [柏子養心丸]: nourishes the Heart, augments Blood, quiets the spirit; indicated for palpitations, insomnia, and forgetfulness from Heart-Blood vacuity.\n2. Tian Wang Bu Xin Dan [天王補心丹]: classical formula for Heart and Kidney yin vacuity with spirit agitation; Bai Zi Ren serves as a key spirit-calming seed.\n3. Bai Zi Ren Wan [柏子仁丸]: Kampo-elaborated formula targeting constipation from intestinal dryness and fluid depletion, particularly in the elderly or post-partum.\n\nPreparation: The seed kernels are extracted from the ripe cones of Platycladus orientalis, dried, and used either raw or lightly processed. Administered as decoction [湯], pill [丸], or powder [散]. Raw form emphasizes spirit-calming and laxative actions; processed form [蒸製] mildly reduces its oiliness for patients with digestive weakness. Typical classical dosage: 3–18 g per decoction.",
+      "entities_mentioned": [
+        {
+          "name": "柏子仁 (Bai Zi Ren)",
+          "modern_identification": "Platycladus orientalis (L.) Franco — seed kernel (formerly Biota orientalis; family Cupressaceae)",
+          "identification_confidence": "high",
+          "notes": "The seed kernels of the Oriental arborvitae / Chinese thuja. Long-standing identification in both Chinese and Japanese pharmaceutical traditions. Rich in fatty oils, saponins, and flavonoids, consistent with its classical moistening and nourishing properties."
+        },
+        {
+          "name": "Hakushinin (ハクシニン / 柏子仁)",
+          "modern_identification": "Platycladus orientalis seed kernel — same substance, Japanese Kampo nomenclature",
+          "identification_confidence": "high",
+          "notes": "The Japanese Kampo name is a direct Sino-Japanese phonetic reading of the Chinese characters. Officially listed in the Japanese Pharmacopoeia (JP) and the standard Kampo formulary. Kampo use emphasizes the dual spirit-calming / bowel-moistening duality more explicitly than the Shennong Bencaojing source text."
+        },
+        {
+          "name": "Bai Zi Yang Xin Wan (柏子養心丸)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Classical compound formula; Bai Zi Ren is the principal herb. Targets Heart-Blood vacuity pattern."
+        },
+        {
+          "name": "Tian Wang Bu Xin Dan (天王補心丹)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Major Heart and Kidney yin-nourishing formula from the Ming dynasty (摄生秘剖, c.1550 CE). Bai Zi Ren included as one of the seed-class spirit-quieting agents alongside Suan Zao Ren [酸棗仁]."
+        }
+      ],
+      "translator_notes": "The source segment was a structured prompt rather than a verbatim classical Chinese passage; accordingly, the original_text field reconstructs the canonical Shennong Bencaojing base text for Bai Zi Ren from the received textual tradition (森立之 [Mori Risshi] and Sun Xingyan reconstructions), which is the appropriate scholarly referent for a Plantacopia entry of this type. The Kampo elaboration synthesizes commentary from the Honzō Kōmoku Keimō [本草綱目啓蒙] (Ono Ranzan, 1803) and standard Kampo clinical literature. No OCR errors or illegible passages present. The moistening-laxative action for constipation, while prominent in Kampo and later Chinese clinical tradition, is not explicitly foregrounded in the earliest Shennong Bencaojing stratum; it is a post-Han elaboration consistently attested from the Tang dynasty onward (cf. Bencao Jing Jizhu [本草經集注], Tao Hongjing, c.500 CE).",
+      "_label": "Shennong Bencaojing / Kampo — Bai Zi Ren 柏子仁"
+    },
+    {
+      "title_inferred": "Yuan Zhi (Polygala Root): Classical and Kampo Entry on Spirit, Phlegm, and Insomnia",
+      "original_text": "遠志 — 味苦，溫。主咳逆傷中，補不足，除邪氣，利九竅，益智慧，耳目聰明，不忘，強志，倍力。久服輕身不老。葉名小草。（《神農本草經》上品）",
+      "translation": "Yuan Zhi [Far Aspiration / Polygala root]\n\nFlavor: Bitter. Nature: Warm.\n\nClassical Category (Shennong Bencaojing): Superior Herb [shang pin 上品].\n\nPrimary Actions (Shennong Bencaojing, c. 200 CE): Governs counterflow cough and injury to the interior [zhong 中]; supplements insufficiency [bu bu zu 補不足]; expels pathogenic qi [chu xie qi 除邪氣]; clears and opens the nine orifices [li jiu qiao 利九竅]; augments wisdom and intelligence [yi zhi hui 益智慧]; sharpens hearing and brightens vision [er mu cong ming 耳目聰明]; prevents forgetfulness [bu wang 不忘]; strengthens the will [qiang zhi 強志]; and doubles physical strength [bei li 倍力]. Prolonged consumption lightens the body and slows aging [jiu fu qing shen bu lao 久服輕身不老]. The leaves are called Xiao Cao [小草, 'Lesser Herb'].\n\nChinese Name: Yuan Zhi (遠志) — literally 'Far/Distant Aspiration,' referencing its classical association with strengthening willpower and memory.\n\nJapanese Kampo Name: Onji (遠志, おんじ) — identical characters, Japanese on-reading.\n\nFive Flavors (Wu Wei 五味): Bitter [ku 苦]. Some later elaborations (especially Song–Ming commentators and Kampo sources) also note a mild acrid [xin 辛] quality.\n\nFour Natures (Si Qi 四氣): Warm [wen 溫].\n\nChannel Tropism (Gui Jing 歸經, post-classical elaboration): Heart [xin 心], Kidney [shen 腎], Lung [fei 肺]. The Heart–Kidney axis is especially emphasized, reflecting the herb's classical role in calming the spirit and anchoring the will.\n\nTherapeutic Actions — Classical and Kampo Synthesis:\n1. Calms the spirit and quiets the Heart [an shen ning xin 安神寧心]: Used for insomnia, palpitations, anxiety, and excessive dreaming attributed to disharmony between Heart and Kidney, or to Heart-spirit instability.\n2. Dispels phlegm and opens the orifices [qu tan kai qiao 祛痰開竅]: Indicated in phlegm-obstructing the Heart orifice, presenting as confused thought, forgetfulness, or early-stage mental clouding. Kampo tradition particularly emphasizes this action in treating cognitive decline in the elderly.\n3. Strengthens memory and will [qiang zhi yi zhi 強志益智]: Classical nootropic/adaptogenic function; used in formulas targeting poor concentration and forgetting.\n4. Disperses swelling and resolves abscesses [xiao zhong pai nong 消腫排膿]: Applied topically or internally for sores, carbuncles, and breast abscesses — a secondary action recorded in later Bencao literature (e.g., Li Shizhen's Bencao Gangmu, 1596).\n5. Warms and supplements the Lung to stop cough: Addresses the primary Bencaojing indication of counterflow cough [ke ni 咳逆], especially where deficiency cold of Lung is involved.\n\nKey Classical Formulas:\n- Ding Zhi Wan (定志丸): Yuan Zhi paired with Ren Shen, Fu Ling, Chang Pu — canonical formula for forgetfulness, anxiety, and palpitations from Heart-qi deficiency; appears in the Beiji Qianjin Yaofang (備急千金要方, Sun Simiao, 652 CE).\n- Yuan Zhi Tang (遠志湯): Variants appear in Kampo texts for insomnia and neurasthenia-type presentations.\n- Gui Pi Tang (歸脾湯): Yuan Zhi is a component of this major Kampo and Chinese medicine formula for Heart-Spleen dual deficiency with insomnia, palpitations, and poor memory.\n- Tian Wang Bu Xin Dan (天王補心丹): Yuan Zhi present in this classic formula for Heart-Kidney yin deficiency with agitation and insomnia.\n\nPreparation Methods:\n- The root bark (not the woody core) is the medicinally active portion; classically the central woody pith [xin mu 心木] is removed before use to prevent nausea.\n- Processed forms: honey-fried [zhi yuan zhi 炙遠志] to moderate bitterness and enhance tonifying action; licorice-processed [gan cao zhi 甘草制] to reduce irritation — a common Kampo pharmacy modification.\n- Decoction (tang 湯): Standard oral preparation.\n- Pill (wan 丸) and powder (san 散): Common in classical formulas.",
+      "entities_mentioned": [
+        {
+          "name": "遠志 (Yuan Zhi / Onji)",
+          "modern_identification": "Polygala tenuifolia Willd. (slender-leaf milkwort) or Polygala sibirica L.; root bark used medicinally. Family Polygalaceae.",
+          "identification_confidence": "high",
+          "notes": "P. tenuifolia is the primary pharmacopoeial species in both the Chinese Pharmacopoeia (ChP) and Japanese Pharmacopoeia (JP). The 'Xiao Cao' (小草) leaf reference in the Bencaojing confirms botanical identity with known Polygala morphology. The removal of the woody core (xinmu) before use is a well-attested classical processing step reflected in modern Kampo pharmacy standards."
+        },
+        {
+          "name": "小草 (Xiao Cao)",
+          "modern_identification": "The above-ground leaves/aerial parts of Polygala tenuifolia",
+          "identification_confidence": "high",
+          "notes": "Mentioned in the Shennong Bencaojing as the leaf-name for Yuan Zhi. Historically used as a milder preparation; less commonly employed in modern practice."
+        },
+        {
+          "name": "定志丸 (Ding Zhi Wan)",
+          "modern_identification": "Classical Chinese formula; not a single plant",
+          "identification_confidence": "high",
+          "notes": "One of the earliest and most canonical formulas incorporating Yuan Zhi, from the Beiji Qianjin Yaofang. Establishes Yuan Zhi's central role in cognitive and spirit-calming therapeutics."
+        },
+        {
+          "name": "歸脾湯 (Gui Pi Tang)",
+          "modern_identification": "Classical Chinese/Kampo formula; not a single plant",
+          "identification_confidence": "high",
+          "notes": "Major clinical formula in both TCM and Kampo traditions; Yuan Zhi's inclusion targets the 'Heart-Kidney communication' axis and phlegm-clearing actions within a broader Heart-Spleen tonic framework."
+        },
+        {
+          "name": "天王補心丹 (Tian Wang Bu Xin Dan)",
+          "modern_identification": "Classical Chinese formula; not a single plant",
+          "identification_confidence": "high",
+          "notes": "A classic formula for Heart-Kidney yin deficiency; Yuan Zhi's warming nature is balanced by the predominantly cooling yin-nourishing herbs in this formula."
+        }
+      ],
+      "translator_notes": "The source segment supplied is a modern catalogue stub ('Plant: Yuan Zhi 遠志 — Polygala — spirit, phlegm, insomnia') rather than a verbatim classical Chinese passage. Accordingly, this entry has been reconstructed from the authoritative classical sources named (Shennong Bencaojing c. 200 CE; Beiji Qianjin Yaofang 652 CE; Bencao Gangmu 1596; Japanese Kampo pharmacopoeial tradition) and the original Chinese text field contains the reconstructed Bencaojing core passage for Yuan Zhi, which is well-established in scholarship. All classical Chinese quoted is standard and verifiable against transmitted Bencaojing editions (e.g., the Mori Tateyuki 森立之 recension, 1854). Channel tropism (gui jing) is a post-Han systematization not present in the original Bencaojing text; it is flagged as 'post-classical elaboration' per standard scholarly practice. The caution regarding removal of the woody core (xinmu) before decoction is clinically significant and preserved in modern Pharmacopoeia notes.",
+      "_label": "Shennong Bencaojing / Kampo — Yuan Zhi 遠志"
+    },
+    {
+      "title_inferred": "Shi Chang Pu (Stone Acorus): Orifice-Opening, Phlegm-Resolving Herb",
+      "original_text": "石菖蒲 — 辛、苦，溫。歸心、胃經。開竅豁痰，醒神益智，化濕開胃。",
+      "translation": "Shi Chang Pu (石菖蒲, 'Stone Acorus Root')\n\nChinese Name: Shí Chāng Pú (石菖蒲)\nJapanese Kampo Name: Sekishōbu (石菖蒲)\nClassical Category: Superior Herb (上品, shàng pǐn) — listed among tonifying and mind-clarifying substances in the Shennong Bencaojing tradition.\n\nFive Flavors (五味, Wǔ Wèi): Acrid [pungent] (辛, xīn) and Bitter (苦, kǔ).\nFour Natures (四氣, Sì Qì): Warm (溫, wēn).\nChannel Tropism (歸經, Guī Jīng): Heart (心) and Stomach (胃) channels.\n\nTherapeutic Actions (from Shennong Bencaojing and Kampo elaborations):\n1. Opens the orifices [通竅, tōng qiào]: Dispels turbid phlegm obstructing the sensory orifices and Heart-mind (心竅); indicated in loss of consciousness, clouded sensorium, and speech impairment arising from phlegm obstruction.\n2. Transforms phlegm and dispels dampness [豁痰化濕, huò tán huà shī]: Resolves damp-phlegm accumulation in the Middle Burner and chest; addresses productive cough, chest oppression, and epigastric fullness due to cold-damp or phlegm-damp patterns.\n3. Awakens the spirit and augments wisdom [醒神益智, xǐng shén yì zhì]: Classically described in the Shennong Bencaojing as sharpening hearing, brightening vision, and enhancing memory and cognitive acuity; used for forgetfulness, tinnitus, and age-related mental decline.\n4. Harmonises the Stomach and disperses turbidity [化濕開胃, huà shī kāi wèi]: Aromatically transforms dampness obstructing the Stomach; relieves nausea, loss of appetite, and abdominal distension from damp obstruction of the Middle.\n\nShennong Bencaojing Classical Statement (reconstructed standard text): 'Shi Chang Pu: flavour acrid, warm. Treats wind-cold-damp impediment [風寒濕痹, fēng hán shī bì],咳逆 [cough with counterflow qi], opens Heart orifices, supplements the five viscera, penetrates nine orifices, brightens the eyes and ears, emits the voice. Prolonged taking makes the body light, prevents forgetfulness, extends years, and does not bring confusion.'\n\nJapanese Kampo Elaborations: In Kampo medicine, Sekishōbu is prominent in formulas addressing phlegm-induced mental cloudiness (痰迷心竅) and is considered a key herb for linking Heart spirit with sensory function. Kampo practitioners emphasise its use in elderly patients with phlegm-damp constitutions presenting with cognitive dulling. It is distinguished in Kampo from Sōshōbu (草菖蒲, Acorus calamus var. angustatus) as the superior stone-growing variety, valued for greater potency.\n\nKey Classical Formulas:\n- Ding Zhi Wan (定志丸): Calms and stabilises the Heart spirit; used for poor memory, palpitations, and anxiety from Heart-Qi insufficiency with phlegm.\n- Chang Pu Yu Jin Tang (菖蒲鬱金湯): Clears heat, opens orifices, transforms phlegm; used for febrile disease with delirium or clouded consciousness.\n- Tong Qiao Huo Xue Tang (通竅活血湯, with modification): Opens orifices and moves blood; used for head and sensory orifice disorders.\n- Kong Sheng Zhen Zhong Dan (孔聖枕中丹): Classical formula for strengthening memory and intelligence, featuring Chang Pu prominently.\n\nPreparation: Decoction (煎服, jiān fú), typically 3–9 g dried rhizome; fresh rhizome may be used at higher doses (9–24 g). Also prepared as pill or powder. For topical or fumigation use in sensory orifice disorders, the fresh herb may be applied externally. Aromatic volatile constituents are partially lost with prolonged boiling; short decoction or late addition is preferred in Kampo practice.\n\nModern Identification: Acorus gramineus Soland. (石菖蒲), Acoraceae family — the small-leaved, stone-growing variety, distinct from the larger Acorus calamus (水菖蒲, shuǐ chāng pú) used in Western herbalism.",
+      "entities_mentioned": [
+        {
+          "name": "石菖蒲 (Shí Chāng Pú)",
+          "modern_identification": "Acorus gramineus Soland. (Acoraceae); the rhizome of the dwarf stone-growing sweetflag",
+          "identification_confidence": "high",
+          "notes": "Distinct from the larger Acorus calamus (水菖蒲) used in Western and Ayurvedic traditions. Chinese pharmacopoeia and Kampo sources consistently specify the smaller stone-variety (石菖蒲) as the superior medicinal form. Active constituents include β-asarone, α-asarone, and other sesquiterpenes; note that β-asarone has raised safety concerns in modern pharmacological review, particularly at high doses."
+        },
+        {
+          "name": "Sekishōbu (石菖蒲) — Japanese Kampo name",
+          "modern_identification": "Same as Shi Chang Pu: Acorus gramineus Soland.",
+          "identification_confidence": "high",
+          "notes": "The Japanese reading of the same characters. Kampo texts including the Ishinhō (醫心方, 984 CE) and Manase Dōsan's writings reference this herb in formulas for memory loss and phlegm-obstruction patterns."
+        },
+        {
+          "name": "Ding Zhi Wan (定志丸)",
+          "modern_identification": "Classical formula: Ren Shen, Fu Ling, Chang Pu, Yuan Zhi",
+          "identification_confidence": "high",
+          "notes": "Originates in the Beiji Qianjin Yaofang (備急千金要方) by Sun Simiao (c.652 CE); foundational formula for Heart spirit stabilisation featuring Chang Pu."
+        },
+        {
+          "name": "Chang Pu Yu Jin Tang (菖蒲鬱金湯)",
+          "modern_identification": "Classical formula for phlegm-heat orifice obstruction",
+          "identification_confidence": "high",
+          "notes": "Features Chang Pu alongside Yu Jin (Curcuma), Zhi Zi, and other heat-clearing herbs; used in febrile disease with delirium."
+        }
+      ],
+      "translator_notes": "The source segment is a brief modern taxonomic label rather than a verbatim classical text passage. Accordingly, the original_text field presents the reconstructed classical Chinese characterisation consistent with Shennong Bencaojing conventions, and the translation field synthesises the full scholarly entry from primary Bencaojing tradition and Kampo elaborations as instructed. Where the Shennong Bencaojing classical statement is cited, it follows the standard reconstructed text established by Tao Hongjing's commentary tradition and the Zhenghe Bencao compilation; this is flagged as 'reconstructed standard text' rather than a verbatim OCR transcription. The safety note regarding β-asarone is a modern pharmacological concern not present in classical sources and is included for archival completeness. Preparatory distinction between Acorus gramineus and Acorus calamus is critical for accurate modern dispensing and is explicitly noted.",
+      "_label": "Shennong Bencaojing / Kampo — Shi Chang Pu 石菖蒲"
+    }
+  ]
+}
