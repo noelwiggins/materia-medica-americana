@@ -1603,130 +1603,23 @@ try {
   conditionData = (await cRes.json()).conditions || [];
   longevityData = (await lRes.json()).traditions || [];
 
-  // Load corpus — merge all tradition translation files into one unified corpus
+  // Load corpus from 3 pre-built slim shards (parallel, ~3MB each)
   try {
-    const traditionFiles = [
-      { url: '/data/cobo_chapters.json',           tradition: 'cobo',               label: 'Andean (Cobo)' },
-      { url: '/data/cobo_recovery_chapters.json',  tradition: 'cobo',               label: 'Andean (Cobo — Recovery)' },
-      { url: '/data/cobo_mineral_air_chapters.json',tradition: 'cobo',              label: 'Andean (Cobo — Minerals)' },
-      { url: '/data/cobo_missing_chapters.json',   tradition: 'cobo',               label: 'Andean (Cobo — Final)' },
-      { url: '/data/cobo_nontarget_chapters.json', tradition: 'cobo',               label: 'Andean (Cobo — Healer/Elite)' },
-      { url: '/data/kampo_chapters.json',          tradition: 'kampo',              label: 'Kampo' },
-      { url: '/data/tibetan_chapters.json',        tradition: 'tibetan',            label: 'Tibetan' },
-      { url: '/data/maya_chapters.json',           tradition: 'maya',               label: 'Maya' },
-      { url: '/data/philippine_chapters.json',     tradition: 'philippine',         label: 'Philippine' },
-      { url: '/data/australian_chapters.json',     tradition: 'australian_indigenous', label: 'Australian Indigenous' },
-      { url: '/data/celtic_norse_chapters.json',   tradition: 'celtic_norse',       label: 'Celtic & Norse' },
-      { url: '/data/persian_chapters.json',        tradition: 'persian_zoroastrian', label: 'Persian/Zoroastrian' },
-      { url: '/data/charaka_chapters.json',        tradition: 'ayurveda',            label: 'Ayurveda (Charaka Samhita)' },
-      { url: '/data/bencao_chapters.json',         tradition: 'chinese',             label: 'Chinese (Shennong Bencaojing)' },
-      { url: '/data/gangmu_chapters.json',         tradition: 'chinese',             label: 'Chinese (Bencao Gangmu — Li Shizhen)' },
-      { url: '/data/korean_chapters.json',         tradition: 'korean',              label: 'Korean (Dongui Bogam)' },
-      { url: '/data/honzo_chapters.json',          tradition: 'japanese_honzo',      label: 'Japanese (Yamato Honzō)' },
-      { url: '/data/dioscorides_chapters.json',    tradition: 'greek_roman',          label: 'Greek/Roman (Dioscorides)' },
-      { url: '/data/dioscorides_complete_chapters.json', tradition: 'greek_roman',   label: 'Greek/Roman (Dioscorides — Complete)' },
-      { url: '/data/dioscorides_books5_6_chapters.json', tradition: 'greek_roman',   label: 'Greek/Roman (Dioscorides — Books V–VI)' },
-      { url: '/data/greek_roman_chapters.json',    tradition: 'greek_roman',          label: 'Greek/Roman (Pliny)' },
-      { url: '/data/egyptian_chapters.json',       tradition: 'egyptian',             label: 'Egyptian (Ebers Papyrus)' },
-      { url: '/data/ibn_sina_chapters.json',       tradition: 'unani',                label: 'Unani (Ibn Sina — Canon)' },
-      { url: '/data/ibn_baitar_chapters.json',     tradition: 'unani',                label: 'Unani (Ibn Baitar)' },
-      { url: '/data/west_african_chapters.json',   tradition: 'west_african',         label: 'West African' },
-      { url: '/data/south_african_chapters.json',  tradition: 'southern_african',     label: 'Southern African' },
-      { url: '/data/north_american_chapters.json', tradition: 'north_american_indigenous', label: 'North American Indigenous' },
-      { url: '/data/north_american_expanded_chapters.json', tradition: 'north_american_indigenous', label: 'North American Indigenous (Expanded)' },
-      { url: '/data/amazonian_chapters.json',      tradition: 'amazonian',            label: 'Amazonian' },
-      { url: '/data/east_african_chapters.json',   tradition: 'east_african',         label: 'East African' },
-      { url: '/data/charaka_extended_chapters.json', tradition: 'ayurveda',           label: 'Ayurveda (Charaka — Extended)' },
-      { url: '/data/cobo_nontarget_remaining_a.json', tradition: 'cobo',             label: 'Andean (Cobo — Remaining A)' },
-      { url: '/data/cobo_nontarget_remaining_b.json', tradition: 'cobo',             label: 'Andean (Cobo — Remaining B)' },
-      { url: '/data/cobo_new_b01.json', tradition: 'mesoamerican', label: 'Cobo — New Plants B01', _forge: true },
-      { url: '/data/cobo_new_b02.json', tradition: 'mesoamerican', label: 'Cobo — New Plants B02', _forge: true },
-      { url: '/data/cobo_new_b02.json', tradition: 'mesoamerican', label: 'Cobo — New Plants B02', _forge: true },
-      { url: '/data/south_african_new_b01.json', tradition: 'southern_african', label: 'Southern African (Forge)', _forge: true },
-      { url: '/data/ebers_expanded_b01.json', tradition: 'egyptian', label: 'Ebers Papyrus Expanded', _forge: true },
-      { url: '/data/dongui_expanded_b01.json', tradition: 'korean', label: 'Dongui Bogam Expanded', _forge: true },
-      { url: '/data/honzo_expanded_b01.json', tradition: 'japanese_honzo', label: 'Honzo Wamyo Expanded', _forge: true },
-      // ── NEW: Forge-translated batches ──────────────────────────
-      { url: '/data/bencao_batch_01.json',  tradition: 'chinese', label: 'Bencao Gangmu B01', _forge: true },
-      { url: '/data/bencao_batch_02.json',  tradition: 'chinese', label: 'Bencao Gangmu B02', _forge: true },
-      { url: '/data/bencao_batch_03.json',  tradition: 'chinese', label: 'Bencao Gangmu B03', _forge: true },
-      { url: '/data/bencao_batch_04.json',  tradition: 'chinese', label: 'Bencao Gangmu B04', _forge: true },
-      { url: '/data/bencao_batch_05.json',  tradition: 'chinese', label: 'Bencao Gangmu B05', _forge: true },
-      { url: '/data/bencao_batch_06.json',  tradition: 'chinese', label: 'Bencao Gangmu B06', _forge: true },
-      { url: '/data/bencao_batch_07.json',  tradition: 'chinese', label: 'Bencao Gangmu B07', _forge: true },
-      { url: '/data/bencao_batch_08.json',  tradition: 'chinese', label: 'Bencao Gangmu B08', _forge: true },
-      { url: '/data/bencao_batch_09.json',  tradition: 'chinese', label: 'Bencao Gangmu B09', _forge: true },
-      { url: '/data/bencao_batch_10.json',  tradition: 'chinese', label: 'Bencao Gangmu B10', _forge: true },
-      { url: '/data/bencao_batch_11.json',  tradition: 'chinese', label: 'Bencao Gangmu B11', _forge: true },
-      { url: '/data/bencao_batch_12.json',  tradition: 'chinese', label: 'Bencao Gangmu B12', _forge: true },
-      { url: '/data/bencao_batch_13.json',  tradition: 'chinese', label: 'Bencao Gangmu B13', _forge: true },
-      { url: '/data/bencao_batch_14.json',  tradition: 'chinese', label: 'Bencao Gangmu B14', _forge: true },
-      { url: '/data/bencao_batch_15.json',  tradition: 'chinese', label: 'Bencao Gangmu B15', _forge: true },
-      { url: '/data/bencao_batch_16.json',  tradition: 'chinese', label: 'Bencao Gangmu B16', _forge: true },
-      { url: '/data/bencao_batch_17.json',  tradition: 'chinese', label: 'Bencao Gangmu B17', _forge: true },
-      { url: '/data/bencao_batch_18.json',  tradition: 'chinese', label: 'Bencao Gangmu B18', _forge: true },
-      { url: '/data/ebers_batch_01.json',   tradition: 'egyptian', label: 'Ebers Papyrus (Forge)', _forge: true },
-      { url: '/data/charaka_new_b01.json',  tradition: 'ayurveda', label: 'Charaka Samhita (Forge B1)', _forge: true },
-      { url: '/data/charaka_new_b02.json',  tradition: 'ayurveda', label: 'Charaka Samhita (Forge B2)', _forge: true },
-      { url: '/data/dioscorides_new_b01.json', tradition: 'greek_roman', label: 'Dioscorides (Forge B1)', _forge: true },
-      { url: '/data/dioscorides_new_b02.json', tradition: 'greek_roman', label: 'Dioscorides (Forge B2)', _forge: true },
-      { url: '/data/dioscorides_new_b03.json', tradition: 'greek_roman', label: 'Dioscorides (Forge B3)', _forge: true },
-      { url: '/data/west_african_new_b01.json', tradition: 'west_african', label: 'West African (Forge)', _forge: true },
-      { url: '/data/tibetan_new_b01.json',  tradition: 'tibetan', label: 'Tibetan Gyushi (Forge)', _forge: true },
-      { url: '/data/ibn_sina_new_b01.json', tradition: 'unani', label: 'Ibn Sina (Forge B1)', _forge: true },
-      { url: '/data/ibn_sina_new_b02.json', tradition: 'unani', label: 'Ibn Sina (Forge B2)', _forge: true },
-      { url: '/data/kampo_new_b01.json',    tradition: 'kampo', label: 'Kampo/Shennong (Forge B1)', _forge: true },
-      { url: '/data/kampo_new_b02.json',    tradition: 'kampo', label: 'Kampo/Shennong (Forge B2)', _forge: true },
-      { url: '/data/kampo_new_b03.json',    tradition: 'kampo', label: 'Kampo/Shennong (Forge B3)', _forge: true },
-      { url: '/data/dongui_new_b01.json',   tradition: 'korean', label: 'Dongui Bogam (Forge B1)', _forge: true },
-      { url: '/data/dongui_new_b02.json',   tradition: 'korean', label: 'Dongui Bogam (Forge B2)', _forge: true },
-      { url: '/data/honzo_new_b01.json',    tradition: 'japanese_honzo', label: 'Honzo Wamyo (Forge B1)', _forge: true },
-      { url: '/data/honzo_new_b02.json',    tradition: 'japanese_honzo', label: 'Honzo Wamyo (Forge B2)', _forge: true },
-      { url: '/data/north_am_new_b01.json', tradition: 'north_american_indigenous', label: 'N. American Indigenous (Forge)', _forge: true },
-      { url: '/data/amazonian_new_b01.json', tradition: 'amazonian', label: 'Amazonian (Forge)', _forge: true },
-      { url: '/data/east_african_new_b01.json', tradition: 'east_african', label: 'East African (Forge)', _forge: true },
-      { url: '/data/persian_new_b01.json',  tradition: 'persian_zoroastrian', label: 'Persian (Forge)', _forge: true },
-      { url: '/data/maya_new_b01.json',     tradition: 'maya', label: 'Maya (Forge)', _forge: true },
-      { url: '/data/philippine_new_b01.json', tradition: 'philippine', label: 'Philippine (Forge)', _forge: true },
-      { url: '/data/australian_new_b01.json', tradition: 'australian_indigenous', label: 'Australian Aboriginal (Forge)', _forge: true },
-      { url: '/data/celtic_new_b01.json',   tradition: 'celtic_norse', label: 'Celtic & Norse (Forge)', _forge: true },
-      { url: '/data/southern_african_chapters.json', tradition: 'southern_african', label: 'Southern African' },
-      { url: '/data/east_african_chapters.json',   tradition: 'east_african',        label: 'East African (Ethiopian)' },
-      { url: '/data/southern_african_chapters.json',tradition:'southern_african',    label: 'Southern African (Zulu/San/Khoikhoi)' },
-      { url: '/data/north_american_expanded_chapters.json',tradition:'north_american_indigenous',label:'North American (Moerman Database)' },
-      { url: '/data/ibn_baitar_chapters.json',     tradition: 'unani',               label: 'Unani (Ibn al-Baitar)' },
-      { url: '/data/dioscorides_complete_chapters.json',tradition:'greek_roman',     label: 'Greek/Roman (Dioscorides Books I, V)' },
-      { url: '/data/dioscorides_books5_6_chapters.json',tradition:'greek_roman',    label: 'Greek/Roman (Dioscorides Books V-VI — Forge translated)' },
-      { url: '/data/charaka_extended_chapters.json',   tradition: 'ayurveda',       label: 'Ayurveda (Charaka Samhita — Extended Corpus)' },
-      { url: '/data/ibn_sina_chapters.json',       tradition: 'unani',               label: 'Unani (Ibn Sina — Canon of Medicine)' },
-    ];
-
-    const allResults = [];
-    const seen = new Set();
-
-    // Load 3 slim shards in parallel (~3MB each, no heavy fields)
-    var _loadMsg = document.getElementById('library-loading-msg');
-    if (_loadMsg) _loadMsg.textContent = 'Loading…';
-    try {
-      const [s1, s2, s3] = await Promise.all([
-        fetch('/data/corpus_shard_1.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
-        fetch('/data/corpus_shard_2.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
-        fetch('/data/corpus_shard_3.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; })
-      ]);
-      [s1, s2, s3].forEach(function(shard) {
-        (shard.segments || []).forEach(function(s) {
-          if (s && s.translation && s.title_inferred &&
-              !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)) {
-            allResults.push(s);
-          }
-        });
+    const [sh1, sh2, sh3] = await Promise.all([
+      fetch('/data/corpus_shard_1.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
+      fetch('/data/corpus_shard_2.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
+      fetch('/data/corpus_shard_3.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; })
+    ]);
+    [sh1, sh2, sh3].forEach(function(shard) {
+      (shard.segments || []).forEach(function(s) {
+        if (s && s.translation && s.title_inferred &&
+            !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)) {
+          corpusData.push(s);
+        }
       });
-    } catch(e) { /* silent */ }
-    if (_loadMsg) _loadMsg.style.display = 'none';
-
-    corpusData = allResults;
-    console.log(`Corpus: ${corpusData.length} total segments across ${traditionFiles.length} files`);
-  } catch(e) { corpusData = []; }
+    });
+    console.log('Corpus: ' + corpusData.length + ' segments loaded from 3 shards');
+  } catch(e) { console.error('Corpus load error:', e); }
 } catch(e) { console.error('Data load error:', e); }
 }
 
