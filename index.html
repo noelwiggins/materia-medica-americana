@@ -1196,6 +1196,51 @@
 
   .xref-link { color:var(--ink); border-bottom:1.5px dotted var(--gold); cursor:pointer; border-radius:2px; padding:0 1px; }
   .xref-link:hover { background:rgba(196,168,130,0.18); }
+
+  /* ── Breadcrumb return bar ── */
+  .xref-breadcrumb { position:fixed; top:0; left:0; right:0; z-index:3000;
+    background:var(--ink); padding:0.45rem 1rem;
+    transform:translateY(-100%); transition:transform 0.22s ease;
+    display:flex; align-items:center; }
+  .xref-breadcrumb.visible { transform:translateY(0); }
+  .xref-bc-btn { background:none; border:none; color:var(--gold);
+    font-family:var(--font-code); font-size:0.72rem; letter-spacing:0.06em;
+    cursor:pointer; display:flex; align-items:center; gap:0.4rem;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:90vw; }
+  .xref-bc-btn:hover { color:#fff; }
+
+  /* ── Wikipedia-style inline popover ── */
+  .xref-popover { position:fixed; z-index:2500; width:min(360px,90vw);
+    background:var(--vellum); border:1px solid var(--border);
+    box-shadow:0 8px 32px rgba(0,0,0,0.35); border-radius:4px;
+    display:none; flex-direction:column; max-height:55vh;
+    font-family:var(--font-body); font-size:0.82rem; }
+  .xref-popover.show { display:flex; }
+  .xref-popover-header { display:flex; justify-content:space-between;
+    align-items:center; padding:0.5rem 0.8rem 0.4rem;
+    border-bottom:1px solid var(--border); background:var(--ink); border-radius:4px 4px 0 0; }
+  .xref-popover-plant { font-family:var(--font-display); font-size:0.9rem;
+    font-weight:600; color:var(--gold); }
+  .xref-popover-close { background:none; border:none; color:rgba(255,255,255,0.6);
+    cursor:pointer; font-size:1rem; padding:0 0.2rem; line-height:1; }
+  .xref-popover-close:hover { color:#fff; }
+  .xref-popover-body { overflow-y:auto; flex:1; padding:0.6rem 0; }
+  .xref-popover-card { padding:0.5rem 0.8rem; cursor:pointer;
+    border-bottom:1px solid var(--border); }
+  .xref-popover-card:last-child { border-bottom:none; }
+  .xref-popover-card:hover { background:rgba(196,168,130,0.1); }
+  .xref-popover-trad { font-family:var(--font-code); font-size:0.6rem;
+    letter-spacing:0.1em; text-transform:uppercase; color:var(--gold);
+    margin-bottom:0.2rem; }
+  .xref-popover-title { font-weight:600; font-size:0.82rem; color:var(--ink);
+    margin-bottom:0.2rem; }
+  .xref-popover-snippet { font-size:0.77rem; color:#6B6358; line-height:1.4; }
+  .xref-popover-footer { padding:0.4rem 0.8rem; border-top:1px solid var(--border);
+    background:rgba(196,168,130,0.06); }
+  .xref-popover-all { background:none; border:none; color:var(--gold);
+    font-family:var(--font-code); font-size:0.65rem; letter-spacing:0.08em;
+    cursor:pointer; text-transform:uppercase; }
+  .xref-popover-all:hover { color:var(--ink); }
   .xref-panel { position:fixed; bottom:0; left:0; right:0; max-height:62vh; background:var(--vellum); border-top:2px solid var(--ink); box-shadow:0 -8px 40px rgba(0,0,0,0.4); z-index:2000; display:flex; flex-direction:column; transform:translateY(100%); transition:transform 0.28s cubic-bezier(.4,0,.2,1); }
   .xref-panel.open { transform:translateY(0); }
   .xref-panel-header { display:flex; justify-content:space-between; align-items:center; padding:0.7rem 1.2rem 0.5rem; border-bottom:1px solid var(--border); flex-shrink:0; background:var(--ink); color:var(--vellum); }
@@ -3158,7 +3203,10 @@ var TRAD_NAMES = {
   western_pharmacopeia:'WHO Monographs'
 };
 
-function showXrefPanel(key, word) {
+// Store current xref state for popover→panel expansion
+var _curXrefKey = '', _curXrefWord = '', _curXrefByTrad = {};
+
+function showXrefPanel(key, word, anchorEl) {
   buildXrefIndex();
   var curTrad = bookTradition && bookTradition.id;
   var matches = (_xrefIdx[key] || []).filter(function(s){
@@ -3166,28 +3214,82 @@ function showXrefPanel(key, word) {
   });
   if (!matches.length) return;
 
+  _curXrefKey = key; _curXrefWord = word;
   var byTrad = {};
   matches.forEach(function(s){
     var t = s._tradition || s.tradition || 'unknown';
     if (!byTrad[t]) byTrad[t]=[];
     byTrad[t].push(s);
   });
+  _curXrefByTrad = byTrad;
 
-  document.getElementById('xref-panel-plant').textContent = word || key;
-  document.getElementById('xref-panel-count').textContent =
-    'Found in ' + Object.keys(byTrad).length + ' other tradition' + (Object.keys(byTrad).length>1?'s':'');
+  // Show inline popover anchored to the tapped word
+  var pop = document.getElementById('xref-popover');
+  var popPlant = document.getElementById('xref-popover-plant');
+  var popBody  = document.getElementById('xref-popover-body');
+  popPlant.textContent = word || key;
 
-  document.getElementById('xref-results').innerHTML = Object.entries(byTrad).map(function(e){
+  popBody.innerHTML = Object.entries(byTrad).map(function(e){
     var trad=e[0], segs=e[1], seg=segs[0];
-    var snippet=(seg.translation||'').substring(0,130).trim()+'...';
+    var snippet=(seg.translation||'').replace(/<[^>]+>/g,'').substring(0,110).trim()+'...';
     var tradLabel = TRAD_NAMES[trad] || trad;
     var cidx = corpusData.indexOf(seg);
-    return '<div class="xref-card" data-trad="'+trad+'" data-cidx="'+cidx+'">' +
-      '<div class="xref-card-tradition">'+tradLabel+' · '+segs.length+' match'+(segs.length>1?'es':'')+'</div>' +
-      '<div class="xref-card-title">'+(seg.title_inferred||'')+'</div>' +
-      '<div class="xref-card-snippet">'+snippet+'</div></div>';
+    var tradColor = (BOOKS.find(function(b){return b.tradition===trad;})||{}).color || '#888';
+    return '<div class="xref-popover-card" data-trad="'+trad+'" data-cidx="'+cidx+'">' +
+      '<div class="xref-popover-trad" style="color:'+tradColor+'">'+tradLabel+'</div>' +
+      '<div class="xref-popover-title">'+(seg.title_inferred||'')+'</div>' +
+      '<div class="xref-popover-snippet">'+snippet+'</div></div>';
   }).join('');
 
+  // Position popover near the anchor element
+  pop.classList.add('show');
+  if (anchorEl) {
+    var rect = anchorEl.getBoundingClientRect();
+    var winH = window.innerHeight;
+    var popH = Math.min(350, winH * 0.5);
+    // Place below if room, otherwise above
+    if (rect.bottom + popH + 10 < winH) {
+      pop.style.top  = (rect.bottom + 6) + 'px';
+      pop.style.bottom = 'auto';
+    } else {
+      pop.style.bottom = (winH - rect.top + 6) + 'px';
+      pop.style.top = 'auto';
+    }
+    // Horizontal: keep within viewport
+    var left = Math.max(8, Math.min(rect.left, window.innerWidth - 370));
+    pop.style.left = left + 'px';
+    pop.style.right = 'auto';
+  } else {
+    pop.style.top = '50%'; pop.style.left = '50%';
+    pop.style.transform = 'translate(-50%,-50%)';
+  }
+}
+
+function closeXrefPopover() {
+  var pop = document.getElementById('xref-popover');
+  pop.classList.remove('show');
+  pop.style.transform = '';
+}
+
+function expandToPanel() {
+  closeXrefPopover();
+  // Show full bottom-sheet panel
+  var key = _curXrefKey;
+  document.getElementById('xref-panel-plant').textContent = _curXrefWord || key;
+  document.getElementById('xref-panel-count').textContent =
+    'Found in ' + Object.keys(_curXrefByTrad).length + ' other tradition' +
+    (Object.keys(_curXrefByTrad).length>1?'s':'');
+  document.getElementById('xref-results').innerHTML =
+    Object.entries(_curXrefByTrad).map(function(e){
+      var trad=e[0], segs=e[1], seg=segs[0];
+      var snippet=(seg.translation||'').substring(0,130).trim()+'...';
+      var tradLabel = TRAD_NAMES[trad] || trad;
+      var cidx = corpusData.indexOf(seg);
+      return '<div class="xref-card" data-trad="'+trad+'" data-cidx="'+cidx+'">' +
+        '<div class="xref-card-tradition">'+tradLabel+' · '+segs.length+' match'+(segs.length>1?'es':'')+'</div>' +
+        '<div class="xref-card-title">'+(seg.title_inferred||'')+'</div>' +
+        '<div class="xref-card-snippet">'+snippet+'</div></div>';
+    }).join('');
   document.getElementById('xref-panel').classList.add('open');
 }
 
@@ -3223,18 +3325,39 @@ function returnFromXref() {
   if (!_xrefCrumb) return;
   var p=_xrefCrumb; _xrefCrumb=null;
   var bc=document.getElementById('xref-breadcrumb'); if(bc) bc.classList.remove('visible');
+  closeXrefPopover();
   openBookModal(p.tradition);
   bookIdx=p.segIdx; renderBookPage();
 }
 
 document.addEventListener('click', function(e) {
   var link = e.target.closest('.xref-link');
-  if (link) { e.stopPropagation(); showXrefPanel(link.getAttribute('data-xref'), link.textContent); return; }
+  if (link) { e.stopPropagation(); showXrefPanel(link.getAttribute('data-xref'), link.textContent, link); return; }
+  // Close popover if clicking outside
+  var pop = document.getElementById('xref-popover');
+  if (pop && pop.classList.contains('show') && !pop.contains(e.target)) { closeXrefPopover(); }
   var card = e.target.closest('.xref-card');
   if (card) { jumpToXref(card.getAttribute('data-trad'), parseInt(card.getAttribute('data-cidx'),10)); }
 });
 </script>
 
+
+<!-- Breadcrumb return bar -->
+<div class="xref-breadcrumb" id="xref-breadcrumb">
+  <button class="xref-bc-btn" onclick="returnFromXref()">&#8592; Back to <span id="xref-bc-text"></span></button>
+</div>
+
+<!-- Inline plant popover (Wikipedia-style) -->
+<div class="xref-popover" id="xref-popover">
+  <div class="xref-popover-header">
+    <span class="xref-popover-plant" id="xref-popover-plant"></span>
+    <button class="xref-popover-close" onclick="closeXrefPopover()">&#x2715;</button>
+  </div>
+  <div class="xref-popover-body" id="xref-popover-body"></div>
+  <div class="xref-popover-footer">
+    <button class="xref-popover-all" onclick="expandToPanel()">See all matches &#8595;</button>
+  </div>
+</div>
 
 <div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
 </body>
