@@ -1,0 +1,139 @@
+{
+  "segments": [
+    {
+      "label": "Honzo Wamyo Book 1",
+      "text": "Honzo Wamyo Book 1 — Trees (木部): medicinal uses of Japanese oak (quercus), camphor tree (Cinnamomum camphora), Japanese cedar (Cryptomeria japonica), hinoki cypress, paulownia, camellia",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo Book 2",
+      "text": "Honzo Wamyo Book 2 — Herbs Part 1 (草部上): Japanese wormwood (yomogi/艾蒿), Japanese mint, wild ginger (Asarum), skullcap, Chinese peony adapted to Japan",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo Book 3",
+      "text": "Honzo Wamyo Book 3 — Herbs Part 2 (草部下): Japanese gentian (リンドウ), Japanese valerian, Japanese aconite (トリカブト), Japanese thistle, water pepper (タデ)",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo Book 4",
+      "text": "Honzo Wamyo Book 4 — Grains and Vegetables (穀部/菜部): rice bran medicine, fermented soybean (natto) therapeutic uses, pickled plum (umeboshi), Japanese fermented foods as medicine",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo Book 5",
+      "text": "Honzo Wamyo Book 5 — Fruits (果部): Japanese persimmon (kaki), yuzu citrus therapeutic use, Japanese plum (ume) preparations, Japanese pear, loquat (biwa/枇杷)",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo Book 6",
+      "text": "Honzo Wamyo Book 6 — Insects and Animals (虫部/獣部): Japanese deer antler (鹿茸), bear gallbladder (熊胆), Japanese sea turtle shell, silkworm therapeutic use",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo Book 7",
+      "text": "Honzo Wamyo Book 7 — Minerals (玉石部): Japanese mineral drugs — cinnabar, sulfur, magnetite, jade preparations in Japanese medicine of the Heian period",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Yamato drug names: plants recorded with both Chinese character names and ancient Japanese (Yamato kotoba) vernacular names — the earliest Japanese botanical glossary",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Korean medicinal plants imported to Japan via Silla kingdom: the role of Korean medicine in establishing Japanese pharmacy (984 CE Ishinpo connection)",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Taro (satoimo/里芋) in Japanese Heian medicine: digestive, detoxifying. Also lotus root (renkon), burdock root (gobo) as Japanese medicinal foods",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Japanese seaweeds: kombu (Saccharina japonica), wakame (Undaria), hijiki, nori — iodine, goiter prevention, Heian period awareness",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Shiso/Perilla (紫蘇) in Japanese medicine: introduced from China but uniquely emphasized in Japan — cold, nausea, fish poisoning antidote",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Japanese ginger (myoga/茗荷): distinct from regular ginger, used in Japanese folk medicine — digestive, cooling, seasonal use",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Japanese horseradish (wasabi/山葵): antimicrobial, digestive, nasal decongestant — Japanese specific application",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    },
+    {
+      "label": "Honzo Wamyo",
+      "text": "Honzo Wamyo — Pine (matsu/松) comprehensive entry: pollen, needles, resin, bark, seeds in Heian Japanese medicine — longevity, joint, respiratory",
+      "_meta": {
+        "tradition": "japanese_honzo",
+        "_corpusKey": "honzo_expanded",
+        "source_section": "Honzo Wamyo (918 CE)"
+      }
+    }
+  ]
+}
