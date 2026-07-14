@@ -1585,21 +1585,17 @@ try {
   const [pRes, tRes, rRes, cRes, lRes] = await Promise.all([
     fetch('/data/plants.json'),
     fetch('/data/traditions.json'),
-    fetch('/data/regulatory_data.json').catch(()=>null),
-      fetch('/data/plant_illustrations.json').catch(()=>null),
+    fetch('/data/regulatory_data.json').catch(function(){ return null; }),
     fetch('/data/conditions.json'),
     fetch('/data/longevity.json'),
   ]);
   plantData = (await pRes.json()).plants || [];
   traditionData = (await tRes.json()).traditions || [];
   if (rRes && rRes.ok) regulatoryData = (await rRes.json()).plants || [];
-    // Load illustrations separately
-    try {
-      const illRes = await fetch('/data/plant_illustrations.json');
-      if (illRes.ok) { const id = await illRes.json(); illustrationsData = id.illustrations || {}; }
-    } catch(e) {}
-    const iRes = responses ? responses[5] : null;
-    if (iRes && iRes.ok) { const id = await iRes.json(); illustrationsData = id.illustrations || {}; }
+  try {
+    const illRes = await fetch('/data/plant_illustrations.json');
+    if (illRes.ok) { const id = await illRes.json(); illustrationsData = id.illustrations || {}; }
+  } catch(e) {}
   conditionData = (await cRes.json()).conditions || [];
   longevityData = (await lRes.json()).traditions || [];
 
