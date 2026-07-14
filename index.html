@@ -2377,25 +2377,24 @@ try {
     const allResults = [];
     const seen = new Set();
 
-    // Single consolidated fetch — 1 request instead of 92
+    // Load 3 slim shards in parallel (~3MB each, no heavy fields)
     var _loadMsg = document.getElementById('library-loading-msg');
-    if (_loadMsg) _loadMsg.textContent = 'Loading corpus…';
+    if (_loadMsg) _loadMsg.textContent = 'Loading…';
     try {
-      const cRes = await fetch('/data/corpus_consolidated.json');
-      if (cRes.ok) {
-        const cData = await cRes.json();
-        const segs = cData.segments || [];
-        segs.forEach(function(s) {
+      const [s1, s2, s3] = await Promise.all([
+        fetch('/data/corpus_shard_1.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
+        fetch('/data/corpus_shard_2.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
+        fetch('/data/corpus_shard_3.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; })
+      ]);
+      [s1, s2, s3].forEach(function(shard) {
+        (shard.segments || []).forEach(function(s) {
           if (s && s.translation && s.title_inferred &&
               !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)) {
             allResults.push(s);
           }
         });
-        if (_loadMsg) _loadMsg.textContent = 'Loaded ' + allResults.length + ' passages…';
-      }
-    } catch(e) {
-      if (_loadMsg) _loadMsg.textContent = 'Error loading corpus';
-    }
+      });
+    } catch(e) { /* silent */ }
     if (_loadMsg) _loadMsg.style.display = 'none';
 
     corpusData = allResults;
