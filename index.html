@@ -1293,17 +1293,17 @@
     <p style="font-size:1rem;line-height:1.75;color:var(--ink)">In 1971, a Chinese pharmacologist read a 4th-century Daoist text, found a reference to sweet wormwood for fever, isolated artemisinin, and won the Nobel Prize. The answers to medicine&#39;s most urgent questions are sitting in these books.</p>
   </div>
   <div class="stat-grid">
-    <button class="stat-tile" onclick="showTab('traditions', document.querySelector('[onclick*=traditions]'))" title="22 traditions">
-      <div class="stat-tile-num">22</div><div class="stat-tile-label">Traditions</div><div class="stat-tile-arrow">&#8599;</div>
+    <button class="stat-tile" onclick="showTab('traditions', document.querySelector('[onclick*=traditions]'))" title="Browse all traditions">
+      <div class="stat-tile-num" id="stat-num-traditions">22</div><div class="stat-tile-label">Traditions</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
-    <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="584 plants">
-      <div class="stat-tile-num">584</div><div class="stat-tile-label">Plants Documented</div><div class="stat-tile-arrow">&#8599;</div>
+    <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="Browse all plants">
+      <div class="stat-tile-num" id="stat-num-plants">—</div><div class="stat-tile-label">Plants Documented</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
-    <button class="stat-tile" onclick="showTab('corpus', document.querySelector('[onclick*=corpus]'))" title="823 passages">
-      <div class="stat-tile-num">823</div><div class="stat-tile-label">Source Passages</div><div class="stat-tile-arrow">&#8599;</div>
+    <button class="stat-tile" onclick="showTab('corpus', document.querySelector('[onclick*=corpus]'))" title="Browse source passages">
+      <div class="stat-tile-num" id="stat-num-passages">—</div><div class="stat-tile-label">Source Passages</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
-    <button class="stat-tile" onclick="showTab('convergence', document.querySelector('[onclick*=convergence]'))" title="Cross-book matches">
-      <div class="stat-tile-num">116</div><div class="stat-tile-label">Cross-Book Matches</div><div class="stat-tile-arrow">&#8599;</div>
+    <button class="stat-tile" onclick="showTab('convergence', document.querySelector('[onclick*=convergence]'))" title="See cross-book matches">
+      <div class="stat-tile-num" id="stat-num-convergence">—</div><div class="stat-tile-label">Cross-Book Matches</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
   </div>
   <div style="margin-bottom:0.4rem">
@@ -2360,7 +2360,6 @@ try {
       { url: '/data/australian_new_b01.json', tradition: 'australian_indigenous', label: 'Australian Aboriginal (Forge)', _forge: true },
       { url: '/data/celtic_new_b01.json',   tradition: 'celtic_norse', label: 'Celtic & Norse (Forge)', _forge: true },
       { url: '/data/southern_african_chapters.json', tradition: 'southern_african', label: 'Southern African' },
-      { url: '/data/south_african_new_b01.json', tradition: 'southern_african', label: 'Southern African (Forge)', _forge: true },
       { url: '/data/east_african_chapters.json',   tradition: 'east_african',        label: 'East African (Ethiopian)' },
       { url: '/data/southern_african_chapters.json',tradition:'southern_african',    label: 'Southern African (Zulu/San/Khoikhoi)' },
       { url: '/data/north_american_expanded_chapters.json',tradition:'north_american_indigenous',label:'North American (Moerman Database)' },
