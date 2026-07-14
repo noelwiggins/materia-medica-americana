@@ -1193,7 +1193,26 @@
   }
 
   /* ══ END LIBRARY & BOOK READER ══════════════════════════════ */
-</style>
+
+  .xref-link { color:var(--ink); border-bottom:1.5px dotted var(--gold); cursor:pointer; border-radius:2px; padding:0 1px; }
+  .xref-link:hover { background:rgba(196,168,130,0.18); }
+  .xref-panel { position:fixed; bottom:0; left:0; right:0; max-height:62vh; background:var(--vellum); border-top:2px solid var(--ink); box-shadow:0 -8px 40px rgba(0,0,0,0.4); z-index:2000; display:flex; flex-direction:column; transform:translateY(100%); transition:transform 0.28s cubic-bezier(.4,0,.2,1); }
+  .xref-panel.open { transform:translateY(0); }
+  .xref-panel-header { display:flex; justify-content:space-between; align-items:center; padding:0.7rem 1.2rem 0.5rem; border-bottom:1px solid var(--border); flex-shrink:0; background:var(--ink); color:var(--vellum); }
+  .xref-panel-title { font-family:var(--font-display); font-size:0.9rem; font-weight:600; }
+  .xref-panel-subtitle { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.1em; color:var(--gold); text-transform:uppercase; margin-top:0.1rem; }
+  .xref-panel-close { background:none; border:1px solid rgba(255,255,255,0.2); color:var(--vellum); padding:0.25rem 0.6rem; cursor:pointer; font-size:0.85rem; }
+  .xref-results { overflow-y:auto; flex:1; padding:0.8rem 1rem; display:flex; flex-direction:column; gap:0.5rem; }
+  .xref-card { border:1px solid var(--border); border-left:3px solid var(--gold); padding:0.6rem 0.9rem; cursor:pointer; border-radius:0 3px 3px 0; }
+  .xref-card:hover { background:rgba(196,168,130,0.08); }
+  .xref-card-tradition { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); margin-bottom:0.2rem; }
+  .xref-card-title { font-family:var(--font-display); font-size:0.82rem; font-weight:600; color:var(--ink); margin-bottom:0.25rem; }
+  .xref-card-snippet { font-size:0.75rem; color:var(--muted); line-height:1.5; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .xref-breadcrumb { display:none; align-items:center; gap:0.5rem; padding:0.3rem 1rem; background:rgba(196,168,130,0.1); border-bottom:1px solid var(--border); font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex-shrink:0; }
+  .xref-breadcrumb.visible { display:flex; }
+  .xref-back-btn { background:none; border:1px solid var(--border); color:var(--ink); padding:0.2rem 0.6rem; cursor:pointer; font-family:var(--font-code); font-size:0.58rem; white-space:nowrap; }
+  .xref-back-btn:hover { background:rgba(196,168,130,0.15); }
+  </style>
 </head>
 
 <body>
@@ -1464,6 +1483,17 @@ function openBookModal(t) {
   renderBookPage();
   document.getElementById('book-modal').style.display = 'flex';
   document.body.style.overflow = 'hidden';
+  // Inject breadcrumb bar
+  var _modal = document.getElementById('book-modal');
+  if (_modal && !document.getElementById('xref-breadcrumb')) {
+    var _bc = document.createElement('div');
+    _bc.id = 'xref-breadcrumb'; _bc.className = 'xref-breadcrumb';
+    _bc.innerHTML = '<button class="xref-back-btn" onclick="returnFromXref()">&#8592; Return to previous</button><span id="xref-bc-text"></span>';
+    var _hdr = _modal.querySelector('.book-modal-header');
+    if (_hdr && _hdr.nextSibling) _modal.insertBefore(_bc, _hdr.nextSibling);
+    else if (_modal.firstChild) _modal.insertBefore(_bc, _modal.firstChild);
+  }
+  if (!_xrefBreadcrumb) { var _bc2=document.getElementById('xref-breadcrumb'); if(_bc2) _bc2.classList.remove('visible'); }
 }
 
 function closeBookModal(e) {
@@ -3053,7 +3083,157 @@ var _libCheckInterval = setInterval(function() {
 }, 500);
 
 // ══ END LIBRARY & BOOK READER ════════════════════════════
+
+// ══ CROSS-REFERENCE ENGINE ═══════════════════════════════════════════
+var _xrefIdx = null;
+var _xrefCrumb = null;
+
+function buildXrefIndex() {
+  if (_xrefIdx) return;
+  _xrefIdx = {};
+  corpusData.forEach(function(seg) {
+    var raw = (seg.title_inferred || '').toLowerCase();
+    var key = raw.split('(')[0].split('—')[0].split(':')[0].replace(/[^a-z0-9 ]/g,' ').trim();
+    if (key.length < 4) return;
+    if (!_xrefIdx[key]) _xrefIdx[key] = [];
+    _xrefIdx[key].push(seg);
+  });
+}
+
+function linkifyText(text, currentTradition) {
+  buildXrefIndex();
+  if (!text) return text;
+  var lower = text.toLowerCase();
+  var insertions = [];
+  var usedPositions = [];
+
+  Object.keys(_xrefIdx).forEach(function(key) {
+    if (key.length < 4) return;
+    var otherMatches = (_xrefIdx[key] || []).filter(function(s) {
+      return (s._tradition || s.tradition) !== currentTradition;
+    });
+    if (!otherMatches.length) return;
+
+    var pos = 0;
+    var idx;
+    while ((idx = lower.indexOf(key, pos)) >= 0) {
+      pos = idx + 1;
+      var pre  = idx > 0 ? lower[idx-1] : ' ';
+      var post = idx + key.length < lower.length ? lower[idx+key.length] : ' ';
+      if (/[a-z0-9]/.test(pre) || /[a-z0-9]/.test(post)) continue;
+      // Check not overlapping existing insertion
+      var overlap = usedPositions.some(function(r){ return idx < r[1] && idx + key.length > r[0]; });
+      if (overlap) continue;
+      insertions.push([idx, idx + key.length, key, otherMatches.length]);
+      usedPositions.push([idx, idx + key.length]);
+      break;
+    }
+  });
+
+  if (!insertions.length) return text;
+  insertions.sort(function(a,b){ return b[0]-a[0]; });
+  var out = text;
+  insertions.forEach(function(ins) {
+    var word = out.substring(ins[0], ins[1]);
+    var tip = 'In ' + ins[3] + ' other tradition' + (ins[3]>1?'s':'');
+    var link = '<span class="xref-link" data-xref="' + ins[2].replace(/"/g,'') + '" title="' + tip + '">' + word + '</span>';
+    out = out.substring(0,ins[0]) + link + out.substring(ins[1]);
+  });
+  return out;
+}
+
+var TRAD_NAMES = {
+  cobo:'Cobo Historia', mesoamerican:'Cobo Historia', maya:'Maya Medicine',
+  chinese:'Bencao Gangmu', kampo:'Shennong Bencaojing', tibetan:'Tibetan Gyushi',
+  ayurveda:'Charaka Samhita', greek_roman:'De Materia Medica',
+  egyptian:'Papyrus Ebers', unani:'Canon of Medicine',
+  korean:'Dongui Bogam', japanese_honzo:'Honzo Wamyo',
+  west_african:'West African Medicine', southern_african:'Southern African Medicine',
+  east_african:'East African Medicine', north_american_indigenous:'North American Medicine',
+  amazonian:'Amazonian Medicine', celtic_norse:'Celtic & Norse Medicine',
+  persian_zoroastrian:'Persian Medicine', philippine:'Philippine Medicine',
+  australian_indigenous:'Australian Aboriginal Medicine',
+  western_pharmacopeia:'WHO Monographs'
+};
+
+function showXrefPanel(key, word) {
+  buildXrefIndex();
+  var curTrad = bookTradition && bookTradition.id;
+  var matches = (_xrefIdx[key] || []).filter(function(s){
+    return (s._tradition || s.tradition) !== curTrad;
+  });
+  if (!matches.length) return;
+
+  var byTrad = {};
+  matches.forEach(function(s){
+    var t = s._tradition || s.tradition || 'unknown';
+    if (!byTrad[t]) byTrad[t]=[];
+    byTrad[t].push(s);
+  });
+
+  document.getElementById('xref-panel-plant').textContent = word || key;
+  document.getElementById('xref-panel-count').textContent =
+    'Found in ' + Object.keys(byTrad).length + ' other tradition' + (Object.keys(byTrad).length>1?'s':'');
+
+  document.getElementById('xref-results').innerHTML = Object.entries(byTrad).map(function(e){
+    var trad=e[0], segs=e[1], seg=segs[0];
+    var snippet=(seg.translation||'').substring(0,130).trim()+'...';
+    var tradLabel = TRAD_NAMES[trad] || trad;
+    var cidx = corpusData.indexOf(seg);
+    return '<div class="xref-card" data-trad="'+trad+'" data-cidx="'+cidx+'">' +
+      '<div class="xref-card-tradition">'+tradLabel+' · '+segs.length+' match'+(segs.length>1?'es':'')+'</div>' +
+      '<div class="xref-card-title">'+(seg.title_inferred||'')+'</div>' +
+      '<div class="xref-card-snippet">'+snippet+'</div></div>';
+  }).join('');
+
+  document.getElementById('xref-panel').classList.add('open');
+}
+
+function jumpToXref(tradId, cidx) {
+  _xrefCrumb = { tradition: bookTradition, segIdx: bookIdx,
+    title: (bookSegments[bookIdx]&&bookSegments[bookIdx].title_inferred)||'' };
+  document.getElementById('xref-panel').classList.remove('open');
+  var book = BOOKS.find(function(b){ return b.tradition===tradId; });
+  if (!book) {
+    var cs = corpusData[cidx];
+    if (cs) book = BOOKS.find(function(b){
+      return b.corpusKeys && b.corpusKeys.some(function(k){ return (cs._corpusKey||'').indexOf(k)>=0; });
+    });
+  }
+  if (!book) return;
+  openBookModal(book);
+  var cs2 = corpusData[cidx];
+  if (cs2) {
+    var ni = bookSegments.indexOf(cs2);
+    if (ni<0) ni = bookSegments.findIndex(function(s){ return s.title_inferred===cs2.title_inferred; });
+    if (ni>=0) { bookIdx=ni; renderBookPage(); }
+  }
+  var bc=document.getElementById('xref-breadcrumb');
+  var bct=document.getElementById('xref-bc-text');
+  if (bc&&bct&&_xrefCrumb) {
+    var bn=(_xrefCrumb.tradition&&(_xrefCrumb.tradition.short||_xrefCrumb.tradition.name))||'';
+    bct.textContent = bn+': '+_xrefCrumb.title.substring(0,35);
+    bc.classList.add('visible');
+  }
+}
+
+function returnFromXref() {
+  if (!_xrefCrumb) return;
+  var p=_xrefCrumb; _xrefCrumb=null;
+  var bc=document.getElementById('xref-breadcrumb'); if(bc) bc.classList.remove('visible');
+  openBookModal(p.tradition);
+  bookIdx=p.segIdx; renderBookPage();
+}
+
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('.xref-link');
+  if (link) { e.stopPropagation(); showXrefPanel(link.getAttribute('data-xref'), link.textContent); return; }
+  var card = e.target.closest('.xref-card');
+  if (card) { jumpToXref(card.getAttribute('data-trad'), parseInt(card.getAttribute('data-cidx'),10)); }
+});
 </script>
 
+
+<div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
 </body>
 </html>
