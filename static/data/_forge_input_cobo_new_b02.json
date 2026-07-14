@@ -1,0 +1,294 @@
+{
+  "segments": [
+    {
+      "label": "Cobo Historia — Trigo",
+      "text": "Plant: Trigo — Triticum aestivum (wheat, introduced) — Cobo therapeutic notes\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Trigo — Triticum aestivum (wheat, introduced) — Cobo therapeutic notes",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Cebada",
+      "text": "Plant: Cebada — Hordeum vulgare (barley, introduced) — Cobo digestive notes\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Cebada — Hordeum vulgare (barley, introduced) — Cobo digestive notes",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Cebolla",
+      "text": "Plant: Cebolla — Allium cepa (onion, introduced) — Cobo antimicrobial\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Cebolla — Allium cepa (onion, introduced) — Cobo antimicrobial",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Ajo",
+      "text": "Plant: Ajo — Allium sativum (garlic, introduced) — Cobo therapeutic uses\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Ajo — Allium sativum (garlic, introduced) — Cobo therapeutic uses",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Naranja",
+      "text": "Plant: Naranja — Citrus sinensis (orange, introduced) — Cobo vitamin C\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Naranja — Citrus sinensis (orange, introduced) — Cobo vitamin C",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Limón",
+      "text": "Plant: Limón — Citrus limon (lemon, introduced) — Cobo antimicrobial\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Limón — Citrus limon (lemon, introduced) — Cobo antimicrobial",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Granada",
+      "text": "Plant: Granada — Punica granatum (pomegranate, introduced) — Cobo astringent\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Granada — Punica granatum (pomegranate, introduced) — Cobo astringent",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Vilca",
+      "text": "Plant: Vilca — Anadenanthera colubrina — Andean hallucinogenic snuff, ceremony\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Vilca — Anadenanthera colubrina — Andean hallucinogenic snuff, ceremony",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Chamico",
+      "text": "Plant: Chamico — Datura ferox (Andean datura) — pain, ceremony, toxic\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Chamico — Datura ferox (Andean datura) — pain, ceremony, toxic",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Floripondio",
+      "text": "Plant: Floripondio — Brugmansia arborea (angel's trumpet) — ceremony, analgesic\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Floripondio — Brugmansia arborea (angel's trumpet) — ceremony, analgesic",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Contrayerba",
+      "text": "Plant: Contrayerba — Dorstenia contrajerva — antidote, snakebite, fever\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Contrayerba — Dorstenia contrajerva — antidote, snakebite, fever",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Ratanhia II",
+      "text": "Plant: Ratanhia II — Krameria triandra root — oral astringent, wound\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Ratanhia II — Krameria triandra root — oral astringent, wound",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Camu camu",
+      "text": "Plant: Camu camu — Myrciaria dubia — highest vitamin C, immune\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Camu camu — Myrciaria dubia — highest vitamin C, immune",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Aguaje",
+      "text": "Plant: Aguaje — Mauritia flexuosa — nutritive, antioxidant, Amazonian\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Aguaje — Mauritia flexuosa — nutritive, antioxidant, Amazonian",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Papaya",
+      "text": "Plant: Papaya — Carica papaya (Cobo documents) — digestive enzyme\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Papaya — Carica papaya (Cobo documents) — digestive enzyme",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Piña / Pineapple",
+      "text": "Plant: Piña / Pineapple — Ananas comosus (Cobo documents piña) — digestive\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Piña / Pineapple — Ananas comosus (Cobo documents piña) — digestive",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Guanábana",
+      "text": "Plant: Guanábana — Annona muricata (Cobo documents) — fever, sedative\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Guanábana — Annona muricata (Cobo documents) — fever, sedative",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Cocona",
+      "text": "Plant: Cocona — Solanum sessiliflorum — kidney, liver, Amazonian\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Cocona — Solanum sessiliflorum — kidney, liver, Amazonian",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Cantuta",
+      "text": "Plant: Cantuta — Cantua buxifolia — sacred Inca flower, fever\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Cantuta — Cantua buxifolia — sacred Inca flower, fever",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Chachacoma",
+      "text": "Plant: Chachacoma — Senecio graveolens — altitude sickness, Andean\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Chachacoma — Senecio graveolens — altitude sickness, Andean",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Muña II",
+      "text": "Plant: Muña II — Minthostachys setosa — Andean altitude herb variant\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Muña II — Minthostachys setosa — Andean altitude herb variant",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Yareta",
+      "text": "Plant: Yareta — Azorella compacta — Andean fuel, resin wound medicine\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Yareta — Azorella compacta — Andean fuel, resin wound medicine",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Queñua",
+      "text": "Plant: Queñua — Polylepis species — high Andes woodland, medicinal bark\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Queñua — Polylepis species — high Andes woodland, medicinal bark",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Salvia del inca",
+      "text": "Plant: Salvia del inca — Lepechinia meyenii — Andean antibacterial\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Salvia del inca — Lepechinia meyenii — Andean antibacterial",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Suncho",
+      "text": "Plant: Suncho — Viguiera procumbens — Andean anti-inflammatory herb\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Suncho — Viguiera procumbens — Andean anti-inflammatory herb",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Bijao",
+      "text": "Plant: Bijao — Heliconia species — leaf wrapping, wound dressing, Amazonian\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Bijao — Heliconia species — leaf wrapping, wound dressing, Amazonian",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Chonta",
+      "text": "Plant: Chonta — Bactris gasipaes (peach palm) — nutritive, medicinal\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Chonta — Bactris gasipaes (peach palm) — nutritive, medicinal",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Huito",
+      "text": "Plant: Huito — Genipa americana — skin dye, fever, Amazonian\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Huito — Genipa americana — skin dye, fever, Amazonian",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    },
+    {
+      "label": "Cobo Historia — Pacae",
+      "text": "Plant: Pacae — Inga feuilleei (guaba) — nutritive, astringent bark\n\nWrite a comprehensive Plantacopia entry for this plant as documented by Bernabé Cobo in Historia del Nuevo Mundo (1653 CE). Include: common Spanish name used by Cobo, indigenous names (Quechua, Aymara, or Nahuatl), botanical description, geographic distribution, therapeutic uses, preparation methods, and conditions treated.",
+      "_meta": {
+        "plant": "Pacae — Inga feuilleei (guaba) — nutritive, astringent bark",
+        "tradition": "mesoamerican",
+        "_corpusKey": "cobo",
+        "source_section": "Historia del Nuevo Mundo (Cobo 1653)"
+      }
+    }
+  ]
+}
