@@ -1,0 +1,279 @@
+{
+  "segments": [
+    {
+      "label": "WHO Monographs — Butterbur (Rhizoma Petasitidis)",
+      "text": "WHO Monograph Plant: Rhizoma Petasitidis\nCommon name: Butterbur\nLatin name: Petasites hybridus\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Rhizoma Petasitidis",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Rhizoma Petasitidis",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Kava (Vol 2) (Rhizoma Piperis Vol2)",
+      "text": "WHO Monograph Plant: Rhizoma Piperis Vol2\nCommon name: Kava (Vol 2)\nLatin name: Piper methysticum Vol2\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Rhizoma Piperis Vol2",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Rhizoma Piperis Vol2",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Senna (Folium Sennae)",
+      "text": "WHO Monograph Plant: Folium Sennae\nCommon name: Senna\nLatin name: Senna alexandrina\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Folium Sennae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Folium Sennae",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Milk thistle (Fructus Silybi Mariae)",
+      "text": "WHO Monograph Plant: Fructus Silybi Mariae\nCommon name: Milk thistle\nLatin name: Silybum marianum\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Fructus Silybi Mariae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Fructus Silybi Mariae",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Dandelion root (Radix Taraxaci)",
+      "text": "WHO Monograph Plant: Radix Taraxaci\nCommon name: Dandelion root\nLatin name: Taraxacum officinale\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Radix Taraxaci",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Radix Taraxaci",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Fenugreek (Semen Trigonellae)",
+      "text": "WHO Monograph Plant: Semen Trigonellae\nCommon name: Fenugreek\nLatin name: Trigonella foenum-graecum\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Semen Trigonellae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Semen Trigonellae",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Cat's claw (Cortex Uncariae Tomentosae)",
+      "text": "WHO Monograph Plant: Cortex Uncariae Tomentosae\nCommon name: Cat's claw\nLatin name: Uncaria tomentosa\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Cortex Uncariae Tomentosae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Cortex Uncariae Tomentosae",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Chaste tree berry (Fructus Agni Casti)",
+      "text": "WHO Monograph Plant: Fructus Agni Casti\nCommon name: Chaste tree berry\nLatin name: Vitex agnus-castus\nSource: WHO Monographs on Selected Medicinal Plants, Volume 2\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 2 — Fructus Agni Casti",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 2",
+        "pharma_name": "Fructus Agni Casti",
+        "vol": 2
+      }
+    },
+    {
+      "label": "WHO Monographs — Aloe vera gel (Gel Aloes Barbadensis)",
+      "text": "WHO Monograph Plant: Gel Aloes Barbadensis\nCommon name: Aloe vera gel\nLatin name: Aloe vera\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Gel Aloes Barbadensis",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Gel Aloes Barbadensis",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Chamomile flower (Flos Matricariae)",
+      "text": "WHO Monograph Plant: Flos Matricariae\nCommon name: Chamomile flower\nLatin name: Camomilla recutita\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Flos Matricariae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Flos Matricariae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Cascara (Cortex Rhamni Purshianae)",
+      "text": "WHO Monograph Plant: Cortex Rhamni Purshianae\nCommon name: Cascara\nLatin name: Cascara / Rhamnus purshianus\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Cortex Rhamni Purshianae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Cortex Rhamni Purshianae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Green tea (Folium Camelliae Sinensis)",
+      "text": "WHO Monograph Plant: Folium Camelliae Sinensis\nCommon name: Green tea\nLatin name: Camellia sinensis\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Folium Camelliae Sinensis",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Folium Camelliae Sinensis",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Cannabis / Hemp (Herba Cannabis)",
+      "text": "WHO Monograph Plant: Herba Cannabis\nCommon name: Cannabis / Hemp\nLatin name: Cannabis sativa\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Herba Cannabis",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Herba Cannabis",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Veldt grape (Herba Cissi Quadrangularis)",
+      "text": "WHO Monograph Plant: Herba Cissi Quadrangularis\nCommon name: Veldt grape\nLatin name: Cissus quadrangularis\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Herba Cissi Quadrangularis",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Herba Cissi Quadrangularis",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Narrow-leaf coneflower root (Radix Echinaceae Angustifoliae)",
+      "text": "WHO Monograph Plant: Radix Echinaceae Angustifoliae\nCommon name: Narrow-leaf coneflower root\nLatin name: Echinacea angustifolia\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Radix Echinaceae Angustifoliae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Radix Echinaceae Angustifoliae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Eucalyptus oil (Aetheroleum Eucalypti)",
+      "text": "WHO Monograph Plant: Aetheroleum Eucalypti\nCommon name: Eucalyptus oil\nLatin name: Eucalyptus globulus\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Aetheroleum Eucalypti",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Aetheroleum Eucalypti",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Reishi mushroom (Ganoderma)",
+      "text": "WHO Monograph Plant: Ganoderma\nCommon name: Reishi mushroom\nLatin name: Ganoderma lucidum\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Ganoderma",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Ganoderma",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Hydroxycitric acid plant (Fructus Garciniae)",
+      "text": "WHO Monograph Plant: Fructus Garciniae\nCommon name: Hydroxycitric acid plant\nLatin name: Garcinia cambogia\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Fructus Garciniae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Fructus Garciniae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Gymnema (Folium Gymnemae Sylvestris)",
+      "text": "WHO Monograph Plant: Folium Gymnemae Sylvestris\nCommon name: Gymnema\nLatin name: Gymnema sylvestre\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Folium Gymnemae Sylvestris",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Folium Gymnemae Sylvestris",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Bitter melon (Fructus Momordicae Charantiae)",
+      "text": "WHO Monograph Plant: Fructus Momordicae Charantiae\nCommon name: Bitter melon\nLatin name: Momordica charantia\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Fructus Momordicae Charantiae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Fructus Momordicae Charantiae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Noni (Fructus Morindae Citrifoliae)",
+      "text": "WHO Monograph Plant: Fructus Morindae Citrifoliae\nCommon name: Noni\nLatin name: Morinda citrifolia\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Fructus Morindae Citrifoliae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Fructus Morindae Citrifoliae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Stonebreaker (Herba Phyllanthi)",
+      "text": "WHO Monograph Plant: Herba Phyllanthi\nCommon name: Stonebreaker\nLatin name: Phyllanthus amarus\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Herba Phyllanthi",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Herba Phyllanthi",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Schisandra (Fructus Schisandrae)",
+      "text": "WHO Monograph Plant: Fructus Schisandrae\nCommon name: Schisandra\nLatin name: Schisandra chinensis\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Fructus Schisandrae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Fructus Schisandrae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Ashwagandha (Radix Withaniae)",
+      "text": "WHO Monograph Plant: Radix Withaniae\nCommon name: Ashwagandha\nLatin name: Withania somnifera\nSource: WHO Monographs on Selected Medicinal Plants, Volume 3\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 3 — Radix Withaniae",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 3",
+        "pharma_name": "Radix Withaniae",
+        "vol": 3
+      }
+    },
+    {
+      "label": "WHO Monographs — Andrographis herb (Herba Andrographidis Vol4)",
+      "text": "WHO Monograph Plant: Herba Andrographidis Vol4\nCommon name: Andrographis herb\nLatin name: Andrographis paniculata Vol4\nSource: WHO Monographs on Selected Medicinal Plants, Volume 4\n\nWrite a comprehensive Plantacopia entry for this plant following WHO monograph structure. Include:\n1. DEFINITION: The plant part used and its pharmaceutical definition\n2. BOTANICAL DESCRIPTION: Key morphological features\n3. GEOGRAPHICAL DISTRIBUTION: Native range and cultivation\n4. CHEMICAL CONSTITUENTS: Major active compounds with percentages where known\n5. MEDICINAL USES (Clinical evidence): Uses supported by clinical trials and systematic reviews\n6. MEDICINAL USES (Traditional): Uses described in pharmacopoeias and traditional medicine\n7. PHARMACOLOGY: Key mechanisms of action, in vitro and in vivo studies\n8. CLINICAL EVIDENCE: Summarize 2-3 key clinical trials with outcomes\n9. ADVERSE REACTIONS: Known side effects and drug interactions\n10. CONTRAINDICATIONS: Specific contraindications\n11. DOSAGE: WHO-recommended adult dosage\n\nFormat as Plantacopia corpus segment:\n- title_inferred: English common name\n- original_text: Pharmaceutical Latin name + chemical constituents\n- translation: Clinical uses and pharmacological mechanism in plain English\n- preparation: Dosage forms and recommended doses\n- condition: Primary conditions treated (clinical evidence-based)\n- source_section: WHO Monographs Vol 4 — Herba Andrographidis Vol4",
+      "_meta": {
+        "tradition": "western_pharmacopeia",
+        "_corpusKey": "who_monographs",
+        "source_section": "WHO Monographs Vol 4",
+        "pharma_name": "Herba Andrographidis Vol4",
+        "vol": 4
+      }
+    }
+  ]
+}
