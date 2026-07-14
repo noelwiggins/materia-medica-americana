@@ -4141,6 +4141,28 @@ var _libCheckInterval = setInterval(function() {
     _libOrigLoadDone = true;
     clearInterval(_libCheckInterval);
     renderBookShelf();
+    // Live stat tile updates
+    var _uPlants = new Set(corpusData.map(function(s){
+      return (s.title_inferred||'').toLowerCase().split('(')[0].split('—')[0].trim();
+    }));
+    var _pEl = document.getElementById('stat-num-passages');
+    var _plEl = document.getElementById('stat-num-plants');
+    var _tEl  = document.getElementById('stat-num-traditions');
+    if (_pEl)  _pEl.textContent  = corpusData.length.toLocaleString();
+    if (_plEl) _plEl.textContent = _uPlants.size.toLocaleString();
+    if (_tEl)  _tEl.textContent  = (traditionData.length || 22).toString();
+    // Cross-book matches
+    var _ptMap = {};
+    corpusData.forEach(function(s) {
+      var _pn = (s.title_inferred||'').toLowerCase().split('(')[0].split('—')[0].trim();
+      if (_pn && _pn.length > 2) {
+        if (!_ptMap[_pn]) _ptMap[_pn] = new Set();
+        _ptMap[_pn].add(s.tradition || s._tradition || s._corpusKey || '');
+      }
+    });
+    var _cx = Object.values(_ptMap).filter(function(t){ return t.size >= 2; }).length;
+    var _cEl = document.getElementById('stat-num-convergence');
+    if (_cEl) _cEl.textContent = _cx.toLocaleString();
   }
 }, 500);
 
