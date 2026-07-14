@@ -1312,7 +1312,7 @@
     <p style="font-size:0.85rem;color:var(--muted);margin:0 0 1.2rem;max-width:60ch;line-height:1.6">Each is a primary source. Open it to read original text with translation, search within it, and see how it connects to the others.</p>
   </div>
   <div class="book-shelf" id="book-shelf-grid">
-    <div id="library-loading-msg" style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);padding:1rem">Loading library&#8230; (fetching 92 source files)</div>
+    <div id="library-loading-msg" style="font-family:var(--font-code);font-size:0.7rem;color:var(--muted);padding:1rem">Loading&#8230;</div>
   </div>
 </section>
 
@@ -2377,36 +2377,24 @@ try {
     const allResults = [];
     const seen = new Set();
 
-    // Batch fetch in groups of 8 to avoid overwhelming the server
-    async function fetchBatch(files) {
-      await Promise.all(files.map(async ({ url, tradition, label }) => {
-        try {
-          const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
-          if (!res.ok) return;
-          const data = await res.json();
-          const rawItems = Array.isArray(data) ? data :
-            (data.segments || data.results || data.chapters || []);
-          const results = rawItems.filter(r =>
-            r && r.translation && r.title_inferred &&
-            !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(r.title_inferred)
-          );
-          results.forEach(r => {
-            const key = (r._label || r.title_inferred || '') + '|' + tradition;
-            if (!seen.has(key)) {
-              seen.add(key);
-              allResults.push({ ...r, _tradition: tradition, _tradition_label: label,
-                                _corpusKey: url.replace('/data/','').replace('.json','') });
-            }
-          });
-        } catch(e) { /* file missing or timed out — skip */ }
-      }));
-    }
-    // Load in batches of 8
-    const BATCH = 8;
+    // Single consolidated fetch — 1 request instead of 92
     var _loadMsg = document.getElementById('library-loading-msg');
-    for (var _bi = 0; _bi < traditionFiles.length; _bi += BATCH) {
-      await fetchBatch(traditionFiles.slice(_bi, _bi + BATCH));
-      if (_loadMsg) _loadMsg.textContent = 'Loading… ' + Math.min(_bi + BATCH, traditionFiles.length) + '/' + traditionFiles.length + ' files';
+    if (_loadMsg) _loadMsg.textContent = 'Loading corpus…';
+    try {
+      const cRes = await fetch('/data/corpus_consolidated.json');
+      if (cRes.ok) {
+        const cData = await cRes.json();
+        const segs = cData.segments || [];
+        segs.forEach(function(s) {
+          if (s && s.translation && s.title_inferred &&
+              !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)) {
+            allResults.push(s);
+          }
+        });
+        if (_loadMsg) _loadMsg.textContent = 'Loaded ' + allResults.length + ' passages…';
+      }
+    } catch(e) {
+      if (_loadMsg) _loadMsg.textContent = 'Error loading corpus';
     }
     if (_loadMsg) _loadMsg.style.display = 'none';
 
