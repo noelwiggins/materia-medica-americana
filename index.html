@@ -2312,6 +2312,9 @@ try {
       { url: '/data/charaka_extended_chapters.json', tradition: 'ayurveda',           label: 'Ayurveda (Charaka — Extended)' },
       { url: '/data/cobo_nontarget_remaining_a.json', tradition: 'cobo',             label: 'Andean (Cobo — Remaining A)' },
       { url: '/data/cobo_nontarget_remaining_b.json', tradition: 'cobo',             label: 'Andean (Cobo — Remaining B)' },
+      { url: '/data/cobo_new_b01.json', tradition: 'mesoamerican', label: 'Cobo — New Plants B01', _forge: true },
+      { url: '/data/cobo_new_b02.json', tradition: 'mesoamerican', label: 'Cobo — New Plants B02', _forge: true },
+      { url: '/data/south_african_new_b01.json', tradition: 'southern_african', label: 'Southern African (Forge)', _forge: true },
       // ── NEW: Forge-translated batches ──────────────────────────
       { url: '/data/bencao_batch_01.json',  tradition: 'chinese', label: 'Bencao Gangmu B01', _forge: true },
       { url: '/data/bencao_batch_02.json',  tradition: 'chinese', label: 'Bencao Gangmu B02', _forge: true },
@@ -2373,7 +2376,6 @@ try {
 
     await Promise.all(traditionFiles.map(async ({ url, tradition, label }) => {
           const corpusKey = url.replace('/data/','').replace('.json','');
-          const isForge = !!(f._forge);
       try {
         const res = await fetch(url);
         if (!res.ok) return;
