@@ -1579,7 +1579,15 @@ const CODEX_IMAGES = [
   { src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/ViennaDioscoridesPlant.jpg', label: 'Vienna Dioscorides, c.512 CE', pos: 'center 30%' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg', label: 'Dioscorides & the Mandrake, c.512 CE', pos: 'center 25%' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg', label: 'Wellcome Medicinal Plants, 17th C', pos: 'center 20%' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg', label: 'Ming Herbal — Lindera, c.1640 CE', pos: 'center 25%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg', label: 'Ming Herbal — Lindera, c.1640 CE', pos: 'center 25%' },,
+  { id:'who', title:'WHO Monographs on Selected Medicinal Plants', short:'WHO Monographs',
+    tradition:'western_pharmacopeia', date:'1999–2009 CE', language:'Scientific English',
+    author:'World Health Organization',
+    cover:WHO_COVER_URI,
+    color:'#1A6FA0',
+    corpusKeys:['who_monographs','who_monographs_b01','who_monographs_b02','who_monographs_b03','who_monographs_b04'],
+    totalEntries:94,
+    description:'The definitive international standard bridging traditional plant medicine and modern pharmacology. 94 monographs across 4 volumes — the direct scientific heir to Dioscorides.' }
 ];
 let codexIdx = 0;
 
@@ -2615,6 +2623,7 @@ renderPriority();
 <script>
 // ══ PLANTACOPIA LIBRARY & BOOK READER ══════════════════════
 
+var WHO_COVER_URI = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNTAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzAwMUEzMyIvPjxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0ODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRBOUZENCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjYiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSI2MCIgcj0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRBOUZENCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjciLz48cGF0aCBkPSJNMjAwLDI4IFEyMTAsNjAgMjAwLDkyIFExOTAsNjAgMjAwLDI4WiIgZmlsbD0iIzRBOUZENCIgb3BhY2l0eT0iMC40Ii8+PHBhdGggZD0iTTE2OCw2MCBRMjAwLDUwIDIzMiw2MCBRMjAwLDcwIDE2OCw2MFoiIGZpbGw9IiM0QTlGRDQiIG9wYWNpdHk9IjAuNCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V09STEQgSEVBTFRIIE9SR0FOSVpBVElPTjwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE3IiBmaWxsPSIjQThENEYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5XSE8gTW9ub2dyYXBoczwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjIyMCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjQThENEYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5vbiBTZWxlY3RlZCBNZWRpY2luYWwgUGxhbnRzPC90ZXh0PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMCwzNDApIj48Y2lyY2xlIGN4PSItNjAiIGN5PSItMjAiIHI9IjI4IiBmaWxsPSIjMEQ0QTdBIiBzdHJva2U9IiM0QTlGRDQiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC43Ii8+PHRleHQgeD0iLTYwIiB5PSItMTQiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+STwvdGV4dD48Y2lyY2xlIGN4PSIwIiBjeT0iLTIwIiByPSIyOCIgZmlsbD0iIzBENEE3QSIgc3Ryb2tlPSIjNEE5RkQ0IiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuNyIvPjx0ZXh0IHg9IjAiIHk9Ii0xNCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNEE5RkQ0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JSTwvdGV4dD48Y2lyY2xlIGN4PSI2MCIgY3k9Ii0yMCIgcj0iMjgiIGZpbGw9IiMwRDRBN0EiIHN0cm9rZT0iIzRBOUZENCIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjciLz48dGV4dCB4PSI2MCIgeT0iLTE0IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0QTlGRDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPklJSTwvdGV4dD48Y2lyY2xlIGN4PSIwIiBjeT0iNDIiIHI9IjI4IiBmaWxsPSIjMEQ0QTdBIiBzdHJva2U9IiM0QTlGRDQiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC43Ii8+PHRleHQgeD0iMCIgeT0iNDgiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SVY8L3RleHQ+PC9nPjx0ZXh0IHg9IjIwMCIgeT0iNDU1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC42Ij45NCBQbGFudHMgLSBWb2x1bWVzIDEtNCAtIDE5OTktMjAwOTwvdGV4dD48L3N2Zz4=";
 const BOOKS = [
   { id:'badianus', title:'Libellus de Medicinalibus Indorum Herbis', short:'Badianus Manuscript',
     tradition:'mesoamerican', date:'1552 CE', language:'Latin / Nahuatl',
@@ -3027,7 +3036,7 @@ var _libCheckInterval = setInterval(function() {
     var _tEl  = document.getElementById('stat-num-traditions');
     if (_pEl)  _pEl.textContent  = corpusData.length.toLocaleString();
     if (_plEl) _plEl.textContent = _uPlants.size.toLocaleString();
-    if (_tEl)  _tEl.textContent  = (traditionData.length || 22).toString();
+    if (_tEl)  _tEl.textContent  = (BOOKS.length).toString();
     // Cross-book matches
     var _ptMap = {};
     corpusData.forEach(function(s) {
