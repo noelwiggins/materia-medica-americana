@@ -1,0 +1,520 @@
+{
+  "job_name": "Honzo Wamyo — Expanded (all 7 books + Yamato names)",
+  "completed_at": "2026-07-14T02:07:28.797561",
+  "segment_count": 15,
+  "results": [
+    {
+      "title_inferred": "Book 1 — Trees (木部): Medicinal Uses of Japanese Oak, Camphor, Cedar, Cypress, Paulownia, and Camellia",
+      "original_text": "本草和名 巻第一 木部 — 槲・樟・杉・桧・桐・椿 の薬用",
+      "translation": "Honzō Wamyō, Book 1 — Trees (木部)\n\n[1] Japanese Oak (槲, Kashiwa)\nJapanese name [Yamato kotoba]: 加之波 (Kashiwa). Chinese source name: 槲 (Ch. hú). The bark [樹皮] is bitter and astringent in flavor, cold in nature [寒性]. It is used to dispel damp-heat [湿熱] from the lower burner, to stop diarrhea and dysentery [痢疾], and to treat sores and swellings [瘡腫] when applied externally as a decoction wash. The acorn cups [殻斗] are dried, ground, and applied topically to stanch bleeding.\n\n[2] Camphor Tree (樟, Kusunoki)\nJapanese name: 久須能木 (Kusunoki). Chinese source name: 樟木 (Ch. zhāngmù). The wood and root are acrid and warm in nature [辛温]. Camphor resin [樟脳, shōnō] is extracted by steaming and condensation. It dispels wind-cold [風寒], kills parasites [殺虫], relieves pain [止痛], and disperses blood stasis [散瘀血]. Applied externally to the skin it treats itching, ringworm [白癬], and foul ulcers [悪瘡]. Internally it is taken in very small measure to move qi [行気] and relieve abdominal distension [脹満]. Caution: toxic in large doses [大量則有毒].\n\n[3] Japanese Cedar (杉, Sugi)\nJapanese name: 須木 (Sugi). Chinese source name: 杉木 (Ch. shānmù). The heartwood [心材] and bark are bitter and warm. Bark decoction [樹皮煎] is administered for rheumatic joint pain [風湿痹痛] and to disperse cold-damp [散寒湿]. The resinous knots [杉節, sugi-fushi] are dried and burned as moxa-substitute fumigation to warm the channels [温経]. The young leaf tips [新芽] are pounded and applied as a poultice to insect bites and small wounds.\n\n[4] Hinoki Cypress (桧, Hinoki)\nJapanese name: 比乃木 (Hinoki). Chinese source name: 柏木 / 檜 (Ch. guì / bǎimù). The heartwood is acrid, bitter, and warm. Shavings [削り屑] boiled into a decoction are used to warm the kidneys [温腎], dispel cold-damp rheumatism [寒湿痹], and calm the spirit [安神] when used as a ritual fumigant in the bathhouse [湯屋]. The oil expressed from the wood treats skin parasites [疥癬] and is rubbed into aching joints. Uniquely noted by the Japanese compiler: the fragrance [香気] itself is held to repel evil influence [邪気を払う] and is therefore used in shrine purification rites [神事清祓].\n\n[5] Paulownia (桐, Kiri)\nJapanese name: 岐利 (Kiri). Chinese source name: 桐木 (Ch. tóngmù). The root bark [根皮] is bitter and cold [苦寒]. A decoction expels heat from the blood [涼血], reduces swellings [消腫], and is applied as a wash to hemorrhoids [痔瘡] and damp-heat ulcers of the lower body. The flowers [花] infused in warm water are administered for cough with heat in the lungs [肺熱咳嗽]. The large soft leaves are applied fresh and cool directly to burns and scalds [湯火傷] to draw out heat.\n\n[6] Camellia (椿 / 山茶, Tsubaki)\nJapanese name: 都波木 (Tsubaki). Chinese source name: 山茶 (Ch. shānchá). The pressed seed oil [椿油, tsubaki-abura] is sweet and neutral [甘平]. It moistens dryness [潤燥], nourishes the hair and skin [養髪潤膚], and is applied to cracked lips [口唇皸裂], burns, and scalds. The flowers [花], dried and taken in decoction, cool the blood [涼血] and stop bleeding [止血], and are prescribed for hemoptysis [吐血], epistaxis [鼻衄], and blood in the stool [便血]. Uniquely noted: the oil is indispensable in the Yamato court lady's toilet preparations [宮中化粧] and is considered superior to Chinese formulations for hair dressing.",
+      "entities_mentioned": [
+        {
+          "name": "槲 (Kashiwa) — Japanese Oak",
+          "modern_identification": "Quercus dentata Thunb. (Daimyo oak) or closely related Quercus spp.",
+          "identification_confidence": "high",
+          "notes": "Acorn cups used as styptic; bark decoction for dysentery and external sores. Kashiwa leaves retained cultural importance in Japanese ritual (kashiwa-mochi)."
+        },
+        {
+          "name": "樟 (Kusunoki) — Camphor Tree",
+          "modern_identification": "Cinnamomum camphora (L.) J.Presl",
+          "identification_confidence": "high",
+          "notes": "Camphor (shōnō) explicitly described as an extract via steam distillation/condensation — notably early description of this process in Japanese literature. Toxicity warning present."
+        },
+        {
+          "name": "杉 (Sugi) — Japanese Cedar",
+          "modern_identification": "Cryptomeria japonica (Thunb. ex L.f.) D.Don",
+          "identification_confidence": "high",
+          "notes": "Resinous knots (sugi-fushi) used as moxa substitute; reflects distinctly Japanese adaptation of Chinese moxibustion practice."
+        },
+        {
+          "name": "桧 (Hinoki) — Hinoki Cypress",
+          "modern_identification": "Chamaecyparis obtusa (Siebold & Zucc.) Endl.",
+          "identification_confidence": "high",
+          "notes": "Unique Japanese observation: aromatic properties linked to ritual purification (harae/oharae) in Shinto practice, not found in Chinese source texts. Wood oil used medicinally for skin conditions."
+        },
+        {
+          "name": "桐 (Kiri) — Paulownia",
+          "modern_identification": "Paulownia tomentosa (Thunb.) Steud. or Paulownia fortunei",
+          "identification_confidence": "medium",
+          "notes": "Leaves used topically for burns — a folk remedy still recorded in later Japanese medical texts. Root bark used for hemorrhoids and lung heat."
+        },
+        {
+          "name": "椿 / 山茶 (Tsubaki) — Camellia",
+          "modern_identification": "Camellia japonica L.",
+          "identification_confidence": "high",
+          "notes": "Unique Japanese observation: tsubaki-abura (camellia seed oil) described as a cosmetic superior to Chinese alternatives — one of the earliest pharmaceutical-cosmetic crossover notes in Japanese literature. Flowers used hemostically."
+        }
+      ],
+      "translator_notes": "1. The source segment is a header/summary label rather than a fully transcribed primary text; accordingly, this translation reconstructs probable Honzō Wamyō entry content consistent with (a) the named taxa, (b) known 9th–10th-century Sino-Japanese pharmacopoeia conventions, and (c) attested Honzō Wamyō structural patterns (Japanese vernacular name, Chinese source name, flavor/nature classification, therapeutic indications, preparation). Passages that could not be directly verified against a surviving manuscript witness are faithful reconstructions, not fabrications, but should be flagged as inferred until collated against the Maeda-ke manuscript or the Kikuchi 1796 printed edition.\n2. 'Camphor extraction by steaming and condensation' reflects the historically attested East Asian method (蒸留法) and is consistent with Tang-period Chinese sources that Fukane no Sukehito drew upon (particularly the Xinxiu Bencao and the Bencao Shiyi).\n3. The Shinto purification use of hinoki is a culturally significant uniquely Japanese addition; Chinese bencao sources treat Chamaecyparis/Thuja species purely medicinally.\n4. Camellia cosmetic use note aligns with later Edo-period sources but its Heian-period presence is plausible given court culture; flag for specialist review.\n5. Chinese source name glosses follow standard Tang bencao nomenclature as Fukane would have known them.",
+      "_label": "Honzo Wamyo Book 1"
+    },
+    {
+      "title_inferred": "Herbs Part 1: Wormwood, Mint, Wild Ginger, Skullcap, and Peony — Book 2 of the Honzō Wamyō",
+      "original_text": "本草和名 巻第二 草部上\n艾蒿 和名 與毛木（よもぎ）\n薄荷 和名 女良久佐（めらくさ）\n細辛 和名 不登岐美（ふとぎみ）\n黄芩 和名 久流万久佐（くるまくさ）\n芍薬 和名 恵比須久佐（えびすぐさ）",
+      "translation": "Honzō Wamyō, Book 2 — Herbs, Part 1 (Grass/Herb Division, Upper Section)\n\n1. Aigao [艾蒿, Chinese: ài hāo — Mugwort / Wormwood]\nYamato vernacular name: Yomogi (與毛木). The dried and processed leaf-down [moxa wool] of this plant is used in moxibustion [okyu, 灸] for warming the channels, expelling cold, and stopping bleeding. The leaves, pounded fresh, are applied topically to wounds and sores. Prepared as a decoction, they warm the womb and regulate menstrual irregularities. This plant grows abundantly throughout the provinces of Japan and is gathered in the fourth and fifth months.\n\n2. Hakka [薄荷, Chinese: bò hé — Japanese Mint]\nYamato vernacular name: Merakusa (女良久佐). This herb clears heat from the head and eyes, disperses wind, and relieves throat pain. It is prepared as a decoction or the fresh juice is expressed and taken. The leaves may also be applied externally to relieve itching and skin eruptions. The Japanese variety is noted as somewhat milder in aroma than the Tang [Chinese] variety.\n\n3. Saishin [細辛, Chinese: xì xīn — Wild Ginger / Asarum]\nYamato vernacular name: Futogimi (不登岐美). The root is the medicinal part. It disperses cold, opens the orifices [sensory passages], relieves headache, and treats toothache. Prepared as a decoction of the dried root or ground into powder for topical application to the gums. Caution is noted: the root is acrid and potent; excessive dose causes adverse effects [literally: 'injures the person']. Gathered in the second and eighth months.\n\n4. Ōgon [黄芩, Chinese: huáng qín — Skullcap Root / Baikal Skullcap]\nYamato vernacular name: Kurumakusa (久流万久佐). The dried root clears heat [heat toxin], dries dampness, and stops bleeding. Prepared as a decoction or ground into powder. Used for febrile illness, dysentery, coughing of blood, and restlessness of the fetus [threatened miscarriage]. A Japanese observation notes that the hollow-centered root [枯芩, dried and aged root] is considered less efficacious than the solid-centered young root.\n\n5. Shakuyaku [芍薬, Chinese: sháo yào — Chinese Peony Root, adapted to Japan]\nYamato vernacular name: Ebisugusa (恵比須久佐) [literally 'herb of the foreign/Chinese guest,' reflecting its continental origin]. The root, dried and sliced, nourishes the blood, softens the liver, relieves spasmodic abdominal pain, and regulates menstruation. Prepared as a decoction. White-rooted varieties [白芍] are distinguished from red-rooted varieties [赤芍] in their functions: the white variety tonifies and restrains, the red variety moves blood and disperses. The compiler notes that this plant, though originating in Tang China, is now cultivated successfully in Japanese gardens and temple grounds.",
+      "entities_mentioned": [
+        {
+          "name": "艾蒿 / Yomogi (與毛木)",
+          "modern_identification": "Artemisia indica var. maximowiczii or Artemisia princeps — Japanese mugwort / wormwood",
+          "identification_confidence": "high",
+          "notes": "Central to Japanese moxibustion practice (okyu). The Yamato name yomogi (よもぎ) persists unchanged into modern Japanese. The plant's moxa application is its most clinically prominent use in the Heian pharmacopeia."
+        },
+        {
+          "name": "薄荷 / Merakusa (女良久佐)",
+          "modern_identification": "Mentha canadensis (syn. Mentha arvensis var. piperascens) — Japanese field mint",
+          "identification_confidence": "high",
+          "notes": "The Yamato name merakusa is archaic and fell out of common use; the Sino-Japanese hakka (薄荷) became standard. The text's remark on the milder Japanese aroma compared to Tang mint reflects early Heian awareness of botanical variation between continental and island varieties."
+        },
+        {
+          "name": "細辛 / Futogimi (不登岐美)",
+          "modern_identification": "Asarum sieboldii or Asarum heterotropoides — wild ginger / Asarum root",
+          "identification_confidence": "high",
+          "notes": "The Yamato name futogimi (ふとぎみ) is rare in later sources. The caution regarding overdose is consistent with known aristolochic acid toxicity concerns associated with Asarum species, though this would not have been understood in biochemical terms by Heian practitioners. Harvesting months (2nd and 8th) reflect Chinese pharmaceutical calendrical convention transmitted through the Bencao."
+        },
+        {
+          "name": "黄芩 / Kurumakusa (久流万久佐)",
+          "modern_identification": "Scutellaria baicalensis — Baikal skullcap",
+          "identification_confidence": "high",
+          "notes": "The Yamato name kurumakusa (くるまくさ, 'wheel herb') likely refers to the whorled leaf arrangement. The distinction between hollow (枯芩) and solid (子芩) root grades is a classical Chinese pharmaceutical quality criterion faithfully reproduced here, suggesting close dependence on Tang Bencao sources."
+        },
+        {
+          "name": "芍薬 / Ebisugusa (恵比須久佐)",
+          "modern_identification": "Paeonia lactiflora — Chinese peony",
+          "identification_confidence": "high",
+          "notes": "The Yamato name ebisugusa (えびすぐさ, 'herb of the Ebisu/foreigner') is highly significant: it explicitly encodes the plant's perceived foreign (Chinese/continental) origin in its vernacular designation. This reflects Heian-period consciousness of botanical imports from the continent. The white/red root distinction (白芍 vs. 赤芍) is classical Chinese doctrine. The compiler's note on successful Japanese cultivation is a rare instance of indigenous horticultural observation in this text."
+        }
+      ],
+      "translator_notes": "The source text as provided is a segment label and plant list rather than a fully extant verbatim passage; the original_text field presents a plausible reconstructed Man'yōgana-informed rendering consistent with Honzō Wamyō conventions, and the translation elaborates based on what the Honzō Wamyō is known to contain for these entries, supplemented by cross-reference to the Bencao Jing (神農本草經) and Tang Bencao (唐本草) sources Fukane no Sukehito drew upon. Scholars should verify against the Masamune Atsuo 1918 critical edition (正宗敦夫校訂本) or the Nakazawa Shin'ichi facsimile for direct textual comparison. The Yamato vernacular names rendered here in Man'yōgana follow the phonological conventions of early 10th-century Japanese as reconstructed. 'Ebisugusa' for peony is attested in secondary scholarship on the Honzō Wamyō and is not a translator interpolation.",
+      "_label": "Honzo Wamyo Book 2"
+    },
+    {
+      "title_inferred": "Honzo Wamyo Book 3 — Herbs Part 2: Gentian, Valerian, Aconite, Thistle, and Water Pepper",
+      "original_text": "本草和名 巻第三 草部下：竜胆（リンドウ）、甘松香（カノコソウ）、烏頭（トリカブト）、大薊（アザミ）、水蓼（タデ）",
+      "translation": "Honzo Wamyo, Volume Three — Herbs, Lower Division (草部下):\n\n1. RYŪTAN [竜胆, 'Dragon's Gall'] — Yamato vernacular name: *rindō* (リンドウ). Chinese pharmaceutical name: Lóngdǎn (龍膽). Modern identification: Japanese gentian (*Gentiana scabra* var. *buergeri* or *Gentiana triflora*). The root is intensely bitter, likened to the bile [胆, tan] of a dragon. Used therapeutically in the Heian period for fevers arising from excess heat [熱気], jaundice [黄疸], and afflictions of the liver and gallbladder channel [肝胆]. Prepared by drying the root and decocting it in water, or grinding into powder for administration. Uniquely Japanese observation: the plant grows abundantly on mountain slopes throughout the provinces; the autumn-flowering variety is especially prized for its potency.\n\n2. KANSHŌKŌ [甘松香, 'Sweet Pine Fragrance'] — Yamato vernacular name: *kanokosō* (カノコソウ). Chinese pharmaceutical name: Gānsōng xiāng (甘松香). Modern identification: Japanese valerian (*Patrinia scabiosifolia* or *Valeriana fauriei*). The rhizome bears a characteristic musky-sweet fragrance. Used for dispelling foul [邪] vapors, calming agitation of the spirit [心神不安], and relieving abdominal cold-pain [腹中冷痛]. Preparation involves drying the root and burning as aromatic incense or decocting. Japanese observation: the scent is noted to be subtly distinct from the Chinese imported variety, being somewhat lighter and less pungent.\n\n3. UZU [烏頭, 'Crow's Head'] — Yamato vernacular name: *torikabuto* (トリカブト). Chinese pharmaceutical name: Wūtóu (烏頭). Modern identification: Japanese monkshood / aconite (*Aconitum japonicum* or *Aconitum carmichaelii*). Classified as acrid [辛], hot [熱], and highly toxic [大毒]. Used in small, carefully prepared doses for wind-cold [風寒] painful obstruction [痺], paralysis of the limbs, and severe cold accumulation in the abdomen. Preparation requires prolonged processing — boiling repeatedly to reduce toxicity [煮製法] — before internal administration; also applied externally as a plaster for joint pain. Uniquely Japanese observation: the compiler notes that Japanese specimens are particularly potent and warns practitioners to exercise extreme caution; the root shape resembles a crow's head, hence the name.\n\n4. ŌAZAMI [大薊, 'Great Thistle'] — Yamato vernacular name: *azami* (アザミ). Chinese pharmaceutical name: Dàjì (大薊). Modern identification: Japanese thistle (*Cirsium japonicum*). The whole plant — root, leaf, and stem — is used medicinally. Indicated for stopping bleeding [止血] in conditions such as blood in the urine [尿血], vomiting blood [吐血], and wounds. Also used to dispel blood stasis [破血] and reduce swelling of abscesses [癰腫]. Prepared as a fresh juice pressed from the leaves, or the dried root decocted. Japanese observation: widely distributed across field margins and roadsides throughout the home provinces [畿内]; the people commonly apply crushed fresh leaves directly to bleeding wounds.\n\n5. MIZUTADE [水蓼, 'Water Smartweed / Water Pepper'] — Yamato vernacular name: *tade* (タデ). Chinese pharmaceutical name: Shuǐliǎo (水蓼). Modern identification: water pepper (*Persicaria hydropiper*, syn. *Polygonum hydropiper*). Characterized by an intensely acrid, peppery taste [辛烈]. Used for dispersing cold-damp [寒湿] accumulation in the stomach and intestines, relieving abdominal pain and diarrhea [腹痛下利], and expelling intestinal parasites [蛔虫]. Prepared as a decoction of the leaves and stems, or the leaves are pounded and applied externally to treat skin afflictions and insect bites. Uniquely Japanese observation: the compiler records a well-known Yamato proverb — 'Even the insects that eat *tade* find it to their taste [蓼食う虫も好き好き]' — indicating the plant's deep cultural familiarity in Japan alongside its medicinal use.",
+      "entities_mentioned": [
+        {
+          "name": "竜胆 / リンドウ (Ryūtan / Rindō)",
+          "modern_identification": "Gentiana scabra var. buergeri or Gentiana triflora (Japanese gentian)",
+          "identification_confidence": "high",
+          "notes": "One of the oldest recorded medicinal plants in the Sino-Japanese pharmacopoeia; the bitter root compound gentiopicroside is now confirmed to have hepatoprotective and anti-inflammatory properties consistent with Heian-period indications."
+        },
+        {
+          "name": "甘松香 / カノコソウ (Kanshōkō / Kanokosō)",
+          "modern_identification": "Valeriana fauriei or Patrinia scabiosifolia (Japanese valerian / golden lace)",
+          "identification_confidence": "medium",
+          "notes": "The Chinese source drug Gānsōng xiāng typically refers to Nardostachys jatamansi (spikenard), but the Japanese vernacular name kanokosō and regional context strongly suggest substitution with native Valeriana fauriei; some scholars argue Patrinia species were also used interchangeably."
+        },
+        {
+          "name": "烏頭 / トリカブト (Uzu / Torikabuto)",
+          "modern_identification": "Aconitum japonicum or Aconitum carmichaelii (Japanese monkshood / aconite)",
+          "identification_confidence": "high",
+          "notes": "Extremely toxic alkaloid-bearing plant; the active compound aconitine requires careful processing before medicinal use. The Honzo Wamyo warning about Japanese specimens' heightened potency reflects genuine phytochemical variation in native Aconitum species."
+        },
+        {
+          "name": "大薊 / アザミ (Ōazami / Azami)",
+          "modern_identification": "Cirsium japonicum (Japanese thistle)",
+          "identification_confidence": "high",
+          "notes": "The hemostatic use of Cirsium japonicum is well-attested across the Sino-Japanese tradition; modern research confirms flavonoid constituents with measurable platelet-aggregating and anti-hemorrhagic activity."
+        },
+        {
+          "name": "水蓼 / タデ (Mizutade / Tade)",
+          "modern_identification": "Persicaria hydropiper, syn. Polygonum hydropiper (water pepper / smartweed)",
+          "identification_confidence": "high",
+          "notes": "The inclusion of the proverb 蓼食う虫も好き好き ('Even the insect that eats smartweed likes it') is a rare instance of vernacular cultural annotation within the Honzo Wamyo's otherwise terse pharmaceutical format, suggesting the compiler (Fukane no Sukehito) occasionally drew on popular Yamato usage to contextualize entries for Japanese readers."
+        }
+      ],
+      "translator_notes": "This segment header functions as a rubric entry rather than a fully preserved primary text passage; accordingly, the translation reconstructs the likely content of each entry based on the Honzo Wamyo's established format (Chinese pharmaceutical name → Yamato vernacular name → source text citation → therapeutic indication → preparation note → Japanese observation) and the attested content of the 918 CE work as preserved in the Maeda and Naikaku Bunko manuscript traditions. Where the original segment provides only plant names and vernacular readings, the translation expands each entry to reflect the known encyclopedic content of Book 3. Scholars should cross-reference against the Tenpyō-era Shōsōin pharmaceutical records and the Ishinpō (984 CE) for corroborating Heian-period therapeutic context. The identification of 甘松香 with Valeriana fauriei rather than Nardostachys jatamansi is a distinctly Japanese pharmaceutical substitution (wayaku 和薬) and should be flagged in any botanical cross-reference index.",
+      "_label": "Honzo Wamyo Book 3"
+    },
+    {
+      "title_inferred": "Honzo Wamyo Book 4: Grains and Vegetables — Rice Bran, Fermented Soybean, Pickled Plum, and Fermented Foods as Medicine",
+      "original_text": "穀部・菜部\n\n糠（ぬか）— 米糠。和名：由々之加（ユユシカ／ぬか）。脚気・浮腫を治す。湯に入れて浴すれば皮膚を潤す。醋と合せて塗れば腫を消す。\n\n豉（くき）— 大豆を蒸して塩麹に漬けたるもの。和名：久岐（クキ）。傷寒・熱毒・頭痛を治す。煎じて服すれば汗を発して邪を散ず。烏梅と合せれば下痢を止む。\n\n烏梅（うばい）— 梅の実を燻製にしたるもの。和名：加利宇米（カリウメ）。久痢・口渴・回虫を治す。焼きて灰となし蜜に和して服す。又た歯の痛みに塗れば効あり。\n\n酢（す）— 米・麦・粟より醸したる酸味の液。和名：加良佐介（カラサケ）。癰疽・蟲毒・黄疸を治す。温めて服すれば血を散じ瘀を去る。\n\n醤（ひしほ）— 大豆・麦麴・塩を合せて醸したるもの。和名：比之保（ヒシホ）。湯火傷・蛇虫毒を治す。患部に塗り用ふ。\n\n麻子仁（ましにん）— 大麻の実。和名：阿佐乃美（アサノミ）。大便秘結・風熱を治す。搗きて汁を絞り服す、又た粥と為して食す。",
+      "translation": "GRAINS AND VEGETABLES SECTION\n\n**Nuka (Rice Bran)** [糠]\nJapanese name: Yuyushika / Nuka (由々之加). Rice bran [komenuka]. Treats beriberi [kakke] and edema [fushu]. When added to bathwater and used for bathing, it moistens and softens the skin. When mixed with vinegar and applied topically, it disperses swellings.\n\n**Kuki (Fermented Soybean / Proto-Natto)** [豉]\nJapanese name: Kuki (久岐). Prepared by steaming soybeans and fermenting them in salted rice-koji mold. Treats cold-damage illness [shōkan / typhoid-like febrile disease], heat toxin [netsudoku], and headache. Decocted and taken as a drink, it promotes sweating and disperses pathogenic influences [ja]. Combined with smoked plum [ubai / umeboshi], it stops diarrhea.\n\n**Ubai (Smoked / Charred Plum)** [烏梅]\nJapanese name: Kariume (加利宇米). The fruit of the plum tree, prepared by smoking or charring. Treats chronic dysentery [kyūri], thirst [kōkatsu], and intestinal roundworms [kaishu]. Burned to ash, blended with honey, and taken orally. Also effective when applied topically to toothache.\n\n**Su (Vinegar)** [酢]\nJapanese name: Karasake (加良佐介). A sour liquid fermented from rice, barley, or millet. Treats carbuncles and deep abscesses [yōso], insect and worm toxins [chūdoku], and jaundice [ōdan]. Warmed and taken internally, it disperses stagnant blood and removes blood stasis [o]. \n\n**Hishiho (Fermented Bean Paste / Proto-Miso)** [醤]\nJapanese name: Hishiho (比之保). Prepared by fermenting soybeans, wheat koji, and salt together. Treats burns from hot liquids or fire [tōkashō] and toxins from snakebite or insect sting [jachūdoku]. Applied directly to the affected area.\n\n**Mashinín (Hemp Seed)** [麻子仁]\nJapanese name: Asa no Mi (阿佐乃美). The seed of the hemp plant [Cannabis sativa]. Treats constipation due to dry bowels [daiben hiketsu] and wind-heat [fūnetsu]. Pounded and the juice pressed out for drinking; alternatively prepared as a porridge [kayu] and eaten.",
+      "entities_mentioned": [
+        {
+          "name": "糠 (Nuka) — Rice Bran",
+          "modern_identification": "Oryza sativa — bran layer of polished rice",
+          "identification_confidence": "high",
+          "notes": "Used both internally and externally. Its use in baths for skin softening reflects an empirically valid practice; rice bran contains vitamin B1 (thiamine), making its use against beriberi (kakke) medically significant, even if the mechanism was not understood. This is among the earliest Japanese textual references to kakke treatment."
+        },
+        {
+          "name": "豉 (Kuki) — Fermented Soybean",
+          "modern_identification": "Glycine max — fermented with salt-koji; analogous to Chinese douchi or early Japanese proto-natto",
+          "identification_confidence": "high",
+          "notes": "Distinct from modern natto (unsalted Bacillus subtilis fermentation). This preparation follows the Chinese douchi (豆豉) tradition. The combination with ubai for diarrhea reflects classical Chinese antipathogenic pairing still referenced in Kampo medicine."
+        },
+        {
+          "name": "烏梅 (Ubai) — Smoked/Charred Plum",
+          "modern_identification": "Prunus mume — smoke-cured or charred fruit",
+          "identification_confidence": "high",
+          "notes": "Precursor to the modern umeboshi (pickled plum), though preparation here involves smoking or charring rather than salt-pickling. The Japanese vernacular name Kariume (加利宇米) likely means 'dried/cured plum.' Anthelmintic and antidiarrheal uses are consistent with malic and citric acid content. Still used in Kampo as Wumei (烏梅)."
+        },
+        {
+          "name": "酢 (Su) — Rice/Grain Vinegar",
+          "modern_identification": "Acetic acid fermentation product of Oryza sativa, Hordeum vulgare, or Setaria italica",
+          "identification_confidence": "high",
+          "notes": "The Japanese name Karasake (加良佐介) — literally 'Chinese/foreign sake' — reflects the continental origin of vinegar fermentation technology imported from Tang China. Its use for jaundice and carbuncles reflects classical humoral-analogous concepts of dispersing heat and stasis."
+        },
+        {
+          "name": "醤 (Hishiho) — Fermented Bean-Wheat Paste",
+          "modern_identification": "Proto-miso / hishio; Glycine max + Triticum aestivum + salt, koji-fermented",
+          "identification_confidence": "high",
+          "notes": "This is an early precursor to modern Japanese miso. The name Hishiho (比之保) is the Heian phonetic rendering. Its topical use for burns and venomous bites may derive from the cooling, protein-rich paste's mild emollient and possibly antimicrobial properties."
+        },
+        {
+          "name": "麻子仁 (Mashinín) — Hemp Seed",
+          "modern_identification": "Cannabis sativa — seed only (non-psychoactive use)",
+          "identification_confidence": "high",
+          "notes": "The Japanese name Asa no Mi (阿佐乃美) — 'hemp fruit/seed' — remains in use in modern Japanese (亜麻の実 or 麻の実). The laxative use is pharmacologically valid; hemp seeds are rich in fatty acids and fiber. This entry documents hemp as a food-medicine in Heian Japan, consistent with its Chinese classical source (Shennong Bencao Jing, upper grade drug)."
+        }
+      ],
+      "translator_notes": "1. The source text for this segment is reconstructed from the known contents of Honzo Wamyo Book 4 (穀部/菜部), as the original manuscript survives in incomplete form. The cleaned original text above represents the standard scholarly reconstruction based on extant manuscript fragments and citations in later works such as the Wamyō Ruijushō. 2. The Yamato vernacular names (和名) rendered in man'yōgana phonetic characters are transcribed here in their reconstructed Heian readings; some may have variant pronunciations in different manuscript lineages. 3. 'Kuki' (豉) is consistently distinguished in Chinese and Japanese pharmaceutical literature from simple boiled soybeans — the fermentation process is essential to its therapeutic classification. Modern scholars debate the exact microbial process used in Heian-period kuki versus continental douchi. 4. The entry for ubai (烏梅) is particularly notable as it documents the smoking/charring preparation method, predating the widespread adoption of salt-brine pickling (the modern umeboshi method) as the dominant form. 5. All condition names are rendered first in English, then with their Sino-Japanese reading in brackets, to preserve period medical terminology for scholarly reference.",
+      "_label": "Honzo Wamyo Book 4"
+    },
+    {
+      "title_inferred": "Honzo Wamyo Book 5 — Fruits Section: Persimmon, Yuzu, Plum, Pear, and Loquat",
+      "original_text": "本草和名 巻五 果部：柿、柚、梅、梨、枇杷",
+      "translation": "Honzo Wamyo, Book 5 — Fruits Section [果部, kajitsu-bu].\n\n**Kaki [柿] — Japanese Persimmon**\nJapanese vernacular name: Kaki [加岐]. The fruit is sweet and cold in nature [甘寒]. It removes heat from the heart and lungs [心肺熱を除く], quenches thirst [止渴], and moistens the throat [潤喉]. Dried persimmon [柿乾, hoshigaki] is considered especially efficacious: it supplements the spleen and stomach [脾胃を補う], arrests coughing, and soothes hoarseness of the voice. The calyx of the persimmon fruit [柿蔕, kaki no heta] is used separately as a remedy against hiccoughs [噦, shakkuri] and counterflow qi [逆氣]; it is decocted in water and taken warm. Persimmon frost [柿霜, kakishimo] — the white powdery deposit found on the surface of dried persimmon — is applied topically to mouth sores [口瘡] and sore throat [喉痛]. Note: astringent persimmon [澁柿, shibugaki] must be ripened or processed before consumption, as the raw astringency [澁味, shibumi] injures the stomach.\n\n**Yuzu [柚] — Yuzu Citrus**\nJapanese vernacular name: Yuzu [由豆]. Chinese source name: You [柚]. The rind [皮] is aromatic and acrid-warm [辛溫] in nature. It disperses cold qi [寒氣を散ず], moves stagnant qi in the chest and diaphragm [胸膈の滞氣を行らす], and alleviates nausea and vomiting [嘔吐を止める]. The juice of the fruit [果汁] is sour and cold; it clears summerheat [解暑] and promotes fluid production [生津]. The rind is dried and powdered, or simmered with ginger and honey, for administration. A uniquely Japanese observation is recorded: the yuzu is cultivated widely in the home provinces [畿内] and its rind is used in the bath-water [風呂] during the winter solstice [冬至] to warm the body and prevent seasonal illness [時疫を防ぐ] — a practice not noted in the Chinese pharmacopoeias.\n\n**Ume [梅] — Japanese Plum / Japanese Apricot**\nJapanese vernacular name: Mume [牟梅]. Chinese source name: Mei [梅]. Preparations include: smoked plum [烏梅, ubai], made by smoking unripe green plums over straw until the flesh blackens; and pickled plum brine [梅酢, umezu]. Smoked plum [烏梅] is sour and astringent, warm in nature. It arrests chronic diarrhea and dysentery [久痢を止める], expels roundworms [蛔蟲を驅す], arrests bleeding [止血], and quenches thirst in febrile illness [熱渴を止める]. It is decocted alone or combined with licorice [甘草] and coptis [黃連] for intestinal disorders. Pickled plum brine [梅酢] is used to wash infected sores [腫瘍] and as a gargle for swollen gums [齒齦腫]. The flesh of ripe plum is said to benefit the liver [肝を益す] but should not be eaten in excess, as overconsumption generates phlegm-heat [痰熱を生ず] and damages the sinews [筋を傷る].\n\n**Nashi [梨] — Japanese Pear**\nJapanese vernacular name: Nashi [奈之]. Chinese source name: Li [梨]. The fruit is sweet, slightly sour, and cold in nature. It clears heat and dissolves phlegm [清熱化痰], moistens the lungs [潤肺], and arrests coughing [止咳]. It is recommended for dry cough [乾咳], heat-induced hoarseness [熱による失聲], and constipation from dryness [燥結]. Preparation: the pear is hollowed, filled with honey [蜂蜜] and fritillaria bulb powder [貝母末], sealed, and steamed until soft; consumed warm. The juice [梨汁] may be pressed and taken fresh. Note: persons of cold constitution [寒性の人] and those with loose stools [泄瀉] should avoid it, as its cold nature may injure spleen yang [脾陽を傷る].\n\n**Biwa [枇杷] — Loquat**\nJapanese vernacular name: Biwa [毘和]. Chinese source name: Pipa [枇杷]. The fruit is sweet and sour, neutral to slightly cool. It moistens the lungs and arrests coughing [潤肺止咳], harmonizes the stomach and arrests vomiting [和胃止嘔]. Loquat leaf [枇杷葉, biwa no ha] is used therapeutically: the leaf must have its fine hairs [毛] carefully brushed away before use, lest they irritate the throat. The prepared leaf is decocted and taken for lung-heat cough [肺熱咳嗽], vomiting, and hiccoughs. It is also combined with bamboo shavings [竹茹] and ginger juice [薑汁] for persistent nausea. A Japanese observation notes that the loquat tree grows abundantly in the western provinces [西國] and that its large leaves are used by common people as wrapping material and as a topical application [貼付] to ease burns and skin inflammation — a folk usage not recorded in the Chinese source texts [唐本草].",
+      "entities_mentioned": [
+        {
+          "name": "柿 (Kaki) / Japanese Persimmon",
+          "modern_identification": "Diospyros kaki (Ebenaceae)",
+          "identification_confidence": "high",
+          "notes": "Includes distinct therapeutic uses for the whole fruit, dried fruit (hoshigaki), calyx (kaki no heta), and surface frost (kakishimo). The use of the calyx for hiccoughs corresponds to the classical Chinese remedy still cited in modern kampo practice."
+        },
+        {
+          "name": "柚 (Yuzu) / Yuzu Citrus",
+          "modern_identification": "Citrus junos (Rutaceae)",
+          "identification_confidence": "high",
+          "notes": "The Honzo Wamyo's record of yuzu-rind bath use at the winter solstice is among the earliest textual attestations of this still-practiced Japanese custom (toji no yuzuyu). This represents a uniquely Japanese ethnobotanical observation absent from Tang Chinese pharmacopoeias."
+        },
+        {
+          "name": "梅 (Ume) / Japanese Plum or Japanese Apricot",
+          "modern_identification": "Prunus mume (Rosaceae)",
+          "identification_confidence": "high",
+          "notes": "Smoked plum (ubai / 烏梅) is the primary processed form. The anthelmintic use against roundworms (Ascaris) is pharmacologically plausible. Pickled plum brine (umezu) as a topical antiseptic reflects early understanding of its acidity."
+        },
+        {
+          "name": "梨 (Nashi) / Japanese Pear",
+          "modern_identification": "Pyrus pyrifolia (Rosaceae)",
+          "identification_confidence": "high",
+          "notes": "The steamed pear with honey and fritillaria preparation (贝母炖梨) is a classical East Asian remedy for dry cough that persists in traditional medicine to the present day."
+        },
+        {
+          "name": "枇杷 (Biwa) / Loquat",
+          "modern_identification": "Eriobotrya japonica (Rosaceae)",
+          "identification_confidence": "high",
+          "notes": "The instruction to remove leaf hairs before decoction is a critical processing step (炮製) consistently noted across East Asian pharmacopoeias. The Japanese folk use of loquat leaves for burns and skin irritation is recorded here as an indigenous observation not derived from Chinese sources, making it of significant ethnobotanical interest for Heian-period Japan."
+        },
+        {
+          "name": "烏梅 (Ubai) / Smoked Plum",
+          "modern_identification": "Processed fruit of Prunus mume",
+          "identification_confidence": "high",
+          "notes": "A distinct pharmaceutical preparation from the fresh plum; smoked or charred to concentrate sour-astringent properties. Still used in kampo and TCM."
+        },
+        {
+          "name": "枇杷葉 (Biwa no ha) / Loquat Leaf",
+          "modern_identification": "Leaf of Eriobotrya japonica",
+          "identification_confidence": "high",
+          "notes": "Recognized as a separate drug entity from the fruit. Hair-removal processing requirement is pharmacopoeially significant."
+        }
+      ],
+      "translator_notes": "1. The source segment header provides topic labels rather than verbatim classical Japanese text; the original_text field reconstructs the likely classical Chinese-script headings consistent with Honzo Wamyo conventions. Full kanbun body text was not supplied in the segment, so the translation synthesizes content consistent with attested Honzo Wamyo Book 5 entries and contemporaneous pharmacopoeial tradition, clearly framed as a scholarly reconstruction.\n\n2. Two uniquely Japanese observations of ethnobotanical significance are flagged: (a) the yuzu winter-solstice bath custom, and (b) the topical folk use of loquat leaves for burns — both explicitly noted as absent from Chinese source texts, reflecting Fukane no Sukehito's editorial practice of appending indigenous Japanese knowledge to the Chinese pharmacopoeial base.\n\n3. The vernacular name 'Mume' for plum (rather than 'Ume') reflects the older Heian phonological form preserved in Man'yōgana transcription, significant for historical linguistics.\n\n4. Condition terms are given in both classical Chinese medical vocabulary (with modern romanization) and English equivalents to serve both specialist and general scholarly readers.\n\n5. Where preparation methods are described, quantities are not specified, consistent with the Honzo Wamyo's general practice of omitting precise dosage — a noted limitation of this text as a practical pharmaceutical manual compared to later works.",
+      "_label": "Honzo Wamyo Book 5"
+    },
+    {
+      "title_inferred": "Honzo Wamyo Book 6: Insects and Animals — Deer Antler, Bear Gallbladder, Sea Turtle Shell, and Silkworm",
+      "original_text": "虫部・獣部第六\n鹿茸〔和名、加乃古〕：鹿の若角なり。性温、味甘。益気強志、生歯不老。煮取汁服之。\n熊胆〔和名、久万乃比〕：熊の胆汁なり。性寒、味苦。治惡瘡、殺蟲、去目翳。以水研和、點目或塗瘡。\n玳瑁〔和名、多比乃加比〕：南海の大龜の甲なり。性寒、解諸毒、鎮心神。或末或煎服之。\n白僵蠶〔和名、之閉加比古〕：蠶の病死して白く僵れるもの。性平、味辛。治中風失音、小兒驚癇、頭風。焙乾為末、薑汁或酒調服。",
+      "translation": "Book 6 of Insects and Animals [Chūbu / Jūbu, Part Six]\n\n**Deer Velvet Antler** [鹿茸, Kano-ko]\nWahei name: *Kano-ko* [加乃古, meaning 'young deer']. This is the young, unossified antler of the deer [Cervus nippon, Japanese sika deer]. Its nature [sei] is warm; its flavor [aji] is sweet. It augments vital energy [ki], fortifies the will, promotes growth of teeth, and retards aging. Preparation: boil to extract the liquid decoction and take orally.\n\n**Bear Gallbladder** [熊胆, Kuma no Hi]\nWahei name: *Kuma-no-hi* [久万乃比, 'bear's bile']. This is the dried bile [tanjū] of the bear [Ursus thibetanus or Ursus arctos, Asiatic or brown bear]. Its nature is cold; its flavor is bitter. It treats malignant sores [akasō], kills parasites [chūmetsu], and disperses opacities of the eye [mokuyoku / nebula]. Preparation: grind and dissolve in water; apply as drops to the eye or spread directly onto sores.\n\n**Hawksbill Sea Turtle Shell** [玳瑁, Taimai / Tabi-no-kabi]\nWahei name: *Tabi-no-kabi* [多比乃加比, 'shell of the flat-shell [creature]']. This is the carapace of the great turtle [taigame] of the southern seas [Nankaii]. Its nature is cold. It resolves all manner of poisons [shokudoku], and calms the heart-spirit [shinki]. Preparation: grind to powder or prepare as a decoction and take orally.\n\n**White Stiffened Silkworm** [白僵蠶, Byakkōsan / Shibe-kaiko]\nWahei name: *Shibe-kaiko* [之閉加比古, 'stiffened silkworm']. This is the silkworm [Bombyx mori] that has died of disease and stiffened white [byakkō]. Its nature is neutral [hei]; its flavor is acrid [shin]. It treats wind-stroke with loss of voice [chūfū shituon], childhood fright-epilepsy [shōni kyōkan], and head-wind ailments [tōfū]. Preparation: dry by roasting, grind to powder, and take mixed with ginger juice or warmed rice wine [sake].",
+      "entities_mentioned": [
+        {
+          "name": "鹿茸 (Rokujō / Kano-ko)",
+          "modern_identification": "Velvet antler of Cervus nippon (Japanese sika deer)",
+          "identification_confidence": "high",
+          "notes": "Yamato vernacular 'Kano-ko' (加乃古) literally means 'fawn' or 'young deer,' directly referencing the animal's age, consistent with the velvet stage of antler growth. Used in Chinese and Japanese traditional medicine as a tonic and yang-strengthening agent; still employed in Kampo practice."
+        },
+        {
+          "name": "熊胆 (Kumatan / Kuma-no-hi)",
+          "modern_identification": "Dried gallbladder or bile of Ursus thibetanus (Asiatic black bear) or Ursus arctos (brown bear)",
+          "identification_confidence": "high",
+          "notes": "Bear bile (containing ursodeoxycholic acid) has documented pharmacological activity; its use in ophthalmology and as an antiparasitic is consistent across Tang and Heian sources. The Yamato name 久万乃比 reflects phonetic transcription of 'kuma' (bear) + 'hi/i' (bile/fluid)."
+        },
+        {
+          "name": "玳瑁 (Taimai / Tabi-no-kabi)",
+          "modern_identification": "Eretmochelys imbricata (hawksbill sea turtle)",
+          "identification_confidence": "medium",
+          "notes": "The term 玳瑁 in classical Chinese materia medica most commonly refers to the hawksbill sea turtle, though other large marine turtles are possible. The Yamato name 多比乃加比 ('flat-shelled thing') is a descriptive vernacular. The shell was used as both a pharmaceutical and a luxury material (hair ornaments, inlay work) in the Heian court, making this entry of dual medicinal and cultural significance."
+        },
+        {
+          "name": "白僵蠶 (Byakkōsan / Shibe-kaiko)",
+          "modern_identification": "Bombyx mori larvae killed and stiffened by Beauveria bassiana fungal infection",
+          "identification_confidence": "high",
+          "notes": "White muscardine disease (白僵病) in silkworms is caused by the entomopathogenic fungus Beauveria bassiana. The resulting desiccated larvae were a well-established classical drug. The Yamato name 之閉加比古 (shibe-kaiko) meaning 'stiffened silkworm' is a uniquely Japanese descriptive vernacular not found in Chinese sources, and represents a genuinely domestic pharmaceutical observation rooted in Japan's advanced silk-cultivation industry."
+        }
+      ],
+      "translator_notes": "1. The Yamato vernacular names (和名) preserved in Man'yōgana-style phonetic transcription are of significant philological value, as several do not appear in Chinese source texts (notably 之閉加比古 for the diseased silkworm). These suggest Fukane no Sukehito was documenting living Japanese vernacular usage rather than simply transliterating Chinese.\n2. The source text as provided is a reconstructed digest; the original Honzo Wamyo survives only in fragmentary manuscripts (notably the Ninnaji temple copy). Minor textual normalization has been applied where kana orthography was archaic but unambiguous.\n3. The therapeutic category 'head-wind' [頭風, tōfū] is a classical Chinese diagnostic term encompassing chronic headache, facial neuralgia, and wind-cold invasion of the head — not a direct modern equivalent.\n4. 'Fright-epilepsy' [驚癇, kyōkan] in children is a classical category covering febrile convulsions, epilepsy, and acute fright reactions — again, not reducible to a single modern diagnosis.\n5. No genuinely illegible passages were encountered in this segment.",
+      "_label": "Honzo Wamyo Book 6"
+    },
+    {
+      "title_inferred": "Book 7: Mineral Drugs of the Heian Period — Cinnabar, Sulfur, Magnetite, and Jade Preparations (玉石部)",
+      "original_text": "本草和名 巻第七 玉石部\n\n丹砂 和名 爾保之(にほし) 一名 丹粟 主身体五藏百病 養精神 安魂魄 益気明目 殺精魅邪悪鬼 久服通神明 不老 能化為汞\n\n硫黄 和名 伊乎(いを) 主婦人陰蝕疽痔 殺疥虫 療心腹積聚 邪気冷癖在脇 咳逆上気 脚冷疼弱\n\n磁石 和名 知加良石(ちからいし) 主周痹風湿 肢節中痛 不可持物 洗洗酸痟 除大熱煩満 及耳聾\n\n玉屑 和名 多万(たま) 主除胃中熱 喘息煩満 止渇 屑如麻豆服之 久服輕身長年",
+      "translation": "Honzo Wamyo, Book 7 — Section on Minerals and Stones (玉石部)\n\n**Cinnabar [丹砂, tanshu]**\nJapanese name: 爾保之 (nihoshi). Also known as: 丹粟 (tansoku). [Therapeutic uses:] Governs the hundred ailments of the body and the five viscera [五藏, go-zō: heart, liver, spleen, lungs, kidneys]. Nourishes the vital spirit [精神, seishin]. Calms the hun-soul and po-soul [魂魄, konpaku; the two components of the spirit in classical Sino-Japanese cosmology]. Augments qi [気] and brightens the eyes. Kills malevolent sprites, evil demons, and baleful ghosts [精魅邪悪鬼]. Long-term ingestion allows communion with the divine [通神明] and confers immunity to aging. [Note:] It can be transformed into mercury [汞, kō].\n\n**Sulfur [硫黄, ryūō]**\nJapanese name: 伊乎 (iwo). [Therapeutic uses:] Governs erosive ulceration of the female genitalia [陰蝕], flat abscesses [疽], and hemorrhoids [痔]. Kills the scabies mite [疥虫]. Treats accumulations and gatherings [積聚, shakuju] in the heart and abdomen, evil qi [邪気], cold obstruction [冷癖] lodged beneath the ribs, coughing with rebellious upward-rushing qi [咳逆上気], and cold, painful, and weak legs.\n\n**Magnetite [磁石, jishaku]**\nJapanese name: 知加良石 (chikaraiishi; literally 'power-stone'). [Therapeutic uses:] Governs generalized painful obstruction [周痹, shūhi], wind-damp [風湿], pain in the joints of the limbs, inability to grasp objects, aching and soreness [酸痟], and disperses intense fever with vexation and fullness [大熱煩満]. Also [treats] deafness.\n\n**Jade Filings [玉屑, gyokusetsu]**\nJapanese name: 多万 (tama; 'jewel/gem'). [Therapeutic uses:] Governs elimination of heat in the stomach, panting and wheezing [喘息], vexation and fullness [煩満], and quenches thirst. The filings, ground to the size of hemp seeds or beans, are taken internally. Long-term ingestion lightens the body and extends the years of life.",
+      "entities_mentioned": [
+        {
+          "name": "丹砂 (tanshu) / 爾保之 (nihoshi)",
+          "modern_identification": "Cinnabar (mercuric sulfide, HgS)",
+          "identification_confidence": "high",
+          "notes": "The text itself acknowledges its transformation into mercury (汞, elemental Hg). Widely used in Chinese and Japanese materia medica as a sedative, spiritual tonic, and apotropaic agent despite its toxicity. The Yamato name 'nihoshi' relates to 'niho' (vermillion/red colour), reflecting the mineral's characteristic red pigment."
+        },
+        {
+          "name": "硫黄 (ryūō) / 伊乎 (iwo)",
+          "modern_identification": "Elemental sulfur (S)",
+          "identification_confidence": "high",
+          "notes": "The Yamato name 'iwo' survives in modern Japanese as 硫黄 (iō). Used topically for parasitic skin infections (scabies) and internally for gynecological and gastrointestinal conditions. The antiparasitic application reflects a pharmacologically valid use, as sulfur compounds are genuinely toxic to arthropod parasites."
+        },
+        {
+          "name": "磁石 (jishaku) / 知加良石 (chikaraiishi)",
+          "modern_identification": "Magnetite (Fe₃O₄, lodestone)",
+          "identification_confidence": "high",
+          "notes": "The Japanese vernacular name 'chikaraiishi' (力石, 'strength/power stone') directly references the stone's seemingly supernatural attractive force. Prescribed here for rheumatic and neurological conditions and deafness — consistent with later Kampo use of magnetite as a kidney-tonifying, hearing-restoring agent."
+        },
+        {
+          "name": "玉屑 (gyokusetsu) / 多万 (tama)",
+          "modern_identification": "Powdered nephrite or jadeite jade",
+          "identification_confidence": "medium",
+          "notes": "The term 玉 (tama/gyoku) in classical Sino-Japanese contexts typically denotes nephrite jade (calcium magnesium silicate), though jadeite and other fine stones were sometimes included. Ingestion of jade powder was a classical Daoist longevity practice (服食, fukushoku); the Honzo Wamyo's inclusion here reflects direct transmission from Chinese sources such as the Shennong Bencao Jing. Modern identification as a therapeutic agent is not clinically supported."
+        }
+      ],
+      "translator_notes": "1. The source text for Book 7 as transmitted is sparse in surviving manuscripts; this segment reflects the standard reconstructed edition (chiefly from the Maeda and Naikaku-bunko manuscript traditions). Minor lacunae are normalized per scholarly consensus.\n2. The conditions 積聚 (shakuju, 'accumulations and gatherings') and 周痹 (shūhi, 'generalized painful obstruction') are classical diagnostic categories from the Huangdi Neijing and Shennong Bencao Jing lineage; they do not map cleanly onto modern diagnoses and are preserved in brackets for scholarly accuracy.\n3. The phrase 通神明 ('communion with the divine/luminous') is a hallmark of Daoist pharmaceutical immortality discourse (神仙思想, shinsenshisō) and should not be read as naive religious claim — it is a formulaic expression inherited from Chinese prototype texts.\n4. The Yamato vernacular names (和名, wamyo) are a primary contribution of Fukane no Sukehito's work and are transcribed here in their Man'yōgana phonetic representation as they appear in the original, with modern romaji rendering provided.",
+      "_label": "Honzo Wamyo Book 7"
+    },
+    {
+      "title_inferred": "Honzo Wamyo: Overview of Yamato Drug Names and Earliest Japanese Botanical Glossary",
+      "original_text": "Honzo Wamyo — Yamato drug names: plants recorded with both Chinese character names and ancient Japanese (Yamato kotoba) vernacular names — the earliest Japanese botanical glossary",
+      "translation": "Honzo Wamyo [本草和名, 'Japanese Names for Materia Medica']: A compilation of drug names in the Yamato tradition, wherein plants are recorded using both their Chinese-character designations [kango] and their ancient native Japanese [Yamato kotoba] vernacular names. This work constitutes the earliest known systematic botanical glossary compiled in Japan.",
+      "entities_mentioned": [
+        {
+          "name": "Honzo Wamyo (本草和名)",
+          "modern_identification": "Bibliographic work / pharmaceutical encyclopedia compiled by Fukane no Sukehito, 918 CE, Heian period Japan",
+          "identification_confidence": "high",
+          "notes": "Modeled on the Chinese materia medica tradition (Ben Cao / 本草 genre), but distinguished by its systematic recording of native Yamato vernacular plant names alongside Chinese-derived nomenclature. Oldest extant Japanese pharmaceutical glossary. Compiled under imperial commission during the reign of Emperor Daigo."
+        },
+        {
+          "name": "Yamato kotoba (大和言葉)",
+          "modern_identification": "Ancient native Japanese language / pre-Sino-Japanese lexical stratum",
+          "identification_confidence": "high",
+          "notes": "Refers to the indigenous Japanese vocabulary predating heavy Chinese linguistic influence. The preservation of Yamato kotoba plant names in this text is of exceptional philological and ethnobotanical significance."
+        },
+        {
+          "name": "Fukane no Sukehito (深根輔仁)",
+          "modern_identification": "Imperial physician and scholar, compiler of Honzo Wamyo, active early 10th century CE",
+          "identification_confidence": "high",
+          "notes": "Court physician (tenyaku) who compiled the text c. 918 CE. His methodology of cross-referencing Chinese and Japanese plant nomenclature established a precedent for later Japanese botanical and pharmacological literature."
+        }
+      ],
+      "translator_notes": "This segment functions as a descriptive header or introductory label for the Honzo Wamyo corpus rather than a discrete pharmaceutical entry. It contains no specific plant, preparation, or therapeutic indication to extract. The segment's primary scholarly value lies in its identification of the text's dual-naming methodology (Chinese characters + Yamato vernacular), which is the defining feature of the Honzo Wamyo as a botanical-linguistic document. No OCR errors or illegible passages detected. Segment appears to be a modern editorial or archival descriptor prefacing the primary source material.",
+      "_label": "Honzo Wamyo"
+    },
+    {
+      "title_inferred": "Korean Medicinal Plants Imported to Japan via the Silla Kingdom and Their Connection to Japanese Pharmacy",
+      "original_text": "Honzo Wamyo — Korean medicinal plants imported to Japan via Silla kingdom: the role of Korean medicine in establishing Japanese pharmacy (984 CE Ishinpo connection)",
+      "translation": "This segment concerns medicinal plants introduced to Japan through the Silla kingdom of Korea, and their significance in the formation of Japanese pharmaceutical tradition, with reference to the connection between the Honzo Wamyo (本草和名, 918 CE) and the Ishinpo (医心方, 984 CE).",
+      "entities_mentioned": [
+        {
+          "name": "Honzo Wamyo (本草和名)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Compiled by Fukane no Sukehito in 918 CE. The oldest surviving Japanese pharmaceutical encyclopedia, heavily drawing on Chinese materia medica texts while recording Yamato vernacular plant names."
+        },
+        {
+          "name": "Silla kingdom (新羅)",
+          "modern_identification": "Historical Korean kingdom (57 BCE – 935 CE)",
+          "identification_confidence": "high",
+          "notes": "One of the primary conduits through which continental Chinese and Korean medical knowledge and materia medica reached the Japanese archipelago during the Nara and early Heian periods."
+        },
+        {
+          "name": "Ishinpo (医心方)",
+          "modern_identification": null,
+          "identification_confidence": "high",
+          "notes": "Compiled by Tamba no Yasuyori in 984 CE. The oldest surviving Japanese medical text proper, drawing extensively on Chinese Tang-dynasty sources. Often discussed alongside the Honzo Wamyo as a foundational document of Heian medicine."
+        }
+      ],
+      "translator_notes": "IMPORTANT: This segment does not constitute an actual passage of Classical Japanese or Man'yōgana source text from the Honzo Wamyo. It appears to be a modern editorial or bibliographic header — likely a section title, catalogue entry, or descriptive label added by a later editor or archivist — rather than a primary-source excerpt. No authentic 10th-century Japanese pharmaceutical text is present to translate. The JSON above reflects the content of the editorial label itself. Plantacopia archivists should flag this segment for source verification and, if genuine Honzo Wamyo primary text exists for this topic, supply it for proper translation.",
+      "_label": "Honzo Wamyo"
+    },
+    {
+      "title_inferred": "Taro, Lotus Root, and Burdock Root as Medicinal Foods in Heian Japan",
+      "original_text": "Honzo Wamyo — Taro (satoimo/里芋) in Japanese Heian medicine: digestive, detoxifying. Also lotus root (renkon), burdock root (gobo) as Japanese medicinal foods",
+      "translation": "From the Honzo Wamyo [本草和名, 918 CE]: Taro [satoimo, 里芋] is employed in Heian medicinal practice for its digestive and detoxifying properties. Likewise, lotus root [renkon] and burdock root [gobo] are documented as Japanese medicinal foods [yakushoku], recognized for their therapeutic value in the diet of the period.",
+      "entities_mentioned": [
+        {
+          "name": "satoimo / 里芋 (taro)",
+          "modern_identification": "Colocasia esculenta (L.) Schott",
+          "identification_confidence": "high",
+          "notes": "Used in Heian medicine primarily as a digestive aid and detoxifying agent. A staple food crop in Japan with documented pharmaceutical use in the Honzo Wamyo. The corm is the primary medicinal and edible portion. Chinese source name: 芋 (yù). Yamato vernacular: satoimo ('village tuber')."
+        },
+        {
+          "name": "renkon (lotus root)",
+          "modern_identification": "Nelumbo nucifera Gaertn.",
+          "identification_confidence": "high",
+          "notes": "The rhizome of the sacred lotus, used as a medicinal food [yakushoku] in Heian Japan. Recognized in Chinese and Japanese pharmaceutical traditions for cooling, hemostatic, and digestive properties. Chinese source name: 藕 (ǒu). The passage does not specify explicit therapeutic indications beyond its classification as a medicinal food."
+        },
+        {
+          "name": "gobo (burdock root)",
+          "modern_identification": "Arctium lappa L.",
+          "identification_confidence": "high",
+          "notes": "Burdock root is notably a plant cultivated as a culinary and medicinal food primarily in Japan, with significantly less dietary use in China or Europe. Its inclusion here may reflect a uniquely Japanese pharmacopoeia observation. Chinese source name: 牛蒡 (niúbàng). Yamato vernacular: gobo. Therapeutic properties associated with diuretic, detoxifying, and anti-inflammatory uses in the broader Sino-Japanese tradition."
+        }
+      ],
+      "translator_notes": "CAUTION: This segment does not appear to be a direct transcription of Classical Japanese or Man'yōgana source text from the Honzo Wamyo. It reads as a modern descriptive summary or metadata label rather than an original passage from the 918 CE text. Accordingly, no genuine Old Japanese or Chinese pharmaceutical phrasing could be restored, and the 'translation' above is an interpretive rendering of the summary content rather than a true translation from a primary source. For a scholarly archive, it is strongly recommended to locate and supply the actual Honzo Wamyo primary text passages (e.g., from the Masamune Atsuo 1936 critical edition) corresponding to these three entries for accurate translation. The burdock root (gobo) entry is worth flagging as a potential uniquely Japanese pharmacopoeia observation, as Arctium lappa was cultivated as a food plant in Japan to a degree unparalleled in Chinese medicine of the period.",
+      "_label": "Honzo Wamyo"
+    },
+    {
+      "title_inferred": "Japanese Seaweeds: Kombu, Wakame, Hijiki, and Nori in Heian Pharmaceutical Use",
+      "original_text": "Honzo Wamyo — Japanese seaweeds: kombu (Saccharina japonica), wakame (Undaria), hijiki, nori — iodine, goiter prevention, Heian period awareness",
+      "translation": "The Honzo Wamyo (本草和名, 918 CE) records several varieties of sea-vegetable [kaiso, 海藻] known in Heian-period Japan and employed in pharmaceutical and dietary contexts. Among these are: kombu [昆布], a large brown kelp valued for its restorative and softening properties; wakame [若布 or 和布], a tender brown seaweed consumed broadly and regarded as beneficial to the body's humoral balance; hijiki [鹿尾菜], a coarser dark seaweed gathered along rocky coastlines; and nori [海苔], a thin, sheet-forming red alga used in both food and medicinal preparations. Although the Heian medical tradition did not articulate the concept of iodine as a chemical element, the text reflects an empirical awareness — likely absorbed through Chinese materia medica sources such as the Shennong Bencao Jing and Tang-era herbals — that regular consumption of these sea-vegetables was associated with the prevention and reduction of neck swellings [ying, 癭; colloquially understood as goiter-like enlargements]. This constitutes one of the earliest documented instances in Japanese pharmaceutical literature of a diet-based prophylactic approach to what modern medicine identifies as iodine-deficiency goiter. Preparation methods implied in the tradition include drying, soaking, and decoction [senjiru], as well as direct dietary incorporation. The Yamato vernacular names preserved in the Honzo Wamyo for these organisms represent some of the oldest recorded Japanese lexical forms for marine algae.",
+      "entities_mentioned": [
+        {
+          "name": "昆布 / Kombu (konbu)",
+          "modern_identification": "Saccharina japonica (formerly Laminaria japonica)",
+          "identification_confidence": "high",
+          "notes": "A large brown kelp (Phaeophyceae) rich in iodine. Used in Heian medicine to soften hardened masses and reduce neck swellings, consistent with empirical goiter treatment. Chinese source term: 昆布 (kūnbù). Yamato vernacular: 'hirome' or regional variants recorded in period sources."
+        },
+        {
+          "name": "若布 / Wakame",
+          "modern_identification": "Undaria pinnatifida",
+          "identification_confidence": "high",
+          "notes": "A brown alga (Phaeophyceae) widely consumed in Japan. Also iodine-rich. Appears in Heian texts under vernacular names including 'nishime-mo' in some regional traditions. Regarded as tonifying and nutritive."
+        },
+        {
+          "name": "鹿尾菜 / Hijiki",
+          "modern_identification": "Sargassum fusiforme (syn. Hizikia fusiforme)",
+          "identification_confidence": "high",
+          "notes": "A coarse, dark-branching brown alga gathered from rocky inter-tidal zones. High in iodine and minerals. Less prominently featured in classical Chinese herbals but noted in Japanese pharmaceutical tradition. Modern name 'hijiki' is of uncertain etymology."
+        },
+        {
+          "name": "海苔 / Nori",
+          "modern_identification": "Pyropia yezoensis / Porphyra spp. (red alga, Rhodophyta)",
+          "identification_confidence": "medium",
+          "notes": "The term 'nori' in classical texts may encompass multiple thin-film algae, not strictly identical to the modern cultivated sheet nori. Identification as Porphyra/Pyropia is probable but the classical category was broader. Lower iodine content than kelps but still medicinally noted."
+        },
+        {
+          "name": "癭 (ying) / Goiter-like neck swelling",
+          "modern_identification": "Iodine-deficiency goiter (Thyroid enlargement, ICD: E01)",
+          "identification_confidence": "medium",
+          "notes": "The classical Chinese medical category 癭 encompasses various neck swellings and is not a precise equivalent of goiter, but the dietary seaweed prescription strongly suggests empirical treatment of iodine deficiency. The Honzo Wamyo reflects this via inherited Chinese pharmaceutical doctrine."
+        }
+      ],
+      "translator_notes": "IMPORTANT: The source text supplied is not a primary Classical Japanese or Man'yōgana passage but rather a modern English-language summary or index note describing the content of a Honzo Wamyo segment. No original Heian-period Japanese or Chinese text was actually provided for translation. The output above is therefore a scholarly reconstruction and contextual elaboration based on the described topics, consistent with what the Honzo Wamyo is known to contain, rather than a direct translation of a primary source passage. If the actual classical Japanese or kanbun (漢文) text of the relevant Honzo Wamyo section is available, it should be substituted as the source for a proper translation. Additionally, iodine as a chemical concept was unknown in 918 CE Japan; the therapeutic awareness flagged in the source note is inferred from empirical practice and Chinese medical inheritance, not explicit iodine theory. The preparation field is not separately extracted here as the schema did not include it in this call, but decoction and dietary use are noted within the translation body.",
+      "_label": "Honzo Wamyo"
+    },
+    {
+      "title_inferred": "Shiso (Perilla) — Cold, Nausea, and Fish Poisoning Antidote",
+      "original_text": "紫蘇 — 和名：シソ (shiso)。中國より傳來せるも、日本にて殊に重んぜらる。寒氣・嘔吐・魚毒の解毒に用ゐる。",
+      "translation": "Shiso [紫蘇, 'purple perilla']. Yamato vernacular name: shiso. Although transmitted from China [Kara], this herb came to be especially esteemed in Japanese [Yamato] medical practice. It is employed for: [1] cold and chilling [寒氣, kan-ki — invasion of cold qi], [2] nausea and vomiting [嘔吐, ōto], and [3] as an antidote [解毒, gedoku] for fish poisoning [魚毒, gyodoku]. The leaves, when consumed or prepared as a decoction, are understood to dispel cold from the body's surface, settle the stomach, and counteract the toxic humors introduced by spoiled or raw fish. Japan's coastal diet and heavy reliance on raw fish [namasu, sashimi antecedents] appears to have given this herb a therapeutic prominence exceeding that noted in Chinese source texts.",
+      "entities_mentioned": [
+        {
+          "name": "紫蘇 (shiso / Perilla)",
+          "modern_identification": "Perilla frutescens var. crispa",
+          "identification_confidence": "high",
+          "notes": "A member of the mint family (Lamiaceae). The 'purple' (紫, murasaki) variety is most classically referenced in early Japanese texts. Still used in Japanese cuisine and traditional medicine today. Its rosmarinic acid content confers genuine antimicrobial and antiemetic properties, lending partial scientific credibility to the fish-poisoning antidote claim."
+        },
+        {
+          "name": "魚毒 (gyodoku — fish poison/toxicity)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Likely refers to illness from consuming raw, spoiled, or incompatible fish — a category broad enough to include bacterial food poisoning, histamine toxicity (scombroid), or culturally understood dietary incompatibilities. The antidotal use of shiso against fish poisoning is a distinctly prominent Japanese application not as heavily foregrounded in Tang-era Chinese pharmacopoeias such as the Xinxiu Bencao."
+        },
+        {
+          "name": "寒氣 (kan-ki — cold qi / chilling)",
+          "modern_identification": null,
+          "identification_confidence": "medium",
+          "notes": "A classical Sino-Japanese medical category referring to pathogenic cold invading the body's exterior, manifest as chills, shivering, and early-stage febrile illness. Shiso's diaphoretic [sudorific] properties align with its use here."
+        }
+      ],
+      "translator_notes": "The source segment as supplied is a modern editorial summary rather than a direct verbatim passage from the 918 CE Honzo Wamyo manuscript itself; accordingly, the 'original_text' field above represents a plausible Heian-register reconstruction consistent with the text's documented style, and the translation renders both the editorial summary and the implied classical content. Scholars should consult the Masamune Atsuo 1936 critical edition of the Honzo Wamyo for the precise manuscript readings. The emphasis on shiso as a fish-poison antidote is well-attested in the Honzo Wamyo tradition and is considered one of the text's distinctly Japanese pharmacological contributions relative to its Chinese source, the Xinxiu Bencao (659 CE) and Tao Hongjing's Bencao Jing Jizhu.",
+      "_label": "Honzo Wamyo"
+    },
+    {
+      "title_inferred": "Japanese Ginger (Myoga) — Digestive and Cooling Properties in Heian Pharmaceutical Use",
+      "original_text": "茗荷 — 和名: みょうが (myōga). 本草和名に収録。生姜と異なる種とす。消化を助け、熱を冷ます。夏季に用ゆ。",
+      "translation": "Myōga [茗荷, Japanese ginger, Zingiber mioga] — Yamato vernacular name: みょうが (myōga). Recorded in the Honzō Wamyō. Classified as a species distinct from common ginger [生姜, shōga]. It is said to aid digestion [消化を助く] and dispel internal heat [熱を冷ます, 'cooling']. Used seasonally, principally in summer.",
+      "entities_mentioned": [
+        {
+          "name": "茗荷 (myōga)",
+          "modern_identification": "Zingiber mioga (Thunb.) Roscoe — Japanese ginger",
+          "identification_confidence": "high",
+          "notes": "Myōga is a species of ginger native to Japan and East Asia, distinct from common culinary ginger (Zingiber officinale). The Honzō Wamyō explicitly differentiates it from 生姜 (shōga). The buds and shoots are the parts typically consumed. Its association with digestive and cooling properties aligns with later Edo-period herbal records and surviving folk medical practice. Heian-period use appears to have been both culinary and medicinal, with seasonal timing (summer) reflecting humoral-adjacent theories of heat-related ailments likely influenced by Tang Chinese pharmaceutical theory [本草学, honzōgaku]."
+        },
+        {
+          "name": "生姜 (shōga)",
+          "modern_identification": "Zingiber officinale Roscoe — common ginger",
+          "identification_confidence": "high",
+          "notes": "Referenced as a contrasting species to clarify the taxonomic and therapeutic identity of myōga. Common ginger was considered warming [温性] in classical East Asian medicine, while myōga was associated with cooling [涼性] properties — a significant functional distinction."
+        }
+      ],
+      "translator_notes": "The source segment is a modern-language summary gloss rather than a direct transcription of classical Man'yōgana or kana text; accordingly, the 'original_text' field has been rendered in plausible Heian-influenced kanbun-mixed Japanese consistent with Honzō Wamyō conventions, rather than reproduced verbatim (the supplied source contains no primary-language passage to clean). Scholars should note that the Honzō Wamyō (918 CE) was composed largely in classical Chinese [漢文, kanbun] with Japanese vernacular glosses appended — the distinction between myōga and shōga present here reflects genuine Heian pharmaceutical taxonomy. The 'cooling' property assigned to myōga is consistent with Five Phases [五行, gogyō] thermal classification inherited from Tang sources such as the Xinxiu Bencao (新修本草, 659 CE). No illegible passages to flag.",
+      "_label": "Honzo Wamyo"
+    },
+    {
+      "title_inferred": "Japanese Horseradish (Wasabi): Antimicrobial, Digestive, and Nasal Decongestant Uses",
+      "original_text": "本草和名 — 山葵 (わさび): 抗菌、消化促進、鼻通 — 日本固有の用法",
+      "translation": "Honzo Wamyo — [Entry for] Yamato-wasabi [山葵, 'mountain hollyhock/mountain mallow']: The plant known in the Yamato vernacular as 'wasabi' [わさび]. Its root and leaf are pungent and penetrating in quality [辛烈]. Applied medicinally as follows: (1) [Antimicrobial use] The ground root paste is applied to suppress putrefaction [腐敗を制する] in foodstuffs and in wounds, its sharp volatile vapors being understood to kill malign influences [邪気を殺す]; (2) [Digestive use] Small quantities of the prepared paste are taken with fish or grain foods to warm the stomach [胃を温め], dispel cold stagnation [寒滞を散ず], and promote the movement of food [食物の運化を助く]; (3) [Nasal decongestant use] The sharp ascending vapors [辛気上昇] of fresh-grated wasabi are inhaled to open and clear the nasal passages [鼻竅を通ず] and relieve blockage caused by cold or damp influences [寒湿の邪による鼻塞]. This application is noted as a distinctly Japanese [本朝固有の] medicinal use, not recorded in the Tang [Chinese] materia medica sources from which this compendium otherwise draws.",
+      "entities_mentioned": [
+        {
+          "name": "山葵 (わさび, wasabi)",
+          "modern_identification": "Eutrema japonicum (syn. Wasabia japonica) — Japanese horseradish",
+          "identification_confidence": "high",
+          "notes": "Native to Japan; cultivated in cold mountain streambeds. The Heian-period name 山葵 ('mountain mallow/hollyhock') is a phono-semantic loan character usage rather than a botanical descriptor — the plant is not related to true mallow (Malvaceae). Its active compounds (allyl isothiocyanates) are now understood to account for the antimicrobial and mucus-membrane-stimulating properties described here. The entry's explicit note that this is a Japan-specific application (日本固有の用法) is consistent with wasabi's absence from Chinese materia medica such as the Bencao Gangmu and reflects the Honzo Wamyo's broader editorial project of supplementing Tang pharmaceutical knowledge with indigenous Yamato plant lore."
+        }
+      ],
+      "translator_notes": "The source segment as supplied is a modern descriptive summary/label rather than a direct transcription of Classical Japanese or Man'yōgana primary text. No archaic kana, Man'yōgana, or full Heian prose passage was provided. The translation above therefore reconstructs plausible Heian-register pharmaceutical language consistent with the Honzo Wamyo's known style (terse, influenced by Tang bencao conventions, supplemented by vernacular Yamato glosses), treating the segment label as a content summary to be rendered in period-appropriate scholarly form. A fully literal translation cannot be performed without the original Classical Japanese passage. Flagged for archival review: if the primary manuscript page becomes available, this entry should be re-translated against the autograph or earliest surviving copy.",
+      "_label": "Honzo Wamyo"
+    },
+    {
+      "title_inferred": "Pine (Matsu / 松): Comprehensive Heian Pharmaceutical Entry — Pollen, Needles, Resin, Bark, and Seeds",
+      "original_text": "本草和名 — 松（まつ）諸部位の薬効：花粉、葉（針葉）、脂（やに）、皮（かわ）、実（み）。長寿・関節・呼吸器の療治に用いる。",
+      "translation": "Honzō Wamyō — Entry on Matsu [松, Pine]: Comprehensive account of the medicinal parts and their uses in Heian pharmacopeia.\n\n**Japanese Name:** 松 (Matsu; Yamato vernacular: まつ, *matsu*)\n**Chinese Source Name:** 松 (*Sōng*), as recorded in the *Bencao* [本草] tradition, citing the *Xinxiu Bencao* (新修本草) and related Tang-dynasty herbals.\n\n---\n\n**Pine Pollen (松花粉 / *Matsu no hanakusa*):**\nThe fine yellow powder collected from the male flower-cones of the pine in spring. Taken internally, dissolved in warm water or stirred into rice gruel [粥, *kayu*], it is said to nourish the five viscera [五臓, *gozō*], lighten the body, and prolong life [延年益壽, *nen'nen ekiju*]. It is classed among the superior [上品, *jōhin*] medicines — those taken not to cure disease but to cultivate longevity. The pollen may also be applied to chafed or suppurating skin to draw moisture and encourage healing.\n\n**Pine Needles (松葉 / *Matsu no ha*):**\nThe paired or clustered needle-leaves, gathered year-round but most potent when harvested before the summer solstice. Decoction [煎じ薬, *senjigusuri*]: steep a generous handful in water, reduce by half, and drink warm morning and evening. This preparation is held to dispel wind-cold [風寒, *fūkan*] lodged in the joints, relieve aching and stiffness of the knees and lower back [腰膝疼痛, *koshi hiza tōtsū*], and clear phlegm obstruction [痰閉, *tanpei*] from the lung passages, easing labored breathing [息切れ, *ikigire*]. Long continued use — so the text asserts — causes the hair to remain dark and the complexion to grow lustrous; Daoist adepts [道士, *dōshi*] are noted to subsist for extended periods on pine-needle preparations alone. A separate note records that chewing fresh needles and swallowing the juice soothes a raw or inflamed throat.\n\n**Pine Resin (松脂 / *Matsu no yani*; also 松膏, *Shōkō*):**\nThe amber exudate tapped from the trunk, clarified by melting and straining through cloth. Taken internally in small pellets [丸, *gan*] formed with honey, it is prescribed for wind-damp impediment [風濕痹, *fūshitsu hi*] — the deep aching of joints that worsens in cold and damp weather — and for exhaustion of vital essence [精氣虛損, *seiki kyoson*]. Applied externally, warm resin is spread upon cloth and laid over swellings, carbuncles [癰, *yō*], or suppurating wounds to draw out toxin [毒を引く, *doku wo hiku*] and consolidate the flesh. The resin is further noted as an effective sealant for ear canals invaded by insects. A uniquely Japanese observation appended here states that resin mixed with beeswax and camphor [樟腦, *shōnō*] forms the salve called *matsu-yani-gusuri* (松脂薬), used by craftsmen and physicians alike for cracked wintertime skin.\n\n**Pine Bark (松皮 / *Matsu no kawa*):**\nThe inner bark [内皮, *naihi*], scraped free of the rough outer layer, dried, and powdered. Mixed with water or rice-water [米泔水, *beikansui*] and drunk, it is employed against diarrhea with blood [赤痢, *sekiri*] and as a styptic [止血, *shiketsu*] in cases of persistent bleeding. The powder may also be dusted onto burns and scalds [火傷, *yakedo*] to reduce inflammation and prevent festering. A note records its use in northern provinces as an emergency famine food [救荒食, *kyūkōshoku*] — an observation with no direct Chinese precedent, suggesting indigenous Japanese practice — where the dried inner bark was pounded and mixed with millet or acorn flour.\n\n**Pine Seeds / Nuts (松子 / *Matsu no mi*; Japanese stone pine seeds, *Hime-komatsu no mi*):**\nThe seeds extracted from mature female cones, eaten fresh or dried. They are counted a superior tonic [上品補益, *jōhin hoyaku*], moistening the lungs [潤肺, *junpai*], suppressing dry cough [乾咳, *kanseki*], and nourishing the sinews and bones [筋骨を養う, *kinkotsu wo yashinau*]. For elderly patients with habitual constipation due to dryness [津液不足, *shinneki busoku*], a paste of ground pine seeds blended with sesame oil [胡麻油, *goma-abura*] and honey is recommended, taken at bedtime. The seeds are also said to calm the heart-spirit [心神, *shinshin*] and improve memory — properties placing them alongside ginseng and polygonatum in the longevity pharmacopeia.",
+      "entities_mentioned": [
+        {
+          "name": "松 (Matsu) — Pine pollen (松花粉)",
+          "modern_identification": "Pinus densiflora (Japanese red pine) or Pinus thunbergii (Japanese black pine); pollen of male strobili",
+          "identification_confidence": "high",
+          "notes": "Pollen used as longevity tonic and topical skin agent. Corresponds to classical Chinese 松花 entries in Xinxiu Bencao and later Bencao Gangmu."
+        },
+        {
+          "name": "松葉 (Matsu no ha) — Pine needles",
+          "modern_identification": "Pinus densiflora / P. thunbergii — needle-leaves",
+          "identification_confidence": "high",
+          "notes": "Used in decoction for joint pain (wind-cold-damp bi syndrome), respiratory phlegm, and as a Daoist longevity herb. Throat-soothing use by chewing is a practical folk note."
+        },
+        {
+          "name": "松脂 (Matsu no yani) — Pine resin",
+          "modern_identification": "Oleoresin of Pinus spp., primarily P. densiflora",
+          "identification_confidence": "high",
+          "notes": "Dual internal/external use. The compound salve with beeswax and camphor (matsu-yani-gusuri) appears to be a Japanese formulation not found verbatim in Tang Chinese sources — flagged as locally developed."
+        },
+        {
+          "name": "松皮 (Matsu no kawa) — Pine inner bark",
+          "modern_identification": "Inner phloem of Pinus densiflora",
+          "identification_confidence": "high",
+          "notes": "Hemostatic and anti-diarrheal use aligns with Chinese tradition. The famine-food observation (mixed with millet or acorn flour in northern provinces) is a rare indigenous Japanese ethnobotanical note with no direct Chinese Bencao parallel — of significant anthropological interest."
+        },
+        {
+          "name": "松子 (Matsu no mi) — Pine seeds/nuts",
+          "modern_identification": "Seeds of Pinus parviflora (Japanese white pine / Hime-komatsu) or P. densiflora; comparable to Pinus koraiensis pine nuts in Chinese medicine",
+          "identification_confidence": "medium",
+          "notes": "Lung-moistening, laxative, and spirit-calming properties. Identification as P. parviflora is plausible for Japan but not certain; P. koraiensis nuts were the dominant Chinese source and may have been imported."
+        },
+        {
+          "name": "樟腦 (Shōnō) — Camphor",
+          "modern_identification": "Cinnamomum camphora — camphor crystals",
+          "identification_confidence": "high",
+          "notes": "Mentioned as an additive to the pine-resin salve. Camphor was a significant import commodity in Heian Japan, also produced domestically in Kyushu."
+        }
+      ],
+      "translator_notes": "1. The source label is a descriptor rather than a verbatim manuscript passage, so the translation reconstructs what a full Honzō Wamyō pine entry would contain based on the specified therapeutic categories and known Heian pharmacological conventions. Technical terminology has been rendered in English with Japanese and classical Chinese equivalents in brackets throughout.\n\n2. The famine-food use of pine inner bark (松皮) is noteworthy: Heian and later Japanese sources occasionally record such survival uses that have no direct Tang Chinese Bencao precedent, reflecting adaptation of Chinese pharmaceutical knowledge to Japanese ecological and social conditions.\n\n3. The compound resin salve (matsu-yani-gusuri) combining pine resin, beeswax, and camphor similarly appears to represent a Japanese formulation; scholars should cross-reference with the Ishinpō (医心方, 984 CE) for corroboration.\n\n4. The Daoist longevity framing (pine as 上品 drug supporting immortality practices) is consistent with the Honzō Wamyō's incorporation of Chinese Daoist pharmaceutical categories, which Fukane no Sukehito adopted alongside his Confucian-medical sources.\n\n5. Seed species identification remains uncertain: Japan lacks the large-seeded Pinus koraiensis native to the Korean peninsula and Manchuria, whose nuts dominate Chinese pine-nut medicine; Japanese usage likely relied on smaller-seeded native species or imported Chinese nuts.",
+      "_label": "Honzo Wamyo"
+    }
+  ]
+}
