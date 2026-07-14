@@ -1257,7 +1257,36 @@
   .xref-breadcrumb.visible { display:flex; }
   .xref-back-btn { background:none; border:1px solid var(--border); color:var(--ink); padding:0.2rem 0.6rem; cursor:pointer; font-family:var(--font-code); font-size:0.58rem; white-space:nowrap; }
   .xref-back-btn:hover { background:rgba(196,168,130,0.15); }
-  </style>
+  
+  /* ── Hidden UI elements (search overlay, toasts) ── */
+  .search-results-overlay { display:none; position:fixed; inset:0; z-index:1000;
+    background:rgba(0,0,0,0.5); }
+  .search-results-overlay.active { display:flex; align-items:flex-start;
+    justify-content:center; padding-top:4rem; }
+  .search-results-panel { background:var(--vellum); width:min(700px,96vw);
+    max-height:80vh; border-radius:4px; overflow:hidden; display:flex;
+    flex-direction:column; }
+  .search-results-header { padding:0.8rem 1rem; border-bottom:1px solid var(--border);
+    display:flex; justify-content:space-between; align-items:center; }
+  .search-results-title { font-family:var(--font-code); font-size:0.75rem;
+    color:var(--muted); letter-spacing:0.06em; }
+  .search-results-close { background:none; border:none; cursor:pointer;
+    font-size:1.1rem; color:var(--muted); }
+  .search-results-body { overflow-y:auto; flex:1; padding:0.5rem 0; }
+  .search-loading { display:none; padding:2rem; text-align:center;
+    font-family:var(--font-code); font-size:0.75rem; color:var(--muted); }
+  .search-loading.visible { display:block; }
+  .search-loading-spinner { width:20px; height:20px; border:2px solid var(--border);
+    border-top-color:var(--gold); border-radius:50%; animation:spin 0.8s linear infinite;
+    margin:0 auto 0.5rem; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .deeplink-toast { position:fixed; bottom:1.5rem; left:50%; transform:translateX(-50%);
+    background:var(--ink); color:var(--vellum); padding:0.5rem 1.2rem;
+    border-radius:20px; font-family:var(--font-code); font-size:0.72rem;
+    opacity:0; pointer-events:none; transition:opacity 0.3s;
+    z-index:9999; white-space:nowrap; }
+  .deeplink-toast.show { opacity:1; }
+</style>
 </head>
 
 <body>
@@ -1447,6 +1476,7 @@
 
 
 <script>
+
 // ── State ────────────────────────────────────────────────
 var plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [], illustrationsData = {};
 var activeStatusFilter = null, activeTraditions = new Set();
@@ -2674,30 +2704,9 @@ btn.textContent = '▾ Hide abstract';
 loadData().then(() => {
 renderPriority();
 });
-</script>
-<!-- ── GLOBAL SEARCH RESULTS OVERLAY ───────────────────────── -->
-<div class="search-results-overlay" id="search-overlay" onclick="handleOverlayClick(event)">
-<div class="search-results-panel">
-  <div class="search-results-header">
-    <span class="search-results-title" id="search-results-title">Searching the archive…</span>
-    <button class="search-results-close" onclick="closeSearch()">✕</button>
-  </div>
-  <div class="search-results-body" id="search-results-body">
-    <div class="search-loading">
-      <div class="search-loading-spinner"></div><br>
-      Consulting 18 traditions…
-    </div>
-  </div>
-</div>
-</div>
-<div class="deeplink-toast" id="deeplink-toast">✓ Link copied to clipboard</div>
 
+// ══ MERGED: Library & Book Reader ══
 
-<footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #E2DED6;margin-top:2rem;background:var(--vellum,#F7F5F0)">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
-
-</div>
-
-<script>
 // ══ PLANTACOPIA LIBRARY & BOOK READER ══════════════════════
 
 var WHO_COVER_URI = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNTAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzAwMUEzMyIvPjxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0ODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRBOUZENCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjYiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSI2MCIgcj0iMzIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRBOUZENCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjciLz48cGF0aCBkPSJNMjAwLDI4IFEyMTAsNjAgMjAwLDkyIFExOTAsNjAgMjAwLDI4WiIgZmlsbD0iIzRBOUZENCIgb3BhY2l0eT0iMC40Ii8+PHBhdGggZD0iTTE2OCw2MCBRMjAwLDUwIDIzMiw2MCBRMjAwLDcwIDE2OCw2MFoiIGZpbGw9IiM0QTlGRDQiIG9wYWNpdHk9IjAuNCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+V09STEQgSEVBTFRIIE9SR0FOSVpBVElPTjwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE3IiBmaWxsPSIjQThENEYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5XSE8gTW9ub2dyYXBoczwvdGV4dD48dGV4dCB4PSIyMDAiIHk9IjIyMCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjQThENEYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5vbiBTZWxlY3RlZCBNZWRpY2luYWwgUGxhbnRzPC90ZXh0PjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwMCwzNDApIj48Y2lyY2xlIGN4PSItNjAiIGN5PSItMjAiIHI9IjI4IiBmaWxsPSIjMEQ0QTdBIiBzdHJva2U9IiM0QTlGRDQiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC43Ii8+PHRleHQgeD0iLTYwIiB5PSItMTQiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+STwvdGV4dD48Y2lyY2xlIGN4PSIwIiBjeT0iLTIwIiByPSIyOCIgZmlsbD0iIzBENEE3QSIgc3Ryb2tlPSIjNEE5RkQ0IiBzdHJva2Utd2lkdGg9IjEiIG9wYWNpdHk9IjAuNyIvPjx0ZXh0IHg9IjAiIHk9Ii0xNCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjNEE5RkQ0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JSTwvdGV4dD48Y2lyY2xlIGN4PSI2MCIgY3k9Ii0yMCIgcj0iMjgiIGZpbGw9IiMwRDRBN0EiIHN0cm9rZT0iIzRBOUZENCIgc3Ryb2tlLXdpZHRoPSIxIiBvcGFjaXR5PSIwLjciLz48dGV4dCB4PSI2MCIgeT0iLTE0IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0QTlGRDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPklJSTwvdGV4dD48Y2lyY2xlIGN4PSIwIiBjeT0iNDIiIHI9IjI4IiBmaWxsPSIjMEQ0QTdBIiBzdHJva2U9IiM0QTlGRDQiIHN0cm9rZS13aWR0aD0iMSIgb3BhY2l0eT0iMC43Ii8+PHRleHQgeD0iMCIgeT0iNDgiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SVY8L3RleHQ+PC9nPjx0ZXh0IHg9IjIwMCIgeT0iNDU1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZmlsbD0iIzRBOUZENCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgb3BhY2l0eT0iMC42Ij45NCBQbGFudHMgLSBWb2x1bWVzIDEtNCAtIDE5OTktMjAwOTwvdGV4dD48L3N2Zz4=";
@@ -3339,7 +3348,31 @@ document.addEventListener('click', function(e) {
   var card = e.target.closest('.xref-card');
   if (card) { jumpToXref(card.getAttribute('data-trad'), parseInt(card.getAttribute('data-cidx'),10)); }
 });
+
 </script>
+<!-- ── GLOBAL SEARCH RESULTS OVERLAY ───────────────────────── -->
+<div class="search-results-overlay" id="search-overlay" onclick="handleOverlayClick(event)">
+<div class="search-results-panel">
+  <div class="search-results-header">
+    <span class="search-results-title" id="search-results-title">Searching the archive…</span>
+    <button class="search-results-close" onclick="closeSearch()">✕</button>
+  </div>
+  <div class="search-results-body" id="search-results-body">
+    <div class="search-loading">
+      <div class="search-loading-spinner"></div><br>
+      Consulting 18 traditions…
+    </div>
+  </div>
+</div>
+</div>
+<div class="deeplink-toast" id="deeplink-toast">✓ Link copied to clipboard</div>
+
+
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #E2DED6;margin-top:2rem;background:var(--vellum,#F7F5F0)">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
+
+</div>
+
+
 
 
 <!-- Breadcrumb return bar -->
