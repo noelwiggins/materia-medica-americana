@@ -1,0 +1,427 @@
+{
+  "segments": [
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 36-42",
+      "text": "Ebers Papyrus cols 36-42: Remedies for diseases of the stomach — wekhedu (rot/putrefaction), constipation, bloating, stomach pain. Includes aloe, figs, frankincense, castor oil preparations.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 43-49",
+      "text": "Ebers Papyrus cols 43-49: Remedies for intestinal worms and parasites — prescriptions using pomegranate root bark, wormwood, male fern, and date wine. Also recipes for expelling tapeworms.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 50-56",
+      "text": "Ebers Papyrus cols 50-56: Remedies for liver and spleen disorders — preparations using kyphi (compound resin), myrrh, sycamore figs, and heated mineral preparations.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 57-62",
+      "text": "Ebers Papyrus cols 57-62: Recipes for cough, asthma, and chest diseases — steam inhalations, honey preparations, milk with carob, fig decoctions.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 99-102",
+      "text": "Ebers Papyrus cols 99-102: The heart treatise — Egyptian physicians' understanding of cardiac disease, blood vessels, and pulse. 46 vessels described. Remedies: garlic, onion, natron, resins.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 336-356",
+      "text": "Ebers Papyrus cols 336-356: Eye diseases — remedies for clouding of the eye (cataracts), night blindness, infections. Ingredients: malachite (green eye paint), kohl, honey, human milk.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 357-383",
+      "text": "Ebers Papyrus cols 357-383: Further eye remedies — inflammation, weeping eyes, growths on the eyelid. Preparations using blood of lizards, bile of tortoise, goose fat.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 384-431",
+      "text": "Ebers Papyrus cols 384-431: Comprehensive eye treatment — 96 prescriptions for every condition of the eye. Includes the famous remedy for night blindness (liver of ox = vitamin A).",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 432-452",
+      "text": "Ebers Papyrus cols 432-452: Skin diseases and burns — remedies for itching, crusts, scaling skin. Ingredients: honey, wax, natron, red ochre, carob, aloe.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 453-465",
+      "text": "Ebers Papyrus cols 453-465: Remedies for burns and scalding — cooling preparations using water of carob pods, cucumber juice, oil of Ben tree (Moringa). Also wound infections.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 466-483",
+      "text": "Ebers Papyrus cols 466-483: Remedies for tumours, cysts, and swellings — external applications, incantations combined with medicinal plants, resin preparations.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 461-471",
+      "text": "Ebers Papyrus cols 461-471: Hair and scalp remedies — treatment for baldness, grey hair, dandruff. Includes fat of hippopotamus, crocodile, serpent, ibex mixed with plant extracts.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 783-801",
+      "text": "Ebers Papyrus cols 783-801: Gynecological remedies — treatments for menstrual disorders, uterine prolapse, vaginal infections. Ingredients: dates, beer, cedar oil, acacia.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 802-820",
+      "text": "Ebers Papyrus cols 802-820: Contraception and fertility — contraceptive pessaries using acacia tips ground with honey; remedies to promote conception; pregnancy tests.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 821-839",
+      "text": "Ebers Papyrus cols 821-839: Childbirth remedies — to accelerate labor: saffron in beer; to relieve pain: plant oil applications; for retained placenta: onion bulb preparations.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 840-854",
+      "text": "Ebers Papyrus cols 840-854: Remedies for bites of animals — crocodile bites, hippo bites, dog bites. Antibacterial preparations: honey, fat, resins, incantations combined.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 855-869",
+      "text": "Ebers Papyrus cols 855-869: Remedies for snake bites — specific antidotes for cobra, viper, horned viper. Key ingredient: blood of cobra used homeopathically; plant antidotes.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus cols 870-877",
+      "text": "Ebers Papyrus cols 870-877: Remedies for scorpion stings and insect bites — cooling preparations, plant poultices, incantations. Includes the use of the djed plant.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Kyphi (kapet): the sacred Egyptian compound incense and medicine. 16 ingredients including raisins, wine, honey, myrrh, juniper, calamus, lemongrass. Used for respiratory diseases and as a sedative.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Materia medica: catalogued drugs. Complete list of plant, animal, and mineral drugs used across all prescriptions — over 700 substances identified. Key plants: castor oil plant, lotus, mandrake, sycamore fig, pomegranate, acacia.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Plant oils and fats: medicinal uses of castor oil (kiki), olive oil, moringa oil (balanites), linseed oil, goose fat, beef fat, and crocodile fat in Egyptian pharmacy.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Honey and bee products: honey as the primary wound dressing in ancient Egyptian medicine. Also beeswax (for ointments), bee larvae (protein), propolis (antibacterial).",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Mineral drugs: natron (sodium carbonate), malachite (copper carbonate), red ochre (iron oxide), lead sulfide (galena/kohl), alum, calcite, salt. All with specific therapeutic applications.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Garlic (Allium sativum) in Egyptian medicine: extensive use across the papyrus — 22 separate prescriptions. For heart disease, tumours, infestations, infections. Workers at Giza paid in garlic.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Onion (Allium cepa) in Egyptian medicine: 14 prescriptions. For coughs, fevers, skin conditions. Found in the tombs of pharaohs.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Fig (Ficus sycomorus, sycamore fig) in Egyptian medicine: the primary sweet vehicle for medicines. Used in 59 prescriptions. Also specific therapeutic actions.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Acacia (Acacia nilotica, shont) in Egyptian medicine: pods, bark, gum, seeds used across 47 prescriptions. Antibacterial, astringent. Key ingredient in contraceptive pessaries.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Castor oil plant (Ricinus communis, degem) in Egyptian medicine: 30 prescriptions. Laxative, skin conditions, head complaints, hair growth.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Pomegranate (Punica granatum, inhemen) in Egyptian medicine: bark used as anthelmintic (tapeworm). Fruit for digestive issues. One of the most scientifically validated Egyptian remedies.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Frankincense (Boswellia sacra, sonter) in Egyptian medicine: 43 prescriptions. For respiratory disease, skin problems, wounds, and ritual purification. Anti-inflammatory (modern validation).",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Myrrh (Commiphora myrrha, antyw) in Egyptian medicine: 31 prescriptions. Antiseptic, analgesic, for wounds and infections. One of the most exported Egyptian drugs.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Blue lotus (Nymphaea caerulea) in Egyptian medicine: psychoactive and medicinal. Contains apomorphine and nuciferine. Used for relaxation, cardiac conditions, reproductive issues.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Moringa (Moringa peregrina, balanites) in Egyptian medicine: oil used extensively. Anti-inflammatory, wound healing, cosmetic. Found in ancient Egyptian tombs.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Cumin (Cuminum cyminum, tepnen) in Egyptian medicine: 19 prescriptions. Digestive, expectorant, externally for pain. Combined with goose fat as ointment base.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Coriander (Coriandrum sativum, shaw) in Egyptian medicine: seeds in prescriptions for digestive disorders, infections, pain relief.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Fenugreek (Trigonella foenum-graecum, hemayt) in Egyptian medicine: 18 prescriptions. Digestive, anti-inflammatory, wound healing. Validated by modern research.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Thyme (Thymus species) in Egyptian medicine: as antimicrobial agent, for chest complaints, wound dressing. Used in mummification process.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Mandrake (Mandragora officinarum, rerery) in Egyptian medicine: soporific, pain relief, anesthesia during procedures. Associated with fertility.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Aloe vera (Aloe succotrina) in Egyptian medicine: wound healing, burns, skin conditions. Cleopatra reportedly used aloe for skin care.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Carob (Ceratonia siliqua, djaret) in Egyptian medicine: pods in digestive remedies, as sweetener base, anti-diarrheal. 14 prescriptions.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Cedar (Cedrus libanotica) in Egyptian medicine: cedar oil imported from Lebanon. Used in 14 prescriptions for skin diseases, wounds, ear complaints, as insect repellent.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Calamus/sweet flag (Acorus calamus) in Egyptian medicine: aromatic stimulant in compound medicines, especially kyphi. Carminative, anti-spasmodic.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Poppy (Papaver species, sepen) in Egyptian medicine: opium-containing prescriptions for pain relief — especially notable in children's colic remedies (poppy seeds + fly excrement).",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Dill (Anethum graveolens) in Egyptian medicine: digestive, carminative, for stomach complaints and intestinal worms.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Lettuce (Lactuca sativa, abu) in Egyptian medicine: sacred to Min (fertility god). Used in aphrodisiac and fertility preparations. Also cooling properties.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Willow (Salix species, tjereret) in Egyptian medicine: bark decoctions for pain and fever — the ancient salicylic acid. Anti-inflammatory validated by modern pharmacology.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    },
+    {
+      "label": "Ebers Papyrus — Ebers Papyrus",
+      "text": "Ebers Papyrus — Juniper (Juniperus species, wan) in Egyptian medicine: berries and oil in 14 prescriptions. For urinary complaints, digestive disorders, joint pain.",
+      "_meta": {
+        "tradition": "egyptian",
+        "_corpusKey": "ebers_expanded",
+        "source_section": "Papyrus Ebers (c.1550 BCE)"
+      }
+    }
+  ]
+}
