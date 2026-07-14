@@ -1585,7 +1585,9 @@ function renderBookPage() {
   }
 
   const transEl = document.getElementById('book-translation');
-  var transHTML = '<p>' + (seg.translation || '').replace(/\n\n/g, '</p><p>').replace(/\n/g, ' ') + '</p>';
+  var _rawTrans = (seg.translation || '').replace(/\n\n/g, ' ').replace(/\n/g, ' ');
+  var _tradId = bookTradition && bookTradition.id;
+  var transHTML = '<p>' + linkifyText(_rawTrans, _tradId) + '</p>';
   if (seg.preparation || seg.condition) {
     transHTML += '<div class="book-prep">';
     if (seg.preparation) transHTML += '<strong>Preparation</strong>' + seg.preparation;
