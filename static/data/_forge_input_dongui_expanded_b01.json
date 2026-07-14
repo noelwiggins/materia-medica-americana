@@ -1,0 +1,454 @@
+{
+  "segments": [
+    {
+      "label": "Dongui Bogam 내경편1",
+      "text": "Dongui Bogam 내경편1 — Theory of body fluids: jeong (精 essence), gi (氣 energy), shin (神 spirit) — the three treasures of Korean medicine and their plant-based tonics",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편2",
+      "text": "Dongui Bogam 내경편2 — Dream diagnosis and sleep medicine: plants that calm the spirit (An神藥) — acanthopanax, jujube, polygala, amber, longan",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편3",
+      "text": "Dongui Bogam 내경편3 — Voice and speech disorders: treatments for aphonia, hoarseness, loss of voice — bellflower root, licorice, apricot kernel, perilla",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편4",
+      "text": "Dongui Bogam 내경편4 — Hearing and ear diseases: tinnitus, deafness treatments — acanthopanax root, poria, rehmannia compound formulas",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편5",
+      "text": "Dongui Bogam 내경편5 — Nose and smell disorders: nasal polyps, sinusitis, loss of smell — magnolia flower (辛夷), xanthium fruit, coptis",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편6",
+      "text": "Dongui Bogam 내경편6 — Mouth and tongue diseases: oral ulcers, bitter taste, tongue swelling — coptis, scutellaria, gardenia, licorice",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편7",
+      "text": "Dongui Bogam 내경편7 — Teeth and gum disease: toothache, loose teeth, bleeding gums — Korean oak gall, salt preparations, prickly ash",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편8",
+      "text": "Dongui Bogam 내경편8 — Throat diseases: sore throat, tonsillitis, throat abscess — balloon flower, licorice, mint, indigo",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편9",
+      "text": "Dongui Bogam 내경편9 — Back pain and kidney deficiency: Du Huo Ji Sheng Wan adaptation — angelica, loranthus, eucommia, achyranthes",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편10",
+      "text": "Dongui Bogam 내경편10 — Chest pain and palpitations: Korean cardiac medicine — salvia root (단삼), cinnamon, ginseng, schisandra",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편11",
+      "text": "Dongui Bogam 내경편11 — Abdominal masses and accumulations: treatments for gu zheng — zedoary, sparganium, turtle shell, earthworm",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 내경편12",
+      "text": "Dongui Bogam 내경편12 — Edema and fluid retention: water metabolism treatments — alisma, polyporus, poria, cinnamon twig",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 외형편1",
+      "text": "Dongui Bogam 외형편1 — Head and hair: alopecia, premature greying, scalp conditions — fo-ti, eclipta, privet fruit, sesame",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 외형편2",
+      "text": "Dongui Bogam 외형편2 — Eye diseases: Korean treatments for cataracts, glaucoma, night blindness — chrysanthemum, lycium, abalone shell",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 외형편3",
+      "text": "Dongui Bogam 외형편3 — Skin diseases and rashes: urticaria, eczema, psoriasis (Korean approach) — sophora, dictamnus, kochia seeds",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 외형편4",
+      "text": "Dongui Bogam 외형편4 — Wounds and injuries: traumatic injury medicine — san qi (panax pseudoginseng), dragon's blood, catechu",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 외형편5",
+      "text": "Dongui Bogam 외형편5 — Fractures and bone injuries — Korean bone knitting formulas: eucommia, dipsacus, drynaria, achyranthes",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 외형편6",
+      "text": "Dongui Bogam 외형편6 — Anal and rectal conditions: hemorrhoids, rectal prolapse — sophora flower, sanguisorba, cimicifuga",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편1",
+      "text": "Dongui Bogam 잡병편1 — Epidemic diseases and pestilence: Korean protocols for communicable disease — Scutellaria, Coptis, Forsythia, Honeysuckle",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편2",
+      "text": "Dongui Bogam 잡병편2 — Cholera and acute gastroenteritis: Korean emergency protocols — agastache, pinellia, poria, atractylodes",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편3",
+      "text": "Dongui Bogam 잡병편3 — Malaria and intermittent fever: Korean treatment — bupleurum, scutellaria, pinellia, ginseng (Lesser Bupleurum formula)",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편4",
+      "text": "Dongui Bogam 잡병편4 — Jaundice and liver disease: Korean hepatology — artemisia capillaris (인진쑥), gardenia, rhubarb, phellodendron",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편5",
+      "text": "Dongui Bogam 잡병편5 — Diabetes (소갈): Korean treatment of wasting-thirst syndrome — trichosanthes root, ophiopogon, rehmannia, schisandra",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편6",
+      "text": "Dongui Bogam 잡병편6 — Hemorrhage disorders: Korean hemostatics — sanguisorba, agrimony, biota leaf, carbonized hair",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편7",
+      "text": "Dongui Bogam 잡병편7 — Parasites and worms: Korean antiparasitics — chinaberry (苦楝), pumpkin seed, betel nut, pomegranate root",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편8",
+      "text": "Dongui Bogam 잡병편8 — Poisoning and antidotes: Korean toxicology — licorice (universal antidote), mung bean, activated charcoal plants",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편9",
+      "text": "Dongui Bogam 잡병편9 — Emotional disorders and spirit diseases: Korean psychiatry — dragon bone, oyster shell, cinnabar, ziziphus, polygala",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 잡병편10",
+      "text": "Dongui Bogam 잡병편10 — Childhood diseases: pediatric Korean medicine — pearl, scorpion, silkworm, antelope horn for convulsions",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 부인편1",
+      "text": "Dongui Bogam 부인편1 — Menstrual regulation in Korean medicine — peach kernel, carthamus, leonurus, dang gui (Korean angelica)",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 부인편2",
+      "text": "Dongui Bogam 부인편2 — Infertility and reproductive medicine — Korean approach using deer antler, epimedium, cuscuta, morinda",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 부인편3",
+      "text": "Dongui Bogam 부인편3 — Pregnancy care and prenatal medicine — Korean protocols: perilla leaf, ginger, white atractylodes",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 부인편4",
+      "text": "Dongui Bogam 부인편4 — Labor and postpartum: Korean birth medicine — leonurus (익모초), peach kernel, safflower",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam 부인편5",
+      "text": "Dongui Bogam 부인편5 — Postpartum blood stasis and lochia — Korean formulas: Sheng Hua Tang adaptation with Korean angelica",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Indigenous Korean plants not in Chinese pharmacopoeia: Acanthopanax sessiliflorus (가시오갈피, Siberian ginseng), Eleutherococcus senticosus — adaptogen unique to Korean tradition",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Korean pine (Pinus koraiensis, 잣): seeds, needles, resin in Korean medicine — longevity tonic, respiratory, joint",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Korean red pine (Pinus densiflora, 소나무): pollen, inner bark, needles — nutritive tonic, antioxidant, ceremonial",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Korean mugwort (Artemisia princeps, 쑥): moxibustion plant of Korean medicine, warming, menstrual regulation, digestive",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Korean bellflower (Platycodon grandiflorum, 도라지): the quintessential Korean lung herb — cough, abscess, throat",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Korean thistle (Cirsium japonicum, 엉겅퀴): hemostatic, liver protective, Korean endemic use",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Kudzu (Pueraria lobata, 칡): Korean use of root, flower, seed — hangover, fever, stiff neck, Korean folk medicine emphasis",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Persimmon (Diospyros kaki, 감): unripe fruit calyx (시체) for hiccups — uniquely Korean application in Dongui Bogam",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Korean lespedeza (Lespedeza cuneata, 야관문): kidney tonic, male reproductive health — Korean specialty herb",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Omija/Schisandra (Schisandra chinensis, 오미자): the five-flavored fruit — Korean emphasis on lung-kidney-heart tonic",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Gongjin-dan (공진단): the premier Korean tonic formula — deer antler, musk, Angelica gigas, cornus. For kidney-heart insufficiency.",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Ssanghwa-tang (쌍화탕): Korean fatigue formula — white peony, rehmannia, cinnamon, ginger, licorice, jujube, angelica. Now sold as commercial drink.",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Yukmijihwang-tang (육미지황탕): Korean kidney yin formula adapted from Chinese — rehmannia, cornus, yam, poria, alisma, moutan bark",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Saam acupuncture combined with herbal medicine: Korean innovation integrating acupuncture channels with specific herbal protocols",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Sasang constitutional medicine (사상의학): Heo Jun's predecessor framework — four constitutional types (Taeyang, Taeeum, Soyang, Soeum) each requiring different herbs",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Emergency medicine chapter: Korean first aid protocols using patent medicines — bezoar, musk, borneol, realgar compound formulas for sudden unconsciousness",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    },
+    {
+      "label": "Dongui Bogam",
+      "text": "Dongui Bogam — Acupuncture and moxibustion chapter: major acupoints and the specific Korean moxibustion plants — Artemisia vulgaris, dried ginger disk moxibustion",
+      "_meta": {
+        "tradition": "korean",
+        "_corpusKey": "dongui_expanded",
+        "source_section": "Dongui Bogam (Heo Jun, 1613 CE)"
+      }
+    }
+  ]
+}
