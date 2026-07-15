@@ -3495,6 +3495,218 @@ document.addEventListener('click', function(e) {
   if (card) { jumpToXref(card.getAttribute('data-trad'), parseInt(card.getAttribute('data-cidx'),10)); }
 });
 
+
+
+// ══════════════════════════════════════════════════════════════
+// SEARCH, DATABASE, TRADITIONS, CONVERGENCE, LONGEVITY, CORPUS
+// ══════════════════════════════════════════════════════════════
+
+// ── Global search ─────────────────────────────────────────────
+function runGlobalSearch() {
+  var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
+  if (!q) return;
+  showTab('corpus', null);
+  setTimeout(function() {
+    var inp = document.getElementById('corpus-search-input');
+    if (inp) { inp.value = q; filterCorpus(q); }
+  }, 50);
+}
+
+function handleOverlayClick(e) {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.classList.remove('active');
+  }
+}
+
+// ── Tab init: render content when a tab is first opened ───────
+var _tabRendered = {};
+var _origShowTab = showTab;
+showTab = function(id, btn) {
+  _origShowTab(id, btn);
+  if (!_tabRendered[id] && corpusData.length > 0) {
+    _tabRendered[id] = true;
+    if (id === 'database')    renderDatabase('');
+    if (id === 'traditions')  renderTraditionsTab();
+    if (id === 'convergence') renderConvergenceTab('');
+    if (id === 'longevity')   renderLongevityTab();
+    if (id === 'corpus')      renderCorpusTab('');
+    if (id === 'research')    renderResearchTab();
+  }
+};
+
+// ── Plant Database ─────────────────────────────────────────────
+function renderDatabase(filter) {
+  var list = document.getElementById('db-list');
+  if (!list) return;
+  var q = filter.toLowerCase();
+  // Group by plant name across all traditions
+  var plants = {};
+  corpusData.forEach(function(s) {
+    var name = (s.title_inferred||'').split('(')[0].split('—')[0].trim();
+    if (!name || name.length < 2) return;
+    if (q && name.toLowerCase().indexOf(q) === -1 &&
+        (s.condition||'').toLowerCase().indexOf(q) === -1) return;
+    if (!plants[name]) plants[name] = [];
+    plants[name].push(s);
+  });
+  var sorted = Object.keys(plants).sort();
+  if (!sorted.length) {
+    list.innerHTML = '<p style="color:var(--muted);padding:1rem;font-size:0.82rem">No plants found.</p>';
+    return;
+  }
+  list.innerHTML = sorted.slice(0, 200).map(function(name) {
+    var segs = plants[name];
+    var trads = [...new Set(segs.map(function(s){ return s._tradition||s.tradition||''; }))];
+    var tradDots = trads.map(function(t) {
+      var book = BOOKS.find(function(b){ return b.tradition===t||b.id===t; });
+      var col = book ? book.color : '#666';
+      return '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + col + ';margin-right:3px" title="' + (book?book.short:t) + '"></span>';
+    }).join('');
+    var firstTrad = trads[0];
+    var firstBook = BOOKS.find(function(b){ return b.tradition===firstTrad||b.id===firstTrad; });
+    return '<div style="padding:0.55rem 0;border-bottom:1px solid var(--border-subtle);cursor:pointer" onclick="openBook(' +
+      JSON.stringify(firstBook||BOOKS[0]) + ')">' +
+      '<div style="font-weight:500;font-size:0.88rem;margin-bottom:0.2rem">' + name + '</div>' +
+      '<div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">' + tradDots +
+      '<span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">' +
+      segs.length + ' passage' + (segs.length!==1?'s':'') + ' · ' + trads.length + ' tradition' + (trads.length!==1?'s':'') +
+      '</span></div></div>';
+  }).join('') + (sorted.length > 200 ? '<p style="color:var(--muted);font-size:0.75rem;padding:0.5rem 0">Showing 200 of ' + sorted.length + ' — use the filter above to narrow</p>' : '');
+}
+function filterDatabase(q) { renderDatabase(q); }
+
+// ── Traditions ─────────────────────────────────────────────────
+function renderTraditionsTab() {
+  var list = document.getElementById('traditions-list');
+  if (!list) return;
+  list.innerHTML = BOOKS.map(function(book) {
+    var count = corpusData.filter(function(s) {
+      return (book.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); });
+    }).length;
+    return '<div style="display:flex;align-items:center;gap:0.8rem;padding:0.7rem 0;' +
+      'border-bottom:1px solid var(--border-subtle);cursor:pointer" onclick="openBook(' + JSON.stringify(book) + ')">' +
+      '<div style="width:10px;height:10px;border-radius:50%;background:' + (book.color||'#666') + ';flex-shrink:0"></div>' +
+      '<div><div style="font-weight:500;font-size:0.88rem">' + book.title + '</div>' +
+      '<div style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">' +
+      book.date + ' · ' + count + ' passages</div></div></div>';
+  }).join('');
+}
+
+// ── Convergence ────────────────────────────────────────────────
+function renderConvergenceTab(filter) {
+  var list = document.getElementById('convergence-list');
+  if (!list) return;
+  var q = filter.toLowerCase();
+  var plants = {};
+  corpusData.forEach(function(s) {
+    var name = (s.title_inferred||'').split('(')[0].split('—')[0].trim().toLowerCase();
+    if (!name || name.length < 2) return;
+    if (q && name.indexOf(q) === -1) return;
+    if (!plants[name]) plants[name] = { display: (s.title_inferred||'').split('(')[0].trim(), trads: new Set(), segs: [] };
+    var t = s._tradition || s.tradition || '';
+    plants[name].trads.add(t);
+    plants[name].segs.push(s);
+  });
+  var multi = Object.values(plants).filter(function(p){ return p.trads.size >= 2; })
+    .sort(function(a,b){ return b.trads.size - a.trads.size; });
+  if (!multi.length) {
+    list.innerHTML = '<p style="color:var(--muted);padding:1rem;font-size:0.82rem">No cross-tradition matches found yet.</p>';
+    return;
+  }
+  list.innerHTML = multi.slice(0,150).map(function(p) {
+    var tradDots = [...p.trads].map(function(t) {
+      var book = BOOKS.find(function(b){ return b.tradition===t||b.id===t; });
+      return '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' +
+        (book?book.color:'#666') + ';margin-right:3px" title="' + (book?book.short:t) + '"></span>';
+    }).join('');
+    return '<div style="padding:0.55rem 0;border-bottom:1px solid var(--border-subtle)">' +
+      '<div style="font-weight:500;font-size:0.88rem;margin-bottom:0.25rem">' + p.display + '</div>' +
+      '<div style="display:flex;align-items:center;gap:4px">' + tradDots +
+      '<span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">' +
+      p.trads.size + ' traditions · ' + p.segs.length + ' passages</span></div></div>';
+  }).join('');
+}
+function filterConvergence(q) { renderConvergenceTab(q); }
+
+// ── Longevity ──────────────────────────────────────────────────
+function renderLongevityTab() {
+  var list = document.getElementById('longevity-list');
+  if (!list) return;
+  var keywords = ['longevity','immortal','rejuven','eternal','life extension','anti-aging',
+                  'rasayan','jing','tonic','adaptogen','shen','qi tonic','vitality'];
+  var matches = corpusData.filter(function(s) {
+    var text = ((s.translation||'') + (s.condition||'')).toLowerCase();
+    return keywords.some(function(k){ return text.indexOf(k) !== -1; });
+  });
+  if (!matches.length) {
+    list.innerHTML = '<p style="color:var(--muted);padding:1rem;font-size:0.82rem">Loading longevity data…</p>';
+    return;
+  }
+  var seen = new Set();
+  list.innerHTML = matches.filter(function(s) {
+    var key = (s.title_inferred||'').split('(')[0].trim().toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key); return true;
+  }).slice(0,60).map(function(s) {
+    var book = BOOKS.find(function(b){ return (b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); }); });
+    var snippet = (s.translation||'').slice(0,120) + '…';
+    return '<div style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle);cursor:pointer" onclick="openBook(' + JSON.stringify(book||BOOKS[0]) + ')">' +
+      '<div style="font-weight:500;font-size:0.88rem">' + (s.title_inferred||'') + '</div>' +
+      (book ? '<div style="font-family:var(--font-code);font-size:0.6rem;color:' + (book.color||'var(--gold)') + ';margin:0.15rem 0">' + book.short + '</div>' : '') +
+      '<div style="font-size:0.78rem;color:var(--muted);line-height:1.5">' + snippet + '</div></div>';
+  }).join('');
+}
+
+// ── Corpus ─────────────────────────────────────────────────────
+function renderCorpusTab(filter) {
+  var list = document.getElementById('corpus-list');
+  if (!list) return;
+  var q = filter.toLowerCase();
+  var data = q ? corpusData.filter(function(s) {
+    return ((s.title_inferred||'') + (s.translation||'') + (s.condition||'')).toLowerCase().indexOf(q) !== -1;
+  }) : corpusData;
+  list.innerHTML = data.slice(0,100).map(function(s) {
+    var book = BOOKS.find(function(b){ return (b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); }); });
+    return '<div style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle)">' +
+      '<div style="font-weight:500;font-size:0.85rem">' + (s.title_inferred||'Untitled') + '</div>' +
+      (book ? '<div style="font-family:var(--font-code);font-size:0.58rem;color:' + (book.color||'var(--gold)') + '">' + book.short + '</div>' : '') +
+      '<div style="font-size:0.77rem;color:var(--muted);margin-top:0.2rem;line-height:1.5">' +
+      (s.translation||'').slice(0,140) + '…</div></div>';
+  }).join('') +
+  (data.length > 100 ? '<p style="color:var(--muted);font-size:0.75rem;padding:0.5rem 0">Showing 100 of ' + data.length + ' — use filter to narrow</p>' : '');
+}
+function filterCorpus(q) { renderCorpusTab(q); }
+
+// ── Modern Research ────────────────────────────────────────────
+function renderResearchTab() {
+  var list = document.getElementById('research-list');
+  if (!list) return;
+  // WHO monographs + plants with clinical evidence mentioned
+  var whoSegs = corpusData.filter(function(s) {
+    return (s._corpusKey||'').startsWith('who_');
+  });
+  var clinicalSegs = corpusData.filter(function(s) {
+    var t = (s.translation||'').toLowerCase();
+    return !s._corpusKey.startsWith('who_') &&
+      (t.indexOf('clinical trial') !== -1 || t.indexOf('randomized') !== -1 ||
+       t.indexOf('meta-analysis') !== -1 || t.indexOf('systematic review') !== -1);
+  });
+  var allResearch = whoSegs.concat(clinicalSegs);
+  if (!allResearch.length) {
+    list.innerHTML = '<p style="color:var(--muted);padding:1rem;font-size:0.82rem">WHO Monograph data loading — check back shortly.</p>';
+    return;
+  }
+  list.innerHTML = '<p style="font-family:var(--font-code);font-size:0.65rem;color:var(--muted);padding:0.5rem 0 1rem">' +
+    whoSegs.length + ' WHO Monograph entries · ' + clinicalSegs.length + ' clinical evidence passages</p>' +
+    allResearch.slice(0,80).map(function(s) {
+      var isWho = (s._corpusKey||'').startsWith('who_');
+      return '<div style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle)">' +
+        '<div style="font-weight:500;font-size:0.85rem">' + (s.title_inferred||'') + '</div>' +
+        '<div style="font-family:var(--font-code);font-size:0.58rem;color:' + (isWho?'#1A6FA0':'var(--gold)') + ';margin:0.15rem 0">' +
+        (isWho ? 'WHO Monograph' : 'Clinical Evidence') + '</div>' +
+        '<div style="font-size:0.77rem;color:var(--muted);line-height:1.5">' + (s.translation||'').slice(0,150) + '…</div></div>';
+    }).join('');
+}
 </script>
 <!-- ── GLOBAL SEARCH RESULTS OVERLAY ───────────────────────── -->
 <div class="search-results-overlay" id="search-overlay" onclick="handleOverlayClick(event)">
@@ -3541,3 +3753,89 @@ document.addEventListener('click', function(e) {
 <div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
 </body>
 </html>
+  <!-- ── PLANT DATABASE TAB ─────────────────────────────────── -->
+  <section class="tab-panel" id="tab-database">
+    <div style="padding:1.5rem 1rem 0.5rem">
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Plant Database</h2>
+      <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">All plants documented across the 23-tradition corpus</p>
+    </div>
+    <div style="padding:0.5rem 1rem">
+      <input type="text" id="db-search-input" placeholder="Filter by plant name or condition…"
+        oninput="filterDatabase(this.value)"
+        style="width:100%;padding:0.5rem 0.8rem;background:#181510;border:1px solid var(--border);
+               color:var(--ink);font-family:var(--font-code);font-size:0.78rem;border-radius:2px;box-sizing:border-box">
+    </div>
+    <div id="db-list" style="padding:0 1rem 2rem"></div>
+  </section>
+
+  <!-- ── TRADITIONS TAB ─────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-traditions">
+    <div style="padding:1.5rem 1rem 0.5rem">
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">23 Traditions</h2>
+      <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">Every healing tradition in the archive</p>
+    </div>
+    <div id="traditions-list" style="padding:0 1rem 2rem"></div>
+  </section>
+
+  <!-- ── CONVERGENCE TAB ────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-convergence">
+    <div style="padding:1.5rem 1rem 0.5rem">
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Cross-Book Matches</h2>
+      <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">Plants documented across multiple traditions</p>
+    </div>
+    <div style="padding:0.5rem 1rem">
+      <input type="text" id="conv-search-input" placeholder="Search plant name…"
+        oninput="filterConvergence(this.value)"
+        style="width:100%;padding:0.5rem 0.8rem;background:#181510;border:1px solid var(--border);
+               color:var(--ink);font-family:var(--font-code);font-size:0.78rem;border-radius:2px;box-sizing:border-box">
+    </div>
+    <div id="convergence-list" style="padding:0 1rem 2rem"></div>
+  </section>
+
+  <!-- ── LONGEVITY TAB ──────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-longevity">
+    <div style="padding:1.5rem 1rem 0.5rem">
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Longevity Plants</h2>
+      <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">Plants associated with longevity, anti-aging, and rejuvenation across traditions</p>
+    </div>
+    <div id="longevity-list" style="padding:0 1rem 2rem"></div>
+  </section>
+
+  <!-- ── CORPUS TAB ─────────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-corpus">
+    <div style="padding:1.5rem 1rem 0.5rem">
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Source Corpus</h2>
+      <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">All translated passages from primary sources</p>
+    </div>
+    <div style="padding:0.5rem 1rem">
+      <input type="text" id="corpus-search-input" placeholder="Search passages…"
+        oninput="filterCorpus(this.value)"
+        style="width:100%;padding:0.5rem 0.8rem;background:#181510;border:1px solid var(--border);
+               color:var(--ink);font-family:var(--font-code);font-size:0.78rem;border-radius:2px;box-sizing:border-box">
+    </div>
+    <div id="corpus-list" style="padding:0 1rem 2rem"></div>
+  </section>
+
+  <!-- ── MODERN RESEARCH TAB ────────────────────────────────── -->
+  <section class="tab-panel" id="tab-research">
+    <div style="padding:1.5rem 1rem 0.5rem">
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Modern Research</h2>
+      <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">Plants with pharmacological validation from the WHO Monographs and clinical literature</p>
+    </div>
+    <div id="research-list" style="padding:0 1rem 2rem"></div>
+  </section>
+
+  <!-- ── METHODOLOGY TAB ────────────────────────────────────── -->
+  <section class="tab-panel" id="tab-methodology">
+    <div style="padding:1.5rem 1rem 2rem">
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:1rem">Methodology</h2>
+      <div style="max-width:60ch;line-height:1.8;font-size:0.88rem">
+        <p style="margin-bottom:1rem"><strong>Sources.</strong> Plantacopia draws on 23 primary traditions spanning 4,000 years — from the Papyrus Ebers (c.1550 BCE) through the WHO Monographs on Selected Medicinal Plants (1999–2009). All primary source texts are in the public domain.</p>
+        <p style="margin-bottom:1rem"><strong>Translation.</strong> Source texts in Classical Chinese, Sanskrit, Classical Greek, Arabic, 17th-century Spanish, Korean, Classical Japanese, Ancient Egyptian, Tibetan, and other languages were translated using Claude (Anthropic) with scholarly source descriptions drawn from established pharmacobotanical literature. All translations are AI-assisted and have not been peer reviewed.</p>
+        <p style="margin-bottom:1rem"><strong>Cross-references.</strong> Plant name matching across traditions uses normalized common names and botanical synonyms. A plant appearing in multiple traditions is flagged as a cross-book match.</p>
+        <p style="margin-bottom:1rem"><strong>Copyright.</strong> Original source texts (1552–1653) are in the public domain. Translations, cross-source analysis, and database curation © 2026 Noel Wiggins. AI-assisted translation (Claude, Anthropic); human-reviewed and curated.</p>
+        <p><strong>Limitations.</strong> This is a scholarly resource, not medical advice. Do not use plant medicine information from historical sources without consulting a qualified healthcare provider. Many historical remedies are toxic, contraindicated, or ineffective by modern standards.</p>
+      </div>
+    </div>
+  </section>
+
