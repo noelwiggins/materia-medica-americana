@@ -788,8 +788,18 @@
     aspect-ratio: 2/3;
     overflow: hidden;
     position: relative;
-    border: 1px solid #C8B46A;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    border: 2px solid rgba(200,180,106,0.6);
+    box-shadow: 3px 4px 14px rgba(0,0,0,0.3), inset 0 0 0 1px rgba(255,240,180,0.08);
+    border-radius: 1px 3px 3px 1px;
+    background: #241C0C;
+  }
+  .book-cover-art::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(255,240,210,0.07) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.18) 100%);
+    pointer-events: none;
+    z-index: 2;
   }
 
   .book-cover-img {
@@ -798,7 +808,7 @@
     object-fit: cover;
     object-position: center 15%;
     display: block;
-    filter: sepia(15%) contrast(1.05) brightness(0.95);
+    filter: sepia(25%) contrast(0.85) brightness(1.4) saturate(0.7);
   }
 
   /* Cover overlay with title */
