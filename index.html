@@ -356,7 +356,7 @@
     width: 100%;
     height: 100%;
     background: #FAF4E2;
-    border: 1px solid #C8B46A;
+    border: 2px solid rgba(200,180,106,0.55);
     box-shadow: 0 6px 32px rgba(0,0,0,0.6);
     display: flex;
     flex-direction: column;
@@ -994,6 +994,18 @@
     background: #0C0A06;
     padding: 1rem 1.5rem;
     gap: 0;
+  }
+  .reader-spread.page-turn-fwd { animation: readerTurnFwd 0.28s ease-out; }
+  .reader-spread.page-turn-back { animation: readerTurnBack 0.28s ease-out; }
+  @keyframes readerTurnFwd {
+    0%   { opacity:1; transform:perspective(900px) rotateY(0deg); }
+    35%  { opacity:0.3; transform:perspective(900px) rotateY(-6deg) translateX(1.5%); }
+    100% { opacity:1; transform:perspective(900px) rotateY(0deg); }
+  }
+  @keyframes readerTurnBack {
+    0%   { opacity:1; transform:perspective(900px) rotateY(0deg); }
+    35%  { opacity:0.3; transform:perspective(900px) rotateY(6deg) translateX(-1.5%); }
+    100% { opacity:1; transform:perspective(900px) rotateY(0deg); }
   }
 
   .reader-page {
@@ -2904,6 +2916,34 @@ function renderBookShelf() {
 function openBook(book) {
   readerBook = book;
   readerPageIdx = 0;
+  // Init touch/tap once
+  var section = document.getElementById('tab-reader');
+  if (section && !section._touchOn) {
+    section._touchOn = true;
+    var _tx = 0;
+    section.addEventListener('touchstart', function(e) {
+      _tx = e.touches[0].clientX;
+    }, {passive:true});
+    section.addEventListener('touchend', function(e) {
+      var dx = e.changedTouches[0].clientX - _tx;
+      if (Math.abs(dx) > 35) readerPageNav(dx < 0 ? 1 : -1);
+    }, {passive:true});
+    section.addEventListener('click', function(e) {
+      if (e.target.closest('button,a,input,.corr-item,.reader-search-results,.reader-search-bar,.reader-correlations,.xref-popover')) return;
+      var spread = document.querySelector('.reader-spread');
+      if (!spread) return;
+      var rect = spread.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      if (x < rect.width * 0.22) readerPageNav(-1);
+      else if (x > rect.width * 0.78) readerPageNav(1);
+    });
+    document.addEventListener('keydown', function(e) {
+      if (document.getElementById('tab-reader').classList.contains('active')) {
+        if (e.key==='ArrowRight'||e.key==='ArrowDown') readerPageNav(1);
+        if (e.key==='ArrowLeft'||e.key==='ArrowUp') readerPageNav(-1);
+      }
+    });
+  }
   readerSegments = corpusData.filter(function(s) {
     return book.corpusKeys.some(function(k) { return s._corpusKey && s._corpusKey.startsWith(k); }) &&
       s.translation && ['[PARSE ERROR]','[SEGMENT FAILED]'].indexOf(s.title_inferred||'') === -1;
@@ -3043,7 +3083,17 @@ function renderReaderSpread() {
 
 function readerPageNav(dir) {
   var total = Math.ceil(readerSegments.length / PASSAGES_PER_PAGE) || 1;
-  readerPageIdx = Math.max(0, Math.min(total-1, readerPageIdx + dir));
+  var newIdx = Math.max(0, Math.min(total-1, readerPageIdx + dir));
+  if (newIdx === readerPageIdx) return;
+  readerPageIdx = newIdx;
+  var spread = document.querySelector('.reader-spread');
+  if (spread) {
+    var cls = dir > 0 ? 'page-turn-fwd' : 'page-turn-back';
+    spread.classList.remove('page-turn-fwd','page-turn-back');
+    void spread.offsetWidth;
+    spread.classList.add(cls);
+    setTimeout(function(){ spread.classList.remove(cls); }, 300);
+  }
   renderReaderSpread();
 }
 
@@ -3128,7 +3178,49 @@ function showCorrelations(plantName) {
       var col = (t && t.color) ? t.color : m.book.color;
       var item = document.createElement('div');
       item.className = 'corr-item';
-      item.onclick = (function(b) { return function() { openBook(b); }; })(m.book);
+      item.onclick = (function(b, seg) { return function() {
+      // Save breadcrumb
+      var crumb = { book: readerBook, pageIdx: readerPageIdx,
+                    label: readerBook ? (readerBook.short||readerBook.title) : 'Previous' };
+      // Hide correlations panel
+      document.getElementById('reader-correlations').style.display = 'none';
+      // Show return breadcrumb bar
+      var bcBar = document.getElementById('reader-crumb-bar');
+      if (!bcBar) {
+        bcBar = document.createElement('div');
+        bcBar.id = 'reader-crumb-bar';
+        bcBar.style.cssText = 'position:sticky;top:0;z-index:200;background:var(--ink);' +
+          'padding:0.4rem 1rem;display:flex;align-items:center;gap:0.6rem;';
+        var bcBtn = document.createElement('button');
+        bcBtn.style.cssText = 'background:none;border:none;color:var(--gold);' +
+          'font-family:var(--font-code);font-size:0.72rem;letter-spacing:0.06em;cursor:pointer;';
+        bcBtn.id = 'reader-crumb-btn';
+        bcBar.appendChild(bcBtn);
+        var topbar = document.querySelector('.reader-topbar');
+        if (topbar) topbar.parentNode.insertBefore(bcBar, topbar.nextSibling);
+      }
+      document.getElementById('reader-crumb-btn').textContent =
+        '← Back to ' + crumb.label;
+      document.getElementById('reader-crumb-btn').onclick = function() {
+        bcBar.remove();
+        openBook(crumb.book);
+        readerPageIdx = crumb.pageIdx;
+        renderReaderSpread();
+      };
+      bcBar.style.display = 'flex';
+      // Open new book and jump to matching segment
+      openBook(b);
+      if (seg) {
+        var targetIdx = readerSegments.findIndex(function(s) {
+          return s === seg || (s.title_inferred === seg.title_inferred &&
+                               s._corpusKey === seg._corpusKey);
+        });
+        if (targetIdx >= 0) {
+          readerPageIdx = Math.floor(targetIdx / (PASSAGES_PER_PAGE||3));
+          renderReaderSpread();
+        }
+      }
+    }; })(m.book, m.seg);
 
       var dot = document.createElement('div');
       dot.className = 'corr-tradition-dot';
