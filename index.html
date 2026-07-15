@@ -192,6 +192,22 @@
   .book-close-btn:hover { background: rgba(255,255,255,0.08); }
 
   /* ── Two-column spread ── */
+  .book-page-turn {
+    animation: pageTurn 0.22s ease-out;
+  }
+  .book-page-turn-back {
+    animation: pageTurnBack 0.22s ease-out;
+  }
+  @keyframes pageTurn {
+    0%   { opacity:1; transform: perspective(800px) rotateY(0deg); }
+    40%  { opacity:0.4; transform: perspective(800px) rotateY(-8deg) translateX(2%); }
+    100% { opacity:1; transform: perspective(800px) rotateY(0deg); }
+  }
+  @keyframes pageTurnBack {
+    0%   { opacity:1; transform: perspective(800px) rotateY(0deg); }
+    40%  { opacity:0.4; transform: perspective(800px) rotateY(8deg) translateX(-2%); }
+    100% { opacity:1; transform: perspective(800px) rotateY(0deg); }
+  }
   .book-spread {
     cursor: pointer;
     display: grid;
@@ -1581,33 +1597,40 @@ function closeBookModal(e) {
 (function() {
   var _tx = 0;
   function initBookTouch() {
-    var spread = document.getElementById('book-spread-wrap');
-    if (!spread || spread._touchInited) return;
-    spread._touchInited = true;
+    var modal = document.getElementById('book-modal');
+    if (!modal || modal._touchInited) return;
+    modal._touchInited = true;
+    var _tx = 0;
 
-    // Swipe
-    spread.addEventListener('touchstart', function(e) {
+    // Swipe anywhere in the modal
+    modal.addEventListener('touchstart', function(e) {
       _tx = e.touches[0].clientX;
     }, {passive: true});
-    spread.addEventListener('touchend', function(e) {
+    modal.addEventListener('touchend', function(e) {
       var dx = e.changedTouches[0].clientX - _tx;
-      if (Math.abs(dx) > 40) { bookPage(dx < 0 ? 1 : -1); }
+      if (Math.abs(dx) > 35) {
+        bookPage(dx < 0 ? 1 : -1);
+        e.preventDefault();
+      }
     }, {passive: true});
 
-    // Tap left/right half
-    spread.addEventListener('click', function(e) {
-      // Ignore clicks on buttons
-      if (e.target.closest('button')) return;
+    // Tap: left third = prev, right third = next, middle = ignore
+    modal.addEventListener('click', function(e) {
+      if (e.target.closest('button, a, .xref-link, input')) return;
+      var spread = document.getElementById('book-spread-wrap') || modal;
       var rect = spread.getBoundingClientRect();
-      var mid = rect.left + rect.width / 2;
-      bookPage(e.clientX < mid ? -1 : 1);
+      var x = e.clientX - rect.left;
+      var w = rect.width;
+      if (x < w * 0.25) bookPage(-1);
+      else if (x > w * 0.75) bookPage(1);
     });
 
     // Keyboard
     document.addEventListener('keydown', function(e) {
-      if (document.getElementById('book-modal').style.display === 'flex') {
+      if (modal.style.display === 'flex') {
         if (e.key === 'ArrowRight' || e.key === 'ArrowDown') bookPage(1);
         if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   bookPage(-1);
+        if (e.key === 'Escape') closeBookModal({target: modal});
       }
     });
   }
@@ -1620,7 +1643,20 @@ function closeBookModal(e) {
 })();
 
 function bookPage(dir) {
-  bookIdx = Math.max(0, Math.min(bookSegments.length - 1, bookIdx + dir));
+  var next = bookIdx + dir * 3;
+  if (next < 0) next = 0;
+  if (next >= bookSegments.length) next = bookSegments.length - Math.min(3, bookSegments.length);
+  if (next === bookIdx) return;
+  bookIdx = next;
+  // Page turn animation
+  var spread = document.getElementById('book-spread-wrap');
+  if (spread) {
+    var animClass = dir > 0 ? 'book-page-turn' : 'book-page-turn-back';
+    spread.classList.remove('book-page-turn','book-page-turn-back');
+    void spread.offsetWidth; // force reflow
+    spread.classList.add(animClass);
+    setTimeout(function(){ spread.classList.remove(animClass); }, 250);
+  }
   renderBookPage();
 }
 
@@ -3303,30 +3339,38 @@ function expandToPanel() {
 }
 
 function jumpToXref(tradId, cidx) {
+  // Save breadcrumb
   _xrefCrumb = { tradition: bookTradition, segIdx: bookIdx,
-    title: (bookSegments[bookIdx]&&bookSegments[bookIdx].title_inferred)||'' };
-  document.getElementById('xref-panel').classList.remove('open');
-  var book = BOOKS.find(function(b){ return b.tradition===tradId; });
-  if (!book) {
-    var cs = corpusData[cidx];
-    if (cs) book = BOOKS.find(function(b){
-      return b.corpusKeys && b.corpusKeys.some(function(k){ return (cs._corpusKey||'').indexOf(k)>=0; });
+    label: (bookTradition && (bookTradition.short || bookTradition.name)) || 'Previous' };
+  // Show return bar
+  var bc = document.getElementById('xref-breadcrumb');
+  var bcText = document.getElementById('xref-bc-text');
+  if (bc) bc.classList.add('visible');
+  if (bcText) bcText.textContent = _xrefCrumb.label;
+  // Find the target tradition in BOOKS
+  var targetBook = BOOKS.find(function(b) { return b.tradition === tradId || b.id === tradId; });
+  if (!targetBook) {
+    // Try matching by id directly
+    targetBook = BOOKS.find(function(b) {
+      return (corpusData[cidx] && (b.corpusKeys||[]).some(function(k){
+        return (corpusData[cidx]._corpusKey||'').startsWith(k);
+      }));
     });
   }
-  if (!book) return;
-  openBookModal(book);
-  var cs2 = corpusData[cidx];
-  if (cs2) {
-    var ni = bookSegments.indexOf(cs2);
-    if (ni<0) ni = bookSegments.findIndex(function(s){ return s.title_inferred===cs2.title_inferred; });
-    if (ni>=0) { bookIdx=ni; renderBookPage(); }
-  }
-  var bc=document.getElementById('xref-breadcrumb');
-  var bct=document.getElementById('xref-bc-text');
-  if (bc&&bct&&_xrefCrumb) {
-    var bn=(_xrefCrumb.tradition&&(_xrefCrumb.tradition.short||_xrefCrumb.tradition.name))||'';
-    bct.textContent = bn+': '+_xrefCrumb.title.substring(0,35);
-    bc.classList.add('visible');
+  // Close popover
+  closeXrefPopover();
+  document.getElementById('xref-panel').classList.remove('open');
+  // Open the book at the right segment
+  if (targetBook) {
+    openBookModal(targetBook);
+    // Jump to the specific segment
+    var seg = corpusData[cidx];
+    if (seg) {
+      var targetIdx = bookSegments.findIndex(function(s) {
+        return s === seg || (s.title_inferred === seg.title_inferred && s._corpusKey === seg._corpusKey);
+      });
+      if (targetIdx >= 0) { bookIdx = targetIdx; renderBookPage(); }
+    }
   }
 }
 
