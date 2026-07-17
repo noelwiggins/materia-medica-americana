@@ -1829,7 +1829,7 @@ if (id === 'home') renderTraditionCards();
 if (id === 'convergence') { renderConvergenceEngine(); renderPriority(); }
 if (id === 'traditions') renderTraditionsOverview();
 if (id === 'longevity') renderLongevity();
-if (id === 'corpus') renderCorpus();
+if (id === 'corpus') filterCorpus('');
 if (id === 'research') initResearchTab();
 }
 
@@ -3638,6 +3638,7 @@ function runGlobalSearch() {
   var inp = document.getElementById('corpus-search-input');
   if (inp) inp.value = q;
   // Run filter directly — no setTimeout, no _tabRendered flag
+  _tabRendered['corpus'] = true;
   filterCorpus(q);
   // Scroll to results
   if (panel) panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
