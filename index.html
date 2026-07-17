@@ -3151,22 +3151,32 @@ function jumpToResult(pageNum) {
 function showCorrelations(plantName) {
   var panel = document.getElementById('reader-correlations');
   var body  = document.getElementById('reader-correlations-body');
-  var q = plantName.toLowerCase();
+  // Build query terms: use each word >= 4 chars from the plant name
+  var q = plantName.split('(')[0].trim().toLowerCase();
+  var words = q.split(/[\s\-\/]+/).filter(function(w){ return w.length >= 4; });
   var matches = [];
 
+  // Build a lookup of which tradition each segment belongs to
   BOOKS.forEach(function(book) {
     if (readerBook && book.id === readerBook.id) return;
     var segs = corpusData.filter(function(s) {
-      return book.corpusKeys.some(function(k) { return s._corpusKey && s._corpusKey.startsWith(k); }) &&
-        ((s.title_inferred||'').toLowerCase().indexOf(q) !== -1 ||
-         (s.translation||'').slice(0,300).toLowerCase().indexOf(q) !== -1);
+      // Match by _tradition OR by corpusKey prefix
+      var tradMatch = (s._tradition === book.tradition) ||
+        (book.corpusKeys||[]).some(function(k) {
+          return s._corpusKey && (s._corpusKey === k || s._corpusKey.startsWith(k + '_') || s._corpusKey.startsWith(k));
+        });
+      if (!tradMatch) return false;
+      var haystack = ((s.title_inferred||'') + ' ' + (s.translation||'').slice(0,400)).toLowerCase();
+      // Match if ANY search word appears
+      return words.some(function(w){ return haystack.indexOf(w) !== -1; });
     });
     segs.slice(0,2).forEach(function(s) { matches.push({ book:book, seg:s }); });
   });
 
   body.innerHTML = '';
   if (!matches.length) {
-    body.innerHTML = '<p style="color:var(--muted);font-size:0.82rem">No direct references to <em>' + plantName + '</em> found in other books currently in the corpus.</p>';
+    var qWords = words.join(', ');
+    body.innerHTML = '<p style="color:var(--muted);font-size:0.82rem">No matches for <em>' + q + '</em> found in other traditions. The corpus covers ' + corpusData.length + ' passages — this plant may use different names across traditions.</p>';
   } else {
     var intro = document.createElement('p');
     intro.style.cssText = 'font-size:0.78rem;color:var(--muted);margin-bottom:0.6rem';
