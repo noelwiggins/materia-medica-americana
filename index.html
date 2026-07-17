@@ -2295,68 +2295,45 @@ if (!corpusData.length) {
 filterCorpus();
 }
 
-function filterCorpus() {
-const list = document.getElementById('corpus-list');
-const countEl = document.getElementById('corpus-count');
-if (!list) return;
+function filterCorpus(q) {
+  // Accept arg directly OR read from the input element
+  var query = (q !== undefined ? q : (document.getElementById('corpus-search-input') || {value:''}).value).toLowerCase().trim();
+  var list = document.getElementById('corpus-list');
+  if (!list) return;
 
-const query = (document.getElementById('corpus-search')?.value||'').toLowerCase();
-const typeFilter = document.getElementById('corpus-tradition-filter')?.value||'all';
+  var filtered = query
+    ? corpusData.filter(function(s) {
+        return ((s.title_inferred||'') + ' ' + (s.translation||'') + ' ' + (s.condition||'')).toLowerCase().indexOf(query) !== -1;
+      })
+    : corpusData;
 
-const medicalKw = ['plant','herb','tree','bark','leaf','root','seed','flower','fruit','medicine','remedy','cure','treat','fever','pain'];
-const mineralKw = ['stone','mineral','earth','clay','salt','metal','copper','silver','alum','sulfur','barro','tierra'];
-const waterKw = ['water','spring','thermal','fountain','mineral water'];
+  if (!filtered.length) {
+    list.innerHTML = '<p style="color:var(--muted);padding:1rem;font-size:0.82rem">No passages match <em>' + query + '</em>.</p>';
+    return;
+  }
 
-let filtered = corpusData.filter(r => {
-  const text = (r.title_inferred + ' ' + r.translation).toLowerCase();
-  const tradLabel = (r._tradition_label||r._tradition||'').toLowerCase();
-  if (query && !text.includes(query) && !tradLabel.includes(query)) return false;
-  if (typeFilter === 'plant') return medicalKw.some(k=>text.includes(k));
-  if (typeFilter === 'mineral') return mineralKw.some(k=>text.includes(k));
-  if (typeFilter === 'water') return waterKw.some(k=>text.includes(k));
-  // Tradition filters map to _tradition field
-  const tradMap = {
-    'kampo':'kampo','tibetan':'tibetan','maya':'maya',
-    'philippine':'philippine','australian':'australian',
-    'celtic':'celtic_norse','persian':'persian',
-    'andean':'cobo'
-  };
-  if (tradMap[typeFilter]) return (r._tradition||'').includes(tradMap[typeFilter]);
-  return true;
-});
-
-if (countEl) countEl.textContent = `${filtered.length} segments`;
-
-list.innerHTML = filtered.slice(0,100).map((r,i) => {
-  const entities = r.entities_mentioned||[];
-  const entityTags = entities.slice(0,6).map(e => {
-    const type = guessEntityType(e.name||'');
-    return `<span class="corpus-entity-tag entity-${type}" onclick="searchForEntity('${(e.name||'').replace(/'/g,"\\'")}',event)">${e.name||'?'}</span>`;
-  }).join('');
-
-  return `<div class="corpus-segment" style="border-left-color:${i<3?'var(--gold)':getTradColor(r._tradition||'')}">
-    <div class="corpus-seg-header" onclick="toggleCorpusSeg(this)">
-      <div>
-        <div class="corpus-seg-title">${r.title_inferred||'Untitled segment'}</div>
-        <div class="corpus-seg-meta">
-          ${r._tradition_label ? `<span style="color:${getTradColor(r._tradition||'')}; font-weight:600">${getTradIcon(r._tradition||'')} ${r._tradition_label}</span> · ` : ''}${r._label||''}
-        </div>
-        ${entityTags?`<div style="margin-top:0.4rem">${entityTags}</div>`:''}
-      </div>
-      <span class="chevron" style="color:var(--muted);flex-shrink:0">▾</span>
-    </div>
-    <div class="corpus-seg-body">
-      ${r.translation?`<div class="corpus-translation">${r.translation}</div>`:''}
-      ${r.original_text?`<div class="corpus-original" style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">${r.original_text.substring(0,600)}${r.original_text.length>600?'…':''}</div>`:''}
-      ${r.translator_notes?`<div class="notes-block" style="margin-top:0.8rem">${r.translator_notes}</div>`:''}
-    </div>
-  </div>`;
-}).join('');
-
-if (filtered.length > 100) {
-  list.innerHTML += `<p style="color:var(--muted);font-style:italic;padding:1rem 0;text-align:center">Showing 100 of ${filtered.length} segments. Refine your search to see more.</p>`;
+  list.innerHTML = filtered.slice(0, 120).map(function(s) {
+    var book = BOOKS.find(function(b) {
+      return (b.corpusKeys||[]).some(function(k) { return (s._corpusKey||'').startsWith(k); }) ||
+             b.tradition === (s._tradition||'');
+    });
+    var col = book ? book.color : 'var(--gold)';
+    var hi = query ? (s.translation||'').slice(0,200).replace(
+      new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g,'\\$&') + ')', 'gi'),
+      '<mark style="background:rgba(196,168,96,0.3);color:inherit">$1</mark>'
+    ) : (s.translation||'').slice(0,160);
+    return '<div style="padding:0.65rem 0;border-bottom:1px solid var(--border-subtle)">' +
+      '<div style="font-weight:600;font-size:0.88rem;margin-bottom:0.15rem">' + (s.title_inferred||'Untitled') + '</div>' +
+      '<div style="font-family:var(--font-code);font-size:0.58rem;color:' + col + ';margin-bottom:0.25rem;letter-spacing:0.08em;text-transform:uppercase">' +
+      (book ? book.short : (s._tradition||'')) + '</div>' +
+      '<div style="font-size:0.78rem;color:var(--muted);line-height:1.55">' + hi + '&hellip;</div></div>';
+  }).join('') +
+  (filtered.length > 120
+    ? '<p style="color:var(--muted);font-size:0.72rem;padding:0.5rem 0;font-family:var(--font-code)">' +
+      'Showing 120 of ' + filtered.length + ' results &mdash; refine your search to narrow</p>'
+    : '');
 }
-}
+
 
 function toggleCorpusSeg(header) {
 const body = header.nextElementSibling;
@@ -3644,11 +3621,16 @@ document.addEventListener('click', function(e) {
 function runGlobalSearch() {
   var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
   if (!q) return;
-  showTab('corpus', null);
+  // Activate corpus tab and tab button
+  var corpusBtn = document.querySelector('.tab-btn[onclick*="corpus"]');
+  showTab('corpus', corpusBtn);
+  // Ensure corpus tab is rendered then filter
+  _tabRendered['corpus'] = false;
   setTimeout(function() {
     var inp = document.getElementById('corpus-search-input');
-    if (inp) { inp.value = q; filterCorpus(q); }
-  }, 50);
+    if (inp) inp.value = q;
+    filterCorpus(q);
+  }, 60);
 }
 
 function handleOverlayClick(e) {
