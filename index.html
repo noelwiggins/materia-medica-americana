@@ -522,54 +522,100 @@
   }
 
   /* Search bar */
+  /* ── Hero Search ───────────────────────────────────────────── */
   .global-search-wrap {
-    background: #0D0D0B;
-    padding: 20px 2rem 22px;
+    background: linear-gradient(180deg, #0A0805 0%, #141008 100%);
+    padding: 2.8rem 1.5rem 2.4rem;
     flex-shrink: 0;
+    border-bottom: 1px solid #2A2418;
+    position: relative;
+  }
+
+  .global-search-eyebrow {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #7A6A48;
+    margin-bottom: 1.1rem;
   }
 
   .global-search-wrap .global-search-box {
-    max-width: 760px;
+    max-width: 680px;
     margin: 0 auto;
     display: flex;
-    border: 1.5px solid #3A3628;
+    border: 1.5px solid #C4A860;
+    border-radius: 2px;
+    box-shadow: 0 0 0 3px rgba(196,168,96,0.08), 0 8px 32px rgba(0,0,0,0.5);
+    transition: box-shadow 0.2s;
+  }
+
+  .global-search-wrap .global-search-box:focus-within {
+    box-shadow: 0 0 0 4px rgba(196,168,96,0.18), 0 8px 40px rgba(0,0,0,0.6);
   }
 
   .global-search-input {
-    background: #1A1810 !important;
-    color: #E8DFC8 !important;
+    flex: 1;
+    background: #1C1810 !important;
+    color: #F0E8D0 !important;
     border: none !important;
+    font-family: 'Source Code Pro', monospace !important;
+    font-size: 0.95rem !important;
+    padding: 0.95rem 1.2rem !important;
+    outline: none !important;
+    min-width: 0;
   }
 
-  .global-search-input::placeholder { color: #5A5040 !important; }
+  .global-search-input::placeholder {
+    color: #4A4030 !important;
+    font-size: 0.82rem !important;
+  }
 
   .global-search-btn {
-    background: #C4A882 !important;
-    color: #0D0D0B !important;
+    background: #C4A860 !important;
+    color: #0A0805 !important;
     font-family: 'Source Code Pro', monospace !important;
     font-size: 0.68rem !important;
-    letter-spacing: 0.12em !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.14em !important;
+    text-transform: uppercase !important;
     border: none !important;
     white-space: nowrap;
-    padding: 0 1.2rem;
+    padding: 0 1.6rem !important;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s;
   }
 
-  .global-search-btn:hover { background: #D4BC9A !important; }
+  .global-search-btn:hover { background: #D8BC78 !important; }
+  .global-search-btn:active { background: #B09848 !important; }
 
   .global-search-hints {
-    max-width: 760px;
-    margin: 8px auto 0;
+    max-width: 680px;
+    margin: 1rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
   }
 
   .global-search-hints span {
-    color: #6A5E48 !important;
-    border-color: #3A3628 !important;
+    color: #6A5E40 !important;
+    border-color: #2A2418 !important;
+    font-size: 0.62rem !important;
+    padding: 0.22rem 0.65rem !important;
+    border-radius: 20px !important;
+    cursor: pointer;
+    transition: all 0.12s;
+    background: #131008 !important;
+    border: 1px solid #2A2418 !important;
   }
 
   .global-search-hints span:hover {
-    background: #1A1810 !important;
-    color: #C4A882 !important;
-    border-color: #C4A882 !important;
+    background: #1E1A0E !important;
+    color: #C4A860 !important;
+    border-color: rgba(196,168,96,0.5) !important;
   }
 
   /* Tab nav */
@@ -1368,11 +1414,13 @@
   </div>
   <!-- ── Search bar ──────────────────────────────────────────── -->
   <div class="global-search-wrap">
+    <div class="global-search-eyebrow">Search 2,581 passages across 23 traditions &middot; 5,000 years</div>
     <div class="global-search-box">
       <input type="text" id="global-search-input" class="global-search-input"
-        placeholder="e.g. menstruation cramps · fever · wound infection · anxiety · gout · malaria"
-        autocomplete="off" onkeydown="if(event.key==='Enter') runGlobalSearch()">
-      <button class="global-search-btn" onclick="runGlobalSearch()">Search the Archive</button>
+        placeholder="fever &middot; anxiety &middot; wound infection &middot; joint pain &middot; gout &middot; insomnia"
+        autocomplete="off" onkeydown="if(event.key==='Enter') runGlobalSearch()"
+        autofocus>
+      <button class="global-search-btn" onclick="runGlobalSearch()">Search</button>
     </div>
     <div class="global-search-hints">
       <span onclick="prefill('menstruation cramps')">menstruation cramps</span>
