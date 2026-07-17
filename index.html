@@ -2296,10 +2296,16 @@ filterCorpus();
 }
 
 function filterCorpus(q) {
-  // Accept arg directly OR read from the input element
   var query = (q !== undefined ? q : (document.getElementById('corpus-search-input') || {value:''}).value).toLowerCase().trim();
   var list = document.getElementById('corpus-list');
-  if (!list) return;
+  // If list doesn't exist yet, the tab panel needs rendering first
+  if (!list) { renderCorpusTab(query); return; }
+  // If corpusData not loaded yet, wait
+  if (!corpusData.length) {
+    list.innerHTML = '<p style="color:var(--muted);padding:1rem;font-size:0.82rem">Loading corpus…</p>';
+    setTimeout(function(){ filterCorpus(q); }, 300);
+    return;
+  }
 
   var filtered = query
     ? corpusData.filter(function(s) {
@@ -3621,16 +3627,20 @@ document.addEventListener('click', function(e) {
 function runGlobalSearch() {
   var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
   if (!q) return;
-  // Activate corpus tab and tab button
-  var corpusBtn = document.querySelector('.tab-btn[onclick*="corpus"]');
-  showTab('corpus', corpusBtn);
-  // Ensure corpus tab is rendered then filter
-  _tabRendered['corpus'] = false;
-  setTimeout(function() {
-    var inp = document.getElementById('corpus-search-input');
-    if (inp) inp.value = q;
-    filterCorpus(q);
-  }, 60);
+  // Activate corpus tab visually
+  document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+  var panel = document.getElementById('tab-corpus');
+  if (panel) panel.classList.add('active');
+  var btn = document.querySelector('.tab-btn[onclick*="corpus"]');
+  if (btn) btn.classList.add('active');
+  // Sync the corpus search input
+  var inp = document.getElementById('corpus-search-input');
+  if (inp) inp.value = q;
+  // Run filter directly — no setTimeout, no _tabRendered flag
+  filterCorpus(q);
+  // Scroll to results
+  if (panel) panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function handleOverlayClick(e) {
