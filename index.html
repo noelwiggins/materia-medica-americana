@@ -783,7 +783,7 @@
     transform: translateY(-4px);
     box-shadow: 4px 10px 28px rgba(0,0,0,0.35);
   }
-  .book-cover:hover .book-cover-art {
+  .book-cover-art {
     aspect-ratio: 2/3;
     overflow: hidden;
     position: relative;
@@ -806,35 +806,42 @@
   .book-cover-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(8,6,2,0.92) 0%, rgba(8,6,2,0.4) 50%, transparent 100%);
+    background: linear-gradient(to top,
+      rgba(6,4,1,0.97) 0%,
+      rgba(6,4,1,0.75) 38%,
+      rgba(6,4,1,0.0) 68%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0.8rem 0.7rem;
+    padding: 0.65rem 0.6rem 0.55rem;
+    pointer-events: none;
   }
 
   .book-cover-tradition {
     font-family: var(--font-code);
-    font-size: 0.48rem;
-    letter-spacing: 0.14em;
+    font-size: 0.5rem;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.25rem;
+    color: #C8A84A;
+    margin-bottom: 0.18rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.9);
   }
 
   .book-cover-title {
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: 700;
-    font-size: 0.85rem;
-    line-height: 1.2;
-    color: #F5EDD8;
+    font-size: 0.88rem;
+    line-height: 1.15;
+    color: #FFFDF6;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
   }
 
   .book-cover-date {
     font-family: var(--font-code);
     font-size: 0.48rem;
-    color: #8A7A58;
-    margin-top: 0.2rem;
+    color: #9A8A68;
+    margin-top: 0.15rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.9);
   }
 
   /* Completion badge */
@@ -2799,7 +2806,7 @@ const BOOKS = [
   { id:'tibetan', title:'Gyushi (rGyud bzhi)', short:'Gyushi — Four Tantras',
     tradition:'tibetan', date:'c.12th century CE', language:'Classical Tibetan',
     author:'Yuthok Yönten Gönpo',
-    cover:'https://upload.wikimedia.org/wikipedia/commons/6/6f/Illustrations_of_Tibetan_materia_medica_Wellcome_L0038395.jpg',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/2/2d/Shanjiang_%28Alpinia_japonica%29%2C_medicinal_plant._Chinese%2C_1655_Wellcome_L0034692.jpg',
     color:'#8B1A1A', corpusKeys:['tibetan','tibetan_new_b01'], totalEntries:300,
     description:'The foundational Tibetan medical text. 300 chapters synthesizing Indian, Chinese, and indigenous Tibetan pharmacological traditions.' },
   { id:'bencaojing', title:'Shennong Bencaojing (神農本草經)', short:'Shennong Classic',
@@ -2829,7 +2836,7 @@ const BOOKS = [
   { id:'south_african', title:'Southern African Traditional Medicine', short:'Zulu / San / Khoikhoi',
     tradition:'southern_african', date:'Ancient (documented 1650s+)', language:'Zulu, Xhosa, San, Khoikhoi',
     author:'San, Zulu, and Khoikhoi healers',
-    cover:'https://upload.wikimedia.org/wikipedia/commons/f/fb/Pelargonium_graveolens.jpg',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg',
     color:'#FF7043', corpusKeys:['southern_african','south_african_new_b01'], totalEntries:600,
     description:'The world\'s oldest continuous healing tradition from the San, who have occupied southern Africa for 40,000+ years. Source of Devil\'s Claw, Umckaloabo, and Rooibos.' },
 ];
@@ -3142,112 +3149,120 @@ function jumpToResult(pageNum) {
 function showCorrelations(plantName) {
   var panel = document.getElementById('reader-correlations');
   var body  = document.getElementById('reader-correlations-body');
-  // Build query terms: use each word >= 4 chars from the plant name
-  var q = plantName.split('(')[0].trim().toLowerCase();
-  var words = q.split(/[\s\-\/]+/).filter(function(w){ return w.length >= 4; });
+  if (!panel || !body) return;
+
+  // Search terms: all words 3+ chars from plant name, stripped of parens
+  var base = plantName.split('(')[0].split('—')[0].trim().toLowerCase();
+  var words = base.split(/[\s\-\/,]+/).filter(function(w){ return w.length >= 3; });
+  if (!words.length) words = [base];
+
+  var currentId = readerBook ? readerBook.id : null;
   var matches = [];
 
-  // Build a lookup of which tradition each segment belongs to
-  // Build a fast tradition lookup from segment _corpusKey
-  var keyToBook = {};
-  BOOKS.forEach(function(book) {
-    (book.corpusKeys||[]).forEach(function(k) { keyToBook[k] = book; });
+  corpusData.forEach(function(s) {
+    var ck    = (s._corpusKey   || '');
+    var trad  = (s._tradition   || s.tradition || '');
+    var ti    = (s.title_inferred || '').toLowerCase();
+    var trans = (s.translation  || '').slice(0, 400).toLowerCase();
+    var haystack = ti + ' ' + trans;
+
+    // Must match at least one search word
+    var wordMatch = words.some(function(w){ return haystack.indexOf(w) !== -1; });
+    if (!wordMatch) return;
+
+    // Find which book this segment belongs to
+    var book = null;
+    for (var bi = 0; bi < BOOKS.length; bi++) {
+      var b = BOOKS[bi];
+      if (b.id === currentId) continue; // skip current book
+      var keys = b.corpusKeys || [];
+      var keyMatch = keys.some(function(k){ return ck === k || ck.startsWith(k); });
+      var tradMatch = (trad === b.tradition) || (trad === b.id);
+      if (keyMatch || tradMatch) { book = b; break; }
+    }
+    if (book) matches.push({ book: book, seg: s });
   });
 
-  BOOKS.forEach(function(book) {
-    if (readerBook && book.id === readerBook.id) return;
-    var segs = corpusData.filter(function(s) {
-      var ck = s._corpusKey || '';
-      var trad = s._tradition || s.tradition || '';
-      // Match by tradition string OR corpusKey prefix
-      var tradMatch = (trad === book.tradition) || (trad === book.id) ||
-        (book.corpusKeys||[]).some(function(k) {
-          return ck === k || ck.startsWith(k);
-        });
-      if (!tradMatch) return false;
-      var haystack = ((s.title_inferred||'') + ' ' + (s.translation||'').slice(0,500)).toLowerCase();
-      return words.length > 0
-        ? words.some(function(w){ return haystack.indexOf(w) !== -1; })
-        : haystack.indexOf(q) !== -1;
-    });
-    segs.slice(0,2).forEach(function(s) { matches.push({ book:book, seg:s }); });
+  // Dedupe: one result per book
+  var seen = {};
+  var deduped = [];
+  matches.forEach(function(m) {
+    if (!seen[m.book.id]) { seen[m.book.id] = true; deduped.push(m); }
   });
 
   body.innerHTML = '';
-  if (!matches.length) {
-    var qWords = words.join(', ');
-    body.innerHTML = '<p style="color:var(--muted);font-size:0.82rem">No matches for <em>' + q + '</em> found in other traditions. The corpus covers ' + corpusData.length + ' passages — this plant may use different names across traditions.</p>';
+  if (!deduped.length) {
+    body.innerHTML = '<p style="color:var(--muted);font-size:0.82rem;padding:0.3rem 0">' +
+      'No cross-tradition matches found for <em>' + base + '</em>. ' +
+      '(' + corpusData.length + ' passages searched)</p>';
   } else {
     var intro = document.createElement('p');
-    intro.style.cssText = 'font-size:0.78rem;color:var(--muted);margin-bottom:0.6rem';
-    intro.innerHTML = '<strong>' + plantName + '</strong> appears in ' + matches.length + ' other source' + (matches.length!==1?'s':'') + ':';
+    intro.style.cssText = 'font-size:0.75rem;color:var(--muted);margin-bottom:0.5rem';
+    intro.innerHTML = '<strong>' + base + '</strong> documented in ' + deduped.length + ' other tradition' + (deduped.length !== 1 ? 's' : '') + ':';
     body.appendChild(intro);
 
-    matches.forEach(function(m) {
-      var t = traditionData.find(function(x) { return x.id === m.book.tradition; });
-      var col = (t && t.color) ? t.color : m.book.color;
+    deduped.forEach(function(m) {
+      var col = m.book.color || '#888';
       var item = document.createElement('div');
       item.className = 'corr-item';
+      item.style.cursor = 'pointer';
       item.onclick = (function(b, seg) { return function() {
-      // Save breadcrumb
-      var crumb = { book: readerBook, pageIdx: readerPageIdx,
-                    label: readerBook ? (readerBook.short||readerBook.title) : 'Previous' };
-      // Hide correlations panel
-      document.getElementById('reader-correlations').style.display = 'none';
-      // Show return breadcrumb bar
-      var bcBar = document.getElementById('reader-crumb-bar');
-      if (!bcBar) {
-        bcBar = document.createElement('div');
-        bcBar.id = 'reader-crumb-bar';
-        bcBar.style.cssText = 'position:sticky;top:0;z-index:200;background:var(--ink);' +
-          'padding:0.4rem 1rem;display:flex;align-items:center;gap:0.6rem;';
-        var bcBtn = document.createElement('button');
-        bcBtn.style.cssText = 'background:none;border:none;color:var(--gold);' +
-          'font-family:var(--font-code);font-size:0.72rem;letter-spacing:0.06em;cursor:pointer;';
-        bcBtn.id = 'reader-crumb-btn';
-        bcBar.appendChild(bcBtn);
-        var topbar = document.querySelector('.reader-topbar');
-        if (topbar) topbar.parentNode.insertBefore(bcBar, topbar.nextSibling);
-      }
-      document.getElementById('reader-crumb-btn').textContent =
-        '← Back to ' + crumb.label;
-      document.getElementById('reader-crumb-btn').onclick = function() {
-        bcBar.remove();
-        openBook(crumb.book);
-        readerPageIdx = crumb.pageIdx;
-        renderReaderSpread();
-      };
-      bcBar.style.display = 'flex';
-      // Open new book and jump to matching segment
-      openBook(b);
-      if (seg) {
-        var targetIdx = readerSegments.findIndex(function(s) {
-          return s === seg || (s.title_inferred === seg.title_inferred &&
-                               s._corpusKey === seg._corpusKey);
+        // Breadcrumb
+        var crumb = { book: readerBook, pageIdx: readerPageIdx,
+          label: readerBook ? (readerBook.short || readerBook.title) : '' };
+        document.getElementById('reader-correlations').style.display = 'none';
+        // Insert breadcrumb bar
+        var bcBar = document.getElementById('reader-crumb-bar');
+        if (!bcBar) {
+          bcBar = document.createElement('div');
+          bcBar.id = 'reader-crumb-bar';
+          bcBar.style.cssText = 'position:sticky;top:0;z-index:200;background:#1C1A12;' +
+            'padding:0.4rem 1rem;display:flex;align-items:center;border-bottom:1px solid #3A3420;';
+          var bcBtn = document.createElement('button');
+          bcBtn.id = 'reader-crumb-btn';
+          bcBtn.style.cssText = 'background:none;border:none;color:#C4A860;cursor:pointer;' +
+            'font-family:var(--font-code);font-size:0.68rem;letter-spacing:0.07em;';
+          bcBar.appendChild(bcBtn);
+          var topbar = document.querySelector('.reader-topbar');
+          if (topbar) topbar.parentNode.insertBefore(bcBar, topbar.nextSibling);
+        }
+        document.getElementById('reader-crumb-btn').textContent = '← Back to ' + crumb.label;
+        document.getElementById('reader-crumb-btn').onclick = function() {
+          bcBar.remove();
+          openBook(crumb.book);
+          readerPageIdx = crumb.pageIdx;
+          renderReaderSpread();
+        };
+        bcBar.style.display = 'flex';
+        // Open the target book and jump to matching segment
+        openBook(b);
+        var targetIdx = readerSegments.findIndex(function(s2) {
+          return s2 === seg ||
+            (s2.title_inferred === seg.title_inferred && s2._corpusKey === seg._corpusKey);
         });
         if (targetIdx >= 0) {
-          readerPageIdx = Math.floor(targetIdx / (PASSAGES_PER_PAGE||3));
+          readerPageIdx = Math.floor(targetIdx / (typeof PASSAGES_PER_PAGE !== 'undefined' ? PASSAGES_PER_PAGE : 3));
           renderReaderSpread();
         }
-      }
-    }; })(m.book, m.seg);
+      }; })(m.book, m.seg);
 
       var dot = document.createElement('div');
       dot.className = 'corr-tradition-dot';
       dot.style.background = col;
       var txt = document.createElement('div');
       txt.className = 'corr-text';
-      txt.innerHTML = '<div class="corr-title">' + m.book.short + ' · ' + (m.seg.title_inferred||'') + '</div>' +
-        '<div class="corr-source">' + m.book.date + ' · ' + (m.seg.translation||'').slice(0,100) + '…</div>';
+      txt.innerHTML = '<div class="corr-title">' + m.book.short + ' &middot; ' +
+        (m.seg.title_inferred || '') + '</div>' +
+        '<div class="corr-source">' + m.book.date + ' &middot; ' +
+        (m.seg.translation || '').slice(0, 110) + '&hellip;</div>';
       item.appendChild(dot);
       item.appendChild(txt);
       body.appendChild(item);
     });
   }
   panel.style.display = 'block';
-  panel.scrollIntoView({ behavior:'smooth', block:'nearest' });
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
-
 // Wire into data load
 var _origRenderTraditionCards = typeof renderTraditionCards !== 'undefined' ? renderTraditionCards : function(){};
 document.addEventListener('DOMContentLoaded', function() {
