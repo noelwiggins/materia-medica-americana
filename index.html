@@ -807,9 +807,9 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(to top,
-      rgba(6,4,1,0.97) 0%,
-      rgba(6,4,1,0.75) 38%,
-      rgba(6,4,1,0.0) 68%);
+      rgba(0,0,0,1.0) 0%,
+      rgba(0,0,0,0.85) 32%,
+      rgba(0,0,0,0.0) 65%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -830,10 +830,10 @@
   .book-cover-title {
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: 700;
-    font-size: 0.88rem;
+    font-size: 1.0rem;
     line-height: 1.15;
-    color: #FFFDF6;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    color: #FFFFFF;
+    text-shadow: 0 2px 8px rgba(0,0,0,1), 0 1px 2px rgba(0,0,0,1);
   }
 
   .book-cover-date {
@@ -2839,6 +2839,72 @@ const BOOKS = [
     cover:'https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg',
     color:'#FF7043', corpusKeys:['southern_african','south_african_new_b01'], totalEntries:600,
     description:'The world\'s oldest continuous healing tradition from the San, who have occupied southern Africa for 40,000+ years. Source of Devil\'s Claw, Umckaloabo, and Rooibos.' },
+  ,{ id:'kampo', title:'Kampo Medicine', short:'Kampo',
+    tradition:'kampo', date:'c.200 CE', language:'Classical Japanese',
+    author:'Tao Hongjing compilation',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/b/b6/Shennong.jpg',
+    color:'#2E7D32', corpusKeys:['kampo','kampo_new_b01','kampo_new_b02','kampo_new_b03'],
+    totalEntries:365, description:'Japanese adaptation of the Shennong pharmacopoeia. 365 substances across three grades of medicine.' }
+  ,{ id:'honzo', title:'Yamato Honzo', short:'Yamato Honzo',
+    tradition:'japanese_honzo', date:'1709 CE', language:'Classical Japanese',
+    author:'Kaibara Ekiken',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/2/2d/Shanjiang_%28Alpinia_japonica%29%2C_medicinal_plant._Chinese%2C_1655_Wellcome_L0034692.jpg',
+    color:'#AD1457', corpusKeys:['honzo','honzo_new_b01','honzo_new_b02','honzo_expanded_b01'],
+    totalEntries:1362, description:'Definitive Japanese encyclopedia of natural history. 1,362 plants documented in the Edo tradition.' }
+  ,{ id:'maya', title:'Maya Traditional Medicine', short:'Maya Medicine',
+    tradition:'maya', date:'Pre-Columbian', language:'Yucatec Maya',
+    author:'Indigenous Maya physicians',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg',
+    color:'#00695C', corpusKeys:['maya','maya_new_b01'],
+    totalEntries:250, description:'Mesoamerican plant medicine of the Maya civilization, preserved in colonial-era manuscripts.' }
+  ,{ id:'persian', title:'Persian Zoroastrian Medicine', short:'Persian Medicine',
+    tradition:'persian_zoroastrian', date:'c.600 BCE', language:'Middle Persian',
+    author:'Avestan physicians',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/6/69/Muscular_system%2C_Avicenna%2C_Canon_of_Medicine_Wellcome_L0013313.jpg',
+    color:'#7B1FA2', corpusKeys:['persian','persian_new_b01'],
+    totalEntries:200, description:'Zoroastrian botanical medicine bridging ancient Mesopotamia and Arabic pharmacology.' }
+  ,{ id:'north_american', title:'North American Indigenous Medicine', short:'North American Medicine',
+    tradition:'north_american_indigenous', date:'Pre-contact', language:'Oral tradition',
+    author:'Indigenous North American healers',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/0/08/Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg',
+    color:'#BF360C', corpusKeys:['north_american','north_american_expanded','north_am_new_b01'],
+    totalEntries:500, description:'Native American plant medicine across hundreds of nations spanning the continent.' }
+  ,{ id:'amazonian', title:'Amazonian Plant Medicine', short:'Amazonian Medicine',
+    tradition:'amazonian', date:'Pre-contact', language:'Oral tradition',
+    author:'Amazonian healers',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg',
+    color:'#1B5E20', corpusKeys:['amazonian','amazonian_new_b01'],
+    totalEntries:300, description:'The vast pharmacopoeia of the Amazon basin including ayahuasca, curare, and cat\'s claw.' }
+  ,{ id:'celtic', title:'Celtic and Norse Medicine', short:'Celtic and Norse',
+    tradition:'celtic_norse', date:'c.400 BCE', language:'Old English',
+    author:'Celtic and Norse healers',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/3/3c/Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg',
+    color:'#37474F', corpusKeys:['celtic_norse','celtic_new_b01'],
+    totalEntries:300, description:'Plant medicine of the Celtic and Norse peoples preserved in Anglo-Saxon leechbooks.' }
+  ,{ id:'philippine', title:'Philippine Traditional Medicine', short:'Philippine Medicine',
+    tradition:'philippine', date:'Pre-colonial', language:'Spanish colonial',
+    author:'Filipino healers',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/2/2d/Shanjiang_%28Alpinia_japonica%29%2C_medicinal_plant._Chinese%2C_1655_Wellcome_L0034692.jpg',
+    color:'#0277BD', corpusKeys:['philippine','philippine_new_b01'],
+    totalEntries:200, description:'Traditional Filipino plant medicine blending Malay, Chinese, and Spanish influences.' }
+  ,{ id:'australian', title:'Australian Aboriginal Medicine', short:'Australian Aboriginal',
+    tradition:'australian_indigenous', date:'Pre-contact', language:'Oral tradition',
+    author:'Aboriginal Australian healers',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/b/b6/Shennong.jpg',
+    color:'#E65100', corpusKeys:['australian','australian_new_b01'],
+    totalEntries:150, description:'65,000 years of botanical knowledge including tea tree, eucalyptus, and bush medicines.' }
+  ,{ id:'east_african', title:'East African Traditional Medicine', short:'East African Medicine',
+    tradition:'east_african', date:'Ancient', language:'Amharic',
+    author:'Ethiopian and East African healers',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/b/b4/Edwin_Smith_Papyrus_v2.jpg',
+    color:'#4E342E', corpusKeys:['east_african','east_african_new_b01'],
+    totalEntries:200, description:'Traditional medicine of Ethiopia, Kenya, and the Horn of Africa.' }
+  ,{ id:'who', title:'WHO Monographs on Selected Medicinal Plants', short:'WHO Monographs',
+    tradition:'western_pharmacopeia', date:'1999-2009 CE', language:'Scientific English',
+    author:'World Health Organization',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/d/d7/Echinacea_purpurea.jpg',
+    color:'#1A6FA0', corpusKeys:['who_monographs_b01','who_monographs_b02','who_monographs_b03','who_monographs_b04'],
+    totalEntries:94, description:'94 monographs bridging traditional plant medicine and modern pharmacology. Volumes 1-4.' }
 ];
 
 // ── Reader state ────────────────────────────────────────────
