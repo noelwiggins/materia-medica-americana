@@ -380,7 +380,7 @@
     object-fit: cover;
     object-position: center 20%;
     display: block;
-    filter: sepia(30%) contrast(1.08) brightness(0.92) saturate(0.65);
+    filter: sepia(12%) contrast(1.02) brightness(1.0) saturate(0.9);
     transition: opacity 0.5s ease;
   }
 
@@ -784,25 +784,17 @@
     box-shadow: 4px 10px 28px rgba(0,0,0,0.35);
   }
   .book-cover:hover .book-cover-img {
-    filter: sepia(8%) contrast(1.08) brightness(0.92) saturate(0.85);
+    filter: sepia(5%) contrast(1.05) brightness(1.02) saturate(0.95);
   }
 
   .book-cover-art {
     aspect-ratio: 2/3;
     overflow: hidden;
     position: relative;
-    border: 2px solid rgba(200,180,106,0.6);
-    box-shadow: 3px 4px 14px rgba(0,0,0,0.3);
-    border-radius: 1px 3px 3px 1px;
-    background: #1A1510;
-  }
-  .book-cover-art::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(20,16,8,0.08);
-    pointer-events: none;
-    z-index: 2;
+    border: 1px solid rgba(200,180,106,0.5);
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.25);
+    border-radius: 1px 2px 2px 1px;
+    background: #FAF4E2;
   }
 
   .book-cover-img {
@@ -811,7 +803,7 @@
     object-fit: cover;
     object-position: center 15%;
     display: block;
-    filter: sepia(18%) contrast(1.05) brightness(0.88) saturate(0.72);
+    filter: sepia(12%) contrast(1.02) brightness(1.0) saturate(0.9);
   }
 
   /* Cover overlay with title */
@@ -3160,18 +3152,27 @@ function showCorrelations(plantName) {
   var matches = [];
 
   // Build a lookup of which tradition each segment belongs to
+  // Build a fast tradition lookup from segment _corpusKey
+  var keyToBook = {};
+  BOOKS.forEach(function(book) {
+    (book.corpusKeys||[]).forEach(function(k) { keyToBook[k] = book; });
+  });
+
   BOOKS.forEach(function(book) {
     if (readerBook && book.id === readerBook.id) return;
     var segs = corpusData.filter(function(s) {
-      // Match by _tradition OR by corpusKey prefix
-      var tradMatch = (s._tradition === book.tradition) ||
+      var ck = s._corpusKey || '';
+      var trad = s._tradition || s.tradition || '';
+      // Match by tradition string OR corpusKey prefix
+      var tradMatch = (trad === book.tradition) || (trad === book.id) ||
         (book.corpusKeys||[]).some(function(k) {
-          return s._corpusKey && (s._corpusKey === k || s._corpusKey.startsWith(k + '_') || s._corpusKey.startsWith(k));
+          return ck === k || ck.startsWith(k);
         });
       if (!tradMatch) return false;
-      var haystack = ((s.title_inferred||'') + ' ' + (s.translation||'').slice(0,400)).toLowerCase();
-      // Match if ANY search word appears
-      return words.some(function(w){ return haystack.indexOf(w) !== -1; });
+      var haystack = ((s.title_inferred||'') + ' ' + (s.translation||'').slice(0,500)).toLowerCase();
+      return words.length > 0
+        ? words.some(function(w){ return haystack.indexOf(w) !== -1; })
+        : haystack.indexOf(q) !== -1;
     });
     segs.slice(0,2).forEach(function(s) { matches.push({ book:book, seg:s }); });
   });
