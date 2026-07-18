@@ -1409,7 +1409,7 @@
     <div class="book-hero-left">
       <div class="book-hero-page">
         <img id="wec-codex-img"
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg"
           alt="Frontispiece illustration" class="bh-illustration">
         <div class="bh-caption-bar">
           <span id="wec-codex-label">Badianus Manuscript, 1552</span>
@@ -1812,21 +1812,13 @@ function renderBookPage() {
 
 // ── Codex illustration cycler ─────────────────────────────
 const CODEX_IMAGES = [
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Libellus_de_medicinalibus_Indorum_herbis_f._56v.jpg', label: 'Badianus Manuscript, 1552', pos: 'center 15%' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg', label: 'Badianus Manuscript, f.13v', pos: 'center 20%' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/1/13/Libellus_de_medicinalibus_Indorum_herbis_f._13v.jpg', label: 'Badianus Manuscript, f.13v', pos: 'center 20%' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg', label: 'Badianus Manuscript, f.49v', pos: 'center 20%' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/3/30/ViennaDioscoridesPlant.jpg', label: 'Vienna Dioscorides, c.512 CE', pos: 'center 30%' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Heuresis_bringing_the_mandrake_to_Dioscorides_Wellcome_L0000781.jpg', label: 'Dioscorides & the Mandrake, c.512 CE', pos: 'center 25%' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/7/76/Illustration_of_a_Medicinal_Plant_Wellcome_L0001867.jpg', label: 'Wellcome Medicinal Plants, 17th C', pos: 'center 20%' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg', label: 'Ming Herbal — Lindera, c.1640 CE', pos: 'center 25%' },,
-  { id:'who', title:'WHO Monographs on Selected Medicinal Plants', short:'WHO Monographs',
-    tradition:'western_pharmacopeia', date:'1999–2009 CE', language:'Scientific English',
-    author:'World Health Organization',
-    cover:WHO_COVER_URI,
-    color:'#1A6FA0',
-    corpusKeys:['who_monographs_b01','who_monographs_b02','who_monographs_b03','who_monographs_b04'],
-    totalEntries:94,
-    description:'The definitive international standard bridging traditional plant medicine and modern pharmacology. 94 monographs across 4 volumes — the direct scientific heir to Dioscorides.' }
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Ming_herbal_%28painting%29%3B_Lindera_Wellcome_L0039437.jpg', label: 'Ming Herbal — Lindera, c.1640 CE', pos: 'center 25%' }
 ];
 let codexIdx = 0;
 
@@ -1843,7 +1835,7 @@ function cycleCodex(dir) {
     if (lbl) lbl.textContent = item.label;
     img.onload = () => img.classList.remove('fading');
     setTimeout(() => img.classList.remove('fading'), 700);
-  }, 5000);
+  }, 300);
 }
 document.addEventListener('DOMContentLoaded', () => { setInterval(() => cycleCodex(1), 8000); });
 
