@@ -1340,33 +1340,6 @@
   .xref-back-btn { background:none; border:1px solid var(--border); color:var(--ink); padding:0.2rem 0.6rem; cursor:pointer; font-family:var(--font-code); font-size:0.58rem; white-space:nowrap; }
   .xref-back-btn:hover { background:rgba(196,168,130,0.15); }
   
-  /* ── Search results modal ── */
-  #hero-results {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    background: rgba(0,0,0,0.78);
-  }
-  #hero-results.open {
-    display: block;
-  }
-  #hero-results-inner {
-    display: none;
-  }
-  #hero-results.open #hero-results-inner {
-    display: block;
-    position: absolute;
-    top: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(680px, 96vw);
-    max-height: 88vh;
-    background: #1A1810;
-    border-radius: 4px;
-    overflow-y: auto;
-    box-shadow: 0 0 0 1px #C4A860, 0 20px 60px rgba(0,0,0,0.9);
-  }
 
   /* ── Hidden UI elements (search overlay, toasts) ── */
   .search-results-overlay { display:none; position:fixed; inset:0; z-index:1000;
@@ -3647,18 +3620,14 @@ document.addEventListener('click', function(e) {
 function runGlobalSearch() {
   var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
   if (!q) return;
-  var modal = document.getElementById('hero-results');
-  var panel = document.getElementById('hero-results-inner');
-  if (!modal || !panel) return;
 
-  function closeModal() { modal.classList.remove('open'); }
+  // Remove any existing modal
+  var existing = document.getElementById('hero-results');
+  if (existing) existing.remove();
 
-  modal.classList.add('open');
-  modal.onclick = function(e) { if (e.target === modal) closeModal(); };
-
+  // Check corpus
   if (!corpusData || !corpusData.length) {
-    panel.innerHTML = '<div style="padding:2rem;text-align:center;color:#C4A860;font-family:monospace;font-size:0.82rem">'
-      + 'Corpus still loading \u2014 wait 5 seconds then try again.</div>';
+    alert('Corpus still loading \u2014 wait a few seconds and try again.');
     return;
   }
 
@@ -3667,20 +3636,7 @@ function runGlobalSearch() {
     return (((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase().indexOf(ql) !== -1);
   });
 
-  var header = '<div style="position:sticky;top:0;background:#1A1810;padding:0.65rem 1rem;'
-    + 'border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center">'
-    + '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.1em">'
-    + results.length + ' results \u2014 ' + q + '</span>'
-    + '<button onclick="document.getElementById(\'hero-results\').classList.remove(\'open\')" '
-    + 'style="background:#C4A860;border:none;color:#000;width:26px;height:26px;'
-    + 'border-radius:50%;cursor:pointer;font-size:1rem;line-height:1">\u00d7</button></div>';
-
-  if (!results.length) {
-    panel.innerHTML = header + '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">'
-      + 'No passages found for <strong>' + q + '</strong>.</div>';
-    return;
-  }
-
+  // Build rows HTML
   var rows = '';
   results.slice(0, 100).forEach(function(s) {
     var book = null;
@@ -3692,22 +3648,56 @@ function runGlobalSearch() {
     var col   = book ? book.color : '#C4A860';
     var label = book ? book.short : (s._tradition || '');
     var bid   = book ? book.id : '';
-    rows += '<div style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer;active-color:#221E0E" '
-      + 'onclick="document.getElementById(\'hero-results\').classList.remove(\'open\');">'
-      + '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.15rem">'
-      + (s.title_inferred || 'Untitled') + '</div>'
-      + '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;'
-      + 'text-transform:uppercase;color:' + col + ';margin-bottom:0.25rem">' + label + '</div>'
-      + '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.55">'
-      + (s.translation || '').slice(0, 160) + '\u2026</div></div>';
+    rows += '<div data-bid="' + bid + '" style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">'
+      + '<div style="font-weight:700;font-size:0.9rem;color:#F0E8D0;margin-bottom:0.15rem">' + (s.title_inferred||'Untitled') + '</div>'
+      + '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:' + col + ';margin-bottom:0.25rem">' + label + '</div>'
+      + '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.55">' + (s.translation||'').slice(0,160) + '\u2026</div>'
+      + '</div>';
   });
 
-  if (results.length > 100) {
-    rows += '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.62rem;color:#5A5040">'
-      + 'Showing 100 of ' + results.length + ' \u2014 refine your search</div>';
-  }
+  var noResults = !results.length
+    ? '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">No passages found for <strong style="color:#C4A860">' + q + '</strong>.<br><br>Try: fever, ginger, wound, anxiety, gout, malaria</div>'
+    : '';
 
-  panel.innerHTML = header + rows;
+  var footer = results.length > 100
+    ? '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.62rem;color:#5A5040">Showing 100 of ' + results.length + '</div>'
+    : '';
+
+  // Create modal from scratch
+  var overlay = document.createElement('div');
+  overlay.id = 'hero-results';
+  overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.78)';
+  overlay.innerHTML =
+    '<div id="hr-panel" style="position:absolute;top:5vh;left:50%;transform:translateX(-50%);'
+    + 'width:min(680px,96vw);max-height:88vh;background:#1A1810;border-radius:4px;'
+    + 'overflow-y:auto;box-shadow:0 0 0 1px #C4A860,0 20px 60px rgba(0,0,0,0.9)">'
+    + '<div style="position:sticky;top:0;background:#1A1810;padding:0.65rem 1rem;'
+    + 'border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center">'
+    + '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.1em">'
+    + results.length + ' results \u2014 ' + q + '</span>'
+    + '<button id="hr-close" style="background:#C4A860;border:none;color:#000;width:26px;height:26px;'
+    + 'border-radius:50%;cursor:pointer;font-size:1rem;font-weight:bold">\u00d7</button>'
+    + '</div>'
+    + (noResults || rows + footer)
+    + '</div>';
+
+  document.body.appendChild(overlay);
+
+  // Close handlers
+  document.getElementById('hr-close').onclick = function() { overlay.remove(); };
+  overlay.onclick = function(e) { if (e.target === overlay) overlay.remove(); };
+
+  // Row click handlers
+  overlay.querySelectorAll('[data-bid]').forEach(function(row) {
+    row.onmouseenter = function(){ this.style.background='#221E0E'; };
+    row.onmouseleave = function(){ this.style.background=''; };
+    row.onclick = function(e) {
+      e.stopPropagation();
+      var bid = this.getAttribute('data-bid');
+      overlay.remove();
+      if (bid) { var bk = BOOKS.find(function(b){ return b.id===bid; }); if(bk) openBook(bk); }
+    };
+  });
 }
 
 
@@ -3950,11 +3940,7 @@ function renderResearchTab() {
   </div>
 </div>
 
-<div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
-<div id="hero-results">
-  <div id="hero-results-inner"></div>
-</div>
-</div>
+<div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div></div>
 </body>
 </html>
   <!-- ── PLANT DATABASE TAB ─────────────────────────────────── -->
