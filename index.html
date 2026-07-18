@@ -3626,45 +3626,59 @@ document.addEventListener('click', function(e) {
 // ── Global search ─────────────────────────────────────────────
 function runGlobalSearch() {
   var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
-  var _hr=document.getElementById('hero-results'); _hr.style.display='flex'; var panel = document.getElementById('hero-results-inner');
-  if (!panel) return;
-  if (!q) { document.getElementById('hero-results').style.display='none'; return; }
-  if (!corpusData.length) {
-    
-    panel.innerHTML = '<p style="padding:1rem;color:#8A7A58">Corpus loading\u2026 try again shortly.</p>';
+  if (!q) return;
+  var modal = document.getElementById('hero-results');
+  var panel = document.getElementById('hero-results-inner');
+  if (!modal || !panel) return;
+  modal.style.display = 'block';
+  modal.onclick = function(e) { if (e.target === modal) modal.style.display = 'none'; };
+  if (!corpusData || !corpusData.length) {
+    panel.innerHTML = '<div style="padding:2rem;text-align:center;color:#8A7A58;font-family:monospace;font-size:0.8rem">Corpus loading \u2014 please wait and try again.</div>';
     return;
   }
   var ql = q.toLowerCase();
   var results = corpusData.filter(function(s) {
     return (((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase().indexOf(ql) !== -1);
   });
-  
+  var closeBtn = '<div style="position:sticky;top:0;background:#1A1810;padding:0.7rem 1rem;border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center;z-index:1">'
+    + '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.12em">' + results.length + ' RESULTS \u2014 ' + q.toUpperCase() + '</span>'
+    + '<button id="hr-close-btn" style="background:#C4A860;border:none;color:#0A0805;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:1rem;font-weight:bold">\u00d7</button>'
+    + '</div>';
   if (!results.length) {
-    panel.innerHTML = '<p style="padding:1rem;color:#8A7A58;font-size:0.82rem">No results for <em>' + q + '</em>.</p>';
+    panel.innerHTML = closeBtn + '<div style="padding:1.5rem;color:#8A7A58">No results for <strong style="color:#C4A860">' + q + '</strong>.</div>';
+    document.getElementById('hr-close-btn').onclick = function(){ modal.style.display='none'; };
     return;
   }
-  var rows = results.slice(0,80).map(function(s) {
+  var rows = results.slice(0, 100).map(function(s) {
     var book = null;
-    for (var bi=0;bi<BOOKS.length;bi++){
-      var b=BOOKS[bi];
-      if ((b.corpusKeys||[]).some(function(k){return (s._corpusKey||'').startsWith(k);})||b.tradition===(s._tradition||'')){book=b;break;}
+    for (var i = 0; i < BOOKS.length; i++) {
+      var b = BOOKS[i];
+      if ((b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); }) || b.tradition===(s._tradition||'')) { book=b; break; }
     }
-    var col = book ? book.color : '#C4A860';
-    var lbl = book ? book.short : (s._tradition||'');
-    var snip = (s.translation||'').slice(0,160);
-    var onclick = book ? 'openBook(BOOKS.find(function(b){return b.id==='+JSON.stringify(book.id)+';}) || BOOKS[0])' : '';
-    return '<div style="padding:0.65rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer" onclick="'+onclick+'">'
-      +'<div style="font-weight:600;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">'+(s.title_inferred||'Untitled')+'</div>'
-      +'<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:'+col+';margin-bottom:0.25rem">'+lbl+'</div>'
-      +'<div style="font-size:0.77rem;color:#8A7A58;line-height:1.5">'+snip+'&hellip;</div>'
-      +'</div>';
+    var col   = book ? book.color : '#C4A860';
+    var label = book ? book.short : (s._tradition||'');
+    var bid   = book ? book.id : '';
+    var snip  = (s.translation||'').slice(0,180);
+    return '<div class="hr-row" data-bid="' + bid + '" style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">'
+      + '<div style="font-weight:700;font-size:0.9rem;color:#F0E8D0;margin-bottom:0.2rem">' + (s.title_inferred||'Untitled') + '</div>'
+      + '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.12em;text-transform:uppercase;color:' + col + ';margin-bottom:0.3rem">' + label + '</div>'
+      + '<div style="font-size:0.78rem;color:#7A6A50;line-height:1.6">' + snip + '\u2026</div>'
+      + '</div>';
+  }).join('');
+  var footer = results.length > 100 ? '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.65rem;color:#5A5040">Showing 100 of ' + results.length + '</div>' : '';
+  panel.innerHTML = closeBtn + rows + footer;
+  document.getElementById('hr-close-btn').onclick = function(){ modal.style.display='none'; };
+  panel.querySelectorAll('.hr-row').forEach(function(row) {
+    row.onmouseenter = function(){ this.style.background='#221E0E'; };
+    row.onmouseleave = function(){ this.style.background=''; };
+    row.onclick = function() {
+      var bid = this.getAttribute('data-bid');
+      modal.style.display = 'none';
+      if (bid) { var bk = BOOKS.find(function(b){ return b.id===bid; }); if(bk) openBook(bk); }
+    };
   });
-  panel.innerHTML = '<div style="padding:0.5rem 1rem;border-bottom:1px solid #2A2418;display:flex;justify-content:space-between">'
-    +'<span style="font-family:monospace;font-size:0.62rem;color:#8A7A58;letter-spacing:0.1em">'+results.length+' RESULTS</span>'
-    +'<button onclick="document.getElementById(\'hero-results\').style.display=\'none\'" style="background:none;border:none;color:#5A5040;cursor:pointer;font-size:1.1rem">&times;</button>'
-    +'</div>' + rows.join('') + (results.length > 80 ? '<p style="padding:0.5rem 1rem;font-size:0.7rem;color:#5A5040">Showing 80 of '+results.length+'</p>' : '');
-  // fixed modal — no scroll needed
 }
+
 
 
 function handleOverlayClick(e) {
@@ -3906,9 +3920,9 @@ function renderResearchTab() {
 </div>
 
 <div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
-<div id="hero-results" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9000;overflow:hidden;pointer-events:none;align-items:center;justify-content:center">
-  <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);pointer-events:auto" onclick="document.getElementById('hero-results').style.display='none'"></div>
-  <div id="hero-results-inner" style="position:relative;z-index:1;width:min(680px,95vw);max-height:80vh;background:#1A1810;border:1px solid #C4A860;border-radius:4px;overflow-y:auto;pointer-events:auto;box-shadow:0 20px 60px rgba(0,0,0,0.8)"></div>
+<div id="hero-results" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75)">
+  <div id="hero-results-inner" style="position:absolute;top:5vh;left:50%;transform:translateX(-50%);width:min(680px,96vw);max-height:88vh;background:#1A1810;border:1px solid #C4A860;border-radius:4px;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.9)"></div>
+</div>
 </div>
 </body>
 </html>
