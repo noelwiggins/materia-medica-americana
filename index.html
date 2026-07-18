@@ -3626,7 +3626,7 @@ document.addEventListener('click', function(e) {
 // ── Global search ─────────────────────────────────────────────
 function runGlobalSearch() {
   var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
-  document.getElementById('hero-results').style.display='block'; var panel = document.getElementById('hero-results-inner');
+  var _hr=document.getElementById('hero-results'); _hr.style.display='flex'; var panel = document.getElementById('hero-results-inner');
   if (!panel) return;
   if (!q) { document.getElementById('hero-results').style.display='none'; return; }
   if (!corpusData.length) {
@@ -3906,9 +3906,9 @@ function renderResearchTab() {
 </div>
 
 <div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
-<div id="hero-results" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9000;overflow:hidden;pointer-events:none">
+<div id="hero-results" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9000;overflow:hidden;pointer-events:none;align-items:center;justify-content:center">
   <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);pointer-events:auto" onclick="document.getElementById('hero-results').style.display='none'"></div>
-  <div id="hero-results-inner" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(680px,95vw);max-height:80vh;background:#1A1810;border:1px solid #C4A860;border-radius:4px;overflow-y:auto;pointer-events:auto;box-shadow:0 20px 60px rgba(0,0,0,0.8)"></div>
+  <div id="hero-results-inner" style="position:relative;z-index:1;width:min(680px,95vw);max-height:80vh;background:#1A1810;border:1px solid #C4A860;border-radius:4px;overflow-y:auto;pointer-events:auto;box-shadow:0 20px 60px rgba(0,0,0,0.8)"></div>
 </div>
 </body>
 </html>
