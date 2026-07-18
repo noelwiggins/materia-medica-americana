@@ -3658,53 +3658,64 @@ function runGlobalSearch() {
   var modal = document.getElementById('hero-results');
   var panel = document.getElementById('hero-results-inner');
   if (!modal || !panel) return;
+
+  function closeModal() { modal.classList.remove('open'); }
+
   modal.classList.add('open');
-  modal.onclick = function(e) { if (e.target === modal) { modal.classList.remove('open'); } modal.style.visibility = 'hidden'; };
+  modal.onclick = function(e) { if (e.target === modal) closeModal(); };
+
   if (!corpusData || !corpusData.length) {
-    panel.innerHTML = '<div style="padding:2rem;text-align:center;color:#8A7A58;font-family:monospace;font-size:0.8rem">Corpus loading \u2014 please wait and try again.</div>';
+    panel.innerHTML = '<div style="padding:2rem;text-align:center;color:#C4A860;font-family:monospace;font-size:0.82rem">'
+      + 'Corpus still loading \u2014 wait 5 seconds then try again.</div>';
     return;
   }
+
   var ql = q.toLowerCase();
   var results = corpusData.filter(function(s) {
     return (((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase().indexOf(ql) !== -1);
   });
-  var closeBtn = '<div style="position:sticky;top:0;background:#1A1810;padding:0.7rem 1rem;border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center;z-index:1">'
-    + '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.12em">' + results.length + ' RESULTS \u2014 ' + q.toUpperCase() + '</span>'
-    + '<button id="hr-close-btn" style="background:#C4A860;border:none;color:#0A0805;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:1rem;font-weight:bold">\u00d7</button>'
-    + '</div>';
+
+  var header = '<div style="position:sticky;top:0;background:#1A1810;padding:0.65rem 1rem;'
+    + 'border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center">'
+    + '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.1em">'
+    + results.length + ' results \u2014 ' + q + '</span>'
+    + '<button onclick="document.getElementById(\'hero-results\').classList.remove(\'open\')" '
+    + 'style="background:#C4A860;border:none;color:#000;width:26px;height:26px;'
+    + 'border-radius:50%;cursor:pointer;font-size:1rem;line-height:1">\u00d7</button></div>';
+
   if (!results.length) {
-    panel.innerHTML = closeBtn + '<div style="padding:1.5rem;color:#8A7A58">No results for <strong style="color:#C4A860">' + q + '</strong>.</div>';
-    document.getElementById('hr-close-btn').onclick = function(){ modal.style.display='none'; };
+    panel.innerHTML = header + '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">'
+      + 'No passages found for <strong>' + q + '</strong>.</div>';
     return;
   }
-  var rows = results.slice(0, 100).map(function(s) {
+
+  var rows = '';
+  results.slice(0, 100).forEach(function(s) {
     var book = null;
     for (var i = 0; i < BOOKS.length; i++) {
       var b = BOOKS[i];
-      if ((b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); }) || b.tradition===(s._tradition||'')) { book=b; break; }
+      if ((b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); })
+          || b.tradition === (s._tradition||'')) { book = b; break; }
     }
     var col   = book ? book.color : '#C4A860';
-    var label = book ? book.short : (s._tradition||'');
+    var label = book ? book.short : (s._tradition || '');
     var bid   = book ? book.id : '';
-    var snip  = (s.translation||'').slice(0,180);
-    return '<div class="hr-row" data-bid="' + bid + '" style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">'
-      + '<div style="font-weight:700;font-size:0.9rem;color:#F0E8D0;margin-bottom:0.2rem">' + (s.title_inferred||'Untitled') + '</div>'
-      + '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.12em;text-transform:uppercase;color:' + col + ';margin-bottom:0.3rem">' + label + '</div>'
-      + '<div style="font-size:0.78rem;color:#7A6A50;line-height:1.6">' + snip + '\u2026</div>'
-      + '</div>';
-  }).join('');
-  var footer = results.length > 100 ? '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.65rem;color:#5A5040">Showing 100 of ' + results.length + '</div>' : '';
-  panel.innerHTML = closeBtn + rows + footer;
-  document.getElementById('hr-close-btn').onclick = function(){ modal.style.display='none'; };
-  panel.querySelectorAll('.hr-row').forEach(function(row) {
-    row.onmouseenter = function(){ this.style.background='#221E0E'; };
-    row.onmouseleave = function(){ this.style.background=''; };
-    row.onclick = function() {
-      var bid = this.getAttribute('data-bid');
-      modal.classList.remove('open');
-      if (bid) { var bk = BOOKS.find(function(b){ return b.id===bid; }); if(bk) openBook(bk); }
-    };
+    rows += '<div style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer;active-color:#221E0E" '
+      + 'onclick="document.getElementById(\'hero-results\').classList.remove(\'open\');">'
+      + '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.15rem">'
+      + (s.title_inferred || 'Untitled') + '</div>'
+      + '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;'
+      + 'text-transform:uppercase;color:' + col + ';margin-bottom:0.25rem">' + label + '</div>'
+      + '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.55">'
+      + (s.translation || '').slice(0, 160) + '\u2026</div></div>';
   });
+
+  if (results.length > 100) {
+    rows += '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.62rem;color:#5A5040">'
+      + 'Showing 100 of ' + results.length + ' \u2014 refine your search</div>';
+  }
+
+  panel.innerHTML = header + rows;
 }
 
 
