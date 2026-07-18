@@ -1422,7 +1422,6 @@
         autofocus>
       <button class="global-search-btn" onclick="runGlobalSearch()">Search</button>
     </div>
-    <div id="hero-results" style="display:none;max-width:680px;margin:1rem auto 0;background:#1A1810;border:1px solid #C4A860;border-radius:2px;max-height:70vh;overflow-y:auto"></div>
     <div class="global-search-hints">
       <span onclick="prefill('menstruation cramps')">menstruation cramps</span>
       <span onclick="prefill('fever malaria')">fever / malaria</span>
@@ -3358,7 +3357,7 @@ function showCorrelations(plantName) {
       body.appendChild(item);
     });
   }
-  panel.style.display = 'block';
+  
   panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 // Wire into data load
@@ -3627,11 +3626,11 @@ document.addEventListener('click', function(e) {
 // ── Global search ─────────────────────────────────────────────
 function runGlobalSearch() {
   var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
-  var panel = document.getElementById('hero-results');
+  document.getElementById('hero-results').style.display='block'; var panel = document.getElementById('hero-results-inner');
   if (!panel) return;
-  if (!q) { panel.style.display = 'none'; return; }
+  if (!q) { document.getElementById('hero-results').style.display='none'; return; }
   if (!corpusData.length) {
-    panel.style.display = 'block';
+    
     panel.innerHTML = '<p style="padding:1rem;color:#8A7A58">Corpus loading\u2026 try again shortly.</p>';
     return;
   }
@@ -3639,7 +3638,7 @@ function runGlobalSearch() {
   var results = corpusData.filter(function(s) {
     return (((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase().indexOf(ql) !== -1);
   });
-  panel.style.display = 'block';
+  
   if (!results.length) {
     panel.innerHTML = '<p style="padding:1rem;color:#8A7A58;font-size:0.82rem">No results for <em>' + q + '</em>.</p>';
     return;
@@ -3664,7 +3663,7 @@ function runGlobalSearch() {
     +'<span style="font-family:monospace;font-size:0.62rem;color:#8A7A58;letter-spacing:0.1em">'+results.length+' RESULTS</span>'
     +'<button onclick="document.getElementById(\'hero-results\').style.display=\'none\'" style="background:none;border:none;color:#5A5040;cursor:pointer;font-size:1.1rem">&times;</button>'
     +'</div>' + rows.join('') + (results.length > 80 ? '<p style="padding:0.5rem 1rem;font-size:0.7rem;color:#5A5040">Showing 80 of '+results.length+'</p>' : '');
-  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+  // fixed modal — no scroll needed
 }
 
 
@@ -3907,6 +3906,10 @@ function renderResearchTab() {
 </div>
 
 <div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
+<div id="hero-results" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9000;overflow:hidden;pointer-events:none">
+  <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);pointer-events:auto" onclick="document.getElementById('hero-results').style.display='none'"></div>
+  <div id="hero-results-inner" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(680px,95vw);max-height:80vh;background:#1A1810;border:1px solid #C4A860;border-radius:4px;overflow-y:auto;pointer-events:auto;box-shadow:0 20px 60px rgba(0,0,0,0.8)"></div>
+</div>
 </body>
 </html>
   <!-- ── PLANT DATABASE TAB ─────────────────────────────────── -->
