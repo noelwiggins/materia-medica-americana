@@ -1340,6 +1340,30 @@
   .xref-back-btn { background:none; border:1px solid var(--border); color:var(--ink); padding:0.2rem 0.6rem; cursor:pointer; font-family:var(--font-code); font-size:0.58rem; white-space:nowrap; }
   .xref-back-btn:hover { background:rgba(196,168,130,0.15); }
   
+  /* ── Search results modal ── */
+  #hero-results {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,0.78);
+  }
+  #hero-results.open {
+    display: block;
+  }
+  #hero-results-inner {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(680px, 96vw);
+    max-height: 88vh;
+    background: #1A1810;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-shadow: 0 0 0 1px #C4A860, 0 20px 60px rgba(0,0,0,0.9);
+  }
+
   /* ── Hidden UI elements (search overlay, toasts) ── */
   .search-results-overlay { display:none; position:fixed; inset:0; z-index:1000;
     background:rgba(0,0,0,0.5); }
@@ -3630,8 +3654,8 @@ function runGlobalSearch() {
   var modal = document.getElementById('hero-results');
   var panel = document.getElementById('hero-results-inner');
   if (!modal || !panel) return;
-  modal.style.display = 'block'; modal.style.visibility = 'visible';
-  modal.onclick = function(e) { if (e.target === modal) { modal.style.display='none'; modal.style.visibility='hidden'; } modal.style.visibility = 'hidden'; };
+  modal.classList.add('open');
+  modal.onclick = function(e) { if (e.target === modal) { modal.classList.remove('open'); } modal.style.visibility = 'hidden'; };
   if (!corpusData || !corpusData.length) {
     panel.innerHTML = '<div style="padding:2rem;text-align:center;color:#8A7A58;font-family:monospace;font-size:0.8rem">Corpus loading \u2014 please wait and try again.</div>';
     return;
@@ -3673,7 +3697,7 @@ function runGlobalSearch() {
     row.onmouseleave = function(){ this.style.background=''; };
     row.onclick = function() {
       var bid = this.getAttribute('data-bid');
-      modal.style.display = 'none'; modal.style.visibility = 'hidden';
+      modal.classList.remove('open');
       if (bid) { var bk = BOOKS.find(function(b){ return b.id===bid; }); if(bk) openBook(bk); }
     };
   });
@@ -3920,8 +3944,8 @@ function renderResearchTab() {
 </div>
 
 <div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div>
-<div id="hero-results" style="display:none;visibility:hidden;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75)">
-  <div id="hero-results-inner" style="position:absolute;top:5vh;left:50%;transform:translateX(-50%);width:min(680px,96vw);max-height:88vh;background:#1A1810;border-radius:4px;overflow-y:auto;box-shadow:0 0 0 1px #C4A860,0 20px 60px rgba(0,0,0,0.9)"></div>
+<div id="hero-results">
+  <div id="hero-results-inner"></div>
 </div>
 </div>
 </body>
