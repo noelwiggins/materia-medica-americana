@@ -1445,9 +1445,9 @@
     <div class="global-search-eyebrow">Search 2,581 passages across 23 traditions &middot; 5,000 years</div>
     <div class="global-search-box">
       <input type="text" id="global-search-input" class="global-search-input"
-        placeholder="fever &middot; anxiety &middot; wound infection &middot; joint pain &middot; gout &middot; insomnia"
-        autocomplete="off" onkeydown="if(event.key==='Enter') runGlobalSearch()"
-        autofocus>
+        placeholder="fever · anxiety · wound infection · joint pain · gout · insomnia"
+        autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+        onkeydown="if(event.key==='Enter') runGlobalSearch()">
       <button class="global-search-btn" onclick="runGlobalSearch()">Search</button>
     </div>
     <div class="global-search-hints">
