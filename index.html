@@ -3705,11 +3705,18 @@ function runGlobalSearch() {
     }
 
     var ql = q.toLowerCase();
+    // Split into words — match ANY word (OR logic for multi-word pills)
+    var words = ql.split(/\s+/).filter(function(w){ return w.length >= 3; });
+    if (!words.length) words = [ql];
     var results = [];
     for (var ri = 0; ri < corpusData.length; ri++) {
       var s = corpusData[ri];
       var hay = ((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase();
-      if (hay.indexOf(ql) !== -1) results.push(s);
+      var match = false;
+      for (var wi = 0; wi < words.length; wi++) {
+        if (hay.indexOf(words[wi]) !== -1) { match = true; break; }
+      }
+      if (match) results.push(s);
     }
 
     // Build inner HTML
