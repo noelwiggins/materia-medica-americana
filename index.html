@@ -3701,7 +3701,7 @@ function runGlobalSearch() {
   document.body.appendChild(overlay);
 
   // Close handlers
-  document.getElementById('hr-close').onclick = function() { overlay.remove(); };
+  var closeBtn = overlay.querySelector('#hr-close'); if(closeBtn) closeBtn.onclick = function() { overlay.remove(); };
   overlay.onclick = function(e) { if (e.target === overlay) overlay.remove(); };
 
   // Row click handlers
