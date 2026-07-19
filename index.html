@@ -3625,9 +3625,26 @@ function runGlobalSearch() {
   var existing = document.getElementById('hero-results');
   if (existing) existing.remove();
 
-  // Check corpus
+  // If corpus not loaded yet, show spinner and retry
   if (!corpusData || !corpusData.length) {
-    alert('Corpus still loading \u2014 wait a few seconds and try again.');
+    var spinner = document.createElement('div');
+    spinner.id = 'hero-results';
+    spinner.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.78);display:flex;align-items:center;justify-content:center';
+    spinner.innerHTML = '<div style="background:#1A1810;border:1px solid #C4A860;border-radius:4px;padding:2rem 2.5rem;text-align:center;color:#C4A860;font-family:monospace;font-size:0.82rem;letter-spacing:0.1em">LOADING CORPUS…<br><br><span style="color:#5A5040;font-size:0.7rem">Please wait</span></div>';
+    document.body.appendChild(spinner);
+    var tries = 0;
+    var wait = setInterval(function() {
+      tries++;
+      if (corpusData && corpusData.length) {
+        clearInterval(wait);
+        spinner.remove();
+        runGlobalSearch();
+      } else if (tries > 20) {
+        clearInterval(wait);
+        spinner.innerHTML = '<div style="background:#1A1810;border:1px solid #C4A860;border-radius:4px;padding:2rem;text-align:center;color:#8A7A58;font-family:monospace;font-size:0.8rem">Could not load corpus.<br>Please refresh the page.</div>';
+        setTimeout(function(){ spinner.remove(); }, 3000);
+      }
+    }, 500);
     return;
   }
 
