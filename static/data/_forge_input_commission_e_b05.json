@@ -1,0 +1,28 @@
+{
+  "segments": [
+    {
+      "label": "German Commission E Monographs — Valerian root (Valeriana officinalis)",
+      "text": "Source: German Commission E Monographs\nPlant: Valerian root (Valeriana officinalis)\nPart used: Radix Valerianae\n\nWrite a Plantacopia corpus entry. Fields: title_inferred (common name), original_text (Latin pharmaceutical name and key active compounds with percentages where known), translation (2-4 sentences: approved therapeutic uses, mechanism of action, clinical evidence summary), preparation (dosage forms and recommended doses per German Commission E Monographs), condition (primary indications), source_section (German Commission E Monographs — Valerian root)."
+    },
+    {
+      "label": "German Commission E Monographs — Verbena (Verbena officinalis)",
+      "text": "Source: German Commission E Monographs\nPlant: Verbena (Verbena officinalis)\nPart used: Herba Verbenae\n\nWrite a Plantacopia corpus entry. Fields: title_inferred (common name), original_text (Latin pharmaceutical name and key active compounds with percentages where known), translation (2-4 sentences: approved therapeutic uses, mechanism of action, clinical evidence summary), preparation (dosage forms and recommended doses per German Commission E Monographs), condition (primary indications), source_section (German Commission E Monographs — Verbena)."
+    },
+    {
+      "label": "German Commission E Monographs — Wild thyme (Thymus serpyllum)",
+      "text": "Source: German Commission E Monographs\nPlant: Wild thyme (Thymus serpyllum)\nPart used: Herba Serpylli\n\nWrite a Plantacopia corpus entry. Fields: title_inferred (common name), original_text (Latin pharmaceutical name and key active compounds with percentages where known), translation (2-4 sentences: approved therapeutic uses, mechanism of action, clinical evidence summary), preparation (dosage forms and recommended doses per German Commission E Monographs), condition (primary indications), source_section (German Commission E Monographs — Wild thyme)."
+    },
+    {
+      "label": "German Commission E Monographs — Witch hazel (Hamamelis virginiana)",
+      "text": "Source: German Commission E Monographs\nPlant: Witch hazel (Hamamelis virginiana)\nPart used: Folium Hamamelidis\n\nWrite a Plantacopia corpus entry. Fields: title_inferred (common name), original_text (Latin pharmaceutical name and key active compounds with percentages where known), translation (2-4 sentences: approved therapeutic uses, mechanism of action, clinical evidence summary), preparation (dosage forms and recommended doses per German Commission E Monographs), condition (primary indications), source_section (German Commission E Monographs — Witch hazel)."
+    },
+    {
+      "label": "German Commission E Monographs — Yarrow (Achillea millefolium)",
+      "text": "Source: German Commission E Monographs\nPlant: Yarrow (Achillea millefolium)\nPart used: Herba Millefolii\n\nWrite a Plantacopia corpus entry. Fields: title_inferred (common name), original_text (Latin pharmaceutical name and key active compounds with percentages where known), translation (2-4 sentences: approved therapeutic uses, mechanism of action, clinical evidence summary), preparation (dosage forms and recommended doses per German Commission E Monographs), condition (primary indications), source_section (German Commission E Monographs — Yarrow)."
+    },
+    {
+      "label": "German Commission E Monographs — Yohimbe (Pausinystalia yohimbe)",
+      "text": "Source: German Commission E Monographs\nPlant: Yohimbe (Pausinystalia yohimbe)\nPart used: Cortex Yohimbe\n\nWrite a Plantacopia corpus entry. Fields: title_inferred (common name), original_text (Latin pharmaceutical name and key active compounds with percentages where known), translation (2-4 sentences: approved therapeutic uses, mechanism of action, clinical evidence summary), preparation (dosage forms and recommended doses per German Commission E Monographs), condition (primary indications), source_section (German Commission E Monographs — Yohimbe)."
+    }
+  ]
+}
