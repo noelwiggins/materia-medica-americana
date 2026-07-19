@@ -1424,12 +1424,14 @@
       <button class="global-search-btn" onclick="runGlobalSearch()">Search</button>
     </div>
     <div class="global-search-hints">
-      <span onclick="prefill('menstruation cramps')">menstruation cramps</span>
-      <span onclick="prefill('fever malaria')">fever / malaria</span>
-      <span onclick="prefill('wound infection')">wound infection</span>
-      <span onclick="prefill('anxiety insomnia')">anxiety / insomnia</span>
-      <span onclick="prefill('digestive pain')">digestive pain</span>
-      <span onclick="prefill('joint pain gout')">joint pain / gout</span>
+      <span onclick="quickSearch('ayahuasca psychedelic')">&#9670; psychedelics</span>
+      <span onclick="quickSearch('longevity immortal rejuven')">&#9670; long life</span>
+      <span onclick="quickSearch('fever malaria')">&#9670; fever / malaria</span>
+      <span onclick="quickSearch('anxiety insomnia')">&#9670; anxiety</span>
+      <span onclick="quickSearch('wound infection')">&#9670; wound healing</span>
+      <span onclick="quickSearch('ginger turmeric')">&#9670; ginger & turmeric</span>
+      <span onclick="quickSearch('joint pain gout')">&#9670; joint pain</span>
+      <span onclick="quickSearch('digestive')">&#9670; digestion</span>
     </div>
   </div>
 </header>
@@ -1485,6 +1487,55 @@
       <div class="stat-tile-num" id="stat-num-convergence">—</div><div class="stat-tile-label">Cross-Book Matches</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
   </div>
+  <!-- ── Featured Articles ───────────────────────────────────────── -->
+  <div style="padding:0 0 0.5rem">
+    <p style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.14em;
+       text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem">Featured Inquiries</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.8rem;margin-bottom:1.8rem">
+
+      <div onclick="quickSearch('ayahuasca peyote psilocybin mushroom psychedelic')"
+        style="background:#0F1A0F;border:1px solid #2A4A2A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#4A8A4A'" onmouseleave="this.style.borderColor='#2A4A2A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#4A8A4A;margin-bottom:0.4rem">Consciousness &amp; Healing</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#E8F4E8;margin-bottom:0.4rem;line-height:1.2">Psychedelics Across Traditions</div>
+        <div style="font-size:0.75rem;color:#6A7A6A;line-height:1.5">Ayahuasca, peyote, psilocybin mushrooms, and ritual plant medicines documented from Amazonian, Mesoamerican, North American, and Tibetan traditions.</div>
+      </div>
+
+      <div onclick="quickSearch('longevity immortal rejuven tonic rasayan jing adaptogen')"
+        style="background:#1A150A;border:1px solid #4A3A1A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#8A6A2A'" onmouseleave="this.style.borderColor='#4A3A1A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#8A6A2A;margin-bottom:0.4rem">Longevity &amp; Vitality</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#F4EED8;margin-bottom:0.4rem;line-height:1.2">Regimens for Long Life</div>
+        <div style="font-size:0.75rem;color:#7A6A4A;line-height:1.5">Rasayana from Ayurveda, Jing tonics from Chinese medicine, Tibetan rejuvenation formulas, and WHO-validated adaptogens. Five thousand years of anti-aging knowledge.</div>
+      </div>
+
+      <div onclick="quickSearch('wound infection fever malaria')"
+        style="background:#0A0F1A;border:1px solid #1A2A4A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#2A4A8A'" onmouseleave="this.style.borderColor='#1A2A4A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#4A6AAA;margin-bottom:0.4rem">Infectious Disease</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#D8E4F4;margin-bottom:0.4rem;line-height:1.2">Fever, Malaria &amp; Wound Healing</div>
+        <div style="font-size:0.75rem;color:#4A5A7A;line-height:1.5">From artemisinin in Daoist texts to cinchona bark in Peru to Egyptian wound dressings. The plants that changed medicine documented in their original sources.</div>
+      </div>
+
+      <div onclick="quickSearch('ginger turmeric garlic onion')"
+        style="background:#1A0A0A;border:1px solid #4A1A1A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#8A2A2A'" onmouseleave="this.style.borderColor='#4A1A1A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#AA4A4A;margin-bottom:0.4rem">Convergence</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#F4D8D8;margin-bottom:0.4rem;line-height:1.2">Plants in Every Tradition</div>
+        <div style="font-size:0.75rem;color:#7A4A4A;line-height:1.5">Ginger, turmeric, garlic, and onion appear in nearly every tradition from Egypt to Japan. See how 23 cultures documented the same plants across 4,000 years.</div>
+      </div>
+
+    </div>
+  </div>
+
   <div style="margin-bottom:0.4rem">
     <div class="section-eyebrow">The Library</div>
     <h2 class="section-title" style="margin-bottom:0.25rem">Choose a Book</h2>
@@ -3617,6 +3668,13 @@ document.addEventListener('click', function(e) {
 // ══════════════════════════════════════════════════════════════
 
 // ── Global search ─────────────────────────────────────────────
+function quickSearch(q) {
+  var inp = document.getElementById('global-search-input');
+  if (inp) inp.value = q;
+  runGlobalSearch();
+}
+function prefill(q) { quickSearch(q); }
+
 function runGlobalSearch() {
   try {
     var inp = document.getElementById('global-search-input');
