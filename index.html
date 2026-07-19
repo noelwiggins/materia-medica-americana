@@ -3618,103 +3618,124 @@ document.addEventListener('click', function(e) {
 
 // ── Global search ─────────────────────────────────────────────
 function runGlobalSearch() {
-  var q = (document.getElementById('global-search-input') || {value:''}).value.trim();
-  if (!q) return;
+  try {
+    var inp = document.getElementById('global-search-input');
+    var q = inp ? inp.value.trim() : '';
+    if (!q) return;
 
-  // Remove any existing modal
-  var existing = document.getElementById('hero-results');
-  if (existing) existing.remove();
+    // Remove any previous modal
+    var old = document.getElementById('search-modal');
+    if (old) old.remove();
 
-  // If corpus not loaded yet, show spinner and retry
-  if (!corpusData || !corpusData.length) {
-    var spinner = document.createElement('div');
-    spinner.id = 'hero-results';
-    spinner.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.78);display:flex;align-items:center;justify-content:center';
-    spinner.innerHTML = '<div style="background:#1A1810;border:1px solid #C4A860;border-radius:4px;padding:2rem 2.5rem;text-align:center;color:#C4A860;font-family:monospace;font-size:0.82rem;letter-spacing:0.1em">LOADING CORPUS…<br><br><span style="color:#5A5040;font-size:0.7rem">Please wait</span></div>';
-    document.body.appendChild(spinner);
-    var tries = 0;
-    var wait = setInterval(function() {
-      tries++;
-      if (corpusData && corpusData.length) {
-        clearInterval(wait);
-        spinner.remove();
-        runGlobalSearch();
-      } else if (tries > 20) {
-        clearInterval(wait);
-        spinner.innerHTML = '<div style="background:#1A1810;border:1px solid #C4A860;border-radius:4px;padding:2rem;text-align:center;color:#8A7A58;font-family:monospace;font-size:0.8rem">Could not load corpus.<br>Please refresh the page.</div>';
-        setTimeout(function(){ spinner.remove(); }, 3000);
-      }
-    }, 500);
-    return;
-  }
-
-  var ql = q.toLowerCase();
-  var results = corpusData.filter(function(s) {
-    return (((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase().indexOf(ql) !== -1);
-  });
-
-  // Build rows HTML
-  var rows = '';
-  results.slice(0, 100).forEach(function(s) {
-    var book = null;
-    for (var i = 0; i < BOOKS.length; i++) {
-      var b = BOOKS[i];
-      if ((b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); })
-          || b.tradition === (s._tradition||'')) { book = b; break; }
+    // Not loaded yet — show message and poll
+    if (!corpusData.length) {
+      var msg = document.createElement('div');
+      msg.id = 'search-modal';
+      msg.style.cssText = 'position:fixed;top:20vh;left:50%;transform:translateX(-50%);' +
+        'z-index:9999;background:#1A1810;border:1px solid #C4A860;border-radius:4px;' +
+        'padding:1.5rem 2rem;color:#C4A860;font-family:monospace;font-size:0.8rem;' +
+        'letter-spacing:0.1em;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.8)';
+      msg.innerHTML = 'LOADING…<br><small style="color:#5A5040">Searching when ready</small>';
+      document.body.appendChild(msg);
+      var t = 0;
+      var iv = setInterval(function() {
+        t++;
+        if (corpusData.length) { clearInterval(iv); msg.remove(); runGlobalSearch(); }
+        else if (t > 30) { clearInterval(iv); msg.innerHTML = 'Load failed — refresh page'; setTimeout(function(){msg.remove();},3000); }
+      }, 500);
+      return;
     }
-    var col   = book ? book.color : '#C4A860';
-    var label = book ? book.short : (s._tradition || '');
-    var bid   = book ? book.id : '';
-    rows += '<div data-bid="' + bid + '" style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">'
-      + '<div style="font-weight:700;font-size:0.9rem;color:#F0E8D0;margin-bottom:0.15rem">' + (s.title_inferred||'Untitled') + '</div>'
-      + '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;text-transform:uppercase;color:' + col + ';margin-bottom:0.25rem">' + label + '</div>'
-      + '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.55">' + (s.translation||'').slice(0,160) + '\u2026</div>'
-      + '</div>';
-  });
 
-  var noResults = !results.length
-    ? '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">No passages found for <strong style="color:#C4A860">' + q + '</strong>.<br><br>Try: fever, ginger, wound, anxiety, gout, malaria</div>'
-    : '';
+    var ql = q.toLowerCase();
+    var results = [];
+    for (var ri = 0; ri < corpusData.length; ri++) {
+      var s = corpusData[ri];
+      var hay = ((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase();
+      if (hay.indexOf(ql) !== -1) results.push(s);
+    }
 
-  var footer = results.length > 100
-    ? '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.62rem;color:#5A5040">Showing 100 of ' + results.length + '</div>'
-    : '';
+    // Build inner HTML
+    var inner = '<div style="position:sticky;top:0;background:#1A1810;padding:0.65rem 1rem;' +
+      'border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center">' +
+      '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.1em">' +
+      results.length + ' results — ' + q + '</span>' +
+      '<button class="sr-close" style="background:#C4A860;border:none;color:#000;' +
+      'width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:1.1rem;font-weight:bold;line-height:1">' +
+      '×</button></div>';
 
-  // Create modal from scratch
-  var overlay = document.createElement('div');
-  overlay.id = 'hero-results';
-  overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.78)';
-  overlay.innerHTML =
-    '<div id="hr-panel" style="position:absolute;top:5vh;left:50%;transform:translateX(-50%);'
-    + 'width:min(680px,96vw);max-height:88vh;background:#1A1810;border-radius:4px;'
-    + 'overflow-y:auto;box-shadow:0 0 0 1px #C4A860,0 20px 60px rgba(0,0,0,0.9)">'
-    + '<div style="position:sticky;top:0;background:#1A1810;padding:0.65rem 1rem;'
-    + 'border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center">'
-    + '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.1em">'
-    + results.length + ' results \u2014 ' + q + '</span>'
-    + '<button id="hr-close" style="background:#C4A860;border:none;color:#000;width:26px;height:26px;'
-    + 'border-radius:50%;cursor:pointer;font-size:1rem;font-weight:bold">\u00d7</button>'
-    + '</div>'
-    + (noResults || rows + footer)
-    + '</div>';
+    if (!results.length) {
+      inner += '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">' +
+        'No results for <strong style="color:#C4A860">' + q + '</strong>. ' +
+        'Try: fever, ginger, garlic, wound, anxiety, gout</div>';
+    } else {
+      for (var ri2 = 0; ri2 < Math.min(results.length, 80); ri2++) {
+        var s2 = results[ri2];
+        var book = null;
+        for (var bi = 0; bi < BOOKS.length; bi++) {
+          var b = BOOKS[bi];
+          var ck = s2._corpusKey || '';
+          var tr = s2._tradition || '';
+          var km = false;
+          for (var ki = 0; ki < (b.corpusKeys||[]).length; ki++) {
+            if (ck.startsWith(b.corpusKeys[ki])) { km = true; break; }
+          }
+          if (km || tr === b.tradition) { book = b; break; }
+        }
+        var col = book ? book.color : '#C4A860';
+        var lbl = book ? book.short : (s2._tradition || '');
+        inner += '<div class="sr-row" data-bid="' + (book ? book.id : '') + '" ' +
+          'style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">' +
+          '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">' +
+          (s2.title_inferred || 'Untitled') + '</div>' +
+          '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;' +
+          'text-transform:uppercase;color:' + col + ';margin-bottom:0.22rem">' + lbl + '</div>' +
+          '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.5">' +
+          (s2.translation || '').slice(0, 160) + '…</div></div>';
+      }
+      if (results.length > 80) {
+        inner += '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.62rem;color:#5A5040">' +
+          'Showing 80 of ' + results.length + '</div>';
+      }
+    }
 
-  document.body.appendChild(overlay);
+    // Create overlay
+    var overlay = document.createElement('div');
+    overlay.id = 'search-modal';
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.78)';
 
-  // Close handlers
-  var closeBtn = overlay.querySelector('#hr-close'); if(closeBtn) closeBtn.onclick = function() { overlay.remove(); };
-  overlay.onclick = function(e) { if (e.target === overlay) overlay.remove(); };
+    var panel = document.createElement('div');
+    panel.style.cssText = 'position:absolute;top:5vh;left:50%;transform:translateX(-50%);' +
+      'width:min(680px,96vw);max-height:88vh;background:#1A1810;border-radius:4px;' +
+      'overflow-y:auto;box-shadow:0 0 0 1px #C4A860,0 20px 60px rgba(0,0,0,0.9)';
+    panel.innerHTML = inner;
+    overlay.appendChild(panel);
+    document.body.appendChild(overlay);
 
-  // Row click handlers
-  overlay.querySelectorAll('[data-bid]').forEach(function(row) {
-    row.onmouseenter = function(){ this.style.background='#221E0E'; };
-    row.onmouseleave = function(){ this.style.background=''; };
-    row.onclick = function(e) {
-      e.stopPropagation();
-      var bid = this.getAttribute('data-bid');
-      overlay.remove();
-      if (bid) { var bk = BOOKS.find(function(b){ return b.id===bid; }); if(bk) openBook(bk); }
+    // Wire close
+    panel.querySelector('.sr-close').onclick = function(e) {
+      e.stopPropagation(); overlay.remove();
     };
-  });
+    overlay.onclick = function(e) { if (e.target === overlay) overlay.remove(); };
+
+    // Wire result rows
+    var rows = panel.querySelectorAll('.sr-row');
+    for (var ri3 = 0; ri3 < rows.length; ri3++) {
+      rows[ri3].onclick = (function(bid) { return function(e) {
+        e.stopPropagation();
+        overlay.remove();
+        if (bid) {
+          var bk = null;
+          for (var bi2 = 0; bi2 < BOOKS.length; bi2++) {
+            if (BOOKS[bi2].id === bid) { bk = BOOKS[bi2]; break; }
+          }
+          if (bk) openBook(bk);
+        }
+      }; })(rows[ri3].getAttribute('data-bid'));
+    }
+
+  } catch(err) {
+    alert('Search error: ' + err.message);
+  }
 }
 
 
