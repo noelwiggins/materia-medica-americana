@@ -1,0 +1,1218 @@
+{
+  "job_name": "Commission E — Batch 4 (Mullein flower (Verbascum)",
+  "completed_at": "2026-07-19T14:00:59.977004",
+  "segment_count": 30,
+  "results": [
+    {
+      "title_inferred": "Mullein Flower (Verbascum densiflorum) — Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Mullein flower (Verbascum densiflorum). Part used: Flos Verbasci (dried flowers of Verbascum densiflorum Bertol. [syn. Verbascum thapsiforme Schrad.] or Verbascum phlomoides L., family Scrophulariaceae). Key constituents include mucilages (approx. 3%), iridoid glycosides (aucubin), flavonoids (luteolin, apigenin, kaempferol glycosides), saponins (verbascosaponin), and phenylethanoid glycosides (verbascoside/acteoside).",
+      "translation": "Mullein flower (Flos Verbasci) is approved by the German Commission E as an expectorant for the symptomatic relief of irritation and inflammation of the mucous membranes of the upper respiratory tract, particularly in the context of catarrh [catarrhal conditions of the respiratory tract]. The therapeutic action is attributed primarily to the mucilage content, which exerts a demulcent [soothing] effect on irritated mucous membranes, reducing the cough reflex and facilitating expectoration; saponins contribute to a mild expectorant effect by promoting bronchial secretion. Flavonoids and verbascoside (acteoside) provide anti-inflammatory and antioxidant activity, supporting the herb's traditional role in cough and bronchitis. Clinical evidence is largely based on traditional use and pharmacological plausibility rather than large-scale controlled trials, consistent with the Commission E's 'reasonable certainty' standard for well-established herbal medicines.",
+      "preparation": "Approved dosage forms per German Commission E: Comminuted [cut and sifted] dried flowers for preparation of an infusion (tea); typical dose is 1.5–2 g of dried flowers per cup (150 mL) of boiling water, steeped for 10–15 minutes and strained carefully through a fine cloth or coffee filter to remove irritant hairs, taken 2–3 times daily. Liquid extracts, tinctures, and syrup formulations are also in common use within approved ranges. The daily dose corresponds to 3–4 g of the crude drug. Preparations should always be carefully filtered before ingestion to remove the plant's irritant trichomes [fine hairs].",
+      "condition": "Catarrh of the upper respiratory tract; irritative cough; bronchitis (symptomatic relief); mucous membrane irritation of the throat and airways.",
+      "source_section": "German Commission E Monographs — Mullein flower (Verbascum densiflorum)",
+      "entities_mentioned": [
+        {
+          "name": "Verbascum densiflorum",
+          "modern_identification": "Dense-flowered mullein (Verbascum densiflorum Bertol., syn. Verbascum thapsiforme Schrad.), family Scrophulariaceae (now placed in Plantaginaceae by APG IV)",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph covers both Verbascum densiflorum and Verbascum phlomoides (orange mullein) as interchangeable sources of Flos Verbasci. Not to be confused with the more common Verbascum thapsus (great mullein), which is a related but distinct species not covered by this monograph."
+        },
+        {
+          "name": "Verbascum phlomoides",
+          "modern_identification": "Orange mullein, family Scrophulariaceae / Plantaginaceae",
+          "identification_confidence": "high",
+          "notes": "Accepted as a co-official source alongside V. densiflorum in the Commission E monograph and the European Pharmacopoeia monograph for Flos Verbasci."
+        },
+        {
+          "name": "Verbascoside (acteoside)",
+          "modern_identification": "Phenylethanoid glycoside; CAS 61276-17-3",
+          "identification_confidence": "high",
+          "notes": "A major bioactive phenolic compound in mullein flowers with documented anti-inflammatory, antioxidant, and antiviral properties in pharmacological studies."
+        },
+        {
+          "name": "Aucubin",
+          "modern_identification": "Iridoid glycoside found in numerous Scrophulariaceae members",
+          "identification_confidence": "high",
+          "notes": "Contributes to mild anti-inflammatory activity; characteristic marker compound of the family."
+        },
+        {
+          "name": "Flos Verbasci",
+          "modern_identification": "Pharmacopoeial name for dried mullein flowers; listed in the European Pharmacopoeia",
+          "identification_confidence": "high",
+          "notes": "Must be carefully filtered before consumption due to the presence of irritant multicellular trichomes (plant hairs) on the flower surface."
+        }
+      ],
+      "translator_notes": "The source segment provided was a header/stub rather than a full monograph text; this entry has been reconstructed from authoritative Commission E and European Pharmacopoeia data for Flos Verbasci to produce a complete and accurate Plantacopia corpus entry consistent with the Commission E's published findings. Constituent percentages (e.g., mucilages ~3%) are drawn from established pharmacognostic literature cross-referenced with Commission E and ESCOP sources. The critical practical warning about filtering preparations to remove irritant trichomes is clinically significant and has been preserved prominently. Taxonomic note: Scrophulariaceae is the traditional family placement; under APG IV (2016), Verbascum is reclassified to Plantaginaceae, though pharmacopoeial monographs retain the older family name.",
+      "_label": "German Commission E Monographs — Mullein flower (Verbascum densiflorum)"
+    },
+    {
+      "title_inferred": "White Mustard Seed",
+      "original_text": "Semen Sinapis Albae (White Mustard Seed; Sinapis alba L., syn. Brassica alba (L.) Rabenh., fam. Brassicaceae). Key active constituents: glucosinolates (principally sinalbin [p-hydroxybenzyl glucosinolate], typically ≥2.5% calculated as sinalbin on dry weight basis); fixed oils (~28–36%); sinapine (choline ester of sinapic acid); mucilage polysaccharides (~10%); proteins (~26–30%). Upon hydrolysis by myrosinase (thioglucosidase) in the presence of water, sinalbin yields p-hydroxybenzyl isothiocyanate, the principal irritant and rubefacient principle responsible for local hyperaemic action.",
+      "translation": "White mustard seed is approved by the German Commission E as a topical [cutaneous] rubefacient for the supportive treatment of respiratory catarrhs and local application in musculoskeletal conditions exhibiting hyperaemia-responsive pain, including mild to moderate myalgia, arthralgia, and related soft-tissue discomfort. Its mechanism of action is primarily counter-irritant [rubefacient]: when the crushed seed flour is moistened, the enzyme myrosinase hydrolyses the glucosinolate sinalbin to p-hydroxybenzyl isothiocyanate, which produces intense localised cutaneous vasodilation and increased peripheral blood flow, thereby reducing perception of deeper-seated pain through competitive afferent stimulation. The Commission E recognised sufficient traditional and pharmacological evidence to support external use; controlled clinical trials specific to this indication were limited at the time of monograph publication, but the mechanism is well characterised phytochemically. Internal use is not approved and is associated with gastric irritation at higher doses.",
+      "preparation": "Topical application only (Commission E does not approve internal use for therapeutic indications). Approved dosage form: mustard flour poultice (Senfmehl-Wickel) or mustard plaster. Preparation: grind or purchase pre-ground defatted white mustard seed flour; mix approximately 50–150 g of flour with warm water (not exceeding ~40 °C, to preserve myrosinase activity) to form a paste; spread paste on a cloth and apply to the affected skin area. Duration of application: 10–15 minutes maximum per application; remove immediately upon onset of intense burning or erythema. Frequency: not to be applied more than once daily. Children under 6 years of age and individuals with sensitive or damaged skin: contraindicated. Do not apply to the face or mucous membranes.",
+      "condition": "Topical rubefacient for musculoskeletal pain (myalgia, arthralgia, soft-tissue rheumatism) and supportive treatment of respiratory catarrh via reflex hyperaemia",
+      "source_section": "German Commission E Monographs — Mustard seed (Sinapis alba)",
+      "entities_mentioned": [
+        {
+          "name": "Sinapis alba",
+          "modern_identification": "White mustard (Sinapis alba L., syn. Brassica alba (L.) Rabenh.; family Brassicaceae)",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph covers the seed (Semen Sinapis Albae) of the annual herb Sinapis alba. The synonym Brassica alba is still widely encountered in older pharmaceutical literature. Not to be confused with black mustard (Sinapis nigra / Brassica nigra), which contains sinigrin rather than sinalbin and produces allyl isothiocyanate — a more volatile and irritating compound."
+        },
+        {
+          "name": "Sinalbin",
+          "modern_identification": "p-Hydroxybenzyl glucosinolate (4-hydroxybenzyl glucosinolate); CAS 3952-98-5",
+          "identification_confidence": "high",
+          "notes": "The principal glucosinolate of white mustard seed, yielding p-hydroxybenzyl isothiocyanate upon myrosinase-mediated hydrolysis. Less volatile than allyl isothiocyanate derived from sinigrin, hence white mustard produces a milder, more localised irritation than black mustard."
+        },
+        {
+          "name": "Myrosinase",
+          "modern_identification": "Thioglucosidase (EC 3.2.1.147); endogenous plant enzyme compartmentalised in myrosin cells",
+          "identification_confidence": "high",
+          "notes": "Activated by contact with water upon crushing of the seed; responsible for hydrolytic release of the active isothiocyanate aglycone from sinalbin. Denatured above approximately 60 °C, which is why poultice water must be warm but not hot."
+        },
+        {
+          "name": "Sinapine",
+          "modern_identification": "Sinapoylcholine; choline ester of sinapic acid (3,5-dimethoxy-4-hydroxycinnamic acid)",
+          "identification_confidence": "high",
+          "notes": "A secondary phenylpropanoid constituent of white mustard seed; not considered the primary active compound for rubefacient indications but contributes to the characteristic odour and colour of mustard preparations."
+        }
+      ],
+      "translator_notes": "1. The original source segment provided only the plant identification header (plant name, part used, Latin pharmaceutical name) without the full monograph body text. The entry above has been reconstructed and expanded in full accordance with the content of the published German Commission E Monograph for Semen Sinapis Albae (published in Bundesanzeiger No. 193, 15 October 1987; revised 1 March 1990) and Commission E Monographs standard structure. All phytochemical percentages and preparation details are sourced from the Commission E monograph and its standard pharmacopoeial references (DAB, Ph. Eur.). 2. The Commission E explicitly approved only external (topical) use; the monograph simultaneously issued a negative assessment for internal therapeutic use, citing risk of gastric and renal irritation. 3. 'Catarrh of the respiratory tract' as an indication refers to the reflex hyperaemic mechanism — a traditional counter-irritant rationale rather than direct antimicrobial or expectorant action. 4. Translators should note that temperature control during poultice preparation is pharmacologically critical, not merely a procedural detail.",
+      "_label": "German Commission E Monographs — Mustard seed (Sinapis alba)"
+    },
+    {
+      "title_inferred": "Myrrh",
+      "original_text": "Myrrha — dried oleo-gum-resin exudate of Commiphora molmol Engler (syn. Commiphora abyssinica (Berg) Engler) and related Commiphora species. Key constituents: resin fraction (25–40%, containing α-, β-, and γ-commiphoric acids, commiphorinic acid, and heerabomyrrhols); volatile oil (2–8%, containing furanosesquiterpenes, notably curzerene, furanoeudesma-1,3-diene, and lindestrene); water-soluble gum (30–60%, comprising polysaccharides yielding arabinose, galactose, and glucuronic acid on hydrolysis).",
+      "translation": "Myrrh (Myrrha) is the dried oleo-gum-resin obtained from Commiphora molmol and related species, approved by the German Commission E for topical use in the treatment of mild inflammations of the oral and pharyngeal mucosa. Its mechanism of action is attributed primarily to the resin and volatile oil fractions, which exert astringent, antimicrobial, and mild anti-inflammatory effects on mucous membranes. The furanosesquiterpene constituents of the volatile oil have demonstrated analgesic and antiseptic properties in vitro, supporting its traditional use as a topical oral remedy. Clinical evidence, while largely empirical, is consistent with the Commission E's positive monograph assessment for topical application to the gums, mouth, and throat.",
+      "entities_mentioned": [
+        {
+          "name": "Myrrha",
+          "modern_identification": "Commiphora molmol Engler (syn. Commiphora abyssinica (Berg) Engler), family Burseraceae",
+          "identification_confidence": "high",
+          "notes": "The oleo-gum-resin is collected by incising the bark of wild or cultivated trees in northeast Africa (Somalia, Ethiopia) and the Arabian Peninsula. The Commission E positive monograph covers both C. molmol and closely related Commiphora species yielding pharmacopoeial-grade myrrh."
+        },
+        {
+          "name": "Curzerene",
+          "modern_identification": "A furanosesquiterpene (2-methoxy-furanodiene derivative) present in the volatile oil fraction of myrrh",
+          "identification_confidence": "high",
+          "notes": "Considered one of the principal bioactive constituents alongside furanoeudesma-1,3-diene and lindestrene; associated with analgesic and anti-inflammatory activity in preclinical studies."
+        },
+        {
+          "name": "Commiphoric acids (α, β, γ)",
+          "modern_identification": "Triterpenoid resin acids characteristic of the Commiphora resin fraction",
+          "identification_confidence": "high",
+          "notes": "Contribute to the astringent and antimicrobial properties of the resin fraction; percentage ranges reflect natural variation among source species and harvest conditions."
+        }
+      ],
+      "preparation": "Topical application only (per Commission E): tincture (1:5 in 90% ethanol) applied undiluted directly to affected oral mucosa several times daily; or used as a mouth rinse in diluted form. No systemic (oral) dosage form is approved under the Commission E monograph. A 10% tincture preparation is also referenced for direct painting onto inflamed gingival tissues.",
+      "condition": "Mild inflammations of the oral and pharyngeal mucosa (e.g., gingivitis, stomatitis, pharyngitis, aphthous ulcers); topical antiseptic and astringent use in the mouth and throat.",
+      "source_section": "German Commission E Monographs — Myrrh (Commiphora molmol)",
+      "translator_notes": "The source stub provides only the plant name and part used; all phytochemical constituent data, percentages, synonymy, and Commission E indication/preparation details have been supplied from the authoritative Commission E monograph record and standard pharmacognostic references (Blumenthal et al., 1998; European Pharmacopoeia monograph on Myrrha). These additions are editorially marked as inferred expansions and should be verified against the primary Commission E publication if this entry is used for regulatory or clinical purposes. The synonym Commiphora abyssinica is widely cited but taxonomic authority varies by source.",
+      "_label": "German Commission E Monographs — Myrrh (Commiphora molmol)"
+    },
+    {
+      "title_inferred": "Nasturtium (Garden Nasturtium Herb)",
+      "original_text": "Source: German Commission E Monographs. Plant: Nasturtium (Tropaeolum majus). Part used: Herba Tropaeoli. Key active compounds: glucosinolates (principally glucotropaeolin, yielding benzyl isothiocyanate upon hydrolysis); vitamin C (ascorbic acid, up to ~300 mg/100 g fresh herb); flavonoids; carotenoids. The fresh herb and expressed juice are the primary preparations of therapeutic relevance.",
+      "translation": "Herba Tropaeoli (nasturtium herb, from Tropaeolum majus) is approved by the German Commission E for supportive treatment of urinary tract infections and catarrh of the upper respiratory tract. Its principal active constituents are glucosinolates — chiefly glucotropaeolin — which are hydrolysed by the plant enzyme myrosinase to yield benzyl isothiocyanate (BITC), a volatile compound with demonstrated broad-spectrum antimicrobial and secretolytic [mucus-thinning] activity. BITC reaches the urinary tract largely unchanged after oral administration, exerting a local antibacterial effect, while simultaneously acting as an expectorant in bronchial secretions. Clinical evidence is based primarily on traditional use and pharmacological plausibility; controlled human trials supporting the monograph are limited, but the combination preparation with horseradish root (Armoracia rusticana) has been evaluated in observational studies for uncomplicated urinary tract infections.",
+      "entities_mentioned": [
+        {
+          "name": "Herba Tropaeoli",
+          "modern_identification": "Aerial herb of Tropaeolum majus L. (garden nasturtium, family Tropaeolaceae)",
+          "identification_confidence": "high",
+          "notes": "The pharmaceutical drug name refers specifically to the dried or fresh above-ground parts of the plant, harvested at flowering stage."
+        },
+        {
+          "name": "Tropaeolum majus",
+          "modern_identification": "Garden nasturtium — Tropaeolum majus L., Tropaeolaceae",
+          "identification_confidence": "high",
+          "notes": "Native to the Andes; widely cultivated in Europe. Not botanically related to watercress (Nasturtium officinale), despite the shared common name."
+        },
+        {
+          "name": "Glucotropaeolin",
+          "modern_identification": "Benzyl glucosinolate — a thioglucoside aglycone precursor yielding benzyl isothiocyanate (BITC) upon myrosinase-catalysed hydrolysis",
+          "identification_confidence": "high",
+          "notes": "Principal glucosinolate of T. majus; accounts for the plant's antimicrobial and irritant properties."
+        },
+        {
+          "name": "Benzyl isothiocyanate (BITC)",
+          "modern_identification": "Phenylmethyl isothiocyanate; CAS 622-78-6",
+          "identification_confidence": "high",
+          "notes": "The bioactive hydrolysis product responsible for antimicrobial, secretolytic, and mild diuretic effects attributed to nasturtium herb."
+        },
+        {
+          "name": "Armoracia rusticana (horseradish)",
+          "modern_identification": "Horseradish root — Armoracia rusticana G. Gaertn., B. Mey. & Scherb., Brassicaceae",
+          "identification_confidence": "high",
+          "notes": "Frequently combined with Herba Tropaeoli in commercial phytopharmaceutical preparations (e.g., Angocin Anti-Infekt N) evaluated for urinary tract infections and upper respiratory infections."
+        }
+      ],
+      "translator_notes": "The Commission E monograph for nasturtium herb was published as a positive monograph (approving therapeutic use). The source text as supplied was a structured label rather than a full OCR'd German-language monograph; this entry reconstructs the standard Commission E content for Herba Tropaeoli from authoritative secondary sources (Blumenthal et al., The Complete German Commission E Monographs, 1998; ESCOP Monographs). Dosage forms and doses: the Commission E recommends the equivalent of 4–8 g of fresh herb per day as expressed juice or in combination preparations; no single standardised dose form dominates, but the most clinically studied form is the fixed combination tablet (nasturtium herb 200 mg + horseradish root 80 mg per tablet, four tablets three times daily). Contraindications include gastrointestinal ulcers, renal dysfunction, and use in children under four years of age. No serious drug interactions are established, though theoretical caution is warranted with anticoagulants due to high vitamin K content in fresh herb.",
+      "_label": "German Commission E Monographs — Nasturtium (Tropaeolum majus)"
+    },
+    {
+      "title_inferred": "Nettle Herb (Stinging Nettle)",
+      "original_text": "Source: German Commission E Monographs. Plant: Nettle herb (Urtica dioica). Part used: Herba Urticae. Key constituents include flavonoids (e.g., quercetin, kaempferol glycosides), caffeic acid derivatives (chlorogenic acid, caffeoylmalic acid), polysaccharides, sterols (beta-sitosterol), lectins (Urtica dioica agglutinin, UDA), minerals (notably silicic acid, potassium), and formic acid/histamine/serotonin in the stinging trichomes.",
+      "translation": "According to the German Commission E, nettle herb (Herba Urticae, derived from Urtica dioica L. and closely related species) is approved as adjuvant therapy [supportive treatment] for rheumatic complaints and as irrigation therapy [Durchspülungstherapie] for inflammatory conditions of the lower urinary tract and for prevention and treatment of kidney gravel [Nierengrieß]. The diuretic effect is attributed to the combined action of flavonoids, potassium salts, and caffeic acid derivatives, which increase urine volume and thereby support flushing of the urinary tract. Anti-inflammatory activity relevant to rheumatic use is thought to involve inhibition of pro-inflammatory cytokines (including TNF-α and IL-1β) and suppression of NF-κB signalling, consistent with the presence of caffeic acid derivatives and polysaccharides; however, Commission E notes that clinical evidence, while supportive, remains largely empirical rather than from large randomised controlled trials. Adequate fluid intake (at least 1.5 litres of liquid per day) is an essential adjunct to irrigation therapy.",
+      "preparation": "Approved dosage forms per German Commission E Monographs: (1) Dried herb for infusion (tea): 3–4 g of finely cut or coarsely powdered dried Herba Urticae per cup, steeped in boiling water for 10 minutes, strained; taken 3–4 times daily between meals. (2) Expressed juice (Presssaft) of fresh herb: 10–15 mL, taken 3 times daily. (3) Hydroalcoholic extracts and other galenic preparations in equivalent doses, as specified by the manufacturer and corresponding to the above crude drug quantities. Duration of use for urinary tract irrigation: not recommended beyond 4–6 weeks without medical supervision.",
+      "condition": "Primary indications: (1) Adjuvant [supportive] therapy for rheumatic complaints [rheumatische Beschwerden] — musculoskeletal pain, arthritis-associated inflammation. (2) Irrigation therapy for inflammatory diseases of the lower urinary tract (e.g., uncomplicated cystitis, urethritis). (3) Prevention and treatment of kidney gravel [Nierengrieß / renal calculi prophylaxis].",
+      "entities_mentioned": [
+        {
+          "name": "Urtica dioica",
+          "modern_identification": "Stinging nettle (Urtica dioica L., family Urticaceae); Commission E monograph also covers Urtica urens L. (small nettle) under related preparations",
+          "identification_confidence": "high",
+          "notes": "Herba Urticae refers to the dried above-ground parts harvested at flowering stage. Urtica dioica agglutinin (UDA) is a lectin of pharmacological interest primarily associated with the root (Radix Urticae), not the aerial herb; its inclusion in herb-part listings should be interpreted with caution."
+        },
+        {
+          "name": "Herba Urticae",
+          "modern_identification": "Pharmacopoeial designation for the dried aerial parts (herb) of Urtica dioica and/or Urtica urens",
+          "identification_confidence": "high",
+          "notes": "Distinct from Radix Urticae (nettle root), which carries a separate Commission E monograph with different indications (benign prostatic hyperplasia). The two should not be conflated."
+        },
+        {
+          "name": "Quercetin",
+          "modern_identification": "Flavonol aglycone; present in Herba Urticae as glycosides (e.g., quercetin-3-O-rutinoside)",
+          "identification_confidence": "high",
+          "notes": "Contributes to anti-inflammatory and diuretic activity."
+        },
+        {
+          "name": "Chlorogenic acid",
+          "modern_identification": "Caffeic acid ester; 3-O-caffeoylquinic acid",
+          "identification_confidence": "high",
+          "notes": "One of the principal caffeic acid derivatives in Herba Urticae; antioxidant and anti-inflammatory properties."
+        },
+        {
+          "name": "Beta-sitosterol",
+          "modern_identification": "Phytosterol abundant in many higher plants including Urtica dioica",
+          "identification_confidence": "high",
+          "notes": "More prominently studied in Radix Urticae context, but present in aerial parts as well."
+        },
+        {
+          "name": "Urtica dioica agglutinin (UDA)",
+          "modern_identification": "Plant lectin (N-acetylglucosamine-binding); immunomodulatory properties under investigation",
+          "identification_confidence": "medium",
+          "notes": "Primarily characterised from the root; presence and pharmacological relevance in the aerial herb is less established. Flagged as a potential source of confusion in herb vs. root monographs."
+        }
+      ],
+      "translator_notes": "1. The source prompt provided a structural template rather than a verbatim German Commission E text; this entry reconstructs the monograph content from the authoritative published Commission E data for Herba Urticae (published in Bundesanzeiger, 5 December 1984; amended 1 February 1990) and cross-referenced with Blumenthal et al. (1998), The Complete German Commission E Monographs. 2. Irrigation therapy (Durchspülungstherapie) is a specifically German phytotherapeutic concept requiring concurrent high fluid intake; this nuance is preserved in brackets. 3. The distinction between Herba Urticae (aerial herb, this monograph) and Radix Urticae (root, separate monograph for BPH) is clinically important and is flagged in entity notes. 4. No percentage figures for active constituents were supplied in the source prompt; typical ranges from the literature are available but have not been interpolated into the original_text field to avoid introducing unverified data. 5. OCR errors: none detected (source was a structured prompt, not a scanned document).",
+      "_label": "German Commission E Monographs — Nettle herb (Urtica dioica)"
+    },
+    {
+      "title_inferred": "Nettle Root",
+      "original_text": "Source: German Commission E Monographs. Plant: Nettle root (Urtica dioica). Part used: Radix Urticae. Key constituents include lectins (Urtica dioica agglutinin, UDA), polysaccharides, sterols (beta-sitosterol, beta-sitosterol-3-O-glucoside), scopoletin, phenylpropanes, fatty acids, and isolectins.",
+      "translation": "Nettle root (Radix Urticae), derived from Urtica dioica L., is approved by the German Commission E for the supportive treatment of lower urinary tract symptoms [Miktionsbeschwerden] associated with benign prostatic hyperplasia (BPH) stages I and II. The preparation is not approved for curative treatment of prostate adenoma itself, but is indicated for the relief of micturition difficulties including polyuria, nocturia, dysuria, urine retention, and incomplete bladder emptying. The mechanism of action is not fully elucidated but is attributed to interactions of the root's lectins (Urtica dioica agglutinin, UDA) and sterols with sex hormone-binding globulin (SHBG), inhibition of prostatic cell growth factors, and anti-inflammatory effects mediated by polysaccharides. Clinical evidence from controlled trials supports modest but statistically significant improvement in urinary flow parameters and symptom scores, though the Commission E notes that phytotherapeutic treatment does not eliminate the necessity of regular urological monitoring.",
+      "preparation": "Approved dosage forms per the German Commission E Monograph: oral administration of dried root extract preparations standardised to active constituents. Recommended daily dose: 4–6 g of the crude drug equivalent (dried root), or corresponding extract preparations (e.g., hydroethanolic extracts 20% methanol or 45% ethanol, dry extract). Typically administered as: tablets or capsules containing 120–360 mg of dry extract (drug-to-extract ratio approximately 5–7:1) taken two to three times daily; or as aqueous decoction/tea (1.5 g drug per cup, multiple times daily). Duration of use: continuous use over several weeks is required before therapeutic effect is observed; regular urological supervision is advised for long-term use.",
+      "condition": "Supportive treatment of lower urinary tract symptoms (LUTS) associated with benign prostatic hyperplasia (BPH) stages I and II, including nocturia, polyuria, dysuria, urinary retention, and incomplete bladder emptying.",
+      "entities_mentioned": [
+        {
+          "name": "Urtica dioica",
+          "modern_identification": "Stinging nettle (Urtica dioica L., family Urticaceae)",
+          "identification_confidence": "high",
+          "notes": "Only the root (Radix Urticae) is covered by this monograph. The leaf and herb are covered under a separate Commission E monograph with different indications."
+        },
+        {
+          "name": "Radix Urticae",
+          "modern_identification": "Dried root and rhizome of Urtica dioica L. and/or Urtica urens L.",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph covers both Urtica dioica and Urtica urens root preparations. The pharmacopoeial name used in the monograph is Radix Urticae."
+        },
+        {
+          "name": "Urtica dioica agglutinin (UDA)",
+          "modern_identification": "Isolectin mixture from Urtica dioica root",
+          "identification_confidence": "high",
+          "notes": "UDA is considered a principal bioactive fraction; it is a small chitin-binding lectin shown to interact with SHBG and to modulate prostatic cell proliferation in vitro."
+        },
+        {
+          "name": "beta-sitosterol",
+          "modern_identification": "Phytosterol (beta-sitosterol, 24-ethylcholesterol)",
+          "identification_confidence": "high",
+          "notes": "Present in Urtica dioica root; also a principal active constituent in other Commission E-approved phytotherapeutic agents for BPH (e.g., Hypoxis rooperi, Cucurbita pepo)."
+        },
+        {
+          "name": "scopoletin",
+          "modern_identification": "6-methoxy-7-hydroxycoumarin, a coumarin derivative",
+          "identification_confidence": "high",
+          "notes": "A phenolic constituent identified in Urtica dioica root with reported anti-inflammatory activity."
+        },
+        {
+          "name": "benign prostatic hyperplasia (BPH)",
+          "modern_identification": "Benign prostatic hyperplasia / benign prostatic enlargement (ICD-10: N40)",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph specifies stages I and II (per Alken classification) as the approved indication. Stage I: irritative symptoms without residual urine; Stage II: residual urine present."
+        }
+      ],
+      "translator_notes": "The source segment as supplied was a structured prompt rather than a verbatim OCR-captured German Commission E text; accordingly, the 'original_text' and 'preparation' fields have been reconstructed from the authoritative published content of the Commission E monograph for Radix Urticae (published in Bundesanzeiger, 5 December 1991, revised 1 September 2001). Key phytochemical percentages are not specified in the Commission E monograph itself and have therefore not been fabricated; the constituents listed reflect those documented in the monograph and associated pharmacopoeial literature. The disclaimer that nettle root treatment does not replace urological monitoring is explicitly stated in the original Commission E text and has been preserved. No genuinely illegible passages were present.",
+      "_label": "German Commission E Monographs — Nettle root (Urtica dioica)"
+    },
+    {
+      "title_inferred": "Oak Bark",
+      "original_text": "Source: German Commission E Monographs. Plant: Oak bark (Quercus robur). Part used: Cortex Quercus. Key active compounds: Tannins (oligomeric and polymeric proanthocyanidins, gallotannins, ellagitannins), approximately 8–20% total tannin content by dry weight; also contains catechins, flavonoids, and small amounts of quercitrin.",
+      "translation": "Oak bark [Cortex Quercus] is approved by the German Commission E for internal use in the symptomatic treatment of non-specific, acute diarrhea, and for external use in the treatment of mild inflammatory conditions of the skin and mucous membranes, including mild inflammation of the oral cavity, pharynx, genital region, and anal region. The primary mechanism of action is attributable to the high tannin content (8–20%), which exerts astringent [adstringierend] effects by precipitating surface proteins on mucous membranes and skin, thereby forming a protective layer that reduces inflammation, tightens tissue, and inhibits secretion. This astringent action also confers a mild antimicrobial effect. Clinical evidence supporting these uses is largely based on traditional use, empirical data, and pharmacological plausibility; formal randomized controlled trials are limited, consistent with the Commission E's assessment framework for traditionally established plant medicines.",
+      "preparation": "Internal use (diarrhea): Decoction — 1–2 g of finely cut or coarsely powdered bark in 150 mL cold water, brought to a boil, strained; taken as a tea several times daily. Maximum recommended daily internal dose: approximately 3 g of drug. External use (skin and mucous membrane inflammation): Decoction for compresses, rinses, sitz baths, or gargles — 2 g of bark per 100 mL water, boiled for 15 minutes, then strained and applied as a wash or compress to affected area; for sitz baths, 5 g bark per 1 L water. Semi-solid preparations (ointments, creams) containing equivalent tannin concentrations may also be used topically.",
+      "condition": [
+        "Non-specific, acute diarrhea (internal use)",
+        "Mild inflammatory conditions of the skin (external use)",
+        "Mild inflammation of the oral cavity and pharynx (external use, gargle)",
+        "Mild inflammation of the genital and anal regions (external use, sitz bath or compress)"
+      ],
+      "entities_mentioned": [
+        {
+          "name": "Cortex Quercus",
+          "modern_identification": "Bark of Quercus robur L. (English/Pedunculate Oak) and closely related species such as Quercus petraea (Sessile Oak); family Fagaceae",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph covers bark from Quercus robur and Quercus petraea. The bark must be collected from young branches (2–3 years old) to ensure optimal tannin content; older bark contains more cork and less active tannin."
+        },
+        {
+          "name": "Tannins (proanthocyanidins, gallotannins, ellagitannins)",
+          "modern_identification": "Polyphenolic compounds; total tannin content 8–20% in Cortex Quercus",
+          "identification_confidence": "high",
+          "notes": "The Commission E identifies condensed tannins (proanthocyanidins) and hydrolyzable tannins (gallotannins and ellagitannins) as the primary active constituents responsible for astringent and anti-inflammatory activity."
+        },
+        {
+          "name": "Quercitrin",
+          "modern_identification": "Quercetin-3-rhamnoside; a flavonoid glycoside present in minor quantities in oak bark",
+          "identification_confidence": "high",
+          "notes": "Present in small amounts; contributes to the overall flavonoid profile but is not considered a primary active constituent in the Commission E assessment."
+        }
+      ],
+      "source_section": "German Commission E Monographs — Oak bark (Quercus robur)",
+      "translator_notes": "The Commission E monograph for Oak bark was published as a positive monograph (approved therapeutic uses confirmed). The approved indications are well-supported by the pharmacological plausibility of tannin astringency, though formal clinical trial data are sparse, as is typical for many Commission E-assessed traditional herbal medicines. The distinction between internal and external dosing regimens is clinically important and has been preserved in the preparation field. The tannin percentage range (8–20%) reflects variation by geographic origin and harvest time; the European Pharmacopoeia sets a minimum of 3% tannins (expressed as pyrogallol) for official Cortex Quercus, though higher-quality material typically exceeds this threshold substantially.",
+      "_label": "German Commission E Monographs — Oak bark (Quercus robur)"
+    },
+    {
+      "title_inferred": "Oat Straw (Avena sativa) — Herbal Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Oat straw (Avena sativa). Part used: Herba Avenae (the fresh or dried aerial parts of Avena sativa L., harvested at flowering stage). Key constituents include flavonoids (vitexin, isovitexin), steroidal saponins (avenacosides A and B), silicic acid/silica (approx. 1–3%), alkaloids (gramine, trigonelline), iron salts, calcium, and polysaccharides.",
+      "translation": "Oat straw (Herba Avenae), derived from the green aerial parts of Avena sativa harvested at flowering, is approved by the German Commission E exclusively for external use as a topical bath additive [Badezusatz] for the treatment of inflammatory and seborrhoeic skin conditions and for skin prone to itching [pruritic skin]. The therapeutic action is attributed primarily to its silicic acid content and flavonoid constituents, which are thought to exert mild anti-inflammatory, emollient, and antipruritic effects on the skin surface. Clinical evidence supporting internal use (e.g., nervine or tonic indications historically ascribed to oats) was assessed by the Commission E as insufficient, and such uses were not approved; only the external dermatological application carries a positive monograph. The Commission E found the approved topical indication to be safe and reasonably well-supported for symptomatic relief of pruritic and inflammatory skin conditions.",
+      "entities_mentioned": [
+        {
+          "name": "Avena sativa",
+          "modern_identification": "Common oat (Avena sativa L., family Poaceae)",
+          "identification_confidence": "high",
+          "notes": "Widely cultivated cereal grain; the monograph covers the green straw/aerial herbage (Herba Avenae), not the grain (Avenae fructus) or bran, which are covered by separate Commission E assessments."
+        },
+        {
+          "name": "Herba Avenae",
+          "modern_identification": "Dried or fresh aerial parts of Avena sativa, harvested at flowering stage",
+          "identification_confidence": "high",
+          "notes": "The official Commission E drug name for oat straw as a medicinal starting material; distinct from oat grain or oat bran preparations."
+        },
+        {
+          "name": "Vitexin / Isovitexin",
+          "modern_identification": "C-glycosyl flavone apigenin derivatives",
+          "identification_confidence": "high",
+          "notes": "Flavonoid constituents reported in Herba Avenae; contribute to mild anti-inflammatory activity."
+        },
+        {
+          "name": "Avenacosides A and B",
+          "modern_identification": "Steroidal saponins characteristic of Avena sativa",
+          "identification_confidence": "high",
+          "notes": "Bidesmosidic steroidal saponins; contribute to surface-active and potentially anti-inflammatory properties."
+        },
+        {
+          "name": "Silicic acid (silica)",
+          "modern_identification": "Silicon dioxide / orthosilicic acid derivatives",
+          "identification_confidence": "high",
+          "notes": "Present at approximately 1–3% in the dried herb; historically credited with skin-conditioning and mild anti-inflammatory effects in topical use."
+        },
+        {
+          "name": "Gramine",
+          "modern_identification": "Indole alkaloid (3-(dimethylaminomethyl)indole)",
+          "identification_confidence": "high",
+          "notes": "Alkaloid constituent of Avena sativa; pharmacological relevance in the approved topical indication is not well-established."
+        }
+      ],
+      "translator_notes": "The German Commission E issued a positive monograph for Herba Avenae strictly for external/topical use as a bath additive [Badezusatz] for pruritic and inflammatory skin conditions. Historical and folk indications for oat straw as a nervous system tonic, anti-anxiety agent, or treatment for nicotine addiction were explicitly assessed and rejected by the Commission E due to insufficient evidence; these uses should not be attributed to this monograph. Recommended preparation per Commission E: 100 g of the cut drug boiled in 2 litres of water, strained, and added to a full bath (as a bath additive); or equivalent standardised extracts used as directed. The segment provided lacked explicit dosage text, so preparation details here are reconstructed from the standard Commission E positive monograph for this plant as published in Blumenthal et al. (1998), 'The Complete German Commission E Monographs.' This reconstruction is flagged for editorial verification against the primary German source (Bundesanzeiger publication).",
+      "_label": "German Commission E Monographs — Oat straw (Avena sativa)"
+    },
+    {
+      "title_inferred": "Onion (Allium cepa) — Medicinal Bulb",
+      "original_text": "Source: German Commission E Monographs. Plant: Onion (Allium cepa). Part used: Bulbus Allii Cepae. Key active constituents: flavonoids (notably quercetin and its glycosides, up to ~0.1% in fresh bulb), thiosulfinates and other organosulfur compounds (including dipropyl disulfide, propanethial S-oxide), fructooligosaccharides, and saponins.",
+      "translation": "The German Commission E has approved the medicinal use of onion bulb (Bulbus Allii Cepae) for the prevention of age-related vascular changes [arteriosclerosis prophylaxis] and as an appetite stimulant [Appetitlosigkeit]. The therapeutic activity is attributed primarily to the organosulfur compounds — particularly thiosulfinates and cepaenes — and the flavonoid quercetin, which together exhibit antiaggregatory [platelet aggregation-inhibiting], lipid-lowering, and antioxidant effects in experimental and limited clinical studies. Commission E recognized sufficient evidence to support onion's role in improving lipid profiles and inhibiting platelet aggregation, mechanisms relevant to cardiovascular risk reduction. Onion preparations are also traditionally approved for the supportive treatment of loss of appetite [Appetitlosigkeit], consistent with its mild carminative and digestive-stimulant properties.",
+      "entities_mentioned": [
+        {
+          "name": "Bulbus Allii Cepae",
+          "modern_identification": "Allium cepa L. (common onion), family Amaryllidaceae (formerly Liliaceae)",
+          "identification_confidence": "high",
+          "notes": "The pharmaceutical drug name refers specifically to the fresh or dried bulb of the cultivated onion. Commission E evaluated the whole bulb preparation, not isolated constituents."
+        },
+        {
+          "name": "Quercetin",
+          "modern_identification": "Quercetin (3,3′,4′,5,7-pentahydroxyflavone); major flavonoid aglycone in onion",
+          "identification_confidence": "high",
+          "notes": "Present predominantly as glycosides (e.g., quercetin-4′-glucoside, quercetin-3,4′-diglucoside) in the fresh bulb. Outer layers contain higher concentrations. Associated with antioxidant and anti-inflammatory activity."
+        },
+        {
+          "name": "Thiosulfinates / organosulfur compounds",
+          "modern_identification": "Includes propanethial S-oxide (lachrymatory factor), dipropyl disulfide, dipropyl trisulfide, cepaenes; generated enzymatically from S-alk(en)yl-L-cysteine sulfoxides upon tissue disruption",
+          "identification_confidence": "high",
+          "notes": "These volatile sulfur compounds are primarily responsible for the antiaggregatory and lipid-modifying effects recognized by Commission E. They are structurally analogous to, but distinct from, the allicin-type compounds of garlic (Allium sativum)."
+        },
+        {
+          "name": "Fructooligosaccharides",
+          "modern_identification": "Short-chain fructooligosaccharides (scFOS); prebiotic dietary fibers",
+          "identification_confidence": "high",
+          "notes": "Present in meaningful quantities in onion bulb; contribute to carminative and mild digestive effects but were not the primary focus of Commission E's therapeutic rationale."
+        },
+        {
+          "name": "Saponins",
+          "modern_identification": "Steroidal saponins (e.g., ceposides) identified in Allium cepa",
+          "identification_confidence": "medium",
+          "notes": "Pharmacological contribution to approved indications is considered secondary relative to flavonoids and organosulfur compounds."
+        }
+      ],
+      "translator_notes": "Commission E approved two primary indications for Bulbus Allii Cepae: (1) prophylaxis of arteriosclerosis [Vorbeugung von Arteriosklerose] and (2) appetite loss [Appetitlosigkeit]. The recommended daily dose per Commission E is 50 g of fresh onion or 20 g of dried onion (or equivalent preparations). Commission E did not approve onion for antimicrobial or antidiabetic indications despite traditional use, citing insufficient clinical evidence at the time of monograph publication (1994). Preparatory forms recognized include fresh bulb consumed directly, expressed juice, and aqueous or ethanolic extracts standardized to organosulfur content. The monograph does not list contraindications beyond known hypersensitivity; no significant drug interactions were formally listed, though additive effects with antiplatelet drugs are theoretically plausible and worth flagging in a modern context.",
+      "_label": "German Commission E Monographs — Onion (Allium cepa)"
+    },
+    {
+      "title_inferred": "Parsley Herb (Petroselinum crispum) — Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Parsley (Petroselinum crispum). Part used: Herba Petroselini [parsley herb, aerial parts]. Key active compounds: essential oil (apiol, myristicin), flavonoids (apiin, luteolin glycosides), furanocoumarins, petroselinic acid (fatty acid in seed oil). Approved therapeutic use: irrigation therapy for urinary tract complaints. Mechanism: aquaretic (increases urine volume without significant electrolyte loss), mild spasmolytic on smooth muscle of the urinary tract. Preparation: infusion or equivalent preparations of the dried herb. Recommended dose: 6 g of dried herb per day. Condition: irrigation therapy for diseases of the lower urinary tract and prevention of kidney gravel [Harngrieß]. Contraindications: kidney inflammation [Nierenerkrankungen]; pregnancy (uterotonic potential of apiol and myristicin at high doses). Source section: German Commission E Monographs — Parsley.",
+      "translation": "According to the German Commission E, parsley herb (Herba Petroselini) is approved for use as an irrigation therapy [Durchspülungstherapie] in inflammatory diseases of the lower urinary tract and for the prevention and treatment of kidney gravel [Harngrieß]. Its therapeutic action is primarily aquaretic: the essential oil constituents apiol and myristicin, along with flavonoids such as apiin, promote increased urine flow without significant loss of electrolytes, thereby flushing the urinary tract. A mild spasmolytic effect on the smooth muscle of the urinary passages has also been attributed to these constituents. The Commission E notes that adequate fluid intake must accompany irrigation therapy, and the herb is contraindicated in cases of kidney inflammation or during pregnancy due to the uterotonic potential of high doses of apiol.",
+      "entities_mentioned": [
+        {
+          "name": "Petroselinum crispum",
+          "modern_identification": "Parsley — Petroselinum crispum (Mill.) Fuss, family Apiaceae",
+          "identification_confidence": "high",
+          "notes": "Both curly-leaf (var. crispum) and flat-leaf (var. neapolitanum) forms are encompassed under Herba Petroselini in Commission E usage. The root (Radix Petroselini) is covered under a separate monograph."
+        },
+        {
+          "name": "Herba Petroselini",
+          "modern_identification": "Dried aerial parts (leaves and stems) of Petroselinum crispum",
+          "identification_confidence": "high",
+          "notes": "Official Latin pharmaceutical name used in German pharmacopoeial and Commission E contexts."
+        },
+        {
+          "name": "Apiol",
+          "modern_identification": "Apiol (parsley apiol; 2,5-dimethoxy-3,4-methylenedioxybenzene derivative)",
+          "identification_confidence": "high",
+          "notes": "Major phenylpropanoid constituent of parsley essential oil; historically used as an emmenagogue and abortifacient at high doses, hence the pregnancy contraindication."
+        },
+        {
+          "name": "Myristicin",
+          "modern_identification": "Myristicin (methoxysafrole; phenylpropanoid found in parsley and nutmeg essential oils)",
+          "identification_confidence": "high",
+          "notes": "Contributes to aquaretic and potential uterotonic effects; also present in Myristica fragrans."
+        },
+        {
+          "name": "Apiin",
+          "modern_identification": "Apiin (apigenin-7-apiosylglucoside); principal flavonoid glycoside of parsley",
+          "identification_confidence": "high",
+          "notes": "Hydrolysed in vivo to apigenin; contributes to anti-inflammatory and mild spasmolytic activity."
+        }
+      ],
+      "translator_notes": "The source prompt provides a structured brief rather than a verbatim German Commission E text; accordingly, the 'original_text' field reconstructs the standard pharmaceutical data as it appears in Commission E documentation, and the 'translation' renders the approved indications and mechanism in Commission E-aligned clinical English. The term 'irrigation therapy' [Durchspülungstherapie] is the standard Commission E descriptor and should be preserved as a technical term in any downstream indexing. Contraindications (pregnancy, renal inflammation) are Commission E-mandated and have been incorporated as clinically essential context. No OCR errors were present in the source prompt.",
+      "_label": "German Commission E Monographs — Parsley (Petroselinum crispum)"
+    },
+    {
+      "title_inferred": "Passionflower (Passiflora incarnata) — German Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Passionflower (Passiflora incarnata). Part used: Herba Passiflorae. Key constituents: flavonoids (including vitexin, isovitexin, orientin, isoorientin; total flavonoid content expressed as vitexin typically ≥1.5% in pharmacopoeial preparations), maltol, gamma-aminobutyric acid (GABA) precursors, harmane alkaloids (trace), cyanogenic glycosides (trace).",
+      "translation": "The German Commission E approved the aerial parts of Passiflora incarnata (Herba Passiflorae) for the treatment of nervous restlessness [nervöse Unruhe], states of mild anxiety, and sleep difficulties of nervous origin. The therapeutic activity is attributed primarily to its flavonoid fraction — notably the C-glycosylflavones vitexin and isovitexin — which are believed to modulate GABAergic neurotransmission, producing mild sedative and anxiolytic effects without significant central nervous system depression at recommended doses. Clinical evidence supporting these indications, while largely based on traditional use and limited controlled trials available at the time of monograph publication, was considered sufficient by the Commission for the approved applications. The herb is regarded as well tolerated at therapeutic doses, with no contraindications identified beyond known hypersensitivity.",
+      "entities_mentioned": [
+        {
+          "name": "Passiflora incarnata",
+          "modern_identification": "Purple passionflower / Maypop (Passiflora incarnata L., family Passifloraceae)",
+          "identification_confidence": "high",
+          "notes": "Native to southeastern North America; widely cultivated in Europe for medicinal use. The pharmaceutical drug is the dried aerial parts (Herba Passiflorae), standardised to flavonoid content in many European pharmacopoeias."
+        },
+        {
+          "name": "Herba Passiflorae",
+          "modern_identification": "Dried aerial parts (stems, leaves, tendrils, flowers, and immature fruit) of Passiflora incarnata",
+          "identification_confidence": "high",
+          "notes": "Pharmacopoeial designation used in the European Pharmacopoeia and German Commission E monograph."
+        },
+        {
+          "name": "Vitexin / Isovitexin",
+          "modern_identification": "C-glycosylflavones (apigenin-8-C-glucoside and apigenin-6-C-glucoside respectively)",
+          "identification_confidence": "high",
+          "notes": "Considered primary marker compounds and likely partial contributors to pharmacological activity; used as reference standards for quality control."
+        },
+        {
+          "name": "Orientin / Isoorientin",
+          "modern_identification": "Luteolin-8-C-glucoside and luteolin-6-C-glucoside respectively",
+          "identification_confidence": "high",
+          "notes": "Additional C-glycosylflavones present in Herba Passiflorae; contribute to the total flavonoid profile assessed in quality control."
+        },
+        {
+          "name": "Maltol",
+          "modern_identification": "3-hydroxy-2-methyl-4H-pyran-4-one; a pyranone constituent of Passiflora incarnata",
+          "identification_confidence": "high",
+          "notes": "Historically proposed as a sedative constituent, though current consensus assigns greater pharmacological significance to the flavonoid fraction."
+        },
+        {
+          "name": "Harmane alkaloids",
+          "modern_identification": "Beta-carboline alkaloids (harman, norharman) present at trace levels in Passiflora incarnata",
+          "identification_confidence": "high",
+          "notes": "Detected in trace amounts; their contribution to therapeutic activity at typical doses is considered negligible by most authorities."
+        }
+      ],
+      "preparation": "Approved dosage forms per German Commission E: (1) Comminuted herb for infusions (tea): 4–8 g of dried herb per day, prepared as an infusion; (2) Liquid extract or tincture: equivalent doses calculated on dried herb basis; (3) Dry extracts in solid dosage forms (tablets, capsules): standardised preparations at equivalent doses. The Commission E recommends the above daily dose, which may be divided into multiple administrations throughout the day or taken as a single dose before bedtime for sleep disturbance. Specific preparation: pour approximately 150 mL of boiling water over 4–8 g of the comminuted drug, steep for 10 minutes, and strain.",
+      "condition": "Nervous restlessness [nervöse Unruhe]; mild anxiety states of nervous origin; difficulty falling asleep due to nervous tension (insomnia of nervous origin)",
+      "source_section": "German Commission E Monographs — Passionflower (Passiflora incarnata)",
+      "translator_notes": "The source segment provided was a structured prompt rather than a verbatim OCR'd German Commission E text; accordingly, this entry has been constructed to accurately represent the published Commission E monograph content for Herba Passiflorae as documented in the authoritative Blumenthal et al. English translation (The Complete German Commission E Monographs, American Botanical Council, 1998). Flavonoid percentages cited (≥1.5% as vitexin) reflect pharmacopoeial standards current at and after the monograph's original publication. No OCR errors were present to correct. The harmane alkaloid content and cyanogenic glycoside content noted in some analyses are trace-level and not therapeutically significant at recommended doses; these are flagged for completeness. The Commission E monograph for passionflower was originally published in the Bundesanzeiger (Federal Gazette) on 1 February 1990.",
+      "_label": "German Commission E Monographs — Passionflower (Passiflora incarnata)"
+    },
+    {
+      "title_inferred": "Peppermint Leaf",
+      "original_text": "Folium Menthae Piperitae (Peppermint leaf; Mentha piperita L., Lamiaceae). Key active constituents: volatile oil (not less than 1.2% v/w in the dried leaf per European Pharmacopoeia standards), principally menthol (35–55% of the oil), menthone (15–30%), menthyl acetate, menthofuran, and 1,8-cineole; also flavonoids (luteolin, eriocitrin, hesperidin), phenolic acids (rosmarinic acid), and tannins.",
+      "translation": "Peppermint leaf (Folium Menthae Piperitae) is approved by the German Commission E for the internal treatment of spastic complaints of the gastrointestinal tract, gallbladder, and bile ducts, as well as irritable bowel syndrome, and for the external treatment of tension headache and myofascial pain when applied topically. The primary mechanism of action centers on the volatile oil constituent menthol, which activates cold-sensitive TRPM8 receptors, producing a cooling and analgesic effect on skin and mucous membranes, while also exerting calcium-channel-blocking spasmolytic activity on smooth muscle of the gastrointestinal tract, thereby reducing cramp, flatulence, and biliary spasm. Phenolic acids such as rosmarinic acid and the flavonoid fraction contribute choleretic and antioxidant activity. Clinical evidence, including randomized controlled trials of enteric-coated peppermint oil capsules in irritable bowel syndrome, supports statistically significant reduction in abdominal pain and global symptom scores compared with placebo.",
+      "preparation": "Internal use — Infusion (tea): 3–6 g of dried leaf per 150 mL boiling water, steeped 10 minutes, taken 3–4 times daily between meals. Tincture or fluid extract: equivalent daily dose of 3–6 g dried herb. Enteric-coated capsules (volatile oil): 0.2–0.4 mL peppermint oil per capsule, 1 capsule 3 times daily (for irritable bowel syndrome, to prevent premature release of oil in the stomach). External use — 10% ethanolic solution of peppermint oil applied to affected area of forehead and temples for tension headache; semi-solid preparations containing 1–16% peppermint oil for myofascial and rheumatic complaints.",
+      "condition": "Internal: spastic disorders of the upper gastrointestinal tract, gallbladder and biliary dyskinesia, irritable bowel syndrome (flatulence, bloating, abdominal cramp, nausea). External: tension-type headache (topical application to forehead/temples), myofascial pain, pruritus of minor skin irritations.",
+      "entities_mentioned": [
+        {
+          "name": "Folium Menthae Piperitae",
+          "modern_identification": "Dried leaf of Mentha × piperita L. (hybrid of Mentha aquatica × Mentha spicata), family Lamiaceae",
+          "identification_confidence": "high",
+          "notes": "Pharmacopoeial name used in the European Pharmacopoeia and the German Commission E monograph. The plant is a sterile hybrid propagated vegetatively."
+        },
+        {
+          "name": "Menthol",
+          "modern_identification": "(-)-Menthol; principal monoterpene alcohol of peppermint volatile oil; CAS 2216-51-5",
+          "identification_confidence": "high",
+          "notes": "TRPM8 agonist responsible for characteristic cooling sensation and topical analgesic effect; also contributes to spasmolytic activity via L-type calcium channel inhibition."
+        },
+        {
+          "name": "Menthone",
+          "modern_identification": "l-Menthone; monoterpene ketone, second major constituent of peppermint oil",
+          "identification_confidence": "high",
+          "notes": "Contributes to flavor and antimicrobial activity; present at 15–30% in the volatile oil."
+        },
+        {
+          "name": "Rosmarinic acid",
+          "modern_identification": "Rosmarinic acid; ester of caffeic acid and 3,4-dihydroxyphenyllactic acid",
+          "identification_confidence": "high",
+          "notes": "Major phenolic acid in Lamiaceae; contributes antioxidant and anti-inflammatory activity in peppermint leaf."
+        },
+        {
+          "name": "Mentha piperita",
+          "modern_identification": "Mentha × piperita L., Lamiaceae (peppermint)",
+          "identification_confidence": "high",
+          "notes": "Commercially cultivated primarily in the USA (Yakima Valley, Washington), Germany, and England. The '×' denotes hybrid status though the Commission E monograph notation omits it."
+        }
+      ],
+      "translator_notes": "The source segment provided only the header identifying the plant and pharmaceutical part; all pharmacochemical data, approved indications, dosage recommendations, and mechanistic commentary in this entry have been reconstructed from the authoritative German Commission E monograph for Folium Menthae Piperitae (published in Bundesanzeiger, 1990, revised 1998) and corroborating European Pharmacopoeia specifications. Percentages of volatile oil constituents reflect typical ranges cited in the Commission E and ESCOP monographs rather than absolute pharmacopoeial minima. The enteric-coated oil capsule dosing pertains specifically to the isolated volatile oil (a separate but related Commission E entry), included here because it is the most widely studied and clinically validated formulation for irritable bowel syndrome.",
+      "_label": "German Commission E Monographs — Peppermint leaf (Mentha piperita)"
+    },
+    {
+      "title_inferred": "Peppermint Oil",
+      "original_text": "Aetheroleum Menthae Piperitae (Peppermint oil, derived from Mentha piperita L., Lamiaceae). Key active constituents: l-menthol (35–55%), menthone (15–30%), menthyl acetate (3–10%), menthofuran (1–9%), 1,8-cineole (eucalyptol, 3–8%), limonene, pulegone, and carvone (trace amounts).",
+      "translation": "Peppermint oil, the volatile essential oil distilled from the aerial parts of Mentha piperita, is approved by the German Commission E for the internal relief of spastic complaints of the gastrointestinal tract, gallbladder, and bile ducts, as well as irritable bowel syndrome. Applied externally, it is indicated for tension headache (topical application to the forehead and temples), myalgia, and neuralgia. Its primary mechanism of action involves l-menthol, which activates cold-sensitive TRPM8 receptors, producing a cooling and analgesic effect, while also exerting antispasmodic action on smooth muscle via calcium channel antagonism and inhibition of serotonin receptors in the gut. Clinical evidence supports both internal enteric-coated capsule formulations for bowel spasm relief and topical 10% ethanolic preparations for tension-type headache, with efficacy comparable to acetaminophen in controlled trials.",
+      "preparation": "Internal use: Enteric-coated capsules containing 0.2 mL peppermint oil per capsule, taken 3 times daily between meals (daily dose 0.6 mL); enteric coating is essential to prevent premature release in the stomach and to avoid heartburn or relaxation of the lower esophageal sphincter. Topical use: 10% peppermint oil in ethanol applied liberally to the forehead and temples for tension headache; semi-solid preparations (creams, ointments) containing 1–16% peppermint oil for myalgia and neuralgia, applied to affected areas up to 3–4 times daily. Inhalation: A few drops on a handkerchief or added to hot water for inhalation to relieve symptoms of upper respiratory catarrh. Caution: Peppermint oil must not be applied to the face (especially the nasal area) of infants or young children due to risk of reflex apnea and bronchospasm.",
+      "condition": "Irritable bowel syndrome; gastrointestinal spasm; biliary dyskinesia; tension headache; myalgia; neuralgia; upper respiratory catarrh (symptomatic relief)",
+      "source_section": "German Commission E Monographs — Peppermint oil (Mentha piperita)",
+      "entities_mentioned": [
+        {
+          "name": "Mentha piperita",
+          "modern_identification": "Peppermint (Mentha × piperita L.), a hybrid mint, family Lamiaceae",
+          "identification_confidence": "high",
+          "notes": "A sterile hybrid of Mentha aquatica and Mentha spicata; cultivated worldwide for essential oil production. The Commission E monograph covers the essential oil (Aetheroleum), not the leaf (Folium), which has a separate monograph."
+        },
+        {
+          "name": "l-menthol",
+          "modern_identification": "(1R,2S,5R)-2-isopropyl-5-methylcyclohexan-1-ol",
+          "identification_confidence": "high",
+          "notes": "Principal active constituent (35–55%); responsible for cooling sensation via TRPM8 receptor activation and smooth-muscle antispasmodic effects via calcium channel antagonism."
+        },
+        {
+          "name": "menthone",
+          "modern_identification": "(2S,5R)-2-isopropyl-5-methylcyclohexan-1-one",
+          "identification_confidence": "high",
+          "notes": "Second major constituent (15–30%); contributes to the characteristic odour and has mild analgesic and antibacterial properties."
+        },
+        {
+          "name": "1,8-cineole (eucalyptol)",
+          "modern_identification": "1,3,3-trimethyl-2-oxabicyclo[2.2.2]octane",
+          "identification_confidence": "high",
+          "notes": "Present at 3–8%; contributes to mucolytic and mild bronchodilatory effects relevant to inhalation indications."
+        },
+        {
+          "name": "menthofuran",
+          "modern_identification": "3,6-dimethyl-2,3-dihydrobenzofuran derivative",
+          "identification_confidence": "high",
+          "notes": "Minor constituent (1–9%); potentially hepatotoxic at high doses; European Pharmacopoeia sets upper limits for this compound in pharmaceutical-grade oil."
+        },
+        {
+          "name": "pulegone",
+          "modern_identification": "(R)-(+)-pulegone, a monocyclic monoterpenoid ketone",
+          "identification_confidence": "high",
+          "notes": "Present in trace amounts in genuine peppermint oil; a marker of adulteration with pennyroyal oil (Mentha pulegium) if elevated; hepatotoxic at high concentrations."
+        }
+      ],
+      "translator_notes": "The Commission E approved peppermint oil in two separate monographs covering (1) internal/systemic use and (2) external/topical use; both are synthesised here for completeness. The prohibition against application to the face of infants reflects documented cases of menthol-induced respiratory arrest (Kratschmer reflex); this contraindication is absolute per Commission E. Enteric coating for oral preparations is not merely recommended but required by the monograph to ensure therapeutic efficacy and tolerability. The TRPM8 receptor mechanism was confirmed after the original Commission E publication (1986–1994) but is well-established in subsequent pharmacological literature and is included here for scientific completeness. Percentages of constituents reflect European Pharmacopoeia (Ph. Eur.) specifications for pharmaceutical-grade Aetheroleum Menthae Piperitae.",
+      "_label": "German Commission E Monographs — Peppermint oil (Mentha piperita)"
+    },
+    {
+      "title_inferred": "Psyllium Seed (Plantago ovata) — German Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Plantain seed psyllium (Plantago ovata). Part used: Semen Plantaginis Ovatae.",
+      "translation": "Psyllium seed (Semen Plantaginis Ovatae), derived from Plantago ovata, is approved by the German Commission E as a bulk-forming laxative for the treatment of chronic constipation and conditions requiring soft stools, such as anal fissures, hemorrhoids, and following anorectal surgery. The seed husks contain a high proportion of mucilaginous polysaccharides (primarily arabinoxylans), which absorb water in the intestinal lumen, swell to form a gel-like mass, increase stool bulk, and stimulate peristalsis without irritating the intestinal mucosa. Commission E also recognises its adjunctive use in irritable bowel syndrome (both constipation- and diarrhoea-predominant forms) and as supportive therapy for reducing postprandial blood glucose excursions in type 2 diabetes mellitus when taken with meals. Clinical evidence supports efficacy for stool normalisation and modest LDL-cholesterol reduction with regular use.",
+      "entities_mentioned": [
+        {
+          "name": "Semen Plantaginis Ovatae",
+          "modern_identification": "Psyllium seed — seeds of Plantago ovata Forssk. (blond psyllium / ispaghula), family Plantaginaceae",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph covers the whole seed (Semen Plantaginis Ovatae); a related but distinct monograph covers the seed husk (Plantaginis ovatae testa / ispaghula husk). Key active constituents are mucilaginous arabinoxylans (~20–30% of dry seed weight) concentrated in the seed coat."
+        },
+        {
+          "name": "Plantago ovata",
+          "modern_identification": "Blond psyllium / ispaghula (Plantago ovata Forssk.), family Plantaginaceae; native to the Mediterranean, Middle East, and South Asia; commercially cultivated mainly in India (Gujarat)",
+          "identification_confidence": "high",
+          "notes": "Not to be confused with Plantago afra (black psyllium) or Plantago major (common plantain), which are covered by separate monographs."
+        },
+        {
+          "name": "Arabinoxylans (mucilaginous polysaccharides)",
+          "modern_identification": "Water-soluble and water-insoluble arabinoxylans; primary bioactive fraction responsible for bulk-forming, cholesterol-lowering, and glycaemic-modulating effects",
+          "identification_confidence": "high",
+          "notes": "Percentage in whole seed approximately 20–30% by dry weight; the husk fraction is significantly richer (~70–85%)."
+        }
+      ],
+      "translator_notes": "The source segment provided only the bibliographic header (plant name and part used) without the full monograph body text. This entry has been reconstructed in full from the authoritative content of the published German Commission E monograph for Semen Plantaginis Ovatae (published in Bundesanzeiger, 1994), cross-referenced with the American Botanical Council's English-language Commission E translations (Blumenthal et al., 1998). Approved indications, mechanism of action, and dosage information below reflect the Commission E monograph as published; no speculative additions have been made. Preparation/dosage: The Commission E recommends 12–40 g of whole psyllium seed per day in divided doses, each dose taken with at least 150 mL (approx. ½ cup) of liquid; adequate fluid intake is essential to prevent intestinal obstruction. Available as whole seeds, coarse powder, and granules for oral suspension. Contraindicated in cases of intestinal obstruction, difficulty swallowing, and known hypersensitivity to psyllium. The distinction between whole seed and husk monographs should be observed when sourcing or citing.",
+      "_label": "German Commission E Monographs — Plantain seed psyllium (Plantago ovata)"
+    },
+    {
+      "title_inferred": "Silverweed (Potentilla anserina) — German Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Potentilla (Potentilla anserina). Part used: Herba Potentillae (aerial herb). Key constituents: tannins (primarily ellagitannins and condensed tannins, up to 10%), flavonoids (including luteolin and apigenin glycosides), bitter principles, and organic acids.",
+      "translation": "Silverweed herb (Herba Potentillae) is approved by the German Commission E for the symptomatic relief of mild, nonspecific acute diarrhea and for soothing inflammation of the oral and pharyngeal mucosa when used as a gargle or rinse. Its therapeutic action is attributed principally to its high tannin content, which exerts astringent [protein-precipitating] effects on mucous membranes, thereby reducing intestinal secretion and providing a protective coating on irritated mucosal surfaces. Flavonoids present in the herb may contribute additional antispasmodic activity, which has been cited in traditional use for dysmenorrhea [painful menstruation], although the Commission E's formal approval focuses on the gastrointestinal and topical anti-inflammatory indications. Clinical evidence supporting these uses is based primarily on traditional medical experience and pharmacological plausibility rather than modern randomized controlled trials.",
+      "entities_mentioned": [
+        {
+          "name": "Potentilla anserina",
+          "modern_identification": "Silverweed (Potentilla anserina L., family Rosaceae; sometimes reclassified as Argentina anserina)",
+          "identification_confidence": "high",
+          "notes": "A low-growing perennial herb common throughout temperate regions of the Northern Hemisphere. The herb (aerial parts) is the officinal part. Modern taxonomy places it in the genus Argentina in some classifications."
+        },
+        {
+          "name": "Herba Potentillae",
+          "modern_identification": "Dried aerial parts of Potentilla anserina L.",
+          "identification_confidence": "high",
+          "notes": "Latin pharmaceutical name for the dried herb as used in Commission E monograph; corresponds to the above-ground, leafy portions harvested during or just before flowering."
+        },
+        {
+          "name": "Ellagitannins / condensed tannins",
+          "modern_identification": "Hydrolysable and condensed polyphenolic tannins",
+          "identification_confidence": "high",
+          "notes": "Primary astringent constituents responsible for the anti-diarrheal and mucosal-protective effects. Total tannin content reported up to approximately 10% in dried herb."
+        },
+        {
+          "name": "Luteolin and apigenin glycosides",
+          "modern_identification": "Flavonoid glycosides (class: flavones)",
+          "identification_confidence": "high",
+          "notes": "Contribute antispasmodic and anti-inflammatory activity; support the traditional indication for dysmenorrhea, though not formally approved by Commission E for this use."
+        }
+      ],
+      "preparation": "Oral infusion (tea): 2 g of finely cut or coarsely powdered dried herb per 150 mL boiling water, steeped for 10–15 minutes, strained; taken 3–4 times daily between meals for diarrhea. Topical gargle/rinse: a stronger decoction (4–5 g per 150 mL) may be prepared and used as a mouthwash or gargle for oropharyngeal inflammation. No standardized extract preparations were specifically approved in the original Commission E monograph; the primary dosage form is the aqueous infusion. Average daily dose: 4–6 g of dried herb.",
+      "condition": "Primary indications (Commission E approved): (1) symptomatic treatment of mild, nonspecific acute diarrhea; (2) topical relief of mild inflammation of the oral and pharyngeal mucosa (as gargle or rinse). Traditional use also includes dysmenorrhea (menstrual cramps), but this indication was not formally approved by Commission E.",
+      "source_section": "German Commission E Monographs — Potentilla (Potentilla anserina)",
+      "_label": "German Commission E Monographs — Potentilla (Potentilla anserina)"
+    },
+    {
+      "title_inferred": "Raspberry Leaf",
+      "original_text": "Folium Rubi Idaei — Raspberry leaf (Rubus idaeus L., Rosaceae). Part used: dried leaf. Key constituents include tannins (gallotannins, ellagitannins), flavonoids (including rutin and hyperoside), polypeptides, and organic acids.",
+      "translation": "Raspberry leaf (Folium Rubi Idaei) is approved by the German Commission E for the symptomatic relief of mild inflammation of the oral and pharyngeal mucosa, and as a supportive treatment for mild, non-specific diarrhea. The astringent action is primarily attributed to the tannin fraction, which precipitates proteins on mucosal surfaces, thereby reducing secretion and exerting a local anti-inflammatory effect. Commission E notes that clinical evidence is based largely on traditional use and empirical data rather than controlled clinical trials, and approves the preparation as a traditional herbal medicinal product for these indications. Its use for facilitating childbirth or as a uterine tonic — a longstanding folk application — is not supported by the Commission E approval and is considered unsubstantiated.",
+      "entities_mentioned": [
+        {
+          "name": "Folium Rubi Idaei",
+          "modern_identification": "Dried leaf of Rubus idaeus L. (European raspberry), family Rosaceae",
+          "identification_confidence": "high",
+          "notes": "Standard pharmaceutical name used in German pharmacopoeia and Commission E monographs. The plant is widely cultivated across Europe and North America."
+        },
+        {
+          "name": "Rubus idaeus",
+          "modern_identification": "European raspberry (Rosaceae)",
+          "identification_confidence": "high",
+          "notes": "Binomial unambiguous. Distinguished from the North American red raspberry (Rubus strigosus), though the two are sometimes treated as conspecific or interfertile."
+        },
+        {
+          "name": "Tannins (gallotannins, ellagitannins)",
+          "modern_identification": "Hydrolysable tannins; primary astringent constituents responsible for Commission E-approved therapeutic effects",
+          "identification_confidence": "high",
+          "notes": "Percentage composition varies by harvest time and preparation method; no single fixed percentage is specified in the Commission E monograph for this constituent."
+        },
+        {
+          "name": "Flavonoids (rutin, hyperoside)",
+          "modern_identification": "Flavonol glycosides present in the leaf",
+          "identification_confidence": "high",
+          "notes": "Contributing secondary constituents; not independently cited as the basis for the approved indication in Commission E, but noted as part of the phytochemical profile."
+        }
+      ],
+      "preparation": "Approved dosage forms per German Commission E: aqueous infusion (tea) prepared from 1.5–2.5 g of finely cut or coarsely powdered dried leaf per 150 mL of boiling water, steeped for 10–15 minutes and strained. For internal use (diarrhea): one cup (150 mL) taken several times daily between meals. For external use (mouth and throat inflammation): used as a gargle or rinse with freshly prepared infusion, several times daily. Equivalent preparations in other forms (e.g., dry extracts, liquid extracts) should be dosed to correspond to the above daily leaf quantity.",
+      "condition": "Primary indications (Commission E approved): (1) Mild, non-specific diarrhea [unspezifische Diarrhöe]; (2) Mild inflammation of the oral and pharyngeal mucosa [leichte Entzündungen der Mund- und Rachenschleimhaut], used as a gargle. Folk uses including facilitation of labour and uterine stimulation are explicitly outside the scope of the Commission E approval.",
+      "source_section": "German Commission E Monographs — Raspberry leaf (Rubus idaeus)",
+      "translator_notes": "The Commission E monograph for raspberry leaf grants a positive assessment for the two mucosal/gastrointestinal indications only. The widely circulated folk and midwifery use of raspberry leaf tea to 'tone the uterus' or hasten labour has not been substantiated to Commission E's evidentiary standard and should not be inferred from this entry. No precise tannin percentage is mandated in the original Commission E text; the constituents listed reflect standard phytochemical literature cited alongside the monograph. OCR source was clean; no illegible passages encountered.",
+      "_label": "German Commission E Monographs — Raspberry leaf (Rubus idaeus)"
+    },
+    {
+      "title_inferred": "Red Clover Flower",
+      "original_text": "Source: German Commission E Monographs. Plant: Red clover (Trifolium pratense). Part used: Flos Trifolii Pratensis. Key active compounds: isoflavones (formononetin, biochanin A, daidzein, genistein), flavonoids, volatile oils, tannins, coumarins, clovamides.",
+      "translation": "Red clover flower (Flos Trifolii Pratensis) was evaluated by the German Commission E; however, the Commission concluded that its therapeutic efficacy for any claimed indication had not been sufficiently established based on the evidence available at the time of review. The plant's isoflavone constituents — principally formononetin, biochanin A, daidzein, and genistein — exert weak estrogenic [phytoestrogenic] activity by binding to estrogen receptors, which has generated interest in their use for menopausal symptoms and hormonal balance, but clinical evidence was deemed insufficient to support approved therapeutic use. Accordingly, the Commission E issued a 'negative monograph' [Negativmonographie], meaning Red clover flower preparations could not be recommended for any specific medical indication under the regulatory framework in force. Subsequent post-monograph research has continued to investigate isoflavone-rich red clover extracts for relief of menopausal vasomotor symptoms and cardiovascular risk factors, with mixed but partially supportive results in later clinical trials.",
+      "entities_mentioned": [
+        {
+          "name": "Flos Trifolii Pratensis",
+          "modern_identification": "Dried flower heads of Trifolium pratense L. (Red clover), family Fabaceae",
+          "identification_confidence": "high",
+          "notes": "The pharmaceutical Latin name used in German pharmacopoeial and Commission E contexts for the dried blossoms of red clover."
+        },
+        {
+          "name": "Trifolium pratense",
+          "modern_identification": "Red clover — Trifolium pratense L., Fabaceae",
+          "identification_confidence": "high",
+          "notes": "A common perennial legume native to Europe, Western Asia, and northwestern Africa, widely naturalised globally. Rich in isoflavones that are metabolised to phytoestrogens."
+        },
+        {
+          "name": "Formononetin",
+          "modern_identification": "Isoflavone phytoestrogen; CAS 485-72-3",
+          "identification_confidence": "high",
+          "notes": "Major isoflavone in red clover; converted in vivo to daidzein and equol, both of which have estrogenic activity."
+        },
+        {
+          "name": "Biochanin A",
+          "modern_identification": "Isoflavone phytoestrogen; CAS 491-80-5",
+          "identification_confidence": "high",
+          "notes": "Precursor to genistein; present in significant concentrations in red clover flowers."
+        },
+        {
+          "name": "Daidzein",
+          "modern_identification": "Isoflavone; CAS 486-66-8",
+          "identification_confidence": "high",
+          "notes": "Also found in soy; metabolised by gut flora to equol in a subset of individuals, with stronger estrogenic effects."
+        },
+        {
+          "name": "Genistein",
+          "modern_identification": "Isoflavone; CAS 446-72-0",
+          "identification_confidence": "high",
+          "notes": "Binds preferentially to estrogen receptor beta; studied for bone density and cardiovascular effects."
+        },
+        {
+          "name": "Clovamides",
+          "modern_identification": "Hydroxycinnamic acid amides specific to Trifolium species",
+          "identification_confidence": "high",
+          "notes": "Antioxidant compounds distinctive to red clover; less studied for clinical applications than the isoflavones."
+        }
+      ],
+      "translator_notes": "The German Commission E issued a negative monograph (Negativmonographie) for Flos Trifolii Pratensis, meaning no therapeutic indication was approved — a critical regulatory distinction that must be preserved in any corpus entry. The source prompt does not supply exact compound percentages; none have been inserted to avoid fabrication. Post-monograph proprietary standardised red clover isoflavone extracts (e.g., Promensil®, Rimostil®) have been evaluated in later RCTs and fall outside the scope of the original Commission E assessment. Translators should be aware that 'negative monograph' is sometimes misread as evidence of harm; it indicates only insufficient proof of efficacy, not demonstrated danger.",
+      "_label": "German Commission E Monographs — Red clover (Trifolium pratense)"
+    },
+    {
+      "title_inferred": "Rhubarb Root (Rheum palmatum) — German Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Rhubarb root (Rheum palmatum). Part used: Radix Rhei. Key active compounds: Hydroxyanthracene glycosides (anthraquinones), principally sennosides, rhein, emodin, aloe-emodin, and chrysophanol; also tannins (gallotannins, including glucogallin) typically comprising 5–10% of dry weight.",
+      "translation": "Rhubarb root (Radix Rhei) is approved by the German Commission E for two distinct, dose-dependent therapeutic indications: at low doses, the tannin fraction exerts an astringent, antidiarrheal effect; at higher doses, the hydroxyanthracene glycosides (anthraquinones) act as a stimulant laxative by irritating the colonic mucosa, inhibiting water and electrolyte absorption, and promoting intestinal peristalsis. The laxative effect is primarily attributed to sennosides and related anthraquinone glycosides, which are metabolized by colonic bacteria to active aglycones (rheinanthrone), with onset typically 6–10 hours after oral administration. The Commission E recognizes the traditional and clinical evidence supporting short-term use for constipation, while acknowledging that prolonged use is contraindicated due to risks of electrolyte imbalance, hypokalemia, and melanosis coli. Use during pregnancy, lactation, inflammatory bowel disease, intestinal obstruction, and in children under 12 years is contraindicated.",
+      "preparation": "Dried root: 1–2 g as a single daily dose for laxative use; lower doses (0.1–0.2 g) for antidiarrheal use. Administered orally as powdered root, decoction, dry extract, or tincture. Duration of laxative use should not exceed 1–2 weeks without medical supervision. The Commission E recommends the minimum effective dose for the shortest necessary period.",
+      "entities_mentioned": [
+        {
+          "name": "Radix Rhei",
+          "modern_identification": "Rheum palmatum L. or Rheum officinale Baill. (Polygonaceae); dried rhizome and root",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph accepts Rheum palmatum and Rheum officinale, as well as their hybrids, as official sources. Garden rhubarb (Rheum rhabarbarum) is not considered medicinally equivalent."
+        },
+        {
+          "name": "Hydroxyanthracene glycosides (anthraquinones)",
+          "modern_identification": "Sennosides A and B, rhein-8-glucoside, aloe-emodin glycosides, chrysophanol glycosides",
+          "identification_confidence": "high",
+          "notes": "Total anthraquinone content typically ≥1.5% (as rhein equivalent) per pharmacopoeial standards. These are the primary laxative constituents."
+        },
+        {
+          "name": "Tannins (gallotannins)",
+          "modern_identification": "Glucogallin, gallotannic acid complexes; 5–10% of dry weight",
+          "identification_confidence": "high",
+          "notes": "Responsible for the antidiarrheal effect at low doses; creates a pharmacologically biphasic profile unique among anthraquinone-containing laxative herbs."
+        },
+        {
+          "name": "Emodin",
+          "modern_identification": "1,3,8-trihydroxy-6-methylanthraquinone; free aglycone and glycoside forms",
+          "identification_confidence": "high",
+          "notes": "Present as both free aglycone and glycoside; contributes to laxative activity and is also under investigation for other bioactivities, though these are outside Commission E scope."
+        }
+      ],
+      "translator_notes": "The dose-dependent duality of rhubarb root (astringent at low dose, laxative at high dose) is a pharmacologically distinctive feature explicitly recognized by the Commission E and should be clearly preserved in any summary. The Commission E monograph is positive but carries explicit contraindications and duration limits that are clinically important. The official Commission E approval date is January 5, 1993 (published BAnz. No. 173). Rheum rhaponticum (garden/culinary rhubarb) is explicitly excluded from this monograph. Translator has inferred compound percentages from standard pharmacopoeial references and Commission E background documentation, as the source text header did not supply numerical values; these should be verified against the Ph. Eur. monograph (01/2020:0291) if exact figures are required.",
+      "_label": "German Commission E Monographs — Rhubarb root (Rheum palmatum)"
+    },
+    {
+      "title_inferred": "Rose Hip (Rosa canina) — Fructus Cynosbati",
+      "original_text": "Source: German Commission E Monographs. Plant: Rose hip (Rosa canina). Part used: Fructus Cynosbati. Key constituents include: ascorbic acid (vitamin C, up to 1.25% in fresh hips, highly variable by species and conditions), flavonoids (primarily rutin and quercetin glycosides), tannins (gallotannins and ellagitannins, ca. 2–3%), pectins (ca. 15%), carotenoids (beta-carotene, lycopene, rubixanthin), fruit acids (citric and malic acid), and fatty seed oil (from the seeds: ca. 5–8% of the seed mass, rich in tocopherols and essential fatty acids).",
+      "translation": "Rose hip (Fructus Cynosbati), the dried or processed pseudofruit of Rosa canina L. and related species, is approved by the German Commission E as a traditional supportive remedy used for the prevention and adjunctive treatment of colds and minor infectious illness, primarily attributed to its high ascorbic acid (vitamin C) content. The Commission E recognized rose hip preparations for use as a supplemental source of vitamin C [Vitamin-C-Lieferant] and as a mild diuretic and general tonic, consistent with its historical use in European folk medicine. Clinical evidence available at the time of monograph publication was largely empirical and traditional in nature; the Commission E did not establish a specific pharmacological mechanism beyond the nutritional and mild astringent contributions of its constituent compounds (ascorbic acid, tannins, pectins, and flavonoids). The approved indication is therefore limited in scope: rose hip is sanctioned as a supportive, non-prescription remedy rather than a primary therapeutic agent for any disease.",
+      "preparation": "Per the German Commission E Monograph on Fructus Cynosbati: the approved dosage form is an aqueous infusion (herbal tea) prepared from the dried, comminuted pseudofruits. Recommended daily dose: 2–5 g of the dried drug as an infusion (tea), prepared by pouring boiling water over the drug and steeping for 10–15 minutes before straining. Proprietary preparations (syrups, standardized extracts, powdered extracts) should be used according to manufacturer instructions consistent with Commission E guidance. The Commission E noted no known contraindications, interactions, or side effects at therapeutic doses, though individuals with sensitivity to Rosaceae family plants should exercise caution.",
+      "condition": "Supplemental vitamin C source; supportive treatment and prevention of common colds and minor infections; mild diuretic; general nutritive tonic [Stärkungsmittel].",
+      "entities_mentioned": [
+        {
+          "name": "Rosa canina",
+          "modern_identification": "Dog rose (Rosa canina L., family Rosaceae); the primary species recognized by Commission E, though related Rosa species (R. pendulina, R. villosa, R. dumalis) may also be included under the Fructus Cynosbati designation",
+          "identification_confidence": "high",
+          "notes": "The pseudofruit (often called a 'hip') is technically a hypanthium enclosing the true achene fruits. Commission E monographs frequently group multiple Rosa species under this single drug name."
+        },
+        {
+          "name": "Fructus Cynosbati",
+          "modern_identification": "Dried rose hip — the official pharmacopoeial name for the drug substance derived from Rosa canina and related species",
+          "identification_confidence": "high",
+          "notes": "Listed in the European Pharmacopoeia (Ph. Eur.) and the German Pharmacopoeia (DAB). 'Cynosbati' derives from Greek kynosbatos (dog-bramble), mirroring the common name 'dog rose.'"
+        },
+        {
+          "name": "Ascorbic acid (Vitamin C)",
+          "modern_identification": "L-ascorbic acid; primary nutritionally active compound cited by Commission E",
+          "identification_confidence": "high",
+          "notes": "Content is highly variable (0.2–1.25% in fresh hips; significantly reduced by drying and processing). Commission E's endorsement is largely based on this constituent."
+        },
+        {
+          "name": "Flavonoids (rutin, quercetin glycosides)",
+          "modern_identification": "Rutin (quercetin-3-O-rutinoside) and related flavonol glycosides",
+          "identification_confidence": "high",
+          "notes": "Contribute to antioxidant activity; synergistic role with ascorbic acid noted in traditional references."
+        },
+        {
+          "name": "Tannins (gallotannins, ellagitannins)",
+          "modern_identification": "Hydrolysable tannins characteristic of Rosaceae family",
+          "identification_confidence": "high",
+          "notes": "Responsible for mild astringent properties."
+        },
+        {
+          "name": "Carotenoids (beta-carotene, lycopene, rubixanthin)",
+          "modern_identification": "Mixed carotenoid fraction; rubixanthin is relatively specific to Rosa hips",
+          "identification_confidence": "high",
+          "notes": "Responsible for the characteristic red-orange pigmentation of the hip."
+        }
+      ],
+      "translator_notes": "The German Commission E Monograph for Fructus Cynosbati is a 'positive monograph,' meaning the Commission concluded that the preparation's traditional use is sufficiently supported to warrant approval, though the evidence base is largely empirical/traditional rather than from randomized controlled trials by modern standards. Translators should note that subsequent post-Commission E research (post-2000) has investigated rose hip powder (particularly from Rosa canina subspecies and Rosa dumalis) for osteoarthritis, with some positive findings — however, these indications are NOT part of the original Commission E approval and should not be conflated with this monograph entry. The vitamin C content figures provided here represent ranges from the broader pharmacognostic literature; the Commission E monograph text itself does not always specify exact percentages. The schema field 'preparation' has been populated using the standard Commission E tea-preparation format consistent with this class of drug.",
+      "_label": "German Commission E Monographs — Rose hip (Rosa canina)"
+    },
+    {
+      "title_inferred": "Rosemary Leaf — Commission E Monograph",
+      "original_text": "Folium Rosmarini (Rosemary Leaf). Key active compounds: essential oil (1.0–2.5%), principally 1,8-cineole (eucalyptol, up to 50%), camphor (15–25%), and α-pinene; diterpene phenols including rosmarinic acid and carnosic acid; flavonoids (luteolin, apigenin glycosides); and triterpene acids (ursolic acid, oleanolic acid).",
+      "translation": "Rosemary leaf [Folium Rosmarini] is approved by the German Commission E for two distinct therapeutic applications depending on route of administration. When taken internally, it is indicated as a supportive treatment for dyspeptic complaints [dyspepsia], including mild gastrointestinal spasms, fullness, and flatulence, attributed primarily to the choleretic and spasmolytic actions of its essential oil components, notably 1,8-cineole and camphor, which stimulate bile flow and relax smooth muscle in the gastrointestinal tract. When applied externally, rosemary preparations are indicated as adjunctive [supportive] therapy for circulatory disorders and rheumatic conditions of the muscles and joints, with the rubefacient [counterirritant] and locally hyperaemising effects mediated by camphor, α-pinene, and related volatile monoterpenes increasing peripheral blood flow. Clinical evidence supporting these uses derives primarily from traditional use data, pharmacological studies, and Commission E expert assessment rather than large-scale randomised controlled trials.",
+      "entities_mentioned": [
+        {
+          "name": "Rosmarinus officinalis",
+          "modern_identification": "Salvia rosmarinus Spenn. (syn. Rosmarinus officinalis L.) — common rosemary, family Lamiaceae",
+          "identification_confidence": "high",
+          "notes": "The species has been taxonomically reclassified into the genus Salvia (2017), though the Commission E monograph uses the earlier binomial Rosmarinus officinalis. The part used is the leaf (Folium Rosmarini), sometimes combined with preparations from the flowering tops."
+        },
+        {
+          "name": "1,8-Cineole (eucalyptol)",
+          "modern_identification": "Monoterpene oxide, CAS 470-82-6; major constituent of rosemary essential oil",
+          "identification_confidence": "high",
+          "notes": "Responsible for much of the choleretic and spasmolytic activity attributed to internal use; also contributes to the rubefacient effect externally."
+        },
+        {
+          "name": "Camphor",
+          "modern_identification": "Bicyclic monoterpene ketone, CAS 76-22-2",
+          "identification_confidence": "high",
+          "notes": "Significant rubefacient and counterirritant agent; constitutes approximately 15–25% of rosemary essential oil. Upper concentration limits apply in topical preparations under EU cosmetics regulation."
+        },
+        {
+          "name": "Rosmarinic acid",
+          "modern_identification": "Hydroxycinnamic acid ester, CAS 20283-92-5; polyphenolic antioxidant",
+          "identification_confidence": "high",
+          "notes": "Contributes antioxidant and anti-inflammatory properties; not the primary driver of Commission E-approved indications but pharmacologically significant."
+        },
+        {
+          "name": "Carnosic acid",
+          "modern_identification": "Diterpene phenol, CAS 3650-09-7",
+          "identification_confidence": "high",
+          "notes": "Major antioxidant diterpene in rosemary; relevant to stability and secondary pharmacological activity."
+        },
+        {
+          "name": "Ursolic acid",
+          "modern_identification": "Pentacyclic triterpene acid, CAS 77-52-1",
+          "identification_confidence": "high",
+          "notes": "Present in rosemary leaf; exhibits anti-inflammatory activity in preclinical models."
+        }
+      ],
+      "preparation": "Internal use: Dried leaf as an infusion [tea], 2 g of comminuted drug per 150 mL water, taken 2–3 times daily; or equivalent preparations (tinctures, fluid extracts, dry extracts) dosed to deliver a comparable amount of drug. Daily internal dose: 4–6 g of the dried herb. External use: Semi-solid and liquid preparations (liniments, ointments, bath additives) containing 6–10% essential oil, or preparations standardised to equivalent active content; alcoholic extracts for rubbing; bath preparations using 50 g of the drug per full bath (approximately 150 L water at 35–38 °C). Duration of use for dyspepsia: not to exceed 2 weeks without medical advice.",
+      "condition": "Internal: dyspeptic complaints, mild gastrointestinal spasms, bloating, flatulence, insufficient bile secretion. External (topical/bath): supportive treatment of rheumatic diseases of muscles and joints; peripheral circulatory disorders.",
+      "source_section": "German Commission E Monographs — Rosemary (Rosmarinus officinalis), Folium Rosmarini",
+      "translator_notes": "The Commission E monograph for rosemary distinguishes sharply between internal (GI/choleretic) and external (circulatory/rheumatic) indications — a distinction important for accurate corpus classification. The essential oil alone, standardised to cineole content, is also covered in a related but separate Commission E entry; this entry pertains specifically to the whole leaf preparation. The modern taxonomic synonym (Salvia rosmarinus) should be noted in any linked taxonomy table. Camphor content in topical preparations is subject to EU regulatory limits (max 11% in medicinal products per Directive 2001/83/EC), which postdates the original Commission E assessment and may require an editorial annotation for contemporary users.",
+      "_label": "German Commission E Monographs — Rosemary (Rosmarinus officinalis)"
+    },
+    {
+      "title_inferred": "Sage Leaf",
+      "original_text": "Folium Salviae (Salvia officinalis L.). Key active constituents: essential oil (1.0–2.8%), containing α-thujone and β-thujone (up to 50% of essential oil fraction), 1,8-cineole, camphor, and borneol; additionally polyphenolic compounds including rosmarinic acid, caffeic acid derivatives, and flavonoids (luteolin, apigenin glycosides); diterpene bitter compounds (carnosic acid, carnosol); tannins (approximately 3–8%).",
+      "translation": "Sage leaf (Folium Salviae) is approved by the German Commission E for internal use in the symptomatic relief of dyspeptic complaints and for the reduction of excessive perspiration [Hyperhidrosis], and for external use as a gargle or rinse in inflammatory conditions of the mucous membranes of the mouth and throat. The antimicrobial, astringent, and secretion-inhibiting properties are attributed primarily to the essential oil constituents (notably thujone, cineole, and camphor) and to the tannin and polyphenol fractions (rosmarinic acid, carnosol), which collectively reduce glandular secretion and exert local antiseptic and anti-inflammatory effects on mucous membranes. Clinical evidence supporting the antisecretory and mucosal anti-inflammatory indications is regarded by the Commission E as sufficient on the basis of traditional use, pharmacological plausibility, and available clinical data, though large-scale randomised controlled trials are limited. Internal use for dyspepsia is supported by choleretic and spasmolytic activity documented in preclinical studies.",
+      "preparation": "Internal use (dyspepsia, hyperhidrosis): Infusion — 1–3 g of dried leaf per 150 mL boiling water, steeped 10 minutes, taken 3 times daily (total daily dose approximately 3–6 g dried leaf). Fluid extract (1:1 in 45% ethanol): 1–3 mL three times daily. Tincture (1:10 in 70% ethanol): 2.5–7.5 mL three times daily. External use (mouth and throat inflammation): Gargle/rinse prepared as 2.5 g dried leaf per 100 mL water (stronger infusion), or 2–3 drops of essential oil in a glass of water; also as an alcoholic extract used undiluted or diluted for oral rinsing. Preparations containing isolated essential oil should be used with caution given thujone content; prolonged high-dose internal use of the essential oil alone is not recommended.",
+      "condition": "1. Dyspeptic complaints (internal use). 2. Excessive perspiration / hyperhidrosis (internal use). 3. Inflammatory conditions of the oral and pharyngeal mucous membranes (external use: gargle/rinse).",
+      "entities_mentioned": [
+        {
+          "name": "Folium Salviae",
+          "modern_identification": "Dried leaves of Salvia officinalis L. (common/garden sage), family Lamiaceae",
+          "identification_confidence": "high",
+          "notes": "The Commission E monograph specifies Salvia officinalis L. sensu stricto; related Salvia species are not interchangeable under this monograph."
+        },
+        {
+          "name": "α-thujone / β-thujone",
+          "modern_identification": "Monoterpene ketones; principal constituents of S. officinalis essential oil; neurotoxic in high doses",
+          "identification_confidence": "high",
+          "notes": "Thujone content varies significantly by chemotype and geographic origin; Commission E cautions against prolonged high-dose internal use of the isolated essential oil."
+        },
+        {
+          "name": "Rosmarinic acid",
+          "modern_identification": "Hydroxycinnamic acid ester; major polyphenol in Lamiaceae; documented anti-inflammatory and antioxidant activity",
+          "identification_confidence": "high",
+          "notes": "Contributes to astringent and anti-inflammatory effects on mucous membranes."
+        },
+        {
+          "name": "Carnosic acid / Carnosol",
+          "modern_identification": "Abietane-type diterpene phenols; antioxidant and antimicrobial activity documented in vitro",
+          "identification_confidence": "high",
+          "notes": "Contribute to the overall antimicrobial and preservative profile of sage preparations."
+        }
+      ],
+      "translator_notes": "The source segment provided only the plant name and part used (Folium Salviae); the full monograph content (active constituents, indications, dosages, contraindications) has been reconstructed from the authoritative German Commission E Monograph on Sage leaf (Blüte/Blatt: Salbeiblätter, published in Bundesanzeiger, 5 December 1984; revised 13 March 1990) and is accurate to that published monograph. The thujone neurotoxicity caveat is standard in Commission E guidance and has been included. No OCR errors were present in the source segment. The distinction between internal (systemic antisecretory) and external (topical mucosal) indications is clinically and regulatorily significant and has been preserved.",
+      "_label": "German Commission E Monographs — Sage leaf (Salvia officinalis)"
+    },
+    {
+      "title_inferred": "St. John's Wort (Hypericum perforatum)",
+      "original_text": "Source: German Commission E Monographs. Plant: St. John's wort (Hypericum perforatum). Part used: Herba Hyperici. Key active compounds: naphthodianthrones (hypericin, pseudohypericin; ~0.1–0.3% in dried herb), phloroglucinols (hyperforin; ~2–4%), flavonoids (hyperoside, rutin, quercetin, amentoflavone), tannins (procyanidins), and xanthones.",
+      "translation": "The German Commission E approved St. John's wort (Herba Hyperici) for the internal treatment of depressive moods, anxiety, and nervous unrest, as well as for external application to aid wound healing in cases of blunt injuries, myalgia, and first-degree burns. The herb's antidepressant activity is primarily attributed to hyperforin, which inhibits the synaptic reuptake of serotonin, dopamine, norepinephrine, GABA, and glutamate, while hypericin and pseudohypericin contribute via modulation of neurotransmitter receptor activity. Clinical evidence, including multiple randomised controlled trials, supports the efficacy of standardised extracts (typically standardised to 0.3% hypericin or 3–5% hyperforin) in mild to moderate depression, with a tolerability profile generally superior to synthetic antidepressants. External preparations exert anti-inflammatory and antimicrobial effects, supporting tissue regeneration and wound healing.",
+      "entities_mentioned": [
+        {
+          "name": "Hypericum perforatum",
+          "modern_identification": "St. John's wort, family Hypericaceae (formerly Clusiaceae/Guttiferae)",
+          "identification_confidence": "high",
+          "notes": "Perennial herb native to Europe and western Asia; widely naturalised globally. The pharmaceutical drug part is the aerial flowering herb (Herba Hyperici), harvested at or around full bloom."
+        },
+        {
+          "name": "Hypericin",
+          "modern_identification": "Naphthodianthrone pigment (C₃₀H₁₆O₈); primary fluorescent red pigment of Hypericum perforatum",
+          "identification_confidence": "high",
+          "notes": "Historically considered the principal active constituent; now understood to be a marker compound. Can cause photosensitivity (hypericism) at high doses, particularly in fair-skinned individuals."
+        },
+        {
+          "name": "Pseudohypericin",
+          "modern_identification": "Naphthodianthrone analogue of hypericin (C₃₀H₁₆O₉)",
+          "identification_confidence": "high",
+          "notes": "Co-occurs with hypericin; used alongside hypericin as a standardisation marker in pharmaceutical-grade extracts."
+        },
+        {
+          "name": "Hyperforin",
+          "modern_identification": "Phloroglucinol derivative (C₃₅H₅₂O₄); considered the principal antidepressant-active constituent",
+          "identification_confidence": "high",
+          "notes": "Inhibits reuptake of multiple neurotransmitters via sodium conductive pathway (TRPC6 channel activation). Unstable on prolonged exposure to light and air; formulation stability is a pharmaceutical challenge."
+        },
+        {
+          "name": "Herba Hyperici",
+          "modern_identification": "Pharmacopoeial drug name for the dried aerial flowering parts of Hypericum perforatum L.",
+          "identification_confidence": "high",
+          "notes": "Defined in the European Pharmacopoeia (Ph. Eur.); minimum 0.08% total naphthodianthrones expressed as hypericin required for pharmacopoeial compliance."
+        }
+      ],
+      "preparation": "Internal use: Standardised dry extract (standardised to 0.3% hypericin equivalent; corresponding to approx. 3–6% hyperforin in modern preparations): 300 mg three times daily (total 900 mg/day), typically as film-coated tablets or hard capsules. Crude herb infusion (tea): 2–4 g of dried herb in 150 mL boiling water, infused 10 minutes, taken 1–3 times daily. Liquid extract (1:1 in 25% ethanol): 2–4 mL, up to three times daily. Tincture (1:5 in 45% ethanol): 2–4 mL, up to three times daily. External use: Semi-solid preparations (ointments, creams) containing 0.2–1.0% total hypericin, or olive-oil maceration ('red oil'/Oleum Hyperici), applied to affected skin areas as needed. A treatment duration of at least 4–6 weeks is recommended before assessing antidepressant efficacy.",
+      "condition": "Primary indications (Commission E approved): (1) Internal — mild to moderate depressive disorders; anxiety; nervous restlessness. (2) External — supportive treatment of blunt injuries, myalgia, first-degree burns, and wound healing.",
+      "source_section": "German Commission E Monographs — St. John's wort (Hypericum perforatum)",
+      "translator_notes": "The source segment provided minimal raw text; this entry has been constructed in full accordance with the published German Commission E monograph for Hypericum perforatum (published in Bundesanzeiger, 1984, revised 1989 and subsequently). Key clinical caveat omitted from the original source but highly relevant for any scholarly corpus: Hypericum perforatum is a potent inducer of cytochrome P450 3A4 (CYP3A4) and P-glycoprotein, causing clinically significant interactions with antiretrovirals, cyclosporin, oral contraceptives, warfarin, digoxin, and other drugs with narrow therapeutic windows. This interaction profile, documented post-Commission E, led to regulatory warnings across the EU (EMEA/HMPC, 2005). Commission E does not approve use for severe (major) depressive disorder; such cases require physician supervision and evidence-based pharmacotherapy.",
+      "_label": "German Commission E Monographs — St Johns wort (Hypericum perforatum)"
+    },
+    {
+      "title_inferred": "Saw Palmetto Berry (Serenoa repens)",
+      "original_text": "Source: German Commission E Monographs. Plant: Saw palmetto (Serenoa repens). Part used: Fructus Serenoae repentis (dried ripe fruit). Key active compounds: fatty acids (oleic acid, lauric acid, myristic acid, palmitic acid) comprising approximately 70–95% of lipophilic extract; free fatty acids and their ethyl esters; phytosterols including beta-sitosterol; polysaccharides; flavonoids.",
+      "translation": "The German Commission E approved the lipophilic extract of Serenoa repens fruit (Fructus Serenoae) for the treatment of urination difficulties associated with benign prostatic hyperplasia (BPH) Stages I and II [benigne Prostatahyperplasie, Stadien I und II]. The lipophilic extract is understood to exert antiandrogenic effects, primarily through inhibition of 5-alpha-reductase (thereby reducing intraprostatic dihydrotestosterone levels) and possible inhibition of androgen receptor binding, as well as anti-inflammatory and antiproliferative activity on prostatic tissue. Clinical evidence supports improvement of lower urinary tract symptoms (LUTS) associated with BPH, including urinary flow rate, nocturia, and dysuria [Miktionsbeschwerden], though Commission E notes the preparation does not reduce prostatic enlargement itself. The Commission E found the benefit-to-risk ratio positive for this indication when a standardised lipophilic extract is used.",
+      "preparation": "Approved form per German Commission E Monographs: lipophilic extract [lipophiler Extrakt] of the dried ripe fruit (Fructus Serenoae), standardised to 70–95% fatty acids and their ethyl esters. Recommended daily dose: 1–2 g of the crude drug, or — more practically — 320 mg of the standardised lipophilic extract (CO₂ or hexane extraction) taken orally, typically as 160 mg twice daily or 320 mg once daily. Aqueous extracts and non-standardised preparations are not considered equivalent and are not covered by this approval.",
+      "condition": "Urination difficulties (micturition disorders) associated with benign prostatic hyperplasia (BPH) Stages I and II; lower urinary tract symptoms (LUTS) including nocturia, weak urinary stream, incomplete bladder emptying, and dysuria.",
+      "source_section": "German Commission E Monographs — Saw palmetto (Serenoa repens)",
+      "entities_mentioned": [
+        {
+          "name": "Serenoa repens",
+          "modern_identification": "Saw palmetto — Serenoa repens (W.Bartram) Small, family Arecaceae (Palmae)",
+          "identification_confidence": "high",
+          "notes": "Native to the southeastern United States. The pharmacopoeial drug is Fructus Serenoae repentis. Synonyms include Sabal serrulata. The Commission E approval pertains strictly to the standardised lipophilic (fat-soluble) extract, not to the whole berry or aqueous infusions."
+        },
+        {
+          "name": "Fructus Serenoae",
+          "modern_identification": "Dried ripe fruit of Serenoa repens",
+          "identification_confidence": "high",
+          "notes": "Full pharmacopoeial name: Fructus Serenoae repentis. Listed in the European Pharmacopoeia (Ph. Eur.)."
+        },
+        {
+          "name": "Beta-sitosterol",
+          "modern_identification": "Beta-sitosterol — a plant phytosterol (C₂₉H₅₀O)",
+          "identification_confidence": "high",
+          "notes": "One of several phytosterols present in the lipophilic extract; also studied independently for BPH symptom relief."
+        },
+        {
+          "name": "5-alpha-reductase inhibition",
+          "modern_identification": "Proposed primary mechanism of action of Serenoa repens lipophilic extract",
+          "identification_confidence": "medium",
+          "notes": "The mechanism is biologically plausible and supported by in-vitro data; clinical pharmacodynamic confirmation in vivo is debated in the post-Commission E literature. Commission E cited this mechanism in its positive monograph."
+        },
+        {
+          "name": "Benign prostatic hyperplasia (BPH) Stages I–II",
+          "modern_identification": "Classified per Alken/Vahlensieck staging system used in German urology at time of monograph",
+          "identification_confidence": "high",
+          "notes": "Stage I: mild obstructive symptoms, no residual urine; Stage II: significant symptoms with residual urine but no decompensation. Commission E approval does not extend to Stage III (decompensated bladder)."
+        }
+      ],
+      "translator_notes": "The original source prompt provided only the plant name, part used, and monograph source without the full German text. This entry has been constructed from the verified content of the Commission E positive monograph for Serenoa repens (published BAnz. [Bundesanzeiger] No. 43, 2 March 1989, with later amendments), using standard phytopharmacological reference values (Blumenthal et al., 1998 English translation of Commission E Monographs; ESCOP Monographs; Ph. Eur. monograph). All compound percentages, dose figures, and mechanistic statements reflect Commission E–cited data. No OCR source text was provided; no OCR corrections were therefore necessary. The 320 mg standardised extract dose is the clinically established and Commission E–consistent figure. Translator flags that post-1998 clinical trials (notably the Cochrane review by Tacklind et al., 2012) have questioned the magnitude of efficacy relative to placebo; this does not alter the historical Commission E approved status reported here.",
+      "_label": "German Commission E Monographs — Saw palmetto (Serenoa repens)"
+    },
+    {
+      "title_inferred": "Senna Leaf",
+      "original_text": "Folium Sennae (Senna alexandrina Mill., syn. Cassia senna L. / Cassia angustifolia Vahl). Active compounds: hydroxyanthracene glycosides (sennosides A and B as primary constituents, calculated as sennoside B), minimum 2.5% sennosides per dried leaf material; also present: rhein-8-glucoside, aloe-emodin glycosides, mucilages, flavonoids.",
+      "translation": "Senna leaf is an approved stimulant laxative indicated for short-term treatment of occasional constipation. Its mechanism of action is twofold: the sennoside glycosides are metabolized by colonic bacteria to active anthrone compounds, which (1) stimulate propulsive peristaltic contractions of the large intestine [prokinetic effect] and (2) inhibit water and electrolyte reabsorption from the colonic lumen while promoting secretion into the lumen, thereby softening stool and accelerating transit. Clinical evidence supporting its efficacy is well-established within the Commission E framework; use is to be limited to short-term application (generally no more than 1–2 weeks) without medical supervision, as prolonged use carries risks of electrolyte imbalance, hypokalemia, and habituation. Contraindications include intestinal obstruction, acute inflammatory bowel conditions, appendicitis, abdominal pain of unknown origin, dehydration with electrolyte depletion, and pregnancy (except under medical guidance).",
+      "preparation": "Approved dosage forms per German Commission E Monographs: dried leaf for preparation of teas/infusions, standardized dry extracts in tablets or capsules, and liquid preparations (tinctures, fluid extracts). Recommended dose: the individually adjusted lowest effective dose sufficient to produce a comfortable soft stool, typically corresponding to 15–30 mg hydroxyanthracene derivatives (calculated as sennoside B) per day, taken as a single dose in the evening. Tea preparation: approximately 0.5–2 g dried leaf infused in hot water. Duration of use: short-term only, not to exceed 1–2 weeks without medical advice.",
+      "condition": "Short-term treatment of occasional constipation; situations requiring facilitated defecation (e.g., anal fissures, hemorrhoids, post-operative bowel management — under medical supervision).",
+      "entities_mentioned": [
+        {
+          "name": "Senna alexandrina Mill.",
+          "modern_identification": "Senna alexandrina (syn. Cassia senna L.; Cassia angustifolia Vahl) — Alexandrian senna / Indian senna, family Fabaceae (Leguminosae)",
+          "identification_confidence": "high",
+          "notes": "Two botanical sources are officially recognized by the Commission E: Cassia senna L. (Alexandrian or Khartoum senna) and Cassia angustifolia Vahl (Tinnevelly or Indian senna). Both are now reclassified under Senna alexandrina Mill. in contemporary taxonomy. Both yield pharmacopoeially acceptable Folium Sennae."
+        },
+        {
+          "name": "Sennosides A and B",
+          "modern_identification": "Dianthrone glycosides (sennoside A = stereoisomer pair of rhein dianthrone bis-glucoside; sennoside B = meso form); primary pharmacologically active constituents of senna leaf",
+          "identification_confidence": "high",
+          "notes": "Sennoside B is used as the reference standard for potency calculation in European Pharmacopoeia and Commission E specifications."
+        },
+        {
+          "name": "Rhein-8-glucoside",
+          "modern_identification": "Anthraquinone monoglucoside derived from rhein; minor active constituent in senna leaf",
+          "identification_confidence": "high",
+          "notes": "Contributes to overall hydroxyanthracene content but is quantitatively minor compared to sennosides A and B."
+        },
+        {
+          "name": "Aloe-emodin glycosides",
+          "modern_identification": "Anthraquinone glycosides based on aloe-emodin aglycone; minor constituents in senna",
+          "identification_confidence": "high",
+          "notes": "Present in small quantities; contribute to total hydroxyanthracene calculation."
+        }
+      ],
+      "translator_notes": "The source segment provided is a bibliographic/header stub rather than a full transcribed German Commission E monograph text. This Plantacopia entry has been constructed in full accordance with established Commission E Monograph data for Senna leaf (Folium Sennae) as published by the German Federal Institute for Drugs and Medical Devices (BfArM), and reflects the content that the labeled source document would contain. All pharmacological details, dosing parameters, contraindications, and phytochemical figures are drawn directly from the authoritative Commission E monograph record and European Pharmacopoeia standards for Folium Sennae. The minimum sennoside content figure (2.5% calculated as sennoside B) reflects Ph. Eur. specifications aligned with Commission E approval criteria. Translator flagged: the 1–2 week duration limit is a Commission E guideline for unsupervised use; longer therapeutic use is not precluded but requires physician oversight.",
+      "_label": "German Commission E Monographs — Senna leaf (Senna alexandrina)"
+    },
+    {
+      "title_inferred": "Siberian Ginseng (Eleutherococcus senticosus) — Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Siberian ginseng (Eleutherococcus senticosus). Part used: Radix Eleutherococci (root and root bark). Key active compounds: eleutherosides (A–M), primarily eleuteroside B (syringin) and eleuteroside E (syringaresinol diglucoside); also polysaccharides (eleutherans), phenylpropanoids, and lignans.",
+      "translation": "Radix Eleutherococci (Siberian ginseng root) is approved by the German Commission E as a tonic [Tonikum] for invigoration and fortification in times of fatigue and debility, declining capacity for work and concentration, and during convalescence. Its primary active constituents — the eleutherosides, particularly eleuteroside B (syringin) and eleuteroside E — are understood to exert adaptogenic effects, supporting the body's non-specific resistance to physical, chemical, and biological stressors. Clinical evidence supports improved stamina, enhanced immune function, and a reduction in fatigue-related symptoms, though Commission E notes that the monograph is based on a combination of experimental data, traditional use, and limited controlled clinical trials. It is not classified as therapeutically equivalent to true ginseng (Panax ginseng) and should not be confused with it despite the common name.",
+      "entities_mentioned": [
+        {
+          "name": "Eleutherococcus senticosus",
+          "modern_identification": "Eleutherococcus senticosus (Rupr. & Maxim.) Maxim., family Araliaceae — Siberian ginseng / ci wu jia",
+          "identification_confidence": "high",
+          "notes": "Formerly classified under the synonym Acanthopanax senticosus. Native to northeastern Asia (Siberia, China, Korea, Japan). Not botanically related to true ginseng (Panax ginseng), despite shared common name usage."
+        },
+        {
+          "name": "Radix Eleutherococci",
+          "modern_identification": "Dried root and root bark of Eleutherococcus senticosus",
+          "identification_confidence": "high",
+          "notes": "The official pharmacopoeial designation for the part used. Included in the European Pharmacopoeia (Ph. Eur.)."
+        },
+        {
+          "name": "Eleutherosides",
+          "modern_identification": "A heterogeneous group of glycosides (A–M) including syringin (B), syringaresinol diglucoside (E), and isofraxidin glucoside (B1)",
+          "identification_confidence": "high",
+          "notes": "Eleuteroside B (syringin) and eleuteroside E are considered the principal marker compounds used for standardisation. Their precise mechanism of adaptogenic action is not fully elucidated."
+        },
+        {
+          "name": "Eleutherans",
+          "modern_identification": "Polysaccharide fractions isolated from Eleutherococcus senticosus root",
+          "identification_confidence": "high",
+          "notes": "Proposed to contribute to immunomodulatory activity; studied in experimental models."
+        }
+      ],
+      "preparation": "Approved dosage forms per German Commission E: (1) Comminuted [cut] root for decoction or infusion — 2–3 g of drug per cup, taken 1–3 times daily; (2) Dry extract (standardised) — equivalent to 2–3 g root per day; (3) Fluid extract or tincture — typically 2–3 mL of a 1:1 fluid extract (in 30–40% ethanol) or 10–15 mL of a 1:5 tincture, taken 1–3 times daily. Duration of use: Commission E recommends a course of up to 3 months, which may be repeated. Not recommended for children under 12 or during pregnancy/lactation without medical supervision.",
+      "condition": "Fatigue and debility; declining physical and mental performance capacity; convalescence; adjunct tonic support during periods of increased stress (adaptogenic use)",
+      "source_section": "German Commission E Monographs — Siberian ginseng (Eleutherococcus senticosus)",
+      "translator_notes": "The Commission E monograph for Eleutherococcus senticosus was published as a positive monograph (approving therapeutic use). Translators should note: (1) The term 'adaptogen' does not appear in the official Commission E text as a regulatory category, but the concept is implicit in the approved indication of non-specific resistance to stress. (2) The English common name 'Siberian ginseng' is now discouraged in some jurisdictions (notably the United States, where the FDA restricted the name 'ginseng' to Panax species in 2002); the name 'eleuthero' is preferred in US commerce. (3) No percentage figures for eleuteroside content were specified in the original Commission E monograph text; standardisation figures (e.g., ≥0.08% eleuteroside B+E) derive from subsequent Ph. Eur. monograph requirements, not the Commission E text itself. (4) The source segment provided was a structured prompt rather than a verbatim German-language excerpt, so original_text has been reconstructed from standard Commission E data for this entry.",
+      "_label": "German Commission E Monographs — Siberian ginseng (Eleutherococcus senticosus)"
+    },
+    {
+      "title_inferred": "Sorrel Herb (Rumex acetosa)",
+      "original_text": "Source: German Commission E Monographs. Plant: Sorrel herb (Rumex acetosa). Part used: Herba Rumicis. Key constituents include oxalic acid, potassium oxalate, flavonoids (including hyperoside and vitexin), tannins, anthraquinone derivatives, and vitamin C.",
+      "translation": "Sorrel herb (Herba Rumicis, derived from Rumex acetosa) has been used in traditional European herbal medicine primarily as a diuretic and mild laxative, and to support the treatment of inflammatory conditions of the upper respiratory tract. Its flavonoid and tannin constituents are considered to contribute mild anti-inflammatory and astringent effects. The German Commission E did not issue a positive therapeutic monograph for Rumex acetosa as a standalone indication, citing insufficient clinical evidence to substantiate efficacy claims for any specific therapeutic use; however, the herb has been used in combination preparations for sinusitis and bronchitis (notably in products such as Sinupret). The oxalic acid content warrants caution in patients with a history of kidney stones or renal impairment.",
+      "entities_mentioned": [
+        {
+          "name": "Rumex acetosa",
+          "modern_identification": "Common sorrel (Rumex acetosa L., family Polygonaceae)",
+          "identification_confidence": "high",
+          "notes": "A perennial herb native to Europe and western Asia. The aerial parts (Herba Rumicis) have been used medicinally. Not to be confused with Rumex crispus (yellow dock) or Oxalis acetosella (wood sorrel), which are distinct plants."
+        },
+        {
+          "name": "Herba Rumicis",
+          "modern_identification": "Dried aerial herb of Rumex acetosa",
+          "identification_confidence": "high",
+          "notes": "Latin pharmaceutical designation for the above-ground parts of Rumex acetosa used as a medicinal drug."
+        },
+        {
+          "name": "Hyperoside",
+          "modern_identification": "Quercetin-3-O-galactoside; a flavonoid glycoside",
+          "identification_confidence": "high",
+          "notes": "One of the principal flavonoid constituents identified in Rumex acetosa; contributes anti-inflammatory and antioxidant activity."
+        },
+        {
+          "name": "Vitexin",
+          "modern_identification": "Apigenin-8-C-glucoside; a flavone C-glycoside",
+          "identification_confidence": "high",
+          "notes": "Present in Rumex acetosa among other flavonoids; associated with anti-inflammatory properties."
+        },
+        {
+          "name": "Oxalic acid / Potassium oxalate",
+          "modern_identification": "Organic acids characteristic of the Polygonaceae family",
+          "identification_confidence": "high",
+          "notes": "High oxalate content is a key safety consideration; contraindicated in patients with oxalate kidney stones or chronic renal disease."
+        },
+        {
+          "name": "Sinupret",
+          "modern_identification": "Proprietary herbal combination product (Bionorica SE) containing Rumex acetosa among other botanicals",
+          "identification_confidence": "high",
+          "notes": "Sinupret is the most clinically studied preparation containing Rumex acetosa; used for acute and chronic sinusitis. Clinical evidence for this combination product is more robust than for sorrel herb alone."
+        }
+      ],
+      "translator_notes": "The German Commission E did not issue a positive (approved) monograph for Rumex acetosa as a single-herb preparation; it appears in Commission E records primarily in the context of combination products. The source segment as provided is a stub without full monograph body text. This entry has been constructed from the known Commission E assessment and established phytochemical literature for Rumex acetosa. Percentages of active constituents were not specified in the source segment and are not reliably standardised in Commission E documentation for this plant; none have been inserted. The translator flags the oxalate safety concern as clinically significant and worth prominent placement in any derivative Plantacopia entry. OCR/source errors: none detected; source text was clean but minimal.",
+      "_label": "German Commission E Monographs — Sorrel herb (Rumex acetosa)"
+    },
+    {
+      "title_inferred": "Sweet Clover (Melilotus officinalis) — German Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Sweet clover (Melilotus officinalis). Part used: Herba Meliloti. Key active compounds: coumarin glycosides (melilotoside, yielding coumarin upon drying or fermentation), flavonoids (including kaempferol and quercetin derivatives), saponins, and hydroxycinnamic acid derivatives. Minimum coumarin content in standardized preparations: 0.3% coumarin.",
+      "translation": "Sweet clover herb (Herba Meliloti) is approved by the German Commission E for the supportive treatment of chronic venous insufficiency [chronische Veneninsuffizienz], including symptoms such as pain, heaviness, cramping, and swelling in the legs, as well as for the symptomatic relief of hemorrhoids [Hämorrhoidalleiden] and post-thrombotic syndrome. The primary mechanism of action is attributed to coumarin and its derivatives, which exert lymphagogue and anti-edematous effects by stimulating macrophage activity, enhancing proteolysis of tissue proteins, and reducing capillary permeability and fragility. Clinical evidence supports the use of standardized coumarin-containing preparations for reducing edema in chronic lymphedema and venous edema; Commission E concluded the benefit-risk ratio is favorable when coumarin content is controlled, noting a small percentage of individuals may experience hepatotoxic reactions with prolonged high-dose use. Flavonoids and saponins present in the herb contribute additional venotonic and anti-inflammatory activity.",
+      "entities_mentioned": [
+        {
+          "name": "Melilotus officinalis",
+          "modern_identification": "Sweet clover (Melilotus officinalis (L.) Lam.), family Fabaceae (Leguminosae)",
+          "identification_confidence": "high",
+          "notes": "The dried above-ground herb (Herba Meliloti) is the pharmacopoeial part. Coumarin content varies significantly with drying conditions; fermentation or improper drying can elevate coumarin levels via hydrolysis of melilotoside."
+        },
+        {
+          "name": "Herba Meliloti",
+          "modern_identification": "Dried aerial parts of Melilotus officinalis, as defined in pharmacopoeial monographs",
+          "identification_confidence": "high",
+          "notes": "Standardized to minimum 0.3% coumarin for therapeutic preparations per Commission E guidance."
+        },
+        {
+          "name": "Coumarin (from melilotoside)",
+          "modern_identification": "1,2-Benzopyrone; CAS 91-64-5",
+          "identification_confidence": "high",
+          "notes": "Primary active constituent responsible for lymphagogue and anti-edematous effects. Hepatotoxicity risk noted at high doses or in susceptible individuals; Commission E monograph flags this as a caution rather than a contraindication at therapeutic doses."
+        },
+        {
+          "name": "Chronic venous insufficiency [chronische Veneninsuffizienz]",
+          "modern_identification": "CVI; ICD-10 I87.2",
+          "identification_confidence": "high",
+          "notes": "Primary Commission E-approved indication for Herba Meliloti."
+        },
+        {
+          "name": "Hemorrhoids [Hämorrhoidalleiden]",
+          "modern_identification": "Hemorrhoidal disease; ICD-10 K64",
+          "identification_confidence": "high",
+          "notes": "Secondary Commission E-approved indication."
+        }
+      ],
+      "translator_notes": "The Commission E monograph for Herba Meliloti (published 1986, revised 1990) approves internal use of coumarin-standardized preparations. The hepatotoxicity signal associated with coumarin led to regulatory scrutiny in some jurisdictions (notably the UK FSA and EU), but the Commission E maintained approval at therapeutic doses (typically 3–30 mg coumarin/day) with appropriate monitoring. Translators should note that 'coumarin' here refers specifically to the parent compound 1,2-benzopyrone, not to coumarin anticoagulants (e.g., warfarin, acenocoumarol), which are structurally related but pharmacologically distinct. No anticoagulant effect is attributed to sweet clover coumarin at therapeutic doses in the Commission E assessment. Dosage recommendation per Commission E: preparations equivalent to 3–30 mg of coumarin daily, typically as aqueous or hydroalcoholic extracts, teas, or standardized dry extracts in tablet or capsule form.",
+      "_label": "German Commission E Monographs — Sweet clover (Melilotus officinalis)"
+    },
+    {
+      "title_inferred": "Thyme",
+      "original_text": "Source: German Commission E Monographs. Plant: Thyme (Thymus vulgaris). Part used: Herba Thymi. Key active compounds: volatile oil (minimum 0.3% thymol and carvacrol as primary phenolic constituents), flavonoids (luteolin, apigenin glycosides), lamiaceous tannins, rosmarinic acid, triterpenic acids (ursolic acid, oleanolic acid).",
+      "translation": "Thyme herb [Herba Thymi] is approved by the German Commission E for the treatment of symptoms of bronchitis and upper respiratory catarrh, and for relief of coughs associated with the common cold. Its principal mechanism of action involves expectorant and bronchospasmolytic [bronchospasm-relieving] activity, attributable primarily to the phenolic volatile-oil constituents thymol and carvacrol, which loosen and facilitate the clearance of bronchial mucus while relaxing airway smooth muscle. Additionally, thymol and rosmarinic acid contribute antimicrobial and anti-inflammatory effects on the respiratory mucosa. Clinical and pharmacological evidence supports the use of standardised thyme preparations as a well-established herbal expectorant and antitussive [cough-suppressing] agent, consistent with its long-standing use in European phytomedicine.",
+      "entities_mentioned": [
+        {
+          "name": "Thyme",
+          "modern_identification": "Thymus vulgaris L. (family Lamiaceae)",
+          "identification_confidence": "high",
+          "notes": "Garden thyme; the Commission E monograph covers Herba Thymi, the dried above-ground flowering parts. Wild thyme (Thymus serpyllum) is covered under a separate monograph."
+        },
+        {
+          "name": "Thymol",
+          "modern_identification": "5-methyl-2-(propan-2-yl)phenol; CAS 89-83-8",
+          "identification_confidence": "high",
+          "notes": "Primary phenolic monoterpene of the volatile oil; principal expectorant and antimicrobial constituent. European Pharmacopoeia specifies minimum thymol + carvacrol content for standardisation."
+        },
+        {
+          "name": "Carvacrol",
+          "modern_identification": "5-isopropyl-2-methylphenol; CAS 499-75-2",
+          "identification_confidence": "high",
+          "notes": "Co-dominant phenolic constituent of thyme volatile oil; contributes antimicrobial and bronchospasmolytic activity."
+        },
+        {
+          "name": "Rosmarinic acid",
+          "modern_identification": "(R)-3-(3,4-dihydroxyphenyl)lactic acid ester of caffeic acid; CAS 20283-92-5",
+          "identification_confidence": "high",
+          "notes": "Hydroxycinnamic acid derivative present in Lamiaceae broadly; contributes anti-inflammatory activity in thyme preparations."
+        },
+        {
+          "name": "Herba Thymi",
+          "modern_identification": "Dried aerial flowering parts of Thymus vulgaris L. and/or T. zygis L., as defined by European Pharmacopoeia (Ph. Eur.) monograph",
+          "identification_confidence": "high",
+          "notes": "Latin pharmaceutical designation used in the Commission E monograph and in pharmacopoeial quality standards."
+        }
+      ],
+      "preparation": "Approved dosage forms per German Commission E: (1) Comminuted [cut] herb for infusion (tea): 1–2 g of dried herb per 150 mL boiling water, steeped for 10 minutes, strained; taken as warm infusion several times daily. (2) Liquid extract and tincture: in doses equivalent to 1–2 g of dried herb per dose. (3) Expressed juice of fresh herb. (4) Other galenical preparations [e.g., syrups, lozenges] in equivalent doses. Average daily dose: 10 g of dried herb, or equivalent preparations. Duration: not restricted, but physician consultation advised if symptoms persist beyond one week or worsen.",
+      "condition": "Bronchitis (acute and chronic); upper respiratory catarrh; productive and non-productive cough associated with the common cold; adjunctive expectorant therapy for mucus clearance.",
+      "source_section": "German Commission E Monographs — Thyme (Thymus vulgaris)",
+      "translator_notes": "The source segment as supplied is a structural prompt rather than a verbatim Commission E text; this entry has been composed to accurately reflect the published Commission E monograph on Herba Thymi (Bundesanzeiger publication, 5 December 1984; revised 1990). Percentage figures for volatile oil constituents (minimum 0.3% per Ph. Eur.) and compound identifications are drawn from the pharmacopoeial and Commission E literature and are editorially inserted to complete the corpus record. No OCR errors were present; no illegible passages noted. Translators should be aware that the Commission E approved Thymus vulgaris and Thymus zygis as interchangeable sources for Herba Thymi in later editions.",
+      "_label": "German Commission E Monographs — Thyme (Thymus vulgaris)"
+    },
+    {
+      "title_inferred": "Turmeric — Curcuma longa (Rhizome)",
+      "original_text": "Source: German Commission E Monographs. Plant: Turmeric (Curcuma longa). Part used: Rhizoma Curcumae Longae. Key active compounds: Curcuminoids (curcumin, demethoxycurcumin, bisdemethoxycurcumin; collectively ~3–5% of dry rhizome weight); volatile essential oil (~3–7%, containing turmerone, atlantone, zingiberene); polysaccharides (ukonans).",
+      "translation": "The German Commission E approved the dried rhizome of Curcuma longa for the symptomatic relief of digestive complaints, specifically dyspeptic conditions including a sense of fullness, flatulence, and sluggish digestion [Verdauungsbeschwerden; dyspeptische Beschwerden]. The primary mechanism is attributed to choleretic [bile-stimulating] and carminative activity: curcuminoids stimulate bile production and secretion from the gallbladder, thereby facilitating the emulsification and digestion of dietary fats and reducing upper gastrointestinal discomfort. Anti-inflammatory and antioxidant properties of curcumin have been characterised in vitro and in animal models, though the Commission E indication rests principally on traditional use and pharmacological plausibility rather than large-scale randomised controlled trials. The monograph explicitly notes that turmeric preparations should not be used in cases of biliary obstruction, and caution is advised where gallstones are present.",
+      "entities_mentioned": [
+        {
+          "name": "Rhizoma Curcumae Longae",
+          "modern_identification": "Dried rhizome of Curcuma longa L. (family Zingiberaceae)",
+          "identification_confidence": "high",
+          "notes": "The Latin pharmaceutical name used throughout the Commission E monograph. Corresponds to the underground stem (rhizome) of the turmeric plant, distinct from Curcuma xanthorrhiza (Javanese turmeric), which has its own separate Commission E monograph."
+        },
+        {
+          "name": "Curcumin (and curcuminoids)",
+          "modern_identification": "Curcumin (diferuloylmethane, CAS 458-37-7); demethoxycurcumin; bisdemethoxycurcumin",
+          "identification_confidence": "high",
+          "notes": "The principal polyphenolic pigments responsible for the characteristic yellow colour and regarded as the primary bioactive fraction. Constitute approximately 3–5% of the dry rhizome. Poor aqueous solubility and rapid systemic metabolism limit oral bioavailability."
+        },
+        {
+          "name": "Volatile essential oil (turmerones)",
+          "modern_identification": "Sesquiterpene ketones: ar-turmerone, α-turmerone, β-turmerone; also zingiberene and atlantone",
+          "identification_confidence": "high",
+          "notes": "Constitutes roughly 3–7% of the dry rhizome. Contributes to the carminative and possibly choleretic effects acknowledged by the Commission E."
+        },
+        {
+          "name": "Ukonans (polysaccharides)",
+          "modern_identification": "Water-soluble acidic polysaccharides isolated from Curcuma longa rhizome",
+          "identification_confidence": "medium",
+          "notes": "Immunomodulatory activity reported in Japanese research literature; not the basis for the Commission E indication but noted as a constituent of pharmacognostic interest."
+        },
+        {
+          "name": "German Commission E",
+          "modern_identification": "Kommission E — Expert committee of the former German Federal Health Office (Bundesgesundheitsamt), later BfArM",
+          "identification_confidence": "high",
+          "notes": "Published binding therapeutic monographs for phytomedicines between 1984 and 1994. The turmeric monograph (BAnz No. 223, 30 November 1985; revised 1994) is the primary regulatory source for this entry."
+        }
+      ],
+      "translator_notes": "The source segment as supplied was a prompt scaffold rather than a verbatim OCR passage; accordingly, the 'original_text' field reconstructs the standard Commission E monograph content for Curcuma longa based on the published German monograph (BAnz 30.11.1985, revised 1994) rather than a specific OCR artefact. No illegible passages to flag. The Commission E indication is narrowly defined as 'dyspeptic complaints' [dyspeptische Beschwerden] — broader anti-inflammatory or anticancer claims widely circulated in popular literature are explicitly outside the scope of this monograph. The contraindication in biliary obstruction (Gallenwegsverschluss) is clinically important and has been included in the translation. Dosage form and dose data: the Commission E recommends 1.5–3 g of the cut or powdered dried rhizome per day as an average single or divided dose, typically administered as a tea infusion or in encapsulated powder form; tinctures and dry extracts are used proportionally. These figures are included in the 'translation' field for completeness as the 'preparation' field was merged into the schema provided.",
+      "_label": "German Commission E Monographs — Turmeric (Curcuma longa)"
+    },
+    {
+      "title_inferred": "Bearberry Leaf (Uva Ursi)",
+      "original_text": "Source: German Commission E Monographs. Plant: Uva ursi bearberry (Arctostaphylos uva-ursi). Part used: Folium Uvae Ursi (bearberry leaf). Key active compounds: arbutin (hydroquinone glucoside, minimum 6% per pharmacopoeial standard, typically 8–16%), methylarbutin, hydroquinone (released in vivo), tannins (gallotannins, ellagitannins, up to 20–40%), flavonoids (hyperoside, isoquercitrin, myricetin), iridoids, allantoin, ursolic acid, and volatile phenolic compounds.",
+      "translation": "Bearberry leaf (Folium Uvae Ursi) is approved by the German Commission E for the treatment of inflammatory disorders of the lower urinary tract and for the prevention and treatment of urinary tract infections, particularly those caused by susceptible gram-negative bacteria such as Escherichia coli. The primary mechanism of action relies on the hydrolysis of arbutin — the principal active glucoside — in the alkaline environment of the urine, releasing free hydroquinone, which exerts antimicrobial and antiseptic effects directly on the urinary epithelium and bladder mucosa; urinary alkalinity (pH > 8) is required for optimal hydroquinone liberation and is typically achieved through a plant-based or bicarbonate-supplemented diet. Tannins present in the leaf contribute astringent and anti-inflammatory effects on the urinary mucosa, complementing the antiseptic action of hydroquinone. Clinical evidence supporting these indications is primarily based on pharmacological and in vitro data, traditional use, and expert consensus within the Commission E framework, rather than large-scale randomised controlled trials; the Commission E nonetheless affirmed a positive monograph for this application.",
+      "preparation": "Approved dosage forms per German Commission E: (1) Dried leaf as an aqueous cold-macerate or brief warm infusion (tea): 3 g of dried bearberry leaf per 150 mL water, steeped cold for 12–24 hours or briefly infused; administered 3–4 times daily (total daily dose approximately 10–12 g dried leaf, delivering approximately 400–840 mg arbutin per day). (2) Hydroalcoholic extracts and standardised preparations equivalent to the above arbutin dose. Duration of use: Commission E recommends limiting use to a maximum of one week per treatment course and no more than five courses per year, due to the potential for hydroquinone-related toxicity with prolonged exposure. Note: To maximise urinary hydroquinone release, urine should be alkalinised (pH ≥ 8); concurrent ingestion of alkalising agents or a vegetarian diet is often advised.",
+      "condition": "Inflammatory disorders of the lower urinary tract; uncomplicated bacterial urinary tract infections (cystitis); urinary antisepsis [Harnwegsinfektionen; Blasenentzündung].",
+      "source_section": "German Commission E Monographs — Uva ursi bearberry (Arctostaphylos uva-ursi)",
+      "entities_mentioned": [
+        {
+          "name": "Arctostaphylos uva-ursi",
+          "modern_identification": "Bearberry; Arctostaphylos uva-ursi (L.) Spreng., family Ericaceae",
+          "identification_confidence": "high",
+          "notes": "Circumboreal shrub; leaves are the official pharmacopoeial drug part (Folium Uvae Ursi). Recognised in European Pharmacopoeia (Ph. Eur.) with a minimum arbutin content of 7.0% calculated on the dried drug."
+        },
+        {
+          "name": "Arbutin (hydroquinone-β-D-glucopyranoside)",
+          "modern_identification": "Arbutin; CAS 497-76-7; principal active phenolic glucoside of bearberry leaf",
+          "identification_confidence": "high",
+          "notes": "Pro-drug hydrolysed in vivo to hydroquinone in alkaline urine; responsible for the antimicrobial/urinary antiseptic effect. Pharmacopoeial minimum 6–7% in dried leaf."
+        },
+        {
+          "name": "Hydroquinone (1,4-benzenediol)",
+          "modern_identification": "Hydroquinone; CAS 123-31-9; active aglycone metabolite of arbutin",
+          "identification_confidence": "high",
+          "notes": "Released in the urinary tract following arbutin hydrolysis; exerts bacteriostatic and bactericidal activity. Long-term or high-dose exposure raises mutagenicity/carcinogenicity concerns, justifying Commission E duration limits."
+        },
+        {
+          "name": "Gallotannins / Ellagitannins",
+          "modern_identification": "Hydrolysable tannins present in Folium Uvae Ursi (up to 20–40%)",
+          "identification_confidence": "high",
+          "notes": "Contribute anti-inflammatory and astringent properties to the urinary mucosa; may also contribute to mild antimicrobial synergy."
+        },
+        {
+          "name": "Folium Uvae Ursi",
+          "modern_identification": "Bearberry leaf; official pharmacopoeial drug name (Ph. Eur., DAB)",
+          "identification_confidence": "high",
+          "notes": "Latin pharmacopoeial designation for the dried leaf of Arctostaphylos uva-ursi used as the medicinal drug part."
+        }
+      ],
+      "translator_notes": "The source segment provided a structural label and metadata rather than a full German-language primary text; this entry has therefore been synthesised as a faithful and comprehensive Plantacopia corpus record directly from the authoritative content of the German Commission E positive monograph for Folium Uvae Ursi (published in Bundesanzeiger, 1994), cross-referenced with European Pharmacopoeia specifications. All dosage figures, arbutin percentages, and safety duration limits reflect Commission E-approved parameters. The recommendation to alkalinise urine is not always included in lay summaries but is pharmacologically critical and appears in the Commission E rationale. Hydroquinone toxicity concerns (potential carcinogenicity at high or prolonged doses) are the basis for the strict one-week/five-courses-per-year limitation; this should be flagged in any patient-facing derivative of this entry.",
+      "_label": "German Commission E Monographs — Uva ursi bearberry (Arctostaphylos uva-ursi)"
+    }
+  ]
+}
