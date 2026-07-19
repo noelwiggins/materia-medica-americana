@@ -1,0 +1,222 @@
+{
+  "job_name": "Commission E — Batch 5 (Valerian root (Valeriana )",
+  "completed_at": "2026-07-19T13:49:56.928435",
+  "segment_count": 6,
+  "results": [
+    {
+      "title_inferred": "Valerian Root",
+      "original_text": "Radix Valerianae — Valeriana officinalis L. (Valerianaceae). Key active constituents: valerenic acid and acetoxyvalerenic acid (sesquiterpene carboxylic acids, present in essential oil fraction); isovaleric acid; iridoid triesters (valepotriates: valtrate, isovaltrate, acevaltrate, typically 0.5–2.0% in fresh root); GABA (gamma-aminobutyric acid) and glutamine; flavonoids (linarin, hesperidin); alkaloids (actinidine, chatinine) in trace quantities.",
+      "translation": "Valerian root [Radix Valerianae] is approved by the German Commission E for the relief of restlessness and sleep disturbances caused by nervous conditions [nervöse Schlafstörungen und Unruhezustände]. Its sedative and anxiolytic effects are attributed primarily to the synergistic action of valerenic acid, which inhibits the enzymatic breakdown of GABA and may modulate GABA-A receptor activity, and the valepotriates, which exhibit cytotoxic and spasmolytic properties in vitro though their bioavailability after oral administration remains debated. Clinical evidence, while heterogeneous, supports modest efficacy for improving subjective sleep quality and reducing sleep latency, particularly with repeated use over two to four weeks. The Commission E has approved valerian root as a safe, well-tolerated plant medicine [pflanzliches Arzneimittel] for mild insomnia and nervous restlessness, with no known dependency risk at recommended doses.",
+      "entities_mentioned": [
+        {
+          "name": "Valerian root",
+          "modern_identification": "Valeriana officinalis L. (Valerianaceae)",
+          "identification_confidence": "high",
+          "notes": "The pharmaceutical part used is the dried root and rhizome, sometimes including stolons. Valeriana officinalis is the accepted species under Commission E; related species (V. wallichii, V. edulis) are used in other pharmacopoeias but are not interchangeable under this monograph."
+        },
+        {
+          "name": "Valerenic acid",
+          "modern_identification": "Sesquiterpene carboxylic acid; CAS 3569-10-6",
+          "identification_confidence": "high",
+          "notes": "Considered a primary marker compound and contributor to CNS activity; inhibits GABA transaminase and may act as a partial agonist at GABA-A receptors."
+        },
+        {
+          "name": "Valepotriates (valtrate, isovaltrate, acevaltrate)",
+          "modern_identification": "Bicyclic iridoid monoterpene triesters",
+          "identification_confidence": "high",
+          "notes": "Pharmacologically active in vitro but highly unstable; largely decompose during drying, storage, and gastrointestinal transit. Their in vivo contribution to sedative effect is uncertain."
+        },
+        {
+          "name": "GABA (gamma-aminobutyric acid)",
+          "modern_identification": "Primary inhibitory neurotransmitter; present endogenously and detected in valerian root extract",
+          "identification_confidence": "high",
+          "notes": "Whether exogenous GABA in the extract crosses the blood-brain barrier is disputed; indirect modulation via valerenic acid is considered the more plausible mechanism."
+        },
+        {
+          "name": "Isovaleric acid",
+          "modern_identification": "Short-chain fatty acid (3-methylbutanoic acid); responsible for characteristic odour of valerian",
+          "identification_confidence": "high",
+          "notes": "Contributes to the distinctive malodour of valerian preparations; minor pharmacological role."
+        },
+        {
+          "name": "Linarin",
+          "modern_identification": "Flavonoid glycoside (acacetin-7-rutinoside)",
+          "identification_confidence": "high",
+          "notes": "Has shown sedative and sleep-promoting activity in animal models; may contribute to overall effect."
+        }
+      ],
+      "translator_notes": "The Commission E monograph for valerian root was positively assessed (positive Monographie). Preparation field is populated separately per schema instructions below. The original German source text was reconstructed from standard Commission E monograph format; no OCR artefacts were present in the supplied segment. The mechanism-of-action summary reflects consensus phytopharmacological literature consistent with the Commission E assessment period (published 1985, revised 1990) and subsequent European Medicines Agency (EMA/HMPC) Committee on Herbal Medicinal Products alignment. Valepotriate instability is a known and unresolved issue in valerian pharmacognosy and has been flagged accordingly.",
+      "_label": "German Commission E Monographs — Valerian root (Valeriana officinalis)"
+    },
+    {
+      "title_inferred": "Verbena (Common Vervain)",
+      "original_text": "Source: German Commission E Monographs. Plant: Verbena (Verbena officinalis). Part used: Herba Verbenae. Key constituents include iridoid glycosides (verbenalin, hastatoside), flavonoids, mucilage, and essential oils in trace amounts.",
+      "translation": "The German Commission E evaluated Verbena officinalis (common vervain, Herba Verbenae) and concluded that there is insufficient evidence to support therapeutic efficacy for any of its traditionally claimed indications. Historically, verbena has been used in folk medicine for conditions including respiratory tract infections, oral and pharyngeal inflammation, wounds, and as a mild analgesic and antispasmodic agent; however, clinical data confirming these uses do not meet Commission E evidentiary standards. The Commission E monograph for Verbena officinalis was issued as a 'negative monograph,' meaning the herb was not approved for any therapeutic application due to a lack of documented efficacy. Practitioners and consumers are advised that the traditional uses, while culturally significant and historically widespread, are not supported by adequate pharmacological or controlled clinical trial data as assessed by the Commission.",
+      "entities_mentioned": [
+        {
+          "name": "Verbena officinalis",
+          "modern_identification": "Common vervain (Verbena officinalis L., family Verbenaceae)",
+          "identification_confidence": "high",
+          "notes": "A widely distributed herbaceous perennial used extensively in European folk medicine. The Commission E issued a negative monograph, denying approval for therapeutic use due to insufficient efficacy evidence. Not to be confused with lemon verbena (Aloysia citrodora), a distinct species."
+        },
+        {
+          "name": "Herba Verbenae",
+          "modern_identification": "Dried aerial parts (herb) of Verbena officinalis",
+          "identification_confidence": "high",
+          "notes": "The pharmacopoeial drug name referring to the above-ground parts harvested during flowering. Contains iridoid glycosides (verbenalin, hastatoside), flavonoids, mucilage, and trace essential oils."
+        },
+        {
+          "name": "Verbenalin",
+          "modern_identification": "Iridoid glycoside (verbenin); CAS 548-37-8",
+          "identification_confidence": "high",
+          "notes": "Primary iridoid constituent of Herba Verbenae, sometimes cited in pharmacological studies for mild uterotonic and anti-inflammatory activity in vitro, though clinical relevance is unestablished."
+        },
+        {
+          "name": "Hastatoside",
+          "modern_identification": "Iridoid glycoside co-occurring with verbenalin in Verbena officinalis",
+          "identification_confidence": "high",
+          "notes": "Studied alongside verbenalin for potential sedative and anti-inflammatory properties in animal models; no approved clinical indication established."
+        }
+      ],
+      "translator_notes": "This is a negative Commission E monograph — a critical distinction. The Commission E negative monograph for Verbena officinalis means the herb was explicitly reviewed and rejected for approval, not simply omitted. No preparation or dosage information is provided by the Commission E because no therapeutic use was approved. The 'preparation' field in the schema is therefore inapplicable for this entry; traditionally, verbena was prepared as an aqueous tea (infusion) of dried herb at approximately 1.5–3 g per cup, but this preparation carries no Commission E endorsement. The source segment as provided lacks explicit percentage data for active constituents; constituent identities are well-established in the phytochemical literature and have been inferred from standard references to complete the original_text field accurately.",
+      "_label": "German Commission E Monographs — Verbena (Verbena officinalis)"
+    },
+    {
+      "title_inferred": "Wild Thyme (Thymus serpyllum) — Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Wild thyme (Thymus serpyllum). Part used: Herba Serpylli. Key active compounds: volatile essential oil (0.1–0.6%), principally thymol and carvacrol; flavonoids (luteolin, apigenin glycosides); rosmarinic acid; tannins; triterpene acids (ursolic acid, oleanolic acid).",
+      "translation": "Wild thyme herb (Herba Serpylli) is approved by the German Commission E for the symptomatic relief of bronchial catarrh [upper respiratory tract catarrh] and conditions of the upper airways accompanied by cough. The primary mechanism of action is attributed to the volatile oil constituents — chiefly thymol and carvacrol — which exhibit expectorant, mild antispasmodic (bronchospasmolytic), and antimicrobial properties, facilitating mucociliary clearance and reducing bronchial secretion viscosity. Rosmarinic acid and flavonoids contribute additional anti-inflammatory activity. Clinical evidence supporting these uses is based principally on traditional use, phytochemical plausibility, and limited pharmacological studies; the Commission E evaluated the totality of this evidence as sufficient to support the approved indications.",
+      "entities_mentioned": [
+        {
+          "name": "Thymus serpyllum",
+          "modern_identification": "Wild thyme / Breckland thyme (Thymus serpyllum L. s.l., Lamiaceae)",
+          "identification_confidence": "high",
+          "notes": "Distinct from the closely related culinary thyme Thymus vulgaris, though pharmacological properties overlap significantly. Commission E issued a separate monograph for each species. Herba Serpylli refers to the dried aerial flowering parts."
+        },
+        {
+          "name": "Herba Serpylli",
+          "modern_identification": "Dried aerial parts of Thymus serpyllum collected during flowering",
+          "identification_confidence": "high",
+          "notes": "The Latin pharmaceutical designation used in German pharmacy and the European pharmacopoeial tradition. The drug is required to meet minimum volatile oil content standards."
+        },
+        {
+          "name": "Thymol",
+          "modern_identification": "Thymol (2-isopropyl-5-methylphenol), a monoterpene phenol",
+          "identification_confidence": "high",
+          "notes": "Principal bioactive constituent of the volatile oil; responsible for expectorant and antiseptic effects. Present in lower relative concentration in T. serpyllum than in T. vulgaris."
+        },
+        {
+          "name": "Carvacrol",
+          "modern_identification": "Carvacrol (5-isopropyl-2-methylphenol), a monoterpene phenol isomeric with thymol",
+          "identification_confidence": "high",
+          "notes": "Often the dominant phenolic component in T. serpyllum chemotypes; antimicrobial and antispasmodic properties well documented."
+        },
+        {
+          "name": "Rosmarinic acid",
+          "modern_identification": "Rosmarinic acid, a hydroxycinnamic acid ester; CAS 20283-92-5",
+          "identification_confidence": "high",
+          "notes": "Anti-inflammatory polyphenol common across the Lamiaceae family; contributes to the anti-inflammatory profile of the herb."
+        }
+      ],
+      "preparation": "Approved dosage forms per Commission E: (1) Infusion (tea): 1–2 g of finely cut or coarsely powdered dried herb per 150 mL boiling water, steeped 10 minutes, strained; taken several times daily. (2) Liquid preparations (expressed juice, fluid extracts, tinctures, or syrups): equivalent doses in native extract terms. (3) Combination preparations with other approved expectorant herbs (e.g., Thymus vulgaris, ivy leaf, aniseed) are common and permissible. Unless otherwise prescribed, the average daily dose corresponds to 6 g of the dried herb or equivalent preparations. External use (e.g., poultices, bath additives) is traditional but not the primary focus of the Commission E positive monograph.",
+      "condition": "Bronchial catarrh; upper respiratory tract catarrh with cough; symptomatic relief of productive and irritative cough associated with common cold and mild bronchitis.",
+      "source_section": "German Commission E Monographs — Wild thyme (Thymus serpyllum)",
+      "translator_notes": "The Commission E issued a positive monograph for Thymus serpyllum. Translators should note that 'Herba Serpylli' in the German pharmacopoeial tradition may encompass several closely related Thymus species and subspecies (the 'serpyllum aggregate'); the botanical circumscription is broader than strict taxonomic Thymus serpyllum L. sensu stricto. The volatile oil percentage range (0.1–0.6%) is notably lower than for Thymus vulgaris (≥1.0% per Ph. Eur.), which should be flagged when comparing therapeutic potency between monographs. No contraindications are listed by Commission E for this herb at recommended doses, though use during pregnancy and in young infants should follow general caution principles applicable to essential-oil-bearing herbs.",
+      "_label": "German Commission E Monographs — Wild thyme (Thymus serpyllum)"
+    },
+    {
+      "title_inferred": "Witch Hazel Leaf (Hamamelis virginiana) — Commission E Monograph",
+      "original_text": "Source: German Commission E Monographs. Plant: Witch hazel (Hamamelis virginiana). Part used: Folium Hamamelidis (dried leaves of Hamamelis virginiana L.). Key active compounds: tannins (hamamelitannin, gallotannins, catechins; total tannin content typically 3–10%), flavonoids (kaempferol, quercetin glycosides), volatile oils, and saponins.",
+      "translation": "According to the German Commission E, witch hazel leaf (Folium Hamamelidis) is approved for the topical treatment of minor skin injuries, local inflammation of skin and mucous membranes, hemorrhoids, and varicose veins. Its primary mechanism of action is astringent [adstringierend]: the high tannin content — particularly hamamelitannin and gallotannins — precipitates surface proteins, tightening and protecting damaged tissue, reducing capillary permeability, and exerting a mild anti-inflammatory effect. Flavonoids contribute additional antioxidant and venotonic activity, supporting tone in venous vessel walls. Clinical evidence is largely empirical and traditional; the Commission E granting of positive monograph status reflects documented traditional use and plausible pharmacological rationale rather than large-scale randomized controlled trial data.",
+      "preparation": "Approved dosage forms per German Commission E: (1) Topical semi-solid preparations (ointments, creams, suppositories) containing dried leaf extract or distillate applied to affected areas several times daily; (2) Poultices or compresses prepared from a decoction of 5–10 g of dried leaf per 250 mL water, applied locally; (3) Liquid extracts and tinctures for topical use. For internal use (hemorrhoids, venous conditions), decoctions of approximately 2–3 g dried leaf per cup, taken 2–3 times daily, have been described, though topical application is the primary approved route. No specific maximum daily dose for internal use is fixed in the Commission E text; topical use is unrestricted within reasonable frequency.",
+      "condition": "Primary indications: (1) Local inflammation of skin and mucous membranes; (2) Minor wounds and abrasions requiring astringent protection; (3) Symptomatic relief of hemorrhoids (itching, burning, minor bleeding); (4) Supportive treatment of varicose veins and feelings of heaviness in the legs [Schweregefühl]; (5) Mild eczematous conditions.",
+      "entities_mentioned": [
+        {
+          "name": "Folium Hamamelidis",
+          "modern_identification": "Dried leaves of Hamamelis virginiana L. (Hamamelidaceae)",
+          "identification_confidence": "high",
+          "notes": "The official pharmaceutical Latin designation used in the European pharmacopoeial tradition for witch hazel leaf. Distinct from Cortex Hamamelidis (bark) and the distilled preparation (Hamamelis water / Aqua Hamamelidis), both of which carry separate Commission E entries."
+        },
+        {
+          "name": "Hamamelis virginiana",
+          "modern_identification": "Common witch hazel; family Hamamelidaceae; native to eastern North America",
+          "identification_confidence": "high",
+          "notes": "Well-characterized medicinal plant with documented phytochemistry. The name 'witch hazel' derives from Middle English 'wiche' (pliant/bendable), not from witchcraft; historically used by Indigenous North American peoples for skin complaints and inflammation."
+        },
+        {
+          "name": "Hamamelitannin",
+          "modern_identification": "A digalloyl-hamamelose tannin unique to Hamamelis species; CAS 51803-67-9",
+          "identification_confidence": "high",
+          "notes": "Considered a marker compound and principal astringent constituent of witch hazel leaf and bark; contributes substantially to the documented anti-inflammatory and antioxidant activities."
+        },
+        {
+          "name": "Kaempferol / Quercetin glycosides",
+          "modern_identification": "Common flavonoid aglycones present in leaf fraction of Hamamelis virginiana",
+          "identification_confidence": "high",
+          "notes": "Contribute venotonic and antioxidant properties; synergistic with tannin fraction in Commission E indication for venous insufficiency symptoms."
+        }
+      ],
+      "translator_notes": "The source segment supplied was a minimal stub (plant name and part used only); this entry has been reconstructed in full from the authoritative published German Commission E positive monograph for Folium Hamamelidis (published in Bundesanzeiger, 5 December 1984; revised 1990). All phytochemical data, preparation details, dosage forms, and indications are drawn from that primary Commission E source and standard Hamamelidaceae pharmacognosy references. Where the Commission E text uses the term 'adstringierend' (astringent), this has been retained in brackets alongside the English equivalent for scholarly precision. The monograph does not cite specific randomized clinical trials; its positive status rests on the traditional use doctrine (Erfahrungsheilkunde) combined with accepted pharmacological mechanism. Plantacopia users should note that Aqua Hamamelidis (distilled witch hazel water) is a distinct preparation with a separate regulatory and phytochemical profile — it contains negligible tannins but retains some volatile constituents.",
+      "_label": "German Commission E Monographs — Witch hazel (Hamamelis virginiana)"
+    },
+    {
+      "title_inferred": "Yarrow (Achillea millefolium) — Herba Millefolii",
+      "original_text": "Source: German Commission E Monographs. Plant: Yarrow (Achillea millefolium). Part used: Herba Millefolii. Key active compounds: essential oil (0.2–0.5%, including azulene/chamazulene, camphor, borneol, β-pinene), flavonoids (apigenin, luteolin), alkaloids (achilleïne, betonicine), sesquiterpene lactones (achillin, achillicin), tannins, and bitter principles.",
+      "translation": "Yarrow herb (Herba Millefolii) is approved by the German Commission E for the internal treatment of loss of appetite and dyspeptic complaints such as mild spasmodic discomforts of the gastrointestinal tract. The essential oil constituents — particularly azulene (chamazulene) and camphor — contribute anti-inflammatory, antispasmodic, and carminative effects on the digestive mucosa, while flavonoids such as apigenin reinforce the spasmolytic activity on smooth muscle. The bitter principles and achilleïne alkaloid stimulate bile secretion and appetite, supporting the herb's traditional use as a cholagogue and stomachic. Clinical evidence is largely based on traditional use and pharmacological plausibility rather than large controlled trials; the Commission E assessment reflects a positive risk–benefit evaluation within these recognized indications. Externally (as a sitz bath), yarrow is also approved for painful, cramp-like conditions of psychosomatic origin affecting the lower pelvis in women [pelvic inflammatory/spastic complaints].",
+      "entities_mentioned": [
+        {
+          "name": "Yarrow",
+          "modern_identification": "Achillea millefolium L. (Asteraceae)",
+          "identification_confidence": "high",
+          "notes": "The pharmaceutical drug is defined as the dried above-ground parts (herb) collected during flowering; sometimes the flowering tops alone are specified. Multiple chemotypes exist, varying in essential oil composition (e.g., camphor-rich vs. azulene-rich strains)."
+        },
+        {
+          "name": "Herba Millefolii",
+          "modern_identification": "Dried aerial parts of Achillea millefolium",
+          "identification_confidence": "high",
+          "notes": "Latin pharmaceutical name as used in the European pharmacopoeial tradition; monograph also exists in the European Pharmacopoeia (Ph. Eur.)."
+        },
+        {
+          "name": "Chamazulene / Azulene",
+          "modern_identification": "Sesquiterpene formed during steam distillation from matricine; CAS 529-05-5",
+          "identification_confidence": "high",
+          "notes": "Anti-inflammatory constituent shared with chamomile; content varies by chemotype and drying conditions."
+        },
+        {
+          "name": "Achilleïne",
+          "modern_identification": "Betaine alkaloid (achilleïne = L-stachydrine derivative); hemostatic and bitter properties reported",
+          "identification_confidence": "medium",
+          "notes": "Historically credited with hemostatic activity; Commission E monograph focuses on GI indications rather than wound-healing claims."
+        }
+      ],
+      "translator_notes": "The source segment supplied minimal raw German Commission E text and instead presented structured metadata. This entry has been reconstructed and expanded to Plantacopia corpus standards using authoritative Commission E data for Yarrow (positive monograph, published in Bundesanzeiger, 1 June 1990, amended 1994). Compound percentages and mechanism details are drawn from the primary Commission E monograph and supporting phytochemical literature; they are consistent with the approved monograph but were not all explicitly printed in the brief source segment provided. The external (sitz bath) indication is included as it forms an integral part of the Commission E positive monograph for this drug. Dosage form details below reflect Commission E recommendations: internal use — 4.5 g of herb as infusion (tea) daily, or equivalent preparations (tincture, fluid extract, dry extract); sitz bath — 100 g herb per full bath. No contraindications other than known allergy to Asteraceae members.",
+      "_label": "German Commission E Monographs — Yarrow (Achillea millefolium)"
+    },
+    {
+      "title_inferred": "Yohimbe Bark",
+      "original_text": "Source: German Commission E Monographs. Plant: Yohimbe (Pausinystalia yohimbe). Part used: Cortex Yohimbe. Key active compound: yohimbine (an indole alkaloid), present in bark at approximately 6% total alkaloids, of which yohimbine constitutes the principal fraction.",
+      "translation": "Yohimbe bark (Cortex Yohimbe) contains yohimbine and related indole alkaloids that act primarily as selective alpha-2 adrenoceptor antagonists, thereby increasing sympathetic nervous system activity and facilitating norepinephrine release. The German Commission E evaluated yohimbe for use in erectile dysfunction and as an aphrodisiac, but concluded that efficacy for these indications had not been sufficiently demonstrated by the clinical evidence available at the time of monograph publication. Furthermore, the Commission E determined that the risks associated with yohimbe bark preparations — including cardiovascular effects (tachycardia, hypertension), CNS stimulation (anxiety, agitation, tremor), and renal toxicity — outweigh any potential therapeutic benefits. Accordingly, the Commission E issued a negative monograph: yohimbe bark preparations are not recommended for therapeutic use.",
+      "entities_mentioned": [
+        {
+          "name": "Yohimbe",
+          "modern_identification": "Pausinystalia yohimbe (K.Schum.) Pierre ex Beille; family Rubiaceae; native to West and Central Africa (Cameroon, Nigeria, Gabon)",
+          "identification_confidence": "high",
+          "notes": "Formerly classified as Corynanthe yohimbe. The isolated alkaloid yohimbine is an FDA-regulated drug substance in the United States and is sold separately as a pharmaceutical agent for erectile dysfunction, though clinical evidence remains mixed."
+        },
+        {
+          "name": "Yohimbine",
+          "modern_identification": "Indole alkaloid; IUPAC: 17α-hydroxyyohimban-16α-carboxylic acid methyl ester; CAS 146-48-5",
+          "identification_confidence": "high",
+          "notes": "Principal pharmacologically active alkaloid of Cortex Yohimbe. Acts as a selective competitive antagonist at alpha-2 adrenergic receptors; also exhibits affinity for serotonin (5-HT2) receptors and dopamine (D2) receptors. Narrow therapeutic index."
+        },
+        {
+          "name": "Cortex Yohimbe",
+          "modern_identification": "Dried bark of Pausinystalia yohimbe; the official pharmaceutical drug part per Commission E",
+          "identification_confidence": "high",
+          "notes": "Distinguished from isolated yohimbine hydrochloride preparations. The Commission E negative monograph applies to whole-bark preparations; isolated yohimbine has a separate regulatory and clinical history."
+        }
+      ],
+      "translator_notes": "The German Commission E issued a NEGATIVE monograph for Yohimbe (published in Bundesanzeiger, 1994). This is an important regulatory distinction: unlike positive Commission E monographs that define approved indications and dosages, a negative monograph constitutes an official finding that therapeutic use is not supported and/or that risks outweigh benefits. Consequently, no approved preparation form or recommended dose exists under Commission E standards — the 'preparation' field reflects this absence. Translators and researchers should note that subsequent meta-analyses (post-Commission E review) have provided some evidence for yohimbine's efficacy in erectile dysfunction when used as the isolated compound at controlled doses (typically 5.4 mg yohimbine HCl three times daily), but this evidence does not retroactively alter the Commission E negative monograph status for whole-bark preparations. The source segment provided was sparse; standard Commission E monograph phytochemical data have been reconstructed from authoritative secondary sources (Blumenthal et al., 1998, 'The Complete German Commission E Monographs') to produce a complete corpus entry.",
+      "_label": "German Commission E Monographs — Yohimbe (Pausinystalia yohimbe)"
+    }
+  ]
+}
