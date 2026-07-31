@@ -3321,6 +3321,19 @@ function openBook(book) {
   el('reader-correlations').style.display = 'none';
   showTab('reader', null);
   renderReaderSpread();
+
+  // ── Wire manuscript scans if this book has them ──────────────
+  readerSetupLayers(book);
+  if (book.hasManuscriptScans && book.manuscriptDataFile) {
+    var msUrl = '/data/' + book.manuscriptDataFile;
+    fetch(msUrl)
+      .then(function(r){ return r.ok ? r.json() : []; })
+      .then(function(pages){
+        book._manuscriptPages = pages;
+        readerLoadManuscriptPage(book, 0);
+      })
+      .catch(function(e){ console.warn('Manuscript data not found:', msUrl); });
+  }
 }
 
 // ── Enhanced Reader Controls (Oedio port) ────────────────────────
@@ -3473,6 +3486,10 @@ function closeReader() {
 
 // ── Render spread ────────────────────────────────────────────
 function renderReaderSpread() {
+  // Update manuscript scan image for current page if available
+  if (readerBook && readerBook.hasManuscriptScans && readerBook._manuscriptPages) {
+    readerLoadManuscriptPage(readerBook, readerPageIdx);
+  }
   var total = Math.ceil(readerSegments.length / PASSAGES_PER_PAGE) || 1;
   var start = readerPageIdx * PASSAGES_PER_PAGE;
   var pageSegs = readerSegments.slice(start, start + PASSAGES_PER_PAGE);
