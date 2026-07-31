@@ -1028,6 +1028,122 @@
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+  /* ── Reader enhanced controls (Oedio port) ── */
+  .reader-controls-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 1rem;
+    background: #1A1810;
+    border-bottom: 1px solid #2A2418;
+    flex-wrap: wrap;
+  }
+  .reader-ctrl-btn {
+    background: none;
+    border: 1px solid #2A2418;
+    color: var(--muted);
+    border-radius: 3px;
+    padding: 0.2rem 0.55rem;
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: all 0.12s;
+    white-space: nowrap;
+  }
+  .reader-ctrl-btn:hover, .reader-ctrl-btn.active {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .reader-ctrl-sep { flex: 1; }
+
+  /* Layer panel */
+  .reader-layer-panel {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 800;
+    background: #1C1A12;
+    border-top: 1px solid #3A3420;
+    padding: 0.8rem 1rem 1rem;
+  }
+  .reader-layer-panel.open { display: block; }
+  .reader-layer-title {
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+  }
+  .reader-layer-chips {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .reader-layer-chip {
+    padding: 0.35rem 0.8rem;
+    border: 1px solid #3A3420;
+    border-radius: 20px;
+    font-family: var(--font-code);
+    font-size: 0.65rem;
+    cursor: pointer;
+    background: #131008;
+    color: #8A7A58;
+    transition: all 0.12s;
+  }
+  .reader-layer-chip.active {
+    border-color: var(--gold);
+    color: var(--gold);
+    background: #1E1A0E;
+  }
+
+  /* Sepia mode */
+  .reader-spread.sepia { background: #f4ecd8 !important; }
+  .reader-spread.sepia .reader-page { background: #f4ecd8; color: #3b2f22; }
+  .reader-spread.sepia .reader-page-right { background: #f0e8d0; }
+
+  /* Image panel (left page) for manuscript view */
+  .reader-page-left.has-image #reader-left-content {
+    display: none;
+  }
+  .reader-page-left .reader-ms-image {
+    width: 100%;
+    height: calc(100% - 2rem);
+    object-fit: contain;
+    object-position: center;
+    cursor: zoom-in;
+  }
+
+  /* Minimap */
+  #reader-minimap {
+    position: absolute;
+    right: 2px;
+    top: 0; bottom: 0;
+    width: 4px;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .reader-minimap-band {
+    position: absolute;
+    left: 0; right: 0;
+    height: 3px;
+    background: #ff6d00;
+    border-radius: 1px;
+    opacity: 0.7;
+  }
+
+  @media print {
+    .reader-controls-bar, .reader-layer-panel, .reader-search-input,
+    .reader-search-results, .reader-correlations,
+    #reader-nav-prev, #reader-prev-btn, #reader-next-btn,
+    .tab-bar, .site-header, .global-search-wrap { display: none !important; }
+    .reader-spread { box-shadow: none !important; border: none !important; }
+    .reader-page { page-break-inside: avoid; }
+    @page { margin: 1.5cm; }
+  }
+
+
   .reader-result-match { background: #FFF3B0; font-weight: 600; }
 
   /* Two-column spread */
@@ -1560,6 +1676,15 @@
     </div>
   </div>
   <div class="reader-search-bar">
+    <div class="reader-controls-bar" id="reader-controls-bar">
+      <button class="reader-ctrl-btn" id="reader-sepia-btn" onclick="readerToggleSepia()">&#9790; Sepia</button>
+      <button class="reader-ctrl-btn" id="reader-font-up-btn" onclick="readerFontSize(1)">A+</button>
+      <button class="reader-ctrl-btn" id="reader-font-dn-btn" onclick="readerFontSize(-1)">A&#8722;</button>
+      <button class="reader-ctrl-btn" id="reader-tts-btn" onclick="readerToggleTTS()">&#9654; Read</button>
+      <button class="reader-ctrl-btn" id="reader-layer-btn" onclick="readerToggleLayerPanel()" style="display:none">&#9670; Layers</button>
+      <div class="reader-ctrl-sep"></div>
+      <button class="reader-ctrl-btn" onclick="readerDoPrint()">&#128438; Print</button>
+    </div>
     <input type="text" id="reader-search-input" placeholder="Search this book &#8212; plant name, symptom, preparation&#8230;" oninput="searchReader(this.value)" class="reader-search-input">
     <div class="reader-search-results" id="reader-search-results" style="display:none"></div>
   </div>
@@ -1581,6 +1706,11 @@
     </div>
   </div>
   <div class="reader-nav-bar">
+    <!-- Layer panel (shown when book has manuscript scans) -->
+    <div class="reader-layer-panel" id="reader-layer-panel">
+      <div class="reader-layer-title">View Layer</div>
+      <div class="reader-layer-chips" id="reader-layer-chips"></div>
+    </div>
     <button class="reader-nav-btn" id="reader-prev-btn" onclick="readerPageNav(-1)">&#8592; Previous</button>
     <span class="reader-nav-center" id="reader-nav-label">1 / 1</span>
     <button class="reader-nav-btn" id="reader-next-btn" onclick="readerPageNav(1)">Next &#8594;</button>
@@ -2996,6 +3126,17 @@ const BOOKS = [
     corpusKeys:['ahp_b01','ahp_b02'],
     totalEntries:45,
     description:'Peer-reviewed botanical monographs covering identity, purity, quality and therapeutic application. The American standard for herbal medicine quality control.' }
+  ,{ id:'dongui_ms', title:'Dongui Bogam Manuscript (東醫寶鑑)', short:'Dongui Bogam MS',
+    tradition:'korean', date:'1613 CE', language:'Classical Chinese / Korean',
+    author:'Heo Jun \u8a31\u6d5a',
+    cover:'https://upload.wikimedia.org/wikipedia/commons/9/97/%EB%8F%99%EC%9D%98%EB%B3%B4%EA%B0%90%28319-1%29.jpg',
+    color:'#8B1A1A',
+    corpusKeys:['korean','dongui_new_b01','dongui_new_b02','dongui_expanded_b01'],
+    totalEntries:1400,
+    hasManuscriptScans: true,
+    manuscriptVolumes: 25,
+    manuscriptAlignmentUrl: '/data/dongui-alignment.json',
+    description:'Complete 1613 original edition — National Treasure No.1085, UNESCO Memory of the World. 25 volumes of manuscript scans from the National Library of Korea, covering internal medicine, external medicine, herbal remedies, and acupuncture.' }
 ];
 
 // ── Reader state ────────────────────────────────────────────
@@ -3113,6 +3254,145 @@ function openBook(book) {
   showTab('reader', null);
   renderReaderSpread();
 }
+
+// ── Enhanced Reader Controls (Oedio port) ────────────────────────
+var _readerSepia = false;
+var _readerFontSize = 1.0;
+var _readerTTS = null;
+var _readerCurrentLayer = 'translation';
+var _readerLayers = {};
+
+function readerToggleSepia() {
+  _readerSepia = !_readerSepia;
+  var spread = document.querySelector('.reader-spread');
+  if (spread) spread.classList.toggle('sepia', _readerSepia);
+  var btn = document.getElementById('reader-sepia-btn');
+  if (btn) btn.classList.toggle('active', _readerSepia);
+}
+
+function readerFontSize(delta) {
+  _readerFontSize = Math.max(0.75, Math.min(1.5, _readerFontSize + delta * 0.1));
+  var right = document.getElementById('reader-right-content');
+  if (right) right.style.fontSize = _readerFontSize + 'rem';
+  var left = document.getElementById('reader-left-content');
+  if (left) left.style.fontSize = (_readerFontSize * 0.85) + 'rem';
+}
+
+function readerToggleTTS() {
+  var btn = document.getElementById('reader-tts-btn');
+  if (_readerTTS) {
+    window.speechSynthesis && window.speechSynthesis.cancel();
+    _readerTTS = null;
+    if (btn) { btn.textContent = '\u25b6 Read'; btn.classList.remove('active'); }
+    return;
+  }
+  var right = document.getElementById('reader-right-content');
+  if (!right) return;
+  var text = right.innerText || right.textContent || '';
+  if (!text.trim()) return;
+  _readerTTS = new SpeechSynthesisUtterance(text);
+  _readerTTS.rate = 0.9;
+  _readerTTS.onend = function() {
+    _readerTTS = null;
+    if (btn) { btn.textContent = '\u25b6 Read'; btn.classList.remove('active'); }
+  };
+  window.speechSynthesis && window.speechSynthesis.speak(_readerTTS);
+  if (btn) { btn.textContent = '\u25a0 Stop'; btn.classList.add('active'); }
+}
+
+function readerDoPrint() {
+  // Add print-friendly title
+  var title = document.getElementById('reader-book-title');
+  var label = document.getElementById('reader-progress-label');
+  document.title = (title ? title.textContent : 'Plantacopia') +
+    ' — ' + (label ? label.textContent : '') + ' | Plantacopia';
+  window.print();
+}
+
+function readerToggleLayerPanel() {
+  var panel = document.getElementById('reader-layer-panel');
+  if (panel) panel.classList.toggle('open');
+}
+
+function readerSetLayer(layerKey) {
+  _readerCurrentLayer = layerKey;
+  // Update chip states
+  document.querySelectorAll('.reader-layer-chip').forEach(function(chip) {
+    chip.classList.toggle('active', chip.getAttribute('data-layer') === layerKey);
+  });
+  renderReaderSpread();
+  var panel = document.getElementById('reader-layer-panel');
+  if (panel) panel.classList.remove('open');
+}
+
+function readerSetupLayers(book) {
+  var btn = document.getElementById('reader-layer-btn');
+  var chipsEl = document.getElementById('reader-layer-chips');
+  if (!btn || !chipsEl) return;
+
+  // Build available layers for this book
+  var layers = [{ key: 'translation', label: 'Translation' }];
+
+  if (book && book.hasManuscriptScans) {
+    layers.unshift({ key: 'facsimile', label: '\uD83D\uDCDC Facsimile' });
+  }
+  if (book && book.hasOriginalText) {
+    layers.splice(1, 0, { key: 'original', label: 'Original Text' });
+  }
+
+  if (layers.length > 1) {
+    btn.style.display = '';
+    chipsEl.innerHTML = layers.map(function(l) {
+      return '<button class="reader-layer-chip' +
+        (l.key === _readerCurrentLayer ? ' active' : '') +
+        '" data-layer="' + l.key + '" onclick="readerSetLayer(\'' + l.key + '\')">' +
+        l.label + '</button>';
+    }).join('');
+  } else {
+    btn.style.display = 'none';
+  }
+}
+
+function readerLoadManuscriptPage(book, pageIdx) {
+  // Load Dongui Bogam or other manuscript scan for current page
+  if (!book || !book.manuscriptData) return;
+  var leftEl = document.getElementById('reader-page-left');
+  if (!leftEl) return;
+
+  var pages = book.manuscriptData;
+  var page = pages[pageIdx] || pages[0];
+  if (!page) return;
+
+  // Show image in left panel
+  var existing = leftEl.querySelector('.reader-ms-image');
+  if (existing) existing.remove();
+
+  var img = document.createElement('img');
+  img.className = 'reader-ms-image';
+  img.src = page.image;
+  img.alt = 'Dongui Bogam Vol.' + (page.volume || '?') + ' p.' + (page.page || pageIdx+1);
+  img.onclick = function() {
+    // Open zoom overlay
+    var overlay = document.getElementById('reader-zoom-img-overlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.id = 'reader-zoom-img-overlay';
+      overlay.style.cssText = 'position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,0.92);display:flex;align-items:center;justify-content:center;cursor:zoom-out';
+      overlay.onclick = function() { overlay.remove(); };
+      var zImg = document.createElement('img');
+      zImg.style.cssText = 'max-width:94vw;max-height:94vh;object-fit:contain;border:1px solid #C4A860';
+      zImg.src = page.image;
+      overlay.appendChild(zImg);
+      document.body.appendChild(overlay);
+    }
+  };
+
+  leftEl.classList.add('has-image');
+  var inner = leftEl.querySelector('.reader-page-inner');
+  if (inner) leftEl.insertBefore(img, inner);
+}
+
+
 
 function openBookById(id) {
   var book = BOOKS.find(function(b) { return b.id === id; });
