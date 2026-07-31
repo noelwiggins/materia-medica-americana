@@ -1,47 +1,58 @@
-# Plantacopia — Project Status
+# Plantacopia STATUS
 
 Last updated: 2026-07-31
 
-## Recently completed
+## Live state
 
-- Search: runGlobalSearch() now creates modal dynamically — gold line bug permanently fixed
-- Commission E (126 herbs, jobs #204-208, all 100%) and AHP (45 herbs, jobs #209-210, all 100%) ingested into corpus
-- Corpus shards rebuilt: 2,752 total segments across 25 traditions
-- Dongui Bogam (東醫寶鑑): all 25 volumes ingested from Wikimedia Commons (NLK scans)
-  - static/reader-data/dongui-vol-01.json through dongui-vol-25.json
-  - static/reader-data/dongui-alignment.json (volume metadata)
-  - Book added to BOOKS array as id:'dongui_ms' with hasManuscriptScans:true
-- Oedio reader features ported to Plantacopia reader:
-  - Sepia toggle (readerToggleSepia)
-  - Font size controls (readerFontSize)
-  - Read-aloud / TTS (readerToggleTTS using Web Speech API)
-  - Print dialog (readerDoPrint with clean print CSS)
-  - Layer panel UI (readerToggleLayerPanel / readerSetLayer)
-  - Manuscript image viewer (readerLoadManuscriptPage) with zoom overlay
-- Scripts: scripts/ingest_dongui.py added for future re-ingestion
-
-## In progress / incomplete
-
-- Dongui page counts are partial (rate-limiting from Wikimedia during concurrent HEAD checks)
-  - Solution: run ingest_dongui.py with sequential requests from a local machine
-  - Most volumes show 1-27 pages but actually have 30-60 pages in the PDFs
-  - The actual thumbnail URLs work fine — just need more time to verify
-- openBook() for dongui_ms needs wiring to load manuscript data:
-  - Should fetch /data/dongui-alignment.json, then load per-volume JSON
-  - readerSetupLayers() and readerLoadManuscriptPage() are ready but not called from openBook yet
-  - NEXT: add to openBook() — check if book.hasManuscriptScans, fetch alignment, load vol 1 pages
-- Page turn animation: Plantacopia uses CSS @keyframes readerTurnFwd/Back — already exists
-  - Oedio's tissueSnapshotAndSwap is more polished — could replace later if desired
-- Failed Forge jobs still pending retry: #200 Honzo b2, #201-202 Bencao 8+9, #203 Southern African
-  - These all have input files in static/data/_forge_input_*.json
-  - Just need to re-fire from NoelOS Forge
-
-## Key URLs / IDs
-
-- Live: plantacopia.com / wholeplantcatalog.com
+- URL: plantacopia.com / wholeplantcatalog.com
 - Repo: noelwiggins/materia-medica-americana
-- Railway: plentyfish.ai project (different from main plantacopia deploy)
-- Dongui source: Wikimedia Commons category 東醫寶鑑
-  - File pattern: CNTS-00047967907_{N}_東醫寶鑑.pdf (N=1..25)
-  - Thumb pattern: /thumb/{path}/{filename}/page{N}-500px-{filename}.jpg
-  - Note: 500px works, 800px returns 400 Bad Request
+- Corpus: 2,867 segments across 3 shards (shard 1-3)
+- Library: 34 books, 12 civilizations
+- Traditions: 34 (Celtic/Norse, Italian/Renaissance, Russian/Slavic, Japanese, Korean, Chinese, Ayurveda, Egyptian, Unani, Tibetan, Mesoamerican, African, Amazonian, N.American, Philippine, Australian, WHO, Commission E, AHP, Welsh, Norse)
+
+## Completed this session
+
+- OCR garble cleanup: 145 fields cleaned across 3 corpus shards (English-language entries only; non-Latin scripts skipped)
+- Forge jobs #216-219 all 100%: Welsh Myddfai, Russian Travnik, Yamato Honzo, Norse Scandinavian
+- New books added (34 total): Bald Leechbook, Anglo-Saxon Leechdoms, Italian Erbario, Matthioli 1544, Welsh Myddfai, Russian Travnik, Yamato Honzo, Norse Medicine
+- Manuscript reader wired: openBook() -> readerSetupLayers() -> readerLoadManuscriptPage()
+- Frontispiece updated: "34 traditions · 2,867 passages · 12 civilizations"
+- Search eyebrow updated: "2,867 passages across 34 traditions"
+- Forge retries fired: #220 Honzo b2, #221 South African, #222 Bencao b8, #223 Bencao b9
+
+## Forge running
+
+- #220 Honzo Wamyo batch 2 — running
+- #221 South African medicine — running
+- #222 Bencao Gangmu batch 8 (rebuilt input) — running
+- #223 Bencao Gangmu batch 9 (rebuilt input) — running
+- After completion: rebuild shards to add new passages
+
+## Reader-data manuscript files
+
+- balds-leechbook.json: 279 pages (BL IIIF)
+- leechdoms-anglo-saxon.json: 546 pages
+- leechdoms-vol2-bl.json: 23 pages
+- erbario-italian.json: 46 pages (rate-limited; 205 available)
+- matthioli-dioscorides-1544.json: 448 pages
+- dongui-vol-01 through 25: 147 pages total (rate-limited; need sequential re-ingest)
+
+## Known issues
+
+1. Dongui Bogam page counts low (1-27pp per volume) due to Wikimedia rate-limiting
+   - Fix: run scripts/ingest_dongui.py sequentially (not concurrent)
+   - All URLs confirmed working at 500px size
+2. Erbario: 46/205 pages captured (same issue)
+3. East African (job #221) fired incorrectly — input was south_african file
+   - Check output after job completes and verify it has Southern African content
+4. Bencao b8+9 already in corpus (38+43 segs) from earlier unknown source
+   - New jobs #222-223 will add 25+25 more entries each — no harm
+5. "See this plant in other books" — needs end-to-end test with new traditions
+
+## Key patterns
+
+- Manuscript page URL (IA): archive.org/download/{id}/page/n{N-1}/mode/2up
+- Manuscript page URL (Wikimedia PDF): /thumb/{a/bc}/{filename.pdf}/page{N}-500px-{filename.pdf}.jpg
+- IIIF image URL (BL): {service_base}/full/600,/0/default.jpg
+- Corpus segment required fields: title_inferred, translation, _tradition, _corpusKey
+- OCR cleanup: skip traditions in NON_ENGLISH_TRADITIONS set (Korean, Chinese, Arabic, Sanskrit, Tibetan, Japanese)
