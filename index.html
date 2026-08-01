@@ -25,4 +25,82 @@ function renderDbBookShelf() {
   html += '</div>';
   el.innerHTML = html;
 }
+function runResearchQuery(type) {
+  var list = document.getElementById('research-list');
+  if (!list) return;
+
+  var queries = {
+    'convergence':  ['fever', 'wound', 'antimicrobial', 'antibacterial', 'infection', 'anti-inflammatory'],
+    'untapped':     ['adaptogen', 'tonic', 'rejuvenat', 'longevity', 'immortal', 'rasayana', 'jing'],
+    'antimicrobial':['wound', 'infection', 'septic', 'fever', 'abscess', 'putrefaction', 'antiseptic'],
+    'longevity':    ['longevity', 'immortal', 'rejuvenat', 'tonic', 'vital', 'essence', 'rasayana', 'jing', 'adaptogen'],
+    'mental_health':['anxiety', 'depression', 'melanchol', 'madness', 'hysteria', 'insomnia', 'sedative', 'calming', 'nerve'],
+  };
+
+  var customInput = document.getElementById('research-query-input');
+
+  var words;
+  if (type === 'custom_input') {
+    var q = customInput ? customInput.value.trim().toLowerCase() : '';
+    if (!q) return;
+    words = q.split(/\s+/).filter(function(w){ return w.length >= 3; });
+  } else {
+    words = queries[type] || ['plant'];
+  }
+
+  // Filter corpus
+  var results = corpusData.filter(function(s) {
+    var hay = ((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase();
+    return words.some(function(w){ return hay.indexOf(w) !== -1; });
+  });
+
+  // Group by tradition
+  var byTrad = {};
+  results.forEach(function(s) {
+    var t = s._tradition || 'unknown';
+    if (!byTrad[t]) byTrad[t] = [];
+    byTrad[t].push(s);
+  });
+
+  // Build output
+  var tradCount = Object.keys(byTrad).length;
+  var html = '<div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);margin-bottom:1rem;letter-spacing:0.08em">'
+    + results.length + ' passages across ' + tradCount + ' traditions match this query</div>';
+
+  // Show convergence notice if 5+ traditions
+  if (tradCount >= 5) {
+    html += '<div style="background:#0F1A0F;border:1px solid #2A4A2A;border-radius:3px;padding:0.8rem 1rem;margin-bottom:1rem;font-size:0.8rem;color:#8ACF8A;line-height:1.5">'
+      + '<strong style="color:#C8E8C8">&#9670; Convergence detected:</strong> '
+      + tradCount + ' independent traditions documented this. '
+      + 'This level of cross-cultural agreement is pharmacologically significant.'
+      + '</div>';
+  }
+
+  // List by tradition
+  Object.keys(byTrad).sort().forEach(function(trad) {
+    var book = null;
+    for (var i=0; i<BOOKS.length; i++) { if (BOOKS[i].tradition === trad) { book = BOOKS[i]; break; } }
+    var col = book ? book.color : '#C4A860';
+    var label = book ? book.short : trad;
+    var segs = byTrad[trad];
+    html += '<div style="margin-bottom:1.2rem">'
+      + '<div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:'+col+';margin-bottom:0.4rem">'
+      + label + ' &middot; ' + segs.length + ' entries</div>';
+    segs.slice(0,3).forEach(function(s) {
+      html += '<div style="padding:0.6rem 0;border-bottom:1px solid #1A1808">'
+        + '<div style="font-weight:600;font-size:0.85rem;color:var(--ink);margin-bottom:0.15rem">' + (s.title_inferred||'') + '</div>'
+        + '<div style="font-size:0.77rem;color:var(--muted);line-height:1.55">' + (s.translation||'').slice(0,200) + '&hellip;</div>'
+        + '</div>';
+    });
+    if (segs.length > 3) {
+      html += '<div style="font-size:0.7rem;color:var(--muted);font-family:var(--font-code);padding:0.3rem 0">'
+        + '+ ' + (segs.length-3) + ' more in this tradition</div>';
+    }
+    html += '</div>';
+  });
+
+  list.innerHTML = html;
+  list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 
