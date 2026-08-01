@@ -108,7 +108,7 @@
     "title_en": "Japbyeongpyeon Vol.5",
     "title_ko": "잡병편 5권",
     "section": "misc",
-    "page_count": 14,
+    "page_count": 64,
     "data_file": "dongui-vol-14.json"
   },
   {
@@ -116,7 +116,7 @@
     "title_en": "Japbyeongpyeon Vol.6",
     "title_ko": "잡병편 6권",
     "section": "misc",
-    "page_count": 12,
+    "page_count": 64,
     "data_file": "dongui-vol-15.json"
   },
   {
@@ -132,7 +132,7 @@
     "title_en": "Tangaekpyeon Vol.2",
     "title_ko": "탕액편 2권",
     "section": "herbal",
-    "page_count": 14,
+    "page_count": 64,
     "data_file": "dongui-vol-17.json"
   },
   {
@@ -140,7 +140,7 @@
     "title_en": "Tangaekpyeon Vol.3",
     "title_ko": "탕액편 3권",
     "section": "herbal",
-    "page_count": 6,
+    "page_count": 64,
     "data_file": "dongui-vol-18.json"
   },
   {
@@ -148,7 +148,7 @@
     "title_en": "Tangaekpyeon Vol.4",
     "title_ko": "탕액편 4권",
     "section": "herbal",
-    "page_count": 9,
+    "page_count": 62,
     "data_file": "dongui-vol-19.json"
   },
   {
@@ -156,7 +156,7 @@
     "title_en": "Tangaekpyeon Vol.5",
     "title_ko": "탕액편 5권",
     "section": "herbal",
-    "page_count": 8,
+    "page_count": 60,
     "data_file": "dongui-vol-20.json"
   },
   {
@@ -164,7 +164,7 @@
     "title_en": "Tangaekpyeon Vol.6",
     "title_ko": "탕액편 6권",
     "section": "herbal",
-    "page_count": 6,
+    "page_count": 64,
     "data_file": "dongui-vol-21.json"
   },
   {
@@ -172,7 +172,7 @@
     "title_en": "Tangaekpyeon Vol.7",
     "title_ko": "탕액편 7권",
     "section": "herbal",
-    "page_count": 9,
+    "page_count": 64,
     "data_file": "dongui-vol-22.json"
   },
   {
@@ -180,7 +180,7 @@
     "title_en": "Chimgupyeon Vol.1",
     "title_ko": "침구편 1권",
     "section": "acupuncture",
-    "page_count": 10,
+    "page_count": 64,
     "data_file": "dongui-vol-23.json"
   },
   {
@@ -188,7 +188,7 @@
     "title_en": "Chimgupyeon Vol.2",
     "title_ko": "침구편 2권",
     "section": "acupuncture",
-    "page_count": 3,
+    "page_count": 54,
     "data_file": "dongui-vol-24.json"
   },
   {
@@ -196,7 +196,7 @@
     "title_en": "Chimgupyeon Vol.3",
     "title_ko": "침구편 3권",
     "section": "acupuncture",
-    "page_count": 2,
+    "page_count": 54,
     "data_file": "dongui-vol-25.json"
   }
 ]
