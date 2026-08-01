@@ -1531,7 +1531,7 @@
   </div>
   <!-- ── Search bar ──────────────────────────────────────────── -->
   <div class="global-search-wrap">
-    <div class="global-search-eyebrow">Search 2,867 passages across 34 traditions &middot; 5,000 years</div>
+    <div class="global-search-eyebrow">Search 2,836 passages across 34 traditions &middot; 5,000 years</div>
     <div class="global-search-box">
       <input type="text" id="global-search-input" class="global-search-input"
         placeholder="fever · anxiety · wound infection · joint pain · gout · insomnia"
@@ -2448,8 +2448,22 @@ el.classList.toggle('open');
 }
 
 function getTradColor(id) {
-const t = traditionData.find(x=>x.id===id);
-return t?.color || '#6B6050';
+  var t = traditionData.find(function(x){ return x.id===id; });
+  if (t && t.color) return t.color;
+  // Fallback: check BOOKS array for this tradition
+  var book = BOOKS.find(function(b){ return b.tradition===id; });
+  if (book && book.color) return book.color;
+  // Hardcoded for new traditions not in traditionData
+  var EXTRA = {
+    'italian_renaissance': '#6A1A3A',
+    'russian_slavic':      '#5A1A1A',
+    'welsh_celtic':        '#1A5A2A',
+    'japanese_honzo':      '#5A3A1A',
+    'western_pharmacopeia':'#1A6FA0',
+    'commission_e':        '#1A3A6A',
+    'ahp':                 '#6A1A1A',
+  };
+  return EXTRA[id] || '#6B6050';
 }
 function getTradIcon(id) {
 const t = traditionData.find(x=>x.id===id);
