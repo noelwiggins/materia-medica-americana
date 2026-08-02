@@ -3830,7 +3830,7 @@ var _libCheckInterval = setInterval(function() {
     var _tEl  = document.getElementById('stat-num-traditions');
     if (_pEl)  _pEl.textContent  = corpusData.length.toLocaleString();
     if (_plEl) _plEl.textContent = _uPlants.size.toLocaleString();
-    if (_tEl)  _tEl.textContent  = (BOOKS.length).toString();
+    if (_tEl) { var _uTrad = new Set(BOOKS.map(function(b){return b.tradition;})); _tEl.textContent = _uTrad.size.toString(); }
     // Cross-book matches
     var _ptMap = {};
     corpusData.forEach(function(s) {
