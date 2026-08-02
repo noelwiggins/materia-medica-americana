@@ -558,18 +558,18 @@
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -1028,6 +1028,65 @@
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -1674,24 +1733,7 @@
     html += '</div></div>';
   });
   el.innerHTML = html;
-}ang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plantacopia — A Whole Plant Catalogue</title>
-<meta name="description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<link rel="canonical" href="https://wholeplantcatalog.com">
-<meta property="og:url" content="https://wholeplantcatalog.com">
-<meta property="og:title" content="Whole Plant Catalog — World Traditional Medicine Archive">
-<meta property="og:description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  /* ── Reset & Base ─────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+}
 
   :root {
     --ink:        #1C1A14;
@@ -2233,18 +2275,18 @@
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -2703,6 +2745,65 @@
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -3336,44 +3437,25 @@
    function runResearchQuery(type) {
   var QUERIES = {
     convergence: 'plants used for identical conditions by cultures with no historical contact',
-    geographic: 'plants used across different continents before any known trade contact',
-    untapped: 'herbal treatments supported by multiple traditions not adopted by modern medicine',
-    antibiotic: 'plants for infections wounds fever sepsis bacterial illness',
-    mental_health: 'plants for anxiety depression insomnia nervous system grief',
-    longevity: 'plants for longevity vitality rejuvenation lifespan tonic',
-    womens_health: 'plants for fertility menstrual childbirth pregnancy menopause',
-    psycho: 'plants for ritual vision altered consciousness ceremony',
-    pain: 'plants for pain analgesia headache inflammation'
+    geographic: 'plants used across different continents before any known trade routes',
+    untapped: 'herbal treatments with multiple traditions agreeing but no clinical trial exists',
+    antibiotic: 'plants prescribed for infections wounds fever sepsis bacterial illness',
+    mental_health: 'plants for anxiety depression insomnia grief nervous system calm',
+    longevity: 'plants prescribed for longevity vitality rejuvenation tonic lifespan',
+    womens_health: 'plants for fertility menstrual regulation childbirth pregnancy menopause',
+    psycho: 'plants for ritual vision altered consciousness ceremonial mind trance',
+    pain: 'plants for pain relief analgesia headache inflammation'
   };
   var q = type === 'custom'
     ? (document.getElementById('research-custom-input') ? document.getElementById('research-custom-input').value : '')
     : (QUERIES[type] || type);
   if (!q || !q.trim()) return;
   var el = document.getElementById('research-results');
-  if (el) el.innerHTML = '<div style="font-family:var(--font-code);font-size:0.65rem;color:#4A8A4A;padding:0.5rem 0">Searching: <em>' + q + '</em> &rarr; results in Corpus tab</div>';
-  var keywords = q.split(/\s+/).filter(function(w){ return w.length > 4; }).slice(0, 4).join(' ');
+  if (el) el.innerHTML = '<div style="font-family:var(--font-code);font-size:0.65rem;color:#4A8A4A;padding:0.5rem 0">Searching: <em>' + q + '</em> &rarr; see results in Corpus tab</div>';
+  var keywords = q.split(' ').filter(function(w){ return w.length > 4; }).slice(0, 4).join(' ');
   showTab('corpus', null);
   setTimeout(function(){ runGlobalSearch(keywords); }, 150);
 }
-DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plantacopia — A Whole Plant Catalogue</title>
-<meta name="description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<link rel="canonical" href="https://wholeplantcatalog.com">
-<meta property="og:url" content="https://wholeplantcatalog.com">
-<meta property="og:title" content="Whole Plant Catalog — World Traditional Medicine Archive">
-<meta property="og:description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  /* ── Reset & Base ─────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
     --ink:        #1C1A14;
@@ -3915,18 +3997,18 @@ DOCTYPE html>
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -4385,6 +4467,65 @@ DOCTYPE html>
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -5031,24 +5172,7 @@ DOCTYPE html>
     html += '</div></div>';
   });
   el.innerHTML = html;
-}ang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plantacopia — A Whole Plant Catalogue</title>
-<meta name="description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<link rel="canonical" href="https://wholeplantcatalog.com">
-<meta property="og:url" content="https://wholeplantcatalog.com">
-<meta property="og:title" content="Whole Plant Catalog — World Traditional Medicine Archive">
-<meta property="og:description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  /* ── Reset & Base ─────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+}
 
   :root {
     --ink:        #1C1A14;
@@ -5590,18 +5714,18 @@ DOCTYPE html>
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -6060,6 +6184,65 @@ DOCTYPE html>
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -6622,57 +6805,101 @@ DOCTYPE html>
 <main class="main-content">
 
   <!-- HOME TAB -->
-  <section class="tab-panel" id="tab-research">
+  <section class="tab-panel active" id="tab-home">
+  <div style="padding:1.2rem 0 0.8rem;max-width:72ch">
+    <p style="font-size:1rem;line-height:1.75;color:var(--ink)">In 1971, a Chinese pharmacologist read a 4th-century Daoist text, found a reference to sweet wormwood for fever, isolated artemisinin, and won the Nobel Prize. The answers to medicine&#39;s most urgent questions are sitting in these books.</p>
+  </div>
+  <div class="stat-grid">
+    <button class="stat-tile" onclick="showTab('traditions', document.querySelector('[onclick*=traditions]'))" title="Browse all traditions">
+      <div class="stat-tile-num" id="stat-num-traditions">22</div><div class="stat-tile-label">Traditions</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+    <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="Browse all plants">
+      <div class="stat-tile-num" id="stat-num-plants">—</div><div class="stat-tile-label">Plants Documented</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+    <button class="stat-tile" onclick="showTab('corpus', document.querySelector('[onclick*=corpus]'))" title="Browse source passages">
+      <div class="stat-tile-num" id="stat-num-passages">—</div><div class="stat-tile-label">Source Passages</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+    <button class="stat-tile" onclick="showTab('convergence', document.querySelector('[onclick*=convergence]'))" title="See cross-book matches">
+      <div class="stat-tile-num" id="stat-num-convergence">—</div><div class="stat-tile-label">Cross-Book Matches</div><div class="stat-tile-arrow">&#8599;</div>
+    </button>
+  </div>
+  <!-- ── Featured Articles ───────────────────────────────────────── -->
+  <div style="padding:0 0 0.5rem">
+    <p style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.14em;
+       text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem">Featured Inquiries</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.8rem;margin-bottom:1.8rem">
+
+      <div onclick="quickSearch('ayahuasca peyote psilocybin mushroom psychedelic')"
+        style="background:#0F1A0F;border:1px solid #2A4A2A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#4A8A4A'" onmouseleave="this.style.borderColor='#2A4A2A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#4A8A4A;margin-bottom:0.4rem">Consciousness &amp; Healing</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#E8F4E8;margin-bottom:0.4rem;line-height:1.2">Psychedelics Across Traditions</div>
+        <div style="font-size:0.75rem;color:#6A7A6A;line-height:1.5">Ayahuasca, peyote, psilocybin mushrooms, and ritual plant medicines documented from Amazonian, Mesoamerican, North American, and Tibetan traditions.</div>
+      </div>
+
+      <div onclick="quickSearch('longevity immortal rejuven tonic rasayan jing adaptogen')"
+        style="background:#1A150A;border:1px solid #4A3A1A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#8A6A2A'" onmouseleave="this.style.borderColor='#4A3A1A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#8A6A2A;margin-bottom:0.4rem">Longevity &amp; Vitality</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#F4EED8;margin-bottom:0.4rem;line-height:1.2">Regimens for Long Life</div>
+        <div style="font-size:0.75rem;color:#7A6A4A;line-height:1.5">Rasayana from Ayurveda, Jing tonics from Chinese medicine, Tibetan rejuvenation formulas, and WHO-validated adaptogens. Five thousand years of anti-aging knowledge.</div>
+      </div>
+
+      <div onclick="quickSearch('wound infection fever malaria')"
+        style="background:#0A0F1A;border:1px solid #1A2A4A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#2A4A8A'" onmouseleave="this.style.borderColor='#1A2A4A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#4A6AAA;margin-bottom:0.4rem">Infectious Disease</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#D8E4F4;margin-bottom:0.4rem;line-height:1.2">Fever, Malaria &amp; Wound Healing</div>
+        <div style="font-size:0.75rem;color:#4A5A7A;line-height:1.5">From artemisinin in Daoist texts to cinchona bark in Peru to Egyptian wound dressings. The plants that changed medicine documented in their original sources.</div>
+      </div>
+
+      <div onclick="quickSearch('ginger turmeric garlic onion')"
+        style="background:#1A0A0A;border:1px solid #4A1A1A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
+        onmouseenter="this.style.borderColor='#8A2A2A'" onmouseleave="this.style.borderColor='#4A1A1A'">
+        <div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;
+          text-transform:uppercase;color:#AA4A4A;margin-bottom:0.4rem">Convergence</div>
+        <div style="font-family:var(--font-display);font-size:1rem;font-weight:600;
+          color:#F4D8D8;margin-bottom:0.4rem;line-height:1.2">Plants in Every Tradition</div>
+        <div style="font-size:0.75rem;color:#7A4A4A;line-height:1.5">Ginger, turmeric, garlic, and onion appear in nearly every tradition from Egypt to Japan. See how 23 cultures documented the same plants across 4,000 years.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin-bottom:0.4rem">
+   <section class="tab-panel" id="tab-research">
   <div style="padding:1.5rem 1rem 0.5rem">
     <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Modern Research</h2>
-    <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.04em;max-width:64ch;line-height:1.7">You are the scientist. Each template runs a real query across 2,844 passages from 34 traditions spanning 5,000 years. Tap a card to search — results appear in the Corpus tab.</p>
+    <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.04em;max-width:64ch;line-height:1.7">You are the scientist. Each card runs a real query across 2,844 passages from 34 traditions spanning 5,000 years. Tap any card to search — results appear in the Corpus tab.</p>
   </div>
   <div style="padding:0 1rem 2rem">
-
-    <p style="font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:1rem 0 0.6rem">&#9670; Convergence — when isolated civilizations reach the same answer</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.7rem;margin-bottom:1rem">
-      <div onclick="runResearchQuery('convergence')" style="background:#0D1A0D;border:1px solid #2A4A2A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#4A8A4A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#2A4A2A';this.style.transform=''">
-        <div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A8A4A;margin-bottom:0.4rem">Independent Convergence</div>
-        <div style="font-size:0.93rem;font-weight:600;color:#E8F4E8;margin-bottom:0.35rem;line-height:1.3">Same plant, same condition, zero cultural contact</div>
-        <div style="font-size:0.72rem;color:#5A7A5A;line-height:1.6">When the Amazon rainforest, Classical China, and ancient Egypt all prescribe the same remedy — that is pharmacology, not folklore. Artemisinin began this way. What else is waiting?</div>
-        <div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#3A6A3A">&#8594; Search 34 traditions for matching plant + condition</div>
-      </div>
-      <div onclick="runResearchQuery('geographic')" style="background:#0D1A0D;border:1px solid #2A4A2A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#4A8A4A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#2A4A2A';this.style.transform=''">
-        <div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A8A4A;margin-bottom:0.4rem">Geographic Impossibility</div>
-        <div style="font-size:0.93rem;font-weight:600;color:#E8F4E8;margin-bottom:0.35rem;line-height:1.3">Pre-contact knowledge across separated continents</div>
-        <div style="font-size:0.72rem;color:#5A7A5A;line-height:1.6">Evidence of lost trade routes, parallel discovery, or ancient migrations hidden in botanical knowledge. What plants appear on both sides of the Atlantic before Columbus?</d"this.style.borderColor='#8A6A2A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#4A3A1A';this.style.transform=''">
-        <div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#8A6A2A;margin-bottom:0.4rem">Pain &amp; Analgesia</div>
-        <div style="font-size:0.93rem;font-weight:600;color:#F4E8C8;margin-bottom:0.35rem;line-height:1.3">Non-opioid pain management across 5,000 years</div>
-        <div style="font-size:0.72rem;color:#7A6A4A;line-height:1.6">Willow bark became aspirin. Opium became morphine. The corpus holds hundreds of pain entries. Which non-opioid analgesics appear across traditions with consistent mechanism and no pharmaceutical equivalent?</div>
-        <div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#6A5A3A">&#8594; Filter: pain, headache, inflammation, analgesia</div>
-      </div>
+    <p style="font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:1rem 0 0.6rem">&#9670; Convergence &mdash; when isolated civilizations reach the same answer</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:0.7rem;margin-bottom:1rem">
+      <div onclick="runResearchQuery('convergence')" style="background:#0D1A0D;border:1px solid #2A4A2A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#4A8A4A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#2A4A2A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A8A4A;margin-bottom:0.4rem">Independent Convergence</div><div style="font-size:0.92rem;font-weight:600;color:#E8F4E8;margin-bottom:0.35rem;line-height:1.3">Same plant, same condition, zero cultural contact</div><div style="font-size:0.72rem;color:#5A7A5A;line-height:1.6">When the Amazon rainforest, Classical China, and ancient Egypt all prescribe the same remedy &mdash; that is pharmacology, not folklore. Artemisinin began this way.</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#3A6A3A">&#8594; Query 34 traditions for matching plant + condition</div></div>
+      <div onclick="runResearchQuery('geographic')" style="background:#0D1A0D;border:1px solid #2A4A2A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#4A8A4A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#2A4A2A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A8A4A;margin-bottom:0.4rem">Geographic Impossibility</div><div style="font-size:0.92rem;font-weight:600;color:#E8F4E8;margin-bottom:0.35rem;line-height:1.3">Pre-contact knowledge across separated continents</div><div style="font-size:0.72rem;color:#5A7A5A;line-height:1.6">Lost trade routes, parallel discovery, or ancient migrations hidden in botanical knowledge. What plants appear on both sides of the Atlantic before Columbus?</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#3A6A3A">&#8594; Cross-reference Americas vs. Asia vs. Africa vs. Europe</div></div>
     </div>
-
-    <p style="font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:1rem 0 0.6rem">&#9670; Longevity, Women's Health &amp; Psychopharmacology</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.7rem;margin-bottom:1rem">
-      <div onclick="runResearchQuery('longevity')" style="background:#0A0F1A;border:1px solid #1A2A4A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#2A4A8A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#1A2A4A';this.style.transform=''">
-        <div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A6AAA;margin-bottom:0.4rem">Longevity Consensus</div>
-        <div style="font-size:0.93rem;font-weight:600;color:#C8D4F4;margin-bottom:0.35rem;line-height:1.3">Plants endorsed for long life by 3+ unrelated traditions</div>
-        <div style="font-size:0.72rem;color:#4A5A7A;line-height:1.6">Ginseng, turmeric, ashwagandha — all appear in multiple longevity traditions. What other plants share this endorsement? Do they share a pharmacological mechanism like AMPK activation or telomere preservation?</div>
-        <div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#3A5A8A">&#8594; Query: longevity, vitality, rejuvenation, tonic</div>
-      </div>
-      <div onclick="runResearchQuery('womens_health')" style="background:#0A0F1A;border:1px solid #1A2A4A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#2A4A8A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#1A2A4A';this.style.transform=''">
-        <div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A6AAA;margin-bottom:0.4rem">Women's Health Across Traditions</div>
-        <div style="font-size:0.93rem;font-weight:600;color:#C8D4F4;margin-bottom:0.35rem;line-height:1.3">The most systematically understudied domain</div>
-        <div style="font-size:0.72rem;color:#4A5A7A;line-height:1.6">Reproductive medicine, fertility, and menstrual care form the largest category in most traditional pharmacopoeias. Modern clinical research has studied almost none of it. The corpus disagrees with this omission.</div>
-        <div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#3A5A8A">&#8594; Search: fertility, menstrual, pregnancy, uterus</div>
-      </div>
-      <div onclick="runResearchQuery('psycho')" style="background:#150A1A;border:1px solid #3A1A4A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#7A2A9A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#3A1A4A';this.style.transform=''">
-        <div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#8A4AAA;margin-bottom:0.4rem">Plant Psychopharmacology</div>
-        <div style="font-size:0.93rem;font-weight:600;color:#E8D4F4;margin-bottom:0.35rem;line-height:1.3">Ritual, vision, and consciousness — the pre-modern record</div>
-        <div style="font-size:0.72rem;color:#6A4A7A;line-height:1.6">Peyote, ayahuasca, psilocybin, kava, blue lotus — each now in clinical trials. The corpus documents pre-modern dosage, preparation, and framing. How does it compare to current therapeutic protocols?</div>
-        <div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#6A3A8A">&#8594; Search: vision, ritual, trance, consciousness</div>
-      </div>
+    <p style="font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:1rem 0 0.6rem">&#9670; Untapped Medicine &mdash; what pharmacology has not yet studied</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:0.7rem;margin-bottom:1rem">
+      <div onclick="runResearchQuery('untapped')" style="background:#1A150A;border:1px solid #4A3A1A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#8A6A2A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#4A3A1A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#8A6A2A;margin-bottom:0.4rem">Untapped by Modern Medicine</div><div style="font-size:0.92rem;font-weight:600;color:#F4E8C8;margin-bottom:0.35rem;line-height:1.3">5+ traditions agree &mdash; no clinical trial exists</div><div style="font-size:0.72rem;color:#7A6A4A;line-height:1.6">Identify plants with cross-traditional consensus and consistent dosage but zero FDA-approved equivalent. The pharmacological low-hanging fruit of ethnobotany.</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#6A5A3A">&#8594; Search multi-tradition consensus</div></div>
+      <div onclick="runResearchQuery('antibiotic')" style="background:#1A150A;border:1px solid #4A3A1A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#8A6A2A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#4A3A1A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#8A6A2A;margin-bottom:0.4rem">Pre-Antibiotic Infection Control</div><div style="font-size:0.92rem;font-weight:600;color:#F4E8C8;margin-bottom:0.35rem;line-height:1.3">5,000 years of fighting bacteria before penicillin</div><div style="font-size:0.72rem;color:#7A6A4A;line-height:1.6">In the age of antibiotic resistance, the pre-1928 pharmacopoeia is newly urgent. Bald&apos;s Leechbook eye salve kills MRSA. What else in the corpus has antimicrobial potential?</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#6A5A3A">&#8594; Filter: infection, wound, fever, sepsis</div></div>
+      <div onclick="runResearchQuery('mental_health')" style="background:#1A150A;border:1px solid #4A3A1A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#8A6A2A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#4A3A1A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#8A6A2A;margin-bottom:0.4rem">Nervous System &amp; Mental Health</div><div style="font-size:0.92rem;font-weight:600;color:#F4E8C8;margin-bottom:0.35rem;line-height:1.3">Ancient anxiolytics, sedatives, antidepressants</div><div style="font-size:0.72rem;color:#7A6A4A;line-height:1.6">Valerian, kava, ashwagandha, bacopa, saffron &mdash; some now in clinical trials. What else appeared for anxiety, grief, insomnia across traditions that psychiatry has ignored?</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#6A5A3A">&#8594; Search: anxiety, sleep, grief, calm, mind</div></div>
+      <div onclick="runResearchQuery('pain')" style="background:#1A150A;border:1px solid #4A3A1A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#8A6A2A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#4A3A1A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#8A6A2A;margin-bottom:0.4rem">Pain &amp; Analgesia</div><div style="font-size:0.92rem;font-weight:600;color:#F4E8C8;margin-bottom:0.35rem;line-height:1.3">Non-opioid pain management across 5,000 years</div><div style="font-size:0.72rem;color:#7A6A4A;line-height:1.6">Willow bark became aspirin. The corpus holds hundreds of pain entries. Which non-opioid analgesics appear across traditions with no pharmaceutical equivalent?</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#6A5A3A">&#8594; Filter: pain, headache, inflammation, analgesia</div></div>
     </div>
-
+    <p style="font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:1rem 0 0.6rem">&#9670; Longevity, Women&apos;s Health &amp; Psychopharmacology</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:0.7rem;margin-bottom:1rem">
+      <div onclick="runResearchQuery('longevity')" style="background:#0A0F1A;border:1px solid #1A2A4A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#2A4A8A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#1A2A4A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A6AAA;margin-bottom:0.4rem">Longevity Consensus</div><div style="font-size:0.92rem;font-weight:600;color:#C8D4F4;margin-bottom:0.35rem;line-height:1.3">Plants for long life endorsed by 3+ unrelated traditions</div><div style="font-size:0.72rem;color:#4A5A7A;line-height:1.6">Ginseng, turmeric, ashwagandha &mdash; all appear in multiple longevity traditions. Do they share a mechanism like AMPK activation? What else carries this cross-cultural endorsement?</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#3A5A8A">&#8594; Query: longevity, vitality, tonic, rejuvenation</div></div>
+      <div onclick="runResearchQuery('womens_health')" style="background:#0A0F1A;border:1px solid #1A2A4A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#2A4A8A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#1A2A4A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#4A6AAA;margin-bottom:0.4rem">Women&apos;s Health</div><div style="font-size:0.92rem;font-weight:600;color:#C8D4F4;margin-bottom:0.35rem;line-height:1.3">The most systematically understudied domain</div><div style="font-size:0.72rem;color:#4A5A7A;line-height:1.6">Reproductive medicine forms the largest category in most traditional pharmacopoeias. Modern clinical research has studied almost none of it. The corpus disagrees with this omission.</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#3A5A8A">&#8594; Search: fertility, menstrual, childbirth, menopause</div></div>
+      <div onclick="runResearchQuery('psycho')" style="background:#150A1A;border:1px solid #3A1A4A;border-radius:4px;padding:1rem;cursor:pointer;transition:all 0.15s" onmouseenter="this.style.borderColor='#7A2A9A';this.style.transform='translateY(-2px)'" onmouseleave="this.style.borderColor='#3A1A4A';this.style.transform=''"><div style="font-family:var(--font-code);font-size:0.48rem;letter-spacing:0.14em;text-transform:uppercase;color:#8A4AAA;margin-bottom:0.4rem">Plant Psychopharmacology</div><div style="font-size:0.92rem;font-weight:600;color:#E8D4F4;margin-bottom:0.35rem;line-height:1.3">Ritual, vision, and consciousness &mdash; the pre-modern record</div><div style="font-size:0.72rem;color:#6A4A7A;line-height:1.6">Peyote, ayahuasca, psilocybin, kava, blue lotus &mdash; each now in clinical trials. The corpus documents pre-modern dosage and framing. How does it compare to current protocols?</div><div style="margin-top:0.7rem;font-family:var(--font-code);font-size:0.55rem;color:#6A3A8A">&#8594; Search: vision, ritual, trance, consciousness</div></div>
+    </div>
     <p style="font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin:1rem 0 0.6rem">&#9670; Your Research Question</p>
     <div style="background:#0F0C07;border:1px solid #3A3020;border-radius:4px;padding:1rem;margin-bottom:1rem">
-      <input type="text" id="research-custom-input" placeholder="e.g. treatments for type 2 diabetes that appear in both Ayurveda and Traditional Chinese Medicine&#8230;" oninput="document.getElementById('research-run-btn').style.opacity=this.value.length>3?'1':'0.35'" style="width:100%;padding:0.85rem 1rem;font-size:0.9rem;background:#070603;border:1.5px solid #3A3020;border-radius:2px;color:#FFFFFF;font-family:var(--font-code);box-sizing:border-box;margin-bottom:0.6rem">
+      <input type="text" id="research-custom-input" placeholder="e.g. treatments for type 2 diabetes in both Ayurveda and Chinese medicine&#8230;" oninput="document.getElementById('research-run-btn').style.opacity=this.value.length>3?'1':'0.35'" style="width:100%;padding:0.85rem 1rem;font-size:0.9rem;background:#070603;border:1.5px solid #3A3020;border-radius:2px;color:#FFFFFF;font-family:var(--font-code);box-sizing:border-box;margin-bottom:0.6rem">
       <button id="research-run-btn" onclick="runResearchQuery('custom')" style="background:var(--gold);color:#070603;border:none;padding:0.5rem 1.2rem;font-family:var(--font-code);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:2px;opacity:0.35;transition:opacity 0.2s">Run Query &#8594;</button>
     </div>
     <div id="research-results"></div>
@@ -7237,18 +7464,18 @@ DOCTYPE html>
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -7707,6 +7934,65 @@ DOCTYPE html>
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -8353,24 +8639,7 @@ DOCTYPE html>
     html += '</div></div>';
   });
   el.innerHTML = html;
-}ang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plantacopia — A Whole Plant Catalogue</title>
-<meta name="description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<link rel="canonical" href="https://wholeplantcatalog.com">
-<meta property="og:url" content="https://wholeplantcatalog.com">
-<meta property="og:title" content="Whole Plant Catalog — World Traditional Medicine Archive">
-<meta property="og:description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  /* ── Reset & Base ─────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+}
 
   :root {
     --ink:        #1C1A14;
@@ -8912,18 +9181,18 @@ DOCTYPE html>
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -9382,6 +9651,65 @@ DOCTYPE html>
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -10015,44 +10343,25 @@ DOCTYPE html>
    function runResearchQuery(type) {
   var QUERIES = {
     convergence: 'plants used for identical conditions by cultures with no historical contact',
-    geographic: 'plants used across different continents before any known trade contact',
-    untapped: 'herbal treatments supported by multiple traditions not adopted by modern medicine',
-    antibiotic: 'plants for infections wounds fever sepsis bacterial illness',
-    mental_health: 'plants for anxiety depression insomnia nervous system grief',
-    longevity: 'plants for longevity vitality rejuvenation lifespan tonic',
-    womens_health: 'plants for fertility menstrual childbirth pregnancy menopause',
-    psycho: 'plants for ritual vision altered consciousness ceremony',
-    pain: 'plants for pain analgesia headache inflammation'
+    geographic: 'plants used across different continents before any known trade routes',
+    untapped: 'herbal treatments with multiple traditions agreeing but no clinical trial exists',
+    antibiotic: 'plants prescribed for infections wounds fever sepsis bacterial illness',
+    mental_health: 'plants for anxiety depression insomnia grief nervous system calm',
+    longevity: 'plants prescribed for longevity vitality rejuvenation tonic lifespan',
+    womens_health: 'plants for fertility menstrual regulation childbirth pregnancy menopause',
+    psycho: 'plants for ritual vision altered consciousness ceremonial mind trance',
+    pain: 'plants for pain relief analgesia headache inflammation'
   };
   var q = type === 'custom'
     ? (document.getElementById('research-custom-input') ? document.getElementById('research-custom-input').value : '')
     : (QUERIES[type] || type);
   if (!q || !q.trim()) return;
   var el = document.getElementById('research-results');
-  if (el) el.innerHTML = '<div style="font-family:var(--font-code);font-size:0.65rem;color:#4A8A4A;padding:0.5rem 0">Searching: <em>' + q + '</em> &rarr; results in Corpus tab</div>';
-  var keywords = q.split(/\s+/).filter(function(w){ return w.length > 4; }).slice(0, 4).join(' ');
+  if (el) el.innerHTML = '<div style="font-family:var(--font-code);font-size:0.65rem;color:#4A8A4A;padding:0.5rem 0">Searching: <em>' + q + '</em> &rarr; see results in Corpus tab</div>';
+  var keywords = q.split(' ').filter(function(w){ return w.length > 4; }).slice(0, 4).join(' ');
   showTab('corpus', null);
   setTimeout(function(){ runGlobalSearch(keywords); }, 150);
 }
-DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plantacopia — A Whole Plant Catalogue</title>
-<meta name="description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<link rel="canonical" href="https://wholeplantcatalog.com">
-<meta property="og:url" content="https://wholeplantcatalog.com">
-<meta property="og:title" content="Whole Plant Catalog — World Traditional Medicine Archive">
-<meta property="og:description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  /* ── Reset & Base ─────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
     --ink:        #1C1A14;
@@ -10594,18 +10903,18 @@ DOCTYPE html>
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -11064,6 +11373,65 @@ DOCTYPE html>
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -11710,24 +12078,7 @@ DOCTYPE html>
     html += '</div></div>';
   });
   el.innerHTML = html;
-}ang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plantacopia — A Whole Plant Catalogue</title>
-<meta name="description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<link rel="canonical" href="https://wholeplantcatalog.com">
-<meta property="og:url" content="https://wholeplantcatalog.com">
-<meta property="og:title" content="Whole Plant Catalog — World Traditional Medicine Archive">
-<meta property="og:description" content="A scholarly botanical archive spanning 22 traditions and five thousand years. 584 plants documented from primary sources worldwide.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  /* ── Reset & Base ─────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+}
 
   :root {
     --ink:        #1C1A14;
@@ -12269,18 +12620,18 @@ DOCTYPE html>
   .global-search-input {
     flex: 1;
     background: #1C1810 !important;
-    color: #F0E8D0 !important;
+    color: #FFFFFF !important;
     border: none !important;
     font-family: 'Source Code Pro', monospace !important;
-    font-size: 0.95rem !important;
-    padding: 0.95rem 1.2rem !important;
+    font-size: 1.0rem !important;
+    padding: 1.0rem 1.3rem !important;
     outline: none !important;
     min-width: 0;
   }
 
   .global-search-input::placeholder {
-    color: #4A4030 !important;
-    font-size: 0.82rem !important;
+    color: #7A6A50 !important;
+    font-size: 0.85rem !important;
   }
 
   .global-search-btn {
@@ -12739,6 +13090,65 @@ DOCTYPE html>
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
