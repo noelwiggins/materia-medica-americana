@@ -48,6 +48,10 @@ def index():
 def serve_data(filename):
     return send_from_directory('static/data', filename)
 
+@app.route('/reader-data/<path:filename>')
+def serve_reader_data(filename):
+    return send_from_directory('static/reader-data', filename)
+
 
 # ── Share landing pages (server-rendered so link-preview crawlers see OG tags) ──
 SHARE_PAGE_TEMPLATE = """<!DOCTYPE html>
