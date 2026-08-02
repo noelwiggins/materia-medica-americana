@@ -1028,6 +1028,65 @@
   .reader-result-item:hover { background: var(--vellum); }
   .reader-result-title { font-weight: 600; color: var(--ink); }
   .reader-result-snippet { color: var(--muted); font-size: 0.75rem; margin-top: 0.15rem; }
+
+  /* ═══ MANUSCRIPT READER (MSR) ═══════════════════════════════════ */
+  #msr-shell { position:fixed; inset:0; z-index:2000; }
+  #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
+  #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
+  #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
+  #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
+  .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
+  .msr-pill { background:none; border:none; cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.07em; color:var(--muted); padding:0.22rem 0.55rem; border-radius:2px; transition:all 0.12s; }
+  .msr-pill.active { background:#C4A860; color:#0A0805; }
+  .msr-tool-btn { background:none; border:1px solid #2A2418; color:var(--muted); border-radius:3px; padding:0.2rem 0.48rem; cursor:pointer; font-size:0.78rem; transition:all 0.12s; }
+  .msr-tool-btn:hover, .msr-tool-btn.active { border-color:#C4A860; color:#C4A860; }
+  #msr-close-btn:hover { border-color:#8A2A2A; color:#CC4444; }
+  #msr-progress-track { height:2px; background:#1A1810; flex-shrink:0; }
+  #msr-progress-fill { height:100%; background:#C4A860; width:0%; transition:width 0.2s; }
+  #msr-content { flex:1; display:flex; min-height:0; overflow:hidden; }
+  #msr-content.msr-mode-split #msr-left-panel { display:flex; flex:0 0 45%; }
+  #msr-content.msr-mode-split #msr-right-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-left-panel { display:flex; flex:1; }
+  #msr-content.msr-mode-facsimile #msr-right-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-left-panel { display:none; }
+  #msr-content.msr-mode-translation #msr-right-panel { display:flex; flex:1; }
+  #msr-left-panel { flex-direction:column; background:#0D0B07; border-right:1px solid #2A2418; overflow:hidden; }
+  #msr-img-wrap { flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:0.5rem; }
+  #msr-img { max-width:100%; max-height:100%; object-fit:contain; cursor:zoom-in; border:1px solid #2A2418; transition:opacity 0.2s; }
+  #msr-img-caption { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.07em; color:var(--muted); text-align:center; padding:0.18rem 0.5rem; flex-shrink:0; }
+  #msr-left-nav { display:flex; align-items:center; justify-content:space-between; padding:0.4rem 0.8rem; border-top:1px solid #1A1810; background:#0A0805; flex-shrink:0; }
+  #msr-page-label { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); }
+  .msr-nav-btn { background:none; border:1px solid #2A2418; color:#C4A860; border-radius:2px; padding:0.22rem 0.7rem; cursor:pointer; font-size:1rem; line-height:1; transition:all 0.12s; }
+  .msr-nav-btn:hover { background:#C4A860; color:#0A0805; }
+  #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
+  #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
+  .msr-page-text { white-space:pre-wrap; }
+  .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
+  .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
+  .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
+  .msr-seg-title { font-weight:600; font-size:0.88rem; color:var(--ink); margin-bottom:0.18rem; }
+  .msr-seg-original { font-family:var(--font-code); font-size:0.66rem; color:var(--muted); margin-bottom:0.25rem; line-height:1.4; }
+  .msr-seg-translation { font-size:0.82rem; color:#C8B888; line-height:1.65; margin-bottom:0.25rem; }
+  .msr-seg-prep { font-size:0.72rem; color:var(--muted); font-style:italic; }
+  #msr-bottombar { display:flex; align-items:center; gap:0.55rem; padding:0.3rem 1rem; background:#0A0805; border-top:1px solid #1A1810; flex-shrink:0; }
+  .msr-bm-btn { background:none; border:none; cursor:pointer; font-size:1.05rem; color:var(--muted); line-height:1; }
+  #msr-jump-input { width:85px; background:#1A1810; border:1px solid #2A2418; color:var(--ink); font-family:var(--font-code); font-size:0.68rem; padding:0.22rem 0.45rem; border-radius:2px; -moz-appearance:textfield; appearance:textfield; }
+  #msr-jump-input::-webkit-inner-spin-button { display:none; }
+  #msr-bottombar-info { font-family:var(--font-code); font-size:0.6rem; color:var(--muted); flex:1; text-align:right; }
+  #msr-minimap { position:relative; width:110px; height:5px; background:#1A1810; border-radius:3px; overflow:visible; }
+  .msr-mm-cur { position:absolute; top:-2px; width:3px; height:9px; background:#C4A860; border-radius:1px; transform:translateX(-50%); pointer-events:none; }
+  .msr-mm-bk { position:absolute; top:-1px; width:2px; height:7px; background:#8A6A2A; border-radius:1px; cursor:pointer; transform:translateX(-50%); }
+  #msr-zoom-overlay { display:none; position:fixed; inset:0; z-index:3000; background:rgba(0,0,0,0.94); align-items:center; justify-content:center; }
+  #msr-zoom-img { max-width:90vw; max-height:90vh; object-fit:contain; border:1px solid #3A3020; }
+  #msr-zoom-prev, #msr-zoom-next { position:absolute; top:50%; transform:translateY(-50%); background:rgba(0,0,0,0.6); border:1px solid #3A3020; color:#C4A860; font-size:1.4rem; padding:0.45rem 0.75rem; cursor:pointer; border-radius:2px; }
+  #msr-zoom-prev { left:1rem; }
+  #msr-zoom-next { right:1rem; }
+  #msr-zoom-close { position:absolute; top:1rem; right:1rem; background:rgba(0,0,0,0.7); border:1px solid #3A3020; color:#CC4444; font-size:0.9rem; padding:0.28rem 0.55rem; cursor:pointer; border-radius:2px; }
+  @media (max-width:650px) { .msr-pill-group { display:none; } #msr-content.msr-mode-split #msr-left-panel { flex:0 0 48%; } }
+  @media print { #msr-topbar, #msr-bottombar, #msr-progress-track, #msr-left-nav { display:none !important; } #msr-right-panel { overflow:visible !important; } }
+
   /* ── Reader enhanced controls (Oedio port) ── */
   .reader-controls-bar {
     display: flex;
@@ -3324,17 +3383,22 @@ function openBook(book) {
   showTab('reader', null);
   renderReaderSpread();
 
-  // ── Wire manuscript scans if this book has them ──────────────
+  // ── Wire manuscript scans — open immersive MSR reader ───────
   readerSetupLayers(book);
   if (book.hasManuscriptScans && book.manuscriptDataFile) {
-    var msUrl = '/data/' + book.manuscriptDataFile;
+    var msUrl = '/reader-data/' + book.manuscriptDataFile;
     fetch(msUrl)
       .then(function(r){ return r.ok ? r.json() : []; })
       .then(function(pages){
         book._manuscriptPages = pages;
-        readerLoadManuscriptPage(book, 0);
+        if (pages && pages.length > 0) {
+          MSR.open(book, pages);
+        } else {
+          readerLoadManuscriptPage(book, 0);
+        }
       })
-      .catch(function(e){ console.warn('Manuscript data not found:', msUrl); });
+      .catch(function(e){ console.warn('Manuscript not found:', msUrl); });
+    return;
   }
 }
 
@@ -4218,6 +4282,38 @@ showTab = function(id, btn) {
 // ── Plant Database ─────────────────────────────────────────────
 function filterDatabase(q){var ci=document.getElementById('corpus-search-input');if(ci)ci.value=q;renderDatabase(q);}
 function renderDbBookShelf(){var el=document.getElementById('db-book-shelf');if(!el||el.innerHTML)return;var books=typeof BOOKS!=='undefined'?BOOKS:[];var h='<p style="font-family:var(--font-code);font-size:0.52rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin:0 0 0.4rem">Browse by source</p><div style="display:flex;flex-wrap:wrap;gap:0.3rem">';books.forEach(function(b){h+='<button data-bid="'+b.id+'" style="display:flex;align-items:center;gap:0.3rem;background:#131008;border:1px solid #2A2418;border-radius:2px;padding:0.25rem 0.5rem;cursor:pointer;font-family:var(--font-code);font-size:0.58rem;color:#C4A860;white-space:nowrap"><span style="width:6px;height:6px;border-radius:50%;background:'+b.color+';flex-shrink:0"></span>'+b.short+'</button>';});h+='</div>';el.innerHTML=h;el.querySelectorAll('[data-bid]').forEach(function(btn){btn.onmouseenter=function(){this.style.borderColor='#C4A860';};btn.onmouseleave=function(){this.style.borderColor='#2A2418';};btn.onclick=function(){var bk=BOOKS.find(function(b){return b.id===this.getAttribute('data-bid');}.bind(this));if(bk)openBook(bk);};});}
+function renderTraditionsTab() {
+  var el = document.getElementById('traditions-list');
+  if (!el || el.innerHTML) return;
+  var byTrad = {};
+  (typeof BOOKS !== 'undefined' ? BOOKS : []).forEach(function(b) {
+    if (!byTrad[b.tradition]) byTrad[b.tradition] = [];
+    byTrad[b.tradition].push(b);
+  });
+  var html = '';
+  Object.keys(byTrad).sort().forEach(function(trad) {
+    var books = byTrad[trad];
+    var col = books[0].color;
+    html += '<div style="margin-bottom:1.4rem">'
+      + '<div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;'
+      + 'text-transform:uppercase;color:'+col+';margin-bottom:0.5rem;display:flex;align-items:center;gap:0.4rem">'
+      + '<span style="width:7px;height:7px;border-radius:50%;background:'+col+'"></span>'
+      + trad.replace(/_/g,' ').toUpperCase() + ' &middot; ' + books.length + ' source' + (books.length>1?'s':'')
+      + '</div>'
+      + '<div style="display:flex;flex-wrap:wrap;gap:0.35rem">'
+      + books.map(function(b) {
+          var msBadge = b.hasManuscriptScans ? ' <span style="font-size:0.5rem;opacity:0.7">[MS]</span>' : '';
+          return '<button onclick="openBook(BOOKS.find(function(bk){return bk.id===\''+b.id+'\';}))" '
+            + 'style="background:#131008;border:1px solid '+col+'44;border-radius:2px;'
+            + 'padding:0.28rem 0.6rem;cursor:pointer;font-family:var(--font-code);'
+            + 'font-size:0.62rem;color:var(--ink)">'
+            + b.short + msBadge
+            + '</button>';
+        }).join('')
+      + '</div></div>';
+  });
+  el.innerHTML = html;
+}
 function renderDatabase(filter) {
   var list = document.getElementById('db-list');
   if (!list) return;
@@ -4391,6 +4487,410 @@ function renderResearchTab() {
         '<div style="font-size:0.77rem;color:var(--muted);line-height:1.5">' + (s.translation||'').slice(0,150) + '…</div></div>';
     }).join('');
 }
+
+// ═══════════════════════════════════════════════════════════════════
+// PLANTACOPIA MANUSCRIPT READER — Florentine Codex style
+// Full-screen split-panel: facsimile left | translation right
+// Features: infinite scroll, zoom overlay, sepia, TTS, print, layers,
+//           minimap, bookmarks, page jump, keyboard nav, swipe
+// ═══════════════════════════════════════════════════════════════════
+
+var MSR = (function() {
+
+  // ── State ─────────────────────────────────────────────────────────
+  var state = {
+    book: null,
+    pages: [],           // [{page, image, text, volume_title?}]
+    corpusSegs: [],      // corpus segments matched to this book
+    currentPage: 0,
+    totalPages: 0,
+    layer: 'facsimile',  // 'facsimile' | 'translation' | 'original'
+    sepia: false,
+    fontSize: 1.0,
+    ttsUtterance: null,
+    bookmarks: [],
+    zoomIdx: 0,
+    open: false,
+  };
+
+  // ── Public API ────────────────────────────────────────────────────
+  function openManuscript(book, pages) {
+    state.book    = book;
+    state.pages   = pages;
+    state.totalPages = pages.length;
+    state.currentPage = 0;
+    state.open    = true;
+    state.layer   = 'facsimile';
+    state.bookmarks = JSON.parse(localStorage.getItem('msr_bk_' + book.id) || '[]');
+
+    // Load matching corpus segments for this book
+    state.corpusSegs = corpusData.filter(function(s) {
+      return book.corpusKeys && book.corpusKeys.some(function(k) {
+        return s._corpusKey && s._corpusKey.startsWith(k);
+      });
+    });
+
+    renderShell();
+    goToPage(0);
+    setupKeyboard();
+    setupSwipe();
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    state.open = false;
+    stopTTS();
+    var el = document.getElementById('msr-shell');
+    if (el) el.remove();
+    document.body.style.overflow = '';
+  }
+
+  // ── Shell HTML ────────────────────────────────────────────────────
+  function renderShell() {
+    var existing = document.getElementById('msr-shell');
+    if (existing) existing.remove();
+
+    var b = state.book;
+    var shell = document.createElement('div');
+    shell.id = 'msr-shell';
+    shell.innerHTML = [
+      '<div id="msr-overlay">',
+
+      // ── Top bar ──────────────────────────────────────────────────
+      '<div id="msr-topbar">',
+        '<div id="msr-title-wrap">',
+          '<div id="msr-book-title">' + escH(b.title) + '</div>',
+          '<div id="msr-book-meta">' + escH(b.date) + ' · ' + escH(b.language || '') + ' · ' + escH(b.author || '') + '</div>',
+        '</div>',
+        '<div id="msr-controls">',
+          // Layer toggles
+          '<div id="msr-layers" class="msr-pill-group">',
+            '<button class="msr-pill active" data-layer="facsimile" onclick="MSR.setLayer(\'facsimile\')">&#128210; Facsimile</button>',
+            '<button class="msr-pill" data-layer="translation" onclick="MSR.setLayer(\'translation\')">&#128214; Translation</button>',
+            '<button class="msr-pill" data-layer="split" onclick="MSR.setLayer(\'split\')">&#9681; Split</button>',
+          '</div>',
+          // Tools
+          '<button class="msr-tool-btn" onclick="MSR.toggleSepia()" title="Sepia mode">&#9790;</button>',
+          '<button class="msr-tool-btn" onclick="MSR.changeFontSize(-1)" title="Smaller text">A&#8722;</button>',
+          '<button class="msr-tool-btn" onclick="MSR.changeFontSize(1)" title="Larger text">A+</button>',
+          '<button class="msr-tool-btn" id="msr-tts-btn" onclick="MSR.toggleTTS()" title="Read aloud">&#9654;</button>',
+          '<button class="msr-tool-btn" onclick="MSR.print()" title="Print">&#128438;</button>',
+          '<button class="msr-tool-btn" onclick="MSR.close()" title="Close" id="msr-close-btn">&#x2715;</button>',
+        '</div>',
+      '</div>',
+
+      // ── Progress bar ──────────────────────────────────────────────
+      '<div id="msr-progress-track"><div id="msr-progress-fill"></div></div>',
+
+      // ── Main content: left (facsimile) + right (text) ─────────────
+      '<div id="msr-content" class="msr-mode-split">',
+
+        // LEFT: manuscript scan panel
+        '<div id="msr-left-panel">',
+          '<div id="msr-img-wrap">',
+            '<img id="msr-img" src="" alt="Manuscript page" onclick="MSR.openZoom()">',
+            '<div id="msr-img-caption"></div>',
+          '</div>',
+          '<div id="msr-left-nav">',
+            '<button class="msr-nav-btn" onclick="MSR.prevPage()">&#8592;</button>',
+            '<span id="msr-page-label">Page 1 of ' + state.totalPages + '</span>',
+            '<button class="msr-nav-btn" onclick="MSR.nextPage()">&#8594;</button>',
+          '</div>',
+        '</div>',
+
+        // RIGHT: translation text panel
+        '<div id="msr-right-panel">',
+          '<div id="msr-text-content"></div>',
+          '<div id="msr-seg-matches"></div>',
+        '</div>',
+
+      '</div>',
+
+      // ── Bottom bar ────────────────────────────────────────────────
+      '<div id="msr-bottombar">',
+        '<button class="msr-bm-btn" onclick="MSR.toggleBookmark()" id="msr-bm-btn" title="Bookmark">&#9776;</button>',
+        '<input type="number" id="msr-jump-input" min="1" max="' + state.totalPages + '" placeholder="Go to page" onkeydown="if(event.key===\'Enter\')MSR.goToPageInput(this.value)">',
+        '<span id="msr-bottombar-info"></span>',
+        '<div id="msr-minimap"></div>',
+      '</div>',
+
+      // ── Zoom overlay ──────────────────────────────────────────────
+      '<div id="msr-zoom-overlay" onclick="MSR.closeZoom()">',
+        '<button id="msr-zoom-prev" onclick="event.stopPropagation();MSR.zoomPrev()">&#8592;</button>',
+        '<img id="msr-zoom-img" src="" alt="Zoom">',
+        '<button id="msr-zoom-next" onclick="event.stopPropagation();MSR.zoomNext()">&#8594;</button>',
+        '<button id="msr-zoom-close" onclick="MSR.closeZoom()">&#x2715;</button>',
+      '</div>',
+
+      '</div>',
+    ].join('');
+
+    document.body.appendChild(shell);
+    updateBookmarkBtn();
+  }
+
+  // ── Page navigation ───────────────────────────────────────────────
+  function goToPage(idx) {
+    idx = Math.max(0, Math.min(state.totalPages - 1, idx));
+    state.currentPage = idx;
+    var page = state.pages[idx];
+    if (!page) return;
+
+    // Update image
+    var img = document.getElementById('msr-img');
+    if (img) {
+      img.src = page.image;
+      img.alt = 'Page ' + page.page;
+    }
+
+    // Caption
+    var cap = document.getElementById('msr-img-caption');
+    if (cap) {
+      var label = page.canvas_label || ('Page ' + page.page);
+      var vol = page.volume_title ? ' · ' + page.volume_title : '';
+      cap.textContent = label + vol;
+    }
+
+    // Page label
+    var pl = document.getElementById('msr-page-label');
+    if (pl) pl.textContent = 'Page ' + (idx+1) + ' of ' + state.totalPages;
+
+    // Progress bar
+    var fill = document.getElementById('msr-progress-fill');
+    if (fill) fill.style.width = ((idx+1)/state.totalPages*100) + '%';
+
+    // Bottom info
+    var bi = document.getElementById('msr-bottombar-info');
+    if (bi) bi.textContent = (idx+1) + ' / ' + state.totalPages;
+
+    // Right panel: load corpus segments for this page range
+    renderTextForPage(idx, page);
+
+    // Bookmark button state
+    updateBookmarkBtn();
+    updateMinimap();
+  }
+
+  function renderTextForPage(idx, page) {
+    var rightEl = document.getElementById('msr-text-content');
+    var matchEl = document.getElementById('msr-seg-matches');
+    if (!rightEl) return;
+
+    // If the page has embedded text (OCR/translation), show it
+    if (page.text && page.text.trim().length > 10) {
+      rightEl.innerHTML = [
+        '<div class="msr-page-text">' + escH(page.text) + '</div>',
+      ].join('');
+    } else {
+      rightEl.innerHTML = '<div class="msr-no-text">&#9670; Facsimile only &mdash; no transcription available for this page. Corpus passages from this tradition are shown below.</div>';
+    }
+
+    // Show corpus segments for this tradition (contextual, not page-matched)
+    if (matchEl && state.corpusSegs.length) {
+      // Show segments around the current position in the corpus
+      var perPage = Math.max(1, Math.floor(state.corpusSegs.length / state.totalPages));
+      var start = idx * perPage;
+      var slice = state.corpusSegs.slice(start, start + 3);
+      if (!slice.length) slice = state.corpusSegs.slice(0, 3);
+
+      matchEl.innerHTML = [
+        '<div class="msr-corpus-header">',
+          '&#9670; Corpus passages from this tradition',
+        '</div>',
+        slice.map(function(s) {
+          return [
+            '<div class="msr-corpus-seg">',
+              '<div class="msr-seg-title">' + escH(s.title_inferred || '') + '</div>',
+              s.original_text ? '<div class="msr-seg-original">' + escH(s.original_text) + '</div>' : '',
+              '<div class="msr-seg-translation">' + escH(s.translation || '') + '</div>',
+              s.preparation ? '<div class="msr-seg-prep"><em>Preparation:</em> ' + escH(s.preparation) + '</div>' : '',
+            '</div>'
+          ].join('');
+        }).join(''),
+      ].join('');
+    }
+  }
+
+  function prevPage() { goToPage(state.currentPage - 1); }
+  function nextPage() { goToPage(state.currentPage + 1); }
+  function goToPageInput(v) { goToPage(parseInt(v, 10) - 1); }
+
+  // ── Layer switching ───────────────────────────────────────────────
+  function setLayer(layer) {
+    state.layer = layer;
+    var content = document.getElementById('msr-content');
+    if (content) {
+      content.className = 'msr-mode-' + layer;
+    }
+    document.querySelectorAll('.msr-pill').forEach(function(btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-layer') === layer);
+    });
+  }
+
+  // ── Sepia ─────────────────────────────────────────────────────────
+  function toggleSepia() {
+    state.sepia = !state.sepia;
+    var overlay = document.getElementById('msr-overlay');
+    if (overlay) overlay.classList.toggle('msr-sepia', state.sepia);
+  }
+
+  // ── Font size ─────────────────────────────────────────────────────
+  function changeFontSize(delta) {
+    state.fontSize = Math.max(0.7, Math.min(1.6, state.fontSize + delta * 0.1));
+    var right = document.getElementById('msr-right-panel');
+    if (right) right.style.fontSize = state.fontSize + 'rem';
+  }
+
+  // ── TTS ───────────────────────────────────────────────────────────
+  function toggleTTS() {
+    if (state.ttsUtterance) { stopTTS(); return; }
+    var right = document.getElementById('msr-right-panel');
+    var text = right ? (right.innerText || right.textContent) : '';
+    if (!text.trim()) return;
+    state.ttsUtterance = new SpeechSynthesisUtterance(text);
+    state.ttsUtterance.rate = 0.88;
+    state.ttsUtterance.onend = function() {
+      state.ttsUtterance = null;
+      var btn = document.getElementById('msr-tts-btn');
+      if (btn) { btn.textContent = '\u25b6'; btn.classList.remove('active'); }
+    };
+    window.speechSynthesis.speak(state.ttsUtterance);
+    var btn = document.getElementById('msr-tts-btn');
+    if (btn) { btn.textContent = '\u25a0'; btn.classList.add('active'); }
+  }
+
+  function stopTTS() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    state.ttsUtterance = null;
+    var btn = document.getElementById('msr-tts-btn');
+    if (btn) { btn.textContent = '\u25b6'; btn.classList.remove('active'); }
+  }
+
+  // ── Print ─────────────────────────────────────────────────────────
+  function print() {
+    var b = state.book;
+    var page = state.pages[state.currentPage];
+    document.title = b.title + ' — Page ' + (state.currentPage+1) + ' | Plantacopia';
+    window.print();
+  }
+
+  // ── Zoom overlay ──────────────────────────────────────────────────
+  function openZoom() {
+    state.zoomIdx = state.currentPage;
+    showZoomPage(state.zoomIdx);
+    var overlay = document.getElementById('msr-zoom-overlay');
+    if (overlay) overlay.style.display = 'flex';
+  }
+
+  function closeZoom() {
+    var overlay = document.getElementById('msr-zoom-overlay');
+    if (overlay) overlay.style.display = 'none';
+  }
+
+  function showZoomPage(idx) {
+    idx = Math.max(0, Math.min(state.totalPages - 1, idx));
+    state.zoomIdx = idx;
+    var img = document.getElementById('msr-zoom-img');
+    if (img) img.src = state.pages[idx].image;
+  }
+
+  function zoomPrev() { showZoomPage(state.zoomIdx - 1); }
+  function zoomNext() { showZoomPage(state.zoomIdx + 1); }
+
+  // ── Bookmarks ─────────────────────────────────────────────────────
+  function toggleBookmark() {
+    var idx = state.currentPage;
+    var i = state.bookmarks.indexOf(idx);
+    if (i >= 0) state.bookmarks.splice(i, 1);
+    else state.bookmarks.push(idx);
+    try { localStorage.setItem('msr_bk_' + state.book.id, JSON.stringify(state.bookmarks)); } catch(e){}
+    updateBookmarkBtn();
+    updateMinimap();
+  }
+
+  function updateBookmarkBtn() {
+    var btn = document.getElementById('msr-bm-btn');
+    if (btn) {
+      var isMarked = state.bookmarks.indexOf(state.currentPage) >= 0;
+      btn.textContent = isMarked ? '\u2605' : '\u2606';
+      btn.style.color = isMarked ? '#C4A860' : '';
+    }
+  }
+
+  // ── Minimap ───────────────────────────────────────────────────────
+  function updateMinimap() {
+    var mm = document.getElementById('msr-minimap');
+    if (!mm || state.totalPages < 5) return;
+    var w = mm.offsetWidth || 120;
+    mm.innerHTML = '';
+    // Current position marker
+    var cur = document.createElement('div');
+    cur.className = 'msr-mm-cur';
+    cur.style.left = ((state.currentPage / state.totalPages) * 100) + '%';
+    mm.appendChild(cur);
+    // Bookmark markers
+    state.bookmarks.forEach(function(idx) {
+      var bk = document.createElement('div');
+      bk.className = 'msr-mm-bk';
+      bk.style.left = ((idx / state.totalPages) * 100) + '%';
+      bk.onclick = function(e) { e.stopPropagation(); goToPage(idx); };
+      mm.appendChild(bk);
+    });
+  }
+
+  // ── Keyboard ──────────────────────────────────────────────────────
+  function setupKeyboard() {
+    document.addEventListener('keydown', function(e) {
+      if (!state.open) return;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') nextPage();
+      if (e.key === 'ArrowLeft'  || e.key === 'ArrowUp')   prevPage();
+      if (e.key === 'Escape') {
+        if (document.getElementById('msr-zoom-overlay').style.display === 'flex') closeZoom();
+        else close();
+      }
+      if (e.key === 'b' || e.key === 'B') toggleBookmark();
+    });
+  }
+
+  // ── Swipe ─────────────────────────────────────────────────────────
+  function setupSwipe() {
+    var el = document.getElementById('msr-overlay');
+    if (!el) return;
+    var tx = 0;
+    el.addEventListener('touchstart', function(e) { tx = e.touches[0].clientX; }, {passive:true});
+    el.addEventListener('touchend', function(e) {
+      var dx = e.changedTouches[0].clientX - tx;
+      if (Math.abs(dx) > 40) {
+        if (dx < 0) nextPage(); else prevPage();
+      }
+    }, {passive:true});
+  }
+
+  // ── Utils ─────────────────────────────────────────────────────────
+  function escH(s) {
+    return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  return {
+    open: openManuscript,
+    close: close,
+    setLayer: setLayer,
+    toggleSepia: toggleSepia,
+    changeFontSize: changeFontSize,
+    toggleTTS: toggleTTS,
+    print: print,
+    openZoom: openZoom,
+    closeZoom: closeZoom,
+    zoomPrev: zoomPrev,
+    zoomNext: zoomNext,
+    toggleBookmark: toggleBookmark,
+    prevPage: prevPage,
+    nextPage: nextPage,
+    goToPageInput: goToPageInput,
+  };
+
+})();
+
 </script>
 <!-- ── GLOBAL SEARCH RESULTS OVERLAY ───────────────────────── -->
 <div class="search-results-overlay" id="search-overlay" onclick="handleOverlayClick(event)">
