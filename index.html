@@ -1655,7 +1655,7 @@
   </div>
   <div class="stat-grid">
     <button class="stat-tile" onclick="showTab('traditions', document.querySelector('[onclick*=traditions]'))" title="Browse all traditions">
-      <div class="stat-tile-num" id="stat-num-traditions">22</div><div class="stat-tile-label">Traditions</div><div class="stat-tile-arrow">&#8599;</div>
+      <div class="stat-tile-num" id="stat-num-traditions">34</div><div class="stat-tile-label">Traditions</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
     <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="Browse all plants">
       <div class="stat-tile-num" id="stat-num-plants">—</div><div class="stat-tile-label">Plants Documented</div><div class="stat-tile-arrow">&#8599;</div>
@@ -2043,6 +2043,7 @@ document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'))
 document.getElementById('tab-' + id).classList.add('active');
 if (btn) btn.classList.add('active'); else if (typeof event !== 'undefined' && event.currentTarget) event.currentTarget.classList.add('active');
 if (id === 'database') { renderTraditionChips(); renderPlants(); }
+if (id === 'traditions') { renderTraditionsTab(); }
 if (id === 'home') renderTraditionCards();
 if (id === 'convergence') { renderConvergenceEngine(); renderPriority(); }
 if (id === 'traditions') renderTraditionsOverview();
@@ -2506,6 +2507,7 @@ function getTradColor(id) {
     'western_pharmacopeia':'#1A6FA0',
     'commission_e':        '#1A3A6A',
     'ahp':                 '#6A1A1A',
+    'southern_african':    '#7A5A2A',
   };
   return EXTRA[id] || '#6B6050';
 }
