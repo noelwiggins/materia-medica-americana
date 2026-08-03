@@ -7,6 +7,10 @@ import html as html_lib
 
 import og_image
 
+# ── R2 reader-data redirect ───────────────────────────────────────────────────
+_R2_BASE = os.environ.get("R2_BASE_URL", "").rstrip("/")
+
+
 app = Flask(__name__, static_folder='static')
 
 # ── Data loading (cached) ────────────────────────────────────────────────
@@ -50,6 +54,9 @@ def serve_data(filename):
 
 @app.route('/reader-data/<path:filename>')
 def serve_reader_data(filename):
+    if _R2_BASE:
+        from flask import redirect
+        return redirect(f"{_R2_BASE}/reader-data/{filename}", code=301)
     return send_from_directory('static/reader-data', filename)
 
 
