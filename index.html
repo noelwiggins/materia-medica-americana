@@ -2084,12 +2084,26 @@ try {
   conditionData = (await cRes.json()).conditions || [];
   longevityData = (await lRes.json()).traditions || [];
 
-  // Load corpus from 3 pre-built slim shards (parallel, ~3MB each)
+  // Load corpus from 3 pre-built slim shards (parallel, ~3MB each).
+  // Each shard gets up to 3 real attempts before giving up -- a single
+  // failed fetch on a flaky mobile connection was likely the actual cause
+  // of "still failed" reports, not just needing a longer timeout to wait
+  // out one attempt that was never going to complete.
+  function fetchShardWithRetry(url, attemptsLeft) {
+    return fetch(url).then(function(r) {
+      if (!r.ok) throw new Error('bad status ' + r.status);
+      return r.json();
+    }).catch(function(err) {
+      if (attemptsLeft > 1) return fetchShardWithRetry(url, attemptsLeft - 1);
+      console.warn('Shard failed after retries:', url, err);
+      return { segments: [] };
+    });
+  }
   try {
     const [sh1, sh2, sh3] = await Promise.all([
-      fetch('/data/corpus_shard_1.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
-      fetch('/data/corpus_shard_2.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; }),
-      fetch('/data/corpus_shard_3.json').then(function(r){ return r.ok ? r.json() : {segments:[]}; }).catch(function(){ return {segments:[]}; })
+      fetchShardWithRetry('/data/corpus_shard_1.json', 3),
+      fetchShardWithRetry('/data/corpus_shard_2.json', 3),
+      fetchShardWithRetry('/data/corpus_shard_3.json', 3)
     ]);
     [sh1, sh2, sh3].forEach(function(shard) {
       (shard.segments || []).forEach(function(s) {
