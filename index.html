@@ -3735,10 +3735,21 @@ function jumpToResult(pageNum) {
 }
 
 // ── Cross-book correlations ─────────────────────────────────
-function showCorrelations(plantName) {
+function showCorrelations(plantName, retriesLeft) {
+  if (retriesLeft === undefined) retriesLeft = 15; // ~18 seconds of retrying before giving up
   var panel = document.getElementById('reader-correlations');
   var body  = document.getElementById('reader-correlations-body');
   if (!panel || !body) return;
+
+  var panel0 = document.getElementById('reader-correlations');
+  var body0  = document.getElementById('reader-correlations-body');
+  if (panel0 && body0 && corpusData.length < 500 && retriesLeft > 0) {
+    body0.innerHTML = '<p style="color:var(--muted);font-size:0.82rem;padding:0.3rem 0">' +
+      'Still loading the full corpus (' + corpusData.length + ' passages so far)&hellip; searching again in a moment.</p>';
+    panel0.style.display = 'block';
+    setTimeout(function() { showCorrelations(plantName, retriesLeft - 1); }, 1200);
+    return;
+  }
 
   // Search terms: all words 3+ chars from plant name, stripped of parens
   var base = plantName.split('(')[0].split('—')[0].trim().toLowerCase();
