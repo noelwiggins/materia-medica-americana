@@ -4109,7 +4109,13 @@ function runGlobalSearch() {
       var iv = setInterval(function() {
         t++;
         if (corpusData.length) { clearInterval(iv); msg.remove(); runGlobalSearch(); }
-        else if (t > 30) { clearInterval(iv); msg.innerHTML = 'Load failed — refresh page'; setTimeout(function(){msg.remove();},3000); }
+        else if (t === 10) {
+          // Still loading after 5s -- the corpus is a genuine ~10MB payload,
+          // slower connections need more than the old 15s ceiling gave them.
+          msg.innerHTML = 'STILL LOADING…<br><small style="color:#5A5040">The full corpus is about 10MB -- ' +
+            'this can take a little longer on a slower connection</small>';
+        }
+        else if (t > 80) { clearInterval(iv); msg.innerHTML = 'Load failed — check your connection and refresh'; setTimeout(function(){msg.remove();},4000); }
       }, 500);
       return;
     }
