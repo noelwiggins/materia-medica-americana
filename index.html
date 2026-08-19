@@ -2067,6 +2067,19 @@ chevron.classList.toggle('open', !isOpen);
 // ── Data loading ────────────────────────────────────────
 async function loadData() {
 try {
+  // Populate the homepage stat tiles from a tiny precomputed file first --
+  // these are just counts, they never needed the full ~10MB corpus (with
+  // every passage's full text) to display. Decoupled so the numbers show
+  // up reliably even if the heavier corpus load below is slow or fails.
+  fetch('/data/homepage_stats.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(s) {
+    if (!s) return;
+    var setIfPresent = function(id, val) { var el = document.getElementById(id); if (el && val != null) el.textContent = val.toLocaleString(); };
+    setIfPresent('stat-num-traditions', s.traditions);
+    setIfPresent('stat-num-plants', s.plants);
+    setIfPresent('stat-num-passages', s.passages);
+    setIfPresent('stat-num-convergence', s.convergence);
+  }).catch(function(){});
+
   const [pRes, tRes, rRes, cRes, lRes] = await Promise.all([
     fetch('/data/plants.json'),
     fetch('/data/traditions.json'),
