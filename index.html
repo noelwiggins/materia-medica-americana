@@ -2097,37 +2097,41 @@ try {
   conditionData = (await cRes.json()).conditions || [];
   longevityData = (await lRes.json()).traditions || [];
 
-  // Load corpus from 3 pre-built slim shards (parallel, ~3MB each).
-  // Each shard gets up to 3 real attempts before giving up -- a single
-  // failed fetch on a flaky mobile connection was likely the actual cause
-  // of "still failed" reports, not just needing a longer timeout to wait
-  // out one attempt that was never going to complete.
-  function fetchShardWithRetry(url, attemptsLeft) {
+  // Load corpus from 3 pre-built slim shards (parallel, ~3MB each). Each
+  // shard is pushed into corpusData independently as soon as IT finishes,
+  // rather than blocking everything on Promise.all for all 3 together.
+  // JSON.parse on a multi-MB string is synchronous and CPU-bound in JS --
+  // on a slower device that can genuinely take several seconds per shard,
+  // and since it's not an actual error, retries don't help. This way one
+  // slow shard doesn't hold back the other two, and search becomes usable
+  // incrementally rather than all-or-nothing.
+  function ingestShard(shard) {
+    (shard.segments || []).forEach(function(s) {
+      if (s && s.translation && s.title_inferred &&
+          !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)) {
+        corpusData.push(s);
+      }
+    });
+  }
+  function loadShardIndependently(url, attemptsLeft) {
     return fetch(url).then(function(r) {
       if (!r.ok) throw new Error('bad status ' + r.status);
       return r.json();
+    }).then(function(shard) {
+      ingestShard(shard);
+      console.log('Corpus: shard loaded (' + url + '), running total ' + corpusData.length);
     }).catch(function(err) {
-      if (attemptsLeft > 1) return fetchShardWithRetry(url, attemptsLeft - 1);
-      console.warn('Shard failed after retries:', url, err);
-      return { segments: [] };
+      if (attemptsLeft > 1) return loadShardIndependently(url, attemptsLeft - 1);
+      console.warn('Shard permanently failed:', url, err);
     });
   }
-  try {
-    const [sh1, sh2, sh3] = await Promise.all([
-      fetchShardWithRetry('/data/corpus_shard_1.json', 3),
-      fetchShardWithRetry('/data/corpus_shard_2.json', 3),
-      fetchShardWithRetry('/data/corpus_shard_3.json', 3)
-    ]);
-    [sh1, sh2, sh3].forEach(function(shard) {
-      (shard.segments || []).forEach(function(s) {
-        if (s && s.translation && s.title_inferred &&
-            !['[PARSE ERROR]','[SEGMENT FAILED]'].includes(s.title_inferred)) {
-          corpusData.push(s);
-        }
-      });
-    });
-    console.log('Corpus: ' + corpusData.length + ' segments loaded from 3 shards');
-  } catch(e) { console.error('Corpus load error:', e); }
+  // Deliberately not awaited together -- each call resolves on its own
+  // timeline and search can proceed the moment corpusData has anything in
+  // it, rather than waiting for the slowest of the three.
+  loadShardIndependently('/data/corpus_shard_1.json', 3);
+  loadShardIndependently('/data/corpus_shard_2.json', 3);
+  loadShardIndependently('/data/corpus_shard_3.json', 3);
+
 } catch(e) { console.error('Data load error:', e); }
 }
 
