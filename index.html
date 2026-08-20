@@ -3106,7 +3106,7 @@ const BOOKS = [
     cover:'https://upload.wikimedia.org/wikipedia/commons/e/e6/Aloe_ferox_botanical_garden_T.U.Delft_in_2015.jpg',
     color:'#FF7043', corpusKeys:['southern_african','south_african_new_b01'], totalEntries:600,
     description:'The world\'s oldest continuous healing tradition from the San, who have occupied southern Africa for 40,000+ years. Source of Devil\'s Claw, Umckaloabo, and Rooibos.' },
-  ,{ id:'kampo', title:'Kampo Medicine', short:'Kampo',
+  { id:'kampo', title:'Kampo Medicine', short:'Kampo',
     tradition:'kampo', date:'c.200 CE', language:'Classical Japanese',
     author:'Tao Hongjing compilation',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Acupuncture_chart_300_CE.jpg/440px-Acupuncture_chart_300_CE.jpg',
@@ -4332,8 +4332,9 @@ function renderDatabase(filter) {
     }).join('');
     var firstTrad = trads[0];
     var firstBook = BOOKS.find(function(b){ return b.tradition===firstTrad||b.id===firstTrad; });
-    return '<div style="padding:0.55rem 0;border-bottom:1px solid var(--border-subtle);cursor:pointer" onclick="openBook(' +
-      JSON.stringify(firstBook||BOOKS[0]) + ')">' +
+    var targetId = (firstBook||BOOKS[0]).id;
+    return '<div style="padding:0.55rem 0;border-bottom:1px solid var(--border-subtle);cursor:pointer" onclick="openBookById(&apos;' +
+      targetId + '&apos;)">' +
       '<div style="font-weight:500;font-size:0.88rem;margin-bottom:0.2rem">' + name + '</div>' +
       '<div style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">' + tradDots +
       '<span style="font-family:var(--font-code);font-size:0.6rem;color:var(--muted)">' +
@@ -4420,7 +4421,8 @@ function renderLongevityTab() {
   }).slice(0,60).map(function(s) {
     var book = BOOKS.find(function(b){ return (b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); }); });
     var snippet = (s.translation||'').slice(0,120) + '…';
-    return '<div style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle);cursor:pointer" onclick="openBook(' + JSON.stringify(book||BOOKS[0]) + ')">' +
+    var targetId = (book||BOOKS[0]).id;
+    return '<div style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle);cursor:pointer" onclick="openBookById(&apos;' + targetId + '&apos;)">' +
       '<div style="font-weight:500;font-size:0.88rem">' + (s.title_inferred||'') + '</div>' +
       (book ? '<div style="font-family:var(--font-code);font-size:0.6rem;color:' + (book.color||'var(--gold)') + ';margin:0.15rem 0">' + book.short + '</div>' : '') +
       '<div style="font-size:0.78rem;color:var(--muted);line-height:1.5">' + snippet + '</div></div>';
@@ -4437,7 +4439,9 @@ function renderCorpusTab(filter) {
   }) : corpusData;
   list.innerHTML = data.slice(0,100).map(function(s) {
     var book = BOOKS.find(function(b){ return (b.corpusKeys||[]).some(function(k){ return (s._corpusKey||'').startsWith(k); }); });
-    return '<div style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle)">' +
+    var clickAttr = book ? ' onclick="openBookById(&apos;' + book.id + '&apos;)" style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle);cursor:pointer"' :
+      ' style="padding:0.6rem 0;border-bottom:1px solid var(--border-subtle)"';
+    return '<div' + clickAttr + '>' +
       '<div style="font-weight:500;font-size:0.85rem">' + (s.title_inferred||'Untitled') + '</div>' +
       (book ? '<div style="font-family:var(--font-code);font-size:0.58rem;color:' + (book.color||'var(--gold)') + '">' + book.short + '</div>' : '') +
       '<div style="font-size:0.77rem;color:var(--muted);margin-top:0.2rem;line-height:1.5">' +
