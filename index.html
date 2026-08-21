@@ -3108,7 +3108,7 @@ const BOOKS = [
     tradition:'chinese', date:'c.200 CE (compiled)', language:'Classical Chinese',
     author:'Attributed to Shennong',
     cover:'https://upload.wikimedia.org/wikipedia/commons/b/ba/Betel_%28PSF%29.png',
-    color:'#B8860B', corpusKeys:['bencao','kampo','kampo_new_b01','kampo_new_b02','kampo_new_b03'], totalEntries:365,
+    color:'#B8860B', corpusKeys:['bencao'], totalEntries:365,
     description:'The foundational Chinese materia medica. 365 substances in three therapeutic grades. Basis of Kampo (Japanese) medicine.' },
   { id:'dongui', title:'Dongui Bogam (동의보감)', short:'Dongui Bogam',
     tradition:'korean', date:'1613 CE', language:'Classical Chinese / Korean',
@@ -4189,6 +4189,61 @@ function renderResultRows(results, resultBooks, limit) {
   return html;
 }
 
+// Query expansion via the plant master records (plants.json): if the
+// user's search matches a plant's common name or scientific binomial,
+// pull in every language's local name already recorded for that plant
+// (tradition_names) as additional search terms. Without this, a query
+// only ever finds entries whose *translated* text happens to include an
+// English gloss -- true today only because translators have consistently
+// added one, not because the search does any real cross-language
+// matching. This makes that matching real, so a term that only appears
+// in its own language's transliteration (no English gloss) still surfaces.
+// Generic plant-part words that appear in dozens of common names ("Licorice
+// Root", "Burdock Root", "Willow Bark"...) -- matching on these alone would
+// trigger synonym expansion for every such plant a query happens to share a
+// body-part word with, re-broadening results the same way the original OR
+// bug did. Only a plant's distinctive word(s) should trigger expansion.
+var PLANT_NAME_STOPWORDS = {root:1, roots:1, bark:1, leaf:1, leaves:1, seed:1, seeds:1,
+  flower:1, flowers:1, stem:1, stems:1, fruit:1, oil:1, extract:1, powder:1, tea:1, herb:1, plant:1};
+
+function collectPlantSynonymWords(ql) {
+  var extra = [];
+  for (var pi = 0; pi < plantData.length; pi++) {
+    var p = plantData[pi];
+    var cn = (p.common_name || '').toLowerCase();
+    var bot = (p.modern_botanical || '').toLowerCase();
+    if (!cn && !bot) continue;
+    var matched = false;
+    if (cn) {
+      if (ql.indexOf(cn) !== -1) matched = true;
+      else {
+        var cnWords = cn.split(/[\s\/]+/);
+        for (var cwi = 0; cwi < cnWords.length; cwi++) {
+          if (cnWords[cwi].length >= 4 && !PLANT_NAME_STOPWORDS[cnWords[cwi]] && ql.indexOf(cnWords[cwi]) !== -1) { matched = true; break; }
+        }
+      }
+    }
+    if (!matched && bot) {
+      var genus = bot.split(/\s+/)[0];
+      if (genus.length >= 4 && ql.indexOf(genus) !== -1) matched = true;
+    }
+    if (!matched) continue;
+    if (bot) {
+      bot.split(/\s+/).forEach(function(w) { if (w.length >= 4) extra.push(w); });
+    }
+    var tn = p.tradition_names || {};
+    Object.keys(tn).forEach(function(k) {
+      String(tn[k]).toLowerCase().replace(/[()\/,]/g, ' ').split(/\s+/).forEach(function(w) {
+        if (w.length >= 4) extra.push(w);
+      });
+    });
+  }
+  // de-dupe
+  var seen = {}, out = [];
+  extra.forEach(function(w) { if (!seen[w]) { seen[w] = true; out.push(w); } });
+  return out;
+}
+
 function runGlobalSearch() {
   try {
     var inp = document.getElementById('global-search-input');
@@ -4237,6 +4292,7 @@ function runGlobalSearch() {
     // unrelated "root" mentions.
     var words = ql.split(/\s+/).filter(function(w){ return w.length >= 3; });
     if (!words.length) words = [ql];
+    var synonymWords = collectPlantSynonymWords(ql).filter(function(w) { return words.indexOf(w) === -1; });
     var scored = [];
     for (var ri = 0; ri < corpusData.length; ri++) {
       var s = corpusData[ri];
@@ -4249,9 +4305,13 @@ function runGlobalSearch() {
         if (inTitle) titleMatches++;
         if (inTitle || inBody) matchedWords++;
       }
-      if (matchedWords > 0) {
-        var score = matchedWords * 100 + titleMatches * 25;
-        if (matchedWords === words.length) score += 1000; // every query word present, not just one
+      var synMatches = 0;
+      for (var swi = 0; swi < synonymWords.length; swi++) {
+        if (titleHay.indexOf(synonymWords[swi]) !== -1 || bodyHay.indexOf(synonymWords[swi]) !== -1) synMatches++;
+      }
+      if (matchedWords > 0 || synMatches > 0) {
+        var score = matchedWords * 100 + titleMatches * 25 + synMatches * 40;
+        if (words.length && matchedWords === words.length) score += 1000; // every typed word present, not just one
         scored.push({ seg: s, score: score });
       }
     }
