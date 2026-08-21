@@ -1549,6 +1549,31 @@
   #global-search-input{font-size:1.05rem!important;min-height:3rem}
   .reader-search-input{font-size:0.95rem!important;padding:0.9rem 1.1rem!important}
   #db-search-top{font-size:1rem!important;min-height:3rem}
+
+  /* Global search results modal: results + a tradition filter panel so a
+     broad query (e.g. "yarrow root") can be narrowed to one tradition
+     instead of whichever source has the most incidental word matches.
+     Side panel on wider screens; a horizontal scrollable strip above the
+     results on narrow ones, since a true sidebar would squeeze both
+     columns unusably thin on a phone. */
+  .sr-panel { position:absolute; top:5vh; left:50%; transform:translateX(-50%);
+    width:min(760px,96vw); max-height:88vh; background:#1A1810; border-radius:4px;
+    overflow-y:auto; box-shadow:0 0 0 1px #C4A860,0 20px 60px rgba(0,0,0,0.9); }
+  .sr-body { display:flex; flex-direction:row-reverse; align-items:flex-start; }
+  .sr-traditions { flex:0 0 190px; border-left:1px solid #2A2818;
+    max-height:calc(88vh - 48px); overflow-y:auto; padding:0.6rem 0.5rem; }
+  .sr-results-list { flex:1 1 auto; min-width:0; }
+  .sr-trad-chip:hover { background:#221F14 !important; }
+  @media (max-width: 640px) {
+    .sr-body { flex-direction:column; }
+    .sr-traditions { flex:0 0 auto; width:100%; border-left:none;
+      border-bottom:1px solid #2A2818; max-height:none; overflow-y:visible;
+      display:flex; flex-direction:row; overflow-x:auto; gap:0.4rem;
+      padding:0.6rem 0.7rem; -webkit-overflow-scrolling:touch; }
+    .sr-traditions > div:first-child { display:none; } /* "Traditions" label -- redundant once it's a horizontal strip */
+    .sr-trad-chip { flex:0 0 auto; margin-bottom:0 !important; white-space:nowrap; }
+    .sr-trad-chip span:first-child { max-width:120px; }
+  }
 </style>
 </head>
 
@@ -1799,6 +1824,7 @@
 
 // ── State ────────────────────────────────────────────────
 var plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [], illustrationsData = {};
+var TRADITIONS_BY_ID = {};
 var activeStatusFilter = null, activeTraditions = new Set();
 
 // ── Tab navigation ──────────────────────────────────────
@@ -2099,6 +2125,8 @@ try {
   ]);
   plantData = (await pRes.json()).plants || [];
   traditionData = (await tRes.json()).traditions || [];
+  TRADITIONS_BY_ID = {};
+  traditionData.forEach(function(t) { TRADITIONS_BY_ID[t.id] = t; });
   if (rRes && rRes.ok) regulatoryData = (await rRes.json()).plants || [];
   try {
     const illRes = await fetch('/data/plant_illustrations.json');
@@ -4135,6 +4163,32 @@ function quickSearch(q) {
 }
 function prefill(q) { quickSearch(q); }
 
+function renderResultRows(results, resultBooks, limit) {
+  var html = '';
+  var shown = Math.min(results.length, limit);
+  for (var i = 0; i < shown; i++) {
+    var s2 = results[i];
+    var book = resultBooks[i];
+    var col = book ? book.color : '#C4A860';
+    var lbl = book ? book.short : (s2._tradition || '');
+    html += '<div class="sr-row" data-bid="' + (book ? book.id : '') + '" ' +
+      'style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">' +
+      '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">' +
+      (s2.title_inferred || 'Untitled') + '</div>' +
+      '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;' +
+      'text-transform:uppercase;color:' + col + ';margin-bottom:0.22rem">' + lbl + '</div>' +
+      '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.5">' +
+      (s2.translation || '').slice(0, 160) + '…</div>' +
+      (s2._ai_synthesized_disclosure ? '<div style="margin-top:0.4rem;padding:0.35rem 0.55rem;background:#2A1A0A;border:1px solid #6A4A1A;border-radius:3px;font-family:monospace;font-size:0.58rem;letter-spacing:0.03em;color:#D0A050;line-height:1.5">&#9888; AI-synthesized overview, not a verified transcription of the actual published monograph</div>' : '') +
+      '</div>';
+  }
+  if (results.length > limit) {
+    html += '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.62rem;color:#5A5040">' +
+      'Showing ' + limit + ' of ' + results.length + '</div>';
+  }
+  return html;
+}
+
 function runGlobalSearch() {
   try {
     var inp = document.getElementById('global-search-input');
@@ -4171,68 +4225,113 @@ function runGlobalSearch() {
     }
 
     var ql = q.toLowerCase();
-    // Split into words — match ANY word (OR logic for multi-word pills)
+    // Split into words. Multi-word queries used to be OR-matched (any word
+    // present anywhere), so "yarrow root" surfaced anything containing the
+    // extremely common word "root" -- drowning out actual yarrow entries
+    // under whichever single source uses "root" the most. Now every word
+    // still contributes to inclusion (so close/partial phrasing isn't
+    // excluded entirely), but results are *scored*: matching every query
+    // word ranks far above matching just one, and a match in the title
+    // outranks one buried in the body -- so "yarrow root" entries actually
+    // about yarrow float to the top instead of being outnumbered by
+    // unrelated "root" mentions.
     var words = ql.split(/\s+/).filter(function(w){ return w.length >= 3; });
     if (!words.length) words = [ql];
-    var results = [];
+    var scored = [];
     for (var ri = 0; ri < corpusData.length; ri++) {
       var s = corpusData[ri];
-      var hay = ((s.title_inferred||'')+' '+(s.translation||'')+' '+(s.condition||'')).toLowerCase();
-      var match = false;
+      var titleHay = (s.title_inferred||'').toLowerCase();
+      var bodyHay = ((s.translation||'')+' '+(s.condition||'')).toLowerCase();
+      var matchedWords = 0, titleMatches = 0;
       for (var wi = 0; wi < words.length; wi++) {
-        if (hay.indexOf(words[wi]) !== -1) { match = true; break; }
+        var inTitle = titleHay.indexOf(words[wi]) !== -1;
+        var inBody = bodyHay.indexOf(words[wi]) !== -1;
+        if (inTitle) titleMatches++;
+        if (inTitle || inBody) matchedWords++;
       }
-      if (match) results.push(s);
+      if (matchedWords > 0) {
+        var score = matchedWords * 100 + titleMatches * 25;
+        if (matchedWords === words.length) score += 1000; // every query word present, not just one
+        scored.push({ seg: s, score: score });
+      }
     }
+    scored.sort(function(a, b) { return b.score - a.score; });
+    var results = scored.map(function(r) { return r.seg; });
+
+    // Resolve each result's source book/tradition once, up front -- reused
+    // both for display and for building the tradition filter panel, so a
+    // 900-result search doesn't redo the BOOKS lookup twice per row.
+    var _books = (typeof BOOKS !== 'undefined') ? BOOKS : [];
+    function resolveBook(seg) {
+      var ck = seg._corpusKey || '';
+      var tr = seg._tradition || '';
+      for (var bi = 0; bi < _books.length; bi++) {
+        var b = _books[bi];
+        if (!b) continue;
+        var bkeys = b.corpusKeys || [];
+        var km = false;
+        for (var ki = 0; ki < bkeys.length; ki++) {
+          if (ck.indexOf(bkeys[ki]) === 0) { km = true; break; }
+        }
+        if (km || tr === b.tradition) return b;
+      }
+      return null;
+    }
+    var resultBooks = results.map(resolveBook);
+
+    // Tally traditions across the FULL result set (not just the 80 shown),
+    // so picking a tradition with more matches than fit on screen still
+    // works correctly.
+    var traditionCounts = {}; // tradition id -> {label, count, color}
+    for (var ti = 0; ti < results.length; ti++) {
+      var tb = resultBooks[ti];
+      var tid = tb ? (tb.tradition || tb.id) : (results[ti]._tradition || 'unknown');
+      var tlabel = tb ? (TRADITIONS_BY_ID[tb.tradition] ? TRADITIONS_BY_ID[tb.tradition].name : tb.tradition) : (results[ti]._tradition || 'Unknown');
+      if (!traditionCounts[tid]) traditionCounts[tid] = { label: tlabel, count: 0, color: tb ? tb.color : '#C4A860' };
+      traditionCounts[tid].count++;
+    }
+    var traditionList = Object.keys(traditionCounts).map(function(k) {
+      return { id: k, label: traditionCounts[k].label, count: traditionCounts[k].count, color: traditionCounts[k].color };
+    }).sort(function(a, b) { return b.count - a.count; });
+
+    var activeTradition = null; // null = all traditions
 
     // Build inner HTML
     var inner = '<div style="position:sticky;top:0;background:#1A1810;padding:0.65rem 1rem;' +
-      'border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center">' +
-      '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.1em">' +
+      'border-bottom:1px solid #C4A860;display:flex;justify-content:space-between;align-items:center;z-index:2">' +
+      '<span style="font-family:monospace;font-size:0.65rem;color:#C4A860;letter-spacing:0.1em" id="sr-count-label">' +
       results.length + ' results — ' + q + '</span>' +
       '<button class="sr-close" style="background:#C4A860;border:none;color:#000;' +
       'width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:1.1rem;font-weight:bold;line-height:1">' +
       '×</button></div>';
 
+    inner += '<div id="sr-body" class="sr-body">' +
+      '<div id="sr-traditions" class="sr-traditions">' +
+      '<div style="font-family:monospace;font-size:0.58rem;letter-spacing:0.1em;color:#7A6A50;' +
+      'text-transform:uppercase;padding:0.2rem 0.4rem 0.5rem;">Traditions</div>';
+    if (results.length) {
+      inner += '<div class="sr-trad-chip sr-trad-active" data-tid="" style="cursor:pointer;padding:0.4rem 0.5rem;' +
+        'border-radius:3px;margin-bottom:0.15rem;font-size:0.72rem;color:#F0E8D0;display:flex;justify-content:space-between;">' +
+        '<span>All</span><span style="color:#7A6A50">' + results.length + '</span></div>';
+      for (var tri = 0; tri < traditionList.length; tri++) {
+        var t = traditionList[tri];
+        inner += '<div class="sr-trad-chip" data-tid="' + t.id + '" style="cursor:pointer;padding:0.4rem 0.5rem;' +
+          'border-radius:3px;margin-bottom:0.15rem;font-size:0.72rem;color:' + t.color + ';display:flex;justify-content:space-between;gap:0.4rem;">' +
+          '<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">' + t.label + '</span>' +
+          '<span style="color:#7A6A50;flex-shrink:0;">' + t.count + '</span></div>';
+      }
+    }
+    inner += '</div>';
+
+    inner += '<div id="sr-results-list" class="sr-results-list">';
     if (!results.length) {
       inner += '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">' +
         'No results for <strong style="color:#C4A860">' + q + '</strong>. ' +
         'Try: fever, ginger, garlic, wound, anxiety, gout</div>';
     } else {
-      for (var ri2 = 0; ri2 < Math.min(results.length, 80); ri2++) {
-        var s2 = results[ri2];
-        var book = null;
-        var _books = (typeof BOOKS !== 'undefined') ? BOOKS : [];
-        for (var bi = 0; bi < _books.length; bi++) {
-          var b = _books[bi];
-          if (!b) continue;
-          var ck = s2._corpusKey || '';
-          var tr = s2._tradition || '';
-          var km = false;
-          var bkeys = b.corpusKeys || [];
-          for (var ki = 0; ki < bkeys.length; ki++) {
-            if (ck.indexOf(bkeys[ki]) === 0) { km = true; break; }
-          }
-          if (km || tr === b.tradition) { book = b; break; }
-        }
-        var col = book ? book.color : '#C4A860';
-        var lbl = book ? book.short : (s2._tradition || '');
-        inner += '<div class="sr-row" data-bid="' + (book ? book.id : '') + '" ' +
-          'style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">' +
-          '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">' +
-          (s2.title_inferred || 'Untitled') + '</div>' +
-          '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;' +
-          'text-transform:uppercase;color:' + col + ';margin-bottom:0.22rem">' + lbl + '</div>' +
-          '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.5">' +
-          (s2.translation || '').slice(0, 160) + '…</div>' +
-          (s2._ai_synthesized_disclosure ? '<div style="margin-top:0.4rem;padding:0.35rem 0.55rem;background:#2A1A0A;border:1px solid #6A4A1A;border-radius:3px;font-family:monospace;font-size:0.58rem;letter-spacing:0.03em;color:#D0A050;line-height:1.5">&#9888; AI-synthesized overview, not a verified transcription of the actual published monograph</div>' : '') +
-          '</div>';
-      }
-      if (results.length > 80) {
-        inner += '<div style="padding:0.6rem 1rem;font-family:monospace;font-size:0.62rem;color:#5A5040">' +
-          'Showing 80 of ' + results.length + '</div>';
-      }
+      inner += renderResultRows(results, resultBooks, 80);
     }
+    inner += '</div></div>';
 
     // Create overlay
     var overlay = document.createElement('div');
@@ -4240,9 +4339,7 @@ function runGlobalSearch() {
     overlay.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.78)';
 
     var panel = document.createElement('div');
-    panel.style.cssText = 'position:absolute;top:5vh;left:50%;transform:translateX(-50%);' +
-      'width:min(680px,96vw);max-height:88vh;background:#1A1810;border-radius:4px;' +
-      'overflow-y:auto;box-shadow:0 0 0 1px #C4A860,0 20px 60px rgba(0,0,0,0.9)';
+    panel.className = 'sr-panel';
     panel.innerHTML = inner;
     overlay.appendChild(panel);
     document.body.appendChild(overlay);
@@ -4253,11 +4350,14 @@ function runGlobalSearch() {
     };
     overlay.onclick = function(e) { if (e.target === overlay) overlay.remove(); };
 
-    // Wire result rows
-    var rows = panel.querySelectorAll('.sr-row');
-    for (var ri3 = 0; ri3 < rows.length; ri3++) {
-      rows[ri3].onclick = (function(bid) { return function(e) {
+    // Result rows and tradition chips are wired via delegation on the panel
+    // rather than per-element, so re-rendering #sr-results-list after a
+    // tradition filter click doesn't need its rows rewired individually.
+    panel.onclick = function(e) {
+      var row = e.target.closest('.sr-row');
+      if (row) {
         e.stopPropagation();
+        var bid = row.getAttribute('data-bid');
         overlay.remove();
         if (bid) {
           var bk = null;
@@ -4267,8 +4367,38 @@ function runGlobalSearch() {
           }
           if (bk) openBook(bk);
         }
-      }; })(rows[ri3].getAttribute('data-bid'));
-    }
+        return;
+      }
+      var chip = e.target.closest('.sr-trad-chip');
+      if (chip) {
+        e.stopPropagation();
+        var tid = chip.getAttribute('data-tid'); // '' means "All"
+        activeTradition = tid || null;
+        panel.querySelectorAll('.sr-trad-chip').forEach(function(c) {
+          c.classList.toggle('sr-trad-active', c === chip);
+          c.style.background = (c === chip) ? '#2A2818' : 'transparent';
+        });
+        var filtered = results, filteredBooks = resultBooks;
+        if (activeTradition) {
+          filtered = []; filteredBooks = [];
+          for (var fi = 0; fi < results.length; fi++) {
+            var fb = resultBooks[fi];
+            var ftid = fb ? (fb.tradition || fb.id) : (results[fi]._tradition || 'unknown');
+            if (ftid === activeTradition) { filtered.push(results[fi]); filteredBooks.push(fb); }
+          }
+        }
+        var listEl = panel.querySelector('#sr-results-list');
+        listEl.innerHTML = filtered.length
+          ? renderResultRows(filtered, filteredBooks, 80)
+          : '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">No results in this tradition.</div>';
+        var countLabel = panel.querySelector('#sr-count-label');
+        if (countLabel) countLabel.textContent = filtered.length + ' results — ' + q +
+          (activeTradition ? ' (' + (traditionCounts[activeTradition] ? traditionCounts[activeTradition].label : activeTradition) + ')' : '');
+      }
+    };
+    // "All" starts active
+    var allChip = panel.querySelector('.sr-trad-chip[data-tid=""]');
+    if (allChip) allChip.style.background = '#2A2818';
 
   } catch(err) {
     alert('Search error: ' + err.message);
