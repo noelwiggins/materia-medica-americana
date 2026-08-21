@@ -549,6 +549,47 @@
     border-radius: 2px;
     box-shadow: 0 0 0 3px rgba(196,168,96,0.08), 0 8px 32px rgba(0,0,0,0.5);
     transition: box-shadow 0.2s;
+    position: relative;
+  }
+
+  .search-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 4px;
+    background: #1A1810;
+    border: 1px solid #C4A860;
+    border-radius: 2px;
+    max-height: 260px;
+    overflow-y: auto;
+    z-index: 200;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  }
+  .search-autocomplete.open { display: block; }
+  .search-autocomplete-item {
+    padding: 0.55rem 1rem;
+    font-size: 0.85rem;
+    color: #E8DCC0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+  .search-autocomplete-item:hover,
+  .search-autocomplete-item.sa-active {
+    background: #2A2818;
+  }
+  .search-autocomplete-item .sa-match { color: #C4A860; font-weight: 700; }
+  .search-autocomplete-item .sa-botanical {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.68rem;
+    color: #7A6A50;
+    font-style: italic;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .global-search-wrap .global-search-box:focus-within {
@@ -1564,6 +1605,7 @@
     max-height:calc(88vh - 48px); overflow-y:auto; padding:0.6rem 0.5rem; }
   .sr-results-list { flex:1 1 auto; min-width:0; }
   .sr-trad-chip:hover { background:#221F14 !important; }
+  .sr-hl { background:#C4A860; color:#0A0805; padding:0 2px; border-radius:2px; font-weight:700; }
   @media (max-width: 640px) {
     .sr-body { flex-direction:column; }
     .sr-traditions { flex:0 0 auto; width:100%; border-left:none;
@@ -1625,8 +1667,9 @@
       <input type="text" id="global-search-input" class="global-search-input"
         placeholder="fever · anxiety · wound infection · joint pain · gout · insomnia"
         autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-        onkeydown="if(event.key==='Enter') runGlobalSearch()">
+        onkeydown="handleSearchInputKey(event)" oninput="updateAutocomplete()">
       <button class="global-search-btn" onclick="runGlobalSearch()">Search</button>
+      <div id="search-autocomplete" class="search-autocomplete"></div>
     </div>
     <div class="global-search-hints">
       <span onclick="quickSearch('ayahuasca psychedelic')">&#9670; psychedelics</span>
@@ -4163,7 +4206,160 @@ function quickSearch(q) {
 }
 function prefill(q) { quickSearch(q); }
 
-function renderResultRows(results, resultBooks, limit) {
+// ── Autocomplete: suggest plant names as the user types ─────────
+function acEscH(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+var acState = { items: [], activeIdx: -1 };
+
+function buildAutocompleteIndex() {
+  // Built once from plants.json common names, cached on plantData itself
+  // so repeated keystrokes don't rescan/rebuild the list each time.
+  if (window._acIndex) return window._acIndex;
+  var seen = {};
+  var idx = [];
+  plantData.forEach(function(p) {
+    var cn = (p.common_name || '').trim();
+    if (!cn || seen[cn.toLowerCase()]) return;
+    seen[cn.toLowerCase()] = true;
+    idx.push({ name: cn, botanical: p.modern_botanical || '' });
+  });
+  idx.sort(function(a, b) { return a.name.localeCompare(b.name); });
+  window._acIndex = idx;
+  return idx;
+}
+
+function updateAutocomplete() {
+  var inp = document.getElementById('global-search-input');
+  var box = document.getElementById('search-autocomplete');
+  if (!inp || !box) return;
+  var raw = inp.value;
+  // Autocomplete on the word currently being typed, not the whole query --
+  // "yarrow ro" should still suggest against "ro", not the full string.
+  var lastWord = raw.split(/\s+/).pop().toLowerCase();
+  acState.activeIdx = -1;
+  if (!lastWord || lastWord.length < 2) { box.classList.remove('open'); box.innerHTML=''; return; }
+
+  var idx = buildAutocompleteIndex();
+  var matches = [];
+  for (var i = 0; i < idx.length && matches.length < 8; i++) {
+    var nameLower = idx[i].name.toLowerCase();
+    // Prefix match on the whole name, or on any individual word within it
+    // (so "mari" suggests "Calendula (Pot Marigold)" too, not just names
+    // that start with "mari").
+    var words = nameLower.split(/[\s\/(),]+/);
+    var isMatch = nameLower.indexOf(lastWord) === 0 || words.some(function(w) { return w.indexOf(lastWord) === 0; });
+    if (isMatch) matches.push(idx[i]);
+  }
+  acState.items = matches;
+  if (!matches.length) { box.classList.remove('open'); box.innerHTML=''; return; }
+
+  var prefixBeforeLastWord = raw.slice(0, raw.length - lastWord.length);
+  box.innerHTML = matches.map(function(m, mi) {
+    var lower = m.name.toLowerCase();
+    var pos = lower.indexOf(lastWord);
+    var highlighted;
+    if (pos !== -1) {
+      highlighted = acEscH(m.name.slice(0, pos)) + '<span class="sa-match">' + acEscH(m.name.slice(pos, pos + lastWord.length)) + '</span>' + acEscH(m.name.slice(pos + lastWord.length));
+    } else {
+      highlighted = acEscH(m.name);
+    }
+    return '<div class="search-autocomplete-item" data-idx="' + mi + '">' +
+      '<span>' + highlighted + '</span>' +
+      (m.botanical ? '<span class="sa-botanical">' + acEscH(m.botanical) + '</span>' : '') +
+      '</div>';
+  }).join('');
+  box.classList.add('open');
+  box.dataset.prefix = prefixBeforeLastWord;
+
+  Array.prototype.forEach.call(box.querySelectorAll('.search-autocomplete-item'), function(el) {
+    el.onclick = function() { selectAutocomplete(parseInt(el.getAttribute('data-idx'), 10)); };
+  });
+}
+
+function selectAutocomplete(idx) {
+  var inp = document.getElementById('global-search-input');
+  var box = document.getElementById('search-autocomplete');
+  if (!inp || !box || !acState.items[idx]) return;
+  var prefix = box.dataset.prefix || '';
+  inp.value = prefix + acState.items[idx].name;
+  box.classList.remove('open');
+  box.innerHTML = '';
+  inp.focus();
+}
+
+function handleSearchInputKey(event) {
+  var box = document.getElementById('search-autocomplete');
+  var open = box && box.classList.contains('open');
+  if (open && (event.key === 'ArrowDown' || event.key === 'ArrowUp')) {
+    event.preventDefault();
+    var items = box.querySelectorAll('.search-autocomplete-item');
+    if (!items.length) return;
+    acState.activeIdx += (event.key === 'ArrowDown' ? 1 : -1);
+    if (acState.activeIdx < 0) acState.activeIdx = items.length - 1;
+    if (acState.activeIdx >= items.length) acState.activeIdx = 0;
+    Array.prototype.forEach.call(items, function(el, i) {
+      el.classList.toggle('sa-active', i === acState.activeIdx);
+    });
+    items[acState.activeIdx].scrollIntoView({ block: 'nearest' });
+    return;
+  }
+  if (open && event.key === 'Enter' && acState.activeIdx >= 0) {
+    event.preventDefault();
+    selectAutocomplete(acState.activeIdx);
+    return;
+  }
+  if (event.key === 'Enter') {
+    if (box) { box.classList.remove('open'); box.innerHTML = ''; }
+    runGlobalSearch();
+    return;
+  }
+  if (event.key === 'Escape' && box) { box.classList.remove('open'); box.innerHTML = ''; }
+}
+
+document.addEventListener('click', function(e) {
+  var box = document.getElementById('search-autocomplete');
+  var inp = document.getElementById('global-search-input');
+  if (box && box.classList.contains('open') && e.target !== inp && !box.contains(e.target)) {
+    box.classList.remove('open');
+  }
+});
+
+function escRegexChars(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function highlightWords(text, words) {
+  var escaped = acEscH(text);
+  if (!words || !words.length) return escaped;
+  var pattern = words.map(escRegexChars).filter(Boolean).join('|');
+  if (!pattern) return escaped;
+  var re = new RegExp('(' + pattern + ')', 'gi');
+  return escaped.replace(re, '<mark class="sr-hl">$1</mark>');
+}
+
+// Snippets used to always show the first 160 characters of a passage --
+// fine until the ranking fix meant the actual match could be anywhere in a
+// much longer passage, making the visible snippet often not even contain
+// the word being searched for. Center the window on the first match instead.
+function snippetAroundMatch(text, words, maxLen) {
+  if (!text) return '';
+  var low = text.toLowerCase();
+  var pos = -1;
+  for (var i = 0; i < (words || []).length; i++) {
+    var idx = low.indexOf(words[i]);
+    if (idx !== -1 && (pos === -1 || idx < pos)) pos = idx;
+  }
+  if (pos === -1) return text.slice(0, maxLen) + (text.length > maxLen ? '…' : '');
+  var radius = Math.floor(maxLen / 2);
+  var start = Math.max(0, pos - radius);
+  var end = Math.min(text.length, start + maxLen);
+  var prefix = start > 0 ? '…' : '';
+  var suffix = end < text.length ? '…' : '';
+  return prefix + text.slice(start, end) + suffix;
+}
+
+function renderResultRows(results, resultBooks, limit, highlightWordList) {
   var html = '';
   var shown = Math.min(results.length, limit);
   for (var i = 0; i < shown; i++) {
@@ -4171,14 +4367,17 @@ function renderResultRows(results, resultBooks, limit) {
     var book = resultBooks[i];
     var col = book ? book.color : '#C4A860';
     var lbl = book ? book.short : (s2._tradition || '');
+    var titleHtml = highlightWords(s2.title_inferred || 'Untitled', highlightWordList);
+    var snippetRaw = snippetAroundMatch(s2.translation || '', highlightWordList, 160);
+    var snippetHtml = highlightWords(snippetRaw, highlightWordList);
     html += '<div class="sr-row" data-bid="' + (book ? book.id : '') + '" ' +
       'style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">' +
       '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">' +
-      (s2.title_inferred || 'Untitled') + '</div>' +
+      titleHtml + '</div>' +
       '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;' +
       'text-transform:uppercase;color:' + col + ';margin-bottom:0.22rem">' + lbl + '</div>' +
       '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.5">' +
-      (s2.translation || '').slice(0, 160) + '…</div>' +
+      snippetHtml + '</div>' +
       (s2._ai_synthesized_disclosure ? '<div style="margin-top:0.4rem;padding:0.35rem 0.55rem;background:#2A1A0A;border:1px solid #6A4A1A;border-radius:3px;font-family:monospace;font-size:0.58rem;letter-spacing:0.03em;color:#D0A050;line-height:1.5">&#9888; AI-synthesized overview, not a verified transcription of the actual published monograph</div>' : '') +
       '</div>';
   }
@@ -4415,7 +4614,7 @@ function runGlobalSearch() {
         'No results for <strong style="color:#C4A860">' + q + '</strong>. ' +
         'Try: fever, ginger, garlic, wound, anxiety, gout</div>';
     } else {
-      inner += renderResultRows(results, resultBooks, 80);
+      inner += renderResultRows(results, resultBooks, 80, words);
     }
     inner += '</div></div>';
 
@@ -4475,7 +4674,7 @@ function runGlobalSearch() {
         }
         var listEl = panel.querySelector('#sr-results-list');
         listEl.innerHTML = filtered.length
-          ? renderResultRows(filtered, filteredBooks, 80)
+          ? renderResultRows(filtered, filteredBooks, 80, words)
           : '<div style="padding:1.5rem;color:#8A7A58;font-size:0.85rem">No results in this tradition.</div>';
         var countLabel = panel.querySelector('#sr-count-label');
         if (countLabel) countLabel.textContent = filtered.length + ' results — ' + q +
