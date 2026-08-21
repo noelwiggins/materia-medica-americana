@@ -3343,6 +3343,7 @@ const BOOKS = [
 // ── Reader state ────────────────────────────────────────────
 var readerBook = null;
 var readerSegments = [];
+var readerTargetSegLabel = null;
 var readerPageIdx = 0;
 var PASSAGES_PER_PAGE = 3;
 
@@ -3410,7 +3411,7 @@ function renderBookShelf() {
 }
 
 // ── Open a book ─────────────────────────────────────────────
-function openBook(book) {
+function openBook(book, targetSegLabel) {
   readerBook = book;
   readerPageIdx = 0;
   // Init touch/tap once
@@ -3453,6 +3454,16 @@ function openBook(book) {
   el('reader-search-results').style.display = 'none';
   el('reader-correlations').style.display = 'none';
   showTab('reader', null);
+  // Deep-link from global search: land on the actual matched passage
+  // instead of always page 1 -- previously a search result always opened
+  // the book at its start, which for a long book could put you dozens of
+  // pages away from the thing you actually searched for and clicked on.
+  readerPageIdx = 0;
+  readerTargetSegLabel = targetSegLabel || null;
+  if (targetSegLabel) {
+    var targetIdx = readerSegments.findIndex(function(s) { return s._label === targetSegLabel; });
+    if (targetIdx !== -1) readerPageIdx = Math.floor(targetIdx / PASSAGES_PER_PAGE);
+  }
   renderReaderSpread();
 
   // ── Wire manuscript scans — open immersive MSR reader ───────
@@ -3664,6 +3675,9 @@ function renderReaderSpread() {
     // Left page: illustration + original
     var lp = document.createElement('div');
     lp.className = 'reader-passage';
+    if (readerTargetSegLabel && seg._label === readerTargetSegLabel) {
+      lp.style.cssText = 'outline:2px solid #C4A860;outline-offset:4px;border-radius:2px;';
+    }
     var lt = document.createElement('div');
     lt.className = 'reader-passage-title';
     lt.textContent = title;
@@ -3693,6 +3707,9 @@ function renderReaderSpread() {
     // Right page: translation + prep + correlate btn
     var rp = document.createElement('div');
     rp.className = 'reader-passage';
+    if (readerTargetSegLabel && seg._label === readerTargetSegLabel) {
+      rp.style.cssText = 'outline:2px solid #C4A860;outline-offset:4px;border-radius:2px;';
+    }
 
     if (ref) {
       var refEl = document.createElement('div');
@@ -3737,6 +3754,11 @@ function renderReaderSpread() {
 
   el('reader-page-left').scrollTop = 0;
   el('reader-page-right').scrollTop = 0;
+  if (readerTargetSegLabel) {
+    var targetEl = rightEl.querySelector('.reader-passage[style*="outline"]');
+    if (targetEl) setTimeout(function() { targetEl.scrollIntoView({ block: 'start', behavior: 'auto' }); }, 30);
+    readerTargetSegLabel = null; // one-shot -- don't keep re-highlighting on later manual navigation
+  }
 }
 
 function readerPageNav(dir) {
@@ -4371,6 +4393,7 @@ function renderResultRows(results, resultBooks, limit, highlightWordList) {
     var snippetRaw = snippetAroundMatch(s2.translation || '', highlightWordList, 160);
     var snippetHtml = highlightWords(snippetRaw, highlightWordList);
     html += '<div class="sr-row" data-bid="' + (book ? book.id : '') + '" ' +
+      'data-seg="' + acEscH(s2._label || '') + '" ' +
       'style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">' +
       '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">' +
       titleHtml + '</div>' +
@@ -4508,15 +4531,26 @@ window.addEventListener('popstate', function() {
   if (msrHistoryOpen) { msrHistoryOpen = false; MSR.close(true); return; }
   if (searchModalHistoryOpen) {
     searchModalHistoryOpen = false;
-    var el = document.getElementById('search-modal');
-    if (el) el.remove();
+    removeSearchModalEl();
     return;
   }
 });
 
+function removeSearchModalEl() {
+  var el = document.getElementById('search-modal');
+  if (el) el.remove();
+  // The modal never locked body scroll while open (unlike the book reader,
+  // which does) -- on mobile, that let a tap inside the modal register as a
+  // scroll on the page underneath, which combined with the modal's own
+  // fixed positioning produced the "bounces to the bottom of the page"
+  // effect reported: the background page had scrolled far down while the
+  // modal stayed visually pinned, so closing it dropped you at the bottom.
+  document.body.style.overflow = '';
+}
+
 function closeSearchModal() {
   if (searchModalHistoryOpen) { history.back(); } // popstate handler does the actual removal
-  else { var el = document.getElementById('search-modal'); if (el) el.remove(); }
+  else { removeSearchModalEl(); }
 }
 
 function runGlobalSearch() {
@@ -4678,6 +4712,7 @@ function runGlobalSearch() {
     panel.innerHTML = inner;
     overlay.appendChild(panel);
     document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
     if (!searchModalHistoryOpen) {
       history.pushState({ plantacopiaModal: 'search' }, '');
       searchModalHistoryOpen = true;
@@ -4697,6 +4732,7 @@ function runGlobalSearch() {
       if (row) {
         e.stopPropagation();
         var bid = row.getAttribute('data-bid');
+        var segLabel = row.getAttribute('data-seg');
         // Direct removal here, not closeSearchModal()/history.back() -- we're
         // about to open the book reader, which pushes its own history entry
         // immediately after; back() is async, and pushState right on its
@@ -4707,13 +4743,14 @@ function runGlobalSearch() {
         // which is the expected behavior for having already clicked through.
         overlay.remove();
         searchModalHistoryOpen = false;
+        document.body.style.overflow = '';
         if (bid) {
           var bk = null;
           var _bks = (typeof BOOKS !== 'undefined') ? BOOKS : [];
           for (var bi2 = 0; bi2 < _bks.length; bi2++) {
             if (_bks[bi2] && _bks[bi2].id === bid) { bk = _bks[bi2]; break; }
           }
-          if (bk) openBook(bk);
+          if (bk) openBook(bk, segLabel);
         }
         return;
       }
