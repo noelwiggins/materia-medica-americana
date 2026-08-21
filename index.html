@@ -4491,6 +4491,34 @@ function collectPlantSynonymWords(ql) {
   return out;
 }
 
+// ── Back-button handling for full-screen overlays ────────────────
+// Neither the search modal nor the book reader pushed any history state,
+// so the phone's back button/gesture fell straight through to real browser
+// navigation -- leaving the site entirely -- instead of just closing
+// whatever was open, which is what anyone actually expects on mobile.
+// Each overlay pushes one history entry when it opens; back (or the X
+// button, which triggers the same history.back() so the entry doesn't
+// pile up) pops it via a single shared popstate handler.
+var searchModalHistoryOpen = false;
+var msrZoomHistoryOpen = false;
+var msrHistoryOpen = false;
+
+window.addEventListener('popstate', function() {
+  if (msrZoomHistoryOpen) { msrZoomHistoryOpen = false; MSR.closeZoom(true); return; }
+  if (msrHistoryOpen) { msrHistoryOpen = false; MSR.close(true); return; }
+  if (searchModalHistoryOpen) {
+    searchModalHistoryOpen = false;
+    var el = document.getElementById('search-modal');
+    if (el) el.remove();
+    return;
+  }
+});
+
+function closeSearchModal() {
+  if (searchModalHistoryOpen) { history.back(); } // popstate handler does the actual removal
+  else { var el = document.getElementById('search-modal'); if (el) el.remove(); }
+}
+
 function runGlobalSearch() {
   try {
     var inp = document.getElementById('global-search-input');
@@ -4650,12 +4678,16 @@ function runGlobalSearch() {
     panel.innerHTML = inner;
     overlay.appendChild(panel);
     document.body.appendChild(overlay);
+    if (!searchModalHistoryOpen) {
+      history.pushState({ plantacopiaModal: 'search' }, '');
+      searchModalHistoryOpen = true;
+    }
 
     // Wire close
     panel.querySelector('.sr-close').onclick = function(e) {
-      e.stopPropagation(); overlay.remove();
+      e.stopPropagation(); closeSearchModal();
     };
-    overlay.onclick = function(e) { if (e.target === overlay) overlay.remove(); };
+    overlay.onclick = function(e) { if (e.target === overlay) closeSearchModal(); };
 
     // Result rows and tradition chips are wired via delegation on the panel
     // rather than per-element, so re-rendering #sr-results-list after a
@@ -4665,7 +4697,16 @@ function runGlobalSearch() {
       if (row) {
         e.stopPropagation();
         var bid = row.getAttribute('data-bid');
+        // Direct removal here, not closeSearchModal()/history.back() -- we're
+        // about to open the book reader, which pushes its own history entry
+        // immediately after; back() is async, and pushState right on its
+        // heels risks a race in the browser's history stack. Opening a book
+        // from a search result "replaces" the modal rather than stacking
+        // under it, so pressing back from the reader goes to whatever was
+        // open before the search, not back into the dismissed result list --
+        // which is the expected behavior for having already clicked through.
         overlay.remove();
+        searchModalHistoryOpen = false;
         if (bid) {
           var bk = null;
           var _bks = (typeof BOOKS !== 'undefined') ? BOOKS : [];
@@ -4977,9 +5018,19 @@ var MSR = (function() {
     setupSwipe();
     setupZoomSwipe();
     document.body.style.overflow = 'hidden';
+    if (!msrHistoryOpen) {
+      history.pushState({ plantacopiaModal: 'reader' }, '');
+      msrHistoryOpen = true;
+    }
   }
 
-  function close() {
+  // fromPopstate: true when called by the shared popstate handler (the back
+  // button/gesture already changed history -- just close, don't call back()
+  // again) vs. false/undefined for the UI close button, which still needs
+  // to pop the history entry this reader pushed on open.
+  function close(fromPopstate) {
+    if (!fromPopstate && msrHistoryOpen) { history.back(); return; }
+    msrHistoryOpen = false;
     state.open = false;
     stopTTS();
     var el = document.getElementById('msr-shell');
@@ -5222,9 +5273,15 @@ var MSR = (function() {
     showZoomPage(state.zoomIdx);
     var overlay = document.getElementById('msr-zoom-overlay');
     if (overlay) overlay.style.display = 'flex';
+    if (!msrZoomHistoryOpen) {
+      history.pushState({ plantacopiaModal: 'zoom' }, '');
+      msrZoomHistoryOpen = true;
+    }
   }
 
-  function closeZoom() {
+  function closeZoom(fromPopstate) {
+    if (!fromPopstate && msrZoomHistoryOpen) { history.back(); return; }
+    msrZoomHistoryOpen = false;
     var overlay = document.getElementById('msr-zoom-overlay');
     if (overlay) overlay.style.display = 'none';
   }
