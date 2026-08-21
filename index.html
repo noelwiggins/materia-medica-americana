@@ -1059,6 +1059,34 @@
     z-index: 100;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
+  /* When a hero illustration is showing, the panel grows to give the image
+     real room -- roughly a third of a typical phone viewport -- with
+     results scrolling below it, rather than staying capped at the small
+     280px dropdown height meant for text-only results. */
+  .reader-search-results.has-hero {
+    max-height: min(80vh, 640px);
+  }
+  .reader-search-hero {
+    position: relative;
+    background: #0A0805;
+  }
+  .reader-search-hero img {
+    display: block;
+    width: 100%;
+    height: 32vh;
+    max-height: 260px;
+    object-fit: contain;
+    background: #0A0805;
+  }
+  .reader-search-hero-credit {
+    font-family: var(--font-code);
+    font-size: 0.58rem;
+    letter-spacing: 0.04em;
+    color: #8A7A58;
+    padding: 0.35rem 0.9rem;
+    background: #0A0805;
+    border-bottom: 1px solid var(--border);
+  }
 
   .reader-result-item {
     padding: 0.6rem 0.9rem;
@@ -3414,6 +3442,7 @@ function renderBookShelf() {
 function openBook(book, targetSegLabel) {
   readerBook = book;
   readerPageIdx = 0;
+  setupReaderSearchClicks();
   // Init touch/tap once
   var section = document.getElementById('tab-reader');
   if (section && !section._touchOn) {
@@ -3780,7 +3809,7 @@ function readerPageNav(dir) {
 // ── Search within book ──────────────────────────────────────
 function searchReader(query) {
   var results = document.getElementById('reader-search-results');
-  if (!query || query.length < 2) { results.style.display = 'none'; return; }
+  if (!query || query.length < 2) { results.style.display = 'none'; results.classList.remove('has-hero'); return; }
   var q = query.toLowerCase();
 
   var matches = readerSegments.map(function(s, i) {
@@ -3794,8 +3823,34 @@ function searchReader(query) {
     .sort(function(a,b) { return b.score - a.score; })
     .slice(0, 10);
 
+  // Hero illustration: reuse the same illustrationsData lookup already used
+  // to decorate normal reader passages (80 plates from Köhler's Medizinal-
+  // Pflanzen, 1887, public domain) -- if the search term itself matches an
+  // illustrated plant, show it above the results instead of only ever
+  // showing it buried inside whichever passage happens to mention it.
+  var heroUrl = null, heroCredit = '';
+  for (var plant in illustrationsData) {
+    if (q.indexOf(plant) !== -1 || plant.indexOf(q) !== -1) {
+      heroUrl = illustrationsData[plant].url;
+      heroCredit = illustrationsData[plant].credit || '';
+      break;
+    }
+  }
+
+  var html = '';
+  if (heroUrl) {
+    results.classList.add('has-hero');
+    html += '<div class="reader-search-hero">' +
+      '<img src="' + heroUrl + '" alt="' + acEscH(query) + '" loading="lazy">' +
+      (heroCredit ? '<div class="reader-search-hero-credit">' + acEscH(heroCredit) + '</div>' : '') +
+      '</div>';
+  } else {
+    results.classList.remove('has-hero');
+  }
+
   if (!matches.length) {
-    results.innerHTML = '<div style="padding:0.6rem 0.9rem;color:var(--muted);font-size:0.8rem">No results</div>';
+    html += '<div style="padding:0.6rem 0.9rem;color:var(--muted);font-size:0.8rem">No results</div>';
+    results.innerHTML = html;
     results.style.display = 'block';
     return;
   }
@@ -3809,21 +3864,42 @@ function searchReader(query) {
       text.slice(idx+q.length, idx+q.length+60) + '…';
   }
 
-  results.innerHTML = matches.map(function(m) {
+  html += matches.map(function(m) {
     var pg = Math.floor(m.idx / PASSAGES_PER_PAGE);
     var snip = hl(m.seg.translation || m.seg.preparation || '', query);
-    return '<div class="reader-result-item" onclick="jumpToResult(' + pg + ')">' +
+    return '<div class="reader-result-item" data-page="' + pg + '">' +
       '<div class="reader-result-title">' + (m.seg.title_inferred||'Passage '+(m.idx+1)) + '</div>' +
       '<div class="reader-result-snippet">' + snip + '</div>' +
       '</div>';
   }).join('');
+  results.innerHTML = html;
   results.style.display = 'block';
+}
+
+// Delegated click handler, attached once (see setupReaderSearchClicks, called
+// from openBook) rather than re-bound on every keystroke's innerHTML rebuild.
+// Per-element inline onclick handlers get destroyed and recreated on every
+// searchReader() call (which fires on every keystroke); a touch tap that
+// starts on one render and lands after the next keystroke's rebuild can
+// silently miss the original element entirely. A single listener on the
+// stable parent container isn't vulnerable to that race.
+function setupReaderSearchClicks() {
+  var results = document.getElementById('reader-search-results');
+  if (!results || results.dataset.delegated) return;
+  results.dataset.delegated = '1';
+  results.addEventListener('click', function(e) {
+    var item = e.target.closest('.reader-result-item');
+    if (!item) return;
+    jumpToResult(parseInt(item.getAttribute('data-page'), 10));
+  });
 }
 
 function jumpToResult(pageNum) {
   readerPageIdx = pageNum;
   renderReaderSpread();
-  document.getElementById('reader-search-results').style.display = 'none';
+  var results = document.getElementById('reader-search-results');
+  results.style.display = 'none';
+  results.classList.remove('has-hero');
   document.getElementById('reader-search-input').value = '';
 }
 

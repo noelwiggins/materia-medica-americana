@@ -11805,10 +11805,12 @@
       "completion": 80,
       "curation_method": "ai_scholarly_synthesis",
       "traditions": [
-        "celtic_norse"
+        "celtic_norse",
+        "culpeper_gerard"
       ],
       "tradition_names": {
-        "celtic_norse": "Gearwe / Yarrow (Old English)"
+        "celtic_norse": "Gearwe / Yarrow (Old English)",
+        "culpeper_gerard": "Yarrow (English Renaissance herbals)"
       },
       "modern_botanical": "Achillea millefolium",
       "family": "Asteraceae",
@@ -11828,6 +11830,13 @@
           "translation": "Yarrow — for wounds, for bleeding, for fever. Bald's Leechbook documents yarrow extensively for wound healing and haemostasis. Also in the Nine Herbs Charm (Lacnunga). Used across Anglo-Saxon medicine for wound treatment, fever, and as an ingredient in compound preparations. The name connects to the Greek legend of Achilles using yarrow to stanch wounds on the battlefield — the genus Achillea named for this tradition.",
           "preparation": "Fresh leaves applied directly to wounds; decocted for fever; compounded with other herbs",
           "condition": "Wound bleeding, wound infection, fever, respiratory complaints"
+        },
+        "culpeper_gerard": {
+          "source_text": "Culpeper's Complete Herbal (1653); Gerard's Herball (1597)",
+          "original": "Millefolium. Yarrow. Meanly cold and binding, an healing herb for wounds, stanches bleeding.",
+          "translation": "Culpeper (1653) describes yarrow as cooling and binding, calling it “an healing herb for wounds” that “stanches bleeding.” He notes the folk name Nose-bleed came from the belief that the fresh juice, snuffed up the nose, would induce bleeding rather than stop it -- the opposite of its usual wound-binding use -- and attributes its discovery to Achilles, taught by Chiron the Centaur. Gerard's earlier Herball (1597), the standard English reference of its century, documents yarrow for toothache (chewed), headache (leaves placed in the nose), dysentery (as a decoction), and wound care -- broadly consistent with Culpeper's later account and with the wound-healing use recorded across the Celtic/Norse, Greek/Roman, and North American traditions in this archive.",
+          "preparation": "Fresh leaves applied to wounds; decoction taken internally",
+          "condition": "Wounds, bleeding, toothache, headache, dysentery"
         }
       },
       "modern_research": {
@@ -11912,6 +11921,16 @@
           "source_section": "",
           "preparation": "",
           "condition": ""
+        },
+        {
+          "label": "culpeper::yarrow",
+          "tradition": "culpeper_gerard",
+          "title": "Yarrow — Culpeper's Complete Herbal (1653)",
+          "original": "Millefolium. Yarrow. Meanly cold and binding, an healing herb for wounds, stanches bleeding.",
+          "translation": "Nicholas Culpeper's Complete Herbal (1653), still in print 370 years later, describes yarrow as cooling and binding: “an healing herb for wounds” that “stanches bleeding.” He records the folk name Nose-bleed, notes its use for stopping the menses and for tooth-ache when chewed, and attributes the herb's discovery to Achilles, taught by Chiron the Centaur -- the same classical association recorded independently in the Greek/Roman tradition entries.",
+          "source_section": "The English Physician Enlarged",
+          "preparation": "Ointment for wounds; decoction in white wine for internal use",
+          "condition": "Wounds, bleeding, tooth-ache, excessive menses"
         }
       ]
     },
