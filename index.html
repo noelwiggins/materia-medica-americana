@@ -5553,6 +5553,71 @@ var MSR = (function() {
 
 })();
 
+// ── OPT-IN CHANGE HIGHLIGHTER (preview review tool) ─────────────
+// Activated only via ?changes=1 in the URL. Does nothing otherwise —
+// safe to ship even if this lands on production by accident.
+(function () {
+  if (new URLSearchParams(location.search).get('changes') !== '1') return;
+
+  const CHANGES = [
+    {
+      title: 'Plant Database now shows the real curated data',
+      body: '584 plants with tradition cross-references, evidence tiers, and convergence scores — previously this tab silently fell back to a legacy list built from raw corpus text titles, which is why clicking a name could land you on an unrelated historical book.',
+      tabId: 'database',
+      highlightSelector: '#plant-grid, #plant-search, #db-view-toggle'
+    }
+  ];
+
+  let current = 0;
+
+  function buildPanel() {
+    const panel = document.createElement('div');
+    panel.id = '__changes_panel';
+    panel.style.cssText = `
+      position: fixed; bottom: 16px; right: 16px; z-index: 999999;
+      width: 320px; max-width: calc(100vw - 32px);
+      background: #0A0805; border: 2px solid #C4A860; border-radius: 6px;
+      color: #fff; font-family: system-ui, sans-serif; font-size: 0.85rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.6); padding: 14px 16px;
+    `;
+    render(panel);
+    document.body.appendChild(panel);
+  }
+
+  function render(panel) {
+    const c = CHANGES[current];
+    panel.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <span style="font-size:0.68rem;letter-spacing:0.08em;color:#C4A860;text-transform:uppercase">Fix ${current + 1} of ${CHANGES.length}</span>
+        <button id="__changes_close" style="background:none;border:none;color:#8C8880;cursor:pointer;font-size:1.1rem;line-height:1;padding:0">&times;</button>
+      </div>
+      <div style="font-weight:600;margin-bottom:6px">${c.title}</div>
+      <div style="color:#C8C2B4;font-size:0.78rem;line-height:1.4;margin-bottom:10px">${c.body}</div>
+      <button id="__changes_goto" style="width:100%;padding:8px;background:#C4A860;color:#0A0805;border:none;border-radius:3px;font-weight:600;cursor:pointer;font-size:0.8rem">Show me →</button>
+    `;
+    panel.querySelector('#__changes_close').onclick = () => panel.remove();
+    panel.querySelector('#__changes_goto').onclick = () => goTo(c);
+  }
+
+  function goTo(c) {
+    if (c.tabId && typeof showTab === 'function') showTab(c.tabId);
+    setTimeout(() => {
+      document.querySelectorAll(c.highlightSelector).forEach(el => {
+        el.style.transition = 'box-shadow 0.3s';
+        el.style.boxShadow = '0 0 0 3px #ff3366, 0 0 24px 4px rgba(255,51,102,0.5)';
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => { el.style.boxShadow = ''; }, 3000);
+      });
+    }, 300);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', buildPanel);
+  } else {
+    buildPanel();
+  }
+})();
+
 </script>
 <!-- ── GLOBAL SEARCH RESULTS OVERLAY ───────────────────────── -->
 <div class="search-results-overlay" id="search-overlay" onclick="handleOverlayClick(event)">
