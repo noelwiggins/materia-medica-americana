@@ -2303,6 +2303,31 @@ else activeTraditions.add(id);
 renderTraditionChips(); renderPlants();
 }
 
+function buildPriorityBadge(p) {
+  const map = {
+    green: ['#3a7d44', '● Priority'],
+    amber: ['#b8860b', '● Watch'],
+    red: ['#8c8880', '● Needs curation'],
+  };
+  const entry = map[p.priority_light];
+  if (!entry) return '';
+  const [color, label] = entry;
+  return `<span class="tag" style="border-color:${color};color:${color}" title="${p.priority_reason||''}">${label}</span>`;
+}
+
+function buildEvidenceBadge(p) {
+  const map = {
+    1: ['var(--gold)', 'FDA-tier evidence'],
+    2: ['#4a90a4', 'WHO-tier evidence'],
+    3: ['#7b5ea7', 'Cochrane-tier evidence'],
+    4: ['var(--muted)', 'Preliminary evidence'],
+  };
+  const entry = map[p.evidence_tier];
+  if (!entry) return '';
+  const [color, label] = entry;
+  return `<span class="tag" style="border-color:${color};color:${color}">${label}</span>`;
+}
+
 function renderPlants() {
 const grid = document.getElementById('plant-grid');
 const countEl = document.getElementById('db-count');
@@ -4882,7 +4907,7 @@ showTab = function(id, btn) {
   _origShowTab(id, btn);
   if (!_tabRendered[id] && corpusData.length > 0) {
     _tabRendered[id] = true;
-    if (id === 'database')    renderDatabase('');
+    if (id === 'database')    { renderPlants(); renderDbBookShelf(); }
     if (id === 'traditions')  renderTraditionsTab();
     if (id === 'convergence') renderConvergenceTab('');
     if (id === 'longevity')   renderLongevityTab();
@@ -5587,25 +5612,39 @@ var MSR = (function() {
 </footer>
 
 <footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #2A2418;margin-top:auto;background:#070603">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
-</body>
-</html>
   <!-- ── PLANT DATABASE TAB ─────────────────────────────────── -->
   <section class="tab-panel" id="tab-database">
     <div style="padding:1.5rem 1rem 0.5rem">
       <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Plant Database</h2>
-      <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">2,874 passages &middot; 34 traditions &middot; 5,000 years</p>
+      <p id="db-count" style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">584 plants — curated &amp; cross-referenced across traditions</p>
     </div>
-    <div style="padding:0 1rem 0.5rem">
-      <input type="text" id="db-search-top" placeholder="Search plants, symptoms, conditions&#8230;" autocomplete="off" oninput="filterDatabase(this.value)" style="width:100%;padding:0.9rem 1.1rem;font-size:1rem;background:#0A0805;border:2px solid #C4A860;border-radius:2px;color:#fff;font-family:var(--font-code);box-sizing:border-box;margin-bottom:0.7rem">
-      <div id="db-book-shelf" style="margin-bottom:0.6rem"></div
+    <div style="padding:0 1rem 0.5rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+      <input type="text" id="plant-search" placeholder="Search plants, symptoms, conditions&#8230;" autocomplete="off" oninput="renderPlants()" style="flex:1;min-width:200px;padding:0.9rem 1.1rem;font-size:1rem;background:#0A0805;border:2px solid #C4A860;border-radius:2px;color:#fff;font-family:var(--font-code);box-sizing:border-box;margin-bottom:0.7rem">
+      <select id="db-view-toggle" onchange="renderPlants()" style="padding:0.5rem 0.7rem;background:#0A0805;border:2px solid #C4A860;border-radius:2px;color:#fff;font-family:var(--font-code);font-size:0.82rem">
+        <option value="all">All plants</option>
+        <option value="curated">Curated only</option>
+        <option value="stub">Stubs only</option>
+        <option value="multi">Multi-tradition</option>
+        <option value="fda">FDA-tier evidence</option>
+        <option value="who">WHO-tier evidence</option>
+        <option value="cochrane">Cochrane-tier evidence</option>
+        <option value="priority">Priority</option>
+      </select>
     </div>
-    <div style="padding:0.5rem 1rem">
-      <input type="text" id="db-search-input" placeholder="Filter by plant name or condition…"
-        oninput="filterDatabase(this.value)"
-        style="width:100%;padding:0.5rem 0.8rem;background:#181510;border:1px solid var(--border);
-               color:var(--ink);font-family:var(--font-code);font-size:0.78rem;border-radius:2px;box-sizing:border-box">
-    </div>
-    <div id="db-list" style="padding:0 1rem 2rem"></div>
+    <div id="plant-grid" style="padding:0 1rem 2rem"></div>
+
+    <!-- Legacy raw-corpus browser, kept as a secondary tool — NOT the primary plant reference -->
+    <details style="margin:0 1rem 2rem;border-top:1px solid var(--border-subtle);padding-top:0.8rem">
+      <summary style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);cursor:pointer;letter-spacing:0.05em">Browse raw corpus mentions (unfiltered, includes uncurated names)</summary>
+      <div style="padding:0.8rem 0 0">
+        <div id="db-book-shelf" style="margin-bottom:0.6rem"></div>
+        <input type="text" id="db-search-input" placeholder="Filter by plant name or condition…"
+          oninput="filterDatabase(this.value)"
+          style="width:100%;padding:0.5rem 0.8rem;background:#181510;border:1px solid var(--border);
+                 color:var(--ink);font-family:var(--font-code);font-size:0.78rem;border-radius:2px;box-sizing:border-box;margin-bottom:0.5rem">
+        <div id="db-list"></div>
+      </div>
+    </details>
   </section>
 
   <!-- ── TRADITIONS TAB ─────────────────────────────────────── -->
@@ -5697,4 +5736,6 @@ var MSR = (function() {
       </div>
     </div>
   </section>
+</body>
+</html>
 
