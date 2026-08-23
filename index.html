@@ -3356,7 +3356,7 @@ const BOOKS = [
     author:'Pietro Andrea Matthioli',
     cover:'https://upload.wikimedia.org/wikipedia/commons/6/6b/Pietro_Andrea_Mattioli.jpg',
     color:'#1A3A5A',
-    corpusKeys:['italian_renaissance'],
+    corpusKeys:['matthioli_1544'],
     totalEntries:448, hasManuscriptScans:true,
     manuscriptDataFile:'matthioli-dioscorides-1544.json',
     description:"Matthioli's 1544 Italian translation of Dioscorides — the first vernacular edition of De Materia Medica. Made classical Greek botanical medicine accessible across Europe. 448 pages with woodcut illustrations. The most influential herbal of the Renaissance." }
@@ -3498,7 +3498,17 @@ function openBook(book, targetSegLabel) {
     });
   }
   readerSegments = corpusData.filter(function(s) {
-    return book.corpusKeys.some(function(k) { return s._corpusKey && s._corpusKey.startsWith(k); }) &&
+    // Bidirectional prefix match: some corpus segments carry a shorter,
+    // generic key (e.g. "who_monographs") while the book below declares
+    // longer per-volume keys (e.g. "who_monographs_b01") -- a one-directional
+    // startsWith() only ever matched when the segment's key was the LONGER
+    // one, silently excluding every segment tagged with the generic form.
+    // That's real data in the corpus today (a mix of both tagging styles
+    // for the same source), not a hypothetical -- so the match has to work
+    // in both directions rather than assuming the data gets fixed upstream.
+    return book.corpusKeys.some(function(k) {
+      return s._corpusKey && (s._corpusKey.startsWith(k) || k.startsWith(s._corpusKey));
+    }) &&
       s.translation && ['[PARSE ERROR]','[SEGMENT FAILED]'].indexOf(s.title_inferred||'') === -1;
   });
   var el = function(id) { return document.getElementById(id); };
@@ -4742,7 +4752,10 @@ function runGlobalSearch() {
         var bkeys = b.corpusKeys || [];
         var km = false;
         for (var ki = 0; ki < bkeys.length; ki++) {
-          if (ck.indexOf(bkeys[ki]) === 0) { km = true; break; }
+          // Bidirectional for the same reason as openBook's segment filter --
+          // corpus segments and book declarations don't consistently agree
+          // on which one holds the more specific (per-volume-suffixed) key.
+          if (ck && (ck.indexOf(bkeys[ki]) === 0 || bkeys[ki].indexOf(ck) === 0)) { km = true; break; }
         }
         if (km || tr === b.tradition) return b;
       }
