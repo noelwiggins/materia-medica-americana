@@ -2679,6 +2679,7 @@ function getTradColor(id) {
     'commission_e':        '#1A3A6A',
     'ahp':                 '#6A1A1A',
     'southern_african':    '#7A5A2A',
+    'central_european':    '#5A4A2A',
   };
   return EXTRA[id] || '#6B6050';
 }
@@ -3391,7 +3392,18 @@ const BOOKS = [
     color:'#1A2A5A',
     corpusKeys:['celtic_norse','norse_scandinavian_b01'],
     totalEntries:25,
-    description:'Plant medicine of the Viking Age. Sources: Nine Herb Charm (invokes Odin, c.1000 CE), Henrik Harpestraeng Liber Herbarum (c.1244, oldest Danish medical text), Icelandic manuscripts (AM 434a), and archaeological plant finds from Viking burial sites.' }
+    description:'Plant medicine of the Viking Age. Sources: Nine Herb Charm (invokes Odin, c.1000 CE), Henrik Harpestraeng Liber Herbarum (c.1244, oldest Danish medical text), Icelandic manuscripts (AM 434a), and archaeological plant finds from Viking burial sites.' },
+  {id:'czech_herbal', tradition:'central_european', corpusKeys:['czech_herbal_b01'],
+   color:'#5A4A2A', cover:'https://www.manuscriptorium.com/wp-content/uploads/2026/08/medieval26082507-e1787692260851.jpg',
+   short:'Czech Herbal',
+   title:'MS XVII.J.28 — Czech Herbal & Macer Floridus',
+   author:'Zikmund Albík of Uničov & Odo of Meung (attrib.)',
+   year:'c. 1400–1450 CE',
+   tradition_label:'Central European / Czech',
+   source:'National Library of the Czech Republic, Prague',
+   description:'15th-century Czech medical compendium containing the only surviving Czech translation of De viribus herbarum (Macer Floridus), a landmark medieval plant medicine text attributed to Odo of Meung, alongside a previously unknown copy of medical advice written by court physician Zikmund Albík for Holy Roman Emperor Sigismund. 226 folios, digitized by Manuscriptorium.',
+   hasManuscriptScans:true, manuscriptDataFile:'czech-herbal-XVII-J-28.json',
+   manuscriptPageCount:452}
 ];
 
 // ── Reader state ────────────────────────────────────────────
@@ -5728,7 +5740,7 @@ var MSR = (function() {
   <!-- ── TRADITIONS TAB ─────────────────────────────────────── -->
   <section class="tab-panel" id="tab-traditions">
     <div style="padding:1.5rem 1rem 0.5rem">
-      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">34 Traditions</h2>
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">35 Traditions</h2>
       <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">Every healing tradition in the archive</p>
     </div>
     <div id="traditions-list" style="padding:0 1rem 2rem"></div>
