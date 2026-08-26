@@ -1,0 +1,394 @@
+{
+  "job_name": "ibn_baytar — corpus translation (70 pages)",
+  "completed_at": "2026-08-26T09:14:39.218968",
+  "segment_count": 43,
+  "results": [
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0005/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p5",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0005/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0006/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p6",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0006/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0007/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p7",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0007/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0008/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p8",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0008/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0009/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p9",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0009/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0010/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p10",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0010/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0011/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p11",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0011/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0012/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p12",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0012/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0013/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p13",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0013/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0014/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p14",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0014/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0015/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p15",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0015/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0016/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p16",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0016/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0017/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p17",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0017/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0018/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p18",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0018/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0019/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p19",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0019/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0020/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p20",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0020/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0021/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p21",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0021/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0022/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p22",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0022/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0023/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p23",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0023/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0024/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p24",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0024/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0025/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p25",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0025/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0026/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p26",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0026/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0027/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p27",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0027/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0028/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p28",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0028/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0029/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p29",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0029/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0030/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p30",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0030/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0031/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p31",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0031/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0032/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p32",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0032/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0033/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p33",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0033/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0034/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p34",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0034/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0035/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p35",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0035/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0036/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p36",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0036/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0037/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p37",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0037/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0038/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p38",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0038/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0039/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p39",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0039/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0040/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p40",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0040/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0044/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p44",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0044/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0051/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p51",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0051/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0058/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p58",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0058/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0065/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p65",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0065/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0072/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p72",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0072/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0079/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p79",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0079/full/pct:50/0/default.jpg"
+    },
+    {
+      "title_inferred": "[SEGMENT FAILED]",
+      "original_text": "",
+      "translation": "[Translation failed for this segment: 403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0086/full/pct:50/0/default.jpg]",
+      "entities_mentioned": [],
+      "translator_notes": null,
+      "_label": "ibn_baytar_b01-p86",
+      "_error": "403 Client Error: Forbidden for url: https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:17:13:6:wdl_17136:WMS_Arabic_174_0086/full/pct:50/0/default.jpg"
+    }
+  ]
+}
