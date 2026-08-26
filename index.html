@@ -2191,8 +2191,8 @@ try {
     fetch('/data/plants.json'),
     fetch('/data/traditions.json'),
     fetch('/data/regulatory_data.json').catch(function(){ return null; }),
-    fetch('/data/conditions.json'),
-    fetch('/data/longevity.json'),
+    fetch('/data/conditions.json').catch(function(){ return null; }),
+    fetch('/data/longevity.json').catch(function(){ return null; }),
   ]);
   plantData = (await pRes.json()).plants || [];
   traditionData = (await tRes.json()).traditions || [];
@@ -2203,8 +2203,8 @@ try {
     const illRes = await fetch('/data/plant_illustrations.json');
     if (illRes.ok) { const id = await illRes.json(); illustrationsData = id.illustrations || {}; }
   } catch(e) {}
-  conditionData = (await cRes.json()).conditions || [];
-  longevityData = (await lRes.json()).traditions || [];
+  if (cRes && cRes.ok) { try { conditionData = (await cRes.json()).conditions || []; } catch(e) {} }
+  if (lRes && lRes.ok) { try { longevityData = (await lRes.json()).traditions || []; } catch(e) {} }
 
   // Load corpus from 3 pre-built slim shards (parallel, ~3MB each). Each
   // shard is pushed into corpusData independently as soon as IT finishes,
