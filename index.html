@@ -2679,6 +2679,8 @@ function getTradColor(id) {
     'commission_e':        '#1A3A6A',
     'ahp':                 '#6A1A1A',
     'southern_african':    '#7A5A2A',
+    'western_european':    '#2A4A1A',
+    'hildegard_physica':   '#2A4A3A',
     'central_european':    '#5A4A2A',
   };
   return EXTRA[id] || '#6B6050';
@@ -3475,7 +3477,23 @@ const BOOKS = [
    year:'c. 1240 CE',
    description:'The largest medieval pharmacopoeia ever written — 1,400 plant, animal, and mineral remedies compiled by the greatest Arab botanist, drawing on Greek, Arabic, and North African sources. Ibn al-Baytar traveled from Andalusia to Syria documenting every plant he encountered.',
    hasManuscriptScans:true, manuscriptDataFile:'ibn_baytar_compendium.json',
-   manuscriptPageCount:873}
+   manuscriptPageCount:873},
+  {id:'hildegard_physica', tradition:'central_european', corpusKeys:['hildegard_physica_b01'],
+   color:'#2A4A3A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Hildegard_von_Bingen.jpg/440px-Hildegard_von_Bingen.jpg',
+   short:'Hildegard — Physica',
+   title:'Physica: Liber Subtilitatum Diversarum Naturarum Creaturarum',
+   author:'Hildegard von Bingen',
+   year:'c. 1150–1158 CE',
+   description:'The 12th-century abbess who documented the medicinal properties of 230 plants, trees, stones, and animals. The first major work of natural history written by a woman — still influential in European herbal medicine today.',
+   hasManuscriptScans:true, manuscriptDataFile:'hildegard_physica.json', manuscriptPageCount:561},
+  {id:'ibn_baytar', tradition:'unani', corpusKeys:['ibn_baytar_b01'],
+   color:'#3A2A1A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Avicenna_miniatur.jpg/440px-Avicenna_miniatur.jpg',
+   short:'Ibn al-Baytar — Compendium',
+   title:'Kitab al-Jami li-Mufradat al-Adwiya wa-al-Aghdhiya',
+   author:'Ibn al-Baytar (d. 1248 CE)',
+   year:'c. 1240 CE',
+   description:'The largest medieval pharmacopoeia ever written — 1,400 medicinal plants, animals, and minerals documented by the Andalusian botanist and chief herbalist to Sultan al-Kamil of Egypt. Synthesizes Dioscorides, Avicenna, and centuries of Islamic botanical knowledge.',
+   hasManuscriptScans:true, manuscriptDataFile:'ibn_baytar_compendium.json', manuscriptPageCount:90}
 ];
 
 // ── Reader state ────────────────────────────────────────────
