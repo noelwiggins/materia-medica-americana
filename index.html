@@ -3403,7 +3403,61 @@ const BOOKS = [
    source:'National Library of the Czech Republic, Prague',
    description:'15th-century Czech medical compendium containing the only surviving Czech translation of De viribus herbarum (Macer Floridus), a landmark medieval plant medicine text attributed to Odo of Meung, alongside a previously unknown copy of medical advice written by court physician Zikmund Albík for Holy Roman Emperor Sigismund. 226 folios, digitized by Manuscriptorium.',
    hasManuscriptScans:true, manuscriptDataFile:'czech-herbal-XVII-J-28.json',
-   manuscriptPageCount:452}
+   manuscriptPageCount:452},
+  {id:'gerard_herball', tradition:'western_european', corpusKeys:['gerard_herball_b01'],
+   color:'#2A4A1A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/John_Gerard_herball_title_page.jpg/440px-John_Gerard_herball_title_page.jpg',
+   short:'Gerard\'s Herball',
+   title:'The Herball, or Generall Historie of Plantes',
+   author:'John Gerard',
+   year:'1597 CE',
+   description:'The foundational English-language herbal — 1,484 plants with woodcut illustrations, the first comprehensive survey of plant medicine in English.',
+   hasManuscriptScans:true, manuscriptDataFile:'gerard_herball.json',
+   manuscriptPageCount:1498},
+  {id:'culpeper_herbal', tradition:'western_european', corpusKeys:['culpeper_herbal_b01'],
+   color:'#3A2A4A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nicholas_Culpeper.jpg/440px-Nicholas_Culpeper.jpg',
+   short:'Culpeper\'s Herbal',
+   title:'Culpeper\'s English Physician and Complete Herbal',
+   author:'Nicholas Culpeper',
+   year:'1653 CE',
+   description:'Still in print after 370 years. Democratized plant medicine by writing in English rather than Latin, with planetary signatures for each plant.',
+   hasManuscriptScans:true, manuscriptDataFile:'culpeper_herbal.json',
+   manuscriptPageCount:758},
+  {id:'kings_dispensatory', tradition:'western_pharmacopeia', corpusKeys:['kings_dispensatory_b01'],
+   color:'#1A3A4A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Valerian_collage.jpg/440px-Valerian_collage.jpg',
+   short:'King\'s Dispensatory',
+   title:'King\'s American Dispensatory',
+   author:'Harvey Felter & John Uri Lloyd',
+   year:'1898 CE',
+   description:'The Eclectic physicians\' definitive reference — 900+ plant monographs with clinical dosage, therapeutic indications, and specific symptom pictures.',
+   hasManuscriptScans:true, manuscriptDataFile:'kings_dispensatory.json',
+   manuscriptPageCount:968},
+  {id:'ellingwood_materia', tradition:'western_pharmacopeia', corpusKeys:['ellingwood_materia_b01'],
+   color:'#1A2A4A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Echinacea_purpurea_2.jpg/440px-Echinacea_purpurea_2.jpg',
+   short:'Ellingwood\'s Materia Medica',
+   title:'American Materia Medica, Therapeutics and Pharmacognosy',
+   author:'Finley Ellingwood',
+   year:'1915 CE',
+   description:'The Eclectic clinical companion — emphasizes therapeutic indications, specific symptom pictures, and dosage. Contains the first systematic clinical documentation of Echinacea.',
+   hasManuscriptScans:true, manuscriptDataFile:'ellingwood_materia.json',
+   manuscriptPageCount:567},
+  {id:'parkinson_theatrum', tradition:'western_european', corpusKeys:['parkinson_theatrum_b01'],
+   color:'#2A3A1A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Floral_offerings_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-252.jpg/440px-Floral_offerings_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-252.jpg',
+   short:'Parkinson\'s Theatrum',
+   title:'Theatrum Botanicum: The Theater of Plants',
+   author:'John Parkinson',
+   year:'1640 CE',
+   description:'The largest English herbal ever written — 3,800 plants by the Royal Botanist to Charles I, the definitive 17th-century English plant medicine reference.',
+   hasManuscriptScans:true, manuscriptDataFile:'parkinson_theatrum.json',
+   manuscriptPageCount:1755},
+  {id:'fuchs_historia', tradition:'italian_renaissance', corpusKeys:['fuchs_historia_b01'],
+   color:'#4A2A1A', cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Floral_offerings_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-252.jpg/440px-Floral_offerings_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-252.jpg',
+   short:'Fuchs — De Historia Stirpium',
+   title:'De Historia Stirpium Commentarii Insignes',
+   author:'Leonhart Fuchs',
+   year:'1542 CE',
+   description:'The German herbal that set the standard for all European botanical illustration — 400 plants with woodcuts of unprecedented accuracy, the template that Gerard, Matthioli and Dodoens all followed.',
+   hasManuscriptScans:true, manuscriptDataFile:'fuchs_historia.json',
+   manuscriptPageCount:938}
 ];
 
 // ── Reader state ────────────────────────────────────────────
@@ -5740,7 +5794,7 @@ var MSR = (function() {
   <!-- ── TRADITIONS TAB ─────────────────────────────────────── -->
   <section class="tab-panel" id="tab-traditions">
     <div style="padding:1.5rem 1rem 0.5rem">
-      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">35 Traditions</h2>
+      <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">36 Traditions</h2>
       <p style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">Every healing tradition in the archive</p>
     </div>
     <div id="traditions-list" style="padding:0 1rem 2rem"></div>
