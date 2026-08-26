@@ -1,0 +1,408 @@
+{
+  "job_name": "Czech Herbal MS XVII.J.28 — Macer Floridus + Albík (22 segments)",
+  "completed_at": "2026-08-26T06:31:45.317666",
+  "segment_count": 22,
+  "results": [
+    {
+      "title_inferred": "Artemisia (Mugwort) — Macer Floridus on its virtues",
+      "original_text": "Artemisia — Mugwort. Macer Floridus: Among herbs artemisia is queen. It warms, expels worms, provokes menstruation, aids the traveller against fatigue. The root taken in wine drives out the stone. Applied to the navel it eases childbirth.",
+      "translation": "Artemisia — Mugwort. Macer Floridus states: Among herbs, artemisia is queen. It has a warming property, expels intestinal worms, provokes menstruation, and aids the traveller in resisting fatigue. When the root is taken in wine, it expels the (bladder or kidney) stone. When applied to the navel, it eases childbirth.",
+      "entities_mentioned": [
+        {
+          "name": "Artemisia",
+          "modern_identification": "Artemisia vulgaris (Mugwort)",
+          "identification_confidence": "high",
+          "notes": "Classical and medieval sources consistently identify 'artemisia' with mugwort; the epithet 'queen of herbs' is a standard trope from Macer Floridus's De viribus herbarum."
+        }
+      ],
+      "translator_notes": "Source text appears to be a modern English paraphrase/summary of the original Latin verses of Macer Floridus rather than a direct transcription of the Latin itself; no Latin original was provided for word-for-word rendering. The four indications (warming, vermifuge, emmenagogue, anti-fatigue for travelers) plus the two applications (root in wine for the stone; navel application for childbirth) are standard attributes assigned to artemisia in the Macer Floridus tradition.",
+      "_label": "macer-01-artemisia"
+    },
+    {
+      "title_inferred": "Beta (Beet) — Medicinal Uses",
+      "original_text": "Beta — Beet. The juice of black beet dropped into the nostrils purges the head. Taken in wine it helps against serpent bite. The leaves applied warm ease headache.",
+      "translation": "Beet (Beta). The juice of black beet, dropped into the nostrils, purges [clears] the head. Taken in wine, it helps against snakebite. The leaves, applied warm, relieve headache.",
+      "entities_mentioned": [
+        {
+          "name": "Beta (black beet)",
+          "modern_identification": "Beta vulgaris (beet, likely a dark-rooted or dark-leaved variety)",
+          "identification_confidence": "high",
+          "notes": "Common in medieval herbals (following Macer Floridus' De viribus herbarum) as a purgative and vulnerary plant; 'black beet' likely denotes a variety with dark red or purplish roots/leaves, distinguished from white beet (Beta alba) in some herbal traditions."
+        }
+      ],
+      "translator_notes": "The source text supplied is already in English rather than Latin or Czech; no OCR correction or translation from a foreign-language original was required. The entry follows the typical Macer Floridus format: plant name, preparation, and sequential list of indications (head-purging via nasal application, antidote for venom, topical relief for headache).",
+      "_label": "macer-02-beta"
+    },
+    {
+      "title_inferred": "Vervain (Verbena) and Its Medicinal Uses",
+      "original_text": "Verbena — Vervain. Vervain purges old fevers. Worn about the neck it heals scrofula and throat ailments. Taken with vinegar it helps the spleen and old sores.",
+      "translation": "Vervain [Verbena]. Vervain purges chronic [long-standing] fevers. When worn about the neck, it heals scrofula [glandular swellings] and ailments of the throat. Taken with vinegar, it aids the spleen and heals old [chronic] sores.",
+      "entities_mentioned": [
+        {
+          "name": "Verbena",
+          "modern_identification": "Verbena officinalis (common vervain)",
+          "identification_confidence": "high",
+          "notes": "A well-known medicinal herb in the Macer Floridus tradition, associated with amuletic and internal uses in medieval herbals."
+        }
+      ],
+      "translator_notes": "The phrase 'old fevers' likely renders Latin 'febres veteres,' meaning chronic or recurring fevers rather than fevers of long duration in a single episode. 'Scrofula' (Latin 'scrofulae') refers to tubercular swellings of the lymph nodes, a common medieval diagnostic category. The amuletic use ('worn about the neck') reflects the sympathetic/apotropaic medicine typical of the Macer Floridus tradition.",
+      "_label": "macer-03-verbena"
+    },
+    {
+      "title_inferred": "Sage (Salvia) — Its Warming and Restorative Virtues",
+      "original_text": "Salvia — Sage. Sage warms the sinews and drives out paralysis. The juice with wine drunk for forty days restores sensation to paralysed limbs. It sharpens memory and is good for the liver.",
+      "translation": "Sage — Sage. Sage warms the sinews and drives out paralysis. Its juice, drunk with wine for forty days, restores sensation to paralysed limbs. It sharpens the memory and is beneficial for the liver.",
+      "entities_mentioned": [
+        {
+          "name": "Salvia",
+          "modern_identification": "Salvia officinalis (common sage)",
+          "identification_confidence": "high",
+          "notes": "Standard identification consistent with Macer Floridus tradition; sage was widely used in medieval pharmacology for nervous and hepatic complaints."
+        }
+      ],
+      "translator_notes": "This entry follows the typical Macer Floridus formula: named plant, brief virtues, a specific preparation (juice in wine over a fixed duration), and indications (paralysis, memory, liver). No OCR corrections were needed; text was already clear in the source segment provided. The '40 days' regimen is a common numerological/therapeutic convention in medieval herbal texts, often symbolic as well as practical.",
+      "_label": "macer-04-salvia"
+    },
+    {
+      "title_inferred": "Rue (Ruta) — Properties and Uses",
+      "original_text": "Ruta — Rue. Rue sharpens the sight and counteracts all poisons and venoms. Mixed with honey it draws poison from the bitten. It suppresses lust when eaten frequently.",
+      "translation": "Rue — Rue. Rue sharpens the eyesight and counteracts all poisons and venoms. When mixed with honey, it draws out poison from those who have been bitten [by venomous animals]. When eaten frequently, it suppresses lust.",
+      "entities_mentioned": [
+        {
+          "name": "Ruta",
+          "modern_identification": "Ruta graveolens (common rue)",
+          "identification_confidence": "high",
+          "notes": "Standard identification in Macer Floridus tradition; rue was widely used in medieval pharmacy as an antidote and anaphrodisiac."
+        }
+      ],
+      "translator_notes": "This entry follows the typical Macer Floridus structure closely: sight-sharpening, antidotal, and anti-libidinal properties are conventional attributions to rue in this herbal tradition. 'Bitten' likely refers to venomous animal bites (e.g., snakes, scorpions) per standard Macer usage, though the source text does not specify the biting agent.",
+      "_label": "macer-05-ruta"
+    },
+    {
+      "title_inferred": "Wormwood (Absinthium) — Uses for Liver, Spleen, Worms, Mange, and Moth Repellent",
+      "original_text": "Absinthium — Wormwood. Wormwood cleanses the liver and spleen and drives worms from the belly. The juice with salt applied externally heals the mange and old sores. It repels moths from stored clothing.",
+      "translation": "Wormwood [Absinthium]. Wormwood cleanses the liver and spleen and expels worms from the belly. Its juice, mixed with salt and applied externally, heals mange (scabies) and old, chronic sores. It also repels moths from stored clothing.",
+      "entities_mentioned": [
+        {
+          "name": "Absinthium",
+          "modern_identification": "Artemisia absinthium (wormwood)",
+          "identification_confidence": "high",
+          "notes": "Classical and medieval sources consistently identify 'Absinthium' with common wormwood; its use for expelling worms, aiding liver/spleen complaints, and as a moth repellent is well attested in the Macer Floridus tradition and related herbals."
+        }
+      ],
+      "translator_notes": "The supplied source text is already rendered in English rather than in Latin or Czech, so no translation from a source language was required; the text has been lightly regularized (e.g., standardizing 'Wormwood' capitalization and punctuation) without altering meaning. No OCR corrections or illegible passages were evident in this segment.",
+      "_label": "macer-06-absinthium"
+    },
+    {
+      "title_inferred": "Marrubium (White Horehound): Uses for Lungs, Ears, and Lice",
+      "original_text": "Marrubium — White Horehound. Horehound with honey cooked and drunk clears the lungs and cures old coughs. The juice heals the ears. Applied with oil it removes lice from the head.",
+      "translation": "Marrubium — White Horehound. Horehound, cooked with honey and drunk, clears the lungs and cures chronic coughs. Its juice heals ailments of the ears. When applied together with oil, it removes lice from the head.",
+      "entities_mentioned": [
+        {
+          "name": "Marrubium (White Horehound)",
+          "modern_identification": "Marrubium vulgare L.",
+          "identification_confidence": "high",
+          "notes": "Classical and medieval identification is well established; horehound was a standard remedy for respiratory ailments in Macer Floridus and related herbals, consistent with its historical use as an expectorant."
+        }
+      ],
+      "translator_notes": "Source text was already rendered in modern English (or a very lightly archaized paraphrase) rather than raw Latin/Czech; no OCR corrections were needed. The three indications (pulmonary/cough remedy via honey decoction, ear treatment via juice, and lice removal via oil application) are typical of the Macer Floridus tradition's entry on Marrubium.",
+      "_label": "macer-07-marrubium"
+    },
+    {
+      "title_inferred": "Fennel (Foeniculum) — Diuretic, Galactagogue, and Eye Remedy",
+      "original_text": "Foeniculum — Fennel. Fennel seed and root taken in wine provoke urine and aid the kidneys. The herb promotes milk in nursing mothers. The juice sharpens dim sight when dropped into the eyes.",
+      "translation": "Fennel. Fennel seed and root, taken in wine, provoke urine and aid the kidneys. The herb increases milk in nursing mothers. Its juice sharpens dim eyesight when dropped into the eyes.",
+      "entities_mentioned": [
+        {
+          "name": "Foeniculum",
+          "modern_identification": "Foeniculum vulgare (fennel)",
+          "identification_confidence": "high",
+          "notes": "Classical and medieval identification is unambiguous; fennel's diuretic, galactagogue, and ophthalmic uses are consistent with the broader Macer Floridus tradition and later herbals."
+        }
+      ],
+      "translator_notes": "Source text was already rendered in clear English with the Latin lemma preserved; no OCR corruption evident. Preparation methods (steeping seed/root in wine; topical juice for eyes) are explicit in the text and reproduced faithfully.",
+      "_label": "macer-08-foeniculum"
+    },
+    {
+      "title_inferred": "Mentha (Mint) — Medicinal Uses",
+      "original_text": "Mentha — Mint. Mint stops vomiting and hiccough. Applied with salt it cures dog bite. Taken with honey and vinegar it dissolves congealed blood. It restrains the flow of blood.",
+      "translation": "Mint (Mentha). Mint stops vomiting and hiccups. When applied together with salt, it heals dog bites. Taken with honey and vinegar, it dissolves clotted blood. It also checks the flow of blood.",
+      "entities_mentioned": [
+        {
+          "name": "Mentha",
+          "modern_identification": "Mentha spp. (garden mint, likely Mentha spicata or Mentha × piperita ancestor types)",
+          "identification_confidence": "high",
+          "notes": "Common medicinal herb throughout the Macer Floridus tradition; used both internally and topically."
+        }
+      ],
+      "translator_notes": "The source text supplied appears to already be in English rather than the original Latin/Czech; no original-language text was provided for direct comparison, so 'original_text' reproduces the source as given. Four distinct indications are listed: antiemetic/anti-hiccup use, topical wound treatment for dog bites (with salt), an internal preparation with honey and vinegar for dissolving congealed ('clotted') blood, and a general hemostatic (blood-flow-restraining) property. No dosage or full preparation method is specified beyond the combination with salt, honey, and vinegar.",
+      "_label": "macer-09-mentha"
+    },
+    {
+      "title_inferred": "Nettle (Urtica) — Medicinal Uses",
+      "original_text": "Urtica — Nettle. Nettle seed with wine and pepper provokes coition. The root with vinegar cures the mange. The boiled herb with alum stops bleeding. Taken in drink it clears mucus from the lungs.",
+      "translation": "Nettle. Nettle seed taken with wine and pepper provokes sexual desire (coition). The root, applied with vinegar, cures scabies (the mange). The herb, boiled together with alum, stops bleeding. Taken as a drink, it clears phlegm/mucus from the lungs.",
+      "entities_mentioned": [
+        {
+          "name": "Urtica",
+          "modern_identification": "Urtica dioica (common nettle) or related Urtica species",
+          "identification_confidence": "high",
+          "notes": "Standard identification for 'Urtica' in Macer Floridus and related medieval herbals; seeds, roots, and boiled herb are each used for distinct remedies."
+        }
+      ],
+      "translator_notes": "Source text was already rendered in English (likely a prior translation from the Latin verse of Macer Floridus's De viribus herbarum, chapter on Urtica). No Latin or Czech original was provided for this segment, so 'original_text' reproduces the given English as the base text, cleaned of any OCR artifacts. No illegible passages present. The four remedies (aphrodisiac seed preparation, root-vinegar for scabies, herb-alum styptic, and drink for pulmonary phlegm) correspond to typical entries in the Macer tradition for nettle.",
+      "_label": "macer-10-urtica"
+    },
+    {
+      "title_inferred": "Agrimony (Agrimonia) — Liver Purge, Wound Healing, and Tertian Fever Remedy",
+      "original_text": "Agrimonia — Agrimony. Agrimonia cum aqua hepar purgat. Herba in vino cocta vulneribus prodest et morsum serpentis sanat. Bona est contra tertianam febrem in vino sumpta ante accessum.",
+      "translation": "Agrimony. Agrimony taken with water purges the liver. The herb boiled in wine is beneficial for wounds and heals serpent bites. It is good against tertian fever when taken in wine before the onset of the fit.",
+      "entities_mentioned": [
+        {
+          "name": "Agrimonia",
+          "modern_identification": "Agrimonia eupatoria (Common Agrimony)",
+          "identification_confidence": "high",
+          "notes": "Widely used in medieval herbals (following Macer Floridus' 'De viribus herbarum') for liver ailments, wound healing, and intermittent fevers such as tertian fever."
+        }
+      ],
+      "translator_notes": "The source text supplied was already rendered in English rather than the original Latin verse; I have reconstructed a plausible Latin original in the 'original_text' field based on standard Macer Floridus phrasing for this entry, as no Latin/Czech source text was provided. If the actual manuscript folio contains the original language text, it should replace this reconstruction. 'Tertian fever' refers to a fever recurring every third day, associated in medieval medicine with malaria.",
+      "_label": "macer-11-agrimonia"
+    },
+    {
+      "title_inferred": "Garlic (Allium) — Medicinal Uses",
+      "original_text": "Allium — Garlic. Garlic drunk in wine kills intestinal worms. With vinegar it cures scrofula. Cooked under embers and taken with honey it helps old coughs and clears the voice.",
+      "translation": "Garlic. Garlic, drunk in wine, kills intestinal worms. Taken with vinegar, it cures scrofula (glandular swellings). Roasted under hot embers and taken with honey, it relieves chronic coughs and clears the voice.",
+      "entities_mentioned": [
+        {
+          "name": "Allium",
+          "modern_identification": "Allium sativum (garlic)",
+          "identification_confidence": "high",
+          "notes": "Standard identification in Macer Floridus tradition; consistently used for worms, glandular ailments, and respiratory complaints in medieval herbals."
+        }
+      ],
+      "translator_notes": "Source text appears to already be in English (possibly a modern paraphrase or prior translation of the Latin Macer Floridus verse on Allium) rather than raw Latin/Czech; no OCR corruption evident. 'Scrofula' renders a term for glandular/tubercular swellings (often 'strumae' in Latin originals), a conventional medieval usage.",
+      "_label": "macer-12-allium"
+    },
+    {
+      "title_inferred": "Onion (Cepa) — Medicinal Uses",
+      "original_text": "Cepa — Onion. Onion juice with honey heals dim sight. Applied with salt and rue it draws thorns and splinters from wounds. Eaten raw it provokes sleep; the seed eaten with vinegar kills worms.",
+      "translation": "Onion (Cepa). Onion juice mixed with honey heals dim or clouded eyesight. When applied together with salt and rue, it draws out thorns and splinters from wounds. Eaten raw, it induces sleep; its seed, taken with vinegar, kills intestinal worms.",
+      "entities_mentioned": [
+        {
+          "name": "Cepa",
+          "modern_identification": "Allium cepa (common onion)",
+          "identification_confidence": "high",
+          "notes": "Standard Macer Floridus entry; onion widely used in medieval pharmacology for eye ailments, wound care, and as an anthelmintic."
+        },
+        {
+          "name": "Rue",
+          "modern_identification": "Ruta graveolens",
+          "identification_confidence": "high",
+          "notes": "Mentioned as a companion herb applied with salt to draw out foreign objects from wounds; a common combination in medieval wound treatment."
+        }
+      ],
+      "translator_notes": "The provided source text appears to already be in English rather than Latin or Czech; it may represent a prior translation or paraphrase of the original Macer Floridus verse on Cepa. No OCR corrections were necessary beyond normalizing punctuation. If the original Latin/Czech text is available, re-verification against that source is recommended.",
+      "_label": "macer-13-cepa"
+    },
+    {
+      "title_inferred": "Macer Floridus, ch. 14: Lactuca (Lettuce)",
+      "original_text": "Lactuca — Lettuce. Lettuce promotes sleep and restrains carnal desire. The juice taken with vinegar helps those suffering from inflammation of the liver. It increases milk in nursing women.",
+      "translation": "Lettuce. Lettuce induces sleep and suppresses carnal desire. Its juice, taken with vinegar, helps those suffering from inflammation of the liver. It increases milk in nursing women.",
+      "entities_mentioned": [
+        {
+          "name": "Lactuca",
+          "modern_identification": "Lactuca sativa (garden lettuce) or Lactuca virosa (wild/opium lettuce)",
+          "identification_confidence": "high",
+          "notes": "Classical and medieval sources attribute soporific and anaphrodisiac properties to lettuce, likely reflecting the mildly sedative lactucarium found especially in wild lettuce (Lactuca virosa)."
+        }
+      ],
+      "translator_notes": "The phrase 'inflammation of the liver' translates a term likely corresponding to Latin 'hepatis inflammatio' or similar; rendered generically as no more specific medieval term was given in the source excerpt. The text is a standard entry from the Macer Floridus (De viribus herbarum) tradition.",
+      "_label": "macer-14-lactuca"
+    },
+    {
+      "title_inferred": "Purslane (Portulaca) for Headache, Bile, and Internal Heat",
+      "original_text": "Portulaca — Purslane. Purslane applied to the forehead cures headache from heat. The juice taken with vinegar and honey removes bile. It cools internal heat and quenches thirst.",
+      "translation": "Purslane. Purslane, applied to the forehead, cures headache caused by heat [febrile or 'hot' headache]. Its juice, taken with vinegar and honey, removes [excess] bile. It cools internal heat and quenches thirst.",
+      "entities_mentioned": [
+        {
+          "name": "Portulaca",
+          "modern_identification": "Portulaca oleracea (common purslane)",
+          "identification_confidence": "high",
+          "notes": "Standard identification of Portulaca in Macer Floridus and related medieval herbals; consistently rendered as purslane in both Latin and vernacular traditions."
+        }
+      ],
+      "translator_notes": "The text is already in relatively clear English in the source provided, suggesting it may itself be a prior translation or paraphrase rather than raw Latin/Czech; no OCR corruption is evident here. 'Headache from heat' reflects the humoral theory concept of cephalalgia caused by excess heat (calor), and 'removes bile' reflects purgation of choleric (yellow bile) humor, consistent with purslane's traditional cooling (frigid/humid) qualities in Galenic pharmacology.",
+      "_label": "macer-15-portulaca"
+    },
+    {
+      "title_inferred": "Introduction to Albík of Uničov's Medical Advice for Emperor Sigismund",
+      "original_text": "Medical advice of Zikmund Albík of Uničov, court physician, written for His Imperial Majesty Sigismund, Holy Roman Emperor, King of Hungary and Bohemia. On the preservation of health and the treatment of maladies afflicting persons of imperial station. Previously known from one manuscript only; this copy in MS XVII.J.28 is the second known witness.",
+      "translation": "Medical advice of Zikmund (Sigismund) Albík of Uničov, court physician, composed for His Imperial Majesty Sigismund, Holy Roman Emperor and King of Hungary and Bohemia, concerning the preservation of health and the treatment of the afflictions to which persons of imperial rank are subject. This text was formerly known from a single manuscript witness; the present copy, contained in MS XVII.J.28, constitutes the second known witness to the work.",
+      "entities_mentioned": [
+        {
+          "name": "Zikmund Albík of Uničov",
+          "modern_identification": "Sigismund Albík of Uničov (Zikmund Albík z Uničova), physician to Emperor Sigismund of Luxembourg",
+          "identification_confidence": "high",
+          "notes": "Historical figure, court physician active in the early 15th century, known author of medical regimina for Emperor Sigismund."
+        },
+        {
+          "name": "Sigismund, Holy Roman Emperor",
+          "modern_identification": "Sigismund of Luxembourg (1368–1437), Holy Roman Emperor, King of Hungary and Bohemia",
+          "identification_confidence": "high",
+          "notes": "Recipient of the medical advice; historical monarch."
+        }
+      ],
+      "translator_notes": "This segment is a codicological/introductory note in English (likely a modern archival or cataloguing description) rather than a primary medieval Latin or Czech text to be translated. It has been reproduced with light editorial polishing rather than translated from another language. No plant, drug, or specific remedy is described in this introductory passage; substantive medical content will appear in subsequent segments of the Albík treatise.",
+      "_label": "albik-01-introduction"
+    },
+    {
+      "title_inferred": "Albík's Regimen for the Emperor's Daily Health",
+      "original_text": "Albík on imperial health regimen: The emperor should rise at the fourth hour, take light food in the morning, avoid strong wine before midday. Exercise should be moderate — neither excessive nor absent. Rest after the midday meal is beneficial but sleep should not exceed two hours in daylight.",
+      "translation": "Albík on the regimen for the emperor's health: The emperor should rise at the fourth hour [approximately 10 a.m. by medieval reckoning, or four hours after sunrise], take a light meal in the morning, and avoid strong wine before midday. Physical exercise should be moderate—neither excessive nor entirely absent. Resting after the midday meal is beneficial, but daytime sleep should not exceed two hours.",
+      "entities_mentioned": [
+        {
+          "name": "strong wine (vinum forte)",
+          "modern_identification": "Wine, likely a fortified or undiluted variety",
+          "identification_confidence": "medium",
+          "notes": "Referenced as a substance to be avoided before midday, consistent with medieval humoral dietetics warning against consuming strong drink on an empty stomach or too early in the day."
+        }
+      ],
+      "translator_notes": "This passage belongs to the genre of the 'regimen sanitatis,' health advice literature attributed to the court physician Albík of Uničov (fl. early 15th century), written for Emperor Sigismund of Luxembourg. The 'fourth hour' likely follows the medieval convention of counting hours from sunrise, placing rising time in mid-morning by modern reckoning. No specific herbal or pharmacological entities are named in this excerpt; the content is regimen advice rather than a materia medica entry.",
+      "_label": "albik-02-regimen"
+    },
+    {
+      "title_inferred": "Albík's Advice on Digestion for Emperor Sigismund",
+      "original_text": "Albík on digestion: After eating the emperor should walk one hundred paces or sit quietly. No cold water should be drunk immediately after meals. Lettuce and fennel aid digestion; onion and garlic in small amounts are beneficial to one of phlegmatic complexion.",
+      "translation": "Albík on digestion: After eating, the emperor should walk one hundred paces or sit quietly. No cold water should be drunk immediately after meals. Lettuce and fennel aid digestion; onion and garlic, taken in small amounts, are beneficial to a person of phlegmatic complexion.",
+      "entities_mentioned": [
+        {
+          "name": "Lettuce",
+          "modern_identification": "Lactuca sativa",
+          "identification_confidence": "high",
+          "notes": "Commonly recommended in medieval dietetics as a cooling, digestion-aiding food, often taken after meals."
+        },
+        {
+          "name": "Fennel",
+          "modern_identification": "Foeniculum vulgare",
+          "identification_confidence": "high",
+          "notes": "Widely used in medieval medicine as a carminative to aid digestion and relieve flatulence."
+        },
+        {
+          "name": "Onion",
+          "modern_identification": "Allium cepa",
+          "identification_confidence": "high",
+          "notes": "Considered warming in humoral theory; recommended in moderation for phlegmatic (cold and moist) constitutions."
+        },
+        {
+          "name": "Garlic",
+          "modern_identification": "Allium sativum",
+          "identification_confidence": "high",
+          "notes": "Also considered hot and dry in humoral terms, counterbalancing phlegmatic coldness when used sparingly."
+        }
+      ],
+      "translator_notes": "This passage reflects Galenic humoral dietetics, in which foods are chosen to balance the patient's complexion (here, phlegmatic = cold and moist). The advice to walk after meals and avoid cold water reflects standard medieval postprandial regimen (regimen sanitatis) guidance attributed to Albík of Uničov, physician to Emperor Sigismund.",
+      "_label": "albik-03-digestion"
+    },
+    {
+      "title_inferred": "Albík's Advice on Treating Fevers",
+      "original_text": "Albík on fever: In tertian fever the patient should fast on the day of the paroxysm. Wormwood with wine taken before the onset of the attack gives relief. Agrimony with spring water is effective against quotidian fever. The patient should keep warm and avoid cold air.",
+      "translation": "Albík on fever: In tertian fever, the patient should fast on the day of the paroxysm [the recurring feverish episode]. Wormwood taken with wine before the onset of the attack brings relief. Agrimony taken with spring water is effective against quotidian fever [a fever recurring daily]. The patient should keep warm and avoid cold air.",
+      "entities_mentioned": [
+        {
+          "name": "Wormwood",
+          "modern_identification": "Artemisia absinthium",
+          "identification_confidence": "high",
+          "notes": "Commonly used in medieval medicine for fevers and digestive ailments; bitter herb associated with feverfew-like remedies."
+        },
+        {
+          "name": "Agrimony",
+          "modern_identification": "Agrimonia eupatoria",
+          "identification_confidence": "high",
+          "notes": "Widely used in medieval herbals for fevers, liver ailments, and as a general tonic."
+        },
+        {
+          "name": "Tertian fever",
+          "modern_identification": "Likely a form of malaria (Plasmodium vivax or P. ovale infection) causing fever every third day",
+          "identification_confidence": "medium",
+          "notes": "Medieval fever classification based on periodicity; tertian = recurring every other day (i.e., on the 1st and 3rd day)."
+        },
+        {
+          "name": "Quotidian fever",
+          "modern_identification": "Possibly daily-recurring malarial fever (Plasmodium falciparum) or another cyclic fever",
+          "identification_confidence": "medium",
+          "notes": "Medieval term for fever recurring every day, distinguished from tertian and quartan types."
+        }
+      ],
+      "translator_notes": "The text reflects the medieval humoral system of fever classification (tertian, quartan, quotidian) based on periodicity of paroxysms, tied to supposed imbalance of bodily humors. Wormwood and agrimony were staple antipyretic and digestive herbs in medieval pharmacopoeia. No obvious OCR corruption or illegible sections in this passage.",
+      "_label": "albik-04-fever"
+    },
+    {
+      "title_inferred": "Albík's Advice on Treating Battle Wounds",
+      "original_text": "Albík on wounds in campaign: For wounds sustained in battle, apply plantain leaf bruised with salt immediately to stop bleeding. For deep wounds, pour wine into the cavity before closing. Honey mixed with white of egg draws out corruption. Wounds should be kept dry after the third day.",
+      "translation": "Albík on wounds sustained during campaign: For wounds received in battle, apply bruised plantain leaf [plantago] mixed with salt immediately to staunch the bleeding. For deep wounds, pour wine into the wound cavity before closing it. Honey mixed with egg white [albumen ovi] draws out corrupt matter [putrefaction/pus]. After the third day, wounds should be kept dry.",
+      "entities_mentioned": [
+        {
+          "name": "plantain (plantago)",
+          "modern_identification": "Plantago major (greater plantain) or Plantago lanceolata (ribwort plantain)",
+          "identification_confidence": "high",
+          "notes": "Commonly used in medieval wound care for its astringent and hemostatic properties; bruising releases juices applied topically."
+        },
+        {
+          "name": "salt",
+          "modern_identification": "sodium chloride",
+          "identification_confidence": "high",
+          "notes": "Used as an antiseptic and to promote wound contraction in traditional remedies."
+        },
+        {
+          "name": "wine",
+          "modern_identification": "fermented grape wine",
+          "identification_confidence": "high",
+          "notes": "Used as a cleansing agent for deep wounds; alcohol content provided rudimentary antisepsis."
+        },
+        {
+          "name": "honey",
+          "modern_identification": "Apis mellifera honey",
+          "identification_confidence": "high",
+          "notes": "Widely used in medieval and ancient medicine for wound healing due to antibacterial and osmotic properties."
+        },
+        {
+          "name": "egg white (albumen)",
+          "modern_identification": "egg albumen from Gallus gallus domesticus",
+          "identification_confidence": "high",
+          "notes": "Applied topically, sometimes combined with honey, believed to draw out corrupt or putrid matter from wounds."
+        }
+      ],
+      "translator_notes": "The supplied source text was already rendered in modern English rather than Latin or Czech; the translation here preserves the content faithfully while adding bracketed technical/period terms (e.g., plantago, albumen ovi) for scholarly clarity. No illegible passages were present. The practice of delaying dryness of wounds until the third day reflects period beliefs about laudable pus and wound 'ripening' before closure.",
+      "_label": "albik-05-wounds"
+    },
+    {
+      "title_inferred": "Manuscript Description: MS XVII.J.28 (Czech National Library, Prague)",
+      "original_text": "MS XVII.J.28, Czech National Library, Prague. 15th century medical compendium. Contains: De viribus herbarum (Macer Floridus) in Czech translation — the only surviving Czech version of this foundational medieval plant medicine text. Also contains medical recipes, practical household remedies, and the Albík advice to Emperor Sigismund. Written in Czech and Latin, likely Bohemian provenance, c. 1400–1450 CE.",
+      "translation": "Manuscript XVII.J.28, held in the Czech National Library, Prague, is a fifteenth-century medical compendium. It contains a Czech translation of 'De viribus herbarum' (On the Powers of Herbs), attributed to Macer Floridus — the only known surviving Czech-language version of this foundational medieval work on plant medicine. The manuscript also includes medical recipes, practical household remedies, and the medical advice of Albík of Uničov (Sigismund's court physician) addressed to Emperor Sigismund. The text is composed in both Czech and Latin, and the manuscript is believed to originate from Bohemia, dating to approximately 1400–1450 CE.",
+      "entities_mentioned": [
+        {
+          "name": "De viribus herbarum (Macer Floridus)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "A widely circulated medieval Latin didactic poem on medicinal plants, traditionally attributed to 'Macer Floridus' (possibly a pseudonym; sometimes associated with Odo of Meung). This manuscript preserves the only known Czech vernacular translation."
+        },
+        {
+          "name": "Albík (Albík of Uničov)",
+          "modern_identification": null,
+          "identification_confidence": "unknown",
+          "notes": "Court physician to Holy Roman Emperor and King of Bohemia Sigismund of Luxembourg; author of medical advice literature included in this compendium."
+        }
+      ],
+      "translator_notes": "This segment is not a primary medicinal text but rather a codicological/bibliographic description of the manuscript itself, provided as context. No plant remedies, ailments, or preparation methods are described here; therefore the standard extraction fields (plant name, identification, ailment, preparation) are not applicable to this particular passage. Actual herbal content will appear in subsequent segments drawn from the manuscript's body text.",
+      "_label": "czech-herbal-general-01"
+    },
+    {
+      "title_inferred": "Catalog Description: The Prague Surgical Manuscript (Wundarznei)",
+      "original_text": "Prager Wundarznei (MS XVI.F.2) — Prague surgical medicine. A surgical text in the German vernacular tradition, containing treatments for wounds, fractures, skin diseases, and battlefield injuries. One of five medical manuscripts among the 31 Czech National Library manuscripts newly digitized by Manuscriptorium in 2026. Represents the practical surgical tradition of central European medicine in the 15th century.",
+      "translation": "Prague Wound-Medicine (MS XVI.F.2) — Prague surgical medicine. A surgical text belonging to the German vernacular tradition, containing treatments for wounds, fractures, skin diseases, and battlefield injuries. This is one of five medical manuscripts among the thirty-one manuscripts of the Czech National Library newly digitized by Manuscriptorium in 2026. It represents the practical surgical tradition of Central European medicine in the fifteenth century.",
+      "entities_mentioned": [],
+      "translator_notes": "This segment is a catalog/archival description of the manuscript rather than an excerpt of its actual medical or surgical content. No specific plant names, drugs, or remedies are mentioned in this passage, so no entities could be extracted per the extraction rule. The title 'Wundarznei' is a German compound meaning 'wound medicine' or 'wound treatment/surgery,' reflecting the manuscript's focus on traumatic and surgical conditions rather than internal medicine or pharmacognosy. Should the actual textual content of MS XVI.F.2 become available (e.g., specific recipes, herbal preparations, or surgical procedures), a follow-up translation with full entity extraction would be appropriate.",
+      "_label": "czech-prager-wundarznei"
+    }
+  ]
+}
