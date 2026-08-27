@@ -2722,7 +2722,7 @@ grid.innerHTML = sorted.map(p => {
               const t=traditionData.find(x=>x.id===tid);
               const tc=t?.color||'#888';
               return segs.map(s=>`<div style="background:#fafafa;border:1px solid var(--border);border-left:3px solid ${tc};padding:0.6rem 0.8rem;margin-bottom:0.4rem">
-                <div style="font-family:var(--font-code);font-size:0.55rem;color:${tc};text-transform:uppercase;margin-bottom:0.25rem">${t?.icon||''} ${t?.name||tid}${s.source_section?' · '+s.source_section:''}</div>
+                <div style="font-family:var(--font-code);font-size:0.55rem;color:${tc};text-transform:uppercase;margin-bottom:0.25rem">${t?.name||tid}${s.source_section?' · '+s.source_section:''}</div>
                 ${s.original?`<div style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);font-style:italic;margin-bottom:0.3rem">${s.original.slice(0,200)}…</div>`:''}
                 <p style="font-size:0.83rem;line-height:1.65;color:var(--ink);margin:0">${s.translation.slice(0,400)}${s.translation.length>400?'…':''}</p>
                 ${s._ai_synthesized_disclosure?`<span style="margin-left:0.3rem;font-size:0.62rem;color:#8A6A30;cursor:default;" title="AI-synthesized overview — not a verified transcription of the published monograph">&#9432;</span>`:''}
