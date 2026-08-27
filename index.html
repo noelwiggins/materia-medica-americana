@@ -2753,7 +2753,7 @@ grid.innerHTML = sorted.map(p => {
     <div class="plant-card-header" onclick="toggleCard(this)">
       <div class="plant-name-block">
         <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.3rem">
-          ${evidenceBadge}${priorityBadge}
+          ${evidenceBadge}${priorityBadge}${(function(){var reg=(regulatoryData||[]).find(function(r){return r.plant_id===p.id;});if(!reg)return '';var b=[];if(reg.who_monograph)b.push('<a href="'+reg.who_monograph.url+'" target="_blank" rel="noopener" style="display:inline-block;background:#1A3A1A;border:1px solid #4A7A4A;color:#8ACA8A;font-family:var(--font-code);font-size:0.52rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.15rem 0.45rem;border-radius:2px;text-decoration:none;margin-right:0.3rem">WHO Vol.'+reg.who_monograph.volume+'</a>');if(reg.ema_monograph)b.push('<a href="'+reg.ema_monograph.url+'" target="_blank" rel="noopener" style="display:inline-block;background:#1A2A3A;border:1px solid #4A6A8A;color:#8AAACA;font-family:var(--font-code);font-size:0.52rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.15rem 0.45rem;border-radius:2px;text-decoration:none">EMA</a>');return b.length?b.join(''):'';})()}
         </div>
         <h3>${p.common_name}</h3>
         <div class="botanical">${p.modern_botanical||'Identification pending'}</div>
@@ -4921,6 +4921,26 @@ function renderResultRows(results, resultBooks, limit, highlightWordList) {
       '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">' +
       titleHtml + (s2._ai_synthesized_disclosure ? '<span style="margin-left:0.3rem;font-size:0.62rem;color:#8A6A30;cursor:default;" title="AI-synthesized overview — not a verified transcription of the published monograph">&#9432;</span>' : '') + '</div>' +
       (plainLine ? '<div style="font-size:0.72rem;color:#7AAA70;margin-bottom:0.15rem;font-style:italic">' + plainLine + '</div>' : '') +
+      (function() {
+        // WHO/EMA badge
+        var reg = (regulatoryData||[]).find(function(r){
+          return r.plant_id && s2._label && s2._label.indexOf(r.plant_id.replace('MMA-','')) !== -1
+              || (r.common_name && (s2.title_inferred||'').toLowerCase().indexOf(r.common_name.toLowerCase()) !== -1);
+        });
+        if (!reg) return '';
+        var badges = [];
+        if (reg.who_monograph) badges.push('<a href="' + reg.who_monograph.url + '" target="_blank" rel="noopener" ' +
+          'style="display:inline-block;background:#1A3A1A;border:1px solid #4A7A4A;color:#8ACA8A;' +
+          'font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.08em;text-transform:uppercase;' +
+          'padding:0.1rem 0.4rem;border-radius:2px;text-decoration:none;margin-right:0.3rem">' +
+          'WHO Vol.' + reg.who_monograph.volume + '</a>');
+        if (reg.ema_monograph) badges.push('<a href="' + reg.ema_monograph.url + '" target="_blank" rel="noopener" ' +
+          'style="display:inline-block;background:#1A2A3A;border:1px solid #4A6A8A;color:#8AAACA;' +
+          'font-family:var(--font-code);font-size:0.5rem;letter-spacing:0.08em;text-transform:uppercase;' +
+          'padding:0.1rem 0.4rem;border-radius:2px;text-decoration:none">' +
+          'EMA ' + reg.ema_monograph.status + '</a>');
+        return badges.length ? '<div style="margin-top:0.2rem">' + badges.join('') + '</div>' : '';
+      })() +
       '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;' +
       'text-transform:uppercase;color:' + col + ';margin-bottom:0.22rem">' + lbl + '</div>' +
       '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.5">' +
