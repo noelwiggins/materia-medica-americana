@@ -1836,6 +1836,44 @@
       padding: 0.28rem 0.45rem !important;
     }
   }
+
+  details.source-section > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.8rem;
+  }
+  details.source-section > summary::-webkit-details-marker { display: none; }
+  details.source-section[open] > summary span:last-child { transform: rotate(180deg); display: inline-block; }
+
+  /* ── Plant card collapse ─────────────────────────────────────── */
+  .plant-card-body {
+    display: none;
+  }
+  .plant-card-body.open {
+    display: block;
+  }
+  .plant-card-header {
+    cursor: pointer;
+    user-select: none;
+  }
+  .plant-card-header:hover {
+    background: rgba(196,168,96,0.04);
+  }
+  .chevron {
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+  .chevron.open {
+    transform: rotate(180deg);
+  }
+  /* First card in each group auto-opens */
+  .plant-card:first-child .plant-card-body {
+    display: block;
+  }
+  .plant-card:first-child .chevron {
+    transform: rotate(180deg);
+  }
 </style>
 </head>
 
@@ -2613,7 +2651,7 @@ grid.innerHTML = sorted.map(p => {
   // Tradition chips
   const tradChips = (p.traditions||[]).map(tid => {
     const t = traditionData.find(x=>x.id===tid);
-    return t ? `<span class="tag" style="border-color:${t.color};color:${t.color}">${t.icon} ${t.name}</span>`
+    return t ? `<span class="tag" style="border-color:${t.color};color:${t.color}">${t.name}</span>`
              : `<span class="tag">${tid}</span>`;
   }).join('');
 
@@ -2638,7 +2676,7 @@ grid.innerHTML = sorted.map(p => {
     const segs = (p.corpus_segments || []).slice(0,2);
     const segLinks = segs.map(s =>
       `<div style="font-size:0.78rem;color:var(--muted);line-height:1.5;margin-top:0.3rem">
-        <span style="color:${getTradColor(s.tradition)}">${getTradIcon(s.tradition)}</span>
+        <span style="width:8px;height:8px;border-radius:50%;background:${getTradColor(s.tradition)};display:inline-block;flex-shrink:0"></span>
         ${s.title || s.label}
       </div>`
     ).join('');
@@ -2705,8 +2743,8 @@ grid.innerHTML = sorted.map(p => {
   let entries = '';
   for (const [tid, entry] of Object.entries(p.entries||{})) {
     const t = traditionData.find(x=>x.id===tid);
-    entries += `<div class="source-section">
-      <span class="source-label" style="background:${t?.color||'#1C1A14'}">${t?.icon||''} ${t?.name||tid}</span>
+    entries += `<details class="source-section" open>
+      <summary class="source-label" style="background:${t?.color||'#1C1A14'};cursor:pointer;list-style:none">${t?.name||tid} <span style="opacity:0.6;margin-left:0.3rem">▾</span></summary>
       ${entry.source_text?`<div style="font-family:var(--font-code);font-size:0.62rem;color:var(--muted);margin-bottom:0.8rem">${entry.source_text}</div>`:''}
       <div class="parallel-text">
         <div class="text-column"><label>Original Text</label><p>${entry.original||''}</p></div>
