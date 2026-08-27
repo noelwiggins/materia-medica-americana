@@ -607,6 +607,20 @@
     outline: none !important;
     min-width: 0;
   }
+  @media (max-width: 480px) {
+    .global-search-input {
+      font-size: 0.82rem !important;
+      padding: 0.75rem 0.8rem !important;
+    }
+    .global-search-btn {
+      font-size: 0.7rem !important;
+      padding: 0 0.8rem !important;
+      letter-spacing: 0.06em !important;
+    }
+    .global-search-eyebrow {
+      font-size: 0.58rem !important;
+    }
+  }
 
   .global-search-input::placeholder {
     color: #7A6A50 !important;
@@ -786,6 +800,8 @@
     font-weight: 700;
     color: var(--green, #2A6B3C);
     line-height: 1;
+  
+    transition: opacity 0.3s;
   }
   .stat-tile-label {
     font-family: var(--font-code);
@@ -1500,6 +1516,8 @@
     padding: 0.8rem;
     font-size: 0.82rem;
     line-height: 1.6;
+  
+    overflow-x: hidden;
   }
   .corr-item {
     display: flex;
@@ -1867,20 +1885,20 @@
       <div class="stat-tile-num" id="stat-num-traditions">34</div><div class="stat-tile-label">Traditions</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
     <button class="stat-tile" onclick="showTab('database', document.querySelector('[onclick*=database]'))" title="Browse all plants">
-      <div class="stat-tile-num" id="stat-num-plants">—</div><div class="stat-tile-label">Plants Documented</div><div class="stat-tile-arrow">&#8599;</div>
+      <div class="stat-tile-num" id="stat-num-plants" style="opacity:0.3">—</div><div class="stat-tile-label">Plants Documented</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
     <button class="stat-tile" onclick="showTab('corpus', document.querySelector('[onclick*=corpus]'))" title="Browse source passages">
-      <div class="stat-tile-num" id="stat-num-passages">—</div><div class="stat-tile-label">Source Passages</div><div class="stat-tile-arrow">&#8599;</div>
+      <div class="stat-tile-num" id="stat-num-passages" style="opacity:0.3">—</div><div class="stat-tile-label">Source Passages</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
     <button class="stat-tile" onclick="showTab('convergence', document.querySelector('[onclick*=convergence]'))" title="See cross-book matches">
-      <div class="stat-tile-num" id="stat-num-convergence">—</div><div class="stat-tile-label">Cross-Book Matches</div><div class="stat-tile-arrow">&#8599;</div>
+      <div class="stat-tile-num" id="stat-num-convergence" style="opacity:0.3">—</div><div class="stat-tile-label">Cross-Book Matches</div><div class="stat-tile-arrow">&#8599;</div>
     </button>
   </div>
   <!-- ── Featured Articles ───────────────────────────────────────── -->
   <div style="padding:0 0 0.5rem">
     <p style="font-family:var(--font-code);font-size:0.6rem;letter-spacing:0.14em;
        text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem">Featured Inquiries</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.8rem;margin-bottom:1.8rem">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));gap:0.8rem;margin-bottom:1.8rem">
 
       <div onclick="quickSearch('cannabis hemp hashish bhang ganja charas dagga marijuana')"
         style="background:#0F1A0F;border:1px solid #2A4A2A;border-radius:3px;padding:1rem 1.1rem;cursor:pointer;transition:border-color 0.15s"
@@ -2325,6 +2343,7 @@ try {
     fetch('/data/longevity.json').catch(function(){ return null; }),
   ]);
   plantData = (await pRes.json()).plants || [];
+  setTimeout(updateHomeStats, 100);
   traditionData = (await tRes.json()).traditions || [];
   renderTradLegend();
   TRADITIONS_BY_ID = {};
@@ -4322,6 +4341,30 @@ function updateHeroStats() {
   var tradSet = new Set(corpusData.map(function(s){ return s._tradition; }).filter(Boolean));
   line.textContent = tradSet.size + ' traditions · ' + corpusData.length.toLocaleString() + ' passages · 12 civilizations';
 }
+
+function updateHomeStats() {
+  // Plants
+  var pEl = document.getElementById('stat-num-plants');
+  if (pEl && typeof plantData !== 'undefined' && plantData.length) {
+    pEl.textContent = plantData.length.toLocaleString(); pEl.style.opacity = '1'; }
+  // Passages
+  var sEl = document.getElementById('stat-num-passages');
+  if (sEl && corpusData.length) {
+    sEl.textContent = corpusData.length.toLocaleString(); sEl.style.opacity = '1'; }
+  // Convergence — count plants with 3+ traditions
+  var cEl = document.getElementById('stat-num-convergence');
+  if (cEl && corpusData.length) {
+    var byPlant = {};
+    corpusData.forEach(function(s) {
+      var k = (s.title_inferred||'').split('—')[0].trim();
+      if (!byPlant[k]) byPlant[k] = new Set();
+      if (s._tradition) byPlant[k].add(s._tradition);
+    });
+    var conv = Object.values(byPlant).filter(function(s){ return s.size >= 3; }).length;
+    cEl.textContent = conv.toLocaleString(); cEl.style.opacity = '1';
+  }
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   // renderBookShelf is called from renderTraditionCards override below
