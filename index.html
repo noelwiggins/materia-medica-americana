@@ -2805,7 +2805,7 @@ grid.innerHTML = sorted.map(p => {
             const t=traditionData.find(x=>x.id===tid);
             const tc=t?.color||'#888'; const ti=t?.icon||''; const tn=t?.name||tid;
             return `<div style="margin-bottom:0.9rem">
-              <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.35rem">${ti} ${tn}</div>
+              <div style="font-family:var(--font-code);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:${tc};margin-bottom:0.35rem">${tn}</div>
               ${segs.map((s,i)=>`<div style="background:var(--vellum);border:1px solid var(--border);border-left:3px solid ${tc};padding:0.7rem 0.9rem;margin-bottom:0.4rem;${i>0?'display:none':''}" data-dbgroup="${p.id}-${tid}" class="db-passage">
                 ${s.source_section?`<div style="font-family:var(--font-code);font-size:0.55rem;color:var(--muted);text-transform:uppercase;margin-bottom:0.3rem">${s.source_section}</div>`:''}
                 ${s.original?`<div style="font-family:var(--font-code);font-size:0.73rem;color:var(--muted);font-style:italic;line-height:1.6;margin-bottom:0.4rem;padding-bottom:0.4rem;border-bottom:1px dashed var(--border)">${s.original.slice(0,250)}${s.original.length>250?'…':''}</div>`:''}
@@ -2892,7 +2892,7 @@ achievGrid.innerHTML = longevityData.map(t => {
   const achievs = t.key_pharmaceutical_achievements||[];
   if (!achievs.length) return '';
   return `<div style="background:var(--vellum,#F5F2EA);border:1px solid var(--border);border-top:4px solid ${getTradColor(t.tradition_id)};padding:1.2rem 1.4rem">
-    <div style="font-size:1.3rem;margin-bottom:0.4rem">${getTradIcon(t.tradition_id)}</div>
+    <div style="font-size:1.3rem;margin-bottom:0.4rem"></div>
     <h4 style="font-family:var(--font-display);font-size:0.85rem;color:var(--ink);margin-bottom:0.8rem">${t.tradition_name}</h4>
     ${achievs.map(a=>`<div style="font-size:0.82rem;color:var(--muted);padding:0.25rem 0;border-bottom:1px solid var(--border)">— ${a}</div>`).join('')}
   </div>`;
