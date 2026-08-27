@@ -1,0 +1,659 @@
+{
+  "plants": [
+    {
+      "plant_id": "MMA-001",
+      "common_name": "Cinchona / Quinine Bark",
+      "botanical": "Cinchona officinalis",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cough, gastritis, mucous membrane irritation",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor skin inflammation, wound healing",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-011",
+      "common_name": "Rauwolfia / Sarpagandha",
+      "botanical": "Rauwolfia serpentina",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Hypertension, psychosis",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-012",
+      "common_name": "Turmeric",
+      "botanical": "Curcuma longa",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Anti-inflammatory, digestive, antioxidant",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-020",
+      "common_name": "Echinacea / Purple Coneflower",
+      "botanical": "Echinacea purpurea / E. angustifolia",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Immunostimulant, upper respiratory infections",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Adjunct treatment of common cold",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-022",
+      "common_name": "Ephedra / Ma Huang",
+      "botanical": "Ephedra sinica",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Bronchospasm, nasal congestion",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-023",
+      "common_name": "Licorice Root",
+      "botanical": "Glycyrrhiza uralensis / G. glabra",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Gastric ulcer, cough, anti-inflammatory",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Cough, bronchitis, peptic discomfort",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-027",
+      "common_name": "Garlic + Bile + Copper Vessel (Bald's Eye Remedy)",
+      "botanical": "Allium sativum + Allium cepa (with Brassica species) + copper vessel",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cardiovascular, antimicrobial, antilipemic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor respiratory catarrh, cholesterol support",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-030",
+      "common_name": "Japanese Rhubarb / Daio",
+      "botanical": "Rheum palmatum / R. officinale",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Nausea, vomiting, anti-inflammatory, digestive",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Nausea, digestive complaints, motion sickness",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-032",
+      "common_name": "Arura / Chebulic Myrobalan",
+      "botanical": "Terminalia chebula",
+      "who_monograph": {
+        "volume": 4,
+        "indication": "Cardiovascular, cardiac tonic",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-034",
+      "common_name": "Betony / Bishopwort",
+      "botanical": "Betonica officinalis / Stachys betonica",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cough, gastritis, mucous membrane irritation",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor skin inflammation, wound healing",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-035",
+      "common_name": "Plantain / Waybread",
+      "botanical": "Plantago major / P. lanceolata",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Constipation, IBS, hyperlipidemia",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Constipation, IBS, elevated cholesterol",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-036",
+      "common_name": "Haoma / Sacred Ephedra",
+      "botanical": "Ephedra species (most likely E. intermedia or E. sinica)",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Bronchospasm, nasal congestion",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-037",
+      "common_name": "Bitter Melon / Ampalaya",
+      "botanical": "Momordica charantia",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Diabetes management",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-039",
+      "common_name": "Chamomile",
+      "botanical": "Matricaria chamomilla / Anthemis nobilis",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Anti-inflammatory, antispasmodic, sedative, GI",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "GI cramps, bloating, skin inflammation",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-047",
+      "common_name": "Garlic",
+      "botanical": "Allium sativum",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cardiovascular, antimicrobial, antilipemic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor respiratory catarrh, cholesterol support",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-048",
+      "common_name": "Fennel",
+      "botanical": "Foeniculum vulgare",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "GI spasm, bloating, infant colic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "GI spasm, bloating, infant colic",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-049",
+      "common_name": "Flaxseed / Linseed",
+      "botanical": "Linum usitatissimum",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Constipation, hyperlipidemia",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-050",
+      "common_name": "Leek",
+      "botanical": "Allium porrum",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cardiovascular, antimicrobial, antilipemic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor respiratory catarrh, cholesterol support",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-052",
+      "common_name": "Pepper (Black)",
+      "botanical": "Piper nigrum",
+      "who_monograph": {
+        "volume": 3,
+        "indication": "Bioavailability enhancer (piperine), digestive",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-055",
+      "common_name": "Mint",
+      "botanical": "Mentha species (M. piperita, M. spicata)",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "GI spasm, IBS, headache, nausea",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "GI complaints, IBS; head tension (topical oil)",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-059",
+      "common_name": "Fenugreek",
+      "botanical": "Trigonella foenum-graecum",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Diabetes, hyperlipidemia, galactagogue",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-061",
+      "common_name": "Henbane",
+      "botanical": "Hyoscyamus niger",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Antispasmodic, sedative",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-062",
+      "common_name": "Watercress / Cresses",
+      "botanical": "Nasturtium officinale / Lepidium sativum",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cardiovascular, antimicrobial, antilipemic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor respiratory catarrh, cholesterol support",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-063",
+      "common_name": "Onion",
+      "botanical": "Allium cepa",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cardiovascular, antimicrobial, antilipemic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor respiratory catarrh, cholesterol support",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-064",
+      "common_name": "Lettuce",
+      "botanical": "Lactuca sativa / L. virosa (wild lettuce)",
+      "who_monograph": {
+        "volume": 4,
+        "indication": "Anti-inflammatory, immunomodulator, antimicrobial",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-068",
+      "common_name": "Coptis / Goldthread",
+      "botanical": "Coptis japonica / C. trifolia / C. chinensis",
+      "who_monograph": {
+        "volume": 3,
+        "indication": "Antimicrobial, diabetes, anti-inflammatory",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-069",
+      "common_name": "Pellitory of the Wall",
+      "botanical": "Anacyclus pyrethrum / Parietaria officinalis",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cough, gastritis, mucous membrane irritation",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor skin inflammation, wound healing",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-074",
+      "common_name": "Hyssop",
+      "botanical": "Hyssopus officinalis",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cough, gastritis, mucous membrane irritation",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor skin inflammation, wound healing",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-075",
+      "common_name": "Frankincense / Boswellia",
+      "botanical": "Boswellia sacra / B. serrata",
+      "who_monograph": {
+        "volume": 4,
+        "indication": "Anti-inflammatory, arthritis, IBD",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-076",
+      "common_name": "Cassia / Chinese Cinnamon",
+      "botanical": "Cinnamomum cassia / C. verum",
+      "who_monograph": {
+        "volume": 4,
+        "indication": "Diabetes, antimicrobial, digestive",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-085",
+      "common_name": "Barley",
+      "botanical": "Hordeum vulgare",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "GI spasm, bloating, infant colic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "GI spasm, bloating, infant colic",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-090",
+      "common_name": "Elderflower / Saúco",
+      "botanical": "Sambucus peruviana / S. nigra (European elder)",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Upper respiratory infections, influenza",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Common cold, catarrh of upper respiratory tract",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-091",
+      "common_name": "Aloe Vera / Zábila",
+      "botanical": "Aloe vera (Aloe barbadensis)",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Laxative, wound healing, burns",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Short-term constipation; Traditional: minor wounds, burns",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-103",
+      "common_name": "Fig",
+      "botanical": "Ficus carica",
+      "who_monograph": {
+        "volume": 4,
+        "indication": "Digestive enzyme, wound healing",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-105",
+      "common_name": "Rosemary / Romero",
+      "botanical": "Salvia rosmarinus (formerly Rosmarinus officinalis)",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cough, gastritis, mucous membrane irritation",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor skin inflammation, wound healing",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-117",
+      "common_name": "Rocket / Arugula",
+      "botanical": "Eruca vesicaria sativa",
+      "who_monograph": {
+        "volume": 4,
+        "indication": "Anti-inflammatory, immunomodulator, antimicrobial",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-140",
+      "common_name": "Yarrow",
+      "botanical": "Achillea millefolium",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Wound healing, anti-inflammatory, antispasmodic, fever",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Wound healing, minor inflammatory skin conditions, digestive",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-141",
+      "common_name": "Ribwort Plantain",
+      "botanical": "Plantago lanceolata",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Constipation, IBS, hyperlipidemia",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Constipation, IBS, elevated cholesterol",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-144",
+      "common_name": "Horehound",
+      "botanical": "Marrubium vulgare",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "GI spasm, bloating, infant colic",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "GI spasm, bloating, infant colic",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-145",
+      "common_name": "Pepper (Pipor)",
+      "botanical": "Piper nigrum",
+      "who_monograph": {
+        "volume": 3,
+        "indication": "Bioavailability enhancer (piperine), digestive",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      }
+    },
+    {
+      "plant_id": "MMA-600",
+      "common_name": "Ginkgo",
+      "botanical": "Ginkgo biloba",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cognitive function, circulation, tinnitus",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Cognitive decline symptoms, circulatory disorders",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-601",
+      "common_name": "Valerian",
+      "botanical": "Valeriana officinalis",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Cough, gastritis, mucous membrane irritation",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Minor skin inflammation, wound healing",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-602",
+      "common_name": "St John's Wort",
+      "botanical": "Hypericum perforatum",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Depression, anxiety, nerve pain",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Mild to moderate depression",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-603",
+      "common_name": "Licorice Root",
+      "botanical": "Glycyrrhiza glabra / G. uralensis",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Gastric ulcer, cough, anti-inflammatory",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Cough, bronchitis, peptic discomfort",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-604",
+      "common_name": "Senna",
+      "botanical": "Senna alexandrina",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Constipation",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-605",
+      "common_name": "Ginger",
+      "botanical": "Zingiber officinale",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Nausea, vomiting, anti-inflammatory, digestive",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Nausea, digestive complaints, motion sickness",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-606",
+      "common_name": "Hawthorn",
+      "botanical": "Crataegus monogyna / C. laevigata",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Cardiovascular, heart failure, hypertension",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Mild cardiac insufficiency (NYHA I)",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-607",
+      "common_name": "Milk Thistle",
+      "botanical": "Silybum marianum",
+      "who_monograph": {
+        "volume": 2,
+        "indication": "Hepatoprotective, cirrhosis, liver disease",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "ema_monograph": {
+        "status": "Traditional",
+        "indication": "Liver and biliary complaints",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    },
+    {
+      "plant_id": "MMA-609",
+      "common_name": "Ashwagandha",
+      "botanical": "Withania somnifera",
+      "who_monograph": {
+        "volume": 1,
+        "indication": "Adaptogen, stress, fatigue, cognitive",
+        "url": "https://www.who.int/publications/i/item/9789241547024"
+      }
+    },
+    {
+      "plant_id": "MMA-610",
+      "common_name": "Devil's Claw",
+      "botanical": "Harpagophytum procumbens",
+      "who_monograph": {
+        "volume": 3,
+        "indication": "Arthritis, back pain, anti-inflammatory",
+        "url": "https://www.who.int/publications/i/item/9789241547070"
+      },
+      "ema_monograph": {
+        "status": "Well-established",
+        "indication": "Mild joint and back pain",
+        "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      }
+    }
+  ]
+}
