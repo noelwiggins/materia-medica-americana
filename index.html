@@ -1661,6 +1661,110 @@
     .sr-trad-chip { flex:0 0 auto; margin-bottom:0 !important; white-space:nowrap; }
     .sr-trad-chip span:first-child { max-width:120px; }
   }
+
+  /* ── Plant card field hierarchy ─────────────────────────────── */
+  .source-section {
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.8rem;
+    background: #fafaf8;
+  }
+  .source-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 2px;
+    font-family: var(--font-code);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+  .parallel-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  @media (max-width: 640px) { .parallel-text { grid-template-columns: 1fr; } }
+  .text-column label {
+    display: block;
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+  }
+  .text-column p {
+    font-size: 0.82rem;
+    line-height: 1.65;
+    color: var(--ink);
+    margin: 0;
+  }
+  .text-column p.translation {
+    color: #2A2010;
+    font-style: italic;
+  }
+  .plant-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.7rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--border);
+  }
+  .meta-item { flex: 1 1 180px; }
+  .meta-item label {
+    display: block;
+    font-family: var(--font-code);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+  }
+  .meta-item span { font-size: 0.82rem; color: var(--ink); line-height: 1.5; }
+  .notes-block {
+    margin-top: 0.6rem;
+    padding: 0.5rem 0.7rem;
+    background: #f5f2e8;
+    border-left: 2px solid var(--gold);
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.5;
+  }
+  /* ── Tradition legend ─────────────────────────────────────── */
+  #trad-legend-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    padding: 0.5rem 1rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+    background: #fafaf8;
+    font-family: var(--font-code);
+    font-size: 0.58rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .trad-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: nowrap;
+  }
+  .trad-legend-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1.5px solid currentColor;
+  }
 </style>
 </head>
 
@@ -1905,6 +2009,23 @@
 // ── State ────────────────────────────────────────────────
 var plantData = [], traditionData = [], conditionData = [], longevityData = [], corpusData = [], regulatoryData = [], illustrationsData = {};
 var TRADITIONS_BY_ID = {};
+
+function renderTradLegend() {
+  var bar = document.getElementById('trad-legend-bar');
+  if (!bar || !traditionData.length) return;
+  // Show up to 8 most common traditions with their colour dots
+  var shown = traditionData.slice(0, 10);
+  bar.innerHTML = '<span style="color:var(--muted);margin-right:0.2rem;text-transform:uppercase;letter-spacing:0.1em;font-size:0.52rem">Tradition colours:</span>' +
+    shown.map(function(t) {
+      return '<span class="trad-legend-item" title="' + t.name + '">' +
+        '<span class="trad-legend-dot" style="border-color:' + t.color + ';background:' + t.color + '22"></span>' +
+        '<span style="color:' + t.color + '">' + (t.icon||'') + '</span>' +
+        t.name +
+        '</span>';
+    }).join('') +
+    (traditionData.length > 10 ? '<span style="color:var(--muted)">+ ' + (traditionData.length-10) + ' more</span>' : '');
+}
+
 var activeStatusFilter = null, activeTraditions = new Set();
 
 // ── Tab navigation ──────────────────────────────────────
@@ -2205,6 +2326,7 @@ try {
   ]);
   plantData = (await pRes.json()).plants || [];
   traditionData = (await tRes.json()).traditions || [];
+  renderTradLegend();
   TRADITIONS_BY_ID = {};
   traditionData.forEach(function(t) { TRADITIONS_BY_ID[t.id] = t; });
   if (rRes && rRes.ok) regulatoryData = (await rRes.json()).plants || [];
@@ -5911,6 +6033,7 @@ var MSR = (function() {
   <section class="tab-panel" id="tab-database">
     <div style="padding:1.5rem 1rem 0.5rem">
       <h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:500;margin-bottom:0.3rem">Plant Database</h2>
+      <div id="trad-legend-bar"></div>
       <p id="db-count" style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);letter-spacing:0.05em">584 plants — curated &amp; cross-referenced across traditions</p>
     </div>
     <div style="padding:0 1rem 0.5rem;display:flex;gap:0.5rem;flex-wrap:wrap">
