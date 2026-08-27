@@ -613,6 +613,23 @@
     font-size: 0.85rem !important;
   }
 
+  .trad-book-btn {
+    display: inline-block;
+    background: #1A1508;
+    border: 1px solid #C4A860;
+    border-radius: 2px;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    font-family: var(--font-code);
+    font-size: 0.68rem;
+    color: #E8DFB8;
+    letter-spacing: 0.04em;
+    transition: all 0.12s;
+  }
+  .trad-book-btn:hover {
+    background: #C4A860;
+    color: #0A0805;
+  }
   .global-search-btn {
     background: #C4A860 !important;
     color: #0A0805 !important;
@@ -1681,7 +1698,7 @@
         <p class="bh-subtitle">a whole plant catalogue<br>five thousand years in the making</p>
         <div class="bh-spacer"></div>
         <div class="bh-imprint">
-          <p class="bh-stats">34 traditions &middot; 2,913 passages &middot; 12 civilizations</p>
+          <p class="bh-stats" id="bh-stats-line">34 traditions &middot; 2,913 passages &middot; 12 civilizations</p>
           <p class="bh-domain">wholeplantcatalog.com</p>
         </div>
         <div class="bh-ornament" style="margin-top:0.8rem;margin-bottom:0">&#8212; &#10087; &#8212;</div>
@@ -1714,30 +1731,22 @@
 
 <!-- ── NAVIGATION ──────────────────────────────────────── -->
 <nav class="tab-nav" role="tablist">
-  <button class="tab-btn active" onclick="showTab('home', this)" role="tab">
-    <span class="tab-indicator" style="background:#C4A882"></span>Overview
+  <button class="tab-btn active" onclick="showTab('home', this)" role="tab">Overview
   </button>
 
-  <button class="tab-btn" onclick="showTab('database', this)" role="tab">
-    <span class="tab-indicator" style="background:#4A3728"></span>Plant Database
+  <button class="tab-btn" onclick="showTab('database', this)" role="tab">Plant Database
   </button>
-  <button class="tab-btn" onclick="showTab('traditions', this)" role="tab">
-    <span class="tab-indicator" style="background:#C4A882"></span>Traditions
+  <button class="tab-btn" onclick="showTab('traditions', this)" role="tab">Traditions
   </button>
-  <button class="tab-btn" onclick="showTab('convergence', this)" role="tab">
-    <span class="tab-indicator" style="background:#C4A882"></span>Convergence
+  <button class="tab-btn" onclick="showTab('convergence', this)" role="tab">Convergence
   </button>
-  <button class="tab-btn" onclick="showTab('longevity', this)" role="tab">
-    <span class="tab-indicator" style="background:#6B4C9A"></span>Longevity
+  <button class="tab-btn" onclick="showTab('longevity', this)" role="tab">Longevity
   </button>
-  <button class="tab-btn" onclick="showTab('corpus', this)" role="tab">
-    <span class="tab-indicator" style="background:#2D5016"></span>Corpus
+  <button class="tab-btn" onclick="showTab('corpus', this)" role="tab">Corpus
   </button>
-  <button class="tab-btn" onclick="showTab('research', this)" role="tab">
-    <span class="tab-indicator" style="background:#1565C0"></span>Modern Research
+  <button class="tab-btn" onclick="showTab('research', this)" role="tab">Modern Research
   </button>
-  <button class="tab-btn" onclick="showTab('methodology', this)" role="tab">
-    <span class="tab-indicator" style="background:#6B6050"></span>Methodology
+  <button class="tab-btn" onclick="showTab('methodology', this)" role="tab">Methodology
   </button>
 </nav>
 
@@ -2106,8 +2115,8 @@ function renderBookPage() {
   transHTML += '<p>' + linkifyText(_rawTrans, _tradId) + '</p>';
   if (seg.preparation || seg.condition) {
     transHTML += '<div class="book-prep">';
-    if (seg.preparation) transHTML += '<strong>Preparation</strong>' + seg.preparation;
-    if (seg.condition)   transHTML += '<strong style="margin-top:0.5rem">Condition</strong>' + seg.condition;
+    if (seg.preparation) transHTML += '<strong>Preparation: </strong>' + seg.preparation;
+    if (seg.condition)   transHTML += '<strong style="margin-top:0.5rem">Condition: </strong>' + seg.condition;
     transHTML += '</div>';
   }
   transEl.innerHTML = transHTML;
@@ -2510,8 +2519,8 @@ grid.innerHTML = sorted.map(p => {
         <div class="text-column"><label>English Translation</label><p class="translation">${entry.translation||''}</p></div>
       </div>
       <div class="plant-meta">
-        ${entry.condition?`<div class="meta-item"><label>Condition</label><span>${entry.condition}</span></div>`:''}
-        ${entry.preparation?`<div class="meta-item"><label>Preparation</label><span>${entry.preparation}</span></div>`:''}
+        ${entry.condition?`<div class="meta-item"><label>Condition: </label><span>${entry.condition}</span></div>`:''}
+        ${entry.preparation?`<div class="meta-item"><label>Preparation: </label><span>${entry.preparation}</span></div>`:''}
       </div>
       ${entry.notes?`<div class="notes-block">${entry.notes}</div>`:''}
     </div>`;
@@ -3904,14 +3913,14 @@ function renderReaderSpread() {
     if (seg.preparation) {
       var prep = document.createElement('div');
       prep.className = 'reader-passage-prep';
-      prep.innerHTML = '<strong>Preparation</strong>' + seg.preparation;
+      prep.innerHTML = '<strong>Preparation: </strong>' + seg.preparation;
       rp.appendChild(prep);
     }
     if (seg.condition) {
       var cond = document.createElement('div');
       cond.className = 'reader-passage-prep';
       cond.style.marginTop = '0.4rem';
-      cond.innerHTML = '<strong>Condition</strong>' + seg.condition;
+      cond.innerHTML = '<strong>Condition: </strong>' + seg.condition;
       rp.appendChild(cond);
     }
 
@@ -4184,6 +4193,14 @@ function showCorrelations(plantName, retriesLeft) {
 }
 // Wire into data load
 var _origRenderTraditionCards = typeof renderTraditionCards !== 'undefined' ? renderTraditionCards : function(){};
+
+function updateHeroStats() {
+  var line = document.getElementById('bh-stats-line');
+  if (!line || !corpusData.length) return;
+  var tradSet = new Set(corpusData.map(function(s){ return s._tradition; }).filter(Boolean));
+  line.textContent = tradSet.size + ' traditions · ' + corpusData.length.toLocaleString() + ' passages · 12 civilizations';
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   // renderBookShelf is called from renderTraditionCards override below
 });
@@ -5198,7 +5215,7 @@ function renderTraditionsTab() {
     html += '<div style="margin-bottom:1.8rem"><div style="font-family:var(--font-code);font-size:0.55rem;letter-spacing:0.14em;text-transform:uppercase;color:'+col+';margin-bottom:0.6rem;display:flex;align-items:center;gap:0.4rem"><span style="width:7px;height:7px;border-radius:50%;background:'+col+'"></span>'+trad.replace(/_/g,' ').toUpperCase()+' &middot; '+books.length+' source'+(books.length>1?'s':'')+'</div><div style="display:flex;flex-wrap:wrap;gap:0.5rem">';
     books.forEach(function(b) {
       var ms = b.hasManuscriptScans ? ' <span style="font-size:0.48rem;opacity:0.6">[MS]</span>' : '';
-      html += '<button onclick="openBookById(&apos;'+b.id+'&apos;)" style="background:#131008;border:1px solid '+col+'44;border-radius:2px;padding:0.35rem 0.75rem;cursor:pointer;font-family:var(--font-code);font-size:0.65rem;color:var(--ink);transition:all 0.12s">'+b.short+ms+'</button>';
+      html += '<button onclick="openBookById(&apos;'+b.id+'&apos;)" class="trad-book-btn" style="border-color:'+col+';">'+b.short+ms+'</button>';
     });
     html += '</div></div>';
   });
@@ -5887,21 +5904,9 @@ var MSR = (function() {
 </div>
 
 <div class="xref-panel" id="xref-panel"><div class="xref-panel-header"><div><div class="xref-panel-title" id="xref-panel-plant"></div><div class="xref-panel-subtitle" id="xref-panel-count"></div></div><button class="xref-panel-close" onclick="document.getElementById('xref-panel').classList.remove('open')">&#x2715; Close</button></div><div class="xref-results" id="xref-results"></div></div></div>
-<footer class="site-footer">
-  <div>
-    <div class="footer-title">Materia Medica Americana</div>
-    <div style="font-family:var(--font-code); font-size:0.62rem; color:var(--gold-light); opacity:0.6; margin-top:0.3rem;">Open Scholarly Resource · Public Domain Sources</div>
-  </div>
-  <div class="footer-meta">
-    Original source texts (1552–1653) are in the public domain. Translations, cross-source analysis, and database curation © 2026 Noel Wiggins. AI-assisted translation (Claude, Anthropic); human-reviewed and curated.<br><br>
-    Sources: Cobo 1653 · Badianus 1552 · Florentine Codex 1577<br>
-    Translation: AI-assisted, 2025 · Not peer reviewed<br>
-    Illustrations: Public domain / badianus.omeka.net<br>
-    Florentine Codex: Getty Research Institute florentinecodex.getty.edu
-  </div>
-</footer>
 
-<footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #2A2418;margin-top:auto;background:#070603">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
+
+
   <!-- ── PLANT DATABASE TAB ─────────────────────────────────── -->
   <section class="tab-panel" id="tab-database">
     <div style="padding:1.5rem 1rem 0.5rem">
@@ -6026,6 +6031,21 @@ var MSR = (function() {
       </div>
     </div>
   </section>
+
+<footer class="site-footer">
+  <div>
+    <div class="footer-title">Materia Medica Americana</div>
+    <div style="font-family:var(--font-code); font-size:0.62rem; color:var(--gold-light); opacity:0.6; margin-top:0.3rem;">Open Scholarly Resource · Public Domain Sources</div>
+  </div>
+  <div class="footer-meta">
+    Original source texts (1552–1653) are in the public domain. Translations, cross-source analysis, and database curation © 2026 Noel Wiggins. AI-assisted translation (Claude, Anthropic); human-reviewed and curated.<br><br>
+    Sources: Cobo 1653 · Badianus 1552 · Florentine Codex 1577<br>
+    Translation: AI-assisted, 2025 · Not peer reviewed<br>
+    Illustrations: Public domain / badianus.omeka.net<br>
+    Florentine Codex: Getty Research Institute florentinecodex.getty.edu
+  </div>
+</footer>
+<footer style="text-align:center;padding:1.5rem 1rem;font-size:0.72rem;color:#8C8880;font-family:'SF Mono',monospace;border-top:1px solid #2A2418;margin-top:auto;background:#070603">© 2026 Noel Wiggins · Whole Plant Catalog · All rights reserved</footer>
 </body>
 </html>
 
