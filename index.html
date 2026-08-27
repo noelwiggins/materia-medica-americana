@@ -3810,21 +3810,23 @@ function renderBookShelf() {
 }
 
 // ── Open a book ─────────────────────────────────────────────
-function openBook(book, targetSegLabel) {
+function openBook(book, targetSegLabel, searchQuery) {
   readerBook = book;
   readerPageIdx = 0;
+  readerSearchQuery = searchQuery || '';
   setupReaderSearchClicks();
   // Init touch/tap once
   var section = document.getElementById('tab-reader');
   if (section && !section._touchOn) {
     section._touchOn = true;
-    var _tx = 0;
+    var _tx = 0, _ty = 0;
     section.addEventListener('touchstart', function(e) {
-      _tx = e.touches[0].clientX;
+      _tx = e.touches[0].clientX; _ty = e.touches[0].clientY;
     }, {passive:true});
     section.addEventListener('touchend', function(e) {
       var dx = e.changedTouches[0].clientX - _tx;
-      if (Math.abs(dx) > 35) readerPageNav(dx < 0 ? 1 : -1);
+      var _rdy = e.changedTouches[0].clientY - _ty;
+      if (Math.abs(dx) >= 120 && Math.abs(dx) > Math.abs(_rdy) * 2) readerPageNav(dx < 0 ? 1 : -1);
     }, {passive:true});
     section.addEventListener('click', function(e) {
       if (e.target.closest('button,a,input,.corr-item,.reader-search-results,.reader-search-bar,.reader-correlations,.xref-popover')) return;
@@ -3870,8 +3872,20 @@ function openBook(book, targetSegLabel) {
   // pages away from the thing you actually searched for and clicked on.
   readerPageIdx = 0;
   readerTargetSegLabel = targetSegLabel || null;
-  if (targetSegLabel) {
-    var targetIdx = readerSegments.findIndex(function(s) { return s._label === targetSegLabel; });
+  if (targetSegLabel || readerSearchQuery) {
+    var targetIdx = -1;
+    if (targetSegLabel) {
+      targetIdx = readerSegments.findIndex(function(s) { return s._label === targetSegLabel; });
+    }
+    // If exact label not found, search by query text across all segments
+    if (targetIdx === -1 && readerSearchQuery) {
+      var _sq = readerSearchQuery.toLowerCase();
+      var _words = _sq.split(/\s+/).filter(Boolean);
+      targetIdx = readerSegments.findIndex(function(s) {
+        var hay = ((s.title_inferred||s.title||'') + ' ' + (s.translation||'')).toLowerCase();
+        return _words.every(function(w){ return hay.indexOf(w) !== -1; });
+      });
+    }
     if (targetIdx !== -1) readerPageIdx = Math.floor(targetIdx / PASSAGES_PER_PAGE);
   }
   renderReaderSpread();
@@ -4130,7 +4144,12 @@ function renderReaderSpread() {
 
     var trans = document.createElement('div');
     trans.className = 'reader-passage-trans';
-    trans.innerHTML = (seg.translation || '').replace(/\n\n/g, '</p><p>').replace(/\n/g, ' ');
+    var _rawTrans = (seg.translation || '').replace(/\n\n/g, '</p><p>').replace(/\n/g, ' ');
+    if (readerSearchQuery) {
+      var _hlWords = readerSearchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+      _rawTrans = highlightWords(_rawTrans, _hlWords);
+    }
+    trans.innerHTML = _rawTrans;
     rp.appendChild(trans);
 
     if (seg.preparation) {
@@ -5341,7 +5360,7 @@ function runGlobalSearch() {
           for (var bi2 = 0; bi2 < _bks.length; bi2++) {
             if (_bks[bi2] && _bks[bi2].id === bid) { bk = _bks[bi2]; break; }
           }
-          if (bk) openBook(bk, segLabel);
+          if (bk) openBook(bk, segLabel, q);
         }
         return;
       }
