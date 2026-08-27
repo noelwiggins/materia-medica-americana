@@ -13,6 +13,10 @@
         "status": "Traditional",
         "indication": "Minor skin inflammation, wound healing",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Irritation of oral/pharyngeal mucosa, dry irritating cough",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -33,6 +37,10 @@
         "volume": 2,
         "indication": "Anti-inflammatory, digestive, antioxidant",
         "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "commission_e": {
+        "indication": "Dyspeptic complaints",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -48,6 +56,10 @@
         "status": "Well-established",
         "indication": "Adjunct treatment of common cold",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Common colds, upper respiratory infections (supportive)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -58,6 +70,10 @@
         "volume": 2,
         "indication": "Bronchospasm, nasal congestion",
         "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "commission_e": {
+        "indication": "Nasal congestion, bronchial asthma",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -73,6 +89,10 @@
         "status": "Traditional",
         "indication": "Cough, bronchitis, peptic discomfort",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Catarrh of upper respiratory tract, gastric/duodenal ulcer",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -88,6 +108,10 @@
         "status": "Traditional",
         "indication": "Minor respiratory catarrh, cholesterol support",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Elevated blood lipids, arteriosclerosis prevention",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -103,6 +127,10 @@
         "status": "Traditional",
         "indication": "Nausea, digestive complaints, motion sickness",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Dyspeptic complaints, prevention of travel sickness",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -128,6 +156,10 @@
         "status": "Traditional",
         "indication": "Minor skin inflammation, wound healing",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Irritation of oral/pharyngeal mucosa, dry irritating cough",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -143,6 +175,10 @@
         "status": "Well-established",
         "indication": "Constipation, IBS, elevated cholesterol",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Catarrh of upper respiratory tract, inflammatory conditions of oral mucosa",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -153,6 +189,10 @@
         "volume": 2,
         "indication": "Bronchospasm, nasal congestion",
         "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -178,6 +218,10 @@
         "status": "Traditional",
         "indication": "GI cramps, bloating, skin inflammation",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "GI spasms and inflammatory diseases, respiratory catarrh, wound healing",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -193,6 +237,10 @@
         "status": "Traditional",
         "indication": "Minor respiratory catarrh, cholesterol support",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Elevated blood lipids, arteriosclerosis prevention",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -208,6 +256,10 @@
         "status": "Traditional",
         "indication": "GI spasm, bloating, infant colic",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Dyspeptic complaints, catarrh of upper respiratory tract",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -218,6 +270,10 @@
         "volume": 2,
         "indication": "Constipation, hyperlipidemia",
         "url": "https://www.who.int/publications/i/item/9789241547024"
+      },
+      "commission_e": {
+        "indication": "Constipation, irritable colon, diverticulitis",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -233,6 +289,10 @@
         "status": "Traditional",
         "indication": "Minor respiratory catarrh, cholesterol support",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Elevated blood lipids, arteriosclerosis prevention",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -258,6 +318,10 @@
         "status": "Traditional",
         "indication": "GI complaints, IBS; head tension (topical oil)",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -293,6 +357,10 @@
         "status": "Traditional",
         "indication": "Minor respiratory catarrh, cholesterol support",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Elevated blood lipids, arteriosclerosis prevention",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -308,6 +376,10 @@
         "status": "Traditional",
         "indication": "Minor respiratory catarrh, cholesterol support",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Elevated blood lipids, arteriosclerosis prevention",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -343,6 +415,10 @@
         "status": "Traditional",
         "indication": "Minor skin inflammation, wound healing",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Irritation of oral/pharyngeal mucosa, dry irritating cough",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -358,6 +434,10 @@
         "status": "Traditional",
         "indication": "Minor skin inflammation, wound healing",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Irritation of oral/pharyngeal mucosa, dry irritating cough",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -393,6 +473,10 @@
         "status": "Traditional",
         "indication": "GI spasm, bloating, infant colic",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Dyspeptic complaints, catarrh of upper respiratory tract",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -408,6 +492,10 @@
         "status": "Traditional",
         "indication": "Common cold, catarrh of upper respiratory tract",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Colds",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -423,6 +511,10 @@
         "status": "Well-established",
         "indication": "Short-term constipation; Traditional: minor wounds, burns",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Constipation (stimulant laxative)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -448,6 +540,10 @@
         "status": "Traditional",
         "indication": "Minor skin inflammation, wound healing",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Irritation of oral/pharyngeal mucosa, dry irritating cough",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -473,6 +569,10 @@
         "status": "Traditional",
         "indication": "Wound healing, minor inflammatory skin conditions, digestive",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Loss of appetite, dyspeptic complaints, mild spasmodic GI complaints",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -488,6 +588,10 @@
         "status": "Well-established",
         "indication": "Constipation, IBS, elevated cholesterol",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Catarrh of upper respiratory tract, inflammatory conditions of oral mucosa",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -503,6 +607,10 @@
         "status": "Traditional",
         "indication": "GI spasm, bloating, infant colic",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Dyspeptic complaints, catarrh of upper respiratory tract",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -528,6 +636,10 @@
         "status": "Well-established",
         "indication": "Cognitive decline symptoms, circulatory disorders",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Cerebral insufficiency, peripheral arterial occlusive disease",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -543,6 +655,10 @@
         "status": "Traditional",
         "indication": "Minor skin inflammation, wound healing",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Irritation of oral/pharyngeal mucosa, dry irritating cough",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -558,6 +674,10 @@
         "status": "Well-established",
         "indication": "Mild to moderate depression",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Psychovegetative disturbances, depressive moods, anxiety, nervous unrest",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -573,6 +693,10 @@
         "status": "Traditional",
         "indication": "Cough, bronchitis, peptic discomfort",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Catarrh of upper respiratory tract, gastric/duodenal ulcer",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -598,6 +722,10 @@
         "status": "Traditional",
         "indication": "Nausea, digestive complaints, motion sickness",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Dyspeptic complaints, prevention of travel sickness",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -613,6 +741,10 @@
         "status": "Well-established",
         "indication": "Mild cardiac insufficiency (NYHA I)",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Declining cardiac performance, sensations of pressure in the heart",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -628,6 +760,10 @@
         "status": "Traditional",
         "indication": "Liver and biliary complaints",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Toxic liver damage, hepatic cirrhosis (supportive)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     },
     {
@@ -653,6 +789,100 @@
         "status": "Well-established",
         "indication": "Mild joint and back pain",
         "url": "https://www.ema.europa.eu/en/medicines/herbal"
+      },
+      "commission_e": {
+        "indication": "Loss of appetite, dyspeptic complaints, degenerative locomotor disorders",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-015",
+      "common_name": "Willow Bark",
+      "botanical": "Salix species",
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-033",
+      "common_name": "Copal (Maya) / Pom",
+      "botanical": "Bursera copallifera / B. bipinnata / B. simaruba (multiple species)",
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-058",
+      "common_name": "Beet / Beetroot",
+      "botanical": "Beta vulgaris",
+      "commission_e": {
+        "indication": "Bronchitis, upper respiratory catarrh",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-065",
+      "common_name": "Pine Resin / Pitch",
+      "botanical": "Pinus sylvestris / P. halepensis and related species",
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-070",
+      "common_name": "Dock / Sorrel",
+      "botanical": "Rumex species (R. obtusifolius, R. crispus)",
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-071",
+      "common_name": "Pitch",
+      "botanical": "Pinus species (pitch/resin)",
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-096",
+      "common_name": "Bean / Broad Bean (var.)",
+      "botanical": "Phaseolus vulgaris / Vicia species",
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-107",
+      "common_name": "Granadilla / Passionfruit",
+      "botanical": "Passiflora ligularis / P. edulis",
+      "commission_e": {
+        "indication": "Nervous restlessness, anxiety",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-348",
+      "common_name": "Copal/Pom",
+      "botanical": "Bursera species",
+      "commission_e": {
+        "indication": "Painful muscle spasm, neuralgia (topical)",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
+      }
+    },
+    {
+      "plant_id": "MMA-608",
+      "common_name": "Horse Chestnut",
+      "botanical": "Aesculus hippocastanum",
+      "commission_e": {
+        "indication": "Venous insufficiency, varicose veins, leg oedema",
+        "url": "https://www.heilpflanzen-welt.de/buecher/BGA-Kommission-E-Monographien/"
       }
     }
   ]
