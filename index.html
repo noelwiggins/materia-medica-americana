@@ -2233,39 +2233,31 @@ function closeBookModal(e) {
   document.body.style.overflow = '';
 }
 
-// ── Tap/swipe to turn pages ───────────────────────────────
+// ── Swipe to turn pages (tap zones removed — too sensitive) ──
 (function() {
-  var _tx = 0;
   function initBookTouch() {
     var modal = document.getElementById('book-modal');
     if (!modal || modal._touchInited) return;
     modal._touchInited = true;
-    var _tx = 0;
+    var _tx = 0, _ty = 0;
 
-    // Swipe anywhere in the modal
+    // Swipe: must be ≥120px horizontal AND more horizontal than vertical
+    // This prevents accidental page turns from taps or diagonal scrolls
     modal.addEventListener('touchstart', function(e) {
       _tx = e.touches[0].clientX;
+      _ty = e.touches[0].clientY;
     }, {passive: true});
+
     modal.addEventListener('touchend', function(e) {
       var dx = e.changedTouches[0].clientX - _tx;
-      if (Math.abs(dx) > 35) {
+      var dy = e.changedTouches[0].clientY - _ty;
+      // Require: ≥120px horizontal, horizontal movement > 2× vertical
+      if (Math.abs(dx) >= 120 && Math.abs(dx) > Math.abs(dy) * 2) {
         bookPage(dx < 0 ? 1 : -1);
-        e.preventDefault();
       }
     }, {passive: true});
 
-    // Tap: left third = prev, right third = next, middle = ignore
-    modal.addEventListener('click', function(e) {
-      if (e.target.closest('button, a, .xref-link, input')) return;
-      var spread = document.getElementById('book-spread-wrap') || modal;
-      var rect = spread.getBoundingClientRect();
-      var x = e.clientX - rect.left;
-      var w = rect.width;
-      if (x < w * 0.25) bookPage(-1);
-      else if (x > w * 0.75) bookPage(1);
-    });
-
-    // Keyboard
+    // Keyboard (unchanged)
     document.addEventListener('keydown', function(e) {
       if (modal.style.display === 'flex') {
         if (e.key === 'ArrowRight' || e.key === 'ArrowDown') bookPage(1);
@@ -2274,7 +2266,6 @@ function closeBookModal(e) {
       }
     });
   }
-  // Run after book opens
   var _origOpen = window.openBookModal;
   window.openBookModal = function(t) {
     _origOpen(t);
