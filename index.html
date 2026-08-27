@@ -2484,7 +2484,7 @@ grid.innerHTML = sorted.map(p => {
                 <div style="font-family:var(--font-code);font-size:0.55rem;color:${tc};text-transform:uppercase;margin-bottom:0.25rem">${t?.icon||''} ${t?.name||tid}${s.source_section?' · '+s.source_section:''}</div>
                 ${s.original?`<div style="font-family:var(--font-code);font-size:0.72rem;color:var(--muted);font-style:italic;margin-bottom:0.3rem">${s.original.slice(0,200)}…</div>`:''}
                 <p style="font-size:0.83rem;line-height:1.65;color:var(--ink);margin:0">${s.translation.slice(0,400)}${s.translation.length>400?'…':''}</p>
-                ${s._ai_synthesized_disclosure?`<div style="margin-top:0.4rem;padding:0.35rem 0.55rem;background:#2A1A0A;border:1px solid #6A4A1A;border-radius:3px;font-family:monospace;font-size:0.58rem;letter-spacing:0.03em;color:#D0A050;line-height:1.5">&#9888; AI-synthesized overview, not a verified transcription of the actual published monograph</div>`:''}
+                ${s._ai_synthesized_disclosure?`<span style="margin-left:0.3rem;font-size:0.62rem;color:#8A6A30;cursor:default;" title="AI-synthesized overview — not a verified transcription of the published monograph">&#9432;</span>`:''}
               </div>`).join('');
             }).join('')}
           </div>`;
@@ -4617,16 +4617,31 @@ function renderResultRows(results, resultBooks, limit, highlightWordList) {
     var titleHtml = highlightWords(s2.title_inferred || 'Untitled', highlightWordList);
     var snippetRaw = snippetAroundMatch(s2.translation || '', highlightWordList, 160);
     var snippetHtml = highlightWords(snippetRaw, highlightWordList);
+    var plainLine = '';
+    if (s2.condition) {
+      plainLine = s2.condition.split(',').slice(0,3).join(', ');
+    } else {
+      // Derive from translation: first sentence that contains a plain action word
+      var plainActions = ['pain','spasm','inflam','relax','calm','wound','digest','sleep','fever','anxiety'];
+      var sents = (s2.translation||'').split(/[.;]/);
+      for (var si=0; si<sents.length; si++) {
+        var sl = sents[si].toLowerCase();
+        if (plainActions.some(function(pa){ return sl.indexOf(pa) !== -1; }) && sents[si].trim().length > 15) {
+          plainLine = sents[si].trim().replace(/^[\s\-—]+/,'').slice(0,80);
+          break;
+        }
+      }
+    }
     html += '<div class="sr-row" data-bid="' + (book ? book.id : '') + '" ' +
       'data-seg="' + acEscH(s2._label || '') + '" ' +
       'style="padding:0.8rem 1rem;border-bottom:1px solid #1E1C10;cursor:pointer">' +
       '<div style="font-weight:700;font-size:0.88rem;color:#F0E8D0;margin-bottom:0.12rem">' +
-      titleHtml + '</div>' +
+      titleHtml + (s2._ai_synthesized_disclosure ? '<span style="margin-left:0.3rem;font-size:0.62rem;color:#8A6A30;cursor:default;" title="AI-synthesized overview — not a verified transcription of the published monograph">&#9432;</span>' : '') + '</div>' +
+      (plainLine ? '<div style="font-size:0.72rem;color:#7AAA70;margin-bottom:0.15rem;font-style:italic">' + plainLine + '</div>' : '') +
       '<div style="font-family:monospace;font-size:0.55rem;letter-spacing:0.1em;' +
       'text-transform:uppercase;color:' + col + ';margin-bottom:0.22rem">' + lbl + '</div>' +
       '<div style="font-size:0.77rem;color:#7A6A50;line-height:1.5">' +
       snippetHtml + '</div>' +
-      (s2._ai_synthesized_disclosure ? '<div style="margin-top:0.4rem;padding:0.35rem 0.55rem;background:#2A1A0A;border:1px solid #6A4A1A;border-radius:3px;font-family:monospace;font-size:0.58rem;letter-spacing:0.03em;color:#D0A050;line-height:1.5">&#9888; AI-synthesized overview, not a verified transcription of the actual published monograph</div>' : '') +
       '</div>';
   }
   if (results.length > limit) {
@@ -4909,6 +4924,38 @@ function runGlobalSearch() {
       'font-family:monospace;font-size:0.7rem;cursor:pointer;white-space:nowrap">Search</button>' +
       '</div>';
 
+
+  // ── Action-tag chips ───────────────────────────────────────────
+  var actionTags = [
+    { label: 'Anti-inflammatory', keywords: ['anti-inflam','inflammation','inflammatory'] },
+    { label: 'Muscle relaxant',   keywords: ['antispasmodic','spasmolytic','spasm','muscle relax'] },
+    { label: 'Pain relief',       keywords: ['analgesic','pain relief','pain-reliev','anodyne'] },
+    { label: 'Calming',           keywords: ['sedative','calming','anxiolytic','nervine'] },
+    { label: 'Wound healing',     keywords: ['wound healing','vulnerary','tissue repair','cicatriz'] },
+    { label: 'Digestive',         keywords: ['digestive','carminative','stomachic','nausea'] },
+    { label: 'Antimicrobial',     keywords: ['antimicrobial','antibacterial','antifungal','antiseptic'] },
+  ];
+  function segMatchesAction(seg, keywords) {
+    var hay = ((seg.title_inferred||'') + ' ' + (seg.translation||'')).toLowerCase();
+    return keywords.some(function(kw){ return hay.indexOf(kw) !== -1; });
+  }
+  // Only show chips that have ≥1 result in this search
+  var activeActionTag = '';
+  var actionChipsHtml = '<div id="sr-action-chips" style="display:flex;flex-wrap:wrap;gap:0.3rem;' +
+    'padding:0.5rem 1rem 0.3rem;border-bottom:1px solid #1E1C10">' +
+    '<span style="font-family:monospace;font-size:0.58rem;letter-spacing:0.08em;color:#5A5040;' +
+    'text-transform:uppercase;align-self:center">Filter:</span>';
+  actionTags.forEach(function(tag) {
+    var tagCount = results.filter(function(s){ return segMatchesAction(s, tag.keywords); }).length;
+    if (tagCount === 0) return;
+    actionChipsHtml += '<button class="sr-action-chip" data-tag="' + tag.label + '" ' +
+      'style="background:transparent;border:1px solid #3A3020;color:#A09070;padding:0.2rem 0.55rem;' +
+      'font-family:monospace;font-size:0.62rem;border-radius:2px;cursor:pointer;transition:all 0.15s">' +
+      tag.label + ' <span style="color:#5A5040">(' + tagCount + ')</span></button>';
+  });
+  actionChipsHtml += '</div>';
+
+    inner += actionChipsHtml;
     inner += '<div id="sr-body" class="sr-body">' +
       '<div id="sr-traditions" class="sr-traditions">' +
       '<div style="font-family:monospace;font-size:0.58rem;letter-spacing:0.1em;color:#7A6A50;' +
@@ -4966,6 +5013,38 @@ function runGlobalSearch() {
     var srNewInput = panel.querySelector('#sr-new-search');
     if (srNewInput) srNewInput.addEventListener('keydown', function(e) {
       if (e.key === 'Enter') { e.preventDefault(); srAgain && srAgain.onclick(e); }
+    });
+    // Wire action-tag filter chips
+    panel.querySelectorAll('.sr-action-chip').forEach(function(chip) {
+      chip.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var tag = chip.getAttribute('data-tag');
+        var tagDef = actionTags.find(function(t){ return t.label === tag; });
+        if (!tagDef) return;
+        if (activeActionTag === tag) {
+          activeActionTag = '';
+          panel.querySelectorAll('.sr-action-chip').forEach(function(c2){
+            c2.style.background='transparent'; c2.style.color='#A09070'; c2.style.borderColor='#3A3020';
+          });
+          // Reset to full filtered results
+          panel.querySelector('#sr-results-list').innerHTML =
+            renderResultRows(filtered, filteredBooks, 80, words);
+        } else {
+          activeActionTag = tag;
+          panel.querySelectorAll('.sr-action-chip').forEach(function(c2){
+            c2.style.background='transparent'; c2.style.color='#A09070'; c2.style.borderColor='#3A3020';
+          });
+          chip.style.background='#C4A860'; chip.style.color='#0A0805'; chip.style.borderColor='#C4A860';
+          var actionFiltered = filtered.filter(function(s){ return segMatchesAction(s, tagDef.keywords); });
+          var actionBooks = actionFiltered.map(function(s){
+            return BOOKS.find(function(b){ return b.corpusKeys && b.corpusKeys.indexOf(s._corpusKey) !== -1; }) || null;
+          });
+          var countLabel = panel.querySelector('#sr-count-label');
+          if (countLabel) countLabel.textContent = actionFiltered.length + ' results — ' + q + ' · ' + tag;
+          panel.querySelector('#sr-results-list').innerHTML =
+            renderResultRows(actionFiltered, actionBooks, 80, words);
+        }
+      });
     });
     panel.querySelector('.sr-close').onclick = function(e) {
       e.stopPropagation(); closeSearchModal();
