@@ -5505,13 +5505,54 @@ function runGlobalSearch() {
       var banner = document.getElementById('sr-herb-banner');
       if (!banner || !match) return;
       banner.style.display = 'block';
-      banner.innerHTML = '<img src="' + match.src + '" ' +
+      banner.innerHTML =
+        '<img id="sr-herb-img" src="' + match.src + '" ' +
         'style="width:100%;height:160px;object-fit:cover;object-position:center 25%;' +
-        'display:block;filter:sepia(20%) contrast(1.05)" />' +
-        '<div style="position:absolute;bottom:0;left:0;right:0;padding:0.3rem 0.7rem;' +
-        'background:linear-gradient(transparent,rgba(10,8,5,0.85));' +
-        'font-family:monospace;font-size:0.48rem;color:#A09070;letter-spacing:0.05em">' +
-        match.label + '</div>';
+        'display:block;filter:sepia(20%) contrast(1.05);transition:height 0.3s ease" />' +
+        '<div style="position:absolute;bottom:0;left:0;right:0;padding:0.3rem 0.7rem 0.3rem 0.7rem;' +
+        'background:linear-gradient(transparent,rgba(10,8,5,0.9));' +
+        'display:flex;justify-content:space-between;align-items:flex-end">' +
+        '<span style="font-family:monospace;font-size:0.48rem;color:#A09070;letter-spacing:0.05em">' +
+        match.label + '</span>' +
+        '<button id="sr-herb-expand" ' +
+        'style="background:#C4A860;border:none;color:#0A0805;padding:0.2rem 0.5rem;' +
+        'font-family:monospace;font-size:0.55rem;cursor:pointer;border-radius:2px;' +
+        'letter-spacing:0.06em;flex-shrink:0;margin-left:0.5rem">⤢ Expand</button>' +
+        '</div>';
+      // Wire expand button
+      var expandBtn = document.getElementById('sr-herb-expand');
+      var herbImg   = document.getElementById('sr-herb-img');
+      var expanded  = false;
+      if (expandBtn) expandBtn.onclick = function(e) {
+        e.stopPropagation();
+        expanded = !expanded;
+        if (expanded) {
+          // Full-height lightbox overlay
+          var lb = document.createElement('div');
+          lb.id = 'sr-herb-lightbox';
+          lb.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:20000;' +
+            'display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1rem';
+          lb.innerHTML = '<img src="' + match.src + '" ' +
+            'style="max-width:100%;max-height:80vh;object-fit:contain;filter:sepia(15%) contrast(1.05);' +
+            'border:1px solid #3A3020" />' +
+            '<div style="margin-top:0.6rem;font-family:monospace;font-size:0.55rem;color:#A09070;' +
+            'letter-spacing:0.05em;text-align:center">' + match.label + '</div>' +
+            '<button id="sr-herb-close" style="margin-top:1rem;background:#C4A860;border:none;' +
+            'color:#0A0805;padding:0.35rem 1rem;font-family:monospace;font-size:0.65rem;' +
+            'cursor:pointer;border-radius:2px;letter-spacing:0.08em">✕ Close</button>';
+          document.body.appendChild(lb);
+          document.getElementById('sr-herb-close').onclick = function() {
+            lb.remove(); expanded = false;
+            if (expandBtn) expandBtn.textContent = '\u2922 Expand';
+          };
+          lb.onclick = function(e) { if (e.target === lb) { lb.remove(); expanded = false; } };
+          expandBtn.textContent = '\u2922 Minimize';
+        } else {
+          var lb2 = document.getElementById('sr-herb-lightbox');
+          if (lb2) lb2.remove();
+          expandBtn.textContent = '\u2922 Expand';
+        }
+      };
       // Also update hero image
       var heroImg = document.getElementById('wec-codex-img');
       var heroLbl = document.getElementById('wec-codex-label');
