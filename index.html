@@ -2490,36 +2490,29 @@ var _herbImageCache = {}; // v2 — clears stale false entries from prior sessio
 function fetchHerbImage(query, callback) {
   if (!query || query.length < 3) { callback(null); return; }
 
-  // Clean query: take first meaningful word (before /, (, comma)
-  // "Agave / Cabuya" → "Agave", "St. John's Wort" → "John's Wort"
-  var cleaned = query.trim()
-    .replace(/\s*\/.*$/, '')       // drop everything after /
-    .replace(/\s*\(.*$/, '')       // drop everything after (
-    .replace(/\s*,.*$/, '')        // drop after comma
-    .trim();
-  var primaryWord = cleaned.split(/\s+/)[0].toLowerCase()
-    .replace(/[^a-z\u00c0-\u024f'-]/g, ''); // letters only
-
-  var cacheKey = primaryWord;
+  // Clean: take primary word before / ( , 
+  var primaryTerm = query.trim()
+    .replace(/\s*\/.*$/, '').replace(/\s*\(.*$/, '').replace(/\s*,.*$/, '').trim();
+  var cacheKey = primaryTerm.toLowerCase();
   if (_herbImageCache[cacheKey] !== undefined) {
     callback(_herbImageCache[cacheKey] || null); return;
   }
 
-  // Check HERB_FILES hardcoded list first
-  var matchKey = null;
-  var words = cleaned.toLowerCase().split(/\s+/);
+  function store(result) {
+    _herbImageCache[cacheKey] = result || false;
+    callback(result || null);
+  }
+
+  // ── Tier 1: HERB_FILES (Köhler/Balmis hardcoded plates) ──────────
+  var words = cacheKey.split(/\s+/);
   words.sort(function(a,b){ return b.length - a.length; });
+  var matchKey = null;
   for (var i = 0; i < words.length && !matchKey; i++) {
     for (var k in HERB_FILES) {
       if (k.indexOf(words[i]) === 0 || words[i].indexOf(k.split(' ')[0]) === 0) {
         matchKey = k; break;
       }
     }
-  }
-
-  function store(result) {
-    _herbImageCache[cacheKey] = result || false;
-    callback(result || null);
   }
 
   function fetchFromFile(fname) {
@@ -2538,84 +2531,81 @@ function fetchHerbImage(query, callback) {
         var label = decodeURIComponent(fname.replace(/_/g,' '))
           .replace(/\.jpg$/i,'').replace(/\.png$/i,'')
           .replace(/ - K\u00f6hler\u2013s Medizinal-Pflanzen-?\d*/,'')
-          .replace(/ \(K\u00f6hler.*?\)/,'')
-          .replace(/ \(.*?\)/,'')
-          + ' \u2014 botanical illustration';
-        return {src: src, label: label.trim()};
+          .replace(/ \(K\u00f6hler.*?\)/,'').replace(/ \(.*?\)/,'').trim()
+          + ' \u2014 K\u00f6hler, 1887';
+        return {src: src, label: label};
       }).catch(function(){ return null; });
   }
 
-  function searchCommons(term, extraTerms) {
-    // Try multiple search strategies in sequence
-    var strategies = [
-      term + ' Kohler Medizinal-Pflanzen',
-      term + ' botanical illustration engraving',
-      term + ' medicinal plant illustration',
-      term + ' Woodville medical botany',
-      term + ' Sowerby botanical',
-    ];
-    if (extraTerms) strategies.unshift(term + ' ' + extraTerms);
-
-    function tryNext(idx) {
-      if (idx >= strategies.length) return Promise.resolve(null);
-      var sq = encodeURIComponent(strategies[idx]);
-      return fetch('https://commons.wikimedia.org/w/api.php?action=query&list=search' +
-        '&srsearch=' + sq + '&srnamespace=6&srlimit=5&format=json&origin=*')
-        .then(function(r){ return r.json(); })
-        .then(function(data) {
-          var results = data.query && data.query.search;
-          if (!results || !results.length) return tryNext(idx + 1);
-          // Score results: prefer illustrations/engravings, avoid photos
-          // Pre-filter: only image files
-          results = results.filter(function(r) {
-            var t = r.title.toLowerCase();
-            return t.indexOf('.jpg') !== -1 || t.indexOf('.png') !== -1 || t.indexOf('.jpeg') !== -1;
-          });
-          if (!results.length) return tryNext(idx + 1);
-          var scored = results.map(function(r) {
-            var t = r.title.toLowerCase();
-            var score = 0;
-            if (t.indexOf('hler') !== -1) score += 10;      // Köhler
-            if (t.indexOf('medizinal') !== -1) score += 8;
-            if (t.indexOf('botanical') !== -1) score += 5;
-            if (t.indexOf('illustration') !== -1) score += 4;
-            if (t.indexOf('engraving') !== -1) score += 3;
-            if (t.indexOf('woodville') !== -1) score += 6;
-            if (t.indexOf('.jpg') !== -1 || t.indexOf('.png') !== -1) score += 3;
-            if (t.indexOf('.pdf') !== -1 || t.indexOf('.tiff') !== -1 || t.indexOf('.djvu') !== -1) score -= 20; // exclude non-image files
-            if (t.indexOf('chemist') !== -1 || t.indexOf('druggist') !== -1 || t.indexOf('journal') !== -1 || t.indexOf('magazine') !== -1) score -= 15;
-            if (t.indexOf('cover') !== -1 || t.indexOf('title') !== -1) score -= 8;
-            if (t.indexOf('photo') !== -1) score -= 5;
-            if (t.indexOf('flower') !== -1 && t.indexOf('illustr') === -1) score -= 2;
-            if (t.indexOf('balmis') !== -1) score += 6;   // Balmis expedition botanicals
-            if (t.indexOf('garidel') !== -1) score += 5;
-            if (t.indexOf('chaumeton') !== -1) score += 5;
-            if (t.indexOf('duhamel') !== -1) score += 4;
-            if (t.indexOf('blanco') !== -1) score += 3;   // Flora de Filipinas
-            if (t.indexOf('rumph') !== -1) score += 4;    // Rumphius Herbarium Amboinense
-            if (t.indexOf('martius') !== -1) score += 4;  // Flora Brasiliensis
-            if (t.indexOf('hernandez') !== -1) score += 5; // Francisco Hernandez
-            return {r: r, score: score};
-          }).sort(function(a,b){ return b.score - a.score; });
-          var best = scored[0].r;
-          var fname = encodeURIComponent(best.title.replace('File:',''));
-          return fetchFromFile(fname).then(function(result) {
-            if (result) return result;
-            return tryNext(idx + 1);
-          });
-        }).catch(function(){ return tryNext(idx + 1); });
-    }
-    return tryNext(0);
+  // ── Tier 2: Commons "X in art" category (illustrations only) ─────
+  function commonsInArt(name) {
+    var cat = encodeURIComponent(name + ' in art');
+    return fetch('https://commons.wikimedia.org/w/api.php?action=query' +
+      '&generator=categorymembers&gcmtitle=Category:' + cat +
+      '&gcmtype=file&gcmlimit=10&prop=imageinfo&iiprop=url&iiurlwidth=800' +
+      '&format=json&origin=*')
+      .then(function(r){ return r.json(); })
+      .then(function(data) {
+        var pages = data.query && data.query.pages;
+        if (!pages) return null;
+        var files = Object.values(pages).filter(function(p) {
+          var t = (p.title||'').toLowerCase();
+          return (t.indexOf('.jpg') !== -1 || t.indexOf('.png') !== -1) &&
+                 t.indexOf('photo') === -1;
+        });
+        if (!files.length) return null;
+        // Prefer files with illustration keywords in filename
+        files.sort(function(a,b) {
+          function sc(t) {
+            t = t.toLowerCase();
+            var s = 0;
+            if (t.indexOf('hler') !== -1) s += 10;
+            if (t.indexOf('illustr') !== -1) s += 6;
+            if (t.indexOf('engrav') !== -1) s += 5;
+            if (t.indexOf('botanical') !== -1) s += 4;
+            if (t.indexOf('woodcut') !== -1) s += 3;
+            return s;
+          }
+          return sc(b.title) - sc(a.title);
+        });
+        var best = files[0];
+        var ii = best.imageinfo && best.imageinfo[0];
+        if (!ii) return null;
+        var src = (ii.thumburl || ii.url||'').split('?')[0];
+        if (!src) return null;
+        return {src: src, label: best.title.replace('File:','').replace(/_/g,' ')
+          .replace(/\.jpg$/i,'').replace(/\.png$/i,'') + ' \u2014 botanical illustration'};
+      }).catch(function(){ return null; });
   }
 
+  // ── Tier 3: iNaturalist verified species photo ────────────────────
+  function iNaturalist(name) {
+    var q = encodeURIComponent(name);
+    return fetch('https://api.inaturalist.org/v1/taxa?q=' + q +
+      '&rank=species&photos=true&per_page=1')
+      .then(function(r){ return r.json(); })
+      .then(function(data) {
+        var results = data.results;
+        if (!results || !results.length) return null;
+        var taxon = results[0];
+        var photo = taxon.default_photo;
+        if (!photo || !photo.medium_url) return null;
+        var commonName = taxon.preferred_common_name || taxon.name || name;
+        var label = taxon.name + (commonName !== taxon.name ? ' (' + commonName + ')' : '')
+          + ' \u2014 iNaturalist verified observation';
+        return {src: photo.medium_url, label: label};
+      }).catch(function(){ return null; });
+  }
+
+  // Run tiers in sequence
   var p;
   if (matchKey) {
-    p = fetchFromFile(HERB_FILES[matchKey]).then(function(result) {
-      if (result) return result;
-      return searchCommons(primaryWord);
-    });
+    p = fetchFromFile(HERB_FILES[matchKey])
+      .then(function(r){ return r || commonsInArt(primaryTerm); })
+      .then(function(r){ return r || iNaturalist(primaryTerm); });
   } else {
-    p = searchCommons(primaryWord);
+    p = commonsInArt(primaryTerm)
+      .then(function(r){ return r || iNaturalist(primaryTerm); });
   }
 
   p.then(store).catch(function(){ store(null); });
