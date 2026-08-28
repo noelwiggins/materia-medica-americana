@@ -5363,16 +5363,7 @@ function runGlobalSearch() {
         window._srHerbMatch = null;
       }
     }());
-    inner += '<div id="sr-body" class="sr-body">';    // Inject botanical illustration if match found
-    if (window._srHerbMatch) {
-      inner += '<div style="overflow:hidden;border-bottom:1px solid #2A2010">' +
-        '<img src="' + window._srHerbMatch.src + '" ' +
-        'style="width:100%;height:180px;object-fit:cover;object-position:center 20%;' +
-        'display:block;filter:sepia(15%) contrast(1.02)" />' +
-        '<div style="padding:0.25rem 0.6rem;font-family:monospace;font-size:0.48rem;' +
-        'color:#5A5040;letter-spacing:0.04em">' + window._srHerbMatch.label + '</div></div>';
-    }
-    inner += '<div id="sr-traditions" class="sr-traditions">' +
+    inner += '<div id="sr-body" class="sr-body">';    inner += '<div id="sr-traditions" class="sr-traditions">' +
       '<div style="font-family:monospace;font-size:0.58rem;letter-spacing:0.1em;color:#7A6A50;' +
       'text-transform:uppercase;padding:0.2rem 0.4rem 0.5rem;">Traditions</div>';
     if (results.length) {
