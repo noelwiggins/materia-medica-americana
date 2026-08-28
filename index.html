@@ -2415,7 +2415,13 @@ var HERB_FILES = {
 var _herbImageCache = {};
 
 function fetchHerbImage(query, callback) {
-  var words = query.toLowerCase().split(/\s+/);
+  if (!query || query.length < 3) { callback(null); return; }
+  var cacheKey = query.toLowerCase().trim();
+  if (_herbImageCache[cacheKey]) { callback(_herbImageCache[cacheKey]); return; }
+  if (_herbImageCache[cacheKey] === false) { callback(null); return; }
+
+  // Step 1: Check HERB_FILES for a hardcoded match
+  var words = cacheKey.split(/\s+/);
   words.sort(function(a,b){ return b.length - a.length; });
   var matchKey = null;
   for (var i = 0; i < words.length && !matchKey; i++) {
@@ -2425,29 +2431,66 @@ function fetchHerbImage(query, callback) {
       }
     }
   }
-  if (!matchKey) { callback(null); return; }
-  var fname = HERB_FILES[matchKey];
-  if (_herbImageCache[fname]) { callback(_herbImageCache[fname]); return; }
-  // Fetch URL via Commons API (CORS-enabled)
-  var apiUrl = 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:' + fname +
-    '&prop=imageinfo&iiprop=url&iiurlwidth=600&format=json&origin=*';
-  fetch(apiUrl)
-    .then(function(r){ return r.json(); })
-    .then(function(data) {
-      var pages = data.query && data.query.pages;
-      if (!pages) { callback(null); return; }
-      var page = Object.values(pages)[0];
-      var ii = page.imageinfo && page.imageinfo[0];
-      var src = ii && (ii.thumburl || ii.url);
-      if (src) {
-        // Remove utm params
+
+  function cacheAndReturn(result) {
+    _herbImageCache[cacheKey] = result || false;
+    callback(result || null);
+  }
+
+  function fetchFromFile(fname) {
+    var apiUrl = 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:' +
+      fname + '&prop=imageinfo&iiprop=url&iiurlwidth=600&format=json&origin=*';
+    return fetch(apiUrl)
+      .then(function(r){ return r.json(); })
+      .then(function(data) {
+        var pages = data.query && data.query.pages;
+        if (!pages) return null;
+        var page = Object.values(pages)[0];
+        if (page.missing !== undefined) return null;
+        var ii = page.imageinfo && page.imageinfo[0];
+        var src = ii && (ii.thumburl || ii.url);
+        if (!src) return null;
         src = src.split('?')[0];
-        var label = decodeURIComponent(fname).replace(/_/g,' ').replace(/\.jpg$/,'').replace(/ - Köhler–s Medizinal-Pflanzen-\d+/,'') + ' — Köhler, 1887';
-        _herbImageCache[fname] = {src: src, label: label};
-        callback(_herbImageCache[fname]);
-      } else { callback(null); }
-    })
-    .catch(function(){ callback(null); });
+        var label = decodeURIComponent(fname.replace(/_/g,' ')).replace(/\.jpg$/i,'')
+          .replace(/ - K\u00f6hler\u2013s Medizinal-Pflanzen-?\d*/,'')
+          .replace(/ \(K\u00f6hler\)/,'') + ' \u2014 K\u00f6hler, 1887';
+        return {src: src, label: label};
+      });
+  }
+
+  function searchCommons(searchQuery) {
+    // Search Commons for the plant + Köhler illustration
+    var sq = encodeURIComponent(searchQuery + ' Kohler Medizinal');
+    var apiUrl = 'https://commons.wikimedia.org/w/api.php?action=query&list=search' +
+      '&srsearch=' + sq + '&srnamespace=6&srlimit=3&format=json&origin=*';
+    return fetch(apiUrl)
+      .then(function(r){ return r.json(); })
+      .then(function(data) {
+        var results = data.query && data.query.search;
+        if (!results || !results.length) return null;
+        // Prefer results with "Köhler" or "Medizinal" in title
+        var best = results.find(function(r) {
+          return r.title.indexOf('hler') !== -1;
+        }) || results[0];
+        var fname = best.title.replace('File:','').replace(/ /g,'_');
+        return fetchFromFile(encodeURIComponent(fname));
+      });
+  }
+
+  var p;
+  if (matchKey) {
+    // Try hardcoded file first
+    p = fetchFromFile(HERB_FILES[matchKey]).then(function(result) {
+      if (result) return result;
+      // Fallback to search if file not found
+      return searchCommons(words[0]);
+    });
+  } else {
+    // No hardcoded match — search Commons directly
+    p = searchCommons(words[0]);
+  }
+
+  p.then(cacheAndReturn).catch(function(){ cacheAndReturn(null); });
 }
 
 // Legacy HERB_IMAGES kept as empty object so old refs don't break
