@@ -2455,6 +2455,35 @@ var HERB_FILES = {
   'valerian':     'Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-143.jpg',
   'ephedra':      'Ephedra_sinica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-033.jpg',
   'ma huang':     'Ephedra_sinica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-033.jpg',
+  'elderflower':  'Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-160.jpg',
+  'elderberry':   'Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-160.jpg',
+  'sambucus':     'Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-160.jpg',
+  'sauco':        'Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-160.jpg',
+  'corn':         'Zea_mays_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-283.jpg',
+  'maize':        'Zea_mays_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-283.jpg',
+  'zea':          'Zea_mays_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-283.jpg',
+  'barley':       'Hordeum_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-282.jpg',
+  'oat':          'Avena_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-280.jpg',
+  'flax':         'Linum_usitatissimum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-093.jpg',
+  'linseed':      'Linum_usitatissimum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-093.jpg',
+  'psyllium':     'Plantago_ovata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-123.jpg',
+  'saw palmetto': 'Serenoa_repens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-207.jpg',
+  'serenoa':      'Serenoa_repens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-207.jpg',
+  'black cohosh': 'Cimicifuga_racemosa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg',
+  'cimicifuga':   'Cimicifuga_racemosa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg',
+  'goldenseal':   'Hydrastis_canadensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-083.jpg',
+  'hydrastis':    'Hydrastis_canadensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-083.jpg',
+  'cat claw':     'Uncaria_tomentosa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-244.jpg',
+  'uncaria':      'Uncaria_tomentosa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-244.jpg',
+  'devil claw':   'Harpagophytum_procumbens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-071.jpg',
+  'harpagophytum':'Harpagophytum_procumbens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-071.jpg',
+  'boswellia':    'Boswellia_sacra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-019.jpg',
+  'ashwagandha':  'Withania_somnifera_Dunal.jpg',
+  'withania':     'Withania_somnifera_Dunal.jpg',
+  'brahmi':       'Bacopa_monnieri_(Linn.)_Pennell.jpg',
+  'bacopa':       'Bacopa_monnieri_(Linn.)_Pennell.jpg',
+  'noni':         'Morinda_citrifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-109.jpg',
+  'morinda':      'Morinda_citrifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-109.jpg',
 };
 var _herbImageCache = {}; // v2 — clears stale false entries from prior sessions
 
@@ -2537,6 +2566,12 @@ function fetchHerbImage(query, callback) {
           var results = data.query && data.query.search;
           if (!results || !results.length) return tryNext(idx + 1);
           // Score results: prefer illustrations/engravings, avoid photos
+          // Pre-filter: only image files
+          results = results.filter(function(r) {
+            var t = r.title.toLowerCase();
+            return t.indexOf('.jpg') !== -1 || t.indexOf('.png') !== -1 || t.indexOf('.jpeg') !== -1;
+          });
+          if (!results.length) return tryNext(idx + 1);
           var scored = results.map(function(r) {
             var t = r.title.toLowerCase();
             var score = 0;
@@ -2546,7 +2581,10 @@ function fetchHerbImage(query, callback) {
             if (t.indexOf('illustration') !== -1) score += 4;
             if (t.indexOf('engraving') !== -1) score += 3;
             if (t.indexOf('woodville') !== -1) score += 6;
-            if (t.indexOf('.jpg') !== -1 || t.indexOf('.png') !== -1) score += 1;
+            if (t.indexOf('.jpg') !== -1 || t.indexOf('.png') !== -1) score += 3;
+            if (t.indexOf('.pdf') !== -1 || t.indexOf('.tiff') !== -1 || t.indexOf('.djvu') !== -1) score -= 20; // exclude non-image files
+            if (t.indexOf('chemist') !== -1 || t.indexOf('druggist') !== -1 || t.indexOf('journal') !== -1 || t.indexOf('magazine') !== -1) score -= 15;
+            if (t.indexOf('cover') !== -1 || t.indexOf('title') !== -1) score -= 8;
             if (t.indexOf('photo') !== -1) score -= 5;
             if (t.indexOf('flower') !== -1 && t.indexOf('illustr') === -1) score -= 2;
             if (t.indexOf('balmis') !== -1) score += 6;   // Balmis expedition botanicals
