@@ -5285,7 +5285,9 @@ function runGlobalSearch() {
     for (var ti = 0; ti < results.length; ti++) {
       var tb = resultBooks[ti];
       var tid = tb ? (tb.tradition || tb.id) : (results[ti]._tradition || 'unknown');
-      var tlabel = tb ? (TRADITIONS_BY_ID[tb.tradition] ? TRADITIONS_BY_ID[tb.tradition].name : tb.tradition) : (results[ti]._tradition || 'Unknown');
+      var _tradId = results[ti]._tradition || '';
+      var _tradFromData = traditionData.find(function(t){ return t.id === _tradId; });
+      var tlabel = tb ? (TRADITIONS_BY_ID[tb.tradition] ? TRADITIONS_BY_ID[tb.tradition].name : (tb.tradition||'').replace(/_/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();})) : (_tradFromData ? _tradFromData.name : (_tradId||'Unknown').replace(/_/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();}));
       if (!traditionCounts[tid]) traditionCounts[tid] = { label: tlabel, count: 0, color: tb ? tb.color : '#C4A860' };
       traditionCounts[tid].count++;
     }
@@ -5344,28 +5346,28 @@ function runGlobalSearch() {
 
     inner += actionChipsHtml;
     inner += '<div id="sr-body" class="sr-body">' +
-      (function() {
-      var _herbMatch = null;
-      var _qwords = q.toLowerCase().split(/\s+/);
-      _qwords.sort(function(a,b){ return b.length-a.length; });
-      for (var _wi=0; _wi<_qwords.length && !_herbMatch; _wi++) {
-        for (var _hk in HERB_IMAGES) {
-          if (_hk.indexOf(_qwords[_wi])===0 || _qwords[_wi].indexOf(_hk.split(' ')[0])===0) {
-            _herbMatch = HERB_IMAGES[_hk]; break;
+      // ── Botanical illustration in sidebar ──────────────────────
+    (function() {
+      var _hq = q.toLowerCase().split(/\s+/);
+      _hq.sort(function(a,b){ return b.length-a.length; });
+      var _hm = null;
+      for (var _i=0; _i<_hq.length && !_hm; _i++) {
+        for (var _k in HERB_IMAGES) {
+          if (_k.indexOf(_hq[_i])===0 || _hq[_i].indexOf(_k.split(' ')[0])===0) {
+            _hm = HERB_IMAGES[_k]; break;
           }
         }
       }
-      if (_herbMatch) {
-        inner += '<div style="padding:0;margin-bottom:0;overflow:hidden;border-bottom:1px solid #2A2010">' +
-          '<img src="' + _herbMatch.src + '" alt="Botanical illustration" ' +
+      if (_hm) {
+        inner += '<div style="overflow:hidden;border-bottom:1px solid #2A2010;flex-shrink:0">' +
+          '<img src="' + _hm.src + '" alt="Botanical illustration" ' +
           'style="width:100%;height:180px;object-fit:cover;object-position:center 20%;' +
-          'display:block;filter:sepia(15%) contrast(1.02);transition:opacity 0.3s" />' +
-          '<div style="padding:0.2rem 0.5rem;font-family:monospace;font-size:0.5rem;' +
-          'color:#5A5040;letter-spacing:0.04em;line-height:1.3">' + _herbMatch.label + '</div>' +
+          'display:block;filter:sepia(15%) contrast(1.02)" />' +
+          '<div style="padding:0.25rem 0.6rem;font-family:monospace;font-size:0.48rem;' +
+          'color:#5A5040;letter-spacing:0.04em;line-height:1.4">' + _hm.label + '</div>' +
           '</div>';
       }
-    }());
-    inner += '<div id="sr-traditions" class="sr-traditions">' +
+    }());    inner += '<div id="sr-traditions" class="sr-traditions">' +
       '<div style="font-family:monospace;font-size:0.58rem;letter-spacing:0.1em;color:#7A6A50;' +
       'text-transform:uppercase;padding:0.2rem 0.4rem 0.5rem;">Traditions</div>';
     if (results.length) {
