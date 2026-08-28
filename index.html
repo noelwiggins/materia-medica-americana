@@ -5363,6 +5363,17 @@ function runGlobalSearch() {
         window._srHerbMatch = null;
       }
     }());
+    // Full-width botanical illustration banner
+    if (window._srHerbMatch) {
+      inner += '<div style="position:relative;overflow:hidden;border-bottom:1px solid #2A2010">' +
+        '<img src="' + window._srHerbMatch.src + '" ' +
+        'style="width:100%;height:160px;object-fit:cover;object-position:center 25%;' +
+        'display:block;filter:sepia(20%) contrast(1.05)" />' +
+        '<div style="position:absolute;bottom:0;left:0;right:0;padding:0.3rem 0.7rem;' +
+        'background:linear-gradient(transparent,rgba(10,8,5,0.85));' +
+        'font-family:monospace;font-size:0.48rem;color:#A09070;letter-spacing:0.05em">' +
+        window._srHerbMatch.label + '</div></div>';
+    }
     inner += '<div id="sr-body" class="sr-body">';    inner += '<div id="sr-traditions" class="sr-traditions">' +
       '<div style="font-family:monospace;font-size:0.58rem;letter-spacing:0.1em;color:#7A6A50;' +
       'text-transform:uppercase;padding:0.2rem 0.4rem 0.5rem;">Traditions</div>';
