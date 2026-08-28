@@ -2416,14 +2416,26 @@ var _herbImageCache = {};
 
 function fetchHerbImage(query, callback) {
   if (!query || query.length < 3) { callback(null); return; }
-  var cacheKey = query.toLowerCase().trim();
-  if (_herbImageCache[cacheKey]) { callback(_herbImageCache[cacheKey]); return; }
-  if (_herbImageCache[cacheKey] === false) { callback(null); return; }
 
-  // Step 1: Check HERB_FILES for a hardcoded match
-  var words = cacheKey.split(/\s+/);
-  words.sort(function(a,b){ return b.length - a.length; });
+  // Clean query: take first meaningful word (before /, (, comma)
+  // "Agave / Cabuya" → "Agave", "St. John's Wort" → "John's Wort"
+  var cleaned = query.trim()
+    .replace(/\s*\/.*$/, '')       // drop everything after /
+    .replace(/\s*\(.*$/, '')       // drop everything after (
+    .replace(/\s*,.*$/, '')        // drop after comma
+    .trim();
+  var primaryWord = cleaned.split(/\s+/)[0].toLowerCase()
+    .replace(/[^a-z\u00c0-\u024f'-]/g, ''); // letters only
+
+  var cacheKey = primaryWord;
+  if (_herbImageCache[cacheKey] !== undefined) {
+    callback(_herbImageCache[cacheKey] || null); return;
+  }
+
+  // Check HERB_FILES hardcoded list first
   var matchKey = null;
+  var words = cleaned.toLowerCase().split(/\s+/);
+  words.sort(function(a,b){ return b.length - a.length; });
   for (var i = 0; i < words.length && !matchKey; i++) {
     for (var k in HERB_FILES) {
       if (k.indexOf(words[i]) === 0 || words[i].indexOf(k.split(' ')[0]) === 0) {
@@ -2432,15 +2444,14 @@ function fetchHerbImage(query, callback) {
     }
   }
 
-  function cacheAndReturn(result) {
+  function store(result) {
     _herbImageCache[cacheKey] = result || false;
     callback(result || null);
   }
 
   function fetchFromFile(fname) {
-    var apiUrl = 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:' +
-      fname + '&prop=imageinfo&iiprop=url&iiurlwidth=600&format=json&origin=*';
-    return fetch(apiUrl)
+    return fetch('https://commons.wikimedia.org/w/api.php?action=query&titles=File:' +
+      fname + '&prop=imageinfo&iiprop=url&iiurlwidth=800&format=json&origin=*')
       .then(function(r){ return r.json(); })
       .then(function(data) {
         var pages = data.query && data.query.pages;
@@ -2451,46 +2462,73 @@ function fetchHerbImage(query, callback) {
         var src = ii && (ii.thumburl || ii.url);
         if (!src) return null;
         src = src.split('?')[0];
-        var label = decodeURIComponent(fname.replace(/_/g,' ')).replace(/\.jpg$/i,'')
+        var label = decodeURIComponent(fname.replace(/_/g,' '))
+          .replace(/\.jpg$/i,'').replace(/\.png$/i,'')
           .replace(/ - K\u00f6hler\u2013s Medizinal-Pflanzen-?\d*/,'')
-          .replace(/ \(K\u00f6hler\)/,'') + ' \u2014 K\u00f6hler, 1887';
-        return {src: src, label: label};
-      });
+          .replace(/ \(K\u00f6hler.*?\)/,'')
+          .replace(/ \(.*?\)/,'')
+          + ' \u2014 botanical illustration';
+        return {src: src, label: label.trim()};
+      }).catch(function(){ return null; });
   }
 
-  function searchCommons(searchQuery) {
-    // Search Commons for the plant + Köhler illustration
-    var sq = encodeURIComponent(searchQuery + ' Kohler Medizinal');
-    var apiUrl = 'https://commons.wikimedia.org/w/api.php?action=query&list=search' +
-      '&srsearch=' + sq + '&srnamespace=6&srlimit=3&format=json&origin=*';
-    return fetch(apiUrl)
-      .then(function(r){ return r.json(); })
-      .then(function(data) {
-        var results = data.query && data.query.search;
-        if (!results || !results.length) return null;
-        // Prefer results with "Köhler" or "Medizinal" in title
-        var best = results.find(function(r) {
-          return r.title.indexOf('hler') !== -1;
-        }) || results[0];
-        var fname = best.title.replace('File:','').replace(/ /g,'_');
-        return fetchFromFile(encodeURIComponent(fname));
-      });
+  function searchCommons(term, extraTerms) {
+    // Try multiple search strategies in sequence
+    var strategies = [
+      term + ' Kohler Medizinal-Pflanzen',
+      term + ' botanical illustration engraving',
+      term + ' medicinal plant illustration',
+      term + ' Woodville medical botany',
+      term + ' Sowerby botanical',
+    ];
+    if (extraTerms) strategies.unshift(term + ' ' + extraTerms);
+
+    function tryNext(idx) {
+      if (idx >= strategies.length) return Promise.resolve(null);
+      var sq = encodeURIComponent(strategies[idx]);
+      return fetch('https://commons.wikimedia.org/w/api.php?action=query&list=search' +
+        '&srsearch=' + sq + '&srnamespace=6&srlimit=5&format=json&origin=*')
+        .then(function(r){ return r.json(); })
+        .then(function(data) {
+          var results = data.query && data.query.search;
+          if (!results || !results.length) return tryNext(idx + 1);
+          // Score results: prefer illustrations/engravings, avoid photos
+          var scored = results.map(function(r) {
+            var t = r.title.toLowerCase();
+            var score = 0;
+            if (t.indexOf('hler') !== -1) score += 10;      // Köhler
+            if (t.indexOf('medizinal') !== -1) score += 8;
+            if (t.indexOf('botanical') !== -1) score += 5;
+            if (t.indexOf('illustration') !== -1) score += 4;
+            if (t.indexOf('engraving') !== -1) score += 3;
+            if (t.indexOf('woodville') !== -1) score += 6;
+            if (t.indexOf('.jpg') !== -1 || t.indexOf('.png') !== -1) score += 1;
+            if (t.indexOf('photo') !== -1) score -= 5;
+            if (t.indexOf('flower') !== -1 && t.indexOf('illustr') === -1) score -= 2;
+            return {r: r, score: score};
+          }).sort(function(a,b){ return b.score - a.score; });
+          var best = scored[0].r;
+          var fname = encodeURIComponent(best.title.replace('File:',''));
+          return fetchFromFile(fname).then(function(result) {
+            if (result) return result;
+            return tryNext(idx + 1);
+          });
+        }).catch(function(){ return tryNext(idx + 1); });
+    }
+    return tryNext(0);
   }
 
   var p;
   if (matchKey) {
-    // Try hardcoded file first
     p = fetchFromFile(HERB_FILES[matchKey]).then(function(result) {
       if (result) return result;
-      // Fallback to search if file not found
-      return searchCommons(words[0]);
+      return searchCommons(primaryWord);
     });
   } else {
-    // No hardcoded match — search Commons directly
-    p = searchCommons(words[0]);
+    p = searchCommons(primaryWord);
   }
 
-  p.then(cacheAndReturn).catch(function(){ cacheAndReturn(null); });
+  p.then(store).catch(function(){ store(null); });
 }
 
 // Legacy HERB_IMAGES kept as empty object so old refs don't break
