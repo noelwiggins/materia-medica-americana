@@ -2351,37 +2351,84 @@ function renderBookPage() {
 
 // ── Codex illustration cycler ─────────────────────────────
 
-var HERB_IMAGES = {
-  'yarrow':       {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Achillea_millefolium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-004.jpg/800px-Achillea_millefolium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-004.jpg',label:'Achillea millefolium \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'chamomile':    {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Matricaria_Chaomilla_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-096.jpg/800px-Matricaria_Chaomilla_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-096.jpg',label:'Matricaria chamomilla \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'valerian':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-266.jpg/800px-Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-266.jpg',label:'Valeriana officinalis \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'garlic':       {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Illustration_Allium_sativum0.jpg/800px-Illustration_Allium_sativum0.jpg',label:'Allium sativum \u2014 Thom\u00e9 Flora, 1885'},
-  'ginger':       {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Zingiber_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-294.jpg/800px-Zingiber_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-294.jpg',label:'Zingiber officinale \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'turmeric':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Curcuma_longa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-175.jpg/800px-Curcuma_longa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-175.jpg',label:'Curcuma longa \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'lavender':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Lavandula_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-086.jpg/800px-Lavandula_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-086.jpg',label:'Lavandula angustifolia \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'echinacea':    {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Echinacea_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-028.jpg/800px-Echinacea_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-028.jpg',label:'Echinacea purpurea \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'peppermint':   {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mentha_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-106.jpg/800px-Mentha_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-106.jpg',label:'Mentha piperita \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'mint':         {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mentha_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-106.jpg/800px-Mentha_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-106.jpg',label:'Mentha piperita \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'ginkgo':       {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ginkgo_biloba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-056.jpg/800px-Ginkgo_biloba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-056.jpg',label:'Ginkgo biloba \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'milk thistle': {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Silybum_marianum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-224.jpg/800px-Silybum_marianum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-224.jpg',label:'Silybum marianum \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'willow':       {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Salix_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-132.jpg/800px-Salix_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-132.jpg',label:'Salix alba \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'senna':        {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Cassia_senna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-219.jpg/800px-Cassia_senna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-219.jpg',label:'Senna alexandrina \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'licorice':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-063.jpg/800px-Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-063.jpg',label:'Glycyrrhiza glabra \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'fennel':       {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Foeniculum_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-054.jpg/800px-Foeniculum_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-054.jpg',label:'Foeniculum vulgare \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'rosemary':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Rosmarinus_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-255.jpg/800px-Rosmarinus_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-255.jpg',label:'Rosmarinus officinalis \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'hawthorn':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Crataegus_monogyna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-022.jpg/800px-Crataegus_monogyna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-022.jpg',label:'Crataegus monogyna \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'elderberry':   {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-159.jpg/800px-Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-159.jpg',label:'Sambucus nigra \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'belladonna':   {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Atropa_belladonna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-016.jpg/800px-Atropa_belladonna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-016.jpg',label:'Atropa belladonna \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'calendula':    {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Calendula_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-021.jpg/800px-Calendula_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-021.jpg',label:'Calendula officinalis \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'lemon balm':   {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Melissa_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-100.jpg/800px-Melissa_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-100.jpg',label:'Melissa officinalis \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'henbane':      {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Hyoscyamus_niger_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-080.jpg/800px-Hyoscyamus_niger_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-080.jpg',label:'Hyoscyamus niger \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'artemisia':    {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-010.jpg/800px-Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-010.jpg',label:'Artemisia absinthium \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'wormwood':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-010.jpg/800px-Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-010.jpg',label:'Artemisia absinthium \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'ginseng':      {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Panax_ginseng_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-176.jpg/800px-Panax_ginseng_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-176.jpg',label:'Panax ginseng \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'aloe':         {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Aloe_vera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-014.jpg/800px-Aloe_vera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-014.jpg',label:'Aloe vera \u2014 K\u00f6hler Medicinal Plants, 1887'},
-  'foxglove':     {src:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Digitalis_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-028.jpg/800px-Digitalis_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-028.jpg',label:'Digitalis purpurea \u2014 K\u00f6hler Medicinal Plants, 1887'}
+
+// ── Herb illustration system ──────────────────────────────────────
+// Maps search keywords to Commons filenames — URL fetched dynamically
+var HERB_FILES = {
+  'yarrow':       'Achillea_millefolium_(K%C3%B6hler).jpg',
+  'chamomile':    'Matricaria_recutita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-091.jpg',
+  'valerian':     'Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-143.jpg',
+  'peppermint':   'Mentha_%C3%97_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-095.jpg',
+  'mint':         'Mentha_%C3%97_piperita_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-095.jpg',
+  'calendula':    'Calendula_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-024.jpg',
+  'lavender':     'Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-086.jpg',
+  'ginkgo':       'Ginkgo_biloba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-154.jpg',
+  'st john':      'Hypericum_perforatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-081.jpg',
+  'hypericum':    'Hypericum_perforatum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-081.jpg',
+  'ginger':       'Zingiber_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-143.jpg',
+  'garlic':       'Allium_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-256.jpg',
+  'turmeric':     'Curcuma_longa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-175.jpg',
+  'echinacea':    'Echinacea_purpurea_Moench.jpg',
+  'elderberry':   'Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-160.jpg',
+  'elder':        'Sambucus_nigra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-160.jpg',
+  'hawthorn':     'Crataegus_oxyacantha_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-191.jpg',
+  'belladonna':   'Atropa_Belladonna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-017.jpg',
+  'licorice':     'Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-257.jpg',
+  'liquorice':    'Glycyrrhiza_glabra_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-257.jpg',
+  'fennel':       'Foeniculum_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-054.jpg',
+  'rosemary':     'Rosmarinus_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-255.jpg',
+  'milk thistle': 'Silybum_marianum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-224.jpg',
+  'willow':       'Salix_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-264.jpg',
+  'artemisia':    'Artemisia_Absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-012.jpg',
+  'wormwood':     'Artemisia_Absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-012.jpg',
+  'aloe':         'Aloe_vera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-014.jpg',
+  'henbane':      'Hyoscyamus_niger_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-083.jpg',
+  'senna':        'Cassia_senna_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-039.jpg',
+  'ginseng':      'Panax_ginseng_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-176.jpg',
+  'foxglove':     'Digitalis_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-028.jpg',
+  'digitalis':    'Digitalis_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-028.jpg',
 };
-var _heroResetTimer = null;
+var _herbImageCache = {};
+
+function fetchHerbImage(query, callback) {
+  var words = query.toLowerCase().split(/\s+/);
+  words.sort(function(a,b){ return b.length - a.length; });
+  var matchKey = null;
+  for (var i = 0; i < words.length && !matchKey; i++) {
+    for (var k in HERB_FILES) {
+      if (k.indexOf(words[i]) === 0 || words[i].indexOf(k.split(' ')[0]) === 0) {
+        matchKey = k; break;
+      }
+    }
+  }
+  if (!matchKey) { callback(null); return; }
+  var fname = HERB_FILES[matchKey];
+  if (_herbImageCache[fname]) { callback(_herbImageCache[fname]); return; }
+  // Fetch URL via Commons API (CORS-enabled)
+  var apiUrl = 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:' + fname +
+    '&prop=imageinfo&iiprop=url&iiurlwidth=600&format=json&origin=*';
+  fetch(apiUrl)
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
+      var pages = data.query && data.query.pages;
+      if (!pages) { callback(null); return; }
+      var page = Object.values(pages)[0];
+      var ii = page.imageinfo && page.imageinfo[0];
+      var src = ii && (ii.thumburl || ii.url);
+      if (src) {
+        // Remove utm params
+        src = src.split('?')[0];
+        var label = decodeURIComponent(fname).replace(/_/g,' ').replace(/\.jpg$/,'').replace(/ - Köhler–s Medizinal-Pflanzen-\d+/,'') + ' — Köhler, 1887';
+        _herbImageCache[fname] = {src: src, label: label};
+        callback(_herbImageCache[fname]);
+      } else { callback(null); }
+    })
+    .catch(function(){ callback(null); });
+}
+
+// Legacy HERB_IMAGES kept as empty object so old refs don't break
+var HERB_IMAGES = {};
+
 function updateHeroFromSearch(query) {
   if (!query || query.length < 3) { resetHeroToCodex(); return; }
   var words = query.toLowerCase().split(/\s+/);
@@ -5345,35 +5392,9 @@ function runGlobalSearch() {
   actionChipsHtml += '</div>';
 
     inner += actionChipsHtml;
-    // ── Botanical illustration in sidebar ───────────────────────
-    (function() {
-      var _hq = q.toLowerCase().split(/\s+/);
-      _hq.sort(function(a,b){ return b.length-a.length; });
-      var _hm = null;
-      for (var _i=0; _i<_hq.length && !_hm; _i++) {
-        for (var _k in HERB_IMAGES) {
-          if (_k.indexOf(_hq[_i])===0 || _hq[_i].indexOf(_k.split(' ')[0])===0) {
-            _hm = HERB_IMAGES[_k]; break;
-          }
-        }
-      }
-      if (_hm) {
-        window._srHerbMatch = _hm;
-      } else {
-        window._srHerbMatch = null;
-      }
-    }());
-    // Full-width botanical illustration banner
-    if (window._srHerbMatch) {
-      inner += '<div style="position:relative;overflow:hidden;border-bottom:1px solid #2A2010">' +
-        '<img src="' + window._srHerbMatch.src + '" ' +
-        'style="width:100%;height:160px;object-fit:cover;object-position:center 25%;' +
-        'display:block;filter:sepia(20%) contrast(1.05)" />' +
-        '<div style="position:absolute;bottom:0;left:0;right:0;padding:0.3rem 0.7rem;' +
-        'background:linear-gradient(transparent,rgba(10,8,5,0.85));' +
-        'font-family:monospace;font-size:0.48rem;color:#A09070;letter-spacing:0.05em">' +
-        window._srHerbMatch.label + '</div></div>';
-    }
+    window._srHerbMatch = null; // will be populated async by fetchHerbImage
+    // Herb illustration banner — a placeholder div, filled async after panel renders
+    inner += '<div id="sr-herb-banner" style="display:none;position:relative;overflow:hidden;border-bottom:1px solid #2A2010"></div>';
     inner += '<div id="sr-body" class="sr-body">';    inner += '<div id="sr-traditions" class="sr-traditions">' +
       '<div style="font-family:monospace;font-size:0.58rem;letter-spacing:0.1em;color:#7A6A50;' +
       'text-transform:uppercase;padding:0.2rem 0.4rem 0.5rem;">Traditions</div>';
@@ -5412,6 +5433,23 @@ function runGlobalSearch() {
     overlay.appendChild(panel);
     document.body.appendChild(overlay);
     document.body.style.overflow = 'hidden';
+    // Async herb illustration fetch
+    fetchHerbImage(q, function(match) {
+      var banner = document.getElementById('sr-herb-banner');
+      if (!banner || !match) return;
+      banner.style.display = 'block';
+      banner.innerHTML = '<img src="' + match.src + '" ' +
+        'style="width:100%;height:160px;object-fit:cover;object-position:center 25%;' +
+        'display:block;filter:sepia(20%) contrast(1.05)" />' +
+        '<div style="position:absolute;bottom:0;left:0;right:0;padding:0.3rem 0.7rem;' +
+        'background:linear-gradient(transparent,rgba(10,8,5,0.85));' +
+        'font-family:monospace;font-size:0.48rem;color:#A09070;letter-spacing:0.05em">' +
+        match.label + '</div>';
+      // Also update hero image
+      var heroImg = document.getElementById('wec-codex-img');
+      var heroLbl = document.getElementById('wec-codex-label');
+      if (heroImg) { heroImg.src = match.src; if (heroLbl) heroLbl.textContent = match.label; }
+    });
     if (!searchModalHistoryOpen) {
       history.pushState({ plantacopiaModal: 'search' }, '');
       searchModalHistoryOpen = true;
