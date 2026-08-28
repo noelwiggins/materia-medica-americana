@@ -5659,15 +5659,19 @@ function runGlobalSearch() {
           var lb = document.createElement('div');
           lb.id = 'sr-herb-lightbox';
           lb.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:20000;' +
-            'display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1rem';
-          lb.innerHTML = '<img src="' + match.src + '" ' +
-            'style="max-width:100%;max-height:80vh;object-fit:contain;filter:sepia(15%) contrast(1.05);' +
-            'border:1px solid #3A3020" />' +
-            '<div style="margin-top:0.6rem;font-family:monospace;font-size:0.55rem;color:#A09070;' +
-            'letter-spacing:0.05em;text-align:center">' + match.label + '</div>' +
-            '<button id="sr-herb-close" style="margin-top:1rem;background:#C4A860;border:none;' +
-            'color:#0A0805;padding:0.35rem 1rem;font-family:monospace;font-size:0.65rem;' +
-            'cursor:pointer;border-radius:2px;letter-spacing:0.08em">✕ Close</button>';
+            'display:flex;flex-direction:column;align-items:center;justify-content:center;' +
+            'padding:2.5rem 1rem 1rem;overflow:hidden';
+          lb.innerHTML =
+            // Close button pinned top-right — always reachable
+            '<button id="sr-herb-close" style="position:absolute;top:0.8rem;right:0.8rem;' +
+            'background:#C4A860;border:none;color:#0A0805;width:36px;height:36px;' +
+            'border-radius:50%;font-size:1.1rem;font-weight:bold;cursor:pointer;' +
+            'z-index:10;line-height:1">✕</button>' +
+            '<img src="' + match.src + '" ' +
+            'style="max-width:100%;max-height:75vh;object-fit:contain;' +
+            'filter:sepia(15%) contrast(1.05);border:1px solid #3A3020;display:block" />' +
+            '<div style="margin-top:0.5rem;font-family:monospace;font-size:0.52rem;color:#A09070;' +
+            'letter-spacing:0.05em;text-align:center;padding:0 1rem">' + match.label + '</div>';
           document.body.appendChild(lb);
           document.getElementById('sr-herb-close').onclick = function() {
             lb.remove(); expanded = false;
