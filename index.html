@@ -2484,6 +2484,38 @@ var HERB_FILES = {
   'bacopa':       'Bacopa_monnieri_(Linn.)_Pennell.jpg',
   'noni':         'Morinda_citrifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-109.jpg',
   'morinda':      'Morinda_citrifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-109.jpg',
+  // Additional plants
+  'black pepper': 'Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-121.jpg',
+  'pepper':       'Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-121.jpg',
+  'piper':        'Piper_nigrum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-121.jpg',
+  'mustard':      'Sinapis_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-147.jpg',
+  'sinapis':      'Sinapis_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-147.jpg',
+  'horseradish':  'Armoracia_rusticana_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-011.jpg',
+  'valerian':     'Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-143.jpg',
+  'verbena':      'Verbena_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-145.jpg',
+  'lemon balm':   'Melissa_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-097.jpg',
+  'melissa':      'Melissa_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-097.jpg',
+  'catnip':       'Nepeta_cataria_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-115.jpg',
+  'nepeta':       'Nepeta_cataria_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-115.jpg',
+  'horehound':    'Marrubium_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-094.jpg',
+  'marrubium':    'Marrubium_vulgare_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-094.jpg',
+  'pennyroyal':   'Mentha_pulegium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-098.jpg',
+  'spearmint':    'Mentha_spicata_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-099.jpg',
+  'comfrey':      'Symphytum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-249.jpg',
+  'symphytum':    'Symphytum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-249.jpg',
+  'burdock':      'Arctium_lappa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-012.jpg',
+  'arctium':      'Arctium_lappa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-012.jpg',
+  'cleavers':     'Galium_aparine_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-055.jpg',
+  'galium':       'Galium_aparine_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-055.jpg',
+  'caraway':      'Carum_carvi_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-037.jpg',
+  'anise':        'Pimpinella_anisum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-120.jpg',
+  'cumin':        'Cuminum_cyminum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-047.jpg',
+  'dill':         'Anethum_graveolens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-008.jpg',
+  'anethum':      'Anethum_graveolens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-008.jpg',
+  'parsley':      'Petroselinum_crispum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-120.jpg',
+  'celery':       'Apium_graveolens_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-009.jpg',
+  'angelica':     'Angelica_archangelica_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-008.jpg',
+  'valerian':     'Valeriana_officinalis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-143.jpg',
 };
 var _herbImageCache = {}; // v2 — clears stale false entries from prior sessions
 
@@ -2597,14 +2629,23 @@ function fetchHerbImage(query, callback) {
       }).catch(function(){ return null; });
   }
 
+  // ── Tier 2b: Commons "X in art" with first word (genus) as fallback ────
+  function commonsGenus(name) {
+    var genus = name.split(/\s+/)[0];
+    if (genus.toLowerCase() === name.toLowerCase()) return Promise.resolve(null); // same, skip
+    return commonsInArt(genus);
+  }
+
   // Run tiers in sequence
   var p;
   if (matchKey) {
     p = fetchFromFile(HERB_FILES[matchKey])
       .then(function(r){ return r || commonsInArt(primaryTerm); })
+      .then(function(r){ return r || commonsGenus(primaryTerm); })
       .then(function(r){ return r || iNaturalist(primaryTerm); });
   } else {
     p = commonsInArt(primaryTerm)
+      .then(function(r){ return r || commonsGenus(primaryTerm); })
       .then(function(r){ return r || iNaturalist(primaryTerm); });
   }
 
@@ -5623,6 +5664,10 @@ function runGlobalSearch() {
       var banner = document.getElementById('sr-herb-banner');
       if (!banner || !match) return;
       banner.style.display = 'block';
+      // Build label: plant name from query (capitalized) + source info
+      var searchedPlant = q.replace(/\s*\/.*$/,'').replace(/\s*\(.*$/,'').trim()
+        .replace(/\b\w/g, function(c){ return c.toUpperCase(); });
+      var sourceInfo = match.label;
       banner.innerHTML =
         '<img id="sr-herb-img" src="' + match.src + '" ' +
         'style="width:100%;height:160px;object-fit:cover;object-position:center 25%;' +
@@ -5630,8 +5675,12 @@ function runGlobalSearch() {
         '<div style="position:absolute;bottom:0;left:0;right:0;padding:0.3rem 0.7rem 0.3rem 0.7rem;' +
         'background:linear-gradient(transparent,rgba(10,8,5,0.9));' +
         'display:flex;justify-content:space-between;align-items:flex-end">' +
-        '<span style="font-family:monospace;font-size:0.48rem;color:#A09070;letter-spacing:0.05em">' +
-        match.label + '</span>' +
+        '<div style="display:flex;flex-direction:column;gap:0.1rem;overflow:hidden">' +
+        '<span style="font-family:monospace;font-size:0.62rem;color:#F0E8D0;letter-spacing:0.05em;font-weight:bold">' +
+        searchedPlant + '</span>' +
+        '<span style="font-family:monospace;font-size:0.45rem;color:#A09070;letter-spacing:0.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' +
+        sourceInfo + '</span>' +
+        '</div>' +
         '<button id="sr-herb-expand" ' +
         'style="background:#C4A860;border:none;color:#0A0805;padding:0.2rem 0.5rem;' +
         'font-family:monospace;font-size:0.55rem;cursor:pointer;border-radius:2px;' +
@@ -5660,8 +5709,10 @@ function runGlobalSearch() {
             '<img src="' + match.src + '" ' +
             'style="max-width:100%;max-height:75vh;object-fit:contain;' +
             'filter:sepia(15%) contrast(1.05);border:1px solid #3A3020;display:block" />' +
-            '<div style="margin-top:0.5rem;font-family:monospace;font-size:0.52rem;color:#A09070;' +
-            'letter-spacing:0.05em;text-align:center;padding:0 1rem">' + match.label + '</div>';
+            '<div style="margin-top:0.6rem;text-align:center;padding:0 1rem">' +
+            '<div style="font-family:monospace;font-size:0.75rem;color:#F0E8D0;letter-spacing:0.06em;font-weight:bold;margin-bottom:0.2rem">' + searchedPlant + '</div>' +
+            '<div style="font-family:monospace;font-size:0.5rem;color:#A09070;letter-spacing:0.04em">' + sourceInfo + '</div>' +
+            '</div>';
           document.body.appendChild(lb);
           document.getElementById('sr-herb-close').onclick = function() {
             lb.remove(); expanded = false;
