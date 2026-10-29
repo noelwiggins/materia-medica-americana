@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#E9EDE3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121813" media="(prefers-color-scheme: dark)">
+<title>Plantacopia</title>
+<meta name="description" content="Plant medicine from 34 traditions and 5,000 years of sources, with the original manuscripts and English translations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/static/m/m.css?v=1">
+</head>
+<body>
+<div id="app">
+  <header id="topbar"></header>
+  <main id="view" tabindex="-1"></main>
+  <nav id="navbar" aria-label="Main">
+    <a href="#/" data-nav="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg><span>Search</span></a>
+    <a href="#/plants" data-nav="plants"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V10"/><path d="M12 13c-4 0-7-3-7-8 4 0 7 3 7 8z"/><path d="M12 11c0-4 3-7 7-7 0 4-3 7-7 7z"/></svg><span>Plants</span></a>
+    <a href="#/library" data-nav="library"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h5v15H4z"/><path d="M9 5h5v15H9z"/><path d="M14.5 6.5l4.6-1.3 3.4 13.5-4.6 1.3z"/></svg><span>Library</span></a>
+    <a href="#/saved" data-nav="saved"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg><span>Saved</span></a>
+  </nav>
+</div>
+<div id="lightbox" hidden>
+  <button class="lb-close" aria-label="Close">×</button>
+  <div class="lb-scroll"><img alt=""></div>
+  <p class="lb-hint">Double-tap to zoom</p>
+</div>
+<script src="/static/m/m.js?v=1"></script>
+</body>
+</html>

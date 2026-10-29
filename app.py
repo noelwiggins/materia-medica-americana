@@ -44,9 +44,32 @@ def decode_payload(s):
 
 
 # ── Core static app ───────────────────────────────────────────────────────
+_MOBILE_UA = ('iphone', 'ipod', 'android', 'mobile', 'blackberry', 'opera mini', 'iemobile')
+
+
+def _is_phone():
+    ua = (request.headers.get('User-Agent') or '').lower()
+    return any(k in ua for k in _MOBILE_UA) and 'ipad' not in ua
+
+
 @app.route('/')
 def index():
+    # Phones get the mobile app unless they chose the full site ("Full site" sets pc_view=full)
+    if request.args.get('view') == 'full':
+        resp = send_from_directory('.', 'index.html')
+        resp.set_cookie('pc_view', 'full', max_age=60 * 60 * 24 * 180)
+        return resp
+    if request.cookies.get('pc_view') != 'full' and _is_phone():
+        return send_from_directory('static/m', 'index.html')
     return send_from_directory('.', 'index.html')
+
+
+@app.route('/m')
+@app.route('/m/')
+def mobile_app():
+    resp = send_from_directory('static/m', 'index.html')
+    resp.set_cookie('pc_view', '', max_age=0)
+    return resp
 
 @app.route('/data/<path:filename>')
 def serve_data(filename):
@@ -118,6 +141,170 @@ def api_pages_search():
     return jsonify({'q': q, 'total': len(use), 'results': [
         {'file': name, 'index': i, 'label': label, 'image': img, 'snippet': _snippet(tr, words)}
         for _, name, i, label, tr, img in use[:60]]})
+
+
+# ── Mobile app API ─────────────────────────────────────────────────────────
+@functools.lru_cache(maxsize=1)
+def load_books():
+    with open('static/data/books.json', encoding='utf-8') as f:
+        return json.load(f)['books']
+
+
+@functools.lru_cache(maxsize=1)
+def load_corpus():
+    segs = []
+    for i in (1, 2, 3):
+        try:
+            with open(f'static/data/corpus_shard_{i}.json', encoding='utf-8') as f:
+                segs.extend(json.load(f).get('segments', []))
+        except FileNotFoundError:
+            pass
+    bad = {'[PARSE ERROR]', '[SEGMENT FAILED]'}
+    return [s for s in segs if s.get('translation') and (s.get('title_inferred') or '') not in bad]
+
+
+_TRAD_NAMES = {'ahp': 'American Herbal Pharmacopoeia', 'commission_e': 'German Commission E', 'western_pharmacopeia': 'Western Pharmacopoeia',
+               'western_european': 'Western European Herbals', 'central_european': 'Central European', 'italian_renaissance': 'Italian Renaissance',
+               'japanese_honzo': 'Japanese Honzō', 'russian_slavic': 'Russian & Slavic', 'celtic_norse': 'Celtic & Norse', 'unani': 'Unani (Islamic)'}
+
+
+def _trad_label(tid):
+    if tid in _TRAD_NAMES:
+        return _TRAD_NAMES[tid]
+    t = load_traditions().get(tid)
+    if t:
+        return t.get('name') or tid
+    return (tid or '').replace('_', ' ').title()
+
+
+def _book_for_seg(seg):
+    ck, tr = seg.get('_corpusKey') or '', seg.get('_tradition') or ''
+    for b in load_books():
+        for k in b.get('corpusKeys') or []:
+            if ck and (ck.startswith(k) or k.startswith(ck)):
+                return b
+    for b in load_books():
+        if tr and b.get('tradition') == tr:
+            return b
+    return None
+
+
+def _words(q):
+    q = (q or '').strip().lower()
+    return [w for w in q.split() if len(w) >= 3] or ([q] if q else [])
+
+
+def _rank(items, words, fields_title, fields_body):
+    import re
+    pats = [re.compile(r'\b' + re.escape(w)) for w in words]
+    out = []
+    for it in items:
+        th = ' '.join(str(f(it) or '') for f in fields_title).lower()
+        bh = ' '.join(str(f(it) or '') for f in fields_body).lower()
+        n = t = 0
+        for p in pats:
+            a, b = bool(p.search(th)), bool(p.search(bh))
+            n += a or b
+            t += a
+        if n:
+            out.append((n * 100 + t * 30 + (1000 if n == len(pats) else 0), it))
+    out.sort(key=lambda x: -x[0])
+    full = [it for sc, it in out if sc >= 1000]
+    return full if full else [it for sc, it in out]
+
+
+def _plant_light(p):
+    return {'id': p['id'], 'name': p.get('common_name'), 'botanical': p.get('modern_botanical'),
+            'family': p.get('family'), 'areas': p.get('therapeutic_areas') or [],
+            'badge': p.get('evidence_badge'), 'traditions': p.get('traditions') or [],
+            'convergence': p.get('convergence_score') or 0, 'curated': bool(p.get('entries')),
+            'image': ('/static/images/plants/%s.jpg' % p['id']) if os.path.exists('static/images/plants/%s.jpg' % p['id']) else None}
+
+
+@app.route('/api/m/plants')
+def api_m_plants():
+    return jsonify({'plants': [_plant_light(p) for p in load_plants()]})
+
+
+@app.route('/api/m/plant/<plant_id>')
+def api_m_plant(plant_id):
+    p = find_plant(plant_id)
+    if not p:
+        abort(404)
+    d = dict(p)
+    d['image'] = _plant_light(p)['image']
+    d['tradition_labels'] = {t: _trad_label(t) for t in p.get('traditions') or []}
+    return jsonify(d)
+
+
+@app.route('/api/m/books')
+def api_m_books():
+    keep = ('id', 'title', 'short', 'tradition', 'date', 'year', 'language', 'author', 'cover', 'color',
+            'description', 'hasManuscriptScans', 'manuscriptDataFile', 'manuscriptVolumesFile', 'totalEntries')
+    books = [{k: b.get(k) for k in keep if b.get(k) is not None} for b in load_books()]
+    for b in books:
+        b['tradition_label'] = _trad_label(b.get('tradition'))
+    return jsonify({'books': books})
+
+
+@app.route('/api/m/traditions')
+def api_m_traditions():
+    out = {tid: {'name': t.get('name') or tid, 'color': t.get('color') or '#6A7A6E'} for tid, t in load_traditions().items()}
+    for b in load_books():
+        tid = b.get('tradition')
+        if tid and tid not in out:
+            out[tid] = {'name': _trad_label(tid), 'color': b.get('color') or '#6A7A6E'}
+    # plants use some tradition ids that only appear there
+    for p in load_plants():
+        for tid in p.get('traditions') or []:
+            out.setdefault(tid, {'name': _trad_label(tid), 'color': '#6A7A6E'})
+    return jsonify(out)
+
+
+@app.route('/api/m/book/<book_id>/passages')
+def api_m_book_passages(book_id):
+    b = next((x for x in load_books() if x['id'] == book_id), None)
+    if not b:
+        abort(404)
+    keys = b.get('corpusKeys') or []
+    segs = [s for s in load_corpus() if any((s.get('_corpusKey') or '').startswith(k) or k.startswith(s.get('_corpusKey') or '\0') for k in keys)]
+    off = int(request.args.get('offset', 0))
+    return jsonify({'total': len(segs), 'offset': off, 'passages': [_passage(s) for s in segs[off:off + 20]]})
+
+
+def _passage(s, words=None):
+    b = _book_for_seg(s)
+    tr = s.get('translation') or ''
+    return {'label': s.get('_label'), 'title': s.get('title_inferred'), 'translation': tr,
+            'snippet': _snippet(tr, words) if words else tr[:240] + ('…' if len(tr) > 240 else ''),
+            'original': s.get('original_text'), 'preparation': s.get('preparation'), 'condition': s.get('condition'),
+            'ai_synth': bool(s.get('_ai_synthesized_disclosure')),
+            'book': b['id'] if b else None, 'book_short': (b.get('short') or b.get('title')) if b else _trad_label(s.get('_tradition')),
+            'color': b.get('color') if b else None, 'tradition': _trad_label(s.get('_tradition'))}
+
+
+@app.route('/api/m/search')
+def api_m_search():
+    q = (request.args.get('q') or '').strip()
+    words = _words(q)
+    if not words:
+        return jsonify({'q': q, 'plants': [], 'passages': [], 'passages_total': 0})
+    plants = _rank(load_plants(), words,
+                   [lambda p: p.get('common_name'), lambda p: p.get('modern_botanical'), lambda p: ' '.join((p.get('tradition_names') or {}).values())],
+                   [lambda p: p.get('family'), lambda p: ' '.join(p.get('therapeutic_areas') or []).replace('_', ' '),
+                    lambda p: ' '.join(e.get('condition') or '' for e in (p.get('entries') or {}).values())])
+    segs = _rank(load_corpus(), words, [lambda s: s.get('title_inferred')], [lambda s: s.get('translation'), lambda s: s.get('condition')])
+    return jsonify({'q': q, 'plants': [_plant_light(p) for p in plants[:30]], 'plants_total': len(plants),
+                    'passages': [_passage(s, words) for s in segs[:40]], 'passages_total': len(segs)})
+
+
+@app.route('/api/m/passage')
+def api_m_passage():
+    label = request.args.get('label')
+    s = next((x for x in load_corpus() if x.get('_label') == label), None)
+    if not s:
+        abort(404)
+    return jsonify(_passage(s))
 
 
 # ── Share landing pages (server-rendered so link-preview crawlers see OG tags) ──

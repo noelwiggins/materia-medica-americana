@@ -1,5 +1,14 @@
 # Plantacopia STATUS — 2026-10-28
 
+## Mobile app (2026-10-29)
+- Phones get static/m/ (index.html, m.css, m.js) at "/" (UA check in app.py); "Full site" link sets cookie pc_view=full
+  (/?view=full); /m always serves the mobile app and clears the cookie.
+- Four destinations: Search (plants / passages / manuscript pages), Plants (filter by use, sort by traditions or A-Z),
+  Library (books by tradition, manuscript reader with swipe, image lightbox), Saved (localStorage).
+- API: /api/m/plants, /api/m/plant/<id>, /api/m/books, /api/m/traditions, /api/m/search, /api/m/book/<id>/passages,
+  /api/m/passage?label=. Search runs server-side (no 10 MB corpus download on phones).
+- static/data/books.json is exported from BOOKS in index.html: run `node scripts/export_books.js` after editing BOOKS.
+
 ## Oedio translations (2026-10-28)
 - scripts/sync_oedio_translations.py copies Oedio's page-level transcriptions + English translations into
   static/reader-data (fields: text = original, translation = English, label, language). Matches existing
