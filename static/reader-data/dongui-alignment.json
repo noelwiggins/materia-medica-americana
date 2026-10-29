@@ -4,7 +4,7 @@
     "title_en": "Naegyeongpyeon Vol.1",
     "title_ko": "내경편 1권",
     "section": "internal",
-    "page_count": 60,
+    "page_count": 124,
     "data_file": "dongui-vol-01.json"
   },
   {
@@ -12,7 +12,7 @@
     "title_en": "Naegyeongpyeon Vol.2",
     "title_ko": "내경편 2권",
     "section": "internal",
-    "page_count": 60,
+    "page_count": 130,
     "data_file": "dongui-vol-02.json"
   },
   {
@@ -20,7 +20,7 @@
     "title_en": "Naegyeongpyeon Vol.3",
     "title_ko": "내경편 3권",
     "section": "internal",
-    "page_count": 60,
+    "page_count": 160,
     "data_file": "dongui-vol-03.json"
   },
   {
@@ -28,7 +28,7 @@
     "title_en": "Naegyeongpyeon Vol.4",
     "title_ko": "내경편 4권",
     "section": "internal",
-    "page_count": 60,
+    "page_count": 124,
     "data_file": "dongui-vol-04.json"
   },
   {
@@ -124,7 +124,7 @@
     "title_en": "Tangaekpyeon Vol.1",
     "title_ko": "탕액편 1권",
     "section": "herbal",
-    "page_count": 31,
+    "page_count": 126,
     "data_file": "dongui-vol-16.json"
   },
   {
@@ -132,7 +132,7 @@
     "title_en": "Tangaekpyeon Vol.2",
     "title_ko": "탕액편 2권",
     "section": "herbal",
-    "page_count": 64,
+    "page_count": 118,
     "data_file": "dongui-vol-17.json"
   },
   {
@@ -140,7 +140,7 @@
     "title_en": "Tangaekpyeon Vol.3",
     "title_ko": "탕액편 3권",
     "section": "herbal",
-    "page_count": 64,
+    "page_count": 117,
     "data_file": "dongui-vol-18.json"
   },
   {
@@ -148,7 +148,7 @@
     "title_en": "Tangaekpyeon Vol.4",
     "title_ko": "탕액편 4권",
     "section": "herbal",
-    "page_count": 62,
+    "page_count": 108,
     "data_file": "dongui-vol-19.json"
   },
   {
@@ -156,7 +156,7 @@
     "title_en": "Tangaekpyeon Vol.5",
     "title_ko": "탕액편 5권",
     "section": "herbal",
-    "page_count": 60,
+    "page_count": 118,
     "data_file": "dongui-vol-20.json"
   },
   {
@@ -164,7 +164,7 @@
     "title_en": "Tangaekpyeon Vol.6",
     "title_ko": "탕액편 6권",
     "section": "herbal",
-    "page_count": 64,
+    "page_count": 160,
     "data_file": "dongui-vol-21.json"
   },
   {
@@ -172,7 +172,7 @@
     "title_en": "Tangaekpyeon Vol.7",
     "title_ko": "탕액편 7권",
     "section": "herbal",
-    "page_count": 64,
+    "page_count": 119,
     "data_file": "dongui-vol-22.json"
   },
   {

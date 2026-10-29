@@ -60,6 +60,66 @@ def serve_reader_data(filename):
     return send_from_directory('static/reader-data', filename)
 
 
+# ── Manuscript page search (translations copied from Oedio) ──────────────
+@functools.lru_cache(maxsize=1)
+def load_page_index():
+    """Every reader-data page that carries an English translation: (file, index, label, hay, text, translation)."""
+    import glob
+    idx = []
+    for path in sorted(glob.glob('static/reader-data/*.json')):
+        name = os.path.basename(path)
+        try:
+            with open(path, encoding='utf-8') as f:
+                pages = json.load(f)
+        except Exception:
+            continue
+        if not isinstance(pages, list):
+            continue
+        for i, p in enumerate(pages):
+            if not isinstance(p, dict):
+                continue
+            tr = (p.get('translation') or '').strip()
+            if len(tr) < 20:
+                continue
+            label = p.get('label') or p.get('canvas_label') or ('Page %s' % p.get('page', i + 1))
+            if p.get('volume_title'):
+                label = '%s · %s' % (p['volume_title'], label)
+            idx.append((name, i, label, tr.lower(), tr, p.get('image', '')))
+    return idx
+
+
+def _snippet(text, words, width=220):
+    import re
+    low = text.lower()
+    found = [m.start() for m in (re.search(r'\b' + re.escape(w), low) for w in words) if m]
+    pos = min(found or [0])
+    start = max(0, pos - width // 3)
+    out = text[start:start + width].replace('\n', ' ')
+    return ('…' if start else '') + out + ('…' if start + width < len(text) else '')
+
+
+@app.route('/api/pages/search')
+def api_pages_search():
+    q = (request.args.get('q') or '').strip().lower()
+    words = [w for w in q.split() if len(w) >= 3] or ([q] if q else [])
+    if not words:
+        return jsonify({'q': q, 'total': 0, 'results': []})
+    import re
+    pats = [re.compile(r'\b' + re.escape(w)) for w in words]   # word starts: "sage" finds sage/sages, not passage
+    hits = []
+    for name, i, label, hay, tr, img in load_page_index():
+        counts = [len(p.findall(hay)) for p in pats]
+        n = sum(1 for c in counts if c)
+        if n:
+            hits.append((n * 100 + min(sum(counts), 50), name, i, label, tr, img))
+    hits.sort(key=lambda h: -h[0])
+    full = [h for h in hits if h[0] >= len(words) * 100]
+    use = full if full else hits
+    return jsonify({'q': q, 'total': len(use), 'results': [
+        {'file': name, 'index': i, 'label': label, 'image': img, 'snippet': _snippet(tr, words)}
+        for _, name, i, label, tr, img in use[:60]]})
+
+
 # ── Share landing pages (server-rendered so link-preview crawlers see OG tags) ──
 SHARE_PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">

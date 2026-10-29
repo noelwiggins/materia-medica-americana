@@ -1,4 +1,20 @@
-# Plantacopia STATUS — 2026-08-02
+# Plantacopia STATUS — 2026-10-28
+
+## Oedio translations (2026-10-28)
+- scripts/sync_oedio_translations.py copies Oedio's page-level transcriptions + English translations into
+  static/reader-data (fields: text = original, translation = English, label, language). Matches existing
+  Plantacopia scans by image URL; replaces a file when Oedio has a larger/complete scan set. Re-run after
+  each Oedio forge batch: `python3 scripts/sync_oedio_translations.py ~/oedio`
+- 27 books + 11 Dongui Bogam volumes; 6 new BOOKS entries (Florentine Codex XI, Honzo Zufu, Honzo Wamyo,
+  three Czech medical MSS); 16 existing books now open their scans (hasManuscriptScans + manuscriptDataFile).
+- Manuscript reader shows the English translation with the original in a collapsible block.
+- /api/pages/search (app.py) searches all translated pages server-side (word-start match); global search
+  shows a "Manuscript pages" block whose rows open the reader at that page (split view).
+- dongui_ms now loads all volumes via manuscriptVolumesFile (dongui-alignment.json).
+- Pending: Vienna Dioscurides, Honzo Zufu, Ishinpo and the Czech MSS are still being translated in Oedio;
+  re-run the sync when that forge run finishes.
+
+# Earlier — 2026-08-02
 
 ## Live site
 - URL: plantacopia.com / wholeplantcatalog.com

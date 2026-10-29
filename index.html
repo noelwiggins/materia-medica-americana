@@ -1139,7 +1139,7 @@
   #msr-overlay { width:100%; height:100%; background:#0A0805; display:flex; flex-direction:column; overflow:hidden; }
   #msr-overlay.msr-sepia #msr-right-panel { background:#f4ecd8; color:#3b2f22; }
   #msr-topbar { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 1rem; background:#120F08; border-bottom:1px solid #2A2418; flex-shrink:0; gap:0.8rem; flex-wrap:wrap; }
-  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:var(--ink); max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #msr-book-title { font-family:var(--font-display); font-size:0.95rem; font-weight:500; color:#E8DFC8; max-width:38vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   #msr-book-meta { font-family:var(--font-code); font-size:0.58rem; letter-spacing:0.07em; color:var(--muted); }
   #msr-controls { display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap; }
   .msr-pill-group { display:flex; gap:2px; background:#1A1810; border-radius:3px; padding:2px; }
@@ -1168,6 +1168,22 @@
   #msr-right-panel { flex-direction:column; overflow-y:auto; padding:1.1rem 1.3rem; background:#100E08; }
   #msr-text-content { font-size:0.9rem; line-height:1.75; color:var(--ink); margin-bottom:1.5rem; }
   .msr-page-text { white-space:pre-wrap; }
+  #msr-text-content .msr-page-text { color:#E8DFC8; }
+  #msr-overlay.msr-sepia #msr-text-content .msr-page-text { color:#3b2f22; }
+  .msr-tr-head { font-family:var(--font-code); font-size:0.56rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.6rem; }
+  .msr-orig { margin-top:1rem; border-top:1px solid #2A2418; padding-top:0.5rem; }
+  .msr-orig summary { cursor:pointer; font-family:var(--font-code); font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); }
+  .msr-orig-text { font-size:0.85rem; color:#B8A880; margin-top:0.5rem; }
+  .msr-ai-note { margin-top:0.9rem; font-family:var(--font-code); font-size:0.56rem; color:var(--muted); letter-spacing:0.04em; }
+  #msr-overlay.msr-sepia .msr-orig-text { color:#5a4a32; }
+  .sr-pages { border-bottom:1px solid #2A2010; }
+  .sr-pages-head { font-family:monospace; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:#C4A860; padding:0.6rem 1rem 0.3rem; display:flex; justify-content:space-between; }
+  .sr-page-row { padding:0.6rem 1rem; border-top:1px solid #1E1C10; cursor:pointer; }
+  .sr-page-row:hover { background:#1E1A10; }
+  .sr-page-row b { color:#F0E8D0; font-size:0.82rem; }
+  .sr-page-row .sr-page-lbl { font-family:monospace; font-size:0.58rem; color:#8A7A58; margin-left:0.4rem; }
+  .sr-page-row .sr-page-snip { font-size:0.76rem; color:#B8A880; line-height:1.5; margin-top:0.15rem; }
+  .sr-pages-more { background:none; border:1px solid #3A3020; color:#A09070; font-family:monospace; font-size:0.6rem; padding:0.25rem 0.6rem; margin:0.4rem 1rem 0.6rem; cursor:pointer; }
   .msr-no-text { font-family:var(--font-code); font-size:0.68rem; color:var(--muted); letter-spacing:0.06em; padding:0.8rem; border:1px dashed #2A2418; border-radius:2px; margin-bottom:1rem; }
   .msr-corpus-header { font-family:var(--font-code); font-size:0.54rem; letter-spacing:0.14em; text-transform:uppercase; color:#C4A860; margin-bottom:0.8rem; padding-bottom:0.35rem; border-bottom:1px solid #2A2418; }
   .msr-corpus-seg { padding:0.65rem 0; border-bottom:1px solid #1A1810; }
@@ -3763,19 +3779,19 @@ const BOOKS = [
     color:'#8B4513', corpusKeys:['cobo','cobo_recovery','cobo_mineral_air','cobo_missing','cobo_nontarget'], totalEntries:185,
     hasManuscriptScans:true, manuscriptDataFile:'badianus-manuscript.json',
     description:'The only surviving Aztec herbal. 185 illustrated plant medicines with preparations, written in Nahuatl by a Tlatelolco physician and translated into Latin in 1552. The earliest illustrated herbal from the Americas, with hand-painted plant portraits by Aztec artists.' },
-  { id:'dioscorides', title:'De Materia Medica', short:'De Materia Medica',
+  { id:'dioscorides', hasManuscriptScans:true, manuscriptDataFile:'vienna-dioscurides.json', title:'De Materia Medica', short:'De Materia Medica',
     tradition:'greek_roman', date:'77 CE', language:'Classical Greek',
     author:'Pedanius Dioscorides',
     cover:'https://upload.wikimedia.org/wikipedia/commons/5/53/Of_Medical_Substances_WDL10690.jpg',
     color:'#4A3060', corpusKeys:['dioscorides','greek_roman','dioscorides_complete','dioscorides_books5_6','dioscorides_new_b01','dioscorides_new_b02','dioscorides_new_b03'], totalEntries:600,
     description:'The foundational pharmacological text of Western medicine. 600 plants across 5 books, used continuously for 1,500 years.' },
-  { id:'ebers', title:'Papyrus Ebers', short:'Ebers Papyrus',
+  { id:'ebers', hasManuscriptScans:true, manuscriptDataFile:'ebers-papyrus.json', title:'Papyrus Ebers', short:'Ebers Papyrus',
     tradition:'egyptian', date:'c.1550 BCE', language:'Hieratic Egyptian',
     author:'Anonymous Egyptian physicians',
     cover:'https://upload.wikimedia.org/wikipedia/commons/d/d9/Kigelia_africana_-_Jardim_Municipal_do_Funchal_01.jpg',
     color:'#8B6914', corpusKeys:['egyptian','ebers_batch_01','ebers_expanded_b01'], totalEntries:700,
     description:'The oldest and most complete ancient medical text. 700 remedies, 300 plant medicines, surgical procedures from 1550 BCE.' },
-  { id:'charaka', title:'Charaka Samhita', short:'Charaka Samhita',
+  { id:'charaka', hasManuscriptScans:true, manuscriptDataFile:'charaka-samhita.json', title:'Charaka Samhita', short:'Charaka Samhita',
     tradition:'ayurveda', date:'c.400 BCE (compiled)', language:'Sanskrit',
     author:'Charaka',
     cover:'https://upload.wikimedia.org/wikipedia/commons/0/05/Dhanvantari.jpg',
@@ -3787,19 +3803,19 @@ const BOOKS = [
     cover:'https://upload.wikimedia.org/wikipedia/commons/a/a2/Kaibara_Ekiken.jpg',
     color:'#8B0000', corpusKeys:['bencao','gangmu','bencao_batch_01','bencao_batch_02','bencao_batch_03','bencao_batch_04','bencao_batch_05','bencao_batch_06','bencao_batch_07','bencao_batch_08','bencao_batch_09','bencao_batch_10','bencao_batch_11','bencao_batch_12','bencao_batch_13','bencao_batch_14','bencao_batch_15','bencao_batch_16','bencao_batch_17','bencao_batch_18'], totalEntries:1892,
     description:'The most comprehensive pharmacopoeia in human history before the 18th century. 1,892 substances across 52 volumes.' },
-  { id:'canon', title:'Al-Qanun fi al-Tibb', short:'Canon of Medicine',
+  { id:'canon', hasManuscriptScans:true, manuscriptDataFile:'canon-avicenna.json', title:'Al-Qanun fi al-Tibb', short:'Canon of Medicine',
     tradition:'unani', date:'1025 CE', language:'Arabic',
     author:'Ibn Sina (Avicenna)',
     cover:'https://upload.wikimedia.org/wikipedia/commons/b/b0/Ibn_Sina_examining_patient.jpg',
     color:'#2F5233', corpusKeys:['ibn_sina','ibn_baitar','ibn_sina_new_b01','ibn_sina_new_b02'], totalEntries:760,
     description:'The encyclopedia that ruled Islamic and European medicine for 600 years. 760 drugs with the first systematic pharmacological classification.' },
-  { id:'tibetan', title:'Gyushi (rGyud bzhi)', short:'Gyushi — Four Tantras',
+  { id:'tibetan', hasManuscriptScans:true, manuscriptDataFile:'gyushi-commentary.json', title:'Gyushi (rGyud bzhi)', short:'Gyushi — Four Tantras',
     tradition:'tibetan', date:'c.12th century CE', language:'Classical Tibetan',
     author:'Yuthok Yönten Gönpo',
     cover:'https://upload.wikimedia.org/wikipedia/commons/3/37/Bhutanese_painted_thanka_of_Milarepa_%281052-1135%2C_Late_19th-early_20th_Century%2C_Dhodeydrag_Gonpa%2C_Thimphu%2C_Bhutan.jpg',
     color:'#8B1A1A', corpusKeys:['tibetan','tibetan_new_b01'], totalEntries:300,
     description:'The foundational Tibetan medical text. 300 chapters synthesizing Indian, Chinese, and indigenous Tibetan pharmacological traditions.' },
-  { id:'bencaojing', title:'Shennong Bencaojing (神農本草經)', short:'Shennong Classic',
+  { id:'bencaojing', hasManuscriptScans:true, manuscriptDataFile:'bencao-jing.json', title:'Shennong Bencaojing (神農本草經)', short:'Shennong Classic',
     tradition:'chinese', date:'c.200 CE (compiled)', language:'Classical Chinese',
     author:'Attributed to Shennong',
     cover:'https://upload.wikimedia.org/wikipedia/commons/b/ba/Betel_%28PSF%29.png',
@@ -3811,7 +3827,7 @@ const BOOKS = [
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Donguibogam_%28one_page_of_one_book%29.jpg/440px-Donguibogam_%28one_page_of_one_book%29.jpg',
     color:'#C62828', corpusKeys:['korean','dongui_new_b01','dongui_new_b02','dongui_expanded_b01'], totalEntries:1400,
     description:'UNESCO Memory of the World. 25 volumes, 1,400 medicines. The most comprehensive East Asian medical encyclopedia after the Bencao Gangmu.' },
-  { id:'cobo', title:'Historia del Nuevo Mundo', short:'Cobo — Historia',
+  { id:'cobo', hasManuscriptScans:true, manuscriptDataFile:'cobo-historia.json', title:'Historia del Nuevo Mundo', short:'Cobo — Historia',
     tradition:'mesoamerican', date:'1653 CE', language:'17th-century Spanish',
     author:'Bernabé Cobo — Jesuit missionary',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Bernabe_Cobo.jpg/440px-Bernabe_Cobo.jpg',
@@ -3829,31 +3845,31 @@ const BOOKS = [
     cover:'https://upload.wikimedia.org/wikipedia/commons/e/e6/Aloe_ferox_botanical_garden_T.U.Delft_in_2015.jpg',
     color:'#FF7043', corpusKeys:['southern_african','south_african_new_b01'], totalEntries:600,
     description:'The world\'s oldest continuous healing tradition from the San, who have occupied southern Africa for 40,000+ years. Source of Devil\'s Claw, Umckaloabo, and Rooibos.' },
-  { id:'kampo', title:'Kampo Medicine', short:'Kampo',
+  { id:'kampo', hasManuscriptScans:true, manuscriptDataFile:'kampo-ishinpo.json', title:'Kampo Medicine', short:'Kampo',
     tradition:'kampo', date:'c.200 CE', language:'Classical Japanese',
     author:'Tao Hongjing compilation',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Acupuncture_chart_300_CE.jpg/440px-Acupuncture_chart_300_CE.jpg',
     color:'#2E7D32', corpusKeys:['kampo','kampo_new_b01','kampo_new_b02','kampo_new_b03'],
     totalEntries:365, description:'Japanese adaptation of the Shennong pharmacopoeia. 365 substances across three grades of medicine.' }
-  ,{ id:'honzo', title:'Yamato Honzo', short:'Yamato Honzo',
+  ,{ id:'honzo', hasManuscriptScans:true, manuscriptDataFile:'yamato-honzo.json', title:'Yamato Honzo', short:'Yamato Honzo',
     tradition:'japanese_honzo', date:'1709 CE', language:'Classical Japanese',
     author:'Kaibara Ekiken',
     cover:'https://upload.wikimedia.org/wikipedia/commons/8/8f/Duruo_%28Pollia_japonica%29%2C_medicinal_plant._Chinese%2C_1655_Wellcome_L0034691.jpg',
     color:'#AD1457', corpusKeys:['honzo','honzo_new_b01','honzo_new_b02','honzo_expanded_b01'],
     totalEntries:1362, description:'Definitive Japanese encyclopedia of natural history. 1,362 plants documented in the Edo tradition.' }
-  ,{ id:'maya', title:'Maya Traditional Medicine', short:'Maya Medicine',
+  ,{ id:'maya', hasManuscriptScans:true, manuscriptDataFile:'ritual-of-the-bacabs.json', title:'Maya Traditional Medicine', short:'Maya Medicine',
     tradition:'maya', date:'Pre-Columbian', language:'Yucatec Maya',
     author:'Indigenous Maya physicians',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg/440px-Libellus_de_medicinalibus_Indorum_herbis_f._49v.jpg',
     color:'#00695C', corpusKeys:['maya','maya_new_b01'],
     totalEntries:250, description:'Mesoamerican plant medicine of the Maya civilization, preserved in colonial-era manuscripts.' }
-  ,{ id:'persian', title:'Persian Zoroastrian Medicine', short:'Persian Medicine',
+  ,{ id:'persian', hasManuscriptScans:true, manuscriptDataFile:'zend-avesta-vol2.json', title:'Persian Zoroastrian Medicine', short:'Persian Medicine',
     tradition:'persian_zoroastrian', date:'c.600 BCE', language:'Middle Persian',
     author:'Avestan physicians',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Avicenna_miniatur.jpg/440px-Avicenna_miniatur.jpg',
     color:'#7B1FA2', corpusKeys:['persian','persian_new_b01'],
     totalEntries:200, description:'Zoroastrian botanical medicine bridging ancient Mesopotamia and Arabic pharmacology.' }
-  ,{ id:'north_american', title:'North American Indigenous Medicine', short:'North American Medicine',
+  ,{ id:'north_american', hasManuscriptScans:true, manuscriptDataFile:'schoepf-materia-medica-1787.json', title:'North American Indigenous Medicine', short:'North American Medicine',
     tradition:'north_american_indigenous', date:'Pre-contact', language:'Oral tradition',
     author:'Indigenous North American healers',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Lobelia_cardinalis_flowers.jpg/440px-Lobelia_cardinalis_flowers.jpg',
@@ -3871,7 +3887,7 @@ const BOOKS = [
     cover:'https://upload.wikimedia.org/wikipedia/commons/3/3b/Lacnunga_f.137r_spell_wi%C3%B0_smeogan_wyrme.jpg',
     color:'#37474F', corpusKeys:['celtic_norse','celtic_new_b01'],
     totalEntries:300, description:'Plant medicine of the Celtic and Norse peoples preserved in Anglo-Saxon leechbooks.' }
-  ,{ id:'philippine', title:'Philippine Traditional Medicine', short:'Philippine Medicine',
+  ,{ id:'philippine', hasManuscriptScans:true, manuscriptDataFile:'flora-de-filipinas-1837.json', title:'Philippine Traditional Medicine', short:'Philippine Medicine',
     tradition:'philippine', date:'Pre-colonial', language:'Spanish colonial',
     author:'Filipino healers',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Betel_PSF.jpg/440px-Betel_PSF.jpg',
@@ -3921,6 +3937,7 @@ const BOOKS = [
     hasManuscriptScans: true,
     manuscriptVolumes: 25,
     manuscriptAlignmentUrl: '/data/dongui-alignment.json',
+    manuscriptVolumesFile: 'dongui-alignment.json',
     description:'Complete 1613 original edition — National Treasure No.1085, UNESCO Memory of the World. 25 volumes of manuscript scans from the National Library of Korea, covering internal medicine, external medicine, herbal remedies, and acupuncture.' }
   ,{ id:'balds_leechbook', title:"Bald's Leechbook (Royal MS 12 D XVII)", short:"Bald's Leechbook",
     tradition:'celtic_norse', date:'c.950 CE', language:'Old English / Medieval Latin',
@@ -3958,7 +3975,7 @@ const BOOKS = [
     totalEntries:448, hasManuscriptScans:true,
     manuscriptDataFile:'matthioli-dioscorides-1544.json',
     description:"Matthioli's 1544 Italian translation of Dioscorides — the first vernacular edition of De Materia Medica. Made classical Greek botanical medicine accessible across Europe. 448 pages with woodcut illustrations. The most influential herbal of the Renaissance." }
-  ,{ id:'welsh_myddfai', title:'Meddygon Myddfai (Physicians of Myddfai)', short:'Physicians of Myddfai',
+  ,{ id:'welsh_myddfai', hasManuscriptScans:true, manuscriptDataFile:'physicians-of-myddvai.json', title:'Meddygon Myddfai (Physicians of Myddfai)', short:'Physicians of Myddfai',
     tradition:'celtic_norse', date:'c.1300 CE', language:'Middle Welsh',
     author:'Rhiwallon and his sons (Myddfai, Carmarthenshire)',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Red_Book_of_Hergest.jpg/440px-Red_Book_of_Hergest.jpg',
@@ -3974,7 +3991,7 @@ const BOOKS = [
     corpusKeys:['russian_slavic','russian_travnik_b01'],
     totalEntries:30,
     description:'Russian Orthodox monastery herbal medicine preserved in handwritten Travnik manuscripts. Blends Byzantine medical learning, Central Asian influences, and native Siberian plant knowledge — vodka, chaga, sea buckthorn, and Siberian ginseng among the defining remedies.' }
-  ,{ id:'yamato_honzo', title:'Yamato Honzo (大和本草) — Kaibara Ekiken', short:'Yamato Honzo',
+  ,{ id:'yamato_honzo', hasManuscriptScans:true, manuscriptDataFile:'yamato-honzo.json', title:'Yamato Honzo (大和本草) — Kaibara Ekiken', short:'Yamato Honzo',
     tradition:'japanese_honzo', date:'1709 CE', language:'Classical Japanese / Kanbun',
     author:'Kaibara Ekiken (貝原益軒)',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Kaibara_Ekiken.jpg/440px-Kaibara_Ekiken.jpg',
@@ -3982,7 +3999,7 @@ const BOOKS = [
     corpusKeys:['japanese_honzo','honzo_new_b01','yamato_honzo_b01'],
     totalEntries:30,
     description:'The foundational encyclopedia of Japanese natural history. Kaibara Ekiken documented 1,362 plant species adapting Chinese materia medica to the Japanese context — distinguishing Japanese from Chinese plants for the first time. Pioneer of Japanese botanical medicine.' }
-  ,{ id:'norse_scandinavian', title:'Norse & Scandinavian Plant Medicine', short:'Norse Medicine',
+  ,{ id:'norse_scandinavian', hasManuscriptScans:true, manuscriptDataFile:'harpestraeng-simplicibus.json', title:'Norse & Scandinavian Plant Medicine', short:'Norse Medicine',
     tradition:'celtic_norse', date:'c.900-1300 CE', language:'Old Norse / Old English',
     author:'Anglo-Saxon and Norse healers / Völvas',
     cover:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Odin-Vegvisir.jpg/440px-Odin-Vegvisir.jpg',
@@ -4089,6 +4106,48 @@ const BOOKS = [
    year:'c. 1240 CE',
    description:'The largest medieval pharmacopoeia ever written — 1,400 medicinal plants, animals, and minerals documented by the Andalusian botanist and chief herbalist to Sultan al-Kamil of Egypt. Synthesizes Dioscorides, Avicenna, and centuries of Islamic botanical knowledge.',
    hasManuscriptScans:true, manuscriptDataFile:'ibn_baytar_compendium.json', manuscriptPageCount:90}
+  ,{ id:'florentine_book11', title:'Florentine Codex, Book XI — Natural Things', short:'Florentine Codex XI',
+    tradition:'mesoamerican', date:'1577 CE', language:'Spanish / Nahuatl',
+    author:'Bernardino de Sahagún with Nahua scribe-artists',
+    cover:'https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:10:62:2:wdl_10622:MedPalat220_03_0325/full/pct:50/0/default.jpg',
+    color:'#7A3A1A', corpusKeys:['florentine_book11'], totalEntries:506,
+    hasManuscriptScans:true, manuscriptDataFile:'florentine-codex-book11.json',
+    description:'Book XI of Sahagún\'s General History of the Things of New Spain: the Nahua natural history of plants, animals and minerals, including the medicinal herbs of central Mexico, in parallel Nahuatl and Spanish columns with painted illustrations. Every page transcribed and translated into English.' }
+  ,{ id:'honzo_zufu', title:'Honzō Zufu (本草圖譜) — Illustrated Manual of Medicinal Plants', short:'Honzō Zufu',
+    tradition:'japanese_honzo', date:'1830 CE', language:'Japanese',
+    author:'Iwasaki Tsunemasa (Kan’en)',
+    cover:'https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:11:83:6_:00:1:wdl_11836_001:1287114_R0000009/full/pct:50/0/default.jpg',
+    color:'#3A5A2A', corpusKeys:['honzo_zufu'], totalEntries:207,
+    hasManuscriptScans:true, manuscriptDataFile:'honzo-zufu.json',
+    description:'The largest illustrated botanical work of Edo Japan: hand-painted plates of medicinal plants drawn from life, arranged by the categories of Li Shizhen\'s Bencao Gangmu, with names and notes in kanji and kana.' }
+  ,{ id:'honzo_wamyo', title:'Honzō Wamyō (本草和名)', short:'Honzō Wamyō',
+    tradition:'japanese_honzo', date:'c. 918 CE (1796 printing)', language:'Classical Chinese / Japanese',
+    author:'Fukae Sukehito',
+    cover:'https://dl.ndl.go.jp/api/iiif/2555536/R0000009/full/pct:50/0/default.jpg',
+    color:'#5A4A1A', corpusKeys:['honzo_wamyo'], totalEntries:67,
+    hasManuscriptScans:true, manuscriptDataFile:'honzo-wamyo.json',
+    description:'Japan\'s earliest surviving materia medica dictionary: about a thousand Chinese drug names matched to their Japanese equivalents, the bridge through which Chinese pharmacy entered Japan.' }
+  ,{ id:'czech_medical_compendium', title:'MS XVII.G.9 — Bohemian Medical Compendium', short:'Czech Medical Compendium',
+    tradition:'central_european', date:'c. 1440 CE', language:'Latin',
+    author:'National Library of the Czech Republic',
+    cover:'https://imagines.manuscriptorium.com/loris/AIPDIG-NKCR__XVII_G_9____39XR079-cs/ID0005R/full/600,/0/default.jpg',
+    color:'#4A3A2A', corpusKeys:['czech_medical_compendium'], totalEntries:276,
+    hasManuscriptScans:true, manuscriptDataFile:'medical-compendium-XVII-G-9.json',
+    description:'A Latin medical compendium from 15th-century Bohemia, joining the theoretical medicine of Charles University with practical herbal recipes.' }
+  ,{ id:'prager_wundarznei', title:'MS XVI.F.2 — Prager Wundarznei', short:'Prager Wundarznei',
+    tradition:'central_european', date:'c. 1450 CE', language:'Early New High German',
+    author:'National Library of the Czech Republic',
+    cover:'https://imagines.manuscriptorium.com/loris/AIPDIG-NKCR__XVI_F_2_____1IT46IE-cs/ID0005R/full/600,/0/default.jpg',
+    color:'#5A2A2A', corpusKeys:['prager_wundarznei'], totalEntries:378,
+    hasManuscriptScans:true, manuscriptDataFile:'prager-wundarznei-XVI-F-2.json',
+    description:'Prague surgical medicine in the German vernacular: wounds, fractures, skin diseases and their plant-based salves and plasters.' }
+  ,{ id:'czech_astro_medical', title:'MS VI.F.7 — Astronomical & Medical Miscellany', short:'Czech Astro-Medical MS',
+    tradition:'central_european', date:'c. 1430 CE', language:'Latin',
+    author:'National Library of the Czech Republic',
+    cover:'https://imagines.manuscriptorium.com/loris/AIPDIG-NKCR__VI_F_7______3IGGBSD-cs/ID0005R/full/600,/0/default.jpg',
+    color:'#2A3A5A', corpusKeys:['czech_astro_medical'], totalEntries:364,
+    hasManuscriptScans:true, manuscriptDataFile:'astronomical-medical-VI-F-7.json',
+    description:'A Bohemian miscellany where astronomical tables and astrological prognostication sit beside medical recipes: the medieval medicine of the heavens and the herb garden together.' }
 ];
 
 // ── Reader state ────────────────────────────────────────────
@@ -4162,7 +4221,23 @@ function renderBookShelf() {
 }
 
 // ── Open a book ─────────────────────────────────────────────
-function openBook(book, targetSegLabel, searchQuery) {
+function loadManuscriptPages(book) {
+  if (book._manuscriptPages) return Promise.resolve(book._manuscriptPages);
+  if (book.manuscriptVolumesFile) {
+    return fetch('/reader-data/' + book.manuscriptVolumesFile).then(function(r){ return r.ok ? r.json() : []; })
+      .then(function(vols) {
+        return Promise.all(vols.map(function(v) {
+          return fetch('/reader-data/' + v.data_file).then(function(r){ return r.ok ? r.json() : []; })
+            .then(function(ps){ return ps.map(function(p){ p.volume_title = p.volume_title || v.title_en; return p; }); })
+            .catch(function(){ return []; });
+        }));
+      }).then(function(parts){ var all = [].concat.apply([], parts); book._manuscriptPages = all; return all; });
+  }
+  return fetch('/reader-data/' + book.manuscriptDataFile).then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(pages){ book._manuscriptPages = pages; return pages; });
+}
+
+function openBook(book, targetSegLabel, searchQuery, manuscriptIdx) {
   readerBook = book;
   readerPageIdx = 0;
   readerSearchQuery = searchQuery || '';
@@ -4244,19 +4319,16 @@ function openBook(book, targetSegLabel, searchQuery) {
 
   // ── Wire manuscript scans — open immersive MSR reader ───────
   readerSetupLayers(book);
-  if (book.hasManuscriptScans && book.manuscriptDataFile) {
-    var msUrl = '/reader-data/' + book.manuscriptDataFile;
-    fetch(msUrl)
-      .then(function(r){ return r.ok ? r.json() : []; })
+  if (book.hasManuscriptScans && (book.manuscriptDataFile || book.manuscriptVolumesFile)) {
+    loadManuscriptPages(book)
       .then(function(pages){
-        book._manuscriptPages = pages;
         if (pages && pages.length > 0) {
-          MSR.open(book, pages);
+          MSR.open(book, pages, manuscriptIdx || 0);
         } else {
           readerLoadManuscriptPage(book, 0);
         }
       })
-      .catch(function(e){ console.warn('Manuscript not found:', msUrl); });
+      .catch(function(e){ console.warn('Manuscript not found:', book.manuscriptDataFile || book.manuscriptVolumesFile); });
     return;
   }
 }
@@ -5435,6 +5507,56 @@ window.addEventListener('popstate', function() {
   }
 });
 
+// ── Manuscript page hits in global search ─────────────────────────────────
+function manuscriptBookForFile(file) {
+  if (/^dongui-vol-\d+\.json$/.test(file)) return BOOKS.find(function(b){ return b.id === 'dongui_ms'; }) || null;
+  return BOOKS.find(function(b){ return b.manuscriptDataFile === file; }) || null;
+}
+function openBookAtManuscriptPage(book, image, fallbackIdx) {
+  loadManuscriptPages(book).then(function(pages) {
+    var idx = -1;
+    for (var i = 0; i < pages.length; i++) { if (pages[i].image === image) { idx = i; break; } }
+    openBook(book, null, null, idx >= 0 ? idx : (fallbackIdx || 0));
+  });
+}
+function fetchManuscriptPageHits(q, panel) {
+  fetch('/api/pages/search?q=' + encodeURIComponent(q))
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(d) {
+      if (!d || !d.results || !d.results.length) return;
+      var list = panel.querySelector('#sr-results-list');
+      if (!list) return;
+      var words = q.toLowerCase().split(/\s+/).filter(function(w){ return w.length >= 3; });
+      var rows = d.results.map(function(r) {
+        var b = manuscriptBookForFile(r.file);
+        if (!b) return '';
+        return '<div class="sr-page-row" data-file="' + acEscH(r.file) + '" data-idx="' + r.index + '" data-img="' + acEscH(r.image || '') + '">' +
+          '<b style="color:' + (b.color || '#C4A860') + '">' + acEscH(b.short || b.title) + '</b><span class="sr-page-lbl">' + acEscH(r.label) + '</span>' +
+          '<div class="sr-page-snip">' + highlightWords(acEscH(r.snippet), words) + '</div></div>';
+      }).filter(Boolean);
+      if (!rows.length) return;
+      var box = document.createElement('div');
+      box.className = 'sr-pages';
+      box.innerHTML = '<div class="sr-pages-head"><span>&#9670; Manuscript pages · ' + d.total + ' translated page' + (d.total === 1 ? '' : 's') + '</span><span style="color:#5A5040">AI translations · via Oedio</span></div>' +
+        rows.slice(0, 4).join('') + (rows.length > 4 ? '<div class="sr-pages-rest" style="display:none">' + rows.slice(4).join('') + '</div>' +
+        '<button class="sr-pages-more">Show ' + (rows.length - 4) + ' more pages</button>' : '');
+      list.insertBefore(box, list.firstChild);
+      box.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var more = e.target.closest('.sr-pages-more');
+        if (more) { box.querySelector('.sr-pages-rest').style.display = 'block'; more.remove(); return; }
+        var row = e.target.closest('.sr-page-row');
+        if (!row) return;
+        var b = manuscriptBookForFile(row.getAttribute('data-file'));
+        if (!b) return;
+        removeSearchModalEl();
+        searchModalHistoryOpen = false;
+        openBookAtManuscriptPage(b, row.getAttribute('data-img'), parseInt(row.getAttribute('data-idx'), 10));
+      });
+    })
+    .catch(function(){});
+}
+
 function removeSearchModalEl() {
   var el = document.getElementById('search-modal');
   if (el) el.remove();
@@ -5659,6 +5781,8 @@ function runGlobalSearch() {
     overlay.appendChild(panel);
     document.body.appendChild(overlay);
     document.body.style.overflow = 'hidden';
+    // Manuscript pages: page-level English translations (from Oedio) searched on the server
+    fetchManuscriptPageHits(q, panel);
     // Async herb illustration fetch
     fetchHerbImage(q, function(match) {
       var banner = document.getElementById('sr-herb-banner');
@@ -6096,7 +6220,7 @@ var MSR = (function() {
   };
 
   // ── Public API ────────────────────────────────────────────────────
-  function openManuscript(book, pages) {
+  function openManuscript(book, pages, startIdx) {
     state.book    = book;
     state.pages   = pages;
     state.totalPages = pages.length;
@@ -6113,7 +6237,8 @@ var MSR = (function() {
     });
 
     renderShell();
-    goToPage(0);
+    goToPage(startIdx || 0);
+    if (startIdx && state.pages[startIdx] && state.pages[startIdx].translation) setLayer('split');
     setupKeyboard();
     setupSwipe();
     setupZoomSwipe();
@@ -6269,8 +6394,18 @@ var MSR = (function() {
     var matchEl = document.getElementById('msr-seg-matches');
     if (!rightEl) return;
 
-    // If the page has embedded text (OCR/translation), show it
-    if (page.text && page.text.trim().length > 10) {
+    // Page-level English translation (copied from Oedio's forge), with the original-language text beneath
+    var hasTr = page.translation && page.translation.trim().length > 10;
+    var hasOrig = page.text && page.text.trim().length > 10;
+    if (hasTr) {
+      rightEl.innerHTML = [
+        '<div class="msr-tr-head">English translation' + (page.label ? ' · ' + escH(page.label) : '') + '</div>',
+        '<div class="msr-page-text">' + escH(page.translation) + '</div>',
+        hasOrig ? '<details class="msr-orig"><summary>Original text' + (page.language ? ' (' + escH(page.language) + ')' : '') + '</summary>' +
+          '<div class="msr-page-text msr-orig-text">' + escH(page.text) + '</div></details>' : '',
+        '<div class="msr-ai-note">AI transcription and translation from the page image, via Oedio. Unverified; read against the facsimile.</div>',
+      ].join('');
+    } else if (hasOrig) {
       rightEl.innerHTML = [
         '<div class="msr-page-text">' + escH(page.text) + '</div>',
       ].join('');
